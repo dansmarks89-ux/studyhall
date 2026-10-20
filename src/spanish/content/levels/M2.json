@@ -1,0 +1,1487 @@
+{
+  "id": "M2",
+  "track": "med",
+  "n": 2,
+  "title": "The story of the symptom",
+  "goal": "Take a focused symptom history: when it started, how long it lasts, what it feels like, where it spreads, what brings it on or relieves it, and what came with it.",
+  "bestAfter": "C3",
+  "grammar": [
+    {
+      "h": "Preterite for the event: ¿Cuándo empezó?",
+      "p": "A symptom that started, lasted or ended is a completed event, so it takes the preterite. You ask with usted forms (*empezó*, *sintió*, *duró*, *tomó*, *fue*); the patient answers with yo forms (*empecé*, *sentí*, *tomé*, *fui*). Note *sentir* → *sintió* (e → i in the usted form) and the spelling change *empezar* → *empecé*. Patients often say *me empezó* / *me dio* (it started on me / it came on me).",
+      "ex": [
+        [
+          "¿Cuándo empezó el dolor?",
+          "When did the pain start?"
+        ],
+        [
+          "Anoche sentí el corazón muy rápido.",
+          "Last night I felt my heart racing."
+        ],
+        [
+          "¿Cuánto tiempo le duró?",
+          "How long did it last?"
+        ]
+      ]
+    },
+    {
+      "h": "Hace (ago) vs desde hace (for)",
+      "p": "*Hace* + time + preterite = 'ago': *Empezó hace dos días.* To say something has been going on and still is, Spanish uses the PRESENT + *desde hace*: *Tengo el dolor desde hace dos días* ('I've had the pain for two days'). Ask *¿Desde cuándo tiene…?* (how long have you had…) or *¿Hace cuánto empezó?* (how long ago did it start).",
+      "ex": [
+        [
+          "Empezó hace tres horas.",
+          "It started three hours ago."
+        ],
+        [
+          "Tengo palpitaciones desde hace un mes.",
+          "I've had palpitations for a month."
+        ],
+        [
+          "¿Desde cuándo tiene la falta de aire?",
+          "How long have you had the shortness of breath?"
+        ]
+      ]
+    },
+    {
+      "h": "What it feels like and where it goes",
+      "p": "Ask *¿Cómo es el dolor?* Patients say *es como una opresión / una presión*, *como un peso*, *apretado*, *un ardor* (burning), *una punzada* (a sharp, stabbing pain). For radiation ask *¿Se le corre a otra parte?* or *¿Se le va al brazo?* The patient answers *se me corre…* / *se me va…*: *me* because it is their own body.",
+      "ex": [
+        [
+          "Es como un peso en el pecho.",
+          "It's like a weight on my chest."
+        ],
+        [
+          "¿El dolor se le corre al brazo o a la mandíbula?",
+          "Does the pain spread to your arm or your jaw?"
+        ],
+        [
+          "Se me va al brazo izquierdo.",
+          "It goes to my left arm."
+        ]
+      ]
+    },
+    {
+      "h": "Timing, triggers and relief",
+      "p": "*Constante* = always there; *va y viene* = comes and goes; *de repente* = suddenly; *poco a poco* = gradually. *Al* + infinitive means 'when / on doing': *al caminar*, *al subir escaleras*, *al acostarse*. Other triggers: *con el esfuerzo* (with exertion), *en reposo* (at rest). For relief: *¿Se le quita con el descanso?* (Does it go away with rest?) and *¿Empeora con algo?* (Does anything make it worse?).",
+      "ex": [
+        [
+          "¿Es constante o va y viene?",
+          "Is it constant, or does it come and go?"
+        ],
+        [
+          "Me duele más al subir escaleras.",
+          "It hurts more when I climb stairs."
+        ],
+        [
+          "Me siento y se me quita.",
+          "I sit down and it goes away."
+        ]
+      ]
+    },
+    {
+      "h": "Setting the scene: estaba / hacía (chunks)",
+      "p": "To ask what the patient was doing when a symptom began, the background uses the imperfect and the event uses the preterite: *¿Qué hacía cuando empezó?* — *Estaba en el trabajo cuando empezó.* You will study the imperfect fully in C4; for now learn *estaba*, *hacía* and *¿Qué hacía cuando…?* as fixed chunks. Compare *¿Qué hizo cuando empezó?* = 'What did you DO (in response) when it started?'",
+      "ex": [
+        [
+          "¿Qué hacía cuando empezó el dolor?",
+          "What were you doing when the pain started?"
+        ],
+        [
+          "Estaba en la casa cuando me dio.",
+          "I was at home when it came on."
+        ],
+        [
+          "¿Qué hizo cuando empezó el dolor?",
+          "What did you do when the pain started?"
+        ]
+      ]
+    }
+  ],
+  "vocab": [
+    [
+      "empezar (empezó / empecé)",
+      "to start (it started / I started)"
+    ],
+    [
+      "comenzar",
+      "to begin"
+    ],
+    [
+      "¿Cuándo empezó?",
+      "When did it start?"
+    ],
+    [
+      "hace dos días",
+      "two days ago"
+    ],
+    [
+      "desde hace una semana",
+      "for a week (and still ongoing)"
+    ],
+    [
+      "¿Desde cuándo?",
+      "Since when? / How long?"
+    ],
+    [
+      "anoche",
+      "last night"
+    ],
+    [
+      "ayer en la tarde",
+      "yesterday afternoon"
+    ],
+    [
+      "la semana pasada",
+      "last week"
+    ],
+    [
+      "el mes pasado",
+      "last month"
+    ],
+    [
+      "la primera vez",
+      "the first time"
+    ],
+    [
+      "la última vez",
+      "the last time"
+    ],
+    [
+      "otra vez",
+      "again"
+    ],
+    [
+      "durar (duró)",
+      "to last (it lasted)"
+    ],
+    [
+      "de repente",
+      "suddenly"
+    ],
+    [
+      "poco a poco",
+      "gradually"
+    ],
+    [
+      "constante",
+      "constant"
+    ],
+    [
+      "va y viene",
+      "it comes and goes"
+    ],
+    [
+      "la opresión",
+      "pressure / tightness"
+    ],
+    [
+      "la presión",
+      "pressure"
+    ],
+    [
+      "como un peso",
+      "like a weight"
+    ],
+    [
+      "apretado",
+      "tight"
+    ],
+    [
+      "el ardor",
+      "burning"
+    ],
+    [
+      "la punzada",
+      "a sharp, stabbing pain"
+    ],
+    [
+      "el centro del pecho",
+      "the middle of the chest"
+    ],
+    [
+      "se le corre / se le va (a)",
+      "it spreads / it goes (to) — asking the patient"
+    ],
+    [
+      "se me corre / se me va (a)",
+      "it spreads / it goes (to) — patient speaking"
+    ],
+    [
+      "al caminar",
+      "when walking"
+    ],
+    [
+      "al subir escaleras",
+      "when climbing stairs"
+    ],
+    [
+      "al acostarse",
+      "when lying down"
+    ],
+    [
+      "con el esfuerzo",
+      "with exertion"
+    ],
+    [
+      "en reposo",
+      "at rest"
+    ],
+    [
+      "descansar / el descanso",
+      "to rest / rest"
+    ],
+    [
+      "se le quita / se me quita",
+      "it goes away (for you / for me)"
+    ],
+    [
+      "empeorar",
+      "to get worse"
+    ],
+    [
+      "mejorar",
+      "to get better"
+    ],
+    [
+      "sentir (sintió / sentí)",
+      "to feel (you felt / I felt)"
+    ],
+    [
+      "el sudor / sudar",
+      "sweat / to sweat"
+    ],
+    [
+      "vomitar",
+      "to vomit"
+    ],
+    [
+      "las palpitaciones",
+      "palpitations"
+    ],
+    [
+      "la sala de emergencias",
+      "the emergency room"
+    ],
+    [
+      "la pastilla",
+      "the pill"
+    ]
+  ],
+  "phrases": [
+    [
+      "¿Cuándo empezó el dolor?",
+      "When did the pain start?"
+    ],
+    [
+      "¿Desde cuándo tiene el dolor?",
+      "How long have you had the pain?"
+    ],
+    [
+      "¿Qué hacía cuando empezó?",
+      "What were you doing when it started?"
+    ],
+    [
+      "¿Empezó de repente o poco a poco?",
+      "Did it start suddenly or gradually?"
+    ],
+    [
+      "¿Cómo es el dolor?",
+      "What is the pain like?"
+    ],
+    [
+      "¿Es como una opresión, un ardor o una punzada?",
+      "Is it like pressure, burning or a stabbing pain?"
+    ],
+    [
+      "¿Se le corre a otra parte?",
+      "Does it spread anywhere else?"
+    ],
+    [
+      "¿Es constante o va y viene?",
+      "Is it constant, or does it come and go?"
+    ],
+    [
+      "¿Empeora al caminar o con el esfuerzo?",
+      "Does it get worse when you walk or with exertion?"
+    ],
+    [
+      "¿Se le quita con el descanso?",
+      "Does it go away with rest?"
+    ],
+    [
+      "¿Cuánto tiempo le duró?",
+      "How long did it last?"
+    ],
+    [
+      "Del cero al diez, ¿qué tan fuerte fue?",
+      "From zero to ten, how strong was it?"
+    ],
+    [
+      "¿Tuvo sudor, náuseas o falta de aire?",
+      "Did you have sweating, nausea or shortness of breath?"
+    ],
+    [
+      "¿Es la primera vez?",
+      "Is this the first time?"
+    ],
+    [
+      "¿Tiene el dolor ahora?",
+      "Do you have the pain right now?"
+    ]
+  ],
+  "items": [
+    {
+      "id": "M2-mc-01",
+      "t": "mc",
+      "q": "¿Cuándo ___ el dolor?",
+      "qen": "When did the pain start?",
+      "opts": [
+        "empieza",
+        "empecé",
+        "va a empezar",
+        "empezó"
+      ],
+      "a": 3,
+      "why": "A past event, asked of the patient (usted) → empezó. Empecé is 'I started'."
+    },
+    {
+      "id": "M2-mc-02",
+      "t": "mc",
+      "q": "El dolor empezó ___ dos días.",
+      "qen": "The pain started two days ago.",
+      "opts": [
+        "desde",
+        "por",
+        "hace",
+        "en"
+      ],
+      "a": 2,
+      "why": "'Ago' = hace + time. En dos días would mean 'in two days'."
+    },
+    {
+      "id": "M2-mc-03",
+      "t": "mc",
+      "q": "Which sentence means 'I've had the pain for a week'?",
+      "opts": [
+        "Tengo el dolor desde hace una semana.",
+        "Tuve el dolor desde hace una semana.",
+        "Tengo el dolor desde una semana.",
+        "Tengo el dolor por hace una semana."
+      ],
+      "a": 0,
+      "why": "Something still going on → present (tengo) + desde hace + time."
+    },
+    {
+      "id": "M2-mc-04",
+      "t": "mc",
+      "q": "Ask a patient: 'How long have you had the pain?'",
+      "opts": [
+        "¿Desde cuándo tuvo el dolor?",
+        "¿Cuándo tiene el dolor?",
+        "¿Desde cuándo tiene el dolor?",
+        "¿Desde cuándo tienes el dolor?"
+      ],
+      "a": 2,
+      "why": "Ongoing → present tiene; usted, not tú. ¿Cuándo tiene el dolor? asks WHEN (at what times) you get it."
+    },
+    {
+      "id": "M2-mc-05",
+      "t": "mc",
+      "q": "A patient says: 'Es como un peso en el pecho.' What is she describing?",
+      "opts": [
+        "A burning in her chest",
+        "A weight on her chest",
+        "A stabbing pain in her chest",
+        "A pressure in her stomach"
+      ],
+      "a": 1,
+      "why": "Como un peso = like a weight; el pecho = the chest."
+    },
+    {
+      "id": "M2-mc-06",
+      "t": "mc",
+      "q": "El ardor means…",
+      "opts": [
+        "stabbing",
+        "numbness",
+        "tightness",
+        "burning"
+      ],
+      "a": 3,
+      "why": "Ardor = burning (e.g. heartburn: ardor en el pecho / agruras)."
+    },
+    {
+      "id": "M2-mc-07",
+      "t": "mc",
+      "q": "Una punzada is…",
+      "opts": [
+        "a sharp, stabbing pain",
+        "a dull ache",
+        "a burning pain",
+        "a cramp"
+      ],
+      "a": 0,
+      "why": "Punzada = a sharp, stabbing pain. A cramp is un calambre."
+    },
+    {
+      "id": "M2-mc-08",
+      "t": "mc",
+      "q": "¿El dolor se le ___ al brazo?",
+      "qen": "Does the pain spread to your arm?",
+      "opts": [
+        "corres",
+        "corrió",
+        "corren",
+        "corre"
+      ],
+      "a": 3,
+      "why": "Present, third-person singular (el dolor) → se le corre. Corrió is past ('did it spread'); corres is tú; corren is plural."
+    },
+    {
+      "id": "M2-mc-09",
+      "t": "mc",
+      "q": "A patient says: 'Va y viene.' What does she mean?",
+      "opts": [
+        "It's constant.",
+        "It comes and goes.",
+        "It came yesterday.",
+        "It goes to my arm."
+      ],
+      "a": 1,
+      "why": "Va y viene = it comes and goes (intermittent)."
+    },
+    {
+      "id": "M2-mc-10",
+      "t": "mc",
+      "q": "Me duele ___ caminar.",
+      "qen": "It hurts when I walk.",
+      "opts": [
+        "cuando",
+        "en",
+        "al",
+        "a la"
+      ],
+      "a": 2,
+      "why": "Al + infinitive = when doing something: al caminar. Cuando would need a conjugated verb (cuando camino)."
+    },
+    {
+      "id": "M2-mc-11",
+      "t": "mc",
+      "q": "Ayer ___ un dolor muy fuerte en el pecho.",
+      "qen": "Yesterday I felt a very strong pain in my chest.",
+      "opts": [
+        "siento",
+        "sintió",
+        "sentiré",
+        "sentí"
+      ],
+      "a": 3,
+      "why": "Ayer + a completed event, yo → sentí. Sintió is usted/he/she."
+    },
+    {
+      "id": "M2-mc-12",
+      "t": "mc",
+      "q": "¿Cuánto tiempo le ___ el dolor?",
+      "qen": "How long did the pain last?",
+      "opts": [
+        "dura",
+        "duró",
+        "duré",
+        "durará"
+      ],
+      "a": 1,
+      "why": "Finished episode → preterite duró. Dura = how long does it (usually) last."
+    },
+    {
+      "id": "M2-mc-13",
+      "t": "mc",
+      "q": "Which question asks about relief?",
+      "opts": [
+        "¿Se le quita con el descanso?",
+        "¿Empeora al caminar?",
+        "¿Se le corre al brazo?",
+        "¿Cuándo empezó?"
+      ],
+      "a": 0,
+      "why": "¿Se le quita con el descanso? = Does it go away with rest? The others ask about triggers, radiation and onset."
+    },
+    {
+      "id": "M2-mc-14",
+      "t": "mc",
+      "q": "¿Qué ___ cuando empezó el dolor?",
+      "qen": "What were you doing when the pain started?",
+      "opts": [
+        "hizo",
+        "hacía",
+        "hace",
+        "hará"
+      ],
+      "a": 1,
+      "why": "The background activity ('were doing') uses the chunk hacía. ¿Qué hizo cuando empezó? means 'What did you do (in response)?'"
+    },
+    {
+      "id": "M2-mc-15",
+      "t": "mc",
+      "q": "Anoche ___ a la sala de emergencias.",
+      "qen": "Last night I went to the emergency room.",
+      "opts": [
+        "voy",
+        "fue",
+        "iba",
+        "fui"
+      ],
+      "a": 3,
+      "why": "Anoche + completed trip, yo → fui. Fue is usted/he/she."
+    },
+    {
+      "id": "M2-mc-16",
+      "t": "mc",
+      "q": "¿___ a la sala de emergencias?",
+      "qen": "Did you go to the emergency room? (to a patient)",
+      "opts": [
+        "Fui",
+        "Va",
+        "Fue",
+        "Fuiste"
+      ],
+      "a": 2,
+      "why": "Usted, preterite of ir → fue. Fuiste is tú; va is present."
+    },
+    {
+      "id": "M2-mc-17",
+      "t": "mc",
+      "q": "A patient says: 'El dolor empezó en el pecho y se me fue a la mandíbula.' What happened?",
+      "opts": [
+        "It started in the jaw and went to the chest.",
+        "It started in the chest and spread to the jaw.",
+        "It started in the chest and went away.",
+        "It started in the chest and spread to the left arm."
+      ],
+      "a": 1,
+      "why": "Se me fue a la mandíbula = it went to my jaw (radiation). 'Went away' would be se me fue / se me quitó with no destination."
+    },
+    {
+      "id": "M2-mc-18",
+      "t": "mc",
+      "q": "Which word describes a pain that is always there?",
+      "opts": [
+        "va y viene",
+        "de repente",
+        "constante",
+        "a veces"
+      ],
+      "a": 2,
+      "why": "Constante = constant. Va y viene and a veces describe intermittent pain; de repente = suddenly."
+    },
+    {
+      "id": "M2-mc-19",
+      "t": "mc",
+      "q": "'¿El dolor empezó de repente o poco a poco?' means…",
+      "opts": [
+        "Does the pain come often or rarely?",
+        "Did the pain start in the morning or in the afternoon?",
+        "Did the pain go away suddenly or little by little?",
+        "Did the pain start suddenly or gradually?"
+      ],
+      "a": 3,
+      "why": "Empezó = started; de repente = suddenly; poco a poco = gradually."
+    },
+    {
+      "id": "M2-mc-20",
+      "t": "mc",
+      "q": "A patient says: 'Me empezó a doler cuando estaba en el trabajo.' What does he mean?",
+      "opts": [
+        "It started hurting while I was at work.",
+        "It hurts every time I'm at work.",
+        "It stopped hurting when I got to work.",
+        "It started hurting after I left work."
+      ],
+      "a": 0,
+      "why": "Empezó = started (the event); estaba en el trabajo = I was at work (the background)."
+    },
+    {
+      "id": "M2-fill-01",
+      "t": "fill",
+      "q": "¿Cuándo ___ el dolor?",
+      "en": "When did the pain start?",
+      "hint": "empezar (preterite)",
+      "a": [
+        "empezó"
+      ],
+      "why": "Past event, usted/el dolor → empezó."
+    },
+    {
+      "id": "M2-fill-02",
+      "t": "fill",
+      "q": "Empezó ___ dos días.",
+      "en": "It started two days ago.",
+      "hint": "ago",
+      "a": [
+        "hace"
+      ],
+      "why": "Hace + time = ago."
+    },
+    {
+      "id": "M2-fill-03",
+      "t": "fill",
+      "q": "Tengo palpitaciones desde ___ un mes.",
+      "en": "I've had palpitations for a month.",
+      "hint": "desde ___ + time",
+      "a": [
+        "hace"
+      ],
+      "why": "Ongoing → present + desde hace + time."
+    },
+    {
+      "id": "M2-fill-04",
+      "t": "fill",
+      "q": "¿Desde ___ tiene la falta de aire?",
+      "en": "How long have you had the shortness of breath?",
+      "hint": "when",
+      "a": [
+        "cuándo"
+      ],
+      "why": "¿Desde cuándo? = since when / how long. Question words carry an accent."
+    },
+    {
+      "id": "M2-fill-05",
+      "t": "fill",
+      "q": "Ayer ___ un dolor muy fuerte.",
+      "en": "Yesterday I felt a very strong pain.",
+      "hint": "sentir (yo, preterite)",
+      "a": [
+        "sentí"
+      ],
+      "why": "Ayer + completed event, yo → sentí."
+    },
+    {
+      "id": "M2-fill-06",
+      "t": "fill",
+      "q": "¿Cuánto tiempo le ___ el dolor?",
+      "en": "How long did the pain last?",
+      "hint": "durar (preterite)",
+      "a": [
+        "duró"
+      ],
+      "why": "Finished episode → preterite duró."
+    },
+    {
+      "id": "M2-fill-07",
+      "t": "fill",
+      "q": "Es como un ___ en el pecho.",
+      "en": "It's like a weight on my chest.",
+      "hint": "weight",
+      "a": [
+        "peso"
+      ],
+      "why": "Como un peso = like a weight."
+    },
+    {
+      "id": "M2-fill-08",
+      "t": "fill",
+      "q": "Siento una ___ en el pecho.",
+      "en": "I feel pressure in my chest.",
+      "hint": "pressure",
+      "a": [
+        "presión",
+        "opresión"
+      ],
+      "why": "Both presión and opresión describe chest pressure/tightness."
+    },
+    {
+      "id": "M2-fill-09",
+      "t": "fill",
+      "q": "¿El dolor se le ___ al brazo izquierdo?",
+      "en": "Does the pain spread to your left arm?",
+      "hint": "correr (present)",
+      "a": [
+        "corre"
+      ],
+      "why": "Present, el dolor → se le corre."
+    },
+    {
+      "id": "M2-fill-10",
+      "t": "fill",
+      "q": "¿El dolor es constante o va y ___?",
+      "en": "Is the pain constant, or does it come and go?",
+      "hint": "venir",
+      "a": [
+        "viene"
+      ],
+      "why": "Va y viene = comes and goes."
+    },
+    {
+      "id": "M2-fill-11",
+      "t": "fill",
+      "q": "Me duele más ___ caminar.",
+      "en": "It hurts more when I walk.",
+      "hint": "when (+ infinitive)",
+      "a": [
+        "al"
+      ],
+      "why": "Al + infinitive = when doing something."
+    },
+    {
+      "id": "M2-fill-12",
+      "t": "fill",
+      "q": "¿Se le quita con el ___?",
+      "en": "Does it go away with rest?",
+      "hint": "rest",
+      "a": [
+        "descanso",
+        "reposo"
+      ],
+      "why": "Rest = el descanso or el reposo."
+    },
+    {
+      "id": "M2-fill-13",
+      "t": "fill",
+      "q": "Anoche ___ a la sala de emergencias.",
+      "en": "Last night I went to the emergency room.",
+      "hint": "ir (yo, preterite)",
+      "a": [
+        "fui"
+      ],
+      "why": "Anoche + completed trip, yo → fui."
+    },
+    {
+      "id": "M2-fill-14",
+      "t": "fill",
+      "q": "¿___ algo para el dolor?",
+      "en": "Did you take anything for the pain?",
+      "hint": "tomar (usted, preterite)",
+      "a": [
+        "Tomó",
+        "tomó"
+      ],
+      "why": "Usted, preterite → tomó."
+    },
+    {
+      "id": "M2-fill-15",
+      "t": "fill",
+      "q": "El dolor empezó de ___.",
+      "en": "The pain started suddenly.",
+      "hint": "suddenly: de ___",
+      "a": [
+        "repente",
+        "golpe"
+      ],
+      "why": "De repente (or de golpe) = suddenly."
+    },
+    {
+      "id": "M2-fill-16",
+      "t": "fill",
+      "q": "¿El dolor empeora con el ___?",
+      "en": "Does the pain get worse with exertion?",
+      "hint": "exertion",
+      "a": [
+        "esfuerzo",
+        "ejercicio"
+      ],
+      "why": "Con el esfuerzo = with exertion (con el ejercicio, 'with exercise', is also fine)."
+    },
+    {
+      "id": "M2-fill-17",
+      "t": "fill",
+      "q": "¿Le duele cuando se ___?",
+      "en": "Does it hurt when you lie down?",
+      "hint": "acostarse (usted, present)",
+      "a": [
+        "acuesta"
+      ],
+      "why": "Acostarse is stem-changing (o → ue): usted se acuesta."
+    },
+    {
+      "id": "M2-fill-18",
+      "t": "fill",
+      "q": "Cuando le dio el dolor, ¿___ náuseas o sudor?",
+      "en": "When the pain came on, did you have nausea or sweating?",
+      "hint": "tener (usted, preterite)",
+      "a": [
+        "tuvo"
+      ],
+      "why": "Asking about the past episode, usted → tuvo (irregular preterite of tener)."
+    },
+    {
+      "id": "M2-fill-19",
+      "t": "fill",
+      "q": "El lunes pasado ___ un dolor fuerte en el pecho.",
+      "en": "Last Monday I had a strong pain in my chest.",
+      "hint": "tener (yo, preterite)",
+      "a": [
+        "tuve"
+      ],
+      "why": "El lunes pasado + completed event, yo → tuve."
+    },
+    {
+      "id": "M2-fill-20",
+      "t": "fill",
+      "q": "¿Qué ___ cuando empezó el dolor?",
+      "en": "What were you doing when the pain started?",
+      "hint": "hacer (usted) — background, 'were doing'",
+      "a": [
+        "hacía",
+        "estaba haciendo"
+      ],
+      "why": "The background activity uses the chunk hacía (estaba haciendo is also correct). Hizo would mean 'what did you do (in response)'."
+    },
+    {
+      "id": "M2-tiles-01",
+      "t": "tiles",
+      "en": "When did the pain start?",
+      "a": "¿Cuándo empezó el dolor?",
+      "alt": [
+        "¿El dolor cuándo empezó?"
+      ],
+      "extra": [
+        "empecé",
+        "empiezo"
+      ]
+    },
+    {
+      "id": "M2-tiles-02",
+      "t": "tiles",
+      "en": "The pain started two days ago.",
+      "a": "El dolor empezó hace dos días.",
+      "alt": [
+        "Hace dos días empezó el dolor.",
+        "Empezó el dolor hace dos días.",
+        "Hace dos días el dolor empezó."
+      ],
+      "extra": [
+        "hizo",
+        "empecé"
+      ]
+    },
+    {
+      "id": "M2-tiles-03",
+      "t": "tiles",
+      "en": "I've had the pain for three days.",
+      "a": "Tengo el dolor desde hace tres días.",
+      "alt": [
+        "Desde hace tres días tengo el dolor."
+      ],
+      "extra": [
+        "tuve",
+        "hizo"
+      ]
+    },
+    {
+      "id": "M2-tiles-04",
+      "t": "tiles",
+      "en": "It's like a weight on my chest.",
+      "a": "Es como un peso en el pecho.",
+      "alt": [],
+      "extra": [
+        "una",
+        "está"
+      ]
+    },
+    {
+      "id": "M2-tiles-05",
+      "t": "tiles",
+      "en": "Does the pain spread to your left arm?",
+      "a": "¿El dolor se le corre al brazo izquierdo?",
+      "alt": [
+        "¿Se le corre el dolor al brazo izquierdo?",
+        "¿Se le corre al brazo izquierdo el dolor?"
+      ],
+      "extra": [
+        "te",
+        "corres"
+      ]
+    },
+    {
+      "id": "M2-tiles-06",
+      "t": "tiles",
+      "en": "Is it constant, or does it come and go?",
+      "a": "¿Es constante o va y viene?",
+      "alt": [],
+      "extra": [
+        "vino",
+        "fue"
+      ]
+    },
+    {
+      "id": "M2-tiles-07",
+      "t": "tiles",
+      "en": "It hurts more when I climb stairs.",
+      "a": "Me duele más al subir escaleras.",
+      "alt": [
+        "Al subir escaleras me duele más."
+      ],
+      "extra": [
+        "subí",
+        "duelen"
+      ]
+    },
+    {
+      "id": "M2-tiles-08",
+      "t": "tiles",
+      "en": "Does it go away when you rest?",
+      "a": "¿Se le quita cuando descansa?",
+      "alt": [
+        "¿Cuando descansa, se le quita?"
+      ],
+      "extra": [
+        "descanso",
+        "te"
+      ]
+    },
+    {
+      "id": "M2-tiles-09",
+      "t": "tiles",
+      "en": "Yesterday I felt pain in my chest.",
+      "a": "Ayer sentí dolor en el pecho.",
+      "alt": [
+        "Sentí dolor en el pecho ayer."
+      ],
+      "extra": [
+        "siento",
+        "sintió"
+      ]
+    },
+    {
+      "id": "M2-tiles-10",
+      "t": "tiles",
+      "en": "How long did the pain last?",
+      "a": "¿Cuánto tiempo le duró el dolor?",
+      "alt": [
+        "¿El dolor cuánto tiempo le duró?"
+      ],
+      "extra": [
+        "dura",
+        "duré"
+      ]
+    },
+    {
+      "id": "M2-tiles-11",
+      "t": "tiles",
+      "en": "What were you doing when it started?",
+      "a": "¿Qué hacía cuando empezó?",
+      "alt": [
+        "¿Cuando empezó, qué hacía?"
+      ],
+      "extra": [
+        "hizo",
+        "empecé"
+      ]
+    },
+    {
+      "id": "M2-tiles-12",
+      "t": "tiles",
+      "en": "I was at work when the pain started.",
+      "a": "Estaba en el trabajo cuando empezó el dolor.",
+      "alt": [
+        "Cuando empezó el dolor, estaba en el trabajo.",
+        "Estaba en el trabajo cuando el dolor empezó.",
+        "Cuando el dolor empezó, estaba en el trabajo."
+      ],
+      "extra": [
+        "estuve",
+        "empecé"
+      ]
+    },
+    {
+      "id": "M2-tiles-13",
+      "t": "tiles",
+      "en": "Did you have nausea with the pain?",
+      "a": "¿Tuvo náuseas con el dolor?",
+      "alt": [
+        "¿Con el dolor tuvo náuseas?"
+      ],
+      "extra": [
+        "tuve",
+        "tuviste"
+      ]
+    },
+    {
+      "id": "M2-tiles-14",
+      "t": "tiles",
+      "en": "The pain goes to my jaw.",
+      "a": "El dolor se me va a la mandíbula.",
+      "alt": [
+        "Se me va el dolor a la mandíbula.",
+        "Se me va a la mandíbula el dolor."
+      ],
+      "extra": [
+        "te",
+        "van"
+      ]
+    },
+    {
+      "id": "M2-tiles-15",
+      "t": "tiles",
+      "en": "I took a pill and the pain went away.",
+      "a": "Tomé una pastilla y se me quitó el dolor.",
+      "alt": [
+        "Tomé una pastilla y el dolor se me quitó."
+      ],
+      "extra": [
+        "tomó",
+        "quita"
+      ]
+    },
+    {
+      "id": "M2-tiles-16",
+      "t": "tiles",
+      "en": "Did you go to the emergency room?",
+      "a": "¿Fue a la sala de emergencias?",
+      "alt": [],
+      "extra": [
+        "fui",
+        "va"
+      ]
+    },
+    {
+      "id": "M2-listen-01",
+      "t": "listen",
+      "say": "Empezó hace dos horas.",
+      "opts": [
+        "It started at two o'clock.",
+        "It started two hours ago.",
+        "It has lasted two hours.",
+        "It started two days ago."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M2-listen-02",
+      "t": "listen",
+      "say": "Tengo el dolor desde hace una semana.",
+      "opts": [
+        "I had the pain a week ago.",
+        "The pain started last month.",
+        "I've had the pain for a week.",
+        "I'll have the pain for a week."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M2-listen-03",
+      "t": "listen",
+      "say": "Es como un ardor en el pecho.",
+      "opts": [
+        "It's like a weight on my chest.",
+        "It's like a stabbing in my chest.",
+        "It's like a burning in my stomach.",
+        "It's like a burning in my chest."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M2-listen-04",
+      "t": "listen",
+      "say": "Me duele más al acostarme.",
+      "opts": [
+        "It hurts more when I lie down.",
+        "It hurts less when I lie down.",
+        "It hurts more when I walk.",
+        "It hurt more when I lay down."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M2-listen-05",
+      "t": "listen",
+      "say": "Me dio el dolor cuando estaba en la escalera.",
+      "opts": [
+        "The pain came on after I left the stairs.",
+        "I get the pain when I climb the stairs.",
+        "The pain came on when I was on the stairs.",
+        "I fell on the stairs because of the pain."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M2-listen-06",
+      "t": "listen",
+      "say": "El dolor se me corre al brazo izquierdo y a la mandíbula.",
+      "opts": [
+        "The pain spreads to my right arm and my neck.",
+        "The pain spreads to my left arm and my jaw.",
+        "The pain started in my left arm and my jaw.",
+        "The pain spreads to my left shoulder and my back."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M2-listen-07",
+      "t": "listen",
+      "say": "Duró como veinte minutos y se me quitó solo.",
+      "opts": [
+        "It lasted about two minutes and went away by itself.",
+        "It lasts twenty minutes and goes away with a pill.",
+        "It started twenty minutes ago and hasn't gone away.",
+        "It lasted about twenty minutes and went away on its own."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M2-listen-08",
+      "t": "listen",
+      "say": "Va y viene, pero hoy es constante.",
+      "opts": [
+        "It comes and goes, but today it's constant.",
+        "It's constant, but today it comes and goes.",
+        "It came and went yesterday, and today it's gone.",
+        "It comes and goes, especially in the evening."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M2-listen-09",
+      "t": "listen",
+      "say": "Sudé mucho y tuve náuseas.",
+      "opts": [
+        "I'm sweating a lot and I have nausea.",
+        "I slept a lot and had nausea.",
+        "I sweated a lot and had nausea.",
+        "I was very hot and threw up."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M2-listen-10",
+      "t": "listen",
+      "say": "Mi esposo me llevó al hospital anoche.",
+      "opts": [
+        "My husband takes me to the hospital every night.",
+        "My husband took me to the hospital last night.",
+        "I took my husband to the hospital last night.",
+        "My husband called the hospital last night."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M2-dlg-01",
+      "t": "dlg",
+      "title": "When did it start?",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Doctor, tengo un dolor en el pecho.",
+          "en": "Doctor, I have a pain in my chest."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuándo empezó?",
+            "¿Cuándo empecé?",
+            "¿Cuándo va a empezar?"
+          ],
+          "a": 0,
+          "why": "Ask about onset with usted preterite: empezó."
+        },
+        {
+          "who": "Paciente",
+          "es": "Empezó ayer en la tarde, cuando estaba en el trabajo.",
+          "en": "It started yesterday afternoon, when I was at work."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y cuánto tiempo te duró?",
+            "¿Y cuánto tiempo le duró?",
+            "¿Y cuánto tiempo me duró?"
+          ],
+          "a": 1,
+          "why": "Usted → le duró. Te is tú; me would ask about your own pain."
+        },
+        {
+          "who": "Paciente",
+          "es": "Como media hora. Luego se me quitó.",
+          "en": "About half an hour. Then it went away."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Tuviste el dolor otra vez hoy?",
+            "¿Tengo el dolor otra vez hoy?",
+            "¿Tuvo el dolor otra vez hoy?"
+          ],
+          "a": 2,
+          "why": "A finished event today → preterite, usted: ¿Tuvo…?"
+        }
+      ]
+    },
+    {
+      "id": "M2-dlg-02",
+      "t": "dlg",
+      "title": "What does it feel like?",
+      "turns": [
+        {
+          "who": "Sra. Morales",
+          "es": "Me duele aquí, en el centro del pecho.",
+          "en": "It hurts here, in the middle of my chest."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cómo es el dolor? ¿Como una opresión o como una punzada?",
+            "¿Dónde le duele?",
+            "¿Cuándo es el dolor? ¿Como una opresión o como una punzada?"
+          ],
+          "a": 0,
+          "why": "She already told you where; now ask about character with ¿Cómo es…?"
+        },
+        {
+          "who": "Sra. Morales",
+          "es": "Es como un peso, como algo apretado.",
+          "en": "It's like a weight, like something tight."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿El dolor se te corre a otra parte?",
+            "¿El dolor se me corre a otra parte?",
+            "¿El dolor se le corre a otra parte?"
+          ],
+          "a": 2,
+          "why": "Ask about radiation with usted: se le corre."
+        },
+        {
+          "who": "Sra. Morales",
+          "es": "Sí, a veces se me va al brazo izquierdo.",
+          "en": "Yes, sometimes it goes to my left arm."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y tiene falta de aire o sudor sin el dolor?",
+            "¿Y tiene falta de aire o sudor con el dolor?",
+            "¿Y tienes falta de aire o sudor con el dolor?"
+          ],
+          "a": 1,
+          "why": "Ask about associated symptoms WITH the pain (con), using usted."
+        }
+      ]
+    },
+    {
+      "id": "M2-dlg-03",
+      "t": "dlg",
+      "title": "What brings it on?",
+      "turns": [
+        {
+          "who": "Sr. Castillo",
+          "es": "El dolor me da cuando camino.",
+          "en": "The pain comes on when I walk."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y se le quita cuando descansa?",
+            "¿Y se le quita cuando camina?",
+            "¿Y se te quita cuando descansas?"
+          ],
+          "a": 0,
+          "why": "Ask about relief with rest, using usted (descansa, se le)."
+        },
+        {
+          "who": "Sr. Castillo",
+          "es": "Sí, descanso unos minutos y se me quita.",
+          "en": "Yes, I rest for a few minutes and it goes away."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuántas cuadras puedes caminar antes del dolor?",
+            "¿Cuántas cuadras puedo caminar antes del dolor?",
+            "¿Cuántas cuadras puede caminar antes del dolor?"
+          ],
+          "a": 2,
+          "why": "Usted → puede. Puedes is tú; puedo asks about yourself."
+        },
+        {
+          "who": "Sr. Castillo",
+          "es": "Como dos cuadras. Antes podía caminar mucho más.",
+          "en": "About two blocks. Before, I could walk a lot more."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuándo notaste el cambio?",
+            "¿Cuándo notó el cambio?",
+            "¿Cuándo nota el cambio mañana?"
+          ],
+          "a": 1,
+          "why": "A past moment, usted → notó."
+        }
+      ]
+    },
+    {
+      "id": "M2-dlg-04",
+      "t": "dlg",
+      "title": "A racing heart last night",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Anoche sentí el corazón muy rápido.",
+          "en": "Last night I felt my heart racing."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y qué hacía cuando empezó?",
+            "¿Y qué hace cuando empieza mañana?",
+            "¿Y qué hiciste cuando empezó?"
+          ],
+          "a": 0,
+          "why": "Ask what she was doing (background: hacía) with usted. Hiciste is tú."
+        },
+        {
+          "who": "Paciente",
+          "es": "Estaba sentada en el sillón.",
+          "en": "I was sitting in the armchair."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Empieza de repente o poco a poco mañana?",
+            "¿Empecé de repente o poco a poco?",
+            "¿Empezó de repente o poco a poco?"
+          ],
+          "a": 2,
+          "why": "Ask how last night's episode began: preterite empezó."
+        },
+        {
+          "who": "Paciente",
+          "es": "De repente. Y se me quitó de repente también, después de una hora.",
+          "en": "Suddenly. And it went away suddenly too, after an hour."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Tiene mareo o falta de aire mañana?",
+            "¿Tuvo mareo o falta de aire?",
+            "¿Tuviste mareo o falta de aire?"
+          ],
+          "a": 1,
+          "why": "Associated symptoms during the past episode, usted → tuvo."
+        }
+      ]
+    },
+    {
+      "id": "M2-dlg-05",
+      "t": "dlg",
+      "title": "Talking with a daughter",
+      "turns": [
+        {
+          "who": "Hija",
+          "es": "Doctor, a mi papá le dio un dolor muy fuerte en el pecho el domingo.",
+          "en": "Doctor, my dad got a very strong chest pain on Sunday."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuánto tiempo me duró?",
+            "¿Cuánto tiempo le duró?",
+            "¿Cuánto tiempo le dura mañana?"
+          ],
+          "a": 1,
+          "why": "About her father's finished episode → le duró."
+        },
+        {
+          "who": "Hija",
+          "es": "Como una hora. Él no quiso ir al hospital.",
+          "en": "About an hour. He refused to go to the hospital."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y tomó algo para el dolor?",
+            "¿Y tomé algo para el dolor?",
+            "¿Y toma algo para el dolor el domingo?"
+          ],
+          "a": 0,
+          "why": "Did he take anything → preterite tomó."
+        },
+        {
+          "who": "Hija",
+          "es": "Sí, una aspirina. Después se sintió mejor.",
+          "en": "Yes, an aspirin. Afterwards he felt better."
+        }
+      ]
+    },
+    {
+      "id": "M2-dlg-06",
+      "t": "dlg",
+      "title": "How bad was it?",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Cuando me dio el dolor, sudé mucho.",
+          "en": "When the pain came on, I sweated a lot."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Del cero al diez, ¿qué tan fuerte fuiste?",
+            "Del cero al diez, ¿qué tan fuerte es el dolor ayer?",
+            "Del cero al diez, ¿qué tan fuerte fue el dolor?"
+          ],
+          "a": 2,
+          "why": "Severity of a past episode → fue el dolor."
+        },
+        {
+          "who": "Paciente",
+          "es": "Un nueve. Fue el peor dolor de mi vida.",
+          "en": "A nine. It was the worst pain of my life."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y tuvo náuseas o vómito también?",
+            "¿Y tuvo náuseas o vómito tampoco?",
+            "¿Y tengo náuseas o vómito también?"
+          ],
+          "a": 0,
+          "why": "Also = también; past episode, usted → tuvo."
+        },
+        {
+          "who": "Paciente",
+          "es": "Sí, vomité una vez.",
+          "en": "Yes, I vomited once."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Tiene el dolor ahora?",
+            "¿Tuvo el dolor ahora?",
+            "¿Tienes el dolor ahora?"
+          ],
+          "a": 0,
+          "why": "Right now → present tiene, usted. A severe pain with sweating and vomiting needs to know if it is ongoing."
+        }
+      ]
+    }
+  ],
+  "roleplay": [
+    {
+      "title": "Chest pressure with walking",
+      "setup": "You are the cardiologist. A man was referred for chest pain. Take the full story: onset, character, location and radiation, duration, triggers and relief, and associated symptoms.",
+      "persona": "You play Don Arturo Salinas, 62, from Michoacán, Mexico; you work in construction in Chicago. For about three weeks ('desde hace como tres semanas') you get a pressure in the middle of the chest, 'como un peso', when you walk uphill, climb stairs, or carry heavy material at work. It sometimes goes to your left arm. It lasts about five minutes and goes away when you stop and rest. Sometimes you sweat with it. The last time was yesterday at work while carrying cement bags (keep it simple: 'estaba en el trabajo'). Severity about 6 out of 10. You have no pain now and never had pain at rest. No fainting. Speak in simple sentences using the preterite for events (empezó, me dio, duró, se me quitó) and short imperfect chunks for background (estaba). Only reveal the arm radiation, the sweating and the severity number if asked. If asked something you don't understand, say '¿Mande?'.",
+      "opening": "Buenos días, doctor. Mi doctor me mandó aquí por un dolor en el pecho.",
+      "goals": [
+        "Find out when the pain first started and when the last episode was",
+        "Ask what the pain feels like and whether it spreads anywhere",
+        "Ask what brings it on and what makes it go away",
+        "Ask how long an episode lasts and how strong it is from 0 to 10",
+        "Ask about associated symptoms such as sweating, nausea or shortness of breath"
+      ]
+    },
+    {
+      "title": "Episodes of a racing heart",
+      "setup": "A woman reports episodes of a fast heartbeat. Find out when they began, how they start and stop, how long they last, what she was doing during the last one, and what came with it.",
+      "persona": "You play Guadalupe Reyes, 45, from Tegucigalpa, Honduras; you work as a cook. The episodes started about six months ago ('hace como seis meses'). The heart suddenly races, fast and regular, 'como si me fuera a salir del pecho' — but say simply 'el corazón me late muy rápido'. Each episode starts suddenly and stops suddenly, lasting about 20 minutes. Sometimes it stops if you cough hard. The last episode was three days ago, in the evening, while you were sitting watching TV ('estaba sentada en la sala'). During episodes you feel a little dizzy and anxious but you have never fainted and have no chest pain. No episodes right now. Use the preterite for events and only short imperfect chunks (estaba) for background. Reveal the coughing trick and the dizziness only if the doctor asks what makes it stop or what other symptoms you had.",
+      "opening": "Buenas tardes, doctor. A veces el corazón me late muy rápido y me asusto.",
+      "goals": [
+        "Find out how long ago the episodes started and when the last one was",
+        "Ask whether they start and stop suddenly or gradually, and how long they last",
+        "Ask what she was doing when the last episode started",
+        "Ask what makes an episode stop",
+        "Ask about dizziness, fainting, chest pain or shortness of breath"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1441 @@
+{
+  "id": "C6",
+  "track": "conv",
+  "n": 6,
+  "title": "Pronouns and ongoing actions",
+  "goal": "Replace nouns with pronouns, describe your daily routine, and say what you (and others) are doing right now.",
+  "bestAfter": null,
+  "grammar": [
+    {
+      "h": "Direct and indirect object pronouns",
+      "p": "Direct object (WHAT or WHOM): *me, te, lo, la, nos, los, las*. Use *lo/la/los/las* for things and people, matching gender and number: *el celular → lo*, *las llaves → las*. Indirect object (TO/FOR whom): *me, te, le, nos, les*, with verbs like *dar, decir, mandar, prestar, explicar, preguntar, pedir*. The pronoun goes BEFORE a conjugated verb. Spanish often keeps the indirect pronoun even when the person is named: *Le di el regalo a mi mamá.* In Latin America, use *lo/la* (not *le*) for 'him/her' as a direct object: *Lo vi ayer.*",
+      "ex": [
+        [
+          "¿El celular? No lo encuentro.",
+          "The cell phone? I can't find it."
+        ],
+        [
+          "Las llaves las tengo yo.",
+          "I've got the keys."
+        ],
+        [
+          "Mi hermano me mandó un mensaje.",
+          "My brother sent me a message."
+        ],
+        [
+          "Le expliqué el problema a mi jefe.",
+          "I explained the problem to my boss."
+        ]
+      ]
+    },
+    {
+      "h": "Two pronouns together: se lo, me la, te los",
+      "p": "When you use both, the indirect (person) comes first, then the direct (thing): *me lo, te la, nos los*. If both start with *l*, *le* or *les* changes to *se*: never *le lo*, always *se lo*. *Se* can mean to him, to her, to you (usted), to them, or to you all; add *a él / a ella / a usted* if you need to be clear.",
+      "ex": [
+        [
+          "¿Me prestas tu carro? —Sí, te lo presto.",
+          "Will you lend me your car? —Yes, I'll lend it to you."
+        ],
+        [
+          "¿Le diste el libro a Pedro? —Sí, se lo di.",
+          "Did you give the book to Pedro? —Yes, I gave it to him."
+        ],
+        [
+          "Las fotos se las mandé a mis papás.",
+          "I sent the photos to my parents."
+        ]
+      ]
+    },
+    {
+      "h": "Reflexive verbs and the daily routine",
+      "p": "Reflexive verbs carry a pronoun that matches the subject: *me, te, se, nos, se*. *Levantarse*: *me levanto, te levantas, se levanta, nos levantamos, se levantan*. Many routine verbs work this way: *despertarse (me despierto), acostarse (me acuesto), vestirse (me visto), bañarse, lavarse los dientes, sentirse (me siento)*. With body parts and clothes, Spanish uses *el/la*, not 'my': *Me lavo las manos.* Compare: *Me despierto* (I wake up) vs. *Mi mamá me despierta* (My mom wakes me up). In Mexico, *bañarse* is the everyday word for taking a shower.",
+      "ex": [
+        [
+          "Me levanto a las seis y me baño.",
+          "I get up at six and take a shower."
+        ],
+        [
+          "Los niños se acuestan a las nueve.",
+          "The kids go to bed at nine."
+        ],
+        [
+          "¿Cómo te sientes hoy?",
+          "How are you feeling today?"
+        ]
+      ]
+    },
+    {
+      "h": "Right now and still: estar + gerund, seguir + gerund",
+      "p": "For an action in progress right now: *estar* + gerund. Gerunds: *-ar → -ando* (trabajando), *-er/-ir → -iendo* (comiendo, viviendo). Spelling and stem changes: *leyendo, oyendo, trayendo, durmiendo, diciendo, pidiendo, sintiendo, viniendo*. For 'still / keep on doing': *seguir* + gerund (*sigo, sigues, sigue, seguimos, siguen*): *Sigue lloviendo* = It's still raining.",
+      "ex": [
+        [
+          "Estoy manejando, te llamo después.",
+          "I'm driving, I'll call you later."
+        ],
+        [
+          "El bebé está durmiendo.",
+          "The baby is sleeping."
+        ],
+        [
+          "Mi papá sigue trabajando a los setenta años.",
+          "My dad is still working at seventy."
+        ]
+      ]
+    },
+    {
+      "h": "Where the pronoun goes",
+      "p": "Before a conjugated verb: *Lo veo.* With an infinitive or a gerund you have TWO correct choices: before the conjugated verb, or attached to the end: *Lo voy a llamar = Voy a llamarlo*; *Me estoy vistiendo = Estoy vistiéndome*. Never in the middle (*voy a lo llamar* is wrong). With an affirmative command the pronoun must be attached: *Dime. Dámelo. Dígame.* When attaching adds syllables, write an accent to keep the stress where it was: *haciendo → haciéndolo*, *da → dámelo*. Attaching ONE pronoun to an infinitive needs no accent (*llamarlo, verte*), but two pronouns do (*devolvértelo*).",
+      "ex": [
+        [
+          "Te voy a llamar mañana. / Voy a llamarte mañana.",
+          "I'm going to call you tomorrow."
+        ],
+        [
+          "Lo estoy haciendo. / Estoy haciéndolo.",
+          "I'm doing it."
+        ],
+        [
+          "¿Tu libro? Te lo quiero devolver. / Quiero devolvértelo.",
+          "Your book? I want to give it back to you."
+        ],
+        [
+          "Dime la verdad.",
+          "Tell me the truth."
+        ]
+      ]
+    }
+  ],
+  "vocab": [
+    [
+      "levantarse",
+      "to get up"
+    ],
+    [
+      "despertarse",
+      "to wake up"
+    ],
+    [
+      "acostarse",
+      "to go to bed"
+    ],
+    [
+      "dormirse",
+      "to fall asleep"
+    ],
+    [
+      "bañarse",
+      "to shower, to bathe"
+    ],
+    [
+      "lavarse los dientes",
+      "to brush one's teeth"
+    ],
+    [
+      "peinarse",
+      "to comb one's hair"
+    ],
+    [
+      "vestirse",
+      "to get dressed"
+    ],
+    [
+      "ponerse (la ropa)",
+      "to put on (clothes)"
+    ],
+    [
+      "quitarse (la ropa)",
+      "to take off (clothes)"
+    ],
+    [
+      "rasurarse",
+      "to shave"
+    ],
+    [
+      "sentirse",
+      "to feel"
+    ],
+    [
+      "quedarse",
+      "to stay"
+    ],
+    [
+      "irse",
+      "to leave, to go away"
+    ],
+    [
+      "acordarse (de)",
+      "to remember"
+    ],
+    [
+      "preocuparse",
+      "to worry"
+    ],
+    [
+      "dar",
+      "to give"
+    ],
+    [
+      "decir",
+      "to say, to tell"
+    ],
+    [
+      "prestar",
+      "to lend"
+    ],
+    [
+      "pedir",
+      "to ask for"
+    ],
+    [
+      "mandar",
+      "to send"
+    ],
+    [
+      "regalar",
+      "to give (as a gift)"
+    ],
+    [
+      "devolver",
+      "to give back, to return"
+    ],
+    [
+      "explicar",
+      "to explain"
+    ],
+    [
+      "enseñar",
+      "to show; to teach"
+    ],
+    [
+      "traer",
+      "to bring"
+    ],
+    [
+      "contestar",
+      "to answer"
+    ],
+    [
+      "esperar",
+      "to wait (for)"
+    ],
+    [
+      "seguir",
+      "to continue, to keep (doing)"
+    ],
+    [
+      "todavía",
+      "still"
+    ],
+    [
+      "ahora mismo",
+      "right now"
+    ],
+    [
+      "en este momento",
+      "at the moment"
+    ],
+    [
+      "ahorita",
+      "right now / in a little bit (Mexico)"
+    ],
+    [
+      "el despertador",
+      "the alarm clock"
+    ],
+    [
+      "la toalla",
+      "the towel"
+    ],
+    [
+      "el cepillo de dientes",
+      "the toothbrush"
+    ],
+    [
+      "la cobija",
+      "the blanket"
+    ],
+    [
+      "el cargador",
+      "the charger"
+    ],
+    [
+      "las llaves",
+      "the keys"
+    ],
+    [
+      "el regalo",
+      "the gift"
+    ],
+    [
+      "el recado",
+      "the message (left for someone)"
+    ]
+  ],
+  "phrases": [
+    [
+      "¿Qué estás haciendo?",
+      "What are you doing?"
+    ],
+    [
+      "Estoy manejando, te llamo después.",
+      "I'm driving, I'll call you later."
+    ],
+    [
+      "Sigo esperando.",
+      "I'm still waiting."
+    ],
+    [
+      "¿Me lo prestas?",
+      "Will you lend it to me?"
+    ],
+    [
+      "Te lo devuelvo mañana.",
+      "I'll give it back to you tomorrow."
+    ],
+    [
+      "Ya se lo dije.",
+      "I already told him / her."
+    ],
+    [
+      "¿Me puede ayudar?",
+      "Can you help me? (usted)"
+    ],
+    [
+      "Dime.",
+      "Tell me. / Go ahead."
+    ],
+    [
+      "Dígame.",
+      "Tell me. / How can I help you? (usted)"
+    ],
+    [
+      "Me levanto muy temprano.",
+      "I get up very early."
+    ],
+    [
+      "¿A qué hora te acuestas?",
+      "What time do you go to bed?"
+    ],
+    [
+      "Me siento mucho mejor.",
+      "I feel much better."
+    ],
+    [
+      "No me acuerdo.",
+      "I don't remember."
+    ],
+    [
+      "Se me olvidó.",
+      "I forgot."
+    ]
+  ],
+  "items": [
+    {
+      "id": "C6-mc-01",
+      "t": "mc",
+      "q": "¿Dónde está mi celular? No ___ veo.",
+      "qen": "Where's my cell phone? I don't see it.",
+      "opts": [
+        "la",
+        "lo",
+        "le",
+        "los"
+      ],
+      "a": 1,
+      "why": "El celular is masculine singular → lo."
+    },
+    {
+      "id": "C6-mc-02",
+      "t": "mc",
+      "q": "¿Tienes las llaves? —Sí, ___ tengo aquí.",
+      "qen": "Do you have the keys? —Yes, I have them here.",
+      "opts": [
+        "los",
+        "la",
+        "las",
+        "les"
+      ],
+      "a": 2,
+      "why": "Las llaves is feminine plural → las."
+    },
+    {
+      "id": "C6-mc-03",
+      "t": "mc",
+      "q": "¿Compraste la leche? —Sí, ___ compré esta mañana.",
+      "qen": "Did you buy the milk? —Yes, I bought it this morning.",
+      "opts": [
+        "le",
+        "lo",
+        "las",
+        "la"
+      ],
+      "a": 3,
+      "why": "La leche is feminine singular → la."
+    },
+    {
+      "id": "C6-mc-04",
+      "t": "mc",
+      "q": "Ayer ___ di un regalo a mi mamá.",
+      "qen": "Yesterday I gave my mom a gift.",
+      "opts": [
+        "le",
+        "la",
+        "lo",
+        "se"
+      ],
+      "a": 0,
+      "why": "To my mom = indirect object → le. 'Se' only replaces le when another pronoun (lo/la) follows."
+    },
+    {
+      "id": "C6-mc-05",
+      "t": "mc",
+      "q": "Mis hijos siempre ___ piden dinero.",
+      "qen": "My kids always ask me for money.",
+      "opts": [
+        "mi",
+        "yo",
+        "me",
+        "a mí"
+      ],
+      "a": 2,
+      "why": "'Ask me' → indirect object pronoun me, placed before the verb."
+    },
+    {
+      "id": "C6-mc-06",
+      "t": "mc",
+      "q": "¿Le diste el libro a Pedro? —Sí, ya ___ di.",
+      "qen": "Did you give the book to Pedro? —Yes, I already gave it to him.",
+      "opts": [
+        "le lo",
+        "se lo",
+        "lo le",
+        "se la"
+      ],
+      "a": 1,
+      "why": "Le + lo → se lo (le becomes se before lo). El libro is masculine → lo."
+    },
+    {
+      "id": "C6-mc-07",
+      "t": "mc",
+      "q": "¿Me prestas tu pluma? —Sí, ___ presto.",
+      "qen": "Will you lend me your pen? —Yes, I'll lend it to you.",
+      "opts": [
+        "me la",
+        "te lo",
+        "se la",
+        "te la"
+      ],
+      "a": 3,
+      "why": "To you (tú) = te; la pluma is feminine = la → te la."
+    },
+    {
+      "id": "C6-mc-08",
+      "t": "mc",
+      "q": "¿Les mandaste las fotos a tus papás? —Sí, ___ mandé anoche.",
+      "qen": "Did you send the photos to your parents? —Yes, I sent them to them last night.",
+      "opts": [
+        "se las",
+        "les las",
+        "se los",
+        "las les"
+      ],
+      "a": 0,
+      "why": "Les + las → se las. Las fotos is feminine plural."
+    },
+    {
+      "id": "C6-mc-09",
+      "t": "mc",
+      "q": "Todos los días ___ levanto a las seis.",
+      "qen": "Every day I get up at six.",
+      "opts": [
+        "se",
+        "te",
+        "lo",
+        "me"
+      ],
+      "a": 3,
+      "why": "Reflexive pronoun matches the subject: yo → me levanto."
+    },
+    {
+      "id": "C6-mc-10",
+      "t": "mc",
+      "q": "Los niños ___ acuestan a las nueve.",
+      "qen": "The kids go to bed at nine.",
+      "opts": [
+        "se",
+        "los",
+        "les",
+        "me"
+      ],
+      "a": 0,
+      "why": "Ellos → reflexive se: se acuestan."
+    },
+    {
+      "id": "C6-mc-11",
+      "t": "mc",
+      "q": "En este momento mi esposa ___.",
+      "qen": "My wife is taking a shower right now.",
+      "opts": [
+        "se bañó",
+        "se está bañando",
+        "está bañando",
+        "se va a bañar mañana"
+      ],
+      "a": 1,
+      "why": "In progress right now → estar + gerund, and bañarse needs se: se está bañando. 'Está bañando' without se means she is bathing someone else."
+    },
+    {
+      "id": "C6-mc-12",
+      "t": "mc",
+      "q": "El bebé está ___.",
+      "qen": "The baby is sleeping.",
+      "opts": [
+        "dormir",
+        "dormiendo",
+        "durmiendo",
+        "durmió"
+      ],
+      "a": 2,
+      "why": "Dormir changes o → u in the gerund: durmiendo."
+    },
+    {
+      "id": "C6-mc-13",
+      "t": "mc",
+      "q": "¿Qué estás ___?",
+      "qen": "What are you reading?",
+      "opts": [
+        "leyendo",
+        "leiendo",
+        "leído",
+        "lees"
+      ],
+      "a": 0,
+      "why": "Leer → leyendo (the i becomes y between vowels)."
+    },
+    {
+      "id": "C6-mc-14",
+      "t": "mc",
+      "q": "Mi papá ___ trabajando a los setenta años.",
+      "qen": "My dad is still working at seventy.",
+      "opts": [
+        "sigo",
+        "sige",
+        "siguen",
+        "sigue"
+      ],
+      "a": 3,
+      "why": "Seguir + gerund = still doing. Él → sigue (with u to keep the hard g sound)."
+    },
+    {
+      "id": "C6-mc-15",
+      "t": "mc",
+      "q": "How do you say 'I'm going to call him tomorrow'?",
+      "opts": [
+        "Voy a lo llamar mañana.",
+        "Lo voy a llamar mañana.",
+        "Voy lo a llamar mañana.",
+        "Voy a llamar lo mañana."
+      ],
+      "a": 1,
+      "why": "The pronoun goes before the conjugated verb (Lo voy a llamar) or attached to the infinitive (voy a llamarlo) — never in the middle or as a separate word after the infinitive."
+    },
+    {
+      "id": "C6-mc-16",
+      "t": "mc",
+      "q": "Which is spelled correctly? ('I'm doing it.')",
+      "opts": [
+        "Estoy haciendolo.",
+        "Estoy haciendoló.",
+        "Estoy haciéndolo.",
+        "Estoy hacièndolo."
+      ],
+      "a": 2,
+      "why": "Attaching lo adds a syllable, so the stress (on -cien-) is now third from the end and needs a written accent: haciéndolo."
+    },
+    {
+      "id": "C6-mc-17",
+      "t": "mc",
+      "q": "Your friend is holding your phone. Tell him: 'Give it to me.'",
+      "opts": [
+        "Dalo me.",
+        "Dame lo.",
+        "Lo dame.",
+        "Dámelo."
+      ],
+      "a": 3,
+      "why": "Affirmative command: pronouns are attached, indirect before direct, with an accent: dámelo."
+    },
+    {
+      "id": "C6-mc-18",
+      "t": "mc",
+      "q": "How do you say 'I feel tired'?",
+      "opts": [
+        "Me siento cansado.",
+        "Siento cansado.",
+        "Me sento cansado.",
+        "Me siente cansado."
+      ],
+      "a": 0,
+      "why": "Sentirse is reflexive and stem-changing (e → ie): me siento."
+    },
+    {
+      "id": "C6-mc-19",
+      "t": "mc",
+      "q": "¿La receta? Mi mamá ___ va a mandar mañana.",
+      "qen": "The recipe? My mom is going to send it to me tomorrow.",
+      "opts": [
+        "me lo",
+        "la me",
+        "me la",
+        "le la"
+      ],
+      "a": 2,
+      "why": "To me = me, la receta = la; indirect first → me la."
+    },
+    {
+      "id": "C6-mc-20",
+      "t": "mc",
+      "q": "Disculpe, señor, ¿___ puedo hacer una pregunta?",
+      "qen": "Excuse me, sir, may I ask you a question?",
+      "opts": [
+        "lo",
+        "le",
+        "la",
+        "se"
+      ],
+      "a": 1,
+      "why": "Hacer una pregunta A usted → indirect object le."
+    },
+    {
+      "id": "C6-fill-01",
+      "t": "fill",
+      "q": "¿Viste a Carlos? —Sí, ___ vi en el gimnasio.",
+      "en": "Did you see Carlos? —Yes, I saw him at the gym.",
+      "hint": "pronoun: him",
+      "a": [
+        "lo"
+      ],
+      "why": "Carlos is the direct object, masculine → lo (standard in Latin America)."
+    },
+    {
+      "id": "C6-fill-02",
+      "t": "fill",
+      "q": "¿Dónde pusiste las tazas? —___ puse en la mesa.",
+      "en": "Where did you put the cups? —I put them on the table.",
+      "hint": "pronoun: them (las tazas)",
+      "a": [
+        "Las",
+        "las"
+      ],
+      "why": "Las tazas is feminine plural → las."
+    },
+    {
+      "id": "C6-fill-03",
+      "t": "fill",
+      "q": "Mi hermano ___ escribió una carta a mi abuela.",
+      "en": "My brother wrote a letter to my grandmother.",
+      "hint": "pronoun: to her",
+      "a": [
+        "le"
+      ],
+      "why": "A mi abuela is the indirect object → le (Spanish keeps le even when the person is named)."
+    },
+    {
+      "id": "C6-fill-04",
+      "t": "fill",
+      "q": "¿Me ayudas? —Claro, ___ ayudo.",
+      "en": "Will you help me? —Sure, I'll help you.",
+      "hint": "pronoun: you (tú)",
+      "a": [
+        "te"
+      ],
+      "why": "You (tú) as an object → te."
+    },
+    {
+      "id": "C6-fill-05",
+      "t": "fill",
+      "q": "¿Les explicaste el plan a los niños? —Sí, ya ___ expliqué.",
+      "en": "Did you explain the plan to the kids? —Yes, I already explained it to them.",
+      "hint": "pronouns: it + to them",
+      "a": [
+        "se lo"
+      ],
+      "why": "Les + lo → se lo. El plan is masculine singular."
+    },
+    {
+      "id": "C6-fill-06",
+      "t": "fill",
+      "q": "Necesito tu carro mañana. ¿___ prestas?",
+      "en": "I need your car tomorrow. Will you lend it to me?",
+      "hint": "pronouns: to me + it",
+      "a": [
+        "Me lo",
+        "me lo"
+      ],
+      "why": "To me = me, el carro = lo → me lo."
+    },
+    {
+      "id": "C6-fill-07",
+      "t": "fill",
+      "q": "Todos los días ___ despierto a las cinco y media.",
+      "en": "Every day I wake up at five thirty.",
+      "hint": "reflexive pronoun (yo)",
+      "a": [
+        "me"
+      ],
+      "why": "Despertarse, yo → me despierto."
+    },
+    {
+      "id": "C6-fill-08",
+      "t": "fill",
+      "q": "Mis hijos ___ los dientes después de comer.",
+      "en": "My kids brush their teeth after eating.",
+      "hint": "lavarse, present",
+      "a": [
+        "se lavan"
+      ],
+      "why": "Ellos → se lavan. Spanish uses los dientes, not 'their teeth'."
+    },
+    {
+      "id": "C6-fill-09",
+      "t": "fill",
+      "q": "Anoche ___ muy tarde.",
+      "en": "Last night I went to bed very late.",
+      "hint": "acostarse (yo), preterite",
+      "a": [
+        "me acosté"
+      ],
+      "why": "Anoche → preterite; yo → me acosté (no stem change in the preterite)."
+    },
+    {
+      "id": "C6-fill-10",
+      "t": "fill",
+      "q": "¿A qué hora ___ tú normalmente?",
+      "en": "What time do you usually get up?",
+      "hint": "levantarse",
+      "a": [
+        "te levantas"
+      ],
+      "why": "Tú → te levantas."
+    },
+    {
+      "id": "C6-fill-11",
+      "t": "fill",
+      "q": "No puedo hablar ahora, ___ manejando.",
+      "en": "I can't talk now, I'm driving.",
+      "hint": "estar (yo)",
+      "a": [
+        "estoy"
+      ],
+      "why": "In progress → estar + gerund; yo → estoy."
+    },
+    {
+      "id": "C6-fill-12",
+      "t": "fill",
+      "q": "Los niños están ___ en el parque.",
+      "en": "The kids are playing in the park.",
+      "hint": "jugar",
+      "a": [
+        "jugando"
+      ],
+      "why": "-ar verb → -ando: jugando."
+    },
+    {
+      "id": "C6-fill-13",
+      "t": "fill",
+      "q": "Mi abuela está ___ el periódico.",
+      "en": "My grandmother is reading the newspaper.",
+      "hint": "leer",
+      "a": [
+        "leyendo"
+      ],
+      "why": "Leer → leyendo."
+    },
+    {
+      "id": "C6-fill-14",
+      "t": "fill",
+      "q": "Perdón, ¿qué me estás ___?",
+      "en": "Sorry, what are you telling me?",
+      "hint": "decir",
+      "a": [
+        "diciendo"
+      ],
+      "why": "Decir has the gerund diciendo (e → i)."
+    },
+    {
+      "id": "C6-fill-15",
+      "t": "fill",
+      "q": "Mi mamá ___ trabajando en la misma tienda.",
+      "en": "My mom is still working at the same store.",
+      "hint": "seguir",
+      "a": [
+        "sigue"
+      ],
+      "why": "Seguir + gerund = still doing; ella → sigue."
+    },
+    {
+      "id": "C6-fill-16",
+      "t": "fill",
+      "q": "Nosotros ___ viviendo en el mismo apartamento.",
+      "en": "We're still living in the same apartment.",
+      "hint": "seguir",
+      "a": [
+        "seguimos"
+      ],
+      "why": "Nosotros → seguimos (no stem change in the nosotros form)."
+    },
+    {
+      "id": "C6-fill-17",
+      "t": "fill",
+      "q": "Tengo que llamar a mi hermana. Voy a ___ esta noche.",
+      "en": "I have to call my sister. I'm going to call her tonight.",
+      "hint": "llamar + her",
+      "a": [
+        "llamarla"
+      ],
+      "why": "After 'voy a' the pronoun attaches to the infinitive: llamarla (no accent needed)."
+    },
+    {
+      "id": "C6-fill-18",
+      "t": "fill",
+      "q": "¿El informe? Estoy ___ ahora mismo.",
+      "en": "The report? I'm writing it right now.",
+      "hint": "escribir + it",
+      "a": [
+        "escribiéndolo"
+      ],
+      "why": "Pronoun attached to the gerund, with an accent to keep the stress: escribiéndolo."
+    },
+    {
+      "id": "C6-fill-19",
+      "t": "fill",
+      "q": "Si tienes una pregunta, ___.",
+      "en": "If you have a question, tell me.",
+      "hint": "decir: tú command + me",
+      "a": [
+        "dime"
+      ],
+      "why": "Affirmative tú command + attached pronoun: dime."
+    },
+    {
+      "id": "C6-fill-20",
+      "t": "fill",
+      "q": "¿La tarea? No ___ hoy.",
+      "en": "The homework? I can't finish it today.",
+      "hint": "poder + terminar + it (yo)",
+      "a": [
+        "la puedo terminar",
+        "puedo terminarla"
+      ],
+      "why": "Both positions are correct: la puedo terminar = puedo terminarla."
+    },
+    {
+      "id": "C6-tiles-01",
+      "t": "tiles",
+      "en": "I see her every day.",
+      "a": "La veo todos los días.",
+      "alt": [
+        "Todos los días la veo."
+      ],
+      "extra": [
+        "le",
+        "vi"
+      ]
+    },
+    {
+      "id": "C6-tiles-02",
+      "t": "tiles",
+      "en": "My brother sent me a message yesterday.",
+      "a": "Mi hermano me mandó un mensaje ayer.",
+      "alt": [
+        "Ayer mi hermano me mandó un mensaje.",
+        "Mi hermano ayer me mandó un mensaje.",
+        "Ayer me mandó un mensaje mi hermano.",
+        "Mi hermano me mandó ayer un mensaje.",
+        "Me mandó un mensaje mi hermano ayer.",
+        "Ayer me mandó mi hermano un mensaje."
+      ],
+      "extra": [
+        "le",
+        "manda"
+      ]
+    },
+    {
+      "id": "C6-tiles-03",
+      "t": "tiles",
+      "en": "I already gave it (the book) to her.",
+      "a": "Ya se lo di.",
+      "alt": [
+        "Se lo di ya."
+      ],
+      "extra": [
+        "le",
+        "la"
+      ]
+    },
+    {
+      "id": "C6-tiles-04",
+      "t": "tiles",
+      "en": "Can you lend it (the car) to me? (to a friend)",
+      "a": "¿Me lo puedes prestar?",
+      "alt": [],
+      "extra": [
+        "le",
+        "la"
+      ]
+    },
+    {
+      "id": "C6-tiles-05",
+      "t": "tiles",
+      "en": "I'm going to call him tomorrow.",
+      "a": "Lo voy a llamar mañana.",
+      "alt": [
+        "Mañana lo voy a llamar."
+      ],
+      "extra": [
+        "la",
+        "llamé"
+      ]
+    },
+    {
+      "id": "C6-tiles-06",
+      "t": "tiles",
+      "en": "She is getting dressed right now.",
+      "a": "Ella se está vistiendo ahora mismo.",
+      "alt": [
+        "Ahora mismo ella se está vistiendo.",
+        "Ella ahora mismo se está vistiendo."
+      ],
+      "extra": [
+        "vestiendo",
+        "me"
+      ]
+    },
+    {
+      "id": "C6-tiles-07",
+      "t": "tiles",
+      "en": "I get up at six every day.",
+      "a": "Me levanto a las seis todos los días.",
+      "alt": [
+        "Todos los días me levanto a las seis."
+      ],
+      "extra": [
+        "te",
+        "levanté"
+      ]
+    },
+    {
+      "id": "C6-tiles-08",
+      "t": "tiles",
+      "en": "My dad is still working at the factory.",
+      "a": "Mi papá sigue trabajando en la fábrica.",
+      "alt": [],
+      "extra": [
+        "trabajar",
+        "sige"
+      ]
+    },
+    {
+      "id": "C6-tiles-09",
+      "t": "tiles",
+      "en": "What are you doing in the kitchen? (to a friend)",
+      "a": "¿Qué estás haciendo en la cocina?",
+      "alt": [
+        "¿En la cocina qué estás haciendo?"
+      ],
+      "extra": [
+        "estoy",
+        "hacendo"
+      ]
+    },
+    {
+      "id": "C6-tiles-10",
+      "t": "tiles",
+      "en": "I'm writing it (the email) right now.",
+      "a": "Lo estoy escribiendo ahora mismo.",
+      "alt": [
+        "Ahora mismo lo estoy escribiendo."
+      ],
+      "extra": [
+        "la",
+        "escribí"
+      ]
+    },
+    {
+      "id": "C6-tiles-11",
+      "t": "tiles",
+      "en": "Please tell me the truth. (to a friend)",
+      "a": "Por favor, dime la verdad.",
+      "alt": [
+        "Dime la verdad, por favor."
+      ],
+      "extra": [
+        "dice",
+        "te"
+      ]
+    },
+    {
+      "id": "C6-tiles-12",
+      "t": "tiles",
+      "en": "I took a shower and then I got dressed.",
+      "a": "Me bañé y luego me vestí.",
+      "alt": [],
+      "extra": [
+        "se",
+        "bañó"
+      ]
+    },
+    {
+      "id": "C6-tiles-13",
+      "t": "tiles",
+      "en": "Did you give the money to your sister? (to a friend)",
+      "a": "¿Le diste el dinero a tu hermana?",
+      "alt": [
+        "¿Le diste a tu hermana el dinero?"
+      ],
+      "extra": [
+        "se",
+        "dio"
+      ]
+    },
+    {
+      "id": "C6-tiles-14",
+      "t": "tiles",
+      "en": "The bank keeps calling me.",
+      "a": "Me siguen llamando del banco.",
+      "alt": [
+        "Del banco me siguen llamando."
+      ],
+      "extra": [
+        "siguiendo",
+        "te"
+      ]
+    },
+    {
+      "id": "C6-tiles-15",
+      "t": "tiles",
+      "en": "We're going to give them the news tomorrow.",
+      "a": "Les vamos a dar la noticia mañana.",
+      "alt": [
+        "Mañana les vamos a dar la noticia."
+      ],
+      "extra": [
+        "los",
+        "dimos"
+      ]
+    },
+    {
+      "id": "C6-tiles-16",
+      "t": "tiles",
+      "en": "My kids are sleeping.",
+      "a": "Mis hijos están durmiendo.",
+      "alt": [
+        "Están durmiendo mis hijos."
+      ],
+      "extra": [
+        "dormiendo",
+        "está"
+      ]
+    },
+    {
+      "id": "C6-listen-01",
+      "t": "listen",
+      "say": "La llamé ayer.",
+      "opts": [
+        "She called me yesterday.",
+        "I called her yesterday.",
+        "I'm going to call her tomorrow.",
+        "I called him yesterday."
+      ],
+      "a": 1
+    },
+    {
+      "id": "C6-listen-02",
+      "t": "listen",
+      "say": "Se lo di a mi hermano.",
+      "opts": [
+        "I gave it to my brother.",
+        "My brother gave it to me.",
+        "I gave it to my sister.",
+        "I'm giving it to my brother."
+      ],
+      "a": 0
+    },
+    {
+      "id": "C6-listen-03",
+      "t": "listen",
+      "say": "Me estoy vistiendo.",
+      "opts": [
+        "I got dressed.",
+        "She's getting dressed.",
+        "I'm going to get dressed.",
+        "I'm getting dressed."
+      ],
+      "a": 3
+    },
+    {
+      "id": "C6-listen-04",
+      "t": "listen",
+      "say": "Sigue lloviendo.",
+      "opts": [
+        "It stopped raining.",
+        "It's going to rain.",
+        "It's still raining.",
+        "It rained all day."
+      ],
+      "a": 2
+    },
+    {
+      "id": "C6-listen-05",
+      "t": "listen",
+      "say": "¿Me puedes ayudar?",
+      "opts": [
+        "Can I help you?",
+        "Can you help me?",
+        "Can you help him?",
+        "Did you help me?"
+      ],
+      "a": 1
+    },
+    {
+      "id": "C6-listen-06",
+      "t": "listen",
+      "say": "Nos acostamos tarde anoche.",
+      "opts": [
+        "We got up late this morning.",
+        "We go to bed late every night.",
+        "They went to bed late last night.",
+        "We went to bed late last night."
+      ],
+      "a": 3
+    },
+    {
+      "id": "C6-listen-07",
+      "t": "listen",
+      "say": "Te lo voy a mandar esta noche.",
+      "opts": [
+        "I'm going to send it to you tonight.",
+        "You're going to send it to me tonight.",
+        "I sent it to you last night.",
+        "I'm going to send it to her tonight."
+      ],
+      "a": 0
+    },
+    {
+      "id": "C6-listen-08",
+      "t": "listen",
+      "say": "Estamos esperando al doctor.",
+      "opts": [
+        "We waited for the doctor.",
+        "The doctor is waiting for us.",
+        "We're waiting for the doctor.",
+        "They're waiting for the doctor."
+      ],
+      "a": 2
+    },
+    {
+      "id": "C6-listen-09",
+      "t": "listen",
+      "say": "Mi mamá me despierta a las seis.",
+      "opts": [
+        "My mom wakes up at six.",
+        "My mom wakes me up at six.",
+        "I wake my mom up at six.",
+        "My mom woke me up at six."
+      ],
+      "a": 1
+    },
+    {
+      "id": "C6-listen-10",
+      "t": "listen",
+      "say": "¿Se lo dijiste a tus papás?",
+      "opts": [
+        "Did you tell your parents?",
+        "Did your parents tell you?",
+        "Are you going to tell your parents?",
+        "Did you tell your dad?"
+      ],
+      "a": 0
+    },
+    {
+      "id": "C6-dlg-01",
+      "t": "dlg",
+      "title": "Borrowing from a friend",
+      "turns": [
+        {
+          "who": "Ana",
+          "es": "Oye, ¿todavía tienes mi paraguas?",
+          "en": "Hey, do you still have my umbrella?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Sí, te la devuelvo mañana.",
+            "Sí, te lo devuelvo mañana.",
+            "Sí, me lo devuelves mañana."
+          ],
+          "a": 1,
+          "why": "To you (tú) = te; el paraguas is masculine = lo → te lo devuelvo."
+        },
+        {
+          "who": "Ana",
+          "es": "Perfecto. ¿Y me puedes prestar tu cargador? Mi celular se está descargando.",
+          "en": "Perfect. And can you lend me your charger? My phone is running out of battery."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Claro, ahorita te lo presto.",
+            "Claro, ahorita me lo prestas.",
+            "Claro, ahorita se lo presto."
+          ],
+          "a": 0,
+          "why": "I lend it to you (tú) → te lo presto. 'Se lo' would be usted or him/her, wrong for a friend."
+        },
+        {
+          "who": "Ana",
+          "es": "¡Gracias! Eres un amor.",
+          "en": "Thanks! You're a sweetheart."
+        }
+      ]
+    },
+    {
+      "id": "C6-dlg-02",
+      "t": "dlg",
+      "title": "Mom calls at dinnertime",
+      "turns": [
+        {
+          "who": "Mamá",
+          "es": "Hola, mijo. ¿Qué estás haciendo?",
+          "en": "Hi, son. What are you doing?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Cociné la cena mañana.",
+            "Estoy cocinando la cena.",
+            "Está cocinando la cena."
+          ],
+          "a": 1,
+          "why": "Right now → estar + gerund, yo form: estoy cocinando."
+        },
+        {
+          "who": "Mamá",
+          "es": "¡Qué bien! ¿Y los niños?",
+          "en": "Great! And the kids?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Me estoy bañando.",
+            "Se estaban bañando mañana.",
+            "Se están bañando."
+          ],
+          "a": 2,
+          "why": "The kids (ellos) → se están bañando. 'Me estoy' is about you; the other mixes past with mañana."
+        },
+        {
+          "who": "Mamá",
+          "es": "Bueno, no te quito más tiempo. Te llamo mañana.",
+          "en": "Okay, I won't take up any more of your time. I'll call you tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "C6-dlg-03",
+      "t": "dlg",
+      "title": "Tired at work",
+      "turns": [
+        {
+          "who": "Pedro",
+          "es": "Te ves cansado. ¿A qué hora te levantaste hoy?",
+          "en": "You look tired. What time did you get up today?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Me levanté a las cuatro y media.",
+            "Te levantaste a las cuatro y media.",
+            "Me levanto a las cuatro y media ayer."
+          ],
+          "a": 0,
+          "why": "About yourself, finished today → preterite: me levanté."
+        },
+        {
+          "who": "Pedro",
+          "es": "¡Qué temprano! ¿Y a qué hora te acuestas normalmente?",
+          "en": "So early! And what time do you usually go to bed?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Normalmente me acosté a las once.",
+            "Normalmente se acuesta a las once.",
+            "Normalmente me acuesto a las once."
+          ],
+          "a": 2,
+          "why": "A habit → present; yo → me acuesto (o → ue)."
+        },
+        {
+          "who": "Pedro",
+          "es": "Necesitas dormir más, amigo.",
+          "en": "You need to sleep more, my friend."
+        }
+      ]
+    },
+    {
+      "id": "C6-dlg-04",
+      "t": "dlg",
+      "title": "Helping an older woman on the street",
+      "turns": [
+        {
+          "who": "Señora",
+          "es": "Disculpe, joven, ¿me puede ayudar? Estoy buscando una farmacia.",
+          "en": "Excuse me, young man, can you help me? I'm looking for a pharmacy."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Claro. ¿Qué farmacia estás buscando?",
+            "Claro. ¿Qué farmacia está buscando?",
+            "Claro. ¿Qué farmacia está buscándola?"
+          ],
+          "a": 1,
+          "why": "An older stranger → usted: está buscando. The third repeats the object with a pronoun, which is wrong here."
+        },
+        {
+          "who": "Señora",
+          "es": "La que está en la calle Ashland. Me dijeron que está cerca. ¿Me puede escribir la dirección? No veo bien.",
+          "en": "The one on Ashland Street. They told me it's close. Can you write the address down for me? I don't see well."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Claro, ahorita se la escribo.",
+            "Claro, ahorita te la escribo.",
+            "Claro, ahorita le la escribo."
+          ],
+          "a": 0,
+          "why": "To her (usted) = le → se before la; la dirección = la → se la escribo."
+        },
+        {
+          "who": "Señora",
+          "es": "Muchas gracias, joven. Es usted muy amable.",
+          "en": "Thank you very much, young man. You're very kind."
+        }
+      ]
+    },
+    {
+      "id": "C6-dlg-05",
+      "t": "dlg",
+      "title": "Stuck in traffic",
+      "turns": [
+        {
+          "who": "Diego",
+          "es": "¿Ya llegaste a la fiesta?",
+          "en": "Did you get to the party yet?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "No, sigo manejando. Hay mucho tráfico.",
+            "No, sigue manejando. Hay mucho tráfico.",
+            "No, sigo manejado. Hay mucho tráfico."
+          ],
+          "a": 0,
+          "why": "Still driving → seguir + gerund, yo form: sigo manejando."
+        },
+        {
+          "who": "Diego",
+          "es": "Bueno. ¿Me puedes comprar hielo en el camino?",
+          "en": "Okay. Can you buy me some ice on the way?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Sí, me lo compras.",
+            "Sí, te la compro.",
+            "Sí, te lo compro."
+          ],
+          "a": 2,
+          "why": "For you (tú) = te; el hielo is masculine = lo → te lo compro."
+        },
+        {
+          "who": "Diego",
+          "es": "¡Gracias! Aquí te espero.",
+          "en": "Thanks! I'll wait for you here."
+        }
+      ]
+    },
+    {
+      "id": "C6-dlg-06",
+      "t": "dlg",
+      "title": "A gift for a coworker",
+      "turns": [
+        {
+          "who": "Lucía",
+          "es": "¿Ya le diste el regalo a Rosa?",
+          "en": "Did you already give Rosa the gift?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "No, le lo voy a dar mañana.",
+            "No, se la voy a dar mañana.",
+            "No, se lo voy a dar mañana."
+          ],
+          "a": 2,
+          "why": "Le + lo → se lo; el regalo is masculine → se lo voy a dar."
+        },
+        {
+          "who": "Lucía",
+          "es": "¿Y la tarjeta? ¿Ya la firmaste?",
+          "en": "And the card? Did you sign it yet?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Sí, ya la firmé.",
+            "Sí, ya lo firmé.",
+            "Sí, ya la firmo ayer."
+          ],
+          "a": 0,
+          "why": "La tarjeta is feminine → la; a finished action → firmé."
+        },
+        {
+          "who": "Lucía",
+          "es": "Perfecto. Le va a encantar.",
+          "en": "Perfect. She's going to love it."
+        }
+      ]
+    }
+  ],
+  "roleplay": [
+    {
+      "title": "Sunday phone call with a friend",
+      "setup": "Your friend Roberto calls on a Sunday morning while you are busy at home. Tell him what you're doing, talk about your routines, and sort out lending him something.",
+      "persona": "You play Roberto, 40, a friend of the learner, originally from Puebla, Mexico, now an accountant in Chicago. Use tú. Speak in clear, everyday sentences built around this level's grammar: direct/indirect object pronouns, double pronouns (te lo, se la), reflexive daily-routine verbs, estar + gerund, seguir + gerund, and pronouns attached to infinitives, gerunds and simple tú commands (dime, pásamelo). You may use present, preterite, imperfect, ir a + infinitive and the present perfect, but avoid the subjunctive. Facts: you are calling because you are painting your living room and need to borrow a ladder (la escalera) and a drill (el taladro); you already asked your brother but he lent his to someone else; you get up at 5:30 every day, even on weekends, and you're still working at the same firm after ten years. Reveal these only when asked. Ask the learner what he is doing right now, what time he got up, and whether he can lend you the ladder. If he agrees, ask when he can bring it to you (expect answers like 'te la llevo esta tarde' / 'te la puedo llevar…'). React naturally to pronoun mistakes, e.g. '¿La escalera? ¿Me la vas a traer?'.",
+      "opening": "¡Hola! ¿Qué estás haciendo? ¿Te desperté?",
+      "goals": [
+        "Tell him what you are doing right now (estar + gerund)",
+        "Tell him what time you got up and what you usually do on Sundays",
+        "Find out why he is calling and what he needs",
+        "Agree to lend him the ladder and say when you'll bring it, using a pronoun (te la…)",
+        "Ask what he has been doing at work lately (sigue trabajando…)"
+      ]
+    },
+    {
+      "title": "Helping a neighbor with packages",
+      "setup": "Doña Lupe, an older neighbor, has several packages delivered to the lobby and asks you for help. Use usted with her.",
+      "persona": "You play Doña Lupe, 76, a retired seamstress from Zacatecas, Mexico, who lives alone on the fourth floor. Polite and grateful; use usted with the learner and expect usted back (react with gentle surprise if he uses tú). Use this level's grammar: object pronouns and double pronouns (se lo, se las), reflexive verbs, estar + gerund, seguir + gerund. Avoid the subjunctive. Facts to reveal only when asked: there are three boxes (las cajas) and one big bag; the boxes have plates and a new blanket (una cobija) that her daughter sent her from Zacatecas; her daughter is sending her things because she is moving to Chicago next month; Doña Lupe's knee still hurts (le sigue doliendo la rodilla), so she can't carry heavy things; she goes to bed early and gets up at six to pray and make coffee. Ask the learner to carry the boxes up for her and where he is going to leave them. Accept answers like 'Se las subo ahorita' or 'Se las voy a dejar en la cocina'.",
+      "opening": "Ay, joven, buenas tardes. ¿Me puede ayudar con estas cajas, por favor?",
+      "goals": [
+        "Offer to carry the boxes up, using a double pronoun (se las…)",
+        "Ask what is in the boxes and who sent them",
+        "Ask how she is feeling and whether her knee still hurts",
+        "Tell her where you are going to leave the boxes",
+        "Ask about her daily routine (what time she gets up / goes to bed)"
+      ]
+    }
+  ]
+}

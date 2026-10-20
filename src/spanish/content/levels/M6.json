@@ -1,0 +1,268 @@
+{
+  "id": "M6",
+  "track": "med",
+  "n": 6,
+  "title": "Explaining the diagnosis",
+  "goal": "Explain AF, flutter, SVT, slow rhythms and heart failure in plain Spanish, lay out the treatment options, give recommendations with the subjunctive, and check that the patient understood.",
+  "bestAfter": "C7",
+  "grammar": [
+    {
+      "h": "Plain-word explanations: tiene… / quiere decir que… / es como…",
+      "p": "Name the diagnosis, then translate it into everyday words. *Usted tiene…* (you have), *Eso quiere decir que…* (that means that…), *Es como…* (it's like…). Keep to the present tense and to words a patient already knows: *la parte de arriba / de abajo del corazón*, *las señales eléctricas*, *bombear*, *latir*.",
+      "ex": [
+        ["Usted tiene fibrilación auricular. Eso quiere decir que el corazón late de forma irregular y desordenada.", "You have atrial fibrillation. That means your heart beats irregularly and chaotically."],
+        ["Es como un cortocircuito en el sistema eléctrico del corazón.", "It's like a short circuit in the heart's electrical system."],
+        ["Su corazón no bombea con suficiente fuerza.", "Your heart doesn't pump strongly enough."]
+      ]
+    },
+    {
+      "h": "Recommending: le recomiendo que / es importante que + subjunctive",
+      "p": "When you ask, want, need or recommend that SOMEONE ELSE do something, the second verb goes in the present subjunctive. The usted subjunctive is the same form as the usted command: *tome, coma, se pese, tenga, haga*. Key irregulars: *sea, esté, vaya, sepa, dé, haya*. If there is no change of subject, use the infinitive instead: *Es importante tomarla* (in general) vs *Es importante que usted la tome*.",
+      "ex": [
+        ["Le recomiendo que tome esta medicina todos los días.", "I recommend that you take this medicine every day."],
+        ["Es importante que se pese todas las mañanas.", "It's important that you weigh yourself every morning."],
+        ["Quiero que sepa que esto tiene tratamiento.", "I want you to know that this can be treated."],
+        ["Necesito que me llame si tiene sangrado.", "I need you to call me if you have bleeding."]
+      ]
+    },
+    {
+      "h": "para que, antes de que, cuando: purpose and future",
+      "p": "*para que* (so that) and *antes de que* (before) are always followed by the subjunctive. *cuando* takes the subjunctive when it points to the future or comes with an instruction (*Cuando sienta palpitaciones, siéntese*), but the indicative for habits or facts (*Cuando siente palpitaciones, ¿qué hace?*). *Aunque* + subjunctive = even if (*Aunque se sienta bien…*).",
+      "ex": [
+        ["Esta medicina es para que no se formen coágulos.", "This medicine is so that clots don't form."],
+        ["Antes de que se vaya, le voy a dar la receta.", "Before you leave, I'll give you the prescription."],
+        ["La próxima vez que sienta palpitaciones, apunte la hora.", "Next time you feel palpitations, write down the time."],
+        ["Aunque se sienta bien, siga tomando la medicina.", "Even if you feel fine, keep taking the medicine."]
+      ]
+    },
+    {
+      "h": "Reassuring and being honest: creo que vs no creo que, es posible que",
+      "p": "*Creo que* + indicative states your opinion: *Creo que es fibrilación auricular.* *No creo que*, *dudo que* and *es posible que* express doubt or possibility, so they take the subjunctive: *No creo que sea algo grave. Es posible que necesite un marcapasos.* Hope and feelings also take the subjunctive: *Espero que se sienta mejor. Me alegra que esté aquí. Es normal que tenga miedo.*",
+      "ex": [
+        ["Creo que sus síntomas son por el ritmo irregular.", "I think your symptoms are from the irregular rhythm."],
+        ["No creo que sea algo grave.", "I don't think it's anything serious."],
+        ["Es posible que necesite un marcapasos.", "You may need a pacemaker."],
+        ["Es normal que tenga miedo.", "It's normal to be afraid."]
+      ]
+    },
+    {
+      "h": "Checking understanding and deciding together",
+      "p": "Teach-back: ask the patient to explain it back, and frame it as YOUR job to explain well. *Para asegurarme de que le expliqué bien, ¿me puede decir con sus propias palabras…?* For shared decisions: *¿Qué es lo más importante para usted?*, *¿Qué opina?*, *No tiene que decidir hoy.*",
+      "ex": [
+        ["Para asegurarme de que le expliqué bien, ¿me puede decir con sus propias palabras para qué es esta medicina?", "To make sure I explained it well, can you tell me in your own words what this medicine is for?"],
+        ["¿Qué es lo más importante para usted?", "What matters most to you?"],
+        ["No tiene que decidir hoy. Puede hablarlo con su familia.", "You don't have to decide today. You can talk it over with your family."]
+      ]
+    }
+  ],
+  "vocab": [
+    ["el diagnóstico", "diagnosis"],
+    ["la fibrilación auricular", "atrial fibrillation"],
+    ["el flutter (aleteo) auricular", "atrial flutter"],
+    ["la taquicardia supraventricular", "supraventricular tachycardia (SVT)"],
+    ["la bradicardia", "bradycardia (slow heart rate)"],
+    ["el bloqueo cardíaco", "heart block"],
+    ["la insuficiencia cardíaca", "heart failure"],
+    ["las aurículas (la parte de arriba)", "the atria (the top chambers)"],
+    ["los ventrículos (la parte de abajo)", "the ventricles (the bottom chambers)"],
+    ["latir", "to beat"],
+    ["el latido", "heartbeat"],
+    ["bombear", "to pump"],
+    ["irregular / desordenado", "irregular / chaotic"],
+    ["las señales eléctricas", "electrical signals"],
+    ["el cortocircuito", "short circuit"],
+    ["de repente", "suddenly"],
+    ["el coágulo", "blood clot"],
+    ["la embolia / el derrame cerebral", "stroke"],
+    ["el infarto", "heart attack"],
+    ["el riesgo", "risk"],
+    ["aumentar el riesgo", "to raise the risk"],
+    ["el anticoagulante", "anticoagulant (blood thinner)"],
+    ["prevenir", "to prevent"],
+    ["el sangrado", "bleeding"],
+    ["controlar la velocidad del corazón", "to control the heart rate (rate control)"],
+    ["mantener el ritmo normal", "to keep a normal rhythm (rhythm control)"],
+    ["la ablación", "ablation"],
+    ["la cardioversión", "cardioversion"],
+    ["el marcapasos", "pacemaker"],
+    ["el desfibrilador", "defibrillator"],
+    ["el catéter", "catheter"],
+    ["el tratamiento", "treatment"],
+    ["la opción", "option"],
+    ["los efectos secundarios", "side effects"],
+    ["los beneficios", "benefits"],
+    ["el líquido", "fluid"],
+    ["acumularse", "to build up"],
+    ["pesarse", "to weigh oneself"],
+    ["subir de peso", "to gain weight"],
+    ["la sal", "salt"],
+    ["debilitarse", "to get weak"],
+    ["recomendar", "to recommend"],
+    ["con sus propias palabras", "in your own words"],
+    ["tomar una decisión", "to make a decision"]
+  ],
+  "phrases": [
+    ["Usted tiene fibrilación auricular.", "You have atrial fibrillation."],
+    ["Eso quiere decir que el corazón late de forma irregular.", "That means the heart beats irregularly."],
+    ["Su corazón no bombea con suficiente fuerza.", "Your heart doesn't pump strongly enough."],
+    ["Las señales eléctricas no pasan bien de la parte de arriba a la parte de abajo del corazón.", "The electrical signals don't get through well from the top to the bottom of the heart."],
+    ["Este ritmo aumenta el riesgo de embolia.", "This rhythm raises the risk of stroke."],
+    ["Esta medicina es para que no se formen coágulos.", "This medicine is so that clots don't form."],
+    ["Le recomiendo que tome esta medicina todos los días.", "I recommend that you take this medicine every day."],
+    ["Aunque se sienta bien, siga tomando la medicina.", "Even if you feel fine, keep taking the medicine."],
+    ["Hay varias opciones de tratamiento.", "There are several treatment options."],
+    ["Quiero que sepa que esto tiene tratamiento.", "I want you to know that this can be treated."],
+    ["Es normal que tenga miedo.", "It's normal to be afraid."],
+    ["¿Qué es lo más importante para usted?", "What matters most to you?"],
+    ["No tiene que decidir hoy.", "You don't have to decide today."],
+    ["Para asegurarme de que le expliqué bien, ¿me puede decir con sus propias palabras…?", "To make sure I explained it well, can you tell me in your own words…?"],
+    ["¿Qué preguntas tiene?", "What questions do you have?"]
+  ],
+  "items": [
+    {"id":"M6-mc-01","t":"mc","q":"En la fibrilación auricular, el corazón late de forma ___.","qen":"In atrial fibrillation, the heart beats irregularly.","opts":["regular","irregular","fuerte","normal"],"a":1,"why":"The hallmark of AF is an irregular, chaotic heartbeat."},
+    {"id":"M6-mc-02","t":"mc","q":"Le recomiendo que ___ esta medicina con la comida.","qen":"I recommend that you take this medicine with food.","opts":["toma","tomar","tomó","tome"],"a":3,"why":"Le recomiendo que + a different subject → present subjunctive: tome."},
+    {"id":"M6-mc-03","t":"mc","q":"How would you explain heart failure in plain words?","opts":["El corazón se paró.","Las arterias del corazón están tapadas.","El corazón no bombea con suficiente fuerza.","El corazón siempre late muy rápido."],"a":2,"why":"Heart failure (weak-pump type) means the heart doesn't pump strongly enough. It does not mean the heart stopped; blocked arteries describe coronary disease."},
+    {"id":"M6-mc-04","t":"mc","q":"Why do many patients with AF take an anticoagulant?","opts":["Para que el corazón lata más despacio.","Para que no se formen coágulos que pueden causar una embolia.","Para quitar la fibrilación para siempre.","Para bajar la presión."],"a":1,"why":"Anticoagulants lower the risk of clots, which in AF can travel to the brain and cause a stroke. They don't slow the heart or cure the rhythm."},
+    {"id":"M6-mc-05","t":"mc","q":"Esta medicina es para que su corazón ___ más despacio.","qen":"This medicine is so that your heart beats more slowly.","opts":["lata","late","latir","latió"],"a":0,"why":"para que always takes the subjunctive: latir → lata."},
+    {"id":"M6-mc-06","t":"mc","q":"La próxima vez que ___ palpitaciones, apunte la hora.","qen":"Next time you feel palpitations, write down the time.","opts":["siente","sintió","sienta","sentirá"],"a":2,"why":"A future event in a time clause (la próxima vez que / cuando) takes the subjunctive: sienta."},
+    {"id":"M6-mc-07","t":"mc","q":"Su monitor no mostró ningún ritmo peligroso. No creo que ___ algo grave.","qen":"Your monitor didn't show any dangerous rhythm. I don't think it's anything serious.","opts":["es","fue","será","sea"],"a":3,"why":"No creo que expresses doubt → subjunctive: sea."},
+    {"id":"M6-mc-08","t":"mc","q":"En el flutter auricular, hay un circuito eléctrico que da vueltas en la parte de ___ del corazón.","qen":"In atrial flutter, there's an electrical circuit that goes around and around in the top part of the heart.","opts":["arriba","abajo","atrás","afuera"],"a":0,"why":"Flutter is a circuit in the atria, the top chambers."},
+    {"id":"M6-mc-09","t":"mc","q":"Which is the best plain-language explanation of heart block?","opts":["El corazón no recibe suficiente sangre.","Hay un coágulo dentro del corazón.","Las válvulas del corazón están cerradas.","Las señales eléctricas no pasan bien de la parte de arriba a la parte de abajo del corazón."],"a":3,"why":"In heart block the electrical signal from the atria is delayed or blocked on its way to the ventricles, so the heart can beat too slowly."},
+    {"id":"M6-mc-10","t":"mc","q":"La taquicardia supraventricular empieza y se quita de ___.","qen":"SVT starts and stops suddenly.","opts":["rápido","repente","lado","vez"],"a":1,"why":"De repente = suddenly. Sudden onset and offset is typical of SVT."},
+    {"id":"M6-mc-11","t":"mc","q":"A patient's heart is too slow because of heart block. Which device is usually used to treat it?","opts":["un marcapasos","un monitor Holter","un anticoagulante","un aparato para la presión"],"a":0,"why":"A pacemaker sends a signal when the heart goes too slowly."},
+    {"id":"M6-mc-12","t":"mc","q":"Which question is the best teach-back?","opts":["¿Entendió todo?","Para asegurarme de que le expliqué bien, ¿me puede decir con sus propias palabras para qué es esta medicina?","Usted entendió, ¿verdad?","¿No tiene preguntas? Muy bien."],"a":1,"why":"Teach-back asks the patient to explain in their own words and puts the responsibility on the clinician. Yes/no questions don't check understanding."},
+    {"id":"M6-mc-13","t":"mc","q":"You say: \"Una opción es solo controlar la velocidad del corazón.\" What does that option do?","opts":["It gets the heart back into a normal rhythm for good.","It prevents blood clots.","It keeps the heart from beating too fast, even if the rhythm stays irregular.","It measures your pulse at home."],"a":2,"why":"Rate control slows the heart rate without trying to restore normal rhythm. Rhythm control tries to keep a normal rhythm."},
+    {"id":"M6-mc-14","t":"mc","q":"Espero que ___ mejor con el tratamiento.","qen":"I hope you feel better with the treatment.","opts":["se siente","se sienta","se sintió","sentirse"],"a":1,"why":"Espero que + another person → subjunctive. sentirse → se sienta. (Se siente would be the subjunctive of sentarse, \"sit down\".)"},
+    {"id":"M6-mc-15","t":"mc","q":"Quiero que nos ___ si tiene sangrado que no para.","qen":"I want you to call us if you have bleeding that doesn't stop.","opts":["llama","llamó","llamar","llame"],"a":3,"why":"Quiero que + different subject → subjunctive: llame."},
+    {"id":"M6-mc-16","t":"mc","q":"Antes de que usted ___ una decisión, le voy a explicar las opciones.","qen":"Before you make a decision, I'm going to explain the options.","opts":["tome","toma","tomó","tomar"],"a":0,"why":"antes de que always takes the subjunctive: tome."},
+    {"id":"M6-mc-17","t":"mc","q":"Which word do many Mexican patients use for \"stroke\"?","opts":["el infarto","el desmayo","la embolia","el soplo"],"a":2,"why":"La embolia (or el derrame cerebral) = stroke. El infarto is a heart attack, el desmayo is fainting, el soplo is a murmur."},
+    {"id":"M6-mc-18","t":"mc","q":"A patient asks \"¿Qué es una ablación?\" Best answer?","opts":["Es una cirugía de corazón abierto.","Es una pastilla para el ritmo.","Es un aparato que se pone debajo de la piel.","Es un procedimiento con catéteres que entran por la vena de la pierna para tratar las zonas que causan el ritmo anormal."],"a":3,"why":"Catheter ablation is done through the leg vein, not open-heart surgery. A device under the skin is a pacemaker or defibrillator."},
+    {"id":"M6-mc-19","t":"mc","q":"A heart-failure patient asks, \"¿Se me va a parar el corazón?\" Best reply?","opts":["No, insuficiencia cardíaca no quiere decir que el corazón se pare. Quiere decir que no bombea con suficiente fuerza, y hay tratamiento.","Sí, eso es lo que quiere decir.","No, usted no tiene nada.","No sé. Pregúntele a otro doctor."],"a":0,"why":"Corrects the common fear (the name sounds like the heart \"fails\" or stops), explains it honestly, and gives hope without false reassurance."},
+    {"id":"M6-mc-20","t":"mc","q":"Su ritmo ahora es normal, pero usted tiene riesgo alto de embolia. Aunque se ___ bien en los próximos meses, siga tomando el anticoagulante.","qen":"Your rhythm is normal now, but your stroke risk is high. Even if you feel fine in the coming months, keep taking the anticoagulant.","opts":["siente","sienta","sentía","sintió"],"a":1,"why":"Aunque + subjunctive = \"even if\" (a hypothetical about the future, so the indicative siente does not fit). The stroke risk in AF doesn't go away just because the patient feels well."},
+
+    {"id":"M6-fill-01","t":"fill","q":"Es importante que usted ___ con poca sal.","en":"It's important that you eat with little salt.","hint":"comer","a":["coma"],"why":"Es importante que + subject → subjunctive: coma."},
+    {"id":"M6-fill-02","t":"fill","q":"Necesito que se ___ todos los días en la mañana.","en":"I need you to weigh yourself every day in the morning.","hint":"pesarse (usted)","a":["pese"],"why":"Necesito que → subjunctive: se pese."},
+    {"id":"M6-fill-03","t":"fill","q":"Quiero que me ___ si nota sangre en la orina.","en":"I want you to let me know if you notice blood in your urine.","hint":"avisar","a":["avise"],"why":"Quiero que → subjunctive: avise."},
+    {"id":"M6-fill-04","t":"fill","q":"Esta medicina es para que no se ___ coágulos.","en":"This medicine is so that clots don't form.","hint":"formar (subject: coágulos)","a":["formen"],"why":"para que → subjunctive; plural subject coágulos → formen."},
+    {"id":"M6-fill-05","t":"fill","q":"En la fibrilación auricular, el corazón ___ de forma irregular.","en":"In atrial fibrillation, the heart beats irregularly.","hint":"latir","a":["late"],"why":"A general fact → present indicative: late."},
+    {"id":"M6-fill-06","t":"fill","q":"Usted tiene insuficiencia cardíaca: su corazón no ___ con suficiente fuerza.","en":"You have heart failure: your heart doesn't pump strongly enough.","hint":"bombear","a":["bombea"],"why":"Present indicative, subject su corazón: bombea."},
+    {"id":"M6-fill-07","t":"fill","q":"Si el corazón late muy rápido por mucho tiempo, se puede ___.","en":"If the heart beats very fast for a long time, it can get weak.","hint":"to weaken (infinitive)","a":["debilitar"],"why":"poder + infinitive: se puede debilitar. A persistently fast rhythm can weaken the heart muscle."},
+    {"id":"M6-fill-08","t":"fill","q":"No creo que ___ necesario hacer la ablación ahora.","en":"I don't think it's necessary to do the ablation now.","hint":"ser","a":["sea"],"why":"No creo que → subjunctive: sea."},
+    {"id":"M6-fill-09","t":"fill","q":"Ojalá que la medicina le ___ bien.","en":"Hopefully the medicine works well for you.","hint":"funcionar","a":["funcione"],"why":"Ojalá (que) → subjunctive: funcione."},
+    {"id":"M6-fill-10","t":"fill","q":"Es posible que usted ___ un marcapasos.","en":"You may need a pacemaker.","hint":"necesitar","a":["necesite"],"why":"Es posible que → subjunctive: necesite."},
+    {"id":"M6-fill-11","t":"fill","q":"Antes de que se ___ a su casa, le voy a dar la receta.","en":"Before you go home, I'm going to give you the prescription.","hint":"ir","a":["vaya"],"why":"antes de que → subjunctive; ir → vaya."},
+    {"id":"M6-fill-12","t":"fill","q":"Normalmente, cuando ___ palpitaciones, ¿qué hace usted?","en":"Usually, when you feel palpitations, what do you do?","hint":"sentir (a habit)","a":["siente"],"why":"cuando + a habit (normalmente) → indicative: siente."},
+    {"id":"M6-fill-13","t":"fill","q":"El flutter auricular se parece a la fibrilación, pero por lo general el ritmo es más ___.","en":"Atrial flutter is similar to fibrillation, but the rhythm is usually more regular.","hint":"the opposite of irregular","a":["regular"],"why":"Flutter is usually a more organized, regular rhythm than AF."},
+    {"id":"M6-fill-14","t":"fill","q":"Me alegra que se ___ mejor.","en":"I'm glad you feel better.","hint":"sentirse (usted)","a":["sienta"],"why":"Me alegra que → subjunctive: se sienta."},
+    {"id":"M6-fill-15","t":"fill","q":"La bradicardia quiere decir que el corazón late muy ___.","en":"Bradycardia means the heart beats very slowly.","hint":"slowly","a":["despacio","lento","lentamente"],"why":"Bradicardia = slow heart rate. Despacio, lento and lentamente are all used here."},
+    {"id":"M6-fill-16","t":"fill","q":"¿Me puede decir con sus propias ___ para qué es esta medicina?","en":"Can you tell me in your own words what this medicine is for?","hint":"words","a":["palabras"],"why":"Con sus propias palabras = in your own words (teach-back)."},
+    {"id":"M6-fill-17","t":"fill","q":"La decisión es suya. No tiene que ___ hoy.","en":"The decision is yours. You don't have to decide today.","hint":"to decide (infinitive)","a":["decidir"],"why":"tener que + infinitive: decidir."},
+    {"id":"M6-fill-18","t":"fill","q":"Le recomiendo que no ___, porque el cigarro también afecta el corazón.","en":"I recommend that you not smoke, because cigarettes also affect the heart.","hint":"fumar","a":["fume"],"why":"Le recomiendo que → subjunctive: fume."},
+    {"id":"M6-fill-19","t":"fill","q":"Si la medicina no funciona, otra opción ___ la ablación.","en":"If the medicine doesn't work, another option is ablation.","hint":"ser","a":["es","sería","puede ser"],"why":"A plain statement → indicative: es (puede ser / sería are also fine)."},
+    {"id":"M6-fill-20","t":"fill","q":"Quiero que usted ___ que la fibrilación auricular tiene tratamiento.","en":"I want you to know that atrial fibrillation can be treated.","hint":"saber","a":["sepa"],"why":"Quiero que → subjunctive; saber is irregular: sepa."},
+
+    {"id":"M6-tiles-01","t":"tiles","en":"Your heart beats irregularly.","a":"Su corazón late de forma irregular.","alt":[],"extra":["lata","sus"]},
+    {"id":"M6-tiles-02","t":"tiles","en":"I recommend that you take this medicine every day.","a":"Le recomiendo que tome esta medicina todos los días.","alt":["Le recomiendo que todos los días tome esta medicina.","Le recomiendo que tome todos los días esta medicina."],"extra":["toma","tomar"]},
+    {"id":"M6-tiles-03","t":"tiles","en":"This medicine helps prevent blood clots.","a":"Esta medicina ayuda a prevenir los coágulos.","alt":[],"extra":["prevenga","las"]},
+    {"id":"M6-tiles-04","t":"tiles","en":"The heart doesn't pump with enough force.","a":"El corazón no bombea con suficiente fuerza.","alt":["El corazón no bombea con fuerza suficiente."],"extra":["bombee","fuerte"]},
+    {"id":"M6-tiles-05","t":"tiles","en":"It's important that you weigh yourself every day.","a":"Es importante que se pese todos los días.","alt":["Es importante que todos los días se pese.","Todos los días es importante que se pese."],"extra":["pesa","pesarse"]},
+    {"id":"M6-tiles-06","t":"tiles","en":"When you feel palpitations, write down the time.","a":"Cuando sienta palpitaciones, apunte la hora.","alt":["Apunte la hora cuando sienta palpitaciones."],"extra":["siente","apunta"]},
+    {"id":"M6-tiles-07","t":"tiles","en":"I don't think it's anything serious.","a":"No creo que sea algo grave.","alt":[],"extra":["es","está"]},
+    {"id":"M6-tiles-08","t":"tiles","en":"Atrial fibrillation raises the risk of stroke.","a":"La fibrilación auricular aumenta el riesgo de embolia.","alt":[],"extra":["aumente","riesgos"]},
+    {"id":"M6-tiles-09","t":"tiles","en":"The heart's electrical signals aren't getting through well.","a":"Las señales eléctricas del corazón no pasan bien.","alt":[],"extra":["eléctricos","pase"]},
+    {"id":"M6-tiles-10","t":"tiles","en":"The pacemaker helps when the heart beats too slowly.","a":"El marcapasos ayuda cuando el corazón late muy lento.","alt":["Cuando el corazón late muy lento, el marcapasos ayuda.","Cuando el corazón late muy lento, ayuda el marcapasos."],"extra":["lata","ayude"]},
+    {"id":"M6-tiles-11","t":"tiles","en":"Can you explain in your own words what the medicine is for?","a":"¿Me puede explicar con sus palabras para qué sirve la medicina?","alt":["¿Me puede explicar para qué sirve la medicina con sus palabras?","¿Con sus palabras me puede explicar para qué sirve la medicina?"],"extra":["su","sirva"]},
+    {"id":"M6-tiles-12","t":"tiles","en":"You don't have to decide today.","a":"No tiene que decidir hoy.","alt":["Hoy no tiene que decidir."],"extra":["decide","tenga"]},
+    {"id":"M6-tiles-13","t":"tiles","en":"I want you to call me if you have bleeding.","a":"Quiero que me llame si tiene sangrado.","alt":["Si tiene sangrado, quiero que me llame.","Quiero que, si tiene sangrado, me llame."],"extra":["llama","tenga"]},
+    {"id":"M6-tiles-14","t":"tiles","en":"Ablation can help keep the rhythm under control.","a":"La ablación puede ayudar a controlar el ritmo.","alt":[],"extra":["pueda","controle"]},
+    {"id":"M6-tiles-15","t":"tiles","en":"I'll explain the options to you so that you can decide.","a":"Le explico las opciones para que decida.","alt":["Para que decida, le explico las opciones."],"extra":["decide","explica"]},
+    {"id":"M6-tiles-16","t":"tiles","en":"Hopefully the medicine works well for you.","a":"Ojalá que la medicina le funcione bien.","alt":["Ojalá que le funcione bien la medicina."],"extra":["funciona","lo"]},
+
+    {"id":"M6-listen-01","t":"listen","say":"Su corazón late de forma desordenada.","opts":["Your heart beats too slowly.","Your heart beats in a disorganized way.","Your heart beat irregularly yesterday.","Your heart pumps weakly."],"a":1},
+    {"id":"M6-listen-02","t":"listen","say":"El corazón no bombea con suficiente fuerza.","opts":["The heart isn't beating fast enough.","The heart stopped for a moment.","The heart pumps too hard.","The heart doesn't pump with enough force."],"a":3},
+    {"id":"M6-listen-03","t":"listen","say":"Le recomiendo que tome el anticoagulante todos los días.","opts":["I recommend that you take the anticoagulant every day.","I recommended that you take the anticoagulant every day.","I recommend that you stop the anticoagulant.","You took the anticoagulant every day."],"a":0},
+    {"id":"M6-listen-04","t":"listen","say":"Es posible que necesite un marcapasos.","opts":["You definitely need a pacemaker.","You may need a defibrillator.","You may need a pacemaker.","You needed a pacemaker before."],"a":2},
+    {"id":"M6-listen-05","t":"listen","say":"La taquicardia empieza y se quita de repente.","opts":["The tachycardia starts slowly and stops suddenly.","The tachycardia started suddenly yesterday.","The tachycardia never goes away.","The tachycardia starts and stops suddenly."],"a":3},
+    {"id":"M6-listen-06","t":"listen","say":"Si sube de peso rápido, llámenos.","opts":["If you gain weight quickly, call us.","If you lose weight quickly, call us.","If you go up the stairs quickly, call us.","If your blood pressure goes up, call us."],"a":0},
+    {"id":"M6-listen-07","t":"listen","say":"No quiero que deje de tomar la medicina sin hablar conmigo.","opts":["I don't want you to take the medicine without talking to me.","I want you to stop taking the medicine after talking to me.","I don't want you to stop taking the medicine without talking to me.","You stopped taking the medicine without talking to me."],"a":2},
+    {"id":"M6-listen-08","t":"listen","say":"Cuando sienta las palpitaciones, siéntese y avísenos.","opts":["When you sit down, you feel the palpitations.","When you feel the palpitations, sit down and let us know.","When you felt the palpitations, did you sit down?","When you feel the palpitations, lie down and call 911."],"a":1},
+    {"id":"M6-listen-09","t":"listen","say":"La ablación no es una cirugía abierta. Se hace con catéteres.","opts":["Ablation isn't open surgery. It's done with catheters.","Ablation is open surgery. It's done with catheters.","Ablation isn't open yet. It's done on Thursdays.","Ablation isn't a medicine. It's done with a pill."],"a":0},
+    {"id":"M6-listen-10","t":"listen","say":"Aunque se sienta bien, el riesgo de embolia sigue.","opts":["Since you feel well, the stroke risk is gone.","Although you felt well, you had a stroke.","If you feel bad, the stroke risk goes up.","Even if you feel well, the stroke risk is still there."],"a":3},
+
+    {"id":"M6-dlg-01","t":"dlg","title":"A new diagnosis of AF","turns":[
+      {"who":"Paciente","es":"Doctor, ¿qué tengo?","en":"Doctor, what do I have?"},
+      {"you":true,"opts":["Tú tienes fibrilación auricular. El corazón late de forma irregular.","Usted tiene fibrilación auricular. Eso quiere decir que la parte de arriba del corazón late rápido y desordenado.","Usted tuvo un infarto. El corazón no recibe sangre."],"a":1,"why":"Usted with patients; the explanation matches AF. The first uses tú; the third describes a heart attack."},
+      {"who":"Paciente","es":"¿Y eso es peligroso?","en":"And is that dangerous?"},
+      {"you":true,"opts":["No, no es nada. No se preocupe.","Sí, usted se va a morir pronto.","Por lo general no es peligroso de inmediato, pero aumenta el riesgo de embolia. Por eso le recomiendo una medicina para prevenir coágulos."],"a":2,"why":"Honest and accurate: AF is not usually immediately life-threatening, but it raises stroke risk, which is why anticoagulation is discussed. The other two are false reassurance or alarming and wrong."},
+      {"who":"Paciente","es":"¿Y tengo que tomar esa medicina?","en":"And do I have to take that medicine?"},
+      {"you":true,"opts":["Sí. Es importante que la tome todos los días y que me avise si tiene sangrado.","Sí. Es importante que la toma todos los días.","Sí. Es importante que la tomes todos los días."],"a":0,"why":"Es importante que → subjunctive (tome, avise) with usted. The second uses the indicative; the third uses tú."}
+    ]},
+    {"id":"M6-dlg-02","t":"dlg","title":"Choosing a treatment together","turns":[
+      {"who":"Paciente","es":"Ya tomo la medicina para el ritmo y sigo con palpitaciones. ¿Qué otras opciones hay?","en":"I already take the rhythm medicine and I still have palpitations. What other options are there?"},
+      {"you":true,"opts":["No hay otras opciones. Siga igual.","Una opción es una ablación: con catéteres por la vena de la pierna tratamos las zonas que causan el ritmo irregular.","Una opción es un marcapasos para que el corazón lata más rápido."],"a":1,"why":"Ablation is a standard option when rhythm medicine fails. A pacemaker doesn't treat AF symptoms in this way, and saying there are no options is wrong."},
+      {"who":"Paciente","es":"¿Y usted qué me recomienda?","en":"And what do you recommend?"},
+      {"you":true,"opts":["Le recomiendo que pensemos en la ablación, pero primero quiero saber qué es lo más importante para usted.","Te recomiendo que hagas la ablación mañana.","Le recomiendo que hace la ablación."],"a":0,"why":"Recommendation + subjunctive, plus a shared-decision question. The second uses tú and pressures the patient; the third needs the subjunctive (haga)."},
+      {"who":"Paciente","es":"La verdad, tengo miedo del procedimiento.","en":"Honestly, I'm afraid of the procedure."},
+      {"you":true,"opts":["Es normal que tiene miedo. Decida hoy.","No tenga miedo. Usted tiene que decidir ahora.","Es normal que tenga miedo. No tiene que decidir hoy; podemos hablar otra vez con su familia."],"a":2,"why":"Es normal que + subjunctive (tenga), plus no pressure to decide today."}
+    ]},
+    {"id":"M6-dlg-03","t":"dlg","title":"SVT: a daughter asks","turns":[
+      {"who":"Hija","es":"A mi mamá de repente se le acelera mucho el corazón, y de repente se le quita.","en":"All of a sudden my mom's heart starts racing, and then all of a sudden it stops."},
+      {"you":true,"opts":["Por lo que me cuenta, puede ser una taquicardia supraventricular. Es como un cortocircuito en el sistema eléctrico del corazón.","Es insuficiencia cardíaca: el corazón no bombea con fuerza.","Es un bloqueo: el corazón late muy lento."],"a":0,"why":"Sudden onset and offset of a fast, regular heartbeat is typical of SVT, often caused by an extra electrical pathway (a short circuit)."},
+      {"who":"Hija","es":"¿Y qué hacemos cuando le pase?","en":"And what do we do when it happens to her?"},
+      {"you":true,"opts":["Cuando le pasó, se sentó y pujó.","Cuando le pase, que se siente y puje fuerte, como cuando va al baño. Si no se le quita o se siente muy mal, vayan a urgencias.","Cuando le pase, que corra un rato para que se le quite."],"a":1,"why":"Bearing down (a vagal maneuver) can stop some episodes; if it doesn't stop or she feels very ill, go to the ER. The first is past tense; running is wrong advice."},
+      {"who":"Hija","es":"¿Se puede curar?","en":"Can it be cured?"},
+      {"you":true,"opts":["No, nunca se cura.","Sí, con un marcapasos.","Muchas veces sí. Con una ablación se puede eliminar el circuito extra."],"a":2,"why":"Ablation can often eliminate the extra pathway or circuit and cure SVT."}
+    ]},
+    {"id":"M6-dlg-04","t":"dlg","title":"Heart block and a pacemaker","turns":[
+      {"who":"Paciente","es":"Doctor, ya me desmayé dos veces este mes.","en":"Doctor, I've already fainted twice this month."},
+      {"you":true,"opts":["Su monitor mostró que a veces las señales eléctricas no pasan de la parte de arriba a la parte de abajo del corazón. Por eso el corazón late muy lento.","Su monitor mostró un coágulo en el cerebro.","Su monitor mostró que el corazón late muy rápido y por eso tiene que tomar café."],"a":0,"why":"Heart block: signals don't get from the atria to the ventricles, so the heart rate drops and can cause fainting."},
+      {"who":"Paciente","es":"¿Y qué se hace?","en":"And what can be done?"},
+      {"you":true,"opts":["Le recomiendo un anticoagulante para que no se desmaye.","Le recomiendo un marcapasos. Es un aparato pequeño que se pone debajo de la piel y manda una señal cuando el corazón va muy lento.","Te recomiendo un marcapasos."],"a":1,"why":"A pacemaker is the treatment for symptomatic heart block. Anticoagulants don't prevent fainting; the third uses tú."},
+      {"who":"Paciente","es":"¿Puedo manejar mientras tanto?","en":"Can I drive in the meantime?"},
+      {"you":true,"opts":["Sí, maneje sin problema.","No manejes.","Hasta que tenga el marcapasos, le recomiendo que no maneje, porque se puede desmayar."],"a":2,"why":"hasta que (future) + subjunctive; le recomiendo que + subjunctive. Fainting while driving is dangerous, so you advise against it for now."}
+    ]},
+    {"id":"M6-dlg-05","t":"dlg","title":"Heart failure: talking with the wife","turns":[
+      {"who":"Esposa","es":"Me dijeron que mi esposo tiene insuficiencia cardíaca. ¿Se le va a parar el corazón?","en":"They told me my husband has heart failure. Is his heart going to stop?"},
+      {"you":true,"opts":["Sí, el corazón ya no funciona.","No. Quiere decir que el corazón no bombea con suficiente fuerza. Por eso se acumula líquido en los pulmones y en las piernas.","No. Quiere decir que el corazón late muy rápido."],"a":1,"why":"A weak pump lets fluid back up into the lungs (shortness of breath) and legs (swelling). It doesn't mean the heart has stopped."},
+      {"who":"Esposa","es":"¿Y qué tenemos que hacer en la casa?","en":"And what do we have to do at home?"},
+      {"you":true,"opts":["Es importante que él se pesa todos los días, que come con poca sal y que toma sus medicinas.","Es importante que él tome mucha agua y que coma con más sal.","Es importante que él se pese todos los días, que coma con poca sal y que tome sus medicinas."],"a":2,"why":"Es importante que → subjunctive (se pese, coma, tome). Daily weights, low salt and taking medicines are the core of home care; more salt is wrong."},
+      {"who":"Esposa","es":"¿Y cuándo les llamo?","en":"And when should I call you?"},
+      {"you":true,"opts":["Llámenos si sube de peso rápido, si se le hinchan más las piernas o si le falta más el aire.","Llámanos si sube de peso rápido.","Nos llamó si subió de peso."],"a":0,"why":"Usted command llámenos. Rapid weight gain, more swelling or more breathlessness are signs of fluid building up."}
+    ]},
+    {"id":"M6-dlg-06","t":"dlg","title":"Teach-back on anticoagulation","turns":[
+      {"who":"Paciente","es":"Sí, doctor, creo que entendí.","en":"Yes, doctor, I think I understood."},
+      {"you":true,"opts":["¿Entendiste?","Para asegurarme de que le expliqué bien, ¿me puede decir con sus propias palabras para qué es el anticoagulante?","Muy bien, entonces ya se puede ir."],"a":1,"why":"Teach-back checks real understanding. ¿Entendiste? is tú and yes/no; leaving skips the check."},
+      {"who":"Paciente","es":"Es para que no se me hagan coágulos y no me dé una embolia.","en":"It's so I don't get clots and don't have a stroke."},
+      {"you":true,"opts":["No, es para que el corazón lata más despacio.","Exacto. ¿Y qué hiciste ayer?","Exacto. ¿Y qué va a hacer si tiene un sangrado que no para?"],"a":2,"why":"Confirms the correct answer and checks the next key point: bleeding that doesn't stop."},
+      {"who":"Paciente","es":"Voy a ir a urgencias.","en":"I'll go to the emergency room."}
+    ]}
+  ],
+  "roleplay": [
+    {
+      "title": "New AF and the blood thinner",
+      "setup": "You are the EP doctor. Sra. Gutiérrez's ECG today shows atrial fibrillation. Explain the diagnosis in plain words, explain why you recommend an anticoagulant, answer her worries, and finish with teach-back.",
+      "persona": "You play Rosa Gutiérrez, 72, from Jalisco, Mexico, living in Chicago with her daughter. Speak simple, everyday Mexican Spanish (present, preterite, 'voy a…', occasional present subjunctive), short sentences. Facts: for about two months you feel tired and sometimes your heart 'brinca' or goes fast; you have high blood pressure and diabetes (azúcar alta); no previous stroke. You have never heard of fibrilación auricular. You are worried about blood thinners because a neighbor 'se desangró' (bled a lot) on one; ask '¿Esa medicina adelgaza la sangre?' and '¿Me la voy a tomar para siempre?'. If the doctor hasn't already covered it, ask whether you can stop the medicine once you feel better. If the doctor uses medical jargon without explaining, say you don't understand. If asked to explain back in your own words, give a mostly correct answer but first mix up the purpose (say it's 'para el ritmo'), so the doctor has to correct you gently. Accept generic answers such as 'su médico le va a decir'; never insist on exact numbers.",
+      "opening": "Doctor, la enfermera me dijo que salió algo en el electrocardiograma. ¿Es algo malo?",
+      "goals": [
+        "Explain atrial fibrillation in plain words (irregular, chaotic beating of the top part of the heart)",
+        "Explain the link between AF, clots and stroke, and why you recommend an anticoagulant",
+        "Address her fear of bleeding honestly and tell her which bleeding signs mean she should call or go to the ER",
+        "Use at least three subjunctive recommendations (le recomiendo que…, es importante que…, quiero que…)",
+        "Use teach-back and correct her misunderstanding kindly"
+      ]
+    },
+    {
+      "title": "Medicine or ablation?",
+      "setup": "Sr. Castillo has atrial fibrillation that keeps coming back despite a rhythm medicine. Explain rate control vs rhythm control, present ablation as an option, and reach a decision together without pressuring him.",
+      "persona": "You play Jorge Castillo, 58, from Honduras, a bus driver in Chicago, married with two adult children. Speak simple Spanish (present, preterite, 'voy a…', some subjunctive). Facts: episodes of fast, irregular heartbeat a few times a month that make you tired and short of breath; you have high blood pressure and diabetes (azúcar alta); you already take an anticoagulant and a rhythm medicine and still have episodes; you missed work twice last month. You want to keep working and to feel normal. Ask: '¿La ablación es una operación de corazón abierto?', '¿Me va a quitar la fibrilación para siempre?', and '¿Puedo dejar el anticoagulante si me hacen la ablación?'. If the doctor gives a specific percentage, say you prefer simple words. Admit you are a bit afraid and want to talk with your wife before deciding. Expect honest answers: ablation helps many patients but sometimes the rhythm comes back or a second procedure is needed, and whether to continue the anticoagulant depends on stroke risk, not just on the rhythm.",
+      "opening": "Doctor, sigo con los ataques de palpitaciones aunque tomo la medicina. Ya no sé qué hacer.",
+      "goals": [
+        "Explain the difference between controlling the heart rate and keeping a normal rhythm",
+        "Describe ablation in plain words (catheters through the leg vein, not open-heart surgery) and that the rhythm can sometimes come back",
+        "Explain that the decision about the anticoagulant depends on stroke risk, not only on whether the rhythm is normal",
+        "Ask what matters most to him and give a recommendation using the subjunctive",
+        "Respect his wish to talk with his wife and agree on a next step"
+      ]
+    }
+  ]
+}

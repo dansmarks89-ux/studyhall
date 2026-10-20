@@ -1,0 +1,534 @@
+[
+ {
+  "i": 0,
+  "w": "buenos días",
+  "ex": "Buenos días, señor, ¿cómo está esta mañana?",
+  "en": "Good morning, sir. How are you this morning?",
+  "hit": "Buenos días",
+  "note": "Used until about noon.",
+  "type": [
+   "buenos días"
+  ]
+ },
+ {
+  "i": 1,
+  "w": "buenas tardes",
+  "ex": "Buenas tardes, señora. Su cita es a las tres.",
+  "en": "Good afternoon, ma'am. Your appointment is at three.",
+  "hit": "Buenas tardes",
+  "note": "From about noon until dark.",
+  "type": [
+   "buenas tardes"
+  ]
+ },
+ {
+  "i": 2,
+  "w": "buenas noches",
+  "ex": "Buenas noches, señor. Soy la enfermera de la noche.",
+  "en": "Good evening, sir. I'm the night nurse.",
+  "hit": "Buenas noches",
+  "note": "A greeting after dark too, not only 'good night'.",
+  "type": [
+   "buenas noches"
+  ]
+ },
+ {
+  "i": 3,
+  "w": "mucho gusto",
+  "ex": "Mucho gusto, señor García. Soy su cardiólogo.",
+  "en": "Nice to meet you, Mr. García. I'm your cardiologist.",
+  "hit": "Mucho gusto",
+  "note": "",
+  "type": [
+   "mucho gusto"
+  ]
+ },
+ {
+  "i": 4,
+  "w": "con permiso",
+  "ex": "Con permiso, señora, ¿puedo pasar?",
+  "en": "Excuse me, ma'am, may I come in?",
+  "hit": "Con permiso",
+  "note": "Asks permission to enter, pass by or examine; perdón is for apologizing.",
+  "type": [
+   "con permiso"
+  ]
+ },
+ {
+  "i": 5,
+  "w": "el doctor / la doctora",
+  "ex": "La doctora Ruiz viene en unos minutos.",
+  "en": "Dr. Ruiz is coming in a few minutes.",
+  "hit": "doctora",
+  "note": "Médico / médica is also common. Address: doctor or doctora + last name.",
+  "type": [
+   "el doctor",
+   "doctor",
+   "la doctora",
+   "doctora",
+   "el médico",
+   "médico",
+   "la médica",
+   "médica"
+  ]
+ },
+ {
+  "i": 6,
+  "w": "el enfermero / la enfermera",
+  "ex": "Me llamo Ana y hoy soy su enfermera.",
+  "en": "My name is Ana and I'm your nurse today.",
+  "hit": "enfermera",
+  "note": "Male nurse: el enfermero.",
+  "type": [
+   "el enfermero",
+   "enfermero",
+   "la enfermera",
+   "enfermera"
+  ]
+ },
+ {
+  "i": 7,
+  "w": "el cardiólogo / la cardióloga",
+  "ex": "El cardiólogo es el especialista del corazón.",
+  "en": "The cardiologist is the heart specialist.",
+  "hit": "cardiólogo",
+  "note": "Feminine: la cardióloga. Stress on -ó-.",
+  "type": [
+   "el cardiólogo",
+   "cardiólogo",
+   "la cardióloga",
+   "cardióloga"
+  ]
+ },
+ {
+  "i": 8,
+  "w": "el / la intérprete",
+  "ex": "¿Quiere un intérprete para la consulta?",
+  "en": "Would you like an interpreter for the visit?",
+  "hit": "intérprete",
+  "note": "Same form for a man or a woman: el / la intérprete.",
+  "type": [
+   "el intérprete",
+   "la intérprete",
+   "intérprete"
+  ]
+ },
+ {
+  "i": 9,
+  "w": "el nombre completo",
+  "ex": "¿Me puede decir su nombre completo, por favor?",
+  "en": "Can you tell me your full name, please?",
+  "hit": "nombre completo",
+  "note": "Many patients have two last names (father's and mother's).",
+  "type": [
+   "el nombre completo",
+   "nombre completo"
+  ]
+ },
+ {
+  "i": 10,
+  "w": "el apellido",
+  "ex": "Su nombre es María, ¿y su apellido?",
+  "en": "Your first name is María, and your last name?",
+  "hit": "apellido",
+  "note": "Many Latin Americans use two apellidos: father's, then mother's.",
+  "type": [
+   "el apellido",
+   "apellido"
+  ]
+ },
+ {
+  "i": 11,
+  "w": "la fecha de nacimiento",
+  "ex": "¿Cuál es su fecha de nacimiento, por favor?",
+  "en": "What is your date of birth, please?",
+  "hit": "fecha de nacimiento",
+  "note": "",
+  "type": [
+   "la fecha de nacimiento",
+   "fecha de nacimiento"
+  ]
+ },
+ {
+  "i": 12,
+  "w": "la cita",
+  "ex": "¿A qué hora es su cita hoy?",
+  "en": "What time is your appointment today?",
+  "hit": "cita",
+  "note": "Also means a date (romantic). La consulta = the visit itself.",
+  "type": [
+   "la cita",
+   "cita"
+  ]
+ },
+ {
+  "i": 13,
+  "w": "¿Mande?",
+  "ex": "¿Mande? Perdón, doctor, no le entiendo.",
+  "en": "Pardon? Sorry, doctor, I don't understand you.",
+  "hit": "Mande",
+  "note": "Polite Mexican 'pardon?' or 'yes?' when called; not rude at all.",
+  "type": [
+   "¿Mande?",
+   "mande"
+  ]
+ },
+ {
+  "i": 14,
+  "w": "entender (entiende)",
+  "ex": "¿Me entiende bien o prefiere un intérprete?",
+  "en": "Do you understand me well, or do you prefer an interpreter?",
+  "hit": "entiende",
+  "note": "Stem-changing: entiendo, entiende. ¿Me entiende? checks understanding.",
+  "type": [
+   "entender",
+   "entiende"
+  ]
+ },
+ {
+  "i": 15,
+  "w": "revisar / examinar",
+  "ex": "Ahora quiero revisar su corazón y sus pulmones.",
+  "en": "Now I want to check your heart and lungs.",
+  "hit": "revisar",
+  "note": "Both mean 'to examine'; revisar is the more everyday word.",
+  "type": [
+   "revisar",
+   "examinar"
+  ]
+ },
+ {
+  "i": 16,
+  "w": "la cabeza",
+  "ex": "¿Le duele la cabeza o tiene mareos?",
+  "en": "Does your head hurt, or do you have dizziness?",
+  "hit": "cabeza",
+  "note": "",
+  "type": [
+   "la cabeza",
+   "cabeza"
+  ]
+ },
+ {
+  "i": 17,
+  "w": "la garganta",
+  "ex": "¿Le duele la garganta cuando come?",
+  "en": "Does your throat hurt when you eat?",
+  "hit": "garganta",
+  "note": "",
+  "type": [
+   "la garganta",
+   "garganta"
+  ]
+ },
+ {
+  "i": 18,
+  "w": "el cuello",
+  "ex": "¿Tiene dolor en el cuello o solo en el pecho?",
+  "en": "Do you have pain in your neck or only in your chest?",
+  "hit": "cuello",
+  "note": "",
+  "type": [
+   "el cuello",
+   "cuello"
+  ]
+ },
+ {
+  "i": 19,
+  "w": "la mandíbula / la quijada",
+  "ex": "¿El dolor va del pecho a la mandíbula?",
+  "en": "Does the pain go from your chest to your jaw?",
+  "hit": "mandíbula",
+  "note": "Quijada is the everyday word in Mexico and Central America.",
+  "type": [
+   "la mandíbula",
+   "mandíbula",
+   "la quijada",
+   "quijada"
+  ]
+ },
+ {
+  "i": 20,
+  "w": "el hombro",
+  "ex": "¿Le duele el hombro izquierdo cuando levanta el brazo?",
+  "en": "Does your left shoulder hurt when you raise your arm?",
+  "hit": "hombro",
+  "note": "",
+  "type": [
+   "el hombro",
+   "hombro"
+  ]
+ },
+ {
+  "i": 21,
+  "w": "el pecho",
+  "ex": "¿Siente presión o dolor en el pecho ahora?",
+  "en": "Do you feel pressure or pain in your chest now?",
+  "hit": "pecho",
+  "note": "",
+  "type": [
+   "el pecho",
+   "pecho"
+  ]
+ },
+ {
+  "i": 22,
+  "w": "el corazón",
+  "ex": "Su corazón late un poco rápido hoy.",
+  "en": "Your heart is beating a little fast today.",
+  "hit": "corazón",
+  "note": "",
+  "type": [
+   "el corazón",
+   "corazón"
+  ]
+ },
+ {
+  "i": 23,
+  "w": "los pulmones",
+  "ex": "Quiero escuchar sus pulmones por la espalda.",
+  "en": "I want to listen to your lungs from your back.",
+  "hit": "pulmones",
+  "note": "",
+  "type": [
+   "los pulmones",
+   "pulmones"
+  ]
+ },
+ {
+  "i": 24,
+  "w": "el brazo izquierdo",
+  "ex": "¿Tiene dolor en el brazo izquierdo también?",
+  "en": "Do you also have pain in your left arm?",
+  "hit": "brazo izquierdo",
+  "note": "",
+  "type": [
+   "el brazo izquierdo",
+   "brazo izquierdo"
+  ]
+ },
+ {
+  "i": 25,
+  "w": "el brazo derecho",
+  "ex": "¿Puede levantar el brazo derecho, por favor?",
+  "en": "Can you raise your right arm, please?",
+  "hit": "brazo derecho",
+  "note": "Derecho = right; derecha also means 'to the right'.",
+  "type": [
+   "el brazo derecho",
+   "brazo derecho"
+  ]
+ },
+ {
+  "i": 26,
+  "w": "la mano",
+  "ex": "¿Me puede apretar la mano con fuerza?",
+  "en": "Can you squeeze my hand hard?",
+  "hit": "mano",
+  "note": "Feminine despite ending in -o: la mano.",
+  "type": [
+   "la mano",
+   "mano"
+  ]
+ },
+ {
+  "i": 27,
+  "w": "la espalda",
+  "ex": "¿Tiene dolor de espalda también?",
+  "en": "Do you also have back pain?",
+  "hit": "espalda",
+  "note": "",
+  "type": [
+   "la espalda",
+   "espalda"
+  ]
+ },
+ {
+  "i": 28,
+  "w": "el estómago / la panza",
+  "ex": "¿Le duele el estómago o tiene náuseas?",
+  "en": "Does your stomach hurt, or do you have nausea?",
+  "hit": "estómago",
+  "note": "Panza and barriga are informal but very common with patients.",
+  "type": [
+   "el estómago",
+   "estómago",
+   "la panza",
+   "panza",
+   "la barriga",
+   "barriga"
+  ]
+ },
+ {
+  "i": 29,
+  "w": "la pierna",
+  "ex": "¿Le duele la pierna cuando camina?",
+  "en": "Does your leg hurt when you walk?",
+  "hit": "pierna",
+  "note": "",
+  "type": [
+   "la pierna",
+   "pierna"
+  ]
+ },
+ {
+  "i": 30,
+  "w": "la rodilla",
+  "ex": "Tengo dolor en la rodilla cuando subo escaleras.",
+  "en": "I have knee pain when I climb stairs.",
+  "hit": "rodilla",
+  "note": "",
+  "type": [
+   "la rodilla",
+   "rodilla"
+  ]
+ },
+ {
+  "i": 31,
+  "w": "el tobillo",
+  "ex": "Me duele el tobillo y no puedo caminar bien.",
+  "en": "My ankle hurts and I can't walk well.",
+  "hit": "tobillo",
+  "note": "",
+  "type": [
+   "el tobillo",
+   "tobillo"
+  ]
+ },
+ {
+  "i": 32,
+  "w": "el pie",
+  "ex": "Me duele el pie derecho cuando camino.",
+  "en": "My right foot hurts when I walk.",
+  "hit": "pie",
+  "note": "Plural: los pies.",
+  "type": [
+   "el pie",
+   "pie"
+  ]
+ },
+ {
+  "i": 33,
+  "w": "el dolor",
+  "ex": "¿Tiene dolor ahora mismo, señora?",
+  "en": "Are you in pain right now, ma'am?",
+  "hit": "dolor",
+  "note": "",
+  "type": [
+   "el dolor",
+   "dolor"
+  ]
+ },
+ {
+  "i": 34,
+  "w": "doler (me duele / le duele)",
+  "ex": "¿Le duele el pecho cuando sube escaleras?",
+  "en": "Does your chest hurt when you climb stairs?",
+  "hit": "duele",
+  "note": "Works like gustar: me duele la pierna, me duelen las piernas.",
+  "type": [
+   "doler"
+  ]
+ },
+ {
+  "i": 35,
+  "w": "la falta de aire",
+  "ex": "¿Tiene falta de aire cuando camina?",
+  "en": "Are you short of breath when you walk?",
+  "hit": "falta de aire",
+  "note": "Also asked as ¿Le falta el aire?",
+  "type": [
+   "la falta de aire",
+   "falta de aire"
+  ]
+ },
+ {
+  "i": 36,
+  "w": "el mareo",
+  "ex": "Con esta pastilla me da mareo en las mañanas.",
+  "en": "This pill makes me dizzy in the mornings.",
+  "hit": "mareo",
+  "note": "Often plural: ¿Tiene mareos? (dizzy spells).",
+  "type": [
+   "el mareo",
+   "mareo"
+  ]
+ },
+ {
+  "i": 37,
+  "w": "las náuseas",
+  "ex": "¿Tiene náuseas o ganas de vomitar?",
+  "en": "Do you have nausea or feel like throwing up?",
+  "hit": "náuseas",
+  "note": "Usually plural in Spanish: tengo náuseas.",
+  "type": [
+   "las náuseas",
+   "náuseas",
+   "la náusea",
+   "náusea"
+  ]
+ },
+ {
+  "i": 38,
+  "w": "hinchado / hinchada",
+  "ex": "Tiene los pies muy hinchados hoy.",
+  "en": "Your feet are very swollen today.",
+  "hit": "hinchados",
+  "note": "Agrees with the noun: pie hinchado, piernas hinchadas.",
+  "type": [
+   "hinchado",
+   "hinchada"
+  ]
+ },
+ {
+  "i": 39,
+  "w": "del cero al diez",
+  "ex": "Del cero al diez, ¿qué tan fuerte es su dolor?",
+  "en": "From zero to ten, how bad is your pain?",
+  "hit": "Del cero al diez",
+  "note": "",
+  "type": [
+   "del cero al diez"
+  ]
+ },
+ {
+  "i": 40,
+  "w": "leve",
+  "ex": "Es un dolor leve, como un dos.",
+  "en": "It's a mild pain, like a two.",
+  "hit": "leve",
+  "note": "Patients often say 'poquito' or 'no muy fuerte' instead.",
+  "type": [
+   "leve"
+  ]
+ },
+ {
+  "i": 41,
+  "w": "fuerte",
+  "ex": "El dolor es muy fuerte, como un nueve.",
+  "en": "The pain is very severe, like a nine.",
+  "hit": "fuerte",
+  "note": "Also 'pounding' for a heartbeat: lo siento fuerte.",
+  "type": [
+   "fuerte"
+  ]
+ },
+ {
+  "i": 42,
+  "w": "lunes, martes, miércoles, jueves, viernes, sábado, domingo",
+  "ex": "Su próxima cita es el miércoles en la mañana.",
+  "en": "Your next appointment is Wednesday morning.",
+  "hit": "miércoles",
+  "note": "Days are not capitalized; el martes = on Tuesday.",
+  "type": []
+ },
+ {
+  "i": 43,
+  "w": "a la una / a las dos y media",
+  "ex": "La clínica cierra a la una los sábados.",
+  "en": "The clinic closes at one o'clock on Saturdays.",
+  "hit": "a la una",
+  "note": "Una is singular (a la una); all other hours are plural (a las dos).",
+  "type": []
+ }
+]

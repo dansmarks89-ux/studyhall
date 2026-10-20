@@ -1,0 +1,1531 @@
+{
+  "id": "M3",
+  "track": "med",
+  "n": 3,
+  "title": "Cardiac review of symptoms",
+  "goal": "Run a full cardiac review of symptoms: chest pain, breathlessness, swelling, palpitations, dizziness and fainting, and how far the patient can walk.",
+  "bestAfter": "C4",
+  "grammar": [
+    {
+      "h": "Symptoms that work like gustar",
+      "p": "Many symptoms use the *gustar* pattern: the symptom is the subject and the person is *me / le*. *Me falta el aire* is literally 'air is lacking to me'. The verb agrees with the symptom: *me duele la pierna* but *me duelen las piernas*. For swelling, patients say *se me hinchan los pies* (my feet swell); you ask *¿Se le hinchan los pies?*",
+      "ex": [
+        [
+          "¿Le falta el aire cuando camina?",
+          "Are you short of breath when you walk?"
+        ],
+        [
+          "¿Se le hinchan los tobillos en la tarde?",
+          "Do your ankles swell in the afternoon?"
+        ],
+        [
+          "Me duelen las pantorrillas cuando camino.",
+          "My calves hurt when I walk."
+        ]
+      ]
+    },
+    {
+      "h": "Triggers: al + infinitive, cuando, en reposo",
+      "p": "To ask what brings a symptom on, use *al* + infinitive (*al caminar* = when walking) or *cuando* + present (*cuando sube escaleras*). Contrast *con el esfuerzo* (with exertion) and *en reposo* (at rest). *Hasta* means 'even': *hasta en reposo* = even at rest.",
+      "ex": [
+        [
+          "¿Le falta el aire al subir escaleras?",
+          "Do you get short of breath climbing stairs?"
+        ],
+        [
+          "¿Le da dolor de pecho con el esfuerzo?",
+          "Do you get chest pain with exertion?"
+        ],
+        [
+          "Me falta el aire hasta en reposo.",
+          "I'm short of breath even at rest."
+        ]
+      ]
+    },
+    {
+      "h": "The fainting story: imperfect for the scene, preterite for the event",
+      "p": "Use the imperfect for the background (where the patient was, what they were doing, what it was like): *estaba, hacía, había*. Use the preterite for what happened: *me mareé, me desmayé, me caí, me golpeé*. A closed period with a measured length also takes the preterite: *¿Cuánto tiempo estuvo inconsciente?*",
+      "ex": [
+        [
+          "¿Qué hacía cuando se desmayó?",
+          "What were you doing when you fainted?"
+        ],
+        [
+          "Estaba en la iglesia y hacía mucho calor.",
+          "I was in church and it was very hot."
+        ],
+        [
+          "Me mareé, se me nubló la vista y me caí.",
+          "I got dizzy, my vision went dim, and I fell."
+        ]
+      ]
+    },
+    {
+      "h": "Then vs now: exercise tolerance",
+      "p": "Measure function with *cuadras* (blocks), *pisos* (floors) and *escaleras* (stairs). Compare with the past using the imperfect for 'used to': *Antes caminaba diez cuadras; ahora camino dos.* *Podía* = 'I used to be able to'.",
+      "ex": [
+        [
+          "¿Cuántas cuadras puede caminar sin parar?",
+          "How many blocks can you walk without stopping?"
+        ],
+        [
+          "Antes subía tres pisos sin problema.",
+          "I used to climb three floors without a problem."
+        ],
+        [
+          "Ahora me canso más que antes.",
+          "Now I get tired more than before."
+        ]
+      ]
+    },
+    {
+      "h": "Describing palpitations",
+      "p": "Patients describe the heartbeat as *rápido* (fast), *acelerado* (racing), *fuerte* (pounding), *irregular*, or as *brincos* (skips, jumps). Here *lo* means 'it' (the heart): *¿Lo siente rápido?* = Do you feel it fast?",
+      "ex": [
+        [
+          "¿Siente el corazón rápido, fuerte o irregular?",
+          "Do you feel your heart fast, pounding, or irregular?"
+        ],
+        [
+          "Siento brincos en el pecho.",
+          "I feel skips in my chest."
+        ],
+        [
+          "El corazón me late muy rápido.",
+          "My heart beats very fast."
+        ]
+      ]
+    }
+  ],
+  "vocab": [
+    [
+      "el dolor de pecho",
+      "chest pain"
+    ],
+    [
+      "la opresión en el pecho",
+      "chest tightness"
+    ],
+    [
+      "la falta de aire",
+      "shortness of breath"
+    ],
+    [
+      "me falta el aire",
+      "I'm short of breath"
+    ],
+    [
+      "siento que me ahogo",
+      "I feel like I'm suffocating"
+    ],
+    [
+      "con el esfuerzo",
+      "with exertion"
+    ],
+    [
+      "en reposo",
+      "at rest"
+    ],
+    [
+      "acostado / acostada",
+      "lying down"
+    ],
+    [
+      "sentado / sentada",
+      "sitting"
+    ],
+    [
+      "la almohada",
+      "pillow"
+    ],
+    [
+      "despertarse con falta de aire",
+      "to wake up short of breath"
+    ],
+    [
+      "la hinchazón",
+      "swelling"
+    ],
+    [
+      "hinchado / hinchada",
+      "swollen"
+    ],
+    [
+      "se me hinchan los pies",
+      "my feet swell"
+    ],
+    [
+      "los tobillos",
+      "ankles"
+    ],
+    [
+      "los pies",
+      "feet"
+    ],
+    [
+      "las pantorrillas",
+      "calves"
+    ],
+    [
+      "las palpitaciones",
+      "palpitations"
+    ],
+    [
+      "latir",
+      "to beat (the heart)"
+    ],
+    [
+      "el latido",
+      "heartbeat"
+    ],
+    [
+      "los brincos",
+      "skips, jumps (in the heartbeat)"
+    ],
+    [
+      "acelerado",
+      "racing, fast"
+    ],
+    [
+      "fuerte",
+      "strong, pounding"
+    ],
+    [
+      "irregular",
+      "irregular"
+    ],
+    [
+      "el mareo",
+      "dizziness, dizzy spell"
+    ],
+    [
+      "marearse",
+      "to get dizzy"
+    ],
+    [
+      "el desmayo",
+      "faint, fainting spell"
+    ],
+    [
+      "desmayarse",
+      "to faint"
+    ],
+    [
+      "casi me desmayo",
+      "I almost fainted"
+    ],
+    [
+      "perder el conocimiento",
+      "to lose consciousness"
+    ],
+    [
+      "inconsciente",
+      "unconscious"
+    ],
+    [
+      "se me nubló la vista",
+      "my vision went dim / blurry"
+    ],
+    [
+      "el sudor frío",
+      "cold sweat"
+    ],
+    [
+      "las náuseas",
+      "nausea"
+    ],
+    [
+      "golpearse",
+      "to hit / bump yourself (e.g., in a fall)"
+    ],
+    [
+      "caerse",
+      "to fall"
+    ],
+    [
+      "el cansancio",
+      "tiredness, fatigue"
+    ],
+    [
+      "cansado / cansada",
+      "tired"
+    ],
+    [
+      "débil",
+      "weak"
+    ],
+    [
+      "la cuadra",
+      "(city) block"
+    ],
+    [
+      "las escaleras",
+      "stairs"
+    ],
+    [
+      "el piso",
+      "floor, story"
+    ],
+    [
+      "sin parar",
+      "without stopping"
+    ],
+    [
+      "de repente",
+      "suddenly"
+    ]
+  ],
+  "phrases": [
+    [
+      "¿Le falta el aire cuando camina?",
+      "Are you short of breath when you walk?"
+    ],
+    [
+      "¿Le da dolor de pecho con el esfuerzo?",
+      "Do you get chest pain with exertion?"
+    ],
+    [
+      "¿Cuántas almohadas usa para dormir?",
+      "How many pillows do you use to sleep?"
+    ],
+    [
+      "¿Se despierta en la noche con falta de aire?",
+      "Do you wake up at night short of breath?"
+    ],
+    [
+      "¿Se le hinchan los pies o los tobillos?",
+      "Do your feet or ankles swell?"
+    ],
+    [
+      "¿Siente el corazón rápido, fuerte o irregular?",
+      "Do you feel your heart fast, pounding, or irregular?"
+    ],
+    [
+      "¿Siente brincos en el pecho?",
+      "Do you feel skips in your chest?"
+    ],
+    [
+      "¿Qué hacía cuando se desmayó?",
+      "What were you doing when you fainted?"
+    ],
+    [
+      "¿Sintió algo antes del desmayo?",
+      "Did you feel anything before the faint?"
+    ],
+    [
+      "¿Cuánto tiempo estuvo inconsciente?",
+      "How long were you unconscious?"
+    ],
+    [
+      "¿Se golpeó o se lastimó?",
+      "Did you hit anything or get hurt?"
+    ],
+    [
+      "¿Alguien vio lo que pasó?",
+      "Did anyone see what happened?"
+    ],
+    [
+      "¿Cuántas cuadras puede caminar sin parar?",
+      "How many blocks can you walk without stopping?"
+    ],
+    [
+      "¿Cuántos pisos puede subir?",
+      "How many floors can you climb?"
+    ],
+    [
+      "¿Le duelen las piernas al caminar?",
+      "Do your legs hurt when you walk?"
+    ]
+  ],
+  "items": [
+    {
+      "id": "M3-mc-01",
+      "t": "mc",
+      "q": "How do you ask a patient 'Are you short of breath when you walk?'",
+      "opts": [
+        "¿Te falta el aire cuando caminas?",
+        "¿Le falta la aire cuando camina?",
+        "¿Le falta el aire cuando camina?",
+        "¿Le falta el aire cuando caminó?"
+      ],
+      "a": 2,
+      "why": "Usted with patients (le … camina); aire is masculine (el aire); present tense for a general symptom."
+    },
+    {
+      "id": "M3-mc-02",
+      "t": "mc",
+      "q": "A patient says: «Duermo con tres almohadas porque acostado me falta el aire.» Which symptom is this?",
+      "opts": [
+        "Leg swelling",
+        "Palpitations",
+        "Claudication",
+        "Orthopnea (short of breath lying flat)"
+      ],
+      "a": 3,
+      "why": "Needing several pillows because lying flat causes breathlessness = orthopnea."
+    },
+    {
+      "id": "M3-mc-03",
+      "t": "mc",
+      "q": "¿Cuántas ___ usa para dormir?",
+      "qen": "How many pillows do you use to sleep?",
+      "opts": [
+        "almohadas",
+        "cobijas",
+        "camas",
+        "sábanas"
+      ],
+      "a": 0,
+      "why": "Pillow = la almohada. Cobija = blanket, sábana = sheet."
+    },
+    {
+      "id": "M3-mc-04",
+      "t": "mc",
+      "q": "Me desmayé mientras ___ la cena.",
+      "qen": "I fainted while I was making dinner.",
+      "opts": [
+        "preparé",
+        "preparaba",
+        "preparo",
+        "prepararé"
+      ],
+      "a": 1,
+      "why": "Mientras + the background action in progress → imperfect: preparaba."
+    },
+    {
+      "id": "M3-mc-05",
+      "t": "mc",
+      "q": "You want to know whether anyone saw the patient faint. Which question asks that?",
+      "opts": [
+        "¿Usted vio a alguien?",
+        "¿Qué vio usted antes?",
+        "¿Alguien ve lo que pasa?",
+        "¿Alguien vio lo que pasó?"
+      ],
+      "a": 3,
+      "why": "Alguien (someone) is the subject; a finished event → preterite vio … pasó."
+    },
+    {
+      "id": "M3-mc-06",
+      "t": "mc",
+      "q": "A patient says: «Siento brincos en el pecho.» What does she mean?",
+      "opts": [
+        "She has burning in her chest.",
+        "She feels her heart skipping or jumping.",
+        "She has a stabbing chest pain.",
+        "She can't jump anymore."
+      ],
+      "a": 1,
+      "why": "Brincos (jumps) is a common way to describe skipped or extra beats."
+    },
+    {
+      "id": "M3-mc-07",
+      "t": "mc",
+      "q": "Antes ___ veinte cuadras sin parar; ahora solo camino dos.",
+      "qen": "I used to walk twenty blocks without stopping; now I only walk two.",
+      "opts": [
+        "caminé",
+        "camino",
+        "caminaba",
+        "caminaré"
+      ],
+      "a": 2,
+      "why": "'Used to' (a past habit) → imperfect: caminaba."
+    },
+    {
+      "id": "M3-mc-08",
+      "t": "mc",
+      "q": "Cuando me desmayé, ___ en la iglesia.",
+      "qen": "When I fainted, I was in church.",
+      "opts": [
+        "estaba",
+        "estuve",
+        "estoy",
+        "fui"
+      ],
+      "a": 0,
+      "why": "Where the patient was is background to the event → imperfect: estaba."
+    },
+    {
+      "id": "M3-mc-09",
+      "t": "mc",
+      "q": "Which word means 'ankles'?",
+      "opts": [
+        "las rodillas",
+        "las pantorrillas",
+        "los talones",
+        "los tobillos"
+      ],
+      "a": 3,
+      "why": "Tobillos = ankles. Rodillas = knees, pantorrillas = calves, talones = heels."
+    },
+    {
+      "id": "M3-mc-10",
+      "t": "mc",
+      "q": "A patient says: «Cuando camino me duelen las pantorrillas, y el dolor se me quita cuando descanso.» This history suggests:",
+      "opts": [
+        "Orthopnea",
+        "Claudication",
+        "Syncope",
+        "Palpitations"
+      ],
+      "a": 1,
+      "why": "Calf pain brought on by walking and relieved by rest = claudication."
+    },
+    {
+      "id": "M3-mc-11",
+      "t": "mc",
+      "q": "How do you ask a patient 'Do you get dizzy when you get up?'",
+      "opts": [
+        "¿Te mareas cuando te levantas?",
+        "¿Se marea cuando se acuesta?",
+        "¿Se marea cuando se levanta?",
+        "¿Se mareó cuando se levanta?"
+      ],
+      "a": 2,
+      "why": "Usted form, present tense for a recurring symptom; levantarse = get up (acostarse = lie down)."
+    },
+    {
+      "id": "M3-mc-12",
+      "t": "mc",
+      "q": "¿Le falta el aire ___ subir escaleras?",
+      "qen": "Do you get short of breath when you climb stairs?",
+      "opts": [
+        "al",
+        "a la",
+        "en",
+        "del"
+      ],
+      "a": 0,
+      "why": "Al + infinitive = when/while doing something: al subir."
+    },
+    {
+      "id": "M3-mc-13",
+      "t": "mc",
+      "q": "How do you ask 'Do you wake up at night short of breath?'",
+      "opts": [
+        "¿Se duerme en la noche con falta de aire?",
+        "¿Se despierta en la noche con falta de aire?",
+        "¿Despierta usted a alguien en la noche?",
+        "¿Se despertó en la noche con falta de aire?"
+      ],
+      "a": 1,
+      "why": "Despertarse = to wake up; present tense for a recurring symptom. Dormirse = to fall asleep."
+    },
+    {
+      "id": "M3-mc-14",
+      "t": "mc",
+      "q": "After a faint, how do you ask 'Did you hit your head?'",
+      "opts": [
+        "¿Se golpea la cabeza?",
+        "¿Le golpeó la cabeza?",
+        "¿Se golpeaba la cabeza?",
+        "¿Se golpeó la cabeza?"
+      ],
+      "a": 3,
+      "why": "One finished event → preterite; golpearse is reflexive (se golpeó) and Spanish uses la with body parts."
+    },
+    {
+      "id": "M3-mc-15",
+      "t": "mc",
+      "q": "A patient says: «Siento el corazón muy acelerado.» What does she mean?",
+      "opts": [
+        "My heart feels heavy.",
+        "My chest feels tight.",
+        "My heart feels like it's racing.",
+        "My heart feels like it stopped."
+      ],
+      "a": 2,
+      "why": "Acelerado = racing, sped up."
+    },
+    {
+      "id": "M3-mc-16",
+      "t": "mc",
+      "q": "How do you ask 'How many blocks could you walk a year ago?'",
+      "opts": [
+        "¿Cuántas cuadras puede caminar hace un año?",
+        "¿Cuántas cuadras podía caminar hace un año?",
+        "¿Cuántas cuadras podrá caminar hace un año?",
+        "¿Cuántas cuadras pudo caminar en un año?"
+      ],
+      "a": 1,
+      "why": "Ability back then, as a general state → imperfect podía. 'En un año' would mean 'in (the course of) a year'."
+    },
+    {
+      "id": "M3-mc-17",
+      "t": "mc",
+      "q": "¿Cuántos ___ puede subir sin parar?",
+      "qen": "How many floors can you climb without stopping?",
+      "opts": [
+        "pies",
+        "cuadras",
+        "pisos",
+        "pasos"
+      ],
+      "a": 2,
+      "why": "Piso = floor/story. Cuadras is feminine (cuántas) and means blocks; pasos = steps."
+    },
+    {
+      "id": "M3-mc-18",
+      "t": "mc",
+      "q": "Tengo los tobillos ___.",
+      "qen": "My ankles are swollen.",
+      "opts": [
+        "hinchados",
+        "hinchado",
+        "hinchadas",
+        "hinchada"
+      ],
+      "a": 0,
+      "why": "Los tobillos is masculine plural → hinchados."
+    },
+    {
+      "id": "M3-mc-19",
+      "t": "mc",
+      "q": "¿Sintió algo ___ desmayo?",
+      "qen": "Did you feel anything before the faint?",
+      "opts": [
+        "antes de la",
+        "después de el",
+        "antes el",
+        "antes del"
+      ],
+      "a": 3,
+      "why": "Antes de + el desmayo → antes del desmayo (de + el contracts to del)."
+    },
+    {
+      "id": "M3-mc-20",
+      "t": "mc",
+      "q": "A patient says: «Me falta el aire hasta en reposo.» What does that tell you?",
+      "opts": [
+        "She is short of breath only with exercise.",
+        "She is short of breath only lying down.",
+        "She is short of breath even at rest.",
+        "She is no longer short of breath."
+      ],
+      "a": 2,
+      "why": "Hasta = even; en reposo = at rest."
+    },
+    {
+      "id": "M3-fill-01",
+      "t": "fill",
+      "q": "¿Le ___ el aire cuando sube escaleras?",
+      "en": "Do you get short of breath when you climb stairs?",
+      "hint": "faltar",
+      "a": [
+        "falta"
+      ],
+      "why": "Gustar pattern: el aire is the subject → falta."
+    },
+    {
+      "id": "M3-fill-02",
+      "t": "fill",
+      "q": "¿Cuántas ___ usa para dormir?",
+      "en": "How many pillows do you use to sleep?",
+      "hint": "pillows",
+      "a": [
+        "almohadas"
+      ],
+      "why": "Pillow = almohada (feminine, so cuántas)."
+    },
+    {
+      "id": "M3-fill-03",
+      "t": "fill",
+      "q": "Ayer me ___ en el baño.",
+      "en": "Yesterday I fainted in the bathroom.",
+      "hint": "desmayarse",
+      "a": [
+        "desmayé"
+      ],
+      "why": "A finished event yesterday, yo → preterite desmayé."
+    },
+    {
+      "id": "M3-fill-04",
+      "t": "fill",
+      "q": "¿Qué ___ usted cuando se desmayó?",
+      "en": "What were you doing when you fainted?",
+      "hint": "hacer",
+      "a": [
+        "hacía",
+        "estaba haciendo"
+      ],
+      "why": "What was going on in the background → imperfect hacía (or estaba haciendo)."
+    },
+    {
+      "id": "M3-fill-05",
+      "t": "fill",
+      "q": "¿Cuánto tiempo ___ inconsciente?",
+      "en": "How long were you unconscious?",
+      "hint": "estar",
+      "a": [
+        "estuvo"
+      ],
+      "why": "A closed period with a measured length → preterite estuvo."
+    },
+    {
+      "id": "M3-fill-06",
+      "t": "fill",
+      "q": "Tengo los pies muy ___.",
+      "en": "My feet are very swollen.",
+      "hint": "swollen",
+      "a": [
+        "hinchados"
+      ],
+      "why": "Los pies is masculine plural → hinchados."
+    },
+    {
+      "id": "M3-fill-07",
+      "t": "fill",
+      "q": "Antes ___ diez cuadras; ahora solo camino dos.",
+      "en": "I used to walk ten blocks; now I only walk two.",
+      "hint": "caminar",
+      "a": [
+        "caminaba"
+      ],
+      "why": "'Used to' → imperfect caminaba."
+    },
+    {
+      "id": "M3-fill-08",
+      "t": "fill",
+      "q": "¿___ pisos puede subir sin parar?",
+      "en": "How many floors can you climb without stopping?",
+      "hint": "how many",
+      "a": [
+        "Cuántos",
+        "cuántos"
+      ],
+      "why": "Piso is masculine → cuántos, with an accent because it is a question word."
+    },
+    {
+      "id": "M3-fill-09",
+      "t": "fill",
+      "q": "¿Siente que el corazón le ___ muy rápido?",
+      "en": "Do you feel that your heart is beating very fast?",
+      "hint": "latir",
+      "a": [
+        "late",
+        "está latiendo"
+      ],
+      "why": "El corazón (it) → late. (Está latiendo is also correct.)"
+    },
+    {
+      "id": "M3-fill-10",
+      "t": "fill",
+      "q": "¿Le duelen las piernas ___ caminar?",
+      "en": "Do your legs hurt when you walk?",
+      "hint": "when (+ infinitive)",
+      "a": [
+        "al"
+      ],
+      "why": "Al + infinitive = when doing something."
+    },
+    {
+      "id": "M3-fill-11",
+      "t": "fill",
+      "q": "¿Alguien ___ lo que pasó?",
+      "en": "Did anyone see what happened?",
+      "hint": "ver",
+      "a": [
+        "vio"
+      ],
+      "why": "Alguien (he/she form), finished event → preterite vio (no accent)."
+    },
+    {
+      "id": "M3-fill-12",
+      "t": "fill",
+      "q": "Mientras ___ la cena, sentí el corazón muy rápido.",
+      "en": "While I was making dinner, I felt my heart racing.",
+      "hint": "preparar",
+      "a": [
+        "preparaba",
+        "estaba preparando"
+      ],
+      "why": "Mientras + background action → imperfect preparaba (or estaba preparando)."
+    },
+    {
+      "id": "M3-fill-13",
+      "t": "fill",
+      "q": "¿Se ___ la cabeza cuando se cayó?",
+      "en": "Did you hit your head when you fell?",
+      "hint": "golpear",
+      "a": [
+        "golpeó"
+      ],
+      "why": "Usted, a finished event → preterite golpeó."
+    },
+    {
+      "id": "M3-fill-14",
+      "t": "fill",
+      "q": "¿Se le ___ los tobillos en la tarde?",
+      "en": "Do your ankles swell in the afternoon?",
+      "hint": "hinchar",
+      "a": [
+        "hinchan"
+      ],
+      "why": "Los tobillos is the subject (plural) → se le hinchan."
+    },
+    {
+      "id": "M3-fill-15",
+      "t": "fill",
+      "q": "Anoche me ___ a las tres de la mañana con falta de aire.",
+      "en": "Last night I woke up at three in the morning short of breath.",
+      "hint": "despertarse",
+      "a": [
+        "desperté"
+      ],
+      "why": "Anoche + one event → preterite desperté."
+    },
+    {
+      "id": "M3-fill-16",
+      "t": "fill",
+      "q": "¿Le da dolor de pecho ___ hace esfuerzo?",
+      "en": "Do you get chest pain when you exert yourself?",
+      "hint": "when",
+      "a": [
+        "cuando"
+      ],
+      "why": "Cuando + present for a recurring situation."
+    },
+    {
+      "id": "M3-fill-17",
+      "t": "fill",
+      "q": "Me siento muy ___ todo el día.",
+      "en": "I feel very tired all day. (a woman speaking)",
+      "hint": "tired",
+      "a": [
+        "cansada"
+      ],
+      "why": "A woman speaking → feminine cansada."
+    },
+    {
+      "id": "M3-fill-18",
+      "t": "fill",
+      "q": "¿El dolor ___ cuando descansa?",
+      "en": "Does the pain go away when you rest?",
+      "hint": "quitarse",
+      "a": [
+        "se quita",
+        "se le quita"
+      ],
+      "why": "Quitarse = to go away (pain): el dolor se (le) quita."
+    },
+    {
+      "id": "M3-fill-19",
+      "t": "fill",
+      "q": "Antes ___ subir tres pisos sin problema.",
+      "en": "I used to be able to climb three floors without a problem.",
+      "hint": "poder",
+      "a": [
+        "podía"
+      ],
+      "why": "'Used to be able to' (general past ability) → imperfect podía."
+    },
+    {
+      "id": "M3-fill-20",
+      "t": "fill",
+      "q": "¿Hace cuánto ___ los mareos?",
+      "en": "How long ago did the dizzy spells start?",
+      "hint": "empezar",
+      "a": [
+        "empezaron",
+        "le empezaron"
+      ],
+      "why": "Los mareos (plural) is the subject; when something started → preterite empezaron."
+    },
+    {
+      "id": "M3-tiles-01",
+      "t": "tiles",
+      "en": "How many pillows do you use to sleep?",
+      "a": "¿Cuántas almohadas usa para dormir?",
+      "alt": [
+        "¿Para dormir, cuántas almohadas usa?"
+      ],
+      "extra": [
+        "cuántos",
+        "dormimos"
+      ]
+    },
+    {
+      "id": "M3-tiles-02",
+      "t": "tiles",
+      "en": "Are you short of breath when you walk?",
+      "a": "¿Le falta el aire cuando camina?",
+      "alt": [
+        "¿Cuando camina, le falta el aire?"
+      ],
+      "extra": [
+        "la",
+        "faltan"
+      ]
+    },
+    {
+      "id": "M3-tiles-03",
+      "t": "tiles",
+      "en": "What were you doing when you fainted?",
+      "a": "¿Qué hacía cuando se desmayó?",
+      "alt": [
+        "¿Cuando se desmayó, qué hacía?"
+      ],
+      "extra": [
+        "hace",
+        "desmaya"
+      ]
+    },
+    {
+      "id": "M3-tiles-04",
+      "t": "tiles",
+      "en": "Did anyone see what happened?",
+      "a": "¿Alguien vio lo que pasó?",
+      "alt": [
+        "¿Vio alguien lo que pasó?"
+      ],
+      "extra": [
+        "ve",
+        "pase"
+      ]
+    },
+    {
+      "id": "M3-tiles-05",
+      "t": "tiles",
+      "en": "My feet and ankles are swollen.",
+      "a": "Tengo los pies y los tobillos hinchados.",
+      "alt": [
+        "Tengo los tobillos y los pies hinchados."
+      ],
+      "extra": [
+        "hinchadas",
+        "las"
+      ]
+    },
+    {
+      "id": "M3-tiles-06",
+      "t": "tiles",
+      "en": "I used to walk ten blocks, and now I walk two.",
+      "a": "Antes caminaba diez cuadras y ahora camino dos.",
+      "alt": [],
+      "extra": [
+        "caminaré",
+        "cuadra"
+      ]
+    },
+    {
+      "id": "M3-tiles-07",
+      "t": "tiles",
+      "en": "How long were you unconscious?",
+      "a": "¿Cuánto tiempo estuvo inconsciente?",
+      "alt": [],
+      "extra": [
+        "cuánta",
+        "fue"
+      ]
+    },
+    {
+      "id": "M3-tiles-08",
+      "t": "tiles",
+      "en": "Do you feel your heart fast or irregular?",
+      "a": "¿Siente el corazón rápido o irregular?",
+      "alt": [
+        "¿Siente el corazón irregular o rápido?",
+        "¿Siente rápido o irregular el corazón?",
+        "¿Siente irregular o rápido el corazón?"
+      ],
+      "extra": [
+        "siento",
+        "irregulares"
+      ]
+    },
+    {
+      "id": "M3-tiles-09",
+      "t": "tiles",
+      "en": "Did you hit your head when you fell?",
+      "a": "¿Se golpeó la cabeza cuando se cayó?",
+      "alt": [
+        "¿Cuando se cayó, se golpeó la cabeza?"
+      ],
+      "extra": [
+        "golpeé",
+        "caí"
+      ]
+    },
+    {
+      "id": "M3-tiles-10",
+      "t": "tiles",
+      "en": "I woke up at night short of breath.",
+      "a": "Me desperté en la noche con falta de aire.",
+      "alt": [
+        "En la noche me desperté con falta de aire.",
+        "Me desperté con falta de aire en la noche."
+      ],
+      "extra": [
+        "despierto",
+        "del"
+      ]
+    },
+    {
+      "id": "M3-tiles-11",
+      "t": "tiles",
+      "en": "Do your legs hurt when you walk?",
+      "a": "¿Le duelen las piernas al caminar?",
+      "alt": [
+        "¿Al caminar le duelen las piernas?"
+      ],
+      "extra": [
+        "duele",
+        "camina"
+      ]
+    },
+    {
+      "id": "M3-tiles-12",
+      "t": "tiles",
+      "en": "How many blocks can you walk without stopping?",
+      "a": "¿Cuántas cuadras puede caminar sin parar?",
+      "alt": [],
+      "extra": [
+        "cuántos",
+        "puedo"
+      ]
+    },
+    {
+      "id": "M3-tiles-13",
+      "t": "tiles",
+      "en": "I'm short of breath even at rest.",
+      "a": "Me falta el aire hasta en reposo.",
+      "alt": [
+        "Hasta en reposo me falta el aire."
+      ],
+      "extra": [
+        "faltan",
+        "la"
+      ]
+    },
+    {
+      "id": "M3-tiles-14",
+      "t": "tiles",
+      "en": "I was in church when I fainted.",
+      "a": "Estaba en la iglesia cuando me desmayé.",
+      "alt": [
+        "Cuando me desmayé, estaba en la iglesia."
+      ],
+      "extra": [
+        "estuve",
+        "desmayaba"
+      ]
+    },
+    {
+      "id": "M3-tiles-15",
+      "t": "tiles",
+      "en": "Did you feel anything before the faint?",
+      "a": "¿Sintió algo antes del desmayo?",
+      "alt": [
+        "¿Antes del desmayo, sintió algo?"
+      ],
+      "extra": [
+        "siente",
+        "de"
+      ]
+    },
+    {
+      "id": "M3-tiles-16",
+      "t": "tiles",
+      "en": "I feel very tired and weak. (a man speaking)",
+      "a": "Me siento muy cansado y débil.",
+      "alt": [
+        "Me siento muy débil y cansado."
+      ],
+      "extra": [
+        "siente",
+        "cansados"
+      ]
+    },
+    {
+      "id": "M3-listen-01",
+      "t": "listen",
+      "say": "Fue de repente; no sentí nada antes.",
+      "opts": [
+        "It was sudden; I didn't feel anything beforehand.",
+        "It was gradual; I felt it coming.",
+        "It was sudden; I felt nauseated beforehand.",
+        "It happens a lot; I don't feel anything."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M3-listen-02",
+      "t": "listen",
+      "say": "Duermo con tres almohadas porque acostado me falta el aire.",
+      "opts": [
+        "I sleep with two pillows because my back hurts when I lie down.",
+        "I used to sleep with three pillows, but now I sleep flat.",
+        "I sleep with three pillows because I get short of breath lying flat.",
+        "I sleep sitting in a chair because I cough at night."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M3-listen-03",
+      "t": "listen",
+      "say": "Se me hinchan los pies en la tarde.",
+      "opts": [
+        "My feet hurt in the afternoon.",
+        "My feet swell in the afternoon.",
+        "My feet swelled yesterday afternoon.",
+        "My hands swell in the afternoon."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M3-listen-04",
+      "t": "listen",
+      "say": "Antes subía tres pisos; ahora no puedo subir ni uno.",
+      "opts": [
+        "I climbed three floors today, but not one more.",
+        "I live on the third floor and can't climb stairs.",
+        "Now I can climb three floors, but before I couldn't climb one.",
+        "I used to climb three floors; now I can't even climb one."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M3-listen-05",
+      "t": "listen",
+      "say": "Siento brincos en el pecho, sobre todo en la noche.",
+      "opts": [
+        "I feel skips in my chest, especially at night.",
+        "I feel burning in my chest, especially at night.",
+        "I felt a jolt in my chest last night.",
+        "I feel skips in my chest, but never at night."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M3-listen-06",
+      "t": "listen",
+      "say": "Me mareé, se me nubló la vista y me caí.",
+      "opts": [
+        "I get dizzy and my vision gets blurry, but I don't fall.",
+        "I got dizzy, my vision went dim, and I sat down.",
+        "I got dizzy, my vision went dim, and I fell.",
+        "I fell, hit my head, and then got dizzy."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M3-listen-07",
+      "t": "listen",
+      "say": "Mi esposo me vio y dice que estuve inconsciente como un minuto.",
+      "opts": [
+        "My husband saw me and says I was confused for about an hour.",
+        "My husband saw me and says I was unconscious for about a minute.",
+        "My husband didn't see me; I was alone for about a minute.",
+        "My husband fainted for about a minute."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M3-listen-08",
+      "t": "listen",
+      "say": "Me duelen las pantorrillas cuando camino dos cuadras.",
+      "opts": [
+        "My knees hurt when I walk two blocks.",
+        "My calves hurt after I walk twelve blocks.",
+        "My calves cramp at night in bed.",
+        "My calves hurt when I walk two blocks."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M3-listen-09",
+      "t": "listen",
+      "say": "Me despierto en la noche sin poder respirar.",
+      "opts": [
+        "I wake up at night unable to breathe.",
+        "I woke up last night unable to breathe.",
+        "I can't sleep at night because I cough.",
+        "I wake up at night to go to the bathroom."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M3-listen-10",
+      "t": "listen",
+      "say": "Estaba sentada en la iglesia cuando me desmayé.",
+      "opts": [
+        "I was standing in church when I fainted.",
+        "I fainted after I left church.",
+        "I was sitting in church when I fainted.",
+        "I almost fainted while sitting in church."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M3-dlg-01",
+      "t": "dlg",
+      "title": "Breathless at night",
+      "turns": [
+        {
+          "who": "Sr. Ramírez",
+          "es": "Doctor, me canso mucho y me falta el aire.",
+          "en": "Doctor, I get very tired and I'm short of breath."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Te falta el aire cuando caminas?",
+            "¿Le falta el aire cuando camina o también en reposo?",
+            "¿Le faltó el aire mañana?"
+          ],
+          "a": 1,
+          "why": "Usted with patients, present tense for a current symptom, and it separates exertion from rest."
+        },
+        {
+          "who": "Sr. Ramírez",
+          "es": "Cuando camino, y también en la noche. No puedo dormir acostado.",
+          "en": "When I walk, and also at night. I can't sleep lying flat."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuántos almohadas usa para dormir?",
+            "¿Cuántas almohadas usaré para dormir?",
+            "¿Cuántas almohadas usa para dormir?"
+          ],
+          "a": 2,
+          "why": "Almohada is feminine (cuántas) and the question is about him now (usa)."
+        },
+        {
+          "who": "Sr. Ramírez",
+          "es": "Uso tres, y a veces duermo en el sillón.",
+          "en": "I use three, and sometimes I sleep in the armchair."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Se le hinchan los pies?",
+            "¿Se te hinchan los pies?",
+            "¿Se le hinchó los pies?"
+          ],
+          "a": 0,
+          "why": "Usted form (se le), and the verb agrees with los pies (hinchan)."
+        },
+        {
+          "who": "Sr. Ramírez",
+          "es": "Sí, en la tarde tengo los tobillos muy hinchados.",
+          "en": "Yes, in the afternoon my ankles are very swollen."
+        }
+      ]
+    },
+    {
+      "id": "M3-dlg-02",
+      "t": "dlg",
+      "title": "A faint at the supermarket",
+      "turns": [
+        {
+          "who": "Sra. Morales",
+          "es": "La semana pasada me desmayé en el supermercado.",
+          "en": "Last week I fainted at the supermarket."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Qué hiciste cuando te desmayaste?",
+            "¿Qué hacía cuando se desmayó?",
+            "¿Qué hace cuando se desmaya mañana?"
+          ],
+          "a": 1,
+          "why": "Usted, and the imperfect asks about the background (what she was doing)."
+        },
+        {
+          "who": "Sra. Morales",
+          "es": "Estaba en la fila para pagar. Hacía mucho calor.",
+          "en": "I was in line to pay. It was very hot."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Sintió algo antes del desmayo?",
+            "¿Siente algo antes del desmayo la semana pasada?",
+            "¿Sentiste algo antes?"
+          ],
+          "a": 0,
+          "why": "Asking about warning symptoms of a past event → preterite sintió, usted."
+        },
+        {
+          "who": "Sra. Morales",
+          "es": "Sí, sentí calor, náuseas y se me nubló la vista.",
+          "en": "Yes, I felt hot, nauseated, and my vision went dim."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Alguien verá lo que pasó?",
+            "¿Tú viste lo que pasó?",
+            "¿Alguien vio lo que pasó?"
+          ],
+          "a": 2,
+          "why": "A witness to a past event → preterite vio."
+        },
+        {
+          "who": "Sra. Morales",
+          "es": "Sí, mi hija. Dice que estuve inconsciente unos segundos.",
+          "en": "Yes, my daughter. She says I was unconscious for a few seconds."
+        }
+      ]
+    },
+    {
+      "id": "M3-dlg-03",
+      "t": "dlg",
+      "title": "A strange heartbeat",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Doctor, a veces siento el corazón muy raro.",
+          "en": "Doctor, sometimes my heart feels very strange."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿La siente rápida, fuerte o irregular?",
+            "¿Lo siente rápido, fuerte o irregular?",
+            "¿Lo sientes rápido, fuerte o irregular?"
+          ],
+          "a": 1,
+          "why": "Lo = el corazón (masculine); usted form siente."
+        },
+        {
+          "who": "Paciente",
+          "es": "Rápido e irregular, como brincos. Me dura unos minutos.",
+          "en": "Fast and irregular, like skips. It lasts a few minutes."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Qué hacía la última vez que le pasó?",
+            "¿Qué hará la última vez que le pasó?",
+            "¿Qué hacías la última vez que te pasó?"
+          ],
+          "a": 0,
+          "why": "Background of a past episode → imperfect hacía; usted (le pasó)."
+        },
+        {
+          "who": "Paciente",
+          "es": "Nada. Estaba sentada en el sofá.",
+          "en": "Nothing. I was sitting on the sofa."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Se marea o tiene dolor de pecho ayer?",
+            "¿Te mareaste o tuviste dolor de pecho?",
+            "¿Se mareó o tuvo dolor de pecho?"
+          ],
+          "a": 2,
+          "why": "Associated symptoms during that past episode → preterite, usted."
+        },
+        {
+          "who": "Paciente",
+          "es": "Me mareé un poco, pero no me dolió el pecho.",
+          "en": "I got a little dizzy, but my chest didn't hurt."
+        }
+      ]
+    },
+    {
+      "id": "M3-dlg-04",
+      "t": "dlg",
+      "title": "How far can you walk?",
+      "turns": [
+        {
+          "who": "Sr. Hernández",
+          "es": "Ya no puedo hacer lo que hacía antes.",
+          "en": "I can't do what I used to do anymore."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuántas cuadras puede caminar sin parar?",
+            "¿Cuántas cuadras pudo caminar mañana?",
+            "¿Cuántos cuadras puede caminar sin parar?"
+          ],
+          "a": 0,
+          "why": "Cuadra is feminine (cuántas); present puede for his current ability."
+        },
+        {
+          "who": "Sr. Hernández",
+          "es": "Unas dos cuadras. Antes caminaba más de diez.",
+          "en": "About two blocks. I used to walk more than ten."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y por qué tuviste que parar?",
+            "¿Y por qué tiene que parar? ¿Le falta el aire o le duele algo?",
+            "¿Y por qué tendrá que parar ayer?"
+          ],
+          "a": 1,
+          "why": "Usted, present tense, and it asks the key question: breathlessness or pain."
+        },
+        {
+          "who": "Sr. Hernández",
+          "es": "Me duelen mucho las pantorrillas, y cuando descanso se me quita.",
+          "en": "My calves hurt a lot, and when I rest it goes away."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y cuántas pisos puede subir?",
+            "¿Y cuántos pisos podía subir mañana?",
+            "¿Y cuántos pisos puede subir?"
+          ],
+          "a": 2,
+          "why": "Piso is masculine (cuántos); present for current ability."
+        },
+        {
+          "who": "Sr. Hernández",
+          "es": "Un piso, despacio.",
+          "en": "One floor, slowly."
+        }
+      ]
+    },
+    {
+      "id": "M3-dlg-05",
+      "t": "dlg",
+      "title": "Pressure at work",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Ayer en el trabajo sentí una presión en el pecho.",
+          "en": "Yesterday at work I felt pressure in my chest."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Qué hace cuando empezó?",
+            "¿Qué hacía cuando empezó?",
+            "¿Qué hizo usted mañana?"
+          ],
+          "a": 1,
+          "why": "Background at the moment it began → imperfect hacía."
+        },
+        {
+          "who": "Paciente",
+          "es": "Cargaba unas cajas pesadas.",
+          "en": "I was carrying some heavy boxes."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿El dolor se le corrió al brazo o a la mandíbula?",
+            "¿El dolor se te corrió al brazo o a la mandíbula?",
+            "¿El dolor se le corre al brazo mañana?"
+          ],
+          "a": 0,
+          "why": "Radiation during yesterday's episode → preterite, usted (se le)."
+        },
+        {
+          "who": "Paciente",
+          "es": "No, pero sudé mucho y me faltaba el aire.",
+          "en": "No, but I sweated a lot and I was short of breath."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuánto tiempo te duró?",
+            "¿Cuánto tiempo le durará ayer?",
+            "¿Cuánto tiempo le duró?"
+          ],
+          "a": 2,
+          "why": "How long a finished episode lasted → preterite duró; usted (le)."
+        },
+        {
+          "who": "Paciente",
+          "es": "Como quince minutos. Se me quitó cuando me senté a descansar.",
+          "en": "About fifteen minutes. It went away when I sat down to rest."
+        }
+      ]
+    },
+    {
+      "id": "M3-dlg-06",
+      "t": "dlg",
+      "title": "A daughter worried about her mother",
+      "turns": [
+        {
+          "who": "Hija",
+          "es": "Doctor, mi mamá tiene los pies muy hinchados.",
+          "en": "Doctor, my mom's feet are very swollen."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Desde cuándo tienes los pies hinchados?",
+            "¿Desde cuándo tuvo los pies hinchados mañana?",
+            "¿Desde cuándo tiene los pies hinchados?"
+          ],
+          "a": 2,
+          "why": "Asking about the mother (she → tiene), present tense with desde cuándo."
+        },
+        {
+          "who": "Hija",
+          "es": "Desde hace dos semanas. Y en la noche no puede dormir acostada.",
+          "en": "For two weeks. And at night she can't sleep lying flat."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Cuántas almohadas usa su mamá para dormir?",
+            "¿Cuántas almohadas usa tu mamá para dormir?",
+            "¿Cuántos almohadas usa su mamá?"
+          ],
+          "a": 0,
+          "why": "Usted with the family (su mamá); almohada is feminine (cuántas)."
+        },
+        {
+          "who": "Hija",
+          "es": "Tres, y a veces se despierta con falta de aire.",
+          "en": "Three, and sometimes she wakes up short of breath."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Tu mamá se cansa más que antes?",
+            "¿Su mamá se cansa más que antes al caminar?",
+            "¿Su mamá se cansaba más que antes mañana?"
+          ],
+          "a": 1,
+          "why": "Usted (su mamá), present tense, comparing with before."
+        },
+        {
+          "who": "Hija",
+          "es": "Sí, ya casi no camina. Se cansa mucho.",
+          "en": "Yes, she hardly walks anymore. She gets very tired."
+        }
+      ]
+    }
+  ],
+  "roleplay": [
+    {
+      "title": "Breathless and swollen",
+      "setup": "You are the cardiologist seeing a new patient referred for shortness of breath. Find out when he gets short of breath, how he sleeps, whether he has swelling, and how far he can walk now compared with before.",
+      "persona": "You are José Martínez, 68, originally from Michoacán, Mexico, living in Chicago for 30 years, retired from restaurant work. Over the last two or three months you have gotten short of breath more and more easily. Facts: you used to walk about ten blocks to church; now you stop after one block because of breathlessness (not pain). You now sleep with three pillows and sometimes in the armchair. Two or three nights a week you wake up suddenly short of breath and have to sit up. Your ankles and feet swell, worse in the afternoon; your shoes feel tight. You get tired easily. No chest pain, no fainting, no palpitations. Speak simple Mexican Spanish at an intermediate level: present, preterite and imperfect, short sentences, everyday words (cuadras, almohadas, me falta el aire, se me hinchan los pies). Use usted with the doctor. Answer only what is asked; reveal the night-time waking and the swelling only if the doctor asks about sleep at night or about the feet/legs. If the doctor uses tú, answer normally but sound slightly surprised.",
+      "opening": "Buenas tardes, doctor. Vengo porque me canso mucho y me falta el aire.",
+      "goals": [
+        "Ask whether the breathlessness comes with exertion, at rest, or lying down",
+        "Find out how many pillows he uses to sleep",
+        "Ask whether he wakes up at night short of breath",
+        "Ask about swelling of the feet or ankles and when it is worse",
+        "Compare how many blocks he can walk now versus before"
+      ]
+    },
+    {
+      "title": "A faint at church",
+      "setup": "You are the electrophysiologist seeing a woman who fainted three days ago. Get the full fainting history: the setting, warning signs, how long she was out, injuries, and what the witness saw.",
+      "persona": "You are Rosa Pérez, 55, from Guatemala, living in Chicago, works cleaning offices. Three days ago you fainted at a long Sunday Mass: the church was very hot and crowded and you had been standing for a long time. Before fainting you felt hot, sweaty, nauseated, and your vision went dim. You fell and hit your left elbow (bruised, not broken); you did not hit your head. Your daughter saw it and says you were out for a few seconds, you looked very pale, and you woke up quickly and knew where you were. You did not lose control of your bladder and did not bite your tongue. No palpitations or chest pain before. You fainted once before as a teenager, also standing in a hot place. Speak simple Spanish at an intermediate level: present, preterite and imperfect, short sentences. Use usted with the doctor. Answer only what is asked; do not volunteer the earlier faint or the elbow injury unless asked about past episodes or injuries.",
+      "opening": "Doctor, el domingo me desmayé en la iglesia y mi hija se asustó mucho.",
+      "goals": [
+        "Find out what she was doing and where she was when she fainted",
+        "Ask what she felt before the faint (warning signs)",
+        "Ask how long she was unconscious and how she was when she woke up",
+        "Ask whether she hit her head or got hurt",
+        "Ask whether anyone saw it and whether it has happened before"
+      ]
+    }
+  ]
+}

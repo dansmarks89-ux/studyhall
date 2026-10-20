@@ -1,0 +1,1479 @@
+{
+ "id": "M1",
+ "track": "med",
+ "n": 1,
+ "title": "Opening the visit",
+ "goal": "Greet a patient, introduce yourself, confirm name and date of birth, offer an interpreter, and ask simple present-tense questions about where it hurts.",
+ "bestAfter": "C1",
+ "grammar": [
+  {
+   "h": "Usted with every patient",
+   "p": "With patients always use *usted*. Its verbs take the same form as él/ella: *¿Cómo se llama?*, *¿Tiene dolor?*, *¿Habla inglés?* 'Your' is *su*: *su fecha de nacimiento*, *su cita*. You can drop the word *usted*; add it for extra politeness or clarity. Never mix in tú forms (*te*, *tu*, *tienes*).",
+   "ex": [
+    [
+     "¿Cómo se llama usted?",
+     "What is your name?"
+    ],
+    [
+     "¿Cuál es su fecha de nacimiento?",
+     "What is your date of birth?"
+    ],
+    [
+     "¿Tiene alguna pregunta?",
+     "Do you have any questions?"
+    ]
+   ]
+  },
+  {
+   "h": "Le duele / le duelen",
+   "p": "*Doler* works like *gustar*: the body part is the subject. One body part → *duele*; two or more → *duelen*. *Me* = to me, *le* = to you (usted), him or her. Use the article (*el pecho*, *las piernas*), not *su* or *mi*.",
+   "ex": [
+    [
+     "¿Le duele el pecho?",
+     "Does your chest hurt?"
+    ],
+    [
+     "Me duelen las piernas.",
+     "My legs hurt."
+    ],
+    [
+     "No me duele nada.",
+     "Nothing hurts."
+    ]
+   ]
+  },
+  {
+   "h": "¿Tiene…? for symptoms",
+   "p": "Ask about symptoms with *¿Tiene…?* + noun: *dolor de cabeza*, *dolor en el pecho*, *mareos*, *náuseas*. Shortness of breath is usually asked like *doler*: *¿Le falta el aire?* (literally 'Is air lacking to you?'). A patient answers *No, no tengo…* or *Sí, tengo…*.",
+   "ex": [
+    [
+     "¿Tiene dolor de pecho?",
+     "Do you have chest pain?"
+    ],
+    [
+     "¿Le falta el aire?",
+     "Are you short of breath?"
+    ],
+    [
+     "No, no tengo mareos.",
+     "No, I don't have any dizziness."
+    ]
+   ]
+  },
+  {
+   "h": "Polite requests with poder and querer",
+   "p": "*¿Puedo + infinitive?* asks permission: *¿Puedo revisarlo?* (to a man) / *¿Puedo revisarla?* (to a woman) — May I examine you? *¿Me puede + infinitive?* asks the patient to do something: *¿Me puede decir su nombre?* *¿Quiere…?* offers: *¿Quiere un intérprete?*",
+   "ex": [
+    [
+     "Con permiso, ¿puedo revisarla?",
+     "Excuse me, may I examine you? (to a woman)"
+    ],
+    [
+     "¿Me puede decir su nombre completo?",
+     "Can you tell me your full name?"
+    ],
+    [
+     "¿Quiere un intérprete?",
+     "Would you like an interpreter?"
+    ]
+   ]
+  },
+  {
+   "h": "Greetings, numbers and times",
+   "p": "*Buenos días* until about noon, *buenas tardes* from noon until dark, *buenas noches* after dark (it is a greeting too, not only goodbye). Times: *a la una*, *a las dos*, *a las tres y media*, *de la mañana / de la tarde*. Days take *el*: *el martes*. Pain scale: *del cero al diez*, *¿qué tan fuerte es?*",
+   "ex": [
+    [
+     "Buenas tardes, señora.",
+     "Good afternoon, ma'am."
+    ],
+    [
+     "Su cita es el jueves a las dos y media.",
+     "Your appointment is Thursday at two-thirty."
+    ],
+    [
+     "Del cero al diez, ¿qué tan fuerte es el dolor?",
+     "From zero to ten, how strong is the pain?"
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  [
+   "buenos días",
+   "good morning"
+  ],
+  [
+   "buenas tardes",
+   "good afternoon"
+  ],
+  [
+   "buenas noches",
+   "good evening / good night"
+  ],
+  [
+   "mucho gusto",
+   "nice to meet you"
+  ],
+  [
+   "con permiso",
+   "excuse me (when entering, or before examining)"
+  ],
+  [
+   "el doctor / la doctora",
+   "the doctor"
+  ],
+  [
+   "el enfermero / la enfermera",
+   "the nurse"
+  ],
+  [
+   "el cardiólogo / la cardióloga",
+   "the cardiologist"
+  ],
+  [
+   "el / la intérprete",
+   "the interpreter"
+  ],
+  [
+   "el nombre completo",
+   "full name"
+  ],
+  [
+   "el apellido",
+   "last name"
+  ],
+  [
+   "la fecha de nacimiento",
+   "date of birth"
+  ],
+  [
+   "la cita",
+   "the appointment"
+  ],
+  [
+   "¿Mande?",
+   "Pardon? / Yes? (Mexico)"
+  ],
+  [
+   "entender (entiende)",
+   "to understand (you understand)"
+  ],
+  [
+   "revisar / examinar",
+   "to examine"
+  ],
+  [
+   "la cabeza",
+   "head"
+  ],
+  [
+   "la garganta",
+   "throat"
+  ],
+  [
+   "el cuello",
+   "neck"
+  ],
+  [
+   "la mandíbula / la quijada",
+   "jaw"
+  ],
+  [
+   "el hombro",
+   "shoulder"
+  ],
+  [
+   "el pecho",
+   "chest"
+  ],
+  [
+   "el corazón",
+   "heart"
+  ],
+  [
+   "los pulmones",
+   "lungs"
+  ],
+  [
+   "el brazo izquierdo",
+   "left arm"
+  ],
+  [
+   "el brazo derecho",
+   "right arm"
+  ],
+  [
+   "la mano",
+   "hand"
+  ],
+  [
+   "la espalda",
+   "back"
+  ],
+  [
+   "el estómago / la panza",
+   "stomach / belly"
+  ],
+  [
+   "la pierna",
+   "leg"
+  ],
+  [
+   "la rodilla",
+   "knee"
+  ],
+  [
+   "el tobillo",
+   "ankle"
+  ],
+  [
+   "el pie",
+   "foot"
+  ],
+  [
+   "el dolor",
+   "pain"
+  ],
+  [
+   "doler (me duele / le duele)",
+   "to hurt (it hurts me / it hurts you)"
+  ],
+  [
+   "la falta de aire",
+   "shortness of breath"
+  ],
+  [
+   "el mareo",
+   "dizziness"
+  ],
+  [
+   "las náuseas",
+   "nausea"
+  ],
+  [
+   "hinchado / hinchada",
+   "swollen"
+  ],
+  [
+   "del cero al diez",
+   "from zero to ten"
+  ],
+  [
+   "leve",
+   "mild"
+  ],
+  [
+   "fuerte",
+   "strong / severe"
+  ],
+  [
+   "lunes, martes, miércoles, jueves, viernes, sábado, domingo",
+   "Monday through Sunday"
+  ],
+  [
+   "a la una / a las dos y media",
+   "at one o'clock / at two-thirty"
+  ]
+ ],
+ "phrases": [
+  [
+   "Buenos días, soy el doctor Miller, su cardiólogo.",
+   "Good morning, I'm Dr. Miller, your cardiologist."
+  ],
+  [
+   "Mucho gusto.",
+   "Nice to meet you."
+  ],
+  [
+   "¿Cómo se llama?",
+   "What is your name?"
+  ],
+  [
+   "¿Cuál es su fecha de nacimiento?",
+   "What is your date of birth?"
+  ],
+  [
+   "¿Habla inglés o prefiere español?",
+   "Do you speak English, or do you prefer Spanish?"
+  ],
+  [
+   "¿Quiere un intérprete?",
+   "Would you like an interpreter?"
+  ],
+  [
+   "¿En qué le puedo ayudar hoy?",
+   "How can I help you today?"
+  ],
+  [
+   "¿Dónde le duele?",
+   "Where does it hurt?"
+  ],
+  [
+   "¿Le duele el pecho?",
+   "Does your chest hurt?"
+  ],
+  [
+   "¿Le falta el aire?",
+   "Are you short of breath?"
+  ],
+  [
+   "Del cero al diez, ¿qué tan fuerte es el dolor?",
+   "From zero to ten, how strong is the pain?"
+  ],
+  [
+   "Con permiso, ¿puedo revisarlo?",
+   "Excuse me, may I examine you? (to a man)"
+  ],
+  [
+   "¿Me entiende?",
+   "Do you understand me?"
+  ],
+  [
+   "¿Tiene alguna pregunta?",
+   "Do you have any questions?"
+  ]
+ ],
+ "items": [
+  {
+   "id": "M1-mc-01",
+   "t": "mc",
+   "q": "It is 3 p.m. You walk into the exam room. Best greeting?",
+   "opts": [
+    "Buenos días.",
+    "Hasta luego.",
+    "Buenas tardes.",
+    "Buenas noches."
+   ],
+   "a": 2,
+   "why": "From about noon until dark you say buenas tardes."
+  },
+  {
+   "id": "M1-mc-02",
+   "t": "mc",
+   "q": "¿Cómo ___ llama?",
+   "qen": "What is your name? (to a patient)",
+   "opts": [
+    "te",
+    "le",
+    "me",
+    "se"
+   ],
+   "a": 3,
+   "why": "Llamarse with usted → se llama. Te is the tú form; le and me don't fit this verb."
+  },
+  {
+   "id": "M1-mc-03",
+   "t": "mc",
+   "q": "¿Le ___ el pecho?",
+   "qen": "Does your chest hurt?",
+   "opts": [
+    "duele",
+    "duelen",
+    "duelo",
+    "dolor"
+   ],
+   "a": 0,
+   "why": "One body part (el pecho) → duele."
+  },
+  {
+   "id": "M1-mc-04",
+   "t": "mc",
+   "q": "¿Le ___ los tobillos?",
+   "qen": "Do your ankles hurt?",
+   "opts": [
+    "duele",
+    "duelo",
+    "duelen",
+    "doler"
+   ],
+   "a": 2,
+   "why": "Plural body parts (los tobillos) → duelen."
+  },
+  {
+   "id": "M1-mc-05",
+   "t": "mc",
+   "q": "Ask a patient: 'What is your date of birth?'",
+   "opts": [
+    "¿Cuál es tu fecha de nacimiento?",
+    "¿Cuál es su fecha de nacimiento?",
+    "¿Qué es su fecha de nacimiento?",
+    "¿Cuándo es su cita?"
+   ],
+   "a": 1,
+   "why": "Use cuál (not qué) before es when asking for a piece of information, and su (usted) with a patient. Tu is the tú form."
+  },
+  {
+   "id": "M1-mc-06",
+   "t": "mc",
+   "q": "After your question, a Mexican patient says '¿Mande?'. What does it mean here?",
+   "opts": [
+    "Pardon? / What did you say?",
+    "Send it to me.",
+    "Thank you.",
+    "Who's in charge?"
+   ],
+   "a": 0,
+   "why": "¿Mande? is the polite Mexican way to say 'Pardon?' or to answer when called."
+  },
+  {
+   "id": "M1-mc-07",
+   "t": "mc",
+   "q": "Ask a woman: 'May I examine you?'",
+   "opts": [
+    "¿Puedo revisarlo?",
+    "¿Puede revisarla?",
+    "¿Puedo revisarte?",
+    "¿Puedo revisarla?"
+   ],
+   "a": 3,
+   "why": "Permission = puedo (I). For a woman (usted) the pronoun is la; lo is for a man, te is tú. ¿Puede revisarla? means 'Can you examine her?'"
+  },
+  {
+   "id": "M1-mc-08",
+   "t": "mc",
+   "q": "A patient says: 'Me duele el brazo izquierdo.' What hurts?",
+   "opts": [
+    "The right arm",
+    "The left shoulder",
+    "The left arm",
+    "The left leg"
+   ],
+   "a": 2,
+   "why": "Brazo = arm, izquierdo = left."
+  },
+  {
+   "id": "M1-mc-09",
+   "t": "mc",
+   "q": "La mandíbula is the…",
+   "opts": [
+    "neck",
+    "jaw",
+    "throat",
+    "cheek"
+   ],
+   "a": 1,
+   "why": "La mandíbula (colloquially la quijada) = the jaw. Neck = el cuello, throat = la garganta."
+  },
+  {
+   "id": "M1-mc-10",
+   "t": "mc",
+   "q": "Offer a patient an interpreter.",
+   "opts": [
+    "¿Tiene un intérprete?",
+    "¿Quieres un intérprete?",
+    "¿Es usted intérprete?",
+    "¿Quiere un intérprete?"
+   ],
+   "a": 3,
+   "why": "Offering = ¿Quiere…? with usted. ¿Tiene…? asks if they already have one; quieres is tú."
+  },
+  {
+   "id": "M1-mc-11",
+   "t": "mc",
+   "q": "Del cero al diez, ¿___ fuerte es el dolor?",
+   "qen": "From zero to ten, how strong is the pain?",
+   "opts": [
+    "cuánto",
+    "qué tan",
+    "cómo",
+    "cuál"
+   ],
+   "a": 1,
+   "why": "'How + adjective' in Latin American Spanish is qué tan: ¿qué tan fuerte?"
+  },
+  {
+   "id": "M1-mc-12",
+   "t": "mc",
+   "q": "A patient says: 'Me duele un poco, como un tres.' What is she telling you?",
+   "opts": [
+    "Mild pain, about 3 out of 10",
+    "Severe pain for 3 days",
+    "Pain in three places",
+    "Pain that lasts 3 hours"
+   ],
+   "a": 0,
+   "why": "Un poco = a little; como un tres = about a three (on the 0–10 scale)."
+  },
+  {
+   "id": "M1-mc-13",
+   "t": "mc",
+   "q": "Su cita es el martes ___.",
+   "qen": "Your appointment is Tuesday at 2:30.",
+   "opts": [
+    "a la dos y media",
+    "a las doce y media",
+    "en las dos y media",
+    "a las dos y media"
+   ],
+   "a": 3,
+   "why": "At + hour = a las (plural for every hour except one o'clock: a la una). 'Doce' would be 12:30."
+  },
+  {
+   "id": "M1-mc-14",
+   "t": "mc",
+   "q": "Which question checks whether the patient understands you?",
+   "opts": [
+    "¿Me oye bien?",
+    "¿Me entiende?",
+    "¿Me espera?",
+    "¿Me llama?"
+   ],
+   "a": 1,
+   "why": "¿Me entiende? = Do you understand me? ¿Me oye bien? only asks if they can hear you."
+  },
+  {
+   "id": "M1-mc-15",
+   "t": "mc",
+   "q": "Ask: 'Are you short of breath?' (literally: 'Is air lacking to you?')",
+   "opts": [
+    "¿Le falta la aire?",
+    "¿Le faltan el aire?",
+    "¿Le falta el aire?",
+    "¿Se falta el aire?"
+   ],
+   "a": 2,
+   "why": "Faltar works like doler: le falta + singular subject. Aire is masculine: el aire."
+  },
+  {
+   "id": "M1-mc-16",
+   "t": "mc",
+   "q": "How do you say 'the ankles'?",
+   "opts": [
+    "las rodillas",
+    "los talones",
+    "las muñecas",
+    "los tobillos"
+   ],
+   "a": 3,
+   "why": "Los tobillos = ankles. Rodillas = knees, talones = heels, muñecas = wrists."
+  },
+  {
+   "id": "M1-mc-17",
+   "t": "mc",
+   "q": "You are a male doctor. Tell a patient: 'I am your cardiologist.'",
+   "opts": [
+    "Soy tu cardiólogo.",
+    "Soy su cardiólogo.",
+    "Es su cardiólogo.",
+    "Soy su cardióloga."
+   ],
+   "a": 1,
+   "why": "Soy = I am; su = your (usted); cardiólogo is the masculine form. Es = he is; tu is tú."
+  },
+  {
+   "id": "M1-mc-18",
+   "t": "mc",
+   "q": "A patient says: 'No hablo mucho inglés.' Best reply?",
+   "opts": [
+    "No, no tengo dolor.",
+    "Mucho gusto, señora.",
+    "No hay problema. Tenemos un intérprete.",
+    "Me duele la cabeza."
+   ],
+   "a": 2,
+   "why": "She doesn't speak much English → reassure her and offer an interpreter."
+  },
+  {
+   "id": "M1-mc-19",
+   "t": "mc",
+   "q": "'¿Le duele cuando respira?' means…",
+   "opts": [
+    "Do you breathe when it hurts?",
+    "Does it hurt when you breathe?",
+    "Did it hurt when you breathed?",
+    "Does it hurt when you walk?"
+   ],
+   "a": 1,
+   "why": "Le duele = does it hurt (present); cuando respira = when you breathe."
+  },
+  {
+   "id": "M1-mc-20",
+   "t": "mc",
+   "q": "Which sentence correctly says 'My chest hurts'?",
+   "opts": [
+    "Me duelen el pecho.",
+    "Me duelo el pecho.",
+    "Me duele el pecho.",
+    "Yo duele el pecho."
+   ],
+   "a": 2,
+   "why": "Me + duele (one body part) + el pecho. The body part is the subject, so not yo."
+  },
+  {
+   "id": "M1-fill-01",
+   "t": "fill",
+   "q": "Buenos días. ¿Cómo se ___?",
+   "en": "Good morning. What is your name?",
+   "hint": "llamarse",
+   "a": [
+    "llama"
+   ],
+   "why": "Usted form of llamarse: se llama."
+  },
+  {
+   "id": "M1-fill-02",
+   "t": "fill",
+   "q": "¿Le ___ la cabeza?",
+   "en": "Does your head hurt?",
+   "hint": "doler (present)",
+   "a": [
+    "duele"
+   ],
+   "why": "One body part → duele."
+  },
+  {
+   "id": "M1-fill-03",
+   "t": "fill",
+   "q": "¿Le ___ las rodillas?",
+   "en": "Do your knees hurt?",
+   "hint": "doler (present)",
+   "a": [
+    "duelen"
+   ],
+   "why": "Plural body parts → duelen."
+  },
+  {
+   "id": "M1-fill-04",
+   "t": "fill",
+   "q": "¿___ dolor de pecho ahora?",
+   "en": "Do you have chest pain now?",
+   "hint": "tener (usted, present)",
+   "a": [
+    "Tiene",
+    "tiene"
+   ],
+   "why": "Usted form of tener: tiene."
+  },
+  {
+   "id": "M1-fill-05",
+   "t": "fill",
+   "q": "¿Cuál es ___ fecha de nacimiento?",
+   "en": "What is your date of birth?",
+   "hint": "your (usted)",
+   "a": [
+    "su"
+   ],
+   "why": "With usted, 'your' = su."
+  },
+  {
+   "id": "M1-fill-06",
+   "t": "fill",
+   "q": "Buenas ___, señora. Son las cuatro de la tarde.",
+   "en": "Good afternoon, ma'am. It's four in the afternoon.",
+   "hint": "afternoon greeting",
+   "a": [
+    "tardes"
+   ],
+   "why": "Afternoon greeting = buenas tardes."
+  },
+  {
+   "id": "M1-fill-07",
+   "t": "fill",
+   "q": "Soy el doctor Miller. Mucho ___.",
+   "en": "I'm Dr. Miller. Nice to meet you.",
+   "hint": "pleasure",
+   "a": [
+    "gusto"
+   ],
+   "why": "Mucho gusto = nice to meet you."
+  },
+  {
+   "id": "M1-fill-08",
+   "t": "fill",
+   "q": "¿___ un intérprete?",
+   "en": "Would you like an interpreter?",
+   "hint": "querer (usted, present)",
+   "a": [
+    "Quiere",
+    "quiere"
+   ],
+   "why": "Querer is stem-changing: usted quiere."
+  },
+  {
+   "id": "M1-fill-09",
+   "t": "fill",
+   "q": "¿Me ___ bien?",
+   "en": "Do you understand me well?",
+   "hint": "entender (usted, present)",
+   "a": [
+    "entiende"
+   ],
+   "why": "Entender is stem-changing (e → ie): usted entiende."
+  },
+  {
+   "id": "M1-fill-10",
+   "t": "fill",
+   "q": "Del cero al diez, ¿qué tan ___ es el dolor?",
+   "en": "From zero to ten, how strong is the pain?",
+   "hint": "strong",
+   "a": [
+    "fuerte",
+    "intenso"
+   ],
+   "why": "Fuerte = strong (intenso also works)."
+  },
+  {
+   "id": "M1-fill-11",
+   "t": "fill",
+   "q": "¿___ le duele?",
+   "en": "Where does it hurt?",
+   "hint": "where",
+   "a": [
+    "Dónde",
+    "dónde"
+   ],
+   "why": "Question word 'where' = dónde, with an accent."
+  },
+  {
+   "id": "M1-fill-12",
+   "t": "fill",
+   "q": "Con permiso, ¿___ revisarlo?",
+   "en": "Excuse me, may I examine you?",
+   "hint": "poder (yo, present)",
+   "a": [
+    "Puedo",
+    "puedo"
+   ],
+   "why": "Asking permission: ¿Puedo + infinitive? (poder: yo puedo)."
+  },
+  {
+   "id": "M1-fill-13",
+   "t": "fill",
+   "q": "Me duele el brazo ___.",
+   "en": "My left arm hurts.",
+   "hint": "left",
+   "a": [
+    "izquierdo"
+   ],
+   "why": "Left = izquierdo (masculine to agree with el brazo)."
+  },
+  {
+   "id": "M1-fill-14",
+   "t": "fill",
+   "q": "La cita es el ___ a las nueve.",
+   "en": "The appointment is on Monday at nine.",
+   "hint": "Monday",
+   "a": [
+    "lunes"
+   ],
+   "why": "Monday = lunes (days are not capitalized in Spanish)."
+  },
+  {
+   "id": "M1-fill-15",
+   "t": "fill",
+   "q": "¿Tiene alguna ___?",
+   "en": "Do you have any questions?",
+   "hint": "question",
+   "a": [
+    "pregunta",
+    "duda"
+   ],
+   "why": "Pregunta = question. ¿Alguna duda? is also very common."
+  },
+  {
+   "id": "M1-fill-16",
+   "t": "fill",
+   "q": "¿Le duele la ___?",
+   "en": "Does your jaw hurt?",
+   "hint": "jaw",
+   "a": [
+    "mandíbula",
+    "quijada"
+   ],
+   "why": "Jaw = la mandíbula (colloquially la quijada)."
+  },
+  {
+   "id": "M1-fill-17",
+   "t": "fill",
+   "q": "¿Tiene los ___ hinchados?",
+   "en": "Are your ankles swollen?",
+   "hint": "ankles",
+   "a": [
+    "tobillos"
+   ],
+   "why": "Ankles = los tobillos."
+  },
+  {
+   "id": "M1-fill-18",
+   "t": "fill",
+   "q": "Tengo ___ años.",
+   "en": "I'm 72 years old.",
+   "hint": "72 in words",
+   "a": [
+    "setenta y dos"
+   ],
+   "why": "70 = setenta (60 = sesenta); 72 = setenta y dos."
+  },
+  {
+   "id": "M1-fill-19",
+   "t": "fill",
+   "q": "¿Habla inglés o ___ español?",
+   "en": "Do you speak English, or do you prefer Spanish?",
+   "hint": "preferir (usted, present)",
+   "a": [
+    "prefiere"
+   ],
+   "why": "Preferir is stem-changing (e → ie): usted prefiere."
+  },
+  {
+   "id": "M1-fill-20",
+   "t": "fill",
+   "q": "¿Me ___ decir su nombre completo?",
+   "en": "Can you tell me your full name?",
+   "hint": "poder (usted, present)",
+   "a": [
+    "puede"
+   ],
+   "why": "Asking the patient to do something: ¿Me puede + infinitive? (poder: usted puede)."
+  },
+  {
+   "id": "M1-tiles-01",
+   "t": "tiles",
+   "en": "Good morning, what is your name?",
+   "a": "Buenos días, ¿cómo se llama?",
+   "alt": [],
+   "extra": [
+    "te",
+    "llamas"
+   ]
+  },
+  {
+   "id": "M1-tiles-02",
+   "t": "tiles",
+   "en": "My chest and my left arm hurt.",
+   "a": "Me duelen el pecho y el brazo izquierdo.",
+   "alt": [
+    "Me duelen el brazo izquierdo y el pecho."
+   ],
+   "extra": [
+    "duelo",
+    "les"
+   ]
+  },
+  {
+   "id": "M1-tiles-03",
+   "t": "tiles",
+   "en": "Do you have pain in your chest?",
+   "a": "¿Tiene dolor en el pecho?",
+   "alt": [],
+   "extra": [
+    "tienes",
+    "duelen"
+   ]
+  },
+  {
+   "id": "M1-tiles-04",
+   "t": "tiles",
+   "en": "Excuse me, ma'am, may I examine you?",
+   "a": "Con permiso, señora, ¿puedo revisarla?",
+   "alt": [
+    "Señora, con permiso, ¿puedo revisarla?",
+    "Con permiso, ¿puedo revisarla, señora?"
+   ],
+   "extra": [
+    "revisarlo",
+    "puede"
+   ]
+  },
+  {
+   "id": "M1-tiles-05",
+   "t": "tiles",
+   "en": "Good morning, I am Dr. Miller.",
+   "a": "Buenos días, soy el doctor Miller.",
+   "alt": [
+    "Soy el doctor Miller, buenos días."
+   ],
+   "extra": [
+    "estoy",
+    "es"
+   ]
+  },
+  {
+   "id": "M1-tiles-06",
+   "t": "tiles",
+   "en": "Where does it hurt the most?",
+   "a": "¿Dónde le duele más?",
+   "alt": [],
+   "extra": [
+    "duelen",
+    "te"
+   ]
+  },
+  {
+   "id": "M1-tiles-07",
+   "t": "tiles",
+   "en": "From zero to ten, how strong is the pain?",
+   "a": "Del cero al diez, ¿qué tan fuerte es el dolor?",
+   "alt": [
+    "¿Qué tan fuerte es el dolor, del cero al diez?"
+   ],
+   "extra": [
+    "cuánto",
+    "son"
+   ]
+  },
+  {
+   "id": "M1-tiles-08",
+   "t": "tiles",
+   "en": "Do you understand me, or do you want an interpreter?",
+   "a": "¿Me entiende o quiere un intérprete?",
+   "alt": [],
+   "extra": [
+    "entiendes",
+    "quieres"
+   ]
+  },
+  {
+   "id": "M1-tiles-09",
+   "t": "tiles",
+   "en": "I have pain in my back.",
+   "a": "Tengo dolor en la espalda.",
+   "alt": [],
+   "extra": [
+    "duelo",
+    "las"
+   ]
+  },
+  {
+   "id": "M1-tiles-10",
+   "t": "tiles",
+   "en": "The appointment is on Thursday at ten.",
+   "a": "La cita es el jueves a las diez.",
+   "alt": [
+    "La cita es a las diez el jueves.",
+    "El jueves la cita es a las diez.",
+    "El jueves a las diez es la cita."
+   ],
+   "extra": [
+    "en",
+    "está"
+   ]
+  },
+  {
+   "id": "M1-tiles-11",
+   "t": "tiles",
+   "en": "Does your neck hurt when you move?",
+   "a": "¿Le duele el cuello cuando se mueve?",
+   "alt": [
+    "¿Cuando se mueve, le duele el cuello?",
+    "¿El cuello le duele cuando se mueve?"
+   ],
+   "extra": [
+    "duelen",
+    "te"
+   ]
+  },
+  {
+   "id": "M1-tiles-12",
+   "t": "tiles",
+   "en": "I don't have pain, but I have nausea.",
+   "a": "No tengo dolor, pero tengo náuseas.",
+   "alt": [
+    "Tengo náuseas, pero no tengo dolor."
+   ],
+   "extra": [
+    "tienen",
+    "duelo"
+   ]
+  },
+  {
+   "id": "M1-tiles-13",
+   "t": "tiles",
+   "en": "Do you speak English or Spanish?",
+   "a": "¿Habla usted inglés o español?",
+   "alt": [
+    "¿Usted habla inglés o español?"
+   ],
+   "extra": [
+    "hablas",
+    "hablo"
+   ]
+  },
+  {
+   "id": "M1-tiles-14",
+   "t": "tiles",
+   "en": "Do you have dizziness or shortness of breath?",
+   "a": "¿Tiene mareos o falta de aire?",
+   "alt": [
+    "¿Tiene falta de aire o mareos?"
+   ],
+   "extra": [
+    "tienes",
+    "del"
+   ]
+  },
+  {
+   "id": "M1-tiles-15",
+   "t": "tiles",
+   "en": "Can you tell me your date of birth?",
+   "a": "¿Me puede decir su fecha de nacimiento?",
+   "alt": [],
+   "extra": [
+    "tu",
+    "puedes"
+   ]
+  },
+  {
+   "id": "M1-tiles-16",
+   "t": "tiles",
+   "en": "What is your full name, sir?",
+   "a": "¿Cuál es su nombre completo, señor?",
+   "alt": [
+    "Señor, ¿cuál es su nombre completo?"
+   ],
+   "extra": [
+    "tu",
+    "qué"
+   ]
+  },
+  {
+   "id": "M1-listen-01",
+   "t": "listen",
+   "say": "Me duele el pecho del lado izquierdo.",
+   "opts": [
+    "My chest hurts on the left side.",
+    "My chest hurts on the right side.",
+    "My left arm hurts.",
+    "My back hurts on the left side."
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-listen-02",
+   "t": "listen",
+   "say": "Tengo setenta y dos años.",
+   "opts": [
+    "I'm 62 years old.",
+    "I'm 72 years old.",
+    "I'm 27 years old.",
+    "I'm 82 years old."
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-listen-03",
+   "t": "listen",
+   "say": "Mi cita es el martes a las tres y media.",
+   "opts": [
+    "My appointment is Thursday at 3:30.",
+    "My appointment is Tuesday at 3:15.",
+    "My appointment is Tuesday at 3:30.",
+    "My appointment is Wednesday at 2:30."
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-listen-04",
+   "t": "listen",
+   "say": "No entiendo. ¿Puede hablar más despacio?",
+   "opts": [
+    "I understand. Can you speak louder?",
+    "I don't understand. Can you repeat the name?",
+    "I can't hear you. Can you come back later?",
+    "I don't understand. Can you speak more slowly?"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-listen-05",
+   "t": "listen",
+   "say": "Me duelen los tobillos y las rodillas.",
+   "opts": [
+    "My ankles and knees hurt.",
+    "My ankles and wrists hurt.",
+    "My feet and knees hurt.",
+    "My elbows and knees hurt."
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-listen-06",
+   "t": "listen",
+   "say": "Mi fecha de nacimiento es el quince de mayo de mil novecientos cincuenta.",
+   "opts": [
+    "My date of birth is May 5, 1950.",
+    "My date of birth is March 15, 1950.",
+    "My date of birth is May 15, 1950.",
+    "My date of birth is May 15, 1960."
+   ],
+   "a": 2
+  },
+  {
+   "id": "M1-listen-07",
+   "t": "listen",
+   "say": "Buenas noches. Soy la enfermera. El doctor viene en un momento.",
+   "opts": [
+    "Good morning. I'm the nurse. The doctor came a moment ago.",
+    "Good evening. I'm the nurse. The doctor is coming in a moment.",
+    "Good evening. I'm the doctor. The nurse is coming in a moment.",
+    "Good evening. I'm the nurse. The doctor isn't coming today."
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-listen-08",
+   "t": "listen",
+   "say": "No tengo dolor, pero me falta el aire.",
+   "opts": [
+    "I have pain and I'm short of breath.",
+    "I have no pain and no shortness of breath.",
+    "I have no pain, but I'm dizzy.",
+    "I have no pain, but I'm short of breath."
+   ],
+   "a": 3
+  },
+  {
+   "id": "M1-listen-09",
+   "t": "listen",
+   "say": "¿Quiere un intérprete por teléfono o por video?",
+   "opts": [
+    "Do you want an interpreter by phone or by video?",
+    "Do you have an interpreter on the phone?",
+    "Do you want to call your family by video?",
+    "Is the interpreter coming by phone or in person?"
+   ],
+   "a": 0
+  },
+  {
+   "id": "M1-listen-10",
+   "t": "listen",
+   "say": "Me duele el estómago, no el pecho.",
+   "opts": [
+    "My chest hurts, not my stomach.",
+    "My stomach hurts, not my chest.",
+    "My stomach and my chest hurt.",
+    "My back hurts, not my chest."
+   ],
+   "a": 1
+  },
+  {
+   "id": "M1-dlg-01",
+   "t": "dlg",
+   "title": "Greeting a new patient",
+   "turns": [
+    {
+     "who": "Sr. Ramírez",
+     "es": "Buenas tardes, doctor.",
+     "en": "Good afternoon, doctor."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Buenas tardes. Soy el doctor Miller. ¿Cómo te llamas?",
+      "Buenas tardes, señor. Soy el doctor Miller. ¿Cómo se llama?",
+      "Buenos días. Estoy el doctor Miller. ¿Cómo llama?"
+     ],
+     "a": 1,
+     "why": "Return the afternoon greeting, introduce yourself with soy, and use usted: ¿Cómo se llama? (te llamas is tú)."
+    },
+    {
+     "who": "Sr. Ramírez",
+     "es": "Me llamo José Ramírez Ortiz.",
+     "en": "My name is José Ramírez Ortiz."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Mucho gusto. ¿Y cuál es su fecha de nacimiento?",
+      "Mucho gusto. ¿Y cuál es tu fecha de nacimiento?",
+      "Mucho gusto. ¿Y cuál es su cita?"
+     ],
+     "a": 0,
+     "why": "Confirm identity with the date of birth, using su (usted)."
+    },
+    {
+     "who": "Sr. Ramírez",
+     "es": "El tres de abril de mil novecientos cincuenta y ocho.",
+     "en": "April 3, 1958."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Gracias. Me duele el pecho.",
+      "Gracias. ¿Qué te pasa?",
+      "Gracias, señor Ramírez. ¿En qué le puedo ayudar hoy?"
+     ],
+     "a": 2,
+     "why": "Open the visit politely with usted: ¿En qué le puedo ayudar? ¿Qué te pasa? is tú."
+    }
+   ]
+  },
+  {
+   "id": "M1-dlg-02",
+   "t": "dlg",
+   "title": "Offering an interpreter",
+   "turns": [
+    {
+     "who": "Sra. López",
+     "es": "Perdón, doctor, no hablo mucho inglés.",
+     "en": "Sorry, doctor, I don't speak much English."
+    },
+    {
+     "you": true,
+     "opts": [
+      "No hay problema. ¿Tiene un intérprete?",
+      "No hay problema. ¿Quiere un intérprete?",
+      "No hay problema. ¿Quieres un intérprete?"
+     ],
+     "a": 1,
+     "why": "Offer one with ¿Quiere…? (usted). ¿Tiene…? asks whether she brought her own; quieres is tú."
+    },
+    {
+     "who": "Sra. López",
+     "es": "No, gracias. Usted habla español, ¿no?",
+     "en": "No, thank you. You speak Spanish, don't you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, un poco. ¿Me entiende bien?",
+      "Sí, un poco. ¿Me entiendes bien?",
+      "Sí, un poco. ¿Lo entiendo bien?"
+     ],
+     "a": 0,
+     "why": "Check understanding with usted: ¿Me entiende?"
+    },
+    {
+     "who": "Sra. López",
+     "es": "Sí, le entiendo bien.",
+     "en": "Yes, I understand you well."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Muy bien. ¿Tienes alguna pregunta antes de empezar?",
+      "Muy bien. ¿Tiene alguna pregunta antes de empezar?",
+      "Muy bien. ¿Tengo alguna pregunta antes de empezar?"
+     ],
+     "a": 1,
+     "why": "Usted form: ¿Tiene alguna pregunta? Tienes is tú; tengo means 'do I have'."
+    }
+   ]
+  },
+  {
+   "id": "M1-dlg-03",
+   "t": "dlg",
+   "title": "Where does it hurt?",
+   "turns": [
+    {
+     "who": "Paciente",
+     "es": "Doctor, a veces me duele aquí.",
+     "en": "Doctor, sometimes it hurts here. (points to her chest)"
+    },
+    {
+     "you": true,
+     "opts": [
+      "¿Le duelen el pecho?",
+      "¿Le duele el pecho?",
+      "¿Te duele el pecho?"
+     ],
+     "a": 1,
+     "why": "One body part → duele; usted → le."
+    },
+    {
+     "who": "Paciente",
+     "es": "Sí, el pecho y también el brazo izquierdo.",
+     "en": "Yes, my chest and also my left arm."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Del cero al diez, ¿qué tan fuerte es el dolor?",
+      "Del cero al diez, ¿cuántos años tiene?",
+      "Del cero al diez, ¿qué tan fuerte eres?"
+     ],
+     "a": 0,
+     "why": "Ask the pain score: ¿qué tan fuerte es el dolor?"
+    },
+    {
+     "who": "Paciente",
+     "es": "Como un seis.",
+     "en": "About a six."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Gracias. ¿Tiene falta de aire tampoco?",
+      "Gracias. ¿Tienes falta de aire también?",
+      "Gracias. ¿Tiene falta de aire también?"
+     ],
+     "a": 2,
+     "why": "Also = también (tampoco is 'not either'); usted → tiene."
+    }
+   ]
+  },
+  {
+   "id": "M1-dlg-04",
+   "t": "dlg",
+   "title": "Asking permission to examine",
+   "turns": [
+    {
+     "who": "Sra. Torres",
+     "es": "¿Qué sigue, doctor?",
+     "en": "What's next, doctor?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Con permiso, ¿puedo revisarlo?",
+      "Con permiso, ¿puede revisarla?",
+      "Con permiso, ¿puedo revisarla?"
+     ],
+     "a": 2,
+     "why": "Puedo (may I) + revisarla (la for a woman)."
+    },
+    {
+     "who": "Sra. Torres",
+     "es": "Sí, claro.",
+     "en": "Yes, of course."
+    },
+    {
+     "you": true,
+     "opts": [
+      "¿Le duele cuando toco aquí?",
+      "¿Te duele cuando toco aquí?",
+      "¿Le duelen cuando toco aquí?"
+     ],
+     "a": 0,
+     "why": "'It' (one thing) hurts → duele; usted → le."
+    },
+    {
+     "who": "Sra. Torres",
+     "es": "No, no me duele nada.",
+     "en": "No, nothing hurts."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Muy bien. Y los tobillos, ¿le duele?",
+      "Muy bien. Y los tobillos, ¿le duelen?",
+      "Muy bien. Y los tobillos, ¿me duelen?"
+     ],
+     "a": 1,
+     "why": "Los tobillos is plural → duelen; ask her → le."
+    }
+   ]
+  },
+  {
+   "id": "M1-dlg-05",
+   "t": "dlg",
+   "title": "Setting the next appointment",
+   "turns": [
+    {
+     "who": "Hija",
+     "es": "Doctor, ¿cuándo es la próxima cita de mi mamá?",
+     "en": "Doctor, when is my mom's next appointment?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Es el viernes a la diez de la mañana.",
+      "Está el viernes a las diez de la mañana.",
+      "Es el viernes a las diez de la mañana."
+     ],
+     "a": 2,
+     "why": "Events take es; at ten = a las diez."
+    },
+    {
+     "who": "Hija",
+     "es": "Mi mamá no puede el viernes. ¿Puede ser el lunes?",
+     "en": "My mom can't on Friday. Can it be on Monday?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, el lunes a las dos de la tarde. ¿Está bien?",
+      "Sí, el lunes a las dos de la noche. ¿Está bien?",
+      "Sí, el viernes a las dos de la tarde. ¿Está bien?"
+     ],
+     "a": 0,
+     "why": "She asked for Monday; 2 p.m. is a las dos de la tarde."
+    },
+    {
+     "who": "Hija",
+     "es": "Perfecto. Gracias, doctor.",
+     "en": "Perfect. Thank you, doctor."
+    }
+   ]
+  },
+  {
+   "id": "M1-dlg-06",
+   "t": "dlg",
+   "title": "Checking understanding",
+   "turns": [
+    {
+     "who": "Sr. Hernández",
+     "es": "¿Mande? No le entiendo, doctor.",
+     "en": "Pardon? I don't understand you, doctor."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Perdón. Te pregunto otra vez: ¿te duele la cabeza?",
+      "Perdón. Le pregunto otra vez: ¿le duele la cabeza?",
+      "Perdón. Le pregunto otra vez: ¿le duelen la cabeza?"
+     ],
+     "a": 1,
+     "why": "Stay in usted (le) and match one body part with duele."
+    },
+    {
+     "who": "Sr. Hernández",
+     "es": "Ah, sí. Me duele la cabeza casi todos los días.",
+     "en": "Oh, yes. My head hurts almost every day."
+    },
+    {
+     "you": true,
+     "opts": [
+      "¿Y tiene mareos también?",
+      "¿Y tiene mareos tampoco?",
+      "¿Y tienes mareos también?"
+     ],
+     "a": 0,
+     "why": "Also = también; usted → tiene."
+    },
+    {
+     "who": "Sr. Hernández",
+     "es": "No, mareos no.",
+     "en": "No, no dizziness."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Bien. ¿Tienes alguna pregunta para mí?",
+      "Bien. ¿Tengo alguna pregunta para usted?",
+      "Bien. ¿Tiene alguna pregunta para mí?"
+     ],
+     "a": 2,
+     "why": "Close by inviting questions, with usted: ¿Tiene alguna pregunta?"
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "New patient check-in",
+   "setup": "You are the cardiologist meeting a new patient referred for a racing heart. Greet her, introduce yourself, confirm her identity, offer an interpreter, and find out where she has symptoms and how strong they are.",
+   "persona": "You play María Elena Gómez, 58, from Guadalajara, Mexico, living in Chicago for 20 years; you clean offices. You speak very little English. Full name: María Elena Gómez Ruiz. Date of birth: 12 de agosto de 1968. The visit is in the afternoon. Your complaint: 'a veces el corazón me late muy rápido' and sometimes a mild discomfort in the middle of the chest (2 out of 10). Right now you have no pain. No shortness of breath, no swelling. Speak in short, simple present-tense sentences. If the doctor offers an interpreter, say you would like to try in Spanish first but will accept one if you don't understand. If the doctor uses tú, look a little surprised but continue. Say '¿Mande?' if a question is unclear. Give the pain number only when asked with the 0–10 scale.",
+   "opening": "Buenas tardes. ¿Usted es el doctor?",
+   "goals": [
+    "Greet her correctly for the afternoon and introduce yourself and your role",
+    "Confirm her full name and date of birth",
+    "Offer an interpreter",
+    "Ask where she has pain or discomfort and rate it from 0 to 10",
+    "Check that she understands and ask if she has questions"
+   ]
+  },
+  {
+   "title": "Swollen ankles in clinic",
+   "setup": "An older man comes to clinic. Find out which body parts hurt or are swollen, ask about shortness of breath, ask permission to examine him, and set the next appointment.",
+   "persona": "You play Don Rogelio Martínez, 74, from San Salvador, El Salvador, retired bus driver. Both ankles have been swollen (los tobillos hinchados) and your knees hurt from old arthritis (not new). No chest pain. You get a little short of breath when you walk a few blocks, but only mention it if the doctor asks '¿Le falta el aire?' or '¿Tiene falta de aire?'. Use simple present-tense Spanish and short answers. Say '¿Mande?' when you don't understand. You agree to be examined if asked politely with usted. For the next appointment you prefer the morning and cannot come on Wednesday (your daughter drives you).",
+   "opening": "Buenos días, doctor. Me duelen las piernas.",
+   "goals": [
+    "Ask which parts hurt, using le duele / le duelen correctly",
+    "Ask whether his ankles are swollen and whether he is short of breath",
+    "Ask permission to examine him with usted",
+    "Schedule a morning follow-up on a day he can come"
+   ]
+  }
+ ]
+}

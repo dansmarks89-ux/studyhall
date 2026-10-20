@@ -1,0 +1,512 @@
+[
+ {
+  "i": 0,
+  "w": "el dolor de pecho",
+  "ex": "¿Le da dolor de pecho cuando camina rápido?",
+  "en": "Do you get chest pain when you walk fast?",
+  "hit": "dolor de pecho",
+  "note": "Also: dolor en el pecho.",
+  "type": [
+   "el dolor de pecho",
+   "dolor de pecho",
+   "el dolor en el pecho",
+   "dolor en el pecho"
+  ]
+ },
+ {
+  "i": 1,
+  "w": "la opresión en el pecho",
+  "ex": "Siento una opresión en el pecho cuando subo escaleras.",
+  "en": "I feel chest tightness when I climb stairs.",
+  "hit": "opresión en el pecho",
+  "note": "",
+  "type": [
+   "la opresión en el pecho",
+   "opresión en el pecho"
+  ]
+ },
+ {
+  "i": 2,
+  "w": "la falta de aire",
+  "ex": "¿Tiene falta de aire cuando sube escaleras?",
+  "en": "Do you get short of breath when you climb stairs?",
+  "hit": "falta de aire",
+  "note": "",
+  "type": [
+   "la falta de aire",
+   "falta de aire"
+  ]
+ },
+ {
+  "i": 3,
+  "w": "me falta el aire",
+  "ex": "Cuando camino dos cuadras, me falta el aire.",
+  "en": "When I walk two blocks, I get short of breath.",
+  "hit": "me falta el aire",
+  "note": "Works like gustar; the clinician asks ¿Le falta el aire?",
+  "type": [
+   "me falta el aire"
+  ]
+ },
+ {
+  "i": 4,
+  "w": "siento que me ahogo",
+  "ex": "En la noche siento que me ahogo y tengo que sentarme.",
+  "en": "At night I feel like I'm suffocating and I have to sit up.",
+  "hit": "siento que me ahogo",
+  "note": "Ahogarse also means 'to drown' or 'to choke'.",
+  "type": [
+   "siento que me ahogo"
+  ]
+ },
+ {
+  "i": 5,
+  "w": "con el esfuerzo",
+  "ex": "¿Le falta el aire con el esfuerzo, como al subir escaleras?",
+  "en": "Are you short of breath with exertion, like climbing stairs?",
+  "hit": "con el esfuerzo",
+  "note": "",
+  "type": [
+   "con el esfuerzo"
+  ]
+ },
+ {
+  "i": 6,
+  "w": "en reposo",
+  "ex": "¿Le falta el aire en reposo, sin hacer nada?",
+  "en": "Are you short of breath at rest, without doing anything?",
+  "hit": "en reposo",
+  "note": "",
+  "type": [
+   "en reposo"
+  ]
+ },
+ {
+  "i": 7,
+  "w": "acostado / acostada",
+  "ex": "¿Le falta el aire cuando está acostado?",
+  "en": "Are you short of breath when you're lying down?",
+  "hit": "acostado",
+  "note": "Agrees with the person: acostado (man), acostada (woman).",
+  "type": [
+   "acostado",
+   "acostada"
+  ]
+ },
+ {
+  "i": 8,
+  "w": "sentado / sentada",
+  "ex": "Duermo sentada en el sillón porque acostada me ahogo.",
+  "en": "I sleep sitting up in the armchair because lying down I can't breathe.",
+  "hit": "sentada",
+  "note": "Agrees with the person: sentado (man), sentada (woman).",
+  "type": [
+   "sentado",
+   "sentada"
+  ]
+ },
+ {
+  "i": 9,
+  "w": "la almohada",
+  "ex": "¿Cuántas almohadas usa para dormir?",
+  "en": "How many pillows do you use to sleep?",
+  "hit": "almohadas",
+  "note": "",
+  "type": [
+   "la almohada",
+   "almohada"
+  ]
+ },
+ {
+  "i": 10,
+  "w": "despertarse con falta de aire",
+  "ex": "¿Se despierta con falta de aire en la noche?",
+  "en": "Do you wake up short of breath at night?",
+  "hit": "despierta con falta de aire",
+  "note": "Reflexive: me despierto, se despierta. Past: me desperté.",
+  "type": [
+   "despertarse con falta de aire"
+  ]
+ },
+ {
+  "i": 11,
+  "w": "la hinchazón",
+  "ex": "Tengo mucha hinchazón en los pies en la tarde.",
+  "en": "I have a lot of swelling in my feet in the afternoon.",
+  "hit": "hinchazón",
+  "note": "Feminine: la hinchazón.",
+  "type": [
+   "la hinchazón",
+   "hinchazón"
+  ]
+ },
+ {
+  "i": 12,
+  "w": "hinchado / hinchada",
+  "ex": "Tiene las piernas muy hinchadas hoy.",
+  "en": "Your legs are very swollen today.",
+  "hit": "hinchadas",
+  "note": "Agrees with the noun: pie hinchado, piernas hinchadas.",
+  "type": [
+   "hinchado",
+   "hinchada"
+  ]
+ },
+ {
+  "i": 13,
+  "w": "se me hinchan los pies",
+  "ex": "En la tarde se me hinchan los pies y no me quedan los zapatos.",
+  "en": "In the afternoon my feet swell and my shoes don't fit.",
+  "hit": "se me hinchan los pies",
+  "note": "Plural verb because los pies is plural.",
+  "type": [
+   "se me hinchan los pies"
+  ]
+ },
+ {
+  "i": 14,
+  "w": "los tobillos",
+  "ex": "Quiero revisar si tiene hinchazón en los tobillos.",
+  "en": "I want to check whether you have swelling in your ankles.",
+  "hit": "tobillos",
+  "note": "",
+  "type": [
+   "los tobillos",
+   "tobillos"
+  ]
+ },
+ {
+  "i": 15,
+  "w": "los pies",
+  "ex": "¿Se le hinchan los pies al final del día?",
+  "en": "Do your feet swell at the end of the day?",
+  "hit": "pies",
+  "note": "Singular: el pie.",
+  "type": [
+   "los pies",
+   "pies"
+  ]
+ },
+ {
+  "i": 16,
+  "w": "las pantorrillas",
+  "ex": "Cuando camino, me duelen las pantorrillas y tengo que parar.",
+  "en": "When I walk, my calves hurt and I have to stop.",
+  "hit": "pantorrillas",
+  "note": "Classic claudication story.",
+  "type": [
+   "las pantorrillas",
+   "pantorrillas"
+  ]
+ },
+ {
+  "i": 17,
+  "w": "las palpitaciones",
+  "ex": "¿Las palpitaciones le dan en reposo o con el esfuerzo?",
+  "en": "Do the palpitations come at rest or with exertion?",
+  "hit": "palpitaciones",
+  "note": "",
+  "type": [
+   "las palpitaciones",
+   "palpitaciones"
+  ]
+ },
+ {
+  "i": 18,
+  "w": "latir",
+  "ex": "El corazón me late muy rápido cuando subo escaleras.",
+  "en": "My heart beats very fast when I climb stairs.",
+  "hit": "late",
+  "note": "Me late fuerte = it pounds.",
+  "type": [
+   "latir"
+  ]
+ },
+ {
+  "i": 19,
+  "w": "el latido",
+  "ex": "Siento un latido fuerte en el cuello.",
+  "en": "I feel a strong heartbeat in my neck.",
+  "hit": "latido",
+  "note": "",
+  "type": [
+   "el latido",
+   "latido"
+  ]
+ },
+ {
+  "i": 20,
+  "w": "los brincos",
+  "ex": "Siento brincos en el pecho, sobre todo en la noche.",
+  "en": "I feel skips in my chest, especially at night.",
+  "hit": "brincos",
+  "note": "Patients' word for skipped beats; also saltos.",
+  "type": [
+   "los brincos",
+   "brincos"
+  ]
+ },
+ {
+  "i": 21,
+  "w": "acelerado",
+  "ex": "De repente siento el corazón muy acelerado.",
+  "en": "Suddenly I feel my heart racing.",
+  "hit": "acelerado",
+  "note": "",
+  "type": [
+   "acelerado",
+   "acelerada"
+  ]
+ },
+ {
+  "i": 22,
+  "w": "fuerte",
+  "ex": "No late rápido, pero siento el corazón muy fuerte.",
+  "en": "It's not beating fast, but I feel my heart pounding.",
+  "hit": "fuerte",
+  "note": "Pounding, not 'strong muscle'.",
+  "type": [
+   "fuerte"
+  ]
+ },
+ {
+  "i": 23,
+  "w": "irregular",
+  "ex": "¿Siente el corazón irregular, sin ritmo fijo?",
+  "en": "Does your heart feel irregular, with no steady rhythm?",
+  "hit": "irregular",
+  "note": "Same form for masculine and feminine.",
+  "type": [
+   "irregular"
+  ]
+ },
+ {
+  "i": 24,
+  "w": "el mareo",
+  "ex": "Me dan mareos cuando me levanto rápido.",
+  "en": "I get dizzy spells when I stand up quickly.",
+  "hit": "mareos",
+  "note": "Clarify: dizziness can mean lightheaded or room-spinning (todo me da vueltas).",
+  "type": [
+   "el mareo",
+   "mareo"
+  ]
+ },
+ {
+  "i": 25,
+  "w": "marearse",
+  "ex": "¿Se marea cuando se levanta de la cama?",
+  "en": "Do you get dizzy when you get out of bed?",
+  "hit": "marea",
+  "note": "Reflexive: me mareo, se marea. Past: me mareé.",
+  "type": [
+   "marearse"
+  ]
+ },
+ {
+  "i": 26,
+  "w": "el desmayo",
+  "ex": "¿Fue su primer desmayo o ya tuvo otros?",
+  "en": "Was this your first faint, or have you had others?",
+  "hit": "desmayo",
+  "note": "",
+  "type": [
+   "el desmayo",
+   "desmayo"
+  ]
+ },
+ {
+  "i": 27,
+  "w": "desmayarse",
+  "ex": "Me desmayé en la cocina y me desperté en el piso.",
+  "en": "I fainted in the kitchen and woke up on the floor.",
+  "hit": "desmayé",
+  "note": "Reflexive: me desmayé, se desmayó.",
+  "type": [
+   "desmayarse"
+  ]
+ },
+ {
+  "i": 28,
+  "w": "casi me desmayo",
+  "ex": "Casi me desmayo en la iglesia, pero me senté.",
+  "en": "I almost fainted in church, but I sat down.",
+  "hit": "Casi me desmayo",
+  "note": "Present tense after casi for a past near-miss is normal.",
+  "type": [
+   "casi me desmayo"
+  ]
+ },
+ {
+  "i": 29,
+  "w": "perder el conocimiento",
+  "ex": "¿Perdió el conocimiento cuando se cayó?",
+  "en": "Did you lose consciousness when you fell?",
+  "hit": "Perdió el conocimiento",
+  "note": "",
+  "type": [
+   "perder el conocimiento"
+  ]
+ },
+ {
+  "i": 30,
+  "w": "inconsciente",
+  "ex": "¿Cuánto tiempo estuvo inconsciente en el piso?",
+  "en": "How long were you unconscious on the floor?",
+  "hit": "inconsciente",
+  "note": "",
+  "type": [
+   "inconsciente"
+  ]
+ },
+ {
+  "i": 31,
+  "w": "se me nubló la vista",
+  "ex": "Antes de caerme, se me nubló la vista.",
+  "en": "Before I fell, my vision went dim.",
+  "hit": "se me nubló la vista",
+  "note": "Common warning sign before fainting.",
+  "type": [
+   "se me nubló la vista"
+  ]
+ },
+ {
+  "i": 32,
+  "w": "el sudor frío",
+  "ex": "Antes del desmayo me dio un sudor frío.",
+  "en": "Before I fainted, I broke out in a cold sweat.",
+  "hit": "sudor frío",
+  "note": "",
+  "type": [
+   "el sudor frío",
+   "sudor frío"
+  ]
+ },
+ {
+  "i": 33,
+  "w": "las náuseas",
+  "ex": "¿Tuvo náuseas antes de desmayarse?",
+  "en": "Did you have nausea before you fainted?",
+  "hit": "náuseas",
+  "note": "",
+  "type": [
+   "las náuseas",
+   "náuseas"
+  ]
+ },
+ {
+  "i": 34,
+  "w": "golpearse",
+  "ex": "¿Se golpeó la cabeza cuando se cayó?",
+  "en": "Did you hit your head when you fell?",
+  "hit": "golpeó",
+  "note": "Reflexive: me golpeé, se golpeó. Also: se pegó.",
+  "type": [
+   "golpearse"
+  ]
+ },
+ {
+  "i": 35,
+  "w": "caerse",
+  "ex": "Me mareé y me caí en el baño.",
+  "en": "I got dizzy and fell in the bathroom.",
+  "hit": "caí",
+  "note": "Reflexive for falling down: me caí, se cayó.",
+  "type": [
+   "caerse"
+  ]
+ },
+ {
+  "i": 36,
+  "w": "el cansancio",
+  "ex": "Tengo mucho cansancio, hasta para bañarme.",
+  "en": "I get very tired, even just from showering.",
+  "hit": "cansancio",
+  "note": "",
+  "type": [
+   "el cansancio",
+   "cansancio"
+  ]
+ },
+ {
+  "i": 37,
+  "w": "cansado / cansada",
+  "ex": "Me siento muy cansada todo el día.",
+  "en": "I feel very tired all day.",
+  "hit": "cansada",
+  "note": "Agrees with the person: cansado (man), cansada (woman).",
+  "type": [
+   "cansado",
+   "cansada"
+  ]
+ },
+ {
+  "i": 38,
+  "w": "débil",
+  "ex": "Me siento débil y sin fuerzas.",
+  "en": "I feel weak and without strength.",
+  "hit": "débil",
+  "note": "Same form for masculine and feminine; plural débiles.",
+  "type": [
+   "débil"
+  ]
+ },
+ {
+  "i": 39,
+  "w": "la cuadra",
+  "ex": "¿Cuántas cuadras puede caminar sin parar?",
+  "en": "How many blocks can you walk without stopping?",
+  "hit": "cuadras",
+  "note": "US-style city block; manzana in some countries.",
+  "type": [
+   "la cuadra",
+   "cuadra"
+  ]
+ },
+ {
+  "i": 40,
+  "w": "las escaleras",
+  "ex": "¿Le falta el aire al subir las escaleras?",
+  "en": "Do you get short of breath going up the stairs?",
+  "hit": "escaleras",
+  "note": "Often plural even for one staircase.",
+  "type": [
+   "las escaleras",
+   "escaleras"
+  ]
+ },
+ {
+  "i": 41,
+  "w": "el piso",
+  "ex": "Vivo en el tercer piso y no hay elevador.",
+  "en": "I live on the third floor and there's no elevator.",
+  "hit": "piso",
+  "note": "Also means 'the floor' you stand on.",
+  "type": [
+   "el piso",
+   "piso"
+  ]
+ },
+ {
+  "i": 42,
+  "w": "sin parar",
+  "ex": "Antes caminaba media hora sin parar.",
+  "en": "I used to walk for half an hour without stopping.",
+  "hit": "sin parar",
+  "note": "",
+  "type": [
+   "sin parar"
+  ]
+ },
+ {
+  "i": 43,
+  "w": "de repente",
+  "ex": "¿Las palpitaciones empiezan de repente o poco a poco?",
+  "en": "Do the palpitations start suddenly or gradually?",
+  "hit": "de repente",
+  "note": "",
+  "type": [
+   "de repente"
+  ]
+ }
+]

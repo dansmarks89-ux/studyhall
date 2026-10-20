@@ -1,0 +1,269 @@
+{
+  "id": "M5",
+  "track": "med",
+  "n": 5,
+  "title": "Exam and tests",
+  "goal": "Guide a patient through the physical exam with clear usted commands and explain ECGs, echoes, stress tests, heart monitors and blood draws before you do them.",
+  "bestAfter": "C6",
+  "grammar": [
+    {
+      "h": "Usted commands: the exam-room toolkit",
+      "p": "Start from the *yo* form of the present, drop the *-o*, and switch the vowel: *-ar* verbs take *-e*, *-er/-ir* verbs take *-a*. *respirar* → *respire*, *toser* → *tosa*, *abrir* → *abra*. Irregular *yo* forms carry over: *poner* (pongo) → *ponga*, *decir* (digo) → *diga*, *hacer* (hago) → *haga*. Stem changes carry over too: *apretar* (aprieto) → *apriete*.",
+      "ex": [
+        ["Respire hondo.", "Take a deep breath."],
+        ["Tosa fuerte, por favor.", "Cough hard, please."],
+        ["Abra la boca.", "Open your mouth."],
+        ["Apriete mi mano.", "Squeeze my hand."]
+      ]
+    },
+    {
+      "h": "Reflexive commands: attach *se* and add the accent",
+      "p": "Many exam verbs are reflexive (*sentarse, acostarse, quitarse, ponerse, relajarse*). In an affirmative command the pronoun is glued to the end: *siéntese*. The stress stays on the same syllable, but that syllable is now third from the end, so it needs a written accent: *acuéstese, quítese, póngase, relájese, vuélvase, súbase, quédese*. With two pronouns the same rule applies: *póngasela* (put it on), *quítesela* (take it off).",
+      "ex": [
+        ["Siéntese en la camilla, por favor.", "Please sit on the exam table."],
+        ["Quítese la camisa y póngase la bata.", "Take off your shirt and put on the gown."],
+        ["Acuéstese boca arriba.", "Lie down on your back."],
+        ["¿La bata? Póngasela, por favor.", "The gown? Put it on, please."]
+      ]
+    },
+    {
+      "h": "Negative commands: the pronoun goes in front",
+      "p": "In a negative usted command the pronoun is NOT attached; it goes between *no* and the verb, and the accent disappears: *Muévase* → *No se mueva*. *Preocúpese* → *No se preocupe*.",
+      "ex": [
+        ["No se mueva, por favor.", "Please don't move."],
+        ["No se preocupe, no duele.", "Don't worry, it doesn't hurt."],
+        ["No hable mientras le tomo la presión.", "Don't talk while I take your blood pressure."]
+      ]
+    },
+    {
+      "h": "Preparing the patient: le voy a… / va a sentir…",
+      "p": "Say what you're about to do with *ir a* + infinitive. The pronoun *le* (to you / on you) goes either before *voy* or attached to the infinitive — same meaning: *Le voy a tomar la presión* = *Voy a tomarle la presión*. Never use it twice. Warn about sensations with *Va a sentir…*. Ask for warnings with *Avíseme si…* + present tense.",
+      "ex": [
+        ["Le voy a escuchar el corazón.", "I'm going to listen to your heart."],
+        ["Voy a ponerle unos parches en el pecho.", "I'm going to put some stickers on your chest."],
+        ["Va a sentir un piquete.", "You're going to feel a little prick."],
+        ["Avíseme si siente dolor.", "Let me know if you feel pain."]
+      ]
+    },
+    {
+      "h": "Tests: done, being done, going to be done",
+      "p": "Use the preterite for a test that is finished (*Le hicimos un electrocardiograma ayer*), *estar* + gerund for what is happening now (*Le estoy escuchando el corazón*), *ir a* for what's next (*Le vamos a hacer un ecocardiograma*), and the present perfect with *ya / alguna vez* (*¿Alguna vez le han hecho una prueba de esfuerzo?*).",
+      "ex": [
+        ["La semana pasada le hicimos un ecocardiograma.", "Last week we did an echocardiogram on you."],
+        ["Un momento, le estoy escuchando los pulmones.", "One moment, I'm listening to your lungs."],
+        ["Mañana le vamos a poner un monitor.", "Tomorrow we're going to put a monitor on you."],
+        ["¿Ya le han sacado sangre hoy?", "Have they drawn your blood yet today?"]
+      ]
+    }
+  ],
+  "vocab": [
+    ["la presión (arterial)", "blood pressure"],
+    ["el pulso", "pulse"],
+    ["la temperatura", "temperature"],
+    ["el oxígeno", "oxygen (level)"],
+    ["el peso", "weight"],
+    ["la báscula", "scale"],
+    ["el brazalete (de la presión)", "blood pressure cuff"],
+    ["el estetoscopio", "stethoscope"],
+    ["la camilla", "exam table"],
+    ["la bata", "gown"],
+    ["la manga", "sleeve"],
+    ["boca arriba", "on your back (face up)"],
+    ["boca abajo", "on your stomach (face down)"],
+    ["del lado izquierdo", "on your left side"],
+    ["respirar hondo", "to take a deep breath"],
+    ["aguantar la respiración", "to hold your breath"],
+    ["toser", "to cough"],
+    ["relajarse", "to relax"],
+    ["quedarse quieto / quieta", "to stay still"],
+    ["desabrocharse", "to unbutton"],
+    ["quitarse", "to take off (clothing)"],
+    ["ponerse", "to put on (clothing)"],
+    ["acostarse", "to lie down"],
+    ["sentarse", "to sit down"],
+    ["levantarse / pararse", "to stand up"],
+    ["voltearse / volverse", "to turn over"],
+    ["subirse la manga", "to roll up your sleeve"],
+    ["el electrocardiograma", "electrocardiogram (ECG)"],
+    ["los electrodos / los parches", "electrode stickers"],
+    ["el ecocardiograma (el eco)", "echocardiogram (echo)"],
+    ["el ultrasonido", "ultrasound"],
+    ["la prueba de esfuerzo", "stress test"],
+    ["la caminadora", "treadmill"],
+    ["el monitor Holter", "Holter monitor"],
+    ["el parche (monitor)", "patch heart monitor"],
+    ["apretar el botón", "to press the button"],
+    ["apuntar", "to write down"],
+    ["el análisis de sangre", "blood test"],
+    ["sacar sangre", "to draw blood"],
+    ["el piquete", "needle stick, little prick"],
+    ["la aguja", "needle"],
+    ["en ayunas", "fasting (without eating)"],
+    ["los resultados", "results"],
+    ["la radiografía de tórax", "chest X-ray"]
+  ],
+  "phrases": [
+    ["¿Me permite revisarle el pecho?", "May I examine your chest?"],
+    ["Siéntese en la camilla, por favor.", "Please sit on the exam table."],
+    ["Quítese la camisa y póngase la bata, por favor.", "Please take off your shirt and put on the gown."],
+    ["Acuéstese boca arriba.", "Lie down on your back."],
+    ["Vuélvase del lado izquierdo.", "Turn onto your left side."],
+    ["Respire hondo… y aguante la respiración.", "Take a deep breath… and hold it."],
+    ["Respire normal.", "Breathe normally."],
+    ["No se mueva, por favor.", "Please don't move."],
+    ["Relájese.", "Relax."],
+    ["Le voy a tomar la presión.", "I'm going to take your blood pressure."],
+    ["Le voy a escuchar el corazón y los pulmones.", "I'm going to listen to your heart and lungs."],
+    ["Va a sentir un piquete.", "You're going to feel a little prick."],
+    ["Va a sentir el gel un poco frío.", "The gel is going to feel a little cold."],
+    ["Avíseme si siente dolor o mareo.", "Let me know if you feel pain or dizziness."],
+    ["Ya terminamos. Puede vestirse.", "We're done. You can get dressed."]
+  ],
+  "items": [
+    {"id":"M5-mc-01","t":"mc","q":"How do you tell a patient \"Please sit down\"?","opts":["Siéntate, por favor.","Siéntase, por favor.","Siéntese, por favor.","Sentarse, por favor."],"a":2,"why":"sentarse → (yo) me siento → usted command siente + se → siéntese. Siéntate is the tú form; siéntase comes from sentirse (\"feel\")."},
+    {"id":"M5-mc-02","t":"mc","q":"Por favor, ___ boca arriba en la camilla.","qen":"Please lie down on your back on the exam table.","opts":["acuéstese","acuéstate","acuéstase","acostarse"],"a":0,"why":"acostarse → (yo) me acuesto → acueste + se → acuéstese. Acuéstate is tú, which you don't use with patients."},
+    {"id":"M5-mc-03","t":"mc","q":"Respire ___ por la boca.","qen":"Take a deep breath through your mouth.","opts":["alto","largo","hondo","grande"],"a":2,"why":"\"Respire hondo\" is the set phrase for a deep breath."},
+    {"id":"M5-mc-04","t":"mc","q":"Ahora aguante la ___.","qen":"Now hold your breath.","opts":["respira","respiración","respiro","respirando"],"a":1,"why":"After the article la you need the noun: la respiración."},
+    {"id":"M5-mc-05","t":"mc","q":"For the echo, you want the patient lying on his left side. What do you say?","opts":["Acuéstese del lado derecho.","Siéntese del lado izquierdo.","Acuéstese del lado izquierdo.","Levántese del lado izquierdo."],"a":2,"why":"Acuéstese = lie down; del lado izquierdo = on the left side. The others say right side, sit, or stand up."},
+    {"id":"M5-mc-06","t":"mc","q":"___ voy a escuchar el corazón.","qen":"I'm going to listen to your heart.","opts":["Lo","La","Me","Le"],"a":3,"why":"With body parts Spanish uses the indirect object for the person: le (to you) + el corazón. Lo/la would make the person the direct object, which doesn't work with \"el corazón\"."},
+    {"id":"M5-mc-07","t":"mc","q":"Voy a ___ unos parches en el pecho.","qen":"I'm going to put some stickers on your chest.","opts":["ponerlo","pongo","ponerle","ponérsela"],"a":2,"why":"Infinitive after voy a, with le (on you) attached: ponerle. Lo/la don't fit because the thing being put is unos parches."},
+    {"id":"M5-mc-08","t":"mc","q":"Va a ___ el gel un poco frío.","qen":"The gel is going to feel a little cold (to you).","opts":["sentar","sentir","siente","sentado"],"a":1,"why":"Sentir = to feel; sentar = to seat. After va a you need the infinitive."},
+    {"id":"M5-mc-09","t":"mc","q":"No ___, por favor. Estoy haciendo el electrocardiograma.","qen":"Please don't move. I'm doing the ECG.","opts":["se mueva","muévase","se mueve","muévese"],"a":0,"why":"Negative usted command: the pronoun goes in front and is not attached → no se mueva."},
+    {"id":"M5-mc-10","t":"mc","q":"In a stress test, what is \"la caminadora\"?","opts":["the treadmill","the exam table","the wheelchair","the hallway"],"a":0,"why":"La caminadora is the treadmill the patient walks on."},
+    {"id":"M5-mc-11","t":"mc","q":"How do you say \"a blood test\"?","opts":["una prueba de esfuerzo","un ecocardiograma","un análisis de sangre","una radiografía"],"a":2,"why":"Un análisis de sangre = blood test. Prueba de esfuerzo = stress test; radiografía = X-ray."},
+    {"id":"M5-mc-12","t":"mc","q":"Before an echo the patient asks, \"¿Me va a doler?\" Best reply?","opts":["Sí, le va a doler mucho.","No, no duele. Va a sentir el gel y un poco de presión.","No, no me duele.","No, no le dolió."],"a":1,"why":"An echo is painless; the probe presses a little. \"No me duele\" talks about you, and \"no le dolió\" is past."},
+    {"id":"M5-mc-13","t":"mc","q":"Quítese la camisa y ___ la bata.","qen":"Take off your shirt and put on the gown.","opts":["pónese","pongáse","póngalo","póngase"],"a":3,"why":"ponerse → (yo) me pongo → ponga + se → póngase, accent on the first syllable."},
+    {"id":"M5-mc-14","t":"mc","q":"You're examining a 75-year-old patient. Which is correct?","opts":["Relájese, por favor.","Relájate, por favor.","Relájase, por favor.","Se relajó, por favor."],"a":0,"why":"relajarse is an -ar verb → relaje + se → relájese. Relájate is tú; relájase has the wrong vowel; se relajó is past tense, not a command."},
+    {"id":"M5-mc-15","t":"mc","q":"Si siente palpitaciones, ___ la hora en el diario.","qen":"If you feel palpitations, write down the time in the diary.","opts":["apunté","apuntó","apuntaba","apunte"],"a":3,"why":"Instruction to a patient → usted command: apunte."},
+    {"id":"M5-mc-16","t":"mc","q":"Ask: \"Have you ever had an echocardiogram?\"","opts":["¿Alguna vez le hacen un ecocardiograma?","¿Alguna vez le han hecho un ecocardiograma?","¿Alguna vez le van a hacer un ecocardiograma?","¿Alguna vez le han hacido un ecocardiograma?"],"a":1,"why":"\"Ever\" → present perfect with the irregular participle hecho: le han hecho (have they done on you). Hacido does not exist."},
+    {"id":"M5-mc-17","t":"mc","q":"What does \"Le voy a sacar sangre\" mean?","opts":["I'm going to check your blood pressure.","I'm going to give you a shot.","I'm going to draw your blood.","I drew your blood."],"a":2,"why":"Sacar sangre = to draw blood; voy a = I'm going to."},
+    {"id":"M5-mc-18","t":"mc","q":"Va a sentir un ___.","qen":"You're going to feel a little prick.","opts":["pico","picado","picante","piquete"],"a":3,"why":"Un piquete is the everyday word (especially in Mexico) for a needle stick or prick."},
+    {"id":"M5-mc-19","t":"mc","q":"Durante la prueba, avíseme si ___ dolor de pecho o mareo.","qen":"During the test, let me know if you feel chest pain or dizziness.","opts":["siente","sienta","sentirá","sentir"],"a":0,"why":"Si (if) + present tense for a real possibility. Neither the present subjunctive nor the future is used right after si."},
+    {"id":"M5-mc-20","t":"mc","q":"¿La bata? ___, por favor.","qen":"The gown? Put it on, please.","opts":["Póntela","Póngasela","Se la ponga","Pongásela"],"a":1,"why":"Affirmative usted command with two pronouns attached in one word: póngase + la → póngasela. Póntela is tú; pronouns can't go in front in an affirmative command; pongásela has the accent on the wrong syllable."},
+
+    {"id":"M5-fill-01","t":"fill","q":"Por favor, ___ en la camilla.","en":"Please sit on the exam table.","hint":"sentarse (usted command)","a":["siéntese"],"why":"sentarse → siente + se → siéntese (accent because the stress is now third from last)."},
+    {"id":"M5-fill-02","t":"fill","q":"Ahora ___ hondo.","en":"Now take a deep breath.","hint":"respirar (usted command)","a":["respire"],"why":"-ar verb → -e: respire."},
+    {"id":"M5-fill-03","t":"fill","q":"Ahora ___ la respiración.","en":"Now hold your breath.","hint":"aguantar (usted command)","a":["aguante"],"why":"-ar verb → -e: aguante."},
+    {"id":"M5-fill-04","t":"fill","q":"Por favor, ___ la camisa.","en":"Please take off your shirt.","hint":"quitarse (usted command)","a":["quítese"],"why":"quitarse → quite + se → quítese."},
+    {"id":"M5-fill-05","t":"fill","q":"Por favor, ___ la camisa.","en":"Please unbutton your shirt.","hint":"desabrocharse (usted command)","a":["desabróchese"],"why":"desabrocharse → desabroche + se → desabróchese, accent on the stressed -bró-."},
+    {"id":"M5-fill-06","t":"fill","q":"Por favor, ___ la bata.","en":"Please put on the gown.","hint":"ponerse (usted command)","a":["póngase"],"why":"ponerse → (yo) pongo → ponga + se → póngase."},
+    {"id":"M5-fill-07","t":"fill","q":"Ahora ___ del lado izquierdo.","en":"Now lie down on your left side.","hint":"acostarse (usted command)","a":["acuéstese"],"why":"acostarse (o→ue) → acueste + se → acuéstese."},
+    {"id":"M5-fill-08","t":"fill","q":"Por favor, no ___.","en":"Please don't move.","hint":"moverse (negative usted command)","a":["se mueva"],"why":"Negative command: pronoun in front → no se mueva."},
+    {"id":"M5-fill-09","t":"fill","q":"Voy a ___ la presión.","en":"I'm going to take your blood pressure.","hint":"tomar, with the pronoun for \"you\" attached","a":["tomarle"],"why":"The pronoun can attach to the infinitive: voy a tomarle (= le voy a tomar)."},
+    {"id":"M5-fill-10","t":"fill","q":"Le voy a ___ sangre del brazo.","en":"I'm going to draw blood from your arm.","hint":"infinitive; literally \"to take out\"","a":["sacar","extraer","tomar"],"why":"Sacar sangre = to draw blood (extraer is more formal; tomar sangre is also heard). After voy a, use the infinitive."},
+    {"id":"M5-fill-11","t":"fill","q":"Por favor, ___ la boca.","en":"Please open your mouth.","hint":"abrir (usted command)","a":["abra"],"why":"-ir verb → -a: abra."},
+    {"id":"M5-fill-12","t":"fill","q":"Ahora ___ fuerte, por favor.","en":"Now cough hard, please.","hint":"toser (usted command)","a":["tosa"],"why":"-er verb → -a: tosa."},
+    {"id":"M5-fill-13","t":"fill","q":"Por favor, ___ quieto.","en":"Please stay still.","hint":"quedarse (usted command)","a":["quédese"],"why":"quedarse → quede + se → quédese."},
+    {"id":"M5-fill-14","t":"fill","q":"Un momento, le estoy ___ el corazón.","en":"One moment, I'm listening to your heart.","hint":"escuchar (gerund)","a":["escuchando"],"why":"estar + gerund for an action in progress: estoy escuchando."},
+    {"id":"M5-fill-15","t":"fill","q":"Si siente palpitaciones, ___ el botón del monitor.","en":"If you feel palpitations, press the button on the monitor.","hint":"apretar (usted command)","a":["apriete"],"why":"apretar (e→ie): aprieto → apriete."},
+    {"id":"M5-fill-16","t":"fill","q":"¿Ya le ___ sangre hoy?","en":"Have they already drawn your blood today?","hint":"sacar (ellos, present perfect)","a":["han sacado"],"why":"Present perfect with ya: han sacado."},
+    {"id":"M5-fill-17","t":"fill","q":"La semana pasada le ___ un ecocardiograma.","en":"Last week we did an echocardiogram on you.","hint":"hacer (nosotros)","a":["hicimos"],"why":"Finished event last week → preterite: hicimos."},
+    {"id":"M5-fill-18","t":"fill","q":"El ecocardiograma nos muestra cómo ___ su corazón.","en":"The echocardiogram shows us how your heart pumps.","hint":"bombear","a":["bombea"],"why":"General fact, present tense, subject su corazón → bombea."},
+    {"id":"M5-fill-19","t":"fill","q":"¿El parche? Ya ___ quité.","en":"The patch? I already took it off you.","hint":"two pronouns: to you + it (el parche)","a":["se lo"],"why":"le + lo becomes se lo: ya se lo quité."},
+    {"id":"M5-fill-20","t":"fill","q":"Por favor, ___ la manga.","en":"Please roll up your sleeve.","hint":"subirse (usted command)","a":["súbase"],"why":"subirse → suba + se → súbase."},
+
+    {"id":"M5-tiles-01","t":"tiles","en":"Please sit on the exam table.","a":"Siéntese en la camilla, por favor.","alt":["Por favor, siéntese en la camilla."],"extra":["siéntate","siéntase"]},
+    {"id":"M5-tiles-02","t":"tiles","en":"I'm going to take your blood pressure.","a":"Le voy a tomar la presión.","alt":[],"extra":["lo","tomando"]},
+    {"id":"M5-tiles-03","t":"tiles","en":"Take a deep breath and hold your breath.","a":"Respire hondo y aguante la respiración.","alt":[],"extra":["respira","aguanta"]},
+    {"id":"M5-tiles-04","t":"tiles","en":"Please lie down on your left side.","a":"Acuéstese del lado izquierdo, por favor.","alt":["Por favor, acuéstese del lado izquierdo."],"extra":["acuéstate","izquierda"]},
+    {"id":"M5-tiles-05","t":"tiles","en":"Take off your shirt and put on the gown.","a":"Quítese la camisa y póngase la bata.","alt":["Póngase la bata y quítese la camisa."],"extra":["quítate","pone"]},
+    {"id":"M5-tiles-06","t":"tiles","en":"You're going to feel a prick in your arm.","a":"Va a sentir un piquete en el brazo.","alt":["En el brazo va a sentir un piquete.","Va a sentir en el brazo un piquete."],"extra":["sentar","una"]},
+    {"id":"M5-tiles-07","t":"tiles","en":"Don't move during the electrocardiogram.","a":"No se mueva durante el electrocardiograma.","alt":["Durante el electrocardiograma, no se mueva."],"extra":["muévase","moviendo"]},
+    {"id":"M5-tiles-08","t":"tiles","en":"I'm going to put some stickers on your chest.","a":"Voy a ponerle unos parches en el pecho.","alt":["Voy a ponerle en el pecho unos parches."],"extra":["ponerlo","pongo"]},
+    {"id":"M5-tiles-09","t":"tiles","en":"This monitor records your heart rhythm.","a":"Este monitor graba el ritmo de su corazón.","alt":[],"extra":["sus","graban"]},
+    {"id":"M5-tiles-10","t":"tiles","en":"Have you ever had a stress test?","a":"¿Alguna vez le han hecho una prueba de esfuerzo?","alt":["¿Le han hecho alguna vez una prueba de esfuerzo?","¿Le han hecho una prueba de esfuerzo alguna vez?"],"extra":["hecha","haber"]},
+    {"id":"M5-tiles-11","t":"tiles","en":"We're going to do an echocardiogram on you tomorrow.","a":"Le vamos a hacer un ecocardiograma mañana.","alt":["Mañana le vamos a hacer un ecocardiograma."],"extra":["hecho","una"]},
+    {"id":"M5-tiles-12","t":"tiles","en":"Let me know if you feel pain or dizziness.","a":"Avíseme si siente dolor o mareo.","alt":["Si siente dolor o mareo, avíseme.","Avíseme si siente mareo o dolor.","Si siente mareo o dolor, avíseme."],"extra":["sienta","avísame"]},
+    {"id":"M5-tiles-13","t":"tiles","en":"Roll up the sleeve on your left arm.","a":"Súbase la manga del brazo izquierdo.","alt":[],"extra":["súbete","izquierda"]},
+    {"id":"M5-tiles-14","t":"tiles","en":"We're going to take it (the monitor) off you tomorrow.","a":"Mañana se lo vamos a quitar.","alt":["Se lo vamos a quitar mañana."],"extra":["le","quitado"]},
+    {"id":"M5-tiles-15","t":"tiles","en":"I'm listening to your heart.","a":"Le estoy escuchando el corazón.","alt":[],"extra":["escuchado","lo"]},
+    {"id":"M5-tiles-16","t":"tiles","en":"The nurse is going to draw your blood.","a":"La enfermera le va a sacar sangre.","alt":["Le va a sacar sangre la enfermera."],"extra":["sacando","lo"]},
+
+    {"id":"M5-listen-01","t":"listen","say":"Acuéstese boca arriba, por favor.","opts":["Lie down on your back, please.","Lie down on your stomach, please.","Sit up, please.","Lie on your left side, please."],"a":0},
+    {"id":"M5-listen-02","t":"listen","say":"Respire hondo y aguante la respiración.","opts":["Breathe normally and relax.","Take a deep breath and let it out.","Take a deep breath and hold it.","Cough hard and hold still."],"a":2},
+    {"id":"M5-listen-03","t":"listen","say":"Le voy a poner unos parches en el pecho.","opts":["I put some stickers on your chest.","I'm going to put some stickers on your chest.","I'm going to put some patches on your back.","You're going to put some stickers on your chest."],"a":1},
+    {"id":"M5-listen-04","t":"listen","say":"Va a sentir el gel un poco frío.","opts":["The gel is going to feel warm.","You felt that the gel was cold.","I'm going to feel the gel a little cold.","The gel is going to feel a little cold to you."],"a":3},
+    {"id":"M5-listen-05","t":"listen","say":"Lleve el monitor puesto y apunte sus síntomas.","opts":["Keep the monitor on and write down your symptoms.","Take off the monitor and write down your symptoms.","Bring the monitor back and tell us your symptoms.","Keep the monitor on and call us about your symptoms."],"a":0},
+    {"id":"M5-listen-06","t":"listen","say":"Ya le sacamos sangre esta mañana.","opts":["We're going to draw your blood this morning.","We still haven't drawn your blood.","We already drew your blood this morning.","They drew your blood yesterday morning."],"a":2},
+    {"id":"M5-listen-07","t":"listen","say":"La caminadora va a ir cada vez más rápido.","opts":["The treadmill is going to go slower and slower.","The treadmill is going to go faster and faster.","You're going to walk faster every time.","The treadmill went very fast."],"a":1},
+    {"id":"M5-listen-08","t":"listen","say":"Vuélvase del lado izquierdo y relájese.","opts":["Turn onto your right side and relax.","Come back on the left side and relax.","Turn to the left and don't move.","Turn onto your left side and relax."],"a":3},
+    {"id":"M5-listen-09","t":"listen","say":"¿Le duele cuando aprieto aquí?","opts":["Does it hurt when I press here?","Did it hurt when I pressed here?","Does it hurt when you press here?","Does it hurt when you breathe here?"],"a":0},
+    {"id":"M5-listen-10","t":"listen","say":"Le hicimos un electrocardiograma y salió normal.","opts":["We're going to do an ECG to see if it's normal.","They did an echocardiogram and it was normal.","We did an ECG and it came out normal.","We did an ECG and it came out abnormal."],"a":2},
+
+    {"id":"M5-dlg-01","t":"dlg","title":"Taking vital signs","turns":[
+      {"who":"Paciente","es":"Buenos días, doctor.","en":"Good morning, doctor."},
+      {"you":true,"opts":["Buenos días. Siéntate aquí. Te voy a tomar la presión.","Buenos días. Siéntese aquí, por favor. Le voy a tomar la presión.","Buenos días. Se sentó aquí. Le tomé la presión."],"a":1,"why":"Usted command + le voy a… for what you're about to do. The first uses tú; the third is past tense."},
+      {"who":"Paciente","es":"¿En qué brazo?","en":"Which arm?"},
+      {"you":true,"opts":["Súbete la manga del brazo izquierdo.","Se subió la manga del brazo izquierdo.","Súbase la manga del brazo izquierdo, por favor."],"a":2,"why":"subirse → súbase (usted command). Súbete is tú; se subió is a past statement."},
+      {"who":"Paciente","es":"Ay, me aprieta mucho.","en":"Ouch, it's squeezing a lot."},
+      {"you":true,"opts":["Es normal, aprieta un poco. Relájese y no hable, por favor.","Es normal. Relájate y no hables.","Es normal. Se relajó y no habló."],"a":0,"why":"Usted commands: relájese, no hable. Talking during the reading can raise the number."}
+    ]},
+    {"id":"M5-dlg-02","t":"dlg","title":"Getting an ECG","turns":[
+      {"who":"Paciente","es":"¿Qué me van a hacer?","en":"What are you going to do to me?"},
+      {"you":true,"opts":["Le hicimos un electrocardiograma ayer. No duele.","Le vamos a hacer un electrocardiograma. No duele.","Te vamos a hacer un electrocardiograma. No duele."],"a":1,"why":"Future plan → ir a; usted → le. The first is past; the third uses tú."},
+      {"who":"Paciente","es":"¿Me quito la camisa?","en":"Should I take off my shirt?"},
+      {"you":true,"opts":["Sí, quítatela y acuéstate.","Sí, se la quitó y se acostó.","Sí, quítesela, por favor, y acuéstese en la camilla."],"a":2,"why":"Two pronouns attached to the usted command: quítese + la → quítesela; acuéstese."},
+      {"who":"Paciente","es":"¿Me va a dar toques?","en":"Is it going to give me shocks?"},
+      {"you":true,"opts":["No, el aparato solo graba la electricidad de su corazón. No se mueva y respire normal.","Sí, le va a dar toques fuertes.","No, no se movió y respiró normal."],"a":0,"why":"An ECG only records the heart's electrical activity; nothing is sent into the body. Negative command: no se mueva."}
+    ]},
+    {"id":"M5-dlg-03","t":"dlg","title":"The echocardiogram","turns":[
+      {"who":"Paciente","es":"Doctor, ¿qué es un ecocardiograma?","en":"Doctor, what is an echocardiogram?"},
+      {"you":true,"opts":["Es una prueba en la caminadora para ver si se cansa.","Es un ultrasonido del corazón. Vemos cómo bombea y cómo funcionan las válvulas.","Es un análisis de sangre para el colesterol."],"a":1,"why":"An echo is an ultrasound of the heart: pumping and valves."},
+      {"who":"Paciente","es":"Ah, como el que me hicieron cuando estaba embarazada.","en":"Oh, like the one they did when I was pregnant."},
+      {"you":true,"opts":["Exacto. Póngase la bata con la abertura hacia adelante y acuéstese del lado izquierdo.","Exacto. Ponte la bata y acuéstate del lado izquierdo.","Exacto. Se puso la bata y se acostó del lado izquierdo."],"a":0,"why":"Usted commands póngase / acuéstese. The left side brings the heart closer to the chest wall for better pictures."},
+      {"who":"Paciente","es":"¡Ay, está frío!","en":"Oh, it's cold!"},
+      {"you":true,"opts":["Sí, es el gel. Le dolió mucho, ¿verdad?","Sí, es el gel. Me va a doler un poco.","Sí, es el gel. Va a sentir un poco de presión, pero no le va a doler."],"a":2,"why":"Va a sentir / no le va a doler prepares the patient. The others are past tense or about you."}
+    ]},
+    {"id":"M5-dlg-04","t":"dlg","title":"Explaining a stress test","turns":[
+      {"who":"Paciente","es":"¿Qué tengo que hacer en la prueba de esfuerzo?","en":"What do I have to do in the stress test?"},
+      {"you":true,"opts":["Caminó en una caminadora y la caminadora fue más rápido.","Va a caminar en una caminadora. Poco a poco la caminadora va a ir más rápido y más inclinada.","Va a nadar en una alberca por media hora."],"a":1,"why":"Future → ir a + infinitive. The treadmill gradually speeds up and tilts upward."},
+      {"who":"Paciente","es":"¿Y si me canso o me duele el pecho?","en":"And if I get tired or my chest hurts?"},
+      {"you":true,"opts":["Avísame si te duele.","Me avisó si sintió dolor.","Avíseme de inmediato si siente dolor de pecho, mareo o mucha falta de aire."],"a":2,"why":"Usted command avíseme + si + present. Chest pain, dizziness or severe breathlessness are reasons to stop the test."},
+      {"who":"Paciente","es":"¿Qué ropa me pongo ese día?","en":"What clothes should I wear that day?"},
+      {"you":true,"opts":["Póngase ropa cómoda y zapatos para caminar.","Ponte ropa cómoda y tenis.","Se puso ropa cómoda."],"a":0,"why":"ponerse → póngase. Ponte is tú; se puso is past."}
+    ]},
+    {"id":"M5-dlg-05","t":"dlg","title":"A patch heart monitor","turns":[
+      {"who":"Paciente","es":"¿Para qué es este parche?","en":"What is this patch for?"},
+      {"you":true,"opts":["Es una medicina para el corazón.","Es un monitor. Le da toques al corazón cuando late rápido.","Es un monitor. Graba el ritmo de su corazón por varios días."],"a":2,"why":"A patch monitor only records the rhythm; it never delivers shocks."},
+      {"who":"Paciente","es":"¿Y qué hago si siento palpitaciones?","en":"And what do I do if I feel palpitations?"},
+      {"you":true,"opts":["Apriete el botón y apunte la hora y lo que estaba haciendo.","Aprieta el botón y apunta la hora.","Apretó el botón y apuntó la hora."],"a":0,"why":"Usted commands apriete / apunte. Linking symptoms to the recording is the whole point of the monitor."},
+      {"who":"Paciente","es":"Muy bien. ¿Y cuándo me lo quito?","en":"OK. And when do I take it off?"},
+      {"you":true,"opts":["Te lo quitaste la semana pasada.","Le vamos a decir cuándo quitárselo, y después revisamos los resultados.","Se lo quitó ayer y revisamos los resultados."],"a":1,"why":"Future with ir a; pronouns attached to the infinitive: quitárselo. The others are tú or past."}
+    ]},
+    {"id":"M5-dlg-06","t":"dlg","title":"Heart, lungs and ankles","turns":[
+      {"who":"Paciente","es":"¿Me acuesto o me quedo sentado?","en":"Should I lie down or stay sitting?"},
+      {"you":true,"opts":["Quédate sentado.","Quédese sentado, por favor. Le voy a escuchar los pulmones.","Se quedó sentado y le escuché los pulmones."],"a":1,"why":"quedarse → quédese (usted). Lungs are usually examined with the patient sitting."},
+      {"who":"Paciente","es":"Está bien.","en":"OK."},
+      {"you":true,"opts":["Respiró hondo por la boca.","Respira hondo por la boca.","Respire hondo por la boca… otra vez… muy bien."],"a":2,"why":"Usted command: respire. Respira is tú; respiró is past."},
+      {"who":"Paciente","es":"Doctor, se me hinchan los tobillos en la tarde.","en":"Doctor, my ankles swell in the afternoon."},
+      {"you":true,"opts":["Déjeme revisarlos. ¿Le duele cuando aprieto aquí?","Déjame revisarlos. ¿Te duele aquí?","Me dejó revisarlos. ¿Le dolió?"],"a":0,"why":"dejar → déjeme (usted) + revisarlos (los tobillos)."}
+    ]}
+  ],
+  "roleplay": [
+    {
+      "title": "Exam before an ECG",
+      "setup": "You are the EP doctor in clinic. Sr. Ramírez has come in with ankle swelling and some shortness of breath; get him gowned, examine his heart, lungs and ankles, and prepare him for an ECG.",
+      "persona": "You play Ernesto Ramírez, 68, from Michoacán, Mexico, a retired construction worker living in Chicago with his wife. Speak simple, everyday Mexican Spanish (present tense, preterite, 'voy a…'), short sentences. Facts: your ankles have been swelling for a few weeks, worse in the evening; you get short of breath walking about two blocks; you have high blood pressure. You are a little shy about undressing and ask whether you also have to take off your undershirt (camiseta). You have never had an ECG and ask '¿Me va a dar toques?'. Follow the doctor's instructions only when they are clear; if the doctor says something too fast, say '¿Mande?'. If the doctor uses tú, look a little surprised but keep going. Mention the shortness of breath only if asked about breathing.",
+      "opening": "Buenos días, doctor. La enfermera me dijo que usted me iba a revisar.",
+      "goals": [
+        "Ask permission to examine him and get him to take off his shirt and put on the gown",
+        "Use at least four usted commands with pronouns (siéntese, acuéstese, respire hondo, relájese…)",
+        "Listen to his heart and lungs and check his ankles, saying what you're doing as you go",
+        "Explain the ECG simply (stickers, it doesn't hurt, it doesn't send electricity) and ask him not to move"
+      ]
+    },
+    {
+      "title": "Going home with a heart monitor",
+      "setup": "Sra. Hernández has palpitations that come and go. You are placing a patch heart monitor; explain what it does, how to use it, and what to do if symptoms happen.",
+      "persona": "You play Marta Hernández, 54, from Guatemala, who works in a restaurant kitchen in Chicago. Speak simple Spanish (present, preterite, 'voy a…'). Facts: a few times a week, usually at night, you feel 'brincos' in your chest that last a few minutes; you have never fainted. You worry the monitor will give you shocks and that it will come off from sweating at work. Ask whether you can shower and whether you can keep working, but only if the doctor hasn't already covered it. If the doctor says 'por unos días', ask '¿Cuántos días?' and accept an answer like 'le vamos a decir' or 'lo que le indique su médico'. Be reassured by clear, calm explanations.",
+      "opening": "Doctor, ¿este aparato me va a dar toques?",
+      "goals": [
+        "Explain that the patch only records the heart rhythm and does not give shocks",
+        "Tell her to press the button and write down the time and what she was doing when she feels symptoms",
+        "Answer her questions about work, sweating and showering in general terms (follow the monitor's instructions)",
+        "Tell her to go to the emergency room or call 911 if she faints, has chest pain or severe shortness of breath",
+        "Explain when and how she will get the results"
+      ]
+    }
+  ]
+}

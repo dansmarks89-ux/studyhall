@@ -1,0 +1,1521 @@
+{
+  "id": "M4",
+  "track": "med",
+  "n": 4,
+  "title": "Medicines and history",
+  "goal": "Take a medication list and check adherence, screen for bleeding on blood thinners, tell allergies from side effects, and take past medical, family and social history.",
+  "bestAfter": "C5",
+  "grammar": [
+    {
+      "h": "Present perfect for 'have you ever…?'",
+      "p": "Form: *he / ha / han* + participle (*-ado / -ido*). With patients use *ha*: *¿Ha tenido…?* Key irregular participles: *hecho* (hacer), *dicho* (decir), *visto* (ver), *puesto* (poner), *muerto* (morir). Use it with *alguna vez*, *nunca*, *últimamente*, *ya*, *todavía no*. In Mexico you will also hear the preterite in these questions (*¿Alguna vez tuvo un infarto?*); both are understood, but this level practices the present perfect.",
+      "ex": [
+        [
+          "¿Alguna vez ha tenido un infarto?",
+          "Have you ever had a heart attack?"
+        ],
+        [
+          "¿Le han hecho alguna operación?",
+          "Have you had any surgery?"
+        ],
+        [
+          "Nunca he fumado.",
+          "I've never smoked."
+        ]
+      ]
+    },
+    {
+      "h": "Se me olvida: forgetting without blame",
+      "p": "*Se me olvida* is literally 'it slips my mind' — it sounds gentle, so it is the best way to ask about missed doses. It works like *gustar*: *se le olvida* + an infinitive or a singular noun, *se le olvidan* + a plural noun. Past: *se me olvidó* (once), *se me olvidaron* (several things).",
+      "ex": [
+        [
+          "¿Se le olvida tomar la pastilla?",
+          "Do you forget to take the pill?"
+        ],
+        [
+          "A veces se me olvidan las pastillas de la noche.",
+          "Sometimes I forget my evening pills."
+        ],
+        [
+          "Ayer se me olvidó la pastilla de la mañana.",
+          "Yesterday I forgot my morning pill."
+        ]
+      ]
+    },
+    {
+      "h": "How long: desde hace, hace … que, llevar",
+      "p": "For something still going on, Spanish uses the PRESENT: *Tomo la pastilla desde hace dos años* or *Hace dos años que tomo la pastilla* (I've been taking it for two years). *Llevar* + time + *con* is very natural for conditions: *Llevo diez años con diabetes.* But *hace* + time with the PRETERITE means 'ago': *Dejé de fumar hace cinco años.*",
+      "ex": [
+        [
+          "¿Desde cuándo tiene la presión alta?",
+          "How long have you had high blood pressure?"
+        ],
+        [
+          "Llevo cinco años con diabetes.",
+          "I've had diabetes for five years."
+        ],
+        [
+          "Me operaron hace tres años.",
+          "I had surgery three years ago."
+        ]
+      ]
+    },
+    {
+      "h": "Allergy or side effect?",
+      "p": "Patients often say *soy alérgico/alérgica* for any bad reaction, so always ask *¿Qué le pasó cuando la tomó?* Hives (*ronchas*), swelling of the face or lips (*se me hinchó la cara / los labios*) or trouble breathing suggest a true allergy. A cough, upset stomach, dizziness or muscle aches (*me dio tos, me dolía el estómago, me mareaba*) are usually side effects (*efectos secundarios*). *Me cayó mal* is vague — always ask what happened.",
+      "ex": [
+        [
+          "¿Qué le pasó cuando la tomó?",
+          "What happened when you took it?"
+        ],
+        [
+          "Me salieron ronchas y se me hinchó la cara.",
+          "I broke out in hives and my face swelled."
+        ],
+        [
+          "La pastilla me da tos.",
+          "The pill gives me a cough."
+        ]
+      ]
+    },
+    {
+      "h": "Tomar, plans and recent changes",
+      "p": "*Tomar* means both 'to take' (medicine) and 'to drink' (alcohol): *¿Toma alcohol?* For medicine changes use *ir a* + infinitive (*Vamos a revisar sus medicinas*) and *acabar de* + infinitive for 'just' (*Acabo de empezar una pastilla nueva*). *Dejar de* + infinitive = to stop doing something (*dejé de fumar*).",
+      "ex": [
+        [
+          "¿Toma alcohol? ¿Cuántas cervezas a la semana?",
+          "Do you drink alcohol? How many beers a week?"
+        ],
+        [
+          "Vamos a revisar sus medicinas una por una.",
+          "We're going to go over your medicines one by one."
+        ],
+        [
+          "Acabo de empezar una pastilla para el colesterol.",
+          "I just started a cholesterol pill."
+        ]
+      ]
+    }
+  ],
+  "vocab": [
+    [
+      "la medicina / el medicamento",
+      "medicine"
+    ],
+    [
+      "la pastilla",
+      "pill"
+    ],
+    [
+      "la receta",
+      "prescription"
+    ],
+    [
+      "sin receta",
+      "over the counter"
+    ],
+    [
+      "la dosis",
+      "dose"
+    ],
+    [
+      "una vez al día",
+      "once a day"
+    ],
+    [
+      "dos veces al día",
+      "twice a day"
+    ],
+    [
+      "en ayunas",
+      "on an empty stomach, fasting"
+    ],
+    [
+      "con comida",
+      "with food"
+    ],
+    [
+      "se me olvida",
+      "I forget (it slips my mind)"
+    ],
+    [
+      "dejar de + infinitivo",
+      "to stop (doing something)"
+    ],
+    [
+      "el anticoagulante",
+      "anticoagulant, blood thinner"
+    ],
+    [
+      "para adelgazar la sangre",
+      "to thin the blood (how patients describe blood thinners)"
+    ],
+    [
+      "el sangrado",
+      "bleeding"
+    ],
+    [
+      "sangrar",
+      "to bleed"
+    ],
+    [
+      "las encías",
+      "gums"
+    ],
+    [
+      "los moretones",
+      "bruises"
+    ],
+    [
+      "la orina",
+      "urine"
+    ],
+    [
+      "las heces / la popó",
+      "stool / poop"
+    ],
+    [
+      "negro / negra",
+      "black"
+    ],
+    [
+      "la alergia",
+      "allergy"
+    ],
+    [
+      "ser alérgico / alérgica a",
+      "to be allergic to"
+    ],
+    [
+      "las ronchas",
+      "hives, welts"
+    ],
+    [
+      "el efecto secundario",
+      "side effect"
+    ],
+    [
+      "me cayó mal",
+      "it didn't agree with me"
+    ],
+    [
+      "la presión alta",
+      "high blood pressure"
+    ],
+    [
+      "la diabetes / el azúcar alta",
+      "diabetes / high sugar (colloquial)"
+    ],
+    [
+      "el colesterol alto",
+      "high cholesterol"
+    ],
+    [
+      "el infarto",
+      "heart attack"
+    ],
+    [
+      "la embolia / el derrame cerebral",
+      "stroke"
+    ],
+    [
+      "la apnea del sueño",
+      "sleep apnea"
+    ],
+    [
+      "roncar",
+      "to snore"
+    ],
+    [
+      "la tiroides",
+      "thyroid"
+    ],
+    [
+      "la operación / la cirugía",
+      "surgery"
+    ],
+    [
+      "el marcapasos",
+      "pacemaker"
+    ],
+    [
+      "la muerte súbita",
+      "sudden death"
+    ],
+    [
+      "morir de repente",
+      "to die suddenly"
+    ],
+    [
+      "fumar",
+      "to smoke"
+    ],
+    [
+      "los cigarros",
+      "cigarettes"
+    ],
+    [
+      "tomar alcohol",
+      "to drink alcohol"
+    ],
+    [
+      "las drogas",
+      "drugs (recreational)"
+    ],
+    [
+      "hacer ejercicio",
+      "to exercise"
+    ],
+    [
+      "vivir solo / sola",
+      "to live alone"
+    ],
+    [
+      "el té de hierbas / el remedio casero",
+      "herbal tea / home remedy"
+    ]
+  ],
+  "phrases": [
+    [
+      "Vamos a revisar sus medicinas una por una.",
+      "We're going to go over your medicines one by one."
+    ],
+    [
+      "¿Para qué es esta pastilla?",
+      "What is this pill for?"
+    ],
+    [
+      "¿Cuántas veces al día la toma?",
+      "How many times a day do you take it?"
+    ],
+    [
+      "A muchas personas se les olvida alguna pastilla. ¿A usted le pasa?",
+      "Lots of people forget a pill now and then. Does that happen to you?"
+    ],
+    [
+      "¿Toma alguna medicina sin receta, vitaminas o tés?",
+      "Do you take any over-the-counter medicines, vitamins or teas?"
+    ],
+    [
+      "¿Ha tenido sangrado de la nariz o de las encías?",
+      "Have you had bleeding from your nose or gums?"
+    ],
+    [
+      "¿Ha notado sangre en la orina o heces negras?",
+      "Have you noticed blood in your urine or black stools?"
+    ],
+    [
+      "¿Tiene alergia a alguna medicina?",
+      "Are you allergic to any medicine?"
+    ],
+    [
+      "¿Qué le pasó cuando la tomó?",
+      "What happened when you took it?"
+    ],
+    [
+      "¿Alguna vez ha tenido un infarto o una embolia?",
+      "Have you ever had a heart attack or a stroke?"
+    ],
+    [
+      "¿Le han hecho alguna operación?",
+      "Have you had any surgery?"
+    ],
+    [
+      "¿Alguien en su familia ha muerto joven y de repente?",
+      "Has anyone in your family died suddenly at a young age?"
+    ],
+    [
+      "¿Fuma o ha fumado alguna vez?",
+      "Do you smoke or have you ever smoked?"
+    ],
+    [
+      "¿En qué trabaja?",
+      "What do you do for work?"
+    ],
+    [
+      "¿Con quién vive?",
+      "Who do you live with?"
+    ]
+  ],
+  "items": [
+    {
+      "id": "M4-mc-01",
+      "t": "mc",
+      "q": "¿Se le ___ tomar las pastillas?",
+      "qen": "Do you forget to take your pills?",
+      "opts": [
+        "olvidan",
+        "olvida",
+        "olvidas",
+        "olvidamos"
+      ],
+      "a": 1,
+      "why": "The thing that 'slips your mind' is the action tomar (an infinitive), which counts as singular → se le olvida."
+    },
+    {
+      "id": "M4-mc-02",
+      "t": "mc",
+      "q": "A veces se me ___ las pastillas de la noche.",
+      "qen": "Sometimes I forget my evening pills.",
+      "opts": [
+        "olvida",
+        "olvido",
+        "olvidé",
+        "olvidan"
+      ],
+      "a": 3,
+      "why": "Las pastillas (plural) is the subject → se me olvidan; a veces signals a habit → present."
+    },
+    {
+      "id": "M4-mc-03",
+      "t": "mc",
+      "q": "How do you ask a patient 'Have you ever had a heart attack?'",
+      "opts": [
+        "¿Tiene alguna vez un infarto?",
+        "¿Has tenido alguna vez un infarto?",
+        "¿Ha tenido alguna vez un infarto?",
+        "¿Va a tener alguna vez un infarto?"
+      ],
+      "a": 2,
+      "why": "'Have you ever' → present perfect; usted → ha tenido (has = tú)."
+    },
+    {
+      "id": "M4-mc-04",
+      "t": "mc",
+      "q": "A patient says: «Con esa pastilla me salieron ronchas y se me hinchó la cara.» This is most likely:",
+      "opts": [
+        "A side effect, not an allergy",
+        "An allergic reaction",
+        "A bleeding problem",
+        "A sign that the pill is not working"
+      ],
+      "a": 1,
+      "why": "Hives (ronchas) and facial swelling point to a true allergic reaction."
+    },
+    {
+      "id": "M4-mc-05",
+      "t": "mc",
+      "q": "A patient says: «La pastilla para la presión me da una tos seca.» How do you classify this?",
+      "opts": [
+        "A side effect of the pill",
+        "An allergy to the pill",
+        "Bleeding caused by the pill",
+        "A missed dose"
+      ],
+      "a": 0,
+      "why": "A dry cough from a blood pressure pill is a side effect (efecto secundario), not an allergy."
+    },
+    {
+      "id": "M4-mc-06",
+      "t": "mc",
+      "q": "Tomo la pastilla ___ hace cinco años.",
+      "qen": "I've been taking the pill for five years.",
+      "opts": [
+        "por",
+        "hace",
+        "durante",
+        "desde"
+      ],
+      "a": 3,
+      "why": "Present tense + desde hace + time = something still going on: 'for five years'."
+    },
+    {
+      "id": "M4-mc-07",
+      "t": "mc",
+      "q": "Llevo diez años ___ diabetes.",
+      "qen": "I've had diabetes for ten years.",
+      "opts": [
+        "por",
+        "con",
+        "en",
+        "a"
+      ],
+      "a": 1,
+      "why": "Llevar + time + con + condition: Llevo diez años con diabetes."
+    },
+    {
+      "id": "M4-mc-08",
+      "t": "mc",
+      "q": "How do you ask a patient 'Have you ever smoked?'",
+      "opts": [
+        "¿Has fumado alguna vez?",
+        "¿Ha fumado alguna vez?",
+        "¿Va a fumar alguna vez?",
+        "¿Ha fumada alguna vez?"
+      ],
+      "a": 1,
+      "why": "Usted → ha; the participle never changes after haber → fumado."
+    },
+    {
+      "id": "M4-mc-09",
+      "t": "mc",
+      "q": "What does «¿Cuántas cervezas toma a la semana?» mean?",
+      "opts": [
+        "How many beers do you drink a week?",
+        "How many beers did you drink last week?",
+        "How many beers do you drink a day?",
+        "How many beers are you going to drink this week?"
+      ],
+      "a": 0,
+      "why": "Tomar = to drink (alcohol); present tense; a la semana = per week."
+    },
+    {
+      "id": "M4-mc-10",
+      "t": "mc",
+      "q": "How do you ask 'Have you noticed blood in your urine?'",
+      "opts": [
+        "¿Ha notado sangre en las encías?",
+        "¿Ha notado sangre en la nariz?",
+        "¿Ha notado sangre en las heces?",
+        "¿Ha notado sangre en la orina?"
+      ],
+      "a": 3,
+      "why": "Urine = la orina. Encías = gums, heces = stool."
+    },
+    {
+      "id": "M4-mc-11",
+      "t": "mc",
+      "q": "A patient says: «Mi papá tuvo una embolia.» In everyday Mexican Spanish this usually means he had:",
+      "opts": [
+        "a heart attack",
+        "a stroke",
+        "a seizure",
+        "a fainting spell"
+      ],
+      "a": 1,
+      "why": "Patients commonly use embolia (or derrame cerebral) to mean a stroke. Heart attack = infarto."
+    },
+    {
+      "id": "M4-mc-12",
+      "t": "mc",
+      "q": "Which question screens for sleep apnea?",
+      "opts": [
+        "¿Le duelen los pies en la noche?",
+        "¿Tiene frío en la noche?",
+        "¿Ronca mucho o deja de respirar cuando duerme?",
+        "¿Le da hambre en la noche?"
+      ],
+      "a": 2,
+      "why": "Loud snoring and pauses in breathing during sleep are classic apnea symptoms."
+    },
+    {
+      "id": "M4-mc-13",
+      "t": "mc",
+      "q": "How do you ask a patient 'Has anyone in your family died suddenly at a young age?'",
+      "opts": [
+        "¿Alguien en tu familia ha muerto joven y de repente?",
+        "¿Alguien en su familia ha morido joven y de repente?",
+        "¿Alguien en su familia va a morir de repente?",
+        "¿Alguien en su familia ha muerto joven y de repente?"
+      ],
+      "a": 3,
+      "why": "Usted (su familia), present perfect with the irregular participle muerto (not morido)."
+    },
+    {
+      "id": "M4-mc-14",
+      "t": "mc",
+      "q": "Acabo de ___ una medicina nueva.",
+      "qen": "I just started a new medicine.",
+      "opts": [
+        "empecé",
+        "empezado",
+        "empezar",
+        "empiezo"
+      ],
+      "a": 2,
+      "why": "Acabar de is always followed by an infinitive: acabo de empezar."
+    },
+    {
+      "id": "M4-mc-15",
+      "t": "mc",
+      "q": "A patient says: «Tomo una pastilla para adelgazar la sangre.» What is she taking?",
+      "opts": [
+        "A blood thinner",
+        "A diet pill",
+        "A blood pressure pill",
+        "An iron pill"
+      ],
+      "a": 0,
+      "why": "Adelgazar la sangre = thin the blood. (Adelgazar alone also means 'lose weight' — don't be fooled.)"
+    },
+    {
+      "id": "M4-mc-16",
+      "t": "mc",
+      "q": "¿Ya ___ la pastilla de hoy?",
+      "qen": "Have you taken today's pill yet?",
+      "opts": [
+        "toma",
+        "tomaba",
+        "va a tomar",
+        "ha tomado"
+      ],
+      "a": 3,
+      "why": "Ya ('yet/already') with a completed action up to now → present perfect: ha tomado."
+    },
+    {
+      "id": "M4-mc-17",
+      "t": "mc",
+      "q": "How do you ask a patient 'Have you had any surgery?'",
+      "opts": [
+        "¿Le hacen alguna operación?",
+        "¿Le van a hacer alguna operación?",
+        "¿Le han hecho alguna operación?",
+        "¿Le han hacido alguna operación?"
+      ],
+      "a": 2,
+      "why": "Present perfect with the irregular participle hecho: ¿Le han hecho…? (Hacido does not exist.)"
+    },
+    {
+      "id": "M4-mc-18",
+      "t": "mc",
+      "q": "¿Con quién ___?",
+      "qen": "Who do you live with?",
+      "opts": [
+        "vive",
+        "vives",
+        "vivió",
+        "vivía"
+      ],
+      "a": 0,
+      "why": "Usted, present tense → vive."
+    },
+    {
+      "id": "M4-mc-19",
+      "t": "mc",
+      "q": "Which is the best non-judgmental way to ask about missed doses?",
+      "opts": [
+        "¿Por qué no toma sus pastillas?",
+        "A muchas personas se les olvida alguna pastilla. ¿A usted le pasa?",
+        "Usted nunca toma sus pastillas, ¿verdad?",
+        "¿Se te olvidan las pastillas?"
+      ],
+      "a": 1,
+      "why": "It normalizes forgetting and uses usted. The others accuse the patient or use tú."
+    },
+    {
+      "id": "M4-mc-20",
+      "t": "mc",
+      "q": "¿Es usted ___ a la penicilina?",
+      "qen": "Are you allergic to penicillin? (to a woman)",
+      "opts": [
+        "alérgica",
+        "alérgico",
+        "alergia",
+        "alérgicas"
+      ],
+      "a": 0,
+      "why": "Speaking to one woman → feminine singular: alérgica."
+    },
+    {
+      "id": "M4-fill-01",
+      "t": "fill",
+      "q": "¿Cuántas veces a la semana se le ___ la pastilla?",
+      "en": "How many times a week do you forget the pill?",
+      "hint": "olvidar",
+      "a": [
+        "olvida"
+      ],
+      "why": "La pastilla (singular) is the subject; a habit → present: se le olvida."
+    },
+    {
+      "id": "M4-fill-02",
+      "t": "fill",
+      "q": "Ayer se me ___ la pastilla de la mañana.",
+      "en": "Yesterday I forgot my morning pill.",
+      "hint": "olvidar",
+      "a": [
+        "olvidó"
+      ],
+      "why": "Ayer + one event → preterite; la pastilla (singular) → olvidó."
+    },
+    {
+      "id": "M4-fill-03",
+      "t": "fill",
+      "q": "¿___ alguna vez un infarto?",
+      "en": "Have you ever had a heart attack?",
+      "hint": "tener (present perfect)",
+      "a": [
+        "Ha tenido",
+        "ha tenido"
+      ],
+      "why": "Usted, present perfect → ha tenido."
+    },
+    {
+      "id": "M4-fill-04",
+      "t": "fill",
+      "q": "Mi papá ___ de un infarto cuando tenía cincuenta años.",
+      "en": "My dad died of a heart attack when he was fifty.",
+      "hint": "morir",
+      "a": [
+        "murió",
+        "se murió"
+      ],
+      "why": "A completed event in the past → preterite murió (se murió is also very common)."
+    },
+    {
+      "id": "M4-fill-05",
+      "t": "fill",
+      "q": "Tomo la pastilla para la presión ___ hace tres años.",
+      "en": "I've been taking the blood pressure pill for three years.",
+      "hint": "since / for (goes with hace)",
+      "a": [
+        "desde"
+      ],
+      "why": "Present + desde hace + time = still ongoing."
+    },
+    {
+      "id": "M4-fill-06",
+      "t": "fill",
+      "q": "¿___ cuánto tiempo que tiene diabetes?",
+      "en": "How long have you had diabetes?",
+      "hint": "time expression (… cuánto tiempo que)",
+      "a": [
+        "Hace",
+        "hace"
+      ],
+      "why": "¿Hace cuánto tiempo que + present? = How long have you…?"
+    },
+    {
+      "id": "M4-fill-07",
+      "t": "fill",
+      "q": "¿Es usted alérgico a alguna ___?",
+      "en": "Are you allergic to any medicine?",
+      "hint": "medicine",
+      "a": [
+        "medicina"
+      ],
+      "why": "Alguna is feminine → la medicina."
+    },
+    {
+      "id": "M4-fill-08",
+      "t": "fill",
+      "q": "¿Le ___ moretones fácilmente?",
+      "en": "Do you bruise easily? (lit. Do bruises come out on you easily?)",
+      "hint": "salir",
+      "a": [
+        "salen"
+      ],
+      "why": "Los moretones (plural) is the subject → le salen."
+    },
+    {
+      "id": "M4-fill-09",
+      "t": "fill",
+      "q": "¿Ha ___ sangre en la orina o en las heces?",
+      "en": "Have you seen blood in your urine or stool?",
+      "hint": "ver",
+      "a": [
+        "visto"
+      ],
+      "why": "Ver has an irregular participle: visto."
+    },
+    {
+      "id": "M4-fill-10",
+      "t": "fill",
+      "q": "¿Cuántos cigarros ___ al día?",
+      "en": "How many cigarettes do you smoke a day?",
+      "hint": "fumar",
+      "a": [
+        "fuma"
+      ],
+      "why": "Usted, present habit → fuma."
+    },
+    {
+      "id": "M4-fill-11",
+      "t": "fill",
+      "q": "Dejé de fumar ___ diez años.",
+      "en": "I quit smoking ten years ago.",
+      "hint": "ago",
+      "a": [
+        "hace"
+      ],
+      "why": "Preterite + hace + time = 'ago'."
+    },
+    {
+      "id": "M4-fill-12",
+      "t": "fill",
+      "q": "¿Alguna vez le ___ un marcapasos?",
+      "en": "Have you ever had a pacemaker put in? (lit. Have they ever put a pacemaker in you?)",
+      "hint": "poner (present perfect, 'they')",
+      "a": [
+        "han puesto"
+      ],
+      "why": "Ellos form of the present perfect; poner → puesto (irregular)."
+    },
+    {
+      "id": "M4-fill-13",
+      "t": "fill",
+      "q": "Acabo ___ empezar una pastilla nueva.",
+      "en": "I just started a new pill.",
+      "hint": "preposition",
+      "a": [
+        "de"
+      ],
+      "why": "Acabar de + infinitive = to have just done something."
+    },
+    {
+      "id": "M4-fill-14",
+      "t": "fill",
+      "q": "Mañana usted ___ a empezar la pastilla nueva.",
+      "en": "Tomorrow you're going to start the new pill.",
+      "hint": "ir",
+      "a": [
+        "va"
+      ],
+      "why": "Usted + ir a + infinitive → va a empezar."
+    },
+    {
+      "id": "M4-fill-15",
+      "t": "fill",
+      "q": "¿Toma la pastilla con comida o en ___?",
+      "en": "Do you take the pill with food or on an empty stomach?",
+      "hint": "fasting",
+      "a": [
+        "ayunas"
+      ],
+      "why": "En ayunas = on an empty stomach."
+    },
+    {
+      "id": "M4-fill-16",
+      "t": "fill",
+      "q": "¿Tiene problemas de la ___?",
+      "en": "Do you have thyroid problems?",
+      "hint": "thyroid",
+      "a": [
+        "tiroides"
+      ],
+      "why": "La tiroides (ends in -s even in the singular)."
+    },
+    {
+      "id": "M4-fill-17",
+      "t": "fill",
+      "q": "¿En qué ___ usted?",
+      "en": "What do you do for work?",
+      "hint": "trabajar",
+      "a": [
+        "trabaja"
+      ],
+      "why": "Usted, present → trabaja."
+    },
+    {
+      "id": "M4-fill-18",
+      "t": "fill",
+      "q": "¿Alguien en su familia ha ___ joven y de repente?",
+      "en": "Has anyone in your family died suddenly at a young age?",
+      "hint": "morir",
+      "a": [
+        "muerto"
+      ],
+      "why": "Morir has an irregular participle: muerto."
+    },
+    {
+      "id": "M4-fill-19",
+      "t": "fill",
+      "q": "Mi abuela tuvo un ___ cerebral.",
+      "en": "My grandmother had a stroke.",
+      "hint": "stroke (… cerebral)",
+      "a": [
+        "derrame",
+        "infarto",
+        "ataque"
+      ],
+      "why": "Derrame cerebral, infarto cerebral or ataque cerebral = stroke; patients also call it embolia."
+    },
+    {
+      "id": "M4-fill-20",
+      "t": "fill",
+      "q": "Desde que tomo esta pastilla, me ___ una tos seca.",
+      "en": "Since I've been taking this pill, it gives me a dry cough.",
+      "hint": "dar (present)",
+      "a": [
+        "da"
+      ],
+      "why": "La pastilla (it) gives me → me da."
+    },
+    {
+      "id": "M4-tiles-01",
+      "t": "tiles",
+      "en": "Do you forget to take your pills?",
+      "a": "¿Se le olvida tomar las pastillas?",
+      "alt": [],
+      "extra": [
+        "olvidas",
+        "tomas"
+      ]
+    },
+    {
+      "id": "M4-tiles-02",
+      "t": "tiles",
+      "en": "Have you ever had a heart attack?",
+      "a": "¿Alguna vez ha tenido un infarto?",
+      "alt": [
+        "¿Ha tenido alguna vez un infarto?",
+        "¿Ha tenido un infarto alguna vez?"
+      ],
+      "extra": [
+        "has",
+        "tenía"
+      ]
+    },
+    {
+      "id": "M4-tiles-03",
+      "t": "tiles",
+      "en": "I've had diabetes for ten years.",
+      "a": "Tengo diabetes desde hace diez años.",
+      "alt": [
+        "Desde hace diez años tengo diabetes."
+      ],
+      "extra": [
+        "tenía",
+        "durante"
+      ]
+    },
+    {
+      "id": "M4-tiles-04",
+      "t": "tiles",
+      "en": "Yesterday I forgot my morning pill.",
+      "a": "Ayer se me olvidó la pastilla de la mañana.",
+      "alt": [
+        "Se me olvidó la pastilla de la mañana ayer.",
+        "La pastilla de la mañana se me olvidó ayer.",
+        "Se me olvidó ayer la pastilla de la mañana."
+      ],
+      "extra": [
+        "olvida",
+        "olvidaré"
+      ]
+    },
+    {
+      "id": "M4-tiles-05",
+      "t": "tiles",
+      "en": "Do you take any over-the-counter medicine?",
+      "a": "¿Toma alguna medicina sin receta?",
+      "alt": [],
+      "extra": [
+        "tomas",
+        "algún"
+      ]
+    },
+    {
+      "id": "M4-tiles-06",
+      "t": "tiles",
+      "en": "Has anyone in your family died suddenly?",
+      "a": "¿Alguien en su familia ha muerto de repente?",
+      "alt": [
+        "¿Ha muerto alguien en su familia de repente?",
+        "¿Ha muerto de repente alguien en su familia?",
+        "¿En su familia alguien ha muerto de repente?",
+        "¿En su familia ha muerto alguien de repente?"
+      ],
+      "extra": [
+        "morido",
+        "tu"
+      ]
+    },
+    {
+      "id": "M4-tiles-07",
+      "t": "tiles",
+      "en": "Are you allergic to any medicine? (to a man)",
+      "a": "¿Es alérgico a alguna medicina?",
+      "alt": [],
+      "extra": [
+        "alérgica",
+        "algún"
+      ]
+    },
+    {
+      "id": "M4-tiles-08",
+      "t": "tiles",
+      "en": "How many beers do you drink a week?",
+      "a": "¿Cuántas cervezas toma a la semana?",
+      "alt": [
+        "¿Cuántas cervezas a la semana toma?",
+        "¿A la semana, cuántas cervezas toma?"
+      ],
+      "extra": [
+        "cuántos",
+        "tomó"
+      ]
+    },
+    {
+      "id": "M4-tiles-09",
+      "t": "tiles",
+      "en": "I quit smoking five years ago.",
+      "a": "Dejé de fumar hace cinco años.",
+      "alt": [
+        "Hace cinco años dejé de fumar."
+      ],
+      "extra": [
+        "dejo",
+        "desde"
+      ]
+    },
+    {
+      "id": "M4-tiles-10",
+      "t": "tiles",
+      "en": "Who do you live with at home?",
+      "a": "¿Con quién vive en su casa?",
+      "alt": [
+        "¿En su casa, con quién vive?"
+      ],
+      "extra": [
+        "vives",
+        "tu"
+      ]
+    },
+    {
+      "id": "M4-tiles-11",
+      "t": "tiles",
+      "en": "Have you seen blood in your urine?",
+      "a": "¿Ha visto sangre en la orina?",
+      "alt": [],
+      "extra": [
+        "vista",
+        "has"
+      ]
+    },
+    {
+      "id": "M4-tiles-12",
+      "t": "tiles",
+      "en": "I just started a new pill.",
+      "a": "Acabo de empezar una pastilla nueva.",
+      "alt": [
+        "Acabo de empezar una nueva pastilla."
+      ],
+      "extra": [
+        "empecé",
+        "nuevo"
+      ]
+    },
+    {
+      "id": "M4-tiles-13",
+      "t": "tiles",
+      "en": "Have you had any surgery?",
+      "a": "¿Le han hecho alguna operación?",
+      "alt": [],
+      "extra": [
+        "hacido",
+        "has"
+      ]
+    },
+    {
+      "id": "M4-tiles-14",
+      "t": "tiles",
+      "en": "We're going to review your medicines.",
+      "a": "Vamos a revisar sus medicinas.",
+      "alt": [],
+      "extra": [
+        "tus",
+        "van"
+      ]
+    },
+    {
+      "id": "M4-tiles-15",
+      "t": "tiles",
+      "en": "My dad died of a heart attack.",
+      "a": "Mi papá murió de un infarto.",
+      "alt": [],
+      "extra": [
+        "muerto",
+        "muere"
+      ]
+    },
+    {
+      "id": "M4-tiles-16",
+      "t": "tiles",
+      "en": "Have you had bleeding from your nose or gums?",
+      "a": "¿Ha tenido sangrado de la nariz o las encías?",
+      "alt": [
+        "¿Ha tenido sangrado de las encías o la nariz?"
+      ],
+      "extra": [
+        "has",
+        "del"
+      ]
+    },
+    {
+      "id": "M4-listen-01",
+      "t": "listen",
+      "say": "Se me olvidan las pastillas de la noche.",
+      "opts": [
+        "I forgot my evening pills.",
+        "I forget my evening pills.",
+        "I don't take any pills at night.",
+        "I forget my morning pills."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M4-listen-02",
+      "t": "listen",
+      "say": "Nunca he fumado, pero mi esposo fuma mucho.",
+      "opts": [
+        "I used to smoke, but my husband doesn't.",
+        "I've never smoked, and neither has my husband.",
+        "I quit smoking, but my husband smokes a lot.",
+        "I've never smoked, but my husband smokes a lot."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M4-listen-03",
+      "t": "listen",
+      "say": "Mi mamá murió de una embolia hace dos años.",
+      "opts": [
+        "My mother died of a stroke two years ago.",
+        "My mother had a stroke two years ago, but she's fine.",
+        "My mother died of a heart attack two years ago.",
+        "My mother has had a stroke for two years."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M4-listen-04",
+      "t": "listen",
+      "say": "Dejé la pastilla porque me mareaba mucho.",
+      "opts": [
+        "I take the pill because I get very dizzy.",
+        "I stopped the pill because it made me very dizzy.",
+        "I stopped the pill because it made me very tired.",
+        "I'm going to stop the pill because it makes me dizzy."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M4-listen-05",
+      "t": "listen",
+      "say": "Llevo cinco años con la presión alta.",
+      "opts": [
+        "I had high blood pressure five years ago.",
+        "My blood pressure has been low for five years.",
+        "I've had high blood pressure for five years.",
+        "I've been taking blood pressure pills for five years."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M4-listen-06",
+      "t": "listen",
+      "say": "Me salen moretones muy fácilmente desde que tomo el anticoagulante.",
+      "opts": [
+        "I bled a lot when I started the blood thinner.",
+        "I bruise easily, so I stopped the blood thinner.",
+        "I get nosebleeds since I've been on the blood thinner.",
+        "I bruise very easily since I've been on the blood thinner."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M4-listen-07",
+      "t": "listen",
+      "say": "Mi hermano murió de repente a los treinta años.",
+      "opts": [
+        "My brother died suddenly at thirty.",
+        "My brother fainted suddenly at thirty.",
+        "My brother died suddenly thirteen years ago.",
+        "My cousin died suddenly at thirty."
+      ],
+      "a": 0
+    },
+    {
+      "id": "M4-listen-08",
+      "t": "listen",
+      "say": "Ronco mucho y mi esposa dice que dejo de respirar en la noche.",
+      "opts": [
+        "My wife snores a lot and stops breathing at night.",
+        "I snore a lot and my wife says I breathe fast at night.",
+        "I snore a lot and my wife says I stop breathing at night.",
+        "I snored a lot until I stopped drinking at night."
+      ],
+      "a": 2
+    },
+    {
+      "id": "M4-listen-09",
+      "t": "listen",
+      "say": "Tomo una cerveza los fines de semana, nada más.",
+      "opts": [
+        "I drink a beer every day.",
+        "I drink one beer on weekends, that's all.",
+        "I used to drink beer on weekends, but not anymore.",
+        "I drink a lot of beer on weekends."
+      ],
+      "a": 1
+    },
+    {
+      "id": "M4-listen-10",
+      "t": "listen",
+      "say": "Acabo de tomar la pastilla para el colesterol.",
+      "opts": [
+        "I'm about to take my cholesterol pill.",
+        "I finished my cholesterol pills.",
+        "I stopped my cholesterol pill.",
+        "I just took my cholesterol pill."
+      ],
+      "a": 3
+    },
+    {
+      "id": "M4-dlg-01",
+      "t": "dlg",
+      "title": "The bag of pills",
+      "turns": [
+        {
+          "who": "Sr. Gómez",
+          "es": "Doctor, traje todas mis pastillas en esta bolsa.",
+          "en": "Doctor, I brought all my pills in this bag."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Muy bien. Vas a revisar cada una.",
+            "Muy bien. Vamos a revisar cada una.",
+            "Muy bien. Fuimos a revisar cada una."
+          ],
+          "a": 1,
+          "why": "Ir a + infinitive for what you're about to do together: vamos a revisar."
+        },
+        {
+          "who": "Sr. Gómez",
+          "es": "Esta es para la presión y esta es para el azúcar.",
+          "en": "This one is for blood pressure and this one is for sugar."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Se te olvida tomar alguna?",
+            "¿Se le olvidará tomar alguna ayer?",
+            "¿Se le olvida tomar alguna?"
+          ],
+          "a": 2,
+          "why": "Usted (se le), present for a habit."
+        },
+        {
+          "who": "Sr. Gómez",
+          "es": "A veces se me olvida la de la noche, sobre todo cuando trabajo tarde.",
+          "en": "Sometimes I forget the evening one, especially when I work late."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Toma alguna medicina sin receta, vitaminas o tés?",
+            "¿Tomaste alguna medicina sin receta?",
+            "¿Tomará alguna medicina sin receta ayer?"
+          ],
+          "a": 0,
+          "why": "Usted, present tense; asking about over-the-counter products and teas is part of a complete list."
+        },
+        {
+          "who": "Sr. Gómez",
+          "es": "Sí, tomo un té de hierbas para los nervios.",
+          "en": "Yes, I drink an herbal tea for my nerves."
+        }
+      ]
+    },
+    {
+      "id": "M4-dlg-02",
+      "t": "dlg",
+      "title": "'I'm allergic to aspirin'",
+      "turns": [
+        {
+          "who": "Sra. Díaz",
+          "es": "Soy alérgica a la aspirina.",
+          "en": "I'm allergic to aspirin."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Qué te pasó cuando la tomaste?",
+            "¿Qué le pasó cuando la tomó?",
+            "¿Qué le pasa cuando la tomará?"
+          ],
+          "a": 1,
+          "why": "Usted, preterite for what happened at that time."
+        },
+        {
+          "who": "Sra. Díaz",
+          "es": "Me dio dolor de estómago y agruras.",
+          "en": "It gave me a stomachache and heartburn."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Le salieron ronchas o se le hinchó la cara?",
+            "¿Le salen ronchas mañana?",
+            "¿Te salieron ronchas?"
+          ],
+          "a": 0,
+          "why": "Usted, preterite; checks for signs of a true allergy."
+        },
+        {
+          "who": "Sra. Díaz",
+          "es": "No, nada de eso. Solo el estómago.",
+          "en": "No, nothing like that. Just my stomach."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Entonces es una alergia muy grave.",
+            "Entonces va a ser alérgica mañana.",
+            "Entonces parece un efecto secundario, no una alergia."
+          ],
+          "a": 2,
+          "why": "Stomach upset without hives or swelling is a side effect, not an allergy."
+        }
+      ]
+    },
+    {
+      "id": "M4-dlg-03",
+      "t": "dlg",
+      "title": "On a blood thinner",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Tomo una pastilla para adelgazar la sangre desde hace un año.",
+          "en": "I've been taking a pill to thin my blood for a year."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Tuviste sangrado de la nariz o de las encías?",
+            "¿Ha tenido sangrado de la nariz o de las encías?",
+            "¿Va a tener sangrado de la nariz mañana?"
+          ],
+          "a": 1,
+          "why": "Usted; present perfect for 'have you had (lately)'."
+        },
+        {
+          "who": "Paciente",
+          "es": "De las encías, un poquito, cuando me lavo los dientes.",
+          "en": "From my gums, a little, when I brush my teeth."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Ha notado heces negras o sangre en la orina?",
+            "¿Has notado heces negras?",
+            "¿Notará heces negras o sangre en la orina?"
+          ],
+          "a": 0,
+          "why": "Usted; screens for GI and urinary bleeding."
+        },
+        {
+          "who": "Paciente",
+          "es": "No, eso no.",
+          "en": "No, not that."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Se le olvidan alguna dosis?",
+            "¿Se te olvida alguna dosis?",
+            "¿Se le olvida alguna dosis?"
+          ],
+          "a": 2,
+          "why": "Alguna dosis is singular → se le olvida; usted."
+        },
+        {
+          "who": "Paciente",
+          "es": "Casi nunca. La tomo todos los días con el desayuno.",
+          "en": "Almost never. I take it every day with breakfast."
+        }
+      ]
+    },
+    {
+      "id": "M4-dlg-04",
+      "t": "dlg",
+      "title": "Past medical history",
+      "turns": [
+        {
+          "who": "Sr. Ruiz",
+          "es": "Tengo la presión alta y el azúcar alta.",
+          "en": "I have high blood pressure and high sugar."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Desde cuándo tiene diabetes?",
+            "¿Desde cuándo tienes diabetes?",
+            "¿Desde cuándo tuvo diabetes?"
+          ],
+          "a": 0,
+          "why": "Usted; desde cuándo + present for an ongoing condition."
+        },
+        {
+          "who": "Sr. Ruiz",
+          "es": "Desde hace como diez años.",
+          "en": "For about ten years."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Alguna vez has tenido un infarto o una embolia?",
+            "¿Alguna vez ha tenido un infarto o una embolia?",
+            "¿Alguna vez va a tener un infarto o una embolia?"
+          ],
+          "a": 1,
+          "why": "Usted; present perfect for 'ever'."
+        },
+        {
+          "who": "Sr. Ruiz",
+          "es": "Infarto no, pero mi esposa dice que ronco mucho.",
+          "en": "No heart attack, but my wife says I snore a lot."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Y le ha dicho que deja de respirar cuando duerme?",
+            "¿Y te ha dicho que dejas de respirar cuando duermes?",
+            "¿Y le va a decir que deja de respirar?"
+          ],
+          "a": 0,
+          "why": "Usted; asks about witnessed pauses in breathing (sleep apnea)."
+        },
+        {
+          "who": "Sr. Ruiz",
+          "es": "Sí, dice que a veces dejo de respirar y luego ronco muy fuerte.",
+          "en": "Yes, she says I sometimes stop breathing and then snore very loudly."
+        }
+      ]
+    },
+    {
+      "id": "M4-dlg-05",
+      "t": "dlg",
+      "title": "A cousin who died suddenly",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Vengo porque mi primo murió de repente mientras jugaba fútbol.",
+          "en": "I'm here because my cousin died suddenly while he was playing soccer."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Lo siento mucho. ¿Cuántos años tenía?",
+            "Lo siento mucho. ¿Cuántos años tiene?",
+            "Lo siento mucho. ¿Cuántos años tuviste?"
+          ],
+          "a": 0,
+          "why": "Age at a past moment → imperfect tenía."
+        },
+        {
+          "who": "Paciente",
+          "es": "Tenía veintidós años.",
+          "en": "He was twenty-two."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Alguien más en tu familia murió?",
+            "¿Alguien más en su familia va a morir de repente?",
+            "¿Alguien más en su familia ha muerto de repente o ha tenido problemas del corazón?"
+          ],
+          "a": 2,
+          "why": "Usted (su familia); present perfect; asks about both sudden death and heart disease."
+        },
+        {
+          "who": "Paciente",
+          "es": "Mi tío se ha desmayado varias veces, pero nunca le han hecho estudios.",
+          "en": "My uncle has fainted several times, but he's never had any tests."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Tú te has desmayado alguna vez?",
+            "¿Y usted se ha desmayado alguna vez?",
+            "¿Y usted se va a desmayar alguna vez?"
+          ],
+          "a": 1,
+          "why": "Usted; present perfect for 'ever'."
+        },
+        {
+          "who": "Paciente",
+          "es": "No, nunca.",
+          "en": "No, never."
+        }
+      ]
+    },
+    {
+      "id": "M4-dlg-06",
+      "t": "dlg",
+      "title": "Work and habits",
+      "turns": [
+        {
+          "who": "Paciente",
+          "es": "Trabajo en la construcción, de lunes a sábado.",
+          "en": "I work in construction, Monday to Saturday."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Fumas o has fumado alguna vez?",
+            "¿Fuma o ha fumado alguna vez?",
+            "¿Fumará alguna vez?"
+          ],
+          "a": 1,
+          "why": "Usted; present for now plus present perfect for 'ever'."
+        },
+        {
+          "who": "Paciente",
+          "es": "Fumé muchos años, pero dejé de fumar hace dos años.",
+          "en": "I smoked for many years, but I quit two years ago."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¡Qué bien! ¿Y tomas alcohol?",
+            "¡Qué bien! ¿Y tomó alcohol mañana?",
+            "¡Qué bien! ¿Y toma alcohol?"
+          ],
+          "a": 2,
+          "why": "Usted, present habit; tomar = drink."
+        },
+        {
+          "who": "Paciente",
+          "es": "Unas cervezas los sábados.",
+          "en": "A few beers on Saturdays."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¿Usa alguna droga, como marihuana o cocaína?",
+            "¿Usas alguna droga?",
+            "¿Usó alguna droga mañana?"
+          ],
+          "a": 0,
+          "why": "Usted, present; drug use is part of a complete cardiac history."
+        },
+        {
+          "who": "Paciente",
+          "es": "No, doctor, nada de eso.",
+          "en": "No, doctor, nothing like that."
+        }
+      ]
+    }
+  ],
+  "roleplay": [
+    {
+      "title": "Medication review on a blood thinner",
+      "setup": "You are the electrophysiologist seeing a patient with atrial fibrillation who brought her pill bottles. Go through what each pill is for, how she takes it and how often she forgets, screen for bleeding, and sort out her 'allergies'.",
+      "persona": "You are Teresa Flores, 72, from Jalisco, Mexico, living in Chicago with your husband. You have atrial fibrillation, high blood pressure, diabetes and high cholesterol. You don't know the names of your medicines; you describe them by purpose: one 'para adelgazar la sangre' (twice a day), one 'para el corazón', one 'para la presión', one 'para el azúcar' and one 'para el colesterol'. You forget the evening blood thinner two or three times a week because you fall asleep watching TV. Your gums bleed a little when you brush and you get bruises on your arms easily; no nosebleeds, no blood in the urine, no black stools. You say you are 'alérgica' to two things: penicillin (as a child you broke out in hives and your face swelled — a true allergy) and an earlier cholesterol pill that made your legs ache (a side effect; your doctor changed it). You also take a cinnamon tea and vitamins from the health-food store, but you only mention them if asked about non-prescription products or teas. Never state doses in milligrams. Speak simple Mexican Spanish at an intermediate level: present, preterite, imperfect, present perfect and 'ir a'. Use usted with the doctor. Answer only what you are asked.",
+      "opening": "Buenos días, doctor. Aquí le traje todas mis pastillas, pero no me sé los nombres.",
+      "goals": [
+        "Find out what each pill is for and how often she takes it",
+        "Ask in a non-judgmental way how often she forgets a dose, and why",
+        "Screen for bleeding: gums, nose, bruises, urine, black stools",
+        "Ask what happened with each 'allergy' and tell allergy from side effect",
+        "Ask about over-the-counter medicines, vitamins and teas"
+      ]
+    },
+    {
+      "title": "Full history for palpitations",
+      "setup": "You are seeing a new patient referred for palpitations. Before the exam, take his past medical history, surgeries, family history and social history.",
+      "persona": "You are Luis Castillo, 48, from El Salvador, living in Chicago with your wife and two teenage children. You drive a delivery truck, often at night. Past history: high blood pressure for about five years (you take one pill, but you forget it on weekends) and high cholesterol (diet only). You snore loudly and your wife says you sometimes stop breathing at night; you feel sleepy while driving in the afternoon. You have never been told you have sleep apnea. You have never had a heart attack or stroke. Surgery: appendix removed as a child; no heart procedures. Family: your father died suddenly in his sleep at 45 — nobody knew why; your older brother has a pacemaker. Social: you smoke about half a pack a day for twenty years, drink six to eight beers on Saturdays, drink energy drinks at work, and do not use drugs. No regular exercise. No known drug allergies. Speak simple Central American Spanish at an intermediate level (present, preterite, imperfect, present perfect, ir a). Use usted with the doctor. Reveal the snoring and pauses only if asked about sleep or snoring; reveal your father's sudden death only if asked about family history; mention energy drinks only if asked about caffeine, drinks, or what you drink at work.",
+      "opening": "Buenas tardes, doctor. Mi doctor me mandó porque a veces siento el corazón muy rápido.",
+      "goals": [
+        "Ask about high blood pressure, diabetes, cholesterol, heart attack, stroke and thyroid",
+        "Screen for sleep apnea (snoring, pauses in breathing, daytime sleepiness)",
+        "Ask about past surgeries and heart procedures",
+        "Ask about sudden death or heart problems in the family",
+        "Take a social history: smoking, alcohol, drugs, work and who he lives with"
+      ]
+    }
+  ]
+}

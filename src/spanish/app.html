@@ -1,0 +1,1281 @@
+<title>Clinic Spanish Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400;1,7..72,600&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single study column. Home = two track ladders side by side (stack on phones); a level opens tabs Learn / Practice / Talk / Test; exercises sit on an ECG-paper card. */
+:root{
+  --paper:#FDFBFA; --panel:#FFFFFF; --ink:#1B2330; --muted:#5D6672; --line:#E6E0DD;
+  --grid:#F3D5D1; --grid-major:#EDB9B3; --trace:#0D6B5B; --trace-soft:#E3F1EE; --med:#7A2E3A; --med-soft:#F6E6E8;
+  --ok:#0D6B5B; --bad:#B42318; --warn:#9A5B00; --warn-bg:#FFF4DE; --warn-ink:#6B3E00; --blank:#FFF1D6; --focus:#1E4FC2;
+  --f-display:"Literata", Georgia, "Times New Roman", serif;
+  --f-ui:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11151B; --panel:#181E26; --ink:#E7EBF0; --muted:#9AA3AF; --line:#29313C;
+  --grid:rgba(226,112,100,.10); --grid-major:rgba(226,112,100,.20); --trace:#3FC6A7; --trace-soft:#123A33; --med:#F08A9A; --med-soft:#3A1F25;
+  --ok:#3FC6A7; --bad:#F07063; --warn:#E2A640; --warn-bg:#3A2E14; --warn-ink:#F3D08A; --blank:#3A3220; --focus:#7EA2FF; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11151B; --panel:#181E26; --ink:#E7EBF0; --muted:#9AA3AF; --line:#29313C;
+  --grid:rgba(226,112,100,.10); --grid-major:rgba(226,112,100,.20); --trace:#3FC6A7; --trace-soft:#123A33; --med:#F08A9A; --med-soft:#3A1F25;
+  --ok:#3FC6A7; --bad:#F07063; --warn:#E2A640; --warn-bg:#3A2E14; --warn-ink:#F3D08A; --blank:#3A3220; --focus:#7EA2FF; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.5}
+.wrap{max-width:820px;margin:0 auto;padding:20px 16px 48px;display:flex;flex-direction:column;gap:16px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+h1{font-family:var(--f-display);font-weight:600;font-size:1.55rem;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0;text-wrap:balance}
+h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0}
+.sub{font-size:.82rem;color:var(--muted)}
+button{font-family:inherit}
+.btn{font:600 .95rem var(--f-ui);border-radius:9px;padding:10px 16px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.btn.primary{background:var(--trace);border-color:var(--trace);color:var(--panel)}
+.btn:disabled{opacity:.5;cursor:default}
+.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+:is(.btn,.linkbtn,.opt,.tile,.lvl,.tabs button,select,input,.play,summary):focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.play{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:var(--panel);color:var(--trace);border-radius:99px;padding:3px 10px 3px 8px;font:600 .78rem var(--f-ui);cursor:pointer;vertical-align:middle}
+.play svg{width:10px;height:10px;fill:currentColor}
+.play.icon{padding:4px 7px}
+.voicewarn,.astatus{border-radius:10px;padding:10px 14px;font-size:.88rem}
+.voicewarn{background:var(--warn-bg);color:var(--warn-ink)}
+.voicewarn h4{margin:0 0 4px;font-size:.95rem}
+.voicewarn ol{margin:6px 0 0;padding-left:20px}
+.astatus{border:1px solid var(--line);background:var(--panel)}
+.astatus.bad{background:var(--warn-bg);color:var(--warn-ink);border-color:transparent}
+/* home */
+.intro{max-width:66ch;color:var(--muted);margin:0}
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.track{display:flex;flex-direction:column;gap:8px;min-width:0}
+.track h2{display:flex;align-items:baseline;gap:8px}
+.track h2 small{font:500 .8rem var(--f-ui);color:var(--muted)}
+.lvl{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:12px;padding:10px 12px;cursor:pointer;width:100%}
+.lvl .num{font:600 1.05rem var(--f-mono);width:44px;height:44px;border-radius:10px;display:grid;place-items:center;background:var(--trace-soft);color:var(--trace)}
+.track.med .lvl .num{background:var(--med-soft);color:var(--med)}
+.lvl .t{font-weight:600;display:block}
+.lvl .g{font-size:.82rem;color:var(--muted);display:block}
+.lvl .st{font:500 .78rem var(--f-mono);color:var(--muted);text-align:right;white-space:nowrap}
+.lvl.passed .st{color:var(--ok)}
+.lvl.locked{opacity:.55;cursor:default}
+.lvl.locked .num{background:var(--line);color:var(--muted)}
+.chip{display:inline-block;font:600 .7rem var(--f-ui);text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:99px;background:var(--trace-soft);color:var(--trace)}
+.chip.med{background:var(--med-soft);color:var(--med)}
+.chip.alt{background:transparent;border:1px solid var(--line);color:var(--muted)}
+/* level */
+.lvhead{display:flex;flex-direction:column;gap:6px}
+.crumb{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tabs{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px}
+.tabs button{flex:1;min-width:0;border:0;background:transparent;color:var(--muted);font:600 .9rem var(--f-ui);padding:8px 4px;border-radius:7px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--trace);color:var(--panel)}
+.gram{display:flex;flex-direction:column;gap:14px}
+.gblock{border-left:3px solid var(--grid-major);padding-left:14px;display:flex;flex-direction:column;gap:6px}
+.gblock h4{margin:0;font-size:1rem}
+.gblock p{margin:0;max-width:68ch}
+.exl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.exl li{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;align-items:start}
+.exl .es{font-family:var(--f-display);font-style:italic}
+.exl .en{grid-column:2;color:var(--muted);font-size:.88rem}
+.vtable{width:100%;border-collapse:collapse;font-size:.95rem}
+.vtable td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.vtable td:first-child{width:34px;padding-left:0}
+.vtable .es{font-family:var(--f-display)}
+.vtable .en{color:var(--muted)}
+.tablewrap{overflow-x:auto}
+.panelbox{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+select,input[type=text]{font:500 .95rem var(--f-ui);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px}
+/* exercise card */
+.card{position:relative;border:1px solid var(--line);border-radius:14px;min-height:320px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:14px;
+  background-color:var(--panel);
+  background-image:linear-gradient(var(--grid-major) 1px,transparent 1px),linear-gradient(90deg,var(--grid-major) 1px,transparent 1px),linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:40px 40px,40px 40px,8px 8px,8px 8px;background-position:-1px -1px}
+.prog{display:flex;justify-content:space-between;align-items:center;gap:8px;font:500 .8rem var(--f-mono);color:var(--muted)}
+.bar{height:5px;background:var(--line);border-radius:3px;overflow:hidden;flex:1;max-width:240px}
+.bar i{display:block;height:100%;background:var(--trace)}
+.kind{font:600 .72rem var(--f-ui);text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.q{font-family:var(--f-display);font-size:1.4rem;line-height:1.45;margin:0}
+.qen{color:var(--muted);margin:0}
+.gap{display:inline-block;min-width:3.5em;border-bottom:2px solid var(--trace);background:var(--blank);border-radius:3px 3px 0 0;padding:0 4px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{text-align:left;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:10px;padding:11px 14px;font:500 1.02rem var(--f-display);cursor:pointer}
+.opt.en{font-family:var(--f-ui)}
+.opt.pick{border-color:var(--focus)}
+.opt.right{border-color:var(--ok);background:var(--trace-soft)}
+.opt.wrong{border-color:var(--bad)}
+.opt:disabled{cursor:default}
+.answer{display:flex;gap:8px;flex-wrap:wrap}
+.answer input{flex:1 1 220px;min-width:0;font:500 1.15rem var(--f-display);padding:10px 12px;border:1.5px solid var(--line);border-radius:9px;background:var(--panel);color:var(--ink)}
+.accents{display:flex;flex-wrap:wrap;gap:4px}
+.accents button{font:500 1rem var(--f-display);width:34px;height:34px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:7px;cursor:pointer}
+.built{min-height:52px;border-bottom:2px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;align-items:center}
+.bank{display:flex;flex-wrap:wrap;gap:6px}
+.tile{border:1px solid var(--line);border-bottom-width:3px;background:var(--panel);color:var(--ink);border-radius:9px;padding:7px 11px;font:500 1.02rem var(--f-display);cursor:pointer}
+.tile.used{visibility:hidden}
+.bigplay{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.bigplay .play{font-size:.95rem;padding:10px 16px}
+.bigplay .play svg{width:13px;height:13px}
+.fb{border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;background:var(--panel);border:1px solid var(--line)}
+.fb .v{font-weight:700}
+.fb.ok .v{color:var(--ok)} .fb.no .v{color:var(--bad)} .fb.close .v{color:var(--warn)}
+.fb .ans{font-family:var(--f-display);font-size:1.05rem}
+.fb .why{color:var(--muted);font-size:.9rem;margin:0}
+.dl{display:flex;flex-direction:column;gap:10px}
+.line{max-width:88%;border-radius:12px;padding:9px 12px;background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.line .who{font:600 .72rem var(--f-ui);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.line .es{font-family:var(--f-display);font-size:1.05rem}
+.line .en{color:var(--muted);font-size:.86rem}
+.line.me{align-self:flex-end;background:var(--trace-soft);border-color:transparent}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.result{display:flex;flex-direction:column;gap:12px}
+.score{font:600 2.6rem var(--f-mono);font-variant-numeric:tabular-nums}
+.pass{color:var(--ok)} .fail{color:var(--bad)}
+.miss{border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:3px}
+.miss .es{font-family:var(--f-display)}
+/* talk */
+.goals{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+.goals li{display:flex;gap:8px;align-items:baseline}
+.goals li::before{content:"";width:12px;height:12px;border:1.5px solid var(--muted);border-radius:3px;flex:none;transform:translateY(1px)}
+.goals li.done{color:var(--ok)}
+.goals li.done::before{background:var(--ok);border-color:var(--ok)}
+.chat{display:flex;flex-direction:column;gap:10px}
+.corr{font-size:.86rem;border-left:3px solid var(--warn);padding:4px 10px;align-self:flex-end;max-width:88%}
+.corr.good{border-color:var(--ok)}
+.corr .es{font-family:var(--f-display)}
+.settings{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:10px 14px}
+.settings summary{cursor:pointer;font-weight:600}
+.setgrid{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-top:10px}
+.setgrid label{display:flex;flex-direction:column;gap:3px;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.setgrid label.check{flex-direction:row;align-items:center;gap:6px;text-transform:none;letter-spacing:0;font-size:.9rem;color:var(--ink);font-weight:500}
+.foot{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;font-size:.82rem;color:var(--muted)}
+.chip.warn{background:var(--warn-bg);color:var(--warn-ink)}
+.lvl.review .st{color:var(--warn)}
+.btn.sm{padding:6px 11px;font-size:.85rem}
+.today h2{font-size:1.4rem}
+.conf{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+.conf:first-of-type{border-top:0;padding-top:0}
+table.sk td{vertical-align:middle}
+table.sk .num{font:500 .95rem var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.sk .acts{white-space:nowrap;text-align:right}
+.forms{display:grid;grid-template-columns:max-content 1fr;gap:4px 18px;margin:0;font-size:1.05rem;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.forms dt{color:var(--muted);font-size:.85rem;align-self:center}
+.forms dd{margin:0;font-family:var(--f-display);font-weight:600;min-width:0;overflow-wrap:anywhere}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.grades .g0{color:var(--bad)} .grades .g1{color:var(--warn)} .grades .g2{color:var(--ok)} .grades .g3{color:var(--focus)}
+details.panelbox summary{cursor:pointer}
+@media (max-width:560px){table.sk .acts{white-space:normal}}
+@media (max-width:480px){.q{font-size:1.2rem}.card{padding:18px 14px 16px}.tabs button{font-size:.82rem}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Clinic Spanish Course</h1>
+    <span class="sub" id="sync">Progress saved in this browser</span>
+  </header>
+  <div id="voicewarn" class="voicewarn" hidden></div>
+  <div id="astatus" class="astatus" role="status" hidden></div>
+  <main id="view" style="display:flex;flex-direction:column;gap:16px"></main>
+  <details class="settings" id="settings">
+    <summary>Audio settings</summary>
+    <div class="setgrid">
+      <label for="s-voice">Voice<select id="s-voice"><option value="">Looking for voices…</option></select></label>
+      <label for="s-rate">Speed<select id="s-rate"><option value="0.7">Slow</option><option value="0.85">Learner</option><option value="1">Normal</option></select></label>
+      <button class="play" id="s-test" type="button"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z"/></svg>Test voice</button>
+      <label class="check" for="s-auto"><input type="checkbox" id="s-auto"> Play audio automatically</label>
+    </div>
+    <p class="sub" style="margin:12px 0 0;max-width:66ch">Audio comes from the Spanish voices installed on this device, not native-speaker recordings. A Mexican or US Spanish voice is picked when one is available. Press <b>P</b> to replay the current audio.</p>
+  </details>
+  <details class="settings" id="xfer">
+    <summary>Back up or move your progress</summary>
+    <p class="sub" style="margin:10px 0 0;max-width:66ch">Use this to move your progress to another device or site, or to keep a backup. <b>Copy my progress</b> copies everything (levels, review schedule, weak spots, answer history) as text. Paste that text into this section on the other copy of the course and press <b>Import</b>. Importing merges: for every item, the more advanced record is kept, so nothing is lost.</p>
+    <div class="row" style="margin-top:10px"><button class="btn" id="xCopy" type="button">Copy my progress</button><span class="sub" id="xMsg" role="status"></span></div>
+    <textarea id="xText" rows="3" style="width:100%;font:.8rem var(--f-mono);margin-top:8px" placeholder="Paste copied progress here" aria-label="Progress text"></textarea>
+    <div class="row"><button class="btn" id="xImp" type="button">Import</button></div>
+  </details>
+  <div class="foot"><span id="foot-info">Pass a level's test with 90% or more to unlock the next level in that track.</span><span id="reset-area"></span></div>
+</div>
+
+<script>
+const LEVELS = __LEVELS__;
+const LV = Object.fromEntries(LEVELS.map(l=>[l.id,l]));
+const TRACKS = {conv:{name:"Conversation",note:"everyday Spanish, sentence building",ids:LEVELS.filter(l=>l.track==="conv").map(l=>l.id)},
+                med:{name:"Medical",note:"clinic and procedure Spanish",ids:LEVELS.filter(l=>l.track==="med").map(l=>l.id)}};
+const PASS = 0.9, TEST_SIZE = 30;
+const $ = id => document.getElementById(id);
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const md = s => esc(s).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\*(.+?)\*/g,"<i>$1</i>");
+const PLAYSVG = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg>';
+const playBtn = (say, label) => `<button class="play${label?"":" icon"}" type="button" data-say="${esc(say)}" aria-label="Play: ${esc(say)}">${PLAYSVG}${label?esc(label):""}</button>`;
+const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const store = { get(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d; }catch(e){ return d; } }, set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} } };
+
+/* ---------------- settings ---------------- */
+const S = Object.assign({voice:"",rate:"0.85",auto:true}, store.get("csc:settings",{}));
+const saveS = () => store.set("csc:settings", S);
+
+/* ---------------- audio (device voices) ---------------- */
+let voices=[], lastSay="", speakSeq=0;
+const synth = "speechSynthesis" in window ? window.speechSynthesis : null;
+function astatus(msg,bad){ const el=$("astatus"); el.textContent=msg; el.hidden=!msg; el.classList.toggle("bad",!!bad); }
+function loadVoices(){
+  if(!synth) return;
+  voices = synth.getVoices().filter(v=>/^es([-_]|$)/i.test(v.lang));
+  const rank = v => /es[-_]MX/i.test(v.lang)?0 : /es[-_]US/i.test(v.lang)?1 : /es[-_]419/i.test(v.lang)?2 : /es[-_](CO|AR|CL|PE|VE|PR|CR|GT|HN|NI|SV|PA|DO|BO|EC|PY|UY|CU)/i.test(v.lang)?3 : 4;
+  voices.sort((a,b)=>rank(a)-rank(b) || (b.localService===true)-(a.localService===true));
+  const sel=$("s-voice");
+  if(!voices.length){ sel.innerHTML='<option value="">No Spanish voice found</option>'; return; }
+  sel.innerHTML = voices.map(v=>`<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join("");
+  if(!voices.some(v=>v.voiceURI===S.voice)){ S.voice=voices[0].voiceURI; saveS(); }
+  sel.value=S.voice; $("voicewarn").hidden=true;
+}
+function speak(text, rate){
+  if(!synth){ astatus("This browser has no speech engine. Open the page in Chrome, Safari or Edge to hear audio.", true); return; }
+  if(!text) return;
+  lastSay = text;
+  const seq = ++speakSeq;
+  synth.cancel();
+  const v = voices.find(v=>v.voiceURI===S.voice) || voices[0];
+  const vname = v ? `${v.name} (${v.lang}${v.localService ? ", on this device" : ", streamed from the internet"})` : "no Spanish voice selected";
+  // Chrome can silently drop a request made in the same moment as cancel(), so wait briefly.
+  setTimeout(()=>{
+    if(seq!==speakSeq) return;
+    const u = new SpeechSynthesisUtterance(String(text).replace(/___/g," … ").replace(/…/g," "));
+    if(v){ u.voice=v; u.lang=v.lang; } else u.lang="es-MX";
+    u.rate = rate || +S.rate;
+    let started=false;
+    u.onstart=()=>{ started=true; if(seq===speakSeq) astatus(""); };
+    u.onerror=e=>{ if(seq===speakSeq && e.error!=="interrupted" && e.error!=="canceled") astatus(`Audio error "${e.error}" with ${vname}. Try a different voice in Audio settings.`, true); };
+    synth.speak(u);
+    if(synth.paused) synth.resume();
+    setTimeout(()=>{ if(seq===speakSeq && !started) astatus(`The browser accepted the request but never started speaking (${vname}, ${voices.length} Spanish voices found). Try another voice in Audio settings, then press Test voice.`, true); }, 4000);
+  },120);
+}
+const autoSay = t => { if(S.auto) speak(t); else lastSay=t; };
+if(synth){ loadVoices(); if("onvoiceschanged" in synth) synth.addEventListener("voiceschanged", loadVoices); }
+setTimeout(()=>{
+  if(!synth){ $("voicewarn").innerHTML="<h4>This browser can't play speech</h4>Open this page in Chrome, Safari or Edge to hear the audio."; $("voicewarn").hidden=false; return; }
+  if(!voices.length){ $("voicewarn").innerHTML=`<h4>No Spanish voice found on this device</h4>Audio needs a Spanish voice installed.
+    <ol><li><b>Mac:</b> System Settings → Accessibility → Spoken Content → System voice → Manage Voices… → Spanish → tick a Mexico or United States voice.</li>
+    <li><b>iPhone / iPad:</b> Settings → Accessibility → Spoken Content → Voices → Spanish → download a Mexico or United States voice.</li>
+    <li>Reload this page, open “Audio settings” below and press Test voice.</li></ol>`; $("voicewarn").hidden=false; }
+},1600);
+$("s-voice").onchange=e=>{ S.voice=e.target.value; saveS(); };
+$("s-rate").value=S.rate; $("s-rate").onchange=e=>{ S.rate=e.target.value; saveS(); };
+$("s-auto").checked=!!S.auto; $("s-auto").onchange=e=>{ S.auto=e.target.checked; saveS(); };
+$("s-test").onclick=()=>speak("Hola, soy su cardiólogo. ¿Cómo se siente hoy?");
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-say]"); if(b){ e.preventDefault(); speak(b.dataset.say, b.dataset.rate?+b.dataset.rate:undefined); } });
+
+/* ---------------- progress (browser + account) ---------------- */
+let P = Object.assign({lv:{}, it:{}}, store.get("csc:progress",{}));
+let db=null, uid=null, writing=false, dirty=false, wt=null;
+function mergeP(r){
+  if(!r) return;
+  for(const id in r.lv||{}){ const a=P.lv[id]||{}, b=r.lv[id]; P.lv[id]={best:Math.max(a.best||0,b.best||0), passed:!!(a.passed||b.passed), tests:Math.max(a.tests||0,b.tests||0), at:Math.max(a.at||0,b.at||0)}; }
+  for(const id in r.it||{}){ const a=P.it[id], b=r.it[id]; if(!a || (b[0]||0)>(a[0]||0)) P.it[id]=b; }
+}
+function saveP(){ store.set("csc:progress",P); dirty=true; if(db){ clearTimeout(wt); wt=setTimeout(flush,2000); } }
+async function flush(){
+  if(!db||writing||!dirty) return; writing=true; dirty=false;
+  try{ await db.collection("data/users/"+uid).doc("course").set({lv:P.lv,it:P.it,v:1}); $("sync").textContent="Progress synced to your account"; }
+  catch(e){ $("sync").textContent="Couldn't sync just now; progress is kept in this browser"; dirty=true; }
+  finally{ writing=false; if(dirty) wt=setTimeout(flush,5000); }
+}
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="hidden") flush(); });
+async function connect(){
+  try{
+    if(!window.claude||!window.claude.use){ migrateLegacy(); return; }
+    const user=await window.claude.use("user"), d=await window.claude.use("db");
+    if(!user||!d){ migrateLegacy(); return; } const id=await user.id(); if(!id){ migrateLegacy(); return; }
+    db=d; uid=id;
+    const qs=await db.collection("data/users/"+uid).get();
+    const have=new Set();
+    qs.docs.forEach(doc=>{ have.add(doc.id); const body=doc.data(); if(doc.id==="course") mergeP(body); else if(mergeLR(doc.id, body)) dirtyDocs.add(doc.id); });
+    store.set("csc:progress",P);
+    ["learner","log",...SHARDS].forEach(n=>{ if(!have.has(n) && JSON.stringify(docBody(n)).length>40) dirtyDocs.add(n); });
+    migrateLegacy();
+    $("sync").textContent="Progress synced to your account";
+    saveLR(); if(dirtyDocs.size) flushLR();
+    if(["home","weak","cards"].includes(view.name)) render();
+  }catch(e){ migrateLegacy(); $("sync").textContent="Progress saved in this browser (account sync unavailable)"; }
+}
+function itemStat(id, ok){ const s=P.it[id]||[0,0]; P.it[id]=[s[0]+1, s[1]+(ok?1:0)]; }
+function unlocked(id){ const l=LV[id]; if(l.n===1) return true; const prev=TRACKS[l.track].ids[l.n-2]; return !!(P.lv[prev]&&P.lv[prev].passed); }
+
+/* ---------------- answer checking ---------------- */
+const strip = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+const norm = s => String(s).toLowerCase().replace(/[¿?¡!.,;:…"“”()]/g," ").replace(/\s+/g," ").trim();
+function checkFill(item, input){
+  const u=norm(input); if(!u) return "no";
+  if(item.a.some(a=>norm(a)===u)) return "ok";
+  if(item.a.some(a=>strip(norm(a))===strip(u))) return "close";
+  return "no";
+}
+const tokens = s => s.split(/\s+/).map(t=>t.replace(/[¿?¡!.,;:…"“”]/g,"")).filter(Boolean);
+function checkTiles(item, built){ const u=norm(built.join(" ")); return [item.a,...(item.alt||[])].some(a=>norm(a)===u) ? "ok" : "no"; }
+const fillSentence = (q, ans) => q.replace("___", ans);
+
+/* ---------------- views ---------------- */
+let view={name:"home"};
+const go = v => { view=v; render(); window.scrollTo({top:0}); };
+function render(){
+  synth && synth.cancel(); astatus("");
+  if(view.name==="home") return renderHome();
+  if(view.name==="level") return renderLevel();
+  if(view.name==="run") return renderRun();
+}
+function lvStatus(id){
+  const p=P.lv[id];
+  if(!unlocked(id)) return {cls:"locked", txt:"Locked"};
+  if(p&&p.passed){ const rs=reviewState(LVIDS[id]); return rs.needs ? {cls:"passed review", txt:`Passed · review due`} : {cls:"passed", txt:`Passed · ${Math.round(p.best*100)}%`}; }
+  if(p&&p.tests) return {cls:"", txt:`Best ${Math.round(p.best*100)}%`};
+  return {cls:"", txt:"Open"};
+}
+function renderHome(){
+  const col = key => { const t=TRACKS[key];
+    return `<section class="track ${key}"><h2>${t.name} <small>${t.note}</small></h2>${t.ids.map(id=>{ const l=LV[id], s=lvStatus(id);
+      return `<button class="lvl ${s.cls}" data-open="${id}" ${s.cls==="locked"?'aria-disabled="true"':""}><span class="num">${id}</span><span><span class="t">${esc(l.title)}</span><span class="g">${esc(l.goal)}</span>${l.bestAfter?`<span class="g">Best after ${l.bestAfter}</span>`:""}</span><span class="st">${s.txt}</span></button>`; }).join("")}</section>`; };
+  $("view").innerHTML = todayPanel() + `<p class="intro">Two tracks of eight levels, plus vocabulary and verb-tense drills further down. Everything you answer feeds your review schedule and Weak spots. Each level has a short lesson, practice in five formats, a conversation with an AI character, and a 30-question test. Score 90% or more to unlock the next level in that track. If a level already feels easy, go straight to its test.</p><div class="tracks">${col("conv")}${col("med")}</div>`+drillHome();
+  $("view").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{ if(unlocked(b.dataset.open)) go({name:"level",id:b.dataset.open,tab:"learn"}); });
+  $("view").querySelectorAll("[data-drill]").forEach(b=>b.onclick=()=>{ if(drillUnlocked(b.dataset.drill)) go({name:"drill",id:b.dataset.drill,tab:"study"}); });
+  wireToday();
+  $("reset-area").innerHTML="";
+}
+function renderLevel(){
+  const l=LV[view.id], p=P.lv[l.id]||{};
+  const tabs=[["learn","Learn"],["practice","Practice"],["talk","Talk"],["test","Test"]];
+  let body="";
+  if(view.tab==="learn"){
+    body = `<div class="panelbox"><h3>Grammar</h3><div class="gram">${l.grammar.map(g=>`<div class="gblock"><h4>${esc(g.h)}</h4><p>${md(g.p)}</p><ul class="exl">${(g.ex||[]).map(([es,en])=>`<li>${playBtn(es)}<span class="es">${esc(es)}</span><span class="en">${esc(en)}</span></li>`).join("")}</ul></div>`).join("")}</div></div>
+      <div class="panelbox"><h3>Key phrases</h3><div class="tablewrap"><table class="vtable">${l.phrases.map(([es,en])=>`<tr><td>${playBtn(es)}</td><td class="es">${esc(es)}</td><td class="en">${esc(en)}</td></tr>`).join("")}</table></div></div>
+      <div class="panelbox"><h3>Vocabulary</h3><div class="tablewrap"><table class="vtable">${l.vocab.map(v=>`<tr><td>${playBtn(v[0])}</td><td class="es">${esc(v[0])}</td><td class="en">${esc(v[1])}</td></tr>`).join("")}</table></div></div>`;
+  } else if(view.tab==="practice"){
+    const kinds=[["all","Mixed"],["mc","Multiple choice"],["fill","Fill the blank"],["tiles","Build the sentence"],["listen","Listening"],["dlg","Dialogues"]];
+    const seen=l.items.filter(i=>LR.srs[i.id]).length;
+    body = `<div class="panelbox"><h3>Practice</h3><p style="margin:0">Twelve exercises with instant feedback. Items you miss come back more often. You have tried ${seen} of ${l.items.length} exercises in this level.</p>
+      <div class="row"><label for="pk" class="sub">Format</label><select id="pk">${kinds.map(([k,n])=>`<option value="${k}">${n}</option>`).join("")}</select><button class="btn primary" id="startPractice">Start practice</button></div></div>`;
+  } else if(view.tab==="talk"){
+    body = l.roleplay.map((r,i)=>`<div class="panelbox"><h3>Conversation ${i+1}</h3><h2>${esc(r.title)}</h2><p style="margin:0">${esc(r.setup)}</p><ul class="goals">${r.goals.map(g=>`<li>${esc(g)}</li>`).join("")}</ul><div class="row"><button class="btn primary" data-talk="${i}">Start conversation</button></div></div>`).join("")
+      + `<p class="sub">Claude plays the other person and answers in Spanish at this level, and steers the conversation toward your current weak spots. After each of your messages it shows a corrected version if needed; corrections are added to your Weak spots page. It doesn't count toward the test. It uses your Claude usage, and the first time it asks your permission.</p>`;
+  } else {
+    const nextId = TRACKS[l.track].ids[l.n];
+    body = `<div class="panelbox"><h3>Level test</h3><p style="margin:0">${TEST_SIZE} questions drawn at random from this level: multiple choice, fill the blank, build the sentence, listening and dialogue replies. No feedback until the end. Accents count. You need ${Math.ceil(PASS*TEST_SIZE)} of ${TEST_SIZE} (90%) to pass${nextId?` and unlock ${nextId}`:""}.</p>
+      <p class="sub" style="margin:0">${p.tests?`Tests taken: ${p.tests} · best score ${Math.round(p.best*100)}%${p.passed?" · passed":""}`:"You haven't taken this test yet."}</p>
+      <div class="row"><button class="btn primary" id="startTest">Start the test</button></div></div>`;
+  }
+  $("view").innerHTML = `<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← All levels</button><span class="chip ${l.track==="med"?"med":""}">${TRACKS[l.track].name} ${l.n}</span>${l.bestAfter?`<span class="chip alt">Best after ${l.bestAfter}</span>`:""}${p.passed?'<span class="chip">Passed</span>':""}</div><h2>${esc(l.title)}</h2><p class="intro" style="margin:0">${esc(l.goal)}</p></div>
+    <div class="tabs" role="tablist">${tabs.map(([k,n])=>`<button role="tab" data-tab="${k}" aria-selected="${view.tab===k}">${n}</button>`).join("")}</div>${body}`;
+  $("back").onclick=()=>go({name:"home"});
+  $("view").querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>go({name:"level",id:l.id,tab:b.dataset.tab}));
+  if($("startPractice")) $("startPractice").onclick=()=>startRun(l,"practice",$("pk").value);
+  if($("startTest")) $("startTest").onclick=()=>startRun(l,"test");
+  $("view").querySelectorAll("[data-talk]").forEach(b=>b.onclick=()=>startTalk(l,+b.dataset.talk));
+  $("reset-area").innerHTML="";
+}
+
+/* ---------------- runs (practice / test) ---------------- */
+let run=null;
+const decisions = it => it.t==="dlg" ? it.turns.filter(t=>t.you).length : 1;
+function weightedPick(pool, n){
+  const d=today();
+  const w = pool.map(i=>{ const r=LR.srs[i.id]; if(!r) return 3; if(r[0]===0) return 4; if(r[1]<=d) return 3; return 1+2*(1-r[3]/Math.max(1,r[2])); });
+  const out=[], idx=pool.map((_,i)=>i);
+  while(out.length<n && idx.length){ const tot=idx.reduce((a,i)=>a+w[i],0); let r=Math.random()*tot, k=0; for(;k<idx.length;k++){ r-=w[idx[k]]; if(r<=0) break; } k=Math.min(k,idx.length-1); out.push(pool[idx[k]]); idx.splice(k,1); }
+  return out;
+}
+function buildTest(l){
+  const by=t=>shuffle(l.items.filter(i=>i.t===t));
+  let units=[...by("mc").slice(0,8),...by("fill").slice(0,7),...by("tiles").slice(0,6),...by("listen").slice(0,4)];
+  let pts=units.length;
+  for(const d of by("dlg")){ if(pts+decisions(d)<=TEST_SIZE){ units.push(d); pts+=decisions(d); } }
+  const extra=by("mc").slice(8).concat(by("fill").slice(7));
+  while(pts<TEST_SIZE && extra.length){ units.push(extra.shift()); pts++; }
+  return shuffle(units);
+}
+function startRun(l, mode, kind){
+  let units;
+  if(mode==="test") units=buildTest(l);
+  else { const pool=kind&&kind!=="all"?l.items.filter(i=>i.t===kind):l.items; units=weightedPick(pool, kind==="dlg"?4:12); }
+  const nextId=TRACKS[l.track].ids[l.n];
+  launch({id:l.id, title:l.title, chip:l.id, med:l.track==="med", mode, units, nextId, nextLabel:nextId,
+    back:{name:"level",id:l.id,tab:mode}, retry:()=>startRun(l,mode,"all"), next:()=>go({name:"level",id:nextId,tab:"learn"})});
+}
+function launch(o){ run=Object.assign(o,{i:0, results:[], total:o.units.reduce((a,u)=>a+decisions(u),0)}); go({name:"run"}); }
+function renderRun(){
+  const r=run, u=r.units[r.i];
+  $("reset-area").innerHTML="";
+  if(!u) return renderResult();
+  const done=r.results.length, pct=Math.round(100*done/r.total);
+  $("view").innerHTML = `<div class="crumb"><button class="linkbtn" id="quit">← ${r.mode==="test"?"Leave test (not saved)":"End practice"}</button><span class="chip ${r.med?"med":""}">${esc(r.chip)} · ${r.mode==="test"?"Test":"Practice"}</span></div>
+    <section class="card" id="card" aria-live="polite"><div class="prog"><span>${done} / ${r.total}</span><span class="bar"><i style="width:${pct}%"></i></span></div><div id="ex" style="display:flex;flex-direction:column;gap:14px;flex:1"></div></section>`;
+  $("quit").onclick=()=>{ if(r.mode==="practice" && r.results.length) return renderResult(); go(r.back); };
+  if(r.noRecord) $("card").insertAdjacentHTML("afterbegin",'<p class="sub" style="margin:0">AI-generated practice. Not reviewed; doesn\u2019t change your record.</p>');
+  mountUnit($("ex"), u, r.mode, res=>{
+    r.results.push(...res);
+    recordUnit(u, res, {src:r.src||r.mode, noRecord:r.noRecord});
+    if(r.requeue && !res.every(x=>x.ok) && !u._again){ r.units.splice(Math.min(r.i+4, r.units.length), 0, Object.assign({}, u, {_again:true})); r.total+=decisions(u); }
+    r.i++; renderRun(); });
+}
+function feedbackHTML(state, correctText, why, sayText, more){
+  const v = state==="ok"?"Correct":state==="close"?"Almost: check the accents":"Not quite";
+  return `<div class="fb ${state}"><span class="v">${v}</span>${correctText?`<span class="ans">${esc(correctText)} ${sayText?playBtn(sayText):""}</span>`:""}${why?`<p class="why">${md(why)}</p>`:""}${(more||[]).map(([es,en])=>`<p class="why" style="color:var(--ink)">${playBtn(es)} <i>${esc(es)}</i> <span class="sub">${esc(en)}</span></p>`).join("")}</div>`;
+}
+function nextBar(ex, onNext, label){
+  const d=document.createElement("div"); d.className="actions"; d.innerHTML=`<button class="btn primary" id="nextBtn">${label||"Continue"}</button>`; ex.appendChild(d);
+  $("nextBtn").focus({preventScroll:true}); $("nextBtn").onclick=onNext;
+}
+const kindLabel={mc:"Multiple choice",fill:"Fill the blank",tiles:"Build the sentence",listen:"Listening",dlg:"Dialogue",wt:"Whole tense"};
+function mountUnit(ex, it, mode, done){
+  const test = mode==="test";
+  const head = `<span class="kind">${kindLabel[it.t]}</span>`;
+  if(it.t==="wt") return mountWholeTense(ex, it, done);
+  if(it.t==="mc"){
+    const order=shuffle(it.opts.map((o,i)=>i));
+    ex.innerHTML = head+`<p class="q">${md(it.q).replace("___",'<span class="gap">&nbsp;</span>')}</p>${it.qen?`<p class="qen">${esc(it.qen)}</p>`:""}<div class="opts">${order.map(i=>`<button class="opt${it.optsEn?" en":""}" data-i="${i}">${esc(it.opts[i])}</button>`).join("")}</div>`;
+    if(it.k==="v2e" && it.say) autoSay(it.say);
+    ex.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+      const pick=+b.dataset.i, ok=pick===it.a;
+      ex.querySelectorAll(".opt").forEach(x=>x.disabled=true);
+      const res=[{id:it.id, ok, err: ok?"":((it.oe&&it.oe[pick])||(it.lem&&classifyForm(it.lem,it.tn,it.pn,it.opts[pick]))||"other"), q:it.prompt||it.q, your:it.opts[pick], right:it.opts[it.a], why:it.why, say: it.say || (it.q.includes("___")?fillSentence(it.q,it.opts[it.a]):it.opts[it.a])}];
+      if(test){ b.classList.add("pick"); return setTimeout(()=>done(res),250); }
+      b.classList.add(ok?"right":"wrong"); ex.querySelector(`.opt[data-i="${it.a}"]`).classList.add("right");
+      const full = it.q.includes("___") ? fillSentence(it.q,it.opts[it.a]) : (it.say||"");
+      ex.insertAdjacentHTML("beforeend", feedbackHTML(ok?"ok":"no", it.optsEn&&!it.q.includes("___")?it.opts[it.a]:full, it.why, full, it.more));
+      if(full) autoSay(full);
+      nextBar(ex,()=>done(res));
+    });
+  }
+  else if(it.t==="fill"){
+    ex.innerHTML = head+`<p class="q">${it.prompt?esc(it.prompt):md(it.q).replace("___",'<span class="gap">&nbsp;</span>')}</p><p class="qen">${esc(it.en)}${it.hint?` · <b>${esc(it.hint)}</b>`:""}</p>
+      <div class="answer"><input type="text" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type the missing word(s)"><button class="btn primary" id="chk">Check</button></div>
+      <div class="accents">${["á","é","í","ó","ú","ñ","ü","¿","¡"].map(a=>`<button type="button" data-acc="${a}" aria-label="Insert ${a}">${a}</button>`).join("")}</div>`;
+    const inp=$("ans"); inp.focus({preventScroll:true});
+    ex.querySelectorAll("[data-acc]").forEach(b=>b.onclick=()=>{ const s=inp.selectionStart??inp.value.length, e=inp.selectionEnd??s; inp.value=inp.value.slice(0,s)+b.dataset.acc+inp.value.slice(e); inp.focus(); inp.setSelectionRange(s+1,s+1); });
+    const submit=()=>{
+      if(!inp.value.trim()) return;
+      const st=checkFill(it, inp.value), ok=st==="ok";
+      inp.disabled=true; $("chk").remove(); ex.querySelector(".accents").remove();
+      const res=[{id:it.id, ok, typed:true, hasAcc:/[áéíóúñü]/i.test(it.a[0]), err: ok?"": st==="close"?"accent" : ((it.lem&&classifyForm(it.lem,it.tn,it.pn,inp.value)) || ((it.w&&it.w.length)||it.k==="type"?"word":"other")), q:it.prompt||it.q, your:inp.value, right:it.a[0], say:it.say||fillSentence(it.q,it.a[0]), why:(st==="close"?"Spelled right except for the accents. ":"")+(it.why||"")}];
+      if(test) return done(res);
+      const full=it.show||fillSentence(it.q,it.a[0]), sayT=it.say||full;
+      ex.insertAdjacentHTML("beforeend", feedbackHTML(st, full + (it.a.length>1?`  (also accepted: ${it.a.slice(1).join(", ")})`:""), (st==="close"?"Spelled right except for the accents. ":"")+(it.why||""), sayT, it.more));
+      autoSay(sayT); nextBar(ex,()=>done(res));
+    };
+    $("chk").onclick=submit; inp.addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); submit(); } });
+  }
+  else if(it.t==="tiles"){
+    const words=tokens(it.a);
+    const keepCap = w => it.en && new RegExp("\\b"+w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\b").test(it.en);
+    const disp = words.map((w,i)=> i===0 && !keepCap(w) ? w.charAt(0).toLowerCase()+w.slice(1) : w);
+    const bank = shuffle([...disp, ...(it.extra||[])].map((w,i)=>({w,i})));
+    let built=[];
+    ex.innerHTML = head+`<p class="qen" style="font-size:1.1rem;color:var(--ink)">${esc(it.en)}</p><p class="sub" style="margin:0">Tap the words in order to say this in Spanish. Some tiles don't belong.</p>
+      <div class="built" id="built" aria-label="Your sentence"></div><div class="bank" id="bank">${bank.map(b=>`<button class="tile" data-k="${b.i}">${esc(b.w)}</button>`).join("")}</div>
+      <div class="actions"><button class="btn primary" id="chk">Check</button><button class="btn" id="clr">Clear</button></div>`;
+    const draw=()=>{ $("built").innerHTML = built.map((b,j)=>`<button class="tile" data-j="${j}">${esc(b.w)}</button>`).join("");
+      $("built").querySelectorAll("[data-j]").forEach(t=>t.onclick=()=>{ const b=built.splice(+t.dataset.j,1)[0]; ex.querySelector(`#bank [data-k="${b.i}"]`).classList.remove("used"); draw(); }); };
+    ex.querySelectorAll("#bank .tile").forEach(t=>t.onclick=()=>{ if(t.classList.contains("used")) return; t.classList.add("used"); const b=bank.find(x=>x.i===+t.dataset.k); built.push(b); draw(); });
+    $("clr").onclick=()=>{ built=[]; ex.querySelectorAll("#bank .tile").forEach(t=>t.classList.remove("used")); draw(); };
+    $("chk").onclick=()=>{
+      if(!built.length) return;
+      const mine=built.map(b=>b.w), st=checkTiles(it, mine), ok=st==="ok";
+      ex.querySelector(".actions").remove(); ex.querySelectorAll(".tile").forEach(t=>t.disabled=true);
+      const ex_=(it.extra||[]).map(w=>w.toLowerCase());
+      const res=[{id:it.id, ok, err: ok?"":(mine.some(w=>ex_.includes(w.toLowerCase()))?"word":"order"), q:it.en, your:mine.join(" "), right:it.a, say:it.a, why:(it.alt&&it.alt.length)?"Also accepted: "+it.alt.join(" · "):""}];
+      if(test) return done(res);
+      ex.insertAdjacentHTML("beforeend", feedbackHTML(st, it.a, (it.alt&&it.alt.length)?"Also accepted: "+it.alt.join(" · "):"", it.a));
+      autoSay(it.a);
+      if(!ok){
+        const d=document.createElement("div"); d.className="row"; d.innerHTML=`<button class="linkbtn" id="mine">My word order is also correct — count it</button>`; ex.appendChild(d);
+        $("mine").onclick=()=>{ res[0].ok=true; res[0].err=""; d.innerHTML='<span class="sub">Counted as correct for practice. Tests only accept the listed orders.</span>'; };
+      }
+      nextBar(ex,()=>done(res));
+    };
+  }
+  else if(it.t==="listen"){
+    const order=shuffle(it.opts.map((o,i)=>i));
+    ex.innerHTML = head+`<p class="qen" style="color:var(--ink)">Listen, then choose what it means.</p><div class="bigplay">${playBtn(it.say,"Play")}<button class="play" type="button" data-say="${esc(it.say)}" data-rate="0.65">${PLAYSVG}Slower</button></div>
+      <div class="opts">${order.map(i=>`<button class="opt en" data-i="${i}">${esc(it.opts[i])}</button>`).join("")}</div>`;
+    speak(it.say);
+    ex.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+      const pick=+b.dataset.i, ok=pick===it.a; ex.querySelectorAll(".opt").forEach(x=>x.disabled=true);
+      const res=[{id:it.id, ok, err: ok?"":"listen", q:"(listening) "+it.say, your:it.opts[pick], right:it.opts[it.a], say:it.say, why:it.why||""}];
+      if(test){ b.classList.add("pick"); return setTimeout(()=>done(res),250); }
+      b.classList.add(ok?"right":"wrong"); ex.querySelector(`.opt[data-i="${it.a}"]`).classList.add("right");
+      ex.insertAdjacentHTML("beforeend", feedbackHTML(ok?"ok":"no", it.say+(it.optsEn===undefined&&it.k==="listen"?" = "+it.opts[it.a]:""), it.why||"", it.say, it.more));
+      nextBar(ex,()=>done(res));
+    });
+  }
+  else if(it.t==="dlg"){
+    const results=[]; let k=0, dk=0;
+    ex.innerHTML = head+`<h2 style="font-size:1.1rem">${esc(it.title)}</h2><div class="dl" id="dl"></div><div id="dopts"></div>`;
+    const step=()=>{
+      const dl=$("dl"), box=$("dopts"); box.innerHTML="";
+      while(k<it.turns.length && !it.turns[k].you){
+        const t=it.turns[k++];
+        dl.insertAdjacentHTML("beforeend", `<div class="line"><span class="who">${esc(t.who)}</span><span class="es">${esc(t.es)} ${playBtn(t.es)}</span>${test?"":`<span class="en">${esc(t.en)}</span>`}</div>`);
+        if(!(k<it.turns.length && !it.turns[k].you)) autoSay(t.es);
+      }
+      if(k>=it.turns.length){ return nextBar(ex,()=>done(results), test?"Next question":"Continue"); }
+      const t=it.turns[k], order=shuffle(t.opts.map((o,i)=>i)), id=it.id+"#"+(dk++);
+      box.innerHTML = `<p class="sub" style="margin:4px 0 8px">Your reply:</p><div class="opts">${order.map(i=>`<button class="opt" data-i="${i}">${esc(t.opts[i])}</button>`).join("")}</div>`;
+      box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+        const pick=+b.dataset.i, ok=pick===t.a;
+        results.push({id:it.id, ok, err: ok?"":((t.oe&&t.oe[pick])||"other"), sk:t.sk, tn:t.tn, q:it.title+": "+(it.turns[k-1]&&it.turns[k-1].es||""), your:t.opts[pick], right:t.opts[t.a], say:t.opts[t.a], why:t.why});
+        if(test){ dl.insertAdjacentHTML("beforeend", `<div class="line me"><span class="who">You</span><span class="es">${esc(t.opts[pick])}</span></div>`); k++; return step(); }
+        box.querySelectorAll(".opt").forEach(x=>x.disabled=true);
+        b.classList.add(ok?"right":"wrong"); box.querySelector(`.opt[data-i="${t.a}"]`).classList.add("right");
+        box.insertAdjacentHTML("beforeend", feedbackHTML(ok?"ok":"no", "", t.why));
+        const c=document.createElement("div"); c.className="actions"; c.innerHTML='<button class="btn primary" id="dcont">Continue the conversation</button>'; box.appendChild(c);
+        $("dcont").focus({preventScroll:true});
+        $("dcont").onclick=()=>{ dl.insertAdjacentHTML("beforeend", `<div class="line me"><span class="who">You</span><span class="es">${esc(t.opts[t.a])} ${playBtn(t.opts[t.a])}</span></div>`); k++; step(); };
+      });
+    };
+    step();
+  }
+}
+function renderResult(){
+  const r=run, right=r.results.filter(x=>x.ok).length, total=r.results.length||1, score=right/total;
+  const misses=r.results.filter(x=>!x.ok), passed=score>=PASS-1e-9;
+  let head="";
+  if(r.mode==="test"){
+    if(!r.saved){ const p=P.lv[r.id]||{best:0,passed:false,tests:0};
+      P.lv[r.id]={best:Math.max(p.best||0,score), passed:!!(p.passed||passed), tests:(p.tests||0)+1, at:Date.now()}; saveP(); flush(); r.saved=true; }
+    head=`<span class="score ${passed?"pass":"fail"}">${right} / ${total}</span><h2>${passed?`Passed with ${Math.round(score*100)}%.${r.nextId?` ${esc(r.nextLabel)} is unlocked.`:" You finished this track."}`:`${Math.round(score*100)}%. You need ${Math.ceil(PASS*total)} of ${total} to pass.`}</h2>
+      ${passed?"":`<p style="margin:0">Review the misses below, practice the formats you missed most, then retake the test. Each attempt draws a new set of questions.</p>`}`;
+  } else head=`<span class="score">${right} / ${total}</span><h2>Practice done.</h2>`;
+  $("view").innerHTML=`<div class="crumb"><button class="linkbtn" id="back">← ${esc(r.title)}</button></div><div class="panelbox result">${head}
+    <div class="row">${r.mode==="test"&&passed&&r.nextId?`<button class="btn primary" id="goNext">Go to ${esc(r.nextLabel)}</button>`:""}<button class="btn ${r.mode==="test"&&!passed?"primary":""}" id="again">${r.mode==="test"?"Retake the test":"Practice again"}</button></div>
+    ${misses.length?`<h3>${r.mode==="test"?"What you missed":"Review"}</h3>`+misses.map(m=>`<div class="miss"><span class="sub">${md(m.q)}</span><span>You: <span class="es">${esc(m.your)}</span></span><span>Answer: <span class="es">${esc(m.right)}</span> ${m.say?playBtn(m.say):""}</span>${m.why?`<span class="sub">${md(m.why)}</span>`:""}</div>`).join(""):""}</div>`;
+  $("back").onclick=()=>go(r.back);
+  $("again").onclick=()=>r.retry();
+  if($("goNext")) $("goNext").onclick=()=>r.next();
+}
+
+/* ---------------- talk (AI roleplay, practice only) ---------------- */
+let talk=null, sampleFn=undefined;
+async function getSample(){ if(sampleFn!==undefined) return sampleFn; try{ sampleFn = (window.claude&&window.claude.use) ? await window.claude.use("sample") : null; }catch(e){ sampleFn=null; } return sampleFn; }
+function startTalk(l,i){ const r=l.roleplay[i]; talk={l, r, lines:[{who:"them", es:r.opening, en:""}], done:new Set(), busy:false, ctl:null}; view={name:"talk"}; renderTalk(); autoSay(r.opening); }
+function renderTalk(){
+  const t=talk, r=t.r;
+  $("view").innerHTML=`<div class="crumb"><button class="linkbtn" id="back">← ${esc(t.l.title)}</button><span class="chip ${t.l.track==="med"?"med":""}">${t.l.id} · Talk</span></div>
+    <div class="panelbox"><h2>${esc(r.title)}</h2><p style="margin:0">${esc(r.setup)}</p><ul class="goals" id="goals">${r.goals.map((g,i)=>`<li class="${t.done.has(i)?"done":""}">${esc(g)}</li>`).join("")}</ul></div>
+    <section class="card"><div class="chat" id="chat"></div>
+      <div id="talkstatus" class="sub"></div>
+      <div class="answer"><input type="text" id="msg" autocomplete="off" spellcheck="false" placeholder="Write your reply in Spanish"><button class="btn primary" id="send">Send</button></div>
+      <div class="accents">${["á","é","í","ó","ú","ñ","ü","¿","¡"].map(a=>`<button type="button" data-acc="${a}" aria-label="Insert ${a}">${a}</button>`).join("")}</div>
+      <div class="row"><button class="btn" id="finish">Finish and get feedback</button><button class="linkbtn" id="stop" hidden>Stop</button></div>
+      <div id="summary"></div></section>`;
+  drawChat();
+  $("back").onclick=()=>{ t.ctl&&t.ctl.abort(); go({name:"level",id:t.l.id,tab:"talk"}); };
+  const inp=$("msg");
+  document.querySelectorAll("[data-acc]").forEach(b=>b.onclick=()=>{ const s=inp.selectionStart??inp.value.length, e=inp.selectionEnd??s; inp.value=inp.value.slice(0,s)+b.dataset.acc+inp.value.slice(e); inp.focus(); inp.setSelectionRange(s+1,s+1); });
+  $("send").onclick=sendTalk; inp.addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); sendTalk(); } });
+  $("finish").onclick=finishTalk; $("stop").onclick=()=>t.ctl&&t.ctl.abort();
+  $("reset-area").innerHTML="";
+}
+function drawChat(){
+  const c=$("chat"); if(!c) return;
+  c.innerHTML = talk.lines.map(x=> x.who==="them"
+    ? `<div class="line"><span class="who">${talk.l.track==="med"?"Patient / family":"Them"}</span><span class="es">${esc(x.es)} ${playBtn(x.es)}</span>${x.en?`<details><summary class="sub">English</summary><span class="en">${esc(x.en)}</span></details>`:""}</div>`
+    : `<div class="line me"><span class="who">You</span><span class="es">${esc(x.text)}</span></div>${x.fb?(x.fb.ok?`<div class="corr good"><b>Good.</b>${x.fb.corrected?` More natural: <span class="es">${esc(x.fb.corrected)}</span> ${playBtn(x.fb.corrected)}`:""}${x.fb.note?` <span class="sub">${esc(x.fb.note)}</span>`:""}</div>`:`<div class="corr"><b>Better:</b> <span class="es">${esc(x.fb.corrected)}</span> ${x.fb.corrected?playBtn(x.fb.corrected):""} <span class="sub">${esc(x.fb.note||"")}</span></div>`):""}`).join("");
+}
+function transcript(){ return talk.lines.map(x=>x.who==="them"?`OTHER PERSON: ${x.es}`:`LEARNER: ${x.text}`).join("\n"); }
+function talkError(e){
+  const code=e&&e.code;
+  if(code==="not_granted"||code==="sampling_disabled"||code==="not_declared"||code==="capability_disabled") return "Claude isn't available on this page (permission was declined or Claude is turned off for your account). The rest of the course works without it.";
+  if(code==="rate_limited") return "Too many requests right now, or your Claude usage limit was reached. Try again in a little while.";
+  if(code==="session_expired") return "Your session expired. Sign in to Claude again, then reload this page.";
+  if(code==="invalid_json"||code==="empty_completion") return "The reply came back in an unexpected form. Press Send again.";
+  if(code==="cancelled") return "";
+  return "The connection to Claude failed. Press Send to try again.";
+}
+async function sendTalk(){
+  const t=talk; if(t.busy) return; const inp=$("msg"), text=inp.value.trim(); if(!text) return;
+  const sample=await getSample();
+  if(!sample){ $("talkstatus").textContent="Claude isn't available here. Open this page inside claude.ai to use conversations."; return; }
+  t.lines.push({who:"me", text}); inp.value=""; drawChat();
+  t.busy=true; $("send").disabled=true; $("stop").hidden=false; $("talkstatus").textContent="Thinking…";
+  const r=t.r, l=t.l;
+  const prompt = `You are a role-play partner for a Spanish learner: an American cardiologist at an intermediate level.
+Course level: ${l.id} "${l.title}". Grammar the learner has studied: ${l.grammar.map(g=>g.h).join("; ")}.
+Scenario shown to the learner: ${r.setup}
+Your character: ${r.persona}
+Learner's goals: ${r.goals.map((g,i)=>i+": "+g).join(" | ")}${steerText()}
+
+Rules:
+- Stay in character. Reply as your character in natural Latin American Spanish suited to this level: 1–3 short sentences. Never use vosotros. Don't switch to English in "reply".
+- Reveal facts only when the learner asks for them, as a real person would.
+- Evaluate ONLY the learner's last message. If it has an error in grammar, vocabulary, spelling/accents, or register (a clinician must use usted with patients), set ok=false, give "corrected" = the corrected, natural version of their whole message, and "note" = one short English sentence naming the main fix. If it is correct, set ok=true; put a more natural alternative in "corrected" only if it would clearly sound more natural, else "".
+- "goals_done": indices of the learner's goals that are now accomplished in the conversation so far.
+- "errs": for each distinct error in the learner's last message, {"skill": one id from this list, "said": the wrong words, "fix": the corrected words, "why": a few English words}. Skill ids: ${Object.keys(SKILLS).filter(k=>!["s:listen","s:order"].includes(k)).map(k=>k+" ("+SKILLS[k][0]+")").join(", ")}. Empty array if none.
+
+Conversation so far:
+${transcript()}
+
+Reply with only a JSON object: {"reply":"…","reply_en":"…","ok":true,"corrected":"","note":"","goals_done":[0],"errs":[]}`;
+  t.ctl=new AbortController();
+  try{
+    const out=await sample.json(prompt,{signal:t.ctl.signal, cache:false, modelTier:"default", effort:"low"});
+    const last=t.lines[t.lines.length-1];
+    last.fb={ok:!!out.ok, corrected:String(out.corrected||""), note:String(out.note||"")};
+    (Array.isArray(out.goals_done)?out.goals_done:[]).forEach(i=>{ if(Number.isInteger(+i)&&+i>=0&&+i<r.goals.length) t.done.add(+i); });
+    if(!out.ok && Array.isArray(out.errs) && out.errs.length) logTalk(out.errs.slice(0,3));
+    if(out.reply){ t.lines.push({who:"them", es:String(out.reply), en:String(out.reply_en||"")}); }
+    $("talkstatus").textContent="";
+    drawChat(); document.querySelectorAll("#goals li").forEach((li,i)=>li.classList.toggle("done",t.done.has(i)));
+    if(out.reply) autoSay(String(out.reply));
+  }catch(e){ $("talkstatus").textContent=talkError(e); }
+  finally{ t.busy=false; if($("send")){ $("send").disabled=false; $("stop").hidden=true; $("msg").focus({preventScroll:true}); } }
+}
+async function finishTalk(){
+  const t=talk; if(t.busy) return;
+  if(!t.lines.some(x=>x.who==="me")){ $("talkstatus").textContent="Write at least one reply first."; return; }
+  const sample=await getSample(); if(!sample){ $("talkstatus").textContent="Claude isn't available here."; return; }
+  t.busy=true; $("talkstatus").textContent="Writing your feedback…"; $("stop").hidden=false; t.ctl=new AbortController();
+  const prompt=`A Spanish learner (American cardiologist, intermediate; level ${t.l.id} "${t.l.title}") just finished this role-play: ${t.r.setup}
+Goals: ${t.r.goals.join(" | ")}
+Transcript:
+${transcript()}
+
+Give brief, specific feedback on the LEARNER's Spanish only. Reply with only JSON:
+{"summary":"2 sentences in English","strengths":["…"],"fixes":[{"said":"what they wrote","better":"natural Latin American Spanish","why":"short English reason"}],"phrases":[{"es":"a useful phrase for this situation","en":"English"}]}
+At most 4 fixes and 4 phrases. Use usted for clinician-to-patient phrases.`;
+  try{
+    const o=await sample.json(prompt,{signal:t.ctl.signal, cache:false, modelTier:"default", effort:"low"});
+    $("summary").innerHTML=`<div class="fb"><span class="v">Feedback</span><p style="margin:0">${esc(o.summary||"")}</p>
+      ${(o.strengths||[]).length?`<h3>Went well</h3><ul style="margin:0">${o.strengths.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:""}
+      ${(o.fixes||[]).length?`<h3>Fix these</h3>${o.fixes.map(f=>`<div class="miss"><span>You: <span class="es">${esc(f.said)}</span></span><span>Better: <span class="es">${esc(f.better)}</span> ${playBtn(f.better)}</span><span class="sub">${esc(f.why)}</span></div>`).join("")}`:""}
+      ${(o.phrases||[]).length?`<h3>Phrases to keep</h3>${o.phrases.map(p=>`<div>${playBtn(p.es)} <span class="es">${esc(p.es)}</span> <span class="sub">${esc(p.en)}</span></div>`).join("")}`:""}</div>`;
+    $("talkstatus").textContent="";
+  }catch(e){ $("talkstatus").textContent=talkError(e); }
+  finally{ t.busy=false; if($("stop")) $("stop").hidden=true; }
+}
+
+/* ---------------- drills: vocabulary + verb tenses ---------------- */
+const DR = __DRILLS__;
+const ITEM = Object.fromEntries(DR.items.map(i=>[i.id,i]));
+const VSET = Object.fromEntries(DR.vsets.map(s=>[s.id,s]));
+const TSET = Object.fromEntries(DR.tsets.map(s=>[s.id,s]));
+const DLISTS = { vconv: DR.vsets.filter(s=>s.track==="conv").map(s=>s.id), vmed: DR.vsets.filter(s=>s.track==="med").map(s=>s.id), tense: DR.tsets.map(s=>s.id) };
+const listOf = id => id[0]==="T" ? DLISTS.tense : (VSET[id].track==="conv" ? DLISTS.vconv : DLISTS.vmed);
+function drillUnlocked(id){ const L=listOf(id), i=L.indexOf(id); return i===0 || !!(P.lv[L[i-1]]&&P.lv[L[i-1]].passed); }
+const drillLabel = id => id[0]==="T" ? `Tenses ${id}` : `Vocabulary ${VSET[id].lv}`;
+const drillTitle = id => id[0]==="T" ? TSET[id].title : VSET[id].title;
+const SIGNALS = {
+  "Present":"ahora, hoy, todos los días, siempre, normalmente, a veces",
+  "Preterite":"ayer, anoche, el lunes, la semana pasada, hace dos días, en 2019, de repente, una vez",
+  "Imperfect":"antes, de niño, siempre, todos los días, a veces, mientras, cuando era…, the time or age in the past",
+  "Future":"mañana, la próxima semana, en un mes, pronto, ¿dónde estará…? (a guess)",
+  "Conditional":"¿podría…?, ¿me daría…?, yo en su lugar…, the result half of si + imperfect subjunctive",
+  "Present perfect":"ya, todavía no, alguna vez, nunca, últimamente, esta semana, este año",
+  "Pluperfect":"ya … cuando (one past event before another), nunca antes, todavía no … cuando",
+  "Present subjunctive":"quiero que, necesito que, es importante que, espero que, ojalá, para que, antes de que, cuando + future",
+  "Imperfect subjunctive":"si + imaginary condition, como si, quería que, me pidió que, le dije que, era importante que",
+  "Command (+)":"giving instructions: respire, siéntese, tome, avíseme",
+  "Command (−)":"prohibitions: no se mueva, no tome, no coma"
+};
+const FORM = {
+  "Present":"Regular endings: -ar *o, as, a, amos, an*; -er *o, es, e, emos, en*; -ir *o, es, e, imos, en*. Stem changes (e→ie, o→ue, e→i) happen in every form except nosotros: *quiero, puedo, pido*. Irregular yo forms: *tengo, hago, pongo, salgo, vengo, digo, conozco*.",
+  "Preterite":"Regular: -ar *é, aste, ó, amos, aron*; -er/-ir *í, iste, ió, imos, ieron*. Irregular stems take no accents: *tuve, estuve, hice (hizo), pude, puse, quise, supe, vine, dije (dijeron)*. Ser and ir share *fui, fuiste, fue, fuimos, fueron*. Spelling: *llegué, busqué, empecé*. -ir stem verbs change in the 3rd person: *sintió, siguió, durmió*.",
+  "Imperfect":"-ar *aba, abas, aba, ábamos, aban*; -er/-ir *ía, ías, ía, íamos, ían*. Only three irregulars: *era* (ser), *iba* (ir), *veía* (ver). Yo and usted/él forms are identical, so add the subject when it's unclear.",
+  "Future":"Whole infinitive + *é, ás, á, emos, án*: *tomaré, comerá*. Irregular stems: *tendr-, saldr-, vendr-, pondr-, podr-, sabr-, habr-, querr-, har-, dir-*.",
+  "Conditional":"Whole infinitive (or the same irregular stem as the future) + *ía, ías, ía, íamos, ían*: *tomaría, tendría, haría, diría*.",
+  "Present perfect":"*he, has, ha, hemos, han* + past participle (-ado / -ido). Irregular participles: *hecho, dicho, visto, puesto, vuelto, escrito, abierto, muerto, roto*. Pronouns go before *haber*: *se ha mareado*.",
+  "Pluperfect":"*había, habías, había, habíamos, habían* + past participle: *había tomado, se había desmayado*.",
+  "Present subjunctive":"Start from the yo present, drop -o, switch the vowel: -ar → *e* (*tome, respire*), -er/-ir → *a* (*coma, tenga, venga*). Irregular: *sea, esté, vaya, sepa, haya, dé*.",
+  "Imperfect subjunctive":"Take the ellos preterite, drop -ron, add *-ra, -ras, -ra, -´ramos, -ran*: *tuvieron → tuviera, fueron → fuera, pudieron → pudiera*.",
+  "Command (+)":"Usted = present subjunctive (*tome, coma, venga*). Tú = the él present (*toma*), with 8 irregulars: *di, haz, ve, pon, sal, sé, ten, ven*. Pronouns attach and the stressed vowel gets an accent: *acuéstese, dígame*.",
+  "Command (−)":"*no* + present subjunctive for both tú and usted: *no tome, no tomes*. Pronouns go before the verb: *no se acueste*."
+};
+const EXTRA = {
+  T4:`<div class="gblock"><h4>Event or scene?</h4><p>The preterite moves the story forward: something happened and finished. The imperfect paints the scene around it: what was going on, what used to happen, how things were. <i>Estaba en casa</i> (scene) <i>cuando sentí el dolor</i> (event). If English says "used to" or "was …ing", it's almost always the imperfect.</p></div>`,
+  T8:`<div class="gblock"><h4>Si clauses</h4><p>Real possibility: <i>si</i> + present, then present, future or a command: <i>Si le duele, avíseme.</i> Imaginary: <i>si</i> + imperfect subjunctive, then conditional: <i>Si le doliera, ¿me avisaría?</i> Never put the present subjunctive or the future right after <i>si</i> meaning "if".</p></div>`,
+  T10:`<div class="gblock"><h4>How to choose</h4><p>Ask three questions: Is it a fact, or something wished, asked for, doubted or imaginary (subjunctive)? When is it: now, before, later? In the past, is it a finished event (preterite) or background and habit (imperfect)?</p></div>`
+};
+const MODELS = ["hablar","toser","sentir","tener","ir","ser"];
+const PERS = ["yo","tú","usted / él","nosotros","ustedes / ellos"];
+function tenseStudy(set){
+  const blocks = set.tenses.map(t=>`<div class="panelbox"><h3>${esc(t)}</h3>
+    <p style="margin:0">${md(DR.use[t])}</p>
+    <p style="margin:0"><b>Clue words:</b> ${esc(SIGNALS[t])}</p>
+    <p style="margin:0"><b>How to form it:</b> ${md(FORM[t])}</p>
+    ${set.id==="T10"?"":`<div class="tablewrap"><table class="vtable"><tr><td></td>${PERS.map(p=>`<td class="en">${p}</td>`).join("")}</tr>${MODELS.map(m=>`<tr><td class="en">${m}</td>${DR.models[m][t].map(f=>`<td class="es">${esc(f)}${f!=="—"?" "+playBtn(f.replace(/\s*\(.*\)/,"")):""}</td>`).join("")}</tr>`).join("")}</table></div>`}
+  </div>`).join("");
+  return (EXTRA[set.id]?`<div class="panelbox">${EXTRA[set.id]}</div>`:"") + blocks;
+}
+function vocabStudy(set){
+  return `<div class="panelbox"><h3>Words · ${set.entries.length}</h3><div class="tablewrap"><table class="vtable">${set.entries.map(e=>`<tr><td>${playBtn(e.w.replace(/\s*\(.*?\)/g,""))}</td><td><span class="es"><b>${esc(e.w)}</b></span> <span class="en">${esc(e.en)}</span><br><span class="es"><i>${esc(e.ex)}</i></span> ${playBtn(e.ex)}<br><span class="en">${esc(e.exen)}</span>${e.note?`<br><span class="sub">${esc(e.note)}</span>`:""}</td></tr>`).join("")}</table></div></div>
+    <div class="panelbox"><h3>Phrases · ${set.phrases.length}</h3><div class="tablewrap"><table class="vtable">${set.phrases.map(([es,en])=>`<tr><td>${playBtn(es)}</td><td class="es">${esc(es)}</td><td class="en">${esc(en)}</td></tr>`).join("")}</table></div></div>`;
+}
+const DKINDS = { vocab:[["all","Mixed"],["v2e","What does it mean?"],["e2v","How do you say it?"],["type","Type the Spanish"],["listen","Listening"],["ex","Fill the example"]],
+                 tense:[["all","Mixed"],["pick","Pick the form"],["ident","Name the tense"],["conj","Conjugate"],["cmd","Patient commands"]] };
+function renderDrill(){
+  const id=view.id, isT=id[0]==="T", set=isT?TSET[id]:VSET[id], p=P.lv[id]||{};
+  const L=listOf(id), nextId=L[L.indexOf(id)+1];
+  const tabs=[["study","Study"],["practice","Practice"],["test","Test"]];
+  let body="";
+  if(view.tab==="study") body = isT ? tenseStudy(set) : vocabStudy(set);
+  else if(view.tab==="practice"){
+    const kinds=DKINDS[isT?"tense":"vocab"].filter(([k])=>k==="all"||set.pool.some(x=>ITEM[x].k===k));
+    body=`<div class="panelbox"><h3>Practice</h3><p style="margin:0">Twelve questions with an explanation and example after each. Questions you miss come back more often. This set has ${set.pool.length} questions.</p>
+      <div class="row"><label for="dk" class="sub">Format</label><select id="dk">${kinds.map(([k,n])=>`<option value="${k}">${n}</option>`).join("")}</select><button class="btn primary" id="startD">Start practice</button></div></div>`;
+  } else {
+    body=`<div class="panelbox"><h3>Test</h3><p style="margin:0">30 questions drawn at random from this set, no feedback until the end. Accents count. You need 27 of 30 (90%) to pass${nextId?` and unlock ${esc(drillLabel(nextId))}`:""}.</p>
+      <p class="sub" style="margin:0">${p.tests?`Tests taken: ${p.tests} · best ${Math.round(p.best*100)}%${p.passed?" · passed":""}`:"You haven't taken this test yet."}</p>
+      <div class="row"><button class="btn primary" id="startDT">Start the test</button></div></div>`;
+  }
+  $("view").innerHTML=`<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← All levels</button><span class="chip ${!isT&&set.track==="med"?"med":""}">${esc(drillLabel(id))}</span>${p.passed?'<span class="chip">Passed</span>':""}</div><h2>${esc(drillTitle(id))}</h2>
+    <p class="intro" style="margin:0">${isT?esc(set.tenses.join(" · ")):`Words and phrases from level ${esc(set.lv)}, each with an example sentence.`}</p></div>
+    <div class="tabs" role="tablist">${tabs.map(([k,n])=>`<button role="tab" data-tab="${k}" aria-selected="${view.tab===k}">${n}</button>`).join("")}</div>${body}`;
+  $("back").onclick=()=>go({name:"home"});
+  $("view").querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>go({name:"drill",id,tab:b.dataset.tab}));
+  if($("startD")) $("startD").onclick=()=>startDrill(id,"practice",$("dk").value);
+  if($("startDT")) $("startDT").onclick=()=>startDrill(id,"test");
+  $("reset-area").innerHTML="";
+}
+function drillTest(id){
+  const isT=id[0]==="T", pool=(isT?TSET:VSET)[id].pool.map(x=>ITEM[x]);
+  const by=k=>shuffle(pool.filter(i=>i.k===k));
+  const plan = isT ? (id==="T9" ? [["cmd",12],["conj",18]] : [["pick",12],["ident",8],["conj",10]]) : [["v2e",8],["e2v",6],["type",6],["listen",4],["ex",6]];
+  let units=[]; const used=new Set();
+  for(const [k,n] of plan){ for(const it of by(k).slice(0,n)){ units.push(it); used.add(it.id); } }
+  const rest=shuffle(pool.filter(i=>!used.has(i.id)));
+  while(units.length<30 && rest.length) units.push(rest.shift());
+  return shuffle(units);
+}
+function startDrill(id, mode, kind){
+  const isT=id[0]==="T", set=isT?TSET[id]:VSET[id];
+  let units;
+  if(mode==="test") units=drillTest(id);
+  else { const pool=set.pool.map(x=>ITEM[x]).filter(i=>!kind||kind==="all"||i.k===kind); units=weightedPick(pool,12); }
+  const L=listOf(id), nextId=L[L.indexOf(id)+1];
+  launch({id, title:drillTitle(id), chip:drillLabel(id), med:!isT&&set.track==="med", mode, units, nextId, nextLabel:nextId?drillLabel(nextId):"",
+    back:{name:"drill",id,tab:mode}, retry:()=>startDrill(id,mode,"all"), next:()=>go({name:"drill",id:nextId,tab:"study"})});
+}
+function drillHome(){
+  const tile = id => { const un=drillUnlocked(id), p=P.lv[id]||{}, isT=id[0]==="T";
+    const rv = p.passed && reviewState(SETIDS[id]).needs;
+    const st = !un?"Locked": rv?"Passed · review due" : p.passed?`Passed · ${Math.round(p.best*100)}%`: p.tests?`Best ${Math.round(p.best*100)}%`:"Open";
+    const sub = isT ? TSET[id].tenses.join(" · ") : `${VSET[id].entries.length} words · ${VSET[id].phrases.length} phrases`;
+    return `<button class="lvl ${!un?"locked":p.passed?"passed":""}${rv?" review":""}" data-drill="${id}" ${!un?'aria-disabled="true"':""}><span class="num">${isT?id:VSET[id].lv}</span><span><span class="t">${esc(drillTitle(id))}</span><span class="g">${esc(sub)}</span></span><span class="st">${st}</span></button>`; };
+  return `<h2 style="margin-top:8px">Drills</h2><p class="intro">Straight vocabulary and verb-tense practice, with an explanation and an example after every answer. Each set has a 30-question test; 90% unlocks the next set.</p>
+    <div class="tracks"><section class="track"><h2>Verb tenses <small>built from the 50 verbs</small></h2>${DLISTS.tense.map(tile).join("")}</section>
+    <section class="track"><h2>Vocabulary <small>conversation</small></h2>${DLISTS.vconv.map(tile).join("")}</section>
+    <section class="track med"><h2>Vocabulary <small>medical</small></h2>${DLISTS.vmed.map(tile).join("")}</section></div>`;
+}
+
+/* ================= learner record: review schedule, skills, mistakes ================= */
+const CONJ = __CONJ__;
+const VERBS = __VERBS__;
+const TENSES = ["Present","Preterite","Imperfect","Future","Conditional","Present perfect","Pluperfect","Present subjunctive","Imperfect subjunctive","Command (+)","Command (−)"];
+const TSK = {"Present":"t:pres","Preterite":"t:pret","Imperfect":"t:imp","Future":"t:fut","Conditional":"t:cond","Present perfect":"t:pperf","Pluperfect":"t:plup","Present subjunctive":"t:psub","Imperfect subjunctive":"t:isub","Command (+)":"t:cmd","Command (−)":"t:cmd"};
+const SKILLS = {
+  "t:pres":["Present tense","T1"],"t:pret":["Preterite","T2"],"t:imp":["Imperfect","T3"],"t:pvi":["Choosing preterite vs. imperfect","T4"],
+  "t:fut":["Future","T5"],"t:ira":["ir a + infinitive","C5"],"t:cond":["Conditional","T5"],"t:pperf":["Present perfect","T6"],"t:plup":["Pluperfect","T6"],
+  "t:psub":["Present subjunctive","T7"],"t:isub":["Imperfect subjunctive","T8"],"t:si":["Si clauses","T8"],"t:cmd":["Commands","T9"],"t:prog":["estar + -ndo (ongoing actions)","C6"],
+  "g:serestar":["Ser vs. estar","C2"],"g:gustar":["Gustar / doler pattern","C1"],"g:reflex":["Reflexive verbs","C6"],"g:objpron":["Object pronouns","C6"],
+  "g:agree":["Gender and number agreement","C2"],"g:questions":["Question words","C1"],"g:neg":["Negation","C1"],"g:compare":["Comparisons","C2"],
+  "g:time":["Time expressions (hace, desde, llevar)","C5"],"g:connect":["Connectors (porque, pero, cuando…)","C1"],"g:register":["Tú vs. usted","M1"],
+  "g:irreg":["Irregular verb forms","C3"],"g:person":["Verb endings (person)","C1"],"g:prep":["Prepositions","C2"],
+  "s:listen":["Listening",null],"s:order":["Building sentences",null],"s:vocab":["Vocabulary",null],"s:phrase":["Choosing the right phrase",null],"s:accents":["Accents and spelling",null]
+};
+const INT = [1,2,4,8,16,35,80];          // days until next review, by box
+const MIN_N = 8, WEAK = 0.8, LOG_MAX = 1500;
+const dayOf = ms => Math.floor((ms/60000 - new Date(ms).getTimezoneOffset())/1440) - 18262;
+const today = () => dayOf(Date.now());
+const skName = s => (SKILLS[s]||[s])[0];
+
+let LR = Object.assign({v:2, srs:{}, sk:{}, w:{}, log:[], diag:null, mig:{}}, store.get("csc:learner",{}));
+
+/* ---------- every exercise in one registry ---------- */
+const ALL = {};
+LEVELS.forEach(l=>l.items.forEach(it=>{ ALL[it.id]={it, lv:l.id}; }));
+DR.items.forEach(it=>{ ALL[it.id]={it, drill:true}; });
+const base = v => v.endsWith("se") ? v.slice(0,-2) : v;
+VERBS.forEach((v,vi)=>v.rows.forEach((r,ri)=>{
+  if(r.f.some(x=>x!=="—")){ const id=`wt:${v.v}:${ri}`; ALL[id]={card:true, it:{t:"wt", id, vi, ri, v:v.v, tn:r.t, sk:[TSK[r.t]]}}; }
+  if(r.cz){ const [a,b]=r.cz, id=`fc:${v.v}:${ri}`;
+    const it={t:"fill", id, q:r.es.slice(0,a)+"___"+r.es.slice(b), en:r.en, hint:`${v.v} · ${r.t}`, a:[r.es.slice(a,b)], say:r.es, tn:r.t, sk:[TSK[r.t]],
+      why:`**${r.t}.** ${DR.use[r.t]}`, more:[], k:"fc"};
+    if(r.pi!==null && r.pi!==undefined){ it.lem=base(v.v); it.pn=r.pi; }
+    ALL[id]={card:true, it}; }
+}));
+const SETS_OF = {};
+DR.tsets.concat(DR.vsets).forEach(s=>s.pool.forEach(id=>{ (SETS_OF[id]=SETS_OF[id]||[]).push(s.id); }));
+const LVIDS = Object.fromEntries(LEVELS.map(l=>[l.id,new Set(l.items.map(i=>i.id))]));
+const SETIDS = Object.fromEntries(DR.tsets.concat(DR.vsets).map(s=>[s.id,new Set(s.pool)]));
+function itemAvailable(id){
+  const a=ALL[id]; if(!a) return false;
+  if(a.lv) return unlocked(a.lv);
+  if(a.card || id.startsWith("cj:")) return true;
+  return (SETS_OF[id]||[]).some(drillUnlocked);
+}
+function shardOf(id){
+  if(/^[CM]\d-/.test(id)) return "srs-L";
+  if(id.startsWith("v:")||id.startsWith("p:")) return "srs-V";
+  if(id.startsWith("cj:")) return "srs-J";
+  if(id.startsWith("wt:")||id.startsWith("fc:")) return "srs-W";
+  return "srs-T";
+}
+const SHARDS = ["srs-L","srs-V","srs-J","srs-T","srs-W"];
+
+/* ---------- classifying a wrong answer ---------- */
+const PRON = new Set(["me","te","se","nos","le","les","lo","la","los","las","no"]);
+const vtoks = s => norm(s).split(" ").filter(w=>w && !PRON.has(w));
+function classifyForm(lem, tn, pn, text){
+  const tb=CONJ[lem]; if(!tb || !tn || pn===undefined || pn===null) return null;
+  const A=" "+vtoks(text).join(" ")+" "; let hits=[];
+  const scan = f2 => tb.forEach((row,ti)=>row.forEach((f,pi)=>{ if(f && f2(A).includes(" "+f2(f)+" ")) hits.push([TENSES[ti],pi]); }));
+  scan(x=>x); if(!hits.length) scan(strip);
+  if(!hits.length) return null;
+  if(hits.some(h=>h[0]===tn && h[1]===pn)) return null;
+  const same=hits.find(h=>h[0]===tn);
+  if(same) return ((pn===2&&same[1]===1)||(pn===1&&same[1]===2)) ? "register" : "person";
+  const other=hits.filter(h=>h[0]!==tn).sort((a,b)=>(a[1]!==pn)-(b[1]!==pn))[0];
+  return other ? "tense:"+other[0] : null;
+}
+const CAT = {person:["g:person","g:irreg"], register:["g:register","t:cmd"], serestar:["g:serestar"], pronoun:["g:objpron","g:reflex","t:cmd"],
+  agree:["g:agree"], prep:["g:prep","g:time"], word:["s:vocab","s:phrase","g:connect","g:questions","g:neg","g:compare","g:time","g:gustar"],
+  question:["g:questions"], neg:["g:neg"], order:["s:order"], listen:["s:listen","s:vocab"]};
+const OWN = {person:"g:person", register:"g:register", serestar:"g:serestar", pronoun:"g:objpron", agree:"g:agree", prep:"g:prep",
+  order:"s:order", question:"g:questions", neg:"g:neg"};
+function blamed(sk, err, tn){
+  const type=err.split(":")[0];
+  let b = sk.filter(s => (type==="tense"||type==="infl") ? s.startsWith("t:") : (CAT[type]||[]).includes(s));
+  if(!b.length && !OWN[type] && !(tn && (type==="tense"||type==="infl"))) b=sk.slice();
+  if(OWN[type] && !b.includes(OWN[type])) b.push(OWN[type]);
+  if(tn && TSK[tn] && (type==="tense"||type==="person"||type==="register") && !b.includes(TSK[tn])) b.push(TSK[tn]);
+  return b;
+}
+function bump(map, key, ok){
+  const r=map[key]||[0,0,0]; const n=r[1]+1, a=r[1]===0 ? (ok?1:0) : r[0]+Math.max(1/n,0.15)*((ok?1:0)-r[0]);
+  map[key]=[Math.round(a*1000)/1000, n, today()];
+}
+
+/* ---------- recording one answered exercise ---------- */
+function recordUnit(it, res, ctx){
+  if(!it || !res.length || (ctx && ctx.noRecord)) return;
+  const d=today(), allOk=res.every(x=>x.ok), r=LR.srs[it.id]||[0,d,0,0,d], g=res[0].grade;
+  let b=r[0];
+  if(g!==undefined) b = g===0 ? 0 : g===1 ? Math.max(1,b) : g===2 ? b+1 : b+2;
+  else b = allOk ? b+1 : 0;
+  b=Math.min(b,6);
+  LR.srs[it.id]=[b, d+INT[b], r[2]+1, r[3]+(allOk?1:0), d];
+  dirtyDocs.add(shardOf(it.id));
+  const src=(ctx&&ctx.src)||"practice";
+  res.forEach(x=>{
+    const sk=x.sk||it.sk||[], tn=x.tn||it.tn||"", err=x.ok?"":(x.err||"other");
+    if(x.ok){ sk.forEach(s=>bump(LR.sk,s,true)); }
+    else if(err==="accent"){ sk.forEach(s=>bump(LR.sk,s,true)); }
+    else blamed(sk,err,tn).forEach(s=>bump(LR.sk,s,false));
+    if(x.typed && x.hasAcc) bump(LR.sk,"s:accents", err!=="accent");
+    (it.w||[]).forEach(w=>bump(LR.w,w,x.ok||err==="accent"));
+    const e={t:Date.now(), id:it.id, ok:x.ok?1:0, e:err, s:src};
+    if(tn) e.tn=tn;
+    if(!x.ok){ e.y=String(x.your||"").slice(0,70); e.r=String(x.right||"").slice(0,70); e.q=String(x.q||"").slice(0,100); }
+    LR.log.push(e);
+  });
+  if(LR.log.length>LOG_MAX) LR.log=LR.log.slice(-LOG_MAX);
+  dirtyDocs.add("learner"); dirtyDocs.add("log"); saveLR();
+}
+function logTalk(errs){
+  const t=Date.now();
+  errs.forEach((x,i)=>{ const s=SKILLS[x.skill]?x.skill:"s:phrase"; LR.log.push({t:t+i, id:"talk", ok:0, e:"talk:"+s, s:"talk", y:String(x.said||"").slice(0,120), r:String(x.fix||"").slice(0,120), q:String(x.why||"").slice(0,120)}); });
+  if(LR.log.length>LOG_MAX) LR.log=LR.log.slice(-LOG_MAX);
+  dirtyDocs.add("log"); saveLR();
+}
+
+/* ---------- saving: browser now, account in the background ---------- */
+let dirtyDocs=new Set(), lwriting=false, lwt=null;
+function saveLR(){ store.set("csc:learner", LR); if(db){ clearTimeout(lwt); lwt=setTimeout(flushLR,2500); } }
+function docBody(n){
+  if(n==="learner") return {sk:LR.sk, w:LR.w, diag:LR.diag, mig:LR.mig, v:2};
+  if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return {e:out.reverse(), v:2}; }
+  const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return {r, v:2};
+}
+async function flushLR(){
+  if(!db || lwriting || !dirtyDocs.size) return;
+  lwriting=true; const names=[...dirtyDocs]; dirtyDocs.clear();
+  try{ for(const n of names) await db.collection("data/users/"+uid).doc(n).set(docBody(n)); $("sync").textContent="Progress synced to your account"; }
+  catch(e){ names.forEach(n=>dirtyDocs.add(n)); $("sync").textContent="Couldn't sync just now; progress is kept in this browser"; }
+  finally{ lwriting=false; if(dirtyDocs.size) lwt=setTimeout(flushLR,5000); }
+}
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="hidden") flushLR(); });
+function mergeLR(name, d){
+  if(!d) return false; let ch=false;
+  if(name==="learner"){
+    for(const m of ["sk","w"]) for(const k in d[m]||{}){ const a=LR[m][k], b=d[m][k]; if(!a || b[1]>a[1]){ LR[m][k]=b; } else if(a[1]>b[1]) ch=true; }
+    if(d.diag && (!LR.diag || d.diag.day>LR.diag.day)) LR.diag=d.diag; else if(LR.diag && (!d.diag || LR.diag.day>d.diag.day)) ch=true;
+    for(const k in d.mig||{}) LR.mig[k]=LR.mig[k]||d.mig[k];
+  } else if(name==="log"){
+    const seen=new Set((d.e||[]).map(e=>e.t+"|"+e.id)), mine=new Set(LR.log.map(e=>e.t+"|"+e.id));
+    if(LR.log.some(e=>!seen.has(e.t+"|"+e.id))) ch=true;
+    LR.log = LR.log.concat((d.e||[]).filter(e=>!mine.has(e.t+"|"+e.id))).sort((a,b)=>a.t-b.t).slice(-LOG_MAX);
+  } else if(name.startsWith("srs-")){
+    const rr=d.r||{};
+    for(const id in rr){ const a=LR.srs[id], b=rr[id]; if(!a || b[2]>a[2] || (b[2]===a[2] && b[4]>a[4])) LR.srs[id]=b; }
+    for(const id in LR.srs) if(shardOf(id)===name){ const b=rr[id], a=LR.srs[id]; if(!b || a[2]>b[2]) { ch=true; break; } }
+  }
+  return ch;
+}
+function migrateLegacy(){
+  if(LR.mig.legacy) return;
+  const d=today(); let k=0;
+  for(const id in P.it||{}){
+    if(!ALL[id] || LR.srs[id]) continue;
+    const [n,c]=P.it[id]; if(!n) continue;
+    const acc=c/n, b=acc>=0.8?2:acc>=0.5?1:0;
+    LR.srs[id]=[b, d+1+(k++%5), n, c, d-1]; dirtyDocs.add(shardOf(id));
+  }
+  LR.mig.legacy=true; dirtyDocs.add("learner"); saveLR();
+}
+
+/* ---------- reading the record ---------- */
+function skillRows(){
+  return Object.entries(LR.sk).filter(([s])=>SKILLS[s]).map(([s,[a,n,last]])=>({id:s, a, n, last, ready:n>=MIN_N}))
+    .sort((x,y)=> (y.ready-x.ready) || (x.a-y.a) || (y.n-x.n));
+}
+const weakSkills = () => skillRows().filter(r=>r.ready && r.a<WEAK);
+function recentLog(days, f){ const cut=Date.now()-days*864e5; return LR.log.filter(e=>e.t>=cut && (!f || f(e))); }
+function confusions(days){
+  const m=new Map();
+  recentLog(days, e=>!e.ok && e.s!=="talk" && e.e && e.e!=="other").forEach(e=>{
+    let key;
+    if(e.e.startsWith("tense:")){ if(!e.tn || e.e.slice(6)===e.tn) return; key=e.tn+">"+e.e.slice(6); }
+    else if(["register","serestar","pronoun","agree","accent","person","prep","order","question","neg","infl"].includes(e.e)) key=e.e;
+    else return;
+    const c=m.get(key)||{key, n:0, ex:[]}; c.n++; if(e.y) c.ex.unshift(e); m.set(key,c);
+  });
+  return [...m.values()].filter(c=>c.n>=2).sort((a,b)=>b.n-a.n);
+}
+const CONF = {
+  "Preterite>Imperfect":["Imperfect used where the preterite was needed","A single finished event at a definite time takes the preterite (*ayer me desmayé*). Save the imperfect for background, habits and \"used to\" (*de niño me desmayaba*). Look for clue words like *ayer, anoche, de repente, una vez*."],
+  "Imperfect>Preterite":["Preterite used where the imperfect was needed","Background, ongoing states and habits take the imperfect: what was going on, what used to happen, age and time (*estaba en casa cuando…*, *antes caminaba mucho*). Clue words: *antes, siempre, mientras, de niño, todos los días*."],
+  "Present subjunctive>Present":["Indicative used where the subjunctive was needed","After wanting, asking, advising, hoping or doubting about someone else's action (*quiero que, es importante que, ojalá, para que, antes de que*), the second verb goes in the subjunctive: *Es importante que tome…*, not *toma*."],
+  "Present>Present subjunctive":["Subjunctive used where a plain statement was needed","No trigger, no subjunctive. Facts, questions and things you know or believe take the indicative: *Creo que tiene fibrilación*, *Sé que toma la pastilla*."],
+  "Imperfect subjunctive>Present subjunctive":["Present subjunctive in a past or imaginary frame","When the trigger is in the past (*me pidió que, quería que*) or the sentence is imaginary (*si…, como si*), use the imperfect subjunctive: *Me pidió que llegara temprano*."],
+  "Present subjunctive>Imperfect subjunctive":["Imperfect subjunctive where the present subjunctive fits","A trigger in the present (*quiero que, es importante que*) takes the present subjunctive: *Quiero que descanse*."],
+  "Imperfect subjunctive>Conditional":["Conditional used after si","After *si* meaning \"if\", never the conditional. The imaginary condition takes the imperfect subjunctive and the result takes the conditional: *Si tuviera fiebre, llamaría*."],
+  "Conditional>Imperfect subjunctive":["Imperfect subjunctive where \"would\" was needed","The result half of an imaginary sentence, polite requests and advice take the conditional: *¿Podría…?*, *Yo en su lugar dejaría de fumar*."],
+  "Future>Conditional":["Conditional used for a plain future","*Will* = future (*tendrá, llegará*). *Would* = conditional (*tendría*)."],
+  "Conditional>Future":["Future used where \"would\" was needed","*Would* (polite, hypothetical, advice) = conditional: *tendría, podría, sería*."],
+  "Preterite>Present perfect":["Present perfect used for a finished past event","In Latin America a finished event with a past time (*ayer, la semana pasada, en 2019*) takes the preterite: *Ayer tuve dolor*, not *he tenido*."],
+  "Present perfect>Preterite":["Preterite used for \"ever / yet / lately\"","Experiences and time up to now (*alguna vez, ya, todavía no, últimamente, esta semana*) take the present perfect: *¿Alguna vez se ha desmayado?*"],
+  "Pluperfect>Preterite":["Preterite used where \"had done\" was needed","For an event that came before another past event, use *había* + participle: *Cuando llegué, ya se había ido*."],
+  "Command (+)>Present":["Statement used where a command was needed","Usted commands use the subjunctive form: *tome, respire, siéntese*, not *toma / respira*."],
+  "Command (−)>Present":["Statement used where a negative command was needed","Negative commands are *no* + subjunctive: *no tome, no se mueva*."],
+  register:["Tú used where usted was needed (or the reverse)","With patients and strangers use usted: verb in the él/ella form (*¿Tiene…?*, *tome*) and *su*, *le*, *se*. Use tú with friends and family."],
+  serestar:["Ser and estar mixed up","*Ser* = what something is (identity, profession, origin, time, events). *Estar* = state, location and how someone is now (*está cansado, está en el hospital*)."],
+  pronoun:["Wrong pronoun or pronoun position","Pronouns go before a conjugated verb (*se lo doy*) and attach to infinitives, gerunds and affirmative commands (*dígame, acuéstese*). Before *lo/la*, *le* becomes *se*."],
+  agree:["Gender or number agreement","Articles, adjectives and possessives match the noun: *la presión alta*, *los pies hinchados*."],
+  accent:["Accent marks","The letters were right but an accent was missing or wrong. Accents change meaning (*tomo* I take / *tomó* he took) and mark commands with pronouns (*acuéstese*)."],
+  person:["Wrong person on the verb","The ending must match who does it: *yo tomo*, *usted toma*, *nosotros tomamos*, *ellos toman*."],
+  prep:["Prepositions","Spanish prepositions don't map one-to-one to English: *pensar en*, *depender de*, *llegar a*, *desde hace*."],
+  order:["Word order","Spanish usually goes subject–verb–object, with pronouns before the conjugated verb and *no* right before the verb (or its pronoun)."],
+  question:["Question words","*¿Qué?* what, *¿cuál?* which/what (before *es*), *¿cuándo?*, *¿dónde?*, *¿cuánto?*, *¿por qué?*; all carry accents."],
+  neg:["Negation","*No* goes before the verb; with *nunca, nada, nadie* Spanish keeps the double negative: *No tomo nada*."],
+  infl:["Infinitive or gerund where a conjugated verb was needed","After a subject, the verb must be conjugated. Use the infinitive after another verb (*quiero tomar*) or a preposition (*antes de comer*)."]
+};
+function confText(key){
+  if(CONF[key]) return CONF[key];
+  if(key.includes(">")){ const [want,got]=key.split(">"); return [`${got} used where the ${want.toLowerCase()} was needed`, `Needed **${want}**: ${DR.use[want]||""} You used **${got}**: ${DR.use[got]||""}`]; }
+  return [key,""];
+}
+function weakWords(){
+  return Object.entries(LR.w).filter(([k,[a,n]])=>n>=2 && a<0.75).sort((x,y)=>x[1][0]-y[1][0]).slice(0,12).map(([k,[a,n]])=>{
+    const [lid,ix]=k.split(":"); const set=VSET["V"+lid]; const e=set&&set.entries[+ix]; return e?{k, a, n, e, lid}:null; }).filter(Boolean);
+}
+function reviewState(ids){
+  const d=today(); let due=0; for(const id of ids){ const r=LR.srs[id]; if(r && r[1]<=d) due++; }
+  const ev=LR.log.filter(e=>ids.has(e.id)).slice(-20);
+  const acc = ev.length>=10 ? ev.filter(e=>e.ok).length/ev.length : null;
+  return {due, acc, needs: due>=8 || (acc!==null && acc<0.8)};
+}
+const dueCount = () => { const d=today(); let n=0; for(const id in LR.srs) if(LR.srs[id][1]<=d && itemAvailable(id)) n++; return n; };
+
+/* ---------- Today ---------- */
+const frontierLevel = tr => TRACKS[tr].ids.find(id=>unlocked(id) && !(P.lv[id]&&P.lv[id].passed));
+const frontierDrill = list => list.find(id=>drillUnlocked(id) && !(P.lv[id]&&P.lv[id].passed));
+function poolForSkill(s){ return Object.values(ALL).filter(a=>a.it.t!=="wt" && (a.it.sk||[]).includes(s) && itemAvailable(a.it.id)).map(a=>a.it); }
+function poolForConf(key){
+  if(key.includes(">")){ const [want,got]=key.split(">"); const all=Object.values(ALL).filter(a=>a.it.t!=="wt" && a.it.tn===want && itemAvailable(a.it.id)).map(a=>a.it);
+    const trap=all.filter(it=>Object.values(it.oe||{}).includes("tense:"+got)); return trap.length>=6 ? trap : trap.concat(all.filter(it=>!trap.includes(it))); }
+  const s={register:"g:register",serestar:"g:serestar",pronoun:"g:objpron",agree:"g:agree",accent:"s:accents",person:"g:person",prep:"g:prep",order:"s:order",question:"g:questions",neg:"g:neg",infl:"g:person"}[key];
+  if(key==="accent") return Object.values(ALL).filter(a=>a.it.t==="fill" && /[áéíóúñü]/i.test((a.it.a||[""])[0]) && itemAvailable(a.it.id)).map(a=>a.it);
+  return s ? poolForSkill(s) : [];
+}
+function buildToday(){
+  const d=today(), N=20, used=new Set(), units=[], counts={due:0, weak:0, fresh:0};
+  const add=(it,kind)=>{ if(!it || used.has(it.id)) return false; used.add(it.id); units.push(it); counts[kind]++; return true; };
+  const weak=weakSkills().slice(0,3).map(r=>r.id);
+  const due=Object.keys(LR.srs).filter(id=>LR.srs[id][1]<=d && itemAvailable(id) && ALL[id].it.t!=="wt").map(id=>ALL[id].it)
+    .sort((a,b)=>{ const wa=(a.sk||[]).some(s=>weak.includes(s)), wb=(b.sk||[]).some(s=>weak.includes(s)); return (wb-wa) || (LR.srs[a.id][1]-LR.srs[b.id][1]) || (LR.srs[a.id][0]-LR.srs[b.id][0]); });
+  due.slice(0,12).forEach(it=>add(it,"due"));
+  for(const s of weak) weightedPick(poolForSkill(s).filter(it=>!used.has(it.id)), 2).forEach(it=>add(it,"weak"));
+  const fronts=[frontierLevel("conv"), frontierLevel("med"), frontierDrill(DLISTS.tense), frontierDrill(DLISTS.vconv), frontierDrill(DLISTS.vmed)].filter(Boolean);
+  const pools=fronts.map(f=>shuffle((LV[f] ? LV[f].items : (TSET[f]||VSET[f]).pool.map(x=>ITEM[x])).filter(it=>it.t!=="dlg" && !LR.srs[it.id])));
+  let guard=0;
+  while(units.length<N && pools.some(p=>p.length) && guard++<200) for(const p of pools){ if(units.length>=N) break; while(p.length && !add(p.shift(),"fresh")); }
+  if(units.length<N){ const seen=Object.keys(LR.srs).filter(id=>itemAvailable(id)&&!used.has(id)&&ALL[id].it.t!=="wt").map(id=>ALL[id].it); weightedPick(seen, N-units.length).forEach(it=>add(it,"due")); }
+  return {units:shuffle(units), counts, weak, fronts};
+}
+function startToday(){
+  const t=buildToday();
+  if(!t.units.length) return;
+  launch({id:"today", title:"Today", chip:"Today", mode:"practice", units:t.units, src:"today", requeue:true,
+    back:{name:"home"}, retry:startToday});
+}
+function startFocus(title, pool, n){
+  const units=weightedPick(pool, n||12);
+  if(!units.length) return false;
+  launch({id:"focus", title:"Weak spots", chip:title, mode:"practice", units, src:"focus", back:{name:"weak"}, retry:()=>startFocus(title,pool,n)});
+}
+function todayPanel(){
+  const t=buildToday(), weak=weakSkills().slice(0,3), seenAny=Object.keys(LR.srs).length>0;
+  const parts=[]; if(t.counts.due) parts.push(`${t.counts.due} review${t.counts.due>1?"s":""}`); if(t.counts.weak) parts.push(`${t.counts.weak} for weak spots`); if(t.counts.fresh) parts.push(`${t.counts.fresh} new`);
+  const fr=t.fronts.filter(f=>LV[f]).join(" and ");
+  return `<section class="panelbox today"><div class="row" style="justify-content:space-between;align-items:flex-start">
+      <div style="min-width:0"><h2>Today</h2><p class="sub" style="margin:2px 0 0">${t.units.length?`${t.units.length} questions: ${parts.join(" · ")}.`:"Nothing to study yet."} ${seenAny?"":`Starts with new material from ${fr||"your current levels"}; reviews and weak spots appear as you answer.`}</p>
+      ${weak.length?`<p style="margin:8px 0 0">Weakest right now: ${weak.map(w=>`<span class="chip warn">${esc(skName(w.id))} ${Math.round(w.a*100)}%</span>`).join(" ")}</p>`:""}</div>
+      <div class="row"><button class="btn primary" id="startToday" ${t.units.length?"":"disabled"}>Start today's session</button><button class="btn" id="openWeak">Weak spots</button><button class="btn" id="openCards">Verb cards</button></div></div></section>`;
+}
+function wireToday(){
+  if($("startToday")) $("startToday").onclick=startToday;
+  if($("openWeak")) $("openWeak").onclick=()=>go({name:"weak"});
+  if($("openCards")) $("openCards").onclick=()=>go({name:"cards"});
+}
+
+/* ---------- Weak spots page ---------- */
+function studyLink(target){ if(!target) return ""; return `<button class="linkbtn" data-study="${target}">Study</button>`; }
+function goStudy(target){ if(target[0]==="T") return go({name:"drill",id:target,tab:"study"}); if(LV[target]) return go({name:"level",id:target,tab:"learn"}); }
+function renderWeak(){
+  const rows=skillRows(), conf=confusions(14), words=weakWords();
+  const talks=LR.log.filter(e=>e.s==="talk").slice(-8).reverse();
+  const total=LR.log.filter(e=>e.s!=="talk").length;
+  const lvReview=TRACKS.conv.ids.concat(TRACKS.med.ids).filter(id=>P.lv[id]&&P.lv[id].passed).map(id=>({id, st:reviewState(LVIDS[id])})).filter(x=>x.st.needs);
+  const bar = a => `<span class="bar" style="max-width:120px"><i style="width:${Math.round(a*100)}%;background:${a<WEAK?"var(--bad)":a<0.9?"var(--warn)":"var(--ok)"}"></i></span>`;
+  const skillHTML = rows.length ? `<div class="tablewrap"><table class="vtable sk">${rows.map(r=>`<tr><td><b>${esc(skName(r.id))}</b>${r.ready?"":`<br><span class="sub">${r.n} answer${r.n>1?"s":""}; needs ${MIN_N} to rate</span>`}</td>
+      <td class="num">${r.ready?`${Math.round(r.a*100)}%`:"—"}</td><td>${r.ready?bar(r.a):""}</td>
+      <td class="acts"><button class="btn sm" data-fs="${r.id}">Practice</button> ${studyLink(SKILLS[r.id][1])} <button class="linkbtn" data-gen="${r.id}">AI practice</button></td></tr>`).join("")}</table></div>`
+    : `<p style="margin:0">No answers recorded yet. Skills appear here as you practice; each one is rated after ${MIN_N} answers.</p>`;
+  const confHTML = conf.length ? conf.slice(0,6).map(c=>{ const [title,expl]=confText(c.key); return `<div class="conf"><div class="row" style="justify-content:space-between"><b>${esc(title)}</b><span class="chip warn">${c.n}× in 2 weeks</span></div>
+      <p class="why" style="margin:0">${md(expl)}</p>
+      ${c.ex.slice(0,2).map(e=>`<div class="miss" style="border:0;padding:0"><span class="sub">${md(e.q||"")}</span><span>You: <span class="es">${esc(e.y)}</span> · Answer: <span class="es">${esc(e.r)}</span></span></div>`).join("")}
+      <div class="row"><button class="btn sm" data-fc="${esc(c.key)}">Practice this</button><button class="linkbtn" data-genc="${esc(c.key)}">AI practice</button></div></div>`; }).join("")
+    : `<p style="margin:0">${total<20?"Patterns show up after a few sessions.":"No repeated mistake pattern in the last two weeks."}</p>`;
+  const wordHTML = words.length ? `<div class="tablewrap"><table class="vtable">${words.map(w=>`<tr><td>${playBtn(w.e.w.replace(/\s*\(.*?\)/g,""))}</td><td><b class="es">${esc(w.e.w)}</b> <span class="en">${esc(w.e.en)}</span><br><i class="es">${esc(w.e.ex)}</i> <span class="sub">${Math.round(w.a*100)}%</span></td></tr>`).join("")}</table></div>
+      <div class="row"><button class="btn sm" id="practiceWords">Practice these words</button></div>` : `<p style="margin:0">No words flagged yet.</p>`;
+  const diag = LR.diag;
+  $("view").innerHTML = `<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← Home</button></div><h2>Weak spots</h2>
+      <p class="intro" style="margin:0">Built from ${total} recorded answers. Skill accuracy weighs your recent answers most. A skill is flagged below ${Math.round(WEAK*100)}%.</p></div>
+    <div class="panelbox"><h3>Coach's read</h3><div id="diag">${diag?diagHTML(diag):`<p style="margin:0">Claude reads your record and tells you what to work on next. Uses your Claude usage.</p>`}</div>
+      <div class="row"><button class="btn" id="getDiag" ${total<15?"disabled":""}>${diag?"Refresh the read":"Get a read on my weak spots"}</button>${total<15?`<span class="sub">Available after 15 answers.</span>`:""}<span class="sub" id="diagStatus"></span></div></div>
+    <div class="panelbox"><h3>Mistake patterns · last 2 weeks</h3>${confHTML}</div>
+    <div class="panelbox"><h3>Skills</h3>${skillHTML}</div>
+    <div class="panelbox"><h3>Words to review</h3>${wordHTML}</div>
+    ${lvReview.length?`<div class="panelbox"><h3>Passed levels that need review</h3>${lvReview.map(x=>`<div class="row" style="justify-content:space-between"><span><b>${x.id}</b> ${esc(LV[x.id].title)} <span class="sub">${x.st.due} due${x.st.acc!==null?` · recent ${Math.round(x.st.acc*100)}%`:""}</span></span><button class="btn sm" data-rl="${x.id}">Review</button></div>`).join("")}</div>`:""}
+    <div class="panelbox"><h3>From your conversations</h3>${talks.length?talks.map(e=>`<div class="miss" style="border:0;padding:0"><span>You: <span class="es">${esc(e.y)}</span></span><span>Better: <span class="es">${esc(e.r)}</span> ${playBtn(e.r)}</span><span class="sub">${esc(skName(e.e.slice(5)))}${e.q?" · "+esc(e.q):""}</span></div>`).join(""):`<p style="margin:0">Corrections from the Talk conversations appear here.</p>`}</div>
+    <p class="sub">AI practice is generated on the spot and hasn't been reviewed like the rest of the course; it doesn't change your record.</p>`;
+  $("back").onclick=()=>go({name:"home"});
+  const none=b=>{ b.textContent="No unlocked questions yet"; b.disabled=true; };
+  $("view").querySelectorAll("[data-fs]").forEach(b=>b.onclick=()=>{ if(startFocus(skName(b.dataset.fs), poolForSkill(b.dataset.fs))===false) none(b); });
+  $("view").querySelectorAll("[data-fc]").forEach(b=>b.onclick=()=>{ if(startFocus(confText(b.dataset.fc)[0], poolForConf(b.dataset.fc))===false) none(b); });
+  $("view").querySelectorAll("[data-study]").forEach(b=>b.onclick=()=>goStudy(b.dataset.study));
+  $("view").querySelectorAll("[data-gen]").forEach(b=>b.onclick=()=>genPractice({skill:b.dataset.gen}, b));
+  $("view").querySelectorAll("[data-genc]").forEach(b=>b.onclick=()=>genPractice({conf:b.dataset.genc}, b));
+  $("view").querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{ const id=b.dataset.rl, d=today(); const pool=LV[id].items.filter(i=>LR.srs[i.id]); const due=pool.filter(i=>LR.srs[i.id][1]<=d);
+    startFocus(`Review ${id}`, due.length>=6?due:pool); });
+  if($("practiceWords")) $("practiceWords").onclick=()=>{ const keys=new Set(words.map(w=>w.k)); startFocus("Words to review", Object.values(ALL).filter(a=>(a.it.w||[]).some(k=>keys.has(k)) && a.it.id.startsWith("v:")).map(a=>a.it)); };
+  $("getDiag").onclick=getDiagnosis;
+  $("reset-area").innerHTML="";
+}
+
+/* ---------- AI: diagnosis, generated practice, steering ---------- */
+function learnerSummary(){
+  const lines=[];
+  const lvl=[...TRACKS.conv.ids,...TRACKS.med.ids].map(id=>{ const p=P.lv[id]; return `${id}${p&&p.passed?" passed":unlocked(id)?" in progress":" locked"}`; });
+  lines.push("Levels: "+lvl.join(", "));
+  const rows=skillRows().filter(r=>r.ready);
+  if(rows.length) lines.push("Skill accuracy (recent-weighted, attempts): "+rows.map(r=>`${skName(r.id)} ${Math.round(r.a*100)}% (${r.n})`).join("; "));
+  const conf=confusions(14);
+  if(conf.length) lines.push("Repeated mistakes, last 14 days:\n"+conf.slice(0,6).map(c=>`- ${confText(c.key)[0]} ×${c.n}`+c.ex.slice(0,2).map(e=>`\n    e.g. "${e.q}" → learner: "${e.y}", correct: "${e.r}"`).join("")).join("\n"));
+  const ww=weakWords(); if(ww.length) lines.push("Words often missed: "+ww.map(w=>`${w.e.w} (${w.e.en})`).join(", "));
+  const talks=LR.log.filter(e=>e.s==="talk").slice(-6); if(talks.length) lines.push("Recent conversation corrections:\n"+talks.map(e=>`- "${e.y}" → "${e.r}" (${skName(e.e.slice(5))})`).join("\n"));
+  const n7=recentLog(7, e=>e.s!=="talk"); lines.push(`Answers in the last 7 days: ${n7.length}, correct ${n7.length?Math.round(100*n7.filter(e=>e.ok).length/n7.length):0}%.`);
+  return lines.join("\n");
+}
+function diagHTML(d){
+  return `<p style="margin:0"><b>${esc(d.headline||"")}</b></p>${(d.focus||[]).map(f=>`<div class="miss" style="border:0;padding:0"><span><b>${esc(f.area)}</b> ${esc(f.why)}</span><span class="sub">${esc(f.how)}</span></div>`).join("")}
+    ${d.next?`<p style="margin:0">Next: ${esc(d.next)}</p>`:""}<p class="sub" style="margin:0">From ${esc(d.date||"")}</p>`;
+}
+async function getDiagnosis(){
+  const sample=await getSample(); const st=$("diagStatus");
+  if(!sample){ st.textContent="Claude isn't available on this page."; return; }
+  $("getDiag").disabled=true; st.textContent="Reading your record…";
+  const prompt=`You are a Spanish coach for an American cardiac electrophysiologist learning conversational and medical Spanish (Latin American, usted with patients). His study app has a Conversation track (C1–C8), a Medical track (M1–M8), verb-tense drill sets T1–T10, vocabulary sets, and verb cards.
+
+His learning record:
+${learnerSummary()}
+
+Diagnose the 2–3 things that would most improve his Spanish now. Be specific and grounded only in the record; if the data is thin, say so. No praise or filler.
+Reply with only JSON: {"headline":"one sentence","focus":[{"area":"short name","why":"what the record shows, with numbers","how":"one concrete action in the app or in conversation"}],"next":"the single next session to do"}`;
+  try{
+    const o=await sample.json(prompt,{cache:false, modelTier:"default", effort:"low"});
+    LR.diag={day:today(), date:new Date().toLocaleDateString(), headline:String(o.headline||""), focus:(Array.isArray(o.focus)?o.focus:[]).slice(0,3).map(f=>({area:String(f.area||""),why:String(f.why||""),how:String(f.how||"")})), next:String(o.next||"")};
+    dirtyDocs.add("learner"); saveLR(); $("diag").innerHTML=diagHTML(LR.diag); st.textContent="";
+  }catch(e){ st.textContent=talkError(e); }
+  finally{ if($("getDiag")) $("getDiag").disabled=false; }
+}
+function grammarScope(){
+  const passed=TRACKS.conv.ids.filter(id=>P.lv[id]&&P.lv[id].passed);
+  const cur=frontierLevel("conv"); const ids=passed.concat(cur?[cur]:[]);
+  return ids.map(id=>`${id} ${LV[id].title}: ${LV[id].grammar.map(g=>g.h).join("; ")}`).join("\n");
+}
+async function genPractice(target, btn){
+  const sample=await getSample();
+  if(!sample){ btn.textContent="Claude isn't available here"; return; }
+  const label = target.skill ? skName(target.skill) : confText(target.conf)[0];
+  const examples = LR.log.filter(e=>!e.ok && e.y && (target.skill ? (ALL[e.id]&&(ALL[e.id].it.sk||[]).includes(target.skill)) : (target.conf.includes(">") ? e.tn+">"+e.e.slice(6)===target.conf : e.e===target.conf))).slice(-4);
+  const old=btn.textContent; btn.disabled=true; btn.textContent="Writing questions…";
+  const prompt=`Write 8 practice questions for an American doctor learning Latin American Spanish (usted with patients, tú with friends; no vosotros).
+Focus: ${label}. ${target.conf?confText(target.conf)[1]:""}
+${examples.length?"His recent mistakes:\n"+examples.map(e=>`- "${e.q}" he answered "${e.y}", correct "${e.r}"`).join("\n"):""}
+Use only grammar he has studied:
+${grammarScope()}
+Mix everyday and clinic situations. Each question must have exactly one correct answer; make wrong options plausible but clearly wrong, and target his mistake pattern.
+Reply with only a JSON array of 8 objects, each either
+{"t":"mc","q":"Spanish sentence with ___","qen":"English translation","opts":["4 options"],"a":<index of correct>,"why":"one-sentence rule"}
+or {"t":"fill","q":"Spanish sentence with ___","en":"English translation","hint":"infinitive (tense/person)","a":["every accepted answer"],"why":"one-sentence rule"}.
+Use about 5 mc and 3 fill.`;
+  try{
+    const arr=await sample.json(prompt,{cache:false, modelTier:"default", effort:"low"});
+    const units=(Array.isArray(arr)?arr:[]).map((x,i)=>{
+      const id="ai:"+Date.now()+":"+i;
+      if(x && x.t==="mc" && typeof x.q==="string" && Array.isArray(x.opts) && x.opts.length>=3 && x.opts.length<=4 && x.opts.every(o=>typeof o==="string"&&o.trim()) && new Set(x.opts.map(o=>o.toLowerCase())).size===x.opts.length && Number.isInteger(x.a) && x.a>=0 && x.a<x.opts.length)
+        return {t:"mc", id, q:x.q, qen:String(x.qen||""), opts:x.opts, a:x.a, why:String(x.why||"")};
+      if(x && x.t==="fill" && typeof x.q==="string" && x.q.includes("___") && Array.isArray(x.a) && x.a.length && x.a.every(o=>typeof o==="string"&&o.trim()))
+        return {t:"fill", id, q:x.q, en:String(x.en||""), hint:String(x.hint||""), a:x.a, why:String(x.why||"")};
+      return null; }).filter(Boolean);
+    if(!units.length){ btn.textContent="Couldn't use the reply — try again"; return; }
+    launch({id:"ai", title:"Weak spots", chip:"AI practice · not reviewed", mode:"practice", units, noRecord:true, back:{name:"weak"}, retry:()=>go({name:"weak"})});
+  }catch(e){ btn.textContent=talkError(e)||old; }
+  finally{ btn.disabled=false; }
+}
+function steerText(){
+  const weak=weakSkills().slice(0,3).map(r=>skName(r.id));
+  const conf=confusions(14).slice(0,3).map(c=>confText(c.key)[0]);
+  if(!weak.length && !conf.length) return "";
+  return `\nThe learner's current weak spots: ${[...weak,...conf].join("; ")}. Where it fits the scenario naturally, steer the conversation so he has to use these (for example, ask questions whose natural answer needs them). Never lecture or mention this.`;
+}
+
+/* ---------- Verb cards (merged from the flashcards page) ---------- */
+const VPERS = ["yo","tú","usted / él / ella","nosotros","ustedes / ellos"];
+let CS = Object.assign({set:"all", verb:"", tense:"", mode:"wt", nw:"20"}, store.get("csc:cards",{}));
+function cardPool(){
+  const ok=v=>(CS.set==="all"||String(v.part)===CS.set) && (!CS.verb||v.v===CS.verb);
+  if(CS.mode==="form") return DR.items.filter(it=>it.id.startsWith("cj:")).filter(it=>{ const [,vv,tn]=it.id.split(":"); const v=VERBS.find(x=>x.v===vv); return v && ok(v) && (!CS.tense||tn===CS.tense); });
+  const pre=CS.mode==="wt"?"wt:":"fc:";
+  const out=[]; VERBS.forEach(v=>{ if(!ok(v)) return; v.rows.forEach((r,ri)=>{ if(CS.tense && r.t!==CS.tense) return; const a=ALL[pre+v.v+":"+ri]; if(a) out.push(a.it); }); });
+  return out;
+}
+function renderCards(){
+  const pool=cardPool(), d=today();
+  const due=pool.filter(it=>LR.srs[it.id] && LR.srs[it.id][1]<=d), fresh=pool.filter(it=>!LR.srs[it.id]), learned=pool.filter(it=>LR.srs[it.id] && LR.srs[it.id][0]>=3);
+  const modes=[["wt","Whole tense","say all five forms, grade yourself"],["fc","Fill the blank","type the form in a sentence"],["form","Type one form","one person, spelling and accents"]];
+  $("view").innerHTML=`<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← Home</button></div><h2>Verb cards</h2>
+      <p class="intro" style="margin:0">The 50 verbs (30 general, 20 clinical) in 9 tenses plus commands. Cards come back on a review schedule, and every answer feeds your weak-spot record.</p></div>
+    <div class="tabs" role="tablist">${modes.map(([k,n,s])=>`<button role="tab" data-cm="${k}" aria-selected="${CS.mode===k}">${n}<small style="display:block;font-weight:400;font-size:.72rem">${s}</small></button>`).join("")}</div>
+    <div class="panelbox"><div class="row">
+      <label class="sub" for="c-set">Verbs <select id="c-set"><option value="all">All 50</option><option value="1">General (1–30)</option><option value="2">Clinical (31–50)</option></select></label>
+      <label class="sub" for="c-verb">One verb <select id="c-verb"><option value="">Any</option>${VERBS.map((v,i)=>`<option value="${esc(v.v)}">${i+1}. ${esc(v.v)}</option>`).join("")}</select></label>
+      <label class="sub" for="c-tense">Tense <select id="c-tense"><option value="">All tenses</option>${TENSES.map(t=>`<option>${t}</option>`).join("")}</select></label>
+      <label class="sub" for="c-new">New cards <select id="c-new"><option>10</option><option>20</option><option>40</option></select></label></div>
+      <p style="margin:0"><b>${due.length}</b> due · <b>${fresh.length}</b> new · <b>${learned.length}</b> of <b>${pool.length}</b> learned</p>
+      <div class="row"><button class="btn primary" id="c-start" ${due.length||fresh.length?"":"disabled"}>Study ${Math.min(30, due.length+Math.min(fresh.length,+CS.nw))} cards</button>${!due.length&&!fresh.length&&pool.length?`<button class="btn" id="c-early">Review early</button>`:""}</div></div>
+    <details class="panelbox" id="imp"><summary><b>Bring over progress from the old flashcards page</b></summary>
+      <ol style="margin:8px 0 0;padding-left:20px"><li>Open the <b>Clinic Spanish Flashcards</b> page and press <b>Copy my progress</b> at the top.</li><li>Come back here, click in the box below and paste (⌘V on a Mac).</li><li>Press <b>Import</b>.</li></ol>
+      <textarea id="impText" rows="3" style="width:100%;font:.8rem var(--f-mono);margin-top:8px" placeholder="Paste here"></textarea>
+      <div class="row"><button class="btn" id="impBtn">Import</button><span class="sub" id="impMsg"></span></div></details>`;
+  $("c-set").value=CS.set; $("c-verb").value=CS.verb; $("c-tense").value=CS.tense; $("c-new").value=CS.nw;
+  const saveCS=()=>store.set("csc:cards",CS);
+  [["c-set","set"],["c-verb","verb"],["c-tense","tense"],["c-new","nw"]].forEach(([el,k])=>$(el).onchange=e=>{ CS[k]=e.target.value; saveCS(); renderCards(); });
+  $("view").querySelectorAll("[data-cm]").forEach(b=>b.onclick=()=>{ CS.mode=b.dataset.cm; saveCS(); renderCards(); });
+  $("back").onclick=()=>go({name:"home"});
+  const run_ = units=>launch({id:"cards", title:"Verb cards", chip:"Verb cards", mode:"practice", units, src:"cards", requeue:true, back:{name:"cards"}, retry:()=>go({name:"cards"})});
+  $("c-start").onclick=()=>{ const q=due.sort((a,b)=>LR.srs[a.id][1]-LR.srs[b.id][1]).slice(0,30); run_(q.concat(fresh.slice(0, Math.max(0,Math.min(+CS.nw, 30-q.length))))); };
+  if($("c-early")) $("c-early").onclick=()=>run_(weightedPick(pool.filter(it=>LR.srs[it.id]),20));
+  $("impBtn").onclick=()=>{ try{ const n=importCards($("impText").value); $("impMsg").textContent=n?`Imported ${n} cards.`:"Nothing new to import."; if(n) setTimeout(renderCards,900); }catch(e){ $("impMsg").textContent="That didn't look like copied progress. Copy it again from the flashcards page."; } };
+  $("reset-area").innerHTML="";
+}
+function importCards(text){
+  const o=JSON.parse(text.trim()); const pr=o.progress||o; let n=0;
+  const map=(m,id)=>{ const p=id.split(":");
+    if(m==="tense"&&p[0]==="t") return `wt:${p[1]}:${p[2]}`;
+    if(m==="cloze"&&p[0]==="c") return `fc:${p[1]}:${p[2]}`;
+    if(m==="form"&&p[0]==="f"){ const v=VERBS.find(x=>x.v===p[1]); return v&&v.rows[+p[2]] ? `cj:${p[1]}:${v.rows[+p[2]].t}:${p[3]}` : null; }
+    return null; };
+  for(const m of ["tense","cloze","form"]) for(const id in pr[m]||{}){
+    const nid=map(m,id); if(!nid || !ALL[nid]) continue;
+    const rec=pr[m][id], cur=LR.srs[nid], last=dayOf(rec.t||Date.now());
+    if(cur && cur[4]>=last) continue;
+    LR.srs[nid]=[Math.min(Math.max(rec.b|0,0),6), Math.max(dayOf(rec.d||Date.now()), today()), (cur?cur[2]:0)+1, (cur?cur[3]:0)+((rec.b|0)>0?1:0), last];
+    dirtyDocs.add(shardOf(nid)); n++;
+  }
+  if(n){ LR.mig.cards=true; dirtyDocs.add("learner"); saveLR(); }
+  return n;
+}
+function mountWholeTense(ex, it, done){
+  const v=VERBS[it.vi], r=v.rows[it.ri];
+  ex.innerHTML=`<span class="kind">Whole tense</span><p class="q" style="font-size:2rem;margin:0">${esc(v.v)} ${playBtn(v.v)}</p><p class="qen">${esc(v.g)}</p>
+    <p class="q" style="font-style:italic;margin:0">${esc(r.t)}</p><p class="sub" style="margin:0">${md(DR.use[r.t])} Say all five forms out loud, then show the answer.</p>
+    <div class="actions"><button class="btn primary" id="showWT">Show answer</button></div>`;
+  $("showWT").focus({preventScroll:true});
+  $("showWT").onclick=()=>{
+    ex.querySelector(".actions").remove();
+    ex.insertAdjacentHTML("beforeend", `<dl class="forms">${r.f.map((x,i)=>`<dt>${VPERS[i]}</dt><dd>${esc(x)} ${x!=="—"?playBtn(x.split(" / ")[0].replace(/\s*\(.*\)/,"")):""}</dd>`).join("")}</dl>
+      ${r.es?`<div class="fb"><span class="ans">${esc(r.es)} ${playBtn(r.es)}</span><span class="sub">${esc(r.en)}</span></div>`:""}<p class="sub" style="margin:0">${md(v.n)}</p>
+      <p class="sub" style="margin:0">How did you do?</p><div class="grades">${["Again","Hard","Good","Easy"].map((g,i)=>`<button class="btn g${i}" data-g="${i}">${g}</button>`).join("")}</div>`);
+    autoSay(r.es || r.f.filter(x=>x!=="—").join(", "));
+    const grade=g=>done([{id:it.id, ok:g>=2, grade:g, err:g>=2?"":"other", q:`${v.v} · ${r.t}`, your:["Again","Hard","Good","Easy"][g], right:r.f.filter(x=>x!=="—").join(", "), sk:it.sk, tn:r.t}]);
+    ex.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>grade(+b.dataset.g));
+    ex.querySelector('[data-g="2"]').focus({preventScroll:true});
+  };
+}
+
+/* ---------------- keys ---------------- */
+document.addEventListener("keydown",e=>{
+  if(e.target&&/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
+  if((e.key==="p"||e.key==="P") && lastSay){ e.preventDefault(); speak(lastSay); }
+});
+
+const _render=render;
+render = function(){ if(view.name==="talk") return renderTalk(); if(["drill","weak","cards"].includes(view.name)){ synth&&synth.cancel(); astatus(""); return view.name==="drill"?renderDrill():view.name==="weak"?renderWeak():renderCards(); } return _render(); };
+render();
+/* ---------- back up / move progress ---------- */
+function exportAll(){
+  const docs={course:{lv:P.lv,it:P.it,v:1}};
+  ["learner","log",...SHARDS].forEach(n=>docs[n]=docBody(n));
+  return JSON.stringify({app:"clinic-spanish", v:1, at:Date.now(), docs});
+}
+function importAll(text){
+  const o=JSON.parse(String(text).trim());
+  if(!o || o.app!=="clinic-spanish" || !o.docs) throw new Error("bad");
+  const d=o.docs; let n=0;
+  if(d.course){ mergeP(d.course); store.set("csc:progress",P); n++; }
+  ["learner","log",...SHARDS].forEach(k=>{ if(d[k]){ mergeLR(k, d[k]); n++; } });
+  ["learner","log",...SHARDS].forEach(k=>dirtyDocs.add(k));
+  saveLR(); dirty=true; flush(); flushLR();
+  return n;
+}
+$("xCopy").onclick=async()=>{
+  const t=exportAll(); let ok=false;
+  try{ await navigator.clipboard.writeText(t); ok=true; }catch(e){}
+  if(ok){ $("xMsg").textContent=`Copied (${Math.round(t.length/1024)} KB). Now paste it into the other copy of the course.`; }
+  else { const ta=$("xText"); ta.value=t; ta.focus(); ta.select(); $("xMsg").textContent="Your browser blocked automatic copying. The text is selected in the box below: copy it (⌘C or Ctrl+C)."; }
+};
+$("xImp").onclick=()=>{
+  const ta=$("xText");
+  try{ const n=importAll(ta.value); ta.value=""; $("xMsg").textContent=`Imported and merged (${n} parts). Syncing now.`; render(); }
+  catch(e){ $("xMsg").textContent="That didn't look like copied progress from this course. Copy it again and paste the whole text."; }
+};
+
+connect();
+</script>

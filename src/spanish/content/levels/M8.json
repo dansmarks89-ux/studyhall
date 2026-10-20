@@ -1,0 +1,1469 @@
+{
+ "id": "M8",
+ "track": "med",
+ "n": 8,
+ "title": "After the procedure and follow-up",
+ "goal": "Give discharge instructions, explain warning signs and when to call or go to the ER, arrange follow-up, and reassure patients and families after a procedure.",
+ "bestAfter": "C8",
+ "grammar": [
+  {
+   "h": "Discharge instructions: usted commands",
+   "p": "Affirmative commands attach the pronoun and take a written accent (*llámenos*, *acuéstese*). Negative commands put the pronoun first (*no se moje la herida*, *no lo deje de tomar*). Keep time limits generic: *por unos días*, *por unas semanas*, *hasta que su médico le diga*.",
+   "ex": [
+    [
+     "No se moje la herida por unos días.",
+     "Don't get the wound wet for a few days."
+    ],
+    [
+     "No levante cosas pesadas.",
+     "Don't lift heavy things."
+    ],
+    [
+     "Si tiene fiebre, llámenos.",
+     "If you have a fever, call us."
+    ]
+   ]
+  },
+  {
+   "h": "Real conditions: si + present",
+   "p": "For warning signs that may really happen, use *si* + present indicative, then a command or the present/future. Never use the present subjunctive after *si*.",
+   "ex": [
+    [
+     "Si le sangra la ingle, apriete fuerte y llame al 911.",
+     "If your groin bleeds, press hard and call 911."
+    ],
+    [
+     "Si la herida se pone roja o caliente, llámenos.",
+     "If the wound gets red or warm, call us."
+    ],
+    [
+     "Si tiene dolor de pecho, vaya a emergencias.",
+     "If you have chest pain, go to the emergency room."
+    ]
+   ]
+  },
+  {
+   "h": "Advice and hypotheticals: conditional and si + imperfect subjunctive",
+   "p": "Soften advice with the conditional (*yo en su lugar, descansaría*; *le recomendaría que…*). For hypothetical situations: *si* + imperfect subjunctive (-ra) + conditional: *Si tuviera fiebre, ¿qué haría?* The conditional also makes polite requests: *¿Podría…?*",
+   "ex": [
+    [
+     "Si yo fuera usted, no manejaría todavía.",
+     "If I were you, I wouldn't drive yet."
+    ],
+    [
+     "Le recomendaría que caminara un poco cada día.",
+     "I'd recommend that you walk a little every day."
+    ],
+    [
+     "Si tuviera fiebre, ¿qué haría usted?",
+     "If you had a fever, what would you do?"
+    ]
+   ]
+  },
+  {
+   "h": "Reported instructions and como si",
+   "p": "When the trigger verb is in the past (*me dijo que*, *me pidió que*), the subjunctive moves to the imperfect subjunctive: *La enfermera me dijo que llamara si tenía fiebre.* *Como si* always takes the imperfect subjunctive: *Siento como si el corazón me latiera muy rápido.*",
+   "ex": [
+    [
+     "El doctor me dijo que no manejara.",
+     "The doctor told me not to drive."
+    ],
+    [
+     "Le pedí que regresara a la clínica.",
+     "I asked him to come back to the clinic."
+    ],
+    [
+     "Siento como si me faltara el aire.",
+     "I feel as if I'm short of breath."
+    ]
+   ]
+  },
+  {
+   "h": "Phone calls, empathy and conversational glue",
+   "p": "Present perfect to check in on the recent past (*¿Cómo se ha sentido?*, *¿Ha tenido fiebre?*). Empathy with the subjunctive (*me alegra que*, *siento que*, *espero que*). Glue for real conversations: *pues*, *bueno*, *a ver*, *o sea*, *perdón, ¿cómo dijo?*, *¿me lo puede repetir más despacio?*",
+   "ex": [
+    [
+     "Le hablo de la clínica. ¿Cómo se ha sentido?",
+     "I'm calling from the clinic. How have you been feeling?"
+    ],
+    [
+     "Me alegra que se sienta mejor.",
+     "I'm glad you're feeling better."
+    ],
+    [
+     "A ver, o sea, ¿el moretón está creciendo?",
+     "Let's see, so is the bruise getting bigger?"
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  [
+   "la herida",
+   "wound / incision"
+  ],
+  [
+   "el vendaje",
+   "bandage / dressing"
+  ],
+  [
+   "los puntos",
+   "stitches"
+  ],
+  [
+   "el pegamento para la piel",
+   "skin glue"
+  ],
+  [
+   "mojarse",
+   "to get wet"
+  ],
+  [
+   "bañarse en la regadera",
+   "to shower"
+  ],
+  [
+   "la tina",
+   "bathtub"
+  ],
+  [
+   "la alberca",
+   "swimming pool"
+  ],
+  [
+   "levantar cosas pesadas",
+   "to lift heavy things"
+  ],
+  [
+   "hacer fuerza",
+   "to strain / exert yourself"
+  ],
+  [
+   "por encima del hombro",
+   "above the shoulder"
+  ],
+  [
+   "el brazo del lado del aparato",
+   "the arm on the side of the device"
+  ],
+  [
+   "el aparato",
+   "the device"
+  ],
+  [
+   "el sangrado que no para",
+   "bleeding that won't stop"
+  ],
+  [
+   "apretar fuerte",
+   "to press hard"
+  ],
+  [
+   "la hinchazón",
+   "swelling"
+  ],
+  [
+   "hinchado / hinchada",
+   "swollen"
+  ],
+  [
+   "rojo y caliente",
+   "red and warm"
+  ],
+  [
+   "el pus",
+   "pus"
+  ],
+  [
+   "la fiebre",
+   "fever"
+  ],
+  [
+   "los escalofríos",
+   "chills"
+  ],
+  [
+   "el dolor de pecho",
+   "chest pain"
+  ],
+  [
+   "la falta de aire",
+   "shortness of breath"
+  ],
+  [
+   "desmayarse",
+   "to faint"
+  ],
+  [
+   "la debilidad de un lado del cuerpo",
+   "weakness on one side of the body"
+  ],
+  [
+   "se le cae un lado de la cara",
+   "one side of the face droops"
+  ],
+  [
+   "la sala de emergencias",
+   "emergency room"
+  ],
+  [
+   "llamar al 911",
+   "to call 911"
+  ],
+  [
+   "la cita de seguimiento",
+   "follow-up appointment"
+  ],
+  [
+   "el monitoreo remoto",
+   "remote monitoring"
+  ],
+  [
+   "el monitor en casa",
+   "the home monitor"
+  ],
+  [
+   "la revisión del aparato",
+   "device check"
+  ],
+  [
+   "la descarga",
+   "shock (from an ICD)"
+  ],
+  [
+   "manejar",
+   "to drive"
+  ],
+  [
+   "regresar al trabajo",
+   "to go back to work"
+  ],
+  [
+   "seguir tomando",
+   "to keep taking"
+  ],
+  [
+   "la molestia",
+   "discomfort"
+  ],
+  [
+   "el moretón",
+   "bruise"
+  ],
+  [
+   "recuperarse",
+   "to recover"
+  ],
+  [
+   "descansar",
+   "to rest"
+  ],
+  [
+   "mejorarse",
+   "to get better"
+  ],
+  [
+   "preocuparse",
+   "to worry"
+  ]
+ ],
+ "phrases": [
+  [
+   "No se moje la herida por unos días.",
+   "Don't get the wound wet for a few days."
+  ],
+  [
+   "No levante cosas pesadas por unos días.",
+   "Don't lift heavy things for a few days."
+  ],
+  [
+   "No levante el brazo por encima del hombro.",
+   "Don't raise your arm above your shoulder."
+  ],
+  [
+   "Si le sangra la ingle, apriete fuerte y llame al 911.",
+   "If your groin bleeds, press hard and call 911."
+  ],
+  [
+   "Si tiene dolor de pecho o falta de aire, llame al 911.",
+   "If you have chest pain or shortness of breath, call 911."
+  ],
+  [
+   "Si tiene fiebre o la herida se pone roja, llámenos.",
+   "If you have a fever or the wound gets red, call us."
+  ],
+  [
+   "Siga tomando su anticoagulante como le indicamos.",
+   "Keep taking your blood thinner as we told you."
+  ],
+  [
+   "No maneje hasta que su médico le diga que puede.",
+   "Don't drive until your doctor tells you that you can."
+  ],
+  [
+   "Su próxima cita es en unas semanas.",
+   "Your next appointment is in a few weeks."
+  ],
+  [
+   "El monitor en casa manda la información de su aparato a la clínica.",
+   "The home monitor sends your device's information to the clinic."
+  ],
+  [
+   "Le hablo de la clínica. ¿Cómo se ha sentido?",
+   "I'm calling from the clinic. How have you been feeling?"
+  ],
+  [
+   "Me alegra que se sienta mejor.",
+   "I'm glad you're feeling better."
+  ],
+  [
+   "Es normal que tenga un poco de molestia.",
+   "It's normal to have a little discomfort."
+  ],
+  [
+   "No se preocupe, estamos aquí para ayudarle.",
+   "Don't worry, we're here to help you."
+  ]
+ ],
+ "items": [
+  {
+   "id": "M8-mc-01",
+   "t": "mc",
+   "q": "How do you tell a patient 'Don't get the wound wet'?",
+   "opts": [
+    "No se moja la herida.",
+    "No te mojes la herida.",
+    "No se moje la herida.",
+    "No se mojó la herida."
+   ],
+   "a": 2,
+   "why": "Negative usted command of *mojarse*: *no se moje*. *Te mojes* is tú; the others are not commands."
+  },
+  {
+   "id": "M8-mc-02",
+   "t": "mc",
+   "q": "Si le sangra la ingle, ___ fuerte con la mano y llame al 911.",
+   "qen": "If your groin bleeds, press hard with your hand and call 911.",
+   "opts": [
+    "aprieta",
+    "apriete",
+    "apretó",
+    "apretaría"
+   ],
+   "a": 1,
+   "why": "Usted command after a real condition (*si* + present) → *apriete*."
+  },
+  {
+   "id": "M8-mc-03",
+   "t": "mc",
+   "q": "After an ablation, which symptom means call 911 / go to the ER right away?",
+   "opts": [
+    "un moretón pequeño en la ingle",
+    "un poco de cansancio",
+    "molestia leve en la ingle",
+    "dolor de pecho fuerte o falta de aire"
+   ],
+   "a": 3,
+   "why": "Chest pain or shortness of breath is an emergency. A small bruise, mild groin discomfort and some fatigue are expected."
+  },
+  {
+   "id": "M8-mc-04",
+   "t": "mc",
+   "q": "Si yo ___ usted, no manejaría todavía.",
+   "qen": "If I were you, I wouldn't drive yet.",
+   "opts": [
+    "soy",
+    "fuera",
+    "sería",
+    "era"
+   ],
+   "a": 1,
+   "why": "Hypothetical *si* + imperfect subjunctive → *fuera*, with the conditional *manejaría*."
+  },
+  {
+   "id": "M8-mc-05",
+   "t": "mc",
+   "q": "Si usted tuviera fiebre, ¿qué ___?",
+   "qen": "If you had a fever, what would you do?",
+   "opts": [
+    "hace",
+    "hizo",
+    "haga",
+    "haría"
+   ],
+   "a": 3,
+   "why": "*Si* + imperfect subjunctive (*tuviera*) → conditional in the result: *haría*."
+  },
+  {
+   "id": "M8-mc-06",
+   "t": "mc",
+   "q": "Which arm instruction after a new pacemaker is correct (generic)?",
+   "opts": [
+    "Por unas semanas, no levante el brazo del lado del aparato por encima del hombro.",
+    "Levante pesas con ese brazo desde el primer día.",
+    "No mueva los dedos de esa mano durante un año.",
+    "Mantenga el brazo levantado por encima de la cabeza todo el día."
+   ],
+   "a": 0,
+   "why": "After a new device, patients usually avoid raising the arm on that side above the shoulder for a few weeks so the leads can settle."
+  },
+  {
+   "id": "M8-mc-07",
+   "t": "mc",
+   "q": "A patient with an ICD calls: «Me dio una descarga, pero ya me siento bien.» Best reply?",
+   "opts": [
+    "Ignórelo, eso no es nada.",
+    "Quítese el aparato.",
+    "No necesita avisarle a nadie.",
+    "Gracias por avisarnos. Vamos a revisar la información de su aparato hoy."
+   ],
+   "a": 3,
+   "why": "A single shock in a patient who feels well → contact the clinic so the device is checked (in clinic or by remote transmission). Shocks are never simply ignored."
+  },
+  {
+   "id": "M8-mc-08",
+   "t": "mc",
+   "q": "A patient with an ICD says: «Me dieron varias descargas seguidas y me siento mal.» Best reply?",
+   "opts": [
+    "Llame al 911 ahora mismo.",
+    "Espere a su próxima cita.",
+    "Llámenos la próxima semana.",
+    "Tómese un té y descanse."
+   ],
+   "a": 0,
+   "why": "Several shocks in a row, or a shock with feeling unwell, chest pain or fainting → call 911."
+  },
+  {
+   "id": "M8-mc-09",
+   "t": "mc",
+   "q": "El paciente dice: «La enfermera me dijo que la ___ si tenía fiebre.»",
+   "qen": "The patient says: 'The nurse told me to call her if I had a fever.'",
+   "opts": [
+    "llamo",
+    "llamó",
+    "llamara",
+    "llamar"
+   ],
+   "a": 2,
+   "why": "Past trigger (*me dijo que*) + instruction → imperfect subjunctive *llamara*."
+  },
+  {
+   "id": "M8-mc-10",
+   "t": "mc",
+   "q": "Which is the polite way to ask a patient 'Could you tell me how you feel?'",
+   "opts": [
+    "¿Puedes decirme cómo te sientes?",
+    "¿Podría decirme cómo se siente?",
+    "¿Pudo decirme cómo se sintió?",
+    "¿Podría decirle cómo me siento?"
+   ],
+   "a": 1,
+   "why": "Conditional *podría* + usted (*se siente*). Option 1 is tú; option 3 is past; option 4 means 'tell him how I feel'."
+  },
+  {
+   "id": "M8-mc-11",
+   "t": "mc",
+   "q": "Con el monitoreo remoto, el monitor en casa ___ la información de su aparato a la clínica.",
+   "qen": "With remote monitoring, the home monitor sends your device's information to the clinic.",
+   "opts": [
+    "mande",
+    "mandara",
+    "manda",
+    "mandar"
+   ],
+   "a": 2,
+   "why": "A general fact → present indicative *manda*. No subjunctive trigger here."
+  },
+  {
+   "id": "M8-mc-12",
+   "t": "mc",
+   "q": "The patient asks: «¿Cuándo puedo regresar al trabajo?» Best reply?",
+   "opts": [
+    "Depende de su trabajo. Su médico le va a decir cuándo; si su trabajo es pesado, puede tardar más.",
+    "Puede cargar cosas pesadas hoy mismo.",
+    "Nunca va a poder trabajar otra vez.",
+    "Regresó al trabajo ayer."
+   ],
+   "a": 0,
+   "why": "Return to work depends on the procedure and the job; keep it generic and refer to the doctor's instructions."
+  },
+  {
+   "id": "M8-mc-13",
+   "t": "mc",
+   "q": "Espero que se ___ pronto.",
+   "qen": "I hope you get better soon.",
+   "opts": [
+    "mejora",
+    "mejore",
+    "mejoró",
+    "mejorará"
+   ],
+   "a": 1,
+   "why": "*Espero que* + present subjunctive → *mejore*."
+  },
+  {
+   "id": "M8-mc-14",
+   "t": "mc",
+   "q": "The day after an ablation, a patient worries about a small bruise in the groin. Best reply?",
+   "opts": [
+    "Vaya a emergencias de inmediato.",
+    "Póngase calor fuerte y dese masaje.",
+    "Es normal que tenga un moretón pequeño. Si crece, se pone duro o le duele mucho, llámenos.",
+    "Es normal que tiene un moretón."
+   ],
+   "a": 2,
+   "why": "A small bruise is expected; a growing, hard or very painful swelling needs a call. Option 4 uses the indicative after *es normal que*."
+  },
+  {
+   "id": "M8-mc-15",
+   "t": "mc",
+   "q": "Which of these needs a call to 911 right away (possible stroke)?",
+   "opts": [
+    "Le pica un poco la herida.",
+    "Está un poco cansado.",
+    "Tiene un moretón pequeño.",
+    "Se le cae un lado de la cara o no puede hablar bien."
+   ],
+   "a": 3,
+   "why": "Facial droop or trouble speaking are stroke warning signs → 911 immediately."
+  },
+  {
+   "id": "M8-mc-16",
+   "t": "mc",
+   "q": "El paciente dice: «Siento como si el corazón me ___ muy rápido.»",
+   "qen": "The patient says: 'I feel as if my heart were beating very fast.'",
+   "opts": [
+    "late",
+    "latiera",
+    "latirá",
+    "lata"
+   ],
+   "a": 1,
+   "why": "*Como si* always takes the imperfect subjunctive → *latiera*."
+  },
+  {
+   "id": "M8-mc-17",
+   "t": "mc",
+   "q": "The patient speaks very fast on the phone. Best way to ask them to repeat?",
+   "opts": [
+    "Perdón, ¿me lo puedes repetir más despacio?",
+    "Perdón, ¿se lo puede repetir más despacio?",
+    "Perdón, ¿me lo pudo repetir más despacio?",
+    "Perdón, ¿me lo puede repetir más despacio?"
+   ],
+   "a": 3,
+   "why": "Usted *puede* + *me lo* (to me). *Puedes* is tú; *se lo* means to him/her; *pudo* is past."
+  },
+  {
+   "id": "M8-mc-18",
+   "t": "mc",
+   "q": "Hoy, cuando ___ a su casa, descanse.",
+   "qen": "Today, when you get home, rest.",
+   "opts": [
+    "llegue",
+    "llega",
+    "llegó",
+    "llegaría"
+   ],
+   "a": 0,
+   "why": "*Cuando* about a future moment → present subjunctive *llegue*."
+  },
+  {
+   "id": "M8-mc-19",
+   "t": "mc",
+   "q": "No maneje hasta que su médico le ___ que puede.",
+   "qen": "Don't drive until your doctor tells you that you can.",
+   "opts": [
+    "dice",
+    "dijo",
+    "diga",
+    "diría"
+   ],
+   "a": 2,
+   "why": "*Hasta que* about a future event → subjunctive *diga*."
+  },
+  {
+   "id": "M8-mc-20",
+   "t": "mc",
+   "q": "Le hablo de la clínica. ¿Cómo se ___ sentido desde el procedimiento?",
+   "qen": "I'm calling from the clinic. How have you been feeling since the procedure?",
+   "opts": [
+    "ha",
+    "has",
+    "he",
+    "haya"
+   ],
+   "a": 0,
+   "why": "Present perfect, usted → *se ha sentido*. *Has* is tú; *he* is yo; *haya* is subjunctive."
+  },
+  {
+   "id": "M8-fill-01",
+   "t": "fill",
+   "q": "No se ___ la herida por unos días.",
+   "en": "Don't get the wound wet for a few days.",
+   "hint": "mojar (usted command)",
+   "a": [
+    "moje"
+   ],
+   "why": "Negative usted command → *no se moje*."
+  },
+  {
+   "id": "M8-fill-02",
+   "t": "fill",
+   "q": "Si le sangra la ingle, ___ fuerte y llame al 911.",
+   "en": "If your groin bleeds, press hard and call 911.",
+   "hint": "apretar (usted command)",
+   "a": [
+    "apriete"
+   ],
+   "why": "*Apretar* is stem-changing (e → ie): *apriete*."
+  },
+  {
+   "id": "M8-fill-03",
+   "t": "fill",
+   "q": "No ___ cosas pesadas por unos días.",
+   "en": "Don't lift heavy things for a few days.",
+   "hint": "levantar (usted command)",
+   "a": [
+    "levante"
+   ],
+   "why": "Negative usted command → *no levante*."
+  },
+  {
+   "id": "M8-fill-04",
+   "t": "fill",
+   "q": "Si yo ___ usted, descansaría unos días más.",
+   "en": "If I were you, I would rest a few more days.",
+   "hint": "ser",
+   "a": [
+    "fuera",
+    "fuese"
+   ],
+   "why": "Hypothetical *si* + imperfect subjunctive → *fuera*."
+  },
+  {
+   "id": "M8-fill-05",
+   "t": "fill",
+   "q": "Si tuviera fiebre, ¿qué ___ usted?",
+   "en": "If you had a fever, what would you do?",
+   "hint": "hacer",
+   "a": [
+    "haría"
+   ],
+   "why": "Result of a hypothetical → conditional *haría*."
+  },
+  {
+   "id": "M8-fill-06",
+   "t": "fill",
+   "q": "Le recomendaría que ___ un poco cada día.",
+   "en": "I would recommend that you walk a little every day.",
+   "hint": "caminar (imperfect subjunctive)",
+   "a": [
+    "caminara",
+    "caminase"
+   ],
+   "why": "Conditional trigger (*recomendaría que*) → imperfect subjunctive *caminara*."
+  },
+  {
+   "id": "M8-fill-07",
+   "t": "fill",
+   "q": "La enfermera le dijo que ___ a la clínica si tenía fiebre.",
+   "en": "The nurse told him to call the clinic if he had a fever.",
+   "hint": "llamar (imperfect subjunctive)",
+   "a": [
+    "llamara",
+    "llamase"
+   ],
+   "why": "Past trigger (*le dijo que*) + instruction → imperfect subjunctive *llamara*."
+  },
+  {
+   "id": "M8-fill-08",
+   "t": "fill",
+   "q": "Su próxima cita de ___ es en unas semanas.",
+   "en": "Your next follow-up appointment is in a few weeks.",
+   "hint": "follow-up",
+   "a": [
+    "seguimiento"
+   ],
+   "why": "*La cita de seguimiento* = follow-up appointment."
+  },
+  {
+   "id": "M8-fill-09",
+   "t": "fill",
+   "q": "Espero que se ___ pronto.",
+   "en": "I hope you get better soon.",
+   "hint": "mejorar",
+   "a": [
+    "mejore"
+   ],
+   "why": "*Espero que* + present subjunctive → *mejore*."
+  },
+  {
+   "id": "M8-fill-10",
+   "t": "fill",
+   "q": "Si tiene dolor de pecho, vaya a la sala de ___.",
+   "en": "If you have chest pain, go to the emergency room.",
+   "hint": "emergency room",
+   "a": [
+    "emergencias",
+    "urgencias"
+   ],
+   "why": "*La sala de emergencias* (also *urgencias*)."
+  },
+  {
+   "id": "M8-fill-11",
+   "t": "fill",
+   "q": "No ___ hasta que su médico le diga que puede.",
+   "en": "Don't drive until your doctor tells you that you can.",
+   "hint": "manejar (usted command)",
+   "a": [
+    "maneje"
+   ],
+   "why": "Negative usted command → *no maneje*."
+  },
+  {
+   "id": "M8-fill-12",
+   "t": "fill",
+   "q": "Siga ___ su anticoagulante como le indicamos.",
+   "en": "Keep taking your blood thinner as we told you.",
+   "hint": "tomar (gerund)",
+   "a": [
+    "tomando"
+   ],
+   "why": "*Seguir* + gerund → *siga tomando*."
+  },
+  {
+   "id": "M8-fill-13",
+   "t": "fill",
+   "q": "¿___ tenido fiebre desde que llegó a su casa?",
+   "en": "Have you had a fever since you got home?",
+   "hint": "haber (usted)",
+   "a": [
+    "Ha",
+    "ha"
+   ],
+   "why": "Present perfect, usted → *¿Ha tenido…?*"
+  },
+  {
+   "id": "M8-fill-14",
+   "t": "fill",
+   "q": "Si la herida se pone roja o le sale ___, llámenos.",
+   "en": "If the wound gets red or pus comes out, call us.",
+   "hint": "thick yellowish fluid from an infection",
+   "a": [
+    "pus"
+   ],
+   "why": "*El pus* = pus, a sign of infection (*la pus* is also heard in Mexico and Central America)."
+  },
+  {
+   "id": "M8-fill-15",
+   "t": "fill",
+   "q": "Es normal que ___ un poco cansado unos días.",
+   "en": "It's normal for you to feel a little tired for a few days.",
+   "hint": "sentirse (usted)",
+   "a": [
+    "se sienta"
+   ],
+   "why": "*Es normal que* + subjunctive; *sentirse* → *se sienta*."
+  },
+  {
+   "id": "M8-fill-16",
+   "t": "fill",
+   "q": "El monitor en casa manda la información de su ___ a la clínica.",
+   "en": "The home monitor sends your device's information to the clinic.",
+   "hint": "device",
+   "a": [
+    "aparato",
+    "dispositivo"
+   ],
+   "why": "*El aparato* (everyday) or *el dispositivo* = the device."
+  },
+  {
+   "id": "M8-fill-17",
+   "t": "fill",
+   "q": "Si tiene una sola descarga y se siente bien, ___ a la clínica.",
+   "en": "If you get a single shock and you feel well, call the clinic.",
+   "hint": "llamar (usted command)",
+   "a": [
+    "llame"
+   ],
+   "why": "Usted command → *llame*."
+  },
+  {
+   "id": "M8-fill-18",
+   "t": "fill",
+   "q": "Perdón, ¿cómo ___?",
+   "en": "Sorry, what did you say?",
+   "hint": "decir (usted, past)",
+   "a": [
+    "dijo"
+   ],
+   "why": "Preterite of *decir* for usted → *dijo*."
+  },
+  {
+   "id": "M8-fill-19",
+   "t": "fill",
+   "q": "¿___ hablar más despacio, por favor?",
+   "en": "Could you speak more slowly, please?",
+   "hint": "poder (conditional, usted)",
+   "a": [
+    "Podría",
+    "podría"
+   ],
+   "why": "Polite request with the conditional → *¿Podría…?*"
+  },
+  {
+   "id": "M8-fill-20",
+   "t": "fill",
+   "q": "Me alegra que se ___ mejor.",
+   "en": "I'm glad you're feeling better.",
+   "hint": "sentir",
+   "a": [
+    "sienta"
+   ],
+   "why": "*Me alegra que* + present subjunctive → *se sienta*."
+  },
+  {
+   "id": "M8-tiles-01",
+   "t": "tiles",
+   "en": "Don't get the wound wet for a few days.",
+   "a": "No se moje la herida por unos días.",
+   "alt": [
+    "Por unos días, no se moje la herida."
+   ],
+   "extra": [
+    "moja",
+    "te"
+   ]
+  },
+  {
+   "id": "M8-tiles-02",
+   "t": "tiles",
+   "en": "If your groin bleeds, press hard and call 911.",
+   "a": "Si le sangra la ingle, apriete fuerte y llame al 911.",
+   "alt": [
+    "Apriete fuerte y llame al 911 si le sangra la ingle."
+   ],
+   "extra": [
+    "aprieta",
+    "llamó"
+   ]
+  },
+  {
+   "id": "M8-tiles-03",
+   "t": "tiles",
+   "en": "Don't lift heavy things for a few days.",
+   "a": "No levante cosas pesadas por unos días.",
+   "alt": [
+    "Por unos días, no levante cosas pesadas."
+   ],
+   "extra": [
+    "levanta",
+    "pesada"
+   ]
+  },
+  {
+   "id": "M8-tiles-04",
+   "t": "tiles",
+   "en": "If I were you, I wouldn't drive yet.",
+   "a": "Si yo fuera usted, no manejaría todavía.",
+   "alt": [
+    "Si yo fuera usted, todavía no manejaría.",
+    "No manejaría todavía si yo fuera usted.",
+    "Todavía no manejaría si yo fuera usted."
+   ],
+   "extra": [
+    "era",
+    "manejé"
+   ]
+  },
+  {
+   "id": "M8-tiles-05",
+   "t": "tiles",
+   "en": "Go to the emergency room if you have chest pain.",
+   "a": "Vaya a emergencias si tiene dolor de pecho.",
+   "alt": [
+    "Si tiene dolor de pecho, vaya a emergencias."
+   ],
+   "extra": [
+    "va",
+    "tenga"
+   ]
+  },
+  {
+   "id": "M8-tiles-06",
+   "t": "tiles",
+   "en": "I'm glad you're feeling better.",
+   "a": "Me alegra que se sienta mejor.",
+   "alt": [],
+   "extra": [
+    "siente",
+    "sentir"
+   ]
+  },
+  {
+   "id": "M8-tiles-07",
+   "t": "tiles",
+   "en": "The monitor sends your device's information to the clinic.",
+   "a": "El monitor manda la información de su aparato a la clínica.",
+   "alt": [
+    "El monitor manda a la clínica la información de su aparato."
+   ],
+   "extra": [
+    "mande",
+    "envíe"
+   ]
+  },
+  {
+   "id": "M8-tiles-08",
+   "t": "tiles",
+   "en": "Don't drive until your doctor tells you.",
+   "a": "No maneje hasta que su médico le diga.",
+   "alt": [
+    "Hasta que su médico le diga, no maneje."
+   ],
+   "extra": [
+    "dice",
+    "maneja"
+   ]
+  },
+  {
+   "id": "M8-tiles-09",
+   "t": "tiles",
+   "en": "Keep taking your blood thinner as we told you.",
+   "a": "Siga tomando su anticoagulante como le indicamos.",
+   "alt": [
+    "Como le indicamos, siga tomando su anticoagulante."
+   ],
+   "extra": [
+    "tomar",
+    "sigue"
+   ]
+  },
+  {
+   "id": "M8-tiles-10",
+   "t": "tiles",
+   "en": "Call the clinic if you get a shock.",
+   "a": "Llame a la clínica si le da una descarga.",
+   "alt": [
+    "Si le da una descarga, llame a la clínica."
+   ],
+   "extra": [
+    "llamó",
+    "dé"
+   ]
+  },
+  {
+   "id": "M8-tiles-11",
+   "t": "tiles",
+   "en": "Can you repeat it more slowly, please?",
+   "a": "¿Me lo puede repetir más despacio, por favor?",
+   "alt": [
+    "Por favor, ¿me lo puede repetir más despacio?"
+   ],
+   "extra": [
+    "puedes",
+    "te"
+   ]
+  },
+  {
+   "id": "M8-tiles-12",
+   "t": "tiles",
+   "en": "How have you been feeling since the procedure?",
+   "a": "¿Cómo se ha sentido desde el procedimiento?",
+   "alt": [
+    "Desde el procedimiento, ¿cómo se ha sentido?"
+   ],
+   "extra": [
+    "he",
+    "siente"
+   ]
+  },
+  {
+   "id": "M8-tiles-13",
+   "t": "tiles",
+   "en": "It's normal for you to feel a little tired.",
+   "a": "Es normal que se sienta un poco cansado.",
+   "alt": [],
+   "extra": [
+    "siente",
+    "está"
+   ]
+  },
+  {
+   "id": "M8-tiles-14",
+   "t": "tiles",
+   "en": "I would recommend that you walk a little every day.",
+   "a": "Le recomendaría que caminara un poco cada día.",
+   "alt": [
+    "Le recomendaría que cada día caminara un poco."
+   ],
+   "extra": [
+    "camina",
+    "recomendar"
+   ]
+  },
+  {
+   "id": "M8-tiles-15",
+   "t": "tiles",
+   "en": "The wound looks good, don't worry.",
+   "a": "La herida se ve bien, no se preocupe.",
+   "alt": [
+    "No se preocupe, la herida se ve bien."
+   ],
+   "extra": [
+    "preocupa",
+    "ver"
+   ]
+  },
+  {
+   "id": "M8-tiles-16",
+   "t": "tiles",
+   "en": "I feel as if my heart were beating very fast.",
+   "a": "Siento como si el corazón me latiera muy rápido.",
+   "alt": [
+    "Siento como si me latiera muy rápido el corazón.",
+    "Siento como si me latiera el corazón muy rápido."
+   ],
+   "extra": [
+    "late",
+    "latió"
+   ]
+  },
+  {
+   "id": "M8-listen-01",
+   "t": "listen",
+   "say": "No se moje la herida por unos días.",
+   "opts": [
+    "Don't touch the wound for a few days.",
+    "Don't get the wound wet for a few days.",
+    "The wound got wet a few days ago.",
+    "Don't get the bandage dirty for a few days."
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-listen-02",
+   "t": "listen",
+   "say": "Si tiene dolor de pecho o falta de aire, llame al 911.",
+   "opts": [
+    "If you had chest pain, you would call 911.",
+    "If you have back pain or a fever, call the clinic.",
+    "If you have chest pain, call the clinic tomorrow.",
+    "If you have chest pain or shortness of breath, call 911."
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-listen-03",
+   "t": "listen",
+   "say": "Si yo fuera usted, no manejaría todavía.",
+   "opts": [
+    "If I were you, I wouldn't drive yet.",
+    "If I were you, I would drive now.",
+    "If you were me, you wouldn't drive yet.",
+    "I didn't drive because I was tired."
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-listen-04",
+   "t": "listen",
+   "say": "Su próxima cita es en unas semanas para revisar el aparato.",
+   "opts": [
+    "Your last appointment was a few weeks ago to check the device.",
+    "Your next appointment is in a few days to remove the device.",
+    "Your next appointment is in a few weeks to check the device.",
+    "Your next appointment is in a few weeks to check the wound."
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-listen-05",
+   "t": "listen",
+   "say": "La enfermera me dijo que llamara si tenía fiebre.",
+   "opts": [
+    "The nurse called me because I had a fever.",
+    "The nurse told me to call if I had a fever.",
+    "I told the nurse to call if she had a fever.",
+    "The nurse told me I have a fever."
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-listen-06",
+   "t": "listen",
+   "say": "No levante el brazo por encima del hombro.",
+   "opts": [
+    "Don't lift heavy things with your arm.",
+    "Raise your arm above your shoulder.",
+    "Don't sleep on your shoulder.",
+    "Don't raise your arm above your shoulder."
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-listen-07",
+   "t": "listen",
+   "say": "Me dio una descarga y me desmayé.",
+   "opts": [
+    "It gave me a shock and I fainted.",
+    "It gave me a shock and I got dizzy.",
+    "It's going to give me a shock and I'll faint.",
+    "I got scared and I fainted."
+   ],
+   "a": 0
+  },
+  {
+   "id": "M8-listen-08",
+   "t": "listen",
+   "say": "Me alegra que se sienta mejor.",
+   "opts": [
+    "I hope you feel better.",
+    "I'm glad I feel better.",
+    "I'm glad you're feeling better.",
+    "It's good that you sat down."
+   ],
+   "a": 2
+  },
+  {
+   "id": "M8-listen-09",
+   "t": "listen",
+   "say": "Siga tomando su anticoagulante; no lo deje sin hablar con nosotros.",
+   "opts": [
+    "Stop taking your blood thinner and talk to us.",
+    "Keep taking your blood thinner; don't stop it without talking to us.",
+    "Keep taking your blood pressure medicine; don't stop it.",
+    "You kept taking your blood thinner without telling us."
+   ],
+   "a": 1
+  },
+  {
+   "id": "M8-listen-10",
+   "t": "listen",
+   "say": "Perdón, ¿cómo dijo?",
+   "opts": [
+    "Sorry, how do you say it?",
+    "Sorry, how are you?",
+    "Sorry, what did he do?",
+    "Sorry, what did you say?"
+   ],
+   "a": 3
+  },
+  {
+   "id": "M8-dlg-01",
+   "t": "dlg",
+   "title": "Going home after an ablation",
+   "turns": [
+    {
+     "who": "Paciente",
+     "es": "Doctor, ¿ya me puedo bañar cuando llegue a mi casa?",
+     "en": "Doctor, can I shower when I get home?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Métase a la alberca hoy mismo; le va a ayudar.",
+      "Te puedes bañar en la tina toda la tarde.",
+      "Por lo general puede bañarse en la regadera, pero por unos días no se meta a la tina ni a la alberca."
+     ],
+     "a": 2,
+     "why": "Showering is usually allowed; soaking the groin (bathtub, pool) is avoided for a few days. Stay in usted."
+    },
+    {
+     "who": "Paciente",
+     "es": "¿Y si me empieza a sangrar la ingle?",
+     "en": "And if my groin starts bleeding?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Si le sangra, póngase hielo y espere a su cita.",
+      "Si le sangra, apriete fuerte con la mano y llame al 911.",
+      "Si le sangrara, no haría nada."
+     ],
+     "a": 1,
+     "why": "Groin bleeding: firm pressure and call 911. *Si* + present + commands for a real possibility."
+    },
+    {
+     "who": "Paciente",
+     "es": "Entendido. ¿Algo más?",
+     "en": "Got it. Anything else?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "No, ya terminó todo y no hay nada que vigilar.",
+      "Si tiene dolor de pecho, falta de aire o se desmaya, llame al 911. Si tiene fiebre o la ingle se hincha, llámenos.",
+      "Si tenga fiebre, llámenos."
+     ],
+     "a": 1,
+     "why": "Gives the emergency vs call-us signs. Option 3 uses the subjunctive after *si*, which is wrong."
+    }
+   ]
+  },
+  {
+   "id": "M8-dlg-02",
+   "t": "dlg",
+   "title": "Pacemaker wound and arm care",
+   "turns": [
+    {
+     "who": "Sr. Morales",
+     "es": "¿Puedo mover el brazo normal?",
+     "en": "Can I move my arm normally?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, levante pesas con ese brazo hoy mismo.",
+      "Puede usar la mano y el codo, pero por unas semanas no levante ese brazo por encima del hombro.",
+      "No mueva ni los dedos por un año."
+     ],
+     "a": 1,
+     "why": "Normal hand/elbow use, but avoid raising the arm on the device side above the shoulder for a few weeks."
+    },
+    {
+     "who": "Sr. Morales",
+     "es": "¿Y la herida? ¿Qué hago con ella?",
+     "en": "And the wound? What do I do with it?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Manténgala limpia y seca, y no se ponga cremas. Si se pone roja, caliente, hinchada o le sale pus, llámenos.",
+      "Lávela con agua caliente y ráspela todos los días.",
+      "Mantenla limpia y seca."
+     ],
+     "a": 0,
+     "why": "Keep it clean and dry, nothing on it, and call for signs of infection. Option 3 is tú."
+    },
+    {
+     "who": "Sr. Morales",
+     "es": "Perfecto. ¿Y cuándo los vuelvo a ver?",
+     "en": "Perfect. And when do I see you again?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "No necesita volver nunca.",
+      "Lo vimos la semana pasada.",
+      "Le vamos a dar una cita para revisar la herida y el aparato. Le van a llamar para darle la fecha."
+     ],
+     "a": 2,
+     "why": "A follow-up visit for wound and device check; keep timing generic."
+    }
+   ]
+  },
+  {
+   "id": "M8-dlg-03",
+   "t": "dlg",
+   "title": "Follow-up phone call",
+   "turns": [
+    {
+     "who": "Sra. Flores",
+     "es": "¿Bueno?",
+     "en": "Hello?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Hola, ¿cómo te has sentido?",
+      "Buenos días, ¿cómo se sintiera?",
+      "Buenos días, le hablo de la clínica del corazón. ¿Cómo se ha sentido desde el procedimiento?"
+     ],
+     "a": 2,
+     "why": "Usted + present perfect for checking in. Option 1 is tú; option 2 is ungrammatical."
+    },
+    {
+     "who": "Sra. Flores",
+     "es": "Bien, gracias. Solo tengo un moretón en la ingle y estoy un poco cansada.",
+     "en": "Fine, thanks. I just have a bruise in my groin and I'm a little tired."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Me alegra que se sienta bien. Es normal que tenga un moretón y algo de cansancio. ¿El moretón está creciendo o se siente duro?",
+      "Me alegra que se siente bien.",
+      "Vaya a emergencias ahora mismo."
+     ],
+     "a": 0,
+     "why": "Reassure, then check for a growing or hard swelling. *Me alegra que* needs the subjunctive *se sienta*."
+    },
+    {
+     "who": "Sra. Flores",
+     "es": "No, cada día está más pequeño.",
+     "en": "No, it's getting smaller every day."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Qué bueno. Si tuviera fiebre o dolor de pecho, ¿qué hace?",
+      "Qué bueno. Si tiene fiebre, no haga nada.",
+      "Qué bueno. Si tuviera fiebre o dolor de pecho, ¿qué haría?"
+     ],
+     "a": 2,
+     "why": "Teach-back with a hypothetical: *si* + imperfect subjunctive + conditional *haría*."
+    }
+   ]
+  },
+  {
+   "id": "M8-dlg-04",
+   "t": "dlg",
+   "title": "A call about an ICD shock",
+   "turns": [
+    {
+     "who": "Paciente",
+     "es": "Doctor, hace una hora el aparato me dio una descarga.",
+     "en": "Doctor, an hour ago the device gave me a shock."
+    },
+    {
+     "you": true,
+     "opts": [
+      "¿Y cómo se siente ahora? ¿Tiene dolor de pecho, falta de aire o se desmayó?",
+      "¿Y cómo te sientes ahora?",
+      "Eso es normal, olvídese."
+     ],
+     "a": 0,
+     "why": "First assess how the patient feels and look for red flags; stay in usted."
+    },
+    {
+     "who": "Paciente",
+     "es": "Ahora me siento bien. Fue solo una.",
+     "en": "I feel fine now. It was only one."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Entonces no tiene que hacer nada.",
+      "Qué bueno. Vamos a revisar su aparato hoy para que sepamos qué pasó. Si le da otra descarga o se siente mal, llame al 911.",
+      "Qué bueno. Vamos a revisar su aparato hoy para que sabemos qué pasó."
+     ],
+     "a": 1,
+     "why": "One shock and feeling well → same-day device check; repeated shocks or symptoms → 911. *Para que* needs the subjunctive *sepamos*."
+    }
+   ]
+  },
+  {
+   "id": "M8-dlg-05",
+   "t": "dlg",
+   "title": "Driving and going back to work",
+   "turns": [
+    {
+     "who": "Don Luis",
+     "es": "Yo manejo un camión. ¿Cuándo puedo volver a manejar?",
+     "en": "I drive a truck. When can I drive again?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Mañana mismo puede manejar el camión.",
+      "Depende del procedimiento y del tipo de licencia. No maneje hasta que su médico le diga que puede.",
+      "No maneja hasta que su médico le dice."
+     ],
+     "a": 1,
+     "why": "Driving rules depend on the procedure and on commercial licensing; keep it generic. *Hasta que* + subjunctive *diga*."
+    },
+    {
+     "who": "Don Luis",
+     "es": "Pero necesito trabajar. ¿Qué haría usted en mi lugar?",
+     "en": "But I need to work. What would you do in my place?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Yo en su lugar, hablé con mi jefe.",
+      "Yo en tu lugar, hablaría con mi jefe.",
+      "Yo en su lugar, hablaría con mi jefe sobre un trabajo más ligero por un tiempo."
+     ],
+     "a": 2,
+     "why": "Advice with the conditional (*hablaría*) and usted (*su lugar*)."
+    },
+    {
+     "who": "Don Luis",
+     "es": "Bueno, tiene razón.",
+     "en": "Well, you're right."
+    }
+   ]
+  },
+  {
+   "id": "M8-dlg-06",
+   "t": "dlg",
+   "title": "A worried wife",
+   "turns": [
+    {
+     "who": "Esposa",
+     "es": "Doctor, estoy muy preocupada. ¿De verdad salió todo bien?",
+     "en": "Doctor, I'm very worried. Did everything really go well?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Entiendo que esté preocupada. Sí, el procedimiento salió bien y él está descansando.",
+      "Usted no debería preocuparse nunca por nada.",
+      "Sí, va a salir bien."
+     ],
+     "a": 0,
+     "why": "Acknowledge the emotion, then answer the question in the past: *salió bien*."
+    },
+    {
+     "who": "Esposa",
+     "es": "¿Y en la casa? ¿Qué tengo que vigilar?",
+     "en": "And at home? What do I need to watch for?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Nada; ya no hay ningún riesgo.",
+      "Si a él le sangra la ingle, apriete fuerte encima y llame al 911. Si él tiene dolor de pecho, falta de aire, se desmaya o se le cae un lado de la cara, también llame al 911.",
+      "Si le sangraba la ingle, llamaba al 911."
+     ],
+     "a": 1,
+     "why": "Practical warning signs for the family. Option 3 uses the imperfect (habitual past), not an instruction."
+    },
+    {
+     "who": "Esposa",
+     "es": "Perdón, habla muy rápido. ¿Me lo puede repetir?",
+     "en": "Sorry, you're speaking very fast. Can you repeat it?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Ya se lo dije.",
+      "¿Me lo puede repetir usted?",
+      "Claro, perdón. Se lo repito más despacio y también se lo damos por escrito."
+     ],
+     "a": 2,
+     "why": "Repeat slowly and give written instructions; *se lo* = it to you (usted)."
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Discharge after AF ablation",
+   "setup": "You are the electrophysiologist discharging Sra. Gutiérrez the day after an atrial fibrillation ablation through the groin. Give groin care instructions, warning signs, medication and follow-up plans, and check understanding.",
+   "persona": "You are Teresa Gutiérrez, 58, from Jalisco, Mexico, who works cleaning offices in Chicago. You had a pulsed field ablation for atrial fibrillation yesterday via the right groin. You feel tired and have a small bruise in the right groin, no bleeding, no chest pain. You take a blood thinner and think you can stop it now that the ablation is done — say this only if asked about medicines. You want to know when you can shower, go back to work (your job involves lifting trash bags and mopping), and swim with your grandchildren. Use everyday Mexican Spanish with usted to the doctor; use present, preterite, and some conditional (¿podría…?, ¿qué pasaría si…?). If the doctor speaks too fast, say «Perdón, ¿me lo puede repetir más despacio?». At the end, if asked to teach back, repeat the warning signs with one small mistake the doctor should correct (say you would wait until the next day if the groin bled a lot).",
+   "opening": "Buenos días, doctor. Ya me quiero ir a mi casa. ¿Qué tengo que hacer?",
+   "goals": [
+    "Explain groin care: showering vs no tub or pool for a few days, no heavy lifting or straining for a few days",
+    "Explain what to do if the groin bleeds (press hard, call 911) and the other emergency signs",
+    "Find out that she plans to stop her blood thinner and tell her to keep taking it unless her doctor tells her otherwise",
+    "Give generic return-to-work and follow-up plans without specific numbers",
+    "Use teach-back and correct her mistake about groin bleeding"
+   ]
+  },
+  {
+   "title": "Phone follow-up after a pacemaker",
+   "setup": "You are calling Sr. Ortiz a few days after his new pacemaker to check on him. Ask how he has been feeling, check the wound, review arm restrictions and remote monitoring, and decide what he needs to do.",
+   "persona": "You are Ernesto Ortiz, 76, from El Salvador, retired gardener, living with your daughter. You got a pacemaker a few days ago for a slow heart rhythm with dizzy spells. You feel less dizzy. The wound under your left collarbone has been a little red and warm since yesterday; no fever, no pus — reveal this only if the doctor asks specifically about the wound. You have been lifting your left arm to hang laundry above your head — reveal only if asked how you are using your arm. You plugged in the home monitor but are not sure it works. Speak simple Central American Spanish with usted to the doctor, sometimes say «¿mande?» or «perdón, ¿cómo dijo?». Use present, preterite and present perfect. Agree to come to the clinic if the doctor asks.",
+   "opening": "¿Bueno? Sí, habla Ernesto Ortiz.",
+   "goals": [
+    "Introduce yourself and ask how he has felt since the procedure (present perfect, usted)",
+    "Ask specifically about the wound and find out it is red and warm, and ask about fever and drainage",
+    "Find out he has been raising his left arm and explain the arm restriction",
+    "Explain remote monitoring and how the clinic will check that the monitor is working",
+    "Ask him to come to the clinic to have the wound checked and review when to call 911"
+   ]
+  }
+ ]
+}

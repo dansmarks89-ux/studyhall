@@ -1,0 +1,497 @@
+[
+ {
+  "i": 0,
+  "w": "la herida",
+  "ex": "Mantenga la herida limpia y seca por unos días.",
+  "en": "Keep the wound clean and dry for a few days.",
+  "hit": "herida",
+  "note": "Covers both a wound and a surgical incision.",
+  "type": [
+   "la herida",
+   "herida"
+  ]
+ },
+ {
+  "i": 1,
+  "w": "el vendaje",
+  "ex": "No se quite el vendaje hasta que la enfermera le diga.",
+  "en": "Don't take off the dressing until the nurse tells you.",
+  "hit": "vendaje",
+  "note": "",
+  "type": [
+   "el vendaje",
+   "vendaje"
+  ]
+ },
+ {
+  "i": 2,
+  "w": "los puntos",
+  "ex": "La enfermera le va a revisar los puntos en su próxima cita.",
+  "en": "The nurse is going to check your stitches at your next appointment.",
+  "hit": "puntos",
+  "note": "Singular «el punto»; the medical term is «las suturas».",
+  "type": [
+   "los puntos",
+   "puntos",
+   "las suturas",
+   "suturas"
+  ]
+ },
+ {
+  "i": 3,
+  "w": "el pegamento para la piel",
+  "ex": "Le cerramos la herida con pegamento para la piel; no se lo quite.",
+  "en": "We closed your wound with skin glue; don't pick it off.",
+  "hit": "pegamento para la piel",
+  "note": "",
+  "type": []
+ },
+ {
+  "i": 4,
+  "w": "mojarse",
+  "ex": "No se moje la herida por unos días.",
+  "en": "Don't get the wound wet for a few days.",
+  "hit": "moje",
+  "note": "Reflexive with body parts: «no se moje la herida».",
+  "type": [
+   "mojarse"
+  ]
+ },
+ {
+  "i": 5,
+  "w": "bañarse en la regadera",
+  "ex": "Cuando su médico le diga, puede bañarse en la regadera sin tallarse la herida.",
+  "en": "When your doctor says so, you can shower without scrubbing the wound.",
+  "hit": "bañarse en la regadera",
+  "note": "«Regadera» is Mexican; «la ducha» elsewhere.",
+  "type": [
+   "bañarse en la regadera",
+   "ducharse",
+   "bañarse en la ducha"
+  ]
+ },
+ {
+  "i": 6,
+  "w": "la tina",
+  "ex": "No se meta a la tina hasta que la herida esté cerrada.",
+  "en": "Don't get in the bathtub until the wound is closed.",
+  "hit": "tina",
+  "note": "Mexican usage; «la bañera» in other countries.",
+  "type": [
+   "la tina",
+   "tina",
+   "la bañera",
+   "bañera"
+  ]
+ },
+ {
+  "i": 7,
+  "w": "la alberca",
+  "ex": "No se meta a la alberca hasta que su médico le diga que puede.",
+  "en": "Don't get in the pool until your doctor tells you that you can.",
+  "hit": "alberca",
+  "note": "Mexican usage; «la piscina» elsewhere.",
+  "type": [
+   "la alberca",
+   "alberca",
+   "la piscina",
+   "piscina"
+  ]
+ },
+ {
+  "i": 8,
+  "w": "levantar cosas pesadas",
+  "ex": "Por unos días, no levante cosas pesadas como bolsas del mandado.",
+  "en": "For a few days, don't lift heavy things like grocery bags.",
+  "hit": "levante cosas pesadas",
+  "note": "Keep it generic; give a specific limit only if your team uses one.",
+  "type": [
+   "levantar cosas pesadas",
+   "levantar cosas de peso"
+  ]
+ },
+ {
+  "i": 9,
+  "w": "hacer fuerza",
+  "ex": "Evite hacer fuerza al ir al baño o al cargar cosas.",
+  "en": "Avoid straining when you go to the bathroom or carry things.",
+  "hit": "hacer fuerza",
+  "note": "",
+  "type": [
+   "hacer fuerza",
+   "hacer esfuerzo"
+  ]
+ },
+ {
+  "i": 10,
+  "w": "por encima del hombro",
+  "ex": "Por ahora, no levante el brazo izquierdo por encima del hombro.",
+  "en": "For now, don't raise your left arm above your shoulder.",
+  "hit": "por encima del hombro",
+  "note": "",
+  "type": [
+   "por encima del hombro",
+   "arriba del hombro"
+  ]
+ },
+ {
+  "i": 11,
+  "w": "el brazo del lado del aparato",
+  "ex": "Mueva con cuidado el brazo del lado del aparato.",
+  "en": "Move the arm on the device side carefully.",
+  "hit": "brazo del lado del aparato",
+  "note": "",
+  "type": []
+ },
+ {
+  "i": 12,
+  "w": "el aparato",
+  "ex": "Revisamos su aparato y está funcionando bien.",
+  "en": "We checked your device and it's working well.",
+  "hit": "aparato",
+  "note": "Everyday word for a pacemaker or defibrillator.",
+  "type": [
+   "el aparato",
+   "aparato",
+   "el dispositivo",
+   "dispositivo"
+  ]
+ },
+ {
+  "i": 13,
+  "w": "el sangrado que no para",
+  "ex": "Si tiene sangrado que no para, apriete fuerte y llame al 911.",
+  "en": "If you have bleeding that won't stop, press hard and call 911.",
+  "hit": "sangrado que no para",
+  "note": "",
+  "type": []
+ },
+ {
+  "i": 14,
+  "w": "apretar fuerte",
+  "ex": "Si la ingle empieza a sangrar, acuéstese y apriete fuerte con la mano.",
+  "en": "If your groin starts to bleed, lie down and press hard with your hand.",
+  "hit": "apriete fuerte",
+  "note": "Stem change e→ie: «apriete».",
+  "type": [
+   "apretar fuerte"
+  ]
+ },
+ {
+  "i": 15,
+  "w": "la hinchazón",
+  "ex": "Un poco de hinchazón es normal, pero avísenos si crece.",
+  "en": "A little swelling is normal, but let us know if it grows.",
+  "hit": "hinchazón",
+  "note": "Feminine: «la hinchazón».",
+  "type": [
+   "la hinchazón",
+   "hinchazón"
+  ]
+ },
+ {
+  "i": 16,
+  "w": "hinchado / hinchada",
+  "ex": "¿Tiene la ingle hinchada o dura?",
+  "en": "Is your groin swollen or hard?",
+  "hit": "hinchada",
+  "note": "Agrees with the noun: «el brazo hinchado», «la pierna hinchada».",
+  "type": [
+   "hinchado",
+   "hinchada"
+  ]
+ },
+ {
+  "i": 17,
+  "w": "rojo y caliente",
+  "ex": "Si la herida se pone roja y caliente, llámenos.",
+  "en": "If the wound gets red and warm, call us.",
+  "hit": "roja y caliente",
+  "note": "Agrees with the noun: «la herida roja», «el brazo rojo».",
+  "type": [
+   "rojo y caliente",
+   "roja y caliente"
+  ]
+ },
+ {
+  "i": 18,
+  "w": "el pus",
+  "ex": "Si le sale pus de la herida, llámenos enseguida.",
+  "en": "If pus comes out of the wound, call us right away.",
+  "hit": "pus",
+  "note": "Masculine: «el pus».",
+  "type": [
+   "el pus",
+   "pus"
+  ]
+ },
+ {
+  "i": 19,
+  "w": "la fiebre",
+  "ex": "Si tiene fiebre después del procedimiento, llámenos.",
+  "en": "If you have a fever after the procedure, call us.",
+  "hit": "fiebre",
+  "note": "",
+  "type": [
+   "la fiebre",
+   "fiebre",
+   "la calentura",
+   "calentura"
+  ]
+ },
+ {
+  "i": 20,
+  "w": "los escalofríos",
+  "ex": "¿Ha tenido fiebre o escalofríos desde que regresó a su casa?",
+  "en": "Have you had fever or chills since you got home?",
+  "hit": "escalofríos",
+  "note": "Usually plural.",
+  "type": [
+   "los escalofríos",
+   "escalofríos"
+  ]
+ },
+ {
+  "i": 21,
+  "w": "el dolor de pecho",
+  "ex": "Si tiene dolor de pecho, llame al 911.",
+  "en": "If you have chest pain, call 911.",
+  "hit": "dolor de pecho",
+  "note": "",
+  "type": [
+   "el dolor de pecho",
+   "dolor de pecho"
+  ]
+ },
+ {
+  "i": 22,
+  "w": "la falta de aire",
+  "ex": "Si de repente siente mucha falta de aire, llame al 911.",
+  "en": "If you suddenly feel very short of breath, call 911.",
+  "hit": "falta de aire",
+  "note": "",
+  "type": [
+   "la falta de aire",
+   "falta de aire"
+  ]
+ },
+ {
+  "i": 23,
+  "w": "desmayarse",
+  "ex": "Si se desmaya, alguien de su familia debe llamar al 911.",
+  "en": "If you faint, someone in your family should call 911.",
+  "hit": "desmaya",
+  "note": "Reflexive: «me desmayé», «se desmayó».",
+  "type": [
+   "desmayarse"
+  ]
+ },
+ {
+  "i": 24,
+  "w": "la debilidad de un lado del cuerpo",
+  "ex": "La debilidad de un lado del cuerpo puede ser una embolia; llame al 911.",
+  "en": "Weakness on one side of the body can be a stroke; call 911.",
+  "hit": "debilidad de un lado del cuerpo",
+  "note": "",
+  "type": []
+ },
+ {
+  "i": 25,
+  "w": "se le cae un lado de la cara",
+  "ex": "Si se le cae un lado de la cara, llame al 911 enseguida.",
+  "en": "If one side of your face droops, call 911 right away.",
+  "hit": "se le cae un lado de la cara",
+  "note": "A stroke warning sign; also «se le tuerce la boca».",
+  "type": []
+ },
+ {
+  "i": 26,
+  "w": "la sala de emergencias",
+  "ex": "Si no puede comunicarse con la clínica, vaya a la sala de emergencias.",
+  "en": "If you can't reach the clinic, go to the emergency room.",
+  "hit": "sala de emergencias",
+  "note": "Often just «emergencias»; in Mexico also «urgencias».",
+  "type": [
+   "la sala de emergencias",
+   "sala de emergencias",
+   "emergencias",
+   "urgencias"
+  ]
+ },
+ {
+  "i": 27,
+  "w": "llamar al 911",
+  "ex": "Si tiene dolor de pecho o se desmaya, llame al 911.",
+  "en": "If you have chest pain or faint, call 911.",
+  "hit": "llame al 911",
+  "note": "Said «nueve, uno, uno».",
+  "type": [
+   "llamar al 911"
+  ]
+ },
+ {
+  "i": 28,
+  "w": "la cita de seguimiento",
+  "ex": "Su cita de seguimiento es en unas semanas.",
+  "en": "Your follow-up appointment is in a few weeks.",
+  "hit": "cita de seguimiento",
+  "note": "",
+  "type": [
+   "la cita de seguimiento",
+   "cita de seguimiento"
+  ]
+ },
+ {
+  "i": 29,
+  "w": "el monitoreo remoto",
+  "ex": "Con el monitoreo remoto, la clínica recibe información de su aparato.",
+  "en": "With remote monitoring, the clinic receives information from your device.",
+  "hit": "monitoreo remoto",
+  "note": "",
+  "type": [
+   "el monitoreo remoto",
+   "monitoreo remoto"
+  ]
+ },
+ {
+  "i": 30,
+  "w": "el monitor en casa",
+  "ex": "El monitor en casa debe estar conectado cerca de donde duerme.",
+  "en": "The home monitor should stay plugged in near where you sleep.",
+  "hit": "monitor en casa",
+  "note": "",
+  "type": [
+   "el monitor en casa",
+   "monitor en casa",
+   "el monitor de casa",
+   "monitor de casa"
+  ]
+ },
+ {
+  "i": 31,
+  "w": "la revisión del aparato",
+  "ex": "En la revisión del aparato vemos cómo están la batería y los cables.",
+  "en": "At the device check we see how the battery and the leads are doing.",
+  "hit": "revisión del aparato",
+  "note": "",
+  "type": [
+   "la revisión del aparato",
+   "revisión del aparato"
+  ]
+ },
+ {
+  "i": 32,
+  "w": "la descarga",
+  "ex": "Si recibe una descarga y se siente bien, llame a la clínica.",
+  "en": "If you get a shock and feel fine, call the clinic.",
+  "hit": "descarga",
+  "note": "More than one shock, or a shock and feeling unwell → call 911.",
+  "type": [
+   "la descarga",
+   "descarga"
+  ]
+ },
+ {
+  "i": 33,
+  "w": "manejar",
+  "ex": "Yo en su lugar no manejaría hasta que su médico le diga que puede.",
+  "en": "If I were you, I wouldn't drive until your doctor says you can.",
+  "hit": "manejaría",
+  "note": "Latin American; «conducir» in Spain.",
+  "type": [
+   "manejar",
+   "conducir"
+  ]
+ },
+ {
+  "i": 34,
+  "w": "regresar al trabajo",
+  "ex": "¿Cuándo puedo regresar al trabajo, doctora?",
+  "en": "When can I go back to work, doctor?",
+  "hit": "regresar al trabajo",
+  "note": "",
+  "type": [
+   "regresar al trabajo",
+   "volver al trabajo"
+  ]
+ },
+ {
+  "i": 35,
+  "w": "seguir tomando",
+  "ex": "Siga tomando su anticoagulante como le indicamos.",
+  "en": "Keep taking your blood thinner as we told you.",
+  "hit": "Siga tomando",
+  "note": "Seguir + gerund = keep doing.",
+  "type": [
+   "seguir tomando"
+  ]
+ },
+ {
+  "i": 36,
+  "w": "la molestia",
+  "ex": "Es normal que tenga un poco de molestia en la herida.",
+  "en": "It's normal to have a little discomfort in the wound.",
+  "hit": "molestia",
+  "note": "Milder than «dolor»; patients use it a lot.",
+  "type": [
+   "la molestia",
+   "molestia"
+  ]
+ },
+ {
+  "i": 37,
+  "w": "el moretón",
+  "ex": "El moretón en la ingle puede cambiar de color antes de desaparecer.",
+  "en": "The bruise in the groin may change color before it goes away.",
+  "hit": "moretón",
+  "note": "",
+  "type": [
+   "el moretón",
+   "moretón"
+  ]
+ },
+ {
+  "i": 38,
+  "w": "recuperarse",
+  "ex": "Después de una ablación, la mayoría de los pacientes se recuperan en pocos días.",
+  "en": "After an ablation, most patients recover in a few days.",
+  "hit": "recuperan",
+  "note": "",
+  "type": [
+   "recuperarse"
+  ]
+ },
+ {
+  "i": 39,
+  "w": "descansar",
+  "ex": "Hoy descanse en casa y camine un poco mañana.",
+  "en": "Rest at home today and walk a little tomorrow.",
+  "hit": "descanse",
+  "note": "",
+  "type": [
+   "descansar"
+  ]
+ },
+ {
+  "i": 40,
+  "w": "mejorarse",
+  "ex": "Me alegra que se esté mejorando.",
+  "en": "I'm glad you're getting better.",
+  "hit": "mejorando",
+  "note": "Reflexive: «me mejoro»; «¡Que se mejore!» = get well soon.",
+  "type": [
+   "mejorarse"
+  ]
+ },
+ {
+  "i": 41,
+  "w": "preocuparse",
+  "ex": "No se preocupe; es normal que le salga un moretón.",
+  "en": "Don't worry; it's normal to get a bruise.",
+  "hit": "preocupe",
+  "note": "Negative command: pronoun before the verb.",
+  "type": [
+   "preocuparse"
+  ]
+ }
+]

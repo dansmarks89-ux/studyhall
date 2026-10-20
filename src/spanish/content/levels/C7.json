@@ -1,0 +1,1502 @@
+{
+  "id": "C7",
+  "track": "conv",
+  "n": 7,
+  "title": "Wanting, needing, advising",
+  "goal": "Tell people what you want or need them to do, give advice and commands, and react to news using the present subjunctive.",
+  "bestAfter": null,
+  "grammar": [
+    {
+      "h": "Forming the present subjunctive",
+      "p": "Start from the *yo* form of the present, drop the *-o*, and switch the vowel: *-ar* verbs take *-e* endings, *-er/-ir* verbs take *-a* endings. Irregular *yo* forms carry over (*tengo → tenga*, *hago → haga*, *digo → diga*, *vengo → venga*, *pongo → ponga*, *salgo → salga*, *traigo → traiga*). Spelling changes keep the sound: *llegar → llegue*, *buscar → busque*, *empezar → empiece*. Stem changes stay: *pensar → piense*, *poder → pueda*, *dormir → duerma*, *pedir → pida*.",
+      "ex": [
+        [
+          "Quiero que hables con ella.",
+          "I want you to talk to her."
+        ],
+        [
+          "Es importante que lleguen temprano.",
+          "It's important that you all get there early."
+        ],
+        [
+          "Espero que tengas un buen día.",
+          "I hope you have a good day."
+        ]
+      ]
+    },
+    {
+      "h": "Six irregulars to memorize",
+      "p": "These do not follow the *yo* rule: *ser → sea*, *estar → esté*, *ir → vaya*, *haber → haya*, *saber → sepa*, *dar → dé*. Note the accents on *esté* (and *estés, estén*) and on *dé*.",
+      "ex": [
+        [
+          "Ojalá que sea fácil.",
+          "Hopefully it's easy."
+        ],
+        [
+          "Espero que estés bien.",
+          "I hope you're well."
+        ],
+        [
+          "No creo que haya tráfico.",
+          "I don't think there's traffic."
+        ],
+        [
+          "Dudo que sepa la dirección.",
+          "I doubt he knows the address."
+        ]
+      ]
+    },
+    {
+      "h": "Triggers: wanting, feeling, doubting",
+      "p": "When one person wants, needs, hopes, feels something about, or doubts what ANOTHER person does, use *que* + subjunctive: *quiero que, necesito que, es importante que, es mejor que, espero que, ojalá (que), me alegra que, dudo que, no creo que*. If the subject is the same, use the infinitive instead: *Quiero descansar* (I want to rest) vs *Quiero que descanses* (I want you to rest). Plain belief takes the indicative: *Creo que tiene razón*, but *No creo que tenga razón*.",
+      "ex": [
+        [
+          "Necesito que me ayudes.",
+          "I need you to help me."
+        ],
+        [
+          "Me alegra que estés aquí.",
+          "I'm glad you're here."
+        ],
+        [
+          "Creo que está en casa.",
+          "I think he's at home."
+        ],
+        [
+          "No creo que esté en casa.",
+          "I don't think he's at home."
+        ]
+      ]
+    },
+    {
+      "h": "cuando, para que, antes de que",
+      "p": "*Para que* (so that) and *antes de que* (before) always take the subjunctive. *Cuando* takes the subjunctive when the action hasn't happened yet (future), but the indicative for habits and for the past. With the same subject, use the infinitive: *para descansar*, *antes de salir*.",
+      "ex": [
+        [
+          "Te llamo cuando llegue.",
+          "I'll call you when I get there."
+        ],
+        [
+          "Siempre te llamo cuando llego.",
+          "I always call you when I get there."
+        ],
+        [
+          "Te dejo la llave para que puedas entrar.",
+          "I'm leaving you the key so you can get in."
+        ],
+        [
+          "Vámonos antes de que empiece a llover.",
+          "Let's go before it starts to rain."
+        ]
+      ]
+    },
+    {
+      "h": "Commands: tú and usted, with pronouns",
+      "p": "Usted commands use the subjunctive form, affirmative or negative: *hable / no hable*. Affirmative *tú* commands use the *él* form of the present (*habla, come, cierra*), with irregulars *di, haz, ve, pon, sal, sé, ten, ven*. Negative *tú* commands use the subjunctive: *no hables, no vayas, no digas*. Pronouns attach to the end of affirmative commands (add an accent to keep the stress: *llámame, dímelo, siéntese*) and go before the verb in negative ones (*no me llames, no se preocupe*).",
+      "ex": [
+        [
+          "Llámame mañana.",
+          "Call me tomorrow. (tú)"
+        ],
+        [
+          "No te preocupes.",
+          "Don't worry. (tú)"
+        ],
+        [
+          "Siéntese, por favor.",
+          "Have a seat, please. (usted)"
+        ],
+        [
+          "No se lo digas a nadie.",
+          "Don't tell anyone. (tú)"
+        ]
+      ]
+    }
+  ],
+  "vocab": [
+    [
+      "ojalá",
+      "hopefully / I hope"
+    ],
+    [
+      "esperar que",
+      "to hope that"
+    ],
+    [
+      "querer que",
+      "to want (someone) to"
+    ],
+    [
+      "necesitar que",
+      "to need (someone) to"
+    ],
+    [
+      "pedir",
+      "to ask for / to request"
+    ],
+    [
+      "recomendar",
+      "to recommend"
+    ],
+    [
+      "aconsejar",
+      "to advise"
+    ],
+    [
+      "el consejo",
+      "(piece of) advice"
+    ],
+    [
+      "dudar",
+      "to doubt"
+    ],
+    [
+      "creer",
+      "to believe / to think"
+    ],
+    [
+      "me alegra que",
+      "I'm glad that"
+    ],
+    [
+      "preocuparse",
+      "to worry"
+    ],
+    [
+      "es importante que",
+      "it's important that"
+    ],
+    [
+      "es mejor que",
+      "it's better that"
+    ],
+    [
+      "es necesario que",
+      "it's necessary that"
+    ],
+    [
+      "para que",
+      "so that"
+    ],
+    [
+      "antes de que",
+      "before"
+    ],
+    [
+      "avisar",
+      "to let (someone) know"
+    ],
+    [
+      "prestar",
+      "to lend"
+    ],
+    [
+      "cubrir un turno",
+      "to cover a shift"
+    ],
+    [
+      "la junta",
+      "the meeting (Mexico)"
+    ],
+    [
+      "la reunión",
+      "the meeting"
+    ],
+    [
+      "la mudanza",
+      "the move (moving house)"
+    ],
+    [
+      "dar una mano",
+      "to give a hand"
+    ],
+    [
+      "encargarse de",
+      "to take care of / be in charge of"
+    ],
+    [
+      "regar las plantas",
+      "to water the plants"
+    ],
+    [
+      "recoger",
+      "to pick up"
+    ],
+    [
+      "llevar",
+      "to take (someone or something somewhere)"
+    ],
+    [
+      "traer",
+      "to bring"
+    ],
+    [
+      "apagar",
+      "to turn off"
+    ],
+    [
+      "prender",
+      "to turn on (Latin America)"
+    ],
+    [
+      "la llave",
+      "the key"
+    ],
+    [
+      "a tiempo",
+      "on time"
+    ],
+    [
+      "pronto",
+      "soon"
+    ],
+    [
+      "temprano",
+      "early"
+    ],
+    [
+      "mejorarse",
+      "to get better"
+    ],
+    [
+      "divertirse",
+      "to have fun"
+    ],
+    [
+      "olvidarse de",
+      "to forget"
+    ],
+    [
+      "acordarse de",
+      "to remember"
+    ],
+    [
+      "la sorpresa",
+      "the surprise"
+    ],
+    [
+      "el cumpleaños",
+      "the birthday"
+    ],
+    [
+      "el horario",
+      "the schedule"
+    ]
+  ],
+  "phrases": [
+    [
+      "¿Qué quieres que haga?",
+      "What do you want me to do?"
+    ],
+    [
+      "Espero que te mejores pronto.",
+      "I hope you get better soon."
+    ],
+    [
+      "Ojalá que sí.",
+      "I hope so."
+    ],
+    [
+      "Ojalá que no.",
+      "I hope not."
+    ],
+    [
+      "Que te vaya bien.",
+      "I hope it goes well for you. / Take care. (tú)"
+    ],
+    [
+      "Que le vaya bien.",
+      "I hope it goes well for you. / Take care. (usted)"
+    ],
+    [
+      "No te preocupes.",
+      "Don't worry. (tú)"
+    ],
+    [
+      "No se preocupe.",
+      "Don't worry. (usted)"
+    ],
+    [
+      "Avísame cuando llegues.",
+      "Let me know when you get there."
+    ],
+    [
+      "Me alegra que estés aquí.",
+      "I'm glad you're here."
+    ],
+    [
+      "No creo que sea buena idea.",
+      "I don't think it's a good idea."
+    ],
+    [
+      "Es mejor que esperemos.",
+      "It's better if we wait."
+    ],
+    [
+      "Dime qué necesitas.",
+      "Tell me what you need."
+    ],
+    [
+      "Que te diviertas.",
+      "Have fun."
+    ],
+    [
+      "Pásamelo, por favor.",
+      "Pass it to me, please."
+    ]
+  ],
+  "items": [
+    {
+      "id": "C7-mc-01",
+      "t": "mc",
+      "q": "Quiero que tú ___ conmigo a la fiesta.",
+      "qen": "I want you to come with me to the party.",
+      "opts": [
+        "vienes",
+        "venir",
+        "vengas",
+        "vendrás"
+      ],
+      "a": 2,
+      "why": "Quiero que + a different subject → subjunctive: vengas."
+    },
+    {
+      "id": "C7-mc-02",
+      "t": "mc",
+      "q": "Ojalá que no ___ mañana; vamos a jugar fútbol.",
+      "qen": "Hopefully it doesn't rain tomorrow; we're going to play soccer.",
+      "opts": [
+        "llueva",
+        "llueve",
+        "lloverá",
+        "llovió"
+      ],
+      "a": 0,
+      "why": "Ojalá (que) always takes the subjunctive: llueva."
+    },
+    {
+      "id": "C7-mc-03",
+      "t": "mc",
+      "q": "Creo que Ana ___ en casa ahora.",
+      "qen": "I think Ana is at home now.",
+      "opts": [
+        "esté",
+        "estés",
+        "estar",
+        "está"
+      ],
+      "a": 3,
+      "why": "Creo que states a belief → indicative: está."
+    },
+    {
+      "id": "C7-mc-04",
+      "t": "mc",
+      "q": "No creo que Ana ___ en casa ahora.",
+      "qen": "I don't think Ana is at home now.",
+      "opts": [
+        "está",
+        "esté",
+        "estaba",
+        "estar"
+      ],
+      "a": 1,
+      "why": "No creo que expresses doubt → subjunctive: esté."
+    },
+    {
+      "id": "C7-mc-05",
+      "t": "mc",
+      "q": "Dudo que el restaurante ___ abierto a esta hora.",
+      "qen": "I doubt the restaurant is open at this hour.",
+      "opts": [
+        "está",
+        "es",
+        "esté",
+        "estar"
+      ],
+      "a": 2,
+      "why": "Dudo que → subjunctive, and 'open' is a state → estar: esté."
+    },
+    {
+      "id": "C7-mc-06",
+      "t": "mc",
+      "q": "Mi esposa quiere que yo ___ la cena hoy.",
+      "qen": "My wife wants me to make dinner today.",
+      "opts": [
+        "haga",
+        "hago",
+        "hice",
+        "hacer"
+      ],
+      "a": 0,
+      "why": "She wants + a different subject (yo) → subjunctive: haga (from hago)."
+    },
+    {
+      "id": "C7-mc-07",
+      "t": "mc",
+      "q": "Necesito que me ___ tu número de teléfono.",
+      "qen": "I need you to give me your phone number.",
+      "opts": [
+        "das",
+        "diste",
+        "dar",
+        "des"
+      ],
+      "a": 3,
+      "why": "Necesito que → subjunctive; tú form of dar: des."
+    },
+    {
+      "id": "C7-mc-08",
+      "t": "mc",
+      "q": "Esta noche te llamo cuando ___ a casa.",
+      "qen": "Tonight I'll call you when I get home.",
+      "opts": [
+        "llego",
+        "llegue",
+        "llegué",
+        "llegar"
+      ],
+      "a": 1,
+      "why": "Cuando + an event that hasn't happened yet (tonight) → subjunctive: llegue."
+    },
+    {
+      "id": "C7-mc-09",
+      "t": "mc",
+      "q": "Todos los días, cuando ___ a casa, me cambio de ropa.",
+      "qen": "Every day, when I get home, I change my clothes.",
+      "opts": [
+        "llegue",
+        "llegaré",
+        "llego",
+        "llegar"
+      ],
+      "a": 2,
+      "why": "Cuando + a habit (todos los días) → indicative: llego."
+    },
+    {
+      "id": "C7-mc-10",
+      "t": "mc",
+      "q": "Te dejo mis llaves para que ___ entrar.",
+      "qen": "I'm leaving you my keys so that you can get in.",
+      "opts": [
+        "puedas",
+        "puedes",
+        "podrás",
+        "poder"
+      ],
+      "a": 0,
+      "why": "Para que always takes the subjunctive: puedas."
+    },
+    {
+      "id": "C7-mc-11",
+      "t": "mc",
+      "q": "Vamos a salir antes de que ___ el tráfico.",
+      "qen": "We're going to leave before the traffic starts.",
+      "opts": [
+        "empieza",
+        "empezó",
+        "empezar",
+        "empiece"
+      ],
+      "a": 3,
+      "why": "Antes de que always takes the subjunctive: empiece (z → c before e)."
+    },
+    {
+      "id": "C7-mc-12",
+      "t": "mc",
+      "q": "Me alegra que ___ mejor, Rosa.",
+      "qen": "I'm glad you're feeling better, Rosa.",
+      "opts": [
+        "te sientes",
+        "te sientas",
+        "te sentiste",
+        "sentirte"
+      ],
+      "a": 1,
+      "why": "Me alegra que (emotion about someone else) → subjunctive: te sientas."
+    },
+    {
+      "id": "C7-mc-13",
+      "t": "mc",
+      "q": "Your friend is driving too fast. Tell him (tú): «¡No ___ tan rápido!»",
+      "opts": [
+        "maneja",
+        "manejas",
+        "manejaste",
+        "manejes"
+      ],
+      "a": 3,
+      "why": "Negative tú command = subjunctive: no manejes. Maneja is the affirmative command."
+    },
+    {
+      "id": "C7-mc-14",
+      "t": "mc",
+      "q": "To an older neighbor (usted): «Don't worry.»",
+      "opts": [
+        "No te preocupes.",
+        "No se preocupa.",
+        "No se preocupe.",
+        "No preocúpese."
+      ],
+      "a": 2,
+      "why": "Negative usted command: pronoun before the verb + subjunctive → No se preocupe."
+    },
+    {
+      "id": "C7-mc-15",
+      "t": "mc",
+      "q": "To your son (tú): «___ la tarea ahora.» (hacer)",
+      "qen": "Do your homework now.",
+      "opts": [
+        "Haz",
+        "Hace",
+        "Haga",
+        "Hagas"
+      ],
+      "a": 0,
+      "why": "Affirmative tú command of hacer is irregular: haz. Haga is the usted form; hagas is only for negative commands."
+    },
+    {
+      "id": "C7-mc-16",
+      "t": "mc",
+      "q": "Tell your coworker (tú): «Call me tomorrow.»",
+      "opts": [
+        "Llámeme mañana.",
+        "Llámame mañana.",
+        "No me llames mañana.",
+        "Me llame mañana."
+      ],
+      "a": 1,
+      "why": "Affirmative tú command with the pronoun attached: llámame. Llámeme is the usted form."
+    },
+    {
+      "id": "C7-mc-17",
+      "t": "mc",
+      "q": "How do you say «I want to rest this weekend»?",
+      "opts": [
+        "Quiero que descanse este fin de semana.",
+        "Quiero que descansar este fin de semana.",
+        "Quiero que descanso este fin de semana.",
+        "Quiero descansar este fin de semana."
+      ],
+      "a": 3,
+      "why": "Same subject (I want / I rest) → infinitive, no que: Quiero descansar."
+    },
+    {
+      "id": "C7-mc-18",
+      "t": "mc",
+      "q": "Espero que ___ tiempo para comer antes de la junta.",
+      "qen": "I hope there's time to eat before the meeting.",
+      "opts": [
+        "hay",
+        "haya",
+        "había",
+        "haber"
+      ],
+      "a": 1,
+      "why": "Espero que → subjunctive; haber → haya."
+    },
+    {
+      "id": "C7-mc-19",
+      "t": "mc",
+      "q": "Es mejor que no le ___ nada a Marta todavía.",
+      "qen": "It's better that you don't tell Marta anything yet.",
+      "opts": [
+        "digas",
+        "dices",
+        "dijiste",
+        "decir"
+      ],
+      "a": 0,
+      "why": "Es mejor que → subjunctive; tú form of decir: digas."
+    },
+    {
+      "id": "C7-mc-20",
+      "t": "mc",
+      "q": "Your friend says: «Mañana tengo mi examen de manejo.» Best reply?",
+      "opts": [
+        "¡Ojalá que te va bien!",
+        "¡Ojalá que te fue bien!",
+        "¡Ojalá que me vaya bien!",
+        "¡Ojalá que te vaya bien!"
+      ],
+      "a": 3,
+      "why": "Ojalá + subjunctive, about the friend's exam (te): ¡Ojalá que te vaya bien!"
+    },
+    {
+      "id": "C7-fill-01",
+      "t": "fill",
+      "q": "Mi mamá quiere que yo la ___ más seguido.",
+      "en": "My mom wants me to visit her more often.",
+      "hint": "visitar",
+      "a": [
+        "visite"
+      ],
+      "why": "Quiere que + a different subject → subjunctive: visite."
+    },
+    {
+      "id": "C7-fill-02",
+      "t": "fill",
+      "q": "Es importante que ustedes ___ el pasaporte.",
+      "en": "It's important that you all bring your passports.",
+      "hint": "traer",
+      "a": [
+        "traigan"
+      ],
+      "why": "Es importante que → subjunctive; traigo → traigan."
+    },
+    {
+      "id": "C7-fill-03",
+      "t": "fill",
+      "q": "Ojalá que el examen no ___ muy difícil.",
+      "en": "I hope the exam isn't very hard.",
+      "hint": "ser",
+      "a": [
+        "sea"
+      ],
+      "why": "Ojalá → subjunctive; ser → sea."
+    },
+    {
+      "id": "C7-fill-04",
+      "t": "fill",
+      "q": "Espero que ___ bien, Laura.",
+      "en": "I hope you're well, Laura.",
+      "hint": "estar (tú)",
+      "a": [
+        "estés"
+      ],
+      "why": "Espero que → subjunctive; estar → estés (with an accent)."
+    },
+    {
+      "id": "C7-fill-05",
+      "t": "fill",
+      "q": "No creo que ___ mucha gente en el restaurante hoy.",
+      "en": "I don't think there are many people at the restaurant today.",
+      "hint": "haber",
+      "a": [
+        "haya"
+      ],
+      "why": "No creo que → subjunctive; hay → haya."
+    },
+    {
+      "id": "C7-fill-06",
+      "t": "fill",
+      "q": "Dudo que mi hermano ___ cocinar.",
+      "en": "I doubt my brother knows how to cook.",
+      "hint": "saber",
+      "a": [
+        "sepa"
+      ],
+      "why": "Dudo que → subjunctive; saber → sepa."
+    },
+    {
+      "id": "C7-fill-07",
+      "t": "fill",
+      "q": "Creo que Juan ___ razón.",
+      "en": "I think Juan is right.",
+      "hint": "tener",
+      "a": [
+        "tiene"
+      ],
+      "why": "Creo que (a belief, not a doubt) → indicative: tiene."
+    },
+    {
+      "id": "C7-fill-08",
+      "t": "fill",
+      "q": "Necesito que ustedes me ___ una mano con la mudanza.",
+      "en": "I need you all to give me a hand with the move.",
+      "hint": "dar",
+      "a": [
+        "den"
+      ],
+      "why": "Necesito que → subjunctive; dar → den."
+    },
+    {
+      "id": "C7-fill-09",
+      "t": "fill",
+      "q": "Me alegra que tus papás ___ bien.",
+      "en": "I'm glad your parents are well.",
+      "hint": "estar",
+      "a": [
+        "estén"
+      ],
+      "why": "Me alegra que → subjunctive; estar → estén."
+    },
+    {
+      "id": "C7-fill-10",
+      "t": "fill",
+      "q": "Te mando la dirección para que no te ___.",
+      "en": "I'll send you the address so you don't get lost.",
+      "hint": "perderse",
+      "a": [
+        "pierdas"
+      ],
+      "why": "Para que → subjunctive; e → ie stem change: te pierdas."
+    },
+    {
+      "id": "C7-fill-11",
+      "t": "fill",
+      "q": "Antes de que ___ la película, vamos a comprar palomitas.",
+      "en": "Before the movie starts, we're going to buy popcorn.",
+      "hint": "empezar",
+      "a": [
+        "empiece"
+      ],
+      "why": "Antes de que → subjunctive; empezar → empiece."
+    },
+    {
+      "id": "C7-fill-12",
+      "t": "fill",
+      "q": "Cuando ___ dinero el próximo año, voy a comprar un carro.",
+      "en": "When I have money next year, I'm going to buy a car.",
+      "hint": "tener (yo)",
+      "a": [
+        "tenga"
+      ],
+      "why": "Cuando + a future event (next year) → subjunctive: tenga."
+    },
+    {
+      "id": "C7-fill-13",
+      "t": "fill",
+      "q": "Todos los días, cuando ___ a casa, saco al perro.",
+      "en": "Every day, when I get home, I take the dog out.",
+      "hint": "llegar (yo)",
+      "a": [
+        "llego"
+      ],
+      "why": "Cuando + a habit (todos los días) → indicative: llego."
+    },
+    {
+      "id": "C7-fill-14",
+      "t": "fill",
+      "q": "Mi jefe quiere que yo ___ el turno de noche.",
+      "en": "My boss wants me to cover the night shift.",
+      "hint": "cubrir",
+      "a": [
+        "cubra"
+      ],
+      "why": "Quiere que + a different subject → subjunctive: cubra."
+    },
+    {
+      "id": "C7-fill-15",
+      "t": "fill",
+      "q": "Oye, Pablo, ___ la puerta, por favor.",
+      "en": "Hey, Pablo, close the door, please.",
+      "hint": "cerrar (tú command)",
+      "a": [
+        "cierra"
+      ],
+      "why": "Affirmative tú command = él form of the present: cierra."
+    },
+    {
+      "id": "C7-fill-16",
+      "t": "fill",
+      "q": "Hijo, ___ aquí ahora mismo.",
+      "en": "Son, come here right now.",
+      "hint": "venir (tú command)",
+      "a": [
+        "ven"
+      ],
+      "why": "Irregular affirmative tú command: ven."
+    },
+    {
+      "id": "C7-fill-17",
+      "t": "fill",
+      "q": "Mateo, no ___ tarde otra vez.",
+      "en": "Mateo, don't be late again.",
+      "hint": "llegar (tú command)",
+      "a": [
+        "llegues"
+      ],
+      "why": "Negative tú command = subjunctive: no llegues."
+    },
+    {
+      "id": "C7-fill-18",
+      "t": "fill",
+      "q": "Señora, ___, por favor.",
+      "en": "Ma'am, have a seat, please.",
+      "hint": "sentarse (usted command)",
+      "a": [
+        "siéntese"
+      ],
+      "why": "Affirmative usted command with the pronoun attached and an accent: siéntese."
+    },
+    {
+      "id": "C7-fill-19",
+      "t": "fill",
+      "q": "¿Las fotos? Sí, ___ por correo.",
+      "en": "The photos? Yes, send them to me by email.",
+      "hint": "mandar + me + las (tú command)",
+      "a": [
+        "mándamelas"
+      ],
+      "why": "Affirmative tú command + me + las attached, with an accent: mándamelas."
+    },
+    {
+      "id": "C7-fill-20",
+      "t": "fill",
+      "q": "No ___ eso a nadie, ¿eh?",
+      "en": "Don't tell anyone that, okay?",
+      "hint": "decir + le (tú command)",
+      "a": [
+        "le digas"
+      ],
+      "why": "Negative tú command: pronoun before the verb + subjunctive: no le digas."
+    },
+    {
+      "id": "C7-tiles-01",
+      "t": "tiles",
+      "en": "I want you to come with me. (to a friend)",
+      "a": "Quiero que vengas conmigo.",
+      "alt": [],
+      "extra": [
+        "vienes",
+        "venir"
+      ]
+    },
+    {
+      "id": "C7-tiles-02",
+      "t": "tiles",
+      "en": "I hope you feel better. (to a friend)",
+      "a": "Espero que te sientas mejor.",
+      "alt": [],
+      "extra": [
+        "sientes",
+        "sentir"
+      ]
+    },
+    {
+      "id": "C7-tiles-03",
+      "t": "tiles",
+      "en": "Hopefully it doesn't rain tomorrow.",
+      "a": "Ojalá que no llueva mañana.",
+      "alt": [
+        "Ojalá que mañana no llueva.",
+        "Mañana ojalá que no llueva."
+      ],
+      "extra": [
+        "llueve",
+        "llovió"
+      ]
+    },
+    {
+      "id": "C7-tiles-04",
+      "t": "tiles",
+      "en": "I don't think he knows the address.",
+      "a": "No creo que sepa la dirección.",
+      "alt": [],
+      "extra": [
+        "sabe",
+        "sabía"
+      ]
+    },
+    {
+      "id": "C7-tiles-05",
+      "t": "tiles",
+      "en": "It's important that you rest this weekend. (to a friend)",
+      "a": "Es importante que descanses este fin de semana.",
+      "alt": [
+        "Es importante que este fin de semana descanses.",
+        "Este fin de semana es importante que descanses."
+      ],
+      "extra": [
+        "descansas",
+        "descansaste"
+      ]
+    },
+    {
+      "id": "C7-tiles-06",
+      "t": "tiles",
+      "en": "I'm going to leave early so you can sleep. (to a friend)",
+      "a": "Voy a salir temprano para que puedas dormir.",
+      "alt": [
+        "Para que puedas dormir, voy a salir temprano."
+      ],
+      "extra": [
+        "puedes",
+        "poder"
+      ]
+    },
+    {
+      "id": "C7-tiles-07",
+      "t": "tiles",
+      "en": "Call me when you get home. (to a friend)",
+      "a": "Llámame cuando llegues a casa.",
+      "alt": [
+        "Cuando llegues a casa, llámame."
+      ],
+      "extra": [
+        "llegas",
+        "llámeme"
+      ]
+    },
+    {
+      "id": "C7-tiles-08",
+      "t": "tiles",
+      "en": "Don't worry, ma'am.",
+      "a": "No se preocupe, señora.",
+      "alt": [
+        "Señora, no se preocupe."
+      ],
+      "extra": [
+        "preocupes",
+        "preocupar"
+      ]
+    },
+    {
+      "id": "C7-tiles-09",
+      "t": "tiles",
+      "en": "Tell me the truth, please. (to a friend)",
+      "a": "Dime la verdad, por favor.",
+      "alt": [
+        "Por favor, dime la verdad."
+      ],
+      "extra": [
+        "dices",
+        "digas"
+      ]
+    },
+    {
+      "id": "C7-tiles-10",
+      "t": "tiles",
+      "en": "Don't tell anyone (about it). (to a friend)",
+      "a": "No se lo digas a nadie.",
+      "alt": [],
+      "extra": [
+        "dices",
+        "díselo"
+      ]
+    },
+    {
+      "id": "C7-tiles-11",
+      "t": "tiles",
+      "en": "I need you all to give me a hand.",
+      "a": "Necesito que me den una mano.",
+      "alt": [],
+      "extra": [
+        "dan",
+        "dar"
+      ]
+    },
+    {
+      "id": "C7-tiles-12",
+      "t": "tiles",
+      "en": "My boss wants me to work on Saturday.",
+      "a": "Mi jefe quiere que trabaje el sábado.",
+      "alt": [
+        "Mi jefe quiere que el sábado trabaje.",
+        "El sábado mi jefe quiere que trabaje."
+      ],
+      "extra": [
+        "trabajo",
+        "trabajar"
+      ]
+    },
+    {
+      "id": "C7-tiles-13",
+      "t": "tiles",
+      "en": "When I'm tired, I go to bed early.",
+      "a": "Cuando estoy cansado, me acuesto temprano.",
+      "alt": [
+        "Me acuesto temprano cuando estoy cansado."
+      ],
+      "extra": [
+        "estuve",
+        "acuesta"
+      ]
+    },
+    {
+      "id": "C7-tiles-14",
+      "t": "tiles",
+      "en": "Before you leave, turn off the lights. (to a friend)",
+      "a": "Antes de que te vayas, apaga las luces.",
+      "alt": [
+        "Apaga las luces antes de que te vayas."
+      ],
+      "extra": [
+        "vas",
+        "apague"
+      ]
+    },
+    {
+      "id": "C7-tiles-15",
+      "t": "tiles",
+      "en": "I'm glad you're here. (to a friend)",
+      "a": "Me alegra que estés aquí.",
+      "alt": [],
+      "extra": [
+        "estás",
+        "eres"
+      ]
+    },
+    {
+      "id": "C7-tiles-16",
+      "t": "tiles",
+      "en": "Put it on the table, please. (to your son; it = the plate)",
+      "a": "Ponlo en la mesa, por favor.",
+      "alt": [
+        "Por favor, ponlo en la mesa."
+      ],
+      "extra": [
+        "póngalo",
+        "pones"
+      ]
+    },
+    {
+      "id": "C7-listen-01",
+      "t": "listen",
+      "say": "Quiero que me llames mañana.",
+      "opts": [
+        "I want to call you tomorrow.",
+        "I want you to call me tomorrow.",
+        "I wanted you to call me tomorrow.",
+        "I'll call you tomorrow."
+      ],
+      "a": 1
+    },
+    {
+      "id": "C7-listen-02",
+      "t": "listen",
+      "say": "Ojalá que no haya tráfico.",
+      "opts": [
+        "There's no traffic, thank God.",
+        "I hope there wasn't any traffic.",
+        "I hope there isn't any traffic.",
+        "There's always traffic."
+      ],
+      "a": 2
+    },
+    {
+      "id": "C7-listen-03",
+      "t": "listen",
+      "say": "No creo que venga hoy.",
+      "opts": [
+        "I think he's coming today.",
+        "He can't come today.",
+        "I didn't think he came today.",
+        "I don't think he's coming today."
+      ],
+      "a": 3
+    },
+    {
+      "id": "C7-listen-04",
+      "t": "listen",
+      "say": "Es importante que tomes mucha agua.",
+      "opts": [
+        "It's important for you to drink a lot of water.",
+        "It was important to drink a lot of water.",
+        "It's important not to drink too much water.",
+        "You drank a lot of water."
+      ],
+      "a": 0
+    },
+    {
+      "id": "C7-listen-05",
+      "t": "listen",
+      "say": "Te lo explico cuando nos veamos.",
+      "opts": [
+        "I explained it to you when we saw each other.",
+        "I'll explain it to you when we see each other.",
+        "I explain it to you whenever we see each other.",
+        "Explain it to me when we see each other."
+      ],
+      "a": 1
+    },
+    {
+      "id": "C7-listen-06",
+      "t": "listen",
+      "say": "No te preocupes, yo te ayudo.",
+      "opts": [
+        "I'm not worried, I helped you.",
+        "Don't worry about helping me.",
+        "Don't worry, I'll help you.",
+        "Don't worry, help me."
+      ],
+      "a": 2
+    },
+    {
+      "id": "C7-listen-07",
+      "t": "listen",
+      "say": "Me alegra que te guste tu nuevo trabajo.",
+      "opts": [
+        "I hope you like your new job.",
+        "I'm glad I like my new job.",
+        "I'm glad you liked your old job.",
+        "I'm glad you like your new job."
+      ],
+      "a": 3
+    },
+    {
+      "id": "C7-listen-08",
+      "t": "listen",
+      "say": "Dígale a su esposo que me llame.",
+      "opts": [
+        "Tell your husband to call me.",
+        "Tell your husband I'll call him.",
+        "Your husband told me to call.",
+        "Tell my husband to call you."
+      ],
+      "a": 0
+    },
+    {
+      "id": "C7-listen-09",
+      "t": "listen",
+      "say": "Antes de que se me olvide, aquí están tus llaves.",
+      "opts": [
+        "Before you forget, here are your keys.",
+        "Before I forget, here are your keys.",
+        "I forgot your keys here.",
+        "After I forgot, here are my keys."
+      ],
+      "a": 1
+    },
+    {
+      "id": "C7-listen-10",
+      "t": "listen",
+      "say": "Dudo que lleguen a tiempo.",
+      "opts": [
+        "I'm sure they'll arrive on time.",
+        "They doubt they'll arrive on time.",
+        "I doubt they'll arrive on time.",
+        "I doubt we'll arrive on time."
+      ],
+      "a": 2
+    },
+    {
+      "id": "C7-dlg-01",
+      "t": "dlg",
+      "title": "Planning a party with a friend",
+      "turns": [
+        {
+          "who": "Lucía",
+          "es": "Oye, el sábado es el cumpleaños de Marco. ¿Me ayudas con la fiesta?",
+          "en": "Hey, Saturday is Marco's birthday. Will you help me with the party?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "¡Claro! ¿Qué quieres que haga?",
+            "¡Claro! ¿Qué quieres que hago?",
+            "¡Claro! ¿Qué quieres hacer yo?"
+          ],
+          "a": 0,
+          "why": "She wants YOU to do something → quieres que + subjunctive: haga."
+        },
+        {
+          "who": "Lucía",
+          "es": "Necesito que traigas las bebidas y que llegues temprano.",
+          "en": "I need you to bring the drinks and to get there early."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Perfecto. Te llamo cuando salgo de casa.",
+            "Perfecto. Te llamo cuando salga de casa.",
+            "Perfecto. Te llamé cuando salga de casa."
+          ],
+          "a": 1,
+          "why": "Leaving the house on Saturday hasn't happened yet → cuando + subjunctive: salga."
+        },
+        {
+          "who": "Lucía",
+          "es": "¡Gracias! Ojalá que no llueva.",
+          "en": "Thanks! I hope it doesn't rain."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Sí, ojalá que hace buen tiempo.",
+            "Sí, ojalá que hizo buen tiempo.",
+            "Sí, ojalá que haga buen tiempo."
+          ],
+          "a": 2,
+          "why": "Ojalá about a future day → present subjunctive: haga."
+        }
+      ]
+    },
+    {
+      "id": "C7-dlg-02",
+      "t": "dlg",
+      "title": "A coworker who feels sick",
+      "turns": [
+        {
+          "who": "Roberto",
+          "es": "Ay, me siento fatal. ¿Crees que me puedo ir temprano?",
+          "en": "Ugh, I feel awful. Do you think I can leave early?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Sí, váyase a casa y descansa.",
+            "Sí, vete a casa y descansa.",
+            "Sí, vas a casa y descansaste."
+          ],
+          "a": 1,
+          "why": "Coworker → tú commands: vete, descansa. The first option mixes usted (váyase) with tú (descansa)."
+        },
+        {
+          "who": "Roberto",
+          "es": "Gracias. ¿Me cubres en la junta de las tres?",
+          "en": "Thanks. Will you cover for me at the three o'clock meeting?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Claro. Y no te preocupas por el proyecto.",
+            "Claro. Y no preocúpate por el proyecto.",
+            "Claro. Y no te preocupes por el proyecto."
+          ],
+          "a": 2,
+          "why": "Negative tú command: pronoun before the verb + subjunctive → no te preocupes."
+        },
+        {
+          "who": "Roberto",
+          "es": "Eres un buen amigo.",
+          "en": "You're a good friend."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Espero que te mejores pronto.",
+            "Espero que te mejoras pronto.",
+            "Espero mejorarte pronto."
+          ],
+          "a": 0,
+          "why": "Espero que + a different subject → subjunctive: te mejores."
+        }
+      ]
+    },
+    {
+      "id": "C7-dlg-03",
+      "t": "dlg",
+      "title": "Your teenage son wants to go out",
+      "turns": [
+        {
+          "who": "Hijo",
+          "es": "Papá, ¿puedo ir a la fiesta de Diego esta noche?",
+          "en": "Dad, can I go to Diego's party tonight?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "Sí, pero quiero que regresas antes de las once.",
+            "Sí, pero quiero que regreses antes de las once.",
+            "Sí, pero quiero regresar antes de las once."
+          ],
+          "a": 1,
+          "why": "You want HIM to come back → quiero que + subjunctive: regreses."
+        },
+        {
+          "who": "Hijo",
+          "es": "¿Antes de las once? ¡Todos se quedan hasta la una!",
+          "en": "Before eleven? Everyone's staying until one!"
+        },
+        {
+          "you": true,
+          "opts": [
+            "No me importa. Y llámeme cuando llegue.",
+            "No me importa. Y llámame cuando llegas.",
+            "No me importa. Y llámame cuando llegues."
+          ],
+          "a": 2,
+          "why": "Tú with your son: llámame; arriving tonight hasn't happened yet → cuando llegues."
+        },
+        {
+          "who": "Hijo",
+          "es": "Está bien. ¿Me prestas el carro?",
+          "en": "Okay. Will you lend me the car?"
+        },
+        {
+          "you": true,
+          "opts": [
+            "No, no te lo presto. Pídele a tu mamá que te lleve.",
+            "No, no te lo presto. Pídele a tu mamá que te lleva.",
+            "No, no te lo presto. Pídale a tu mamá que te lleve."
+          ],
+          "a": 0,
+          "why": "Tú command to your son (pídele) + pedir que → subjunctive: te lleve."
+        }
+      ]
+    },
+    {
+      "id": "C7-dlg-04",
+      "t": "dlg",
+      "title": "Your older neighbor goes on a trip",
+      "turns": [
+        {
+          "who": "Sra. Gómez",
+          "es": "Buenos días. Mañana me voy de viaje una semana.",
+          "en": "Good morning. Tomorrow I'm going on a trip for a week."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¡Qué bien! Espero que te diviertas mucho.",
+            "¡Qué bien! Espero que se divierta mucho.",
+            "¡Qué bien! Espero que se divierte mucho."
+          ],
+          "a": 1,
+          "why": "Older neighbor → usted; espero que + subjunctive → se divierta."
+        },
+        {
+          "who": "Sra. Gómez",
+          "es": "Gracias. ¿Me puede hacer un favor? Necesito que alguien riegue mis plantas.",
+          "en": "Thank you. Can you do me a favor? I need someone to water my plants."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Con gusto. Me deje las llaves y yo me encargo.",
+            "Con gusto. Déjame las llaves y yo me encargo.",
+            "Con gusto. Déjeme las llaves y yo me encargo."
+          ],
+          "a": 2,
+          "why": "Affirmative usted command with the pronoun attached: déjeme. Déjame is tú."
+        },
+        {
+          "who": "Sra. Gómez",
+          "es": "Muchas gracias, mijo. Aquí están las llaves.",
+          "en": "Thank you so much, dear. Here are the keys."
+        },
+        {
+          "you": true,
+          "opts": [
+            "No se preocupe. Que le vaya bien.",
+            "No se preocupe. Que le va bien.",
+            "No te preocupes. Que te vaya bien."
+          ],
+          "a": 0,
+          "why": "Usted throughout; the wish 'que le vaya bien' uses the subjunctive."
+        }
+      ]
+    },
+    {
+      "id": "C7-dlg-05",
+      "t": "dlg",
+      "title": "A friend's good news",
+      "turns": [
+        {
+          "who": "Daniela",
+          "es": "¡Adivina qué! Me dieron el trabajo en el hospital.",
+          "en": "Guess what! I got the job at the hospital."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¡Felicidades! Me alegra mucho estar contenta.",
+            "¡Felicidades! Me alegra mucho que estés contenta.",
+            "¡Felicidades! Me alegra mucho que estás contenta."
+          ],
+          "a": 1,
+          "why": "Me alegra que + someone else → subjunctive: estés."
+        },
+        {
+          "who": "Daniela",
+          "es": "Gracias. Pero dudo que el horario sea fácil.",
+          "en": "Thanks. But I doubt the schedule will be easy."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Bueno, cuando tienes tu horario, me avisas.",
+            "Bueno, cuando tuviste tu horario, me avisas.",
+            "Bueno, cuando tengas tu horario, me avisas."
+          ],
+          "a": 2,
+          "why": "She doesn't have the schedule yet → cuando + subjunctive: tengas."
+        },
+        {
+          "who": "Daniela",
+          "es": "¡Sí! Y tenemos que celebrar.",
+          "en": "Yes! And we have to celebrate."
+        },
+        {
+          "you": true,
+          "opts": [
+            "¡Claro! Ojalá que podamos salir el viernes.",
+            "¡Claro! Ojalá que podemos salir el viernes.",
+            "¡Claro! Ojalá que pudimos salir el viernes."
+          ],
+          "a": 0,
+          "why": "Ojalá about a future plan → present subjunctive: podamos."
+        }
+      ]
+    },
+    {
+      "id": "C7-dlg-06",
+      "t": "dlg",
+      "title": "Plans for the game",
+      "turns": [
+        {
+          "who": "Andrés",
+          "es": "Vamos al partido el domingo. Creo que empieza a las siete.",
+          "en": "Let's go to the game on Sunday. I think it starts at seven."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Mmm, creo que no empiece tan tarde.",
+            "Mmm, no creo que empiece tan tarde.",
+            "Mmm, no creo que empieza tan tarde."
+          ],
+          "a": 1,
+          "why": "No creo que (doubt) → subjunctive: empiece. Creo que no takes the indicative."
+        },
+        {
+          "who": "Andrés",
+          "es": "Tienes razón, déjame ver… Sí, empieza a las cinco.",
+          "en": "You're right, let me see… Yes, it starts at five."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Entonces es mejor que salimos a las cuatro.",
+            "Entonces es mejor que salgamos a las cuatro.",
+            "Entonces es mejor salimos a las cuatro."
+          ],
+          "a": 1,
+          "why": "Es mejor que → subjunctive: salgamos."
+        },
+        {
+          "who": "Andrés",
+          "es": "Perfecto. Paso por ti a las cuatro.",
+          "en": "Perfect. I'll pick you up at four."
+        },
+        {
+          "you": true,
+          "opts": [
+            "Va. Y no olvide los boletos.",
+            "Va. Y no olvidas los boletos.",
+            "Va. Y no olvides los boletos."
+          ],
+          "a": 2,
+          "why": "Andrés is a friend → negative tú command: no olvides. Olvide is the usted form."
+        }
+      ]
+    }
+  ],
+  "roleplay": [
+    {
+      "title": "Planning a surprise party",
+      "setup": "You and your friend Mariana are planning a surprise party for your coworker Jorge. Decide who does what and when.",
+      "persona": "You are Mariana, 34, from Guadalajara, a friend and coworker of the learner. Use tú. Facts: the party is Friday at 7 p.m. at your apartment; Jorge turns 40; you already invited ten people; you need someone to bring the cake and someone to keep Jorge busy until 7 so he doesn't arrive early; you doubt Jorge suspects anything. Speak in simple, natural Mexican Spanish and use the present subjunctive often (quiero que, necesito que, es importante que, ojalá que, antes de que, para que) and tú commands. Ask the learner what they can do; only mention the cake problem if they ask what you still need. If the learner makes a mood error, keep the conversation going and model the correct form in your reply.",
+      "opening": "¡Oye! ¿Ya sabes que el viernes es el cumpleaños de Jorge? Quiero que le hagamos una fiesta sorpresa.",
+      "goals": [
+        "Ask what she wants you to do (¿Qué quieres que haga?)",
+        "Tell her something you need her to do with necesito que + subjunctive",
+        "Agree on what has to happen before Jorge arrives (antes de que llegue…)",
+        "Say what you hope happens with ojalá que…"
+      ]
+    },
+    {
+      "title": "Advice for your neighbor",
+      "setup": "Your older neighbor, Don Alfonso, asks you for advice: his granddaughter is visiting Chicago for the first time. Give him recommendations and reassure him.",
+      "persona": "You are Don Alfonso, 72, from Zacatecas, Mexico, the learner's next-door neighbor in Chicago. Use usted with the learner and expect usted back. Facts: your granddaughter Sofía, 19, arrives next week for four days; it is her first time in Chicago; she likes art, food and walking; she has never taken the train; you worry about the cold and about her getting lost. Speak slowly in simple Mexican Spanish. React to the learner's advice with the subjunctive (ojalá que, espero que, me alegra que, dudo que). Reveal her interests only when asked.",
+      "opening": "Buenas tardes, vecino. Fíjese que mi nieta viene a visitarme la próxima semana y no conoce Chicago. ¿Qué me recomienda?",
+      "goals": [
+        "Ask what his granddaughter likes before recommending anything",
+        "Recommend two things using es mejor que / es importante que + subjunctive",
+        "Give advice about getting around (que tome el tren, que lleve…)",
+        "Reassure him with usted commands (no se preocupe, dígale que…)"
+      ]
+    }
+  ]
+}

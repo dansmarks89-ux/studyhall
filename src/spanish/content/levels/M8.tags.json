@@ -1,0 +1,996 @@
+{
+ "M8-mc-01": {
+  "sk": [
+   "t:cmd",
+   "g:register"
+  ],
+  "vw": [
+   4,
+   0
+  ],
+  "lem": "mojar",
+  "tn": "Command (−)",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "1": "register",
+   "3": "tense:Preterite"
+  }
+ },
+ "M8-mc-02": {
+  "sk": [
+   "t:cmd",
+   "t:si"
+  ],
+  "vw": [
+   14
+  ],
+  "lem": "apretar",
+  "tn": "Command (+)",
+  "pn": 2,
+  "oe": {
+   "0": "register",
+   "2": "tense:Preterite",
+   "3": "tense:Conditional"
+  }
+ },
+ "M8-mc-03": {
+  "sk": [
+   "s:phrase",
+   "s:vocab"
+  ],
+  "vw": [
+   21,
+   22,
+   37
+  ],
+  "oe": {
+   "0": "other",
+   "1": "other",
+   "2": "other"
+  }
+ },
+ "M8-mc-04": {
+  "sk": [
+   "t:si",
+   "t:isub",
+   "g:irreg"
+  ],
+  "vw": [],
+  "lem": "ser",
+  "tn": "Imperfect subjunctive",
+  "pn": 0,
+  "oe": {
+   "0": "tense:Present",
+   "2": "tense:Conditional",
+   "3": "tense:Imperfect"
+  }
+ },
+ "M8-mc-05": {
+  "sk": [
+   "t:si",
+   "t:cond"
+  ],
+  "vw": [],
+  "lem": "hacer",
+  "tn": "Conditional",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "1": "tense:Preterite",
+   "2": "tense:Present subjunctive"
+  }
+ },
+ "M8-mc-06": {
+  "sk": [
+   "s:phrase",
+   "s:vocab"
+  ],
+  "vw": [
+   10,
+   11,
+   12
+  ],
+  "oe": {
+   "1": "other",
+   "2": "other",
+   "3": "other"
+  }
+ },
+ "M8-mc-07": {
+  "sk": [
+   "s:phrase"
+  ],
+  "vw": [
+   32,
+   12
+  ],
+  "oe": {
+   "0": "other",
+   "1": "other",
+   "2": "other"
+  }
+ },
+ "M8-mc-08": {
+  "sk": [
+   "s:phrase"
+  ],
+  "vw": [
+   32,
+   27
+  ],
+  "oe": {
+   "1": "other",
+   "2": "other",
+   "3": "other"
+  }
+ },
+ "M8-mc-09": {
+  "sk": [
+   "t:isub"
+  ],
+  "vw": [],
+  "lem": "llamar",
+  "tn": "Imperfect subjunctive",
+  "pn": 0,
+  "oe": {
+   "0": "tense:Present",
+   "1": "tense:Preterite",
+   "3": "infl"
+  }
+ },
+ "M8-mc-10": {
+  "sk": [
+   "s:phrase",
+   "t:cond",
+   "g:register"
+  ],
+  "vw": [],
+  "oe": {
+   "0": "register",
+   "2": "tense:Preterite",
+   "3": "pronoun"
+  }
+ },
+ "M8-mc-11": {
+  "sk": [
+   "t:pres",
+   "t:psub"
+  ],
+  "vw": [
+   29,
+   30,
+   12
+  ],
+  "lem": "mandar",
+  "tn": "Present",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present subjunctive",
+   "1": "tense:Imperfect subjunctive",
+   "3": "infl"
+  }
+ },
+ "M8-mc-12": {
+  "sk": [
+   "s:phrase"
+  ],
+  "vw": [
+   34
+  ],
+  "oe": {
+   "1": "other",
+   "2": "other",
+   "3": "tense:Preterite"
+  }
+ },
+ "M8-mc-13": {
+  "sk": [
+   "t:psub",
+   "g:reflex"
+  ],
+  "vw": [
+   40
+  ],
+  "lem": "mejorar",
+  "tn": "Present subjunctive",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "2": "tense:Preterite",
+   "3": "tense:Future"
+  }
+ },
+ "M8-mc-14": {
+  "sk": [
+   "s:phrase",
+   "t:psub"
+  ],
+  "vw": [
+   37
+  ],
+  "oe": {
+   "0": "other",
+   "1": "other",
+   "3": "tense:Present"
+  }
+ },
+ "M8-mc-15": {
+  "sk": [
+   "s:vocab",
+   "s:phrase"
+  ],
+  "vw": [
+   25
+  ],
+  "oe": {
+   "0": "other",
+   "1": "other",
+   "2": "other"
+  }
+ },
+ "M8-mc-16": {
+  "sk": [
+   "t:isub",
+   "g:connect"
+  ],
+  "vw": [],
+  "lem": "latir",
+  "tn": "Imperfect subjunctive",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "2": "tense:Future",
+   "3": "tense:Present subjunctive"
+  }
+ },
+ "M8-mc-17": {
+  "sk": [
+   "s:phrase",
+   "g:register",
+   "g:objpron"
+  ],
+  "vw": [],
+  "oe": {
+   "0": "register",
+   "1": "pronoun",
+   "2": "tense:Preterite"
+  }
+ },
+ "M8-mc-18": {
+  "sk": [
+   "t:psub",
+   "g:connect"
+  ],
+  "vw": [],
+  "lem": "llegar",
+  "tn": "Present subjunctive",
+  "pn": 2,
+  "oe": {
+   "1": "tense:Present",
+   "2": "tense:Preterite",
+   "3": "tense:Conditional"
+  }
+ },
+ "M8-mc-19": {
+  "sk": [
+   "t:psub",
+   "g:connect",
+   "g:irreg"
+  ],
+  "vw": [
+   33
+  ],
+  "lem": "decir",
+  "tn": "Present subjunctive",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "1": "tense:Preterite",
+   "3": "tense:Conditional"
+  }
+ },
+ "M8-mc-20": {
+  "sk": [
+   "t:pperf",
+   "g:register"
+  ],
+  "vw": [],
+  "lem": "sentir",
+  "tn": "Present perfect",
+  "pn": 2,
+  "oe": {
+   "1": "register",
+   "2": "person",
+   "3": "tense:Present subjunctive"
+  }
+ },
+ "M8-fill-01": {
+  "sk": [
+   "t:cmd",
+   "g:reflex"
+  ],
+  "vw": [
+   4,
+   0
+  ],
+  "lem": "mojar",
+  "tn": "Command (−)",
+  "pn": 2
+ },
+ "M8-fill-02": {
+  "sk": [
+   "t:cmd"
+  ],
+  "vw": [
+   14
+  ],
+  "lem": "apretar",
+  "tn": "Command (+)",
+  "pn": 2
+ },
+ "M8-fill-03": {
+  "sk": [
+   "t:cmd",
+   "g:neg"
+  ],
+  "vw": [
+   8
+  ],
+  "lem": "levantar",
+  "tn": "Command (−)",
+  "pn": 2
+ },
+ "M8-fill-04": {
+  "sk": [
+   "t:si",
+   "t:isub",
+   "g:irreg"
+  ],
+  "vw": [],
+  "lem": "ser",
+  "tn": "Imperfect subjunctive",
+  "pn": 0
+ },
+ "M8-fill-05": {
+  "sk": [
+   "t:si",
+   "t:cond",
+   "g:irreg"
+  ],
+  "vw": [],
+  "lem": "hacer",
+  "tn": "Conditional",
+  "pn": 2
+ },
+ "M8-fill-06": {
+  "sk": [
+   "t:isub"
+  ],
+  "vw": [],
+  "lem": "caminar",
+  "tn": "Imperfect subjunctive",
+  "pn": 2
+ },
+ "M8-fill-07": {
+  "sk": [
+   "t:isub"
+  ],
+  "vw": [],
+  "lem": "llamar",
+  "tn": "Imperfect subjunctive",
+  "pn": 2
+ },
+ "M8-fill-08": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   28
+  ]
+ },
+ "M8-fill-09": {
+  "sk": [
+   "t:psub",
+   "g:reflex"
+  ],
+  "vw": [
+   40
+  ],
+  "lem": "mejorar",
+  "tn": "Present subjunctive",
+  "pn": 2
+ },
+ "M8-fill-10": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   26,
+   21
+  ]
+ },
+ "M8-fill-11": {
+  "sk": [
+   "t:cmd"
+  ],
+  "vw": [
+   33
+  ],
+  "lem": "manejar",
+  "tn": "Command (−)",
+  "pn": 2
+ },
+ "M8-fill-12": {
+  "sk": [
+   "t:prog"
+  ],
+  "vw": [
+   35
+  ]
+ },
+ "M8-fill-13": {
+  "sk": [
+   "t:pperf"
+  ],
+  "vw": [
+   19
+  ],
+  "lem": "tener",
+  "tn": "Present perfect",
+  "pn": 2
+ },
+ "M8-fill-14": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   18
+  ]
+ },
+ "M8-fill-15": {
+  "sk": [
+   "t:psub",
+   "g:reflex"
+  ],
+  "vw": [],
+  "lem": "sentir",
+  "tn": "Present subjunctive",
+  "pn": 2
+ },
+ "M8-fill-16": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   12,
+   30
+  ]
+ },
+ "M8-fill-17": {
+  "sk": [
+   "t:cmd"
+  ],
+  "vw": [
+   32
+  ],
+  "lem": "llamar",
+  "tn": "Command (+)",
+  "pn": 2
+ },
+ "M8-fill-18": {
+  "sk": [
+   "t:pret",
+   "g:irreg",
+   "s:phrase"
+  ],
+  "vw": [],
+  "lem": "decir",
+  "tn": "Preterite",
+  "pn": 2
+ },
+ "M8-fill-19": {
+  "sk": [
+   "t:cond",
+   "s:phrase"
+  ],
+  "vw": [],
+  "lem": "poder",
+  "tn": "Conditional",
+  "pn": 2
+ },
+ "M8-fill-20": {
+  "sk": [
+   "t:psub"
+  ],
+  "vw": [],
+  "lem": "sentir",
+  "tn": "Present subjunctive",
+  "pn": 2
+ },
+ "M8-tiles-01": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "g:register"
+  ],
+  "vw": [
+   4,
+   0
+  ]
+ },
+ "M8-tiles-02": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "t:si"
+  ],
+  "vw": [
+   14
+  ]
+ },
+ "M8-tiles-03": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "g:agree"
+  ],
+  "vw": [
+   8
+  ]
+ },
+ "M8-tiles-04": {
+  "sk": [
+   "s:order",
+   "t:si",
+   "t:isub"
+  ],
+  "vw": [
+   33
+  ]
+ },
+ "M8-tiles-05": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "t:si"
+  ],
+  "vw": [
+   26,
+   21
+  ]
+ },
+ "M8-tiles-06": {
+  "sk": [
+   "s:order",
+   "t:psub",
+   "g:reflex"
+  ],
+  "vw": []
+ },
+ "M8-tiles-07": {
+  "sk": [
+   "s:order",
+   "t:pres",
+   "t:psub"
+  ],
+  "vw": [
+   30,
+   12
+  ]
+ },
+ "M8-tiles-08": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "t:psub"
+  ],
+  "vw": [
+   33
+  ]
+ },
+ "M8-tiles-09": {
+  "sk": [
+   "s:order",
+   "t:prog",
+   "t:cmd"
+  ],
+  "vw": [
+   35
+  ]
+ },
+ "M8-tiles-10": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "t:si"
+  ],
+  "vw": [
+   32
+  ]
+ },
+ "M8-tiles-11": {
+  "sk": [
+   "s:order",
+   "s:phrase",
+   "g:register"
+  ],
+  "vw": []
+ },
+ "M8-tiles-12": {
+  "sk": [
+   "s:order",
+   "t:pperf",
+   "g:reflex"
+  ],
+  "vw": []
+ },
+ "M8-tiles-13": {
+  "sk": [
+   "s:order",
+   "t:psub",
+   "g:reflex"
+  ],
+  "vw": []
+ },
+ "M8-tiles-14": {
+  "sk": [
+   "s:order",
+   "t:isub",
+   "t:cond"
+  ],
+  "vw": []
+ },
+ "M8-tiles-15": {
+  "sk": [
+   "s:order",
+   "t:cmd",
+   "g:reflex"
+  ],
+  "vw": [
+   41,
+   0
+  ]
+ },
+ "M8-tiles-16": {
+  "sk": [
+   "s:order",
+   "t:isub",
+   "g:connect"
+  ],
+  "vw": []
+ },
+ "M8-listen-01": {
+  "sk": [
+   "s:listen",
+   "t:cmd",
+   "s:vocab"
+  ],
+  "vw": [
+   4,
+   0
+  ]
+ },
+ "M8-listen-02": {
+  "sk": [
+   "s:listen",
+   "s:vocab",
+   "t:si"
+  ],
+  "vw": [
+   21,
+   22,
+   27
+  ]
+ },
+ "M8-listen-03": {
+  "sk": [
+   "s:listen",
+   "t:si",
+   "t:isub"
+  ],
+  "vw": []
+ },
+ "M8-listen-04": {
+  "sk": [
+   "s:listen",
+   "s:vocab"
+  ],
+  "vw": [
+   28,
+   31,
+   12
+  ]
+ },
+ "M8-listen-05": {
+  "sk": [
+   "s:listen",
+   "t:isub"
+  ],
+  "vw": []
+ },
+ "M8-listen-06": {
+  "sk": [
+   "s:listen",
+   "t:cmd",
+   "s:vocab"
+  ],
+  "vw": [
+   10
+  ]
+ },
+ "M8-listen-07": {
+  "sk": [
+   "s:listen",
+   "t:pret",
+   "s:vocab"
+  ],
+  "vw": [
+   32,
+   23
+  ]
+ },
+ "M8-listen-08": {
+  "sk": [
+   "s:listen",
+   "t:psub"
+  ],
+  "vw": []
+ },
+ "M8-listen-09": {
+  "sk": [
+   "s:listen",
+   "t:prog",
+   "t:cmd"
+  ],
+  "vw": [
+   35
+  ]
+ },
+ "M8-listen-10": {
+  "sk": [
+   "s:listen",
+   "s:phrase"
+  ],
+  "vw": []
+ },
+ "M8-dlg-01": {
+  "sk": [
+   "s:phrase",
+   "t:si",
+   "t:cmd"
+  ],
+  "vw": [
+   5,
+   6,
+   7
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "s:phrase",
+     "g:register"
+    ],
+    "oe": {
+     "0": "other",
+     "1": "register"
+    }
+   },
+   "3": {
+    "sk": [
+     "s:phrase",
+     "t:si",
+     "t:cmd"
+    ],
+    "oe": {
+     "0": "other",
+     "2": "tense:Imperfect subjunctive"
+    }
+   },
+   "5": {
+    "sk": [
+     "s:phrase",
+     "t:si"
+    ],
+    "oe": {
+     "0": "other",
+     "2": "tense:Present subjunctive"
+    }
+   }
+  }
+ },
+ "M8-dlg-02": {
+  "sk": [
+   "s:phrase",
+   "t:cmd"
+  ],
+  "vw": [
+   11,
+   10,
+   0
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "s:phrase",
+     "t:cmd"
+    ],
+    "oe": {
+     "0": "other",
+     "2": "other"
+    }
+   },
+   "3": {
+    "sk": [
+     "s:phrase",
+     "t:cmd"
+    ],
+    "oe": {
+     "1": "other",
+     "2": "register"
+    }
+   },
+   "5": {
+    "sk": [
+     "s:phrase",
+     "t:ira"
+    ],
+    "oe": {
+     "0": "other",
+     "1": "tense:Preterite"
+    }
+   }
+  }
+ },
+ "M8-dlg-03": {
+  "sk": [
+   "t:pperf",
+   "t:psub",
+   "t:si"
+  ],
+  "vw": [
+   37
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "t:pperf",
+     "g:register"
+    ],
+    "oe": {
+     "0": "register",
+     "1": "tense:Imperfect subjunctive"
+    }
+   },
+   "3": {
+    "sk": [
+     "t:psub",
+     "s:phrase"
+    ],
+    "oe": {
+     "1": "tense:Present",
+     "2": "other"
+    }
+   },
+   "5": {
+    "sk": [
+     "t:si",
+     "t:cond"
+    ],
+    "oe": {
+     "0": "tense:Present",
+     "1": "other"
+    }
+   }
+  }
+ },
+ "M8-dlg-04": {
+  "sk": [
+   "s:phrase",
+   "t:psub"
+  ],
+  "vw": [
+   32,
+   12
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "s:phrase",
+     "g:register"
+    ],
+    "oe": {
+     "1": "register",
+     "2": "other"
+    }
+   },
+   "3": {
+    "sk": [
+     "s:phrase",
+     "t:psub"
+    ],
+    "oe": {
+     "0": "other",
+     "2": "tense:Present"
+    }
+   }
+  }
+ },
+ "M8-dlg-05": {
+  "sk": [
+   "t:psub",
+   "t:cond",
+   "g:register"
+  ],
+  "vw": [
+   33,
+   34
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "t:psub",
+     "s:phrase"
+    ],
+    "oe": {
+     "0": "other",
+     "2": "tense:Present"
+    }
+   },
+   "3": {
+    "sk": [
+     "t:cond",
+     "g:register"
+    ],
+    "oe": {
+     "0": "tense:Preterite",
+     "1": "register"
+    }
+   }
+  }
+ },
+ "M8-dlg-06": {
+  "sk": [
+   "s:phrase",
+   "t:pret",
+   "t:si"
+  ],
+  "vw": [
+   41,
+   13
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "s:phrase",
+     "t:pret"
+    ],
+    "oe": {
+     "1": "other",
+     "2": "tense:Future"
+    }
+   },
+   "3": {
+    "sk": [
+     "s:phrase",
+     "t:si",
+     "t:cmd"
+    ],
+    "oe": {
+     "0": "other",
+     "2": "tense:Imperfect"
+    }
+   },
+   "5": {
+    "sk": [
+     "s:phrase",
+     "g:objpron"
+    ],
+    "oe": {
+     "0": "other",
+     "1": "other"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,465 @@
+[
+ {
+  "i": 0,
+  "w": "¿qué?",
+  "ex": "¿Qué quieres comer esta noche?",
+  "en": "What do you want to eat tonight?",
+  "hit": "Qué",
+  "note": "",
+  "type": [
+   "qué",
+   "¿qué?"
+  ]
+ },
+ {
+  "i": 1,
+  "w": "¿quién?",
+  "ex": "¿Quién cocina en tu casa los domingos?",
+  "en": "Who cooks at your house on Sundays?",
+  "hit": "Quién",
+  "note": "",
+  "type": [
+   "quién",
+   "¿quién?"
+  ]
+ },
+ {
+  "i": 2,
+  "w": "¿dónde?",
+  "ex": "¿Dónde trabaja tu hermana ahora?",
+  "en": "Where does your sister work now?",
+  "hit": "Dónde",
+  "note": "",
+  "type": [
+   "dónde",
+   "¿dónde?"
+  ]
+ },
+ {
+  "i": 3,
+  "w": "¿cuándo?",
+  "ex": "¿Cuándo vuelve tu hermano de México?",
+  "en": "When is your brother coming back from Mexico?",
+  "hit": "Cuándo",
+  "note": "",
+  "type": [
+   "cuándo",
+   "¿cuándo?"
+  ]
+ },
+ {
+  "i": 4,
+  "w": "¿cómo?",
+  "ex": "¿Cómo vas al trabajo, en carro o en tren?",
+  "en": "How do you get to work, by car or by train?",
+  "hit": "Cómo",
+  "note": "",
+  "type": [
+   "cómo",
+   "¿cómo?"
+  ]
+ },
+ {
+  "i": 5,
+  "w": "¿cuánto? / ¿cuántos?",
+  "ex": "¿Cuántos días a la semana trabajas en el hospital?",
+  "en": "How many days a week do you work at the hospital?",
+  "hit": "Cuántos",
+  "note": "Agrees with the noun: cuánto dinero, cuánta agua, cuántos días, cuántas horas.",
+  "type": []
+ },
+ {
+  "i": 6,
+  "w": "¿cuál?",
+  "ex": "¿Cuál es tu número de teléfono?",
+  "en": "What's your phone number?",
+  "hit": "Cuál",
+  "note": "Before es, 'what' asking for specific information is usually cuál: ¿Cuál es tu dirección?",
+  "type": [
+   "cuál",
+   "¿cuál?"
+  ]
+ },
+ {
+  "i": 7,
+  "w": "¿por qué?",
+  "ex": "¿Por qué no comes carne?",
+  "en": "Why don't you eat meat?",
+  "hit": "Por qué",
+  "note": "Two words with an accent; porque (one word, no accent) means because.",
+  "type": [
+   "por qué",
+   "¿por qué?"
+  ]
+ },
+ {
+  "i": 8,
+  "w": "porque",
+  "ex": "No como carne porque no me gusta.",
+  "en": "I don't eat meat because I don't like it.",
+  "hit": "porque",
+  "note": "One word, no accent. Don't confuse with ¿por qué? (why?).",
+  "type": [
+   "porque"
+  ]
+ },
+ {
+  "i": 9,
+  "w": "¿a qué hora?",
+  "ex": "¿A qué hora empieza tu turno mañana?",
+  "en": "What time does your shift start tomorrow?",
+  "hit": "A qué hora",
+  "note": "",
+  "type": [
+   "a qué hora",
+   "¿a qué hora?"
+  ]
+ },
+ {
+  "i": 10,
+  "w": "nunca",
+  "ex": "Mi esposa nunca toma café en la noche.",
+  "en": "My wife never drinks coffee at night.",
+  "hit": "nunca",
+  "note": "After the verb it needs no: No tomo café nunca.",
+  "type": [
+   "nunca",
+   "jamás"
+  ]
+ },
+ {
+  "i": 11,
+  "w": "nada",
+  "ex": "No quiero comer nada hoy; me duele el estómago.",
+  "en": "I don't want to eat anything today; my stomach hurts.",
+  "hit": "nada",
+  "note": "After the verb it needs no before the verb: no quiero nada.",
+  "type": [
+   "nada"
+  ]
+ },
+ {
+  "i": 12,
+  "w": "nadie",
+  "ex": "Los domingos nadie trabaja en la oficina.",
+  "en": "On Sundays nobody works at the office.",
+  "hit": "nadie",
+  "note": "Before the verb, no 'no' is needed; after it: no viene nadie.",
+  "type": [
+   "nadie"
+  ]
+ },
+ {
+  "i": 13,
+  "w": "siempre",
+  "ex": "Siempre tomo café en la mañana.",
+  "en": "I always drink coffee in the morning.",
+  "hit": "Siempre",
+  "note": "",
+  "type": [
+   "siempre"
+  ]
+ },
+ {
+  "i": 14,
+  "w": "también",
+  "ex": "Yo hablo inglés y español, y mi hijo también.",
+  "en": "I speak English and Spanish, and so does my son.",
+  "hit": "también",
+  "note": "Agrees with a positive statement; for a negative one use tampoco.",
+  "type": [
+   "también"
+  ]
+ },
+ {
+  "i": 15,
+  "w": "tampoco",
+  "ex": "No me gusta el frío, y a mi esposa tampoco.",
+  "en": "I don't like the cold, and neither does my wife.",
+  "hit": "tampoco",
+  "note": "Agrees with a negative statement: A mí tampoco = Me neither.",
+  "type": [
+   "tampoco"
+  ]
+ },
+ {
+  "i": 16,
+  "w": "pero",
+  "ex": "Quiero ir a la fiesta, pero tengo que trabajar.",
+  "en": "I want to go to the party, but I have to work.",
+  "hit": "pero",
+  "note": "",
+  "type": [
+   "pero"
+  ]
+ },
+ {
+  "i": 17,
+  "w": "entonces",
+  "ex": "Mañana trabajo temprano, entonces no puedo salir esta noche.",
+  "en": "I work early tomorrow, so I can't go out tonight.",
+  "hit": "entonces",
+  "note": "Here means 'so'; in a sequence it means 'then'.",
+  "type": [
+   "entonces"
+  ]
+ },
+ {
+  "i": 18,
+  "w": "gustar",
+  "ex": "Me gusta mucho caminar en el parque.",
+  "en": "I really like walking in the park.",
+  "hit": "gusta",
+  "note": "The thing liked is the subject: me gusta (one thing), me gustan (plural).",
+  "type": [
+   "gustar"
+  ]
+ },
+ {
+  "i": 19,
+  "w": "encantar",
+  "ex": "A mis hijos les encanta el fútbol.",
+  "en": "My kids love soccer.",
+  "hit": "encanta",
+  "note": "For loving people, use querer (te quiero), not encantar.",
+  "type": [
+   "encantar"
+  ]
+ },
+ {
+  "i": 20,
+  "w": "doler",
+  "ex": "Me duele la cabeza cuando no duermo bien.",
+  "en": "My head hurts when I don't sleep well.",
+  "hit": "duele",
+  "note": "Works like gustar: me duele (one thing), me duelen (plural).",
+  "type": [
+   "doler"
+  ]
+ },
+ {
+  "i": 21,
+  "w": "importar",
+  "ex": "¿Te importa si pongo música?",
+  "en": "Do you mind if I put on some music?",
+  "hit": "importa",
+  "note": "Works like gustar. No importa = it doesn't matter.",
+  "type": [
+   "importar"
+  ]
+ },
+ {
+  "i": 22,
+  "w": "querer (quiero)",
+  "ex": "Quiero aprender a cocinar comida mexicana.",
+  "en": "I want to learn to cook Mexican food.",
+  "hit": "Quiero",
+  "note": "e→ie: quiero, quieres, quiere, but queremos.",
+  "type": [
+   "querer"
+  ]
+ },
+ {
+  "i": 23,
+  "w": "poder (puedo)",
+  "ex": "Hoy no puedo ir al gimnasio.",
+  "en": "I can't go to the gym today.",
+  "hit": "puedo",
+  "note": "o→ue: puedo, puedes, puede, but podemos.",
+  "type": [
+   "poder"
+  ]
+ },
+ {
+  "i": 24,
+  "w": "tener que + infinitivo",
+  "ex": "Tengo que llevar a mi hijo a la escuela.",
+  "en": "I have to take my son to school.",
+  "hit": "Tengo que",
+  "note": "Conjugate tener and keep the next verb as an infinitive.",
+  "type": [
+   "tener que"
+  ]
+ },
+ {
+  "i": 25,
+  "w": "dormir (duermo)",
+  "ex": "Los fines de semana duermo hasta las nueve.",
+  "en": "On weekends I sleep until nine.",
+  "hit": "duermo",
+  "note": "o→ue: duermo, duermes, duerme, but dormimos.",
+  "type": [
+   "dormir"
+  ]
+ },
+ {
+  "i": 26,
+  "w": "empezar (empieza)",
+  "ex": "La película empieza a las ocho.",
+  "en": "The movie starts at eight.",
+  "hit": "empieza",
+  "note": "e→ie: empiezo, empiezas, empieza, but empezamos.",
+  "type": [
+   "empezar",
+   "comenzar"
+  ]
+ },
+ {
+  "i": 27,
+  "w": "preferir (prefiero)",
+  "ex": "¿Prefieres comer en casa o en un restaurante?",
+  "en": "Do you prefer to eat at home or at a restaurant?",
+  "hit": "Prefieres",
+  "note": "e→ie: prefiero, prefieres, prefiere, but preferimos.",
+  "type": [
+   "preferir"
+  ]
+ },
+ {
+  "i": 28,
+  "w": "pedir (pido)",
+  "ex": "En ese restaurante siempre pido tacos al pastor.",
+  "en": "At that restaurant I always order tacos al pastor.",
+  "hit": "pido",
+  "note": "pedir = to ask FOR something; preguntar = to ask a question.",
+  "type": [
+   "pedir"
+  ]
+ },
+ {
+  "i": 29,
+  "w": "volver (vuelvo)",
+  "ex": "Vuelvo a casa a las seis todos los días.",
+  "en": "I get back home at six every day.",
+  "hit": "Vuelvo",
+  "note": "o→ue: vuelvo, vuelves, vuelve, but volvemos. Regresar means the same.",
+  "type": [
+   "volver",
+   "regresar"
+  ]
+ },
+ {
+  "i": 30,
+  "w": "jugar (juego)",
+  "ex": "Los sábados juego fútbol con mis amigos.",
+  "en": "On Saturdays I play soccer with my friends.",
+  "hit": "juego",
+  "note": "For sports and games; for music instruments use tocar.",
+  "type": [
+   "jugar"
+  ]
+ },
+ {
+  "i": 31,
+  "w": "pensar (pienso)",
+  "ex": "Pienso mucho en mi familia en México.",
+  "en": "I think about my family in Mexico a lot.",
+  "hit": "Pienso",
+  "note": "pensar en = to think about; pensar + infinitive = to plan to.",
+  "type": [
+   "pensar"
+  ]
+ },
+ {
+  "i": 32,
+  "w": "entender (entiendo)",
+  "ex": "Perdón, no entiendo. ¿Puede repetir, por favor?",
+  "en": "Sorry, I don't understand. Can you repeat that, please?",
+  "hit": "entiendo",
+  "note": "",
+  "type": [
+   "entender",
+   "comprender"
+  ]
+ },
+ {
+  "i": 33,
+  "w": "almorzar (almuerzo)",
+  "ex": "Casi siempre almuerzo en la cafetería del hospital.",
+  "en": "I almost always have lunch at the hospital cafeteria.",
+  "hit": "almuerzo",
+  "note": "In Mexico, almorzar can mean a late breakfast; comer is often the main midday meal.",
+  "type": [
+   "almorzar"
+  ]
+ },
+ {
+  "i": 34,
+  "w": "encontrar (encuentro)",
+  "ex": "Nunca encuentro mis llaves en la mañana.",
+  "en": "I can never find my keys in the morning.",
+  "hit": "encuentro",
+  "note": "",
+  "type": [
+   "encontrar"
+  ]
+ },
+ {
+  "i": 35,
+  "w": "costar (cuesta)",
+  "ex": "¿Cuánto cuesta un boleto de tren?",
+  "en": "How much does a train ticket cost?",
+  "hit": "cuesta",
+  "note": "",
+  "type": [
+   "costar"
+  ]
+ },
+ {
+  "i": 36,
+  "w": "saber (sé)",
+  "ex": "No sé a qué hora empieza la película.",
+  "en": "I don't know what time the movie starts.",
+  "hit": "sé",
+  "note": "saber = facts, information; conocer = people and places. Yo form has an accent: sé.",
+  "type": [
+   "saber"
+  ]
+ },
+ {
+  "i": 37,
+  "w": "conocer (conozco)",
+  "ex": "No conozco a nadie en esta ciudad.",
+  "en": "I don't know anyone in this city.",
+  "hit": "conozco",
+  "note": "Use the personal a before people: conozco a tu hermano.",
+  "type": [
+   "conocer"
+  ]
+ },
+ {
+  "i": 38,
+  "w": "salir (salgo)",
+  "ex": "Salgo del trabajo a las cinco.",
+  "en": "I leave work at five.",
+  "hit": "Salgo",
+  "note": "salir de = to leave a place; salir con = to go out with.",
+  "type": [
+   "salir"
+  ]
+ },
+ {
+  "i": 39,
+  "w": "manejar",
+  "ex": "Yo manejo al trabajo todos los días.",
+  "en": "I drive to work every day.",
+  "hit": "manejo",
+  "note": "Latin American; conducir is used in Spain and in formal contexts.",
+  "type": [
+   "manejar",
+   "conducir"
+  ]
+ },
+ {
+  "i": 40,
+  "w": "el fin de semana",
+  "ex": "Este fin de semana juego fútbol con mi hijo.",
+  "en": "This weekend I'm playing soccer with my son.",
+  "hit": "fin de semana",
+  "note": "",
+  "type": [
+   "el fin de semana",
+   "fin de semana"
+  ]
+ }
+]

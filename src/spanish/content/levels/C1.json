@@ -1,0 +1,1446 @@
+{
+ "id": "C1",
+ "track": "conv",
+ "n": 1,
+ "title": "Building sentences",
+ "goal": "Build and ask simple present-tense sentences about your life, your likes, and what you can, want or have to do.",
+ "bestAfter": null,
+ "grammar": [
+  {
+   "h": "Word order and questions",
+   "p": "Spanish usually goes subject + verb + rest, and you often drop the subject pronoun because the verb ending already tells you who: *Trabajo en el hospital* = I work at the hospital. In questions, put the question word first, then the verb: *¿Dónde trabajas?* Question words always carry an accent: *qué, quién, dónde, cuándo, cómo, cuánto, cuál, por qué*. Yes/no questions keep normal order and just change intonation: *¿Tienes hijos?*",
+   "ex": [
+    [
+     "¿Dónde vives?",
+     "Where do you live?"
+    ],
+    [
+     "¿A qué hora empieza la clase?",
+     "What time does the class start?"
+    ],
+    [
+     "¿Tienes hijos?",
+     "Do you have kids?"
+    ]
+   ]
+  },
+  {
+   "h": "Negation: no, nunca, nada, nadie",
+   "p": "Put *no* right before the verb: *No trabajo hoy.* Spanish uses double negatives: if *nada*, *nadie* or *nunca* comes after the verb, you still need *no* before it (*No quiero nada*). If *nunca* or *nadie* comes first, drop the *no* (*Nunca como carne. Nadie viene.*). Never say *nunca no*.",
+   "ex": [
+    [
+     "No quiero nada.",
+     "I don't want anything."
+    ],
+    [
+     "Nunca como carne. / No como carne nunca.",
+     "I never eat meat."
+    ],
+    [
+     "Nadie quiere trabajar el domingo.",
+     "Nobody wants to work on Sunday."
+    ]
+   ]
+  },
+  {
+   "h": "Connectors: y, pero, porque, entonces, también, tampoco",
+   "p": "*y* (and), *pero* (but), *porque* (because — one word, no accent), *entonces* (so / then), *también* (also, too), *tampoco* (not either). Use *también* to agree with a positive statement and *tampoco* with a negative one. Don't confuse *porque* (because) with *¿por qué?* (why?).",
+   "ex": [
+    [
+     "No puedo ir porque tengo que trabajar.",
+     "I can't go because I have to work."
+    ],
+    [
+     "Llueve mucho, entonces no salgo.",
+     "It's raining a lot, so I'm not going out."
+    ],
+    [
+     "Yo no fumo y mi esposa tampoco.",
+     "I don't smoke and neither does my wife."
+    ]
+   ]
+  },
+  {
+   "h": "The gustar pattern (gustar, encantar, doler, importar)",
+   "p": "With *gustar*, the thing you like is the subject, and the person goes in front as *me, te, le, nos, les*. Use *gusta* with one thing or an activity (infinitive) and *gustan* with plural things. *Encantar* (to love), *doler* (to hurt) and *importar* (to matter / to mind) work the same way. Add *a mí, a ti, a mi papá…* for emphasis or clarity. To agree: *A mí también* (me too) / *A mí tampoco* (me neither).",
+   "ex": [
+    [
+     "Me gusta el café, pero no me gustan los dulces.",
+     "I like coffee, but I don't like sweets."
+    ],
+    [
+     "A mi papá le duelen las rodillas.",
+     "My dad's knees hurt."
+    ],
+    [
+     "¿Te importa si abro la ventana?",
+     "Do you mind if I open the window?"
+    ]
+   ]
+  },
+  {
+   "h": "Stem-changing verbs and verb + infinitive",
+   "p": "Many verbs change their stem vowel in every form except *nosotros*: e→ie (*querer → quiero*, *empezar → empieza*, *preferir → prefiero*), o→ue (*poder → puedo*, *dormir → duermo*, *volver → vuelvo*), u→ue (*jugar → juego*), e→i (*pedir → pido*). To say what you want, can, or have to do, conjugate the first verb and leave the second as an infinitive: *quiero comer*, *puedo ir*, *tengo que trabajar*.",
+   "ex": [
+    [
+     "Nosotros pedimos tacos y ellos piden enchiladas.",
+     "We order tacos and they order enchiladas."
+    ],
+    [
+     "¿Puedes venir mañana?",
+     "Can you come tomorrow?"
+    ],
+    [
+     "Tengo que llamar a mi mamá.",
+     "I have to call my mom."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  [
+   "¿qué?",
+   "what?"
+  ],
+  [
+   "¿quién?",
+   "who?"
+  ],
+  [
+   "¿dónde?",
+   "where?"
+  ],
+  [
+   "¿cuándo?",
+   "when?"
+  ],
+  [
+   "¿cómo?",
+   "how?"
+  ],
+  [
+   "¿cuánto? / ¿cuántos?",
+   "how much? / how many?"
+  ],
+  [
+   "¿cuál?",
+   "which? / what?"
+  ],
+  [
+   "¿por qué?",
+   "why?"
+  ],
+  [
+   "porque",
+   "because"
+  ],
+  [
+   "¿a qué hora?",
+   "at what time?"
+  ],
+  [
+   "nunca",
+   "never"
+  ],
+  [
+   "nada",
+   "nothing / (not) anything"
+  ],
+  [
+   "nadie",
+   "nobody / (not) anyone"
+  ],
+  [
+   "siempre",
+   "always"
+  ],
+  [
+   "también",
+   "also / too"
+  ],
+  [
+   "tampoco",
+   "neither / not either"
+  ],
+  [
+   "pero",
+   "but"
+  ],
+  [
+   "entonces",
+   "so / then"
+  ],
+  [
+   "gustar",
+   "to be pleasing (to like)"
+  ],
+  [
+   "encantar",
+   "to love (a thing or activity)"
+  ],
+  [
+   "doler",
+   "to hurt"
+  ],
+  [
+   "importar",
+   "to matter / to mind"
+  ],
+  [
+   "querer (quiero)",
+   "to want"
+  ],
+  [
+   "poder (puedo)",
+   "to be able to, can"
+  ],
+  [
+   "tener que + infinitivo",
+   "to have to"
+  ],
+  [
+   "dormir (duermo)",
+   "to sleep"
+  ],
+  [
+   "empezar (empieza)",
+   "to start"
+  ],
+  [
+   "preferir (prefiero)",
+   "to prefer"
+  ],
+  [
+   "pedir (pido)",
+   "to ask for / to order"
+  ],
+  [
+   "volver (vuelvo)",
+   "to come back, to return"
+  ],
+  [
+   "jugar (juego)",
+   "to play (sports, games)"
+  ],
+  [
+   "pensar (pienso)",
+   "to think"
+  ],
+  [
+   "entender (entiendo)",
+   "to understand"
+  ],
+  [
+   "almorzar (almuerzo)",
+   "to have lunch"
+  ],
+  [
+   "encontrar (encuentro)",
+   "to find"
+  ],
+  [
+   "costar (cuesta)",
+   "to cost"
+  ],
+  [
+   "saber (sé)",
+   "to know (facts, information)"
+  ],
+  [
+   "conocer (conozco)",
+   "to know (people, places)"
+  ],
+  [
+   "salir (salgo)",
+   "to go out, to leave"
+  ],
+  [
+   "manejar",
+   "to drive"
+  ],
+  [
+   "el fin de semana",
+   "the weekend"
+  ]
+ ],
+ "phrases": [
+  [
+   "¿Cómo se dice … en español?",
+   "How do you say … in Spanish?"
+  ],
+  [
+   "No entiendo.",
+   "I don't understand."
+  ],
+  [
+   "¿Puede repetir, por favor?",
+   "Can you repeat that, please? (formal)"
+  ],
+  [
+   "A mí también.",
+   "Me too."
+  ],
+  [
+   "A mí tampoco.",
+   "Me neither."
+  ],
+  [
+   "Me encanta.",
+   "I love it."
+  ],
+  [
+   "No me gusta nada.",
+   "I don't like it at all."
+  ],
+  [
+   "¿Qué quieres hacer?",
+   "What do you want to do?"
+  ],
+  [
+   "Tengo que trabajar.",
+   "I have to work."
+  ],
+  [
+   "Hoy no puedo.",
+   "I can't today."
+  ],
+  [
+   "¿Por qué no?",
+   "Why not?"
+  ],
+  [
+   "No sé.",
+   "I don't know."
+  ],
+  [
+   "¿A qué hora empieza?",
+   "What time does it start?"
+  ],
+  [
+   "¿Te importa si…?",
+   "Do you mind if…? (informal)"
+  ]
+ ],
+ "items": [
+  {
+   "id": "C1-mc-01",
+   "t": "mc",
+   "q": "A mí me ___ los tacos.",
+   "qen": "I like tacos.",
+   "opts": [
+    "gusta",
+    "gusto",
+    "gustan",
+    "gustas"
+   ],
+   "a": 2,
+   "why": "The thing liked (los tacos) is plural → gustan."
+  },
+  {
+   "id": "C1-mc-02",
+   "t": "mc",
+   "q": "¿___ vives?",
+   "qen": "Where do you live?",
+   "opts": [
+    "Qué",
+    "Dónde",
+    "Cuándo",
+    "Cuánto"
+   ],
+   "a": 1,
+   "why": "Where = dónde (with an accent in questions)."
+  },
+  {
+   "id": "C1-mc-03",
+   "t": "mc",
+   "q": "Mi hermano ___ ocho horas todas las noches.",
+   "qen": "My brother sleeps eight hours every night.",
+   "opts": [
+    "dorme",
+    "duermo",
+    "dormen",
+    "duerme"
+   ],
+   "a": 3,
+   "why": "dormir is o→ue; él → duerme."
+  },
+  {
+   "id": "C1-mc-04",
+   "t": "mc",
+   "q": "No conozco a ___ aquí.",
+   "qen": "I don't know anyone here.",
+   "opts": [
+    "nadie",
+    "nada",
+    "nunca",
+    "alguien"
+   ],
+   "a": 0,
+   "why": "After no + verb, 'anyone' (a person) = nadie. Spanish uses the double negative."
+  },
+  {
+   "id": "C1-mc-05",
+   "t": "mc",
+   "q": "Ella ___ trabajar el sábado.",
+   "qen": "She has to work on Saturday.",
+   "opts": [
+    "tiene",
+    "tener que",
+    "tiene que",
+    "tienes que"
+   ],
+   "a": 2,
+   "why": "'Has to' = tener que + infinitive; ella → tiene que."
+  },
+  {
+   "id": "C1-mc-06",
+   "t": "mc",
+   "q": "A mi papá le ___ la espalda.",
+   "qen": "My dad's back hurts.",
+   "opts": [
+    "duelen",
+    "duele",
+    "dole",
+    "duelo"
+   ],
+   "a": 1,
+   "why": "doler works like gustar; la espalda is singular → duele."
+  },
+  {
+   "id": "C1-mc-07",
+   "t": "mc",
+   "q": "How do you say: \"I don't like coffee either.\"",
+   "opts": [
+    "A mí también me gusta el café.",
+    "Yo tampoco gusto el café.",
+    "A mí tampoco me gusta el café.",
+    "A mí tampoco me gustan el café."
+   ],
+   "a": 2,
+   "why": "Negative agreement → tampoco; gustar pattern with a singular thing → me gusta el café."
+  },
+  {
+   "id": "C1-mc-08",
+   "t": "mc",
+   "q": "Your friend says: \"Me encanta la música mexicana.\" You love it too. Best reply?",
+   "opts": [
+    "Yo también encanto.",
+    "A mí tampoco.",
+    "Yo tampoco.",
+    "A mí también."
+   ],
+   "a": 3,
+   "why": "Agreeing with a positive gustar/encantar statement → A mí también."
+  },
+  {
+   "id": "C1-mc-09",
+   "t": "mc",
+   "q": "Your friend says: \"No me gusta correr.\" You don't like it either. Best reply?",
+   "opts": [
+    "A mí sí.",
+    "A mí tampoco.",
+    "A mí también.",
+    "Yo no tampoco."
+   ],
+   "a": 1,
+   "why": "Agreeing with a negative statement → tampoco; with gustar it's A mí tampoco."
+  },
+  {
+   "id": "C1-mc-10",
+   "t": "mc",
+   "q": "¿___ cuesta la consulta?",
+   "qen": "How much does the appointment cost?",
+   "opts": [
+    "Cuándo",
+    "Cómo",
+    "Cuántos",
+    "Cuánto"
+   ],
+   "a": 3,
+   "why": "'How much' with a verb (cuesta) = cuánto."
+  },
+  {
+   "id": "C1-mc-11",
+   "t": "mc",
+   "q": "No puedo ir ___ tengo que trabajar.",
+   "qen": "I can't go because I have to work.",
+   "opts": [
+    "porque",
+    "pero",
+    "entonces",
+    "también"
+   ],
+   "a": 0,
+   "why": "Because = porque (one word, no accent)."
+  },
+  {
+   "id": "C1-mc-12",
+   "t": "mc",
+   "q": "Mi carro no funciona, ___ tomo el autobús.",
+   "qen": "My car doesn't work, so I take the bus.",
+   "opts": [
+    "porque",
+    "entonces",
+    "tampoco",
+    "cuándo"
+   ],
+   "a": 1,
+   "why": "'So' introducing a result = entonces."
+  },
+  {
+   "id": "C1-mc-13",
+   "t": "mc",
+   "q": "¿Tú ___ jugar fútbol el sábado?",
+   "qen": "Can you play soccer on Saturday?",
+   "opts": [
+    "podemos",
+    "pueden",
+    "puedes",
+    "puedo"
+   ],
+   "a": 2,
+   "why": "poder is o→ue; tú → puedes."
+  },
+  {
+   "id": "C1-mc-14",
+   "t": "mc",
+   "q": "Nosotros siempre ___ la misma comida.",
+   "qen": "We always order the same food.",
+   "opts": [
+    "pidemos",
+    "piden",
+    "pido",
+    "pedimos"
+   ],
+   "a": 3,
+   "why": "Stem changes skip nosotros: pedir → pedimos."
+  },
+  {
+   "id": "C1-mc-15",
+   "t": "mc",
+   "q": "¿A ustedes les ___ bailar?",
+   "qen": "Do you all like to dance?",
+   "opts": [
+    "gusta",
+    "gustan",
+    "gustamos",
+    "gustas"
+   ],
+   "a": 0,
+   "why": "The thing liked is an activity (infinitive) → always gusta, even if the people are plural."
+  },
+  {
+   "id": "C1-mc-16",
+   "t": "mc",
+   "q": "Which sentence is correct?",
+   "opts": [
+    "Nunca no como carne.",
+    "No como carne nunca.",
+    "No nunca como carne.",
+    "Como no carne nunca."
+   ],
+   "a": 1,
+   "why": "Either 'Nunca como carne' or 'No como carne nunca'. Never put no and nunca together before the verb."
+  },
+  {
+   "id": "C1-mc-17",
+   "t": "mc",
+   "q": "Mis hijos ___ jugar en el parque.",
+   "qen": "My kids want to play in the park.",
+   "opts": [
+    "quiere",
+    "queren",
+    "queremos",
+    "quieren"
+   ],
+   "a": 3,
+   "why": "querer is e→ie; ellos → quieren."
+  },
+  {
+   "id": "C1-mc-18",
+   "t": "mc",
+   "q": "—¿Por qué no vienes? —___ tengo que trabajar.",
+   "qen": "—Why aren't you coming? —Because I have to work.",
+   "opts": [
+    "Por qué",
+    "Porqué",
+    "Porque",
+    "Por que"
+   ],
+   "a": 2,
+   "why": "The answer 'because' is porque: one word, no accent."
+  },
+  {
+   "id": "C1-mc-19",
+   "t": "mc",
+   "q": "How do you say: \"What time does the class start?\"",
+   "opts": [
+    "¿A qué hora empieza la clase?",
+    "¿Qué hora empieza la clase?",
+    "¿A qué hora empeza la clase?",
+    "¿Cuándo hora empieza la clase?"
+   ],
+   "a": 0,
+   "why": "'At what time' = ¿A qué hora…?; empezar is e→ie → empieza."
+  },
+  {
+   "id": "C1-mc-20",
+   "t": "mc",
+   "q": "¿Te ___ si abro la ventana?",
+   "qen": "Do you mind if I open the window?",
+   "opts": [
+    "importas",
+    "importan",
+    "importa",
+    "importo"
+   ],
+   "a": 2,
+   "why": "importar works like gustar; the thing that matters is 'if I open the window' (singular idea) → importa."
+  },
+  {
+   "id": "C1-fill-01",
+   "t": "fill",
+   "q": "Yo ___ ocho horas cada noche.",
+   "en": "I sleep eight hours every night.",
+   "hint": "dormir",
+   "a": [
+    "duermo"
+   ],
+   "why": "dormir is o→ue; yo → duermo."
+  },
+  {
+   "id": "C1-fill-02",
+   "t": "fill",
+   "q": "¿Tú ___ café o té?",
+   "en": "Do you prefer coffee or tea?",
+   "hint": "preferir",
+   "a": [
+    "prefieres"
+   ],
+   "why": "preferir is e→ie; tú → prefieres."
+  },
+  {
+   "id": "C1-fill-03",
+   "t": "fill",
+   "q": "¿___ no comes carne?",
+   "en": "Why don't you eat meat?",
+   "hint": "why (question word)",
+   "a": [
+    "Por qué",
+    "por qué"
+   ],
+   "why": "The question 'why' = por qué: two words, accent on qué."
+  },
+  {
+   "id": "C1-fill-04",
+   "t": "fill",
+   "q": "A mí me ___ las rodillas.",
+   "en": "My knees hurt.",
+   "hint": "doler",
+   "a": [
+    "duelen"
+   ],
+   "why": "doler works like gustar; las rodillas is plural → duelen."
+  },
+  {
+   "id": "C1-fill-05",
+   "t": "fill",
+   "q": "Llueve mucho, ___ no salgo.",
+   "en": "It's raining a lot, so I'm not going out.",
+   "hint": "so (connector)",
+   "a": [
+    "entonces",
+    "así que",
+    "por eso"
+   ],
+   "why": "'So' introducing a result = entonces (así que and por eso also work)."
+  },
+  {
+   "id": "C1-fill-06",
+   "t": "fill",
+   "q": "¿___ se llama tu hermana?",
+   "en": "What's your sister's name?",
+   "hint": "how (question word)",
+   "a": [
+    "Cómo",
+    "cómo"
+   ],
+   "why": "Spanish asks 'How is she called?' → ¿Cómo se llama?"
+  },
+  {
+   "id": "C1-fill-07",
+   "t": "fill",
+   "q": "No quiero ___.",
+   "en": "I don't want anything.",
+   "hint": "nothing",
+   "a": [
+    "nada"
+   ],
+   "why": "no + verb + nada = not … anything."
+  },
+  {
+   "id": "C1-fill-08",
+   "t": "fill",
+   "q": "Mi esposa ___ va al gimnasio.",
+   "en": "My wife never goes to the gym.",
+   "hint": "never",
+   "a": [
+    "nunca",
+    "jamás"
+   ],
+   "why": "nunca before the verb, with no 'no' (jamás also works)."
+  },
+  {
+   "id": "C1-fill-09",
+   "t": "fill",
+   "q": "Yo no hablo francés, y mi hermano ___.",
+   "en": "I don't speak French, and neither does my brother.",
+   "hint": "neither",
+   "a": [
+    "tampoco"
+   ],
+   "why": "Agreeing with a negative → tampoco."
+  },
+  {
+   "id": "C1-fill-10",
+   "t": "fill",
+   "q": "A ellos les ___ el fútbol.",
+   "en": "They love soccer.",
+   "hint": "encantar",
+   "a": [
+    "encanta"
+   ],
+   "why": "encantar works like gustar; el fútbol is singular → encanta."
+  },
+  {
+   "id": "C1-fill-11",
+   "t": "fill",
+   "q": "Yo ___ que llamar a mi mamá.",
+   "en": "I have to call my mom.",
+   "hint": "tener",
+   "a": [
+    "tengo"
+   ],
+   "why": "tener que + infinitive; yo → tengo."
+  },
+  {
+   "id": "C1-fill-12",
+   "t": "fill",
+   "q": "Ustedes siempre ___ tacos al pastor.",
+   "en": "You all always order tacos al pastor.",
+   "hint": "pedir",
+   "a": [
+    "piden"
+   ],
+   "why": "pedir is e→i; ustedes → piden."
+  },
+  {
+   "id": "C1-fill-13",
+   "t": "fill",
+   "q": "¿___ trabajas?",
+   "en": "Where do you work?",
+   "hint": "where (question word)",
+   "a": [
+    "Dónde",
+    "dónde",
+    "En dónde",
+    "en dónde"
+   ],
+   "why": "Where = dónde, with an accent in questions."
+  },
+  {
+   "id": "C1-fill-14",
+   "t": "fill",
+   "q": "Mi hijo ___ ser doctor.",
+   "en": "My son wants to be a doctor.",
+   "hint": "querer",
+   "a": [
+    "quiere"
+   ],
+   "why": "querer is e→ie; él → quiere + infinitive."
+  },
+  {
+   "id": "C1-fill-15",
+   "t": "fill",
+   "q": "¿Cuántos hijos ___ usted?",
+   "en": "How many children do you have?",
+   "hint": "tener",
+   "a": [
+    "tiene"
+   ],
+   "why": "usted uses the él/ella form → tiene."
+  },
+  {
+   "id": "C1-fill-16",
+   "t": "fill",
+   "q": "Yo no ___ la respuesta.",
+   "en": "I don't know the answer.",
+   "hint": "saber",
+   "a": [
+    "sé"
+   ],
+   "why": "saber is irregular in the yo form: sé (with an accent)."
+  },
+  {
+   "id": "C1-fill-17",
+   "t": "fill",
+   "q": "¿A qué hora ___ tú a casa?",
+   "en": "What time do you get back home?",
+   "hint": "volver",
+   "a": [
+    "vuelves"
+   ],
+   "why": "volver is o→ue; tú → vuelves."
+  },
+  {
+   "id": "C1-fill-18",
+   "t": "fill",
+   "q": "Me gusta el café, ___ no me gusta el té.",
+   "en": "I like coffee, but I don't like tea.",
+   "hint": "but",
+   "a": [
+    "pero"
+   ],
+   "why": "But = pero."
+  },
+  {
+   "id": "C1-fill-19",
+   "t": "fill",
+   "q": "Los domingos mis hijos ___ fútbol.",
+   "en": "On Sundays my kids play soccer.",
+   "hint": "jugar",
+   "a": [
+    "juegan"
+   ],
+   "why": "jugar is u→ue; ellos → juegan."
+  },
+  {
+   "id": "C1-fill-20",
+   "t": "fill",
+   "q": "¿Te ___ la cabeza?",
+   "en": "Does your head hurt?",
+   "hint": "doler",
+   "a": [
+    "duele"
+   ],
+   "why": "doler works like gustar; la cabeza is singular → duele."
+  },
+  {
+   "id": "C1-tiles-01",
+   "t": "tiles",
+   "en": "I don't like to run.",
+   "a": "No me gusta correr.",
+   "alt": [
+    "Correr no me gusta."
+   ],
+   "extra": [
+    "gustan",
+    "yo"
+   ]
+  },
+  {
+   "id": "C1-tiles-02",
+   "t": "tiles",
+   "en": "What time do you get off work? (to a friend)",
+   "a": "¿A qué hora sales del trabajo?",
+   "alt": [],
+   "extra": [
+    "salgo",
+    "cuándo"
+   ]
+  },
+  {
+   "id": "C1-tiles-03",
+   "t": "tiles",
+   "en": "My knees hurt.",
+   "a": "Me duelen las rodillas.",
+   "alt": [
+    "Las rodillas me duelen."
+   ],
+   "extra": [
+    "duele",
+    "duelo"
+   ]
+  },
+  {
+   "id": "C1-tiles-04",
+   "t": "tiles",
+   "en": "I never eat red meat.",
+   "a": "Nunca como carne roja.",
+   "alt": [],
+   "extra": [
+    "come",
+    "nada"
+   ]
+  },
+  {
+   "id": "C1-tiles-05",
+   "t": "tiles",
+   "en": "Nobody wants to work on Sunday.",
+   "a": "Nadie quiere trabajar el domingo.",
+   "alt": [
+    "El domingo nadie quiere trabajar."
+   ],
+   "extra": [
+    "quieren",
+    "nada"
+   ]
+  },
+  {
+   "id": "C1-tiles-06",
+   "t": "tiles",
+   "en": "We can't go because we have to work.",
+   "a": "No podemos ir porque tenemos que trabajar.",
+   "alt": [],
+   "extra": [
+    "pero",
+    "puedo"
+   ]
+  },
+  {
+   "id": "C1-tiles-07",
+   "t": "tiles",
+   "en": "What do you want to eat today? (to a friend)",
+   "a": "¿Qué quieres comer hoy?",
+   "alt": [
+    "¿Hoy qué quieres comer?"
+   ],
+   "extra": [
+    "quiere",
+    "cuál"
+   ]
+  },
+  {
+   "id": "C1-tiles-08",
+   "t": "tiles",
+   "en": "My wife loves to dance.",
+   "a": "A mi esposa le encanta bailar.",
+   "alt": [
+    "Le encanta bailar a mi esposa."
+   ],
+   "extra": [
+    "encantan",
+    "me"
+   ]
+  },
+  {
+   "id": "C1-tiles-09",
+   "t": "tiles",
+   "en": "I don't have time today either.",
+   "a": "Tampoco tengo tiempo hoy.",
+   "alt": [
+    "Hoy tampoco tengo tiempo.",
+    "Tampoco hoy tengo tiempo."
+   ],
+   "extra": [
+    "también",
+    "tiene"
+   ]
+  },
+  {
+   "id": "C1-tiles-10",
+   "t": "tiles",
+   "en": "Why aren't you coming to the party? (to a friend)",
+   "a": "¿Por qué no vienes a la fiesta?",
+   "alt": [],
+   "extra": [
+    "Porque",
+    "vienen"
+   ]
+  },
+  {
+   "id": "C1-tiles-11",
+   "t": "tiles",
+   "en": "How much does the medicine cost?",
+   "a": "¿Cuánto cuesta la medicina?",
+   "alt": [
+    "¿La medicina cuánto cuesta?"
+   ],
+   "extra": [
+    "Cuántos",
+    "cuestan"
+   ]
+  },
+  {
+   "id": "C1-tiles-12",
+   "t": "tiles",
+   "en": "I prefer to walk, but my wife prefers to drive.",
+   "a": "Yo prefiero caminar, pero mi esposa prefiere manejar.",
+   "alt": [
+    "Mi esposa prefiere manejar, pero yo prefiero caminar."
+   ],
+   "extra": [
+    "preferimos",
+    "prefieren"
+   ]
+  },
+  {
+   "id": "C1-tiles-13",
+   "t": "tiles",
+   "en": "What does your son want to be? (to a friend)",
+   "a": "¿Qué quiere ser tu hijo?",
+   "alt": [
+    "¿Tu hijo qué quiere ser?"
+   ],
+   "extra": [
+    "quieres",
+    "cuál"
+   ]
+  },
+  {
+   "id": "C1-tiles-14",
+   "t": "tiles",
+   "en": "Does your head hurt? (to a friend)",
+   "a": "¿Te duele la cabeza?",
+   "alt": [],
+   "extra": [
+    "duelen",
+    "me"
+   ]
+  },
+  {
+   "id": "C1-tiles-15",
+   "t": "tiles",
+   "en": "We don't want anything, thanks.",
+   "a": "No queremos nada, gracias.",
+   "alt": [
+    "Gracias, no queremos nada."
+   ],
+   "extra": [
+    "nadie",
+    "quieren"
+   ]
+  },
+  {
+   "id": "C1-tiles-16",
+   "t": "tiles",
+   "en": "Do you mind if I open the window? (to a friend)",
+   "a": "¿Te importa si abro la ventana?",
+   "alt": [],
+   "extra": [
+    "importan",
+    "abra"
+   ]
+  },
+  {
+   "id": "C1-listen-01",
+   "t": "listen",
+   "say": "No me gustan las películas de miedo.",
+   "opts": [
+    "I like horror movies.",
+    "I don't like horror movies.",
+    "I'm not afraid of movies.",
+    "I don't like scary books."
+   ],
+   "a": 1
+  },
+  {
+   "id": "C1-listen-02",
+   "t": "listen",
+   "say": "Mi hermana no puede venir porque trabaja hoy.",
+   "opts": [
+    "My sister can come because she isn't working today.",
+    "My sister doesn't want to come because she's working.",
+    "My brother can't come because he's working today.",
+    "My sister can't come because she's working today."
+   ],
+   "a": 3
+  },
+  {
+   "id": "C1-listen-03",
+   "t": "listen",
+   "say": "¿A qué hora vuelves a casa?",
+   "opts": [
+    "What time do you get back home?",
+    "What time do you leave home?",
+    "What time do you go back to work?",
+    "Why do you go home so late?"
+   ],
+   "a": 0
+  },
+  {
+   "id": "C1-listen-04",
+   "t": "listen",
+   "say": "Nunca duermo bien.",
+   "opts": [
+    "I always sleep well.",
+    "I don't sleep much.",
+    "I never sleep well.",
+    "I never eat well."
+   ],
+   "a": 2
+  },
+  {
+   "id": "C1-listen-05",
+   "t": "listen",
+   "say": "A mi papá le duelen las piernas.",
+   "opts": [
+    "My dad's feet hurt.",
+    "My dad's legs hurt.",
+    "My legs hurt.",
+    "My dad's leg hurts."
+   ],
+   "a": 1
+  },
+  {
+   "id": "C1-listen-06",
+   "t": "listen",
+   "say": "Tengo que llamar al doctor.",
+   "opts": [
+    "I want to call the doctor.",
+    "The doctor has to call me.",
+    "I have to go to the doctor.",
+    "I have to call the doctor."
+   ],
+   "a": 3
+  },
+  {
+   "id": "C1-listen-07",
+   "t": "listen",
+   "say": "Nosotros tampoco queremos ir.",
+   "opts": [
+    "We don't want to go either.",
+    "We also want to go.",
+    "They don't want to go either.",
+    "We never want to go."
+   ],
+   "a": 0
+  },
+  {
+   "id": "C1-listen-08",
+   "t": "listen",
+   "say": "¿Cuántas horas trabajas los sábados?",
+   "opts": [
+    "What time do you work on Saturdays?",
+    "How many days do you work?",
+    "How many hours do you work on Saturdays?",
+    "How many hours did you work on Saturday?"
+   ],
+   "a": 2
+  },
+  {
+   "id": "C1-listen-09",
+   "t": "listen",
+   "say": "Me encanta cocinar, pero no tengo tiempo.",
+   "opts": [
+    "I like to eat, but I don't have time.",
+    "I love to cook, but I don't have time.",
+    "I love to cook, so I have time.",
+    "I'm going to cook, but I don't have time."
+   ],
+   "a": 1
+  },
+  {
+   "id": "C1-listen-10",
+   "t": "listen",
+   "say": "Mis hijos piden pizza todos los viernes.",
+   "opts": [
+    "My kids make pizza every Friday.",
+    "My kid orders pizza every Friday.",
+    "My kids ate pizza last Friday.",
+    "My kids order pizza every Friday."
+   ],
+   "a": 3
+  },
+  {
+   "id": "C1-dlg-01",
+   "t": "dlg",
+   "title": "Meeting a new coworker",
+   "turns": [
+    {
+     "who": "Laura",
+     "es": "Hola, soy Laura. Trabajo en cardiología. ¿Y tú?",
+     "en": "Hi, I'm Laura. I work in cardiology. And you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Mucho gusto, Laura. Yo trabajo en electrofisiología.",
+      "Mucho gusto, Laura. Usted trabaja en electrofisiología.",
+      "Mucho gusto, Laura. Yo trabajas en electrofisiología."
+     ],
+     "a": 0,
+     "why": "You're talking about yourself → yo trabajo."
+    },
+    {
+     "who": "Laura",
+     "es": "¡Qué interesante! ¿Dónde vives?",
+     "en": "How interesting! Where do you live?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Vives en Chicago, cerca del hospital.",
+      "Viven en Chicago, cerca del hospital.",
+      "Vivo en Chicago, cerca del hospital."
+     ],
+     "a": 2,
+     "why": "She asks where you live → answer with the yo form: vivo."
+    },
+    {
+     "who": "Laura",
+     "es": "Yo también. ¿Te gusta la ciudad?",
+     "en": "Me too. Do you like the city?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, me gustan mucho, pero no me gusta el frío.",
+      "Sí, me gusta mucho, pero no me gusta el frío.",
+      "Sí, le gusta mucho, pero no le gusta el frío."
+     ],
+     "a": 1,
+     "why": "La ciudad is singular → me gusta; you're talking about yourself → me, not le."
+    }
+   ]
+  },
+  {
+   "id": "C1-dlg-02",
+   "t": "dlg",
+   "title": "Weekend plans with a friend",
+   "turns": [
+    {
+     "who": "Marco",
+     "es": "Oye, ¿quieres ir al cine el sábado?",
+     "en": "Hey, do you want to go to the movies on Saturday?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "No puedo el sábado pero tengo que trabajar. ¿Puedes el domingo?",
+      "No puedo el sábado porque tengo que trabajar. ¿Puedes el domingo?",
+      "No puedo el sábado porque tengo que trabajar. ¿Puede usted el domingo?"
+     ],
+     "a": 1,
+     "why": "Giving a reason → porque; Marco is a friend → tú (puedes), not usted."
+    },
+    {
+     "who": "Marco",
+     "es": "Sí, el domingo puedo. ¿Qué película prefieres?",
+     "en": "Yes, Sunday works for me. What movie do you prefer?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Prefiero una comedia. No me gustan las películas de miedo.",
+      "Prefieres una comedia. No me gustan las películas de miedo.",
+      "Prefiero una comedia. No me gusta las películas de miedo."
+     ],
+     "a": 0,
+     "why": "yo → prefiero; las películas is plural → me gustan."
+    },
+    {
+     "who": "Marco",
+     "es": "Perfecto. A mí tampoco me gustan.",
+     "en": "Perfect. I don't like them either."
+    }
+   ]
+  },
+  {
+   "id": "C1-dlg-03",
+   "t": "dlg",
+   "title": "An older neighbor in the elevator",
+   "turns": [
+    {
+     "who": "Sra. Gómez",
+     "es": "Buenos días. ¿Usted vive en este edificio?",
+     "en": "Good morning. Do you live in this building?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, señora. Vivo en el tercer piso. ¿Y tú?",
+      "Sí, señora. Vivo en el tercer piso. ¿Y usted?",
+      "Sí, señora. Vives en el tercer piso. ¿Y usted?"
+     ],
+     "a": 1,
+     "why": "An older neighbor you don't know well → usted; about yourself → vivo."
+    },
+    {
+     "who": "Sra. Gómez",
+     "es": "Yo vivo en el primer piso, con mi hija. No puedo subir escaleras porque me duelen las rodillas.",
+     "en": "I live on the first floor, with my daughter. I can't climb stairs because my knees hurt."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Lo siento mucho. ¿Les duelen todos los días?",
+      "Lo siento mucho. ¿Te duelen todos los días?",
+      "Lo siento mucho. ¿Le duelen todos los días?"
+     ],
+     "a": 2,
+     "why": "Usted → le; the knees are plural → duelen. Les would mean 'them', and te is too informal."
+    },
+    {
+     "who": "Sra. Gómez",
+     "es": "Sí, casi todos los días, sobre todo en la mañana.",
+     "en": "Yes, almost every day, especially in the morning."
+    }
+   ]
+  },
+  {
+   "id": "C1-dlg-04",
+   "t": "dlg",
+   "title": "Ordering at a restaurant",
+   "turns": [
+    {
+     "who": "Mesero",
+     "es": "Buenas tardes. ¿Qué desean tomar?",
+     "en": "Good afternoon. What would you like to drink?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Para mí, una limonada, por favor. Y mi esposa quiere agua.",
+      "Para mí, una limonada, por favor. Y mi esposa quieres agua.",
+      "Para mí, una limonada, por favor. Y mi esposa queremos agua."
+     ],
+     "a": 0,
+     "why": "Mi esposa = ella → quiere."
+    },
+    {
+     "who": "Mesero",
+     "es": "Muy bien. ¿Y para comer?",
+     "en": "Very good. And to eat?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Yo pedimos las enchiladas verdes. ¿Tienen algo sin carne para ella?",
+      "Yo piden las enchiladas verdes. ¿Tienen algo sin carne para ella?",
+      "Yo pido las enchiladas verdes. ¿Tienen algo sin carne para ella?"
+     ],
+     "a": 2,
+     "why": "pedir is e→i; yo → pido."
+    },
+    {
+     "who": "Mesero",
+     "es": "Sí, tenemos tacos de nopales y quesadillas de flor de calabaza.",
+     "en": "Yes, we have cactus tacos and squash-blossom quesadillas."
+    }
+   ]
+  },
+  {
+   "id": "C1-dlg-05",
+   "t": "dlg",
+   "title": "Talking about weekends",
+   "turns": [
+    {
+     "who": "Sofía",
+     "es": "¿Qué haces los fines de semana?",
+     "en": "What do you do on weekends?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Juega tenis y a veces cocina con mi esposa.",
+      "Juego tenis y a veces cocino con mi esposa.",
+      "Jugo tenis y a veces cocino con mi esposa."
+     ],
+     "a": 1,
+     "why": "jugar is u→ue; yo → juego, cocino."
+    },
+    {
+     "who": "Sofía",
+     "es": "¡Qué bien! A mí no me gusta cocinar.",
+     "en": "Nice! I don't like cooking."
+    },
+    {
+     "you": true,
+     "opts": [
+      "¿De veras? A mí me encanta cocinar.",
+      "¿De veras? A mí me encantan cocinar.",
+      "¿De veras? Yo encanto cocinar."
+     ],
+     "a": 0,
+     "why": "encantar + an activity (infinitive) → me encanta."
+    },
+    {
+     "who": "Sofía",
+     "es": "Entonces tú cocinas y yo como. ¡Perfecto!",
+     "en": "So you cook and I eat. Perfect!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "¡Trato hecho! ¿Qué comida le gusta a usted?",
+      "¡Trato hecho! ¿Qué comida te gustas?",
+      "¡Trato hecho! ¿Qué comida te gusta?"
+     ],
+     "a": 2,
+     "why": "Sofía is a friend → te; one thing liked (la comida) → gusta."
+    }
+   ]
+  },
+  {
+   "id": "C1-dlg-06",
+   "t": "dlg",
+   "title": "A lunch invitation at work",
+   "turns": [
+    {
+     "who": "Pedro",
+     "es": "¿Quieres comer con nosotros hoy?",
+     "en": "Do you want to have lunch with us today?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Hoy no puedes, tengo que ver a un paciente a la una. ¿Mañana?",
+      "Hoy no puedo, tengo que ver a un paciente a la una. ¿Mañana?",
+      "Hoy no puedo, tengo ver a un paciente a la una. ¿Mañana?"
+     ],
+     "a": 1,
+     "why": "About yourself → puedo; 'have to' needs que: tengo que ver."
+    },
+    {
+     "who": "Pedro",
+     "es": "Claro. ¿A qué hora almuerzas normalmente?",
+     "en": "Sure. What time do you usually have lunch?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Normalmente almuerzo a las doce y media.",
+      "Normalmente almuerza a las doce y media.",
+      "Normalmente almorzo a las doce y media."
+     ],
+     "a": 0,
+     "why": "almorzar is o→ue; yo → almuerzo."
+    },
+    {
+     "who": "Pedro",
+     "es": "Perfecto. Mañana a las doce y media, entonces.",
+     "en": "Perfect. Tomorrow at twelve thirty, then."
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "New coworker at lunch",
+   "setup": "You're having lunch in the hospital cafeteria and a new nurse sits down next to you. Get to know her: where she lives, what she likes, and what she has to do this weekend.",
+   "persona": "You are Carmen Ruiz, 34, a cardiology nurse from Guadalajara, Mexico, who just started at the hospital. You live in Pilsen with your husband and two kids (8 and 11). You love cooking and salsa dancing; you don't like the Chicago cold. This Saturday you have to work, and on Sunday your kids play soccer in the park. Speak only in the present tense, in short, simple sentences, and use tú (you are coworkers). Use gustar/encantar, tener que, poder and querer naturally. Share details only when asked, and ask the learner a question back from time to time. If the learner makes a mistake, keep the conversation going and model the correct form in your reply.",
+   "opening": "¡Hola! Soy Carmen, la nueva enfermera de cardiología. ¿Tú también trabajas en cardiología?",
+   "goals": [
+    "Ask where she lives and how many kids she has",
+    "Find out two things she likes and one she doesn't (gustar/encantar)",
+    "Ask what she has to do this weekend (tener que)",
+    "Say one thing you like and one you don't, using también or tampoco",
+    "Ask at least three questions with different question words"
+   ]
+  },
+  {
+   "title": "Neighbor in the elevator",
+   "setup": "You meet an older neighbor in your building's elevator. Use usted, chat about his routine and what he likes, and find out what is bothering him.",
+   "persona": "You are Don Ernesto Morales, 72, a retired carpenter from Michoacán, Mexico. You live on the second floor with your wife, Rosa. Your knees hurt, so you can't take the stairs; you walk in the park every morning anyway. You love baseball (the Cubs) and you don't like the cold. You can't drive at night because you don't see well, so your daughter drives you. This Thursday you have to go to the doctor. Speak only in the present tense, in simple sentences. Use usted with the learner and expect usted back; if the learner uses tú, smile and keep going but keep using usted yourself. Share details only when asked.",
+   "opening": "Buenos días. ¿Usted vive en el quinto piso?",
+   "goals": [
+    "Use usted correctly throughout the conversation",
+    "Ask what he does in the mornings",
+    "Find out what hurts him (doler)",
+    "Ask what he likes to do on weekends",
+    "Find out what he has to do this week (tener que)"
+   ]
+  }
+ ]
+}

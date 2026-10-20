@@ -1,0 +1,956 @@
+{
+ "M2-mc-01": {
+  "sk": [
+   "t:pret"
+  ],
+  "vw": [
+   0,
+   2
+  ],
+  "lem": "empezar",
+  "tn": "Preterite",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "1": "person",
+   "2": "tense:Future"
+  }
+ },
+ "M2-mc-02": {
+  "sk": [
+   "g:time"
+  ],
+  "vw": [
+   3
+  ],
+  "oe": {
+   "0": "prep",
+   "1": "prep",
+   "3": "prep"
+  }
+ },
+ "M2-mc-03": {
+  "sk": [
+   "g:time",
+   "t:pres"
+  ],
+  "vw": [
+   4
+  ],
+  "oe": {
+   "1": "tense:Preterite",
+   "2": "other",
+   "3": "prep"
+  }
+ },
+ "M2-mc-04": {
+  "sk": [
+   "g:time",
+   "g:register"
+  ],
+  "vw": [
+   5
+  ],
+  "oe": {
+   "0": "tense:Preterite",
+   "1": "question",
+   "3": "register"
+  }
+ },
+ "M2-mc-05": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   20
+  ],
+  "oe": {
+   "0": "word",
+   "2": "word",
+   "3": "word"
+  }
+ },
+ "M2-mc-06": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   22
+  ],
+  "oe": {
+   "0": "word",
+   "1": "word",
+   "2": "word"
+  }
+ },
+ "M2-mc-07": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   23
+  ],
+  "oe": {
+   "1": "word",
+   "2": "word",
+   "3": "word"
+  }
+ },
+ "M2-mc-08": {
+  "sk": [
+   "g:person",
+   "g:reflex"
+  ],
+  "vw": [
+   25
+  ],
+  "lem": "correr",
+  "tn": "Present",
+  "pn": 2,
+  "oe": {
+   "0": "person",
+   "1": "tense:Preterite",
+   "2": "person"
+  }
+ },
+ "M2-mc-09": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   17
+  ],
+  "oe": {
+   "0": "word",
+   "2": "word",
+   "3": "word"
+  }
+ },
+ "M2-mc-10": {
+  "sk": [
+   "g:prep",
+   "g:connect"
+  ],
+  "vw": [
+   27
+  ],
+  "oe": {
+   "0": "other",
+   "1": "prep",
+   "3": "prep"
+  }
+ },
+ "M2-mc-11": {
+  "sk": [
+   "t:pret"
+  ],
+  "vw": [
+   36
+  ],
+  "lem": "sentir",
+  "tn": "Preterite",
+  "pn": 0,
+  "oe": {
+   "0": "tense:Present",
+   "1": "person",
+   "2": "tense:Future"
+  }
+ },
+ "M2-mc-12": {
+  "sk": [
+   "t:pret"
+  ],
+  "vw": [
+   13
+  ],
+  "lem": "durar",
+  "tn": "Preterite",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Present",
+   "2": "person",
+   "3": "tense:Future"
+  }
+ },
+ "M2-mc-13": {
+  "sk": [
+   "s:vocab",
+   "s:phrase"
+  ],
+  "vw": [
+   33,
+   32
+  ],
+  "oe": {
+   "1": "word",
+   "2": "word",
+   "3": "word"
+  }
+ },
+ "M2-mc-14": {
+  "sk": [
+   "t:imp",
+   "t:pvi"
+  ],
+  "vw": [],
+  "lem": "hacer",
+  "tn": "Imperfect",
+  "pn": 2,
+  "oe": {
+   "0": "tense:Preterite",
+   "2": "tense:Present",
+   "3": "tense:Future"
+  }
+ },
+ "M2-mc-15": {
+  "sk": [
+   "t:pret",
+   "g:irreg"
+  ],
+  "vw": [
+   40,
+   6
+  ],
+  "lem": "ir",
+  "tn": "Preterite",
+  "pn": 0,
+  "oe": {
+   "0": "tense:Present",
+   "1": "person",
+   "2": "tense:Imperfect"
+  }
+ },
+ "M2-mc-16": {
+  "sk": [
+   "t:pret",
+   "g:register"
+  ],
+  "vw": [
+   40
+  ],
+  "lem": "ir",
+  "tn": "Preterite",
+  "pn": 2,
+  "oe": {
+   "0": "person",
+   "1": "tense:Present",
+   "3": "register"
+  }
+ },
+ "M2-mc-17": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   26
+  ],
+  "oe": {
+   "0": "other",
+   "2": "word",
+   "3": "word"
+  }
+ },
+ "M2-mc-18": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   16
+  ],
+  "oe": {
+   "0": "word",
+   "1": "word",
+   "3": "word"
+  }
+ },
+ "M2-mc-19": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   14,
+   15
+  ],
+  "oe": {
+   "0": "word",
+   "1": "word",
+   "2": "word"
+  }
+ },
+ "M2-mc-20": {
+  "sk": [
+   "s:vocab",
+   "t:imp"
+  ],
+  "vw": [
+   0
+  ],
+  "oe": {
+   "1": "tense:Present",
+   "2": "word",
+   "3": "word"
+  }
+ },
+ "M2-fill-01": {
+  "sk": [
+   "t:pret"
+  ],
+  "vw": [
+   0
+  ],
+  "lem": "empezar",
+  "tn": "Preterite",
+  "pn": 2
+ },
+ "M2-fill-02": {
+  "sk": [
+   "g:time"
+  ],
+  "vw": [
+   3
+  ]
+ },
+ "M2-fill-03": {
+  "sk": [
+   "g:time"
+  ],
+  "vw": [
+   4,
+   39
+  ]
+ },
+ "M2-fill-04": {
+  "sk": [
+   "g:time",
+   "g:questions"
+  ],
+  "vw": [
+   5
+  ]
+ },
+ "M2-fill-05": {
+  "sk": [
+   "t:pret"
+  ],
+  "vw": [
+   36
+  ],
+  "lem": "sentir",
+  "tn": "Preterite",
+  "pn": 0
+ },
+ "M2-fill-06": {
+  "sk": [
+   "t:pret"
+  ],
+  "vw": [
+   13
+  ],
+  "lem": "durar",
+  "tn": "Preterite",
+  "pn": 2
+ },
+ "M2-fill-07": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   20
+  ]
+ },
+ "M2-fill-08": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   19,
+   18
+  ]
+ },
+ "M2-fill-09": {
+  "sk": [
+   "s:phrase",
+   "t:pres"
+  ],
+  "vw": [
+   25
+  ],
+  "lem": "correr",
+  "tn": "Present",
+  "pn": 2
+ },
+ "M2-fill-10": {
+  "sk": [
+   "s:phrase"
+  ],
+  "vw": [
+   17
+  ],
+  "lem": "venir",
+  "tn": "Present",
+  "pn": 2
+ },
+ "M2-fill-11": {
+  "sk": [
+   "g:prep"
+  ],
+  "vw": [
+   27
+  ]
+ },
+ "M2-fill-12": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   32,
+   33
+  ]
+ },
+ "M2-fill-13": {
+  "sk": [
+   "t:pret",
+   "g:irreg"
+  ],
+  "vw": [
+   6,
+   40
+  ],
+  "lem": "ir",
+  "tn": "Preterite",
+  "pn": 0
+ },
+ "M2-fill-14": {
+  "sk": [
+   "t:pret",
+   "g:register"
+  ],
+  "vw": [
+   41
+  ],
+  "lem": "tomar",
+  "tn": "Preterite",
+  "pn": 2
+ },
+ "M2-fill-15": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   14
+  ]
+ },
+ "M2-fill-16": {
+  "sk": [
+   "s:vocab"
+  ],
+  "vw": [
+   30,
+   34
+  ]
+ },
+ "M2-fill-17": {
+  "sk": [
+   "g:reflex",
+   "t:pres"
+  ],
+  "vw": [
+   29
+  ],
+  "lem": "acostar",
+  "tn": "Present",
+  "pn": 2
+ },
+ "M2-fill-18": {
+  "sk": [
+   "t:pret",
+   "g:irreg"
+  ],
+  "vw": [
+   37
+  ],
+  "lem": "tener",
+  "tn": "Preterite",
+  "pn": 2
+ },
+ "M2-fill-19": {
+  "sk": [
+   "t:pret",
+   "g:irreg"
+  ],
+  "vw": [],
+  "lem": "tener",
+  "tn": "Preterite",
+  "pn": 0
+ },
+ "M2-fill-20": {
+  "sk": [
+   "t:imp",
+   "t:pvi"
+  ],
+  "vw": [],
+  "lem": "hacer",
+  "tn": "Imperfect",
+  "pn": 2
+ },
+ "M2-tiles-01": {
+  "sk": [
+   "s:order",
+   "t:pret"
+  ],
+  "vw": [
+   2
+  ]
+ },
+ "M2-tiles-02": {
+  "sk": [
+   "s:order",
+   "g:time",
+   "t:pret"
+  ],
+  "vw": [
+   3
+  ]
+ },
+ "M2-tiles-03": {
+  "sk": [
+   "s:order",
+   "g:time"
+  ],
+  "vw": [
+   4
+  ]
+ },
+ "M2-tiles-04": {
+  "sk": [
+   "s:order",
+   "g:serestar",
+   "g:agree"
+  ],
+  "vw": [
+   20
+  ]
+ },
+ "M2-tiles-05": {
+  "sk": [
+   "s:order",
+   "g:register",
+   "g:reflex"
+  ],
+  "vw": [
+   25
+  ]
+ },
+ "M2-tiles-06": {
+  "sk": [
+   "s:order",
+   "t:pres"
+  ],
+  "vw": [
+   16,
+   17
+  ]
+ },
+ "M2-tiles-07": {
+  "sk": [
+   "s:order",
+   "g:gustar",
+   "g:prep"
+  ],
+  "vw": [
+   28
+  ]
+ },
+ "M2-tiles-08": {
+  "sk": [
+   "s:order",
+   "g:register",
+   "g:reflex"
+  ],
+  "vw": [
+   33,
+   32
+  ]
+ },
+ "M2-tiles-09": {
+  "sk": [
+   "s:order",
+   "t:pret"
+  ],
+  "vw": [
+   36
+  ]
+ },
+ "M2-tiles-10": {
+  "sk": [
+   "s:order",
+   "t:pret"
+  ],
+  "vw": [
+   13
+  ]
+ },
+ "M2-tiles-11": {
+  "sk": [
+   "s:order",
+   "t:imp",
+   "t:pvi"
+  ],
+  "vw": []
+ },
+ "M2-tiles-12": {
+  "sk": [
+   "s:order",
+   "t:pvi",
+   "t:imp"
+  ],
+  "vw": []
+ },
+ "M2-tiles-13": {
+  "sk": [
+   "s:order",
+   "t:pret",
+   "g:register"
+  ],
+  "vw": []
+ },
+ "M2-tiles-14": {
+  "sk": [
+   "s:order",
+   "g:objpron"
+  ],
+  "vw": [
+   26
+  ]
+ },
+ "M2-tiles-15": {
+  "sk": [
+   "s:order",
+   "t:pret",
+   "g:reflex"
+  ],
+  "vw": [
+   41,
+   33
+  ]
+ },
+ "M2-tiles-16": {
+  "sk": [
+   "s:order",
+   "t:pret",
+   "g:irreg"
+  ],
+  "vw": [
+   40
+  ]
+ },
+ "M2-listen-01": {
+  "sk": [
+   "s:listen",
+   "g:time"
+  ],
+  "vw": [
+   3
+  ]
+ },
+ "M2-listen-02": {
+  "sk": [
+   "s:listen",
+   "g:time"
+  ],
+  "vw": [
+   4
+  ]
+ },
+ "M2-listen-03": {
+  "sk": [
+   "s:listen",
+   "s:vocab"
+  ],
+  "vw": [
+   22
+  ]
+ },
+ "M2-listen-04": {
+  "sk": [
+   "s:listen",
+   "s:vocab"
+  ],
+  "vw": [
+   29
+  ]
+ },
+ "M2-listen-05": {
+  "sk": [
+   "s:listen",
+   "t:imp"
+  ],
+  "vw": []
+ },
+ "M2-listen-06": {
+  "sk": [
+   "s:listen",
+   "s:vocab"
+  ],
+  "vw": [
+   26
+  ]
+ },
+ "M2-listen-07": {
+  "sk": [
+   "s:listen",
+   "t:pret",
+   "s:vocab"
+  ],
+  "vw": [
+   13,
+   33
+  ]
+ },
+ "M2-listen-08": {
+  "sk": [
+   "s:listen",
+   "s:vocab"
+  ],
+  "vw": [
+   17,
+   16
+  ]
+ },
+ "M2-listen-09": {
+  "sk": [
+   "s:listen",
+   "t:pret"
+  ],
+  "vw": [
+   37
+  ]
+ },
+ "M2-listen-10": {
+  "sk": [
+   "s:listen",
+   "t:pret"
+  ],
+  "vw": [
+   6
+  ]
+ },
+ "M2-dlg-01": {
+  "sk": [
+   "t:pret",
+   "g:register"
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "t:pret"
+    ],
+    "oe": {
+     "1": "person",
+     "2": "tense:Future"
+    }
+   },
+   "3": {
+    "sk": [
+     "g:register"
+    ],
+    "oe": {
+     "0": "register",
+     "2": "pronoun"
+    }
+   },
+   "5": {
+    "sk": [
+     "t:pret",
+     "g:register"
+    ],
+    "oe": {
+     "0": "register",
+     "1": "tense:Present"
+    }
+   }
+  }
+ },
+ "M2-dlg-02": {
+  "sk": [
+   "g:register",
+   "g:questions",
+   "g:prep"
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "g:questions",
+     "s:phrase"
+    ],
+    "oe": {
+     "1": "other",
+     "2": "question"
+    }
+   },
+   "3": {
+    "sk": [
+     "g:register",
+     "g:objpron"
+    ],
+    "oe": {
+     "0": "register",
+     "1": "pronoun"
+    }
+   },
+   "5": {
+    "sk": [
+     "g:prep",
+     "g:register"
+    ],
+    "oe": {
+     "0": "prep",
+     "2": "register"
+    }
+   }
+  }
+ },
+ "M2-dlg-03": {
+  "sk": [
+   "g:register",
+   "t:pret",
+   "s:phrase"
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "g:register",
+     "s:phrase"
+    ],
+    "oe": {
+     "1": "other",
+     "2": "register"
+    }
+   },
+   "3": {
+    "sk": [
+     "g:register",
+     "g:person"
+    ],
+    "oe": {
+     "0": "register",
+     "1": "person"
+    }
+   },
+   "5": {
+    "sk": [
+     "t:pret",
+     "g:register"
+    ],
+    "oe": {
+     "0": "register",
+     "2": "tense:Present"
+    }
+   }
+  }
+ },
+ "M2-dlg-04": {
+  "sk": [
+   "t:pvi",
+   "t:imp",
+   "t:pret"
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "t:imp",
+     "t:pvi"
+    ],
+    "oe": {
+     "1": "tense:Present",
+     "2": "tense:Preterite"
+    }
+   },
+   "3": {
+    "sk": [
+     "t:pret"
+    ],
+    "oe": {
+     "0": "tense:Present",
+     "1": "person"
+    }
+   },
+   "5": {
+    "sk": [
+     "t:pret",
+     "g:register"
+    ],
+    "oe": {
+     "0": "tense:Present",
+     "2": "register"
+    }
+   }
+  }
+ },
+ "M2-dlg-05": {
+  "sk": [
+   "t:pret",
+   "g:objpron"
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "g:objpron",
+     "t:pret"
+    ],
+    "oe": {
+     "0": "pronoun",
+     "2": "tense:Present"
+    }
+   },
+   "3": {
+    "sk": [
+     "t:pret",
+     "g:person"
+    ],
+    "oe": {
+     "1": "person",
+     "2": "tense:Present"
+    }
+   }
+  }
+ },
+ "M2-dlg-06": {
+  "sk": [
+   "t:pret",
+   "g:neg",
+   "g:register"
+  ],
+  "turns": {
+   "1": {
+    "sk": [
+     "t:pret"
+    ],
+    "oe": {
+     "0": "person",
+     "1": "tense:Present"
+    }
+   },
+   "3": {
+    "sk": [
+     "g:neg",
+     "t:pret"
+    ],
+    "oe": {
+     "1": "neg",
+     "2": "tense:Present"
+    }
+   },
+   "5": {
+    "sk": [
+     "t:pres",
+     "g:register"
+    ],
+    "oe": {
+     "1": "tense:Preterite",
+     "2": "register"
+    }
+   }
+  }
+ }
+}

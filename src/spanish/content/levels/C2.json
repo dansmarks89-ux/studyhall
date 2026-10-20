@@ -1,0 +1,1445 @@
+{
+ "id": "C2",
+ "track": "conv",
+ "n": 2,
+ "title": "Describing",
+ "goal": "Describe people, places and how you feel, and compare things, using ser, estar, hay and tener.",
+ "bestAfter": null,
+ "grammar": [
+  {
+   "h": "Ser vs estar",
+   "p": "Use *ser* for what something IS: identity, origin, profession, personality, physical description, time and the date, and where an event takes place (*La fiesta es en mi casa*). Use *estar* for WHERE something is and HOW someone is right now: location, health, mood, temporary states (*Estoy cansado. El hospital está en el centro.*). Some adjectives change meaning: *es aburrido* (he's boring) vs *está aburrido* (he's bored); *es listo* (he's clever) vs *está listo* (he's ready).",
+   "ex": [
+    [
+     "Mi esposa es de Puebla y es enfermera.",
+     "My wife is from Puebla and she's a nurse."
+    ],
+    [
+     "Hoy está muy cansada.",
+     "Today she's very tired."
+    ],
+    [
+     "¿Dónde está la farmacia?",
+     "Where is the pharmacy?"
+    ]
+   ]
+  },
+  {
+   "h": "Hay: there is / there are",
+   "p": "*Hay* never changes: *hay un baño* (there is a bathroom), *hay tres farmacias* (there are three pharmacies). Use *hay* to say something EXISTS, usually with *un/una*, a number, *mucho/poco* or no article. Use *estar* to say where a specific, known thing is: *Hay una farmacia en la esquina* vs *La farmacia está en la esquina*.",
+   "ex": [
+    [
+     "¿Hay un baño por aquí?",
+     "Is there a bathroom around here?"
+    ],
+    [
+     "Hay mucha gente en la sala de espera.",
+     "There are a lot of people in the waiting room."
+    ],
+    [
+     "El baño está al fondo.",
+     "The bathroom is at the back."
+    ]
+   ]
+  },
+  {
+   "h": "Tener expressions",
+   "p": "Spanish says you HAVE hunger, thirst, cold, fear: *tener hambre, sed, frío, calor, sueño, miedo, prisa, razón* and age: *tener … años*. Never use *estar* or *ser* with these. To say 'very', use *mucho/mucha*, not *muy*, and match the noun: *mucha hambre, mucha sed* (feminine) but *mucho frío, mucho calor, mucho sueño, mucho miedo* (masculine).",
+   "ex": [
+    [
+     "Tengo mucha hambre.",
+     "I'm very hungry."
+    ],
+    [
+     "Mi hijo tiene miedo de los perros.",
+     "My son is afraid of dogs."
+    ],
+    [
+     "¿Cuántos años tiene su papá?",
+     "How old is your father?"
+    ]
+   ]
+  },
+  {
+   "h": "Adjective agreement and possessives",
+   "p": "Adjectives match the noun in gender and number and usually go after it: *una casa pequeña, unos doctores simpáticos*. Most adjectives ending in *-e* or a consonant change only for number: *grande → grandes, difícil → difíciles*. Possessives go before the noun and agree with the THING owned: *mi/mis, tu/tus, su/sus, nuestro/nuestra/nuestros/nuestras*. *Su* can mean his, her, your (usted), your (ustedes) or their; add *de él, de ella* if it's unclear.",
+   "ex": [
+    [
+     "Las enfermeras son muy amables.",
+     "The nurses are very kind."
+    ],
+    [
+     "Señora, ¿cómo se llama su hijo?",
+     "Ma'am, what's your son's name?"
+    ],
+    [
+     "Nuestra casa es pequeña, pero nuestros vecinos son simpáticos.",
+     "Our house is small, but our neighbors are nice."
+    ]
+   ]
+  },
+  {
+   "h": "Comparisons and muy / mucho / poco",
+   "p": "*más … que* (more … than), *menos … que* (less … than), *tan … como* (as … as). Irregular: *mejor* (better), *peor* (worse), *mayor* (older), *menor* (younger) — never *más mejor*. After *que* use *yo* and *tú*: *más alto que yo*. *Muy* goes before adjectives and adverbs and never changes (*muy cansado*). *Mucho* after a verb doesn't change (*trabajo mucho*); before a noun it agrees (*mucha gente, muchos pacientes*). *Poco* works the same way (*poca gente*).",
+   "ex": [
+    [
+     "Mi hermano es mayor que yo.",
+     "My brother is older than me."
+    ],
+    [
+     "Este café es mejor que el otro.",
+     "This coffee is better than the other one."
+    ],
+    [
+     "Mi papá es tan alto como yo.",
+     "My dad is as tall as I am."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  [
+   "ser",
+   "to be (what something is)"
+  ],
+  [
+   "estar",
+   "to be (where / how something is)"
+  ],
+  [
+   "hay",
+   "there is / there are"
+  ],
+  [
+   "alto / bajo",
+   "tall / short"
+  ],
+  [
+   "delgado",
+   "thin"
+  ],
+  [
+   "joven",
+   "young"
+  ],
+  [
+   "mayor",
+   "older / elderly"
+  ],
+  [
+   "menor",
+   "younger"
+  ],
+  [
+   "guapo",
+   "good-looking"
+  ],
+  [
+   "simpático",
+   "nice, friendly"
+  ],
+  [
+   "amable",
+   "kind"
+  ],
+  [
+   "cansado",
+   "tired"
+  ],
+  [
+   "enfermo",
+   "sick"
+  ],
+  [
+   "contento",
+   "happy, pleased"
+  ],
+  [
+   "preocupado",
+   "worried"
+  ],
+  [
+   "nervioso",
+   "nervous"
+  ],
+  [
+   "aburrido",
+   "boring (ser) / bored (estar)"
+  ],
+  [
+   "ocupado",
+   "busy"
+  ],
+  [
+   "listo",
+   "clever (ser) / ready (estar)"
+  ],
+  [
+   "grande / pequeño",
+   "big / small"
+  ],
+  [
+   "nuevo / viejo",
+   "new / old"
+  ],
+  [
+   "caro / barato",
+   "expensive / cheap"
+  ],
+  [
+   "fácil / difícil",
+   "easy / hard"
+  ],
+  [
+   "abierto / cerrado",
+   "open / closed"
+  ],
+  [
+   "rico",
+   "delicious (with estar)"
+  ],
+  [
+   "cerca de / lejos de",
+   "near / far from"
+  ],
+  [
+   "al lado de",
+   "next to"
+  ],
+  [
+   "enfrente de",
+   "across from, in front of"
+  ],
+  [
+   "tener hambre",
+   "to be hungry"
+  ],
+  [
+   "tener sed",
+   "to be thirsty"
+  ],
+  [
+   "tener frío / calor",
+   "to be cold / hot"
+  ],
+  [
+   "tener sueño",
+   "to be sleepy"
+  ],
+  [
+   "tener miedo (de)",
+   "to be afraid (of)"
+  ],
+  [
+   "tener prisa",
+   "to be in a hurry"
+  ],
+  [
+   "tener razón",
+   "to be right"
+  ],
+  [
+   "más … que",
+   "more … than"
+  ],
+  [
+   "tan … como",
+   "as … as"
+  ],
+  [
+   "mejor / peor",
+   "better / worse"
+  ],
+  [
+   "la gente",
+   "people (singular noun)"
+  ],
+  [
+   "la cobija",
+   "blanket"
+  ],
+  [
+   "el departamento",
+   "apartment"
+  ]
+ ],
+ "phrases": [
+  [
+   "¿De dónde eres?",
+   "Where are you from? (informal)"
+  ],
+  [
+   "¿Cómo es tu esposa?",
+   "What is your wife like?"
+  ],
+  [
+   "¿Cómo está su mamá?",
+   "How is your mother doing? (formal)"
+  ],
+  [
+   "¿Cuántos años tienes?",
+   "How old are you? (informal)"
+  ],
+  [
+   "Tengo mucha hambre.",
+   "I'm very hungry."
+  ],
+  [
+   "¿Hay un baño por aquí?",
+   "Is there a bathroom around here?"
+  ],
+  [
+   "¿Dónde está la farmacia?",
+   "Where is the pharmacy?"
+  ],
+  [
+   "Estoy muy cansado.",
+   "I'm very tired."
+  ],
+  [
+   "Tienes razón.",
+   "You're right."
+  ],
+  [
+   "Es más caro que el otro.",
+   "It's more expensive than the other one."
+  ],
+  [
+   "Mi hermano es mayor que yo.",
+   "My brother is older than me."
+  ],
+  [
+   "Está cerca de aquí.",
+   "It's near here."
+  ],
+  [
+   "¿Qué hora es?",
+   "What time is it?"
+  ],
+  [
+   "Hay mucha gente.",
+   "There are a lot of people."
+  ]
+ ],
+ "items": [
+  {
+   "id": "C2-mc-01",
+   "t": "mc",
+   "q": "Mi esposa ___ de Puebla.",
+   "qen": "My wife is from Puebla.",
+   "opts": [
+    "está",
+    "es",
+    "hay",
+    "tiene"
+   ],
+   "a": 1,
+   "why": "Origin → ser: es de Puebla."
+  },
+  {
+   "id": "C2-mc-02",
+   "t": "mc",
+   "q": "El hospital ___ en la calle Harrison.",
+   "qen": "The hospital is on Harrison Street.",
+   "opts": [
+    "es",
+    "hay",
+    "tiene",
+    "está"
+   ],
+   "a": 3,
+   "why": "Location of a specific place → estar: está."
+  },
+  {
+   "id": "C2-mc-03",
+   "t": "mc",
+   "q": "___ tres farmacias cerca de mi casa.",
+   "qen": "There are three pharmacies near my house.",
+   "opts": [
+    "Hay",
+    "Están",
+    "Son",
+    "Tienen"
+   ],
+   "a": 0,
+   "why": "Saying something exists (with a number) → hay, which never changes."
+  },
+  {
+   "id": "C2-mc-04",
+   "t": "mc",
+   "q": "Mis hijas son muy ___.",
+   "qen": "My daughters are very nice.",
+   "opts": [
+    "simpático",
+    "simpáticas",
+    "simpáticos",
+    "simpática"
+   ],
+   "a": 1,
+   "why": "hijas is feminine plural → simpáticas."
+  },
+  {
+   "id": "C2-mc-05",
+   "t": "mc",
+   "q": "Tengo ___ hambre.",
+   "qen": "I'm very hungry.",
+   "opts": [
+    "mucho",
+    "muy",
+    "mucha",
+    "muchas"
+   ],
+   "a": 2,
+   "why": "With tener expressions 'very' = mucho/mucha, agreeing with the noun; hambre is feminine → mucha."
+  },
+  {
+   "id": "C2-mc-06",
+   "t": "mc",
+   "q": "Hoy mi mamá ___ enferma.",
+   "qen": "Today my mom is sick.",
+   "opts": [
+    "es",
+    "tiene",
+    "está",
+    "hay"
+   ],
+   "a": 2,
+   "why": "Health / temporary condition → estar."
+  },
+  {
+   "id": "C2-mc-07",
+   "t": "mc",
+   "q": "Mi hermano tiene 40 años y yo tengo 45. Él es ___ que yo.",
+   "qen": "My brother is 40 and I'm 45. He is ___ than me.",
+   "opts": [
+    "mayor",
+    "menor",
+    "mejor",
+    "peor"
+   ],
+   "a": 1,
+   "why": "He is younger → menor."
+  },
+  {
+   "id": "C2-mc-08",
+   "t": "mc",
+   "q": "How do you say: \"I'm afraid of dogs.\"",
+   "opts": [
+    "Estoy miedo de los perros.",
+    "Soy miedo de los perros.",
+    "Tengo miedo de los perros.",
+    "Tengo miedo los perros."
+   ],
+   "a": 2,
+   "why": "Fear is a tener expression: tener miedo de…"
+  },
+  {
+   "id": "C2-mc-09",
+   "t": "mc",
+   "q": "Mi hijo no tiene nada que hacer. ___ aburrido.",
+   "qen": "My son has nothing to do. He's bored.",
+   "opts": [
+    "Es",
+    "Está",
+    "Tiene",
+    "Hay"
+   ],
+   "a": 1,
+   "why": "Bored (a temporary state) → está aburrido. Es aburrido would mean he's a boring person."
+  },
+  {
+   "id": "C2-mc-10",
+   "t": "mc",
+   "q": "¿Qué hora ___?",
+   "qen": "What time is it?",
+   "opts": [
+    "son",
+    "está",
+    "es",
+    "hay"
+   ],
+   "a": 2,
+   "why": "Time uses ser; with singular hora → ¿Qué hora es?"
+  },
+  {
+   "id": "C2-mc-11",
+   "t": "mc",
+   "q": "Chicago es más grande ___ Milwaukee.",
+   "qen": "Chicago is bigger than Milwaukee.",
+   "opts": [
+    "como",
+    "de",
+    "a",
+    "que"
+   ],
+   "a": 3,
+   "why": "más … que = more … than."
+  },
+  {
+   "id": "C2-mc-12",
+   "t": "mc",
+   "q": "Mi hermano es tan alto ___ mi papá.",
+   "qen": "My brother is as tall as my dad.",
+   "opts": [
+    "como",
+    "que",
+    "de",
+    "más"
+   ],
+   "a": 0,
+   "why": "tan … como = as … as."
+  },
+  {
+   "id": "C2-mc-13",
+   "t": "mc",
+   "q": "Este restaurante es ___ que el otro.",
+   "qen": "This restaurant is better than the other one.",
+   "opts": [
+    "más mejor",
+    "mejores",
+    "bien",
+    "mejor"
+   ],
+   "a": 3,
+   "why": "Better = mejor (never más mejor); singular subject → mejor."
+  },
+  {
+   "id": "C2-mc-14",
+   "t": "mc",
+   "q": "Señora, ¿cómo se llama ___ hijo?",
+   "qen": "Ma'am, what's your son's name?",
+   "opts": [
+    "tu",
+    "su",
+    "sus",
+    "mi"
+   ],
+   "a": 1,
+   "why": "With usted, 'your' = su (singular because hijo is singular)."
+  },
+  {
+   "id": "C2-mc-15",
+   "t": "mc",
+   "q": "Ana y su hermana ___ enfermeras.",
+   "qen": "Ana and her sister are nurses.",
+   "opts": [
+    "están",
+    "es",
+    "son",
+    "hay"
+   ],
+   "a": 2,
+   "why": "Profession → ser; two people → son."
+  },
+  {
+   "id": "C2-mc-16",
+   "t": "mc",
+   "q": "¿___ un baño por aquí?",
+   "qen": "Is there a bathroom around here?",
+   "opts": [
+    "Está",
+    "Hay",
+    "Es",
+    "Tiene"
+   ],
+   "a": 1,
+   "why": "Asking whether something exists (un baño) → hay."
+  },
+  {
+   "id": "C2-mc-17",
+   "t": "mc",
+   "q": "Pablo trabaja ___; siempre está cansado.",
+   "qen": "Pablo works a lot; he's always tired.",
+   "opts": [
+    "muy",
+    "mucha",
+    "mucho",
+    "muchos"
+   ],
+   "a": 2,
+   "why": "After a verb, 'a lot' = mucho, which doesn't change."
+  },
+  {
+   "id": "C2-mc-18",
+   "t": "mc",
+   "q": "Hay ___ gente en el parque hoy.",
+   "qen": "There are a lot of people in the park today.",
+   "opts": [
+    "mucha",
+    "mucho",
+    "muchos",
+    "muy"
+   ],
+   "a": 0,
+   "why": "gente is a feminine singular noun → mucha gente."
+  },
+  {
+   "id": "C2-mc-19",
+   "t": "mc",
+   "q": "You want to know what your friend's wife is like (personality, looks). You ask: \"¿___ es tu esposa?\"",
+   "opts": [
+    "Dónde",
+    "Cuál",
+    "Qué",
+    "Cómo"
+   ],
+   "a": 3,
+   "why": "What is someone like? = ¿Cómo es…? (¿Cómo está…? would ask how she's doing.)"
+  },
+  {
+   "id": "C2-mc-20",
+   "t": "mc",
+   "q": "Nosotros vivimos con ___ abuelos.",
+   "qen": "We live with our grandparents.",
+   "opts": [
+    "nuestro",
+    "nuestros",
+    "nuestras",
+    "sus"
+   ],
+   "a": 1,
+   "why": "The possessive agrees with the thing owned: abuelos is masculine plural → nuestros."
+  },
+  {
+   "id": "C2-fill-01",
+   "t": "fill",
+   "q": "Mis padres ___ de Guatemala.",
+   "en": "My parents are from Guatemala.",
+   "hint": "ser",
+   "a": [
+    "son"
+   ],
+   "why": "Origin → ser; ellos → son."
+  },
+  {
+   "id": "C2-fill-02",
+   "t": "fill",
+   "q": "¿Dónde ___ el baño?",
+   "en": "Where is the bathroom?",
+   "hint": "estar",
+   "a": [
+    "está"
+   ],
+   "why": "Location → estar: está."
+  },
+  {
+   "id": "C2-fill-03",
+   "t": "fill",
+   "q": "Mi hija ___ diez años.",
+   "en": "My daughter is ten years old.",
+   "hint": "tener",
+   "a": [
+    "tiene"
+   ],
+   "why": "Age uses tener: tiene diez años."
+  },
+  {
+   "id": "C2-fill-04",
+   "t": "fill",
+   "q": "Las enfermeras son muy ___.",
+   "en": "The nurses are very kind.",
+   "hint": "amable",
+   "a": [
+    "amables"
+   ],
+   "why": "Adjectives ending in -e only add -s for plural: amables."
+  },
+  {
+   "id": "C2-fill-05",
+   "t": "fill",
+   "q": "Yo ___ más alto que mi papá.",
+   "en": "I'm taller than my dad.",
+   "hint": "ser",
+   "a": [
+    "soy"
+   ],
+   "why": "Physical description → ser; yo → soy."
+  },
+  {
+   "id": "C2-fill-06",
+   "t": "fill",
+   "q": "Hoy ___ muy nerviosa por el examen.",
+   "en": "Today I'm very nervous about the exam.",
+   "hint": "estar",
+   "a": [
+    "estoy"
+   ],
+   "why": "A feeling right now → estar; yo → estoy."
+  },
+  {
+   "id": "C2-fill-07",
+   "t": "fill",
+   "q": "En mi calle ___ dos restaurantes mexicanos.",
+   "en": "On my street there are two Mexican restaurants.",
+   "hint": "there are",
+   "a": [
+    "hay"
+   ],
+   "why": "There is / there are = hay (never changes)."
+  },
+  {
+   "id": "C2-fill-08",
+   "t": "fill",
+   "q": "—¿Tienes frío? —Sí, tengo ___ frío.",
+   "en": "—Are you cold? —Yes, I'm very cold.",
+   "hint": "very (with a tener expression)",
+   "a": [
+    "mucho"
+   ],
+   "why": "With tener expressions 'very' = mucho/mucha; frío is masculine → mucho."
+  },
+  {
+   "id": "C2-fill-09",
+   "t": "fill",
+   "q": "Mi casa es ___ grande como tu casa.",
+   "en": "My house is as big as your house.",
+   "hint": "as",
+   "a": [
+    "tan"
+   ],
+   "why": "tan … como = as … as."
+  },
+  {
+   "id": "C2-fill-10",
+   "t": "fill",
+   "q": "Este hospital es ___ que el otro.",
+   "en": "This hospital is better than the other one.",
+   "hint": "better",
+   "a": [
+    "mejor"
+   ],
+   "why": "Better = mejor (never más bueno or más mejor in this sense)."
+  },
+  {
+   "id": "C2-fill-11",
+   "t": "fill",
+   "q": "Señor, ¿cómo se llama ___ esposa?",
+   "en": "Sir, what is your wife's name?",
+   "hint": "your (usted)",
+   "a": [
+    "su"
+   ],
+   "why": "With usted, 'your' = su."
+  },
+  {
+   "id": "C2-fill-12",
+   "t": "fill",
+   "q": "Los tacos están muy ___.",
+   "en": "The tacos are very tasty.",
+   "hint": "rico",
+   "a": [
+    "ricos"
+   ],
+   "why": "Taste of food → estar rico; los tacos is masculine plural → ricos."
+  },
+  {
+   "id": "C2-fill-13",
+   "t": "fill",
+   "q": "Tengo ___; ¿hay algo de comer?",
+   "en": "I'm hungry; is there anything to eat?",
+   "hint": "hunger",
+   "a": [
+    "hambre"
+   ],
+   "why": "Hungry = tener hambre."
+  },
+  {
+   "id": "C2-fill-14",
+   "t": "fill",
+   "q": "La clínica ___ cerrada los domingos.",
+   "en": "The clinic is closed on Sundays.",
+   "hint": "estar",
+   "a": [
+    "está"
+   ],
+   "why": "Open/closed is a state → estar: está cerrada."
+  },
+  {
+   "id": "C2-fill-15",
+   "t": "fill",
+   "q": "Mi esposo ___ doctor.",
+   "en": "My husband is a doctor.",
+   "hint": "ser",
+   "a": [
+    "es"
+   ],
+   "why": "Profession → ser (and no article: es doctor)."
+  },
+  {
+   "id": "C2-fill-16",
+   "t": "fill",
+   "q": "La fiesta ___ en mi casa el sábado.",
+   "en": "The party is at my house on Saturday.",
+   "hint": "ser or estar?",
+   "a": [
+    "es"
+   ],
+   "why": "Where an EVENT takes place → ser: la fiesta es en mi casa."
+  },
+  {
+   "id": "C2-fill-17",
+   "t": "fill",
+   "q": "Esta medicina es muy ___.",
+   "en": "This medicine is very expensive.",
+   "hint": "caro",
+   "a": [
+    "cara"
+   ],
+   "why": "medicina is feminine singular → cara."
+  },
+  {
+   "id": "C2-fill-18",
+   "t": "fill",
+   "q": "Mi hermano es ___ que yo; él tiene 30 años y yo tengo 35.",
+   "en": "My brother is younger than me; he's 30 and I'm 35.",
+   "hint": "younger",
+   "a": [
+    "menor",
+    "más joven"
+   ],
+   "why": "Younger = menor (más joven is also correct)."
+  },
+  {
+   "id": "C2-fill-19",
+   "t": "fill",
+   "q": "Hay ___ pacientes hoy; la clínica está llena.",
+   "en": "There are a lot of patients today; the clinic is full.",
+   "hint": "mucho",
+   "a": [
+    "muchos"
+   ],
+   "why": "Before a noun, mucho agrees: pacientes is masculine plural → muchos."
+  },
+  {
+   "id": "C2-fill-20",
+   "t": "fill",
+   "q": "Nosotros ___ prisa.",
+   "en": "We're in a hurry.",
+   "hint": "tener",
+   "a": [
+    "tenemos"
+   ],
+   "why": "In a hurry = tener prisa; nosotros → tenemos."
+  },
+  {
+   "id": "C2-tiles-01",
+   "t": "tiles",
+   "en": "My wife is from Mexico.",
+   "a": "Mi esposa es de México.",
+   "alt": [],
+   "extra": [
+    "está",
+    "eres"
+   ]
+  },
+  {
+   "id": "C2-tiles-02",
+   "t": "tiles",
+   "en": "Where is the pharmacy?",
+   "a": "¿Dónde está la farmacia?",
+   "alt": [
+    "¿La farmacia dónde está?"
+   ],
+   "extra": [
+    "es",
+    "hay"
+   ]
+  },
+  {
+   "id": "C2-tiles-03",
+   "t": "tiles",
+   "en": "Is there a pharmacy near here?",
+   "a": "¿Hay una farmacia cerca de aquí?",
+   "alt": [
+    "¿Cerca de aquí hay una farmacia?"
+   ],
+   "extra": [
+    "está",
+    "un"
+   ]
+  },
+  {
+   "id": "C2-tiles-04",
+   "t": "tiles",
+   "en": "My daughter is very tired today.",
+   "a": "Mi hija está muy cansada hoy.",
+   "alt": [
+    "Hoy mi hija está muy cansada.",
+    "Mi hija hoy está muy cansada."
+   ],
+   "extra": [
+    "es",
+    "cansado"
+   ]
+  },
+  {
+   "id": "C2-tiles-05",
+   "t": "tiles",
+   "en": "My son is eight years old.",
+   "a": "Mi hijo tiene ocho años.",
+   "alt": [],
+   "extra": [
+    "es",
+    "está"
+   ]
+  },
+  {
+   "id": "C2-tiles-06",
+   "t": "tiles",
+   "en": "I'm very hungry and very thirsty.",
+   "a": "Tengo mucha hambre y mucha sed.",
+   "alt": [
+    "Tengo mucha sed y mucha hambre."
+   ],
+   "extra": [
+    "estoy",
+    "muy"
+   ]
+  },
+  {
+   "id": "C2-tiles-07",
+   "t": "tiles",
+   "en": "My brother is taller than me.",
+   "a": "Mi hermano es más alto que yo.",
+   "alt": [],
+   "extra": [
+    "mí",
+    "como"
+   ]
+  },
+  {
+   "id": "C2-tiles-08",
+   "t": "tiles",
+   "en": "Our house is near the hospital.",
+   "a": "Nuestra casa está cerca del hospital.",
+   "alt": [],
+   "extra": [
+    "nuestro",
+    "son"
+   ]
+  },
+  {
+   "id": "C2-tiles-09",
+   "t": "tiles",
+   "en": "Your children are very kind, ma'am.",
+   "a": "Sus hijos son muy amables, señora.",
+   "alt": [
+    "Señora, sus hijos son muy amables."
+   ],
+   "extra": [
+    "tus",
+    "amable"
+   ]
+  },
+  {
+   "id": "C2-tiles-10",
+   "t": "tiles",
+   "en": "This restaurant is better than the other one.",
+   "a": "Este restaurante es mejor que el otro.",
+   "alt": [],
+   "extra": [
+    "más",
+    "como"
+   ]
+  },
+  {
+   "id": "C2-tiles-11",
+   "t": "tiles",
+   "en": "There are a lot of people in the waiting room.",
+   "a": "Hay mucha gente en la sala de espera.",
+   "alt": [
+    "En la sala de espera hay mucha gente."
+   ],
+   "extra": [
+    "muchas",
+    "están"
+   ]
+  },
+  {
+   "id": "C2-tiles-12",
+   "t": "tiles",
+   "en": "The movie is boring and the kids are bored.",
+   "a": "La película es aburrida y los niños están aburridos.",
+   "alt": [
+    "Los niños están aburridos y la película es aburrida."
+   ],
+   "extra": [
+    "eres",
+    "estoy"
+   ]
+  },
+  {
+   "id": "C2-tiles-13",
+   "t": "tiles",
+   "en": "My dad is as tall as my brother.",
+   "a": "Mi papá es tan alto como mi hermano.",
+   "alt": [
+    "Mi hermano es tan alto como mi papá."
+   ],
+   "extra": [
+    "que",
+    "tanto"
+   ]
+  },
+  {
+   "id": "C2-tiles-14",
+   "t": "tiles",
+   "en": "Are you cold? Do you want a blanket? (to a friend)",
+   "a": "¿Tienes frío? ¿Quieres una cobija?",
+   "alt": [],
+   "extra": [
+    "Estás",
+    "tiene"
+   ]
+  },
+  {
+   "id": "C2-tiles-15",
+   "t": "tiles",
+   "en": "What is your new doctor like? (to a friend)",
+   "a": "¿Cómo es tu nuevo doctor?",
+   "alt": [
+    "¿Cómo es tu doctor nuevo?",
+    "¿Tu nuevo doctor cómo es?",
+    "¿Tu doctor nuevo cómo es?"
+   ],
+   "extra": [
+    "eres",
+    "su"
+   ]
+  },
+  {
+   "id": "C2-tiles-16",
+   "t": "tiles",
+   "en": "The coffee here is cheaper than at the hospital.",
+   "a": "El café aquí es más barato que en el hospital.",
+   "alt": [
+    "Aquí el café es más barato que en el hospital.",
+    "El café es más barato aquí que en el hospital."
+   ],
+   "extra": [
+    "como",
+    "barata"
+   ]
+  },
+  {
+   "id": "C2-listen-01",
+   "t": "listen",
+   "say": "Mi hermana es más alta que yo.",
+   "opts": [
+    "My sister is shorter than me.",
+    "My sister is taller than me.",
+    "My sister is as tall as me.",
+    "My sister is older than me."
+   ],
+   "a": 1
+  },
+  {
+   "id": "C2-listen-02",
+   "t": "listen",
+   "say": "Tengo mucho frío.",
+   "opts": [
+    "I'm very hot.",
+    "I have a bad cold.",
+    "I'm very afraid.",
+    "I'm very cold."
+   ],
+   "a": 3
+  },
+  {
+   "id": "C2-listen-03",
+   "t": "listen",
+   "say": "¿Dónde está la farmacia?",
+   "opts": [
+    "Where is the pharmacy?",
+    "Is there a pharmacy?",
+    "When does the pharmacy open?",
+    "What is the pharmacy like?"
+   ],
+   "a": 0
+  },
+  {
+   "id": "C2-listen-04",
+   "t": "listen",
+   "say": "Mi abuelo tiene noventa años.",
+   "opts": [
+    "My grandfather is nineteen.",
+    "My grandmother is ninety.",
+    "My grandfather is ninety.",
+    "My grandfather is seventy."
+   ],
+   "a": 2
+  },
+  {
+   "id": "C2-listen-05",
+   "t": "listen",
+   "say": "Hay poca gente en la clínica hoy.",
+   "opts": [
+    "There are a lot of people at the clinic today.",
+    "The clinic is closed today.",
+    "There are few doctors at the clinic today.",
+    "There aren't many people at the clinic today."
+   ],
+   "a": 3
+  },
+  {
+   "id": "C2-listen-06",
+   "t": "listen",
+   "say": "Mis hijos están aburridos.",
+   "opts": [
+    "My kids are boring.",
+    "My kids are bored.",
+    "My kids are tired.",
+    "My son is bored."
+   ],
+   "a": 1
+  },
+  {
+   "id": "C2-listen-07",
+   "t": "listen",
+   "say": "Nuestra casa es tan grande como la casa de mis papás.",
+   "opts": [
+    "Our house is as big as my parents' house.",
+    "Our house is bigger than my parents' house.",
+    "Our house is smaller than my parents' house.",
+    "Our house is near my parents' house."
+   ],
+   "a": 0
+  },
+  {
+   "id": "C2-listen-08",
+   "t": "listen",
+   "say": "Su esposa está muy preocupada.",
+   "opts": [
+    "His wife is very busy.",
+    "My wife is very worried.",
+    "His wife is very worried.",
+    "His wife is a worrier."
+   ],
+   "a": 2
+  },
+  {
+   "id": "C2-listen-09",
+   "t": "listen",
+   "say": "El hospital está lejos de mi casa.",
+   "opts": [
+    "The hospital is close to my house.",
+    "The hospital is far from my house.",
+    "The hospital is behind my house.",
+    "The hospital is far from my office."
+   ],
+   "a": 1
+  },
+  {
+   "id": "C2-listen-10",
+   "t": "listen",
+   "say": "Este café es peor que el café de la cafetería.",
+   "opts": [
+    "This coffee is better than the cafeteria coffee.",
+    "This coffee is as bad as the cafeteria coffee.",
+    "This coffee is worse than the cafeteria coffee.",
+    "This coffee is cheaper than the cafeteria coffee."
+   ],
+   "a": 2
+  },
+  {
+   "id": "C2-dlg-01",
+   "t": "dlg",
+   "title": "Describing your family to a friend",
+   "turns": [
+    {
+     "who": "Lucía",
+     "es": "Oye, ¿cómo es tu esposa?",
+     "en": "Hey, what's your wife like?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Está alta, muy simpática y le encanta bailar.",
+      "Es alta, muy simpática y le encanta bailar.",
+      "Es alto, muy simpático y le encanta bailar."
+     ],
+     "a": 1,
+     "why": "Description → ser; esposa is feminine → alta, simpática."
+    },
+    {
+     "who": "Lucía",
+     "es": "¿Y de dónde es?",
+     "en": "And where is she from?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Es de Ohio, pero su familia es de México.",
+      "Está de Ohio, pero su familia es de México.",
+      "Es de Ohio, pero tu familia es de México."
+     ],
+     "a": 0,
+     "why": "Origin → ser; 'her family' = su familia (tu familia would mean Lucía's family)."
+    },
+    {
+     "who": "Lucía",
+     "es": "¡Qué bien! ¿Y tienen hijos?",
+     "en": "Nice! And do you have kids?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, tienen dos. La mayor tiene diez años.",
+      "Sí, tenemos dos. La mayor es diez años.",
+      "Sí, tenemos dos. La mayor tiene diez años."
+     ],
+     "a": 2,
+     "why": "My wife and I → tenemos; age uses tener: tiene diez años."
+    }
+   ]
+  },
+  {
+   "id": "C2-dlg-02",
+   "t": "dlg",
+   "title": "At a friend's house",
+   "turns": [
+    {
+     "who": "Andrés",
+     "es": "Pásale. ¿Quieres algo de tomar? ¿Tienes sed?",
+     "en": "Come on in. Do you want something to drink? Are you thirsty?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, estoy mucha sed. ¿Hay agua?",
+      "Sí, tengo mucha sed. ¿Hay agua?",
+      "Sí, tengo mucho sed. ¿Hay agua?"
+     ],
+     "a": 1,
+     "why": "Thirsty = tener sed; sed is feminine → mucha sed."
+    },
+    {
+     "who": "Andrés",
+     "es": "Claro, hay agua y limonada. Oye, la ventana está abierta. ¿Tienes frío?",
+     "en": "Sure, there's water and lemonade. Hey, the window is open. Are you cold?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, soy un poco frío.",
+      "Sí, estoy un poco de frío.",
+      "Sí, tengo un poco de frío."
+     ],
+     "a": 2,
+     "why": "Being cold = tener frío; 'a little' with a noun = un poco de."
+    },
+    {
+     "who": "Andrés",
+     "es": "No hay problema. ¿Quieres una cobija?",
+     "en": "No problem. Do you want a blanket?"
+    }
+   ]
+  },
+  {
+   "id": "C2-dlg-03",
+   "t": "dlg",
+   "title": "At the information desk",
+   "turns": [
+    {
+     "who": "Señor",
+     "es": "Buenas tardes. ¿En qué le puedo ayudar?",
+     "en": "Good afternoon. How can I help you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Buenas tardes. ¿Dónde es la farmacia?",
+      "Buenas tardes. ¿Dónde hay la farmacia?",
+      "Buenas tardes. ¿Dónde está la farmacia?"
+     ],
+     "a": 2,
+     "why": "Location of a specific place → estar: ¿Dónde está…?"
+    },
+    {
+     "who": "Señor",
+     "es": "Está en el primer piso, al lado de la cafetería.",
+     "en": "It's on the first floor, next to the cafeteria."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Gracias. ¿Y hay un baño cerca?",
+      "Gracias. ¿Y está un baño cerca?",
+      "Gracias. ¿Y es un baño cerca?"
+     ],
+     "a": 0,
+     "why": "Asking whether one exists (un baño) → hay."
+    },
+    {
+     "who": "Señor",
+     "es": "Sí, hay uno enfrente de la farmacia.",
+     "en": "Yes, there's one across from the pharmacy."
+    }
+   ]
+  },
+  {
+   "id": "C2-dlg-04",
+   "t": "dlg",
+   "title": "Comparing two apartments",
+   "turns": [
+    {
+     "who": "Diana",
+     "es": "¿Qué departamento prefieres, el del centro o el de Evanston?",
+     "en": "Which apartment do you prefer, the one downtown or the one in Evanston?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "El del centro es más caro como el de Evanston, pero es más bonito.",
+      "El del centro es más caro que el de Evanston, pero es más bonito.",
+      "El del centro es más cara que el de Evanston, pero es más bonita."
+     ],
+     "a": 1,
+     "why": "más … que; departamento is masculine → caro, bonito."
+    },
+    {
+     "who": "Diana",
+     "es": "¿Y cuál es más grande?",
+     "en": "And which one is bigger?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "El de Evanston es más grande, pero el del centro es mejor.",
+      "El de Evanston es más grande, pero el del centro es más mejor.",
+      "El de Evanston es más grandes, pero el del centro es mejor."
+     ],
+     "a": 0,
+     "why": "Better = mejor (never más mejor); grande stays singular for one apartment."
+    },
+    {
+     "who": "Diana",
+     "es": "Entonces, ¡el del centro!",
+     "en": "So, the one downtown!"
+    }
+   ]
+  },
+  {
+   "id": "C2-dlg-05",
+   "t": "dlg",
+   "title": "Calling a coworker: you're sick",
+   "turns": [
+    {
+     "who": "Mario",
+     "es": "¿Bueno? Hola, ¿estás bien?",
+     "en": "Hello? Hi, are you OK?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "No, soy enfermo. Me duele la garganta y tengo fiebre.",
+      "No, estoy enfermo. Me duele la garganta y tengo fiebre.",
+      "No, estoy enfermo. Me duele la garganta y estoy fiebre."
+     ],
+     "a": 1,
+     "why": "Being sick is a condition → estar; fever is a tener expression: tengo fiebre."
+    },
+    {
+     "who": "Mario",
+     "es": "Ay, lo siento. ¿Y quién está con tus hijos hoy?",
+     "en": "Oh, I'm sorry. And who is with your kids today?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Mi esposa es con ellos. Hoy no trabaja.",
+      "Mi esposa hay con ellos. Hoy no trabaja.",
+      "Mi esposa está con ellos. Hoy no trabaja."
+     ],
+     "a": 2,
+     "why": "Being with someone (location) → estar: está con ellos."
+    },
+    {
+     "who": "Mario",
+     "es": "Qué bueno. Tienes que descansar.",
+     "en": "Good. You have to rest."
+    }
+   ]
+  },
+  {
+   "id": "C2-dlg-06",
+   "t": "dlg",
+   "title": "Meeting a friend's mother",
+   "turns": [
+    {
+     "who": "Sra. Torres",
+     "es": "Mucho gusto. Soy la mamá de Carlos.",
+     "en": "Nice to meet you. I'm Carlos's mom."
+    },
+    {
+     "you": true,
+     "opts": [
+      "Mucho gusto, señora. Tu hijo es muy simpático.",
+      "Mucho gusto, señora. Su hijo es muy simpático.",
+      "Mucho gusto, señora. Su hijo son muy simpáticos."
+     ],
+     "a": 1,
+     "why": "With an older person you've just met → usted, so 'your' = su; one son → es simpático."
+    },
+    {
+     "who": "Sra. Torres",
+     "es": "Gracias. ¿Usted también es doctor, como Carlos?",
+     "en": "Thank you. Are you a doctor too, like Carlos?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Sí, soy cardiólogo, como Carlos.",
+      "Sí, estoy cardiólogo, como Carlos.",
+      "Sí, es cardiólogo, como Carlos."
+     ],
+     "a": 0,
+     "why": "Profession → ser; about yourself → soy."
+    },
+    {
+     "who": "Sra. Torres",
+     "es": "¡Qué bien! ¿Y su familia vive aquí en Chicago?",
+     "en": "How nice! And does your family live here in Chicago?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "Mi esposa y yo vivimos aquí, pero mis padres son en Michigan.",
+      "Mi esposa y yo vivimos aquí, pero mis padres hay en Michigan.",
+      "Mi esposa y yo vivimos aquí, pero mis padres están en Michigan."
+     ],
+     "a": 2,
+     "why": "Location of people → estar: están en Michigan."
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Describing your families",
+   "setup": "You're having coffee with a coworker who is becoming a friend. Describe your family to her and find out about hers: what they're like, how old they are, where they are, and how they're doing.",
+   "persona": "You are Gabriela Hernández, 38, a hospital pharmacist from San Salvador, El Salvador, living in Chicago. Your husband, Julio, is a teacher; he's tall, funny and very patient. You have two kids: Sofía (12), who is very smart and loves soccer, and Mateo (7), who is shy and afraid of dogs. Your mother lives in San Salvador; she's 70 and in good health, but this week she's a little sick (a cold) and you are worried. You are the youngest of four siblings. Use tú with the learner. Speak only in the present tense, in short, simple sentences, using ser, estar, hay, tener (age, miedo, etc.), adjectives and comparisons (más…que, tan…como, mayor/menor). Share details only when asked, and ask the learner about his family too. If the learner makes a ser/estar mistake, keep going and use the correct form naturally in your reply.",
+   "opening": "¡Por fin un café! Oye, nunca hablamos de la familia. ¿Cómo es tu familia?",
+   "goals": [
+    "Describe one family member's looks and personality with ser and correctly agreeing adjectives",
+    "Ask how old her children are",
+    "Find out where her mother is and how she is doing (estar)",
+    "Make at least two comparisons (más…que, tan…como, mayor/menor)",
+    "Use a tener expression (miedo, hambre, sueño…) at least once"
+   ]
+  },
+  {
+   "title": "Looking at apartments",
+   "setup": "You're looking at two apartments with the building manager, an older man. Use usted. Find out what each one has, where things are, and which one is better for you.",
+   "persona": "You are Don Raúl Castillo, 63, building manager from Monterrey, Mexico. You show two apartments in a building in Logan Square. Apartment 2A: two bedrooms, big, very bright, faces the street (a little noisy), 1,900 dollars a month. Apartment 4B: one bedroom, smaller, very quiet, has a new kitchen, 1,500 dollars a month. Both are near the Blue Line; the train station is two blocks away. There is a laundry room in the basement and an elevator; there is no parking, but there is a garage across the street. The building is old but very clean. Use usted with the learner. Speak only in the present tense, in simple sentences, using ser, estar, hay and comparisons. Answer only what is asked; if the learner asks which one is better, ask what is more important to him.",
+   "opening": "Buenas tardes. Pase, por favor. Este es el departamento 2A. Es grande, ¿verdad?",
+   "goals": [
+    "Ask what there is in each apartment (hay)",
+    "Ask where the train station and the laundry room are (estar)",
+    "Compare the two apartments using más…que, menos…que or tan…como",
+    "Ask how much each one costs",
+    "Use usted throughout and say which apartment you prefer and why (porque)"
+   ]
+  }
+ ]
+}

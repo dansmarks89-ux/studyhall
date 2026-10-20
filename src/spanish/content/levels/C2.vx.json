@@ -1,0 +1,457 @@
+[
+ {
+  "i": 0,
+  "w": "ser",
+  "ex": "Somos de Michoacán, pero vivimos en Chicago.",
+  "en": "We're from Michoacán, but we live in Chicago.",
+  "hit": "Somos",
+  "note": "ser: identity, origin, profession, personality, time.",
+  "type": [
+   "ser"
+  ]
+ },
+ {
+  "i": 1,
+  "w": "estar",
+  "ex": "Mis papás están en México este mes.",
+  "en": "My parents are in Mexico this month.",
+  "hit": "están",
+  "note": "estar: location and temporary states (health, mood).",
+  "type": [
+   "estar"
+  ]
+ },
+ {
+  "i": 2,
+  "w": "hay",
+  "ex": "Hay una farmacia muy buena cerca de mi casa.",
+  "en": "There's a very good pharmacy near my house.",
+  "hit": "Hay",
+  "note": "Never changes for plural: hay tres farmacias.",
+  "type": [
+   "hay"
+  ]
+ },
+ {
+  "i": 3,
+  "w": "alto / bajo",
+  "ex": "Mi hijo es alto, pero mi hija es baja.",
+  "en": "My son is tall, but my daughter is short.",
+  "hit": "alto",
+  "note": "bajo/baja = short in height; for length use corto.",
+  "type": []
+ },
+ {
+  "i": 4,
+  "w": "delgado",
+  "ex": "Mi hermano es muy delgado, pero come mucho.",
+  "en": "My brother is very thin, but he eats a lot.",
+  "hit": "delgado",
+  "note": "",
+  "type": [
+   "delgado",
+   "delgada"
+  ]
+ },
+ {
+  "i": 5,
+  "w": "joven",
+  "ex": "Mi doctora es muy joven; tiene treinta años.",
+  "en": "My doctor is very young; she's thirty.",
+  "hit": "joven",
+  "note": "Plural adds an accent: jóvenes.",
+  "type": [
+   "joven"
+  ]
+ },
+ {
+  "i": 6,
+  "w": "mayor",
+  "ex": "Mi hermano es tres años mayor que yo.",
+  "en": "My brother is three years older than me.",
+  "hit": "mayor",
+  "note": "Also the polite word for elderly: una persona mayor (kinder than viejo).",
+  "type": [
+   "mayor"
+  ]
+ },
+ {
+  "i": 7,
+  "w": "menor",
+  "ex": "Mi hermana menor vive en Texas.",
+  "en": "My younger sister lives in Texas.",
+  "hit": "menor",
+  "note": "",
+  "type": [
+   "menor"
+  ]
+ },
+ {
+  "i": 8,
+  "w": "guapo",
+  "ex": "Tu esposo es muy guapo y muy simpático.",
+  "en": "Your husband is very good-looking and very nice.",
+  "hit": "guapo",
+  "note": "Feminine: guapa.",
+  "type": [
+   "guapo",
+   "guapa"
+  ]
+ },
+ {
+  "i": 9,
+  "w": "simpático",
+  "ex": "Tus amigos son muy simpáticos.",
+  "en": "Your friends are very nice.",
+  "hit": "simpáticos",
+  "note": "False friend: means nice or friendly, not sympathetic.",
+  "type": [
+   "simpático",
+   "simpática"
+  ]
+ },
+ {
+  "i": 10,
+  "w": "amable",
+  "ex": "La recepcionista es muy amable con todos.",
+  "en": "The receptionist is very kind to everyone.",
+  "hit": "amable",
+  "note": "Same form for masculine and feminine.",
+  "type": [
+   "amable"
+  ]
+ },
+ {
+  "i": 11,
+  "w": "cansado",
+  "ex": "Después del trabajo mi papá siempre está cansado.",
+  "en": "After work my dad is always tired.",
+  "hit": "cansado",
+  "note": "A state, so use estar: estoy cansado / cansada.",
+  "type": [
+   "cansado",
+   "cansada"
+  ]
+ },
+ {
+  "i": 12,
+  "w": "enfermo",
+  "ex": "Mi hijo está enfermo y no puede ir a la escuela.",
+  "en": "My son is sick and can't go to school.",
+  "hit": "enfermo",
+  "note": "A state, so use estar: está enfermo.",
+  "type": [
+   "enfermo",
+   "enferma"
+  ]
+ },
+ {
+  "i": 13,
+  "w": "contento",
+  "ex": "Mi mamá está muy contenta con su nuevo departamento.",
+  "en": "My mom is very pleased with her new apartment.",
+  "hit": "contenta",
+  "note": "Used with estar.",
+  "type": [
+   "contento",
+   "contenta"
+  ]
+ },
+ {
+  "i": 14,
+  "w": "preocupado",
+  "ex": "Mi hermano está preocupado porque mi papá está enfermo.",
+  "en": "My brother is worried because my dad is sick.",
+  "hit": "preocupado",
+  "note": "",
+  "type": [
+   "preocupado",
+   "preocupada"
+  ]
+ },
+ {
+  "i": 15,
+  "w": "nervioso",
+  "ex": "Mi hija está nerviosa por su examen de mañana.",
+  "en": "My daughter is nervous about her exam tomorrow.",
+  "hit": "nerviosa",
+  "note": "",
+  "type": [
+   "nervioso",
+   "nerviosa"
+  ]
+ },
+ {
+  "i": 16,
+  "w": "aburrido",
+  "ex": "Esta película es muy aburrida.",
+  "en": "This movie is very boring.",
+  "hit": "aburrida",
+  "note": "ser aburrido = boring; estar aburrido = bored.",
+  "type": [
+   "aburrido",
+   "aburrida"
+  ]
+ },
+ {
+  "i": 17,
+  "w": "ocupado",
+  "ex": "Hoy el doctor está muy ocupado; tiene muchos pacientes.",
+  "en": "The doctor is very busy today; he has a lot of patients.",
+  "hit": "ocupado",
+  "note": "Also 'occupied, taken': el baño está ocupado.",
+  "type": [
+   "ocupado",
+   "ocupada"
+  ]
+ },
+ {
+  "i": 18,
+  "w": "listo",
+  "ex": "¿Estás lista? La película empieza en cinco minutos.",
+  "en": "Are you ready? The movie starts in five minutes.",
+  "hit": "lista",
+  "note": "estar listo = ready; ser listo = clever.",
+  "type": [
+   "listo",
+   "lista"
+  ]
+ },
+ {
+  "i": 19,
+  "w": "grande / pequeño",
+  "ex": "Mi casa es pequeña, pero el jardín es grande.",
+  "en": "My house is small, but the yard is big.",
+  "hit": "grande",
+  "note": "In Mexico, chico is also common for small.",
+  "type": []
+ },
+ {
+  "i": 20,
+  "w": "nuevo / viejo",
+  "ex": "Tengo un celular nuevo; el viejo no funciona.",
+  "en": "I have a new phone; the old one doesn't work.",
+  "hit": "nuevo",
+  "note": "For older people, mayor is more polite than viejo.",
+  "type": []
+ },
+ {
+  "i": 21,
+  "w": "caro / barato",
+  "ex": "Este restaurante es caro, pero el otro es barato.",
+  "en": "This restaurant is expensive, but the other one is cheap.",
+  "hit": "caro",
+  "note": "",
+  "type": []
+ },
+ {
+  "i": 22,
+  "w": "fácil / difícil",
+  "ex": "Hablar es fácil, pero escuchar es difícil.",
+  "en": "Speaking is easy, but listening is hard.",
+  "hit": "fácil",
+  "note": "Plural: fáciles, difíciles.",
+  "type": []
+ },
+ {
+  "i": 23,
+  "w": "abierto / cerrado",
+  "ex": "El banco está cerrado, pero la farmacia está abierta.",
+  "en": "The bank is closed, but the pharmacy is open.",
+  "hit": "abierta",
+  "note": "Used with estar: está abierto / está cerrado.",
+  "type": []
+ },
+ {
+  "i": 24,
+  "w": "rico",
+  "ex": "¡Este pozole está muy rico!",
+  "en": "This pozole is really delicious!",
+  "hit": "rico",
+  "note": "With estar = delicious; with ser = rich (wealthy).",
+  "type": [
+   "rico",
+   "rica",
+   "delicioso",
+   "deliciosa"
+  ]
+ },
+ {
+  "i": 25,
+  "w": "cerca de / lejos de",
+  "ex": "Mi casa está cerca de un parque y lejos del centro.",
+  "en": "My house is near a park and far from downtown.",
+  "hit": "cerca de",
+  "note": "de + el = del: lejos del centro.",
+  "type": []
+ },
+ {
+  "i": 26,
+  "w": "al lado de",
+  "ex": "El baño está al lado de la cocina.",
+  "en": "The bathroom is next to the kitchen.",
+  "hit": "al lado de",
+  "note": "de + el = del: al lado del banco.",
+  "type": [
+   "al lado de",
+   "junto a"
+  ]
+ },
+ {
+  "i": 27,
+  "w": "enfrente de",
+  "ex": "La panadería está enfrente de la iglesia.",
+  "en": "The bakery is across from the church.",
+  "hit": "enfrente de",
+  "note": "de + el = del: enfrente del hospital.",
+  "type": [
+   "enfrente de",
+   "frente a"
+  ]
+ },
+ {
+  "i": 28,
+  "w": "tener hambre",
+  "ex": "Tengo hambre. ¿Quieres comer algo?",
+  "en": "I'm hungry. Do you want to eat something?",
+  "hit": "Tengo hambre",
+  "note": "Very hungry = mucha hambre (not muy).",
+  "type": [
+   "tener hambre"
+  ]
+ },
+ {
+  "i": 29,
+  "w": "tener sed",
+  "ex": "Los niños tienen sed después del partido.",
+  "en": "The kids are thirsty after the game.",
+  "hit": "tienen sed",
+  "note": "Very thirsty = mucha sed (not muy).",
+  "type": [
+   "tener sed"
+  ]
+ },
+ {
+  "i": 30,
+  "w": "tener frío / calor",
+  "ex": "Siempre tengo frío en el hospital.",
+  "en": "I'm always cold at the hospital.",
+  "hit": "tengo frío",
+  "note": "For people use tener; for weather use hacer: hace frío.",
+  "type": []
+ },
+ {
+  "i": 31,
+  "w": "tener sueño",
+  "ex": "Los niños tienen sueño; ya son las once.",
+  "en": "The kids are sleepy; it's already eleven.",
+  "hit": "tienen sueño",
+  "note": "El sueño also means dream.",
+  "type": [
+   "tener sueño"
+  ]
+ },
+ {
+  "i": 32,
+  "w": "tener miedo (de)",
+  "ex": "Mi mamá tiene miedo de manejar en la nieve.",
+  "en": "My mom is afraid of driving in the snow.",
+  "hit": "tiene miedo de",
+  "note": "",
+  "type": [
+   "tener miedo",
+   "tener miedo de"
+  ]
+ },
+ {
+  "i": 33,
+  "w": "tener prisa",
+  "ex": "Perdón, no puedo hablar ahora; tengo prisa.",
+  "en": "Sorry, I can't talk now; I'm in a hurry.",
+  "hit": "tengo prisa",
+  "note": "Many Latin Americans also say estar apurado.",
+  "type": [
+   "tener prisa"
+  ]
+ },
+ {
+  "i": 34,
+  "w": "tener razón",
+  "ex": "Tienes razón, este restaurante es mejor.",
+  "en": "You're right, this restaurant is better.",
+  "hit": "Tienes razón",
+  "note": "Never estar razón.",
+  "type": [
+   "tener razón"
+  ]
+ },
+ {
+  "i": 35,
+  "w": "más … que",
+  "ex": "El tren es más rápido que el autobús.",
+  "en": "The train is faster than the bus.",
+  "hit": "más",
+  "note": "Less … than = menos … que. After que use yo, tú: más alto que yo.",
+  "type": []
+ },
+ {
+  "i": 36,
+  "w": "tan … como",
+  "ex": "Mi hija es tan alta como su mamá.",
+  "en": "My daughter is as tall as her mom.",
+  "hit": "tan",
+  "note": "",
+  "type": []
+ },
+ {
+  "i": 37,
+  "w": "mejor / peor",
+  "ex": "Hoy mi papá está mejor que ayer.",
+  "en": "My dad is doing better today than yesterday.",
+  "hit": "mejor",
+  "note": "Never más mejor. Opposite: peor.",
+  "type": []
+ },
+ {
+  "i": 38,
+  "w": "la gente",
+  "ex": "En el verano hay mucha gente en la playa.",
+  "en": "In the summer there are a lot of people at the beach.",
+  "hit": "gente",
+  "note": "Singular in Spanish: la gente es amable (not son).",
+  "type": [
+   "la gente",
+   "gente"
+  ]
+ },
+ {
+  "i": 39,
+  "w": "la cobija",
+  "ex": "Tengo frío. ¿Hay otra cobija en la casa?",
+  "en": "I'm cold. Is there another blanket in the house?",
+  "hit": "cobija",
+  "note": "Mexico and Central America; elsewhere manta or frazada.",
+  "type": [
+   "la cobija",
+   "cobija",
+   "la manta",
+   "manta",
+   "la frazada",
+   "frazada"
+  ]
+ },
+ {
+  "i": 40,
+  "w": "el departamento",
+  "ex": "Vivo en un departamento cerca del hospital.",
+  "en": "I live in an apartment near the hospital.",
+  "hit": "departamento",
+  "note": "Mexican usage; apartamento elsewhere. Also means a department.",
+  "type": [
+   "el departamento",
+   "departamento",
+   "el apartamento",
+   "apartamento"
+  ]
+ }
+]

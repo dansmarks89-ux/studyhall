@@ -1,0 +1,260 @@
+{
+  "id": "C3",
+  "track": "conv",
+  "n": 3,
+  "title": "What happened",
+  "goal": "Tell someone what you did yesterday or last weekend, in order, and ask what happened to them.",
+  "bestAfter": null,
+  "grammar": [
+    {
+      "h": "Regular preterite endings",
+      "p": "The preterite is the past tense for finished events: something that happened once, or a block of time that is over. -ar verbs: *-é, -aste, -ó, -amos, -aron*. -er and -ir verbs share one set: *-í, -iste, -ió, -imos, -ieron*. The accents on *-é* and *-ó* matter: *hablo* = I speak, *habló* = he spoke. The *nosotros* form of -ar and -ir verbs looks the same as the present (*cenamos*, *salimos*), so a time word like *anoche* tells you it is past.",
+      "ex": [
+        ["Ayer caminé una hora.", "Yesterday I walked for an hour."],
+        ["¿Comiste algo anoche?", "Did you eat anything last night?"],
+        ["Mis hijos salieron temprano.", "My kids left early."]
+      ]
+    },
+    {
+      "h": "ser and ir: same past forms",
+      "p": "*ser* (to be) and *ir* (to go) have identical preterite forms: *fui, fuiste, fue, fuimos, fueron*. Context tells you which one: *fui al hospital* (I went to the hospital) vs. *fue un día largo* (it was a long day). No accents on any of them.",
+      "ex": [
+        ["Fui al doctor el lunes.", "I went to the doctor on Monday."],
+        ["La boda fue muy bonita.", "The wedding was very beautiful."],
+        ["¿Adónde fueron ustedes?", "Where did you all go?"]
+      ]
+    },
+    {
+      "h": "Key irregular verbs",
+      "p": "These verbs change their stem and use special endings with NO accents: *tener → tuve*, *estar → estuve*, *poder → pude*, *poner → puse*, *saber → supe*, *hacer → hice* (but *hizo* with z), *venir → vine*, *querer → quise*, *decir → dije* (they: *dijeron*, no i). Endings: *-e, -iste, -o, -imos, -ieron*. *dar* and *ver* are short and have no accents: *di, diste, dio, dimos, dieron* / *vi, viste, vio, vimos, vieron*. The past of *hay* (there is/are) for an event is *hubo*.",
+      "ex": [
+        ["Tuve que trabajar el sábado.", "I had to work on Saturday."],
+        ["¿Qué te dijo el doctor?", "What did the doctor tell you?"],
+        ["No pude ir a la fiesta.", "I couldn't go to the party."],
+        ["Ayer hubo un accidente en la autopista.", "Yesterday there was an accident on the highway."]
+      ]
+    },
+    {
+      "h": "Spelling changes in the yo form",
+      "p": "Only in the *yo* form, three endings change spelling to keep the sound: *-car → -qué* (*buscar → busqué*, *sacar → saqué*), *-gar → -gué* (*llegar → llegué*, *pagar → pagué*, *jugar → jugué*), *-zar → -cé* (*empezar → empecé*, *almorzar → almorcé*). The other forms are regular: *llegaste, llegó, llegamos*.",
+      "ex": [
+        ["Llegué tarde por el tráfico.", "I got there late because of the traffic."],
+        ["Busqué mi celular por todas partes.", "I looked for my phone everywhere."],
+        ["Empecé a estudiar español el año pasado.", "I started studying Spanish last year."]
+      ]
+    },
+    {
+      "h": "Time markers and putting events in order",
+      "p": "Words that point to a finished time call for the preterite: *ayer*, *anoche*, *anteayer*, *la semana pasada*, *el año pasado*, *el lunes pasado*. *hace* + time = ago: *hace dos días* (two days ago). To tell a sequence use *primero*, *después*, *luego*, *entonces*, *al final*, *por fin*.",
+      "ex": [
+        ["Llegué hace dos días.", "I arrived two days ago."],
+        ["Primero desayuné, después fui al trabajo y al final cené con mi familia.", "First I had breakfast, then I went to work, and finally I had dinner with my family."]
+      ]
+    }
+  ],
+  "vocab": [
+    ["ayer", "yesterday"],
+    ["anoche", "last night"],
+    ["anteayer", "the day before yesterday"],
+    ["la semana pasada", "last week"],
+    ["el mes pasado", "last month"],
+    ["el año pasado", "last year"],
+    ["el fin de semana pasado", "last weekend"],
+    ["el lunes pasado", "last Monday"],
+    ["hace dos días", "two days ago"],
+    ["hace un rato", "a little while ago"],
+    ["primero", "first"],
+    ["después", "afterward, then"],
+    ["luego", "then, later"],
+    ["entonces", "so, then"],
+    ["al final", "in the end"],
+    ["por fin", "finally, at last"],
+    ["de repente", "suddenly"],
+    ["llegar", "to arrive, to get (somewhere)"],
+    ["salir", "to leave, to go out"],
+    ["regresar", "to come back, to return"],
+    ["buscar", "to look for"],
+    ["sacar", "to take out"],
+    ["empezar", "to start"],
+    ["terminar", "to finish"],
+    ["almorzar", "to have lunch"],
+    ["desayunar", "to have breakfast"],
+    ["cenar", "to have dinner"],
+    ["pagar", "to pay"],
+    ["jugar", "to play (a sport or game)"],
+    ["manejar", "to drive"],
+    ["perder", "to lose; to miss (a flight, a bus)"],
+    ["ganar", "to win; to earn"],
+    ["olvidar", "to forget"],
+    ["la boda", "the wedding"],
+    ["la fiesta", "the party"],
+    ["el partido", "the game, the match"],
+    ["el viaje", "the trip"],
+    ["el vuelo", "the flight"],
+    ["el turno", "the shift (at work)"],
+    ["la guardia", "the on-call shift"],
+    ["el tráfico", "traffic"],
+    ["la noticia", "the news (one piece of news)"]
+  ],
+  "phrases": [
+    ["¿Qué hiciste ayer?", "What did you do yesterday?"],
+    ["¿Qué pasó?", "What happened?"],
+    ["¿Cómo te fue?", "How did it go? (to a friend)"],
+    ["¿Cómo le fue?", "How did it go? (polite, usted)"],
+    ["¿Qué tal el fin de semana?", "How was the weekend?"],
+    ["¿Adónde fuiste?", "Where did you go?"],
+    ["¿Con quién fuiste?", "Who did you go with?"],
+    ["¿A qué hora llegaste?", "What time did you get there?"],
+    ["No pude ir.", "I couldn't go."],
+    ["Tuve que trabajar.", "I had to work."],
+    ["Me fue muy bien.", "It went really well."],
+    ["Fue un día muy largo.", "It was a very long day."],
+    ["¿Qué te dijo?", "What did he/she tell you?"],
+    ["Fue hace dos días.", "It was two days ago."]
+  ],
+  "items": [
+    {"id": "C3-mc-01", "t": "mc", "q": "Ayer yo ___ al supermercado.", "qen": "Yesterday I went to the supermarket.", "opts": ["voy", "fue", "fui", "iré"], "a": 2, "why": "A finished event yesterday with yo → preterite of ir: fui. Fue is he/she/usted."},
+    {"id": "C3-mc-02", "t": "mc", "q": "Anoche nosotros ___ en un restaurante mexicano.", "qen": "Last night we had dinner at a Mexican restaurant.", "opts": ["cenamos", "cenaron", "cené", "cenó"], "a": 0, "why": "nosotros → cenamos. For -ar verbs the nosotros preterite looks like the present; anoche makes it past."},
+    {"id": "C3-mc-03", "t": "mc", "q": "¿Qué ___ tú el fin de semana pasado?", "qen": "What did you do last weekend?", "opts": ["hizo", "hiciste", "haces", "hice"], "a": 1, "why": "tú + preterite of hacer → hiciste. 'Pasado' rules out the present haces."},
+    {"id": "C3-mc-04", "t": "mc", "q": "How do you say 'I arrived late'?", "opts": ["Llegó tarde.", "Llego tarde.", "Llegé tarde.", "Llegué tarde."], "a": 3, "why": "-gar verbs add u in the yo preterite to keep the hard g: llegué. Llegó = he/she arrived; llego = I arrive."},
+    {"id": "C3-mc-05", "t": "mc", "q": "Mis papás ___ de México el domingo pasado.", "qen": "My parents came from Mexico last Sunday.", "opts": ["vienen", "vino", "vinieron", "venimos"], "a": 2, "why": "Two people (mis papás) + finished event → vinieron."},
+    {"id": "C3-mc-06", "t": "mc", "q": "¿Qué te ___ el doctor ayer?", "qen": "What did the doctor tell you yesterday?", "opts": ["dijo", "dice", "dije", "dijiste"], "a": 0, "why": "Subject = el doctor (he), past → dijo. Dije = I said; dijiste = you said."},
+    {"id": "C3-mc-07", "t": "mc", "q": "Hace dos días yo ___ mi nuevo trabajo.", "qen": "I started my new job two days ago.", "opts": ["empezé", "empiezo", "empezó", "empecé"], "a": 3, "why": "-zar → -cé in the yo preterite: empecé. 'Empezé' is a spelling error; empezó is he/she."},
+    {"id": "C3-mc-08", "t": "mc", "q": "In 'Llegué hace dos días', what does 'hace dos días' mean?", "opts": ["for two days", "two days ago", "in two days", "every two days"], "a": 1, "why": "With a past verb, hace + time = ago."},
+    {"id": "C3-mc-09", "t": "mc", "q": "Ella no ___ venir a la fiesta anoche porque tuvo que trabajar.", "qen": "She couldn't come to the party last night because she had to work.", "opts": ["puede", "pude", "pudo", "pudieron"], "a": 2, "why": "ella + preterite of poder → pudo. Pude = I could; anoche rules out the present."},
+    {"id": "C3-mc-10", "t": "mc", "q": "Your friend Marco looks tired on Monday morning. What's the best question?", "opts": ["¿Qué haces el fin de semana pasado?", "¿Qué hizo usted el fin de semana?", "¿Qué vas a hacer ayer?", "¿Qué hiciste el fin de semana?"], "a": 3, "why": "A friend → tú, and the weekend is over → preterite: hiciste. 'Hizo usted' is too formal for a friend."},
+    {"id": "C3-mc-11", "t": "mc", "q": "Primero desayuné, ___ fui al hospital.", "qen": "First I had breakfast, then I went to the hospital.", "opts": ["antes", "después", "primero", "mañana"], "a": 1, "why": "After primero, the next step is después (or luego)."},
+    {"id": "C3-mc-12", "t": "mc", "q": "¿Dónde ___ ustedes las llaves anoche?", "qen": "Where did you all put the keys last night?", "opts": ["ponen", "puso", "pusimos", "pusieron"], "a": 3, "why": "ustedes + preterite of poner → pusieron."},
+    {"id": "C3-mc-13", "t": "mc", "q": "Ayer ___ un accidente en la autopista.", "qen": "Yesterday there was an accident on the highway.", "opts": ["hubo", "hay", "habrá", "estuvo"], "a": 0, "why": "The past of hay for an event is hubo. Estar is not used for 'there was'."},
+    {"id": "C3-mc-14", "t": "mc", "q": "Nosotros ___ la película en el cine el sábado pasado.", "qen": "We saw the movie at the theater last Saturday.", "opts": ["vemos", "vieron", "vimos", "vi"], "a": 2, "why": "nosotros + preterite of ver → vimos."},
+    {"id": "C3-mc-15", "t": "mc", "q": "Anoche yo ___ mis llaves por media hora.", "qen": "Last night I looked for my keys for half an hour.", "opts": ["buscé", "busqué", "buscó", "busco"], "a": 1, "why": "-car → -qué in the yo preterite: busqué."},
+    {"id": "C3-mc-16", "t": "mc", "q": "Yo ___ la cuenta anoche.", "qen": "I paid the bill last night.", "opts": ["pagó", "pago", "pagé", "pagué"], "a": 3, "why": "-gar → -gué in the yo preterite: pagué. Pagó = he/she paid."},
+    {"id": "C3-mc-17", "t": "mc", "q": "Choose the correct sentence.", "qen": "She went to the doctor last week.", "opts": ["Ella va al médico la semana pasada.", "Ella fui al médico la semana pasada.", "Ella fue al médico la semana pasada.", "Ella fuiste al médico la semana pasada."], "a": 2, "why": "ella → fue. Fui is yo, fuiste is tú, and va is present."},
+    {"id": "C3-mc-18", "t": "mc", "q": "Mi hermana me ___ un regalo el año pasado.", "qen": "My sister gave me a present last year.", "opts": ["dió", "dio", "di", "da"], "a": 1, "why": "dio is one syllable, so no written accent. Di = I gave."},
+    {"id": "C3-mc-19", "t": "mc", "q": "Ayer yo ___ en el hospital todo el día.", "qen": "Yesterday I was at the hospital all day.", "opts": ["fui", "estoy", "estuvo", "estuve"], "a": 3, "why": "Being in a place → estar; a finished day with yo → estuve. 'Fui en el hospital' is wrong."},
+    {"id": "C3-mc-20", "t": "mc", "q": "¿Por qué no ___ tú a la reunión ayer?", "qen": "Why didn't you come to the meeting yesterday?", "opts": ["viniste", "vino", "vienes", "veniste"], "a": 0, "why": "tú + preterite of venir → viniste (stem changes to vin-). 'Veniste' does not exist."},
+
+    {"id": "C3-fill-01", "t": "fill", "q": "Anoche yo ___ tacos con mis amigos.", "en": "Last night I ate tacos with my friends.", "hint": "comer", "a": ["comí"], "why": "yo + -er preterite → comí (accent on the í)."},
+    {"id": "C3-fill-02", "t": "fill", "q": "¿A qué hora ___ tú al trabajo ayer?", "en": "What time did you get to work yesterday?", "hint": "llegar", "a": ["llegaste"], "why": "tú + -ar preterite → llegaste. The spelling change is only in the yo form."},
+    {"id": "C3-fill-03", "t": "fill", "q": "Ayer yo ___ al trabajo a las siete.", "en": "Yesterday I got to work at seven.", "hint": "llegar", "a": ["llegué"], "why": "yo form of a -gar verb: llegué (u keeps the hard g)."},
+    {"id": "C3-fill-04", "t": "fill", "q": "La semana pasada yo ___ a estudiar español.", "en": "Last week I started studying Spanish.", "hint": "empezar", "a": ["empecé"], "why": "-zar → -cé in the yo preterite: empecé."},
+    {"id": "C3-fill-05", "t": "fill", "q": "Anoche yo ___ que trabajar hasta muy tarde.", "en": "Last night I had to work until very late.", "hint": "tener", "a": ["tuve"], "why": "tener que in the past, yo → tuve que (no accent)."},
+    {"id": "C3-fill-06", "t": "fill", "q": "Ayer yo ___ fútbol con mis hijos.", "en": "Yesterday I played soccer with my kids.", "hint": "jugar", "a": ["jugué"], "why": "-gar → -gué in the yo preterite: jugué."},
+    {"id": "C3-fill-07", "t": "fill", "q": "¿Qué ___ ustedes el fin de semana pasado?", "en": "What did you all do last weekend?", "hint": "hacer", "a": ["hicieron"], "why": "ustedes + preterite of hacer → hicieron."},
+    {"id": "C3-fill-08", "t": "fill", "q": "El año pasado nosotros ___ a Guadalajara.", "en": "Last year we went to Guadalajara.", "hint": "ir", "a": ["fuimos"], "why": "nosotros + preterite of ir → fuimos."},
+    {"id": "C3-fill-09", "t": "fill", "q": "La fiesta de anoche ___ muy divertida.", "en": "Last night's party was a lot of fun.", "hint": "ser", "a": ["fue"], "why": "A finished event described with ser → fue."},
+    {"id": "C3-fill-10", "t": "fill", "q": "Mis primos ___ de Guatemala la semana pasada.", "en": "My cousins came from Guatemala last week.", "hint": "venir", "a": ["vinieron"], "why": "ellos + preterite of venir → vinieron."},
+    {"id": "C3-fill-11", "t": "fill", "q": "Anoche nosotros ___ una película en casa.", "en": "Last night we watched a movie at home.", "hint": "ver", "a": ["vimos"], "why": "nosotros + preterite of ver → vimos."},
+    {"id": "C3-fill-12", "t": "fill", "q": "¿Dónde ___ tú las llaves anoche?", "en": "Where did you put the keys last night?", "hint": "poner", "a": ["pusiste"], "why": "tú + preterite of poner → pusiste."},
+    {"id": "C3-fill-13", "t": "fill", "q": "Ayer yo no ___ ir al gimnasio.", "en": "Yesterday I couldn't go to the gym.", "hint": "poder", "a": ["pude"], "why": "yo + preterite of poder → pude (no accent)."},
+    {"id": "C3-fill-14", "t": "fill", "q": "Ayer el doctor me ___ la verdad.", "en": "Yesterday the doctor told me the truth.", "hint": "decir", "a": ["dijo"], "why": "él (el doctor) + preterite of decir → dijo."},
+    {"id": "C3-fill-15", "t": "fill", "q": "Ellos ___ tres días en Chicago la semana pasada.", "en": "They were in Chicago for three days last week.", "hint": "estar", "a": ["estuvieron"], "why": "A finished stay in a place → estar in the preterite: estuvieron."},
+    {"id": "C3-fill-16", "t": "fill", "q": "Ayer yo ___ en la cafetería del hospital.", "en": "Yesterday I had lunch in the hospital cafeteria.", "hint": "almorzar", "a": ["almorcé"], "why": "-zar → -cé in the yo preterite: almorcé (no stem change in the preterite)."},
+    {"id": "C3-fill-17", "t": "fill", "q": "¿Cuándo ___ tú la noticia?", "en": "When did you find out the news?", "hint": "saber (past)", "a": ["supiste"], "why": "tú + preterite of saber → supiste."},
+    {"id": "C3-fill-18", "t": "fill", "q": "Mis papás ___ un carro nuevo el mes pasado.", "en": "My parents bought a new car last month.", "hint": "comprar", "a": ["compraron"], "why": "ellos + -ar preterite → compraron."},
+    {"id": "C3-fill-19", "t": "fill", "q": "Primero yo ___ y después fui al trabajo.", "en": "First I had breakfast and then I went to work.", "hint": "desayunar", "a": ["desayuné"], "why": "yo + -ar preterite → desayuné."},
+    {"id": "C3-fill-20", "t": "fill", "q": "Ayer yo ___ dinero del cajero.", "en": "Yesterday I took money out of the ATM.", "hint": "sacar", "a": ["saqué"], "why": "-car → -qué in the yo preterite: saqué."},
+
+    {"id": "C3-tiles-01", "t": "tiles", "en": "What did you do on the weekend?", "a": "¿Qué hiciste el fin de semana?", "alt": [], "extra": ["hice", "haces"]},
+    {"id": "C3-tiles-02", "t": "tiles", "en": "Yesterday I went to the doctor.", "a": "Ayer fui al doctor.", "alt": ["Fui al doctor ayer.", "Fui ayer al doctor."], "extra": ["voy", "fue"]},
+    {"id": "C3-tiles-03", "t": "tiles", "en": "I got there late because of the traffic.", "a": "Llegué tarde por el tráfico.", "alt": ["Por el tráfico llegué tarde."], "extra": ["llegó", "para"]},
+    {"id": "C3-tiles-04", "t": "tiles", "en": "What time did you get in last night?", "a": "¿A qué hora llegaste anoche?", "alt": ["Anoche, ¿a qué hora llegaste?"], "extra": ["llegué", "llega"]},
+    {"id": "C3-tiles-05", "t": "tiles", "en": "First I had breakfast and then I went to work.", "a": "Primero desayuné y después fui al trabajo.", "alt": [], "extra": ["desayunó", "va"]},
+    {"id": "C3-tiles-06", "t": "tiles", "en": "My parents came from Mexico last week.", "a": "Mis papás vinieron de México la semana pasada.", "alt": ["La semana pasada mis papás vinieron de México.", "Mis papás vinieron la semana pasada de México.", "La semana pasada vinieron mis papás de México.", "Vinieron mis papás de México la semana pasada.", "La semana pasada vinieron de México mis papás."], "extra": ["vino", "venieron"]},
+    {"id": "C3-tiles-07", "t": "tiles", "en": "I couldn't sleep last night.", "a": "No pude dormir anoche.", "alt": ["Anoche no pude dormir."], "extra": ["puedo", "pudo"]},
+    {"id": "C3-tiles-08", "t": "tiles", "en": "What did the doctor tell you yesterday?", "a": "¿Qué te dijo el doctor ayer?", "alt": ["¿Qué te dijo ayer el doctor?", "Ayer, ¿qué te dijo el doctor?"], "extra": ["dije", "lo"]},
+    {"id": "C3-tiles-09", "t": "tiles", "en": "We went to the beach last summer.", "a": "Fuimos a la playa el verano pasado.", "alt": ["El verano pasado fuimos a la playa.", "Fuimos el verano pasado a la playa."], "extra": ["fueron", "vamos"]},
+    {"id": "C3-tiles-10", "t": "tiles", "en": "She had to work on Saturday.", "a": "Ella tuvo que trabajar el sábado.", "alt": ["El sábado ella tuvo que trabajar.", "Ella el sábado tuvo que trabajar."], "extra": ["tiene", "tuve"]},
+    {"id": "C3-tiles-11", "t": "tiles", "en": "I looked for my phone everywhere.", "a": "Busqué mi celular por todas partes.", "alt": ["Busqué por todas partes mi celular.", "Por todas partes busqué mi celular."], "extra": ["buscé", "buscó"]},
+    {"id": "C3-tiles-12", "t": "tiles", "en": "Where did you put the car keys?", "a": "¿Dónde pusiste las llaves del carro?", "alt": [], "extra": ["puse", "ponió"]},
+    {"id": "C3-tiles-13", "t": "tiles", "en": "I saw your brother two days ago.", "a": "Vi a tu hermano hace dos días.", "alt": ["Hace dos días vi a tu hermano."], "extra": ["vio", "desde"]},
+    {"id": "C3-tiles-14", "t": "tiles", "en": "Yesterday I was at the hospital all day.", "a": "Ayer estuve en el hospital todo el día.", "alt": ["Estuve en el hospital todo el día ayer.", "Ayer estuve todo el día en el hospital.", "Estuve todo el día en el hospital ayer."], "extra": ["fui", "estuvo"]},
+    {"id": "C3-tiles-15", "t": "tiles", "en": "In the end we didn't buy anything.", "a": "Al final no compramos nada.", "alt": ["No compramos nada al final."], "extra": ["compraron", "algo"]},
+    {"id": "C3-tiles-16", "t": "tiles", "en": "My son started school on Monday.", "a": "Mi hijo empezó la escuela el lunes.", "alt": ["El lunes mi hijo empezó la escuela."], "extra": ["empecé", "empezé"]},
+
+    {"id": "C3-listen-01", "t": "listen", "say": "Fui al cine con mi hermana.", "opts": ["I'm going to the movies with my sister.", "I went to the movies with my sister.", "She went to the movies with my sister.", "I went to the movies with my brother."], "a": 1},
+    {"id": "C3-listen-02", "t": "listen", "say": "¿Qué hiciste anoche?", "opts": ["What did you do last night?", "What are you doing tonight?", "What did he do last night?", "What did you eat last night?"], "a": 0},
+    {"id": "C3-listen-03", "t": "listen", "say": "Llegamos a las diez de la noche.", "opts": ["They arrived at ten at night.", "We left at ten at night.", "We arrived at ten at night.", "We arrived at ten in the morning."], "a": 2},
+    {"id": "C3-listen-04", "t": "listen", "say": "Mi papá estuvo en el hospital una semana.", "opts": ["My dad is in the hospital this week.", "My dad went to the hospital last week.", "My dad was in the hospital for a month.", "My dad was in the hospital for a week."], "a": 3},
+    {"id": "C3-listen-05", "t": "listen", "say": "No pude ir a la boda.", "opts": ["I can't go to the wedding.", "I couldn't go to the wedding.", "He couldn't go to the wedding.", "I didn't want to go to the wedding."], "a": 1},
+    {"id": "C3-listen-06", "t": "listen", "say": "Ellos vinieron hace tres días.", "opts": ["They came three days ago.", "They're coming in three days.", "They came for three days.", "He came three days ago."], "a": 0},
+    {"id": "C3-listen-07", "t": "listen", "say": "Primero comimos y luego fuimos al parque.", "opts": ["First they ate and then we went to the park.", "We went to the park and then we ate.", "First we ate and then they went to the park.", "First we ate and then we went to the park."], "a": 3},
+    {"id": "C3-listen-08", "t": "listen", "say": "¿Cómo te fue en el examen?", "opts": ["Where was the exam?", "How is the exam going?", "How did the exam go?", "When was the exam?"], "a": 2},
+    {"id": "C3-listen-09", "t": "listen", "say": "Hizo mucho frío el fin de semana.", "opts": ["It's very cold this weekend.", "It was very cold over the weekend.", "It was very hot over the weekend.", "I was very cold over the weekend."], "a": 1},
+    {"id": "C3-listen-10", "t": "listen", "say": "Al final, mi esposa manejó.", "opts": ["In the end, my wife drove.", "In the end, I drove.", "In the end, my wife walked.", "At first, my wife drove."], "a": 0},
+
+    {"id": "C3-dlg-01", "t": "dlg", "title": "Monday with a coworker", "turns": [
+      {"who": "Laura", "es": "¡Hola! ¿Qué tal tu fin de semana?", "en": "Hi! How was your weekend?"},
+      {"you": true, "opts": ["Muy bien. Voy a un partido de los Cubs con mi hermano.", "Muy bien. Fui a un partido de los Cubs con mi hermano.", "Muy bien. Fue a un partido de los Cubs con mi hermano."], "a": 1, "why": "The weekend is over → preterite, and you are talking about yourself → fui (fue = he/she)."},
+      {"who": "Laura", "es": "¡Qué padre! ¿Ganaron?", "en": "Cool! Did they win?"},
+      {"you": true, "opts": ["Sí, ganaron cinco a dos.", "Sí, ganan cinco a dos.", "Sí, ganaste cinco a dos."], "a": 0, "why": "The Cubs (ellos) won in a finished game → ganaron."},
+      {"who": "Laura", "es": "Yo no hice nada. Estuve en casa todo el fin de semana.", "en": "I didn't do anything. I was home all weekend."}
+    ]},
+    {"id": "C3-dlg-02", "t": "dlg", "title": "An older neighbor asks about your trip", "turns": [
+      {"who": "Sra. Ramírez", "es": "Buenos días, doctor. ¿Cómo le fue en su viaje?", "en": "Good morning, doctor. How did your trip go?"},
+      {"you": true, "opts": ["Muy bien, gracias. Llegaron anoche.", "Muy bien, gracias. Llegamos mañana.", "Muy bien, gracias. Llegamos anoche."], "a": 2, "why": "You and your family (nosotros) got back last night → llegamos anoche."},
+      {"who": "Sra. Ramírez", "es": "¡Qué bueno! ¿Y adónde fueron?", "en": "Great! And where did you go?"},
+      {"you": true, "opts": ["Fuimos una semana a Oaxaca.", "Fueron una semana a Oaxaca.", "Vamos una semana a Oaxaca."], "a": 0, "why": "She asks 'adónde fueron (ustedes)' → you answer with nosotros: fuimos."},
+      {"who": "Sra. Ramírez", "es": "¡Qué bonito! Yo fui hace muchos años.", "en": "How lovely! I went many years ago."},
+      {"you": true, "opts": ["¿Y te gustó?", "¿Y le gustó?", "¿Y le gusta ayer?"], "a": 1, "why": "An older neighbor → usted → le gustó. 'Te' is for friends; 'gusta ayer' mixes present with a past time word."},
+      {"who": "Sra. Ramírez", "es": "Sí, mucho. Fui con mi esposo.", "en": "Yes, a lot. I went with my husband."}
+    ]},
+    {"id": "C3-dlg-03", "t": "dlg", "title": "Late for dinner with a friend", "turns": [
+      {"who": "Diego", "es": "¡Por fin! ¿Qué pasó?", "en": "Finally! What happened?"},
+      {"you": true, "opts": ["Perdón, salió tarde del hospital.", "Perdón, salí tarde del hospital.", "Perdón, salgo tarde del hospital."], "a": 1, "why": "You are explaining what happened tonight → yo, preterite: salí."},
+      {"who": "Diego", "es": "¿Tuviste una emergencia?", "en": "Did you have an emergency?"},
+      {"you": true, "opts": ["Sí, llegué un paciente muy grave a las seis.", "Sí, llega un paciente muy grave mañana.", "Sí, llegó un paciente muy grave a las seis."], "a": 2, "why": "The patient (él) arrived → llegó."},
+      {"who": "Diego", "es": "Bueno, no importa. Ya pedimos la comida.", "en": "Well, it doesn't matter. We already ordered the food."}
+    ]},
+    {"id": "C3-dlg-04", "t": "dlg", "title": "A friend is back from a trip", "turns": [
+      {"who": "Sofía", "es": "¡Hola! Regresé de Guatemala el domingo.", "en": "Hi! I got back from Guatemala on Sunday."},
+      {"you": true, "opts": ["¡Qué bien! ¿Qué hizo allá?", "¡Qué bien! ¿Qué hiciste allá?", "¡Qué bien! ¿Qué haces allá?"], "a": 1, "why": "A friend → tú, and the trip is over → hiciste. 'Hizo' is usted."},
+      {"who": "Sofía", "es": "Visité a mi abuela y después fuimos a Antigua.", "en": "I visited my grandmother and then we went to Antigua."},
+      {"you": true, "opts": ["¿Cuántos días estuviste allá?", "¿Cuántos días estuve allá?", "¿Cuántos días estás allá?"], "a": 0, "why": "You ask about her finished stay → tú + preterite of estar: estuviste."},
+      {"who": "Sofía", "es": "Diez días. ¡Fue increíble!", "en": "Ten days. It was amazing!"}
+    ]},
+    {"id": "C3-dlg-05", "t": "dlg", "title": "Phone call with your mom", "turns": [
+      {"who": "Mamá", "es": "Hijo, ¿por qué no me llamaste ayer?", "en": "Son, why didn't you call me yesterday?"},
+      {"you": true, "opts": ["Perdón, mamá. Tuvo que trabajar hasta muy tarde.", "Perdón, mamá. Tengo que trabajar hasta muy tarde ayer.", "Perdón, mamá. Tuve que trabajar hasta muy tarde."], "a": 2, "why": "You (yo) had to work yesterday → tuve que."},
+      {"who": "Mamá", "es": "Ay, hijo. ¿Y comiste algo?", "en": "Oh, son. And did you eat anything?"},
+      {"you": true, "opts": ["Sí, cené en el hospital.", "Sí, cenó en el hospital.", "Sí, ceno en el hospital mañana."], "a": 0, "why": "yo + preterite → cené. Cenó = he/she had dinner."},
+      {"who": "Mamá", "es": "Bueno. Trabajas mucho, hijo.", "en": "Okay. You work a lot, son."}
+    ]},
+    {"id": "C3-dlg-06", "t": "dlg", "title": "Telling a coworker about a wedding", "turns": [
+      {"who": "Pedro", "es": "¿Qué tal la boda de tu prima?", "en": "How was your cousin's wedding?"},
+      {"you": true, "opts": ["¡Muy bonita! Primero vamos a ir a la iglesia y después a la fiesta.", "¡Muy bonita! Primero fuimos a la iglesia y después a la fiesta.", "¡Muy bonita! Primero vamos a la iglesia y después a la fiesta."], "a": 1, "why": "The wedding already happened → preterite: fuimos."},
+      {"who": "Pedro", "es": "¿Y bailaste?", "en": "And did you dance?"},
+      {"you": true, "opts": ["Sí, bailé toda la noche.", "Sí, bailó toda la noche.", "Sí, bailo toda la noche."], "a": 0, "why": "yo + -ar preterite → bailé."},
+      {"who": "Pedro", "es": "¿A qué hora regresaste a tu casa?", "en": "What time did you get back home?"},
+      {"you": true, "opts": ["Regresaste a las dos de la mañana.", "Regreso a las dos de la mañana.", "Regresé a las dos de la mañana."], "a": 2, "why": "Answer about yourself in the past → regresé."},
+      {"who": "Pedro", "es": "¡Qué fiestón!", "en": "What a party!"}
+    ]}
+  ],
+  "roleplay": [
+    {
+      "title": "Catching up after the weekend",
+      "setup": "It's Monday morning and you run into Mariana, a nurse you work with, in the break room. Find out what she did over the weekend and tell her about yours.",
+      "persona": "You are Mariana, 34, a nurse from Michoacán, Mexico, who has lived in Chicago for ten years. You and the learner are coworkers, so use tú. Facts: on Saturday you went to your nephew's 7th birthday party in Pilsen with your husband and your two kids; you made pozole for the party; you got home at about eleven at night. On Sunday you went to Mass in the morning and then watched a soccer game at home (Chivas won 2–1). Speak at an intermediate level: short sentences, mostly the preterite and the present, everyday Mexican vocabulary. Avoid the imperfect and the subjunctive. Only share details when asked (who you went with, what time you got home, what you cooked). Ask the learner what they did and react naturally ('¡Qué padre!', '¿En serio?').",
+      "opening": "¡Buenos días! ¿Cómo estás? ¿Qué tal tu fin de semana?",
+      "goals": [
+        "Ask what she did on Saturday",
+        "Find out who she went with and what time she got home",
+        "Ask what she did on Sunday",
+        "Tell her at least two things you did, in order, using primero and después"
+      ]
+    },
+    {
+      "title": "Why were you late?",
+      "setup": "You are waiting at a restaurant for your friend Javier, who shows up 45 minutes late. Find out what happened.",
+      "persona": "You are Javier, 40, from San Salvador, El Salvador, a longtime friend of the learner; use tú. Facts: you left home at 6:15; your car didn't start (el carro no arrancó); you called your brother but he didn't answer; then you took the bus; the bus took a long time because there was an accident on Ashland Avenue (hubo un accidente); you got to the restaurant at 7:45. You are fine, just embarrassed. Speak at an intermediate level using short sentences in the preterite (salí, llamé, tomé, llegué, hubo). Avoid the imperfect and the subjunctive. Reveal the story step by step, only as the learner asks. At some point ask the learner '¿Ya pediste?'",
+      "opening": "¡Perdón, perdón! ¿Llegaste hace mucho?",
+      "goals": [
+        "Ask what happened",
+        "Find out what time he left home",
+        "Find out how he finally got to the restaurant",
+        "Find out whether he called anyone for help",
+        "Tell him what you ordered (ya pedí…)"
+      ]
+    }
+  ]
+}
