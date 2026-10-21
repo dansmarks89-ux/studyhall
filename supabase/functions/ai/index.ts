@@ -48,7 +48,8 @@ Deno.serve(async (req) => {
   const courses: string[] = inv?.courses || [];
   if (!courses.includes("*") && !courses.includes(course)) return out(403, { code: "not_granted", error: "Not invited to this course" });
 
-  const key = Deno.env.get("ANTHROPIC_API_KEY");
+  const rawKey = Deno.env.get("ANTHROPIC_API_KEY") || "";
+  const key = rawKey.trim().replace(/^["']|["']$/g, "");
   if (!key) return out(503, { code: "server", error: "AI isn't set up yet. Ask Dan." });
 
   // 4. Settings and today's limit
@@ -69,7 +70,11 @@ Deno.serve(async (req) => {
       headers: { "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({ model, max_tokens: maxTokens, messages: [{ role: "user", content: prompt }] }),
     });
-  } catch (_) { return out(502, { code: "upstream", error: "Couldn't reach Claude" }); }
+  } catch (e) {
+    // Never log the key or the error text (which can contain the header value); only the key's shape.
+    console.error("fetch failed", (e as Error)?.name || "error", JSON.stringify({ keyLen: key.length, rawLen: rawKey.length, startsOk: key.startsWith("sk-ant-"), hasSpace: /\s/.test(key), nonAscii: /[^\x21-\x7e]/.test(key) }));
+    return out(502, { code: "upstream", error: "Couldn't reach Claude" });
+  }
   const j = await r.json().catch(() => null);
   if (!r.ok) {
     console.error("anthropic", r.status, JSON.stringify(j).slice(0, 500));
