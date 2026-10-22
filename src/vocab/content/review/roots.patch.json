@@ -1,0 +1,216 @@
+[
+ {
+  "id": "r-terr",
+  "set": {
+   "words": [
+    {
+     "w": "subterranean",
+     "m": "existing or happening below the ground"
+    },
+    {
+     "w": "terrain",
+     "m": "the physical features of a piece of land"
+    },
+    {
+     "w": "terrestrial",
+     "m": "relating to the earth or to land"
+    },
+    {
+     "w": "extraterrestrial",
+     "m": "from beyond the earth"
+    }
+   ]
+  },
+  "why": "territory: Latin territorium's link to terra is disputed (Etymonline/de Vaan note a possible terrere 'frighten' origin); replaced with an unambiguous terra word"
+ },
+ {
+  "id": "r-bi",
+  "set": {
+   "words": [
+    {
+     "w": "bicycle",
+     "m": "a vehicle with two wheels"
+    },
+    {
+     "w": "bilingual",
+     "m": "able to speak two languages"
+    },
+    {
+     "w": "bilateral",
+     "m": "involving two sides or two parties"
+    },
+    {
+     "w": "bisect",
+     "m": "to cut into two parts"
+    }
+   ]
+  },
+  "why": "binocular comes from Latin bini 'two by two', not the prefix bi- itself (Etymonline); replaced with a clean bi- word"
+ },
+ {
+  "id": "r-ped-child",
+  "set": {
+   "words": [
+    {
+     "w": "pediatrics",
+     "m": "the branch of medicine caring for children"
+    },
+    {
+     "w": "pediatrician",
+     "m": "a doctor for children"
+    },
+    {
+     "w": "pedagogy",
+     "m": "the method and practice of teaching"
+    },
+    {
+     "w": "orthopedics",
+     "m": "bone and muscle medicine; the name first meant straightening children's bodies"
+    }
+   ]
+  },
+  "why": "pedodontist is rare, not a common word; orthopedics (Andry's orthopédie, Greek paid- 'child') is common and genuinely contains this element"
+ },
+ {
+  "id": "r-ous",
+  "set": {
+   "words": [
+    {
+     "w": "dangerous",
+     "m": "full of danger"
+    },
+    {
+     "w": "famous",
+     "m": "having fame; well known"
+    },
+    {
+     "w": "joyous",
+     "m": "full of joy"
+    },
+    {
+     "w": "courageous",
+     "m": "full of courage; brave"
+    }
+   ]
+  },
+  "why": "nervous (Latin nervosus 'sinewy') does not show the 'full of' meaning in its modern sense; courageous does"
+ },
+ {
+  "id": "r-pan",
+  "set": {
+   "words": [
+    {
+     "w": "panorama",
+     "m": "a wide view of an entire area"
+    },
+    {
+     "w": "pandemic",
+     "m": "a disease outbreak that spreads across many countries or the whole world"
+    },
+    {
+     "w": "panacea",
+     "m": "a cure for all problems"
+    },
+    {
+     "w": "pantomime",
+     "m": "telling a story with gestures only"
+    }
+   ]
+  },
+  "why": "a pandemic is spread over a wide area such as multiple countries, not just one country"
+ },
+ {
+  "id": "r-neo",
+  "set": {
+   "words": [
+    {
+     "w": "neon",
+     "m": "a gas named from the Greek for 'new'"
+    },
+    {
+     "w": "neonatal",
+     "m": "relating to newborn babies"
+    },
+    {
+     "w": "neoclassical",
+     "m": "in a later style that revives ancient Greek and Roman art"
+    },
+    {
+     "w": "neophyte",
+     "m": "a beginner; a newcomer"
+    }
+   ]
+  },
+  "why": "neoclassical is an adjective; gloss reworded to match and be precise"
+ },
+ {
+  "id": "r-com-con-co",
+  "set": {
+   "note": "Spelling changes with the next letter: com- before b, m, p; col- before l (collect); cor- before r (correct); co- usually before vowels and h; con- before most others."
+  },
+  "why": "note omitted the col-/cor- forms, so 'con- before most others' misleads for l and r"
+ },
+ {
+  "id": "r-in-into",
+  "remove_dx": [
+   "r-intra"
+  ],
+  "why": "intra- 'within, inside' overlaps with in- 'in, into'"
+ },
+ {
+  "id": "r-intra",
+  "remove_dx": [
+   "r-in-into"
+  ],
+  "why": "in- 'in, into' overlaps with intra- 'within, inside'"
+ },
+ {
+  "id": "r-ish",
+  "remove_dx": [
+   "r-ous"
+  ],
+  "why": "-ous 'having the quality of' overlaps with -ish 'having the qualities of'"
+ },
+ {
+  "id": "r-dys",
+  "remove_dx": [
+   "r-bene"
+  ],
+  "why": "bene- and eu- both show the identical choice 'good, well' (duplicate option text)"
+ },
+ {
+  "id": "r-dem-demo",
+  "remove_dx": [
+   "r-anthrop"
+  ],
+  "why": "anthrop 'human being, humankind' overlaps with dem 'people'"
+ },
+ {
+  "id": "r-anthrop",
+  "remove_dx": [
+   "r-dem-demo"
+  ],
+  "why": "dem 'people' overlaps with anthrop 'humankind'"
+ },
+ {
+  "id": "r-hom-homin-human",
+  "remove_dx": [
+   "r-dem-demo"
+  ],
+  "why": "dem 'people' overlaps with hom 'human being'"
+ },
+ {
+  "id": "r-dict",
+  "remove_dx": [
+   "r-phon"
+  ],
+  "why": "phon 'sound, voice' is too close to dict 'say, speak'"
+ },
+ {
+  "id": "r-de",
+  "remove_dx": [
+   "r-hypo"
+  ],
+  "why": "hypo- 'under, below' is too close to de- 'down'"
+ }
+]

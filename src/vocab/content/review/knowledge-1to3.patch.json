@@ -1,0 +1,242 @@
+[
+ {
+  "id": "k-social-contract",
+  "set": {
+   "ex": [
+    "Rousseau's 1762 book The Social Contract famously declares: “Man is born free, and everywhere he is in chains.”",
+    "Some argue that paying taxes is part of the social contract between citizens and their government."
+   ]
+  },
+  "why": "Factual error: the book does not begin with that line; it comes after a foreword and an introductory passage, opening Book I, Chapter 1."
+ },
+ {
+  "id": "k-kinetic-energy",
+  "set": {
+   "cloze": {
+    "s": "The faster a bowler rolls the ball, the more ___ it carries into the pins.",
+    "a": "kinetic energy"
+   },
+   "why": "It explains why doubling a car's speed quadruples the energy that must be absorbed in a crash."
+  },
+  "why": "Cloze was physically wrong: a released bowling ball slows slightly down the lane, so its kinetic energy does not grow. 'Destructive power' in why was loose; four times the kinetic energy is the exact claim."
+ },
+ {
+  "id": "k-simile",
+  "set": {
+   "cloze": {
+    "s": "Robert Burns's line “O my Luve is like a red, red rose” is a famous ___.",
+    "a": "simile"
+   }
+  },
+  "why": "Misquote: Burns's line is “O my Luve is like a red, red rose” (Poetry Foundation text), not “My love is like a red, red rose.”"
+ },
+ {
+  "id": "k-gene",
+  "set": {
+   "cloze": {
+    "s": "Eye color is shaped by more than one ___, so predicting a baby's eye color from the parents' is not simple.",
+    "a": "gene"
+   }
+  },
+  "why": "Faulty reasoning: siblings can differ in eye color even for single-gene traits, so 'which is why siblings can have different eye colors' does not follow from eye color being polygenic."
+ },
+ {
+  "id": "k-exponential-growth",
+  "set": {
+   "def": "increase by a constant percentage each period, so the amount doubles at regular intervals and speeds up over time"
+  },
+  "why": "'Keeps doubling' was inaccurate; constant-percentage growth doubles at a fixed interval, not continuously."
+ },
+ {
+  "id": "k-density",
+  "set": {
+   "ex": [
+    "Ice floats on a lake because its density is lower than that of liquid water.",
+    "Olga pointed to the different density of oil and vinegar to explain why the oil floated on top of her salad dressing."
+   ]
+  },
+  "why": "Density explains which liquid ends up on top, not why oil and vinegar separate (that is because they do not mix)."
+ },
+ {
+  "id": "k-autobiography",
+  "set": {
+   "ex": [
+    "Frederick Douglass recounted his years in slavery and his path to freedom in his autobiography.",
+    "Priya's grandmother is writing an autobiography for her grandchildren."
+   ]
+  },
+  "why": "Risky claim: Douglass's best-known autobiography (the 1845 Narrative) deliberately left out how he escaped; the details came only in a later book (1881). Reworded so it is true of all his autobiographies."
+ },
+ {
+  "id": "k-gerrymandering",
+  "set": {
+   "note": "Named after Massachusetts governor Elbridge Gerry, who in 1812 signed a redistricting bill creating a district whose odd shape was mocked as a salamander."
+  },
+  "why": "Precision: the legislature drew the map; Gerry signed the bill. 'Whose 1812 district map' overstated his role."
+ },
+ {
+  "id": "k-encryption",
+  "set": {
+   "why": "It protects online banking, shopping, messaging and the data stored on phones and laptops."
+  },
+  "why": "Stored passwords are normally protected by hashing, not encryption, so naming them was technically wrong."
+ },
+ {
+  "id": "k-epic-poem",
+  "set": {
+   "why": "Examples like the Epic of Gilgamesh, Homer's Iliad, and India's Mahabharata are foundational works of world literature."
+  },
+  "why": "Overstatement: the Mahabharata (composed roughly 400 BCE to 400 CE) is not among the oldest surviving works of literature."
+ },
+ {
+  "id": "k-democracy",
+  "set": {
+   "ex": [
+    "Ancient Athens is often called the birthplace of democracy, though only adult male citizens could vote.",
+    "Kwame's civics teacher explained that democracy depends on fair elections and an informed public."
+   ]
+  },
+  "why": "Inaccurate: free men who were not citizens, such as resident foreigners (metics), could not vote in Athens."
+ },
+ {
+  "id": "k-web-browser",
+  "set": {
+   "ex": [
+    "Sofia opened her web browser and typed in the airline's address to check her flight.",
+    "If a page will not load properly, try clearing your web browser's cache and cookies."
+   ]
+  },
+  "why": "The standard troubleshooting step is clearing the cache and cookies; clearing history does not fix loading problems."
+ },
+ {
+  "id": "k-antibiotic-resistance",
+  "set": {
+   "ex": [
+    "MRSA is a type of staph bacteria known for its antibiotic resistance.",
+    "Farmers were urged to limit drug use in livestock to slow antibiotic resistance."
+   ]
+  },
+  "why": "MRSA is a strain of bacteria (methicillin-resistant Staphylococcus aureus), not an infection; matches the CDC wording."
+ },
+ {
+  "id": "k-delta",
+  "set": {
+   "def": "a low, often fan-shaped area of land formed where a river deposits sediment as it enters a sea or lake"
+  },
+  "why": "Not all deltas are fan-shaped; the Mississippi delta in the cloze is a bird's-foot delta."
+ },
+ {
+  "id": "k-tundra",
+  "set": {
+   "def": "a cold, treeless region of low plants and short summers, often with permanently frozen subsoil, found in the Arctic and high mountains"
+  },
+  "why": "Alpine (mountain) tundra usually has no permafrost, so frozen subsoil cannot be part of the definition for both kinds."
+ },
+ {
+  "id": "k-perimeter",
+  "set": {
+   "ex": [
+    "To fence the garden, Kwame added its sides, 12 meters plus 8 meters, and doubled them for a perimeter of 40 meters.",
+    "Security guards patrolled the perimeter of the stadium before the game."
+   ]
+  },
+  "why": "Unit missing from the answer (40 meters)."
+ },
+ {
+  "id": "k-climate",
+  "set": {
+   "ex": [
+    "Tucson's desert climate means hot summers and very little rain.",
+    "Olga moved from Phoenix to Seattle and had to adjust to a much rainier climate."
+   ]
+  },
+  "why": "Overgeneralization: much of Arizona (e.g. Flagstaff, at high elevation) does not have a desert climate."
+ },
+ {
+  "id": "k-cloud-computing",
+  "set": {
+   "why": "Web email, photo backups, streaming services and much business software run this way."
+  },
+  "why": "'Most business software now' is a time-sensitive, unverified figure; softened to a stable claim."
+ },
+ {
+  "id": "k-fraction",
+  "set": {
+   "cloze": {
+    "s": "In the ___ 3/8, the bottom number shows that the whole pizza was cut into eight equal slices.",
+    "a": "fraction"
+   }
+  },
+  "why": "Old cloze ('you have eaten the ___ 3/8 of it') was ungrammatical. Ratio removed because 3/8 can also be read as a ratio."
+ },
+ {
+  "id": "k-fraction",
+  "remove_dx": [
+   "k-ratio"
+  ],
+  "why": "3/8 can also be read as a ratio, so ratio could fill the new cloze."
+ },
+ {
+  "id": "k-blood-pressure",
+  "remove_dx": [
+   "k-cholesterol"
+  ],
+  "why": "High cholesterol is also symptomless until damage is done (and is sometimes also called a silent killer), so it fits the cloze."
+ },
+ {
+  "id": "k-software",
+  "remove_dx": [
+   "k-web-browser"
+  ],
+  "why": "'The computer worked fine, but the web browser kept crashing whenever Maria opened a large file' makes sense, so the browser also fits the cloze."
+ },
+ {
+  "id": "k-separation-of-powers",
+  "remove_dx": [
+   "k-checks-and-balances"
+  ],
+  "why": "The two ideas are closely linked; the definitions overlap (no single branch holds too much power) and both fit 'Under the ___, judges are independent.'"
+ },
+ {
+  "id": "k-checks-and-balances",
+  "remove_dx": [
+   "k-separation-of-powers"
+  ],
+  "why": "Its definition is too close to separation of powers (keeping any branch from becoming too powerful); learners could defensibly pick either."
+ },
+ {
+  "id": "k-interest-rate",
+  "remove_dx": [
+   "k-compound-interest"
+  ],
+  "why": "'A loan with a 5 percent annual compound interest costs less than one at 9 percent' also makes sense."
+ },
+ {
+  "id": "k-supply-and-demand",
+  "remove_dx": [
+   "k-inflation"
+  ],
+  "why": "People loosely call 'juice prices rose' inflation, so a learner could defend it in the cloze."
+ },
+ {
+  "id": "k-judicial-review",
+  "remove_dx": [
+   "k-rule-of-law"
+  ],
+  "why": "Marbury v. Madison is also often cited for the rule of law (Marshall's 'a government of laws, and not of men'), so it could fit the cloze."
+ },
+ {
+  "id": "k-socratic-method",
+  "remove_dx": [
+   "k-dialectic"
+  ],
+  "why": "The Socratic method is a form of dialectic; 'used the dialectic, asking question after question' also fits, and the definitions overlap."
+ },
+ {
+  "id": "k-percentage",
+  "remove_dx": [
+   "k-ratio"
+  ],
+  "why": "'The passing ratio was 75%' could be defended in the cloze."
+ }
+]

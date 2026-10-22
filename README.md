@@ -15,6 +15,8 @@ Language and study apps with sign-in, saved progress and AI practice, for a smal
 | `shared/supabase.js` | Supabase browser library (v2.117.2, vendored) |
 | `spanish/index.html` | Clinic Spanish course (built file, do not edit by hand) |
 | `src/spanish/` | Course source: `app.html`, compiled data, original content and specs |
+| `vocab/index.html` | Word Power (built file, do not edit by hand) |
+| `src/vocab/` | Word Power source: `app.html`, `data/items.json` (2,428 reviewed items), and `content/` (spec, reviewer instructions, review patches, pipeline scripts) |
 | `supabase/functions/ai/index.ts` | The AI function (source copy of what is deployed) |
 | `sw.js`, `manifest.webmanifest`, `icons/` | Home-screen app support |
 
@@ -22,6 +24,12 @@ Rebuild the Spanish page after changing `src/spanish/app.html` or its data:
 
 ```
 python3 src/spanish/build.py hosted
+```
+
+Rebuild Word Power after changing `src/vocab/app.html` or `src/vocab/data/items.json`:
+
+```
+python3 src/vocab/build.py
 ```
 
 ## Adding an app
@@ -33,7 +41,7 @@ python3 src/spanish/build.py hosted
 
 ## Running it (SQL editor in Supabase)
 
-Invite someone (course names: `spanish`, later `cantonese`, `korean`; `*` = everything):
+Invite someone (course names: `spanish`, `vocab`, later `cantonese`, `korean`; `*` = everything):
 
 ```sql
 insert into public.invites (email, courses, note)

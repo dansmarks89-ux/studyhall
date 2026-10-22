@@ -1,0 +1,17 @@
+[
+ {"id": "v-internecine", "set": {"note": "First meant simply 'deadly'; Samuel Johnson's dictionary recast it as 'mutually destructive.' Today it usually describes infighting within a group."}, "why": "Earliest English sense (from Latin internecinus) was 'deadly, destructive'; 'deadly to both sides' came from Johnson's 1755 misreading of inter-, so 'originally meant deadly to both sides' is inaccurate"},
+ {"id": "v-sophistry", "remove_dx": ["v-chicanery"], "why": "'was pure chicanery' fits the salesman cloze; def overlaps (clever deception)"},
+ {"id": "v-bombast", "remove_dx": ["v-platitude"], "why": "'dismissed ... as empty platitudes' is a stock phrase that fits the cloze"},
+ {"id": "v-cloying", "remove_dx": ["v-redolent"], "why": "'the perfume was so heavy and redolent' also fits the cloze sensibly"},
+ {"id": "v-imperil", "remove_dx": ["v-stymie"], "why": "'could stymie your recovery' also fits the cloze sensibly"},
+ {"id": "v-cajole", "remove_dx": ["v-entreat"], "why": "'after an hour of entreating from his friends' also fits the cloze; meanings overlap (urging someone to do something)"},
+ {"id": "v-exhort", "remove_dx": ["v-cajole"], "set": {"syn": ["urge", "encourage", "press", "spur"]}, "why": "'parents cajoled the runners to keep going' is a plausible fill; 'implore' means to beg, not a true synonym of exhort"},
+ {"id": "v-equivocation", "remove_dx": ["v-platitude"], "why": "'answered with nothing but vague platitudes' fits the cloze sensibly"},
+ {"id": "v-recrimination", "remove_dx": ["v-acrimony"], "why": "'the locker room filled with angry acrimony' is a plausible fill; meanings overlap"},
+ {"id": "v-pedantry", "remove_dx": ["v-chutzpah"], "why": "'correcting a friend mid-toast was pure chutzpah' is a plausible fill"},
+ {"id": "v-garrulous", "remove_dx": ["v-ebullient"], "why": "'our ebullient seatmate chatted nonstop' also fits the cloze sensibly"},
+ {"id": "v-fractious", "remove_dx": ["v-bellicose"], "why": "'meetings grew so bellicose that members shouted' is a plausible fill; meanings overlap (quarrelsome/combative)"},
+ {"id": "v-cantankerous", "remove_dx": ["v-acerbic"], "why": "acerbic (harsh, biting) overlaps with argumentative/bad-tempered and could be read as fitting the yelling-neighbor cloze"},
+ {"id": "v-ignominious", "remove_dx": ["v-lackadaisical"], "why": "'the team's lackadaisical season ended with zero wins' is a plausible fill"},
+ {"id": "v-polymath", "set": {"syn": ["Renaissance person", "Renaissance man"]}, "why": "'generalist' is not a synonym: a generalist has broad but not necessarily deep knowledge, which is the distinction the def draws"}
+]

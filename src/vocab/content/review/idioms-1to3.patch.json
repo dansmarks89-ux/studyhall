@@ -1,0 +1,17 @@
+[
+ {"id": "i-hit-the-sack", "remove_dx": ["i-sleep-like-a-log"], "why": "'said she was going to sleep like a log because she was exhausted' also fits the cloze sensibly"},
+ {"id": "i-drop-the-ball", "remove_dx": ["i-cut-corners"], "why": "'the supplier cut corners on the customs paperwork' fits the cloze sensibly"},
+ {"id": "i-bury-the-hatchet", "remove_dx": ["i-agree-to-disagree"], "why": "'decided to agree to disagree and work together again' is a sensible fill; both mean ending a dispute"},
+ {"id": "i-agree-to-disagree", "remove_dx": ["i-bury-the-hatchet", "i-sleep-on-it"], "why": "'let's bury the hatchet' / 'let's sleep on it' after an hour-long stalemate are both plausible fills; hatchet overlaps in meaning (ending an argument)"},
+ {"id": "i-sleep-on-it", "remove_dx": ["i-take-a-rain-check"], "why": "'why not take a rain check and decide in the morning?' reads as a plausible fill to many learners (postponing)"},
+ {"id": "i-a-tempest-in-a-teapot", "remove_dx": ["i-moot-point"], "why": "both convey 'an issue that does not really matter'; overlapping def in question (b)"},
+ {"id": "i-thick-as-thieves", "set": {"def": "extremely close and friendly, often sharing secrets and spending most of their time together"}, "why": "def was a noun phrase ('very close friends') but the idiom is used predicatively as an adjective ('they are thick as thieves')"},
+ {"id": "i-pro-bono", "set": {"def": "done without charge, especially professional legal work for people who cannot afford to pay"}, "why": "def was a noun ('professional work') but the phrase is used as an adjective/adverb ('pro bono cases', 'designed it pro bono')"},
+ {"id": "i-hear-it-through-the-grapevine", "set": {"ex": ["I heard it through the grapevine that the company is opening a new office in Denver.", "Priya heard it through the grapevine that her neighbors were selling their house."]}, "why": "example 2 omitted 'it' and so did not contain the term as taught"},
+ {"id": "i-on-the-same-page", "set": {"def": "in agreement, with a shared understanding of a plan or situation"}, "why": "def contained 'same', a word from the term, giving the answer away in multiple choice"},
+ {"id": "i-vice-versa", "set": {"origin": "Latin, literally 'the order being changed.'"}, "why": "align gloss with documented etymology (Etymonline: vice 'change, turn' + versa 'turned' = 'the order being changed')"},
+ {"id": "i-head-over-heels", "set": {"origin": "The older 14th-century form was 'heels over head,' meaning upside down or turning a somersault."}, "why": "documented sense of 'heels over head' is a tumble/somersault (Phrase Finder) as well as upside down; added date"},
+ {"id": "i-the-dog-days-of-summer", "set": {"syn": []}, "why": "'midsummer' is not a synonym: it refers to the period around the June solstice, not the hottest weeks of July-August"},
+ {"id": "i-raining-cats-and-dogs", "set": {"syn": ["pouring", "coming down in buckets"]}, "why": "'pelting down' is chiefly British; spec requires American usage"},
+ {"id": "i-like-two-peas-in-a-pod", "set": {"syn": ["alike", "very similar"]}, "why": "'identical' overstates the meaning; the idiom means very similar, not literally identical"}
+]

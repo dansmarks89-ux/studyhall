@@ -1,0 +1,163 @@
+[
+ {
+  "id": "v-ludicrous",
+  "remove_dx": [
+   "v-frivolous"
+  ],
+  "why": "frivolous ('silly or not serious') overlaps 'so foolish it is laughable'; a learner could defensibly pick it on the definition question"
+ },
+ {
+  "id": "v-oblivious",
+  "remove_dx": [
+   "v-complacent"
+  ],
+  "why": "complacent's def ('too satisfied ... to notice dangers') overlaps 'not noticing what is happening around you'"
+ },
+ {
+  "id": "v-arduous",
+  "remove_dx": [
+   "v-cumbersome"
+  ],
+  "why": "'months of cumbersome paperwork' is a natural collocation and fits the cloze sensibly"
+ },
+ {
+  "id": "v-astute",
+  "remove_dx": [
+   "v-vigilant",
+   "v-frugal"
+  ],
+  "why": "'The vigilant shopper' / 'The frugal shopper noticed the sale price was higher' both fit the cloze sensibly"
+ },
+ {
+  "id": "v-plainly",
+  "remove_dx": [
+   "v-blatantly",
+   "v-unquestionably"
+  ],
+  "why": "plainly's most common sense is 'obviously/unmistakably' (WordNet sense 1, ex 2 'plainly visible'), which overlaps 'very obvious' (blatantly) and 'cannot be doubted' (unquestionably)"
+ },
+ {
+  "id": "v-notoriously",
+  "remove_dx": [
+   "v-unquestionably",
+   "v-plainly"
+  ],
+  "set": {
+   "cloze": {
+    "s": "That airline is ___ unreliable; travelers everywhere joke about its constant delays and lost bags.",
+    "a": "notoriously"
+   }
+  },
+  "why": "old cloze 'That airline is ___ unreliable' also fits unquestionably/plainly; new cloze signals a widely known bad reputation, and those two options are removed"
+ },
+ {
+  "id": "v-scarcely",
+  "set": {
+   "ex": [
+    "Sofia could scarcely believe she had won the scholarship.",
+    "There was scarcely any food left by the time the last guests arrived."
+   ]
+  },
+  "why": "ex 2 'scarcely enough food left for the last guests to arrive' was awkward/ambiguous phrasing"
+ },
+ {
+  "id": "v-blatantly",
+  "remove_dx": [
+   "v-plainly"
+  ],
+  "why": "'plainly copied his neighbor's answers' (= obviously) fits the cloze sensibly"
+ },
+ {
+  "id": "v-unquestionably",
+  "remove_dx": [
+   "v-plainly"
+  ],
+  "why": "'she is plainly the greatest swimmer' fits the cloze; plainly also means 'obviously'"
+ },
+ {
+  "id": "v-vehemently",
+  "remove_dx": [
+   "v-relentlessly"
+  ],
+  "why": "'Residents protested relentlessly against the new highway' fits the cloze sensibly"
+ },
+ {
+  "id": "v-bolster",
+  "remove_dx": [
+   "v-rectify"
+  ],
+  "why": "'signed two veteran players to rectify its weak defense' fits the cloze; 'improve something weak' vs 'correct something wrong' too close for the definition question"
+ },
+ {
+  "id": "v-ascertain",
+  "remove_dx": [
+   "v-discern"
+  ],
+  "why": "'ordered an X-ray to discern whether the bone was broken' fits the cloze sensibly; meanings overlap (find out / recognize)"
+ },
+ {
+  "id": "v-elicit",
+  "remove_dx": [
+   "v-compel"
+  ],
+  "why": "'the detective finally compelled a confession' is a common phrase and fits the cloze"
+ },
+ {
+  "id": "v-adversity",
+  "remove_dx": [
+   "v-scarcity"
+  ],
+  "why": "'Raised in poverty, he faced scarcity at every step' fits the cloze sensibly"
+ },
+ {
+  "id": "v-delusion",
+  "set": {
+   "ex": [
+    "He was under the delusion that he could pass the exam without studying.",
+    "Kwame's doctor warned that believing he could run a marathon without training was a delusion."
+   ]
+  },
+  "why": "ex 2 called an action ('Running a marathon untrained') a delusion; a delusion is a belief, not an act"
+ },
+ {
+  "id": "v-perseverance",
+  "remove_dx": [
+   "v-zeal"
+  ],
+  "why": "'After forty failed experiments, her zeal finally paid off' fits the cloze sensibly"
+ },
+ {
+  "id": "v-recourse",
+  "set": {
+   "ex": [
+    "When the landlord refused to make repairs, the tenants' only recourse was to go to court.",
+    "Stranded after the last train left, Wei's only recourse was an expensive taxi ride home."
+   ]
+  },
+  "why": "ex 2 'a last recourse' is a garbling of the fixed idiom 'last resort'; replaced with standard usage"
+ },
+ {
+  "id": "v-pretext",
+  "set": {
+   "ex": [
+    "He called her on the pretext of asking about homework, but he really wanted to chat.",
+    "The landlord used a routine maintenance visit as a pretext to check whether the tenants had a pet."
+   ]
+  },
+  "why": "ex 2 'the surprise inspection was merely a pretext for searching the building' is illogical (an inspection is a search), so it does not show a false reason hiding a real one"
+ },
+ {
+  "id": "v-zeal",
+  "remove_dx": [
+   "v-perseverance"
+  ],
+  "why": "'cleaned the beach with such perseverance that they finished hours ahead' fits the cloze sensibly"
+ },
+ {
+  "id": "v-apathy",
+  "remove_dx": [
+   "v-disdain"
+  ],
+  "why": "'public disdain meant almost no one attended the meeting' fits the cloze; disdain's 'unworthy of ... attention' overlaps 'lack of interest'"
+ }
+]

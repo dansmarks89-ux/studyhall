@@ -1,0 +1,338 @@
+[
+ {
+  "id": "v-contemporary",
+  "remove_dx": [
+   "v-controversial"
+  ],
+  "why": "'controversial issues' fills the cloze naturally"
+ },
+ {
+  "id": "v-extensive",
+  "remove_dx": [
+   "v-fundamental"
+  ],
+  "why": "'fundamental research covering hundreds of studies' could fill the cloze"
+ },
+ {
+  "id": "v-substantial",
+  "remove_dx": [
+   "v-temporary"
+  ],
+  "why": "'a temporary increase in rent' fits the cloze sensibly"
+ },
+ {
+  "id": "v-prominent",
+  "remove_dx": [
+   "v-controversial"
+  ],
+  "why": "'a controversial lawyer who often appears on TV ... recognized' fits the cloze"
+ },
+ {
+  "id": "v-apparent",
+  "remove_dx": [
+   "v-stark"
+  ],
+  "why": "stark's def 'very plain and obvious' is a correct answer to 'Which word means clear and easy to see?'"
+ },
+ {
+  "id": "v-apparent",
+  "set": {
+   "ex": [
+    "It became apparent that the project would not be finished on time.",
+    "It was apparent from her huge smile that Fatima had gotten the job."
+   ]
+  },
+  "why": "ex 2 ('apparent calm') showed the 'seeming' sense, not the defined 'clear/obvious' sense"
+ },
+ {
+  "id": "v-fundamental",
+  "remove_dx": [
+   "v-stark"
+  ],
+  "why": "'There is a stark difference between the two plans' fits the cloze"
+ },
+ {
+  "id": "v-sufficient",
+  "set": {
+   "syn": [
+    "enough",
+    "adequate"
+   ]
+  },
+  "why": "'ample' means more than enough, not a synonym of sufficient (WordNet: 'without being abundant')"
+ },
+ {
+  "id": "v-necessarily",
+  "set": {
+   "def": "in a way that must be so or cannot be otherwise; often used after 'not' to mean 'not always'"
+  },
+  "why": "old def described only 'not necessarily', not the meaning of the word itself; syn (inevitably, automatically) contradicted it"
+ },
+ {
+  "id": "v-necessarily",
+  "remove_dx": [
+   "v-simultaneously"
+  ],
+  "why": "'isn't simultaneously a happy one' is a sensible cloze fill"
+ },
+ {
+  "id": "v-essentially",
+  "remove_dx": [
+   "v-virtually",
+   "v-merely"
+  ],
+  "why": "'essentially the same' = 'virtually the same'; 'merely about solving problems' fits the cloze"
+ },
+ {
+  "id": "v-essentially",
+  "set": {
+   "ant": []
+  },
+  "why": "'superficially' is not a genuine antonym of essentially"
+ },
+ {
+  "id": "v-moreover",
+  "remove_dx": [
+   "v-presumably",
+   "v-simultaneously"
+  ],
+  "why": "both read sensibly in the cloze '...; ___, it has fewer side effects'"
+ },
+ {
+  "id": "v-hence",
+  "set": {
+   "ex": [
+    "The bridge is closed for repairs, hence the long detour.",
+    "The bakery's bread contains no gluten, hence its popularity with people who have celiac disease."
+   ]
+  },
+  "why": "ex 2 claimed 'no wheat flour' makes food suitable for gluten avoiders (false: barley/rye) and used a comma splice"
+ },
+ {
+  "id": "v-merely",
+  "remove_dx": [
+   "v-essentially"
+  ],
+  "why": "'The fire alarm was essentially a drill' is a sensible cloze fill"
+ },
+ {
+  "id": "v-presumably",
+  "remove_dx": [
+   "v-seemingly"
+  ],
+  "why": "'he has seemingly left for work' fits the cloze; defs overlap (probable vs apparent)"
+ },
+ {
+  "id": "v-allegedly",
+  "remove_dx": [
+   "v-seemingly"
+  ],
+  "why": "'The coach seemingly accepted gifts' fits the cloze"
+ },
+ {
+  "id": "v-deliberately",
+  "remove_dx": [
+   "v-initially"
+  ],
+  "why": "'She initially chose a seat near the exit so she could leave early' is a sensible cloze fill"
+ },
+ {
+  "id": "v-utterly",
+  "remove_dx": [
+   "v-seemingly",
+   "v-essentially"
+  ],
+  "why": "'seemingly/essentially ridiculous' read sensibly in the cloze"
+ },
+ {
+  "id": "v-namely",
+  "remove_dx": [
+   "v-essentially"
+  ],
+  "why": "'three ingredients, essentially flour, water, and salt' could fill the cloze"
+ },
+ {
+  "id": "v-establish",
+  "remove_dx": [
+   "v-implement"
+  ],
+  "why": "'agreed to implement a trade partnership' fits the cloze; defs overlap on 'system'"
+ },
+ {
+  "id": "v-reveal",
+  "remove_dx": [
+   "v-insist",
+   "v-detect"
+  ],
+  "why": "'the magician insisted/detected that the card had been in the pocket' are sensible cloze fills"
+ },
+ {
+  "id": "v-obtain",
+  "remove_dx": [
+   "v-possess"
+  ],
+  "why": "'had to possess a permit from the city' fits the cloze; get vs have is too close"
+ },
+ {
+  "id": "v-implement",
+  "remove_dx": [
+   "v-establish",
+   "v-accomplish"
+  ],
+  "why": "'take months to establish/accomplish it' fit the cloze"
+ },
+ {
+  "id": "v-acknowledge",
+  "remove_dx": [
+   "v-reveal"
+  ],
+  "why": "'courage to reveal that he had been wrong' fits the cloze"
+ },
+ {
+  "id": "v-acknowledge",
+  "set": {
+   "ex": [
+    "The CEO acknowledged that the company had made serious mistakes.",
+    "The report acknowledges that the new bus routes have not reduced traffic."
+   ]
+  },
+  "why": "ex 2 ('acknowledge receipt') showed a different sense from the def"
+ },
+ {
+  "id": "v-embrace",
+  "remove_dx": [
+   "v-advocate"
+  ],
+  "why": "advocate's def ('publicly support') overlaps embrace's ('accept and support'); also near-fits cloze"
+ },
+ {
+  "id": "v-justify",
+  "remove_dx": [
+   "v-evaluate"
+  ],
+  "why": "'had to evaluate the extra expense' fits the cloze"
+ },
+ {
+  "id": "v-cope",
+  "remove_dx": [
+   "v-overcome"
+  ],
+  "why": "overcome's def 'succeed in dealing with ... a problem' is a correct answer for cope ('deal successfully with a ... problem')"
+ },
+ {
+  "id": "v-abandon",
+  "remove_dx": [
+   "v-alter"
+  ],
+  "why": "'forced the organizers to alter the festival halfway through' fits the cloze"
+ },
+ {
+  "id": "v-commitment",
+  "remove_dx": [
+   "v-sacrifice"
+  ],
+  "why": "'Maria's sacrifice to her students' near-fits the cloze"
+ },
+ {
+  "id": "v-initiative",
+  "remove_dx": [
+   "v-commitment",
+   "v-insight"
+  ],
+  "why": "'praised Wei for showing commitment/insight by fixing the problem' are sensible cloze fills"
+ },
+ {
+  "id": "v-principle",
+  "remove_dx": [
+   "v-integrity"
+  ],
+  "why": "'As a matter of integrity, Olga refuses...' fits the cloze"
+ },
+ {
+  "id": "v-intention",
+  "remove_dx": [
+   "v-prospect"
+  ],
+  "why": "'moved to Spain with the prospect of becoming fluent' fits the cloze"
+ },
+ {
+  "id": "v-integrity",
+  "remove_dx": [
+   "v-judgment"
+  ],
+  "why": "'A journalist with judgment refuses to publish a false story' fits the cloze"
+ },
+ {
+  "id": "v-sacrifice",
+  "remove_dx": [
+   "v-obligation"
+  ],
+  "why": "'caring for his father was an obligation Liam never regretted' fits the cloze"
+ },
+ {
+  "id": "v-judgment",
+  "set": {
+   "ex": [
+    "Use your best judgment when deciding whether to drive in the snow.",
+    "Being very tired can cloud your judgment, so avoid making big decisions late at night."
+   ]
+  },
+  "why": "ex 2's unquantified claim that tiredness impairs judgment 'as much as alcohol' is not verifiable as stated"
+ },
+ {
+  "id": "v-perception",
+  "remove_dx": [
+   "v-judgment"
+  ],
+  "why": "'distort our judgment of what normal life looks like' fits the cloze"
+ },
+ {
+  "id": "v-compromise",
+  "remove_dx": [
+   "v-consensus"
+  ],
+  "why": "'as a consensus they ordered both' near-fits the cloze; both are kinds of agreement"
+ },
+ {
+  "id": "v-consequence",
+  "set": {
+   "cloze": {
+    "s": "Students who cheat on the exam will face serious ___: a zero and a meeting with the principal.",
+    "a": "consequences"
+   }
+  },
+  "why": "singular 'face the consequence:' is unnatural; the set phrase is 'face the consequences'"
+ },
+ {
+  "id": "v-expertise",
+  "remove_dx": [
+   "v-testimony",
+   "v-interpretation"
+  ],
+  "why": "'relies on the testimony/interpretation of art historians to confirm a painting's age' fit the cloze"
+ },
+ {
+  "id": "v-eligible",
+  "remove_dx": [
+   "v-legitimate"
+  ],
+  "why": "legitimate's def 'allowed by law or rules' overlaps eligible's (syn 'allowed', 'entitled')"
+ },
+ {
+  "id": "v-legitimate",
+  "set": {
+   "ex": [
+    "Customers raised legitimate concerns about the hidden fees.",
+    "The referee ruled the goal was legitimate because no player was offside."
+   ]
+  },
+  "why": "ex 2 ('email was legitimate, not a scam') showed the 'genuine' sense, not the defined 'allowed by rules / reasonable' sense"
+ },
+ {
+  "id": "v-harsh",
+  "remove_dx": [
+   "v-substantial"
+  ],
+  "why": "'a substantial sentence of twenty years' fits the cloze"
+ }
+]

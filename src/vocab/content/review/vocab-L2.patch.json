@@ -1,0 +1,270 @@
+[
+ {
+  "id": "v-wholly",
+  "set": {
+   "cloze": {
+    "s": "The small museum is funded ___ by ticket sales and receives no grants or donations of any kind.",
+    "a": "wholly"
+   }
+  },
+  "why": "Old cloze was self-contradictory ('wholly due to volunteers' but paid staff did 'very little'), and wrong option 'predominantly' fit it better than the answer"
+ },
+ {
+  "id": "v-motive",
+  "set": {
+   "def": "the inner reason or desire that makes someone act in a particular way"
+  },
+  "why": "Def said 'especially one that is hidden' -- motive does not imply hidden (that is 'ulterior motive'); misleading"
+ },
+ {
+  "id": "v-compensate",
+  "set": {
+   "def": "to pay someone for a loss, injury, or work, or to make up for a weakness or lack"
+  },
+  "why": "Def covered only the payment sense, but example 2 ('compensate for her late start') uses the make-up-for sense"
+ },
+ {
+  "id": "v-voluntarily",
+  "set": {
+   "def": "by your own free choice, without being forced or required to act"
+  },
+  "why": "'without being ... paid' is not part of the adverb's meaning (company 'voluntarily recalled' toys has nothing to do with pay)"
+ },
+ {
+  "id": "v-sufficiently",
+  "set": {
+   "cloze": {
+    "s": "The soup wasn't ___ hot, so Hannah put it back in the microwave for another minute.",
+    "a": "sufficiently"
+   }
+  },
+  "why": "Old cloze 'had ___ recovered from the flu' also fits wrong options 'wholly' and 'substantially'"
+ },
+ {
+  "id": "v-intentionally",
+  "set": {
+   "cloze": {
+    "s": "The defender ___ kicked the ball out of bounds so that an injured opponent could get medical help.",
+    "a": "intentionally"
+   }
+  },
+  "why": "Old cloze ('kicked the ball out of bounds to stop the clock') describes no real sport rule; inaccurate"
+ },
+ {
+  "id": "v-intentionally",
+  "remove_dx": [
+   "v-readily"
+  ],
+  "why": "'readily kicked the ball out' (willingly) could fit the cloze"
+ },
+ {
+  "id": "v-unprecedented",
+  "set": {
+   "syn": [
+    "unparalleled",
+    "unheard-of",
+    "novel"
+   ]
+  },
+  "why": "'record-breaking' is not a synonym -- breaking a record implies earlier precedents exist"
+ },
+ {
+  "id": "v-arbitrary",
+  "set": {
+   "syn": [
+    "random",
+    "capricious",
+    "unreasoned"
+   ]
+  },
+  "why": "'whimsical' means playfully fanciful in current use, not a true synonym of arbitrary"
+ },
+ {
+  "id": "v-inclusive",
+  "set": {
+   "syn": [
+    "welcoming",
+    "open"
+   ]
+  },
+  "why": "'comprehensive' is a synonym only of the 'including everything' sense, not the welcoming sense defined"
+ },
+ {
+  "id": "v-transparency",
+  "set": {
+   "syn": [
+    "openness",
+    "candor"
+   ]
+  },
+  "why": "'accountability' is a related idea, not a synonym"
+ },
+ {
+  "id": "v-rhetoric",
+  "set": {
+   "syn": [
+    "oratory",
+    "bombast"
+   ]
+  },
+  "why": "'eloquence' is positive and does not match the def's 'lacking substance' sense"
+ },
+ {
+  "id": "v-neglect",
+  "set": {
+   "syn": [
+    "ignore",
+    "overlook",
+    "disregard"
+   ]
+  },
+  "why": "'abandon' is not a synonym of neglect (leaving entirely vs failing to care for)"
+ },
+ {
+  "id": "v-deliberate",
+  "set": {
+   "forms": [
+    "deliberately (adverb)"
+   ]
+  },
+  "why": "'deliberation' is the noun of the verb sense, not of the adjective taught here"
+ },
+ {
+  "id": "v-oversight",
+  "set": {
+   "cloze": {
+    "s": "Forgetting to attach the file was an honest ___, and Maria sent the email again right away.",
+    "a": "oversight"
+   }
+  },
+  "why": "'resent' reads as 'resented'; ambiguous wording"
+ },
+ {
+  "id": "v-compelling",
+  "remove_dx": [
+   "v-ample",
+   "v-explicit"
+  ],
+  "why": "'Without ample/explicit reasons to change the plan' also fits the cloze"
+ },
+ {
+  "id": "v-integral",
+  "remove_dx": [
+   "v-paramount"
+  ],
+  "why": "'so paramount to the city's traffic' is a plausible fill; meanings overlap (central/most important)"
+ },
+ {
+  "id": "v-viable",
+  "remove_dx": [
+   "v-robust"
+  ],
+  "why": "'no longer robust as a business' is a plausible cloze fill; def overlap (works well/survives)"
+ },
+ {
+  "id": "v-credible",
+  "remove_dx": [
+   "v-compelling"
+  ],
+  "why": "'Without any compelling evidence' fits the cloze; 'convincing' overlaps 'able to be believed'"
+ },
+ {
+  "id": "v-vivid",
+  "remove_dx": [
+   "v-explicit"
+  ],
+  "why": "'The author's explicit descriptions' could fill the cloze"
+ },
+ {
+  "id": "v-spontaneous",
+  "remove_dx": [
+   "v-arbitrary"
+  ],
+  "why": "'completely arbitrary; nobody had planned it' fits cloze; arbitrary def ('personal whim') overlaps"
+ },
+ {
+  "id": "v-rhetoric",
+  "remove_dx": [
+   "v-speculation"
+  ],
+  "why": "'tired of empty speculation and wanted concrete plans' fits the cloze"
+ },
+ {
+  "id": "v-autonomy",
+  "remove_dx": [
+   "v-discretion"
+  ],
+  "why": "discretion def 'the freedom to decide what to do' overlaps autonomy; 'gave him the discretion to set his own hours' fits the cloze"
+ },
+ {
+  "id": "v-irony",
+  "remove_dx": [
+   "v-coincidence"
+  ],
+  "why": "Commonly confused with irony (the item's own note says so); 'twist of coincidence' arguable fill"
+ },
+ {
+  "id": "v-catalyst",
+  "remove_dx": [
+   "v-motive"
+  ],
+  "why": "'the motive that pushed Kwame to start his own business' fits the cloze"
+ },
+ {
+  "id": "v-endure",
+  "remove_dx": [
+   "v-undergo",
+   "v-confront"
+  ],
+  "why": "'had to undergo/confront weeks of violent storms' fits the cloze; undergo def overlaps endure"
+ },
+ {
+  "id": "v-condemn",
+  "remove_dx": [
+   "v-confront"
+  ],
+  "why": "'quick to confront the cruel online posts' is a plausible fill"
+ },
+ {
+  "id": "v-consequently",
+  "remove_dx": [
+   "v-inevitably"
+  ],
+  "why": "'forgot to set his alarm and inevitably arrived an hour late' fits the cloze"
+ },
+ {
+  "id": "v-predominantly",
+  "remove_dx": [
+   "v-substantially"
+  ],
+  "why": "'substantially residential' fits the cloze"
+ },
+ {
+  "id": "v-supposedly",
+  "remove_dx": [
+   "v-arguably"
+  ],
+  "why": "'The diet arguably helps you lose ten pounds' fits; both hedge a claim -- (b) ambiguous for learners"
+ },
+ {
+  "id": "v-substantially",
+  "remove_dx": [
+   "v-remarkably"
+  ],
+  "why": "'travel times dropped remarkably' is a plausible fill"
+ },
+ {
+  "id": "v-broadly",
+  "remove_dx": [
+   "v-fundamentally"
+  ],
+  "why": "'the two doctors fundamentally agree' fits the cloze"
+ },
+ {
+  "id": "v-collectively",
+  "remove_dx": [
+   "v-remarkably"
+  ],
+  "why": "'No single donor gave much, but remarkably the neighbors raised enough' fits the cloze"
+ }
+]

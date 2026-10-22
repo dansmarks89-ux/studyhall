@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Word Power · Study Hall</title>
+<meta name="description" content="Build vocabulary, idioms, references, knowledge and reasoning with a placement test and spaced review.">
+<meta name="theme-color" content="#FDFBFA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#11151B" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Study Hall">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --paper:#FDFBFA; --panel:#FFFFFF; --ink:#1B2330; --muted:#5D6672; --line:#E6E0DD; --soft:#F5F1EF;
+  --trace:#0D6B5B; --trace-soft:#E3F1EE; --ok:#0D6B5B; --ok-soft:#E3F1EE; --bad:#B42318; --bad-soft:#FDECEA;
+  --warn-bg:#FFF4DE; --warn-ink:#6B3E00; --blank:#FFF1D6; --focus:#1E4FC2; --accent:#7A2E3A; --accent-soft:#F6E6E8;
+  --f-display:"Literata", Georgia, "Times New Roman", serif;
+  --f-ui:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11151B; --panel:#181E26; --ink:#E7EBF0; --muted:#9AA3AF; --line:#29313C; --soft:#1E252F;
+  --trace:#3FC6A7; --trace-soft:#123A33; --ok:#3FC6A7; --ok-soft:#123A33; --bad:#F07063; --bad-soft:#3A1E1C;
+  --warn-bg:#3A2E14; --warn-ink:#F3D08A; --blank:#3A3220; --focus:#7EA2FF; --accent:#F08A9A; --accent-soft:#3A1F25; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11151B; --panel:#181E26; --ink:#E7EBF0; --muted:#9AA3AF; --line:#29313C; --soft:#1E252F;
+  --trace:#3FC6A7; --trace-soft:#123A33; --ok:#3FC6A7; --ok-soft:#123A33; --bad:#F07063; --bad-soft:#3A1E1C;
+  --warn-bg:#3A2E14; --warn-ink:#F3D08A; --blank:#3A3220; --focus:#7EA2FF; --accent:#F08A9A; --accent-soft:#3A1F25; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.5}
+.wrap{max-width:640px;margin:0 auto;padding:max(18px,env(safe-area-inset-top)) 16px max(56px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:16px}
+h1{font-family:var(--f-display);font-weight:600;font-size:1.45rem;margin:0;letter-spacing:-.01em}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.25rem;margin:0}
+h3{font-size:.76rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0;font-weight:600}
+p{margin:0}
+a{color:var(--focus)}
+.sub{font-size:.85rem;color:var(--muted)}
+.top{display:flex;flex-direction:column;gap:4px}
+.top .meta{display:flex;gap:12px;flex-wrap:wrap;align-items:baseline}
+.shhome{color:var(--muted);text-decoration:none;font-weight:400}
+.shhome:hover{text-decoration:underline}
+#shwho{display:flex;gap:10px;align-items:baseline}
+#shwho button,.linkbtn{font:inherit;color:var(--focus);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.tabs{display:flex;gap:4px;background:var(--soft);border-radius:12px;padding:4px;position:sticky;top:0;z-index:5}
+.tabs button{flex:1;min-width:0;border:0;background:transparent;color:var(--muted);font:600 .92rem var(--f-ui);padding:10px 4px;border-radius:9px;cursor:pointer}
+.tabs button[aria-current="page"]{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.card.hi{border-color:var(--trace);box-shadow:0 0 0 1px var(--trace) inset}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.spread{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.btn{font:600 1rem var(--f-ui);border-radius:11px;padding:12px 18px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);min-height:46px}
+.btn.primary{background:var(--trace);border-color:var(--trace);color:var(--paper)}
+.btn.block{width:100%}
+.btn:disabled{opacity:.5;cursor:default}
+.btn.small{font-size:.88rem;padding:8px 12px;min-height:38px}
+.btn:focus-visible,.opt:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.stat{background:var(--soft);border-radius:11px;padding:10px 12px}
+.stat b{display:block;font:600 1.35rem var(--f-mono)}
+.stat span{font-size:.8rem;color:var(--muted)}
+.bar{height:8px;background:var(--soft);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--trace);border-radius:99px}
+.goal{display:flex;align-items:center;gap:14px}
+.ring{--p:0;width:64px;height:64px;border-radius:50%;flex:none;background:conic-gradient(var(--trace) calc(var(--p)*1%),var(--soft) 0);display:grid;place-items:center}
+.ring span{width:50px;height:50px;border-radius:50%;background:var(--panel);display:grid;place-items:center;font:600 .9rem var(--f-mono)}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.li{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
+.li:hover{border-color:var(--trace)}
+.li .ic{flex:none;width:42px;height:42px;border-radius:11px;background:var(--trace-soft);color:var(--trace);display:grid;place-items:center;font:600 .95rem var(--f-mono)}
+.li .tx{flex:1;min-width:0}
+.li .t{font-weight:600;display:block}
+.li .d{color:var(--muted);font-size:.86rem;display:block;overflow:hidden;text-overflow:ellipsis}
+.li .st{font:500 .78rem var(--f-mono);color:var(--muted);white-space:nowrap;text-align:right}
+.chip{display:inline-block;font:600 .7rem var(--f-ui);text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:99px;background:var(--trace-soft);color:var(--trace)}
+.chip.warn{background:var(--warn-bg);color:var(--warn-ink)}
+.chip.mute{background:var(--soft);color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;flex:none;background:var(--line)}
+.dot.l{background:#E2A640}.dot.k{background:var(--trace)}.dot.m{background:var(--focus)}
+/* question */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.prog{flex:1;height:6px;background:var(--soft);border-radius:99px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--trace)}
+.prompt{font-size:1.05rem}
+.term{font-family:var(--f-display);font-weight:600;font-size:1.9rem;line-height:1.2;letter-spacing:-.01em;word-break:break-word}
+.say{font:500 .9rem var(--f-mono);color:var(--muted)}
+.cloze{font-family:var(--f-display);font-size:1.2rem;line-height:1.55}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--trace);background:var(--blank);border-radius:4px 4px 0 0;text-align:center}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;min-height:48px}
+.opt .k{flex:none;font:600 .78rem var(--f-mono);color:var(--muted);border:1px solid var(--line);border-radius:6px;width:22px;height:22px;display:grid;place-items:center;margin-top:1px}
+.opt:hover:not(:disabled){border-color:var(--trace)}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{cursor:default}
+.idk{align-self:center}
+.fb{border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.fb.ok{background:var(--ok-soft)} .fb.no{background:var(--bad-soft)} .fb.mid{background:var(--warn-bg);color:var(--warn-ink)}
+.fb h4{margin:0;font-size:1.02rem}
+textarea,input[type=text],input[type=search],select{font:inherit;font-size:1rem;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%}
+textarea{min-height:84px;resize:vertical}
+label.f{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.92rem}
+label.c{display:flex;gap:10px;align-items:center;font-size:.95rem}
+label.c input{width:20px;height:20px}
+/* study card */
+.sc{display:flex;flex-direction:column;gap:12px}
+.sc .def{font-size:1.1rem}
+.sc .ex{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-family:var(--f-display)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.92rem}
+.kv dt{color:var(--muted)} .kv dd{margin:0}
+.story{background:var(--accent-soft);border-radius:10px;padding:10px 12px;font-size:.93rem}
+.note{background:var(--soft);border-radius:10px;padding:10px 12px;font-size:.93rem}
+.play{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel);color:var(--trace);border-radius:99px;padding:5px 12px 5px 10px;font:600 .82rem var(--f-ui);cursor:pointer;vertical-align:middle;min-height:32px}
+.play svg{width:11px;height:11px;fill:currentColor}
+.play.icon{padding:5px 9px}
+.astatus{border-radius:10px;padding:10px 14px;font-size:.9rem;background:var(--warn-bg);color:var(--warn-ink)}
+.chart{display:flex;align-items:flex-end;gap:4px;height:90px}
+.chart div{flex:1;background:var(--trace);border-radius:3px 3px 0 0;min-height:2px}
+.chartx{display:flex;gap:4px;font:500 .68rem var(--f-mono);color:var(--muted)}
+.chartx span{flex:1;text-align:center}
+.prof{display:flex;flex-direction:column;gap:6px}
+.prof .r{display:grid;grid-template-columns:96px 1fr 44px;gap:10px;align-items:center;font-size:.86rem}
+.prof .r b{font:500 .8rem var(--f-mono);text-align:right}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600;font-size:.8rem}
+td.nw{white-space:nowrap}
+dialog{border:0;border-radius:16px;padding:0;max-width:600px;width:calc(100% - 24px);background:var(--panel);color:var(--ink);max-height:88vh;overflow-y:auto;overscroll-behavior:contain}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+dialog .in{padding:18px;display:flex;flex-direction:column;gap:12px}
+details.more{border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+details.more summary{cursor:pointer;font-weight:600}
+.hint{font-size:.85rem;color:var(--muted)}
+.big{font:600 2.4rem var(--f-mono)}
+.center{text-align:center;align-items:center}
+[hidden]{display:none!important}
+@media (max-width:420px){.term{font-size:1.6rem}.prof .r{grid-template-columns:80px 1fr 40px}}
+</style>
+<script src="../shared/supabase.js"></script>
+<script src="../shared/sh.js"></script>
+<script>SH.install("vocab");</script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1><a href="../" class="shhome" aria-label="Study Hall home">Study Hall</a> <span aria-hidden="true">/</span> Word Power</h1>
+    <div class="meta"><span class="sub" id="sync">Progress saved on this device</span><span class="sub" id="shwho"></span></div>
+  </header>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button type="button" data-tab="today">Today</button>
+    <button type="button" data-tab="tracks">Tracks</button>
+    <button type="button" data-tab="progress">Progress</button>
+    <button type="button" data-tab="settings">Settings</button>
+  </nav>
+  <div id="astatus" class="astatus" role="status" hidden></div>
+  <main id="main"></main>
+</div>
+<dialog id="dlg"><div class="in" id="dlgin"></div></dialog>
+<script>const DATA = __DATA__;</script>
+<script>
+"use strict";
+/* ============ helpers ============ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pickN = (a, n) => shuffle(a).slice(0, n);
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+const nowMin = () => Math.floor(Date.now() / 60000);
+const DAY = 1440;
+const ymd = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+const today = () => ymd(new Date());
+const hash = s => { let a = 2166136261; for (let i = 0; i < s.length; i++) { a ^= s.charCodeAt(i); a = Math.imul(a, 16777619); } return a >>> 0; };
+const PLAYSVG = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg>';
+const playBtn = (say, label) => `<button class="play${label ? "" : " icon"}" type="button" data-say="${esc(say)}" aria-label="Play: ${esc(say)}">${PLAYSVG}${label ? esc(label) : ""}</button>`;
+const cap = s => s ? s[0].toUpperCase() + s.slice(1) : s;
+
+/* ============ content ============ */
+const BY = {}; DATA.forEach(x => { BY[x.id] = x; });
+const TR = {
+  vocab:     { name: "Vocabulary",       min: 0, max: 10, icon: "Aa", blurb: "Words from everyday to rare, ranked with real word-frequency data." },
+  roots:     { name: "Word roots",       min: 1, max: 3,  icon: "√",  blurb: "Prefixes, roots and suffixes that unlock thousands of words." },
+  idioms:    { name: "Idioms & phrases", min: 1, max: 5,  icon: "“”", blurb: "Expressions, set phrases and foreign phrases used in English." },
+  refs:      { name: "References",       min: 1, max: 5,  icon: "§",  blurb: "Allusions from myth, scripture, literature, history, science and film." },
+  knowledge: { name: "Knowledge",        min: 1, max: 5,  icon: "◎",  blurb: "Core ideas from science, health, history, law, money and the arts." },
+  reasoning: { name: "Reasoning",        min: 1, max: 3,  icon: "∴",  blurb: "Spot faulty arguments and biases; solve language and logic problems." }
+};
+const TORDER = ["vocab", "roots", "idioms", "refs", "knowledge", "reasoning"];
+const LIST = {}, PROB = {};
+TORDER.forEach(t => { LIST[t] = {}; });
+DATA.forEach(x => {
+  if (x.id.startsWith("p-")) { (PROB[x.level] = PROB[x.level] || []).push(x.id); return; }
+  (LIST[x.track][x.level] = LIST[x.track][x.level] || []).push(x.id);
+});
+TORDER.forEach(t => { for (const l in LIST[t]) LIST[t][l].sort((a, b) => hash(a) - hash(b)); });
+for (const l in PROB) PROB[l].sort((a, b) => hash(a) - hash(b));
+const lvName = (t, l) => t === "vocab" && +l === 0 ? "Foundations" : "Level " + l;
+const isProb = id => id.startsWith("p-");
+const isConcept = id => id.startsWith("c-");
+const countTrack = t => Object.values(LIST[t]).reduce((s, a) => s + a.length, 0) + (t === "reasoning" ? Object.values(PROB).reduce((s, a) => s + a.length, 0) : 0);
+const kindWord = x => x.track === "vocab" ? "word" : x.track === "idioms" ? "phrase" : x.track === "refs" ? "reference" : x.track === "knowledge" ? "term" : x.track === "roots" ? "word part" : "idea";
+
+/* ============ progress state ============ */
+const DEF_SET = { goal: 5, mix: "focus", typed: "some", tracks: { roots: true, idioms: true, refs: true, knowledge: true, reasoning: true }, ts: 0 };
+function freshState() { return { v: 1, set: JSON.parse(JSON.stringify(DEF_SET)), pl: null, lv: {}, day: { d: "", n: 0, r: 0 }, hist: {}, streak: { last: "", n: 0 }, ret: [0, 0], cred: {} }; }
+let ST = Object.assign(freshState(), store.get("wp:state", {}));
+function normSet() { ST.set = Object.assign(JSON.parse(JSON.stringify(DEF_SET)), ST.set || {}); ST.set.tracks = Object.assign({}, DEF_SET.tracks, ST.set.tracks || {}); }
+normSet();
+let R = store.get("wp:srs", {});         // id -> [stage, due (minutes), seen, right, last (minutes)]
+let RUN = store.get("wp:run", null);     // placement test in progress
+let RUNCLR = store.get("wp:runclr", 0);  // when the last placement run was finished or abandoned
+const DEV = Object.assign({ voice: "", rate: "0.95", auto: true }, store.get("wp:device", {}));
+const saveDev = () => store.set("wp:device", DEV);
+
+let db = null, uid = null, dirty = new Set(), writing = false, wt = null;
+function setSync(t) { $("sync").textContent = t; }
+function save(...names) {
+  if (names.includes("state")) store.set("wp:state", ST);
+  if (names.includes("srs")) store.set("wp:srs", R);
+  if (names.includes("run")) { store.set("wp:run", RUN); store.set("wp:runclr", RUNCLR); }
+  names.forEach(n => dirty.add(n));
+  if (db) { clearTimeout(wt); wt = setTimeout(flush, 1500); }
+}
+function docBody(n) {
+  if (n === "state") return ST;
+  if (n === "srs") return { r: R, v: 1, resetAt: ST.resetAt || 0 };
+  return { run: RUN, v: 1, ts: RUN ? RUN.ts : RUNCLR, resetAt: ST.resetAt || 0 };
+}
+/* Read the account copy and merge it into this device before writing, so a page left open
+   on one device never overwrites work done on another. */
+async function pull() {
+  const qs = await db.collection("data/users/" + uid).get();
+  const docs = {}; qs.docs.forEach(d => { docs[d.id] = d.data(); });
+  applyServer(docs);
+  store.set("wp:state", ST); store.set("wp:srs", R); store.set("wp:run", RUN); store.set("wp:runclr", RUNCLR);
+}
+function applyServer(docs) {
+  const sv = docs.state, ss = docs.srs, sr = docs.run;
+  const srvReset = (sv && sv.resetAt) || 0, locReset = ST.resetAt || 0;
+  const placing = SESSION && SESSION.kind === "place";
+  if (srvReset > locReset) { // progress was reset on another device: take the account copy as it is
+    ST = Object.assign(freshState(), sv); normSet();
+    R = ss && (ss.resetAt || 0) >= srvReset ? (ss.r || {}) : {};
+    if (!placing) { RUN = sr && sr.run && (sr.run.ts || 0) > srvReset ? sr.run : null; RUNCLR = Math.max(RUNCLR, srvReset); }
+    return;
+  }
+  if (sv && srvReset === locReset) mergeState(sv);
+  if (ss && (ss.resetAt || 0) >= locReset) mergeR(ss.r);
+  if (sr && !placing && (sr.ts || 0) > locReset) {
+    if (sr.run && (sr.run.ts || 0) > Math.max(RUN ? RUN.ts || 0 : 0, RUNCLR)) RUN = sr.run;
+    else if (!sr.run && (sr.ts || 0) > (RUN ? RUN.ts || 0 : 0)) { RUN = null; RUNCLR = Math.max(RUNCLR, sr.ts || 0); }
+  }
+  if (!placing && RUN && ST.pl && (ST.pl.at || 0) > (RUN.ts || 0)) { RUN = null; RUNCLR = Math.max(RUNCLR, ST.pl.at); }
+}
+async function flush() {
+  if (!db || writing || !dirty.size) return;
+  writing = true;
+  let names = [];
+  try {
+    await pull();
+    names = [...dirty]; dirty.clear();
+    for (const n of names) await db.collection("data/users/" + uid).doc(n).set(docBody(n));
+    setSync("Progress saved to your account");
+  }
+  catch (e) { names.forEach(n => dirty.add(n)); setSync("Couldn't reach your account just now; progress is kept on this device"); }
+  finally { writing = false; if (dirty.size) wt = setTimeout(flush, 5000); }
+}
+const TABVIEWS = ["today", "tracks", "progress", "settings"];
+document.addEventListener("visibilitychange", async () => {
+  if (document.visibilityState === "hidden") return flush();
+  if (!db || writing) return;
+  try { await pull(); if (!SESSION && TABVIEWS.includes(VIEW.name)) render(); } catch (e) {}
+});
+window.addEventListener("pagehide", () => flush());
+
+function mergeState(o) {
+  if (!o || !o.v) return;
+  if ((o.set && o.set.ts || 0) > (ST.set.ts || 0)) { ST.set = Object.assign(JSON.parse(JSON.stringify(DEF_SET)), o.set); ST.set.tracks = Object.assign({}, DEF_SET.tracks, o.set.tracks || {}); }
+  if (o.pl && (!ST.pl || (o.pl.at || 0) > (ST.pl.at || 0))) ST.pl = o.pl;
+  for (const t in o.lv || {}) {
+    ST.lv[t] = ST.lv[t] || {};
+    for (const l in o.lv[t]) {
+      const a = ST.lv[t][l] || {}, b = o.lv[t][l];
+      ST.lv[t][l] = { best: Math.max(a.best || 0, b.best || 0), passed: !!(a.passed || b.passed), n: Math.max(a.n || 0, b.n || 0), at: Math.max(a.at || 0, b.at || 0) };
+    }
+  }
+  for (const d in o.hist || {}) { const a = ST.hist[d] || [0, 0, 0, 0, 0], b = o.hist[d]; ST.hist[d] = a.map((v, i) => Math.max(v, b[i] || 0)); }
+  if (o.day) { if (o.day.d === ST.day.d) { ST.day.n = Math.max(ST.day.n, o.day.n); ST.day.r = Math.max(ST.day.r, o.day.r); } else if (o.day.d > ST.day.d) ST.day = o.day; }
+  if (o.streak && (o.streak.last > ST.streak.last || (o.streak.last === ST.streak.last && o.streak.n > ST.streak.n))) ST.streak = o.streak;
+  if (o.ret) ST.ret = [Math.max(ST.ret[0], o.ret[0]), Math.max(ST.ret[1], o.ret[1])];
+  if (o.cred && !Object.keys(ST.cred || {}).length) ST.cred = o.cred;
+}
+function mergeR(o) { let ch = false; for (const id in o || {}) { if (!R[id] || (o[id][4] || 0) > (R[id][4] || 0)) R[id] = o[id]; else if ((R[id][4] || 0) > (o[id][4] || 0)) ch = true; } return ch; }
+
+async function connect() {
+  try {
+    if (!window.claude || !window.claude.use) return;
+    const user = await window.claude.use("user"), d = await window.claude.use("db");
+    if (!user || !d) return;
+    const id = await user.id(); if (!id) return;
+    db = d; uid = id;
+    await pull();
+    ["state", "srs", "run"].forEach(n => dirty.add(n));
+    setSync("Progress saved to your account");
+    flush();
+    if (!SESSION && TABVIEWS.includes(VIEW.name)) render();
+  } catch (e) { setSync("Progress saved on this device (account sync unavailable)"); }
+}
+
+/* ============ audio (device voices) ============ */
+let voices = [], speakSeq = 0;
+const synth = "speechSynthesis" in window ? window.speechSynthesis : null;
+function astatus(msg) { const el = $("astatus"); el.hidden = !msg; el.innerHTML = msg ? `<div class="spread"><span>${esc(msg)}</span><button class="linkbtn" type="button" id="astx">Dismiss</button></div>` : ""; if (msg) $("astx").onclick = () => astatus(""); }
+function loadVoices() {
+  if (!synth) return;
+  voices = synth.getVoices().filter(v => /^en([-_]|$)/i.test(v.lang));
+  const rank = v => /en[-_]US/i.test(v.lang) ? 0 : /en[-_]CA/i.test(v.lang) ? 1 : /en[-_](GB|AU|IE|NZ)/i.test(v.lang) ? 2 : 3;
+  voices.sort((a, b) => rank(a) - rank(b) || (b.localService === true) - (a.localService === true));
+  if (voices.length && !voices.some(v => v.voiceURI === DEV.voice)) { DEV.voice = voices[0].voiceURI; saveDev(); }
+  const sel = $("s-voice"); if (sel) fillVoices(sel);
+}
+function fillVoices(sel) {
+  if (!voices.length) { sel.innerHTML = '<option value="">No English voice found</option>'; return; }
+  sel.innerHTML = voices.map(v => `<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join("");
+  sel.value = DEV.voice;
+}
+function speak(text) {
+  if (!synth) { astatus("This browser has no speech engine. Open Study Hall in Safari, Chrome or Edge to hear words."); return; }
+  if (!text) return;
+  const seq = ++speakSeq;
+  synth.cancel();
+  const v = voices.find(x => x.voiceURI === DEV.voice) || voices[0];
+  // Chrome can silently drop a request made in the same moment as cancel(), so wait briefly.
+  setTimeout(() => {
+    if (seq !== speakSeq) return;
+    const u = new SpeechSynthesisUtterance(String(text).replace(/_{2,}/g, " blank "));
+    if (v) { u.voice = v; u.lang = v.lang; } else u.lang = "en-US";
+    u.rate = +DEV.rate || 0.95;
+    let started = false;
+    u.onstart = () => { started = true; if (seq === speakSeq) astatus(""); };
+    u.onerror = e => { if (seq === speakSeq && e.error !== "interrupted" && e.error !== "canceled") astatus(`Audio error "${e.error}". Pick another voice in Settings → Audio and press Test voice.`); };
+    synth.speak(u);
+    if (synth.paused) synth.resume();
+    setTimeout(() => { if (seq === speakSeq && !started) astatus("The browser accepted the audio request but didn't start speaking. In Settings → Audio, pick another voice and press Test voice. On iPhone, check the silent switch."); }, 4000);
+  }, 120);
+}
+if (synth) { loadVoices(); if ("onvoiceschanged" in synth) synth.addEventListener("voiceschanged", loadVoices); }
+document.addEventListener("click", e => { const b = e.target.closest("[data-say]"); if (b) { e.preventDefault(); speak(b.dataset.say); } });
+
+/* ============ AI (Study Hall AI function) ============ */
+let sampleFn;
+async function getSample() {
+  if (sampleFn !== undefined) return sampleFn;
+  try { sampleFn = (window.claude && window.claude.use) ? await window.claude.use("sample") : null; } catch (e) { sampleFn = null; }
+  return sampleFn;
+}
+function aiErr(e) {
+  const c = e && e.code;
+  if (c === "rate_limited") return (e && e.message) || "You've reached today's AI limit. It resets at midnight.";
+  if (c === "session_expired") return "You were signed out. Reload the page to sign in again.";
+  if (c === "not_granted") return "AI isn't switched on for your account.";
+  return (e && e.message) || "AI isn't available right now.";
+}
+async function aiGradeDef(x, answer) {
+  const s = await getSample(); if (!s) throw Object.assign(new Error("AI isn't available here."), { code: "unavailable" });
+  const p = `You are grading one answer in a vocabulary quiz for an adult English speaker. Be fair and strict about meaning, lenient about wording and spelling.
+Item type: ${kindWord(x)}${x.pos ? " (" + x.pos + ")" : ""}
+Item: "${x.term}"
+Reference meaning: "${x.def}"
+${x.syn && x.syn.length ? "Accepted synonyms: " + x.syn.join(", ") + "\n" : ""}Learner's answer: """${String(answer).slice(0, 500)}"""
+
+Rules: "correct" if the answer captures the core meaning (a paraphrase or a true synonym counts). "partial" if it is on the right track but too vague, missing a key part, or only half right. "incorrect" if it is wrong, a different sense, or empty. Do not reward answers that merely repeat the item.
+Reply with JSON only, no other text: {"verdict":"correct"|"partial"|"incorrect","feedback":"1-2 short sentences speaking to the learner, saying what was right or missing"}`;
+  const r = await s.json(p, { maxTokens: 300 });
+  if (!r || !["correct", "partial", "incorrect"].includes(r.verdict)) throw Object.assign(new Error("The grader's reply was unclear."), { code: "invalid_json" });
+  return r;
+}
+async function aiSentence(x, sentence) {
+  const s = await getSample(); if (!s) throw Object.assign(new Error("AI isn't available here."), { code: "unavailable" });
+  const p = `An adult is practicing English vocabulary. They wrote a sentence using the ${kindWord(x)} "${x.term}"${x.pos ? " (" + x.pos + ")" : ""}, which means: "${x.def}".
+Their sentence: """${String(sentence).slice(0, 600)}"""
+Judge whether the sentence uses "${x.term}" correctly and naturally in that meaning. Ignore small typos unless they change the meaning.
+Reply with JSON only: {"verdict":"good"|"awkward"|"wrong","feedback":"1-2 short, specific sentences","better":"an improved version of their sentence, or empty string if it is already good"}`;
+  const r = await s.json(p, { maxTokens: 400 });
+  if (!r || !r.verdict) throw Object.assign(new Error("The reply was unclear."), { code: "invalid_json" });
+  return r;
+}
+
+/* ============ levels ============ */
+function startLv(t) { const p = ST.pl && ST.pl[t]; return p && p.start != null ? p.start : TR[t].min; }
+function lvRec(t, l) { return (ST.lv[t] || {})[l]; }
+function cur(t) { let c = startLv(t); while (c < TR[t].max && lvRec(t, c) && lvRec(t, c).passed) c++; return c; }
+function trackOn(t) { return t === "vocab" || !!ST.set.tracks[t]; }
+function idsAt(t, l) { return (LIST[t][l] || []).concat(t === "reasoning" ? (PROB[l] || []) : []); }
+
+/* ============ spaced repetition ============ */
+const INT = [0, 1, 3, 7, 16, 35, 80, 180, 365]; // days until next review for each stage
+const seen = id => !!(R[id] && R[id][2] > 0);
+function statusOf(id) { const r = R[id]; if (!r || !r[2]) return r ? "q" : "n"; if (r[0] >= 5) return "m"; if (r[0] >= 3) return "k"; return "l"; }
+function logDay(kind, ok) {
+  const d = today();
+  if (ST.day.d !== d) ST.day = { d, n: 0, r: 0 };
+  const h = ST.hist[d] = ST.hist[d] || [0, 0, 0, 0, 0];
+  if (kind === "new") { ST.day.n++; h[0]++; }
+  else { ST.day.r++; h[1]++; if (ok) h[2]++; }
+  if (ST.streak.last !== d) {
+    const y = new Date(); y.setDate(y.getDate() - 1);
+    ST.streak = { last: d, n: ST.streak.last === ymd(y) ? ST.streak.n + 1 : 1 };
+  }
+  const keys = Object.keys(ST.hist).sort(); while (keys.length > 120) delete ST.hist[keys.shift()];
+}
+function grade(id, result) { // result: true | false | "partial"
+  const n = nowMin(); const old = R[id] || [0, n, 0, 0, 0];
+  const st = old[0];
+  let r;
+  if (result === "partial") r = [st, n + DAY, old[2] + 1, old[3], n];
+  else if (result) { const s = Math.min(st + 1, INT.length - 1); r = [s, n + Math.round(INT[s] * DAY * (0.9 + Math.random() * 0.2)), old[2] + 1, old[3] + 1, n]; }
+  else r = [Math.max(0, Math.floor(st / 2)), n + 10, old[2] + 1, old[3], n];
+  if (st >= 3 && old[2] > 0) { ST.ret[1]++; if (result === true) ST.ret[0]++; const h = ST.hist[today()] = ST.hist[today()] || [0, 0, 0, 0, 0]; h[4]++; if (result === true) h[3]++; }
+  R[id] = r;
+}
+function setKnown(id, stage, days) { const n = nowMin(); const o = R[id] || [0, n, 0, 0, 0]; R[id] = [stage, n + Math.round(days * DAY * (0.9 + Math.random() * 0.2)), o[2] + 1, o[3] + 1, n]; }
+function dueList() {
+  const n = nowMin();
+  return Object.keys(R).filter(id => BY[id] && !isProb(id) && R[id][2] > 0 && R[id][1] <= n && trackOn(BY[id].track)).sort((a, b) => R[a][1] - R[b][1]);
+}
+function nextNewIn(t, taken, onlyLevel) {
+  const ok = id => !taken.has(id) && (!R[id] || !R[id][2]);
+  if (onlyLevel != null) return (LIST[t][onlyLevel] || []).find(ok) || null;
+  for (let l = cur(t); l <= TR[t].max; l++) { const f = (LIST[t][l] || []).find(ok); if (f) return f; }
+  for (let l = TR[t].min; l < cur(t); l++) { const f = (LIST[t][l] || []).find(ok); if (f) return f; }
+  return null;
+}
+const MIX = {
+  focus:    { vocab: 7, roots: .75, idioms: .75, refs: .75, knowledge: .75, reasoning: .5 },
+  balanced: { vocab: 2, roots: 1, idioms: 1, refs: 1, knowledge: 1, reasoning: 1 },
+  vocab:    { vocab: 1, roots: 0, idioms: 0, refs: 0, knowledge: 0, reasoning: 0 }
+};
+function pickNew(k) {
+  const out = [], taken = new Set();
+  Object.keys(R).filter(id => BY[id] && !isProb(id) && !R[id][2]).sort((a, b) => R[a][1] - R[b][1]).forEach(id => { if (out.length < k) { out.push(id); taken.add(id); } });
+  const w = MIX[ST.set.mix] || MIX.focus;
+  const cred = ST.cred = ST.cred || {};
+  let guard = 0;
+  while (out.length < k && guard++ < 500) {
+    const avail = TORDER.filter(t => trackOn(t) && w[t] > 0 && nextNewIn(t, taken));
+    if (!avail.length) break;
+    const sum = avail.reduce((s, t) => s + w[t], 0);
+    avail.forEach(t => { cred[t] = (cred[t] || 0) + w[t]; });
+    const t = avail.reduce((b, t) => (cred[t] > cred[b] ? t : b), avail[0]);
+    cred[t] -= sum;
+    const id = nextNewIn(t, taken); out.push(id); taken.add(id);
+  }
+  return out;
+}
+
+/* ============ questions ============ */
+const TYPEDOK = () => ST.set.typed !== "off";
+function qtypesFor(x, stage) {
+  if (isProb(x.id)) return ["prob"];
+  if (isConcept(x.id)) return stage <= 1 ? ["mean"] : stage === 2 ? ["scenario"] : ["scenario", "word", "scenario", "mean"];
+  if (x.track === "roots") return stage <= 1 ? ["mean"] : stage === 2 ? ["rootword"] : ["word", "rootword", "mean"];
+  const multi = /\s/.test(x.term);
+  if (stage <= 1) return ["mean"];
+  if (stage === 2) return ["cloze"];
+  if (stage === 3) return ["word", "cloze"];
+  const late = ["cloze", "mean", "word"];
+  if (TYPEDOK()) { late.push("tdef"); if (ST.set.typed === "often") late.push("tdef", "tword"); if (!multi && x.track === "vocab") late.push("tword"); }
+  return late;
+}
+function chooseQt(id, avoid) {
+  const x = BY[id]; const st = R[id] ? R[id][0] : 0;
+  let opts = qtypesFor(x, st).filter(q => q !== avoid);
+  if (!opts.length) opts = qtypesFor(x, st);
+  return opts[Math.floor(Math.random() * opts.length)];
+}
+function distractors(x, n) { return pickN((x.dx || []).filter(d => BY[d]), n).map(d => BY[d]); }
+function makeQ(id, qt) {
+  const x = BY[id];
+  const head = (label) => `<h3>${esc(label)}</h3>`;
+  if (qt === "prob") {
+    const order = shuffle(x.options.map((o, i) => i));
+    return { qt, id, html: `${head(cap(x.kind) + " problem")}<p class="prompt" style="white-space:pre-line">${esc(x.q)}</p>`,
+      opts: order.map(i => ({ label: x.options[i], ok: i === x.answer })) };
+  }
+  if (qt === "scenario") {
+    const t = x.tests[Math.floor(Math.random() * x.tests.length)];
+    const ds = distractors(x, 5);
+    return { qt, id, html: `${head("Which reasoning problem does this show?")}<p class="prompt">${esc(t.s)}</p>`,
+      opts: shuffle([{ label: cap(x.term), ok: true, ref: x.id }, ...ds.map(d => ({ label: cap(d.term), ok: false, ref: d.id }))]) };
+  }
+  if (qt === "rootword") {
+    const w = x.words[Math.floor(Math.random() * x.words.length)];
+    const ds = distractors(x, 5);
+    return { qt, id, html: `${head("Word part")}<p class="prompt">In <b>${esc(w.w)}</b> (${esc(w.m)}), the part <b>${esc(x.term)}</b> means…</p>`,
+      opts: shuffle([{ label: x.def, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.def, ok: false, ref: d.id }))]) };
+  }
+  if (qt === "mean") {
+    const ds = distractors(x, 5);
+    const sayL = x.track === "roots" ? "" : playBtn(x.term);
+    return { qt, id, say: x.track === "roots" ? "" : x.term, html: `${head(x.track === "roots" ? "What does this word part mean?" : x.track === "reasoning" ? "What is this?" : "What does it mean?")}
+      <div class="row"><span class="term">${esc(x.term)}</span>${sayL}</div>${x.pos ? `<span class="sub">${esc(x.pos)}</span>` : ""}`,
+      opts: shuffle([{ label: x.def, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.def, ok: false, ref: d.id }))]) };
+  }
+  if (qt === "word") {
+    const ds = distractors(x, 5);
+    return { qt, id, html: `${head("Which " + kindWord(x) + " fits this meaning?")}<p class="prompt">${esc(cap(x.def))}</p>${x.pos ? `<span class="sub">${esc(x.pos)}</span>` : ""}`,
+      opts: shuffle([{ label: x.term, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.term, ok: false, ref: d.id }))]) };
+  }
+  if (qt === "cloze") {
+    const ds = distractors(x, 5);
+    const s = esc(x.cloze.s).replace("___", '<span class="blank" aria-label="blank">&nbsp;</span>');
+    return { qt, id, html: `${head("Fill the blank")}<p class="cloze">${s}</p><p class="hint">Choose the ${kindWord(x)} that fits${x.track === "vocab" || x.track === "idioms" ? " (it may change form, e.g. -ed or -s)" : ""}.</p>`,
+      opts: shuffle([{ label: x.term, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.term, ok: false, ref: d.id }))]) };
+  }
+  if (qt === "tdef") {
+    return { qt, id, typed: "def", html: `${head("In your own words")}<div class="row"><span class="term">${esc(x.term)}</span>${x.track === "roots" ? "" : playBtn(x.term)}</div>
+      <p class="hint">Type what it means. A short phrase is enough. Claude grades the meaning, not the exact wording.</p>` };
+  }
+  if (qt === "tword") {
+    return { qt, id, typed: "word", html: `${head("Type the word")}<p class="prompt">${esc(cap(x.def))}</p>
+      <p class="hint">${x.pos ? esc(x.pos) + " · " : ""}starts with “${esc(x.term[0])}”, ${x.term.length} letters</p>` };
+  }
+}
+function lev(a, b) {
+  const m = a.length, n = b.length; if (Math.abs(m - n) > 2) return 9;
+  let p = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) { const c = [i]; for (let j = 1; j <= n; j++) c[j] = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); p = c; }
+  return p[n];
+}
+function checkTypedWord(x, ans) {
+  const a = ans.trim().toLowerCase().replace(/[^a-z' -]/g, "");
+  if (!a) return { ok: false };
+  const acc = new Set([x.term.toLowerCase(), (x.cloze && x.cloze.a || "").toLowerCase()]);
+  (x.forms || []).forEach(f => acc.add(f.replace(/\s*\(.*\)\s*/, "").trim().toLowerCase()));
+  if (acc.has(a)) return { ok: true };
+  if (x.term.length >= 5 && lev(a, x.term.toLowerCase()) <= 1) return { ok: true, spell: true };
+  return { ok: false };
+}
+
+/* ============ study card ============ */
+function cardHTML(x, opts = {}) {
+  if (isProb(x.id)) {
+    return `<div class="sc"><h3>${esc(cap(x.kind))} problem · ${esc(lvName("reasoning", x.level))}</h3><p style="white-space:pre-line">${esc(x.q)}</p>
+      <ol type="A">${x.options.map((o, i) => `<li${i === x.answer ? ' style="font-weight:600"' : ""}>${esc(o)}${i === x.answer ? " ✓" : ""}</li>`).join("")}</ol>
+      <p class="note">${esc(x.why)}</p></div>`;
+  }
+  const say = x.track === "roots" ? "" : playBtn(x.term, "Hear it");
+  const meta = [TR[x.track].name, lvName(x.track, x.level), x.pos, x.domain, x.source, x.kind && x.track === "reasoning" ? x.kind : (x.kind === "foreign" ? (x.lang || "foreign") + " phrase" : ""), x.register && x.register !== "neutral" ? x.register : "", x.type ? x.type + " · " + x.origin : ""].filter(Boolean);
+  let h = `<div class="sc">
+    <div class="spread"><h3>${esc(meta.join(" · "))}</h3></div>
+    <div class="row"><span class="term">${esc(x.term)}</span>${say}</div>`;
+  if (x.pr) h += `<div class="say" title="Pronunciation">${esc(x.pr.say)} <span style="opacity:.7">${esc(x.pr.ipa)}</span></div>`;
+  h += `<p class="def">${esc(cap(x.def))}</p>`;
+  if (x.also) h += `<p class="sub">Also: ${esc(x.also)}</p>`;
+  if (x.why) h += `<p class="note"><b>Why it matters:</b> ${esc(x.why)}</p>`;
+  if (x.ex && x.ex.length) h += `<ul class="ex">${x.ex.map(e => `<li>${esc(e)} ${playBtn(e)}</li>`).join("")}</ul>`;
+  if (x.scenario) h += `<p class="note"><b>Example:</b> ${esc(x.scenario)}</p>`;
+  if (x.fix) h += `<p class="note"><b>How to counter it:</b> ${esc(x.fix)}</p>`;
+  if (x.words) h += `<table><tbody>${x.words.map(w => `<tr><td><b>${esc(w.w)}</b></td><td>${esc(w.m)}</td></tr>`).join("")}</tbody></table>`;
+  if (x.story) h += `<p class="story"><b>Where it comes from${x.source ? " (" + esc(x.source) + ")" : ""}:</b> ${esc(x.story)}</p>`;
+  if (x.origin && x.track !== "roots") h += `<p class="story"><b>Origin:</b> ${esc(x.origin)}</p>`;
+  if (x.note) h += `<p class="note">${esc(x.note)}</p>`;
+  const kv = [];
+  if (x.syn && x.syn.length) kv.push(["Similar", x.syn.join(", ")]);
+  if (x.ant && x.ant.length) kv.push(["Opposite", x.ant.join(", ")]);
+  if (x.forms && x.forms.length) kv.push(["Forms", x.forms.join(", ")]);
+  if (kv.length) h += `<dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
+  if (!opts.noSentence && x.track !== "roots" && x.track !== "reasoning") h += sentenceBox(x);
+  return h + `</div>`;
+}
+function sentenceBox(x) {
+  return `<details class="more" data-sent="${esc(x.id)}"><summary>Practice: write your own sentence</summary>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-top:10px">
+      <textarea aria-label="Your sentence using ${esc(x.term)}" placeholder="Write a sentence using “${esc(x.term)}”"></textarea>
+      <div class="row"><button class="btn small" type="button" data-sentcheck="${esc(x.id)}">Check my sentence</button><span class="hint">Claude checks it. Practice only; it doesn't change your score.</span></div>
+      <div class="sentout" role="status"></div></div></details>`;
+}
+document.addEventListener("click", async e => {
+  const b = e.target.closest("[data-sentcheck]"); if (!b) return;
+  const box = b.closest("[data-sent]"); const x = BY[b.dataset.sentcheck];
+  const ta = box.querySelector("textarea"), out = box.querySelector(".sentout");
+  const s = ta.value.trim(); if (!s) { ta.focus(); return; }
+  b.disabled = true; out.innerHTML = `<p class="hint">Checking…</p>`;
+  try {
+    const r = await aiSentence(x, s);
+    const cls = r.verdict === "good" ? "ok" : r.verdict === "awkward" ? "mid" : "no";
+    const title = r.verdict === "good" ? "Good use" : r.verdict === "awkward" ? "Close, but awkward" : "Not quite right";
+    out.innerHTML = `<div class="fb ${cls}"><h4>${title}</h4><p>${esc(r.feedback || "")}</p>${r.better ? `<p><b>Try:</b> ${esc(r.better)}</p>` : ""}<p class="hint">AI feedback; it can occasionally be wrong.</p></div>`;
+  } catch (err) { out.innerHTML = `<div class="fb mid"><p>${esc(aiErr(err))}</p></div>`; }
+  b.disabled = false;
+});
+function openCard(id) {
+  const x = BY[id]; const st = statusOf(id);
+  const stLabel = { n: "Not studied yet", q: "In your next session", l: "Learning", k: "Known", m: "Mastered" }[st];
+  $("dlgin").innerHTML = `${cardHTML(x)}
+    <div class="spread"><span class="chip ${st === "n" ? "mute" : ""}">${stLabel}</span>
+    <div class="row">${st === "n" ? `<button class="btn small" type="button" id="pinit">Add to my next session</button>` : ""}<button class="btn small primary" type="button" id="dlgclose">Close</button></div></div>`;
+  $("dlg").showModal();
+  $("dlgclose").onclick = () => $("dlg").close();
+  if ($("pinit")) $("pinit").onclick = () => { R[id] = [0, nowMin(), 0, 0, nowMin()]; save("srs"); $("dlg").close(); if (!SESSION) render(); };
+}
+$("dlg").addEventListener("click", e => { if (e.target === $("dlg")) $("dlg").close(); });
+
+/* ============ sessions ============ */
+let SESSION = null;
+function startSession(kind, steps, title, opts = {}) {
+  SESSION = { kind, steps, i: 0, title, right: 0, total: 0, retries: {}, missed: [], learned: 0, level: opts.level, track: opts.track, onEnd: opts.onEnd, answers: [] };
+  window.scrollTo(0, 0); renderStep();
+}
+function buildDaily(extraNew) {
+  const due = dueList().slice(0, 100);
+  const k = extraNew != null ? extraNew : Math.max(0, ST.set.goal - (ST.day.d === today() ? ST.day.n : 0));
+  const news = pickNew(k);
+  const steps = []; let di = 0;
+  const pushRev = n => { for (let j = 0; j < n && di < due.length; j++, di++) steps.push({ t: "q", id: due[di], src: "rev" }); };
+  pushRev(Math.min(8, due.length));
+  for (let g = 0; g < news.length; g += 3) {
+    const grp = news.slice(g, g + 3);
+    grp.forEach(id => steps.push({ t: "learn", id }));
+    pushRev(3);
+    grp.forEach(id => steps.push({ t: "q", id, src: "new", qt: isConcept(id) ? "mean" : "mean" }));
+    pushRev(4);
+  }
+  pushRev(due.length);
+  if (trackOn("reasoning") && extraNew == null) { const p = pickProblems(1)[0]; if (p) steps.push({ t: "q", id: p, src: "prob" }); }
+  return steps;
+}
+function pickProblems(n) {
+  const nm = nowMin(), out = [];
+  Object.keys(R).filter(id => isProb(id) && BY[id] && R[id][0] === 0 && R[id][1] <= nm).forEach(id => { if (out.length < n) out.push(id); });
+  const c = cur("reasoning");
+  const order = []; for (let l = c; l <= 3; l++) order.push(l); for (let l = 1; l < c; l++) order.push(l);
+  for (const l of order) for (const id of PROB[l] || []) { if (out.length >= n) break; if (!R[id] && !out.includes(id)) out.push(id); }
+  return out;
+}
+function renderStep() {
+  const S = SESSION; if (!S) return;
+  if (S.i >= S.steps.length) return endSession();
+  const step = S.steps[S.i];
+  const pct = Math.round(100 * S.i / S.steps.length);
+  const top = `<div class="qhead"><button class="linkbtn" type="button" id="quit">${S.kind === "place" ? "Pause" : "End"}</button><div class="prog" aria-hidden="true"><i style="width:${pct}%"></i></div><span class="sub">${S.i + 1}/${S.steps.length}</span></div>`;
+  setTabs(null);
+  if (step.t === "learn") {
+    const x = BY[step.id];
+    $("main").innerHTML = `${top}<section class="card"><span class="chip">New ${esc(kindWord(x))}</span>${cardHTML(x)}
+      <button class="btn primary block" type="button" id="got">Got it — continue</button>
+      <button class="btn block" type="button" id="knew">I already know this — test me</button></section>`;
+    if (DEV.auto && x.track !== "roots") speak(x.term);
+    $("got").onclick = () => { learnStart(step.id); S.i++; renderStep(); };
+    $("knew").onclick = () => {
+      learnStart(step.id);
+      const later = S.steps.findIndex((s, j) => j > S.i && s.t === "q" && s.id === step.id && s.src === "new");
+      if (later >= 0) S.steps.splice(later, 1);
+      S.steps.splice(S.i + 1, 0, { t: "q", id: step.id, src: "knew", qt: isConcept(step.id) ? "scenario" : BY[step.id].track === "roots" ? "word" : "cloze" });
+      S.i++; renderStep();
+    };
+  } else {
+    const qt = step.qt || chooseQt(step.id);
+    step.qt = qt;
+    const q = makeQ(step.id, qt);
+    renderQuestion(top, q, step);
+  }
+  $("quit").onclick = () => { if (S.kind === "place") { pausePlacement(); } else endSession(true); };
+}
+function learnStart(id) {
+  const n = nowMin(); const o = R[id];
+  if (!o || (!o[2] && !o[5])) { R[id] = [0, n, 0, 0, n, 1]; logDay("new"); SESSION.learned++; }
+  save("srs", "state");
+}
+function renderQuestion(top, q, step) {
+  const S = SESSION; const x = BY[q.id];
+  let h = `${top}<section class="card" id="qcard">${q.html}`;
+  if (q.typed) {
+    h += `<form id="tform" style="display:flex;flex-direction:column;gap:10px">${q.typed === "def"
+      ? `<textarea id="tans" aria-label="Your answer" autocomplete="off" autocapitalize="off"></textarea>`
+      : `<input type="text" id="tans" aria-label="Your answer" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">`}
+      <div class="row"><button class="btn primary" type="submit" id="tsub">Check</button><button class="btn" type="button" id="tidk">I don't know</button></div></form>`;
+  } else {
+    h += `<div class="opts" role="group" aria-label="Answer choices">${q.opts.map((o, i) => `<button class="opt" type="button" data-i="${i}"><span class="k">${i + 1}</span><span>${esc(o.label)}</span></button>`).join("")}</div>
+      <button class="btn small idk" type="button" id="idk">I don't know</button>`;
+  }
+  h += `<div id="fbx"></div></section>`;
+  $("main").innerHTML = h;
+  if (q.say && DEV.auto && S.kind !== "place") speak(q.say);
+  if (q.typed) {
+    $("tans").focus();
+    $("tidk").onclick = () => finishTyped(q, step, "", true);
+    $("tform").onsubmit = ev => { ev.preventDefault(); finishTyped(q, step, $("tans").value, false); };
+  } else {
+    document.querySelectorAll(".opt").forEach(b => b.onclick = () => answerMC(q, step, +b.dataset.i));
+    $("idk").onclick = () => answerMC(q, step, -1);
+  }
+}
+function lockOpts(q, chosen) {
+  document.querySelectorAll(".opt").forEach(b => {
+    const i = +b.dataset.i; b.disabled = true;
+    if (q.opts[i].ok) b.classList.add("right"); else if (i === chosen) b.classList.add("wrong");
+  });
+  const idk = $("idk"); if (idk) idk.hidden = true;
+}
+function answerMC(q, step, i) {
+  if (SESSION.locked) return; SESSION.locked = true;
+  const ok = i >= 0 && q.opts[i].ok;
+  lockOpts(q, i);
+  const wrongRef = i >= 0 && !ok ? q.opts[i].ref : null;
+  record(step, ok);
+  feedback(q, step, ok, { wrongRef, idk: i < 0 });
+}
+async function finishTyped(q, step, ans, idk) {
+  const S0 = SESSION;
+  if (S0.locked) return; S0.locked = true;
+  const x = BY[q.id];
+  $("tsub").disabled = true; $("tidk").disabled = true; $("tans").disabled = true;
+  if (idk || !ans.trim()) { record(step, false); return feedback(q, step, false, { idk: true }); }
+  if (q.typed === "word") {
+    const r = checkTypedWord(x, ans); record(step, r.ok);
+    return feedback(q, step, r.ok, { typedNote: r.spell ? `Counted as correct. Check the spelling: ${x.term}.` : r.ok ? "" : `You wrote “${ans.trim()}”.` });
+  }
+  $("fbx").innerHTML = `<p class="hint">Claude is checking your answer…</p>`;
+  try {
+    const r = await aiGradeDef(x, ans);
+    if (SESSION !== S0) return; // the learner left this session while Claude was grading
+    const res = r.verdict === "correct" ? true : r.verdict === "partial" ? "partial" : false;
+    record(step, res);
+    feedback(q, step, res, { ai: r, mine: ans.trim() });
+  } catch (err) {
+    if (SESSION !== S0) return;
+    // AI unavailable: let the learner compare and grade themselves.
+    $("fbx").innerHTML = `<div class="fb mid"><h4>Grade it yourself</h4><p>${esc(aiErr(err))}</p><p><b>You wrote:</b> ${esc(ans.trim())}</p><p><b>Meaning:</b> ${esc(cap(x.def))}</p>
+      <div class="row"><button class="btn small primary" type="button" id="selfok">I had it</button><button class="btn small" type="button" id="selfno">I didn't</button></div></div>`;
+    $("selfok").onclick = () => { record(step, true); feedback(q, step, true, {}); };
+    $("selfno").onclick = () => { record(step, false); feedback(q, step, false, {}); };
+  }
+}
+function record(step, res) {
+  const S = SESSION; const id = step.id; const ok = res === true;
+  S.total++; if (ok) S.right++;
+  S.answers.push({ id, ok, qt: step.qt, src: step.src });
+  if (!ok) S.missed.push(id);
+  if (S.kind === "place") return placeRecord(step, ok);
+  if (S.kind === "test") return testRecord(step, ok);
+  if (isProb(id)) {
+    const n = nowMin(); const o = R[id] || [0, n, 0, 0, 0];
+    R[id] = ok ? [1, n + 60 * DAY, o[2] + 1, o[3] + 1, n] : [0, n + DAY, o[2] + 1, o[3], n];
+    logDay("rev", ok); save("srs", "state"); return;
+  }
+  step.prev = R[id] ? R[id].slice() : null;
+  srsApply(step, res);
+  if (step.src !== "new" && step.src !== "knew") logDay("rev", ok);
+  // retry once later in this session with a different question type
+  if (!ok) {
+    S.retries[id] = (S.retries[id] || 0) + 1;
+    if (S.retries[id] <= 2) S.steps.splice(Math.min(S.steps.length, S.i + 4), 0, { t: "q", id, src: "retry", qt: chooseQt(id, step.qt) });
+  }
+  save("srs", "state");
+}
+function srsApply(step, res) {
+  const id = step.id, n = nowMin(), ok = res === true;
+  if (step.src === "knew") { if (ok) setKnown(id, 3, 7); else R[id] = [0, n + 10, 1, 0, n]; }
+  else if (step.src === "new") R[id] = ok ? [1, n + DAY, 1, 1, n] : [0, n + 10, 1, 0, n];
+  else if (ok && R[id] && R[id][1] > n && step.src !== "retry") { const r = R[id]; R[id] = [r[0], r[1], r[2] + 1, r[3] + 1, n]; } // practiced before it was due: no promotion
+  else grade(id, res);
+}
+function feedback(q, step, res, o) {
+  const x = BY[q.id]; const S = SESSION;
+  const ok = res === true;
+  const cls = ok ? "ok" : res === "partial" ? "mid" : "no";
+  let title = ok ? pickOne(["Correct.", "Right.", "Yes — nicely done.", "Correct!"]) : res === "partial" ? "Partly right." : o.idk ? "Here's the answer." : "Not quite.";
+  let body = "";
+  if (o.ai) body += `<p>${esc(o.ai.feedback || "")}</p><p class="hint">Graded by Claude. <button class="linkbtn" type="button" id="override">${ok ? "Mark as wrong" : "I was right — count it"}</button></p>`;
+  if (o.typedNote) body += `<p>${esc(o.typedNote)}</p>`;
+  if (o.wrongRef && BY[o.wrongRef] && o.wrongRef !== x.id) {
+    const w = BY[o.wrongRef];
+    body += `<p class="sub">You chose ${q.qt === "mean" || q.qt === "rootword" ? `the meaning of <b>${esc(w.term)}</b>` : `<b>${esc(w.term)}</b>, which means “${esc(w.def)}”`}.</p>`;
+  }
+  if (isProb(x.id)) body += `<p><b>Answer:</b> ${esc(x.options[x.answer])}</p><p>${esc(x.why)}</p>`;
+  else if (S.kind !== "place") body += `<details class="more" ${ok ? "" : "open"}><summary>${esc(x.term)}</summary>${cardHTML(x, { noSentence: S.kind === "test" })}</details>`;
+  else body += ok ? "" : `<p><b>${esc(x.term)}</b>: ${esc(x.def)}</p>`;
+  $("fbx").innerHTML = `<div class="fb ${cls}" role="status"><h4>${title}</h4>${body}</div><button class="btn primary block" type="button" id="next" style="margin-top:12px">Continue</button>`;
+  if (o.ai && $("override")) $("override").onclick = () => {
+    // learner overrides the AI grade
+    const flip = !ok;
+    if (step.prev) R[x.id] = step.prev; else delete R[x.id];
+    srsApply(step, flip);
+    if (flip) {
+      S.right++; S.missed = S.missed.filter(i => i !== x.id);
+      for (let j = S.steps.length - 1; j > S.i; j--) if (S.steps[j].id === x.id && S.steps[j].src === "retry") S.steps.splice(j, 1);
+    } else {
+      S.right = Math.max(0, S.right - 1); S.missed.push(x.id);
+      S.steps.splice(Math.min(S.steps.length, S.i + 4), 0, { t: "q", id: x.id, src: "retry", qt: chooseQt(x.id, step.qt) });
+    }
+    save("srs");
+    $("override").replaceWith(Object.assign(document.createElement("span"), { textContent: flip ? "Counted as right." : "Counted as wrong." }));
+  };
+  if (!ok && !isProb(x.id) && x.track !== "roots" && S.kind !== "place" && DEV.auto) speak(x.term);
+  $("next").focus({ preventScroll: true });
+  $("next").scrollIntoView({ block: "nearest", behavior: "smooth" });
+  $("next").onclick = () => { S.locked = false; S.i++; window.scrollTo(0, 0); renderStep(); };
+}
+const pickOne = a => a[Math.floor(Math.random() * a.length)];
+document.addEventListener("keydown", e => {
+  if (!SESSION || $("dlg").open) return;
+  if (e.target.closest("textarea,input,select")) return;
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  if ((e.key === "Enter" || e.key === " ") && e.target.closest("button,a,summary")) return;
+  if (/^[1-6]$/.test(e.key)) { const b = document.querySelector(`.opt[data-i="${+e.key - 1}"]`); if (b && !b.disabled) { e.preventDefault(); b.click(); } }
+  else if (e.key === "0" || e.key === "?") { const b = $("idk"); if (b && !b.hidden) b.click(); }
+  else if (e.key === "Enter" || e.key === " ") { const b = $("next") || $("got"); if (b && document.activeElement !== b) { e.preventDefault(); b.click(); } }
+});
+function endSession(early) {
+  const S = SESSION; SESSION = null;
+  if (S.onEnd) return S.onEnd(S, early);
+  save("srs", "state"); flush();
+  VIEW = { name: "screen" };
+  const pct = S.total ? Math.round(100 * S.right / S.total) : 0;
+  const missed = [...new Set(S.missed)].filter(id => BY[id]);
+  $("main").innerHTML = `<section class="card center"><h2>${early ? "Session ended" : "Session complete"}</h2>
+    <div class="stats" style="width:100%"><div class="stat"><b>${S.learned}</b><span>new learned</span></div><div class="stat"><b>${S.total}</b><span>questions</span></div><div class="stat"><b>${pct}%</b><span>correct</span></div></div>
+    ${missed.length ? `<div style="width:100%;text-align:left"><h3>To keep practicing</h3><ul class="list" style="margin-top:8px">${missed.map(id => itemLi(id)).join("")}</ul></div>` : ""}
+    <div class="row" style="justify-content:center"><button class="btn primary" type="button" id="done">Back to Today</button>${missed.length ? `<button class="btn" type="button" id="again">Practice these now</button>` : ""}</div></section>`;
+  bindItemLis();
+  $("done").onclick = () => go("today");
+  if ($("again")) $("again").onclick = () => startSession("practice", missed.map(id => ({ t: "q", id, src: "rev" })), "Practice");
+}
+
+/* ============ placement test ============ */
+const PSECS = ["vocab", "idioms", "refs", "knowledge", "roots", "reasoning"];
+const PINFO = {
+  vocab: "Vocabulary — the biggest part. Questions adapt to you: they get harder while you're getting them right.",
+  idioms: "Idioms and set phrases, from everyday to literary.",
+  refs: "Cultural references and allusions — myth, scripture, literature, history, science and film.",
+  knowledge: "General knowledge — core terms from science, health, history, government, money and the arts.",
+  roots: "Word roots — the building blocks inside English words.",
+  reasoning: "Reasoning — logic, inference and spotting faulty arguments."
+};
+function newRun() {
+  const run = { ts: Date.now(), sec: 0, v: { lv: 2, block: [], bi: 0, ok: 0, res: {}, extra: false }, q: {}, res: {}, ans: {} };
+  PSECS.slice(1).forEach(t => {
+    const qs = [];
+    for (let l = TR[t].min; l <= TR[t].max; l++) {
+      if (t === "reasoning") { pickN(PROB[l] || [], 3).forEach(id => qs.push(id)); pickN(LIST.reasoning[l] || [], 1).forEach(id => qs.push(id)); }
+      else if (t === "knowledge") { const pool = shuffle(LIST.knowledge[l] || []); const doms = new Set(); const take = []; for (const id of pool) { if (take.length >= 3) break; if (!doms.has(BY[id].domain)) { doms.add(BY[id].domain); take.push(id); } } take.forEach(id => qs.push(id)); }
+      else pickN(LIST[t][l] || [], 3).forEach(id => qs.push(id));
+    }
+    run.q[t] = qs; run.res[t] = { i: 0 };
+  });
+  run.v.block = pickN(LIST.vocab[2], 5);
+  return run;
+}
+function placeQt(id) { return isProb(id) ? "prob" : isConcept(id) ? "scenario" : "mean"; }
+function startPlacement(resume) {
+  if (!resume || !RUN) { RUN = newRun(); save("run"); }
+  placeIntro();
+}
+function placeIntro() {
+  const t = PSECS[RUN.sec];
+  VIEW = { name: "screen" };
+  if (!t) return finishPlacement();
+  const n = t === "vocab" ? "about 25–40" : RUN.q[t].length;
+  setTabs(null);
+  $("main").innerHTML = `<section class="card"><h3>Placement test · part ${RUN.sec + 1} of ${PSECS.length}</h3><h2>${esc(TR[t].name)}</h2><p>${esc(PINFO[t])}</p>
+    <p class="sub">${n} questions. Use <b>I don't know</b> instead of guessing; guesses make your level less accurate. You can pause any time and pick up where you left off, on any device.</p>
+    <div class="row"><button class="btn primary" type="button" id="pgo">Start part ${RUN.sec + 1}</button><button class="btn" type="button" id="pback">Later</button></div></section>`;
+  $("pgo").onclick = () => placeSection();
+  $("pback").onclick = () => go("today");
+}
+function placeSection() {
+  const t = PSECS[RUN.sec];
+  let steps;
+  if (t === "vocab") steps = RUN.v.block.slice(RUN.v.bi).map(id => ({ t: "q", id, qt: "mean", src: "place" }));
+  else steps = RUN.q[t].slice(RUN.res[t].i).map(id => ({ t: "q", id, qt: placeQt(id), src: "place" }));
+  startSession("place", steps, "Placement", { onEnd: (S, early) => { if (early) return; placeAfterSteps(); } });
+}
+function placeRecord(step, ok) {
+  const t = PSECS[RUN.sec];
+  RUN.ans[step.id] = ok ? 1 : 0; RUN.ts = Date.now();
+  if (t === "vocab") { RUN.v.bi++; if (ok) RUN.v.ok++; }
+  else RUN.res[t].i++;
+  save("run");
+}
+function placeAfterSteps() {
+  const t = PSECS[RUN.sec];
+  if (t === "vocab") {
+    const v = RUN.v; const lv = v.lv;
+    v.res[lv] = [v.ok, v.block.length];
+    const pass = v.ok >= 4;
+    const passedAny = Object.keys(v.res).some(l => v.res[l][0] >= 4);
+    let next = null;
+    if (pass) { if (lv < 10 && !v.res[lv + 1]) next = lv + 1; }
+    else if (!passedAny) { if (lv > 0 && !v.res[lv - 1]) next = lv - 1; }
+    else if (!v.extra && lv < 10 && !v.res[lv + 1]) { v.extra = true; next = lv + 1; }
+    if (next != null) { v.lv = next; v.block = pickN(LIST.vocab[next], 5); v.bi = 0; v.ok = 0; save("run"); return placeSection(); }
+  }
+  RUN.sec++; save("run");
+  placeIntro();
+}
+function pausePlacement() { SESSION = null; save("run"); flush(); go("today"); }
+function finishPlacement() {
+  const run = RUN; const pl = { at: Date.now() };
+  // vocabulary
+  const vr = run.v.res; const passed = Object.keys(vr).filter(l => vr[l][0] >= 4).map(Number);
+  const P = passed.length ? Math.max(...passed) : -1;
+  pl.vocab = { P, start: Math.min(10, P + 1), res: vr };
+  // other tracks: a level counts if at least 60% of its questions were right (2 of 3; 3 of 4 for reasoning); placement = highest unbroken run of levels
+  PSECS.slice(1).forEach(t => {
+    const per = {};
+    run.q[t].forEach(id => { const l = BY[id].level; per[l] = per[l] || [0, 0]; if (run.ans[id] != null) { per[l][1]++; per[l][0] += run.ans[id]; } });
+    let Pt = TR[t].min - 1;
+    for (let l = TR[t].min; l <= TR[t].max; l++) { const r = per[l]; if (r && r[1] && r[0] >= Math.ceil(r[1] * 0.6)) Pt = l; else break; }
+    pl[t] = { P: Pt, start: Math.min(TR[t].max, Math.max(TR[t].min, Pt + 1)), res: per, all: Pt >= TR[t].max };
+  });
+  pl.vocab.all = P >= 10;
+  // items answered correctly are treated as already known (checked again in about a week)
+  for (const id in run.ans) {
+    if (!BY[id]) continue;
+    if (isProb(id)) { if (run.ans[id]) { const n = nowMin(); R[id] = [1, n + 60 * DAY, 1, 1, n]; } continue; }
+    if (run.ans[id] && !seen(id)) setKnown(id, 3, 7);
+  }
+  ST.pl = pl; RUN = null; RUNCLR = Date.now();
+  if (!ST.set.ts) { ST.set.goal = 5; }
+  save("state", "srs", "run"); flush();
+  showResults(true);
+}
+function showResults(fresh) {
+  const pl = ST.pl; if (!pl) return go("today");
+  VIEW = { name: "screen" };
+  setTabs(fresh ? null : "progress");
+  const v = pl.vocab;
+  const ex = lv => (LIST.vocab[lv] || []).slice(0, 3).map(id => BY[id].term);
+  const prof = [];
+  for (let l = 0; l <= 10; l++) { const r = v.res && v.res[l]; prof.push(`<div class="r"><span>${esc(lvName("vocab", l))}</span><div class="bar"><i style="width:${r ? Math.round(100 * r[0] / r[1]) : 0}%"></i></div><b>${r ? (+r[0] || 0) + "/" + (+r[1] || 0) : (v.P >= 0 && l < Object.keys(v.res).map(Number).sort((a, b) => a - b)[0] ? "✓" : "–")}</b></div>`); }
+  const sum = v.P < 0 ? `You're starting at <b>Foundations</b>, the core words that matter most for reading news, forms and work. That's the right place to build from.`
+    : v.all ? `You knew the words at every level, including the rarest. Use the level tests to confirm, then keep going through review and the other tracks.`
+    : `Your vocabulary is solid through <b>${esc(lvName("vocab", v.P))}</b> (words like ${ex(v.P).map(w => "<i>" + esc(w) + "</i>").join(", ")}). You'll start at <b>${esc(lvName("vocab", v.start))}</b>, with words like ${ex(v.start).map(w => "<i>" + esc(w) + "</i>").join(", ")}.`;
+  const rows = PSECS.slice(1).map(t => { const p = pl[t]; return `<tr><td>${esc(TR[t].name)}</td><td>${p.P < TR[t].min ? "Start at Level " + TR[t].min : p.all ? "All levels ✓" : "Solid through Level " + p.P}</td><td>${p.all ? "Review & test out" : "Level " + p.start}</td></tr>`; }).join("");
+  $("main").innerHTML = `<section class="card"><h3>Placement results${pl.manual ? " (chosen by you)" : ""}</h3><h2>Your starting point</h2>
+    <p>${sum}</p>${pl.manual ? "" : `<div class="prof" aria-label="Vocabulary by level">${prof.join("")}</div>
+    <p class="hint">Bars show how many of the 5 test words you knew at each level. A ✓ means levels below where you started, counted as known because you passed the levels above them. 4 out of 5 counts as a pass.</p>`}
+    <table><thead><tr><th>Track</th><th>Result</th><th>You start at</th></tr></thead><tbody>${rows}</tbody></table>
+    <p class="sub">Words you got right in the test are marked as known and checked again in about a week, so they don't become new cards.</p>
+    ${fresh ? `<button class="btn primary block" type="button" id="rgo">Start learning</button>` : `<button class="btn block" type="button" id="rretake">Retake the placement test</button>`}</section>`;
+  if ($("rgo")) $("rgo").onclick = () => go("today");
+  if ($("rretake")) $("rretake").onclick = () => confirmRetake();
+}
+function confirmRetake() {
+  $("dlgin").innerHTML = `<h2>Retake the placement test?</h2><p>Your current progress stays. The new result changes where new words come from in each track.</p>
+    <div class="row"><button class="btn primary" type="button" id="ry">Start the test</button><button class="btn" type="button" id="rn">Cancel</button></div>`;
+  $("dlg").showModal(); $("rn").onclick = () => $("dlg").close();
+  $("ry").onclick = () => { $("dlg").close(); startPlacement(false); };
+}
+function skipPlacement() {
+  $("dlgin").innerHTML = `<h2>Choose where to start</h2><p>The placement test is more accurate, and you can take it later from Progress. For now, where should vocabulary start?</p>
+    <div class="list">${[[0, "Building the basics", "Foundations: core words for news, work and forms"], [3, "Average reader", "Level 3: words like ambiguous, pragmatic, empirical"], [6, "Strong reader", "Level 6: words like mercurial, nebulous, quandary"], [8, "Very advanced", "Level 8: words like obsequious, garrulous, sophistry"]]
+      .map(([l, t, d]) => `<button class="li" type="button" data-sk="${l}"><span class="ic">${l}</span><span class="tx"><span class="t">${t}</span><span class="d">${d}</span></span></button>`).join("")}</div>
+    <button class="btn" type="button" id="skc">Cancel</button>`;
+  $("dlg").showModal(); $("skc").onclick = () => $("dlg").close();
+  document.querySelectorAll("[data-sk]").forEach(b => b.onclick = () => {
+    const l = +b.dataset.sk; const pl = { at: Date.now(), manual: true, vocab: { P: l - 1, start: l, res: {} } };
+    PSECS.slice(1).forEach(t => { pl[t] = { P: TR[t].min - 1, start: TR[t].min, res: {} }; });
+    ST.pl = pl; save("state"); $("dlg").close(); go("today");
+  });
+}
+
+/* ============ level tests ============ */
+function testSize(t) { return t === "vocab" ? 25 : 20; }
+function startTest(t, l) {
+  const pool = idsAt(t, l);
+  const ids = pickN(pool, Math.min(testSize(t), pool.length));
+  const steps = ids.map(id => {
+    const x = BY[id];
+    const qt = isProb(id) ? "prob" : isConcept(id) ? pickOne(["scenario", "scenario", "mean"]) : x.track === "roots" ? pickOne(["mean", "rootword", "word"]) : pickOne(["mean", "cloze", "word"]);
+    return { t: "q", id, qt, src: "test" };
+  });
+  $("dlg").open && $("dlg").close();
+  startSession("test", steps, "Level test", { track: t, level: l, onEnd: testEnd });
+}
+function testRecord(step, ok) {
+  const id = step.id; const n = nowMin();
+  if (isProb(id)) { const o = R[id] || [0, n, 0, 0, 0]; R[id] = ok ? [1, n + 60 * DAY, o[2] + 1, o[3] + 1, n] : [0, n + DAY, o[2] + 1, o[3], n]; }
+  else if (!seen(id)) { if (ok) setKnown(id, 2, 3); else R[id] = [0, n, 1, 0, n]; }
+  else if (!ok) grade(id, false);
+  else if (R[id][1] <= n) grade(id, true);
+  save("srs");
+}
+function testEnd(S, early) {
+  const t = S.track, l = S.level;
+  VIEW = { name: "screen" };
+  if (early) { save("srs"); return go("tracks", { t }); }
+  const pct = S.total ? S.right / S.total : 0; const pass = pct > 0.9;
+  ST.lv[t] = ST.lv[t] || {};
+  const a = ST.lv[t][l] || {};
+  ST.lv[t][l] = { best: Math.max(a.best || 0, Math.round(pct * 100)), passed: !!(a.passed || pass), n: (a.n || 0) + 1, at: Date.now() };
+  logDay("rev", true);
+  save("state", "srs"); flush();
+  const missed = [...new Set(S.missed)];
+  setTabs("tracks");
+  $("main").innerHTML = `<section class="card center"><h3>${esc(TR[t].name)} · ${esc(lvName(t, l))} test</h3><div class="big">${Math.round(pct * 100)}%</div>
+    <p>${S.right} of ${S.total} correct. ${pass ? "<b>Passed.</b> " + (l < TR[t].max ? "The next level is now your current level." : "That's the top level of this track.") : "You need above 90% to pass. The words you missed are now in your review queue."}</p>
+    ${missed.length ? `<div style="width:100%;text-align:left"><h3>Missed</h3><ul class="list" style="margin-top:8px">${missed.map(id => itemLi(id)).join("")}</ul></div>` : ""}
+    <div class="row" style="justify-content:center"><button class="btn primary" type="button" id="tdone">Back to ${esc(TR[t].name)}</button>${missed.length ? `<button class="btn" type="button" id="tstudy">Study the missed ones now</button>` : ""}</div></section>`;
+  bindItemLis();
+  $("tdone").onclick = () => go("tracks", { t });
+  if ($("tstudy")) $("tstudy").onclick = () => startSession("practice", missed.flatMap(id => isProb(id) ? [{ t: "q", id, src: "rev" }] : [{ t: "learn", id }, { t: "q", id, src: "rev", qt: "mean" }]), "Practice");
+}
+
+/* ============ views ============ */
+let VIEW = { name: "today" };
+function setTabs(name) {
+  $("tabs").hidden = !name;
+  document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-current", b.dataset.tab === name ? "page" : "false"));
+}
+document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => go(b.dataset.tab));
+function go(name, args) {
+  if (SESSION) { SESSION = null; }
+  astatus("");
+  VIEW = Object.assign({ name }, args || {}); window.scrollTo(0, 0); render();
+}
+function render() {
+  if (!TABVIEWS.includes(VIEW.name)) VIEW = { name: "today" };
+  const v = VIEW.name;
+  setTabs(["today", "tracks", "progress", "settings"].includes(v) ? v : null);
+  if (v === "today") return viewToday();
+  if (v === "tracks") return VIEW.t ? (VIEW.l != null ? viewLevel(VIEW.t, VIEW.l) : viewTrack(VIEW.t)) : viewTracks();
+  if (v === "progress") return viewProgress();
+  if (v === "settings") return viewSettings();
+}
+function itemLi(id) {
+  const x = BY[id]; const st = statusOf(id);
+  const label = isProb(id) ? x.term : x.term;
+  const d = isProb(id) ? x.q : x.def;
+  return `<li><button class="li" type="button" data-open="${esc(id)}"><span class="dot ${st === "l" || st === "q" ? "l" : st}" aria-hidden="true"></span><span class="tx"><span class="t">${esc(label)}</span><span class="d">${esc(d)}</span></span></button></li>`;
+}
+function bindItemLis() { document.querySelectorAll("[data-open]").forEach(b => b.onclick = () => openCard(b.dataset.open)); }
+function searchBox() {
+  return `<div><label class="f" for="q">Look something up<input type="search" id="q" placeholder="Search ${DATA.length.toLocaleString()} words, phrases and terms" autocomplete="off"></label><ul class="list" id="qres" style="margin-top:8px"></ul></div>`;
+}
+function bindSearch() {
+  const q = $("q"); if (!q) return;
+  q.oninput = () => {
+    const s = q.value.trim().toLowerCase(); const out = $("qres");
+    if (s.length < 2) { out.innerHTML = ""; return; }
+    const starts = [], has = [];
+    for (const x of DATA) { const t = x.term.toLowerCase(); if (t.startsWith(s)) starts.push(x.id); else if (t.includes(s) || (!isProb(x.id) && (x.def || "").toLowerCase().includes(s))) has.push(x.id); if (starts.length > 12) break; }
+    const res = starts.concat(has).slice(0, 12);
+    out.innerHTML = res.length ? res.map(itemLi).join("") : `<li class="hint">Nothing found. The course covers ${DATA.length.toLocaleString()} items; this one isn't among them.</li>`;
+    bindItemLis();
+  };
+}
+function viewToday() {
+  const d = today(); const nToday = ST.day.d === d ? ST.day.n : 0; const rToday = ST.day.d === d ? ST.day.r : 0;
+  const due = dueList().length; const goal = ST.set.goal;
+  const pct = Math.min(100, Math.round(100 * nToday / Math.max(1, goal)));
+  const streak = ST.streak.last === d || ST.streak.last === ymd(new Date(Date.now() - 864e5)) ? ST.streak.n : 0;
+  let h = "";
+  if (RUN) h += `<section class="card hi"><h3>Placement test in progress</h3><p>You're on part ${RUN.sec + 1} of ${PSECS.length} (${esc(TR[PSECS[RUN.sec]] ? TR[PSECS[RUN.sec]].name : "")}).</p><button class="btn primary" type="button" id="pres">Continue the placement test</button></section>`;
+  else if (!ST.pl) h += `<section class="card hi"><h3>Start here</h3><h2>Find your level</h2>
+    <p>A placement test of about 80–100 questions (around 20–25 minutes) measures your vocabulary, idioms, cultural references, general knowledge, word roots and reasoning. You can pause it any time and finish later. Your daily lessons then start at the right level for each track.</p>
+    <div class="row"><button class="btn primary" type="button" id="pstart">Take the placement test</button><button class="btn" type="button" id="pskip">Skip — I'll choose</button></div></section>`;
+  const doneGoal = nToday >= goal;
+  h += `<section class="card"><div class="goal"><div class="ring" style="--p:${+pct || 0}"><span>${+nToday || 0}/${+goal || 0}</span></div>
+      <div><h2>${doneGoal && !due ? "Done for today" : "Today"}</h2><p class="sub">${nToday} of ${goal} new · ${due} review${due === 1 ? "" : "s"} due · ${rToday} answered today${streak ? ` · ${streak}-day streak` : ""}</p></div></div>
+    ${(!doneGoal || due) ? `<button class="btn primary block" type="button" id="daily">${!doneGoal ? `Start today's session` : `Review ${due} due`}</button>` : ""}
+    <div class="row"><span class="sub">Want more?</span>
+      <button class="btn small" type="button" data-more="5">Learn 5 more</button>
+      <button class="btn small" type="button" data-more="10">10 more</button>
+      <button class="btn small" type="button" data-more="20">20 more</button></div>
+    ${trackOn("reasoning") ? `<button class="btn block" type="button" id="workout">Reasoning workout · 5 problems</button>` : ""}
+  </section>`;
+  h += `<section class="card">${searchBox()}</section>`;
+  h += `<section class="card"><h3>Your tracks</h3><ul class="list">${TORDER.filter(trackOn).map(t => trackLi(t)).join("")}</ul></section>`;
+  $("main").innerHTML = h;
+  bindSearch();
+  document.querySelectorAll("[data-track]").forEach(b => b.onclick = () => go("tracks", { t: b.dataset.track }));
+  if ($("pres")) $("pres").onclick = () => startPlacement(true);
+  if ($("pstart")) $("pstart").onclick = () => startPlacement(false);
+  if ($("pskip")) $("pskip").onclick = () => skipPlacement();
+  if ($("daily")) $("daily").onclick = () => { const s = buildDaily(); if (!s.length) return toast("Nothing due right now. Try “Learn 5 more”."); startSession("daily", s, "Today"); };
+  document.querySelectorAll("[data-more]").forEach(b => b.onclick = () => { const s = buildDaily(+b.dataset.more); if (!s.length) return toast("You've studied everything in your switched-on tracks."); startSession("more", s, "More"); });
+  if ($("workout")) $("workout").onclick = () => { const p = pickProblems(5); if (!p.length) return toast("You've solved every problem. Wrong ones come back after a day."); startSession("practice", p.map(id => ({ t: "q", id, src: "prob" })), "Workout"); };
+}
+function toast(msg) { astatus(msg); setTimeout(() => astatus(""), 4000); }
+function trackCounts(t) {
+  let learned = 0, total = 0, mastered = 0;
+  for (const l in LIST[t]) for (const id of LIST[t][l]) { total++; const s = statusOf(id); if (s === "l" || s === "k" || s === "m") learned++; if (s === "m") mastered++; }
+  if (t === "reasoning") for (const l in PROB) for (const id of PROB[l]) { total++; if (R[id] && R[id][0] >= 1) learned++; }
+  return { learned, total, mastered };
+}
+function trackLi(t) {
+  const c = trackCounts(t); const l = cur(t);
+  return `<li><button class="li" type="button" data-track="${t}"><span class="ic">${esc(TR[t].icon)}</span><span class="tx"><span class="t">${esc(TR[t].name)}</span><span class="d">${esc(lvName(t, l))} · ${c.learned} of ${c.total} learned</span><span class="bar" style="margin-top:6px"><i style="width:${Math.round(100 * c.learned / c.total)}%"></i></span></span></button></li>`;
+}
+function viewTracks() {
+  $("main").innerHTML = `<section class="card"><h2>Tracks</h2><p class="sub">Vocabulary is the core. The other tracks build the knowledge and reasoning that strong readers draw on. Switch tracks on or off in Settings.</p>
+    <ul class="list">${TORDER.map(t => trackLi(t)).join("")}</ul></section><section class="card">${searchBox()}</section>`;
+  document.querySelectorAll("[data-track]").forEach(b => b.onclick = () => go("tracks", { t: b.dataset.track }));
+  bindSearch();
+}
+function viewTrack(t) {
+  const c = cur(t);
+  let rows = "";
+  for (let l = TR[t].min; l <= TR[t].max; l++) {
+    const ids = idsAt(t, l); let learned = 0; ids.forEach(id => { const s = statusOf(id); if (s === "l" || s === "k" || s === "m" || (isProb(id) && R[id] && R[id][0] >= 1)) learned++; });
+    const rec = lvRec(t, l);
+    const tag = rec && rec.passed ? `<span class="chip">Passed ${+rec.best || 0}%</span>` : l === c ? `<span class="chip warn">Current</span>` : l < c ? `<span class="chip mute">Placed</span>` : rec ? `<span class="chip mute">Best ${+rec.best || 0}%</span>` : "";
+    rows += `<li><button class="li" type="button" data-lv="${l}"><span class="ic">${t === "vocab" && l === 0 ? "F" : l}</span><span class="tx"><span class="t">${esc(lvName(t, l))} ${tag}</span><span class="d">${learned} of ${ids.length} learned</span><span class="bar" style="margin-top:6px"><i style="width:${Math.round(100 * learned / ids.length)}%"></i></span></span></button></li>`;
+  }
+  $("main").innerHTML = `<section class="card"><button class="linkbtn" type="button" id="back">← All tracks</button><h2>${esc(TR[t].name)}</h2><p class="sub">${esc(TR[t].blurb)}</p>
+    <p class="sub">New items come from your current level first. Pass a level's test with <b>above 90%</b> to move up. You can open, study or test any level.</p>
+    ${trackOn(t) ? "" : `<p class="note">This track is switched off, so it isn't in your daily sessions. Turn it on in Settings.</p>`}
+    <ul class="list">${rows}</ul></section>`;
+  $("back").onclick = () => go("tracks");
+  document.querySelectorAll("[data-lv]").forEach(b => b.onclick = () => go("tracks", { t, l: +b.dataset.lv }));
+}
+function viewLevel(t, l) {
+  const ids = idsAt(t, l); const rec = lvRec(t, l);
+  const unseen = ids.filter(id => !isProb(id) && !seen(id));
+  $("main").innerHTML = `<section class="card"><button class="linkbtn" type="button" id="back">← ${esc(TR[t].name)}</button>
+    <h2>${esc(TR[t].name)} · ${esc(lvName(t, l))}</h2>
+    <p class="sub">${ids.length} items${rec ? ` · best test score ${+rec.best || 0}%${rec.passed ? " (passed)" : ""}` : ""}</p>
+    <div class="row"><button class="btn primary" type="button" id="ltest">Take the level test (${Math.min(testSize(t), ids.length)} questions)</button>
+    ${unseen.length ? `<button class="btn" type="button" id="lstudy">Learn ${Math.min(10, unseen.length)} new from this level</button>` : ""}</div>
+    <p class="hint">Dots: <span class="dot" style="display:inline-block"></span> new · <span class="dot l" style="display:inline-block"></span> learning · <span class="dot k" style="display:inline-block"></span> known · <span class="dot m" style="display:inline-block"></span> mastered</p>
+    <ul class="list">${ids.map(itemLi).join("")}</ul></section>`;
+  bindItemLis();
+  $("back").onclick = () => go("tracks", { t });
+  $("ltest").onclick = () => startTest(t, l);
+  if ($("lstudy")) $("lstudy").onclick = () => {
+    const pick = unseen.slice(0, 10); const steps = [];
+    for (let g = 0; g < pick.length; g += 3) { const grp = pick.slice(g, g + 3); grp.forEach(id => steps.push({ t: "learn", id })); grp.forEach(id => steps.push({ t: "q", id, src: "new", qt: "mean" })); }
+    startSession("more", steps, "Level study");
+  };
+}
+function viewProgress() {
+  let learned = 0, known = 0, mastered = 0;
+  for (const id in R) { if (!BY[id] || isProb(id)) continue; const s = statusOf(id); if (s === "l" || s === "k" || s === "m") learned++; if (s === "k" || s === "m") known++; if (s === "m") mastered++; }
+  const ret = ST.ret[1] ? Math.round(100 * ST.ret[0] / ST.ret[1]) + "%" : "–";
+  const days = []; for (let i = 13; i >= 0; i--) { const dd = new Date(Date.now() - i * 864e5); days.push([ymd(dd), dd]); }
+  const vals = days.map(([k]) => { const h = ST.hist[k] || [0, 0, 0]; return h[0] + h[1]; }); const mx = Math.max(1, ...vals);
+  const hard = Object.keys(R).filter(id => BY[id] && !isProb(id) && R[id][2] - R[id][3] >= 2).sort((a, b) => (R[b][2] - R[b][3]) - (R[a][2] - R[a][3])).slice(0, 15);
+  const vocabWords = Object.keys(R).filter(id => id.startsWith("v-") && (statusOf(id) === "k" || statusOf(id) === "m")).length;
+  $("main").innerHTML = `<section class="card"><h2>Progress</h2>
+    <div class="stats"><div class="stat"><b>${learned}</b><span>items studied</span></div><div class="stat"><b>${known}</b><span>known</span></div><div class="stat"><b>${mastered}</b><span>mastered</span></div><div class="stat"><b>${ret}</b><span>remembered after a week or more</span></div></div>
+    <p class="hint"><b>Known</b> means answered correctly at spaced intervals for a week or more. <b>Mastered</b> means still correct after more than a month. <b>Remembered</b> is the share of answers that were right on items last seen at least a week before.</p>
+    <p class="sub">Vocabulary words known: <b>${vocabWords}</b> of ${countTrack("vocab")}.</p></section>
+  <section class="card"><h3>Last 14 days (answers + new items)</h3><div class="chart" aria-label="Activity chart">${vals.map(v => `<div style="height:${Math.round(100 * v / mx)}%" title="${v}"></div>`).join("")}</div>
+    <div class="chartx">${days.map(([, dd]) => `<span>${dd.getDate()}</span>`).join("")}</div></section>
+  <section class="card"><h3>By track</h3><table><thead><tr><th>Track</th><th>Level</th><th>Learned</th><th>Tests passed</th></tr></thead><tbody>
+    ${TORDER.map(t => { const c = trackCounts(t); const p = Object.values(ST.lv[t] || {}).filter(r => r.passed).length; return `<tr><td>${esc(TR[t].name)}</td><td class="nw">${esc(lvName(t, cur(t)))}</td><td>${c.learned}/${c.total}</td><td>${p}</td></tr>`; }).join("")}</tbody></table></section>
+  ${hard.length ? `<section class="card"><h3>Hardest for you</h3><ul class="list">${hard.map(itemLi).join("")}</ul><button class="btn" type="button" id="hardgo">Practice these</button></section>` : ""}
+  <section class="card"><h3>Placement</h3>${ST.pl ? `<p>${ST.pl.manual ? "You chose your starting level" : "Taken " + new Date(ST.pl.at).toLocaleDateString()}.</p><div class="row"><button class="btn" type="button" id="seeres">See results</button><button class="btn" type="button" id="retake">Retake the test</button></div>` : `<p>Not taken yet.</p><button class="btn primary" type="button" id="retake">Take the placement test</button>`}</section>`;
+  bindItemLis();
+  if ($("hardgo")) $("hardgo").onclick = () => startSession("practice", hard.map(id => ({ t: "q", id, src: "rev" })), "Practice");
+  if ($("seeres")) $("seeres").onclick = () => showResults(false);
+  if ($("retake")) $("retake").onclick = () => ST.pl ? confirmRetake() : startPlacement(false);
+}
+function viewSettings() {
+  const s = ST.set;
+  $("main").innerHTML = `<section class="card"><h2>Settings</h2>
+    <label class="f">New items per day
+      <select id="s-goal">${[1, 2, 3, 5, 8, 10, 15, 20, 30, 50].map(n => `<option value="${n}"${n === s.goal ? " selected" : ""}>${n}</option>`).join("")}</select></label>
+    <p class="hint">Reviews of things you've already learned always come first and don't count toward this number. After you reach your goal, use “Learn more” on Today to keep going.</p>
+    <label class="f">What new items should be
+      <select id="s-mix"><option value="focus"${s.mix === "focus" ? " selected" : ""}>Mostly vocabulary (about 2 in 3), with the other tracks mixed in</option>
+      <option value="balanced"${s.mix === "balanced" ? " selected" : ""}>Balanced across all tracks</option>
+      <option value="vocab"${s.mix === "vocab" ? " selected" : ""}>Vocabulary only</option></select></label>
+    <fieldset style="border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:8px"><legend class="sub" style="margin-bottom:6px">Tracks in your daily sessions</legend>
+      <label class="c"><input type="checkbox" checked disabled> Vocabulary (always on)</label>
+      ${TORDER.slice(1).map(t => `<label class="c"><input type="checkbox" data-tr="${t}"${s.tracks[t] ? " checked" : ""}> ${esc(TR[t].name)}</label>`).join("")}</fieldset>
+    <label class="f">Typed answers
+      <select id="s-typed"><option value="off"${s.typed === "off" ? " selected" : ""}>Off: multiple choice and fill-in only</option>
+      <option value="some"${s.typed === "some" ? " selected" : ""}>Sometimes, for well-learned items (recommended)</option>
+      <option value="often"${s.typed === "often" ? " selected" : ""}>Often: the strongest test of memory</option></select></label>
+    <p class="hint">Typed definitions are graded by Claude through Study Hall's AI. Each check uses one of your daily AI replies. If AI isn't available, you grade yourself.</p></section>
+  <section class="card"><h3>Audio</h3>
+    <label class="f">Voice<select id="s-voice"></select></label>
+    <label class="f">Speed<select id="s-rate">${[["0.75", "Slow"], ["0.95", "Normal"], ["1.1", "Fast"]].map(([v, l]) => `<option value="${v}"${v === DEV.rate ? " selected" : ""}>${l}</option>`).join("")}</select></label>
+    <label class="c"><input type="checkbox" id="s-auto"${DEV.auto ? " checked" : ""}> Say new words out loud automatically</label>
+    <button class="btn" type="button" id="s-test">Test voice</button>
+    <p class="hint">Audio uses your device's built-in voices, so it sounds different on each device. Audio settings are saved on this device only. If you hear nothing on iPhone, check the silent switch. For a better voice, go to Settings → Accessibility → Spoken Content → Voices → English and download an “Enhanced” U.S. voice.</p></section>
+  <section class="card"><h3>Start over</h3><p class="sub">Erase all Word Power progress on every device. This can't be undone.</p><button class="btn" type="button" id="s-reset">Reset my progress</button></section>`;
+  const touch = () => { ST.set.ts = Date.now(); save("state"); };
+  $("s-goal").onchange = e => { ST.set.goal = +e.target.value; touch(); };
+  $("s-mix").onchange = e => { ST.set.mix = e.target.value; touch(); };
+  $("s-typed").onchange = e => { ST.set.typed = e.target.value; touch(); };
+  document.querySelectorAll("[data-tr]").forEach(c => c.onchange = () => { ST.set.tracks[c.dataset.tr] = c.checked; touch(); });
+  fillVoices($("s-voice"));
+  $("s-voice").onchange = e => { DEV.voice = e.target.value; saveDev(); };
+  $("s-rate").onchange = e => { DEV.rate = e.target.value; saveDev(); };
+  $("s-auto").onchange = e => { DEV.auto = e.target.checked; saveDev(); };
+  $("s-test").onclick = () => speak("Ubiquitous: present, appearing, or found everywhere.");
+  $("s-reset").onclick = () => {
+    $("dlgin").innerHTML = `<h2>Reset all progress?</h2><p>Type <b>reset</b> to confirm.</p><input type="text" id="rconf" autocomplete="off"><div class="row"><button class="btn" type="button" id="rgo2">Erase everything</button><button class="btn primary" type="button" id="rno">Cancel</button></div>`;
+    $("dlg").showModal(); $("rno").onclick = () => $("dlg").close();
+    $("rgo2").onclick = () => { if ($("rconf").value.trim().toLowerCase() !== "reset") return; const t0 = Date.now(); ST = freshState(); ST.set.ts = t0; ST.resetAt = t0; R = {}; RUN = null; RUNCLR = t0; save("state", "srs", "run"); flush(); $("dlg").close(); go("today"); };
+  };
+}
+
+/* ============ start ============ */
+render();
+connect();
+setTimeout(() => { if (synth && !voices.length) loadVoices(); }, 1500);
+</script>
+</body>
+</html>

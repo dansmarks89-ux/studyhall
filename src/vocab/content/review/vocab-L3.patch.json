@@ -1,0 +1,356 @@
+[
+ {
+  "id": "v-redundant",
+  "set": {
+   "ex": [
+    "The editor cut redundant phrases like 'free gift' and 'past history.'",
+    "The new manager removed several redundant steps from the approval process, cutting the wait in half."
+   ]
+  },
+  "why": "ex2 used engineering 'backup' sense where redundancy is desirable, contradicting def 'not needed'"
+ },
+ {
+  "id": "v-dubious",
+  "set": {
+   "ex": [
+    "The website made dubious claims that the pill could cure any illness.",
+    "Raj was wary of the seller's dubious promise that the used car had never been in an accident."
+   ]
+  },
+  "why": "ex2 showed the 'unconvinced' sense, not the defined sense (probably not honest/true/reliable)"
+ },
+ {
+  "id": "v-precursor",
+  "set": {
+   "ex": [
+    "The telegraph was a precursor of the telephone.",
+    "The rough sketch Sofia drew in college was the precursor to her award-winning bridge design."
+   ],
+   "syn": [
+    "forerunner",
+    "predecessor",
+    "antecedent"
+   ]
+  },
+  "why": "ex2 (chest pain before heart attack) is a warning sign, not something that leads to the later development as defined; harbinger likewise means a sign, not a forerunner"
+ },
+ {
+  "id": "v-seldom",
+  "set": {
+   "ex": [
+    "Aisha seldom eats dessert, saving it for birthdays and holidays.",
+    "The rare bird is seldom seen this far north in winter."
+   ]
+  },
+  "why": "ex1 was confusing: fish presented as an exception to 'meat', and 'seldom' already allows occasional cases"
+ },
+ {
+  "id": "v-presume",
+  "set": {
+   "ex": [
+    "I presume you've already eaten, since you're so late.",
+    "The package was presumed lost until it turned up on a neighbor's porch a week later."
+   ]
+  },
+  "why": "ex2 'presumed lost until a ranger found them' is illogical (they really were lost)"
+ },
+ {
+  "id": "v-rigorous",
+  "set": {
+   "ex": [
+    "The new vaccine went through rigorous testing before regulators approved it.",
+    "Before publishing, the newspaper put the story through a rigorous fact-check of every name and number."
+   ]
+  },
+  "why": "ex2 showed the 'physically demanding' sense, not the defined 'thorough and careful' sense"
+ },
+ {
+  "id": "v-pragmatic",
+  "set": {
+   "cloze": {
+    "s": "The couple dreamed of a lavish wedding, but their ___ friend pointed out that a small party would leave money for a house.",
+    "a": "pragmatic"
+   }
+  },
+  "why": "cloze paired a woman wanting a lavish wedding with a practical man (gender cliché)"
+ },
+ {
+  "id": "v-superficial",
+  "set": {
+   "def": "existing only on the surface, or concerned only with appearances, lacking depth or seriousness"
+  },
+  "why": "ex2 ('superficial damage') is the literal on-the-surface sense, which the def did not cover"
+ },
+ {
+  "id": "v-malicious",
+  "set": {
+   "syn": [
+    "spiteful",
+    "malevolent",
+    "mean-spirited"
+   ]
+  },
+  "why": "'hurtful' does not imply intent, which is the core of the def"
+ },
+ {
+  "id": "v-obsolete",
+  "set": {
+   "syn": [
+    "outdated",
+    "outmoded",
+    "antiquated"
+   ]
+  },
+  "why": "'defunct' means no longer existing/operating, not outdated"
+ },
+ {
+  "id": "v-ambiguous",
+  "set": {
+   "syn": [
+    "unclear",
+    "equivocal",
+    "open to interpretation"
+   ]
+  },
+  "why": "'vague' (imprecise) is not a synonym of ambiguous (more than one meaning) — a classic confusion"
+ },
+ {
+  "id": "v-elusive",
+  "set": {
+   "syn": [
+    "slippery",
+    "hard to pin down",
+    "hard to catch"
+   ]
+  },
+  "why": "'fleeting' means brief, not hard to catch/find"
+ },
+ {
+  "id": "v-prolific",
+  "set": {
+   "syn": [
+    "productive",
+    "fruitful"
+   ]
+  },
+  "why": "'abundant' means plentiful, not productive (a writer is not 'abundant')"
+ },
+ {
+  "id": "v-benign",
+  "set": {
+   "syn": [
+    "harmless",
+    "innocuous",
+    "gentle"
+   ]
+  },
+  "why": "'kindly' is the kind-disposition sense, not the defined 'harmless' sense"
+ },
+ {
+  "id": "v-paradox",
+  "set": {
+   "syn": [
+    "contradiction"
+   ]
+  },
+  "why": "'enigma' (a mystery) is not a synonym of paradox"
+ },
+ {
+  "id": "v-mutually",
+  "set": {
+   "syn": [
+    "jointly",
+    "reciprocally"
+   ]
+  },
+  "why": "'commonly' means usually/widely, not reciprocally"
+ },
+ {
+  "id": "v-advent",
+  "set": {
+   "ant": [
+    "end"
+   ]
+  },
+  "why": "'departure' is not a real antonym of advent"
+ },
+ {
+  "id": "v-rigorous",
+  "remove_dx": [
+   "v-relentless",
+   "v-formidable"
+  ],
+  "why": "'relentless research' / 'formidable research' also fit the cloze sensibly"
+ },
+ {
+  "id": "v-empirical",
+  "remove_dx": [
+   "v-tangible",
+   "v-rigorous"
+  ],
+  "why": "'tangible evidence' and 'rigorous evidence' fit the cloze"
+ },
+ {
+  "id": "v-rampant",
+  "remove_dx": [
+   "v-relentless"
+  ],
+  "why": "'wildfires were relentless across the region' fits the cloze"
+ },
+ {
+  "id": "v-ubiquitous",
+  "remove_dx": [
+   "v-rampant"
+  ],
+  "why": "rampant (spreading widely) overlaps the def and fits 'cameras are now ___'"
+ },
+ {
+  "id": "v-ominous",
+  "remove_dx": [
+   "v-imminent"
+  ],
+  "why": "imminent's def ('about to happen, often threatening') overlaps ominous for question (a)/(b)"
+ },
+ {
+  "id": "v-daunting",
+  "remove_dx": [
+   "v-grim",
+   "v-rigorous"
+  ],
+  "why": "'seemed grim/rigorous at first' could fill the cloze"
+ },
+ {
+  "id": "v-wary",
+  "remove_dx": [
+   "v-dubious"
+  ],
+  "why": "'dubious of' (doubtful about) can fill the cloze and overlaps in meaning"
+ },
+ {
+  "id": "v-tentative",
+  "remove_dx": [
+   "v-pragmatic"
+  ],
+  "why": "'reached a pragmatic agreement' fits the cloze"
+ },
+ {
+  "id": "v-mediocre",
+  "remove_dx": [
+   "v-superficial"
+  ],
+  "why": "'Critics called the sequel superficial' fits the cloze"
+ },
+ {
+  "id": "v-superficial",
+  "remove_dx": [
+   "v-tedious"
+  ],
+  "why": "'Their friendship was tedious; they chatted about the weather' is sensible"
+ },
+ {
+  "id": "v-malicious",
+  "remove_dx": [
+   "v-detrimental"
+  ],
+  "why": "detrimental ('causing harm') overlaps the def and fits 'a ___ act'"
+ },
+ {
+  "id": "v-grim",
+  "remove_dx": [
+   "v-daunting"
+  ],
+  "why": "daunting ('frightening enough to lose confidence') overlaps grim's 'worrying' def"
+ },
+ {
+  "id": "v-prolific",
+  "remove_dx": [
+   "v-relentless"
+  ],
+  "why": "'the league's most relentless scorer' fits the cloze"
+ },
+ {
+  "id": "v-concede",
+  "remove_dx": [
+   "v-presume"
+  ],
+  "why": "'the coach had to presume that the match was lost' fits the cloze"
+ },
+ {
+  "id": "v-reinforce",
+  "remove_dx": [
+   "v-assert"
+  ],
+  "why": "'The study's findings assert what doctors suspected' is passable"
+ },
+ {
+  "id": "v-cultivate",
+  "remove_dx": [
+   "v-reinforce"
+  ],
+  "why": "'salespeople reinforce trust with clients' fits the cloze"
+ },
+ {
+  "id": "v-uphold",
+  "remove_dx": [
+   "v-cultivate"
+  ],
+  "why": "'worked hard to cultivate the tradition' is passable"
+ },
+ {
+  "id": "v-prevalence",
+  "remove_dx": [
+   "v-proliferation"
+  ],
+  "why": "proliferation (spread/increase) overlaps prevalence and fits 'rising ___ of obesity'"
+ },
+ {
+  "id": "v-advent",
+  "remove_dx": [
+   "v-prevalence"
+  ],
+  "why": "'With the prevalence of online banking, branches cut hours' fits the cloze"
+ },
+ {
+  "id": "v-backlash",
+  "remove_dx": [
+   "v-resentment"
+  ],
+  "why": "resentment overlaps (negative reaction) and nearly fits 'sparked ___ from parents'"
+ },
+ {
+  "id": "v-nostalgia",
+  "remove_dx": [
+   "v-remorse"
+  ],
+  "why": "'felt a wave of remorse' looking at a yearbook fits the cloze"
+ },
+ {
+  "id": "v-jeopardy",
+  "remove_dx": [
+   "v-turmoil"
+  ],
+  "why": "'put the whole contract in turmoil' is passable"
+ },
+ {
+  "id": "v-evidently",
+  "remove_dx": [
+   "v-profoundly"
+  ],
+  "why": "'The crowd profoundly loved the show' is passable"
+ },
+ {
+  "id": "v-inherently",
+  "remove_dx": [
+   "v-invariably"
+  ],
+  "why": "'people are not invariably selfish' fits the cloze"
+ },
+ {
+  "id": "v-admittedly",
+  "remove_dx": [
+   "v-incidentally",
+   "v-evidently"
+  ],
+  "why": "both can fill 'The hotel was, ___, a bit far from the beach'"
+ }
+]

@@ -1,0 +1,11 @@
+[
+  {"id": "p-inference-chess-claims",
+   "set": {"q": "Marcus says, “I have never lost a chess game to anyone in my club.” Bea, a member of Marcus’s club, says, “I beat Marcus in a chess game last Tuesday.” Which must be true?"},
+   "why": "Bea’s original line said only “a game,” not a chess game, so the two statements need not conflict and the marked answer was not strictly a ‘must be true’; specifying chess closes the loophole."},
+  {"id": "p-context-tenacity",
+   "set": {"options": ["good luck", "carelessness", "determined refusal to give up", "impatience", "intelligence", "creativity"]},
+   "why": "Tenacity is persistent determination and is usually a compliment, as in the sentence; ‘stubborn persistence’ adds a negative connotation the word does not carry."},
+  {"id": "p-logic-engineers-who-paint",
+   "set": {"term": "Logic: engineers who are artists"},
+   "why": "The question says ‘artists,’ not painters; the label added a detail that is not in the problem."}
+]

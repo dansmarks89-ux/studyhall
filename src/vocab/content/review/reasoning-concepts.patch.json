@@ -1,0 +1,165 @@
+[
+ {
+  "id": "c-false-dilemma",
+  "set": {
+   "tests": [
+    {
+     "s": "A coach tells his players, \"You're either fully committed to this team, or you don't care about it at all.\""
+    },
+    {
+     "s": "A phone salesperson tells Jamal, \"You either buy our top model, or you settle for a phone that can't do anything useful.\""
+    }
+   ]
+  },
+  "why": "Test 2 ('or leave your family unprotected') is also a fear appeal, and appeal to emotion is a wrong option; replaced with an emotion-free either/or"
+ },
+ {
+  "id": "c-hasty-generalization",
+  "remove_dx": [
+   "c-anecdotal-evidence"
+  ],
+  "why": "Concluding from two personal encounters is also 'relying on isolated examples' (anecdotal evidence def); both tests fit it"
+ },
+ {
+  "id": "c-anecdotal-evidence",
+  "remove_dx": [
+   "c-cherry-picking",
+   "c-correlation-vs-causation"
+  ],
+  "why": "Tests have the person ignoring large studies in favor of one story (reads as cherry-picking) and the neighbor's 'it cured me' is a causal inference from one case"
+ },
+ {
+  "id": "c-sample-size",
+  "remove_dx": [
+   "c-anecdotal-evidence"
+  ],
+  "why": "Five dentists / 15 voters can be read as 'isolated examples instead of systematic data'"
+ },
+ {
+  "id": "c-cherry-picking",
+  "remove_dx": [
+   "c-hasty-generalization",
+   "c-sample-size"
+  ],
+  "why": "Test 1 draws a broad conclusion from one unrepresentative month, which also matches hasty generalization and small sample"
+ },
+ {
+  "id": "c-appeal-to-emotion",
+  "remove_dx": [
+   "c-red-herring"
+  ],
+  "why": "Test 1 (talking about crushed parents instead of the grade) is also an irrelevant topic brought in to distract"
+ },
+ {
+  "id": "c-halo-effect",
+  "set": {
+   "tests": [
+    {
+     "s": "Parents assume the school's star athlete must also be honest and hardworking, though they know nothing else about him."
+    },
+    {
+     "s": "Impressed by how attractive and well-spoken a job candidate is, the interviewer assumes he must also be organized and good with numbers."
+    }
+   ]
+  },
+  "why": "Test 2 was about a company's phones, but def says 'a person's unrelated qualities'; replaced with a person-based scenario"
+ },
+ {
+  "id": "c-loss-aversion",
+  "set": {
+   "scenario": "Kwame refuses a coin-flip bet in which he would win $120 on heads and lose $100 on tails, even though on average he would come out ahead."
+  },
+  "why": "'the odds favor him' is false: a fair coin is even odds; it is the expected value that favors him"
+ },
+ {
+  "id": "c-middle-ground-fallacy",
+  "remove_dx": [
+   "c-false-equivalence"
+  ],
+  "why": "Test 2 treats a doctor and an online forum as equally credible, which also reads as false equivalence"
+ },
+ {
+  "id": "c-placebo-effect",
+  "remove_dx": [
+   "c-control-group",
+   "c-regression-to-the-mean"
+  ],
+  "why": "Test 1 describes a trial where half got an inactive pill (that half is a control group), and headaches improving on their own is regression/natural recovery"
+ },
+ {
+  "id": "c-genetic-fallacy",
+  "set": {
+   "tests": [
+    {
+     "s": "Jamal says the town's popular spring festival is worthless today because it was first started decades ago to promote a local car dealership."
+    },
+    {
+     "s": "Sofia won't try a popular dish because it was invented by accident when a cook made a mistake, so she says it \"can't be any good.\""
+    }
+   ]
+  },
+  "why": "Old test 1 ('nice' once meant 'foolish') turns on two meanings of one word, so equivocation (a wrong option) fits as well"
+ },
+ {
+  "id": "c-status-quo-bias",
+  "remove_dx": [
+   "c-loss-aversion"
+  ],
+  "why": "Status quo bias is commonly explained by loss aversion; learners can defensibly pick it for sticking with the current account/default"
+ },
+ {
+  "id": "c-regression-to-the-mean",
+  "remove_dx": [
+   "c-fundamental-attribution-error"
+  ],
+  "why": "Test 2 (teacher decides the student 'stopped trying') attributes the drop to her character, which matches fundamental attribution error"
+ },
+ {
+  "id": "c-relative-vs-absolute-risk",
+  "set": {
+   "tests": [
+    {
+     "s": "A brochure says a new bike helmet \"cuts your chance of a head injury by 50%,\" but the fine print shows it fell from 2 in 10,000 rides to 1 in 10,000."
+    },
+    {
+     "s": "A news story warns that a snack raises the risk of a rare cancer by 30%, without mentioning that the lifetime risk goes from 10 in 100,000 to 13 in 100,000."
+    }
+   ]
+  },
+  "remove_dx": [
+   "c-base-rate-neglect"
+  ],
+  "why": "Def is about 'chance of harm' but test 1 was about the chance of clear skin; replaced with a harm example. Base-rate neglect also fits ignoring the tiny baseline ('rare cancer')"
+ },
+ {
+  "id": "c-necessary-vs-sufficient-condition",
+  "remove_dx": [
+   "c-affirming-the-consequent"
+  ],
+  "why": "Test 1 (degree required -> has degree -> sure to be hired) is formally affirming the consequent"
+ },
+ {
+  "id": "c-affirming-the-consequent",
+  "set": {
+   "tests": [
+    {
+     "s": "\"If the dog ate the cake, there will be crumbs on the floor. There are crumbs on the floor, so the dog must have eaten the cake.\""
+    },
+    {
+     "s": "\"If the battery is dead, the car won't start. Wei's car won't start, so the battery must be dead.\""
+    }
+   ]
+  },
+  "remove_dx": [
+   "c-necessary-vs-sufficient-condition"
+  ],
+  "why": "Premise 'if someone has the flu, they have a fever' is medically false (flu often occurs without fever); also the underlying error is treating a necessary condition as sufficient, so that option fits too"
+ },
+ {
+  "id": "c-denying-the-antecedent",
+  "remove_dx": [
+   "c-necessary-vs-sufficient-condition"
+  ],
+  "why": "Tests treat a sufficient condition (snow, studying abroad) as necessary, so necessary vs. sufficient also fits"
+ }
+]

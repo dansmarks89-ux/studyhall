@@ -1,0 +1,372 @@
+[
+ {
+  "id": "v-ensure",
+  "set": {
+   "note": "Careful writers keep ensure separate from insure (to protect with insurance) and assure (to tell someone confidently to remove their doubts)."
+  },
+  "why": "In American English 'insure' is also widely used to mean 'ensure'; note overstated the distinction"
+ },
+ {
+  "id": "v-exist",
+  "set": {
+   "syn": [
+    "live",
+    "be present"
+   ]
+  },
+  "why": "'occur' means happen, not a synonym of exist"
+ },
+ {
+  "id": "v-represent",
+  "set": {
+   "syn": [
+    "speak for",
+    "act for",
+    "act on behalf of"
+   ]
+  },
+  "why": "'stand for' belongs to the symbol sense, not the defined 'act for' sense"
+ },
+ {
+  "id": "v-tend",
+  "set": {
+   "syn": [
+    "be inclined",
+    "be likely",
+    "be apt"
+   ]
+  },
+  "why": "'usually' is an adverb, not a verb synonym"
+ },
+ {
+  "id": "v-promote",
+  "set": {
+   "syn": [
+    "advance",
+    "elevate",
+    "move up"
+   ]
+  },
+  "why": "'upgrade' is not used for promoting a person at work"
+ },
+ {
+  "id": "v-appeal",
+  "set": {
+   "forms": []
+  },
+  "why": "'appealing' derives from the 'attractive' sense, not the defined legal sense; misleading as a related form"
+ },
+ {
+  "id": "v-significant",
+  "set": {
+   "cloze": {
+    "s": "Saving just $5 a day adds up to a ___ amount of money over ten years.",
+    "a": "significant"
+   }
+  },
+  "why": "old cloze tested the technical 'statistically significant' sense, which differs from the def"
+ },
+ {
+  "id": "v-multiple",
+  "set": {
+   "cloze": {
+    "s": "The car accident sent ___ people to the hospital, including both drivers and a passenger.",
+    "a": "multiple"
+   },
+   "syn": [
+    "several",
+    "more than one"
+   ]
+  },
+  "why": "old cloze relied on the fixed compound 'multiple-choice'; 'numerous'/'many' contradict the item's own note"
+ },
+ {
+  "id": "v-numerous",
+  "set": {
+   "syn": [
+    "many",
+    "countless"
+   ]
+  },
+  "why": "'multiple' is not a synonym (multiple = more than one), per the multiple item's own note"
+ },
+ {
+  "id": "v-primary",
+  "set": {
+   "ex": [
+    "Sofia said cost was the primary reason she chose the smaller apartment.",
+    "My primary goal this year is to pay off my credit card."
+   ]
+  },
+  "why": "unverified factual claim that cost is the primary reason people skip the doctor"
+ },
+ {
+  "id": "v-entitled",
+  "set": {
+   "cloze": {
+    "s": "As a rewards member, Liam is ___ to one free room upgrade each year.",
+    "a": "entitled"
+   }
+  },
+  "why": "'every defendant is entitled to a lawyer, even one who cannot pay' is legally false (civil defendants, some misdemeanors)"
+ },
+ {
+  "id": "v-basis",
+  "set": {
+   "ex": [
+    "The study’s findings formed the basis for the new safety law.",
+    "The judge dismissed the lawsuit because it had no legal basis."
+   ]
+  },
+  "why": "'paid on a weekly basis' is a different sense (frequency) from the def"
+ },
+ {
+  "id": "v-profit",
+  "set": {
+   "def": "money gained from a business or a sale after all the costs have been paid"
+  },
+  "why": "def limited to businesses but example is a person selling a house"
+ },
+ {
+  "id": "v-revenue",
+  "set": {
+   "syn": [
+    "income",
+    "sales",
+    "receipts"
+   ]
+  },
+  "why": "'takings' is chiefly British; spec requires American English"
+ },
+ {
+  "id": "v-threat",
+  "set": {
+   "def": "a person or thing likely to cause harm, or a statement that someone intends to cause harm"
+  },
+  "why": "def ('a sign or warning') did not match the source-of-danger sense used in ex 1 and the cloze"
+ },
+ {
+  "id": "v-influence",
+  "set": {
+   "cloze": {
+    "s": "Coaches can have a huge ___ on how young athletes see themselves.",
+    "a": "influence"
+   }
+  },
+  "why": "'under the influence of alcohol' is a fixed phrase that does not show the defined sense"
+ },
+ {
+  "id": "v-thus",
+  "set": {
+   "cloze": {
+    "s": "The new bridge cuts the commute by twenty minutes, ___ saving drivers both time and gas.",
+    "a": "thus"
+   }
+  },
+  "why": "old cloze used the set phrase 'thus far' (= so far), which matches neither defined sense"
+ },
+ {
+  "id": "v-previously",
+  "set": {
+   "ex": [
+    "Kwame previously worked as a teacher, but now he works as a nurse.",
+    "The coffee shop is in a building that previously held a bank."
+   ]
+  },
+  "why": "'previously ... before' was redundant"
+ },
+ {
+  "id": "v-suggest",
+  "remove_dx": [
+   "v-identify"
+  ],
+  "why": "'identify a good restaurant' could also fill the cloze"
+ },
+ {
+  "id": "v-exist",
+  "remove_dx": [
+   "v-remain"
+  ],
+  "why": "'Dinosaurs remained for millions of years' also fits the cloze"
+ },
+ {
+  "id": "v-reduce",
+  "remove_dx": [
+   "v-determine",
+   "v-consider"
+  ],
+  "why": "'try to determine/consider how much electricity you use' also makes sense in the cloze"
+ },
+ {
+  "id": "v-determine",
+  "remove_dx": [
+   "v-identify"
+  ],
+  "why": "identify overlaps the 'find out the facts' sense (e.g. identify the cause)"
+ },
+ {
+  "id": "v-identify",
+  "remove_dx": [
+   "v-determine"
+  ],
+  "why": "determine overlaps identify (determine/identify the cause)"
+ },
+ {
+  "id": "v-seek",
+  "remove_dx": [
+   "v-achieve"
+  ],
+  "why": "'fled the war to achieve safety' is a plausible fill"
+ },
+ {
+  "id": "v-achieve",
+  "remove_dx": [
+   "v-seek"
+  ],
+  "why": "'many adults seek fluency' also fits the cloze"
+ },
+ {
+  "id": "v-maintain",
+  "remove_dx": [
+   "v-remain"
+  ],
+  "why": "remain's def (stay at same condition) is too close to maintain's (keep at same level)"
+ },
+ {
+  "id": "v-suspect",
+  "remove_dx": [
+   "v-suggest"
+  ],
+  "why": "'Doctors suggest food poisoning' is a plausible fill"
+ },
+ {
+  "id": "v-appeal",
+  "remove_dx": [
+   "v-consider"
+  ],
+  "why": "'thirty days to consider the decision' is a plausible fill"
+ },
+ {
+  "id": "v-prior",
+  "remove_dx": [
+   "v-additional"
+  ],
+  "why": "'any additional surgeries or hospital stays' also fits the cloze"
+ },
+ {
+  "id": "v-relevant",
+  "remove_dx": [
+   "v-appropriate"
+  ],
+  "why": "'isn't appropriate to the question' is a plausible fill"
+ },
+ {
+  "id": "v-essential",
+  "remove_dx": [
+   "v-significant"
+  ],
+  "why": "'Sleep is significant for memory' is a plausible fill"
+ },
+ {
+  "id": "v-reasonable",
+  "remove_dx": [
+   "v-responsible",
+   "v-typical"
+  ],
+  "why": "'a responsible/typical person would have stopped the car' both make sense"
+ },
+ {
+  "id": "v-valuable",
+  "remove_dx": [
+   "v-significant",
+   "v-accurate"
+  ],
+  "why": "feedback that was 'significant' or 'accurate' and helped me improve also fits the cloze"
+ },
+ {
+  "id": "v-competitive",
+  "remove_dx": [
+   "v-appropriate"
+  ],
+  "why": "'keeps its prices appropriate' is a plausible fill"
+ },
+ {
+  "id": "v-authority",
+  "remove_dx": [
+   "v-capacity"
+  ],
+  "why": "'no legal capacity to search' is a plausible fill"
+ },
+ {
+  "id": "v-method",
+  "remove_dx": [
+   "v-alternative"
+  ],
+  "why": "'Which payment alternative would you like' is a plausible fill"
+ },
+ {
+  "id": "v-strategy",
+  "remove_dx": [
+   "v-budget"
+  ],
+  "why": "'The company's five-year budget focuses on growing online sales' is plausible"
+ },
+ {
+  "id": "v-revenue",
+  "remove_dx": [
+   "v-investment"
+  ],
+  "why": "'brought in $2 million in investment' also fits the cloze"
+ },
+ {
+  "id": "v-assets",
+  "remove_dx": [
+   "v-investment"
+  ],
+  "why": "investments are a kind of asset; overlapping meaning"
+ },
+ {
+  "id": "v-entirely",
+  "remove_dx": [
+   "v-apparently"
+  ],
+  "why": "'The accident was apparently my fault' also fits the cloze"
+ },
+ {
+  "id": "v-relatively",
+  "remove_dx": [
+   "v-slightly"
+  ],
+  "why": "'the crime rate is slightly low' is a borderline fill"
+ },
+ {
+  "id": "v-specifically",
+  "remove_dx": [
+   "v-previously",
+   "v-indeed"
+  ],
+  "why": "'I previously/indeed asked you not to tell anyone' also fits the cloze"
+ },
+ {
+  "id": "v-ultimately",
+  "remove_dx": [
+   "v-largely"
+  ],
+  "why": "'but largely the choice of career belongs to their child' is a borderline fill"
+ },
+ {
+  "id": "v-widely",
+  "remove_dx": [
+   "v-frequently"
+  ],
+  "why": "'It is frequently believed that...' also fits the cloze"
+ },
+ {
+  "id": "v-thus",
+  "remove_dx": [
+   "v-apparently",
+   "v-eventually"
+  ],
+  "why": "'apparently/eventually saving drivers time' are plausible fills in the new cloze"
+ }
+]

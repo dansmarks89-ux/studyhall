@@ -1,0 +1,2702 @@
+[
+ {
+  "id": "p-analogy-surgeon-scalpel",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: surgeon : scalpel",
+  "q": "surgeon : scalpel :: painter : ?",
+  "options": [
+   "museum",
+   "canvas",
+   "color",
+   "brush",
+   "gallery",
+   "portrait"
+  ],
+  "answer": 3,
+  "why": "A surgeon works with a scalpel in hand; a painter works with a brush. The canvas is what the painter works on, like the patient, not the tool."
+ },
+ {
+  "id": "p-analogy-puppy-dog",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: puppy : dog",
+  "q": "puppy : dog :: kitten : ?",
+  "options": [
+   "pet",
+   "cat",
+   "fur",
+   "litter",
+   "calf",
+   "mouse"
+  ],
+  "answer": 1,
+  "why": "A puppy is a young dog, and a kitten is a young cat. A calf is also a young animal, but it grows into a cow, not a cat."
+ },
+ {
+  "id": "p-analogy-hot-cold",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: hot : cold",
+  "q": "hot : cold :: early : ?",
+  "options": [
+   "soon",
+   "morning",
+   "quick",
+   "late",
+   "warm",
+   "first"
+  ],
+  "answer": 3,
+  "why": "Hot and cold are opposites, and the opposite of early is late. Soon is close in meaning to early, not its opposite."
+ },
+ {
+  "id": "p-analogy-bird-nest",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: bird : nest",
+  "q": "bird : nest :: bee : ?",
+  "options": [
+   "queen",
+   "wing",
+   "hive",
+   "sting",
+   "flower",
+   "honey"
+  ],
+  "answer": 2,
+  "why": "A nest is the home a bird builds; a hive is where bees live. Honey is something bees make, not their home."
+ },
+ {
+  "id": "p-analogy-pen-write",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: pen : write",
+  "q": "pen : write :: knife : ?",
+  "options": [
+   "sharp",
+   "cut",
+   "steel",
+   "blade",
+   "fork",
+   "kitchen"
+  ],
+  "answer": 1,
+  "why": "A pen is used to write, and a knife is used to cut. Sharp describes the knife rather than naming what it is used to do."
+ },
+ {
+  "id": "p-analogy-glove-hand",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: glove : hand",
+  "q": "glove : hand :: sock : ?",
+  "options": [
+   "pair",
+   "wool",
+   "leg",
+   "toe",
+   "foot",
+   "shoe"
+  ],
+  "answer": 4,
+  "why": "A glove covers the hand and a sock covers the foot. A sock covers the toes too, but a glove covers the whole hand, so the match is the whole foot."
+ },
+ {
+  "id": "p-analogy-author-novel",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: author : novel",
+  "q": "author : novel :: composer : ?",
+  "options": [
+   "orchestra",
+   "conductor",
+   "piano",
+   "symphony",
+   "ticket",
+   "audience"
+  ],
+  "answer": 3,
+  "why": "An author creates a novel; a composer creates a symphony. An orchestra performs the symphony but is not what the composer creates."
+ },
+ {
+  "id": "p-analogy-thermometer-temperature",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: thermometer : temperature",
+  "q": "thermometer : temperature :: scale : ?",
+  "options": [
+   "weight",
+   "balance",
+   "kitchen",
+   "height",
+   "number",
+   "fish"
+  ],
+  "answer": 0,
+  "why": "A thermometer measures temperature; a scale measures weight. A balance is a kind of scale, not the quantity it measures."
+ },
+ {
+  "id": "p-analogy-hungry-eat",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: hungry : eat",
+  "q": "hungry : eat :: tired : ?",
+  "options": [
+   "bed",
+   "night",
+   "weak",
+   "yawn",
+   "sleep",
+   "run"
+  ],
+  "answer": 4,
+  "why": "Eating relieves hunger, and sleeping relieves tiredness. Yawning is a sign of being tired, not the thing that fixes it."
+ },
+ {
+  "id": "p-analogy-chapter-book",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "analogy",
+  "term": "Analogy: chapter : book",
+  "q": "chapter : book :: scene : ?",
+  "options": [
+   "curtain",
+   "audience",
+   "play",
+   "actor",
+   "stage",
+   "ticket"
+  ],
+  "answer": 2,
+  "why": "A chapter is one part of a book, and a scene is one part of a play. The stage is where a play happens, not the whole a scene belongs to."
+ },
+ {
+  "id": "p-context-famished",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: famished",
+  "q": "“After the long hike, Ama was so famished that she ate two full plates of rice and beans.” What does famished most likely mean?",
+  "options": [
+   "slightly tired",
+   "badly sunburned",
+   "very thirsty",
+   "extremely hungry",
+   "deeply grateful",
+   "completely lost"
+  ],
+  "answer": 3,
+  "why": "Eating two full plates shows a great need for food, so famished means extremely hungry. Thirsty is tempting after a hike, but the clue is eating, not drinking."
+ },
+ {
+  "id": "p-context-succinct",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: succinct",
+  "q": "“The teacher asked the students to be succinct: every answer had to fit in a single sentence.” What does succinct most likely mean?",
+  "options": [
+   "detailed and thorough",
+   "honest and open",
+   "polite and respectful",
+   "loud and clear",
+   "brief and to the point",
+   "creative and original"
+  ],
+  "answer": 4,
+  "why": "Fitting an answer into one sentence requires being brief, so succinct means short and to the point. Detailed is the opposite of what the one-sentence limit asks for."
+ },
+ {
+  "id": "p-context-gregarious",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: gregarious",
+  "q": "“Rafael is so gregarious that within an hour of arriving at a party, he has chatted with almost everyone there.” What does gregarious most likely mean?",
+  "options": [
+   "easily forgetful",
+   "always hungry",
+   "rude and loud",
+   "sociable and fond of company",
+   "shy and quiet",
+   "generous with money"
+  ],
+  "answer": 3,
+  "why": "Chatting with almost everyone at a party shows someone who loves company. Generous sounds similar but is about giving, not socializing."
+ },
+ {
+  "id": "p-context-precarious",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: precarious",
+  "q": "“The old bridge was so precarious that the town closed it until engineers could reinforce it.” What does precarious most likely mean?",
+  "options": [
+   "dangerously unstable",
+   "heavily crowded",
+   "unusually narrow",
+   "very beautiful",
+   "historically important",
+   "expensive to cross"
+  ],
+  "answer": 0,
+  "why": "A bridge that must be closed until it is reinforced is unsafe and unstable. Narrow or crowded would not explain why it needs reinforcing."
+ },
+ {
+  "id": "p-context-lucid",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: lucid",
+  "q": "“Mei gave such a lucid explanation of the tax rules that, for the first time, everyone in the room understood them.” What does lucid most likely mean?",
+  "options": [
+   "clear and easy to understand",
+   "long and detailed",
+   "confusing and vague",
+   "private and secret",
+   "funny and lively",
+   "boring and dull"
+  ],
+  "answer": 0,
+  "why": "Because everyone finally understood, the explanation must have been clear. Long and detailed does not by itself make something understandable."
+ },
+ {
+  "id": "p-context-vigilant",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: vigilant",
+  "q": "“The museum guard stayed vigilant all night, checking every hallway and watching each camera screen for intruders.” What does vigilant most likely mean?",
+  "options": [
+   "lost and confused",
+   "sleepy and slow",
+   "watchful and alert",
+   "angry and tense",
+   "polite and helpful",
+   "calm and relaxed"
+  ],
+  "answer": 2,
+  "why": "Checking every hallway and watching the screens shows careful watchfulness. Calm and relaxed misses the sense of staying on guard."
+ },
+ {
+  "id": "p-context-frugal",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: frugal",
+  "q": "“Grandpa Oleg is frugal: he reuses wrapping paper, repairs his own shoes, and never buys anything he doesn’t need.” What does frugal most likely mean?",
+  "options": [
+   "careless with money",
+   "very wealthy",
+   "careful not to spend or waste money",
+   "lazy about chores",
+   "generous with gifts",
+   "grumpy and stubborn"
+  ],
+  "answer": 2,
+  "why": "Reusing, repairing and avoiding unneeded purchases all describe someone who avoids spending or waste. Wealthy is about how much money he has, not how he uses it."
+ },
+ {
+  "id": "p-context-unanimous",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: unanimous",
+  "q": "“The new rule passed with unanimous support: every one of the 40 members voted yes.” What does unanimous most likely mean?",
+  "options": [
+   "agreed to by everyone",
+   "agreed to by most",
+   "delayed for weeks",
+   "won by a narrow margin",
+   "decided in secret",
+   "given reluctantly"
+  ],
+  "answer": 0,
+  "why": "Every one of the 40 members voting yes means complete agreement. Agreed to by most falls short of the all-40 detail."
+ },
+ {
+  "id": "p-context-undeterred",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: undeterred",
+  "q": "“Despite the heavy rain, the runners were undeterred and finished the race on schedule.” What does undeterred most likely mean?",
+  "options": [
+   "frightened",
+   "exhausted",
+   "injured",
+   "confused about the route",
+   "soaked to the skin",
+   "not discouraged or stopped"
+  ],
+  "answer": 5,
+  "why": "Finishing on schedule despite the rain shows the rain did not stop them. They were probably soaked, but that describes their clothes, not what undeterred means."
+ },
+ {
+  "id": "p-context-bland",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "context",
+  "term": "Context: bland",
+  "q": "“The soup was so bland that Kofi added salt, pepper, and hot sauce before he could enjoy it.” What does bland most likely mean?",
+  "options": [
+   "lacking strong flavor",
+   "burnt",
+   "served cold",
+   "too thick",
+   "far too spicy",
+   "very salty"
+  ],
+  "answer": 0,
+  "why": "Adding salt, pepper and hot sauce means the soup needed more flavor. If it were already salty or spicy, he would not add more of those."
+ },
+ {
+  "id": "p-inference-closed-flower-shop",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: closed flower shop",
+  "q": "Rosa’s flower shop is usually busy by 9 a.m. Today at 9:30 the door is locked, the lights are off, and no one is inside. Which conclusion is best supported?",
+  "options": [
+   "Rosa forgot to pay the electric bill.",
+   "The shop moved to a new location.",
+   "Customers dislike Rosa’s flowers.",
+   "The shop is probably closed today.",
+   "Rosa is sick today.",
+   "The shop has gone out of business."
+  ],
+  "answer": 3,
+  "why": "A locked, dark, empty shop at a normally busy time points to it being closed today. Going out of business goes far beyond what one closed morning shows."
+ },
+ {
+  "id": "p-inference-dying-phone-battery",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: dying phone battery",
+  "q": "Jamal’s phone shows 2% battery. He has been streaming video for three hours and has not plugged it in. Which is most likely?",
+  "options": [
+   "His phone will shut off soon unless he charges it.",
+   "He bought the phone today.",
+   "His phone is broken.",
+   "His phone is fully charged.",
+   "Streaming video uses no battery.",
+   "He doesn’t own a charger."
+  ],
+  "answer": 0,
+  "why": "At 2% with no charger connected, the phone will run out soon. Nothing suggests it is broken; a low battery after hours of streaming is normal."
+ },
+ {
+  "id": "p-inference-pool-rule",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: pool rule",
+  "q": "A pool sign says: “Children under 12 must be with an adult.” Nine-year-old Ana is swimming alone, and the lifeguard asks her to get out of the water. What best explains the lifeguard’s action?",
+  "options": [
+   "Ana does not know how to swim.",
+   "The pool is about to close.",
+   "The lifeguard is Ana’s parent.",
+   "Adults are not allowed in the pool.",
+   "Ana is too old to swim there.",
+   "Ana is under 12 and has no adult with her."
+  ],
+  "answer": 5,
+  "why": "Ana is nine and alone, which breaks the posted rule. Nothing in the passage says she cannot swim."
+ },
+ {
+  "id": "p-inference-light-and-plants",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: light and plants",
+  "q": "Hiroshi has identical plants on a sunny windowsill and in a dark hallway. He waters them all the same amount. The windowsill plants are thriving; the hallway plants are wilting. Which is the most reasonable conclusion?",
+  "options": [
+   "All of Hiroshi’s plants are dying.",
+   "The windowsill plants are a different species.",
+   "Hiroshi waters his plants too much.",
+   "The lack of light is likely why the hallway plants are wilting.",
+   "The hallway plants are much older.",
+   "The hallway plants need much more water."
+  ],
+  "answer": 3,
+  "why": "The plants and the watering are the same, so the clear difference is light. The plants being a different species is ruled out because they are identical."
+ },
+ {
+  "id": "p-inference-circling-flight",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: circling flight",
+  "q": "Priya’s flight was scheduled to land at 3:00. At 4:30 she texted from her seat: “Still circling — thick fog at the airport.” Which is best supported?",
+  "options": [
+   "She landed at a different airport.",
+   "The pilot was new.",
+   "Her flight was canceled.",
+   "Her flight was delayed by the weather.",
+   "The plane landed at 3:00.",
+   "She missed her flight."
+  ],
+  "answer": 3,
+  "why": "She is still in the air past the landing time because of fog, which is a weather delay. A canceled flight would not be circling with her on board."
+ },
+ {
+  "id": "p-inference-weekend-library-hours",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: weekend library hours",
+  "q": "The library extended its weekend hours. Since then, weekend visits have roughly doubled, while weekday visits have stayed the same. Which is best supported?",
+  "options": [
+   "The library will close on weekdays.",
+   "Weekday visitors switched to coming on weekends.",
+   "The library hired many more staff.",
+   "Weekday visits fell sharply.",
+   "People now read more books than before.",
+   "The longer weekend hours likely drew more weekend visitors."
+  ],
+  "answer": 5,
+  "why": "Weekend visits rose right after weekend hours grew, which fits the new hours attracting people. If weekday visitors had switched, weekday visits would have dropped, but they stayed the same."
+ },
+ {
+  "id": "p-inference-missing-milk",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: missing milk",
+  "q": "The milk carton in Sofia’s fridge was full yesterday morning and is half empty this morning. Only Sofia and her roommate live there, no one else visited, and Sofia didn’t drink any milk. Which is the most likely explanation?",
+  "options": [
+   "The carton was never full.",
+   "A neighbor came in and drank it.",
+   "Sofia is allergic to milk.",
+   "The fridge is broken.",
+   "The milk evaporated in the fridge.",
+   "Her roommate used some of the milk."
+  ],
+  "answer": 5,
+  "why": "With no visitors and Sofia not drinking any, the roommate is the only likely user. A neighbor is ruled out because no one else visited."
+ },
+ {
+  "id": "p-inference-wet-umbrella",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: wet umbrella",
+  "q": "Maya walks in with a dripping umbrella, and her shoes leave wet footprints down the hall. Through the window the sky is dark gray. Which is best supported?",
+  "options": [
+   "It will rain all week.",
+   "Maya washed her umbrella.",
+   "Maya jumped into a lake.",
+   "It is snowing heavily right now.",
+   "Maya dislikes rainy days.",
+   "It has recently been raining where Maya was."
+  ],
+  "answer": 5,
+  "why": "A dripping umbrella, wet shoes and a gray sky all point to recent rain. Rain all week is a forecast that the clues cannot support."
+ },
+ {
+  "id": "p-inference-croissants-sell-out",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: croissants sell out",
+  "q": "A bakery baked the same number of croissants every day this week, and each day they sold out by 9 a.m. Which is best supported?",
+  "options": [
+   "The baker works too slowly.",
+   "The bakery will bake more next week.",
+   "People prefer croissants to bread.",
+   "Croissants were sold at half price.",
+   "This week, more people wanted croissants than the bakery made.",
+   "The bakery opens at 9 a.m."
+  ],
+  "answer": 4,
+  "why": "Selling out early every day means demand was greater than supply. Baking more next week might be a smart plan, but the passage does not say it will happen."
+ },
+ {
+  "id": "p-inference-learning-in-madrid",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "inference",
+  "term": "Inference: learning in Madrid",
+  "q": "Tomás studied Spanish in class for two years, then moved to Madrid. After six months there, his teachers say his speaking improved more than in the previous two years. Which is best supported?",
+  "options": [
+   "His Madrid teachers are the best in Spain.",
+   "He stopped studying grammar.",
+   "Everyone learns languages faster abroad.",
+   "He now speaks perfect Spanish.",
+   "His earlier classes taught him nothing.",
+   "Living in Madrid probably helped his speaking improve faster than classes alone had."
+  ],
+  "answer": 5,
+  "why": "His faster progress after moving fits the move helping him. Saying everyone learns faster abroad turns one person’s story into a rule for all."
+ },
+ {
+  "id": "p-logic-red-roses",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: red roses",
+  "q": "Every rose in Inés’s garden is red. This flower is a rose from Inés’s garden. Which must be true?",
+  "options": [
+   "This flower may or may not be red.",
+   "Inés grows only roses.",
+   "This flower is red.",
+   "This flower is white.",
+   "Every red flower is a rose.",
+   "This flower is not a rose."
+  ],
+  "answer": 2,
+  "why": "If every rose in the garden is red and this is a rose from that garden, it must be red. The rule says nothing about other flowers, so every red flower being a rose does not follow."
+ },
+ {
+  "id": "p-logic-unless-it-rains",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: unless it rains",
+  "q": "Kwame bikes to work every day unless it is raining. Today he did not bike to work. If the first statement is true, which must be true?",
+  "options": [
+   "His bike was broken today.",
+   "It was raining today.",
+   "It was sunny today.",
+   "He does not own a bike.",
+   "It may or may not have rained today.",
+   "He will bike tomorrow."
+  ],
+  "answer": 1,
+  "why": "The only exception to his biking is rain, so a day without biking must be a rainy day. A broken bike might be possible in real life, but the statement allows no exception other than rain."
+ },
+ {
+  "id": "p-logic-shortest-of-three",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: shortest of three",
+  "q": "Ali is taller than Ben. Ben is taller than Chloe. Who is the shortest?",
+  "options": [
+   "Ali",
+   "It cannot be determined",
+   "Ben and Chloe are the same height",
+   "Ben",
+   "Chloe",
+   "Ali and Ben are the same height"
+  ],
+  "answer": 4,
+  "why": "Ali is above Ben, and Ben is above Chloe, so Chloe is the shortest. Ben is shorter than Ali but still taller than Chloe."
+ },
+ {
+  "id": "p-logic-shelter-puppies",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: shelter puppies",
+  "q": "Some dogs at the shelter are puppies. All puppies at the shelter are vaccinated. Which must be true?",
+  "options": [
+   "At least some dogs at the shelter are vaccinated.",
+   "Most dogs at the shelter are puppies.",
+   "No adult dogs at the shelter are vaccinated.",
+   "Some puppies at the shelter are not vaccinated.",
+   "Every vaccinated dog at the shelter is a puppy.",
+   "All dogs at the shelter are vaccinated."
+  ],
+  "answer": 0,
+  "why": "The puppies are dogs and all of them are vaccinated, so at least some dogs are. We know nothing about the adult dogs, so all dogs being vaccinated does not follow."
+ },
+ {
+  "id": "p-logic-race-order",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: race order",
+  "q": "In a race, Nia finished before Omar but after Lucas. Who finished first of the three?",
+  "options": [
+   "It cannot be determined",
+   "Nia and Lucas tied",
+   "Lucas",
+   "Omar",
+   "Nia",
+   "Nia and Omar tied"
+  ],
+  "answer": 2,
+  "why": "The order is Lucas, then Nia, then Omar, so Lucas was first. Nia beat Omar but finished after Lucas."
+ },
+ {
+  "id": "p-logic-no-fur",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: no fur",
+  "q": "No reptiles have fur. A gecko is a reptile. Which must be true?",
+  "options": [
+   "A gecko has feathers.",
+   "A gecko is a mammal.",
+   "It cannot be determined whether a gecko has fur.",
+   "Every animal without fur is a reptile.",
+   "A gecko has no fur.",
+   "Some geckos have fur."
+  ],
+  "answer": 4,
+  "why": "Since no reptiles have fur and a gecko is a reptile, a gecko has no fur. The statements do not say that every furless animal is a reptile; birds and fish lack fur too."
+ },
+ {
+  "id": "p-logic-chess-and-math-clubs",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: chess and math clubs",
+  "q": "Every member of the chess club also belongs to the math club. Zainab is not in the math club. Which must be true?",
+  "options": [
+   "Zainab will join the math club.",
+   "Zainab is not in the chess club.",
+   "Zainab might be in the chess club.",
+   "Every math club member is in the chess club.",
+   "Zainab dislikes math.",
+   "Zainab is in the chess club."
+  ],
+  "answer": 1,
+  "why": "Being in the chess club guarantees being in the math club, so someone outside the math club cannot be in the chess club. ‘Might be’ fails because the rule leaves no room for it."
+ },
+ {
+  "id": "p-logic-second-youngest",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: second youngest",
+  "q": "Mateo is older than Ruth. Ruth is older than Sam. Sam is older than Tara. Who is the second youngest?",
+  "options": [
+   "It cannot be determined",
+   "Ruth and Sam are the same age",
+   "Ruth",
+   "Mateo",
+   "Tara",
+   "Sam"
+  ],
+  "answer": 5,
+  "why": "From oldest to youngest the order is Mateo, Ruth, Sam, Tara. Tara is the youngest, so Sam is second youngest."
+ },
+ {
+  "id": "p-logic-fire-alarm-rule",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: fire alarm rule",
+  "q": "If the alarm sounds, everyone must leave the building. The alarm is sounding. Which must be true?",
+  "options": [
+   "No one needs to leave.",
+   "Everyone must leave the building.",
+   "The alarm is broken.",
+   "Only staff must leave.",
+   "Leaving is optional.",
+   "There is a fire in the building."
+  ],
+  "answer": 1,
+  "why": "The rule plus the sounding alarm means everyone must leave. The rule does not say why the alarm sounds, so a fire does not follow."
+ },
+ {
+  "id": "p-logic-concert-ticket",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "logic",
+  "term": "Logic: concert ticket",
+  "q": "Everyone must have a ticket to enter the concert hall, and the rule is strictly enforced. Leo entered the concert hall. Which must be true?",
+  "options": [
+   "The concert was sold out.",
+   "Leo arrived late.",
+   "Everyone with a ticket got in.",
+   "Leo did not have a ticket.",
+   "Leo had a ticket.",
+   "Leo bought his ticket at the door."
+  ],
+  "answer": 4,
+  "why": "A ticket is required to enter, so anyone inside had one. Where he bought it is never stated, so ‘at the door’ is a guess."
+ },
+ {
+  "id": "p-opposite-generous",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Opposite: generous",
+  "q": "Which word is most nearly the OPPOSITE of generous?",
+  "options": [
+   "stingy",
+   "wealthy",
+   "kind",
+   "friendly",
+   "humble",
+   "careful"
+  ],
+  "answer": 0,
+  "why": "Generous means willing to give freely; stingy means unwilling to give or spend. Wealthy is about having money, not about giving it."
+ },
+ {
+  "id": "p-similar-begin",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Similar: begin",
+  "q": "Which word is most similar in meaning to begin?",
+  "options": [
+   "delay",
+   "commence",
+   "conclude",
+   "repeat",
+   "pause",
+   "attempt"
+  ],
+  "answer": 1,
+  "why": "Commence means to start, the same as begin. Attempt means to try, which is not the same as starting."
+ },
+ {
+  "id": "p-odd-one-out-carrot",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Odd one out: carrot",
+  "q": "Which is the odd one out? apple, banana, carrot, cherry, grape, mango",
+  "options": [
+   "grape",
+   "carrot",
+   "banana",
+   "mango",
+   "apple",
+   "cherry"
+  ],
+  "answer": 1,
+  "why": "Carrot is a root vegetable; all the others are fruits. Banana may look different from the rest, but it is still a fruit."
+ },
+ {
+  "id": "p-opposite-ancient",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Opposite: ancient",
+  "q": "Which word is most nearly the OPPOSITE of ancient?",
+  "options": [
+   "famous",
+   "modern",
+   "ruined",
+   "historic",
+   "broken",
+   "old"
+  ],
+  "answer": 1,
+  "why": "Ancient means very old, and modern means of the present time. Historic is linked to the past, so it is closer in meaning than opposite."
+ },
+ {
+  "id": "p-similar-enormous",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Similar: enormous",
+  "q": "Which word is most similar in meaning to enormous?",
+  "options": [
+   "huge",
+   "wide",
+   "tiny",
+   "heavy",
+   "tall",
+   "loud"
+  ],
+  "answer": 0,
+  "why": "Enormous and huge both mean very large. Heavy describes weight, and a large thing need not be heavy."
+ },
+ {
+  "id": "p-odd-one-out-trumpet",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Odd one out: trumpet",
+  "q": "Which is the odd one out? violin, cello, trumpet, guitar, harp, viola",
+  "options": [
+   "harp",
+   "trumpet",
+   "violin",
+   "cello",
+   "viola",
+   "guitar"
+  ],
+  "answer": 1,
+  "why": "The trumpet is a brass instrument; all the others make sound with strings. The harp is played differently, but it is still a string instrument."
+ },
+ {
+  "id": "p-opposite-expand",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Opposite: expand",
+  "q": "Which word is most nearly the OPPOSITE of expand?",
+  "options": [
+   "increase",
+   "stretch",
+   "contract",
+   "open",
+   "explain",
+   "grow"
+  ],
+  "answer": 2,
+  "why": "To expand is to get bigger; to contract is to get smaller. Stretch and grow are close to expand, not opposite."
+ },
+ {
+  "id": "p-similar-weary",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Similar: weary",
+  "q": "Which word is most similar in meaning to weary?",
+  "options": [
+   "eager",
+   "worried",
+   "wary",
+   "cheerful",
+   "tired",
+   "angry"
+  ],
+  "answer": 4,
+  "why": "Weary means very tired. Wary looks similar but means cautious or suspicious."
+ },
+ {
+  "id": "p-odd-one-out-the-moon",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Odd one out: the Moon",
+  "q": "Which is the odd one out? Mercury, Venus, Mars, Jupiter, the Moon, Saturn",
+  "options": [
+   "Mars",
+   "Venus",
+   "the Moon",
+   "Jupiter",
+   "Saturn",
+   "Mercury"
+  ],
+  "answer": 2,
+  "why": "The Moon orbits Earth and is not a planet; the others are planets orbiting the Sun. Mercury is small but still a planet."
+ },
+ {
+  "id": "p-opposite-victory",
+  "track": "reasoning",
+  "level": 1,
+  "kind": "relationship",
+  "term": "Opposite: victory",
+  "q": "Which word is most nearly the OPPOSITE of victory?",
+  "options": [
+   "game",
+   "effort",
+   "prize",
+   "battle",
+   "triumph",
+   "defeat"
+  ],
+  "answer": 5,
+  "why": "Victory means winning; defeat means losing. Triumph is a synonym of victory, not its opposite."
+ },
+ {
+  "id": "p-analogy-drought-rain",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: drought : rain",
+  "q": "drought : rain :: famine : ?",
+  "options": [
+   "poverty",
+   "farmer",
+   "food",
+   "hunger",
+   "flood",
+   "crop"
+  ],
+  "answer": 2,
+  "why": "A drought is a severe lack of rain; a famine is a severe lack of food. Hunger is the result of a famine, not the thing that is missing."
+ },
+ {
+  "id": "p-analogy-novice-expert",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: novice : expert",
+  "q": "novice : expert :: apprentice : ?",
+  "options": [
+   "tool",
+   "master",
+   "wage",
+   "student",
+   "beginner",
+   "workshop"
+  ],
+  "answer": 1,
+  "why": "A novice grows into an expert, and an apprentice trains to become a master of a trade. Beginner is another word for novice, the starting point rather than the goal."
+ },
+ {
+  "id": "p-analogy-fish-school",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: fish : school",
+  "q": "fish : school :: wolf : ?",
+  "options": [
+   "herd",
+   "den",
+   "howl",
+   "cub",
+   "pack",
+   "flock"
+  ],
+  "answer": 4,
+  "why": "A group of fish is a school, and a group of wolves is a pack. A den is where wolves live, not what a group of them is called."
+ },
+ {
+  "id": "p-analogy-clock-time",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: clock : time",
+  "q": "clock : time :: odometer : ?",
+  "options": [
+   "fuel",
+   "engine",
+   "direction",
+   "speed",
+   "temperature",
+   "distance"
+  ],
+  "answer": 5,
+  "why": "A clock measures time; an odometer measures distance traveled. Speed is measured by the speedometer, a different dashboard gauge."
+ },
+ {
+  "id": "p-analogy-carpenter-wood",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: carpenter : wood",
+  "q": "carpenter : wood :: sculptor : ?",
+  "options": [
+   "chisel",
+   "stone",
+   "studio",
+   "statue",
+   "talent",
+   "museum"
+  ],
+  "answer": 1,
+  "why": "Wood is a material a carpenter shapes; stone is a material a sculptor shapes. A chisel is a tool and a statue is the finished product, not the material."
+ },
+ {
+  "id": "p-analogy-ignite-extinguish",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: ignite : extinguish",
+  "q": "ignite : extinguish :: inflate : ?",
+  "options": [
+   "inflame",
+   "expand",
+   "burst",
+   "pump",
+   "balloon",
+   "deflate"
+  ],
+  "answer": 5,
+  "why": "Ignite and extinguish are opposites, and the opposite of inflate is deflate. Burst ends inflation suddenly, but it is not the direct opposite action."
+ },
+ {
+  "id": "p-analogy-pediatrician-children",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: pediatrician : children",
+  "q": "pediatrician : children :: veterinarian : ?",
+  "options": [
+   "medicine",
+   "clinic",
+   "nurses",
+   "farms",
+   "animals",
+   "owners"
+  ],
+  "answer": 4,
+  "why": "A pediatrician treats children, and a veterinarian treats animals. Owners bring the animals in, but the animals are the patients."
+ },
+ {
+  "id": "p-analogy-meticulous-careless",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: meticulous : careless",
+  "q": "meticulous : careless :: frugal : ?",
+  "options": [
+   "extravagant",
+   "wealthy",
+   "cheap",
+   "thrifty",
+   "careful",
+   "modest"
+  ],
+  "answer": 0,
+  "why": "Meticulous and careless are opposites; the opposite of frugal (spending carefully) is extravagant (spending lavishly). Thrifty is a synonym of frugal, not an opposite."
+ },
+ {
+  "id": "p-analogy-prologue-novel",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: prologue : novel",
+  "q": "prologue : novel :: overture : ?",
+  "options": [
+   "finale",
+   "encore",
+   "aria",
+   "curtain",
+   "conductor",
+   "opera"
+  ],
+  "answer": 5,
+  "why": "A prologue introduces a novel, and an overture is the orchestral introduction to an opera. An aria is a song within the opera, not the work the overture opens."
+ },
+ {
+  "id": "p-analogy-germinate-seed",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "analogy",
+  "term": "Analogy: germinate : seed",
+  "q": "germinate : seed :: hatch : ?",
+  "options": [
+   "shell",
+   "feather",
+   "incubator",
+   "hen",
+   "nest",
+   "egg"
+  ],
+  "answer": 5,
+  "why": "A seed germinates to begin new life, and an egg hatches. The shell is only the outer part of the egg, and it breaks rather than hatches."
+ },
+ {
+  "id": "p-context-platitude",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: platitude",
+  "q": "“The CEO’s speech was full of platitudes — ‘we’re all one family,’ ‘change is opportunity’ — but offered no actual plan.” What does platitude most likely mean?",
+  "options": [
+   "a formal apology",
+   "a detailed statistic",
+   "a joke at the audience’s expense",
+   "a dull, overused remark presented as if it were meaningful",
+   "a specific promise with a deadline",
+   "a personal insult"
+  ],
+  "answer": 3,
+  "why": "The quoted lines are tired phrases that sound wise but say little, and the speech offered no plan. A specific promise is the opposite of these vague lines."
+ },
+ {
+  "id": "p-context-placate",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: placate",
+  "q": "“Rather than fix the problem, the manager tried to placate the angry customers with free coffee and vague promises.” What does placate most likely mean?",
+  "options": [
+   "to interview formally",
+   "to provoke further",
+   "to calm someone’s anger, often with small concessions",
+   "to charge extra",
+   "to ignore completely",
+   "to punish"
+  ],
+  "answer": 2,
+  "why": "Free coffee and promises aimed at angry customers are attempts to soothe them. Provoke means to make angrier, the reverse of the manager’s aim."
+ },
+ {
+  "id": "p-context-ephemeral",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: ephemeral",
+  "q": "“Her ephemeral fame lasted only a few weeks before the internet moved on to the next viral video.” What does ephemeral most likely mean?",
+  "options": [
+   "accidental",
+   "enormous",
+   "international",
+   "undeserved",
+   "lasting a very short time",
+   "spread worldwide"
+  ],
+  "answer": 4,
+  "why": "Fame that lasted only a few weeks was short-lived. The fame may also have been accidental, but the sentence’s clue is how briefly it lasted."
+ },
+ {
+  "id": "p-context-cogent",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: cogent",
+  "q": "“The lawyer’s argument was so cogent that even the opposing side admitted it was hard to refute.” What does cogent most likely mean?",
+  "options": [
+   "quietly spoken",
+   "confusing",
+   "rude and aggressive",
+   "clear, logical, and convincing",
+   "highly emotional",
+   "very lengthy"
+  ],
+  "answer": 3,
+  "why": "An argument the other side found hard to refute must be logically convincing. Length does not make an argument hard to answer."
+ },
+ {
+  "id": "p-context-acrimony",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: acrimony",
+  "q": "“After years of acrimony, the two siblings finally sat down and settled their dispute over the family house.” What does acrimony most likely mean?",
+  "options": [
+   "close friendship",
+   "mild confusion",
+   "silence",
+   "bitter, angry feeling between people",
+   "physical distance",
+   "great wealth"
+  ],
+  "answer": 3,
+  "why": "A long dispute that needed settling suggests bitterness. Silence might occur in a feud, but acrimony refers to angry ill feeling, not just not talking."
+ },
+ {
+  "id": "p-context-reticent",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: reticent",
+  "q": "“Kenji was reticent about his past, answering questions with a shrug and quickly changing the subject.” What does reticent most likely mean?",
+  "options": [
+   "reluctant to share thoughts or information",
+   "angry",
+   "forgetful",
+   "dishonest",
+   "proud",
+   "excited"
+  ],
+  "answer": 0,
+  "why": "Shrugging and changing the subject show he holds back information. He never says anything false, so dishonest goes too far."
+ },
+ {
+  "id": "p-context-tenacity",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: tenacity",
+  "q": "“The scientist was known for her tenacity: she repeated the failed experiment more than 200 times until it finally worked.” What does tenacity most likely mean?",
+  "options": [
+   "good luck",
+   "carelessness",
+   "stubborn persistence",
+   "impatience",
+   "intelligence",
+   "creativity"
+  ],
+  "answer": 2,
+  "why": "Repeating a failed experiment over 200 times shows refusal to give up. She may be intelligent, but the example is about persistence."
+ },
+ {
+  "id": "p-context-dilapidation",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: dilapidation",
+  "q": "“The once-busy mill fell into dilapidation: windows broken, roof caving in, weeds growing through the floor.” What does dilapidation most likely mean?",
+  "options": [
+   "overcrowding",
+   "careful renovation",
+   "celebration",
+   "a state of disrepair caused by neglect or age",
+   "heavy debt",
+   "great popularity"
+  ],
+  "answer": 3,
+  "why": "Broken windows, a collapsing roof and weeds describe decay from neglect. Renovation is the opposite: fixing a building up."
+ },
+ {
+  "id": "p-context-laconic",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: laconic",
+  "q": "“Diego’s laconic reply — ‘Fine.’ — made it clear he had no interest in discussing the trip.” What does laconic most likely mean?",
+  "options": [
+   "confused",
+   "enthusiastic",
+   "angry",
+   "dishonest",
+   "using very few words",
+   "very polite"
+  ],
+  "answer": 4,
+  "why": "A one-word answer is the clue: laconic means brief in speech. He may seem uninterested, but laconic itself does not mean angry."
+ },
+ {
+  "id": "p-context-arbitrary",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "context",
+  "term": "Context: arbitrary",
+  "q": "“The committee’s choice seemed arbitrary; no one could explain why one applicant was picked over the other.” What does arbitrary most likely mean?",
+  "options": [
+   "long delayed",
+   "final and binding",
+   "against the law",
+   "fair and balanced",
+   "based on whim rather than reason",
+   "agreed by everyone"
+  ],
+  "answer": 4,
+  "why": "If no one can give a reason for the choice, it looks random or based on whim. Fair is the opposite impression the sentence creates."
+ },
+ {
+  "id": "p-inference-voluntary-survey",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: voluntary survey",
+  "q": "A company emailed a voluntary survey to all 1,000 employees. Of the 200 who responded, 180 said they prefer a four-day workweek. Which is best supported?",
+  "options": [
+   "The company will switch to a four-day week.",
+   "820 employees oppose a four-day week.",
+   "Employees who didn’t respond are happy with five days.",
+   "Most employees who answered the survey prefer a four-day week.",
+   "The survey results were made up.",
+   "About 90% of all 1,000 employees prefer a four-day week."
+  ],
+  "answer": 3,
+  "why": "We only know the views of the 200 who answered, and 90% of them preferred it. Applying that 90% to all 1,000 ignores that people who choose to respond may differ from those who don’t."
+ },
+ {
+  "id": "p-inference-used-car-claim",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: used car claim",
+  "q": "Wei bought a used car advertised as “one owner, never in an accident.” His mechanic later found repaired frame damage of the kind caused by a collision. Which is best supported?",
+  "options": [
+   "Wei is the car’s first owner.",
+   "The mechanic is lying.",
+   "All used-car ads are false.",
+   "The ad’s no-accident claim was probably false or mistaken.",
+   "The car will break down soon.",
+   "The previous owner caused the damage on purpose."
+  ],
+  "answer": 3,
+  "why": "Collision-type frame damage contradicts ‘never in an accident.’ Saying all used-car ads are false generalizes from a single case."
+ },
+ {
+  "id": "p-inference-reading-scores",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: reading scores",
+  "q": "Lakeview High required all students to read 20 minutes a day, and reading scores rose. Nearby Ridgeview High made no changes, yet its scores rose by the same amount. Which is best supported?",
+  "options": [
+   "Both schools have excellent teachers.",
+   "Something other than the new requirement likely explains much of Lakeview’s rise.",
+   "The requirement caused Lakeview’s rise.",
+   "Daily reading lowers test scores.",
+   "Scores will keep rising next year.",
+   "Ridgeview secretly copied the requirement."
+  ],
+  "answer": 1,
+  "why": "A school that changed nothing improved just as much, so the rise likely has another cause, such as an easier test. Crediting the requirement ignores this comparison."
+ },
+ {
+  "id": "p-inference-chess-claims",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: chess claims",
+  "q": "Marcus says, “I have never lost a chess game to anyone in my club.” Bea, a member of Marcus’s club, says, “I beat Marcus in a game last Tuesday.” Which must be true?",
+  "options": [
+   "At least one of them is mistaken or not telling the truth.",
+   "Bea is not in the club.",
+   "Last Tuesday’s game didn’t count.",
+   "Marcus is lying.",
+   "Bea is lying.",
+   "Marcus forgot about the game."
+  ],
+  "answer": 0,
+  "why": "The two statements cannot both be true, so at least one is wrong. We cannot tell which one, so blaming Marcus or Bea specifically goes beyond the evidence."
+ },
+ {
+  "id": "p-inference-poetry-display",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: poetry display",
+  "q": "A bookstore moved its poetry section to the front window. The next month, poetry sales tripled, but the store’s total sales stayed exactly the same. Which must be true?",
+  "options": [
+   "The store gained many new customers.",
+   "Moving the section caused the tripling.",
+   "Sales of items other than poetry fell that month.",
+   "Customers dislike novels.",
+   "Poetry is now the most profitable section.",
+   "Poetry became the bestselling section."
+  ],
+  "answer": 2,
+  "why": "If poetry sales rose and the total did not change, sales of everything else must have dropped. The move may have caused the rise, but the passage does not prove that."
+ },
+ {
+  "id": "p-inference-friday-lunch",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: Friday lunch",
+  "q": "Every Friday, Fatima’s team orders lunch from either the taco truck or the noodle bar — never anywhere else. This month the noodle bar is closed on Fridays. If the team keeps its habit, which must be true?",
+  "options": [
+   "They will try a new restaurant.",
+   "They skip lunch on Fridays.",
+   "They order from the taco truck every day.",
+   "They prefer tacos to noodles.",
+   "The noodle bar is going out of business.",
+   "Their Friday lunches this month come from the taco truck."
+  ],
+  "answer": 5,
+  "why": "With only two options and one closed, the taco truck is the only choice left. Their preference is never stated; they choose tacos because noodles are unavailable."
+ },
+ {
+  "id": "p-inference-speed-cameras",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: speed cameras",
+  "q": "After speed cameras went up on Elm Street, crashes on Elm fell by 40%. Over the same period, crashes on nearby Oak Street, a common detour, rose by 35%. Which is best supported?",
+  "options": [
+   "Elm Street is now the safest street in the city.",
+   "Speed cameras cause crashes.",
+   "The cameras reduced crashes across the whole city.",
+   "Drivers on Oak Street are more careless than others.",
+   "Oak Street now has more crashes than Elm ever did.",
+   "Some drivers may have shifted to Oak Street, so the cameras’ overall effect on safety is less clear than Elm’s numbers suggest."
+  ],
+  "answer": 5,
+  "why": "The rise on the detour route suggests traffic and risk may have moved rather than disappeared. Claiming a citywide reduction ignores the Oak Street increase."
+ },
+ {
+  "id": "p-inference-winter-sourdough",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: winter sourdough",
+  "q": "Hannah’s sourdough rose well every time she baked in summer. In winter, using the same recipe in the same kitchen, it barely rose. Which is best supported?",
+  "options": [
+   "She switched to a different flour.",
+   "She baked less carefully in winter.",
+   "Something that changes with the season, such as room temperature, likely affects the rise.",
+   "Sourdough cannot be baked in winter.",
+   "Her recipe is wrong.",
+   "Her oven is broken."
+  ],
+  "answer": 2,
+  "why": "The recipe and kitchen stayed the same, so a seasonal factor is the best explanation. The recipe can’t be the problem, since it worked every summer."
+ },
+ {
+  "id": "p-inference-dog-owners-walk-more",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: dog owners walk more",
+  "q": "A large study found that, on average, people who own dogs walk more each day than people who don’t. Which is best supported?",
+  "options": [
+   "Every dog owner walks more than every non-owner.",
+   "Getting a dog will make any person walk more.",
+   "Walking a lot makes people want dogs.",
+   "Dog owners, as a group, tend to walk more than people without dogs.",
+   "Non-owners are less healthy than owners.",
+   "Cat owners walk less than dog owners."
+  ],
+  "answer": 3,
+  "why": "The study describes an average difference between groups, which is exactly this statement. It doesn’t show that getting a dog causes more walking for any given person."
+ },
+ {
+  "id": "p-inference-missed-homework",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "inference",
+  "term": "Inference: missed homework",
+  "q": "In Mr. Okafor’s class, every student who turned in all the homework passed. Some students who missed homework also passed. Inés failed. Which must be true?",
+  "options": [
+   "Every student who missed homework failed.",
+   "Inés did not turn in all the homework.",
+   "Inés turned in all the homework.",
+   "Inés missed every homework assignment.",
+   "Turning in homework is the only way to pass.",
+   "Inés failed the final exam."
+  ],
+  "answer": 1,
+  "why": "Turning in all homework guaranteed passing, so a student who failed cannot have done so. She missed at least one assignment, not necessarily every one."
+ },
+ {
+  "id": "p-logic-opens-at-8",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: opens at 8",
+  "q": "If it is a weekday, the store opens at 8 a.m. Today the store opened at 8 a.m. Which must be true?",
+  "options": [
+   "The store opens at 8 a.m. every day.",
+   "Today is a weekday.",
+   "Nothing certain follows about whether today is a weekday.",
+   "The store opened late today.",
+   "Today is a weekend day.",
+   "The store is closed on weekends."
+  ],
+  "answer": 2,
+  "why": "The rule says weekdays lead to an 8 a.m. opening, not that only weekdays do; the store might open at 8 on weekends too. Concluding it is a weekday is the classic error of reversing an if–then."
+ },
+ {
+  "id": "p-logic-stone-foundations",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: stone foundations",
+  "q": "In the town of Pell, every house built before 1950 has a stone foundation. The Ahmed family’s house in Pell has no stone foundation. Which must be true?",
+  "options": [
+   "Most houses in Pell are old.",
+   "The Ahmed house was built in 1950 or later.",
+   "Every house built after 1950 lacks a stone foundation.",
+   "The Ahmed house has a concrete foundation.",
+   "The Ahmed house was built before 1950.",
+   "It cannot be determined when the house was built."
+  ],
+  "answer": 1,
+  "why": "A pre-1950 house would have a stone foundation; this one doesn’t, so it isn’t pre-1950. The type of foundation it does have is never stated, so concrete is a guess."
+ },
+ {
+  "id": "p-logic-club-voting",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: club voting",
+  "q": "To vote in the club election, a person must be a member who has paid this year’s dues. Jada is a member. Which must be true?",
+  "options": [
+   "Jada can vote.",
+   "Jada cannot vote.",
+   "Jada can vote only if she has also paid this year’s dues.",
+   "Jada will win the election.",
+   "Jada has paid this year’s dues.",
+   "Anyone who pays dues can vote, member or not."
+  ],
+  "answer": 2,
+  "why": "Membership is necessary but not enough; dues are also required. We don’t know whether she paid, so ‘Jada can vote’ treats one requirement as if it were the whole rule."
+ },
+ {
+  "id": "p-logic-engineers-who-paint",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: engineers who paint",
+  "q": "Some engineers at the firm are also artists. All artists at the firm work part-time. Which must be true?",
+  "options": [
+   "No engineers at the firm work full-time.",
+   "All engineers at the firm work part-time.",
+   "Some artists at the firm are not engineers.",
+   "All artists at the firm are engineers.",
+   "Everyone who works part-time is an artist.",
+   "Some engineers at the firm work part-time."
+  ],
+  "answer": 5,
+  "why": "The engineers who are artists must work part-time, so some engineers do. Nothing is said about the other engineers, so ‘all engineers’ does not follow."
+ },
+ {
+  "id": "p-logic-five-in-a-line",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: five in a line",
+  "q": "Five friends stand in a line. Inés is first and Kai is last. Jun stands directly behind Inés. Gabriel stands directly behind Hana. Who is third in line?",
+  "options": [
+   "Inés",
+   "It cannot be determined",
+   "Kai",
+   "Gabriel",
+   "Hana",
+   "Jun"
+  ],
+  "answer": 4,
+  "why": "Inés is 1st, Jun 2nd and Kai 5th, leaving 3rd and 4th for Hana and Gabriel; since Gabriel is directly behind Hana, Hana is 3rd. Gabriel is 4th, not 3rd."
+ },
+ {
+  "id": "p-logic-movie-night",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: movie night",
+  "q": "If Leila finishes her report, she will go to the movies. Leila did not go to the movies. If the first statement is true, which must be true?",
+  "options": [
+   "Leila did not finish her report.",
+   "Leila finished her report.",
+   "The movie was sold out.",
+   "Leila went somewhere else instead.",
+   "Leila may have finished her report.",
+   "Leila will finish her report tomorrow."
+  ],
+  "answer": 0,
+  "why": "Finishing the report guarantees going to the movies, so not going means she didn’t finish. ‘May have finished’ fails because finishing would have meant going."
+ },
+ {
+  "id": "p-logic-night-shifts",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: night shifts",
+  "q": "No one who works night shifts at the hospital also works weekends there. Pedro works weekends at the hospital. Which must be true?",
+  "options": [
+   "Pedro works only on weekends.",
+   "Pedro does not work night shifts at the hospital.",
+   "Everyone who works weekends works days.",
+   "Pedro is a nurse.",
+   "It cannot be determined whether Pedro works nights.",
+   "Pedro works night shifts at the hospital."
+  ],
+  "answer": 1,
+  "why": "Night-shift workers never work weekends, so a weekend worker cannot be a night-shift worker. ‘Only on weekends’ isn’t stated; he may work weekdays too."
+ },
+ {
+  "id": "p-logic-cousins-in-ohio",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: cousins in Ohio",
+  "q": "All of Mira’s cousins live in Ohio. Theo lives in Ohio. Which must be true?",
+  "options": [
+   "Theo is not Mira’s cousin.",
+   "Theo is Mira’s cousin.",
+   "Theo knows Mira.",
+   "Everyone in Ohio is Mira’s cousin.",
+   "Theo may or may not be Mira’s cousin.",
+   "Mira lives in Ohio."
+  ],
+  "answer": 4,
+  "why": "All her cousins are in Ohio, but many other people live in Ohio too, so Theo’s living there settles nothing. Concluding he is her cousin reverses the statement."
+ },
+ {
+  "id": "p-logic-row-of-houses",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: row of houses",
+  "q": "Four houses stand in a row. The blue house is somewhere left of the green house. The red house is somewhere right of the green house. The yellow house is somewhere left of the blue house. Which house is farthest to the right?",
+  "options": [
+   "green",
+   "Blue and green are tied",
+   "red",
+   "It cannot be determined",
+   "blue",
+   "yellow"
+  ],
+  "answer": 2,
+  "why": "The order from left to right must be yellow, blue, green, red, so red is farthest right. Green is right of blue and yellow but still left of red."
+ },
+ {
+  "id": "p-logic-sufficient-condition",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "logic",
+  "term": "Logic: sufficient condition",
+  "q": "Living in Toronto is sufficient for living in Canada. Which statement means the same thing?",
+  "options": [
+   "If someone does not live in Canada, they do not live in Toronto.",
+   "If someone does not live in Toronto, they do not live in Canada.",
+   "Some people in Toronto don’t live in Canada.",
+   "Living in Toronto is required for living in Canada.",
+   "Only people in Toronto live in Canada.",
+   "If someone lives in Canada, they live in Toronto."
+  ],
+  "answer": 0,
+  "why": "A sufficient condition means ‘Toronto → Canada,’ which is equivalent to its contrapositive ‘not Canada → not Toronto.’ ‘Not Toronto → not Canada’ wrongly treats Toronto as required."
+ },
+ {
+  "id": "p-opposite-candid",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Opposite: candid",
+  "q": "Which word is most nearly the OPPOSITE of candid?",
+  "options": [
+   "rude",
+   "frank",
+   "evasive",
+   "cheerful",
+   "honest",
+   "timid"
+  ],
+  "answer": 2,
+  "why": "Candid means open and direct; evasive means avoiding direct answers. Frank and honest are synonyms of candid, not opposites."
+ },
+ {
+  "id": "p-similar-ameliorate",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Similar: ameliorate",
+  "q": "Which word is most similar in meaning to ameliorate?",
+  "options": [
+   "improve",
+   "worsen",
+   "delay",
+   "combine",
+   "measure",
+   "explain"
+  ],
+  "answer": 0,
+  "why": "To ameliorate a situation is to make it better. Worsen is its opposite."
+ },
+ {
+  "id": "p-odd-one-out-grill",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Odd one out: grill",
+  "q": "Which cooking method is the odd one out? simmer, boil, poach, steam, grill, braise",
+  "options": [
+   "grill",
+   "boil",
+   "poach",
+   "simmer",
+   "steam",
+   "braise"
+  ],
+  "answer": 0,
+  "why": "Grilling cooks with dry, direct heat; all the others cook food with water, steam or another liquid. Braising starts with browning but then cooks the food in liquid."
+ },
+ {
+  "id": "p-opposite-transparent",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Opposite: transparent",
+  "q": "Which word is most nearly the OPPOSITE of transparent?",
+  "options": [
+   "fragile",
+   "opaque",
+   "visible",
+   "clear",
+   "glossy",
+   "honest"
+  ],
+  "answer": 1,
+  "why": "Transparent means light passes through; opaque means it doesn’t. Clear is a synonym of transparent."
+ },
+ {
+  "id": "p-similar-scrutinize",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Similar: scrutinize",
+  "q": "Which choice is most similar in meaning to scrutinize?",
+  "options": [
+   "criticize harshly",
+   "summarize",
+   "approve",
+   "ignore",
+   "examine closely",
+   "glance at"
+  ],
+  "answer": 4,
+  "why": "To scrutinize is to inspect something carefully and in detail. It often comes before criticism, but it does not itself mean criticizing."
+ },
+ {
+  "id": "p-odd-one-out-serene",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Odd one out: serene",
+  "q": "Which word is the odd one out? anxious, apprehensive, uneasy, nervous, serene, worried",
+  "options": [
+   "nervous",
+   "anxious",
+   "apprehensive",
+   "serene",
+   "uneasy",
+   "worried"
+  ],
+  "answer": 3,
+  "why": "Serene means calm and untroubled; all the others describe worry. Apprehensive is less common, but it also means anxious about what may happen."
+ },
+ {
+  "id": "p-opposite-scarce",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Opposite: scarce",
+  "q": "Which word is most nearly the OPPOSITE of scarce?",
+  "options": [
+   "hidden",
+   "plentiful",
+   "scared",
+   "small",
+   "expensive",
+   "rare"
+  ],
+  "answer": 1,
+  "why": "Scarce means in short supply; plentiful means in large supply. Rare is a synonym, and scared only looks similar."
+ },
+ {
+  "id": "p-similar-mitigate",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Similar: mitigate",
+  "q": "Which word is most similar in meaning to mitigate?",
+  "options": [
+   "lessen",
+   "militate",
+   "report",
+   "measure",
+   "worsen",
+   "cause"
+  ],
+  "answer": 0,
+  "why": "To mitigate is to make something less severe. Militate looks similar but means to be a strong factor for or against something."
+ },
+ {
+  "id": "p-odd-one-out-circle",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Odd one out: circle",
+  "q": "Which shape is the odd one out? triangle, square, pentagon, hexagon, circle, octagon",
+  "options": [
+   "square",
+   "triangle",
+   "pentagon",
+   "octagon",
+   "hexagon",
+   "circle"
+  ],
+  "answer": 5,
+  "why": "A circle has no straight sides, while the others are polygons with straight sides. The octagon has the most sides but is still a polygon."
+ },
+ {
+  "id": "p-odd-one-out-german",
+  "track": "reasoning",
+  "level": 2,
+  "kind": "relationship",
+  "term": "Odd one out: German",
+  "q": "Which language is the odd one out? Spanish, Portuguese, Italian, French, Romanian, German",
+  "options": [
+   "Spanish",
+   "Romanian",
+   "Italian",
+   "German",
+   "Portuguese",
+   "French"
+  ],
+  "answer": 3,
+  "why": "German is a Germanic language; the others are Romance languages that developed from Latin. Romanian may seem unexpected, but it is a Romance language."
+ },
+ {
+  "id": "p-analogy-ornithologist-birds",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: ornithologist : birds",
+  "q": "ornithologist : birds :: entomologist : ?",
+  "options": [
+   "fossils",
+   "word origins",
+   "fish",
+   "plants",
+   "reptiles",
+   "insects"
+  ],
+  "answer": 5,
+  "why": "An ornithologist studies birds; an entomologist studies insects. Word origins are studied by an etymologist, a look-alike word that is easy to confuse."
+ },
+ {
+  "id": "p-analogy-lethargic-energy",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: lethargic : energy",
+  "q": "lethargic : energy :: apathetic : ?",
+  "options": [
+   "intelligence",
+   "interest",
+   "sleep",
+   "sadness",
+   "speed",
+   "anger"
+  ],
+  "answer": 1,
+  "why": "A lethargic person lacks energy; an apathetic person lacks interest or concern. Sleep goes with lethargy, but it is not what an apathetic person lacks."
+ },
+ {
+  "id": "p-analogy-verdict-jury",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: verdict : jury",
+  "q": "verdict : jury :: diagnosis : ?",
+  "options": [
+   "doctor",
+   "symptom",
+   "illness",
+   "prescription",
+   "hospital",
+   "patient"
+  ],
+  "answer": 0,
+  "why": "A jury reaches a verdict; a doctor reaches a diagnosis. The patient receives the diagnosis but does not make it."
+ },
+ {
+  "id": "p-analogy-warm-scalding",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: warm : scalding",
+  "q": "warm : scalding :: cool : ?",
+  "options": [
+   "mild",
+   "lukewarm",
+   "damp",
+   "tepid",
+   "chilly",
+   "frigid"
+  ],
+  "answer": 5,
+  "why": "Scalding is the extreme of warm, and frigid is the extreme of cool. Chilly is only a little colder than cool, so it lacks the jump to an extreme."
+ },
+ {
+  "id": "p-analogy-tap-pound",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: tap : pound",
+  "q": "tap : pound :: whisper : ?",
+  "options": [
+   "mutter",
+   "hush",
+   "speak",
+   "bellow",
+   "murmur",
+   "listen"
+  ],
+  "answer": 3,
+  "why": "Pounding is a much more forceful tap, and bellowing is a much louder whisper. Speak is louder than a whisper but not the extreme step the pair shows."
+ },
+ {
+  "id": "p-analogy-cartographer-maps",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: cartographer : maps",
+  "q": "cartographer : maps :: lexicographer : ?",
+  "options": [
+   "languages",
+   "laws",
+   "legends",
+   "letters",
+   "dictionaries",
+   "lenses"
+  ],
+  "answer": 4,
+  "why": "A cartographer makes maps; a lexicographer compiles dictionaries. Lexicographers work with language, but what they produce is dictionaries, not languages."
+ },
+ {
+  "id": "p-analogy-sycophant-flattery",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: sycophant : flattery",
+  "q": "sycophant : flattery :: braggart : ?",
+  "options": [
+   "lying",
+   "humility",
+   "insults",
+   "boasting",
+   "wealth",
+   "bravery"
+  ],
+  "answer": 3,
+  "why": "A sycophant is defined by flattering others; a braggart is defined by boasting. A braggart may exaggerate, but lying is not the defining behavior."
+ },
+ {
+  "id": "p-analogy-biography-autobiography",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: biography : autobiography",
+  "q": "biography : autobiography :: portrait : ?",
+  "options": [
+   "photograph",
+   "landscape",
+   "self-portrait",
+   "sketch",
+   "gallery",
+   "painting"
+  ],
+  "answer": 2,
+  "why": "An autobiography is a biography of oneself; a self-portrait is a portrait of oneself. A painting or photograph can be a portrait but does not add the ‘of oneself’ idea."
+ },
+ {
+  "id": "p-analogy-impeccable-flaw",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: impeccable : flaw",
+  "q": "impeccable : flaw :: indefatigable : ?",
+  "options": [
+   "patience",
+   "fatigue",
+   "speed",
+   "effort",
+   "energy",
+   "defeat"
+  ],
+  "answer": 1,
+  "why": "Impeccable means without flaw, and indefatigable means without fatigue (never tiring). Energy is what an indefatigable person has, not what they lack."
+ },
+ {
+  "id": "p-analogy-ostracize-society",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "analogy",
+  "term": "Analogy: ostracize : society",
+  "q": "ostracize : society :: excommunicate : ?",
+  "options": [
+   "family",
+   "law",
+   "school",
+   "prison",
+   "nation",
+   "church"
+  ],
+  "answer": 5,
+  "why": "To ostracize is to exclude someone from a society or group; to excommunicate is to exclude someone from a church. Exile is the word for expulsion from a nation."
+ },
+ {
+  "id": "p-context-sesquipedalian",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: sesquipedalian",
+  "q": "“The professor’s sesquipedalian lectures, packed with words like ‘antidisestablishmentarianism’ and ‘obfuscation,’ sent first-year students reaching for dictionaries.” What does sesquipedalian most likely mean?",
+  "options": [
+   "delivered in a foreign language",
+   "badly organized",
+   "given outdoors",
+   "full of jokes",
+   "lasting an extremely long time",
+   "using many long, complicated words"
+  ],
+  "answer": 5,
+  "why": "The examples are very long words that send students to dictionaries, so it describes long words. ‘Lasting a long time’ is tempting, but the clue is the words, not the length of the lecture."
+ },
+ {
+  "id": "p-context-pusillanimous",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: pusillanimous",
+  "q": "“The committee’s pusillanimous response — quietly dropping the plan the moment a few people complained — disappointed its supporters.” What does pusillanimous most likely mean?",
+  "options": [
+   "brilliant",
+   "lacking courage; timid",
+   "carefully reasoned",
+   "arrogant",
+   "cruel and harsh",
+   "stingy"
+  ],
+  "answer": 1,
+  "why": "Giving up at the first complaint shows a lack of courage. Carefully reasoned doesn’t fit a plan dropped the moment anyone objected."
+ },
+ {
+  "id": "p-context-denouement",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: denouement",
+  "q": "“The novel’s denouement ties up every loose thread: the lost letter is found, and the estranged sisters reconcile.” What does denouement most likely mean?",
+  "options": [
+   "the setting",
+   "the final part of a story, where matters are resolved",
+   "the main villain",
+   "the climax, or moment of greatest tension",
+   "the central theme",
+   "the opening scene"
+  ],
+  "answer": 1,
+  "why": "Tying up loose threads and reconciling are what happens at the very end. The climax is the peak of tension that comes before this resolution."
+ },
+ {
+  "id": "p-context-quixotic",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: quixotic",
+  "q": "“Ji-ho’s quixotic plan to end world hunger with a single bake sale charmed everyone but convinced no one.” What does quixotic most likely mean?",
+  "options": [
+   "quick and efficient",
+   "selfish",
+   "dangerous",
+   "idealistic but wildly unrealistic",
+   "carefully budgeted",
+   "secret"
+  ],
+  "answer": 3,
+  "why": "A noble goal paired with a hopelessly small means is charming but impractical. Quick sounds similar but has nothing to do with the meaning."
+ },
+ {
+  "id": "p-context-equivocation",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: equivocation",
+  "q": "“The attorney pointed out the witness’s equivocation: asked whether she saw the car, she said, ‘I may have seen something resembling a vehicle.’” What does equivocation most likely mean?",
+  "options": [
+   "using vague or ambiguous wording to avoid committing to an answer",
+   "a sudden emotional outburst",
+   "a full admission",
+   "nervous laughter",
+   "telling an outright lie",
+   "a refusal to speak at all"
+  ],
+  "answer": 0,
+  "why": "Her hedged answer neither confirms nor denies, which is equivocation. She did not clearly state anything false, so it is not an outright lie."
+ },
+ {
+  "id": "p-context-insouciance",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: insouciance",
+  "q": "“Nadia’s insouciance as the deadline approached amazed her coworkers, who were frantically double-checking every detail.” What does insouciance most likely mean?",
+  "options": [
+   "panic",
+   "exhaustion",
+   "a relaxed, carefree lack of concern",
+   "secrecy",
+   "great precision",
+   "rudeness"
+  ],
+  "answer": 2,
+  "why": "She is contrasted with frantic coworkers, so she is calm and unconcerned. Precision describes the coworkers’ checking, not her attitude."
+ },
+ {
+  "id": "p-context-excise",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: excise",
+  "q": "“The editor excised three chapters, and the shorter novel was much better for it.” What does excised most likely mean?",
+  "options": [
+   "translated",
+   "praised",
+   "added",
+   "rearranged",
+   "rewrote",
+   "cut out; removed"
+  ],
+  "answer": 5,
+  "why": "The novel became shorter, so chapters were removed. Rewriting could improve a book, but it would not by itself make it shorter."
+ },
+ {
+  "id": "p-context-derivative",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: derivative",
+  "q": "“Critics dismissed the film as derivative, noting that nearly every scene borrowed from earlier, better movies.” What does derivative most likely mean?",
+  "options": [
+   "imitative and unoriginal",
+   "too long",
+   "confusing",
+   "related to calculus",
+   "very expensive",
+   "violent"
+  ],
+  "answer": 0,
+  "why": "Borrowing nearly every scene from other films makes it unoriginal. Derivative does have a math meaning, but it doesn’t fit a film review about borrowed scenes."
+ },
+ {
+  "id": "p-context-anodyne",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: anodyne",
+  "q": "“The spokesperson’s statement was so anodyne that neither side found anything in it to object to — or to praise.” What does anodyne most likely mean?",
+  "options": [
+   "bland and inoffensive",
+   "brilliant",
+   "lengthy",
+   "humorous",
+   "hostile",
+   "secret"
+  ],
+  "answer": 0,
+  "why": "Nothing to object to and nothing to praise describes a deliberately bland statement. Brilliant would have drawn praise."
+ },
+ {
+  "id": "p-context-perspicacious",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "context",
+  "term": "Context: perspicacious",
+  "q": "“Lucía’s perspicacious question exposed a flaw in the budget that everyone else had missed.” What does perspicacious most likely mean?",
+  "options": [
+   "rude",
+   "polite but vague",
+   "persistent and repeated",
+   "lucky",
+   "showing sharp insight; perceptive",
+   "lengthy"
+  ],
+  "answer": 4,
+  "why": "Spotting a flaw others missed shows keen insight. Persistent looks and sounds a little similar but means continuing to try."
+ },
+ {
+  "id": "p-inference-therapy-and-work-hours",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: therapy and work hours",
+  "q": "Clinic records show that patients who attend every physical therapy session recover faster than those who skip sessions. However, patients who skip sessions are also more likely to have jobs with long, inflexible hours. Which is best supported?",
+  "options": [
+   "Physical therapy does not work.",
+   "Part of the faster recovery may reflect differences between the two groups, not just the sessions themselves.",
+   "Patients with flexible jobs recover faster even without therapy.",
+   "Long work hours cause injuries.",
+   "The clinic should stop offering sessions.",
+   "Skipping sessions is proven to slow recovery."
+  ],
+  "answer": 1,
+  "why": "The groups differ in more than attendance, so the sessions can’t be credited with the whole difference. ‘Proven to slow recovery’ ignores this other difference between the groups."
+ },
+ {
+  "id": "p-inference-taxi-base-rate",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: taxi base rate",
+  "q": "In a city, 90% of taxis are yellow and 10% are green. A witness who identifies taxi colors correctly 80% of the time says the taxi in a minor collision was green. Which is best supported?",
+  "options": [
+   "The witness’s report gives no information at all.",
+   "It is exactly a 50–50 call.",
+   "The taxi was certainly green.",
+   "There is an 80% chance the taxi was green.",
+   "The taxi was still more likely yellow than green.",
+   "The chance it was green is exactly 10%."
+  ],
+  "answer": 4,
+  "why": "Out of 100 taxis, the witness would call 8 of the 10 green ones green but also 18 of the 90 yellow ones, so only about 8 in 26 (31%) ‘green’ reports are right. The 80% figure ignores how rare green taxis are."
+ },
+ {
+  "id": "p-inference-hand-washing-campaign",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: hand-washing campaign",
+  "q": "A hospital began a hand-washing campaign in March. Infection rates in April were lower than in February. However, infection rates at this hospital drop every spring, and this year’s drop was about the same size as in past years. Which is best supported?",
+  "options": [
+   "Infections will rise sharply this summer.",
+   "The hospital should end the campaign.",
+   "Hand-washing does not prevent infections.",
+   "The campaign cut infections.",
+   "The data give little evidence that the campaign itself reduced infections.",
+   "The campaign increased infections."
+  ],
+  "answer": 4,
+  "why": "A normal seasonal drop explains the change, so the campaign shows no added effect. That doesn’t prove hand-washing is useless; it only means these data can’t show its effect."
+ },
+ {
+  "id": "p-inference-dropout-founders",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: dropout founders",
+  "q": "A magazine profiled 50 founders who dropped out of college and built billion-dollar companies, concluding that leaving college helps people succeed in business. What is the biggest weakness in this reasoning?",
+  "options": [
+   "Some of the founders later returned to college.",
+   "College is expensive.",
+   "Most of the magazine’s readers are students.",
+   "Fifty founders is too many to profile.",
+   "It ignores the many dropouts whose businesses failed and were never profiled.",
+   "A billion dollars is an arbitrary cutoff."
+  ],
+  "answer": 4,
+  "why": "Looking only at the winners hides how often dropping out leads nowhere (survivorship bias). The billion-dollar cutoff isn’t the main problem; any cutoff would still ignore the failures."
+ },
+ {
+  "id": "p-inference-apricot-frost",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: apricot frost",
+  "q": "Nearly all of a region’s apricots are grown in Valley A. This year a late frost destroyed most of Valley A’s apricot blossoms. Which is best supported?",
+  "options": [
+   "Apricot prices worldwide will double.",
+   "Apricot trees cannot survive frost.",
+   "The region’s apricot harvest this year will likely be much smaller than usual.",
+   "Valley A farmers will switch to other crops.",
+   "The frost destroyed every apricot blossom in the region.",
+   "Other valleys will grow more apricots to make up the loss."
+  ],
+  "answer": 2,
+  "why": "Losing most blossoms in the area that grows nearly all the fruit points to a much smaller regional harvest. ‘Every blossom’ overstates it, since the frost destroyed most, not all."
+ },
+ {
+  "id": "p-inference-teachers-and-parents",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: teachers and parents",
+  "q": "At a workshop of 30 people, 18 are teachers and 15 are parents. Which must be true?",
+  "options": [
+   "At most 3 people are both teachers and parents.",
+   "At least 3 people are both teachers and parents.",
+   "All 15 parents are teachers.",
+   "Exactly 3 people are both teachers and parents.",
+   "At least 12 people are neither.",
+   "No one is both a teacher and a parent."
+  ],
+  "answer": 1,
+  "why": "18 + 15 = 33, which is 3 more than the 30 people, so at least 3 must be counted twice. More overlap is possible, so ‘exactly 3’ is not guaranteed."
+ },
+ {
+  "id": "p-inference-car-free-street",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: car-free street",
+  "q": "Riverside banned cars from Main Street on weekends. Shop owners feared losing customers, but weekend sales on Main Street rose 12% the next year. Over the same year, weekend sales in the rest of the city rose 15%. Which is best supported?",
+  "options": [
+   "The ban caused exactly 3% in lost sales.",
+   "Car-free streets always hurt business.",
+   "The shop owners’ fears proved correct.",
+   "The rise on Main Street may not be due to the ban, since sales rose even more elsewhere.",
+   "Main Street had the highest sales growth in the city.",
+   "The ban increased Main Street sales by 12%."
+  ],
+  "answer": 3,
+  "why": "Citywide growth was larger, so Main Street’s rise can’t be credited to the ban. Saying the ban caused a precise 3% loss treats a rough comparison as exact proof."
+ },
+ {
+  "id": "p-inference-theft-reports-rise",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: theft reports rise",
+  "q": "Reported bicycle thefts in a town rose sharply right after police launched an easy online reporting form. Which, if true, best explains the rise without implying that more bikes were actually stolen?",
+  "options": [
+   "Thieves moved to the town from nearby cities.",
+   "Most stolen bikes are never recovered.",
+   "The police hired more officers.",
+   "Bicycle sales in the town doubled.",
+   "Many past thefts went unreported because reporting in person was inconvenient.",
+   "Bike locks became cheaper."
+  ],
+  "answer": 4,
+  "why": "If thefts were often unreported before, an easier form raises reports without more thefts. Rising bike sales would suggest more bikes to steal, which implies more actual thefts."
+ },
+ {
+  "id": "p-inference-printer-assumption",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: printer assumption",
+  "q": "Nadia argues: “We should switch to the new printer because it costs less per page.” Her argument depends on which assumption?",
+  "options": [
+   "The current printer is broken.",
+   "Nobody in the office likes the current printer.",
+   "Printing is the office’s biggest expense.",
+   "The office prints only in color.",
+   "The lower cost per page isn’t outweighed by drawbacks such as worse quality or a high purchase price.",
+   "The new printer is the fastest model available."
+  ],
+  "answer": 4,
+  "why": "Cost per page only justifies switching if other factors don’t cancel out the savings. A broken current printer would be another reason to switch, but her argument doesn’t need it."
+ },
+ {
+  "id": "p-inference-hospitals-and-deaths",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "inference",
+  "term": "Inference: hospitals and deaths",
+  "q": "Jae-won notices that cities with more hospitals record more deaths each year, and concludes that hospitals make cities less safe. Which best explains the pattern without hospitals causing deaths?",
+  "options": [
+   "People in big cities exercise less.",
+   "Hospitals are dangerous places.",
+   "Bigger cities have both more hospitals and more people, so they record more deaths of all kinds.",
+   "Hospitals in big cities keep poor records.",
+   "Smaller cities have fewer roads.",
+   "Doctors in big cities are less skilled."
+  ],
+  "answer": 2,
+  "why": "Population size drives both the number of hospitals and the number of deaths, so the two rise together. ‘Hospitals are dangerous’ is simply Jae-won’s conclusion again, not an alternative explanation."
+ },
+ {
+  "id": "p-logic-coffee-only-if",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: coffee only if",
+  "q": "Eduardo says, “I drink coffee only on days when I have an early meeting.” On Wednesday he drank coffee. If his statement is true, which must also be true?",
+  "options": [
+   "He drank coffee on Tuesday.",
+   "He had an early meeting on Wednesday.",
+   "He drinks coffee on every day he has an early meeting.",
+   "He had an early meeting every day that week.",
+   "He drinks only one cup a day.",
+   "He had no early meeting on Wednesday."
+  ],
+  "answer": 1,
+  "why": "‘Only on days with an early meeting’ means coffee → early meeting, so Wednesday had one. It does not mean every early-meeting day brings coffee; that reverses the statement."
+ },
+ {
+  "id": "p-logic-cake-counts",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: cake counts",
+  "q": "A bakery has 12 cakes. Each is either chocolate or vanilla, and each is either frosted or plain. 7 are chocolate, 5 are frosted, and no vanilla cake is frosted. Which must be true?",
+  "options": [
+   "There are more frosted cakes than plain ones.",
+   "Exactly 2 vanilla cakes are plain.",
+   "All chocolate cakes are frosted.",
+   "Exactly 2 chocolate cakes are plain.",
+   "Exactly 5 cakes are plain.",
+   "Some vanilla cakes are frosted."
+  ],
+  "answer": 3,
+  "why": "All 5 frosted cakes must be chocolate, so 7 − 5 = 2 chocolate cakes are plain. The 5 vanilla cakes are all plain, which makes 7 plain cakes in total, not 5."
+ },
+ {
+  "id": "p-logic-knights-and-knaves",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: knights and knaves",
+  "q": "On an island, knights always tell the truth and knaves always lie. Ana says, “Ben and I are both knaves.” What are Ana and Ben?",
+  "options": [
+   "Both are knaves.",
+   "Ana is a knave, and Ben could be either.",
+   "Both are knights.",
+   "It cannot be determined.",
+   "Ana is a knight and Ben is a knave.",
+   "Ana is a knave and Ben is a knight."
+  ],
+  "answer": 5,
+  "why": "A knight could never call herself a knave, so Ana is a knave and her statement is false; since she is a knave, Ben must not be, so he is a knight. ‘Both knaves’ would make her statement true, which a knave can’t say."
+ },
+ {
+  "id": "p-logic-six-runners",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: six runners",
+  "q": "Six runners finished a race with no ties. Quinn finished first. Rania finished immediately after Quinn. Uma finished last. Tariq finished before Priya, and Priya finished before Sven. Who finished fourth?",
+  "options": [
+   "Uma",
+   "Tariq",
+   "Priya",
+   "Rania",
+   "It cannot be determined",
+   "Sven"
+  ],
+  "answer": 2,
+  "why": "Quinn is 1st, Rania 2nd and Uma 6th, leaving 3rd–5th for Tariq, Priya and Sven in that order, so Priya is 4th. Tariq is 3rd, not 4th."
+ },
+ {
+  "id": "p-logic-scholarship-rules",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: scholarship rules",
+  "q": "A scholarship requires a GPA of at least 3.5 and at least 40 hours of community service. Which must be true?",
+  "options": [
+   "Every recipient has exactly 40 hours of service.",
+   "A student with a 3.2 GPA cannot receive the scholarship.",
+   "Most applicants will receive it.",
+   "A student with a 3.4 GPA and 60 hours of service can receive it.",
+   "GPA counts more than service.",
+   "Any student with a 3.8 GPA and 40 hours of service will receive it."
+  ],
+  "answer": 1,
+  "why": "Both conditions are required, so failing the GPA rule rules a student out. Meeting both requirements is necessary but not stated to be enough, so a guaranteed award doesn’t follow."
+ },
+ {
+  "id": "p-logic-unless-the-shipment",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: unless the shipment",
+  "q": "Unless the shipment arrives by noon, the store will close early. The store did not close early. If the first statement is true, which must be true?",
+  "options": [
+   "No shipment was expected that day.",
+   "The shipment arrived after noon.",
+   "The shipment arrived by noon.",
+   "The store stayed open because of a holiday.",
+   "If a shipment arrives by noon, the store never closes early.",
+   "The shipment may or may not have arrived by noon."
+  ],
+  "answer": 2,
+  "why": "‘Unless A, B’ means if A doesn’t happen, B happens; B didn’t happen, so A did. The statement doesn’t promise the store never closes early after an on-time shipment, so that option reverses it."
+ },
+ {
+  "id": "p-logic-violinists-and-music",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: violinists and music",
+  "q": "All violinists in the orchestra read music. Some people who read music are not professionals. Which must be true?",
+  "options": [
+   "Some professionals are violinists in the orchestra.",
+   "No violinists in the orchestra are professionals.",
+   "Some violinists in the orchestra are not professionals.",
+   "It cannot be determined from these statements whether any violinist is a professional.",
+   "Everyone who reads music is a violinist.",
+   "All violinists in the orchestra are professionals."
+  ],
+  "answer": 3,
+  "why": "The non-professional music readers might all be people outside the orchestra, so nothing follows about the violinists. ‘Some violinists are not professionals’ assumes those readers include violinists."
+ },
+ {
+  "id": "p-logic-where-is-the-key",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: where is the key",
+  "q": "A key is in exactly one place: the drawer, the bag, or somewhere else. Exactly one of these statements is true: (1) The key is in the drawer. (2) The key is not in the bag. (3) The key is not in the drawer. Where is the key?",
+  "options": [
+   "In both the drawer and the bag",
+   "It cannot be determined",
+   "In the drawer",
+   "Somewhere else",
+   "Nowhere; the statements contradict each other",
+   "In the bag"
+  ],
+  "answer": 5,
+  "why": "If it were in the drawer, (1) and (2) would both be true; if somewhere else, (2) and (3) would both be true; only ‘in the bag’ leaves exactly one true statement, (3). ‘Drawer’ fails because two statements would be true."
+ },
+ {
+  "id": "p-logic-chain-of-conditions",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: chain of conditions",
+  "q": "If Ravi is promoted, Mina will lead the team. If Mina leads the team, the project will move to Denver. The project did not move to Denver. Which must be true?",
+  "options": [
+   "Mina leads the team.",
+   "Ravi was promoted but Mina declined.",
+   "Ravi was promoted.",
+   "Ravi was not promoted.",
+   "Nothing can be concluded about Ravi.",
+   "The project moved to another city."
+  ],
+  "answer": 3,
+  "why": "A promotion would lead to Mina leading, which would lead to Denver; since Denver didn’t happen, neither did the earlier steps. ‘Nothing can be concluded’ misses that the chain works backward."
+ },
+ {
+  "id": "p-logic-seating-puzzle",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "logic",
+  "term": "Logic: seating puzzle",
+  "q": "Four friends sit in a row of four seats. Farah sits in the far-left seat. Dev is not in an end seat. Elif sits immediately to Dev’s right. Gus does not sit next to Elif. Where does Gus sit?",
+  "options": [
+   "Third seat from the left",
+   "Far-right seat",
+   "Second seat from the left",
+   "Far-left seat",
+   "Directly to Elif’s right",
+   "It cannot be determined"
+  ],
+  "answer": 2,
+  "why": "If Dev took the second seat, Elif would be third and Gus fourth, next to Elif, which is not allowed; so Dev is third, Elif fourth, and Gus second. The far-right seat fails because Gus would sit beside Elif."
+ },
+ {
+  "id": "p-similar-obsequious",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Similar: obsequious",
+  "q": "Which word is most similar in meaning to obsequious?",
+  "options": [
+   "arrogant",
+   "stubborn",
+   "obvious",
+   "obscure",
+   "careless",
+   "fawning"
+  ],
+  "answer": 5,
+  "why": "Obsequious means too eager to please or obey; fawning means the same. Obvious and obscure only share its opening letters."
+ },
+ {
+  "id": "p-opposite-ebullient",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Opposite: ebullient",
+  "q": "Which word is most nearly the OPPOSITE of ebullient?",
+  "options": [
+   "exuberant",
+   "arrogant",
+   "generous",
+   "subdued",
+   "eloquent",
+   "elusive"
+  ],
+  "answer": 3,
+  "why": "Ebullient means cheerful and full of energy; subdued means quiet and low in spirit. Exuberant is a synonym, not an opposite."
+ },
+ {
+  "id": "p-odd-one-out-morose",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Odd one out: morose",
+  "q": "Which word is the odd one out? sanguine, optimistic, hopeful, buoyant, morose, upbeat",
+  "options": [
+   "morose",
+   "optimistic",
+   "hopeful",
+   "upbeat",
+   "buoyant",
+   "sanguine"
+  ],
+  "answer": 0,
+  "why": "Morose means gloomy; all the others mean cheerful or hopeful. Sanguine is less familiar, but here it means optimistic."
+ },
+ {
+  "id": "p-similar-obdurate",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Similar: obdurate",
+  "q": "Which choice is most similar in meaning to obdurate?",
+  "options": [
+   "long-lasting",
+   "generous",
+   "sorrowful",
+   "curious",
+   "stubborn and unwilling to change",
+   "obedient"
+  ],
+  "answer": 4,
+  "why": "Obdurate describes someone who stubbornly refuses to change their mind. Long-lasting fits durable, which looks similar but has a different meaning."
+ },
+ {
+  "id": "p-opposite-prolix",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Opposite: prolix",
+  "q": "Which word is most nearly the OPPOSITE of prolix?",
+  "options": [
+   "concise",
+   "professional",
+   "likely",
+   "repetitive",
+   "wordy",
+   "fluent"
+  ],
+  "answer": 0,
+  "why": "Prolix means using too many words; concise means using few. Wordy and repetitive are close to prolix, not opposite."
+ },
+ {
+  "id": "p-odd-one-out-exacerbate",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Odd one out: exacerbate",
+  "q": "Which word is the odd one out? mitigate, alleviate, assuage, exacerbate, allay, relieve",
+  "options": [
+   "exacerbate",
+   "allay",
+   "alleviate",
+   "relieve",
+   "assuage",
+   "mitigate"
+  ],
+  "answer": 0,
+  "why": "Exacerbate means to make worse; all the others mean to ease or lessen. Assuage and allay are less common but both mean to calm or relieve."
+ },
+ {
+  "id": "p-similar-pernicious",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Similar: pernicious",
+  "q": "Which choice is most similar in meaning to pernicious?",
+  "options": [
+   "overly fussy about details",
+   "stubbornly persistent",
+   "extremely valuable",
+   "relevant to the matter at hand",
+   "completely harmless",
+   "harmful, often in a gradual or hidden way"
+  ],
+  "answer": 5,
+  "why": "Pernicious describes something that does damage, often subtly over time. ‘Relevant’ defines pertinent and ‘fussy’ defines persnickety, two look-alike words."
+ },
+ {
+  "id": "p-opposite-venerate",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Opposite: venerate",
+  "q": "Which word is most nearly the OPPOSITE of venerate?",
+  "options": [
+   "respect",
+   "forgive",
+   "imitate",
+   "ventilate",
+   "despise",
+   "worship"
+  ],
+  "answer": 4,
+  "why": "To venerate is to regard with deep respect; to despise is to regard with contempt. Worship and respect are close to venerate in meaning."
+ },
+ {
+  "id": "p-odd-pair-pilot-airplane",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Odd pair: pilot : airplane",
+  "q": "Which pair does NOT show the same relationship as the others?",
+  "options": [
+   "composer : symphony",
+   "architect : building",
+   "pilot : airplane",
+   "sculptor : statue",
+   "chef : meal",
+   "author : book"
+  ],
+  "answer": 2,
+  "why": "In every other pair the person creates the thing; a pilot operates an airplane but doesn’t create it. An architect may not build the building by hand, but designs it, which is still creating."
+ },
+ {
+  "id": "p-similar-equanimity",
+  "track": "reasoning",
+  "level": 3,
+  "kind": "relationship",
+  "term": "Similar: equanimity",
+  "q": "Which choice is most similar in meaning to equanimity?",
+  "options": [
+   "calm composure, especially under stress",
+   "equality",
+   "excitement",
+   "generosity",
+   "fairness",
+   "hostility"
+  ],
+  "answer": 0,
+  "why": "Equanimity is mental calm and evenness of temper. Equality shares the ‘equ-’ root but refers to equal status, not a calm state of mind."
+ }
+]

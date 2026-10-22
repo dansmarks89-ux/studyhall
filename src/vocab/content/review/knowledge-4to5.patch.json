@@ -1,0 +1,197 @@
+[
+ {
+  "id": "k-pareto-principle",
+  "set": {
+   "note": "Named after Italian economist Vilfredo Pareto, who studied how unevenly wealth and income were spread. A rule of thumb, not a law."
+  },
+  "why": "The '80% of Italy's land owned by 20%' anecdote is widely repeated but not reliably documented in Pareto's work (his studies were of income/wealth distributions); replace with a verifiable statement."
+ },
+ {
+  "id": "k-dark-matter",
+  "set": {
+   "def": "invisible material, detected only through its gravity, that astronomers estimate outweighs ordinary matter about five to one"
+  },
+  "why": "The ~5:1 ratio (Planck: ~27% vs ~5%) is against all ordinary (baryonic) matter, most of which is not visible; 'visible material' would make the ratio far larger."
+ },
+ {
+  "id": "k-mali-empire",
+  "set": {
+   "def": "a wealthy West African state that flourished from the 1200s to the 1500s, famed for its gold and its scholarly city, Timbuktu"
+  },
+  "why": "End date 'the 1600s' conflicts with Britannica (13th-16th century); the empire had collapsed to a rump by c.1600. Use the dates the sources agree on."
+ },
+ {
+  "id": "k-great-zimbabwe",
+  "set": {
+   "why": "Archaeological research proved local Africans built it, refuting colonial-era claims that foreigners must have built the site."
+  },
+  "why": "The walls themselves did not 'disprove' anything; it was archaeological excavation (Randall-MacIver 1905, Caton-Thompson 1929) that refuted the colonial claims."
+ },
+ {
+  "id": "k-absolute-zero",
+  "set": {
+   "ex": [
+    "Scientists have cooled atoms to within a tiny fraction of a degree of absolute zero.",
+    "The Kelvin scale starts at absolute zero, so water freezes at about 273 kelvins."
+   ],
+   "level": 3
+  },
+  "why": "'No temperature in kelvins is ever negative' is contradicted by experimentally realized negative absolute temperatures (e.g., Braun et al. 2013); replaced with a safe fact. Level 5 is a big miss for a widely known concept."
+ },
+ {
+  "id": "k-theory-of-relativity",
+  "set": {
+   "level": 3
+  },
+  "why": "Level 5 ('well-read') is a big miss; Einstein's relativity and E = mc² are general adult knowledge (~2-3)."
+ },
+ {
+  "id": "k-magical-realism",
+  "set": {
+   "ex": [
+    "In One Hundred Years of Solitude, magical realism lets a young woman rise into the sky while folding sheets.",
+    "Toni Morrison's Beloved is often read as magical realism, bringing a ghost into a story about slavery's aftermath."
+   ]
+  },
+  "why": "Stated flatly that Beloved 'uses magical realism'; Morrison herself rejected the label, so attribute it as a common reading."
+ },
+ {
+  "id": "k-epigenetics",
+  "set": {
+   "def": "the study of chemical tags on DNA and its packaging that switch genes on or off without changing the DNA sequence"
+  },
+  "why": "Epigenetic marks include histone modifications on DNA's packaging proteins, not only tags on DNA itself."
+ },
+ {
+  "id": "k-osmosis",
+  "set": {
+   "def": "the movement of water through a semipermeable membrane from a weaker solution into a more concentrated one"
+  },
+  "why": "Osmosis requires a semipermeable (selectively permeable) membrane; any membrane is inaccurate."
+ },
+ {
+  "id": "k-sovereignty",
+  "set": {
+   "syn": [
+    "independence"
+   ]
+  },
+  "why": "'autonomy' and 'self-rule' usually denote limited self-government within a larger state, i.e., the opposite of full sovereignty; not true synonyms."
+ },
+ {
+  "id": "k-tort",
+  "set": {
+   "ex": [
+    "Negligence, such as injuring someone by running a red light, is one kind of tort.",
+    "Aisha took a course in tort law covering negligence, defamation, and product liability."
+   ]
+  },
+  "why": "Original example was ungrammatical ('Negligence is one kind of tort, such as a driver...' attaches the example to 'tort')."
+ },
+ {
+  "id": "k-pragmatism",
+  "set": {
+   "why": "Developed by Charles Sanders Peirce, William James, and John Dewey, it influenced American education, law, and psychology."
+  },
+  "why": "Peirce founded pragmatism; James popularized and Dewey extended it. 'Founded by' all three contradicts the item's own cloze ('Peirce founded ___')."
+ },
+ {
+  "id": "k-cogito-ergo-sum",
+  "set": {
+   "def": "Descartes's statement “I think, therefore I am,” meaning that the very act of thinking, even doubting, proves one's own existence"
+  },
+  "why": "Descartes's argument rests on thinking in general (of which doubting is one form), not doubting alone."
+ },
+ {
+  "id": "k-machine-learning",
+  "remove_dx": [
+   "k-artificial-intelligence"
+  ],
+  "why": "ML is a type of AI; 'artificial intelligence' also fits the cloze ('engineers used ___ so the system could pick up spam patterns')."
+ },
+ {
+  "id": "k-monetary-policy",
+  "remove_dx": [
+   "k-quantitative-easing"
+  ],
+  "why": "QE is itself a monetary-policy tool; overlapping definitions."
+ },
+ {
+  "id": "k-quantitative-easing",
+  "remove_dx": [
+   "k-monetary-policy"
+  ],
+  "why": "QE is a form of monetary policy, so 'monetary policy' can arguably answer 'which term means a central bank creating money to buy bonds'."
+ },
+ {
+  "id": "k-neurotransmitter",
+  "remove_dx": [
+   "k-hormone"
+  ],
+  "why": "Dopamine is also a hormone and both are 'chemical messengers'; too close for 'Dopamine is a ___'."
+ },
+ {
+  "id": "k-autoimmune-disease",
+  "remove_dx": [
+   "k-inflammation"
+  ],
+  "why": "MS is an inflammatory disease; 'inflammation' can be read as fitting the cloze."
+ },
+ {
+  "id": "k-large-language-model",
+  "remove_dx": [
+   "k-neural-network"
+  ],
+  "why": "An LLM is a neural network; 'the neural network could summarize reports and draft emails' fits the cloze."
+ },
+ {
+  "id": "k-api",
+  "remove_dx": [
+   "k-ip-address"
+  ],
+  "why": "'connects to a mapping service's IP address' is literally sensible in the cloze."
+ },
+ {
+  "id": "k-fault-line",
+  "remove_dx": [
+   "k-ring-of-fire"
+  ],
+  "why": "'rocks along the Ring of Fire suddenly slipped' is semi-plausible in the cloze."
+ },
+ {
+  "id": "k-partition-of-india",
+  "remove_dx": [
+   "k-decolonization"
+  ],
+  "why": "Partition was part of decolonization; 'during the decolonization' could fill the 1947 cloze."
+ },
+ {
+  "id": "k-magical-realism",
+  "remove_dx": [
+   "k-surrealism",
+   "k-allegory"
+  ],
+  "why": "'In the novel's surrealism/allegory, no one is surprised when flowers rain from the sky' can be read as sensible."
+ },
+ {
+  "id": "k-dialectic",
+  "remove_dx": [
+   "k-socratic-method"
+  ],
+  "why": "The Socratic method is the dialectic of Plato's dialogues (the item's own example); overlapping meaning."
+ },
+ {
+  "id": "k-mind-body-dualism",
+  "remove_dx": [
+   "k-metaphysics"
+  ],
+  "why": "'Critics of Descartes's metaphysics asked how a nonphysical soul could move a physical arm' is a sensible sentence."
+ },
+ {
+  "id": "k-newtons-third-law",
+  "remove_dx": [
+   "k-kinetic-energy"
+  ],
+  "why": "A careless reader can take 'a balloon zooming forward is a classic demonstration of kinetic energy' as correct."
+ }
+]

@@ -1,0 +1,232 @@
+[
+ {
+  "id": "v-auspicious",
+  "remove_dx": [
+   "v-emphatic"
+  ],
+  "why": "'an emphatic beginning/start' is a common sports phrase and fits the cloze"
+ },
+ {
+  "id": "v-baseless",
+  "remove_dx": [
+   "v-untenable"
+  ],
+  "why": "'claims were found to be untenable and were dropped' fits the cloze"
+ },
+ {
+  "id": "v-emphatic",
+  "remove_dx": [
+   "v-belligerent"
+  ],
+  "why": "'Her refusal was so belligerent that nobody dared raise it again' is a sensible fill"
+ },
+ {
+  "id": "v-incoherent",
+  "remove_dx": [
+   "v-convoluted"
+  ],
+  "why": "def overlaps ('hard to follow') and 'rambling and convoluted' fits the cloze"
+ },
+ {
+  "id": "v-nascent",
+  "remove_dx": [
+   "v-audacious"
+  ],
+  "why": "'the audacious startup' could sensibly fill the cloze"
+ },
+ {
+  "id": "v-callous",
+  "remove_dx": [
+   "v-culpable"
+  ],
+  "why": "'leaving the injured cyclist was a culpable act' fits the cloze"
+ },
+ {
+  "id": "v-convoluted",
+  "remove_dx": [
+   "v-tenuous"
+  ],
+  "why": "'His excuse was so tenuous ... that no one believed it' fits the cloze"
+ },
+ {
+  "id": "v-belligerent",
+  "set": {
+   "ex": [
+    "The belligerent customer shouted at the staff and refused to leave the store.",
+    "The two leaders' belligerent speeches raised fears of war between their neighboring countries."
+   ]
+  },
+  "why": "ex 2 began with 'Their' with no antecedent"
+ },
+ {
+  "id": "v-tenacious",
+  "set": {
+   "ex": [
+    "Aisha was tenacious, calling the city every week until it finally fixed the broken streetlights.",
+    "The tenacious defender stayed close to the star player for the entire game."
+   ]
+  },
+  "why": "'tenacious phone calls' is an awkward collocation; the quality belongs to the person"
+ },
+ {
+  "id": "v-tenacious",
+  "remove_dx": [
+   "v-resourceful"
+  ],
+  "why": "'the resourceful inventor kept pitching her idea' is a plausible fill for the cloze"
+ },
+ {
+  "id": "v-tenuous",
+  "remove_dx": [
+   "v-meager"
+  ],
+  "why": "'evidence was meager and unconvincing' fits the cloze; defs also overlap (slight / too small)"
+ },
+ {
+  "id": "v-untenable",
+  "remove_dx": [
+   "v-disingenuous"
+  ],
+  "why": "'the claim that it knew nothing became/seemed disingenuous' is a plausible fill"
+ },
+ {
+  "id": "v-flagrant",
+  "remove_dx": [
+   "v-quintessential"
+  ],
+  "why": "'a quintessential case of plagiarism' is a plausible fill"
+ },
+ {
+  "id": "v-ephemeral",
+  "remove_dx": [
+   "v-tenuous"
+  ],
+  "why": "'its popularity proved tenuous' is a plausible fill"
+ },
+ {
+  "id": "v-lackluster",
+  "remove_dx": [
+   "v-lukewarm"
+  ],
+  "why": "'a lukewarm performance' fits the cloze and the defs overlap (half-hearted vs lacking energy)"
+ },
+ {
+  "id": "v-jaded",
+  "remove_dx": [
+   "v-pompous"
+  ],
+  "why": "'the pompous food critic was rarely impressed' fits the cloze"
+ },
+ {
+  "id": "v-disingenuous",
+  "set": {
+   "def": "not sincere or honest, especially by pretending to know less about something than one really does"
+  },
+  "why": "'or care more' is not part of standard dictionary definitions (Oxford: pretending one knows less than one does)"
+ },
+ {
+  "id": "v-disingenuous",
+  "remove_dx": [
+   "v-baseless"
+  ],
+  "why": "'The CEO's claim ... seemed baseless, since emails showed he had known' is a plausible fill"
+ },
+ {
+  "id": "v-culpable",
+  "remove_dx": [
+   "v-callous"
+  ],
+  "why": "'the landlord was callous because he ignored repeated complaints' fits the cloze"
+ },
+ {
+  "id": "v-abhorrent",
+  "remove_dx": [
+   "v-callous"
+  ],
+  "why": "'a callous crime' fits the meaning of the cloze (only the article differs)"
+ },
+ {
+  "id": "v-alienate",
+  "set": {
+   "def": "to cause someone to feel isolated or to become unfriendly toward you, often losing their support"
+  },
+  "why": "old def said 'make someone feel ... unfriendly', which is garbled; matches Oxford/WordNet sense"
+ },
+ {
+  "id": "v-preclude",
+  "remove_dx": [
+   "v-dissuade"
+  ],
+  "why": "'A lack of funding may dissuade the city from building' fits the cloze"
+ },
+ {
+  "id": "v-dissuade",
+  "remove_dx": [
+   "v-preclude"
+  ],
+  "why": "'Warning signs did not preclude the surfers from heading out' fits the cloze"
+ },
+ {
+  "id": "v-rescind",
+  "remove_dx": [
+   "v-curtail"
+  ],
+  "why": "'voted to curtail the new parking fee' is a plausible fill"
+ },
+ {
+  "id": "v-nuance",
+  "remove_dx": [
+   "v-tact"
+  ],
+  "why": "'all slogans and shouting, with no room for tact' fits the cloze"
+ },
+ {
+  "id": "v-credence",
+  "remove_dx": [
+   "v-veracity"
+  ],
+  "why": "defs overlap (accepted as true / being true) and 'lent veracity to rumors' would tempt"
+ },
+ {
+  "id": "v-veracity",
+  "remove_dx": [
+   "v-credence"
+  ],
+  "why": "defs overlap (being true / accepted as true)"
+ },
+ {
+  "id": "v-prudence",
+  "remove_dx": [
+   "v-acumen"
+  ],
+  "why": "'Her acumen in saving a little every month' is a plausible fill; defs overlap (good judgment)"
+ },
+ {
+  "id": "v-stalemate",
+  "remove_dx": [
+   "v-juncture"
+  ],
+  "why": "'the budget negotiations reached a (critical) juncture' is a plausible fill"
+ },
+ {
+  "id": "v-erroneously",
+  "remove_dx": [
+   "v-unwittingly"
+  ],
+  "why": "'The bank unwittingly charged her twice' fits the cloze"
+ },
+ {
+  "id": "v-unwittingly",
+  "remove_dx": [
+   "v-erroneously"
+  ],
+  "why": "'he erroneously installed a virus' is a plausible fill"
+ },
+ {
+  "id": "v-exorbitant",
+  "remove_dx": [
+   "v-onerous"
+  ],
+  "why": "'Rents have become so onerous that workers moved' fits the cloze"
+ }
+]

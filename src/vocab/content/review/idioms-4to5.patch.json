@@ -1,0 +1,13 @@
+[
+ {"id": "i-live-high-on-the-hog", "remove_dx": ["i-feather-your-nest"], "why": "'make yourself rich or comfortable' overlaps 'enjoy a luxurious lifestyle' for the def-matching question"},
+ {"id": "i-the-hair-of-the-dog", "remove_dx": ["i-forty-winks"], "why": "Cloze 'the morning after the party, Diego joked that he needed ___' is sensibly filled by 'forty winks'"},
+ {"id": "i-rob-peter-to-pay-paul", "remove_dx": ["i-penny-wise-and-pound-foolish"], "why": "Borrowing from a retirement fund for car payments is plausibly also 'penny-wise and pound-foolish'; second money idiom fits the cloze"},
+ {"id": "i-penny-wise-and-pound-foolish", "remove_dx": ["i-buy-a-pig-in-a-poke"], "why": "Cloze is about skipping an inspection, which is what 'buy a pig in a poke' describes; a learner could defensibly pick it"},
+ {"id": "i-feather-your-nest", "remove_dx": ["i-live-high-on-the-hog"], "why": "Overlapping meanings (rich, comfortable living); 'used donations to live high on the hog, buying a lake house' also fits the cloze"},
+ {"id": "i-pushing-up-daisies", "remove_dx": ["i-long-in-the-tooth"], "why": "'keep tending his roses until he was long in the tooth himself' is a sensible fill for the cloze"},
+ {"id": "i-a-stitch-in-time-saves-nine", "remove_dx": ["i-penny-wise-and-pound-foolish"], "why": "Delaying a cheap filling until a root canal is needed is also a penny-wise/pound-foolish warning; could fill 'remember, ___'"},
+ {"id": "i-hearth-and-home", "remove_dx": ["i-kith-and-kin"], "why": "'chose kith and kin over adventure and settled down' fits the cloze; meanings (family life vs. family and friends) overlap"},
+ {"id": "i-in-the-bosom-of-your-family", "remove_dx": ["i-kith-and-kin"], "why": "Def 'surrounded by ... your closest relatives' overlaps 'friends and relatives; the people closest to you'"},
+ {"id": "i-at-loggerheads", "remove_dx": ["i-a-war-of-attrition"], "why": "Union vs. management deadlock with no compromise is also describable as a war of attrition; overlapping conflict sense"},
+ {"id": "i-kith-and-kin", "set": {"note": "'Kith' comes from an Old English word for acquaintance, kinship or one's native land and survives almost only in this phrase; 'kin' means relatives."}, "why": "Original note said kith 'originally meant friends and neighbors'; Old English cyth(th) primarily meant knowledge/acquaintance, kinship, native land (etymonline); phrase first meant 'country and kinsfolk'"}
+]
