@@ -1,0 +1,1631 @@
+{
+ "id": "L9",
+ "n": 9,
+ "title": "Describing and comparing",
+ "goal": "Describe people, places, colours and clothes, and compare things.",
+ "notes": [
+  {
+   "h": "Describing a noun: a big house, a good person",
+   "p": "To put a describing word in front of a noun, change its ending. {{커요}} (it's big) becomes {{큰}}: {{큰 집}}. After a final consonant add {{은}}: {{작아요}} becomes {{작은}}, {{좋아요}} becomes {{좋은}}. Words ending in {{해요}} become {{한}}: {{조용해요}} becomes {{조용한}}. Words built on {{있어요}} or {{없어요}} take {{는}}: {{맛있는}}, {{재미있는}}. Words that change ㅂ to {{워}} (like {{매워요}}, {{추워요}}) end in {{운}}: {{매운 음식}}.",
+   "ex": [
+    [
+     "큰 집",
+     "a big house"
+    ],
+    [
+     "좋은 사람",
+     "a good person"
+    ],
+    [
+     "맛있는 음식",
+     "delicious food"
+    ],
+    [
+     "매운 음식",
+     "spicy food"
+    ]
+   ]
+  },
+  {
+   "h": "Colours",
+   "p": "Colour words end in {{색}} (colour): {{빨간색}}, {{파란색}}, {{검은색}}. Right before a noun you can drop {{색}}: {{빨간 차}}. When the colour stands alone, as in asking for one, keep {{색}}: {{검은색 주세요}}.",
+   "ex": [
+    [
+     "빨간 차",
+     "a red car"
+    ],
+    [
+     "검은색 주세요",
+     "The black one, please."
+    ],
+    [
+     "무슨 색 좋아해요?",
+     "What colour do you like?"
+    ]
+   ]
+  },
+  {
+   "h": "Three verbs for \"wear\"",
+   "p": "English uses \"wear\" for everything; Korean picks the verb by what you put on. {{입어요}} for clothes on your body, {{신어요}} for shoes and socks, {{써요}} for hats and glasses. These verbs mean \"put on\", so \"is wearing\" is {{-고 있어요}}: {{모자를 쓰고 있어요}}.",
+   "ex": [
+    [
+     "옷을 입어요",
+     "I put on clothes."
+    ],
+    [
+     "신발을 신어요",
+     "I put on my shoes."
+    ],
+    [
+     "안경을 써요",
+     "I wear glasses."
+    ],
+    [
+     "모자를 쓰고 있어요",
+     "I'm wearing a hat."
+    ]
+   ]
+  },
+  {
+   "h": "Comparing: than, more, the most, the same, like",
+   "p": "{{보다}} means \"than\" and goes right after the thing you compare against: {{이게 저거보다 더 싸요}} = this one is cheaper than that one. {{더}} = more, {{제일}} = the most. {{같아요}} = it's the same, {{달라요}} = it's different. {{처럼}} = like, in the same way as.",
+   "ex": [
+    [
+     "오늘은 어제보다 더 추워요.",
+     "It's colder today than yesterday."
+    ],
+    [
+     "여기 뭐가 제일 맛있어요?",
+     "What's the most delicious thing here?"
+    ],
+    [
+     "한국 사람처럼 말하고 싶어요.",
+     "I want to speak like a Korean."
+    ]
+   ]
+  },
+  {
+   "h": "Sounds: silent ㅎ, sliding letters, double final consonants",
+   "p": "{{같아요}} is said {{가타요}}: the final ㅌ slides into the next syllable. ㅎ goes silent between sounds: {{좋은}} sounds like {{조은}}, and {{많이}} like {{마니}}. Before ㄴ, the ㅆ in {{있}} turns into ㄴ: {{맛있는}} is said {{마신는}}. With two final letters, the second slides over: {{짧아요}} is said {{짤바요}}, {{넓어요}} is said {{널버요}}.",
+   "ex": [
+    [
+     "같아요",
+     "It's the same."
+    ],
+    [
+     "좋은 사람",
+     "a good person"
+    ],
+    [
+     "머리가 짧아요",
+     "She has short hair."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "t": "큰 집",
+   "en": "a big house",
+   "topic": "Describing",
+   "note": "{{커요}} becomes {{큰}} before a noun."
+  },
+  {
+   "t": "작은 가방",
+   "en": "a small bag",
+   "topic": "Describing",
+   "note": "{{가방}} = bag."
+  },
+  {
+   "t": "좋은 사람",
+   "en": "a good person",
+   "topic": "Describing",
+   "note": "The ㅎ is silent: said {{조은}}."
+  },
+  {
+   "t": "맛있는 음식",
+   "en": "delicious food",
+   "topic": "Describing",
+   "note": "{{있어요}} words take {{는}} before a noun."
+  },
+  {
+   "t": "커요",
+   "en": "It's big",
+   "topic": "Describing",
+   "note": ""
+  },
+  {
+   "t": "작아요",
+   "en": "It's small",
+   "topic": "Describing",
+   "note": ""
+  },
+  {
+   "t": "너무 커요",
+   "en": "It's too big",
+   "topic": "Describing",
+   "note": "{{너무}} = too (much)."
+  },
+  {
+   "t": "예뻐요",
+   "en": "It's pretty",
+   "topic": "Describing",
+   "note": "Also for people: she's pretty."
+  },
+  {
+   "t": "어때요?",
+   "en": "How is it? / How about it?",
+   "topic": "Describing",
+   "note": "Ask for an opinion, or suggest something."
+  },
+  {
+   "t": "색",
+   "en": "colour",
+   "topic": "Colours",
+   "note": ""
+  },
+  {
+   "t": "빨간색",
+   "en": "red",
+   "topic": "Colours",
+   "note": ""
+  },
+  {
+   "t": "파란색",
+   "en": "blue",
+   "topic": "Colours",
+   "note": ""
+  },
+  {
+   "t": "노란색",
+   "en": "yellow",
+   "topic": "Colours",
+   "note": ""
+  },
+  {
+   "t": "하얀색",
+   "en": "white",
+   "topic": "Colours",
+   "note": "{{흰색}} also means white."
+  },
+  {
+   "t": "검은색",
+   "en": "black",
+   "topic": "Colours",
+   "note": "{{까만색}} also means black."
+  },
+  {
+   "t": "초록색",
+   "en": "green",
+   "topic": "Colours",
+   "note": "Said {{초록쌕}}."
+  },
+  {
+   "t": "빨간 차",
+   "en": "a red car",
+   "topic": "Colours",
+   "note": "Before a noun, drop {{색}}. {{차}} = car."
+  },
+  {
+   "t": "무슨 색 좋아해요?",
+   "en": "What colour do you like?",
+   "topic": "Colours",
+   "note": ""
+  },
+  {
+   "t": "다른 색 있어요?",
+   "en": "Do you have another colour?",
+   "topic": "Colours",
+   "note": "{{다른}} = other, different."
+  },
+  {
+   "t": "옷",
+   "en": "clothes",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "바지",
+   "en": "pants / trousers",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "치마",
+   "en": "skirt",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "셔츠",
+   "en": "shirt",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "신발",
+   "en": "shoes",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "모자",
+   "en": "hat",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "안경",
+   "en": "glasses",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "코트",
+   "en": "coat",
+   "topic": "Clothes",
+   "note": ""
+  },
+  {
+   "t": "옷을 입어요",
+   "en": "I put on clothes",
+   "topic": "Clothes",
+   "note": "{{입어요}} is for clothes on your body."
+  },
+  {
+   "t": "신발을 신어요",
+   "en": "I put on shoes",
+   "topic": "Clothes",
+   "note": "{{신어요}} is for shoes and socks."
+  },
+  {
+   "t": "모자를 써요",
+   "en": "I put on a hat",
+   "topic": "Clothes",
+   "note": "{{써요}} is for hats and glasses: {{안경을 써요}}."
+  },
+  {
+   "t": "잘 어울려요",
+   "en": "It suits you",
+   "topic": "Clothes",
+   "note": "A common compliment in shops and among friends."
+  },
+  {
+   "t": "입어 봐도 돼요?",
+   "en": "Can I try it on?",
+   "topic": "Clothes",
+   "note": "{{-아/어 봐도 돼요?}} = may I try …? For shoes: {{신어 봐도 돼요?}}"
+  },
+  {
+   "t": "더 큰 거 있어요?",
+   "en": "Do you have a bigger one?",
+   "topic": "Clothes",
+   "note": "{{거}} = thing, one. {{더 작은 거}} = a smaller one."
+  },
+  {
+   "t": "더",
+   "en": "more",
+   "topic": "Comparing",
+   "note": ""
+  },
+  {
+   "t": "제일",
+   "en": "the most",
+   "topic": "Comparing",
+   "note": ""
+  },
+  {
+   "t": "이게 저거보다 더 싸요",
+   "en": "This one is cheaper than that one",
+   "topic": "Comparing",
+   "note": "{{보다}} = than. {{이게}} = this one (as the subject)."
+  },
+  {
+   "t": "제일 좋아하는 음식이 뭐예요?",
+   "en": "What's your favourite food?",
+   "topic": "Comparing",
+   "note": "Literally \"the food you like most is what?\""
+  },
+  {
+   "t": "같아요",
+   "en": "It's the same",
+   "topic": "Comparing",
+   "note": "Said {{가타요}}.",
+   "avoid": [
+    39
+   ]
+  },
+  {
+   "t": "달라요",
+   "en": "It's different",
+   "topic": "Comparing",
+   "note": ""
+  },
+  {
+   "t": "똑같아요",
+   "en": "It's exactly the same",
+   "topic": "Comparing",
+   "note": "Said {{똑까타요}}.",
+   "avoid": [
+    37
+   ]
+  },
+  {
+   "t": "한국 사람처럼 말하고 싶어요",
+   "en": "I want to speak like a Korean",
+   "topic": "Comparing",
+   "note": "{{처럼}} = like, in the same way as."
+  },
+  {
+   "t": "어느 거",
+   "en": "which one",
+   "topic": "Comparing",
+   "note": "As the subject it becomes {{어느 게}}: {{어느 게 더 좋아요?}}"
+  },
+  {
+   "t": "키가 커요",
+   "en": "He/She is tall",
+   "topic": "People",
+   "note": "Literally \"height is big\"."
+  },
+  {
+   "t": "키가 작아요",
+   "en": "He/She is short",
+   "topic": "People",
+   "note": ""
+  },
+  {
+   "t": "머리가 길어요",
+   "en": "He/She has long hair",
+   "topic": "People",
+   "note": "{{머리}} = hair (also head)."
+  },
+  {
+   "t": "머리가 짧아요",
+   "en": "He/She has short hair",
+   "topic": "People",
+   "note": "Said {{머리가 짤바요}}."
+  },
+  {
+   "t": "잘생겼어요",
+   "en": "He's handsome",
+   "topic": "People",
+   "note": "Past form, but it means \"is handsome\" now."
+  },
+  {
+   "t": "친절해요",
+   "en": "He/She is kind",
+   "topic": "People",
+   "note": "Also: friendly, helpful (staff, service)."
+  },
+  {
+   "t": "사람이 많아요",
+   "en": "It's crowded",
+   "topic": "Places",
+   "note": "Literally \"there are many people\"."
+  },
+  {
+   "t": "조용해요",
+   "en": "It's quiet",
+   "topic": "Places",
+   "note": ""
+  },
+  {
+   "t": "시끄러워요",
+   "en": "It's noisy",
+   "topic": "Places",
+   "note": ""
+  },
+  {
+   "t": "깨끗해요",
+   "en": "It's clean",
+   "topic": "Places",
+   "note": ""
+  },
+  {
+   "t": "넓어요",
+   "en": "It's spacious",
+   "topic": "Places",
+   "note": "Said {{널버요}}."
+  },
+  {
+   "t": "많이",
+   "en": "a lot",
+   "topic": "Places",
+   "note": "Said {{마니}}: {{많이 먹었어요}} = I ate a lot."
+  },
+  {
+   "t": "식당",
+   "en": "restaurant",
+   "topic": "Places",
+   "note": "Said {{식땅}}."
+  }
+ ],
+ "items": [
+  {
+   "id": "L9-gap-01",
+   "t": "gap",
+   "q": "___ 집에 살아요.",
+   "en": "I live in a big house.",
+   "opts": [
+    "큰",
+    "커요",
+    "크고",
+    "크는"
+   ],
+   "a": 0,
+   "why": "Right before a noun, {{커요}} becomes {{큰}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-gap-02",
+   "t": "gap",
+   "q": "맛있___ 음식을 먹었어요.",
+   "en": "I ate delicious food.",
+   "opts": [
+    "는",
+    "은",
+    "어요",
+    "고"
+   ],
+   "a": 0,
+   "why": "Words built on {{있어요}} take {{는}} before a noun: {{맛있는 음식}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-gap-03",
+   "t": "gap",
+   "q": "좋___ 사람이에요.",
+   "en": "He's a good person.",
+   "opts": [
+    "은",
+    "는",
+    "아요",
+    "게"
+   ],
+   "a": 0,
+   "why": "{{좋아요}} becomes {{좋은}} before a noun. The ㅎ is silent: {{조은}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-gap-04",
+   "t": "gap",
+   "q": "___ 음식 좋아해요?",
+   "en": "Do you like spicy food?",
+   "opts": [
+    "매운",
+    "맵은",
+    "매워요",
+    "맵는"
+   ],
+   "a": 0,
+   "why": "{{매워요}} is one of the ㅂ words (like {{추워요}}), so before a noun it becomes {{매운}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-gap-05",
+   "t": "gap",
+   "q": "___ 차가 제 차예요.",
+   "en": "The white car is my car.",
+   "opts": [
+    "하얀",
+    "하얘요",
+    "하얗은",
+    "하얗게"
+   ],
+   "a": 0,
+   "why": "Right before a noun a colour takes its short form: {{하얀 차}}.",
+   "sk": [
+    "g:endings",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L9-gap-06",
+   "t": "gap",
+   "q": "저는 안경___ 써요.",
+   "en": "I wear glasses.",
+   "opts": [
+    "을",
+    "를",
+    "이",
+    "에"
+   ],
+   "a": 0,
+   "why": "{{안경}} is the object and ends in a consonant, so it takes {{을}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L9-gap-07",
+   "t": "gap",
+   "q": "모자를 ___ 있어요.",
+   "en": "I'm wearing a hat.",
+   "opts": [
+    "쓰고",
+    "입고",
+    "신고",
+    "써고"
+   ],
+   "a": 0,
+   "why": "Hats and glasses take {{써요}}, so \"wearing\" is {{쓰고 있어요}}.",
+   "sk": [
+    "s:vocab",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L9-gap-08",
+   "t": "gap",
+   "q": "어제 빨간 치마를 ___.",
+   "en": "Yesterday I wore a red skirt.",
+   "opts": [
+    "입었어요",
+    "신었어요",
+    "썼어요",
+    "입을 거예요"
+   ],
+   "a": 0,
+   "why": "A skirt is clothing, so {{입어요}}, and yesterday needs the past: {{입었어요}}.",
+   "sk": [
+    "s:vocab",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L9-gap-09",
+   "t": "gap",
+   "q": "이 가방이 저 가방___ 더 비싸요.",
+   "en": "This bag is more expensive than that bag.",
+   "opts": [
+    "보다",
+    "처럼",
+    "까지",
+    "에서"
+   ],
+   "a": 0,
+   "why": "{{보다}} = than. It goes after the thing you compare against.",
+   "sk": [
+    "g:compare",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L9-gap-10",
+   "t": "gap",
+   "q": "저는 맥주___ 커피를 더 좋아해요.",
+   "en": "I like coffee more than beer.",
+   "opts": [
+    "보다",
+    "가",
+    "도",
+    "처럼"
+   ],
+   "a": 0,
+   "why": "{{보다}} goes after the thing you like less: {{맥주보다}} = than beer.",
+   "sk": [
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-gap-11",
+   "t": "gap",
+   "q": "여기 뭐가 ___ 맛있어요?",
+   "en": "What's the most delicious thing here?",
+   "opts": [
+    "제일",
+    "보다",
+    "처럼",
+    "같이"
+   ],
+   "a": 0,
+   "why": "{{제일}} = the most.",
+   "sk": [
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-gap-12",
+   "t": "gap",
+   "q": "이거랑 저거는 색이 ___.",
+   "en": "This one and that one are different colours.",
+   "opts": [
+    "달라요",
+    "같아요",
+    "달러요",
+    "다라요"
+   ],
+   "a": 0,
+   "why": "Different is {{달라요}} (with a double ㄹ). {{같아요}} means the same.",
+   "sk": [
+    "g:compare",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-gap-13",
+   "t": "gap",
+   "q": "한국 사람___ 말하고 싶어요.",
+   "en": "I want to speak like a Korean.",
+   "opts": [
+    "처럼",
+    "보다",
+    "를",
+    "에서"
+   ],
+   "a": 0,
+   "why": "{{처럼}} = like, in the same way as.",
+   "sk": [
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-gap-14",
+   "t": "gap",
+   "q": "오늘 날씨가 ___ 추워요.",
+   "en": "It's very cold today.",
+   "opts": [
+    "많이",
+    "제일",
+    "많은",
+    "많아요"
+   ],
+   "a": 0,
+   "why": "{{많이}} = a lot, very. {{제일}} would mean the coldest.",
+   "sk": [
+    "s:vocab",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-gap-15",
+   "t": "gap",
+   "q": "머리___ 길어요.",
+   "en": "She has long hair.",
+   "opts": [
+    "가",
+    "를",
+    "에",
+    "보다"
+   ],
+   "a": 0,
+   "why": "Describing words take a subject, not an object: {{머리가 길어요}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L9-gap-16",
+   "t": "gap",
+   "q": "저랑 ___ 옷을 입었어요.",
+   "en": "She's wearing the same clothes as me.",
+   "opts": [
+    "같은",
+    "같아요",
+    "같이",
+    "같고"
+   ],
+   "a": 0,
+   "why": "Before the noun {{옷}}, {{같아요}} becomes {{같은}}. {{같이}} means together. {{입었어요}} (put on) also describes what someone has on now.",
+   "sk": [
+    "g:compare",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-pick-01",
+   "t": "pick",
+   "q": "You want to try on a jacket in a shop. You ask:",
+   "opts": [
+    "입어 봐도 돼요?",
+    "신어 봐도 돼요?",
+    "써 봐도 돼요?",
+    "입어 봤어요?"
+   ],
+   "a": 0,
+   "why": "A jacket is clothing, so {{입어요}}. {{입어 봤어요?}} asks whether someone has tried it on.",
+   "sk": [
+    "s:vocab",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L9-pick-02",
+   "t": "pick",
+   "q": "You like a shirt but want it in a different colour. You ask the clerk:",
+   "opts": [
+    "다른 색 있어요?",
+    "같은 색 있어요?",
+    "다른 색이에요?",
+    "다른 색 좋아해요?"
+   ],
+   "a": 0,
+   "why": "{{다른 색 있어요?}} = do you have another colour?",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L9-pick-03",
+   "t": "pick",
+   "q": "Your friend comes out of the fitting room in a jacket that looks great on her. You say:",
+   "opts": [
+    "잘 어울려요!",
+    "잘 지내요!",
+    "너무 작아요!",
+    "맛있어요!"
+   ],
+   "a": 0,
+   "why": "{{잘 어울려요}} = it suits you.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L9-pick-04",
+   "t": "pick",
+   "q": "The shoes you tried on are too small. You ask:",
+   "opts": [
+    "더 큰 거 있어요?",
+    "더 작은 거 있어요?",
+    "제일 큰 거예요?",
+    "큰 거 없어요."
+   ],
+   "a": 0,
+   "why": "{{더 큰 거}} = a bigger one.",
+   "sk": [
+    "g:compare",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L9-pick-05",
+   "t": "pick",
+   "q": "You want to know a new friend's favourite food. You ask:",
+   "opts": [
+    "제일 좋아하는 음식이 뭐예요?",
+    "제일 맛없는 음식이 뭐예요?",
+    "무슨 음식 먹었어요?",
+    "음식을 좋아해요?"
+   ],
+   "a": 0,
+   "why": "\"Favourite\" is \"liked the most\": {{제일 좋아하는}}.",
+   "sk": [
+    "g:compare",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L9-pick-06",
+   "t": "pick",
+   "q": "The clerk asks which colour you want. You want the black one. You say:",
+   "opts": [
+    "검은색 주세요.",
+    "검은 주세요.",
+    "검은색이에요.",
+    "검은색 있었어요."
+   ],
+   "a": 0,
+   "why": "When the colour stands alone, keep {{색}}: {{검은색 주세요}}. {{검은}} needs a noun after it.",
+   "sk": [
+    "g:endings",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L9-pick-07",
+   "t": "pick",
+   "q": "You walk into a friend's new apartment. It's very spacious. You say:",
+   "opts": [
+    "집이 정말 넓네요!",
+    "집이 정말 시끄럽네요!",
+    "집이 넓을 거예요.",
+    "집이 넓어요?"
+   ],
+   "a": 0,
+   "why": "{{넓네요}} = oh, it's spacious! {{-네요}} reacts to what you see.",
+   "sk": [
+    "s:phrase",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L9-pick-08",
+   "t": "pick",
+   "q": "Minji asks {{서울이 더 좋아요, 시카고가 더 좋아요?}} You like Chicago more. You say:",
+   "opts": [
+    "시카고가 더 좋아요.",
+    "시카고보다 더 좋아요.",
+    "시카고도 좋아요.",
+    "시카고처럼 좋아요."
+   ],
+   "a": 0,
+   "why": "{{시카고보다}} would mean \"better than Chicago\". The thing you prefer is the subject: {{시카고가 더 좋아요}}.",
+   "sk": [
+    "g:compare",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L9-tiles-01",
+   "t": "tiles",
+   "en": "I want to buy a big bag.",
+   "full": "큰 가방을 사고 싶어요.",
+   "a": [
+    "큰",
+    "가방을",
+    "사고",
+    "싶어요"
+   ],
+   "alt": [],
+   "extra": [
+    "커요",
+    "가방이"
+   ],
+   "sk": [
+    "g:endings",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L9-tiles-02",
+   "t": "tiles",
+   "en": "This one is more expensive than that one.",
+   "full": "이게 저거보다 더 비싸요.",
+   "a": [
+    "이게",
+    "저거보다",
+    "더",
+    "비싸요"
+   ],
+   "alt": [
+    [
+     "저거보다",
+     "이게",
+     "더",
+     "비싸요"
+    ]
+   ],
+   "extra": [
+    "저거처럼",
+    "비싼"
+   ],
+   "sk": [
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-tiles-03",
+   "t": "tiles",
+   "en": "My wife has long hair.",
+   "full": "제 아내는 머리가 길어요.",
+   "a": [
+    "제",
+    "아내는",
+    "머리가",
+    "길어요"
+   ],
+   "alt": [],
+   "extra": [
+    "긴",
+    "머리를"
+   ],
+   "sk": [
+    "g:particles",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L9-tiles-04",
+   "t": "tiles",
+   "en": "This one is the same as that one.",
+   "full": "이거는 저거랑 같아요.",
+   "a": [
+    "이거는",
+    "저거랑",
+    "같아요"
+   ],
+   "alt": [
+    [
+     "저거랑",
+     "이거는",
+     "같아요"
+    ]
+   ],
+   "extra": [
+    "같은",
+    "저거보다"
+   ],
+   "sk": [
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-tiles-05",
+   "t": "tiles",
+   "en": "What colour do you like the most?",
+   "full": "무슨 색을 제일 좋아해요?",
+   "a": [
+    "무슨",
+    "색을",
+    "제일",
+    "좋아해요?"
+   ],
+   "alt": [],
+   "extra": [
+    "색에",
+    "더"
+   ],
+   "sk": [
+    "g:compare",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L9-tiles-06",
+   "t": "tiles",
+   "en": "I'm wearing a black coat.",
+   "full": "검은색 코트를 입고 있어요.",
+   "a": [
+    "검은색",
+    "코트를",
+    "입고",
+    "있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "신고",
+    "코트가"
+   ],
+   "sk": [
+    "s:vocab",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L9-tiles-07",
+   "t": "tiles",
+   "en": "I want to speak like a Korean.",
+   "full": "한국 사람처럼 말하고 싶어요.",
+   "a": [
+    "한국",
+    "사람처럼",
+    "말하고",
+    "싶어요"
+   ],
+   "alt": [],
+   "extra": [
+    "사람보다",
+    "말해요"
+   ],
+   "sk": [
+    "g:compare",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L9-tiles-08",
+   "t": "tiles",
+   "en": "What's the most delicious thing here?",
+   "full": "여기 뭐가 제일 맛있어요?",
+   "a": [
+    "여기",
+    "뭐가",
+    "제일",
+    "맛있어요?"
+   ],
+   "alt": [],
+   "extra": [
+    "뭐를",
+    "맛있는"
+   ],
+   "sk": [
+    "g:compare",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L9-tiles-09",
+   "t": "tiles",
+   "en": "It's colder today than yesterday.",
+   "full": "오늘은 어제보다 더 추워요.",
+   "a": [
+    "오늘은",
+    "어제보다",
+    "더",
+    "추워요"
+   ],
+   "alt": [
+    [
+     "어제보다",
+     "오늘은",
+     "더",
+     "추워요"
+    ]
+   ],
+   "extra": [
+    "어제처럼",
+    "추운"
+   ],
+   "sk": [
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-tiles-10",
+   "t": "tiles",
+   "en": "I like quiet cafés.",
+   "full": "저는 조용한 카페를 좋아해요.",
+   "a": [
+    "저는",
+    "조용한",
+    "카페를",
+    "좋아해요"
+   ],
+   "alt": [],
+   "extra": [
+    "조용해요",
+    "카페가"
+   ],
+   "sk": [
+    "g:endings",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L9-tiles-11",
+   "t": "tiles",
+   "en": "My husband is taller than me.",
+   "full": "제 남편은 저보다 키가 커요.",
+   "a": [
+    "제",
+    "남편은",
+    "저보다",
+    "키가",
+    "커요"
+   ],
+   "alt": [
+    [
+     "제",
+     "남편은",
+     "키가",
+     "저보다",
+     "커요"
+    ]
+   ],
+   "extra": [
+    "저처럼",
+    "키를"
+   ],
+   "sk": [
+    "g:compare",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L9-tiles-12",
+   "t": "tiles",
+   "en": "My friend is kind and fun.",
+   "full": "제 친구는 친절하고 재미있어요.",
+   "a": [
+    "제",
+    "친구는",
+    "친절하고",
+    "재미있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "친절한",
+    "재미있는"
+   ],
+   "sk": [
+    "g:connect",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L9-listen-01",
+   "t": "listen",
+   "say": "빨간 모자를 샀어요.",
+   "opts": [
+    "I bought a red hat.",
+    "I bought a blue hat.",
+    "I'll buy a red hat.",
+    "I bought red shoes.",
+    "I'm wearing a red hat.",
+    "I bought a red bag."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L9-listen-02",
+   "t": "listen",
+   "say": "이게 더 싸요.",
+   "opts": [
+    "This one is cheaper.",
+    "This one is more expensive.",
+    "This one is the cheapest.",
+    "I'm buying this one.",
+    "That one is cheaper.",
+    "This one is cheap too."
+   ],
+   "a": 0,
+   "why": "{{싸요}} (cheap) has a tight ㅆ; {{사요}} (I buy) has a plain ㅅ.",
+   "sk": [
+    "s:listen",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-listen-03",
+   "t": "listen",
+   "say": "제 친구는 키가 작아요.",
+   "opts": [
+    "My friend is short.",
+    "My friend is tall.",
+    "My friend has short hair.",
+    "My friend was short.",
+    "I'm short.",
+    "My friend is kind."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L9-listen-04",
+   "t": "listen",
+   "say": "머리가 짧았어요.",
+   "opts": [
+    "Her hair was short.",
+    "Her hair is short.",
+    "Her hair was long.",
+    "Her hair is long.",
+    "She was short.",
+    "Her hat was small."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L9-listen-05",
+   "t": "listen",
+   "say": "이 식당이 제일 맛있어요.",
+   "opts": [
+    "This restaurant is the tastiest.",
+    "This restaurant is tastier.",
+    "This restaurant isn't tasty.",
+    "This restaurant is the most expensive.",
+    "That restaurant is the tastiest.",
+    "This restaurant was the tastiest."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-listen-06",
+   "t": "listen",
+   "say": "아빠처럼 키가 커요.",
+   "opts": [
+    "He's tall like his dad.",
+    "He's taller than his dad.",
+    "His dad is tall.",
+    "He's short like his dad.",
+    "He's the tallest.",
+    "His dad is taller than him."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-listen-07",
+   "t": "listen",
+   "say": "가방 색이 달라요.",
+   "opts": [
+    "The bag's colour is different.",
+    "The bag's colour is the same.",
+    "The bag's colour is pretty.",
+    "The bag is expensive.",
+    "The shoes' colour is different.",
+    "The bag's colour was different."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-listen-08",
+   "t": "listen",
+   "say": "많이 먹었어요.",
+   "opts": [
+    "I ate a lot.",
+    "I ate a little.",
+    "I'll eat a lot.",
+    "I didn't eat.",
+    "I drank a lot.",
+    "It was delicious."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L9-listen-09",
+   "t": "listen",
+   "say": "시카고보다 추워요.",
+   "opts": [
+    "It's colder than Chicago.",
+    "Chicago is colder.",
+    "It's as cold as Chicago.",
+    "It's hotter than Chicago.",
+    "It was colder than Chicago.",
+    "Chicago is the coldest."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-listen-10",
+   "t": "listen",
+   "say": "신발이 똑같아요.",
+   "opts": [
+    "The shoes are exactly the same.",
+    "The shoes are different.",
+    "The shoes are expensive.",
+    "The clothes are exactly the same.",
+    "The shoes are a bit big.",
+    "The shoes were the same."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:compare"
+   ]
+  },
+  {
+   "id": "L9-dlg-01",
+   "t": "dlg",
+   "title": "Buying a coat",
+   "turns": [
+    {
+     "who": "Clerk",
+     "s": "어서 오세요. 뭐 찾으세요?",
+     "en": "Welcome. What are you looking for?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "코트를 사고 싶어요.",
+      "코트를 샀어요.",
+      "코트를 사고 있어요."
+     ],
+     "a": 0,
+     "why": "{{-고 싶어요}} = I want to. {{샀어요}} is past and {{사고 있어요}} means you're buying it right now.",
+     "sk": [
+      "g:want",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Clerk",
+     "s": "이 검은색 코트 어떠세요?",
+     "en": "How about this black coat?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "입어 봐도 돼요?",
+      "신어 봐도 돼요?",
+      "입어 봤어요?"
+     ],
+     "a": 0,
+     "why": "A coat is clothing: {{입어요}}. {{입어 봐도 돼요?}} = can I try it on?",
+     "sk": [
+      "s:vocab",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Clerk",
+     "s": "네, 입어 보세요. 어떠세요?",
+     "en": "Sure, try it on. How is it?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "좀 커요. 더 작은 거 있어요?",
+      "좀 커요. 더 큰 거 있어요?",
+      "좀 작아요. 더 작은 거 있어요?"
+     ],
+     "a": 0,
+     "why": "If it's big, you ask for a smaller one: {{더 작은 거}}.",
+     "sk": [
+      "g:compare",
+      "s:vocab"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L9-dlg-02",
+   "t": "dlg",
+   "title": "What's your wife like?",
+   "turns": [
+    {
+     "who": "Ms Kim",
+     "s": "댄 씨 아내는 어떤 사람이에요?",
+     "en": "Dan, what's your wife like?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "친절하고 재미있는 사람이에요.",
+      "친절하고 재미있어요 사람이에요.",
+      "친절하고 재미있게 사람이에요."
+     ],
+     "a": 0,
+     "why": "Right before {{사람}}, the describing word takes its noun form: {{재미있는 사람}}.",
+     "sk": [
+      "g:endings",
+      "g:connect"
+     ]
+    },
+    {
+     "who": "Ms Kim",
+     "s": "아내가 댄 씨보다 키가 커요?",
+     "en": "Is your wife taller than you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "아니요, 저보다 조금 작아요.",
+      "아니요, 저보다 조금 커요.",
+      "아니요, 저보다 조금 작았어요."
+     ],
+     "a": 0,
+     "why": "No, she's a bit shorter than me: {{저보다 조금 작아요}}. Her height now needs the present tense.",
+     "sk": [
+      "g:compare",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Ms Kim",
+     "s": "머리는 어때요?",
+     "en": "What about her hair?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "머리가 길어요.",
+      "머리를 길어요.",
+      "머리가 긴."
+     ],
+     "a": 0,
+     "why": "Describing words take a subject ({{머리가}}), and a sentence ends in {{길어요}}, not the noun form {{긴}}.",
+     "sk": [
+      "g:particles",
+      "g:endings"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L9-dlg-03",
+   "t": "dlg",
+   "title": "What's good here?",
+   "turns": [
+    {
+     "who": "Server",
+     "s": "뭐 드릴까요?",
+     "en": "What can I get you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "여기 뭐가 제일 맛있어요?",
+      "여기 뭐가 제일 맛있었어요?",
+      "여기 뭐가 제일 맛있는?"
+     ],
+     "a": 0,
+     "why": "{{제일 맛있어요?}} = what's the most delicious? You're asking about now, so present tense, and a question ends in {{-요}}.",
+     "sk": [
+      "g:compare",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "닭갈비가 제일 맛있어요. 조금 매워요.",
+     "en": "The dakgalbi is the best. It's a little spicy."
+    },
+    {
+     "you": true,
+     "opts": [
+      "괜찮아요. 저는 매운 음식을 좋아해요.",
+      "괜찮아요. 저는 맵은 음식을 좋아해요.",
+      "괜찮아요. 저는 매워요 음식을 좋아해요."
+     ],
+     "a": 0,
+     "why": "{{매워요}} is an ㅂ word, so before a noun it is {{매운}}.",
+     "sk": [
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "네, 알겠습니다.",
+     "en": "Okay, got it."
+    }
+   ]
+  },
+  {
+   "id": "L9-dlg-04",
+   "t": "dlg",
+   "title": "Which shirt?",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "이 파란색 셔츠랑 하얀색 셔츠, 어느 게 더 좋아요?",
+     "en": "This blue shirt or the white shirt: which one is better?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "파란색이 더 좋아요.",
+      "파란색보다 더 좋아요.",
+      "파란색을 더 좋아요."
+     ],
+     "a": 0,
+     "why": "The one you prefer is the subject: {{파란색이}}. {{파란색보다}} would mean \"better than the blue one\".",
+     "sk": [
+      "g:compare",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "왜요?",
+     "en": "Why?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "색이 더 예뻐요.",
+      "색이 더 예쁜.",
+      "색이 더 예뻤어요."
+     ],
+     "a": 0,
+     "why": "End the sentence with {{예뻐요}}. {{예쁜}} needs a noun after it, and the shirts are in front of you now, so no past tense.",
+     "sk": [
+      "g:endings",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "좋아요. 파란색 셔츠를 살게요.",
+     "en": "Okay. I'll buy the blue shirt."
+    }
+   ]
+  },
+  {
+   "id": "L9-dlg-05",
+   "t": "dlg",
+   "title": "A new apartment",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "새 집 어때요?",
+     "en": "How's your new place?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "넓고 깨끗해요.",
+      "넓은 깨끗해요.",
+      "넓고 깨끗한."
+     ],
+     "a": 0,
+     "why": "Join two describing words with {{-고}}: {{넓고 깨끗해요}} = spacious and clean.",
+     "sk": [
+      "g:connect",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "지하철역에서 가까워요?",
+     "en": "Is it close to the subway station?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 정말 가까워요. 걸어서 오 분 걸려요.",
+      "네, 정말 가까워요. 걸어서 다섯 분 걸려요.",
+      "네, 정말 멀어요. 걸어서 오 분 걸려요."
+     ],
+     "a": 0,
+     "why": "Minutes use Sino-Korean numbers: {{오 분}}. And five minutes on foot is close, not far.",
+     "sk": [
+      "g:numbers",
+      "s:vocab"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "좋네요! 다음에 놀러 갈게요.",
+     "en": "Nice! I'll come and visit sometime."
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Shopping for a coat",
+   "setup": "You're in a clothing shop in Seoul looking for a winter coat. Find one in a colour you like and in the right size.",
+   "persona": "You are a friendly clerk in a clothing shop in Seoul. You sell coats in black, white, grey and blue; the black and blue ones come in small, medium and large. A coat costs 89,000 won (팔만 구천 원). Speak simple polite Korean (해요체 and -세요 forms) using mostly words from levels 1-9: colours (검은색, 하얀색, 파란색), 큰 거 / 작은 거, 더, 입어 보세요, 잘 어울려요, 어떠세요?. Keep every sentence short. If the learner seems lost, say it again more simply.",
+   "opening": "어서 오세요. 뭐 찾으세요?",
+   "opening_en": "Welcome. What are you looking for?",
+   "goals": [
+    "Say what you want to buy",
+    "Ask for a different colour",
+    "Ask to try it on",
+    "Ask for a bigger or smaller one",
+    "Ask how much it is"
+   ]
+  },
+  {
+   "title": "Talking about people and places",
+   "setup": "A friendly Korean coworker asks about your family and about Chicago.",
+   "persona": "You are Ms Kim, a friendly Korean coworker in her forties who has never been to Chicago. Ask the learner about their spouse or a friend (tall or short? long or short hair? what kind of person?), then ask them to compare Chicago and Seoul (which is colder, which is bigger, which they like more) and ask their favourite food. Answer their questions about Seoul too. Speak simple polite Korean (해요체) using mostly words from levels 1-9: 키가 커요, 머리가 길어요, 친절해요, 보다, 더, 제일, 같아요, 달라요. Keep every sentence short.",
+   "opening": "가족 사진 있어요?",
+   "opening_en": "Do you have a family photo?",
+   "goals": [
+    "Describe someone's height and hair",
+    "Say what kind of person they are",
+    "Compare Chicago and Seoul",
+    "Say your favourite food"
+   ]
+  }
+ ],
+ "pron": {
+  "넓네요": "널레요",
+  "집이 정말 넓네요!": "지비 정말 널레요",
+  "오늘 날씨가 많이 추워요.": "오늘 날씨가 마니 추워요",
+  "지하철역에서 가까워요?": "지하철려게서 가까워요",
+  "좋네요! 다음에 놀러 갈게요.": "존네요 다으메 놀러 갈께요",
+  "좋아요. 파란색 셔츠를 살게요.": "조아요 파란색 쎠츠를 살께요"
+ }
+}

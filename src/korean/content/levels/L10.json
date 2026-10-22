@@ -1,0 +1,1627 @@
+{
+ "id": "L10",
+ "n": 10,
+ "title": "Real conversations",
+ "goal": "Handle problems, give opinions, link your sentences, and get through a phone call and a home visit.",
+ "notes": [
+  {
+   "h": "When something goes wrong",
+   "p": "Korean describes most problems in the past tense, because the thing has already happened: {{잃어버렸어요}} (I lost it), {{고장 났어요}} (it broke, so it's broken now), {{길을 잃었어요}} (I lost the way, so I'm lost). {{도와주세요}} = please help me. Sound point: in {{무슨 일}} an extra ㄴ sound appears before {{일}}, so it is said {{무슨 닐}}.",
+   "ex": [
+    [
+     "지갑을 잃어버렸어요.",
+     "I lost my wallet."
+    ],
+    [
+     "휴대폰이 고장 났어요.",
+     "My phone is broken."
+    ],
+    [
+     "무슨 일이에요?",
+     "What's wrong?"
+    ]
+   ]
+  },
+  {
+   "h": "Have to: -아야 / -어야 돼요",
+   "p": "Take the polite form, drop the final {{요}}, and add {{야 돼요}}: {{가요}} becomes {{가야 돼요}}, {{벗어요}} becomes {{벗어야 돼요}}, {{해요}} becomes {{해야 돼요}}. Ask it as a question for \"do I have to?\" or \"do I need to?\".",
+   "ex": [
+    [
+     "지금 가야 돼요.",
+     "I have to go now."
+    ],
+    [
+     "내일 일찍 일어나야 돼요.",
+     "I have to get up early tomorrow."
+    ],
+    [
+     "예약해야 돼요?",
+     "Do I need a reservation?"
+    ],
+    [
+     "신발 벗어야 돼요?",
+     "Do I have to take off my shoes?"
+    ]
+   ]
+  },
+  {
+   "h": "But: -지만 and -는데",
+   "p": "{{-지만}} is a plain \"but\": {{비싸지만 맛있어요}}. {{-는데}} sets the scene before a question or a request and makes it softer: {{길을 잃었는데 좀 도와주실 수 있어요?}} = I'm lost; could you help me? Action words, {{있어요}} words and the past take {{는데}} ({{있는데}}, {{잃었는데}}). Describing words take {{은데}} or just {{ㄴ데}} ({{좋은데}}, {{바쁜데}}). Ending a sentence with {{-는데요}} trails off politely: {{지금 좀 바쁜데요}}.",
+   "ex": [
+    [
+     "비싸지만 맛있어요.",
+     "It's expensive, but it's delicious."
+    ],
+    [
+     "길을 잃었는데 좀 도와주실 수 있어요?",
+     "I'm lost. Could you help me?"
+    ],
+    [
+     "지금 좀 바쁜데요.",
+     "I'm a bit busy right now..."
+    ]
+   ]
+  },
+  {
+   "h": "Linking sentences and reacting",
+   "p": "{{그래서}} = so, that's why. {{그런데}} = but, or by the way. {{그러면}} = then, in that case. While you listen, react: {{아, 그래요?}} (oh, really?), {{그렇군요}} (I see), {{그렇죠}} (right, exactly), {{맞아요}} (that's right).",
+   "ex": [
+    [
+     "버스가 안 왔어요. 그래서 늦었어요.",
+     "The bus didn't come. That's why I was late."
+    ],
+    [
+     "맛있어요. 그런데 좀 비싸요.",
+     "It's delicious. But it's a bit expensive."
+    ],
+    [
+     "오늘 바빠요? 그러면 내일 만나요.",
+     "Are you busy today? Then let's meet tomorrow."
+    ]
+   ]
+  },
+  {
+   "h": "Opinions: I think ... (것 같아요)",
+   "p": "{{것 같아요}} = I think, it seems. The word in front shows the time: {{비가 오는 것 같아요}} (I think it's raining), {{비가 올 것 같아요}} (I think it's going to rain). Describing words use their noun form: {{좋은 것 같아요}} (I think it's good), {{맛있는 것 같아요}} (I think it's tasty). {{생각해요}} = I think: {{저도 그렇게 생각해요}}. Sound point: {{같아요}} after {{것}} starts tight, {{까타요}}, and after {{올}} the {{것}} is tight too: {{올 것 같아요}} is said {{올 껃 까타요}}.",
+   "ex": [
+    [
+     "비가 올 것 같아요.",
+     "I think it's going to rain."
+    ],
+    [
+     "좋은 것 같아요.",
+     "I think it's good."
+    ],
+    [
+     "저도 그렇게 생각해요.",
+     "I think so too."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "t": "도와주세요",
+   "en": "Please help me",
+   "topic": "Problems",
+   "note": "Also what you shout in an emergency."
+  },
+  {
+   "t": "무슨 일이에요?",
+   "en": "What's wrong? / What's going on?",
+   "topic": "Problems",
+   "note": "Said {{무슨 니리에요}}."
+  },
+  {
+   "t": "괜찮으세요?",
+   "en": "Are you all right?",
+   "topic": "Problems",
+   "note": "Polite, with {{-시-}} for the other person."
+  },
+  {
+   "t": "지갑",
+   "en": "wallet",
+   "topic": "Problems",
+   "note": ""
+  },
+  {
+   "t": "휴대폰",
+   "en": "cell phone",
+   "topic": "Problems",
+   "note": "{{핸드폰}} is also very common."
+  },
+  {
+   "t": "지갑을 잃어버렸어요",
+   "en": "I lost my wallet",
+   "topic": "Problems",
+   "note": "Careful: {{잊어버렸어요}} (with ㅈ) means \"I forgot\"."
+  },
+  {
+   "t": "길을 잃었어요",
+   "en": "I'm lost",
+   "topic": "Problems",
+   "note": "Literally \"I lost the way\"."
+  },
+  {
+   "t": "고장 났어요",
+   "en": "It's broken / It's not working",
+   "topic": "Problems",
+   "note": "For machines: phones, the AC, an elevator."
+  },
+  {
+   "t": "몸이 안 좋아요",
+   "en": "I don't feel well",
+   "topic": "Problems",
+   "note": ""
+  },
+  {
+   "t": "큰일 났어요",
+   "en": "Oh no, this is bad!",
+   "topic": "Problems",
+   "note": "Said {{큰닐 라써요}}."
+  },
+  {
+   "t": "경찰",
+   "en": "police",
+   "topic": "Problems",
+   "note": ""
+  },
+  {
+   "t": "다행이에요",
+   "en": "What a relief",
+   "topic": "Problems",
+   "note": ""
+  },
+  {
+   "t": "가야 돼요",
+   "en": "I have to go",
+   "topic": "Have to",
+   "note": "{{-아야 / -어야 돼요}} = have to."
+  },
+  {
+   "t": "내일 일찍 일어나야 돼요",
+   "en": "I have to get up early tomorrow",
+   "topic": "Have to",
+   "note": ""
+  },
+  {
+   "t": "어떻게 해야 돼요?",
+   "en": "What should I do?",
+   "topic": "Have to",
+   "note": ""
+  },
+  {
+   "t": "예약해야 돼요?",
+   "en": "Do I need a reservation?",
+   "topic": "Have to",
+   "note": "{{예약}} = reservation."
+  },
+  {
+   "t": "신발 벗어야 돼요?",
+   "en": "Do I have to take off my shoes?",
+   "topic": "Have to",
+   "note": "{{벗어요}} = take off. Usually yes in a Korean home."
+  },
+  {
+   "t": "갈아타야 돼요",
+   "en": "I have to transfer",
+   "topic": "Have to",
+   "note": "{{갈아타요}} = change trains or buses."
+  },
+  {
+   "t": "비싸지만 맛있어요",
+   "en": "It's expensive, but it's delicious",
+   "topic": "But",
+   "note": "{{-지만}} = but."
+  },
+  {
+   "t": "한국어는 어렵지만 재미있어요",
+   "en": "Korean is hard, but it's fun",
+   "topic": "But",
+   "note": "Said {{어렵찌만}}."
+  },
+  {
+   "t": "길을 잃었는데 좀 도와주실 수 있어요?",
+   "en": "I'm lost. Could you help me?",
+   "topic": "But",
+   "note": "{{-는데}} sets up the request and softens it."
+  },
+  {
+   "t": "죄송한데 사진 좀 찍어 주실 수 있어요?",
+   "en": "Excuse me, could you take a photo for me?",
+   "topic": "But",
+   "note": "{{죄송한데}} = sorry to bother you, but..."
+  },
+  {
+   "t": "사진",
+   "en": "photo",
+   "topic": "But",
+   "note": ""
+  },
+  {
+   "t": "지금 좀 바쁜데요",
+   "en": "I'm a bit busy right now...",
+   "topic": "But",
+   "note": "Trailing off with {{-는데요}} is a soft way to say no."
+  },
+  {
+   "t": "그래서",
+   "en": "so / that's why",
+   "topic": "Linking",
+   "note": ""
+  },
+  {
+   "t": "그런데",
+   "en": "but / by the way",
+   "topic": "Linking",
+   "note": ""
+  },
+  {
+   "t": "그러면",
+   "en": "then / in that case",
+   "topic": "Linking",
+   "note": ""
+  },
+  {
+   "t": "비가 올 것 같아요",
+   "en": "I think it's going to rain",
+   "topic": "Opinions",
+   "note": "Said {{비가 올 껃 까타요}}."
+  },
+  {
+   "t": "좋은 것 같아요",
+   "en": "I think it's good",
+   "topic": "Opinions",
+   "note": ""
+  },
+  {
+   "t": "늦을 것 같아요",
+   "en": "I think I'll be late",
+   "topic": "Opinions",
+   "note": ""
+  },
+  {
+   "t": "어떻게 생각해요?",
+   "en": "What do you think?",
+   "topic": "Opinions",
+   "note": ""
+  },
+  {
+   "t": "저도 그렇게 생각해요",
+   "en": "I think so too",
+   "topic": "Opinions",
+   "note": ""
+  },
+  {
+   "t": "좋은 생각이에요",
+   "en": "That's a good idea",
+   "topic": "Opinions",
+   "note": "{{생각}} = thought, idea."
+  },
+  {
+   "t": "그렇죠",
+   "en": "Right, exactly",
+   "topic": "Reactions",
+   "note": "Agreeing with what someone said. {{그렇죠?}} with a rising tone = right?"
+  },
+  {
+   "t": "아, 그래요?",
+   "en": "Oh, really? / Oh, is that so?",
+   "topic": "Reactions",
+   "note": "",
+   "avoid": [
+    35
+   ]
+  },
+  {
+   "t": "그렇군요",
+   "en": "I see (now I understand)",
+   "topic": "Reactions",
+   "note": "",
+   "avoid": [
+    34
+   ]
+  },
+  {
+   "t": "축하해요",
+   "en": "Congratulations",
+   "topic": "Reactions",
+   "note": "Said {{추카해요}}.",
+   "avoid": [
+    37
+   ]
+  },
+  {
+   "t": "잘됐네요",
+   "en": "That's great news!",
+   "topic": "Reactions",
+   "note": "",
+   "avoid": [
+    36
+   ]
+  },
+  {
+   "t": "여보세요",
+   "en": "Hello? (on the phone)",
+   "topic": "Phone",
+   "note": "Only on the phone."
+  },
+  {
+   "t": "잘 안 들려요",
+   "en": "I can't hear you well",
+   "topic": "Phone",
+   "note": ""
+  },
+  {
+   "t": "누구세요?",
+   "en": "Who is it? / Who's calling?",
+   "topic": "Phone",
+   "note": ""
+  },
+  {
+   "t": "나중에 다시 전화할게요",
+   "en": "I'll call back later",
+   "topic": "Phone",
+   "note": "Said {{전화할께요}}."
+  },
+  {
+   "t": "어서 오세요",
+   "en": "Welcome!",
+   "topic": "Visiting",
+   "note": "Said by a host or shop staff when you arrive.",
+   "avoid": [
+    43
+   ]
+  },
+  {
+   "t": "들어오세요",
+   "en": "Please come in",
+   "topic": "Visiting",
+   "note": "",
+   "avoid": [
+    42
+   ]
+  },
+  {
+   "t": "편하게 앉으세요",
+   "en": "Please sit and make yourself comfortable",
+   "topic": "Visiting",
+   "note": "Said {{편하게 안즈세요}}."
+  },
+  {
+   "t": "초대해 주셔서 감사합니다",
+   "en": "Thank you for inviting me",
+   "topic": "Visiting",
+   "note": "Say it when you arrive."
+  },
+  {
+   "t": "많이 드세요",
+   "en": "Help yourself / Eat a lot",
+   "topic": "Visiting",
+   "note": "What a host says as the food comes out. Answer {{잘 먹겠습니다}}."
+  },
+  {
+   "t": "조심히 가세요",
+   "en": "Get home safely",
+   "topic": "Farewells",
+   "note": "Said to someone leaving, often at night."
+  },
+  {
+   "t": "다음에 또 봐요",
+   "en": "See you next time",
+   "topic": "Farewells",
+   "note": ""
+  },
+  {
+   "t": "오늘 정말 즐거웠어요",
+   "en": "I had a really good time today",
+   "topic": "Farewells",
+   "note": ""
+  },
+  {
+   "t": "연락할게요",
+   "en": "I'll be in touch",
+   "topic": "Farewells",
+   "note": "Said {{열라칼께요}}."
+  }
+ ],
+ "items": [
+  {
+   "id": "L10-gap-01",
+   "t": "gap",
+   "q": "지갑을 ___.",
+   "en": "I lost my wallet.",
+   "opts": [
+    "잃어버렸어요",
+    "잃어버릴 거예요",
+    "잃어버리고 싶어요",
+    "잊어버렸어요"
+   ],
+   "a": 0,
+   "why": "{{잃어버렸어요}} = I lost it. {{잊어버렸어요}}, with ㅈ, means I forgot.",
+   "sk": [
+    "s:vocab",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L10-gap-02",
+   "t": "gap",
+   "q": "에어컨이 고장 ___.",
+   "en": "The air conditioner is broken.",
+   "opts": [
+    "났어요",
+    "했어요",
+    "있어요",
+    "갔어요"
+   ],
+   "a": 0,
+   "why": "The fixed phrase is {{고장 났어요}}: it broke, so it's broken now.",
+   "sk": [
+    "s:vocab",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L10-gap-03",
+   "t": "gap",
+   "q": "이 휴대폰___ 고장 났어요.",
+   "en": "This phone is broken.",
+   "opts": [
+    "이",
+    "을",
+    "에",
+    "으로"
+   ],
+   "a": 0,
+   "why": "The broken thing is the subject of {{고장 났어요}}: {{휴대폰이}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L10-gap-04",
+   "t": "gap",
+   "q": "내일 일찍 일어나___ 돼요.",
+   "en": "I have to get up early tomorrow.",
+   "opts": [
+    "야",
+    "서",
+    "러",
+    "고"
+   ],
+   "a": 0,
+   "why": "Have to = {{-아야 돼요}}. {{일어나}} already ends in {{아}}, so it's just {{일어나야 돼요}}.",
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L10-gap-05",
+   "t": "gap",
+   "q": "신발을 벗___ 돼요?",
+   "en": "Do I have to take off my shoes?",
+   "opts": [
+    "어야",
+    "아야",
+    "야",
+    "어서"
+   ],
+   "a": 0,
+   "why": "{{벗어요}} becomes {{벗어야 돼요}}.",
+   "sk": [
+    "g:want",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L10-gap-06",
+   "t": "gap",
+   "q": "한국어는 ___ 재미있어요.",
+   "en": "Korean is hard, but it's fun.",
+   "opts": [
+    "어렵지만",
+    "어려워서",
+    "어려우면",
+    "어려운"
+   ],
+   "a": 0,
+   "why": "{{-지만}} = but. {{어려워서}} would mean \"because it's hard\".",
+   "sk": [
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-gap-07",
+   "t": "gap",
+   "q": "길을 잃었___ 좀 도와주실 수 있어요?",
+   "en": "I'm lost. Could you help me?",
+   "opts": [
+    "는데",
+    "지만",
+    "어서",
+    "고"
+   ],
+   "a": 0,
+   "why": "{{-는데}} sets the scene before a request: {{잃었는데}}.",
+   "sk": [
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-gap-08",
+   "t": "gap",
+   "q": "날씨가 ___ 같이 나갈까요?",
+   "en": "The weather is nice. Shall we go out together?",
+   "opts": [
+    "좋은데",
+    "좋는데",
+    "좋지만",
+    "좋아서"
+   ],
+   "a": 0,
+   "why": "Describing words take {{은데}}: {{좋은데}}. {{-아서}} can't come before a suggestion like {{나갈까요?}}",
+   "sk": [
+    "g:connect",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L10-gap-09",
+   "t": "gap",
+   "q": "오늘 바빠요? ___ 내일 만나요.",
+   "en": "Are you busy today? Then let's meet tomorrow.",
+   "opts": [
+    "그러면",
+    "그래서",
+    "그런데",
+    "그렇죠"
+   ],
+   "a": 0,
+   "why": "{{그러면}} = then, in that case.",
+   "sk": [
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-gap-10",
+   "t": "gap",
+   "q": "버스가 안 왔어요. ___ 늦었어요.",
+   "en": "The bus didn't come. That's why I was late.",
+   "opts": [
+    "그래서",
+    "그러면",
+    "그런데",
+    "그렇죠"
+   ],
+   "a": 0,
+   "why": "{{그래서}} = so, that's why.",
+   "sk": [
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-gap-11",
+   "t": "gap",
+   "q": "맛있어요. ___ 좀 비싸요.",
+   "en": "It's delicious. But it's a bit expensive.",
+   "opts": [
+    "그런데",
+    "그래서",
+    "그러면",
+    "그렇군요"
+   ],
+   "a": 0,
+   "why": "{{그런데}} = but.",
+   "sk": [
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-gap-12",
+   "t": "gap",
+   "q": "비가 ___ 것 같아요.",
+   "en": "I think it's going to rain.",
+   "opts": [
+    "올",
+    "오는",
+    "온",
+    "와요"
+   ],
+   "a": 0,
+   "why": "For the future use {{올 것 같아요}}. {{오는 것 같아요}} = I think it's raining now; {{온 것 같아요}} = I think it rained.",
+   "sk": [
+    "g:tense",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L10-gap-13",
+   "t": "gap",
+   "q": "이 식당 맛있___ 것 같아요.",
+   "en": "I think this restaurant is good.",
+   "opts": [
+    "는",
+    "은",
+    "어서",
+    "고"
+   ],
+   "a": 0,
+   "why": "{{있어요}} words take {{는}}: {{맛있는 것 같아요}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L10-gap-14",
+   "t": "gap",
+   "q": "저도 그렇게 ___.",
+   "en": "I think so too.",
+   "opts": [
+    "생각해요",
+    "같아요",
+    "생각이에요",
+    "말해요"
+   ],
+   "a": 0,
+   "why": "{{그렇게 생각해요}} = I think so.",
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L10-gap-15",
+   "t": "gap",
+   "q": "___? 누구세요?",
+   "en": "(On the phone) Hello? Who's calling?",
+   "opts": [
+    "여보세요",
+    "안녕히 계세요",
+    "어서 오세요",
+    "잘 먹겠습니다"
+   ],
+   "a": 0,
+   "why": "{{여보세요}} is the phone hello.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-gap-16",
+   "t": "gap",
+   "q": "편하게 ___.",
+   "en": "Please sit and make yourself comfortable.",
+   "opts": [
+    "앉으세요",
+    "앉았어요",
+    "앉을게요",
+    "앉아 봤어요"
+   ],
+   "a": 0,
+   "why": "A polite request to a guest uses {{-으세요}}: {{앉으세요}}.",
+   "sk": [
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L10-pick-01",
+   "t": "pick",
+   "q": "You arrive at Minji's home for dinner and hand her a small gift. You say:",
+   "opts": [
+    "초대해 주셔서 감사합니다.",
+    "잘 먹었습니다.",
+    "안녕히 계세요.",
+    "들어오세요."
+   ],
+   "a": 0,
+   "why": "{{초대해 주셔서 감사합니다}} = thank you for inviting me. {{들어오세요}} is what the host says.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-pick-02",
+   "t": "pick",
+   "q": "Your guests are leaving your home late at night. You say:",
+   "opts": [
+    "조심히 가세요.",
+    "조심히 계세요.",
+    "안녕히 계세요.",
+    "잘 먹겠습니다."
+   ],
+   "a": 0,
+   "why": "They are leaving, so {{가세요}}: {{조심히 가세요}} = get home safely.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-pick-03",
+   "t": "pick",
+   "q": "Your phone rings and you pick up. You say:",
+   "opts": [
+    "여보세요?",
+    "어서 오세요.",
+    "안녕히 가세요.",
+    "들어오세요."
+   ],
+   "a": 0,
+   "why": "{{여보세요}} is only used on the phone.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-pick-04",
+   "t": "pick",
+   "q": "You're lost in Seoul. You stop a stranger and politely ask for help:",
+   "opts": [
+    "저기요, 길을 잃었는데 좀 도와주실 수 있어요?",
+    "저기요, 길을 잃었는데 좀 도와줘.",
+    "저기요, 길을 잃어버릴 거예요.",
+    "저기요, 길이 고장 났어요."
+   ],
+   "a": 0,
+   "why": "{{-는데}} sets up the request and {{도와주실 수 있어요?}} is polite. {{도와줘}} is casual speech, rude to a stranger.",
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L10-pick-05",
+   "t": "pick",
+   "q": "Junho tells you {{저 다음 달에 결혼해요!}} You react:",
+   "opts": [
+    "진짜요? 축하해요!",
+    "진짜요? 죄송합니다.",
+    "그래서요? 축하해요!",
+    "조심히 가세요!"
+   ],
+   "a": 0,
+   "why": "{{진짜요?}} shows surprise and {{축하해요}} = congratulations. {{그래서요?}} sounds like \"so what?\"",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-pick-06",
+   "t": "pick",
+   "q": "You're stuck in traffic and will probably be late. You text your friend:",
+   "opts": [
+    "미안해요, 조금 늦을 것 같아요.",
+    "미안해요, 조금 늦은 것 같아요.",
+    "미안해요, 조금 늦고 싶어요.",
+    "미안해요, 조금 늦을 거예요?"
+   ],
+   "a": 0,
+   "why": "A guess about the future: {{늦을 것 같아요}} = I think I'll be late.",
+   "sk": [
+    "g:tense",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L10-pick-07",
+   "t": "pick",
+   "q": "The air conditioner in your hotel room isn't working. You tell the front desk:",
+   "opts": [
+    "에어컨이 고장 났어요.",
+    "에어컨이 고장 날 거예요.",
+    "에어컨을 고장 났어요.",
+    "에어컨이 고장 나고 싶어요."
+   ],
+   "a": 0,
+   "why": "It's broken now: {{고장 났어요}}, with the broken thing as the subject ({{에어컨이}}).",
+   "sk": [
+    "g:tense",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L10-pick-08",
+   "t": "pick",
+   "q": "Your friend says {{이 카페 정말 좋네요.}} You agree, and add that it's a bit expensive. You say:",
+   "opts": [
+    "그렇죠. 그런데 좀 비싸요.",
+    "그렇죠. 그러면 좀 비싸요.",
+    "아니요. 그런데 좀 비싸요.",
+    "그렇죠. 그런데 좀 비쌀까요?"
+   ],
+   "a": 0,
+   "why": "{{그렇죠}} agrees, and {{그런데}} = but.",
+   "sk": [
+    "g:connect",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-tiles-01",
+   "t": "tiles",
+   "en": "I lost my phone.",
+   "full": "제 휴대폰을 잃어버렸어요.",
+   "a": [
+    "제",
+    "휴대폰을",
+    "잃어버렸어요"
+   ],
+   "alt": [],
+   "extra": [
+    "휴대폰이",
+    "잃어버릴"
+   ],
+   "sk": [
+    "g:particles",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L10-tiles-02",
+   "t": "tiles",
+   "en": "I have to go home now.",
+   "full": "지금 집에 가야 돼요.",
+   "a": [
+    "지금",
+    "집에",
+    "가야",
+    "돼요"
+   ],
+   "alt": [
+    [
+     "집에",
+     "지금",
+     "가야",
+     "돼요"
+    ]
+   ],
+   "extra": [
+    "집을",
+    "가서"
+   ],
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L10-tiles-03",
+   "t": "tiles",
+   "en": "Korean is hard, but it's fun.",
+   "full": "한국어는 어렵지만 재미있어요.",
+   "a": [
+    "한국어는",
+    "어렵지만",
+    "재미있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "어려워서",
+    "재미있는"
+   ],
+   "sk": [
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-tiles-04",
+   "t": "tiles",
+   "en": "I think it's going to rain tomorrow.",
+   "full": "내일 비가 올 것 같아요.",
+   "a": [
+    "내일",
+    "비가",
+    "올",
+    "것",
+    "같아요"
+   ],
+   "alt": [
+    [
+     "비가",
+     "내일",
+     "올",
+     "것",
+     "같아요"
+    ]
+   ],
+   "extra": [
+    "오는",
+    "비를"
+   ],
+   "sk": [
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L10-tiles-05",
+   "t": "tiles",
+   "en": "What do you think of this?",
+   "full": "이거 어떻게 생각해요?",
+   "a": [
+    "이거",
+    "어떻게",
+    "생각해요?"
+   ],
+   "alt": [],
+   "extra": [
+    "뭐",
+    "같아요?"
+   ],
+   "sk": [
+    "g:question"
+   ]
+  },
+  {
+   "id": "L10-tiles-06",
+   "t": "tiles",
+   "en": "Please come in. Make yourself comfortable.",
+   "full": "들어오세요. 편하게 앉으세요.",
+   "a": [
+    "들어오세요",
+    "편하게",
+    "앉으세요"
+   ],
+   "alt": [],
+   "extra": [
+    "앉았어요",
+    "편한"
+   ],
+   "sk": [
+    "g:honor",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L10-tiles-07",
+   "t": "tiles",
+   "en": "The bus didn't come, so I was late.",
+   "full": "버스가 안 와서 늦었어요.",
+   "a": [
+    "버스가",
+    "안",
+    "와서",
+    "늦었어요"
+   ],
+   "alt": [],
+   "extra": [
+    "버스를",
+    "오서"
+   ],
+   "sk": [
+    "g:connect",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L10-tiles-08",
+   "t": "tiles",
+   "en": "Excuse me, could you take a photo for me?",
+   "full": "죄송한데 사진 좀 찍어 주실 수 있어요?",
+   "a": [
+    "죄송한데",
+    "사진",
+    "좀",
+    "찍어",
+    "주실",
+    "수",
+    "있어요?"
+   ],
+   "alt": [
+    [
+     "죄송한데",
+     "좀",
+     "사진",
+     "찍어",
+     "주실",
+     "수",
+     "있어요?"
+    ]
+   ],
+   "extra": [
+    "죄송하는데",
+    "사진이"
+   ],
+   "sk": [
+    "g:connect",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L10-tiles-09",
+   "t": "tiles",
+   "en": "I don't feel well, so I'm going to rest at home.",
+   "full": "몸이 안 좋아서 집에서 쉴 거예요.",
+   "a": [
+    "몸이",
+    "안",
+    "좋아서",
+    "집에서",
+    "쉴",
+    "거예요"
+   ],
+   "alt": [],
+   "extra": [
+    "집에",
+    "좋으면"
+   ],
+   "sk": [
+    "g:connect",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L10-tiles-10",
+   "t": "tiles",
+   "en": "I'll call you again later.",
+   "full": "나중에 다시 전화할게요.",
+   "a": [
+    "나중에",
+    "다시",
+    "전화할게요"
+   ],
+   "alt": [
+    [
+     "다시",
+     "나중에",
+     "전화할게요"
+    ]
+   ],
+   "extra": [
+    "전화했어요",
+    "전화를"
+   ],
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L10-tiles-11",
+   "t": "tiles",
+   "en": "Thank you for inviting me.",
+   "full": "초대해 주셔서 감사합니다.",
+   "a": [
+    "초대해",
+    "주셔서",
+    "감사합니다"
+   ],
+   "alt": [],
+   "extra": [
+    "주세요",
+    "초대했어요"
+   ],
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L10-tiles-12",
+   "t": "tiles",
+   "en": "It's expensive, but I think it's good.",
+   "full": "비싸지만 좋은 것 같아요.",
+   "a": [
+    "비싸지만",
+    "좋은",
+    "것",
+    "같아요"
+   ],
+   "alt": [],
+   "extra": [
+    "좋는",
+    "비싸서"
+   ],
+   "sk": [
+    "g:connect",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L10-listen-01",
+   "t": "listen",
+   "say": "지갑을 잃어버렸어요.",
+   "opts": [
+    "I lost my wallet.",
+    "I lost my phone.",
+    "I found my wallet.",
+    "I'll lose my wallet.",
+    "I forgot my wallet.",
+    "I bought a wallet."
+   ],
+   "a": 0,
+   "why": "{{잃어버렸어요}} (lost) has an ㄹ sound; {{잊어버렸어요}} (forgot) has a j sound.",
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L10-listen-02",
+   "t": "listen",
+   "say": "가야 돼요.",
+   "opts": [
+    "I have to go.",
+    "I want to go.",
+    "I can go.",
+    "I went.",
+    "I'll go.",
+    "Shall we go?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L10-listen-03",
+   "t": "listen",
+   "say": "비싸지만 맛있어요.",
+   "opts": [
+    "It's expensive, but it's delicious.",
+    "It's cheap, but it's delicious.",
+    "It's expensive, so it's delicious.",
+    "It's expensive and not tasty.",
+    "It was expensive, but it was delicious.",
+    "It's cheap and delicious."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:connect"
+   ]
+  },
+  {
+   "id": "L10-listen-04",
+   "t": "listen",
+   "say": "늦을 것 같아요.",
+   "opts": [
+    "I think I'll be late.",
+    "I think I was late.",
+    "I'm a little late.",
+    "I don't think I'll be late.",
+    "I think it's going to rain.",
+    "I was late yesterday."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L10-listen-05",
+   "t": "listen",
+   "say": "길을 잃었어요.",
+   "opts": [
+    "I'm lost.",
+    "I lost my bag.",
+    "I know the way.",
+    "The road is long.",
+    "I'll get lost.",
+    "I found the way."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L10-listen-06",
+   "t": "listen",
+   "say": "휴대폰이 고장 났어요.",
+   "opts": [
+    "My phone is broken.",
+    "I lost my phone.",
+    "My phone is new.",
+    "I bought a phone.",
+    "The air conditioner is broken.",
+    "My phone will break."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L10-listen-07",
+   "t": "listen",
+   "say": "여보세요? 잘 안 들려요.",
+   "opts": [
+    "Hello? I can't hear you well.",
+    "Hello? I can hear you well.",
+    "Hello? I can't see you well.",
+    "Hello? Who's calling?",
+    "Goodbye, I'll call later.",
+    "Hello? Please speak slowly."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L10-listen-08",
+   "t": "listen",
+   "say": "그래서 못 갔어요.",
+   "opts": [
+    "So I couldn't go.",
+    "So I went.",
+    "But I went anyway.",
+    "Then let's go.",
+    "So I can't go.",
+    "So I didn't want to go."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:connect",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L10-listen-09",
+   "t": "listen",
+   "say": "좋을 것 같아요.",
+   "opts": [
+    "I think it'll be good.",
+    "I think it's good.",
+    "I think it was good.",
+    "I don't think it's good.",
+    "I like it a lot.",
+    "I want it to be good."
+   ],
+   "a": 0,
+   "why": "{{좋을}} (future) ends in an l sound; {{좋은}} (now) ends in n.",
+   "sk": [
+    "s:listen",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L10-listen-10",
+   "t": "listen",
+   "say": "신발 벗어야 돼요?",
+   "opts": [
+    "Do I have to take off my shoes?",
+    "Do I have to put on my shoes?",
+    "Can I take off my shoes?",
+    "Did you take off your shoes?",
+    "Where are my shoes?",
+    "Do I have to buy shoes?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L10-dlg-01",
+   "t": "dlg",
+   "title": "Lost phone at the station",
+   "turns": [
+    {
+     "who": "Staff",
+     "s": "무슨 일이세요?",
+     "en": "What's the matter?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "휴대폰을 잃어버렸어요.",
+      "휴대폰을 잃어버릴 거예요.",
+      "휴대폰이 잃어버렸어요."
+     ],
+     "a": 0,
+     "why": "It already happened, so past: {{잃어버렸어요}}. The phone is the object: {{휴대폰을}}.",
+     "sk": [
+      "g:tense",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Staff",
+     "s": "어떤 휴대폰이에요?",
+     "en": "What does the phone look like?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "검은색이고 조금 커요.",
+      "검은색이고 조금 큰.",
+      "검은색이고 조금 크는."
+     ],
+     "a": 0,
+     "why": "End the sentence with {{커요}}. {{큰}} only works right before a noun.",
+     "sk": [
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Staff",
+     "s": "이거예요?",
+     "en": "Is this it?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 맞아요! 정말 감사합니다.",
+      "네, 맞아요! 잘 먹었습니다.",
+      "아니요, 맞아요! 정말 감사합니다."
+     ],
+     "a": 0,
+     "why": "{{맞아요}} = that's right, then thank them. {{잘 먹었습니다}} is only for after a meal.",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L10-dlg-02",
+   "t": "dlg",
+   "title": "Running late",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "여보세요? 댄 씨, 어디예요?",
+     "en": "Hello? Dan, where are you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "미안해요. 조금 늦을 것 같아요.",
+      "미안해요. 조금 늦을 것 같았어요.",
+      "미안해요. 조금 늦고 싶어요."
+     ],
+     "a": 0,
+     "why": "A guess about what will happen: {{늦을 것 같아요}}. {{같았어요}} would mean \"I thought I'd be late\".",
+     "sk": [
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "괜찮아요. 얼마나 걸려요?",
+     "en": "That's okay. How long will it take?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "삼십 분쯤 걸릴 것 같아요.",
+      "서른 분쯤 걸릴 것 같아요.",
+      "삼십 분쯤 걸렸어요."
+     ],
+     "a": 0,
+     "why": "Minutes use Sino-Korean numbers: {{삼십 분}}. You're still on the way, so a future guess: {{걸릴 것 같아요}}.",
+     "sk": [
+      "g:numbers",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "알겠어요. 그러면 카페에서 기다릴게요.",
+     "en": "Okay. Then I'll wait in the café."
+    }
+   ]
+  },
+  {
+   "id": "L10-dlg-03",
+   "t": "dlg",
+   "title": "Dinner at Minji's home",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "어서 오세요! 들어오세요.",
+     "en": "Welcome! Come in."
+    },
+    {
+     "you": true,
+     "opts": [
+      "초대해 주셔서 감사합니다.",
+      "안녕히 계세요.",
+      "어서 오세요."
+     ],
+     "a": 0,
+     "why": "The guest thanks the host for the invitation. {{어서 오세요}} is the host's line.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "편하게 앉으세요. 많이 드세요.",
+     "en": "Make yourself comfortable. Help yourself."
+    },
+    {
+     "you": true,
+     "opts": [
+      "잘 먹겠습니다.",
+      "잘 먹었습니다.",
+      "많이 드세요."
+     ],
+     "a": 0,
+     "why": "Before you start eating: {{잘 먹겠습니다}}. {{잘 먹었습니다}} is for after the meal.",
+     "sk": [
+      "s:phrase",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "음식 괜찮아요?",
+     "en": "Is the food okay?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 정말 맛있어요!",
+      "네, 정말 맛있을 거예요!",
+      "네, 정말 맛없어요!"
+     ],
+     "a": 0,
+     "why": "You're eating it now, so the present: {{맛있어요}}.",
+     "sk": [
+      "g:tense",
+      "s:phrase"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L10-dlg-04",
+   "t": "dlg",
+   "title": "Weekend plans",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "주말에 같이 등산 갈까요?",
+     "en": "Shall we go hiking together this weekend?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "좋아요. 그런데 토요일에 비가 올 것 같아요.",
+      "좋아요. 그래서 토요일에 비가 올 것 같아요.",
+      "좋아요. 그러면 토요일에 비가 왔어요."
+     ],
+     "a": 0,
+     "why": "{{그런데}} = but: sounds good, but it looks like rain on Saturday.",
+     "sk": [
+      "g:connect"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "아, 그래요? 그러면 일요일에 갈까요?",
+     "en": "Oh, really? Then shall we go on Sunday?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "좋은 생각이에요!",
+      "좋은 생각했어요!",
+      "좋게 생각이에요!"
+     ],
+     "a": 0,
+     "why": "{{좋은 생각이에요}} = that's a good idea: {{좋은}} before the noun {{생각}}.",
+     "sk": [
+      "s:phrase",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "좋아요. 일요일에 봐요.",
+     "en": "Great. See you on Sunday."
+    }
+   ]
+  },
+  {
+   "id": "L10-dlg-05",
+   "t": "dlg",
+   "title": "Changing trains",
+   "turns": [
+    {
+     "who": "Station staff",
+     "s": "도와드릴까요?",
+     "en": "Can I help you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 강남역에 가야 돼요.",
+      "네, 강남역에 가야 했어요.",
+      "네, 강남역에 가고 있었어요."
+     ],
+     "a": 0,
+     "why": "You need to go there now: {{가야 돼요}}. {{가야 했어요}} is past (I had to go).",
+     "sk": [
+      "g:want",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Station staff",
+     "s": "그러면 여기에서 이 호선으로 갈아타세요.",
+     "en": "Then change to Line 2 here."
+    },
+    {
+     "you": true,
+     "opts": [
+      "이 호선이요? 감사합니다.",
+      "두 호선이요? 감사합니다.",
+      "이 시요? 감사합니다."
+     ],
+     "a": 0,
+     "why": "Subway lines use Sino-Korean numbers with {{호선}}: Line 2 is {{이 호선}}. {{이 시}} would be two o'clock.",
+     "sk": [
+      "g:numbers",
+      "s:listen"
+     ]
+    },
+    {
+     "who": "Station staff",
+     "s": "네, 조심히 가세요.",
+     "en": "Yes. Have a safe trip."
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Lost phone at the station",
+   "setup": "You left your phone on the subway in Seoul. Go to the station office, explain the problem, and describe your phone.",
+   "persona": "You are a helpful member of staff at a Seoul subway station office. Three phones were handed in today: a black one, a white one, and a big blue one. Ask what happened, what the phone looks like (colour, size), and about what time and on which line they lost it. The learner's phone is the black one; once they describe it, give it back and ask them to write their name. Speak simple polite Korean (해요체 and -세요 forms) using mostly words from levels 1-10: 무슨 일이세요?, 어떤 휴대폰이에요?, 몇 시쯤?, 이거예요?, 다행이에요. Keep every sentence short.",
+   "opening": "무슨 일이세요?",
+   "opening_en": "What's the matter?",
+   "goals": [
+    "Explain that you lost your phone",
+    "Describe its colour and size",
+    "Say roughly when you lost it",
+    "Thank the staff member"
+   ]
+  },
+  {
+   "title": "Dinner at a friend's home",
+   "setup": "Your Korean friend Minji has invited you to dinner at her apartment. Arrive, eat, chat, and leave politely.",
+   "persona": "You are Minji, a warm Korean woman in her thirties hosting the learner for dinner at your apartment in Seoul. Welcome them in (어서 오세요, 들어오세요), point out the slippers, invite them to sit (편하게 앉으세요), serve bulgogi and japchae (많이 드세요), and ask their opinion of the food and of Seoul (어때요?, 어떻게 생각해요?). React naturally (아, 그래요?, 그렇군요, 그렇죠). When they leave, see them off with 조심히 가세요. Speak simple polite Korean (해요체) using mostly words from levels 1-10. Keep every sentence short.",
+   "opening": "어서 오세요! 들어오세요.",
+   "opening_en": "Welcome! Come in.",
+   "goals": [
+    "Thank her for the invitation",
+    "Ask whether to take off your shoes",
+    "Give your opinion of the food with \"I think\"",
+    "Say goodbye the right way when you leave"
+   ]
+  }
+ ],
+ "pron": {
+  "무슨 일": "무슨 닐",
+  "무슨 일이에요?": "무슨 니리에요",
+  "무슨 일이세요?": "무슨 니리세요",
+  "큰일 났어요": "큰닐 라써요",
+  "연락할게요": "열라칼께요",
+  "나중에 다시 전화할게요": "나중에 다시 전화할께요",
+  "나중에 다시 전화할게요.": "나중에 다시 전화할께요",
+  "전화할게요": "전화할께요",
+  "앉을게요": "안즐께요",
+  "알겠어요. 그러면 카페에서 기다릴게요.": "알게써요 그러면 카페에서 기다릴께요",
+  "그렇군요": "그러쿤뇨",
+  "네, 강남역에 가야 돼요.": "네 강남녀게 가야 돼요",
+  "네, 강남역에 가야 했어요.": "네 강남녀게 가야 해써요",
+  "네, 강남역에 가고 있었어요.": "네 강남녀게 가고 이써써요",
+  "늦었어요": "느저써요",
+  "늦을 것 같아요": "느즐 껃 까타요",
+  "늦을 것 같아요.": "느즐 껃 까타요",
+  "미안해요, 조금 늦을 것 같아요.": "미안해요 조금 느즐 껃 까타요",
+  "미안해요. 조금 늦을 것 같아요.": "미안해요 조금 느즐 껃 까타요",
+  "미안해요. 조금 늦을 것 같았어요.": "미안해요 조금 느즐 껃 까타써요",
+  "미안해요, 조금 늦은 것 같아요.": "미안해요 조금 느즌 걷 까타요",
+  "미안해요, 조금 늦을 거예요?": "미안해요 조금 느즐 꺼예요",
+  "버스가 안 와서 늦었어요.": "버스가 안 와서 느저써요",
+  "버스가 안 왔어요. 그래서 늦었어요.": "버스가 안 와써요 그래서 느저써요"
+ }
+}

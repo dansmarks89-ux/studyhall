@@ -1,0 +1,1661 @@
+{
+ "id": "L1",
+ "n": 1,
+ "title": "First words",
+ "goal": "Greet people, say thank you, sorry and goodbye, ask people to repeat or slow down, and count to ten thousand.",
+ "notes": [
+  {
+   "h": "Two ways to say thank you and sorry",
+   "p": "{{감사합니다}} and {{죄송합니다}} are the formal versions: the safe choice with strangers, staff and older people. {{고마워요}} and {{미안해요}} are softer and friendlier but still polite. When in doubt, use the formal ones.",
+   "ex": [
+    [
+     "감사합니다",
+     "Thank you (formal)."
+    ],
+    [
+     "고마워요",
+     "Thanks (softer)."
+    ],
+    [
+     "죄송합니다",
+     "I'm sorry (formal)."
+    ],
+    [
+     "미안해요",
+     "Sorry (everyday)."
+    ]
+   ]
+  },
+  {
+   "h": "Goodbye depends on who is leaving",
+   "p": "Korean has two goodbyes. If the other person is leaving, say {{안녕히 가세요}} (go in peace). If you are leaving and they stay, say {{안녕히 계세요}} (stay in peace). If you both walk off in different directions, use {{안녕히 가세요}}.",
+   "ex": [
+    [
+     "안녕히 가세요",
+     "Goodbye (to someone who is leaving)."
+    ],
+    [
+     "안녕히 계세요",
+     "Goodbye (when you leave and they stay)."
+    ]
+   ]
+  },
+  {
+   "h": "Two sets of numbers",
+   "p": "Korean has two number systems. Native Korean numbers ({{하나}}, {{둘}}, {{셋}} … {{열}}) are for counting things and people. Sino-Korean numbers ({{일}}, {{이}}, {{삼}} …) are for money, prices, dates and phone numbers, and they build like a calculator: {{십오}} is 10 + 5 and {{이십}} is 2 × 10. Big numbers go in ten-thousands: {{만}} is 10,000, so 15,000 is {{만 오천}}. {{백}}, {{천}} and {{만}} need no 'one' in front. Never mix the two systems inside one number.",
+   "ex": [
+    [
+     "하나, 둘, 셋",
+     "one, two, three (native)"
+    ],
+    [
+     "십오",
+     "fifteen"
+    ],
+    [
+     "이만",
+     "twenty thousand"
+    ],
+    [
+     "만 오천",
+     "fifteen thousand"
+    ]
+   ]
+  },
+  {
+   "h": "Asking for things and favours",
+   "p": "{{주세요}} means 'please give me'. Put a thing in front of it to ask for it: {{이거 하나 주세요}} (one of these, please). Put an action in front to ask for a favour: {{말해 주세요}} (please say it), {{천천히 말해 주세요}} (please speak slowly).",
+   "ex": [
+    [
+     "이거 하나 주세요",
+     "One of these, please."
+    ],
+    [
+     "천천히 말해 주세요",
+     "Please speak slowly."
+    ],
+    [
+     "다시 한 번 말해 주세요",
+     "Please say that once more."
+    ]
+   ]
+  },
+  {
+   "h": "Spelling versus sound",
+   "p": "Korean is not always said the way it is spelled, and the 'said like' line under each phrase shows the change. A final ㅂ before ㄴ is said as ㅁ, so {{감사합니다}} sounds like {{감사함니다}}. A final consonant slides onto a following vowel, so {{한국어}} sounds like {{한구거}}. In {{여덟}} the final ㄹㅂ is said as just ㄹ.",
+   "ex": [
+    [
+     "감사합니다",
+     "Thank you."
+    ],
+    [
+     "한국어",
+     "Korean (the language)"
+    ],
+    [
+     "여덟",
+     "eight"
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "old": "9e6b08580f",
+   "topic": "Basics",
+   "t": "안녕하세요",
+   "en": "Hello",
+   "note": "The all-purpose greeting, any time of day.",
+   "avoid": [
+    46
+   ]
+  },
+  {
+   "old": "ab369aed69",
+   "topic": "Basics",
+   "t": "감사합니다",
+   "en": "Thank you (formal)",
+   "note": "The safe default with strangers, staff and elders.",
+   "avoid": [
+    2
+   ]
+  },
+  {
+   "old": "a171213223",
+   "topic": "Basics",
+   "t": "고마워요",
+   "en": "Thank you (polite, softer)",
+   "note": "Friendly but still polite.",
+   "avoid": [
+    1
+   ]
+  },
+  {
+   "old": "29cf8d6c61",
+   "topic": "Basics",
+   "t": "죄송합니다",
+   "en": "I'm sorry (formal)",
+   "note": "For a real apology or to someone senior.",
+   "avoid": [
+    4
+   ]
+  },
+  {
+   "old": "4adbfd9459",
+   "topic": "Basics",
+   "t": "미안해요",
+   "en": "Sorry (polite)",
+   "note": "Everyday apology.",
+   "avoid": [
+    3
+   ]
+  },
+  {
+   "old": "1f17d04407",
+   "topic": "Basics",
+   "t": "네",
+   "en": "Yes",
+   "note": "Also used like \"uh-huh, I'm listening\"."
+  },
+  {
+   "old": "950fb9ea47",
+   "topic": "Basics",
+   "t": "아니요",
+   "en": "No",
+   "note": ""
+  },
+  {
+   "old": "eebdd20aa1",
+   "topic": "Basics",
+   "t": "괜찮아요",
+   "en": "It's okay / I'm fine / No thanks",
+   "note": "Very common. Also a polite way to decline an offer."
+  },
+  {
+   "old": "d97e211e07",
+   "topic": "Basics",
+   "t": "안녕히 가세요",
+   "en": "Goodbye (to someone who is leaving)",
+   "note": "Literally \"go in peace\". Say it when the other person leaves."
+  },
+  {
+   "old": "ad61ba26be",
+   "topic": "Basics",
+   "t": "안녕히 계세요",
+   "en": "Goodbye (when you are leaving)",
+   "note": "Literally \"stay in peace\". Say it when you leave and they stay."
+  },
+  {
+   "old": "4aa951b96f",
+   "topic": "Basics",
+   "t": "저기요",
+   "en": "Excuse me! (to get attention)",
+   "note": "How you call a server in a restaurant."
+  },
+  {
+   "old": "e8da5468cb",
+   "topic": "Basics",
+   "t": "잠깐만요",
+   "en": "Just a moment",
+   "note": ""
+  },
+  {
+   "old": "1bdc2effe3",
+   "topic": "Basics",
+   "t": "모르겠어요",
+   "en": "I don't know / I don't understand",
+   "note": ""
+  },
+  {
+   "old": "3038ccafa6",
+   "topic": "Basics",
+   "t": "다시 한 번 말해 주세요",
+   "en": "Please say that once more",
+   "note": "-아/어 주세요 = \"please do … for me\"."
+  },
+  {
+   "old": "5b5a8e17a3",
+   "topic": "Basics",
+   "t": "천천히 말해 주세요",
+   "en": "Please speak slowly",
+   "note": ""
+  },
+  {
+   "old": "af33510804",
+   "topic": "Basics",
+   "t": "한국어 조금 해요",
+   "en": "I speak a little Korean",
+   "note": "해요 = do / speak."
+  },
+  {
+   "old": "96e12deca2",
+   "topic": "Basics",
+   "t": "잘 먹겠습니다",
+   "en": "Before eating: thank you for the meal",
+   "note": "Said before eating, especially when someone else is paying or cooked."
+  },
+  {
+   "old": "3ef51ae9c0",
+   "topic": "Basics",
+   "t": "잘 먹었습니다",
+   "en": "After eating: that was great, thank you",
+   "note": "Said after the meal to the host or whoever paid."
+  },
+  {
+   "old": "148ee7d2a1",
+   "topic": "Basics",
+   "t": "진짜요?",
+   "en": "Really?",
+   "note": ""
+  },
+  {
+   "old": "3fd16b6785",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "일",
+   "en": "one",
+   "note": "Sino-Korean numbers: used for money, minutes, dates, phone numbers.",
+   "avoid": [
+    32
+   ]
+  },
+  {
+   "old": "35c6a46b64",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "이",
+   "en": "two",
+   "note": "",
+   "avoid": [
+    33
+   ]
+  },
+  {
+   "old": "c793f2bb23",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "삼",
+   "en": "three",
+   "note": "",
+   "avoid": [
+    34
+   ]
+  },
+  {
+   "old": "f92fb0bf0e",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "사",
+   "en": "four",
+   "note": "",
+   "avoid": [
+    35
+   ]
+  },
+  {
+   "old": "897cf7eb7e",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "오",
+   "en": "five",
+   "note": "",
+   "avoid": [
+    36
+   ]
+  },
+  {
+   "old": "c63e253d83",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "육",
+   "en": "six",
+   "note": "",
+   "avoid": [
+    37
+   ]
+  },
+  {
+   "old": "1047056b2f",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "칠",
+   "en": "seven",
+   "note": "",
+   "avoid": [
+    38
+   ]
+  },
+  {
+   "old": "cd93d4d960",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "팔",
+   "en": "eight",
+   "note": "",
+   "avoid": [
+    39
+   ]
+  },
+  {
+   "old": "e5647669f6",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "구",
+   "en": "nine",
+   "note": "",
+   "avoid": [
+    40
+   ]
+  },
+  {
+   "old": "bc051168f6",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "십",
+   "en": "ten",
+   "note": "",
+   "avoid": [
+    41
+   ]
+  },
+  {
+   "old": "3847983378",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "백",
+   "en": "one hundred",
+   "note": ""
+  },
+  {
+   "old": "8d2256d01a",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "천",
+   "en": "one thousand",
+   "note": ""
+  },
+  {
+   "old": "3d4edb719a",
+   "topic": "Numbers (Sino-Korean)",
+   "t": "만",
+   "en": "ten thousand",
+   "note": "Korean counts big numbers in ten-thousands: 만 원 = 10,000 won."
+  },
+  {
+   "old": "3e704ea46f",
+   "topic": "Numbers (native)",
+   "t": "하나",
+   "en": "one (counting things)",
+   "note": "Native Korean numbers: used to count things and people, and for the hour. Before a counter word it shortens to 한.",
+   "avoid": [
+    19
+   ]
+  },
+  {
+   "old": "4ad5e11820",
+   "topic": "Numbers (native)",
+   "t": "둘",
+   "en": "two (counting things)",
+   "note": "Shortens to 두 before a counter: 두 명 = two people.",
+   "avoid": [
+    20
+   ]
+  },
+  {
+   "old": "502049104f",
+   "topic": "Numbers (native)",
+   "t": "셋",
+   "en": "three (counting things)",
+   "note": "Shortens to 세: 세 시 = three o'clock.",
+   "avoid": [
+    21
+   ]
+  },
+  {
+   "old": "a5897b5efc",
+   "topic": "Numbers (native)",
+   "t": "넷",
+   "en": "four (counting things)",
+   "note": "Shortens to 네: 네 개 = four items.",
+   "avoid": [
+    22
+   ]
+  },
+  {
+   "old": "291ea138ef",
+   "topic": "Numbers (native)",
+   "t": "다섯",
+   "en": "five (counting things)",
+   "note": "",
+   "avoid": [
+    23
+   ]
+  },
+  {
+   "old": "9823c41463",
+   "topic": "Numbers (native)",
+   "t": "여섯",
+   "en": "six (counting things)",
+   "note": "",
+   "avoid": [
+    24
+   ]
+  },
+  {
+   "old": "a9c6785a3d",
+   "topic": "Numbers (native)",
+   "t": "일곱",
+   "en": "seven (counting things)",
+   "note": "",
+   "avoid": [
+    25
+   ]
+  },
+  {
+   "old": "5a8350aa95",
+   "topic": "Numbers (native)",
+   "t": "여덟",
+   "en": "eight (counting things)",
+   "note": "The ㄹㅂ at the end is said as just ㄹ.",
+   "avoid": [
+    26
+   ]
+  },
+  {
+   "old": "d93f565072",
+   "topic": "Numbers (native)",
+   "t": "아홉",
+   "en": "nine (counting things)",
+   "note": "",
+   "avoid": [
+    27
+   ]
+  },
+  {
+   "old": "d971929fd1",
+   "topic": "Numbers (native)",
+   "t": "열",
+   "en": "ten (counting things)",
+   "note": "",
+   "avoid": [
+    28
+   ]
+  },
+  {
+   "t": "주세요",
+   "en": "Please give me … / Please do … for me",
+   "topic": "Basics",
+   "note": "Put a thing or an action in front: {{이거 주세요}}, {{말해 주세요}}."
+  },
+  {
+   "t": "이거",
+   "en": "this (thing)",
+   "topic": "Basics",
+   "note": "Point and say {{이거 주세요}}: this one, please."
+  },
+  {
+   "t": "천만에요",
+   "en": "You're welcome",
+   "topic": "Basics",
+   "note": "A polite reply to thanks. In everyday talk Koreans also often say {{아니에요}} (not at all)."
+  },
+  {
+   "t": "영어 하세요?",
+   "en": "Do you speak English?",
+   "topic": "Basics",
+   "note": "{{하세요}} is the respectful form of {{해요}}, used when asking about the other person."
+  },
+  {
+   "t": "어서 오세요",
+   "en": "Welcome! (said by staff or a host)",
+   "topic": "Basics",
+   "note": "You hear it as you walk into shops and restaurants. Just answer {{안녕하세요}}.",
+   "avoid": [
+    0
+   ]
+  },
+  {
+   "t": "안녕히 주무세요",
+   "en": "Good night (sleep well)",
+   "topic": "Basics",
+   "note": "A respectful good night, said to someone going to bed."
+  }
+ ],
+ "items": [
+  {
+   "id": "L1-gap-01",
+   "t": "gap",
+   "q": "안녕히 ___.",
+   "en": "Goodbye! (You are leaving a shop; the owner stays.)",
+   "opts": [
+    "계세요",
+    "가세요",
+    "주무세요",
+    "하세요"
+   ],
+   "a": 0,
+   "why": "The person leaving says {{안녕히 계세요}} (stay in peace) to the person who stays.",
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L1-gap-02",
+   "t": "gap",
+   "q": "안녕히 ___.",
+   "en": "Goodbye! (A guest is leaving your home.)",
+   "opts": [
+    "가세요",
+    "계세요",
+    "주무세요",
+    "주세요"
+   ],
+   "a": 0,
+   "why": "The other person is leaving, so you wish them {{안녕히 가세요}} (go in peace).",
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L1-gap-03",
+   "t": "gap",
+   "q": "천천히 말해 ___.",
+   "en": "Please speak slowly.",
+   "opts": [
+    "주세요",
+    "해요",
+    "계세요",
+    "가세요"
+   ],
+   "a": 0,
+   "why": "{{말해 주세요}} = please say it (for me). {{주세요}} turns an action into a polite request.",
+   "sk": [
+    "g:endings",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-gap-04",
+   "t": "gap",
+   "q": "한국어 ___ 해요.",
+   "en": "I speak a little Korean.",
+   "opts": [
+    "조금",
+    "천천히",
+    "다시",
+    "안녕히"
+   ],
+   "a": 0,
+   "why": "{{조금}} = a little. {{천천히}} is slowly and {{다시}} is again.",
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L1-gap-05",
+   "t": "gap",
+   "q": "잘 ___.",
+   "en": "Thank you for the meal! (said just before you start eating)",
+   "opts": [
+    "먹겠습니다",
+    "먹었습니다",
+    "가세요",
+    "주세요"
+   ],
+   "a": 0,
+   "why": "Before eating it is {{잘 먹겠습니다}}; after eating it is {{잘 먹었습니다}}.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-gap-06",
+   "t": "gap",
+   "q": "아니요, ___.",
+   "en": "No, I'm fine. (turning down an offer)",
+   "opts": [
+    "괜찮아요",
+    "모르겠어요",
+    "미안해요",
+    "진짜요"
+   ],
+   "a": 0,
+   "why": "{{괜찮아요}} (it's okay, I'm fine) is the polite way to say no thanks.",
+   "sk": [
+    "s:vocab",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-gap-07",
+   "t": "gap",
+   "q": "___, 영어 하세요?",
+   "en": "Excuse me, do you speak English?",
+   "opts": [
+    "저기요",
+    "잠깐만요",
+    "괜찮아요",
+    "천만에요"
+   ],
+   "a": 0,
+   "why": "{{저기요}} gets a stranger's attention. {{잠깐만요}} means just a moment.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-gap-08",
+   "t": "gap",
+   "q": "영어 ___?",
+   "en": "Do you speak English?",
+   "opts": [
+    "하세요",
+    "계세요",
+    "가세요",
+    "주세요"
+   ],
+   "a": 0,
+   "why": "{{하세요}} is the respectful form of {{해요}} (do, speak). {{계세요}} is stay and {{가세요}} is go.",
+   "sk": [
+    "g:honor",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L1-gap-09",
+   "t": "gap",
+   "q": "이거 ___ 주세요.",
+   "en": "One of these, please.",
+   "opts": [
+    "하나",
+    "한",
+    "일",
+    "열"
+   ],
+   "a": 0,
+   "why": "Counting things uses native numbers, so one is {{하나}}. The short form {{한}} is only used directly before a counter word, and {{일}} is the Sino-Korean one.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-10",
+   "t": "gap",
+   "q": "일, 이, ___, 사",
+   "en": "one, two, three, four (Sino-Korean)",
+   "opts": [
+    "삼",
+    "셋",
+    "세",
+    "산"
+   ],
+   "a": 0,
+   "why": "{{일, 이}} are Sino-Korean, so three is {{삼}}. {{셋}} is native.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-11",
+   "t": "gap",
+   "q": "하나, 둘, ___, 넷",
+   "en": "one, two, three, four (native Korean)",
+   "opts": [
+    "셋",
+    "삼",
+    "세",
+    "사"
+   ],
+   "a": 0,
+   "why": "{{하나, 둘}} are native numbers, so three is {{셋}}. {{세}} is only the short form before a counter word.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-12",
+   "t": "gap",
+   "q": "다섯, 여섯, ___, 여덟",
+   "en": "five, six, seven, eight (native Korean)",
+   "opts": [
+    "일곱",
+    "칠",
+    "아홉",
+    "열"
+   ],
+   "a": 0,
+   "why": "Native seven is {{일곱}}. {{칠}} is the Sino-Korean seven.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-13",
+   "t": "gap",
+   "q": "십___",
+   "en": "fifteen",
+   "opts": [
+    "오",
+    "다섯",
+    "사",
+    "육"
+   ],
+   "a": 0,
+   "why": "Sino-Korean builds like a calculator: {{십}} (10) + {{오}} (5) = {{십오}}. Native {{다섯}} never mixes with {{십}}.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-14",
+   "t": "gap",
+   "q": "이___",
+   "en": "twenty thousand",
+   "opts": [
+    "만",
+    "천",
+    "십",
+    "백"
+   ],
+   "a": 0,
+   "why": "{{만}} is 10,000, so {{이만}} is 2 × 10,000. {{이천}} would be 2,000.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-15",
+   "t": "gap",
+   "q": "___ 오천",
+   "en": "fifteen thousand",
+   "opts": [
+    "만",
+    "십천",
+    "천",
+    "백"
+   ],
+   "a": 0,
+   "why": "Korean has its own word for 10,000, {{만}}. Fifteen thousand is 'ten-thousand five-thousand': {{만 오천}}. There is no 'ten thousand' built from {{십}} and {{천}}.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-gap-16",
+   "t": "gap",
+   "q": "백___",
+   "en": "one hundred and twenty",
+   "opts": [
+    "이십",
+    "십이",
+    "이백",
+    "스물"
+   ],
+   "a": 0,
+   "why": "{{백}} (100) + {{이십}} (2 × 10) = 120. {{십이}} is 12, {{이백}} is 200, and native {{스물}} can't mix with {{백}}.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-pick-01",
+   "t": "pick",
+   "q": "You are leaving a small shop. The owner stays behind the counter. You say:",
+   "opts": [
+    "안녕히 계세요",
+    "안녕히 가세요",
+    "안녕하세요",
+    "안녕히 주무세요"
+   ],
+   "a": 0,
+   "why": "You are the one leaving, so you tell the owner to stay in peace: {{안녕히 계세요}}.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-pick-02",
+   "t": "pick",
+   "q": "A friend has visited your home and is now leaving. You are staying. You say:",
+   "opts": [
+    "안녕히 가세요",
+    "안녕히 계세요",
+    "잘 먹겠습니다",
+    "천만에요"
+   ],
+   "a": 0,
+   "why": "They are leaving, so you wish them {{안녕히 가세요}} (go in peace).",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-pick-03",
+   "t": "pick",
+   "q": "You bump into an older stranger on the train and want to apologize properly. You say:",
+   "opts": [
+    "죄송합니다",
+    "감사합니다",
+    "괜찮아요",
+    "천만에요"
+   ],
+   "a": 0,
+   "why": "{{죄송합니다}} is the formal apology for a stranger or an older person. {{감사합니다}} is thank you.",
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L1-pick-04",
+   "t": "pick",
+   "q": "A shop clerk hands you your change. You thank them. You say:",
+   "opts": [
+    "감사합니다",
+    "죄송합니다",
+    "천만에요",
+    "잠깐만요"
+   ],
+   "a": 0,
+   "why": "{{감사합니다}} is the standard thank you to staff. {{천만에요}} is the reply when someone thanks you.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-pick-05",
+   "t": "pick",
+   "q": "Your friend's mother has cooked dinner for you, and you are about to start eating. You say:",
+   "opts": [
+    "잘 먹겠습니다",
+    "잘 먹었습니다",
+    "안녕히 계세요",
+    "천만에요"
+   ],
+   "a": 0,
+   "why": "Before the meal: {{잘 먹겠습니다}}. {{잘 먹었습니다}} is for when you have finished.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-pick-06",
+   "t": "pick",
+   "q": "You are in a restaurant and want to call the server over. You say:",
+   "opts": [
+    "저기요",
+    "잠깐만요",
+    "안녕히 가세요",
+    "진짜요?"
+   ],
+   "a": 0,
+   "why": "{{저기요}} is how you call a server or get a stranger's attention.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-pick-07",
+   "t": "pick",
+   "q": "Someone thanks you for holding the door. You reply:",
+   "opts": [
+    "천만에요",
+    "죄송합니다",
+    "잘 먹었습니다",
+    "모르겠어요"
+   ],
+   "a": 0,
+   "why": "{{천만에요}} = you're welcome.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-pick-08",
+   "t": "pick",
+   "q": "A Korean speaker is talking too fast for you. Ask them to slow down. You say:",
+   "opts": [
+    "천천히 말해 주세요",
+    "한국어 조금 해요",
+    "잠깐만요",
+    "진짜요?"
+   ],
+   "a": 0,
+   "why": "{{천천히}} = slowly, and {{말해 주세요}} = please say it.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-tiles-01",
+   "t": "tiles",
+   "en": "Please speak slowly.",
+   "full": "천천히 말해 주세요.",
+   "a": [
+    "천천히",
+    "말해",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "말해요",
+    "하세요"
+   ],
+   "sk": [
+    "g:endings",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-tiles-02",
+   "t": "tiles",
+   "en": "Sorry, please say that once more.",
+   "full": "미안해요, 다시 한 번 말해 주세요.",
+   "a": [
+    "미안해요",
+    "다시",
+    "한",
+    "번",
+    "말해",
+    "주세요"
+   ],
+   "alt": [
+    [
+     "미안해요",
+     "한",
+     "번",
+     "다시",
+     "말해",
+     "주세요"
+    ]
+   ],
+   "extra": [
+    "일",
+    "해요"
+   ],
+   "sk": [
+    "s:phrase",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-tiles-03",
+   "t": "tiles",
+   "en": "Yes, I speak a little Korean.",
+   "full": "네, 한국어 조금 해요.",
+   "a": [
+    "네",
+    "한국어",
+    "조금",
+    "해요"
+   ],
+   "alt": [],
+   "extra": [
+    "아니요",
+    "하세요"
+   ],
+   "sk": [
+    "g:honor",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L1-tiles-04",
+   "t": "tiles",
+   "en": "Excuse me, do you speak English?",
+   "full": "저기요, 영어 하세요?",
+   "a": [
+    "저기요",
+    "영어",
+    "하세요"
+   ],
+   "alt": [],
+   "extra": [
+    "한국어",
+    "주세요"
+   ],
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L1-tiles-05",
+   "t": "tiles",
+   "en": "I don't understand. Do you speak English?",
+   "full": "모르겠어요. 영어 하세요?",
+   "a": [
+    "모르겠어요",
+    "영어",
+    "하세요"
+   ],
+   "alt": [],
+   "extra": [
+    "괜찮아요",
+    "계세요"
+   ],
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L1-tiles-06",
+   "t": "tiles",
+   "en": "One of these, please.",
+   "full": "이거 하나 주세요.",
+   "a": [
+    "이거",
+    "하나",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "한",
+    "일"
+   ],
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-tiles-07",
+   "t": "tiles",
+   "en": "Thank you. Goodbye! (You are leaving the shop.)",
+   "full": "감사합니다. 안녕히 계세요.",
+   "a": [
+    "감사합니다",
+    "안녕히",
+    "계세요"
+   ],
+   "alt": [
+    [
+     "안녕히",
+     "계세요",
+     "감사합니다"
+    ]
+   ],
+   "extra": [
+    "가세요",
+    "안녕하세요"
+   ],
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-tiles-08",
+   "t": "tiles",
+   "en": "Okay, goodbye! (to a guest who is leaving)",
+   "full": "네, 안녕히 가세요.",
+   "a": [
+    "네",
+    "안녕히",
+    "가세요"
+   ],
+   "alt": [],
+   "extra": [
+    "계세요",
+    "주무세요"
+   ],
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-tiles-09",
+   "t": "tiles",
+   "en": "No, I don't really know.",
+   "full": "아니요, 잘 모르겠어요.",
+   "a": [
+    "아니요",
+    "잘",
+    "모르겠어요"
+   ],
+   "alt": [],
+   "extra": [
+    "네",
+    "먹겠습니다"
+   ],
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L1-tiles-10",
+   "t": "tiles",
+   "en": "One, two, three! (counting down for a photo)",
+   "full": "하나, 둘, 셋!",
+   "a": [
+    "하나",
+    "둘",
+    "셋"
+   ],
+   "alt": [],
+   "extra": [
+    "삼",
+    "넷"
+   ],
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-tiles-11",
+   "t": "tiles",
+   "en": "Okay, thank you for the meal! (just before eating)",
+   "full": "네, 잘 먹겠습니다.",
+   "a": [
+    "네",
+    "잘",
+    "먹겠습니다"
+   ],
+   "alt": [],
+   "extra": [
+    "먹었습니다",
+    "주세요"
+   ],
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-tiles-12",
+   "t": "tiles",
+   "en": "That was a great meal. Thank you! (after eating)",
+   "full": "잘 먹었습니다. 감사합니다.",
+   "a": [
+    "잘",
+    "먹었습니다",
+    "감사합니다"
+   ],
+   "alt": [
+    [
+     "감사합니다",
+     "잘",
+     "먹었습니다"
+    ]
+   ],
+   "extra": [
+    "먹겠습니다",
+    "죄송합니다"
+   ],
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-listen-01",
+   "t": "listen",
+   "say": "천천히 말해 주세요.",
+   "opts": [
+    "Please speak slowly.",
+    "Please say that once more.",
+    "Please wait a moment.",
+    "Please speak quickly.",
+    "Do you speak English?",
+    "I speak a little Korean."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L1-listen-02",
+   "t": "listen",
+   "say": "안녕히 계세요.",
+   "opts": [
+    "Goodbye (said by someone who is leaving).",
+    "Goodbye (said to someone who is leaving).",
+    "Hello.",
+    "Good night.",
+    "Welcome!",
+    "Thank you."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-listen-03",
+   "t": "listen",
+   "say": "한국어 조금 해요.",
+   "opts": [
+    "I speak a little Korean.",
+    "I speak a little English.",
+    "I speak Korean well.",
+    "Please speak Korean.",
+    "I don't speak Korean.",
+    "Please speak slowly."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L1-listen-04",
+   "t": "listen",
+   "say": "영어 하세요?",
+   "opts": [
+    "Do you speak English?",
+    "I speak English.",
+    "Do you speak Korean?",
+    "Please speak English.",
+    "I speak a little English.",
+    "Is this English?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L1-listen-05",
+   "t": "listen",
+   "say": "만 오천",
+   "opts": [
+    "15,000",
+    "50,000",
+    "1,500",
+    "5,000",
+    "150,000",
+    "10,500"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-listen-06",
+   "t": "listen",
+   "say": "삼만 칠천",
+   "opts": [
+    "37,000",
+    "30,700",
+    "3,700",
+    "73,000",
+    "38,000",
+    "370,000"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-listen-07",
+   "t": "listen",
+   "say": "이거 하나 주세요.",
+   "opts": [
+    "One of these, please.",
+    "Two of these, please.",
+    "Ten of these, please.",
+    "What is this?",
+    "This one is fine.",
+    "Please say that once more."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L1-listen-08",
+   "t": "listen",
+   "say": "잘 먹었습니다.",
+   "opts": [
+    "Thanks, I enjoyed the meal. (after eating)",
+    "Thanks, I'll enjoy this meal. (before eating)",
+    "Let's eat.",
+    "Excuse me!",
+    "Goodbye.",
+    "I'm sorry."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L1-listen-09",
+   "t": "listen",
+   "say": "네, 감사합니다.",
+   "opts": [
+    "Yes, thank you.",
+    "Yes, I'm sorry.",
+    "No, thank you.",
+    "You're welcome.",
+    "Yes, goodbye.",
+    "No, I'm sorry."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L1-listen-10",
+   "t": "listen",
+   "say": "아니요, 괜찮아요.",
+   "opts": [
+    "No, I'm fine, thanks.",
+    "Yes, I'm fine.",
+    "No, I don't know.",
+    "No, I'm sorry.",
+    "Yes, please.",
+    "Really?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L1-dlg-01",
+   "t": "dlg",
+   "title": "Bumping into someone",
+   "turns": [
+    {
+     "who": "Stranger",
+     "s": "아, 죄송합니다!",
+     "en": "Oh, I'm so sorry!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "괜찮아요.",
+      "천만에요.",
+      "잘 먹겠습니다."
+     ],
+     "a": 0,
+     "why": "{{괜찮아요}} (it's okay) is the answer to an apology. {{천만에요}} answers a thank-you.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Stranger",
+     "s": "진짜 괜찮아요?",
+     "en": "Are you really okay?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 괜찮아요.",
+      "네, 천만에요.",
+      "아니요, 모르겠어요."
+     ],
+     "a": 0,
+     "why": "{{네, 괜찮아요}} = yes, I'm fine.",
+     "sk": [
+      "s:phrase",
+      "s:vocab"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L1-dlg-02",
+   "t": "dlg",
+   "title": "At a restaurant",
+   "turns": [
+    {
+     "who": "Server",
+     "s": "어서 오세요!",
+     "en": "Welcome!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "안녕하세요.",
+      "안녕히 가세요.",
+      "잘 먹었습니다."
+     ],
+     "a": 0,
+     "why": "Answer a welcome with the greeting {{안녕하세요}}. {{안녕히 가세요}} is goodbye, and {{잘 먹었습니다}} is for after the meal.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "이거요?",
+     "en": "(You point at a dish on the menu.) This one?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 이거 하나 주세요.",
+      "네, 이거 한 주세요.",
+      "네, 이거 일 주세요."
+     ],
+     "a": 0,
+     "why": "Counting things uses native {{하나}}. {{한}} is only used directly before a counter word, and {{일}} is Sino-Korean.",
+     "sk": [
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "감사합니다. 안녕히 가세요.",
+     "en": "(After your meal, as you leave) Thank you. Goodbye."
+    },
+    {
+     "you": true,
+     "opts": [
+      "잘 먹었습니다.",
+      "잘 먹겠습니다.",
+      "안녕히 가세요."
+     ],
+     "a": 0,
+     "why": "After eating, say {{잘 먹었습니다}}. You are the one leaving, so {{안녕히 가세요}} doesn't fit.",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L1-dlg-03",
+   "t": "dlg",
+   "title": "Dinner at a friend's home",
+   "turns": [
+    {
+     "who": "Minji's mother",
+     "s": "어서 오세요!",
+     "en": "Welcome!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "안녕하세요.",
+      "안녕히 계세요.",
+      "안녕히 주무세요."
+     ],
+     "a": 0,
+     "why": "You have just arrived, so greet her with {{안녕하세요}}. The other two are goodbye and good night.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Minji's mother",
+     "s": "많이 드세요.",
+     "en": "Please, eat plenty!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "잘 먹겠습니다.",
+      "잘 먹었습니다.",
+      "천만에요."
+     ],
+     "a": 0,
+     "why": "You are about to eat: {{잘 먹겠습니다}}.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Minji's mother",
+     "s": "더 드릴까요?",
+     "en": "(Later) Would you like some more?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "아니요, 괜찮아요. 잘 먹었습니다.",
+      "아니요, 괜찮아요. 잘 먹겠습니다.",
+      "아니요, 천만에요."
+     ],
+     "a": 0,
+     "why": "{{괜찮아요}} politely turns down more food, and you have finished eating, so {{잘 먹었습니다}}.",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L1-dlg-04",
+   "t": "dlg",
+   "title": "At an information desk",
+   "turns": [
+    {
+     "who": "Staff",
+     "s": "안녕하세요.",
+     "en": "Hello."
+    },
+    {
+     "you": true,
+     "opts": [
+      "안녕하세요. 영어 하세요?",
+      "안녕히 계세요. 영어 하세요?",
+      "안녕히 가세요. 영어 하세요?"
+     ],
+     "a": 0,
+     "why": "You are starting a conversation, so greet with {{안녕하세요}}. The other two are goodbyes.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Staff",
+     "s": "아, 죄송합니다. 한국어 하세요?",
+     "en": "Oh, I'm sorry. Do you speak Korean?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 조금 해요. 천천히 말해 주세요.",
+      "네, 조금 하세요. 천천히 말해 주세요.",
+      "아니요, 조금 해요. 천천히 말해 주세요."
+     ],
+     "a": 0,
+     "why": "Talk about yourself with plain {{해요}}. {{하세요}} shows respect, so it is for asking about the other person. {{아니요}} doesn't fit with speaking a little.",
+     "sk": [
+      "g:honor",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Staff",
+     "s": "네, 알겠습니다.",
+     "en": "Sure, of course."
+    }
+   ]
+  },
+  {
+   "id": "L1-dlg-05",
+   "t": "dlg",
+   "title": "Counting with Junho",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "하나, 둘…",
+     "en": "One, two…"
+    },
+    {
+     "you": true,
+     "opts": [
+      "셋!",
+      "삼!",
+      "세!"
+     ],
+     "a": 0,
+     "why": "{{하나, 둘}} are native numbers, so the next one is native {{셋}}. {{세}} is only the short form before a counter word.",
+     "sk": [
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "네! 일, 이…",
+     "en": "Yes! Now: one, two…"
+    },
+    {
+     "you": true,
+     "opts": [
+      "삼!",
+      "셋!",
+      "사!"
+     ],
+     "a": 0,
+     "why": "{{일, 이}} are Sino-Korean, so the next one is {{삼}}.",
+     "sk": [
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "십, 이십…",
+     "en": "Ten, twenty…"
+    },
+    {
+     "you": true,
+     "opts": [
+      "삼십!",
+      "셋십!",
+      "십삼!"
+     ],
+     "a": 0,
+     "why": "Thirty is 3 × 10: {{삼십}}. {{십삼}} is thirteen, and native {{셋}} can't mix with {{십}}.",
+     "sk": [
+      "g:numbers"
+     ]
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Hello and goodbye at a shop",
+   "setup": "You walk into a small corner shop in Seoul. Greet the owner, ask for something by pointing, and leave politely.",
+   "persona": "You are a friendly middle-aged shop owner in Seoul. Speak only very simple polite Korean from level 1: 어서 오세요, 안녕하세요, 이거요?, 네, 감사합니다, 괜찮아요, 안녕히 가세요, and numbers. The learner is a complete beginner. If they ask you to slow down or repeat, do it, slowly. When the learner leaves, say 감사합니다. 안녕히 가세요. and expect 안녕히 계세요 back; if they say 안녕히 가세요, gently model 안녕히 계세요.",
+   "opening": "어서 오세요!",
+   "opening_en": "Welcome!",
+   "goals": [
+    "Greet the owner",
+    "Point at something and ask for one",
+    "Ask the owner to speak slowly or say it again",
+    "Say thank you and the right goodbye as you leave"
+   ]
+  },
+  {
+   "title": "Numbers with a friend",
+   "setup": "Your friend Junho helps you practise Korean numbers.",
+   "persona": "You are Junho, a patient Korean friend in his 30s. Help a complete beginner practise numbers using very simple polite Korean from level 1. Say a short run of numbers and let them say the next one, or ask them to count. Alternate native numbers (하나 to 열) and Sino-Korean numbers (일 to 십, then tens, 백, 천, 만, e.g. 만 오천). Keep praise short, correct gently, and slow down when asked.",
+   "opening": "안녕하세요! 하나, 둘…",
+   "opening_en": "Hi! One, two…",
+   "goals": [
+    "Count from one to ten with native numbers",
+    "Count from one to ten with Sino-Korean numbers",
+    "Say a big number such as 15,000",
+    "Ask Junho to repeat or slow down"
+   ]
+  }
+ ],
+ "pron": {
+  "잠깐만요": "잠깐만뇨",
+  "하나, 둘, 셋, 넷": "하나 둘 섿 넫"
+ }
+}

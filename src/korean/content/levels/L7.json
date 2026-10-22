@@ -1,0 +1,1654 @@
+{
+ "id": "L7",
+ "n": 7,
+ "title": "Making plans",
+ "goal": "Set a date and time, invite and decline politely, and keep in touch by phone and message.",
+ "notes": [
+  {
+   "h": "Months and dates",
+   "p": "Months are a Sino-Korean number plus {{월}}: {{일월}}, {{이월}}, {{삼월}} and so on. Two months are irregular: June is {{유월}} (not six + {{월}}) and October is {{시월}} (not ten + {{월}}). Days of the month are a Sino-Korean number plus {{일}}: {{십오 일}} is the 15th. To ask the date, say {{몇 월 며칠이에요?}} The word for \"which day\" is always spelled {{며칠}}. Sound point: {{몇 월}} is said {{며둴}}, because the final consonant of {{몇}} carries over as a d sound.",
+   "ex": [
+    [
+     "오늘 몇 월 며칠이에요?",
+     "What's the date today?"
+    ],
+    [
+     "유월 십오 일이에요.",
+     "It's June 15th."
+    ],
+    [
+     "제 생일은 시월 이십 일이에요.",
+     "My birthday is October 20th."
+    ]
+   ]
+  },
+  {
+   "h": "Can and can't",
+   "p": "Add {{-ㄹ 수 있어요}} to a verb stem ending in a vowel ({{가다}} becomes {{갈 수 있어요}}) and {{-을 수 있어요}} to a stem ending in a consonant ({{먹다}} becomes {{먹을 수 있어요}}). Swap {{있어요}} for {{없어요}} to say you can't. Never put {{못}} or {{안}} in front of {{있어요}} here. Sound point: the {{수}} is said with a tense s, {{쑤}}: {{갈 수 있어요}} sounds like {{갈 쑤 이써요}}.",
+   "ex": [
+    [
+     "내일 갈 수 있어요.",
+     "I can go tomorrow."
+    ],
+    [
+     "오늘은 갈 수 없어요.",
+     "I can't go today."
+    ],
+    [
+     "몇 시에 올 수 있어요?",
+     "What time can you come?"
+    ]
+   ]
+  },
+  {
+   "h": "I'll do it: promises and offers",
+   "p": "Use {{-ㄹ게요}} (after a vowel) or {{-을게요}} (after a consonant) when you promise or offer to do something for the other person: \"I'll text you\", \"I'll wait\". It is only for things you yourself will do. Compare {{-ㄹ까요?}}, which asks \"shall we / shall I?\", and {{-세요}}, which asks the other person to do it. Sound point: the {{게}} is said tense, {{께}}: {{보낼게요}} sounds like {{보낼께요}}.",
+   "ex": [
+    [
+     "제가 문자 보낼게요.",
+     "I'll text you."
+    ],
+    [
+     "곧 갈게요.",
+     "I'll be there soon."
+    ],
+    [
+     "저는 이거 먹을게요.",
+     "I'll have this one."
+    ]
+   ]
+  },
+  {
+   "h": "Inviting, saying no, and decided plans",
+   "p": "Invite with {{같이}} (together) and {{-ㄹ래요?}} or {{-ㄹ까요?}}: {{같이 영화 볼래요?}} To say no kindly, apologize, give a reason with {{약속이 있어요}} (I have plans), and offer another time: {{다음에 같이 가요}}. When a plan is settled, use {{-기로 했어요}} \"(we) decided / agreed to\": {{만나기로 했어요}}. Sound point: {{같이}} is said {{가치}}.",
+   "ex": [
+    [
+     "같이 영화 볼래요?",
+     "Want to see a movie together?"
+    ],
+    [
+     "미안해요, 그날은 약속이 있어요.",
+     "Sorry, I have plans that day."
+    ],
+    [
+     "토요일에 만나기로 했어요.",
+     "We decided to meet on Saturday."
+    ]
+   ]
+  },
+  {
+   "h": "Phone and messages",
+   "p": "{{전화}} is a phone call, {{문자}} a text message, {{카톡}} a KakaoTalk message (the app almost every Korean uses), and {{답장}} a reply. You {{보내다}} (send) a text and {{주다}} (give) someone a call: {{전화 주세요}}. Phone numbers are read digit by digit with Sino-Korean numbers, and zero is {{공}}. Sound points: {{문자}} is said {{문짜}}, {{약속}} is said {{약쏙}} and {{답장}} is said {{답짱}}.",
+   "ex": [
+    [
+     "전화번호가 뭐예요?",
+     "What's your phone number?"
+    ],
+    [
+     "카톡 주세요.",
+     "Message me on KakaoTalk."
+    ],
+    [
+     "아직 답장이 없어요.",
+     "There's no reply yet."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "t": "일월",
+   "en": "January",
+   "topic": "Dates",
+   "note": "Months are Sino-Korean numbers plus {{월}}."
+  },
+  {
+   "t": "이월",
+   "en": "February",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "삼월",
+   "en": "March",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "사월",
+   "en": "April",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "오월",
+   "en": "May",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "유월",
+   "en": "June",
+   "topic": "Dates",
+   "note": "Irregular: not {{육월}}."
+  },
+  {
+   "t": "칠월",
+   "en": "July",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "팔월",
+   "en": "August",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "구월",
+   "en": "September",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "시월",
+   "en": "October",
+   "topic": "Dates",
+   "note": "Irregular: not {{십월}}."
+  },
+  {
+   "t": "십일월",
+   "en": "November",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "십이월",
+   "en": "December",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "오늘 몇 월 며칠이에요?",
+   "en": "What's the date today?",
+   "topic": "Dates",
+   "note": "{{며칠}} = which day of the month. {{몇 월}} is said {{며둴}}."
+  },
+  {
+   "t": "생일",
+   "en": "birthday",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "생일이 언제예요?",
+   "en": "When's your birthday?",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "이번 주",
+   "en": "this week",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "다음 주",
+   "en": "next week",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "지난주",
+   "en": "last week",
+   "topic": "Dates",
+   "note": "Written as one word, unlike {{이번 주}} and {{다음 주}}."
+  },
+  {
+   "t": "이번 주말",
+   "en": "this weekend",
+   "topic": "Dates",
+   "note": ""
+  },
+  {
+   "t": "언제 시간 있어요?",
+   "en": "When are you free?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "다음 주 금요일 어때요?",
+   "en": "How about next Friday?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "어때요?",
+   "en": "How about it? / How is it?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "토요일 괜찮아요?",
+   "en": "Does Saturday work for you?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "약속",
+   "en": "plans / an appointment (with someone)",
+   "topic": "Plans",
+   "note": "Any arrangement to meet someone. Said {{약쏙}}."
+  },
+  {
+   "t": "약속이 있어요",
+   "en": "I have plans",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "같이",
+   "en": "together",
+   "topic": "Plans",
+   "note": "Said {{가치}}."
+  },
+  {
+   "t": "같이 갈래요?",
+   "en": "Do you want to go together?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "영화",
+   "en": "movie",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "같이 영화 볼래요?",
+   "en": "Want to see a movie together?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "좋아요, 같이 가요",
+   "en": "Sure, let's go together",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "미안해요, 그날은 약속이 있어요",
+   "en": "Sorry, I have plans that day",
+   "topic": "Plans",
+   "note": "{{그날}} = that day."
+  },
+  {
+   "t": "다음에 같이 가요",
+   "en": "Let's go together next time",
+   "topic": "Plans",
+   "note": "A friendly way to say no for now."
+  },
+  {
+   "t": "내일 갈 수 있어요",
+   "en": "I can go tomorrow",
+   "topic": "Plans",
+   "note": "{{-ㄹ 수 있어요}} = can."
+  },
+  {
+   "t": "오늘은 갈 수 없어요",
+   "en": "I can't go today",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "몇 시에 올 수 있어요?",
+   "en": "What time can you come?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "어디에서 만날까요?",
+   "en": "Where shall we meet?",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "토요일에 만나기로 했어요",
+   "en": "We've agreed to meet on Saturday",
+   "topic": "Plans",
+   "note": "{{-기로 했어요}} = decided / agreed to."
+  },
+  {
+   "t": "친구랑 저녁 먹기로 했어요",
+   "en": "I've made plans to have dinner with a friend",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "예약",
+   "en": "reservation",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "제가 예약할게요",
+   "en": "I'll make the reservation",
+   "topic": "Plans",
+   "note": "{{-ㄹ게요}} = I'll (offer / promise)."
+  },
+  {
+   "t": "곧 갈게요",
+   "en": "I'll be there soon",
+   "topic": "Plans",
+   "note": "{{곧}} = soon."
+  },
+  {
+   "t": "기다릴게요",
+   "en": "I'll wait for you",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "알겠어요",
+   "en": "Got it / Will do",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "그때 봐요",
+   "en": "See you then",
+   "topic": "Plans",
+   "note": ""
+  },
+  {
+   "t": "전화번호가 뭐예요?",
+   "en": "What's your phone number?",
+   "topic": "Phone and messages",
+   "note": ""
+  },
+  {
+   "t": "공",
+   "en": "zero (in phone numbers)",
+   "topic": "Phone and messages",
+   "note": "Phone numbers are read digit by digit: {{공일공}} = 010."
+  },
+  {
+   "t": "전화 주세요",
+   "en": "Please give me a call",
+   "topic": "Phone and messages",
+   "note": ""
+  },
+  {
+   "t": "문자",
+   "en": "text message",
+   "topic": "Phone and messages",
+   "note": "Said {{문짜}}.",
+   "avoid": [
+    49
+   ]
+  },
+  {
+   "t": "제가 문자 보낼게요",
+   "en": "I'll text you",
+   "topic": "Phone and messages",
+   "note": ""
+  },
+  {
+   "t": "카톡",
+   "en": "KakaoTalk (Korea's messaging app)",
+   "topic": "Phone and messages",
+   "note": "",
+   "avoid": [
+    47
+   ]
+  },
+  {
+   "t": "카톡 주세요",
+   "en": "Message me on KakaoTalk",
+   "topic": "Phone and messages",
+   "note": ""
+  },
+  {
+   "t": "답장",
+   "en": "reply (to a message)",
+   "topic": "Phone and messages",
+   "note": "Said {{답짱}}."
+  },
+  {
+   "t": "아직 답장이 없어요",
+   "en": "There's no reply yet",
+   "topic": "Phone and messages",
+   "note": ""
+  },
+  {
+   "t": "친구한테 문자 보냈어요",
+   "en": "I texted my friend",
+   "topic": "Phone and messages",
+   "note": "{{한테}} = to (a person)."
+  }
+ ],
+ "items": [
+  {
+   "id": "L7-gap-01",
+   "t": "gap",
+   "q": "오늘 몇 월 ___이에요?",
+   "en": "What's the date today?",
+   "opts": [
+    "며칠",
+    "몇 일",
+    "몇 날",
+    "언제"
+   ],
+   "a": 0,
+   "why": "The day of the month is asked with {{며칠}}, and it is always spelled that way.",
+   "sk": [
+    "g:numbers",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L7-gap-02",
+   "t": "gap",
+   "q": "제 생일은 ___ 십오 일이에요.",
+   "en": "My birthday is June 15th.",
+   "opts": [
+    "유월",
+    "육월",
+    "여섯 월",
+    "육 월"
+   ],
+   "a": 0,
+   "why": "June is irregular: {{유월}}, without the final ㄱ.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L7-gap-03",
+   "t": "gap",
+   "q": "___ 이십 일이에요.",
+   "en": "It's October 20th.",
+   "opts": [
+    "시월",
+    "십월",
+    "열 월",
+    "십 월"
+   ],
+   "a": 0,
+   "why": "October is irregular: {{시월}}, without the final ㅂ.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L7-gap-04",
+   "t": "gap",
+   "q": "칠월 ___ 일이에요.",
+   "en": "It's July 4th.",
+   "opts": [
+    "사",
+    "네",
+    "넷",
+    "사십"
+   ],
+   "a": 0,
+   "why": "Days of the month use Sino-Korean numbers: {{사 일}} is the 4th.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L7-gap-05",
+   "t": "gap",
+   "q": "내일 갈 ___ 있어요.",
+   "en": "I can go tomorrow.",
+   "opts": [
+    "수",
+    "거",
+    "게",
+    "까"
+   ],
+   "a": 0,
+   "why": "\"Can\" is {{-ㄹ 수 있어요}}.",
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-gap-06",
+   "t": "gap",
+   "q": "오늘은 바빠서 만날 수 ___.",
+   "en": "I'm busy today, so I can't meet.",
+   "opts": [
+    "없어요",
+    "있어요",
+    "못해요",
+    "안 해요"
+   ],
+   "a": 0,
+   "why": "\"Can't\" is {{-ㄹ 수 없어요}}; {{있어요}} would mean you can.",
+   "sk": [
+    "g:want",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L7-gap-07",
+   "t": "gap",
+   "q": "한국 음식도 ___ 수 있어요.",
+   "en": "I can eat Korean food too.",
+   "opts": [
+    "먹을",
+    "먹는",
+    "먹어",
+    "먹고"
+   ],
+   "a": 0,
+   "why": "After a consonant the form is {{-을 수}}: {{먹을 수 있어요}}.",
+   "sk": [
+    "g:want",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L7-gap-08",
+   "t": "gap",
+   "q": "제가 문자 ___.",
+   "en": "I'll text you.",
+   "opts": [
+    "보낼게요",
+    "보낼까요",
+    "보냈어요",
+    "보내세요"
+   ],
+   "a": 0,
+   "why": "Promising to do something yourself is {{-ㄹ게요}}.",
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-gap-09",
+   "t": "gap",
+   "q": "저는 이거 ___.",
+   "en": "I'll have this one.",
+   "opts": [
+    "먹을게요",
+    "먹을까요",
+    "먹었어요",
+    "먹어 주세요"
+   ],
+   "a": 0,
+   "why": "After a consonant, \"I'll\" is {{-을게요}}: {{먹을게요}}.",
+   "sk": [
+    "g:want",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L7-gap-10",
+   "t": "gap",
+   "q": "토요일에 친구를 만나___ 했어요.",
+   "en": "I've agreed to meet my friend on Saturday.",
+   "opts": [
+    "기로",
+    "고",
+    "러",
+    "면"
+   ],
+   "a": 0,
+   "why": "\"Decided / agreed to\" is {{-기로 했어요}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L7-gap-11",
+   "t": "gap",
+   "q": "금요일___ 시간 있어요?",
+   "en": "Do you have time on Friday?",
+   "opts": [
+    "에",
+    "을",
+    "이",
+    "에서"
+   ],
+   "a": 0,
+   "why": "Days and times take {{에}}: {{금요일에}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-gap-12",
+   "t": "gap",
+   "q": "주말에 ___ 영화 볼래요?",
+   "en": "Do you want to see a movie together on the weekend?",
+   "opts": [
+    "같이",
+    "같은",
+    "같아요",
+    "가치"
+   ],
+   "a": 0,
+   "why": "\"Together\" is spelled {{같이}}, even though it is said {{가치}}.",
+   "sk": [
+    "s:read",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L7-gap-13",
+   "t": "gap",
+   "q": "미안해요, 그날은 약속___ 있어요.",
+   "en": "Sorry, I have plans that day.",
+   "opts": [
+    "이",
+    "가",
+    "을",
+    "에"
+   ],
+   "a": 0,
+   "why": "With {{있어요}} the thing you have takes {{이}}, and {{약속}} ends in a consonant.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-gap-14",
+   "t": "gap",
+   "q": "생일이 ___예요?",
+   "en": "When is your birthday?",
+   "opts": [
+    "언제",
+    "어디",
+    "뭐",
+    "누구"
+   ],
+   "a": 0,
+   "why": "{{언제}} = when.",
+   "sk": [
+    "g:question"
+   ]
+  },
+  {
+   "id": "L7-gap-15",
+   "t": "gap",
+   "q": "전화번호___ 뭐예요?",
+   "en": "What's your phone number?",
+   "opts": [
+    "가",
+    "이",
+    "를",
+    "에"
+   ],
+   "a": 0,
+   "why": "{{전화번호}} ends in a vowel, so the subject marker is {{가}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-gap-16",
+   "t": "gap",
+   "q": "아직 답장이 ___.",
+   "en": "There's no reply yet.",
+   "opts": [
+    "없어요",
+    "안 있어요",
+    "아니에요",
+    "못 있어요"
+   ],
+   "a": 0,
+   "why": "The opposite of {{있어요}} is {{없어요}}; never {{안 있어요}}.",
+   "sk": [
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L7-pick-01",
+   "t": "pick",
+   "q": "A friend invites you to dinner on Saturday, but you already have plans that day. You say:",
+   "opts": [
+    "미안해요, 그날은 약속이 있어요.",
+    "좋아요, 같이 가요.",
+    "네, 약속이 없어요.",
+    "미안해요, 어제 약속이 있었어요."
+   ],
+   "a": 0,
+   "why": "Apologize and say you have plans that day: {{그날은 약속이 있어요}}.",
+   "sk": [
+    "s:phrase",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L7-pick-02",
+   "t": "pick",
+   "q": "You promise your friend you'll send them a text later. You say:",
+   "opts": [
+    "이따가 문자 보낼게요.",
+    "이따가 문자 보낼까요?",
+    "이따가 문자 보냈어요.",
+    "이따가 문자 보내세요."
+   ],
+   "a": 0,
+   "why": "A promise about what you will do is {{-ㄹ게요}}.",
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-pick-03",
+   "t": "pick",
+   "q": "You want to know today's date. You ask:",
+   "opts": [
+    "오늘 몇 월 며칠이에요?",
+    "오늘 무슨 요일이에요?",
+    "지금 몇 시예요?",
+    "생일이 언제예요?"
+   ],
+   "a": 0,
+   "why": "{{몇 월 며칠}} asks for the month and day. {{무슨 요일}} asks the day of the week.",
+   "sk": [
+    "g:question",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L7-pick-04",
+   "t": "pick",
+   "q": "Your friend texts that they'll be ten minutes late. You reply that it's fine and you'll wait. You say:",
+   "opts": [
+    "괜찮아요, 기다릴게요.",
+    "괜찮아요, 기다렸어요.",
+    "괜찮아요, 기다리세요.",
+    "괜찮아요, 기다릴까요?"
+   ],
+   "a": 0,
+   "why": "{{기다릴게요}} = I'll wait (a promise). {{기다리세요}} would tell them to wait.",
+   "sk": [
+    "g:want",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L7-pick-05",
+   "t": "pick",
+   "q": "You want to suggest meeting on Friday of next week instead. You say:",
+   "opts": [
+    "다음 주 금요일 어때요?",
+    "지난주 금요일 어때요?",
+    "다음 주 금요일 어땠어요?",
+    "다음 주 금요일이에요?"
+   ],
+   "a": 0,
+   "why": "{{다음 주}} = next week, and {{어때요?}} = how about it?",
+   "sk": [
+    "s:phrase",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L7-pick-06",
+   "t": "pick",
+   "q": "You turned down an invitation and want to add, \"Let's go together next time.\" You say:",
+   "opts": [
+    "다음에 같이 가요.",
+    "다음 주에 갔어요.",
+    "같이 안 가요.",
+    "어제 같이 갔어요."
+   ],
+   "a": 0,
+   "why": "{{다음에}} = next time; {{같이 가요}} = let's go together.",
+   "sk": [
+    "s:phrase",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L7-pick-07",
+   "t": "pick",
+   "q": "A friend asks {{몇 시에 올 수 있어요?}} You can make it at seven. You say:",
+   "opts": [
+    "일곱 시에 갈 수 있어요.",
+    "칠 시에 갈 수 있어요.",
+    "일곱 시에 갈 수 없어요.",
+    "일곱 시에 갔어요."
+   ],
+   "a": 0,
+   "why": "Hours use native numbers ({{일곱 시}}), and \"can\" is {{갈 수 있어요}}.",
+   "sk": [
+    "g:numbers",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-pick-08",
+   "t": "pick",
+   "q": "You and a friend have already arranged to meet this coming Sunday. Someone asks about your weekend, and you tell them it's settled. You say:",
+   "opts": [
+    "일요일에 친구를 만나기로 했어요.",
+    "일요일에 친구를 만났어요.",
+    "일요일에 친구를 만나고 싶어요.",
+    "일요일에 친구를 만날까요?"
+   ],
+   "a": 0,
+   "why": "A settled plan is {{-기로 했어요}}. {{만났어요}} says it already happened.",
+   "sk": [
+    "g:endings",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L7-tiles-01",
+   "t": "tiles",
+   "en": "I can go tomorrow.",
+   "full": "내일 갈 수 있어요.",
+   "a": [
+    "내일",
+    "갈",
+    "수",
+    "있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "가요",
+    "없어요"
+   ],
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-tiles-02",
+   "t": "tiles",
+   "en": "I can't meet on Friday.",
+   "full": "금요일에는 만날 수 없어요.",
+   "a": [
+    "금요일에는",
+    "만날",
+    "수",
+    "없어요"
+   ],
+   "alt": [],
+   "extra": [
+    "금요일을",
+    "만나요",
+    "있어요"
+   ],
+   "sk": [
+    "g:want",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L7-tiles-03",
+   "t": "tiles",
+   "en": "I'll send you a text later.",
+   "full": "이따가 문자 보낼게요.",
+   "a": [
+    "이따가",
+    "문자",
+    "보낼게요"
+   ],
+   "alt": [
+    [
+     "문자",
+     "이따가",
+     "보낼게요"
+    ]
+   ],
+   "extra": [
+    "보낼까요",
+    "보냈어요"
+   ],
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-tiles-04",
+   "t": "tiles",
+   "en": "What's the date today?",
+   "full": "오늘 몇 월 며칠이에요?",
+   "a": [
+    "오늘",
+    "몇",
+    "월",
+    "며칠이에요?"
+   ],
+   "alt": [],
+   "extra": [
+    "언제예요?",
+    "시예요?"
+   ],
+   "sk": [
+    "g:numbers",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L7-tiles-05",
+   "t": "tiles",
+   "en": "My birthday is October 9th.",
+   "full": "제 생일은 시월 구 일이에요.",
+   "a": [
+    "제",
+    "생일은",
+    "시월",
+    "구",
+    "일이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "십월",
+    "아홉"
+   ],
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L7-tiles-06",
+   "t": "tiles",
+   "en": "We've agreed to meet on Saturday.",
+   "full": "토요일에 만나기로 했어요.",
+   "a": [
+    "토요일에",
+    "만나기로",
+    "했어요"
+   ],
+   "alt": [],
+   "extra": [
+    "만나고",
+    "토요일을"
+   ],
+   "sk": [
+    "g:endings",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-tiles-07",
+   "t": "tiles",
+   "en": "Want to see a movie together?",
+   "full": "같이 영화 볼래요?",
+   "a": [
+    "같이",
+    "영화",
+    "볼래요?"
+   ],
+   "alt": [
+    [
+     "영화",
+     "같이",
+     "볼래요?"
+    ]
+   ],
+   "extra": [
+    "봤어요",
+    "같은"
+   ],
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-tiles-08",
+   "t": "tiles",
+   "en": "Sorry, I have plans that day.",
+   "full": "미안해요, 그날은 약속이 있어요.",
+   "a": [
+    "미안해요,",
+    "그날은",
+    "약속이",
+    "있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "약속을",
+    "없어요"
+   ],
+   "sk": [
+    "s:phrase",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-tiles-09",
+   "t": "tiles",
+   "en": "Let's go together next time.",
+   "full": "다음에 같이 가요.",
+   "a": [
+    "다음에",
+    "같이",
+    "가요"
+   ],
+   "alt": [],
+   "extra": [
+    "갔어요",
+    "지난주에"
+   ],
+   "sk": [
+    "s:phrase",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L7-tiles-10",
+   "t": "tiles",
+   "en": "Where shall we meet on Sunday?",
+   "full": "일요일에 어디에서 만날까요?",
+   "a": [
+    "일요일에",
+    "어디에서",
+    "만날까요?"
+   ],
+   "alt": [
+    [
+     "어디에서",
+     "일요일에",
+     "만날까요?"
+    ]
+   ],
+   "extra": [
+    "어디를",
+    "만났어요?"
+   ],
+   "sk": [
+    "g:want",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L7-tiles-11",
+   "t": "tiles",
+   "en": "There's no reply yet.",
+   "full": "아직 답장이 없어요.",
+   "a": [
+    "아직",
+    "답장이",
+    "없어요"
+   ],
+   "alt": [
+    [
+     "답장이",
+     "아직",
+     "없어요"
+    ]
+   ],
+   "extra": [
+    "답장을",
+    "있어요"
+   ],
+   "sk": [
+    "g:neg",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-tiles-12",
+   "t": "tiles",
+   "en": "Are you free this weekend?",
+   "full": "이번 주말에 시간 있어요?",
+   "a": [
+    "이번",
+    "주말에",
+    "시간",
+    "있어요?"
+   ],
+   "alt": [],
+   "extra": [
+    "주말을",
+    "지난"
+   ],
+   "sk": [
+    "s:vocab",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L7-listen-01",
+   "t": "listen",
+   "say": "다음 주 토요일에 만나요.",
+   "opts": [
+    "Let's meet next Saturday.",
+    "Let's meet this Saturday.",
+    "We met last Saturday.",
+    "Let's meet next Sunday.",
+    "Let's meet next Friday.",
+    "Let's meet on Saturday next month."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L7-listen-02",
+   "t": "listen",
+   "say": "내일은 갈 수 없어요.",
+   "opts": [
+    "I can't go tomorrow.",
+    "I can go tomorrow.",
+    "I couldn't go yesterday.",
+    "I can't go today.",
+    "I'll go tomorrow.",
+    "I want to go tomorrow."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L7-listen-03",
+   "t": "listen",
+   "say": "제가 이따가 전화할게요.",
+   "opts": [
+    "I'll call you later.",
+    "Please call me later.",
+    "I called you earlier.",
+    "Shall I call you later?",
+    "I'll text you later.",
+    "I can't call you later."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-listen-04",
+   "t": "listen",
+   "say": "제 생일은 시월 십 일이에요.",
+   "opts": [
+    "My birthday is October 10th.",
+    "My birthday is June 10th.",
+    "My birthday is October 4th.",
+    "My birthday is November 10th.",
+    "My birthday is in ten days.",
+    "My friend's birthday is October 10th."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L7-listen-05",
+   "t": "listen",
+   "say": "토요일에 친구를 만나기로 했어요.",
+   "opts": [
+    "I've agreed to meet a friend on Saturday.",
+    "I met a friend on Saturday.",
+    "I want to meet a friend on Saturday.",
+    "I've agreed to call a friend on Saturday.",
+    "I can meet a friend on Saturday.",
+    "I've agreed to meet a friend on Sunday."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:endings",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L7-listen-06",
+   "t": "listen",
+   "say": "미안해요, 그날은 약속이 있어요.",
+   "opts": [
+    "Sorry, I have plans that day.",
+    "Sorry, I'm free that day.",
+    "Sorry, I had plans that day.",
+    "Great, I'm free that day.",
+    "Sorry, I have plans today.",
+    "Sorry, I forgot our plans."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L7-listen-07",
+   "t": "listen",
+   "say": "아직 답장이 없어요.",
+   "opts": [
+    "There's no reply yet.",
+    "I got a reply already.",
+    "There's no reservation yet.",
+    "I'll reply later.",
+    "There's no movie yet.",
+    "There's no one here yet."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L7-listen-08",
+   "t": "listen",
+   "say": "같이 영화 볼래요?",
+   "opts": [
+    "Do you want to see a movie together?",
+    "Did you see the movie together?",
+    "I saw a movie with a friend.",
+    "Let's not see a movie.",
+    "Do you want to eat together?",
+    "Can you see the movie tomorrow?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-listen-09",
+   "t": "listen",
+   "say": "몇 시에 올 수 있어요?",
+   "opts": [
+    "What time can you come?",
+    "What time did you come?",
+    "What time are you leaving?",
+    "How many people can come?",
+    "Can you come at seven?",
+    "What day can you come?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:question",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-listen-10",
+   "t": "listen",
+   "say": "다음 주에 카톡 보낼게요.",
+   "opts": [
+    "I'll send you a KakaoTalk message next week.",
+    "I sent you a KakaoTalk message last week.",
+    "Send me a KakaoTalk message next week.",
+    "I'll send you a KakaoTalk message this week.",
+    "I'll call you next week.",
+    "I'll send you a KakaoTalk message tomorrow."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L7-dlg-01",
+   "t": "dlg",
+   "title": "Weekend plans",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "이번 주말에 시간 있어요?",
+     "en": "Are you free this weekend?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 토요일에 시간 있어요.",
+      "네, 토요일에 시간 없어요.",
+      "네, 토요일에 시간 있었어요."
+     ],
+     "a": 0,
+     "why": "Answer \"yes\" with {{있어요}} in the present; the weekend hasn't happened yet.",
+     "sk": [
+      "g:tense",
+      "g:neg"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "같이 영화 볼래요?",
+     "en": "Do you want to see a movie together?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "좋아요! 몇 시에 만날까요?",
+      "좋아요! 몇 시에 만났어요?",
+      "좋아요! 몇 개 만날까요?"
+     ],
+     "a": 0,
+     "why": "{{몇 시에 만날까요?}} = what time shall we meet? {{몇 개}} counts things.",
+     "sk": [
+      "g:want",
+      "g:question"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "두 시 어때요?",
+     "en": "How about two o'clock?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "좋아요. 그때 봐요.",
+      "좋아요. 그때 봤어요.",
+      "좋아요. 이 시에 봐요."
+     ],
+     "a": 0,
+     "why": "{{그때 봐요}} = see you then. Hours use native numbers, so two o'clock is never {{이 시}}.",
+     "sk": [
+      "s:phrase",
+      "g:numbers"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L7-dlg-02",
+   "t": "dlg",
+   "title": "Saying no, then yes",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "금요일 저녁에 같이 밥 먹을래요?",
+     "en": "Do you want to have dinner together on Friday evening?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "미안해요, 금요일에는 약속이 있어요.",
+      "미안해요, 금요일에는 약속이 없어요.",
+      "미안해요, 금요일에는 약속이 있었어요."
+     ],
+     "a": 0,
+     "why": "Decline by saying you have plans: {{약속이 있어요}}. Friday is still ahead, so no past tense.",
+     "sk": [
+      "s:phrase",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "토요일은 어때요?",
+     "en": "How about Saturday?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "토요일은 괜찮아요. 같이 먹어요.",
+      "토요일은 괜찮아요. 같이 먹었어요.",
+      "토요일은 괜찮아요. 같이 먹을 수 없어요."
+     ],
+     "a": 0,
+     "why": "{{같이 먹어요}} here means \"let's eat together\".",
+     "sk": [
+      "g:tense",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "좋아요. 제가 예약할게요.",
+     "en": "Great. I'll make the reservation."
+    },
+    {
+     "you": true,
+     "opts": [
+      "고마워요. 토요일에 봐요.",
+      "고마워요. 토요일에 봤어요.",
+      "고마워요. 토요일에 예약했어요."
+     ],
+     "a": 0,
+     "why": "{{토요일에 봐요}} = see you on Saturday.",
+     "sk": [
+      "s:phrase",
+      "g:tense"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L7-dlg-03",
+   "t": "dlg",
+   "title": "Picking a date",
+   "turns": [
+    {
+     "who": "Sora",
+     "s": "언제 시간 있어요?",
+     "en": "When are you free?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "다음 주 수요일에 시간 있어요.",
+      "지난주 수요일에 시간 있어요.",
+      "다음 주 수요일에 시간 있었어요."
+     ],
+     "a": 0,
+     "why": "A future day is {{다음 주}}, with the present {{있어요}}.",
+     "sk": [
+      "s:vocab",
+      "g:tense"
+     ]
+    },
+    {
+     "who": "Sora",
+     "s": "그날이 며칠이에요?",
+     "en": "What's the date that day?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "유월 십이 일이에요.",
+      "육월 십이 일이에요.",
+      "유월 열두 일이에요."
+     ],
+     "a": 0,
+     "why": "June is {{유월}}, and days of the month use Sino-Korean numbers: {{십이 일}}.",
+     "sk": [
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Sora",
+     "s": "좋아요. 그날 만나요.",
+     "en": "Great. Let's meet that day."
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 제가 문자 보낼게요.",
+      "네, 제가 문자 보내세요.",
+      "네, 제가 문자 보낼 수 없어요."
+     ],
+     "a": 0,
+     "why": "{{제가 문자 보낼게요}} = I'll send a text. Never use {{-세요}} about yourself.",
+     "sk": [
+      "g:want",
+      "g:honor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L7-dlg-04",
+   "t": "dlg",
+   "title": "Running late",
+   "turns": [
+    {
+     "who": "Jisoo",
+     "s": "어디예요? 저는 방금 도착했어요.",
+     "en": "Where are you? I just got here."
+    },
+    {
+     "you": true,
+     "opts": [
+      "미안해요, 곧 갈게요.",
+      "미안해요, 곧 갔어요.",
+      "미안해요, 곧 가세요."
+     ],
+     "a": 0,
+     "why": "{{곧 갈게요}} = I'll be there soon.",
+     "sk": [
+      "g:want"
+     ]
+    },
+    {
+     "who": "Jisoo",
+     "s": "괜찮아요. 몇 시에 올 수 있어요?",
+     "en": "That's okay. What time can you get here?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "세 시 십 분에 갈 수 있어요.",
+      "삼 시 십 분에 갈 수 있어요.",
+      "세 시 열 분에 갈 수 있어요."
+     ],
+     "a": 0,
+     "why": "Hours are native ({{세 시}}), minutes are Sino-Korean ({{십 분}}).",
+     "sk": [
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Jisoo",
+     "s": "알겠어요. 기다릴게요.",
+     "en": "Got it. I'll wait."
+    }
+   ]
+  },
+  {
+   "id": "L7-dlg-05",
+   "t": "dlg",
+   "title": "Swapping numbers",
+   "turns": [
+    {
+     "who": "Minho",
+     "s": "다음에 같이 커피 마셔요.",
+     "en": "Let's have coffee together sometime."
+    },
+    {
+     "you": true,
+     "opts": [
+      "좋아요! 전화번호가 뭐예요?",
+      "좋아요! 전화번호를 뭐예요?",
+      "좋아요! 전화번호가 어디예요?"
+     ],
+     "a": 0,
+     "why": "With {{뭐예요?}} the subject takes {{가}}: {{전화번호가 뭐예요?}}",
+     "sk": [
+      "g:particles",
+      "g:question"
+     ]
+    },
+    {
+     "who": "Minho",
+     "s": "공일공, 일이삼사, 오육칠팔이에요.",
+     "en": "It's 010-1234-5678."
+    },
+    {
+     "you": true,
+     "opts": [
+      "고마워요. 제가 문자 보낼게요.",
+      "고마워요. 제가 문자 보내세요.",
+      "고마워요. 제가 문자 보냈어요?"
+     ],
+     "a": 0,
+     "why": "{{제가 문자 보낼게요}} = I'll text you.",
+     "sk": [
+      "g:want",
+      "g:honor"
+     ]
+    },
+    {
+     "who": "Minho",
+     "s": "네, 카톡도 괜찮아요.",
+     "en": "Sure, KakaoTalk is fine too."
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Making plans with a friend",
+   "setup": "Your Korean friend Minji in Chicago wants to get together this weekend. Agree on a day, a time and a place.",
+   "persona": "You are Minji, a friendly Korean woman in her thirties living in Chicago. You are busy on Friday, free all day Saturday, and have plans with your family on Sunday. You would like to see a movie or have dinner. Speak simple polite Korean (해요체) using mostly words from levels 1–7: dates, times with native-number hours, -(으)ㄹ 수 있어요, -(으)ㄹ게요, -ㄹ래요?, -ㄹ까요?, 약속, 같이. Keep sentences short, and if the learner is stuck, offer a choice of two days.",
+   "opening": "이번 주말에 시간 있어요?",
+   "opening_en": "Are you free this weekend?",
+   "goals": [
+    "Say which day you are free",
+    "Agree on a time using native-number hours",
+    "Ask where to meet",
+    "Promise to send a text or KakaoTalk message"
+   ]
+  },
+  {
+   "title": "Moving a dinner",
+   "setup": "Your friend Junho calls: he can't make your Thursday dinner. Find a new date and decide who will book the restaurant.",
+   "persona": "You are Junho, a Korean man in his thirties and a friend of the learner. You have to cancel Thursday dinner because of work. You are free next Tuesday and next Friday. Your phone number is 010-5678-1234 if asked. Speak simple polite Korean (해요체) using mostly words from levels 1–7, including dates (몇 월 며칠), -(으)ㄹ 수 없어요, -기로 했어요 and -(으)ㄹ게요. Apologize warmly and be flexible.",
+   "opening": "미안해요, 목요일에 갈 수 없어요.",
+   "opening_en": "Sorry, I can't make it on Thursday.",
+   "goals": [
+    "Tell him it's okay",
+    "Suggest a new day and give the date",
+    "Agree on a time",
+    "Offer to make the reservation"
+   ]
+  }
+ ],
+ "pron": {
+  "-ㄹ 수 있어요": "-ㄹ 쑤 이써요",
+  "-ㄹ 수 없어요": "-ㄹ 쑤 업써요",
+  "-을 수": "-을 쑤",
+  "-을 수 있어요": "-을 쑤 이써요",
+  "-ㄹ게요": "-ㄹ께요",
+  "-을게요": "-을께요",
+  "곧 갈게요": "곧 깔께요",
+  "곧 갈게요.": "곧 깔께요",
+  "미안해요, 곧 갈게요.": "미안해요 곧 깔께요",
+  "기다릴게요": "기다릴께요",
+  "괜찮아요, 기다릴게요.": "괜차나요 기다릴께요",
+  "알겠어요. 기다릴게요.": "알게써요 기다릴께요",
+  "보낼게요": "보낼께요",
+  "먹을게요": "머글께요",
+  "저는 이거 먹을게요.": "저는 이거 머글께요",
+  "제가 예약할게요": "제가 예야칼께요",
+  "좋아요. 제가 예약할게요.": "조아요 제가 예야칼께요",
+  "제가 이따가 전화할게요.": "제가 이따가 전화할께요",
+  "다음 주에 카톡 보낼게요.": "다음 주에 카톡 뽀낼께요",
+  "제가 문자 보낼게요": "제가 문짜 보낼께요",
+  "제가 문자 보낼게요.": "제가 문짜 보낼께요",
+  "고마워요. 제가 문자 보낼게요.": "고마워요 제가 문짜 보낼께요",
+  "네, 제가 문자 보낼게요.": "네 제가 문짜 보낼께요",
+  "이따가 문자 보낼게요.": "이따가 문짜 보낼께요",
+  "문자": "문짜",
+  "고마워요. 제가 문자 보내세요.": "고마워요 제가 문짜 보내세요",
+  "고마워요. 제가 문자 보냈어요?": "고마워요 제가 문짜 보내써요",
+  "네, 제가 문자 보내세요.": "네 제가 문짜 보내세요",
+  "네, 제가 문자 보낼 수 없어요.": "네 제가 문짜 보낼 쑤 업써요",
+  "이따가 문자 보내세요.": "이따가 문짜 보내세요",
+  "이따가 문자 보낼까요?": "이따가 문짜 보낼까요",
+  "이따가 문자 보냈어요.": "이따가 문짜 보내써요",
+  "친구한테 문자 보냈어요": "친구한테 문짜 보내써요",
+  "몇 월": "며둴",
+  "몇 월 며칠": "며둴 며칠",
+  "몇 월 며칠이에요?": "며둴 며치리에요",
+  "오늘 몇 월 며칠이에요?": "오늘 며둴 며치리에요",
+  "몇 일": "며딜",
+  "오늘 무슨 요일이에요?": "오늘 무슨 뇨이리에요",
+  "무슨 요일": "무슨 뇨일"
+ }
+}

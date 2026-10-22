@@ -1,0 +1,449 @@
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Literata:opsz,wght@7..72,600&family=IBM+Plex+Mono:wght@500;600&family=__CJKFONT__:wght@400;500;700&display=swap">
+<style>
+/* Layout: one centered study column. Tabs (guide / sound drills / phrases) on top, a single card on a
+   subject-specific ground (__GROUNDNAME__), grade bar below. Guide tab is a readable article. */
+:root{
+  --paper:__PAPER__; --panel:#FFFFFF; --ink:__INK__; --muted:__MUTED__; --line:__LINE__;
+  --accent:__ACCENT__; --accent-ink:#FFFFFF; --accent-soft:__ACCENTSOFT__; --ground:__GROUND__;
+  --again:#B42318; --hard:#9A5B00; --good:#1C7A4B; --easy:#2350B8; --warn-bg:#FFF4DB; --warn-ink:#6B4A00;
+  --f-display:"Literata", Georgia, "Times New Roman", serif;
+  --f-ui:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --f-cjk:"__CJKFAMILY__", __CJKFALLBACK__;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:__DPAPER__; --panel:__DPANEL__; --ink:#ECE9E8; --muted:#A39C9A; --line:__DLINE__;
+  --accent:__DACCENT__; --accent-ink:#111; --accent-soft:__DACCENTSOFT__; --ground:__DGROUND__;
+  --again:#F07063; --hard:#E2A640; --good:#4CC38A; --easy:#86A6FF; --warn-bg:#3A2F14; --warn-ink:#F2D58A;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:__DPAPER__; --panel:__DPANEL__; --ink:#ECE9E8; --muted:#A39C9A; --line:__DLINE__;
+  --accent:__DACCENT__; --accent-ink:#111; --accent-soft:__DACCENTSOFT__; --ground:__DGROUND__;
+  --again:#F07063; --hard:#E2A640; --good:#4CC38A; --easy:#86A6FF; --warn-bg:#3A2F14; --warn-ink:#F2D58A;
+  color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.55}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:20px 56px;display:flex;flex-direction:column;gap:16px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+h1{font-family:var(--f-display);font-weight:600;font-size:1.6rem;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 .cjk{font-family:var(--f-cjk);font-weight:700;color:var(--accent);margin-left:.35em;font-size:.9em}
+.sub{font-size:.82rem;color:var(--muted)}
+.tabs{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px}
+.tabs button{flex:1;min-width:0;border:0;background:transparent;color:var(--muted);font:600 .9rem/1.2 var(--f-ui);padding:9px 6px;border-radius:7px;cursor:pointer}
+.tabs button small{display:block;font-weight:500;font-size:.72rem;margin-top:2px;opacity:.85}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.tabs button:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.filters{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end}
+.filters label{display:flex;flex-direction:column;gap:3px;font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+select{font:500 .9rem var(--f-ui);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:6px 8px;max-width:100%}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:var(--panel)}
+.seg button{border:0;background:transparent;color:var(--muted);font:600 .85rem var(--f-ui);padding:7px 11px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--ink)}
+.stats{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.84rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.stats b{color:var(--ink);font-weight:700}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;min-height:300px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;__GROUNDCSS__}
+.card>*{position:relative}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:2px 8px}
+.chip.new{border-color:var(--accent);color:var(--accent)}
+.prompt{font-size:.85rem;color:var(--muted)}
+.tg{font-family:var(--f-cjk);font-weight:500;font-size:clamp(2rem,7vw,3.1rem);line-height:1.25;overflow-wrap:anywhere}
+.tg.huge{font-size:clamp(4.5rem,18vw,7rem);line-height:1.05}
+.en{font-family:var(--f-display);font-weight:600;font-size:clamp(1.35rem,4.5vw,1.8rem);line-height:1.3;text-wrap:balance}
+.rom{font-family:var(--f-mono);font-size:1.05rem;color:var(--ink);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:flex-end}
+.rom.big{font-size:2rem}
+.syl{display:inline-flex;align-items:flex-end;gap:2px;white-space:nowrap}
+.syl sup{font-size:.62em;color:var(--accent);font-weight:600;align-self:flex-start;line-height:1;margin-top:-.1em}
+.syl svg{width:.95em;height:.8em;margin-bottom:.12em;flex:none}
+.syl svg line.st{stroke:var(--line)} .syl svg path{stroke:var(--accent);fill:none}
+.said{font-size:.95rem;color:var(--muted)} .said span{font-family:var(--f-cjk);color:var(--ink);font-size:1.1rem}
+.note{font-size:.9rem;color:var(--ink);background:var(--accent-soft);border-radius:8px;padding:9px 12px;max-width:62ch}
+.note .cjk{font-family:var(--f-cjk)}
+.answer{display:flex;flex-direction:column;gap:12px;border-top:1px dashed var(--line);padding-top:14px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.play{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);color:var(--accent);background:var(--panel);font:600 .85rem var(--f-ui);border-radius:999px;padding:6px 12px;cursor:pointer}
+.play svg{width:14px;height:14px;fill:currentColor}
+.play.slow{border-color:var(--line);color:var(--muted)}
+.bigplay{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;border:0;background:var(--accent);color:var(--accent-ink);font:700 1rem var(--f-ui);border-radius:999px;padding:14px 22px 14px 18px;cursor:pointer}
+.bigplay svg{width:20px;height:20px;fill:currentColor}
+.reveal{margin-top:auto;align-self:stretch;border:0;background:var(--accent);color:var(--accent-ink);font:700 1rem var(--f-ui);border-radius:10px;padding:13px;cursor:pointer}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:auto}
+.grades button{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:10px 4px;font:700 .95rem var(--f-ui);cursor:pointer;color:var(--ink)}
+.grades button small{display:block;font:500 .72rem var(--f-ui);color:var(--muted);margin-top:2px;font-variant-numeric:tabular-nums}
+.grades .g1{border-color:var(--again);color:var(--again)} .grades .g2{border-color:var(--hard);color:var(--hard)}
+.grades .g3{border-color:var(--good);color:var(--good)} .grades .g4{border-color:var(--easy);color:var(--easy)}
+.done{text-align:center;margin:auto;display:flex;flex-direction:column;gap:10px;align-items:center;max-width:46ch}
+.done h2{font-family:var(--f-display);margin:0;font-size:1.35rem}
+.linkbtn{border:0;background:none;color:var(--accent);font:600 .85rem var(--f-ui);cursor:pointer;padding:4px;text-decoration:underline;text-underline-offset:3px}
+.keys{font-size:.76rem;color:var(--muted);text-align:center}
+kbd{font:600 .72rem var(--f-mono);border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;background:var(--panel)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:.78rem;color:var(--muted)}
+details.settings{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+details.settings summary{cursor:pointer;font-weight:600;font-size:.9rem}
+.setgrid{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:flex-end;margin-top:12px}
+.setgrid label{display:flex;flex-direction:column;gap:3px;font-size:.74rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.setgrid label.check{flex-direction:row;align-items:center;gap:6px;text-transform:none;letter-spacing:0;font-size:.88rem;color:var(--ink);font-weight:500}
+.voicewarn{background:var(--warn-bg);color:var(--warn-ink);border-radius:10px;padding:12px 14px;font-size:.88rem}
+.astatus{font-size:.86rem;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:9px 12px}
+.astatus.bad{background:var(--warn-bg);color:var(--warn-ink);border-color:transparent}
+.voicewarn h3{margin:0 0 6px;font-size:.95rem}
+.voicewarn ol{margin:6px 0 0;padding-left:20px}
+/* Guide */
+.guide{display:flex;flex-direction:column;gap:22px}
+.guide section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.guide h2{font-family:var(--f-display);font-size:1.25rem;margin:0;text-wrap:balance}
+.guide p,.guide li{max-width:66ch;margin:0}
+.guide ol,.guide ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.guide .cjk{font-family:var(--f-cjk);font-size:1.08em}
+.guide code{font-family:var(--f-mono);font-size:.95em;color:var(--accent)}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:420px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600;background:var(--paper)}
+tr:last-child td{border-bottom:0}
+td.k{font-family:var(--f-mono);font-weight:600;color:var(--accent);white-space:nowrap}
+td.h{font-family:var(--f-cjk);font-size:1.3rem}
+button.say{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:2px 9px 2px 7px;font:500 .9rem var(--f-ui);cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+button.say svg{width:11px;height:11px;fill:var(--accent);flex:none}
+button.say .cjk{font-size:1.05rem}
+button.say .r{font-family:var(--f-mono);font-size:.82rem;color:var(--muted)}
+.tones{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.tone{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;background:var(--paper)}
+.tone .top{display:flex;align-items:center;gap:10px}
+.tone .n{font:700 1.6rem var(--f-mono);color:var(--accent);line-height:1}
+.tone svg{width:72px;height:44px;flex:none}
+.tone svg line.st{stroke:var(--line)} .tone svg path{stroke:var(--accent);fill:none}
+.tone p{font-size:.86rem}
+.blocks{display:flex;flex-wrap:wrap;gap:10px}
+.block{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper);display:flex;flex-direction:column;align-items:center;gap:4px;min-width:110px}
+.block .tgs{font-family:var(--f-cjk);font-size:2.4rem;line-height:1.1}
+.block .parts{font-family:var(--f-cjk);font-size:.95rem;color:var(--muted)}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 12px;font-size:.92rem}
+@media (max-width:480px){.tabs button{font-size:.8rem;padding:8px 2px}.tabs button small{display:none}.card{padding:18px 14px 16px}}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .2s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>__H1__<span class="cjk" lang="__HTMLLANG__">__H1CJK__</span></h1>
+    <span class="sub" id="sync">Progress is saved in this browser</span>
+  </header>
+
+  <div class="tabs" role="tablist" id="tabs">
+    <button role="tab" id="tab-guide" data-tab="guide">Start here<small>how the sounds work</small></button>
+    <button role="tab" id="tab-sounds" data-tab="sounds">__SOUNDSTAB__<small>__SOUNDSSUB__</small></button>
+    <button role="tab" id="tab-vocab" data-tab="vocab">Words &amp; phrases<small>levels 1–6</small></button>
+  </div>
+
+  <div id="voicewarn" class="voicewarn" hidden></div>
+  <div id="astatus" class="astatus" role="status" hidden></div>
+
+  <div id="guide" class="guide" hidden>__GUIDE__</div>
+
+  <div id="study">
+    <div class="filters" id="filters"></div>
+    <div class="stats" id="stats"></div>
+    <section class="card" id="card" aria-live="polite"></section>
+    <div class="keys"><kbd>Space</kbd> show answer · <kbd>P</kbd> play audio · <kbd>1</kbd>–<kbd>4</kbd> grade</div>
+  </div>
+
+  <details class="settings" id="settings">
+    <summary>Audio &amp; display settings</summary>
+    <div class="setgrid">
+      <label for="s-voice">Voice<select id="s-voice"><option value="">Looking for voices…</option></select></label>
+      <label for="s-rate">Speed<select id="s-rate"><option value="0.6">Slow</option><option value="0.8">Learner</option><option value="1">Normal</option></select></label>
+      <button class="play" id="s-test" type="button"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z"/></svg>Test voice</button>
+      <label class="check" for="s-auto"><input type="checkbox" id="s-auto"> Play audio automatically</label>
+      <label class="check" for="s-romfront"><input type="checkbox" id="s-romfront"> __ROMFRONTLABEL__</label>
+    </div>
+    <p class="sub" style="margin:12px 0 0;max-width:66ch">Audio comes from the voices installed on this device, not native-speaker recordings. __AUDIONOTE__</p>
+  </details>
+
+  <div class="foot">
+    <span id="foot-info"></span>
+    <span><button class="linkbtn" id="reset" type="button">Reset progress for this deck</button></span>
+  </div>
+</div>
+
+<script>
+const C = __CONFIG__;
+const D = __DATA__;
+const DAY = 864e5;
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); return true; }catch(e){ return false; } }
+};
+const P = C.key;
+const defaults = {tab:'guide', voice:'', rate:'0.8', auto:true, romFront:true, newPer:'15', level:'all', topic:'all', dir:'rec', group:'all'};
+const S = Object.assign({}, defaults, store.get(P + ':settings', {}));
+if(!C.dirs.some(d => d[0] === S.dir)) S.dir = C.dirs[0][0];
+function saveS(){ if(!store.set(P + ':settings', S)) document.getElementById('sync').textContent = 'Progress can’t be saved in this browser (private window?)'; }
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PLAYSVG = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg>';
+
+/* ---------- Tone contours (Cantonese) ---------- */
+const CHAO = {1:[5,5],2:[2,5],3:[3,3],4:[2,1],5:[2,3],6:[2,2]};
+function contour(t, w, h, staff){
+  const c = CHAO[t]; if(!c) return '';
+  const y = v => (h - 2) - (v - 1) * (h - 4) / 4;
+  let s = `<svg viewBox="0 0 ${w} ${h}" aria-hidden="true">`;
+  if(staff) for(let i = 1; i <= 5; i++) s += `<line class="st" x1="0" x2="${w}" y1="${y(i)}" y2="${y(i)}" stroke-width="1"/>`;
+  s += `<path d="M${w*0.12} ${y(c[0])} L${w*0.88} ${y(c[1])}" stroke-width="${Math.max(2, h/9)}" stroke-linecap="round"/></svg>`;
+  return s;
+}
+function romHTML(r){
+  if(C.lang !== 'yue') return esc(r);
+  return r.split(' ').map(tok => {
+    const m = tok.match(/^([a-z]+)([1-6])([,.]?)$/);
+    if(!m) return `<span class="syl">${esc(tok)}</span>`;
+    return `<span class="syl">${m[1]}<sup>${m[2]}</sup>${contour(+m[2], 14, 12, false)}${m[3]}</span>`;
+  }).join('');
+}
+
+/* ---------- Audio ---------- */
+let voices = [];
+const synth = 'speechSynthesis' in window ? window.speechSynthesis : null;
+const vre = new RegExp(C.voiceRe, 'i'), vnre = new RegExp(C.voiceNameRe, 'i');
+function loadVoices(){
+  if(!synth) return;
+  const all = synth.getVoices();
+  voices = all.filter(v => vre.test(v.lang) || vnre.test(v.name));
+  const sel = $('s-voice');
+  if(!voices.length){ sel.innerHTML = '<option value="">No ' + C.langName + ' voice found</option>'; return; }
+  sel.innerHTML = voices.map(v => `<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join('');
+  if(!voices.some(v => v.voiceURI === S.voice)){
+    const pref = voices.find(v => new RegExp(C.voicePrefer, 'i').test(v.name + ' ' + v.lang)) || voices[0];
+    S.voice = pref.voiceURI; saveS();
+  }
+  sel.value = S.voice;
+  $('voicewarn').hidden = true;
+}
+let speakSeq = 0;
+function astatus(msg, bad){ const el = $('astatus'); el.textContent = msg; el.hidden = !msg; el.classList.toggle('bad', !!bad); }
+function speak(text, rate, voiceOverride){
+  if(!synth){ astatus('This browser has no speech engine.', true); return; }
+  if(!text) return;
+  const seq = ++speakSeq;
+  synth.cancel();
+  const v = voiceOverride || voices.find(v => v.voiceURI === S.voice) || voices[0];
+  const vname = v ? `${v.name} (${v.lang}${v.localService ? ', on this device' : ', streamed from the internet'})` : 'no voice selected';
+  // Chrome can drop a request made in the same moment as cancel(), so wait briefly.
+  setTimeout(() => {
+    if(seq !== speakSeq) return;
+    const u = new SpeechSynthesisUtterance(String(text).replace(/…/g, ' ').replace(/\s\/\s/g, '，'));
+    if(v){ u.voice = v; u.lang = v.lang; } else u.lang = C.ttsLang;
+    u.rate = rate || +S.rate;
+    let started = false;
+    u.onstart = () => { started = true; if(seq === speakSeq) astatus('Playing with ' + vname + '. If you hear nothing, check your Mac volume and sound output.'); };
+    u.onend = () => { if(seq === speakSeq && started) astatus(''); };
+    u.onerror = e => { if(seq === speakSeq && e.error !== 'interrupted' && e.error !== 'canceled') astatus('Audio error "' + e.error + '" with ' + vname + '. Try a different voice in Audio & display settings.', true); };
+    synth.speak(u);
+    if(synth.paused) synth.resume();
+    setTimeout(() => {
+      if(seq === speakSeq && !started) astatus('Chrome accepted the request but never started speaking (' + vname + ', ' + voices.length + ' voices found). Try another voice in Audio & display settings, then press Test voice.', true);
+    }, 4000);
+  }, 120);
+}
+if(synth){
+  loadVoices();
+  if('onvoiceschanged' in synth) synth.addEventListener('voiceschanged', loadVoices);
+}
+setTimeout(() => {
+  if(!synth){ $('voicewarn').innerHTML = '<h3>This browser can’t play speech</h3>Open this page in Safari, Chrome or Edge to hear the audio.'; $('voicewarn').hidden = false; return; }
+  if(!voices.length){ $('voicewarn').innerHTML = C.voiceHelp; $('voicewarn').hidden = false; }
+}, 1600);
+
+/* ---------- SRS ---------- */
+const today = () => new Date().toDateString();
+function deckKey(){ return P + ':srs:' + (S.tab === 'sounds' ? 'sounds' : 'vocab-' + S.dir); }
+let srs = {}, queue = [], cur = null, shown = false, extraNew = 0, newLog = {d:'', n:0};
+function cards(){
+  if(S.tab === 'sounds') return D.sounds.filter(c => S.group === 'all' || c.group === S.group);
+  return D.vocab.filter(c => (S.level === 'all' || c.lv <= +S.level) && (S.topic === 'all' || c.topic === S.topic));
+}
+function build(){
+  srs = store.get(deckKey(), {});
+  newLog = store.get(deckKey() + ':new', {d:today(), n:0});
+  if(newLog.d !== today()) newLog = {d:today(), n:0};
+  const now = Date.now(), cs = cards();
+  const due = cs.filter(c => srs[c.id] && srs[c.id].due <= now).sort((a,b) => srs[a.id].due - srs[b.id].due);
+  const allow = Math.max(0, +S.newPer + extraNew - newLog.n);
+  const fresh = cs.filter(c => !srs[c.id]).slice(0, allow);
+  queue = due.concat(fresh);
+  cur = queue[0] || null; shown = false;
+  render();
+}
+function persist(){ store.set(deckKey(), srs); store.set(deckKey() + ':new', newLog); }
+function preview(c, g){
+  const s = srs[c.id];
+  if(!s || s.reps === 0) return ['again soon','later today','1 day','3 days'][g-1];
+  if(g === 1) return 'again soon';
+  const iv = g === 2 ? Math.max(1, Math.round(s.ivl*1.2)) : g === 3 ? Math.max(s.ivl+1, Math.round(s.ivl*s.ease)) : Math.max(s.ivl+2, Math.round(s.ivl*s.ease*1.3));
+  return iv < 30 ? iv + (iv === 1 ? ' day' : ' days') : Math.round(iv/30) + ' mo';
+}
+function grade(g){
+  if(!cur || !shown) return;
+  const now = Date.now(), c = cur;
+  const isNew = !srs[c.id];
+  if(isNew) newLog.n++;
+  const s = srs[c.id] || {reps:0, ivl:0, ease:2.5, due:now, lapses:0};
+  queue.shift();
+  const requeue = n => queue.splice(Math.min(n, queue.length), 0, c);
+  if(s.reps === 0){
+    if(g === 1){ s.due = now; requeue(3); }
+    else if(g === 2){ s.due = now; requeue(7); }
+    else { s.reps = 1; s.ivl = g === 3 ? 1 : 3; s.due = now + s.ivl*DAY - 4*3600e3; }
+  } else {
+    if(g === 1){ s.lapses++; s.reps = 0; s.ivl = 0; s.ease = Math.max(1.3, s.ease - 0.2); s.due = now; requeue(3); }
+    else {
+      if(g === 2){ s.ivl = Math.max(1, Math.round(s.ivl*1.2)); s.ease = Math.max(1.3, s.ease - 0.15); }
+      else if(g === 3){ s.ivl = Math.max(s.ivl+1, Math.round(s.ivl*s.ease)); }
+      else { s.ivl = Math.max(s.ivl+2, Math.round(s.ivl*s.ease*1.3)); s.ease += 0.15; }
+      s.reps++; s.due = now + s.ivl*DAY - 4*3600e3;
+    }
+  }
+  srs[c.id] = s; persist();
+  cur = queue[0] || null; shown = false; render();
+}
+
+/* ---------- Rendering ---------- */
+function playBtns(text){
+  return `<button class="play" type="button" data-say="${esc(text)}">${PLAYSVG}Play</button>` +
+         `<button class="play slow" type="button" data-say="${esc(text)}" data-rate="0.55">${PLAYSVG}Slow</button>`;
+}
+function bigPlay(t){ return `<button class="bigplay" type="button" data-say="${esc(t)}">${PLAYSVG}Play again</button>`; }
+function autoFront(c){ return c.kind === 'tone' || (S.tab === 'vocab' && (S.dir === 'rec' || S.dir === 'listen')); }
+function sayText(c){ return c.kind === 'letter' ? c.ex : c.tg; }
+function noteHTML(n){ return n ? `<div class="note">${esc(n).replace(/([ㄱ-ㆎ가-힣㐀-鿿㗎]+)/g,'<span class="cjk">$1</span>')}</div>` : ''; }
+function romLine(c, big){ return c.rom ? `<div class="rom${big?' big':''}">${romHTML(c.rom)}</div>` : ''; }
+function saidLine(c){ return c.pron ? `<div class="said">Said like <span lang="ko">${esc(c.pron)}</span></div>` : ''; }
+function front(c){
+  const L = C.htmlLang;
+  if(c.kind === 'tone') return `<div class="prompt">Listen. Which tone is it, 1 to 6? Answer out loud, then reveal.</div>${bigPlay(c.tg)}<div class="row"><button class="play slow" type="button" data-say="${esc(c.tg)}" data-rate="0.55">${PLAYSVG}Slow</button></div>`;
+  if(c.kind === 'char') return `<div class="prompt">How is it said, and what does it mean?</div><div class="tg huge" lang="${L}">${esc(c.tg)}</div>`;
+  if(c.kind === 'letter') return `<div class="prompt">What sound does this letter make?</div><div class="tg huge" lang="${L}">${esc(c.tg)}</div>`;
+  if(c.kind === 'read') return `<div class="prompt">Sound it out letter by letter, then reveal.</div><div class="tg huge" lang="${L}" style="font-size:clamp(3rem,13vw,5rem)">${esc(c.tg)}</div>`;
+  if(S.dir === 'listen') return `<div class="prompt">Listen. What does it mean? Answer out loud, then reveal.</div>${bigPlay(c.tg)}<div class="row"><button class="play slow" type="button" data-say="${esc(c.tg)}" data-rate="0.55">${PLAYSVG}Slow</button></div>`;
+  if(S.dir === 'rec') return `<div class="prompt">${C.recPrompt}</div><div class="tg" lang="${L}">${esc(c.tg)}</div>${S.romFront ? romLine(c) : ''}<div class="row">${playBtns(c.tg)}</div>`;
+  return `<div class="prompt">How do you say this in ${C.langName}? Say it out loud, then reveal.</div><div class="en">${esc(c.en)}</div>`;
+}
+function back(c){
+  const L = C.htmlLang;
+  if(c.kind === 'tone') return `${romLine(c, true)}<div class="row"><div class="tg" lang="${L}">${esc(c.tg)}</div><div class="en">${esc(c.en)}</div></div><div class="row">${playBtns(c.tg)}</div>`;
+  if(c.kind === 'char') return `${romLine(c, true)}<div class="en">${esc(c.en)}</div><div class="row">${playBtns(c.tg)}</div>${noteHTML(c.note)}`;
+  if(c.kind === 'letter') return `<div class="rom big">${esc(c.rom)}</div><div>${esc(c.en)}</div><div class="row"><span class="said">Example syllable <span lang="ko">${esc(c.ex)}</span></span>${playBtns(c.ex)}</div>`;
+  if(c.kind === 'read') return `${saidLine(c)}${romLine(c, true)}<div class="en">${esc(c.en)}</div><div class="row">${playBtns(c.tg)}</div>`;
+  if(S.dir === 'listen') return `<div class="tg" lang="${L}">${esc(c.tg)}</div>${romLine(c)}<div class="en">${esc(c.en)}</div>${saidLine(c)}<div class="row">${playBtns(c.tg)}</div>${noteHTML(c.note)}`;
+  if(S.dir === 'rec') return `<div class="en">${esc(c.en)}</div>${S.romFront ? '' : romLine(c)}${saidLine(c)}${noteHTML(c.note)}`;
+  return `<div class="tg" lang="${L}">${esc(c.tg)}</div>${saidLine(c)}${romLine(c)}<div class="row">${playBtns(c.tg)}</div>${noteHTML(c.note)}`;
+}
+function renderStats(){
+  const cs = cards(), now = Date.now();
+  const learned = cs.filter(c => srs[c.id] && srs[c.id].reps > 0).length;
+  const dueN = queue.filter(c => srs[c.id]).length;
+  const newN = queue.filter(c => !srs[c.id]).length;
+  $('stats').innerHTML = `<span>To review: <b>${dueN}</b></span><span>New left today: <b>${newN}</b></span><span>Learned: <b>${learned}</b> of ${cs.length}</span>`;
+}
+function render(){
+  renderStats();
+  const el = $('card');
+  if(!cur){
+    const cs = cards();
+    const next = cs.map(c => srs[c.id] && srs[c.id].due).filter(Boolean).sort((a,b)=>a-b)[0];
+    const unseen = cs.filter(c => !srs[c.id]).length;
+    el.innerHTML = `<div class="done"><h2>${unseen === cs.length && !cs.length ? 'No cards match these filters' : 'Done for now'}</h2>
+      <p class="sub">${next ? 'Next review: ' + new Date(next).toLocaleString([], {weekday:'short', hour:'numeric', minute:'2-digit'}) + '.' : ''} ${unseen ? unseen + ' new cards still waiting in this deck.' : 'You’ve started every card in this deck.'}</p>
+      ${unseen ? '<button class="play" id="more" type="button">Add 10 more new cards</button>' : ''}</div>`;
+    const m = $('more'); if(m) m.onclick = () => { extraNew += 10; build(); };
+    return;
+  }
+  const c = cur, isNew = !srs[c.id];
+  const label = S.tab === 'sounds' ? c.group : `Level ${c.lv} · ${c.topic}`;
+  let h = `<div class="meta"><span class="chip">${esc(label)}</span>${isNew ? '<span class="chip new">New</span>' : ''}</div>${front(c)}`;
+  if(!shown) h += `<button class="reveal" id="reveal" type="button">Show answer</button>`;
+  else {
+    h += `<div class="answer">${back(c)}</div><div class="grades">` +
+      ['Again','Hard','Good','Easy'].map((n,i) => `<button class="g${i+1}" type="button" data-g="${i+1}">${n}<small>${preview(c, i+1)}</small></button>`).join('') + '</div>';
+  }
+  el.innerHTML = h;
+  if(!shown){ $('reveal').onclick = reveal; if(S.auto && autoFront(c)) speak(sayText(c)); }
+  else el.querySelectorAll('.grades button').forEach(b => b.onclick = () => grade(+b.dataset.g));
+  $('foot-info').textContent = `${D.vocab.length} phrases · ${D.sounds.length} ${C.soundsNoun}`;
+}
+function reveal(){
+  if(!cur || shown) return;
+  shown = true; render();
+  const c = cur;
+  if(S.auto && !autoFront(c)) speak(sayText(c));
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-say]');
+  if(b) speak(b.dataset.say, b.dataset.rate ? +b.dataset.rate : undefined);
+});
+
+/* ---------- Filters & tabs ---------- */
+function opt(v, t, sel){ return `<option value="${esc(v)}"${String(v) === String(sel) ? ' selected' : ''}>${esc(t)}</option>`; }
+function renderFilters(){
+  const f = $('filters');
+  if(S.tab === 'sounds'){
+    const groups = [...new Set(D.sounds.map(c => c.group))];
+    f.innerHTML = `<label for="f-group">Practice<select id="f-group">${opt('all','Everything',S.group)}${groups.map(g => opt(g,g,S.group)).join('')}</select></label>` + newSel();
+    $('f-group').onchange = e => { S.group = e.target.value; saveS(); build(); };
+  } else {
+    const topics = [...new Set(D.vocab.map(c => c.topic))];
+    f.innerHTML = `<div><span class="sub" style="display:block;font-size:.74rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px">Direction</span><div class="seg" role="group" aria-label="Direction">
+        ${C.dirs.map(([k,n]) => `<button type="button" data-dir="${k}" aria-pressed="${S.dir===k}">${n}</button>`).join('')}</div></div>
+      <label for="f-level">Levels<select id="f-level">${opt('all','All (new cards in order)',S.level)}${[1,2,3,4,5,6].map(n => opt(n, n === 1 ? 'Level 1 only' : 'Up to level ' + n, S.level)).join('')}</select></label>
+      <label for="f-topic">Topic<select id="f-topic">${opt('all','All topics',S.topic)}${topics.map(t => opt(t,t,S.topic)).join('')}</select></label>` + newSel();
+    f.querySelectorAll('[data-dir]').forEach(b => b.onclick = () => { S.dir = b.dataset.dir; saveS(); renderFilters(); build(); });
+    $('f-level').onchange = e => { S.level = e.target.value; saveS(); build(); };
+    $('f-topic').onchange = e => { S.topic = e.target.value; saveS(); build(); };
+  }
+  $('f-new').onchange = e => { S.newPer = e.target.value; saveS(); build(); };
+}
+function newSel(){ return `<label for="f-new">New cards a day<select id="f-new">${[5,10,15,20,30].map(n => opt(n,n,S.newPer)).join('')}</select></label>`; }
+function setTab(t){
+  S.tab = t; saveS(); extraNew = 0;
+  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === t));
+  $('guide').hidden = t !== 'guide';
+  $('study').hidden = t === 'guide';
+  $('reset').parentElement.hidden = t === 'guide';
+  if(t !== 'guide'){ renderFilters(); build(); }
+}
+document.querySelectorAll('#tabs button').forEach(b => b.onclick = () => setTab(b.dataset.tab));
+
+/* ---------- Settings ---------- */
+$('s-rate').value = S.rate;
+$('s-auto').checked = S.auto;
+$('s-romfront').checked = S.romFront;
+$('s-voice').onchange = e => { S.voice = e.target.value; saveS(); };
+$('s-rate').onchange = e => { S.rate = e.target.value; saveS(); };
+$('s-auto').onchange = e => { S.auto = e.target.checked; saveS(); };
+$('s-romfront').onchange = e => { S.romFront = e.target.checked; saveS(); if(S.tab !== 'guide') render(); };
+$('s-test').onclick = () => speak(C.testPhrase);
+let resetArmed = false;
+$('reset').onclick = () => {
+  if(!resetArmed){ resetArmed = true; $('reset').textContent = 'Tap again to erase progress for this deck'; setTimeout(() => { resetArmed = false; $('reset').textContent = 'Reset progress for this deck'; }, 4000); return; }
+  resetArmed = false; $('reset').textContent = 'Reset progress for this deck';
+  store.set(deckKey(), {}); store.set(deckKey() + ':new', {d:today(), n:0}); build();
+};
+document.addEventListener('keydown', e => {
+  if(S.tab === 'guide' || e.target.closest('select,input,textarea')) return;
+  if(e.key === ' '){ e.preventDefault(); reveal(); }
+  else if(/^[1-4]$/.test(e.key)) grade(+e.key);
+  else if(e.key === 'p' || e.key === 'P'){ if(cur) speak(sayText(cur)); }
+});
+
+/* ---------- Guide extras ---------- */
+document.querySelectorAll('[data-contour]').forEach(el => { el.innerHTML = contour(+el.dataset.contour, 72, 44, true); });
+document.querySelectorAll('button.say').forEach(b => { if(!b.querySelector('svg')) b.insertAdjacentHTML('afterbegin', PLAYSVG); });
+document.querySelectorAll('[data-rom]').forEach(el => { el.innerHTML = romHTML(el.dataset.rom); });
+
+setTab(S.tab);
+</script>

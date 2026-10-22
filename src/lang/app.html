@@ -1,0 +1,1175 @@
+<meta charset="utf-8">
+<title>__NAME__ Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=__FONT__:wght@400;500;700&display=swap">
+<style>
+/* Layout: one study column. Home = Today, the 10-level ladder, Sounds drills, Cards. A level opens Learn / Practice / Talk / Test.
+   Exercises sit on a card printed with a faint ground (a pitch staff for Cantonese, manuscript squares for Korean). */
+__THEME__
+:root{
+  --ok:#1C7A4B; --bad:#B42318; --warn:#9A5B00; --warn-bg:#FFF4DB; --warn-ink:#6B4A00; --blank:#FFF1D6; --focus:#1E4FC2;
+  --f-display:"Literata", Georgia, "Times New Roman", serif;
+  --f-ui:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --f-tg:"__FONTFAMILY__", __FONTFALLBACK__;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ok:#4CC38A;--bad:#F07063;--warn:#E2A640;--warn-bg:#3A2F14;--warn-ink:#F2D58A;--blank:#3A3220;--focus:#86A6FF}}
+:root[data-theme="dark"]{--ok:#4CC38A;--bad:#F07063;--warn:#E2A640;--warn-bg:#3A2F14;--warn-ink:#F2D58A;--blank:#3A3220;--focus:#86A6FF}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);font-size:15px;line-height:1.5;margin:0}
+.wrap{max-width:820px;margin:0 auto;padding-inline:16px;padding-block:max(20px,env(safe-area-inset-top)) max(48px,env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:16px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+h1{font-family:var(--f-display);font-weight:600;font-size:1.55rem;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 .nat{font-family:var(--f-tg);font-weight:700;color:var(--accent);margin-left:.3em;font-size:.9em}
+h1 a{color:var(--muted);text-decoration:none;font-weight:400}
+h1 a:hover{text-decoration:underline}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0;text-wrap:balance}
+h3{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:0}
+.sub{font-size:.82rem;color:var(--muted)}
+#shwho{display:flex;gap:10px;align-items:baseline;font-size:.82rem;color:var(--muted)}
+#shwho button{font:inherit;color:var(--focus);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+button{font-family:inherit}
+.btn{font:600 .95rem var(--f-ui);border-radius:9px;padding:10px 16px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.5;cursor:default}
+.btn.sm{padding:6px 11px;font-size:.85rem}
+.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;padding:0}
+:is(.btn,.linkbtn,.opt,.tile,.lvl,.tabs button,select,input,textarea,.play,summary,.tbtn):focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.play{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);background:var(--panel);color:var(--accent);border-radius:99px;padding:3px 10px 3px 8px;font:600 .78rem var(--f-ui);cursor:pointer;vertical-align:middle;white-space:nowrap}
+.play svg{width:10px;height:10px;fill:currentColor}
+.play.icon{padding:4px 7px}
+.bigplay{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.bigplay .play{font-size:1rem;padding:12px 20px 12px 16px;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.bigplay .play.slow{background:var(--panel);color:var(--muted);border-color:var(--line);font-size:.85rem;padding:8px 14px}
+.bigplay .play svg{width:14px;height:14px}
+.voicewarn,.astatus{border-radius:10px;padding:10px 14px;font-size:.88rem}
+.voicewarn{background:var(--warn-bg);color:var(--warn-ink)}
+.voicewarn h4{margin:0 0 4px;font-size:.95rem}
+.voicewarn ol{margin:6px 0 0;padding-left:20px}
+.astatus{border:1px solid var(--line);background:var(--panel)}
+.astatus.bad{background:var(--warn-bg);color:var(--warn-ink);border-color:transparent}
+/* target-language text */
+.tx{display:inline-flex;flex-direction:column;gap:1px;vertical-align:top;min-width:0}
+.tg{font-family:var(--f-tg);font-weight:500;overflow-wrap:anywhere}
+.rom{font-family:var(--f-mono);font-size:.82em;color:var(--muted);display:flex;flex-wrap:wrap;gap:0 7px;align-items:flex-end}
+.said{font-size:.8em;color:var(--muted)} .said .tg{font-weight:400}
+.syl{display:inline-flex;align-items:flex-end;gap:1px;white-space:nowrap}
+.syl sup{font-size:.7em;color:var(--accent);font-weight:600;align-self:flex-start;line-height:1}
+.syl svg{width:.9em;height:.75em;margin-bottom:.15em;flex:none}
+svg line.st{stroke:var(--line)} svg path.ct{stroke:var(--accent);fill:none}
+.q .tg{font-size:1.55rem} .q .rom{font-size:.95rem}
+.big .tg{font-size:clamp(2rem,7vw,2.8rem);line-height:1.25} .big .rom{font-size:1.05rem}
+.huge .tg{font-size:clamp(4rem,16vw,6.5rem);line-height:1.05}
+.inl{display:inline;font-family:var(--f-tg)} .inl .r{font-family:var(--f-mono);font-size:.85em;color:var(--muted);margin-left:3px}
+/* home */
+.intro{max-width:66ch;color:var(--muted);margin:0}
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px}
+.lvl{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:12px;padding:10px 12px;cursor:pointer;width:100%}
+.lvl .num{font:600 1.05rem var(--f-mono);width:44px;height:44px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.lvl .t{font-weight:600;display:block}
+.lvl .g{font-size:.82rem;color:var(--muted);display:block}
+.lvl .st{font:500 .78rem var(--f-mono);color:var(--muted);text-align:right;white-space:nowrap}
+.lvl.passed .st{color:var(--ok)} .lvl.review .st{color:var(--warn)}
+.lvl.locked{opacity:.55;cursor:default}
+.lvl.locked .num{background:var(--line);color:var(--muted)}
+.chip{display:inline-block;font:600 .7rem var(--f-ui);text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.chip.alt{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.chip.warn{background:var(--warn-bg);color:var(--warn-ink)}
+.panelbox{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.today h2{font-size:1.4rem}
+/* level */
+.lvhead{display:flex;flex-direction:column;gap:6px}
+.crumb{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tabs{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:4px}
+.tabs button{flex:1;min-width:0;border:0;background:transparent;color:var(--muted);font:600 .9rem var(--f-ui);padding:8px 4px;border-radius:7px;cursor:pointer}
+.tabs button small{display:block;font-weight:400;font-size:.72rem}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink)}
+.gram{display:flex;flex-direction:column;gap:16px}
+.gblock{border-left:3px solid var(--accent-soft);padding-left:14px;display:flex;flex-direction:column;gap:8px}
+.gblock h4{margin:0;font-size:1rem}
+.gblock p{margin:0;max-width:68ch}
+.exl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.exl li{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:start}
+.exl .en{grid-column:2;color:var(--muted);font-size:.88rem}
+.vtable{width:100%;border-collapse:collapse;font-size:.95rem}
+.vtable td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.vtable td:first-child{width:34px;padding-left:0}
+.vtable .en{color:var(--muted)}
+.vtable .tg{font-size:1.15rem}
+.topic td{padding-top:14px;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.tablewrap{overflow-x:auto}
+select,input[type=text],textarea{font:500 .95rem var(--f-ui);color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px;max-width:100%}
+/* exercise card */
+.card{position:relative;border:1px solid var(--line);border-radius:14px;min-height:320px;padding:22px 20px 20px;display:flex;flex-direction:column;gap:14px;background:var(--panel);overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none}
+[data-lang="yue"] .card::before{background:linear-gradient(180deg,transparent 13px,var(--ground) 13px 14px,transparent 14px 27px,var(--ground) 27px 28px,transparent 28px 41px,var(--ground) 41px 42px,transparent 42px 55px,var(--ground) 55px 56px,transparent 56px 69px,var(--ground) 69px 70px,transparent 70px) 0 6px/100% 98px repeat-y}
+[data-lang="ko"] .card::before{background-image:linear-gradient(var(--ground) 1px,transparent 1px),linear-gradient(90deg,var(--ground) 1px,transparent 1px);background-size:30px 30px;background-position:-1px -1px}
+.card>*{position:relative}
+.prog{display:flex;justify-content:space-between;align-items:center;gap:8px;font:500 .8rem var(--f-mono);color:var(--muted)}
+.bar{height:5px;background:var(--line);border-radius:3px;overflow:hidden;flex:1;max-width:240px}
+.bar i{display:block;height:100%;background:var(--accent)}
+.kind{font:600 .72rem var(--f-ui);text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.q{font-family:var(--f-display);font-size:1.3rem;line-height:1.45;margin:0}
+.qen{color:var(--muted);margin:0}
+.gap{display:inline-block;min-width:2.5em;border-bottom:2px solid var(--accent);background:var(--blank);border-radius:3px 3px 0 0;padding:0 4px}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opts.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.opts.tones{display:grid;grid-template-columns:repeat(3,1fr)}
+.opt{text-align:left;border:1.5px solid var(--line);background:var(--panel);color:var(--ink);border-radius:10px;padding:11px 14px;font:500 1rem var(--f-ui);cursor:pointer;display:flex;gap:10px;align-items:center;min-width:0}
+.opt .tg{font-size:1.2rem}
+.opt.pick{border-color:var(--focus)}
+.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,var(--panel))}
+.opt.wrong{border-color:var(--bad)}
+.opt:disabled{cursor:default}
+.opt .n{font:700 1.4rem var(--f-mono);color:var(--accent);min-width:1.2em}
+.opt svg{width:48px;height:30px;flex:none}
+.built{min-height:64px;border-bottom:2px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;padding:6px 0;align-items:center}
+.bank{display:flex;flex-wrap:wrap;gap:6px}
+.tile{border:1px solid var(--line);border-bottom-width:3px;background:var(--panel);color:var(--ink);border-radius:9px;padding:6px 11px;cursor:pointer;display:inline-flex;flex-direction:column;align-items:center;gap:0}
+.tile .tg{font-size:1.15rem} .tile .rom{font-size:.72rem}
+.tile.used{visibility:hidden}
+.fb{border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--line)}
+.fb .v{font-weight:700}
+.fb.ok .v{color:var(--ok)} .fb.no .v{color:var(--bad)}
+.fb .ans{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.fb .why{color:var(--muted);font-size:.92rem;margin:0}
+.dl{display:flex;flex-direction:column;gap:10px}
+.line{max-width:90%;border-radius:12px;padding:9px 12px;background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.line .who{font:600 .72rem var(--f-ui);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.line .en{color:var(--muted);font-size:.86rem}
+.line.me{align-self:flex-end;background:var(--accent-soft);border-color:transparent}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.result{display:flex;flex-direction:column;gap:12px}
+.score{font:600 2.6rem var(--f-mono);font-variant-numeric:tabular-nums}
+.pass{color:var(--ok)} .fail{color:var(--bad)}
+.miss{border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:4px}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.grades button small{display:block;font:500 .72rem var(--f-ui);color:var(--muted)}
+.grades .g0{color:var(--bad)} .grades .g1{color:var(--warn)} .grades .g2{color:var(--ok)} .grades .g3{color:var(--focus)}
+/* talk */
+.goals{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+.goals li{display:flex;gap:8px;align-items:baseline}
+.goals li::before{content:"";width:12px;height:12px;border:1.5px solid var(--muted);border-radius:3px;flex:none;transform:translateY(1px)}
+.goals li.done{color:var(--ok)} .goals li.done::before{background:var(--ok);border-color:var(--ok)}
+.chat{display:flex;flex-direction:column;gap:10px}
+.corr{font-size:.88rem;border-left:3px solid var(--warn);padding:4px 10px;align-self:flex-end;max-width:90%;display:flex;flex-direction:column;gap:3px}
+.corr.good{border-color:var(--ok)}
+.answer{display:flex;gap:8px;flex-wrap:wrap}
+.answer input{flex:1 1 220px;min-width:0;font:500 1.1rem var(--f-tg);padding:10px 12px;border:1.5px solid var(--line);border-radius:9px;background:var(--panel);color:var(--ink)}
+/* weak spots */
+table.sk td{vertical-align:middle}
+table.sk .num{font:500 .95rem var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.sk .acts{white-space:nowrap;text-align:right}
+.conf{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+.conf:first-of-type{border-top:0;padding-top:0}
+/* guide (from the original flashcard pages) */
+.guide{display:flex;flex-direction:column;gap:18px}
+.guide section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.guide h2{font-size:1.2rem}
+.guide p,.guide li{max-width:66ch;margin:0}
+.guide ol,.guide ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.guide .cjk{font-family:var(--f-tg);font-size:1.08em}
+.guide code{font-family:var(--f-mono);font-size:.95em;color:var(--accent)}
+.guide .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.guide table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:420px}
+.guide th,.guide td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+.guide th{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600;background:var(--paper)}
+.guide tr:last-child td{border-bottom:0}
+.guide td.k{font-family:var(--f-mono);font-weight:600;color:var(--accent);white-space:nowrap}
+.guide td.h{font-family:var(--f-tg);font-size:1.3rem}
+button.say{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:2px 9px 2px 7px;font:500 .9rem var(--f-ui);cursor:pointer;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+button.say svg{width:11px;height:11px;fill:var(--accent);flex:none}
+button.say .cjk{font-size:1.05rem}
+button.say .r{font-family:var(--f-mono);font-size:.82rem;color:var(--muted)}
+.tones{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.tone{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;background:var(--paper)}
+.tone .top{display:flex;align-items:center;gap:10px}
+.tone .n{font:700 1.6rem var(--f-mono);color:var(--accent);line-height:1}
+.tone svg{width:72px;height:44px;flex:none}
+.blocks{display:flex;flex-wrap:wrap;gap:10px}
+.block{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper);display:flex;flex-direction:column;align-items:center;gap:4px;min-width:110px}
+.block .tgs{font-family:var(--f-tg);font-size:2.4rem;line-height:1.1}
+.block .parts{font-family:var(--f-tg);font-size:.95rem;color:var(--muted)}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 12px;font-size:.92rem}
+/* settings + foot */
+.settings{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:10px 14px}
+.settings summary{cursor:pointer;font-weight:600}
+.setgrid{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end;margin-top:10px}
+.setgrid label{display:flex;flex-direction:column;gap:3px;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.setgrid label.check{flex-direction:row;align-items:center;gap:6px;text-transform:none;letter-spacing:0;font-size:.9rem;color:var(--ink);font-weight:500}
+.foot{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;font-size:.82rem;color:var(--muted)}
+kbd{font:600 .72rem var(--f-mono);border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;background:var(--panel)}
+@media (max-width:560px){table.sk .acts{white-space:normal}.opts.tones{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.q{font-size:1.15rem}.card{padding:18px 14px 16px}.tabs button{font-size:.8rem}.tabs button small{display:none}.grades{grid-template-columns:repeat(2,1fr)}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1 id="title">__NAME__<span class="nat" lang="__HTMLLANG__">__NATIVE__</span></h1>
+    <span class="sub" id="sync">Progress saved in this browser</span>
+    <span id="shwho"></span>
+  </header>
+  <div id="voicewarn" class="voicewarn" hidden></div>
+  <div id="astatus" class="astatus" role="status" hidden></div>
+  <main id="view" style="display:flex;flex-direction:column;gap:16px"></main>
+  <details class="settings" id="settings">
+    <summary>Audio &amp; display settings</summary>
+    <div class="setgrid">
+      <label for="s-speed">Speed<select id="s-speed"><option value="0.7">Slow</option><option value="0.85">Learner</option><option value="1">Normal</option></select></label>
+      <label class="check" for="s-auto"><input type="checkbox" id="s-auto"> Play audio automatically</label>
+      <label class="check" for="s-romq"><input type="checkbox" id="s-romq"> <span id="s-romq-l">Show romanization on questions</span></label>
+      <label class="check" for="s-dev"><input type="checkbox" id="s-dev"> Use this device's voice instead</label>
+      <label for="s-voice" id="s-voice-l" hidden>Device voice<select id="s-voice"><option value="">Looking for voices…</option></select></label>
+      <button class="play" id="s-test" type="button"><svg viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z"/></svg>Test voice</button>
+    </div>
+    <p class="sub" style="margin:12px 0 0;max-width:66ch" id="s-note"></p>
+  </details>
+  <details class="settings" id="xfer">
+    <summary>Back up or move your progress</summary>
+    <p class="sub" style="margin:10px 0 0;max-width:66ch"><b>Copy my progress</b> copies everything (levels, review schedule, weak spots, answer history) as text. Paste it into this section on another copy of the course and press <b>Import</b>. Importing merges: for every item the more advanced record is kept.</p>
+    <div class="row" style="margin-top:10px"><button class="btn" id="xCopy" type="button">Copy my progress</button><span class="sub" id="xMsg" role="status"></span></div>
+    <textarea id="xText" rows="3" style="width:100%;font:.8rem var(--f-mono);margin-top:8px" placeholder="Paste copied progress here" aria-label="Progress text"></textarea>
+    <div class="row"><button class="btn" id="xImp" type="button">Import</button></div>
+  </details>
+  <div class="foot"><span>Pass a level's test with 90% or more to unlock the next level.</span><span id="reset-area"></span></div>
+</div>
+
+<script>
+const C = __CONFIG__;
+const D = __DATA__;
+const YUE = C.lang === "yue";
+document.documentElement.dataset.lang = C.lang;
+const LEVELS = D.levels, LV = Object.fromEntries(LEVELS.map(l=>[l.id,l])), LIDS = LEVELS.map(l=>l.id);
+const DSETS = D.drills.filter(x=>!x._items), DITEMS = Object.fromEntries((D.drills.find(x=>x._items)||{_items:[]})._items.map(i=>[i.id,i]));
+const DS = Object.fromEntries(DSETS.map(s=>[s.id,s]));
+const PASS = 0.9, TEST_SIZE = 30;
+const $ = id => document.getElementById(id);
+const esc = s => String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
+const K = k => C.course+":"+k;
+const store = { get(k,d){ try{ const v=localStorage.getItem(K(k)); return v?JSON.parse(v):d; }catch(e){ return d; } }, set(k,v){ try{ localStorage.setItem(K(k),JSON.stringify(v)); }catch(e){} } };
+const PLAYSVG = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1l7 4-7 4z"/></svg>';
+if(window.SH_HOSTED){ $("title").innerHTML = `<a href="../" aria-label="Study Hall home">Study Hall</a> <span aria-hidden="true">/</span> ${esc(C.name)}<span class="nat" lang="${C.htmlLang}">${esc(C.native)}</span>`; }
+
+/* ---------------- settings ---------------- */
+const S = Object.assign({speed:"0.85", auto:true, romq:true, romCard:!YUE, dev:false, voice:"", cdir:"rec", cnew:"15", clv:"all"}, store.get("settings",{}));
+const saveS = () => store.set("settings", S);
+const ROM = C.romName;
+
+/* ---------------- target-language text ---------------- */
+const CHAO = {1:[5,5],2:[2,5],3:[3,3],4:[2,1],5:[2,3],6:[2,2]};
+function contour(t, w, h, staff){
+  const c=CHAO[t]; if(!c) return "";
+  const y=v=>(h-2)-(v-1)*(h-4)/4;
+  let s=`<svg viewBox="0 0 ${w} ${h}" aria-hidden="true">`;
+  if(staff) for(let i=1;i<=5;i++) s+=`<line class="st" x1="0" x2="${w}" y1="${y(i)}" y2="${y(i)}" stroke-width="1"/>`;
+  return s+`<path class="ct" d="M${w*.12} ${y(c[0])} L${w*.88} ${y(c[1])}" stroke-width="${Math.max(2,h/9)}" stroke-linecap="round"/></svg>`;
+}
+function romHTML(r){
+  if(!YUE) return esc(r);
+  return String(r).split(/\s+/).filter(Boolean).map(tok=>{ const m=tok.match(/^([a-z]+)([1-6])([,.?!]?)$/); if(!m) return `<span class="syl">${esc(tok)}</span>`;
+    return `<span class="syl">${m[1]}<sup>${m[2]}</sup>${contour(+m[2],14,12,false)}${m[3]}</span>`; }).join("");
+}
+// One target text: {s, r, p?}. opts: {rom:bool, said:bool, cls}
+function tx(o, opts){
+  opts=opts||{}; if(!o) return "";
+  const rom = opts.rom!==false && o.r ? `<span class="rom">${romHTML(o.r)}</span>` : "";
+  const said = opts.said!==false && o.p ? `<span class="said">said like <span class="tg" lang="${C.htmlLang}">${esc(o.p)}</span></span>` : "";
+  return `<span class="tx ${opts.cls||""}"><span class="tg" lang="${C.htmlLang}">${esc(o.s)}</span>${rom}${said}</span>`;
+}
+const inl = o => `<span class="inl" lang="${C.htmlLang}">${esc(o.s)}<span class="r">${esc(o.r||"")}</span></span>`;
+// Prose with {{json}} tags from the build, plus *italic* / **bold**
+function prose(s){
+  return String(s||"").split(/(\{\{.+?\}\})/).map(part=>{
+    if(part.startsWith("{{")){ try{ const o=JSON.parse(part.slice(2,-2)); return inl(o)+" "+playBtn(o.s); }catch(e){ return esc(part); } }
+    return esc(part).replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/\*(.+?)\*/g,"<i>$1</i>");
+  }).join("");
+}
+const playBtn = (say, label, voice) => `<button class="play${label?"":" icon"}" type="button" data-say="${esc(say)}"${voice?` data-voice="${esc(voice)}"`:""} aria-label="Play">${PLAYSVG}${label?esc(label):""}</button>`;
+
+/* ---------------- audio: recorded neural voices, device voice as fallback ---------------- */
+const sayText = s => String(s).replace(/___/g,"…").replace(/…/g," ").replace(/ \/ /g, YUE?"，":", ").replace(/\s+/g," ").trim();
+const player = new Audio(); player.preload="auto";
+let lastSay=null, seq=0, onDemand=new Map();
+function astatus(msg,bad){ const el=$("astatus"); el.textContent=msg||""; el.hidden=!msg; el.classList.toggle("bad",!!bad); }
+function clipFor(text, voice){
+  const t=sayText(text); const A=D.audio;
+  const n = (voice && A[voice+"|"+t]) || A[C.voice+"|"+t] || A[C.voice2+"|"+t];
+  return n ? C.audioBase+n+".mp3" : (onDemand.get(t)||null);
+}
+async function ttsSay(text){
+  if(!window.SH_HOSTED || !window.SH) return null;
+  try{
+    const s=(await SH.sb.auth.getSession()).data.session; if(!s) return null;
+    const r=await fetch("https://wbrssohmepioxapwbcne.supabase.co/functions/v1/tts",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+s.access_token},body:JSON.stringify({op:"say",course:C.course,text:sayText(text)})});
+    const j=await r.json().catch(()=>null); if(r.ok && j && j.url){ onDemand.set(sayText(text), j.url); return j.url; }
+  }catch(e){}
+  return null;
+}
+async function speak(text, o){
+  o=o||{}; if(!text) return;
+  lastSay={text, o}; const my=++seq;
+  stopAudio();
+  if(S.dev) return devSpeak(text, o.rate);
+  let url = clipFor(text, o.voice);
+  if(!url) url = await ttsSay(text);
+  if(my!==seq) return;
+  if(!url) return devSpeak(text, o.rate);
+  player.src=url; player.playbackRate = o.rate || +S.speed; try{ player.preservesPitch=true; }catch(e){}
+  player.onerror=()=>{ if(my===seq){ devSpeak(text, o.rate); } };
+  player.play().then(()=>astatus("")).catch(err=>{ if(my!==seq) return; if(err && err.name==="NotAllowedError") astatus("Tap a play button to start audio."); else devSpeak(text, o.rate); });
+}
+function stopAudio(){ try{ player.pause(); }catch(e){} synth && synth.cancel(); }
+const autoSay = (t,o) => { if(S.auto) speak(t,o); else lastSay={text:t,o:o||{}}; };
+// device voices
+let voices=[]; const synth = "speechSynthesis" in window ? window.speechSynthesis : null;
+const vre=new RegExp(C.voiceRe,"i"), vnre=new RegExp(C.voiceNameRe,"i");
+function loadVoices(){
+  if(!synth) return; voices=synth.getVoices().filter(v=>vre.test(v.lang)||vnre.test(v.name));
+  const sel=$("s-voice"); if(!voices.length){ sel.innerHTML=`<option value="">No ${esc(C.name)} voice on this device</option>`; return; }
+  sel.innerHTML=voices.map(v=>`<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join("");
+  if(!voices.some(v=>v.voiceURI===S.voice)){ S.voice=voices[0].voiceURI; saveS(); } sel.value=S.voice;
+}
+function devSpeak(text, rate){
+  if(!synth){ astatus("This browser can't play speech. Try Chrome or Safari.", true); return; }
+  synth.cancel(); const my=seq;
+  setTimeout(()=>{ if(my!==seq) return;
+    const u=new SpeechSynthesisUtterance(sayText(text)); const v=voices.find(v=>v.voiceURI===S.voice)||voices[0];
+    if(v){ u.voice=v; u.lang=v.lang; } else u.lang=C.ttsLang;
+    u.rate=(rate||+S.speed)*(1/0.95); let started=false;
+    u.onstart=()=>{ started=true; };
+    u.onerror=e=>{ if(e.error!=="interrupted"&&e.error!=="canceled") astatus(`Audio error "${e.error}". Try again or check Settings.`, true); };
+    synth.speak(u); if(synth.paused) synth.resume();
+    setTimeout(()=>{ if(my===seq && !started && !voices.length) astatus(`No recorded clip for this and no ${C.name} voice on this device.`, true); },3000);
+  },120);
+}
+if(synth){ loadVoices(); if("onvoiceschanged" in synth) synth.addEventListener("voiceschanged", loadVoices); }
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-say]"); if(b){ e.preventDefault(); speak(b.dataset.say,{voice:b.dataset.voice, rate:b.dataset.rate?+b.dataset.rate:undefined, live:b.dataset.live==="1"}); } });
+$("s-speed").value=S.speed; $("s-speed").onchange=e=>{ S.speed=e.target.value; saveS(); };
+$("s-auto").checked=!!S.auto; $("s-auto").onchange=e=>{ S.auto=e.target.checked; saveS(); };
+$("s-romq").checked=!!S.romq; $("s-romq").onchange=e=>{ S.romq=e.target.checked; saveS(); render(); };
+$("s-romq-l").textContent=`Show ${ROM} on questions`;
+$("s-dev").checked=!!S.dev; $("s-voice-l").hidden=!S.dev; $("s-dev").onchange=e=>{ S.dev=e.target.checked; $("s-voice-l").hidden=!S.dev; saveS(); };
+$("s-voice").onchange=e=>{ S.voice=e.target.value; saveS(); };
+$("s-test").onclick=()=>speak(YUE?"你好，我學緊廣東話。":"안녕하세요. 한국어를 배우고 있어요.");
+$("s-note").textContent = `Audio is recorded with Microsoft neural ${C.name} voices, not native speakers. If a clip and the ${ROM} disagree, trust the ${ROM}: it was checked against dictionaries. "Use this device's voice" switches to the voice built into your phone or computer.`;
+
+/* ---------------- progress: levels + drills (browser + account) ---------------- */
+let P = Object.assign({lv:{}}, store.get("progress",{}));
+let db=null, uid=null;
+function mergeP(r){ if(!r) return; for(const id in r.lv||{}){ const a=P.lv[id]||{}, b=r.lv[id]; P.lv[id]={best:Math.max(a.best||0,b.best||0), passed:!!(a.passed||b.passed), tests:Math.max(a.tests||0,b.tests||0), at:Math.max(a.at||0,b.at||0)}; } }
+function saveP(){ store.set("progress",P); dirtyDocs.add("course"); if(db){ clearTimeout(lwt); lwt=setTimeout(flushLR,2000); } }
+const unlocked = id => { const i=LIDS.indexOf(id); return i<=0 || !!(P.lv[LIDS[i-1]]&&P.lv[LIDS[i-1]].passed); };
+const DORDER = DSETS.map(s=>s.id);
+const drillUnlocked = id => { const i=DORDER.indexOf(id); return i<=0 || !!(P.lv[DORDER[i-1]]&&P.lv[DORDER[i-1]].passed); };
+
+/* ---------------- learner record ---------------- */
+const SKILLS = YUE ? {
+  "g:particles":["Sentence-final particles","L5"],"g:aspect":["咗 / 緊 / 過 / 未","L6"],"g:measure":["Measure words","L3"],"g:neg":["Negatives (唔, 冇, 未)","L1"],
+  "g:question":["Questions","L2"],"g:order":["Word order","L2"],"g:numbers":["Numbers, money, dates","L1"],"g:time":["Time words","L4"],"g:modal":["想 / 要 / 識 / 會 / 可以","L7"],
+  "g:compare":["Comparisons","L9"],"g:connect":["Connectors","L6"],"g:pron":["Pronouns and 嘅","L2"],"g:place":["Places and directions","L4"],
+  "s:tones":["Telling tones apart","S1"],"s:listen":["Listening",null],"s:vocab":["Vocabulary",null],"s:phrase":["Choosing the right phrase","L1"]
+} : {
+  "g:particles":["Particles (은/는, 이/가, 을/를, 에, 에서)","L2"],"g:endings":["Verb endings","L3"],"g:tense":["Past, future, -고 있어요","L6"],"g:neg":["Negatives (안, 못, 아니에요)","L3"],
+  "g:numbers":["Numbers, money, time","L1"],"g:counters":["Counters","L3"],"g:question":["Question words","L2"],"g:order":["Word order","L4"],"g:connect":["Connecting ideas","L8"],
+  "g:honor":["Politeness and honorifics","L1"],"g:want":["Wanting, plans, ability","L7"],"g:place":["Places and directions","L4"],"g:compare":["Comparisons","L9"],
+  "s:listen":["Listening",null],"s:vocab":["Vocabulary",null],"s:phrase":["Choosing the right phrase","L1"],"s:read":["Reading Hangul","H3"]
+};
+const skName = s => (SKILLS[s]||[s])[0];
+const INT=[1,2,4,8,16,35,80], MIN_N=8, WEAK=0.8, LOG_MAX=1500;
+const dayOf = ms => Math.floor((ms/60000 - new Date(ms).getTimezoneOffset())/1440) - 18262;
+const today = () => dayOf(Date.now());
+let LR = Object.assign({v:1, srs:{}, sk:{}, w:{}, log:[], diag:null, mig:{}}, store.get("learner",{}));
+
+/* registry of every exercise */
+const ALL = {};
+const VOC = {};
+LEVELS.forEach(l=>{
+  l.vocab.forEach((v,i)=>{ v.lv=l.id; v.i=i; VOC[v.id]=v;
+    [["vm",["s:vocab"]],["ve",["s:vocab"]],["vl",["s:listen","s:vocab"]]].forEach(([k,sk])=>{ const id=v.id+":"+k; ALL[id]={lv:l.id, it:{id, t:k, v:v.id, sk, w:[v.id]}}; }); });
+  l.items.forEach(it=>{ ALL[it.id]={lv:l.id, it}; });
+});
+const DRILL_OF = {};
+DSETS.forEach(s=>s.items.forEach(id=>{ (DRILL_OF[id]=DRILL_OF[id]||[]).push(s.id); const it=DITEMS[id]; if(it && !ALL["d:"+id]) ALL["d:"+id]={drill:true, it:Object.assign({}, it, {id:"d:"+id, src:id, sk:dsk(it)})}; }));
+function dsk(it){ return it.t==="tone"||it.t==="tpat" ? ["s:tones"] : ["s:read"]; }
+const lvItems = lid => { const l=LV[lid]; return l.vocab.flatMap(v=>[ALL[v.id+":vm"].it, ALL[v.id+":ve"].it, ALL[v.id+":vl"].it]).concat(l.items); };
+const LVSET = Object.fromEntries(LIDS.map(id=>[id,new Set(lvItems(id).map(i=>i.id))]));
+const DSET = Object.fromEntries(DSETS.map(s=>[s.id,new Set(s.items.map(x=>"d:"+x))]));
+function itemAvailable(id){ const a=ALL[id]; if(!a) return id.startsWith("c:") && VOC[id.split(":")[2]] && unlocked(VOC[id.split(":")[2]].lv); if(a.lv) return unlocked(a.lv); return (DRILL_OF[a.it.src]||[]).some(drillUnlocked); }
+const shardOf = id => id.startsWith("c:") ? "srs-C" : id.startsWith("d:") ? "srs-D" : /:v[mel]$/.test(id) ? "srs-V" : "srs-L";
+const SHARDS = ["srs-L","srs-V","srs-D","srs-C"];
+function bump(map, key, ok){ const r=map[key]||[0,0,0]; const n=r[1]+1, a=r[1]===0?(ok?1:0):r[0]+Math.max(1/n,0.15)*((ok?1:0)-r[0]); map[key]=[Math.round(a*1000)/1000, n, today()]; }
+function recordUnit(it, res, ctx){
+  if(!it || !res.length || (ctx&&ctx.noRecord)) return;
+  const d=today(), allOk=res.every(x=>x.ok), r=LR.srs[it.id]||[0,d,0,0,d], g=res[0].grade;
+  let b=r[0];
+  if(g!==undefined) b = g===0?0 : g===1?Math.max(1,b) : g===2?b+1 : b+2; else b = allOk ? b+1 : 0;
+  b=Math.min(b,6); LR.srs[it.id]=[b, d+INT[b], r[2]+1, r[3]+(allOk?1:0), d]; dirtyDocs.add(shardOf(it.id));
+  res.forEach(x=>{
+    const sk=x.sk||it.sk||[];
+    sk.forEach(s=>bump(LR.sk,s,x.ok));
+    (it.w||[]).forEach(w=>bump(LR.w,w,x.ok));
+    const e={t:Date.now(), id:it.id, ok:x.ok?1:0, s:(ctx&&ctx.src)||"practice"};
+    if(!x.ok){ e.y=String(x.your||"").slice(0,70); e.r=String(x.right||"").slice(0,70); e.q=String(x.q||"").slice(0,100); if(x.pair) e.c=x.pair; }
+    LR.log.push(e);
+  });
+  if(LR.log.length>LOG_MAX) LR.log=LR.log.slice(-LOG_MAX);
+  dirtyDocs.add("learner"); dirtyDocs.add("log"); saveLR();
+}
+function logTalk(errs){ const t=Date.now(); errs.forEach((x,i)=>{ const s=SKILLS[x.skill]?x.skill:"s:phrase"; LR.log.push({t:t+i,id:"talk",ok:0,s:"talk",e:s,y:String(x.said||"").slice(0,120),r:String(x.fix||"").slice(0,120),q:String(x.why||"").slice(0,120)}); }); if(LR.log.length>LOG_MAX) LR.log=LR.log.slice(-LOG_MAX); dirtyDocs.add("log"); saveLR(); }
+
+/* saving: browser now, account in the background */
+let dirtyDocs=new Set(), lwriting=false, lwt=null;
+function saveLR(){ store.set("learner", LR); if(db){ clearTimeout(lwt); lwt=setTimeout(flushLR,2500); } }
+function docBody(n){
+  if(n==="course") return {lv:P.lv, v:1};
+  if(n==="learner") return {sk:LR.sk, w:LR.w, diag:LR.diag, mig:LR.mig, v:1};
+  if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return {e:out.reverse(), v:1}; }
+  const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return {r, v:1};
+}
+async function flushLR(){
+  if(!db || lwriting || !dirtyDocs.size) return;
+  lwriting=true; const names=[...dirtyDocs]; dirtyDocs.clear();
+  try{ for(const n of names) await db.collection("data/users/"+uid).doc(n).set(docBody(n)); $("sync").textContent="Progress synced to your account"; }
+  catch(e){ names.forEach(n=>dirtyDocs.add(n)); $("sync").textContent="Couldn't sync just now; progress is kept in this browser"; }
+  finally{ lwriting=false; if(dirtyDocs.size) lwt=setTimeout(flushLR,5000); }
+}
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="hidden") flushLR(); });
+function mergeLR(name, d){
+  if(!d) return false; let ch=false;
+  if(name==="course"){ mergeP(d); store.set("progress",P); return true; }
+  if(name==="learner"){
+    for(const m of ["sk","w"]) for(const k in d[m]||{}){ const a=LR[m][k], b=d[m][k]; if(!a || b[1]>a[1]) LR[m][k]=b; else if(a[1]>b[1]) ch=true; }
+    if(d.diag && (!LR.diag || d.diag.day>LR.diag.day)) LR.diag=d.diag; else if(LR.diag && (!d.diag || LR.diag.day>d.diag.day)) ch=true;
+    for(const k in d.mig||{}) LR.mig[k]=LR.mig[k]||d.mig[k];
+  } else if(name==="log"){
+    const seen=new Set((d.e||[]).map(e=>e.t+"|"+e.id)), mine=new Set(LR.log.map(e=>e.t+"|"+e.id));
+    if(LR.log.some(e=>!seen.has(e.t+"|"+e.id))) ch=true;
+    LR.log=LR.log.concat((d.e||[]).filter(e=>!mine.has(e.t+"|"+e.id))).sort((a,b)=>a.t-b.t).slice(-LOG_MAX);
+  } else if(name.startsWith("srs-")){
+    const rr=d.r||{};
+    for(const id in rr){ const a=LR.srs[id], b=rr[id]; if(!a || b[2]>a[2] || (b[2]===a[2] && b[4]>a[4])) LR.srs[id]=b; }
+    for(const id in LR.srs) if(shardOf(id)===name){ const b=rr[id], a=LR.srs[id]; if(!b || a[2]>b[2]){ ch=true; break; } }
+  }
+  return ch;
+}
+async function connect(){
+  try{
+    if(!window.claude||!window.claude.use) return;
+    const user=await window.claude.use("user"), d=await window.claude.use("db");
+    if(!user||!d) return; const id=await user.id(); if(!id) return;
+    db=d; uid=id;
+    const qs=await db.collection("data/users/"+uid).get(); const have=new Set();
+    qs.docs.forEach(doc=>{ have.add(doc.id); if(mergeLR(doc.id, doc.data()) && doc.id!=="course") dirtyDocs.add(doc.id); });
+    ["course","learner","log",...SHARDS].forEach(n=>{ if(!have.has(n) && JSON.stringify(docBody(n)).length>30) dirtyDocs.add(n); });
+    $("sync").textContent="Progress synced to your account";
+    saveLR(); if(dirtyDocs.size) flushLR();
+    if(["home","weak","cards"].includes(view.name)) render();
+  }catch(e){ $("sync").textContent="Progress saved in this browser (account sync unavailable)"; }
+}
+
+/* ---------------- views ---------------- */
+let view={name:"home"};
+const go = v => { view=v; render(); window.scrollTo({top:0}); };
+function render(){
+  stopAudio(); astatus("");
+  const f={home:renderHome, level:renderLevel, run:renderRun, talk:renderTalk, drill:renderDrill, guide:renderGuide, weak:renderWeak, cards:renderCards}[view.name];
+  (f||renderHome)(); $("reset-area").innerHTML="";
+}
+function reviewState(ids){
+  const d=today(); let due=0; for(const id of ids){ const r=LR.srs[id]; if(r && r[1]<=d) due++; }
+  const ev=LR.log.filter(e=>ids.has(e.id)).slice(-20); const acc = ev.length>=10 ? ev.filter(e=>e.ok).length/ev.length : null;
+  return {due, acc, needs: due>=8 || (acc!==null && acc<0.8)};
+}
+function lvStatus(id, set){
+  const p=P.lv[id]; const un = set ? drillUnlocked(id) : unlocked(id);
+  if(!un) return {cls:"locked", txt:"Locked"};
+  if(p&&p.passed){ const rs=reviewState(set?DSET[id]:LVSET[id]); return rs.needs?{cls:"passed review",txt:"Passed · review due"}:{cls:"passed",txt:`Passed · ${Math.round(p.best*100)}%`}; }
+  if(p&&p.tests) return {cls:"", txt:`Best ${Math.round(p.best*100)}%`};
+  return {cls:"", txt:"Open"};
+}
+function renderHome(){
+  const lv = id => { const l=LV[id], s=lvStatus(id); return `<button class="lvl ${s.cls}" data-open="${id}" ${s.cls==="locked"?'aria-disabled="true"':""}><span class="num">${l.n}</span><span><span class="t">${esc(l.title)}</span><span class="g">${esc(l.goal)}</span></span><span class="st">${s.txt}</span></button>`; };
+  const dr = id => { const d=DS[id], s=lvStatus(id,true); return `<button class="lvl ${s.cls}" data-drill="${id}" ${s.cls==="locked"?'aria-disabled="true"':""}><span class="num">${id}</span><span><span class="t">${esc(d.title)}</span><span class="g">${esc(d.sub)} · ${d.items.length} cards</span></span><span class="st">${s.txt}</span></button>`; };
+  $("view").innerHTML = todayPanel()
+    + `<div class="panelbox"><div class="row" style="justify-content:space-between"><div style="min-width:0"><h2>${YUE?"How Cantonese sounds":"How Hangul works"}</h2><p class="sub" style="margin:2px 0 0">${YUE?"The six tones, every sound, and how to read Jyutping. Start here.":"Letters, syllable blocks and sound changes, with audio. Start here."}</p></div><button class="btn" id="openGuide">Open the guide</button></div></div>`
+    + `<h2 style="margin-top:4px">Levels</h2><p class="intro">Ten levels from first words to real conversations. Each has a short lesson, practice in several formats, a conversation with an AI character, and a 30-question test. Score 90% to unlock the next level. If a level already feels easy, go straight to its test.</p><div class="ladder">${LIDS.map(lv).join("")}</div>`
+    + `<h2 style="margin-top:8px">Sounds</h2><p class="intro">${YUE?"Ear training for the tones. Each set has a 30-question test; 90% unlocks the next set.":"Learn to read Hangul. Each set has a 30-question test; 90% unlocks the next set."}</p><div class="ladder">${DORDER.map(dr).join("")}</div>`;
+  $("view").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{ if(unlocked(b.dataset.open)) go({name:"level",id:b.dataset.open,tab:"learn"}); });
+  $("view").querySelectorAll("[data-drill]").forEach(b=>b.onclick=()=>{ if(drillUnlocked(b.dataset.drill)) go({name:"drill",id:b.dataset.drill,tab:"study"}); });
+  $("openGuide").onclick=()=>go({name:"guide"});
+  wireToday();
+}
+function renderGuide(){
+  $("view").innerHTML = `<div class="crumb"><button class="linkbtn" id="back">← Home</button></div><div class="guide">${D.guide}</div>`;
+  $("back").onclick=()=>go({name:"home"});
+  document.querySelectorAll("[data-contour]").forEach(el=>{ el.innerHTML=contour(+el.dataset.contour,72,44,true); });
+  document.querySelectorAll("button.say").forEach(b=>{ if(!b.querySelector("svg")) b.insertAdjacentHTML("afterbegin",PLAYSVG); });
+  document.querySelectorAll("[data-rom]").forEach(el=>{ el.innerHTML=romHTML(el.dataset.rom); });
+}
+function renderLevel(){
+  const l=LV[view.id], p=P.lv[l.id]||{};
+  const tabs=[["learn","Learn"],["practice","Practice"],["talk","Talk"],["test","Test"]];
+  let body="";
+  if(view.tab==="learn"){
+    let lastTopic=""; const rows=l.vocab.map(v=>{ const t=v.topic!==lastTopic?`<tr class="topic"><td colspan="2">${esc(v.topic)}</td></tr>`:""; lastTopic=v.topic;
+      return t+`<tr><td>${playBtn(v.t.s)}</td><td>${tx(v.t)}<div class="en">${esc(v.en)}</div>${v.note?`<div class="sub">${v.old?esc(v.note):prose(v.note)}</div>`:""}</td></tr>`; }).join("");
+    body = `<div class="panelbox"><h3>Lesson</h3><div class="gram">${l.notes.map(g=>`<div class="gblock"><h4>${esc(g.h)}</h4><p>${prose(g.p)}</p>${g.ex.length?`<ul class="exl">${g.ex.map(([o,en])=>`<li>${playBtn(o.s)}${tx(o)}<span class="en">${esc(en)}</span></li>`).join("")}</ul>`:""}</div>`).join("")}</div></div>
+      <div class="panelbox"><h3>Words and phrases · ${l.vocab.length}</h3><div class="tablewrap"><table class="vtable">${rows}</table></div></div>`;
+  } else if(view.tab==="practice"){
+    const kinds=[["all","Mixed"],["vocab","Words: meaning"],["vl","Words: listening"],["gap","Fill the gap"],["pick","What would you say?"],["tiles","Build the sentence"],["listen","Listen to sentences"],["dlg","Dialogues"]];
+    const all=lvItems(l.id), seen=all.filter(i=>LR.srs[i.id]).length;
+    body=`<div class="panelbox"><h3>Practice</h3><p style="margin:0">Twelve exercises with instant feedback. Exercises you miss come back more often. You've tried ${seen} of ${all.length} in this level.</p>
+      <div class="row"><label for="pk" class="sub">Format</label><select id="pk">${kinds.map(([k,n])=>`<option value="${k}">${n}</option>`).join("")}</select><button class="btn primary" id="startPractice">Start practice</button></div></div>`;
+  } else if(view.tab==="talk"){
+    body = l.roleplay.map((r,i)=>`<div class="panelbox"><h3>Conversation ${i+1}</h3><h2>${esc(r.title)}</h2><p style="margin:0">${esc(r.setup)}</p><ul class="goals">${r.goals.map(g=>`<li>${esc(g)}</li>`).join("")}</ul><div class="row"><button class="btn primary" data-talk="${i}">Start conversation</button></div></div>`).join("")
+      + `<p class="sub">An AI plays a ${YUE?"Hong Kong":"Korean"} person and replies at this level, with ${ROM} and English. Type your replies in ${YUE?"characters, Jyutping or English":"Hangul, romanization or English"}; it shows a corrected version after each message. Practice only: the AI's ${C.name}${YUE?" and Jyutping":""} isn't checked the way the course is, and it doesn't count toward the test.</p>`;
+  } else {
+    const nextId=LIDS[l.n];
+    body=`<div class="panelbox"><h3>Level test</h3><p style="margin:0">${TEST_SIZE} questions drawn at random from this level: word meanings, listening, fill the gap, what you'd say, building sentences and dialogue replies. No feedback until the end. You need ${Math.ceil(PASS*TEST_SIZE)} of ${TEST_SIZE} (90%) to pass${nextId?` and unlock Level ${LV[nextId].n}`:""}.</p>
+      <p class="sub" style="margin:0">${p.tests?`Tests taken: ${p.tests} · best ${Math.round(p.best*100)}%${p.passed?" · passed":""}`:"You haven't taken this test yet."}</p>
+      <div class="row"><button class="btn primary" id="startTest">Start the test</button></div></div>`;
+  }
+  $("view").innerHTML=`<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← All levels</button><span class="chip">Level ${l.n}</span>${p.passed?'<span class="chip">Passed</span>':""}</div><h2>${esc(l.title)}</h2><p class="intro" style="margin:0">${esc(l.goal)}</p></div>
+    <div class="tabs" role="tablist">${tabs.map(([k,n])=>`<button role="tab" data-tab="${k}" aria-selected="${view.tab===k}">${n}</button>`).join("")}</div>${body}`;
+  $("back").onclick=()=>go({name:"home"});
+  $("view").querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>go({name:"level",id:l.id,tab:b.dataset.tab}));
+  if($("startPractice")) $("startPractice").onclick=()=>startRun(l,"practice",$("pk").value);
+  if($("startTest")) $("startTest").onclick=()=>startRun(l,"test");
+  $("view").querySelectorAll("[data-talk]").forEach(b=>b.onclick=()=>startTalk(l,+b.dataset.talk));
+}
+
+/* ---------------- runs (practice / test) ---------------- */
+let run=null;
+const decisions = it => it.t==="dlg" ? it.turns.filter(t=>t.you).length : 1;
+function weightedPick(pool, n){
+  const d=today();
+  const w=pool.map(i=>{ const r=LR.srs[i.id]; if(!r) return 3; if(r[0]===0) return 4; if(r[1]<=d) return 3; return 1+2*(1-r[3]/Math.max(1,r[2])); });
+  const out=[], idx=pool.map((_,i)=>i);
+  while(out.length<n && idx.length){ const tot=idx.reduce((a,i)=>a+w[i],0); let r=Math.random()*tot, k=0; for(;k<idx.length;k++){ r-=w[idx[k]]; if(r<=0) break; } k=Math.min(k,idx.length-1); out.push(pool[idx[k]]); idx.splice(k,1); }
+  return out;
+}
+function buildTest(l){
+  const all=lvItems(l.id), by=t=>shuffle(all.filter(i=>i.t===t));
+  let units=[...by("vm").slice(0,4),...by("ve").slice(0,3),...by("vl").slice(0,3),...by("gap").slice(0,6),...by("pick").slice(0,3),...by("tiles").slice(0,4),...by("listen").slice(0,3)];
+  let pts=units.length;
+  for(const d of by("dlg")){ if(pts+decisions(d)<=TEST_SIZE){ units.push(d); pts+=decisions(d); } if(pts>=TEST_SIZE-1) break; }
+  const extra=by("gap").slice(6).concat(by("vm").slice(4));
+  while(pts<TEST_SIZE && extra.length){ units.push(extra.shift()); pts++; }
+  return shuffle(units);
+}
+function startRun(l, mode, kind){
+  let units;
+  if(mode==="test") units=buildTest(l);
+  else { const all=lvItems(l.id); const pool = !kind||kind==="all" ? all : kind==="vocab" ? all.filter(i=>i.t==="vm"||i.t==="ve") : all.filter(i=>i.t===kind); units=weightedPick(pool, kind==="dlg"?4:12); }
+  const nextId=LIDS[l.n];
+  launch({id:l.id, title:l.title, chip:`Level ${l.n}`, mode, units, nextId, nextLabel:nextId?`Level ${LV[nextId].n}`:"",
+    back:{name:"level",id:l.id,tab:mode}, retry:()=>startRun(l,mode,"all"), next:()=>go({name:"level",id:nextId,tab:"learn"})});
+}
+function launch(o){ run=Object.assign(o,{i:0, results:[], total:o.units.reduce((a,u)=>a+decisions(u),0)}); go({name:"run"}); }
+function renderRun(){
+  const r=run, u=r.units[r.i];
+  if(!u) return renderResult();
+  const done=r.results.length, pct=Math.round(100*done/Math.max(1,r.total));
+  $("view").innerHTML=`<div class="crumb"><button class="linkbtn" id="quit">← ${r.mode==="test"?"Leave test (not saved)":"End practice"}</button><span class="chip">${esc(r.chip)} · ${r.mode==="test"?"Test":"Practice"}</span></div>
+    <section class="card" id="card" aria-live="polite"><div class="prog"><span>${done} / ${r.total}</span><span class="bar"><i style="width:${pct}%"></i></span></div><div id="ex" style="display:flex;flex-direction:column;gap:14px;flex:1"></div></section>
+    <div class="sub" style="text-align:center"><kbd>P</kbd> replay audio · <kbd>1</kbd>–<kbd>6</kbd> choose · <kbd>Enter</kbd> continue</div>`;
+  $("quit").onclick=()=>{ if(r.mode!=="test" && r.results.length) return renderResult(); go(r.back); };
+  if(r.noRecord) $("card").insertAdjacentHTML("afterbegin",'<p class="sub" style="margin:0">AI-generated practice. Not reviewed; doesn’t change your record.</p>');
+  mountUnit($("ex"), u, r.mode, res=>{
+    r.results.push(...res);
+    recordUnit(u, res, {src:r.src||r.mode, noRecord:r.noRecord});
+    if(r.requeue && !res.every(x=>x.ok) && !u._again){ r.units.splice(Math.min(r.i+4,r.units.length),0,Object.assign({},u,{_again:true})); r.total+=decisions(u); }
+    r.i++; renderRun();
+  });
+}
+function fbHTML(ok, ans, why, extraHTML){
+  return `<div class="fb ${ok?"ok":"no"}"><span class="v">${ok?"Correct":"Not quite"}</span>${ans?`<div class="ans">${ans}</div>`:""}${why?`<p class="why">${prose(why)}</p>`:""}${extraHTML||""}</div>`;
+}
+function nextBar(ex, onNext, label){
+  const d=document.createElement("div"); d.className="actions"; d.innerHTML=`<button class="btn primary" id="nextBtn">${label||"Continue"}</button>`; ex.appendChild(d);
+  $("nextBtn").focus({preventScroll:true}); $("nextBtn").onclick=onNext;
+}
+const KIND = {vm:"What does it mean?", ve:`How do you say it?`, vl:"Listen: what does it mean?", gap:"Fill the gap", pick:"What would you say?", tiles:"Build the sentence", listen:"Listen", dlg:"Dialogue",
+  tone:"Which tone?", tpat:"Which tones?", letter:"Letters", trio:"Which one did you hear?", read:"Read it", sound:"How is it said?", card:"Cards", ai:"AI practice"};
+const romQ = () => S.romq;
+// Distractor vocab: same level first, never near-synonyms (avoid) or identical text/English.
+function vocabOptions(v, n){
+  const l=LV[v.lv], bad=new Set([v.i, ...(v.avoid||[])]); l.vocab.forEach((x,j)=>{ if((x.avoid||[]).includes(v.i)) bad.add(j); });
+  const ok = x => x.id!==v.id && x.en.toLowerCase()!==v.en.toLowerCase() && x.t.s!==v.t.s;
+  let pool=l.vocab.filter((x,j)=>!bad.has(j) && ok(x));
+  const same=shuffle(pool.filter(x=>x.topic===v.topic)), other=shuffle(pool.filter(x=>x.topic!==v.topic));
+  let pick=same.slice(0,2).concat(other).slice(0,n-1);
+  if(pick.length<n-1){ const more=shuffle(LEVELS.flatMap(L=>L.vocab).filter(x=>ok(x) && !pick.includes(x))); pick=pick.concat(more.slice(0,n-1-pick.length)); }
+  return shuffle([v,...pick]);
+}
+// Generic multiple choice: opts = [{html, key, text?}], a = key of the right one
+function mcRender(ex, head, opts, a, test, grid, onPick){
+  ex.insertAdjacentHTML("beforeend", `<div class="opts${grid?" "+grid:""}">${opts.map((o,i)=>`<button class="opt" data-k="${esc(o.key)}">${grid==="tones"?"":`<span class="sub" aria-hidden="true">${i+1}</span>`}${o.html}</button>`).join("")}</div>`);
+  const btns=[...ex.querySelectorAll(".opt")];
+  btns.forEach(b=>b.onclick=()=>{
+    if(b.disabled) return; btns.forEach(x=>x.disabled=true);
+    const k=b.dataset.k, ok=k===String(a);
+    if(test){ b.classList.add("pick"); return setTimeout(()=>onPick(k, ok),250); }
+    b.classList.add(ok?"right":"wrong"); const rb=btns.find(x=>x.dataset.k===String(a)); if(rb) rb.classList.add("right");
+    onPick(k, ok);
+  });
+}
+function mountUnit(ex, it, mode, done){
+  const test=mode==="test";
+  const head=`<span class="kind">${KIND[it.t]||""}</span>`;
+  ex.innerHTML=head;
+  const big=(o,cls)=>tx(o,{rom:romQ(), said:false, cls:cls||"big"});
+  if(it.t==="vm"||it.t==="ve"||it.t==="vl"){
+    const v=VOC[it.v], opts=vocabOptions(v,6);
+    if(it.t==="ve"){
+      ex.insertAdjacentHTML("beforeend", `<p class="q">${esc(v.en)}</p>`);
+      mcRender(ex, head, opts.map(x=>({key:x.id, html:tx(x.t,{rom:romQ(),said:false})})), v.id, test, "", (k,ok)=>finish(k,ok, VOC[k].t.s));
+    } else {
+      if(it.t==="vm") ex.insertAdjacentHTML("beforeend", `<div class="q">${big(v.t)}</div><div class="bigplay">${playBtn(v.t.s,"Play")}</div>`);
+      else ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen, then choose what it means.</p><div class="bigplay">${playBtn(v.t.s,"Play again")}<button class="play slow" type="button" data-say="${esc(v.t.s)}" data-rate="0.6">${PLAYSVG}Slower</button></div>`);
+      speak(v.t.s);
+      mcRender(ex, head, opts.map(x=>({key:x.id, html:`<span>${esc(x.en)}</span>`})), v.id, test, "", (k,ok)=>finish(k,ok, VOC[k].en));
+    }
+    function finish(k, ok, yourText){
+      const res=[{id:it.id, ok, q:it.t==="ve"?v.en:v.t.s, your:yourText, right:it.t==="ve"?v.t.s:v.en, say:v.t.s}];
+      if(test) return done(res);
+      ex.insertAdjacentHTML("beforeend", fbHTML(ok, `${playBtn(v.t.s)}${tx(v.t)}<span>${esc(v.en)}</span>`, "", v.note?`<p class="why">${v.old?esc(v.note):prose(v.note)}</p>`:""));
+      if(it.t==="ve") autoSay(v.t.s);
+      nextBar(ex,()=>done(res));
+    }
+    return;
+  }
+  if(it.t==="gap"){
+    const q=it.q; const parts=q.s.split("___");
+    ex.insertAdjacentHTML("beforeend", `<div class="q"><span class="tx big"><span class="tg" lang="${C.htmlLang}">${esc(parts[0])}<span class="gap">&nbsp;</span>${esc(parts[1]||"")}</span>${romQ()&&q.r?`<span class="rom">${romHTML(q.r.replace("___"," ___ "))}</span>`:""}</span></div><p class="qen">${esc(it.en)}</p>`);
+    const order=shuffle(it.opts.map((o,i)=>i));
+    mcRender(ex, head, order.map(i=>({key:String(i), html:tx(it.opts[i],{rom:romQ(),said:false})})), it.a, test, "grid", (k,ok)=>{
+      const res=[{id:it.id, ok, q:q.s, your:it.opts[+k].s, right:it.opts[it.a].s, say:it.full.s, why:it.why, pair:ok?null:it.opts[it.a].s+"→"+it.opts[+k].s}];
+      if(test) return done(res);
+      ex.insertAdjacentHTML("beforeend", fbHTML(ok, `${playBtn(it.full.s)}${tx(it.full)}`, it.why)); autoSay(it.full.s); nextBar(ex,()=>done(res));
+    });
+    return;
+  }
+  if(it.t==="pick"){
+    ex.insertAdjacentHTML("beforeend", `<p class="q">${prose(it.q)}</p>`);
+    const order=shuffle(it.opts.map((o,i)=>i));
+    mcRender(ex, head, order.map(i=>({key:String(i), html:tx(it.opts[i],{rom:romQ(),said:false})})), it.a, test, "", (k,ok)=>{
+      const right=it.opts[it.a];
+      const res=[{id:it.id, ok, q:it.q.replace(/\{\{.+?\}\}/g,"…"), your:it.opts[+k].s, right:right.s, say:right.s, why:it.why, pair:ok?null:right.s+"→"+it.opts[+k].s}];
+      if(test) return done(res);
+      ex.insertAdjacentHTML("beforeend", fbHTML(ok, `${playBtn(right.s)}${tx(right)}`, it.why)); autoSay(right.s); nextBar(ex,()=>done(res));
+    });
+    return;
+  }
+  if(it.t==="listen"){
+    ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen, then choose what it means.</p><div class="bigplay">${playBtn(it.say.s,"Play again")}<button class="play slow" type="button" data-say="${esc(it.say.s)}" data-rate="0.6">${PLAYSVG}Slower</button></div>`);
+    speak(it.say.s);
+    const order=shuffle(it.opts.map((o,i)=>i));
+    mcRender(ex, head, order.map(i=>({key:String(i), html:`<span>${esc(it.opts[i])}</span>`})), it.a, test, "", (k,ok)=>{
+      const res=[{id:it.id, ok, q:"(listening) "+it.say.s, your:it.opts[+k], right:it.opts[it.a], say:it.say.s, why:it.why}];
+      if(test) return done(res);
+      ex.insertAdjacentHTML("beforeend", fbHTML(ok, `${playBtn(it.say.s)}${tx(it.say)}<span>${esc(it.opts[it.a])}</span>`, it.why)); nextBar(ex,()=>done(res));
+    });
+    return;
+  }
+  if(it.t==="tiles"){
+    const bank=shuffle([...it.a, ...it.extra].map((o,i)=>({o,i}))); let built=[];
+    ex.insertAdjacentHTML("beforeend", `<p class="q">${esc(it.en)}</p><p class="sub" style="margin:0">Tap the tiles in order. Some tiles don't belong.</p>
+      <div class="built" id="built" aria-label="Your sentence"></div><div class="bank" id="bank">${bank.map(b=>`<button class="tile" data-k="${b.i}">${tx(b.o,{rom:romQ(),said:false})}</button>`).join("")}</div>
+      <div class="actions"><button class="btn primary" id="chk">Check</button><button class="btn" id="clr">Clear</button></div>`);
+    const draw=()=>{ $("built").innerHTML=built.map((b,j)=>`<button class="tile" data-j="${j}">${tx(b.o,{rom:romQ(),said:false})}</button>`).join("");
+      $("built").querySelectorAll("[data-j]").forEach(t=>t.onclick=()=>{ const b=built.splice(+t.dataset.j,1)[0]; ex.querySelector(`#bank [data-k="${b.i}"]`).classList.remove("used"); draw(); }); };
+    ex.querySelectorAll("#bank .tile").forEach(t=>t.onclick=()=>{ if(t.classList.contains("used")) return; t.classList.add("used"); built.push(bank.find(x=>x.i===+t.dataset.k)); draw(); });
+    $("clr").onclick=()=>{ built=[]; ex.querySelectorAll("#bank .tile").forEach(t=>t.classList.remove("used")); draw(); };
+    $("chk").onclick=()=>{
+      if(!built.length) return;
+      const mine=built.map(b=>b.o.s), target=it.a.map(o=>o.s), sep=YUE?"":" ";
+      const ok=[target,...it.alt].some(arr=>arr.join("|")===mine.join("|"));
+      ex.querySelector(".actions").remove(); ex.querySelectorAll(".tile").forEach(t=>t.disabled=true);
+      const res=[{id:it.id, ok, q:it.en, your:mine.join(sep), right:it.full.s, say:it.full.s, why:it.alt.length?"Also accepted: "+it.alt.map(a=>a.join(sep)).join(" · "):""}];
+      if(test) return done(res);
+      ex.insertAdjacentHTML("beforeend", fbHTML(ok, `${playBtn(it.full.s)}${tx(it.full)}`, res[0].why));
+      autoSay(it.full.s);
+      if(!ok){ const d=document.createElement("div"); d.className="row"; d.innerHTML=`<button class="linkbtn" id="mine">My order is also correct — count it</button>`; ex.appendChild(d);
+        $("mine").onclick=()=>{ res[0].ok=true; d.innerHTML='<span class="sub">Counted as correct for practice. Tests only accept the listed orders.</span>'; }; }
+      nextBar(ex,()=>done(res));
+    };
+    return;
+  }
+  if(it.t==="dlg"){
+    const results=[]; let k=0;
+    ex.insertAdjacentHTML("beforeend", `<h2 style="font-size:1.1rem">${esc(it.title)}</h2><div class="dl" id="dl"></div><div id="dopts"></div>`);
+    const step=()=>{
+      const dl=$("dl"), box=$("dopts"); box.innerHTML="";
+      while(k<it.turns.length && !it.turns[k].you){
+        const t=it.turns[k++];
+        dl.insertAdjacentHTML("beforeend", `<div class="line"><span class="who">${esc(t.who)}</span><div class="row">${playBtn(t.s.s,"",C.voice2)}${tx(t.s,{rom:romQ()||!test, said:false})}</div>${test?"":`<span class="en">${esc(t.en)}</span>`}</div>`);
+        if(!(k<it.turns.length && !it.turns[k].you)) autoSay(t.s.s,{voice:C.voice2});
+      }
+      if(k>=it.turns.length) return nextBar(ex,()=>done(results), test?"Next question":"Continue");
+      const t=it.turns[k], order=shuffle(t.opts.map((o,i)=>i)), prev=it.turns[k-1];
+      box.innerHTML=`<p class="sub" style="margin:4px 0 8px">Your reply:</p>`;
+      mcRender(box, "", order.map(i=>({key:String(i), html:tx(t.opts[i],{rom:romQ(),said:false})})), t.a, test, "", (kk,ok)=>{
+        results.push({id:it.id, ok, sk:t.sk, q:it.title+": "+(prev&&prev.s?prev.s.s:""), your:t.opts[+kk].s, right:t.opts[t.a].s, say:t.opts[t.a].s, why:t.why, pair:ok?null:t.opts[t.a].s+"→"+t.opts[+kk].s});
+        if(test){ dl.insertAdjacentHTML("beforeend", `<div class="line me"><span class="who">You</span>${tx(t.opts[+kk],{said:false})}</div>`); k++; return step(); }
+        box.insertAdjacentHTML("beforeend", fbHTML(ok,"",t.why));
+        const c=document.createElement("div"); c.className="actions"; c.innerHTML='<button class="btn primary" id="dcont">Continue the conversation</button>'; box.appendChild(c);
+        $("dcont").focus({preventScroll:true});
+        $("dcont").onclick=()=>{ dl.insertAdjacentHTML("beforeend", `<div class="line me"><span class="who">You</span><div class="row">${playBtn(t.opts[t.a].s)}${tx(t.opts[t.a],{said:false})}</div></div>`); speak(t.opts[t.a].s); k++; step(); };
+      });
+    };
+    step(); return;
+  }
+  mountDrill(ex, it, test, done);
+}
+function renderResult(){
+  const r=run, right=r.results.filter(x=>x.ok).length, total=r.results.length||1, score=right/total;
+  const misses=r.results.filter(x=>!x.ok), passed=score>=PASS-1e-9;
+  let head="";
+  if(r.mode==="test"){
+    if(!r.saved){ const p=P.lv[r.id]||{best:0,passed:false,tests:0}; P.lv[r.id]={best:Math.max(p.best||0,score), passed:!!(p.passed||passed), tests:(p.tests||0)+1, at:Date.now()}; saveP(); flushLR(); r.saved=true; }
+    head=`<span class="score ${passed?"pass":"fail"}">${right} / ${total}</span><h2>${passed?`Passed with ${Math.round(score*100)}%.${r.nextId?` ${esc(r.nextLabel)} is unlocked.`:" You finished this track."}`:`${Math.round(score*100)}%. You need ${Math.ceil(PASS*total)} of ${total} to pass.`}</h2>
+      ${passed?"":`<p style="margin:0">Review the misses below, practise the formats you missed most, then retake the test. Each attempt draws new questions.</p>`}`;
+  } else head=`<span class="score">${right} / ${total}</span><h2>Practice done.</h2>`;
+  $("view").innerHTML=`<div class="crumb"><button class="linkbtn" id="back">← ${esc(r.title)}</button></div><div class="panelbox result">${head}
+    <div class="row">${r.mode==="test"&&passed&&r.nextId?`<button class="btn primary" id="goNext">Go to ${esc(r.nextLabel)}</button>`:""}<button class="btn ${r.mode==="test"&&!passed?"primary":""}" id="again">${r.mode==="test"?"Retake the test":"Practice again"}</button></div>
+    ${misses.length?`<h3>${r.mode==="test"?"What you missed":"Review"}</h3>`+misses.map(m=>`<div class="miss"><span class="sub">${esc(m.q)}</span><span>You: <b lang="${C.htmlLang}">${esc(m.your)}</b></span><span>Answer: <b lang="${C.htmlLang}">${esc(m.right)}</b> ${m.say?playBtn(m.say):""}</span>${m.why?`<span class="sub">${prose(m.why)}</span>`:""}</div>`).join(""):""}</div>`;
+  $("back").onclick=()=>go(r.back); $("again").onclick=()=>r.retry(); if($("goNext")) $("goNext").onclick=()=>r.next();
+}
+
+/* ---------------- sound drills ---------------- */
+const TONE_NAME = {1:"high flat",2:"rises high",3:"middle flat",4:"lowest, falls",5:"rises a little",6:"low flat"};
+const NEAR = {1:[3,2],2:[5,1],3:[6,1,2],4:[6,5],5:[2,6],6:[3,4]};
+function patOptions(pat){
+  const t=pat.split(" ").map(Number), set=new Set([pat]);
+  const cands=[]; t.forEach((x,i)=>NEAR[x].forEach(y=>{ const c=t.slice(); c[i]=y; cands.push(c.join(" ")); }));
+  NEAR[t[0]].forEach(a=>NEAR[t[1]].forEach(b=>cands.push(a+" "+b)));
+  for(const c of shuffle(cands)){ if(set.size>=6) break; set.add(c); }
+  return shuffle([...set]);
+}
+const patHTML = p => p.split(" ").map(n=>`<span class="n">${n}</span>${contour(+n,36,24,true)}`).join("");
+function mountDrill(ex, it, test, done){
+  const finish=(ok, your, right, ans, why, pair)=>{
+    const res=[{id:it.id, ok, q:it.s, your, right, say:it.s, pair}];
+    if(test) return done(res);
+    ex.insertAdjacentHTML("beforeend", fbHTML(ok, ans, why)); nextBar(ex,()=>done(res));
+  };
+  if(it.t==="tone"){
+    ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen. Which tone is it?</p><div class="bigplay">${playBtn(it.s,"Play again")}<button class="play slow" type="button" data-say="${esc(it.s)}" data-rate="0.6">${PLAYSVG}Slower</button></div>`);
+    speak(it.s);
+    mcRender(ex, "", [1,2,3,4,5,6].map(n=>({key:String(n), html:`<span class="n">${n}</span>${contour(n,48,30,true)}<span class="sub">${TONE_NAME[n]}</span>`})), it.tone, test, "tones", (k,ok)=>
+      finish(ok, "tone "+k, "tone "+it.tone, `${playBtn(it.s)}${tx({s:it.s,r:it.r},{cls:"big"})}${it.en?`<span>${esc(it.en)}</span>`:""}`, ok?"":`You heard tone ${k}. Play it again and compare with the tone chart in the guide.`, ok?null:"tone "+it.tone+"→tone "+k));
+    return;
+  }
+  if(it.t==="tpat"){
+    ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen. What are the two tones?</p><div class="bigplay">${playBtn(it.s,"Play again")}<button class="play slow" type="button" data-say="${esc(it.s)}" data-rate="0.6">${PLAYSVG}Slower</button></div>`);
+    speak(it.s);
+    mcRender(ex, "", patOptions(it.pat).map(p=>({key:p, html:patHTML(p)})), it.pat, test, "grid", (k,ok)=>
+      finish(ok, "tones "+k, "tones "+it.pat, `${playBtn(it.s)}${tx({s:it.s,r:it.r},{cls:"big"})}<span>${esc(it.en)}</span>`, "", ok?null:"tones "+it.pat+"→tones "+k));
+    return;
+  }
+  if(it.t==="letter"){
+    const me=DITEMS[it.src], pool=Object.values(DITEMS).filter(x=>x.t==="letter" && x.id!==me.id && (x.kind==="vowel")===(me.kind==="vowel") && x.rom!==me.rom);
+    const opts=shuffle([me,...shuffle(pool).slice(0,5)]);
+    ex.insertAdjacentHTML("beforeend", `<p class="qen">What sound does this letter make?</p><div>${tx({s:it.s},{cls:"huge",rom:false})}</div>`);
+    mcRender(ex, "", opts.map(x=>({key:x.id, html:`<span style="font-family:var(--f-mono);font-size:1.1rem">${esc(x.rom)}</span>`})), me.id, test, "grid", (k,ok)=>
+      finish(ok, DITEMS[k].rom, it.rom, `${tx({s:it.s},{cls:"big",rom:false})}<span style="font-family:var(--f-mono)">${esc(it.rom)}</span><span>${esc(it.how)}</span><span class="sub">Example <span lang="ko">${esc(it.ex)}</span></span>${playBtn(it.ex)}`, "", ok?null:it.s+"→"+DITEMS[k].s));
+    if(!test) speak(it.ex);
+    return;
+  }
+  if(it.t==="trio"){
+    ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen. Plain, puffed or tight?</p><div class="bigplay">${playBtn(it.s,"Play again")}</div>`);
+    speak(it.s);
+    mcRender(ex, "", it.set.map(s=>({key:s, html:`${tx({s},{cls:"big",rom:false})}${playBtn(s)}`})), it.s, test, "grid", (k,ok)=>
+      finish(ok, k, it.s, `${tx({s:it.s},{cls:"big",rom:false})}${playBtn(it.s)}`, "Plain: light, little air. Puffed (ㅋ ㅌ ㅍ ㅊ): a burst of air. Tight (ㄲ ㄸ ㅃ ㅆ ㅉ): no air, tense throat.", ok?null:it.s+"→"+k));
+    return;
+  }
+  if(it.t==="read"){
+    const me=DITEMS[it.src], pool=shuffle(Object.values(DITEMS).filter(x=>x.t==="read" && x.id!==me.id && x.r!==me.r)).slice(0,5);
+    if(Math.random()<0.5){
+      ex.insertAdjacentHTML("beforeend", `<p class="qen">Sound it out. Which romanization matches?</p><div>${tx({s:it.s},{cls:"huge",rom:false})}</div>`);
+      mcRender(ex, "", shuffle([me,...pool]).map(x=>({key:x.id, html:`<span style="font-family:var(--f-mono);font-size:1.05rem">${esc(x.r)}</span>`})), me.id, test, "grid", (k,ok)=>
+        finish(ok, DITEMS[k].r, it.r, `${playBtn(it.s)}${tx({s:it.s,r:it.r,p:it.p},{cls:"big"})}<span>${esc(it.en)}</span>`, "", null));
+    } else {
+      ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen. Which word did you hear?</p><div class="bigplay">${playBtn(it.s,"Play again")}</div>`);
+      speak(it.s);
+      mcRender(ex, "", shuffle([me,...pool]).map(x=>({key:x.id, html:tx({s:x.s},{rom:false})})), me.id, test, "grid", (k,ok)=>
+        finish(ok, DITEMS[k].s, it.s, `${playBtn(it.s)}${tx({s:it.s,r:it.r,p:it.p},{cls:"big"})}<span>${esc(it.en)}</span>`, "", null));
+    }
+    return;
+  }
+  if(it.t==="sound"){
+    ex.insertAdjacentHTML("beforeend", `<p class="qen">How is this said in normal speech?</p><div>${tx({s:it.s},{cls:"big",rom:false})}</div><p class="sub" style="margin:0">${esc(it.en)}</p>`);
+    mcRender(ex, "", shuffle([it.p,...it.wrong]).map(p=>({key:p, html:tx({s:p},{rom:false})})), it.p, test, "grid", (k,ok)=>
+      finish(ok, k, it.p, `${playBtn(it.s)}<span class="said">said like <span class="tg" lang="ko">${esc(it.p)}</span></span>`, "See “Spelling vs speech” in the guide for the rules.", null));
+    return;
+  }
+  if(it.t==="card") return mountCard(ex, it, done);
+}
+function drillTest(id){ return shuffle(DS[id].items.map(x=>ALL["d:"+x].it)).slice(0,30); }
+function startDrill(id, mode){
+  const pool=DS[id].items.map(x=>ALL["d:"+x].it);
+  const units = mode==="test" ? drillTest(id) : weightedPick(pool, 15);
+  const nx=DORDER[DORDER.indexOf(id)+1];
+  launch({id, title:DS[id].title, chip:DS[id].title, mode, units, nextId:nx, nextLabel:nx?DS[nx].title:"", back:{name:"drill",id,tab:mode}, retry:()=>startDrill(id,mode), next:()=>go({name:"drill",id:nx,tab:"study"})});
+}
+function renderDrill(){
+  const d=DS[view.id], p=P.lv[d.id]||{}; const nx=DORDER[DORDER.indexOf(d.id)+1];
+  const tabs=[["study","Study"],["practice","Practice"],["test","Test"]];
+  let body="";
+  if(view.tab==="study"){
+    const items=d.items.map(x=>DITEMS[x]);
+    if(YUE){
+      body=`<div class="panelbox"><h3>The six tones</h3><div class="row" style="gap:14px">${[1,2,3,4,5,6].map(n=>`<span style="display:inline-flex;align-items:center;gap:6px"><b style="font:700 1.3rem var(--f-mono);color:var(--accent)">${n}</b>${contour(n,48,30,true)}<span class="sub">${TONE_NAME[n]}</span></span>`).join("")}</div>
+        <p style="margin:0">Tones 3, 6 and 4 are three steps down: middle, low, lowest. Tones 2 and 5 both rise: 2 rises high, 5 rises only a little. The full explanation with audio is in the guide.</p></div>
+        <div class="panelbox"><h3>In this set · ${items.length}</h3><div class="row">${items.slice(0,60).map(i=>`<button class="say" type="button" data-say="${esc(i.s)}">${PLAYSVG}<span class="cjk" lang="zh-HK" style="font-family:var(--f-tg)">${esc(i.s)}</span> <span class="r" style="font-family:var(--f-mono);color:var(--muted)">${esc(i.r)}</span></button>`).join("")}</div></div>`;
+    } else {
+      body=`<div class="panelbox"><h3>In this set · ${items.length}</h3><div class="tablewrap"><table class="vtable">${items.map(i=>{
+        if(i.t==="letter") return `<tr><td>${playBtn(i.ex)}</td><td><span class="tg" style="font-size:1.6rem">${esc(i.s)}</span> <b style="font-family:var(--f-mono)">${esc(i.rom)}</b><div class="en">${esc(i.how)}</div></td></tr>`;
+        if(i.t==="trio") return `<tr><td>${playBtn(i.s)}</td><td><span class="tg" style="font-size:1.4rem">${esc(i.s)}</span> <span class="sub">from the set ${esc(i.set.join(" · "))}</span></td></tr>`;
+        if(i.t==="read") return `<tr><td>${playBtn(i.s)}</td><td>${tx({s:i.s,r:i.r,p:i.p})}<div class="en">${esc(i.en)}</div></td></tr>`;
+        return `<tr><td>${playBtn(i.s)}</td><td>${tx({s:i.s})} → <span class="said">said like <span class="tg">${esc(i.p)}</span></span><div class="en">${esc(i.en)}</div></td></tr>`; }).join("")}</table></div></div>`;
+    }
+  } else if(view.tab==="practice"){
+    body=`<div class="panelbox"><h3>Practice</h3><p style="margin:0">Fifteen cards with feedback after each. Cards you miss come back more often.</p><div class="row"><button class="btn primary" id="startD">Start practice</button></div></div>`;
+  } else {
+    body=`<div class="panelbox"><h3>Test</h3><p style="margin:0">${Math.min(30,d.items.length)} cards drawn at random, no feedback until the end. 90% passes${nx?` and unlocks ${esc(DS[nx].title)}`:""}.</p>
+      <p class="sub" style="margin:0">${p.tests?`Tests taken: ${p.tests} · best ${Math.round(p.best*100)}%${p.passed?" · passed":""}`:"You haven't taken this test yet."}</p><div class="row"><button class="btn primary" id="startDT">Start the test</button></div></div>`;
+  }
+  $("view").innerHTML=`<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← Home</button><span class="chip">Sounds ${esc(d.id)}</span>${p.passed?'<span class="chip">Passed</span>':""}</div><h2>${esc(d.title)}</h2><p class="intro" style="margin:0">${esc(d.sub)}</p></div>
+    <div class="tabs" role="tablist">${tabs.map(([k,n])=>`<button role="tab" data-tab="${k}" aria-selected="${view.tab===k}">${n}</button>`).join("")}</div>${body}`;
+  $("back").onclick=()=>go({name:"home"});
+  $("view").querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>go({name:"drill",id:d.id,tab:b.dataset.tab}));
+  document.querySelectorAll("button.say").forEach(b=>{ if(!b.querySelector("svg")) b.insertAdjacentHTML("afterbegin",PLAYSVG); });
+  if($("startD")) $("startD").onclick=()=>startDrill(d.id,"practice");
+  if($("startDT")) $("startDT").onclick=()=>startDrill(d.id,"test");
+}
+
+/* ---------------- Cards (self-graded flashcards over unlocked levels) ---------------- */
+const CDIRS = YUE ? [["rec","See & hear","characters + audio → meaning"],["listen","Listen only","audio → meaning"],["say","Say it","English → Cantonese"]]
+                  : [["rec","Recognize","Hangul + audio → meaning"],["say","Say it","English → Korean"]];
+if(!CDIRS.some(d=>d[0]===S.cdir)) S.cdir="rec";
+const cardId = (dir, vid) => `c:${dir}:${vid}`;
+function cardPool(){
+  return LEVELS.filter(l=>unlocked(l.id) && (S.clv==="all"||S.clv===l.id)).flatMap(l=>l.vocab).map(v=>({t:"card", id:cardId(S.cdir,v.id), v:v.id, dir:S.cdir, sk:S.cdir==="listen"?["s:listen","s:vocab"]:["s:vocab"], w:[v.id]}));
+}
+function renderCards(){
+  const pool=cardPool(), d=today();
+  const due=pool.filter(c=>LR.srs[c.id] && LR.srs[c.id][1]<=d), fresh=pool.filter(c=>!LR.srs[c.id]), learned=pool.filter(c=>LR.srs[c.id] && LR.srs[c.id][0]>=3);
+  const nNew=Math.min(fresh.length, +S.cnew), total=Math.min(40, due.length+nNew);
+  $("view").innerHTML=`<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← Home</button></div><h2>Cards</h2>
+      <p class="intro" style="margin:0">Flashcards for every word and phrase in your unlocked levels. Say the answer out loud, reveal, then grade yourself honestly; cards come back on a review schedule.</p></div>
+    <div class="tabs" role="tablist">${CDIRS.map(([k,n,s])=>`<button role="tab" data-cd="${k}" aria-selected="${S.cdir===k}">${n}<small>${s}</small></button>`).join("")}</div>
+    <div class="panelbox"><div class="row">
+      <label class="sub" for="c-lv">Levels <select id="c-lv"><option value="all">All unlocked</option>${LEVELS.filter(l=>unlocked(l.id)).map(l=>`<option value="${l.id}">Level ${l.n}: ${esc(l.title)}</option>`).join("")}</select></label>
+      <label class="sub" for="c-new">New cards <select id="c-new"><option>5</option><option>10</option><option>15</option><option>20</option><option>30</option></select></label>
+      <label class="check sub" for="c-rom" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="c-rom"> Show ${ROM} before the answer</label></div>
+      <p style="margin:0"><b>${due.length}</b> due · <b>${fresh.length}</b> new · <b>${learned.length}</b> of <b>${pool.length}</b> learned</p>
+      <div class="row"><button class="btn primary" id="c-start" ${total?"":"disabled"}>Study ${total} cards</button>${!total&&pool.length?`<button class="btn" id="c-early">Review early</button>`:""}</div></div>
+    <details class="panelbox"><summary><b>Bring over progress from the old ${esc(C.name)} Flashcards page</b></summary>
+      <ol style="margin:8px 0 0;padding-left:20px"><li>Open the <b>${esc(C.name)} Flashcards</b> page on claude.ai, scroll to the bottom and press <b>Copy my progress</b>.</li><li>Come back here, click in the box below and paste (⌘V on a Mac).</li><li>Press <b>Import</b>.</li></ol>
+      <textarea id="impText" rows="3" style="width:100%;font:.8rem var(--f-mono);margin-top:8px" placeholder="Paste here"></textarea>
+      <div class="row"><button class="btn" id="impBtn">Import</button><span class="sub" id="impMsg"></span></div></details>`;
+  $("c-lv").value=S.clv; if(!$("c-lv").value){ S.clv="all"; $("c-lv").value="all"; }
+  $("c-new").value=S.cnew; $("c-rom").checked=!!S.romCard;
+  $("c-lv").onchange=e=>{ S.clv=e.target.value; saveS(); renderCards(); };
+  $("c-new").onchange=e=>{ S.cnew=e.target.value; saveS(); renderCards(); };
+  $("c-rom").onchange=e=>{ S.romCard=e.target.checked; saveS(); };
+  $("view").querySelectorAll("[data-cd]").forEach(b=>b.onclick=()=>{ S.cdir=b.dataset.cd; saveS(); renderCards(); });
+  $("back").onclick=()=>go({name:"home"});
+  const go_=units=>launch({id:"cards", title:"Cards", chip:"Cards", mode:"practice", units, src:"cards", requeue:true, back:{name:"cards"}, retry:()=>go({name:"cards"})});
+  $("c-start").onclick=()=>{ const q=due.sort((a,b)=>LR.srs[a.id][1]-LR.srs[b.id][1]).slice(0,40); go_(q.concat(shuffle(fresh).sort((a,b)=>VOC[a.v].lv.localeCompare(VOC[b.v].lv,undefined,{numeric:true})).slice(0,Math.max(0,Math.min(nNew,40-q.length))))); };
+  if($("c-early")) $("c-early").onclick=()=>go_(weightedPick(pool.filter(c=>LR.srs[c.id]),20));
+  $("impBtn").onclick=()=>{ try{ const n=importOld($("impText").value); $("impMsg").textContent=n?`Imported ${n} cards.`:"Nothing new to import."; if(n) setTimeout(renderCards,900); }catch(e){ $("impMsg").textContent="That didn't look like copied progress. Copy it again from the flashcards page."; } };
+}
+function mountCard(ex, it, done){
+  const v=VOC[it.v], rom=S.romCard;
+  if(it.dir==="rec"){ ex.insertAdjacentHTML("beforeend", `<p class="qen">What does it mean? Say it out loud first.</p><div class="q">${tx(v.t,{cls:"big",rom,said:false})}</div><div class="bigplay">${playBtn(v.t.s,"Play")}</div>`); speak(v.t.s); }
+  else if(it.dir==="listen"){ ex.insertAdjacentHTML("beforeend", `<p class="qen">Listen. What does it mean? Answer out loud.</p><div class="bigplay">${playBtn(v.t.s,"Play again")}<button class="play slow" type="button" data-say="${esc(v.t.s)}" data-rate="0.6">${PLAYSVG}Slower</button></div>`); speak(v.t.s); }
+  else ex.insertAdjacentHTML("beforeend", `<p class="qen">How do you say this in ${esc(C.name)}? Say it out loud, then reveal.</p><p class="q">${esc(v.en)}</p>`);
+  ex.insertAdjacentHTML("beforeend", `<div class="actions"><button class="btn primary" id="show">Show answer</button></div>`);
+  $("show").focus({preventScroll:true});
+  $("show").onclick=()=>{
+    ex.querySelector(".actions").remove();
+    ex.insertAdjacentHTML("beforeend", `<div class="fb"><div class="ans">${playBtn(v.t.s)}${tx(v.t,{cls:"big"})}</div><span>${esc(v.en)}</span>${v.note?`<p class="why">${v.old?esc(v.note):prose(v.note)}</p>`:""}</div>
+      <p class="sub" style="margin:0">How did you do?</p><div class="grades">${["Again","Hard","Good","Easy"].map((g,i)=>`<button class="btn g${i}" data-g="${i}">${g}</button>`).join("")}</div>`);
+    if(it.dir==="say") speak(v.t.s);
+    const grade=g=>done([{id:it.id, ok:g>=2, grade:g, q:it.dir==="say"?v.en:v.t.s, your:["Again","Hard","Good","Easy"][g], right:it.dir==="say"?v.t.s:v.en, say:v.t.s}]);
+    ex.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>grade(+b.dataset.g));
+    ex.querySelector('[data-g="2"]').focus({preventScroll:true});
+  };
+}
+function importOld(text){
+  const o=JSON.parse(String(text).trim()); if(!o || !o.srs) throw new Error("bad");
+  const byOld={}; Object.values(VOC).forEach(v=>{ if(v.old) byOld[v.old]=v; });
+  let n=0;
+  for(const key in o.srs){
+    const dir=key.split("vocab-")[1]; if(!dir || !CDIRS.some(d=>d[0]===dir)) continue;
+    for(const oid in o.srs[key]){
+      const v=byOld[oid]; if(!v) continue; const rec=o.srs[key][oid], nid=cardId(dir,v.id), cur=LR.srs[nid];
+      const box = !rec.reps ? 0 : rec.ivl<=1?1 : rec.ivl<=2?2 : rec.ivl<=5?3 : rec.ivl<=12?4 : rec.ivl<=30?5 : 6;
+      const last=dayOf(rec.due ? rec.due - rec.ivl*864e5 : Date.now());
+      if(cur && cur[4]>=last) continue;
+      LR.srs[nid]=[box, Math.max(dayOf(rec.due||Date.now()), today()), (cur?cur[2]:0)+Math.max(1,rec.reps|0), (cur?cur[3]:0)+Math.max(0,(rec.reps|0)-(rec.lapses|0)), last];
+      dirtyDocs.add("srs-C"); n++;
+    }
+  }
+  if(n){ LR.mig.cards=true; dirtyDocs.add("learner"); saveLR(); }
+  return n;
+}
+
+/* ---------------- Today ---------------- */
+const frontier = () => LIDS.find(id=>unlocked(id) && !(P.lv[id]&&P.lv[id].passed));
+const frontierDrill = () => DORDER.find(id=>drillUnlocked(id) && !(P.lv[id]&&P.lv[id].passed));
+function skillRows(){ return Object.entries(LR.sk).filter(([s])=>SKILLS[s]).map(([s,[a,n,last]])=>({id:s,a,n,last,ready:n>=MIN_N})).sort((x,y)=>(y.ready-x.ready)||(x.a-y.a)||(y.n-x.n)); }
+const weakSkills = () => skillRows().filter(r=>r.ready && r.a<WEAK);
+function poolForSkill(s){ return Object.values(ALL).filter(a=>(a.it.sk||[]).includes(s) && itemAvailable(a.it.id)).map(a=>a.it); }
+function buildToday(){
+  const d=today(), N=20, used=new Set(), units=[], counts={due:0,weak:0,fresh:0};
+  const add=(it,k)=>{ if(!it||used.has(it.id)) return false; used.add(it.id); units.push(it); counts[k]++; return true; };
+  const weak=weakSkills().slice(0,3).map(r=>r.id);
+  const due=Object.keys(LR.srs).filter(id=>LR.srs[id][1]<=d && itemAvailable(id) && !id.startsWith("c:")).map(id=>ALL[id]&&ALL[id].it).filter(Boolean)
+    .sort((a,b)=>{ const wa=(a.sk||[]).some(s=>weak.includes(s)), wb=(b.sk||[]).some(s=>weak.includes(s)); return (wb-wa)||(LR.srs[a.id][1]-LR.srs[b.id][1]); });
+  due.slice(0,12).forEach(it=>add(it,"due"));
+  for(const s of weak) weightedPick(poolForSkill(s).filter(it=>!used.has(it.id)),2).forEach(it=>add(it,"weak"));
+  const fl=frontier(), fd=frontierDrill();
+  const pools=[fl?shuffle(lvItems(fl).filter(it=>it.t!=="dlg" && !LR.srs[it.id])):[], fd?shuffle(DS[fd].items.map(x=>ALL["d:"+x].it).filter(it=>!LR.srs[it.id])):[]];
+  let guard=0; while(units.length<N && pools.some(p=>p.length) && guard++<200) for(const p of pools){ if(units.length>=N) break; while(p.length && !add(p.shift(),"fresh")); }
+  if(units.length<N){ const seen=Object.keys(LR.srs).filter(id=>itemAvailable(id)&&!used.has(id)&&ALL[id]).map(id=>ALL[id].it); weightedPick(seen,N-units.length).forEach(it=>add(it,"due")); }
+  return {units:shuffle(units), counts, weak, fl, fd};
+}
+function startToday(){ const t=buildToday(); if(!t.units.length) return; launch({id:"today", title:"Today", chip:"Today", mode:"practice", units:t.units, src:"today", requeue:true, back:{name:"home"}, retry:startToday}); }
+function todayPanel(){
+  const t=buildToday(), weak=weakSkills().slice(0,3), seenAny=Object.keys(LR.srs).length>0;
+  const parts=[]; if(t.counts.due) parts.push(`${t.counts.due} review${t.counts.due>1?"s":""}`); if(t.counts.weak) parts.push(`${t.counts.weak} for weak spots`); if(t.counts.fresh) parts.push(`${t.counts.fresh} new`);
+  const cdue=Object.keys(LR.srs).filter(id=>id.startsWith("c:")&&LR.srs[id][1]<=today()&&itemAvailable(id)).length;
+  return `<section class="panelbox today"><div class="row" style="justify-content:space-between;align-items:flex-start">
+    <div style="min-width:0"><h2>Today</h2><p class="sub" style="margin:2px 0 0">${t.units.length?`${t.units.length} questions: ${parts.join(" · ")}.`:"Nothing to study yet."} ${seenAny?"":`Starts with Level ${t.fl?LV[t.fl].n:1}${t.fd?` and ${esc(DS[t.fd].title)}`:""}; reviews and weak spots appear as you answer.`}</p>
+    ${weak.length?`<p style="margin:8px 0 0">Weakest right now: ${weak.map(w=>`<span class="chip warn">${esc(skName(w.id))} ${Math.round(w.a*100)}%</span>`).join(" ")}</p>`:""}</div>
+    <div class="row"><button class="btn primary" id="startToday" ${t.units.length?"":"disabled"}>Start today's session</button><button class="btn" id="openCards">Cards${cdue?` · ${cdue} due`:""}</button><button class="btn" id="openWeak">Weak spots</button></div></div></section>`;
+}
+function wireToday(){ $("startToday").onclick=startToday; $("openWeak").onclick=()=>go({name:"weak"}); $("openCards").onclick=()=>go({name:"cards"}); }
+
+/* ---------------- Weak spots ---------------- */
+function recentLog(days, f){ const cut=Date.now()-days*864e5; return LR.log.filter(e=>e.t>=cut && (!f||f(e))); }
+function confusions(days){
+  const m=new Map();
+  recentLog(days, e=>!e.ok && e.c).forEach(e=>{ const c=m.get(e.c)||{key:e.c,n:0,ex:[]}; c.n++; c.ex.unshift(e); m.set(e.c,c); });
+  return [...m.values()].filter(c=>c.n>=2).sort((a,b)=>b.n-a.n);
+}
+function confText(key){ const [want,got]=key.split("→"); return /^tones? /.test(want) ? `Heard ${got} instead of ${want}` : `Chose ${got} instead of ${want}`; }
+function weakWords(){ return Object.entries(LR.w).filter(([k,[a,n]])=>n>=2 && a<0.75 && VOC[k]).sort((x,y)=>x[1][0]-y[1][0]).slice(0,12).map(([k,[a,n]])=>({v:VOC[k],a,n})); }
+function startFocus(title, pool, n){ const units=weightedPick(pool,n||12); if(!units.length) return false; launch({id:"focus", title:"Weak spots", chip:title, mode:"practice", units, src:"focus", back:{name:"weak"}, retry:()=>startFocus(title,pool,n)}); }
+function goStudy(t){ if(DS[t]) return go({name:"drill",id:t,tab:"study"}); if(LV[t]) return go({name:"level",id:t,tab:"learn"}); }
+function renderWeak(){
+  const rows=skillRows(), conf=confusions(14), words=weakWords();
+  const talks=LR.log.filter(e=>e.s==="talk").slice(-8).reverse(), total=LR.log.filter(e=>e.s!=="talk").length;
+  const lvReview=LIDS.concat(DORDER).filter(id=>P.lv[id]&&P.lv[id].passed).map(id=>({id, st:reviewState(LVSET[id]||DSET[id])})).filter(x=>x.st.needs);
+  const bar=a=>`<span class="bar" style="max-width:120px"><i style="width:${Math.round(a*100)}%;background:${a<WEAK?"var(--bad)":a<0.9?"var(--warn)":"var(--ok)"}"></i></span>`;
+  const skillHTML = rows.length ? `<div class="tablewrap"><table class="vtable sk">${rows.map(r=>`<tr><td><b>${esc(skName(r.id))}</b>${r.ready?"":`<br><span class="sub">${r.n} answer${r.n>1?"s":""}; needs ${MIN_N} to rate</span>`}</td><td class="num">${r.ready?Math.round(r.a*100)+"%":"—"}</td><td>${r.ready?bar(r.a):""}</td>
+      <td class="acts"><button class="btn sm" data-fs="${r.id}">Practice</button> ${SKILLS[r.id][1]?`<button class="linkbtn" data-study="${SKILLS[r.id][1]}">Study</button>`:""} <button class="linkbtn" data-gen="${r.id}">AI practice</button></td></tr>`).join("")}</table></div>`
+    : `<p style="margin:0">No answers recorded yet. Skills appear here as you practise; each is rated after ${MIN_N} answers.</p>`;
+  const confHTML = conf.length ? conf.slice(0,6).map(c=>`<div class="conf"><div class="row" style="justify-content:space-between"><b lang="${C.htmlLang}">${esc(confText(c.key))}</b><span class="chip warn">${c.n}× in 2 weeks</span></div>
+      ${c.ex.slice(0,2).map(e=>`<span class="sub">${esc(e.q||"")}</span>`).join("")}<div class="row"><button class="btn sm" data-fc="${esc(c.key)}">Practice these</button></div></div>`).join("")
+    : `<p style="margin:0">${total<20?"Patterns show up after a few sessions.":"No repeated mix-up in the last two weeks."}</p>`;
+  const wordHTML = words.length ? `<div class="tablewrap"><table class="vtable">${words.map(w=>`<tr><td>${playBtn(w.v.t.s)}</td><td>${tx(w.v.t)}<div class="en">${esc(w.v.en)} · ${Math.round(w.a*100)}%</div></td></tr>`).join("")}</table></div><div class="row"><button class="btn sm" id="practiceWords">Practice these words</button></div>` : `<p style="margin:0">No words flagged yet.</p>`;
+  $("view").innerHTML=`<div class="lvhead"><div class="crumb"><button class="linkbtn" id="back">← Home</button></div><h2>Weak spots</h2><p class="intro" style="margin:0">Built from ${total} recorded answers. Recent answers count most. A skill is flagged below ${Math.round(WEAK*100)}%.</p></div>
+    <div class="panelbox"><h3>Coach's read</h3><div id="diag">${LR.diag?diagHTML(LR.diag):`<p style="margin:0">An AI coach reads your record and tells you what to work on next.</p>`}</div>
+      <div class="row"><button class="btn" id="getDiag" ${total<15?"disabled":""}>${LR.diag?"Refresh the read":"Get a read on my weak spots"}</button>${total<15?`<span class="sub">Available after 15 answers.</span>`:""}<span class="sub" id="diagStatus"></span></div></div>
+    <div class="panelbox"><h3>Mix-ups · last 2 weeks</h3>${confHTML}</div>
+    <div class="panelbox"><h3>Skills</h3>${skillHTML}</div>
+    <div class="panelbox"><h3>Words to review</h3>${wordHTML}</div>
+    ${lvReview.length?`<div class="panelbox"><h3>Passed sets that need review</h3>${lvReview.map(x=>`<div class="row" style="justify-content:space-between"><span><b>${LV[x.id]?"Level "+LV[x.id].n:esc(DS[x.id].title)}</b> <span class="sub">${x.st.due} due${x.st.acc!==null?` · recent ${Math.round(x.st.acc*100)}%`:""}</span></span><button class="btn sm" data-rl="${x.id}">Review</button></div>`).join("")}</div>`:""}
+    <div class="panelbox"><h3>From your conversations</h3>${talks.length?talks.map(e=>`<div class="miss" style="border:0;padding:0"><span>You: <b lang="${C.htmlLang}">${esc(e.y)}</b></span><span>Better: <b lang="${C.htmlLang}">${esc(e.r)}</b> ${playBtn(e.r,"","",)}</span><span class="sub">${esc(skName(e.e))}${e.q?" · "+esc(e.q):""}</span></div>`).join(""):`<p style="margin:0">Corrections from Talk conversations appear here.</p>`}</div>
+    <p class="sub">AI practice is generated on the spot and hasn't been reviewed like the rest of the course; it doesn't change your record.</p>`;
+  $("back").onclick=()=>go({name:"home"});
+  const none=b=>{ b.textContent="No unlocked questions yet"; b.disabled=true; };
+  $("view").querySelectorAll("[data-fs]").forEach(b=>b.onclick=()=>{ if(startFocus(skName(b.dataset.fs), poolForSkill(b.dataset.fs))===false) none(b); });
+  $("view").querySelectorAll("[data-fc]").forEach(b=>b.onclick=()=>{ const key=b.dataset.fc; const ids=new Set(LR.log.filter(e=>e.c===key).map(e=>e.id)); if(startFocus(confText(key), [...ids].map(id=>ALL[id]&&ALL[id].it).filter(Boolean), 8)===false) none(b); });
+  $("view").querySelectorAll("[data-study]").forEach(b=>b.onclick=()=>goStudy(b.dataset.study));
+  $("view").querySelectorAll("[data-gen]").forEach(b=>b.onclick=()=>genPractice(b.dataset.gen, b));
+  $("view").querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{ const id=b.dataset.rl, set=LVSET[id]||DSET[id], d=today(); const pool=[...set].filter(i=>LR.srs[i]).map(i=>ALL[i].it); const due=pool.filter(i=>LR.srs[i.id][1]<=d); startFocus("Review", due.length>=6?due:pool); });
+  if($("practiceWords")) $("practiceWords").onclick=()=>startFocus("Words to review", words.flatMap(w=>[ALL[w.v.id+":vm"].it, ALL[w.v.id+":vl"].it, ALL[w.v.id+":ve"].it]));
+  $("getDiag").onclick=getDiagnosis;
+}
+
+/* ---------------- AI: talk, coach, generated practice ---------------- */
+let talk=null, sampleFn;
+async function getSample(){ if(sampleFn!==undefined) return sampleFn; try{ sampleFn=(window.claude&&window.claude.use)?await window.claude.use("sample"):null; }catch(e){ sampleFn=null; } return sampleFn; }
+function aiError(e){
+  const code=e&&e.code;
+  if(code==="not_granted"||code==="sampling_disabled"||code==="not_declared"||code==="capability_disabled") return (e&&e.message&&window.SH_HOSTED)?e.message:"AI isn't available on this page. The rest of the course works without it.";
+  if(code==="rate_limited") return (e&&e.message)||"Too many requests right now. Try again in a little while.";
+  if(code==="session_expired") return "You were signed out. Reload the page to sign in again.";
+  if(code==="invalid_json"||code==="empty_completion") return "The reply came back in an unexpected form. Try again.";
+  if(code==="cancelled") return "";
+  return ((e&&e.message)||"Something went wrong.")+" Try again.";
+}
+const LEARNER = YUE ? "an American adult learning colloquial Hong Kong Cantonese from scratch" : "an American adult learning Korean from scratch";
+const RULES = YUE
+  ? `Write colloquial spoken Hong Kong Cantonese in Traditional characters (係 唔 冇 佢 嘅 咗 喺 嚟 啲), never written Chinese or Mandarin. Give LSHK Jyutping with tone numbers on every syllable, using the tones people actually say.`
+  : `Write natural standard Korean in the polite -요 style (fixed formal phrases like 감사합니다 are fine). Give Revised Romanization of how it is pronounced.`;
+function levelScope(l){ return LEVELS.slice(0,l.n).map(x=>`L${x.n} ${x.title}: ${x.notes.map(g=>g.h).join("; ")}`).join("\n"); }
+function startTalk(l,i){ const r=l.roleplay[i]; talk={l, r, lines:[{who:"them", t:r.opening, en:r.opening_en}], done:new Set(), busy:false, ctl:null}; view={name:"talk"}; renderTalk(); autoSay(r.opening.s,{voice:C.voice2}); }
+function renderTalk(){
+  const t=talk, r=t.r;
+  $("view").innerHTML=`<div class="crumb"><button class="linkbtn" id="back">← ${esc(t.l.title)}</button><span class="chip">Level ${t.l.n} · Talk</span></div>
+    <div class="panelbox"><h2>${esc(r.title)}</h2><p style="margin:0">${esc(r.setup)}</p><ul class="goals" id="goals">${r.goals.map((g,i)=>`<li class="${t.done.has(i)?"done":""}">${esc(g)}</li>`).join("")}</ul></div>
+    <section class="card"><div class="chat" id="chat"></div><div id="talkstatus" class="sub"></div>
+      <div class="answer"><input type="text" id="msg" autocomplete="off" spellcheck="false" placeholder="${YUE?"Type in characters, Jyutping or English":"Type in Hangul, romanization or English"}"><button class="btn primary" id="send">Send</button></div>
+      <div class="row"><button class="btn" id="finish">Finish and get feedback</button><button class="linkbtn" id="stop" hidden>Stop</button></div><div id="summary"></div></section>
+    <p class="sub">Practice only. The AI's ${esc(C.name)}${YUE?" and Jyutping":""} isn't checked the way the course is.</p>`;
+  drawChat();
+  $("back").onclick=()=>{ t.ctl&&t.ctl.abort(); go({name:"level",id:t.l.id,tab:"talk"}); };
+  $("send").onclick=sendTalk; $("msg").addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); sendTalk(); } });
+  $("finish").onclick=finishTalk; $("stop").onclick=()=>t.ctl&&t.ctl.abort();
+}
+function drawChat(){
+  const c=$("chat"); if(!c) return;
+  c.innerHTML=talk.lines.map(x=>x.who==="them"
+    ? `<div class="line"><span class="who">Them</span><div class="row">${playBtn(x.t.s,"",C.voice2).replace("<button","<button data-live=\"1\"")}${tx(x.t,{said:false})}</div>${x.en?`<details><summary class="sub">English</summary><span class="en">${esc(x.en)}</span></details>`:""}</div>`
+    : `<div class="line me"><span class="who">You</span><span lang="${C.htmlLang}">${esc(x.text)}</span></div>${x.fb?`<div class="corr ${x.fb.ok?"good":""}"><b>${x.fb.ok?"Good.":"Better:"}</b>${x.fb.c&&x.fb.c.s?`<div class="row">${playBtn(x.fb.c.s).replace("<button","<button data-live=\"1\"")}${tx(x.fb.c,{said:false})}</div>`:""}${x.fb.note?`<span class="sub">${esc(x.fb.note)}</span>`:""}</div>`:""}`).join("");
+}
+function transcript(){ return talk.lines.map(x=>x.who==="them"?`OTHER PERSON: ${x.t.s}`:`LEARNER: ${x.text}`).join("\n"); }
+const T_ = (s,r) => ({s:String(s||""), r:String(r||"")});
+async function sendTalk(){
+  const t=talk; if(t.busy) return; const inp=$("msg"), text=inp.value.trim(); if(!text) return;
+  const sample=await getSample(); if(!sample){ $("talkstatus").textContent="AI isn't available here."; return; }
+  t.lines.push({who:"me", text}); inp.value=""; drawChat();
+  t.busy=true; $("send").disabled=true; $("stop").hidden=false; $("talkstatus").textContent="Thinking…";
+  const r=t.r, l=t.l;
+  const prompt=`You are a role-play partner for ${LEARNER}. They are a beginner.
+Course level ${l.n} "${l.title}". What they have studied so far:
+${levelScope(l)}
+Scenario shown to the learner: ${r.setup}
+Your character: ${r.persona}
+Learner's goals: ${r.goals.map((g,i)=>i+": "+g).join(" | ")}${steerText()}
+
+Rules:
+- ${RULES}
+- Stay in character. Reply in 1–2 short, simple sentences using mostly vocabulary from the levels above.
+- The learner may write in ${YUE?"Chinese characters, Jyutping (tone numbers optional) or English":"Hangul, romanization or English"}. If they wrote English or romanization, show them how to say it in "corrected".
+- Evaluate ONLY the learner's last message. If it has an error (grammar, word choice, particle, tone, politeness) or isn't in ${C.name}, set ok=false and give "corrected" (the natural ${C.name} version of their whole message) with "corrected_rom", and "note" = one short English sentence naming the main fix. If it is correct, ok=true and corrected="".
+- "goals_done": indices of goals now accomplished.
+- "errs": for each distinct error, {"skill": one of ${Object.keys(SKILLS).join(", ")}, "said":"their words","fix":"corrected words","why":"a few English words"}. Empty if none.
+
+Conversation so far:
+${transcript()}
+
+Reply with only JSON: {"reply":"…","reply_rom":"…","reply_en":"…","ok":true,"corrected":"","corrected_rom":"","note":"","goals_done":[0],"errs":[]}`;
+  t.ctl=new AbortController();
+  try{
+    const o=await sample.json(prompt,{signal:t.ctl.signal, cache:false, modelTier:"default", effort:"low"});
+    const last=t.lines[t.lines.length-1];
+    last.fb={ok:!!o.ok, c:o.corrected?T_(o.corrected,o.corrected_rom):null, note:String(o.note||"")};
+    (Array.isArray(o.goals_done)?o.goals_done:[]).forEach(i=>{ if(Number.isInteger(+i)&&+i>=0&&+i<r.goals.length) t.done.add(+i); });
+    if(!o.ok && Array.isArray(o.errs) && o.errs.length) logTalk(o.errs.slice(0,3));
+    if(o.reply) t.lines.push({who:"them", t:T_(o.reply,o.reply_rom), en:String(o.reply_en||"")});
+    $("talkstatus").textContent=""; drawChat(); document.querySelectorAll("#goals li").forEach((li,i)=>li.classList.toggle("done",t.done.has(i)));
+    if(o.reply) speak(String(o.reply),{voice:C.voice2, live:true});
+  }catch(e){ $("talkstatus").textContent=aiError(e); }
+  finally{ t.busy=false; if($("send")){ $("send").disabled=false; $("stop").hidden=true; $("msg").focus({preventScroll:true}); } }
+}
+async function finishTalk(){
+  const t=talk; if(t.busy) return;
+  if(!t.lines.some(x=>x.who==="me")){ $("talkstatus").textContent="Write at least one reply first."; return; }
+  const sample=await getSample(); if(!sample){ $("talkstatus").textContent="AI isn't available here."; return; }
+  t.busy=true; $("talkstatus").textContent="Writing your feedback…"; $("stop").hidden=false; t.ctl=new AbortController();
+  const prompt=`${LEARNER} (level ${t.l.n} "${t.l.title}") just finished this role-play: ${t.r.setup}
+Goals: ${t.r.goals.join(" | ")}
+Transcript:
+${transcript()}
+
+${RULES}
+Give brief, specific feedback on the LEARNER's ${C.name} only. Reply with only JSON:
+{"summary":"2 sentences in English","strengths":["…"],"fixes":[{"said":"what they wrote","better":"natural ${C.name}","better_rom":"…","why":"short English reason"}],"phrases":[{"t":"a useful phrase for this situation","rom":"…","en":"English"}]}
+At most 4 fixes and 4 phrases, at this learner's level.`;
+  try{
+    const o=await sample.json(prompt,{signal:t.ctl.signal, cache:false, modelTier:"default", effort:"low"});
+    $("summary").innerHTML=`<div class="fb"><span class="v">Feedback</span><p style="margin:0">${esc(o.summary||"")}</p>
+      ${(o.strengths||[]).length?`<h3>Went well</h3><ul style="margin:0">${o.strengths.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>`:""}
+      ${(o.fixes||[]).length?`<h3>Fix these</h3>${o.fixes.map(f=>`<div class="miss"><span>You: <b lang="${C.htmlLang}">${esc(f.said)}</b></span><div class="row">${playBtn(f.better).replace("<button","<button data-live=\"1\"")}${tx(T_(f.better,f.better_rom),{said:false})}</div><span class="sub">${esc(f.why)}</span></div>`).join("")}`:""}
+      ${(o.phrases||[]).length?`<h3>Phrases to keep</h3>${o.phrases.map(p=>`<div class="row">${playBtn(p.t).replace("<button","<button data-live=\"1\"")}${tx(T_(p.t,p.rom),{said:false})}<span class="sub">${esc(p.en)}</span></div>`).join("")}`:""}</div>`;
+    $("talkstatus").textContent="";
+  }catch(e){ $("talkstatus").textContent=aiError(e); }
+  finally{ t.busy=false; if($("stop")) $("stop").hidden=true; }
+}
+function steerText(){ const w=weakSkills().slice(0,3).map(r=>skName(r.id)); return w.length?`\nThe learner's weak spots: ${w.join("; ")}. Where it fits naturally, steer the conversation so they practise these. Never mention this.`:""; }
+function learnerSummary(){
+  const lines=[]; lines.push("Levels: "+LIDS.map(id=>`L${LV[id].n}${P.lv[id]&&P.lv[id].passed?" passed":unlocked(id)?" in progress":" locked"}`).join(", "));
+  lines.push("Sound sets: "+DORDER.map(id=>`${DS[id].title}${P.lv[id]&&P.lv[id].passed?" passed":drillUnlocked(id)?" in progress":" locked"}`).join(", "));
+  const rows=skillRows().filter(r=>r.ready); if(rows.length) lines.push("Skill accuracy: "+rows.map(r=>`${skName(r.id)} ${Math.round(r.a*100)}% (${r.n})`).join("; "));
+  const conf=confusions(14); if(conf.length) lines.push("Repeated mix-ups (14 days): "+conf.slice(0,6).map(c=>`${confText(c.key)} ×${c.n}`).join("; "));
+  const ww=weakWords(); if(ww.length) lines.push("Words often missed: "+ww.map(w=>`${w.v.t.s} (${w.v.en})`).join(", "));
+  const n7=recentLog(7,e=>e.s!=="talk"); lines.push(`Answers in the last 7 days: ${n7.length}, correct ${n7.length?Math.round(100*n7.filter(e=>e.ok).length/n7.length):0}%.`);
+  return lines.join("\n");
+}
+function diagHTML(d){ return `<p style="margin:0"><b>${esc(d.headline||"")}</b></p>${(d.focus||[]).map(f=>`<div class="miss" style="border:0;padding:0"><span><b>${esc(f.area)}</b> ${esc(f.why)}</span><span class="sub">${esc(f.how)}</span></div>`).join("")}${d.next?`<p style="margin:0">Next: ${esc(d.next)}</p>`:""}<p class="sub" style="margin:0">From ${esc(d.date||"")}</p>`; }
+async function getDiagnosis(){
+  const sample=await getSample(), st=$("diagStatus"); if(!sample){ st.textContent="AI isn't available here."; return; }
+  $("getDiag").disabled=true; st.textContent="Reading your record…";
+  const prompt=`You are a ${C.name} coach for ${LEARNER}. The app has 10 levels, sound drills (${DORDER.map(id=>DS[id].title).join(", ")}), and flashcards.
+Learning record:
+${learnerSummary()}
+
+Diagnose the 2–3 things that would most improve their ${C.name} now. Be specific and grounded only in the record; if the data is thin, say so. No praise or filler.
+Reply with only JSON: {"headline":"one sentence","focus":[{"area":"short name","why":"what the record shows, with numbers","how":"one concrete action in the app"}],"next":"the single next session to do"}`;
+  try{ const o=await sample.json(prompt,{cache:false, modelTier:"default", effort:"low"});
+    LR.diag={day:today(), date:new Date().toLocaleDateString(), headline:String(o.headline||""), focus:(Array.isArray(o.focus)?o.focus:[]).slice(0,3).map(f=>({area:String(f.area||""),why:String(f.why||""),how:String(f.how||"")})), next:String(o.next||"")};
+    dirtyDocs.add("learner"); saveLR(); $("diag").innerHTML=diagHTML(LR.diag); st.textContent="";
+  }catch(e){ st.textContent=aiError(e); } finally{ if($("getDiag")) $("getDiag").disabled=false; }
+}
+async function genPractice(skill, btn){
+  const sample=await getSample(); if(!sample){ btn.textContent="AI isn't available here"; return; }
+  const cur=LV[frontier()||LIDS[LIDS.length-1]];
+  const ex=LR.log.filter(e=>!e.ok && e.y && ALL[e.id] && (ALL[e.id].it.sk||[]).includes(skill)).slice(-4);
+  const old=btn.textContent; btn.disabled=true; btn.textContent="Writing questions…";
+  const prompt=`Write 8 multiple-choice practice questions for ${LEARNER}. Focus: ${skName(skill)}.
+${ex.length?"Their recent mistakes:\n"+ex.map(e=>`- "${e.q}": they chose "${e.y}", correct "${e.r}"`).join("\n"):""}
+Use only what they have studied:
+${levelScope(cur)}
+${RULES}
+Each question is a ${C.name} sentence with ONE blank (___) and 4 options; exactly one option is correct and the others are clearly wrong to a native speaker.
+Reply with only a JSON array of 8 objects: {"q":"sentence with ___","q_rom":"romanization with ___","en":"English of the full sentence","opts":[{"t":"…","rom":"…"}],"a":<index>,"why":"one-sentence rule"}`;
+  try{
+    const arr=await sample.json(prompt,{cache:false, modelTier:"default", effort:"low"});
+    const units=(Array.isArray(arr)?arr:[]).map((x,i)=>{
+      if(!x || typeof x.q!=="string" || !x.q.includes("___") || !Array.isArray(x.opts) || x.opts.length!==4 || !Number.isInteger(x.a) || x.a<0 || x.a>3) return null;
+      const opts=x.opts.map(o=>T_(o&&o.t,o&&o.rom)); if(opts.some(o=>!o.s) || new Set(opts.map(o=>o.s)).size!==4) return null;
+      const full=T_(x.q.replace("___",opts[x.a].s), String(x.q_rom||"").replace("___",opts[x.a].r));
+      return {t:"gap", id:"ai:"+Date.now()+":"+i, q:T_(x.q, x.q_rom), en:String(x.en||""), opts, a:x.a, why:String(x.why||""), full, sk:[skill]};
+    }).filter(Boolean);
+    if(!units.length){ btn.textContent="Couldn't use the reply — try again"; return; }
+    units.forEach(u=>{ u._live=true; });
+    launch({id:"ai", title:"Weak spots", chip:"AI practice · not reviewed", mode:"practice", units, noRecord:true, back:{name:"weak"}, retry:()=>go({name:"weak"})});
+  }catch(e){ btn.textContent=aiError(e)||old; } finally{ btn.disabled=false; }
+}
+
+/* ---------------- keys ---------------- */
+document.addEventListener("keydown",e=>{
+  if(e.target&&/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)) return;
+  if((e.key==="p"||e.key==="P") && lastSay){ e.preventDefault(); speak(lastSay.text, lastSay.o); return; }
+  if(view.name!=="run") return;
+  if(/^[1-6]$/.test(e.key)){ const b=[...document.querySelectorAll("#ex .opt:not(:disabled), #dopts .opt:not(:disabled)")][+e.key-1]; if(b){ e.preventDefault(); b.click(); } }
+  else if(e.key==="Enter"||e.key===" "){ const b=$("nextBtn")||$("dcont")||$("show"); if(b && document.activeElement!==b){ e.preventDefault(); b.click(); } }
+});
+
+/* ---------------- back up / move progress ---------------- */
+function exportAll(){ const docs={}; ["course","learner","log",...SHARDS].forEach(n=>docs[n]=docBody(n)); return JSON.stringify({app:"studyhall-"+C.course, v:1, at:Date.now(), docs}); }
+function importAll(text){
+  const o=JSON.parse(String(text).trim()); if(!o || o.app!=="studyhall-"+C.course || !o.docs) throw new Error("bad");
+  let n=0; for(const k of ["course","learner","log",...SHARDS]){ if(o.docs[k]){ mergeLR(k,o.docs[k]); dirtyDocs.add(k); n++; } }
+  store.set("progress",P); saveLR(); flushLR(); return n;
+}
+$("xCopy").onclick=async()=>{ const t=exportAll(); let ok=false; try{ await navigator.clipboard.writeText(t); ok=true; }catch(e){}
+  if(ok) $("xMsg").textContent=`Copied (${Math.round(t.length/1024)} KB). Paste it into the other copy of the course.`;
+  else { const ta=$("xText"); ta.value=t; ta.focus(); ta.select(); $("xMsg").textContent="Your browser blocked copying. The text is selected in the box: copy it (⌘C or Ctrl+C)."; } };
+$("xImp").onclick=()=>{ const ta=$("xText"); try{ const n=importAll(ta.value); ta.value=""; $("xMsg").textContent=`Imported and merged (${n} parts).`; render(); }catch(e){ $("xMsg").textContent="That didn't look like copied progress from this course. Copy it again and paste the whole text."; } };
+
+render();
+connect();
+</script>

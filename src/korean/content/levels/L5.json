@@ -1,0 +1,1543 @@
+{
+ "id": "L5",
+ "n": 5,
+ "title": "Small talk and likes",
+ "goal": "Chat about the weather, say what you like, and say what you're doing right now.",
+ "notes": [
+  {
+   "h": "Liking things: two different words",
+   "p": "{{좋아해요}} is an action word, \"to like\". The thing you like takes the object marker {{을}} / {{를}}: {{커피를 좋아해요}}. {{좋아요}} is a describing word, \"is good\". The thing that is good takes the subject marker {{이}} / {{가}}: {{날씨가 좋아요}}. In everyday talk Koreans also say {{커피가 좋아요}} to mean \"I like coffee\", but once the thing takes {{을}} / {{를}} you must use {{좋아해요}}. On its own, {{좋아요}} is also how you accept an invitation: \"sounds good\". The ㅎ in {{좋}} goes silent before a vowel, so {{좋아요}} sounds like \"jo-a-yo\".",
+   "ex": [
+    [
+     "커피를 좋아해요",
+     "I like coffee."
+    ],
+    [
+     "날씨가 좋아요",
+     "The weather is nice."
+    ],
+    [
+     "좋아요!",
+     "Sounds good!"
+    ]
+   ]
+  },
+  {
+   "h": "The subject marker (i / ga) and the topic marker (eun / neun)",
+   "p": "{{이}} / {{가}} points at who or what does something or is something, often new information: {{비가 와요}}, {{날씨가 좋아요}}. Use {{이}} after a consonant and {{가}} after a vowel. {{은}} / {{는}} sets the topic, \"as for …\", and often contrasts: {{오늘은 추워요}} hints that other days are not. A question word that is the subject takes {{이}} / {{가}}, never {{은}} / {{는}}: {{뭐가 맛있어요?}} One special form: {{저}} + {{가}} becomes {{제가}}.",
+   "ex": [
+    [
+     "비가 와요",
+     "It's raining."
+    ],
+    [
+     "오늘은 추워요",
+     "Today (at least) it's cold."
+    ],
+    [
+     "여기 뭐가 맛있어요?",
+     "What's good here?"
+    ]
+   ]
+  },
+  {
+   "h": "Weather words and the b to w change",
+   "p": "Many describing words end in ㅂ: {{덥다}} (hot), {{춥다}} (cold). Before {{어요}}, the ㅂ turns into {{워}}: {{더워요}}, {{추워요}}. You already know two more: {{매워요}} (spicy) and {{가까워요}} (close). Rain and snow \"come\" ({{오다}}): {{비가 와요}}, {{눈이 와요}}. {{따뜻해요}} (warm) and {{시원해요}} (cool) end in {{해요}} and never change.",
+   "ex": [
+    [
+     "오늘 더워요",
+     "It's hot today."
+    ],
+    [
+     "추워요",
+     "It's cold."
+    ],
+    [
+     "눈이 와요",
+     "It's snowing."
+    ]
+   ]
+  },
+  {
+   "h": "Doing it right now: -go isseoyo",
+   "p": "Take an action word, drop {{다}}, and add {{고 있어요}}: {{마시다}} becomes {{마시고 있어요}}, \"I'm drinking\". Use it for something happening at this moment. Describing words like {{바빠요}} or {{추워요}} never take it. Plain {{뭐 해요?}} can also mean \"what are you doing?\"; {{뭐 하고 있어요?}} stresses \"right now\".",
+   "ex": [
+    [
+     "지금 커피를 마시고 있어요",
+     "I'm drinking coffee right now."
+    ],
+    [
+     "지금 뭐 하고 있어요?",
+     "What are you doing right now?"
+    ],
+    [
+     "지금 비가 오고 있어요",
+     "It's raining right now."
+    ]
+   ]
+  },
+  {
+   "h": "Reacting with -neyo, and \"also\" with do",
+   "p": "Swap the {{아요}} / {{어요}} ending for {{네요}} when you notice or react to something right now: \"oh, it's …!\". It goes straight onto the stem with no ㅂ change: {{덥다}} becomes {{덥네요}}. Sound point: ㅎ, ㅅ or ㅆ before ㄴ is said as ㄴ, so {{좋네요}} sounds like \"jon-ne-yo\" and {{맛있네요}} like \"ma-sin-ne-yo\". {{도}} means \"also / too\". It takes the place of {{은}} / {{는}}, {{이}} / {{가}} or {{을}} / {{를}} instead of joining them: {{저도 좋아해요}}, {{음악도 좋아해요}}.",
+   "ex": [
+    [
+     "오늘 덥네요!",
+     "It's hot today!"
+    ],
+    [
+     "맛있네요!",
+     "This is tasty!"
+    ],
+    [
+     "저도 좋아해요",
+     "I like it too."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "old": "903c0c1949",
+   "topic": "Small talk",
+   "t": "날씨",
+   "en": "weather",
+   "note": ""
+  },
+  {
+   "old": "d07faf4f91",
+   "topic": "Small talk",
+   "t": "오늘 더워요",
+   "en": "It's hot today",
+   "note": ""
+  },
+  {
+   "old": "b2d57087cf",
+   "topic": "Small talk",
+   "t": "추워요",
+   "en": "It's cold",
+   "note": ""
+  },
+  {
+   "old": "48b9ff783a",
+   "topic": "Small talk",
+   "t": "비가 와요",
+   "en": "It's raining",
+   "note": "Literally \"rain comes\"."
+  },
+  {
+   "old": "dd38e579f4",
+   "topic": "Small talk",
+   "t": "좋아해요",
+   "en": "I like it",
+   "note": "좋아해요 = I like (something). 좋아요 = it's good.",
+   "avoid": [
+    6
+   ]
+  },
+  {
+   "old": "4522c13a7c",
+   "topic": "Small talk",
+   "t": "한국 음식 좋아해요?",
+   "en": "Do you like Korean food?",
+   "note": "",
+   "pron": "한국 음식 쪼아해요"
+  },
+  {
+   "old": "3d7bae01ec",
+   "topic": "Small talk",
+   "t": "좋아요",
+   "en": "It's good / Sounds good",
+   "note": "",
+   "avoid": [
+    4,
+    15
+   ]
+  },
+  {
+   "old": "86e3025501",
+   "topic": "Small talk",
+   "t": "시간 있어요?",
+   "en": "Are you free? (Do you have time?)",
+   "note": "있어요 = there is / I have. 없어요 = there isn't / I don't have."
+  },
+  {
+   "old": "238de082a0",
+   "topic": "Small talk",
+   "t": "바빠요",
+   "en": "I'm busy",
+   "note": ""
+  },
+  {
+   "old": "69c0844bf7",
+   "topic": "Small talk",
+   "t": "피곤해요",
+   "en": "I'm tired",
+   "note": ""
+  },
+  {
+   "old": "b0af0ecb71",
+   "topic": "Small talk",
+   "t": "재미있어요",
+   "en": "It's fun",
+   "note": ""
+  },
+  {
+   "old": "633c3ab0c5",
+   "topic": "Small talk",
+   "t": "뭐 해요?",
+   "en": "What are you doing?",
+   "note": "",
+   "avoid": [
+    33
+   ]
+  },
+  {
+   "old": "c24771827f",
+   "topic": "Small talk",
+   "t": "오랜만이에요",
+   "en": "Long time no see",
+   "note": ""
+  },
+  {
+   "old": "b22aff5916",
+   "topic": "Small talk",
+   "t": "또 만나요",
+   "en": "See you again",
+   "note": ""
+  },
+  {
+   "old": "0f75e62634",
+   "topic": "Small talk",
+   "t": "잘 자요",
+   "en": "Good night",
+   "note": ""
+  },
+  {
+   "old": "a21e40a74b",
+   "topic": "Small talk",
+   "t": "좋네요!",
+   "en": "Great!",
+   "note": "-네요 adds \"oh, I see that …\" surprise or agreement.",
+   "avoid": [
+    6
+   ]
+  },
+  {
+   "old": "099bb1d5b6",
+   "topic": "Small talk",
+   "t": "맞아요",
+   "en": "That's right",
+   "note": ""
+  },
+  {
+   "old": "22b4ccd2c8",
+   "topic": "Small talk",
+   "t": "몰라요",
+   "en": "I don't know",
+   "note": "Blunter than 모르겠어요."
+  },
+  {
+   "old": "b37ea37424",
+   "topic": "Small talk",
+   "t": "출근해요",
+   "en": "I'm going to work",
+   "note": ""
+  },
+  {
+   "old": "8e8b429ff3",
+   "topic": "Small talk",
+   "t": "집에 가요",
+   "en": "I'm going home",
+   "note": "집 = home."
+  },
+  {
+   "old": "3ec38acc8c",
+   "topic": "Small talk",
+   "t": "이거 뭐예요?",
+   "en": "What is this?",
+   "note": ""
+  },
+  {
+   "t": "재미없어요",
+   "en": "It's boring",
+   "topic": "Small talk",
+   "note": "The opposite of {{재미있어요}}.",
+   "avoid": []
+  },
+  {
+   "t": "날씨가 좋아요",
+   "en": "The weather is nice",
+   "topic": "Small talk",
+   "note": "",
+   "avoid": []
+  },
+  {
+   "t": "날씨가 어때요?",
+   "en": "How's the weather?",
+   "topic": "Small talk",
+   "note": "{{어때요?}} = \"how is it?\"",
+   "avoid": []
+  },
+  {
+   "t": "눈이 와요",
+   "en": "It's snowing",
+   "topic": "Small talk",
+   "note": "{{눈}} = snow. Snow \"comes\", just like rain.",
+   "avoid": []
+  },
+  {
+   "t": "따뜻해요",
+   "en": "It's warm",
+   "topic": "Small talk",
+   "note": "",
+   "avoid": []
+  },
+  {
+   "t": "시원해요",
+   "en": "It's nice and cool",
+   "topic": "Small talk",
+   "note": "Pleasantly cool: a breeze, or a cold drink on a hot day.",
+   "avoid": []
+  },
+  {
+   "t": "저도요",
+   "en": "Me too",
+   "topic": "Small talk",
+   "note": "{{도}} = also.",
+   "avoid": []
+  },
+  {
+   "t": "시간 없어요",
+   "en": "I don't have time",
+   "topic": "Small talk",
+   "note": "",
+   "avoid": []
+  },
+  {
+   "t": "영화",
+   "en": "movie",
+   "topic": "Small talk",
+   "note": "",
+   "avoid": []
+  },
+  {
+   "t": "음악",
+   "en": "music",
+   "topic": "Small talk",
+   "note": "",
+   "avoid": []
+  },
+  {
+   "t": "운동",
+   "en": "exercise / sports",
+   "topic": "Small talk",
+   "note": "{{운동해요}} = I work out / I play sports.",
+   "avoid": []
+  },
+  {
+   "t": "취미가 뭐예요?",
+   "en": "What's your hobby?",
+   "topic": "Small talk",
+   "note": "",
+   "avoid": []
+  },
+  {
+   "t": "지금 뭐 하고 있어요?",
+   "en": "What are you doing right now?",
+   "topic": "Small talk",
+   "note": "{{고 있어요}} = doing right now.",
+   "avoid": [
+    11
+   ]
+  },
+  {
+   "t": "안 좋아해요",
+   "en": "I don't like it",
+   "topic": "Small talk",
+   "note": "{{안}} before the verb = not.",
+   "avoid": []
+  }
+ ],
+ "items": [
+  {
+   "id": "L5-gap-01",
+   "t": "gap",
+   "q": "저는 커피___ 좋아해요.",
+   "en": "I like coffee.",
+   "opts": [
+    "를",
+    "가",
+    "에",
+    "을"
+   ],
+   "a": 0,
+   "why": "{{좋아해요}} (to like) takes an object, marked {{를}} after a vowel. {{을}} is the form used after a consonant.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-02",
+   "t": "gap",
+   "q": "날씨___ 좋아요.",
+   "en": "The weather is nice.",
+   "opts": [
+    "가",
+    "를",
+    "에",
+    "이"
+   ],
+   "a": 0,
+   "why": "{{좋아요}} (is good) describes a subject, so {{날씨}} takes {{가}}, the form after a vowel.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-03",
+   "t": "gap",
+   "q": "오늘 ___.",
+   "en": "It's cold today.",
+   "opts": [
+    "추워요",
+    "춥어요",
+    "추어요",
+    "더워요"
+   ],
+   "a": 0,
+   "why": "{{춥다}} turns its ㅂ into {{워}}: {{추워요}}. {{더워요}} means hot.",
+   "sk": [
+    "g:endings",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-gap-04",
+   "t": "gap",
+   "q": "눈___ 와요.",
+   "en": "It's snowing.",
+   "opts": [
+    "이",
+    "가",
+    "을",
+    "에"
+   ],
+   "a": 0,
+   "why": "Snow is the subject (it \"comes\"), and {{눈}} ends in a consonant, so it takes {{이}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-05",
+   "t": "gap",
+   "q": "저___ 한국 음식 좋아해요.",
+   "en": "I like Korean food too.",
+   "opts": [
+    "도",
+    "는",
+    "를",
+    "가"
+   ],
+   "a": 0,
+   "why": "{{도}} = too, and it takes the place of {{는}}. {{저는}} would drop the \"too\", and {{저}} + {{가}} is always {{제가}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-06",
+   "t": "gap",
+   "q": "지금 커피 마시___ 있어요.",
+   "en": "I'm drinking coffee right now.",
+   "opts": [
+    "고",
+    "어",
+    "는",
+    "요"
+   ],
+   "a": 0,
+   "why": "Doing something right now: stem + {{고 있어요}}, so {{마시고 있어요}}.",
+   "sk": [
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L5-gap-07",
+   "t": "gap",
+   "q": "한국 영화를 ___?",
+   "en": "Do you like Korean movies?",
+   "opts": [
+    "좋아해요",
+    "좋아요",
+    "좋네요",
+    "재미있어요"
+   ],
+   "a": 0,
+   "why": "With the object marker {{를}} you need the action word {{좋아해요}}. {{좋아요}} and {{재미있어요}} describe a subject and can't take {{를}}.",
+   "sk": [
+    "g:endings",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-08",
+   "t": "gap",
+   "q": "오늘 ___!",
+   "en": "Wow, it's hot today!",
+   "opts": [
+    "덥네요",
+    "더워네요",
+    "덥어요",
+    "덥고 있어요"
+   ],
+   "a": 0,
+   "why": "{{네요}} goes straight onto the stem {{덥}}, with no ㅂ change. Describing words never take {{고 있어요}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L5-gap-09",
+   "t": "gap",
+   "q": "주말에 시간___ 있어요?",
+   "en": "Do you have time on the weekend?",
+   "opts": [
+    "이",
+    "가",
+    "을",
+    "에"
+   ],
+   "a": 0,
+   "why": "With {{있어요}} the thing you have is the subject. {{시간}} ends in a consonant, so {{시간이}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-10",
+   "t": "gap",
+   "q": "여기 뭐___ 맛있어요?",
+   "en": "What's good here?",
+   "opts": [
+    "가",
+    "는",
+    "를",
+    "도"
+   ],
+   "a": 0,
+   "why": "Question words take the subject marker: {{뭐가}}. {{맛있어요}} describes a subject, so {{를}} can't be used.",
+   "sk": [
+    "g:particles",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L5-gap-11",
+   "t": "gap",
+   "q": "오늘___ 추워요. 내일은 따뜻해요.",
+   "en": "Today it's cold. Tomorrow it's warm.",
+   "opts": [
+    "은",
+    "는",
+    "을",
+    "에"
+   ],
+   "a": 0,
+   "why": "Two days are contrasted, so both take the topic marker. {{오늘}} ends in a consonant: {{오늘은}}. {{오늘}} never takes {{에}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-12",
+   "t": "gap",
+   "q": "___ 한국 음식을 좋아해요.",
+   "en": "I'm the one who likes Korean food.",
+   "opts": [
+    "제가",
+    "저가",
+    "저를",
+    "제를"
+   ],
+   "a": 0,
+   "why": "The subject marker points out who: \"I'm the one\". {{저}} + {{가}} becomes {{제가}}.",
+   "sk": [
+    "g:particles",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L5-gap-13",
+   "t": "gap",
+   "q": "지금 영화 ___ 있어요.",
+   "en": "I'm watching a movie right now.",
+   "opts": [
+    "보고",
+    "봐요",
+    "보는",
+    "봤어"
+   ],
+   "a": 0,
+   "why": "{{보다}} drops {{다}} and adds {{고 있어요}}: {{보고 있어요}}.",
+   "sk": [
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L5-gap-14",
+   "t": "gap",
+   "q": "이거 ___.",
+   "en": "This is spicy.",
+   "opts": [
+    "매워요",
+    "맵어요",
+    "매어요",
+    "맵아요"
+   ],
+   "a": 0,
+   "why": "{{맵다}} works like {{덥다}}: the ㅂ becomes {{워}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L5-gap-15",
+   "t": "gap",
+   "q": "맥주___ 좋아해요.",
+   "en": "I like beer, too (as well as other things).",
+   "opts": [
+    "도",
+    "를",
+    "가",
+    "는"
+   ],
+   "a": 0,
+   "why": "{{도}} = too, and it takes the place of {{를}}. {{맥주를 좋아해요}} would be just \"I like beer\".",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-gap-16",
+   "t": "gap",
+   "q": "오늘은 시간이 ___.",
+   "en": "I don't have time today.",
+   "opts": [
+    "없어요",
+    "안 있어요",
+    "아니에요",
+    "있어요"
+   ],
+   "a": 0,
+   "why": "The opposite of {{있어요}} is its own word, {{없어요}}, never {{안 있어요}}. {{아니에요}} means \"is not (something)\".",
+   "sk": [
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L5-pick-01",
+   "t": "pick",
+   "q": "You want to tell someone that you like coffee. You say:",
+   "opts": [
+    "커피를 좋아해요",
+    "커피를 좋아요",
+    "커피가 좋아해요",
+    "커피를 좋네요"
+   ],
+   "a": 0,
+   "why": "{{좋아해요}} (to like) takes {{를}}. {{좋아요}} and {{좋네요}} describe a subject and can't take {{를}}; the subject {{커피가}} can't \"like\".",
+   "sk": [
+    "g:endings",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-pick-02",
+   "t": "pick",
+   "q": "Your friend says {{저는 영화를 좋아해요}}. You like movies too. You reply:",
+   "opts": [
+    "저도요",
+    "저는요",
+    "저를요",
+    "제가요"
+   ],
+   "a": 0,
+   "why": "{{저도요}} = me too. {{저는요?}} asks \"what about me?\" and {{제가요?}} means \"me?\".",
+   "sk": [
+    "s:phrase",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-pick-03",
+   "t": "pick",
+   "q": "You step outside on a sweltering summer day and react to the heat. You say:",
+   "opts": [
+    "덥네요",
+    "추워요",
+    "더워네요",
+    "비가 와요"
+   ],
+   "a": 0,
+   "why": "{{덥네요}} reacts to heat you notice right now. {{네요}} goes onto {{덥}} with no ㅂ change.",
+   "sk": [
+    "g:endings",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-pick-04",
+   "t": "pick",
+   "q": "You run into a friend you haven't seen for months. You say:",
+   "opts": [
+    "오랜만이에요",
+    "또 만나요",
+    "안녕히 계세요",
+    "잘 자요"
+   ],
+   "a": 0,
+   "why": "{{오랜만이에요}} = long time no see. The others are for goodbyes and good night.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L5-pick-05",
+   "t": "pick",
+   "q": "A friend asks {{주말에 시간 있어요?}} You're busy all weekend. You say:",
+   "opts": [
+    "아니요, 바빠요",
+    "네, 바빠요",
+    "아니요, 바뻐요",
+    "아니요, 바쁘어요"
+   ],
+   "a": 0,
+   "why": "You don't have time, so {{아니요}}. {{바쁘다}} drops its ㅡ and takes {{아요}}: {{바빠요}}.",
+   "sk": [
+    "g:endings",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L5-pick-06",
+   "t": "pick",
+   "q": "Someone hands you a snack you've never seen before. You want to know what it is:",
+   "opts": [
+    "이거 뭐예요?",
+    "이거 얼마예요?",
+    "이거 주세요",
+    "어디예요?"
+   ],
+   "a": 0,
+   "why": "{{뭐예요?}} = what is it? {{얼마예요?}} asks the price.",
+   "sk": [
+    "g:question"
+   ]
+  },
+  {
+   "id": "L5-pick-07",
+   "t": "pick",
+   "q": "It's late, and you say good night to your wife. You say:",
+   "opts": [
+    "잘 자요",
+    "잘 먹겠습니다",
+    "안녕히 가세요",
+    "또 만나요"
+   ],
+   "a": 0,
+   "why": "{{잘 자요}} = sleep well, good night.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L5-pick-08",
+   "t": "pick",
+   "q": "A coworker says {{오늘 춥네요}}. You agree with her. You say:",
+   "opts": [
+    "맞아요",
+    "몰라요",
+    "괜찮아요",
+    "아니요"
+   ],
+   "a": 0,
+   "why": "{{맞아요}} = that's right. {{괜찮아요}} would mean you're fine with the cold.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L5-tiles-01",
+   "t": "tiles",
+   "en": "I like Korean food.",
+   "full": "한국 음식을 좋아해요.",
+   "a": [
+    "한국",
+    "음식을",
+    "좋아해요"
+   ],
+   "alt": [],
+   "extra": [
+    "음식가",
+    "좋아요"
+   ],
+   "sk": [
+    "g:particles",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L5-tiles-02",
+   "t": "tiles",
+   "en": "It's snowing today.",
+   "full": "오늘 눈이 와요.",
+   "a": [
+    "오늘",
+    "눈이",
+    "와요"
+   ],
+   "alt": [],
+   "extra": [
+    "눈을",
+    "눈가"
+   ],
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-tiles-03",
+   "t": "tiles",
+   "en": "I'm drinking coffee right now.",
+   "full": "지금 커피를 마시고 있어요.",
+   "a": [
+    "지금",
+    "커피를",
+    "마시고",
+    "있어요"
+   ],
+   "alt": [
+    [
+     "커피를",
+     "지금",
+     "마시고",
+     "있어요"
+    ]
+   ],
+   "extra": [
+    "마셔고",
+    "커피가"
+   ],
+   "sk": [
+    "g:tense",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-tiles-04",
+   "t": "tiles",
+   "en": "I like music too (just like you).",
+   "full": "저도 음악을 좋아해요.",
+   "a": [
+    "저도",
+    "음악을",
+    "좋아해요"
+   ],
+   "alt": [],
+   "extra": [
+    "저는",
+    "음악이"
+   ],
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-tiles-05",
+   "t": "tiles",
+   "en": "The weather is nice today.",
+   "full": "오늘 날씨가 좋아요.",
+   "a": [
+    "오늘",
+    "날씨가",
+    "좋아요"
+   ],
+   "alt": [],
+   "extra": [
+    "날씨를",
+    "좋아해요"
+   ],
+   "sk": [
+    "g:particles",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L5-tiles-06",
+   "t": "tiles",
+   "en": "It's cold this morning!",
+   "full": "오늘 아침 춥네요.",
+   "a": [
+    "오늘",
+    "아침",
+    "춥네요"
+   ],
+   "alt": [],
+   "extra": [
+    "추워네요",
+    "춥어요"
+   ],
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L5-tiles-07",
+   "t": "tiles",
+   "en": "Do you have time tomorrow?",
+   "full": "내일 시간 있어요?",
+   "a": [
+    "내일",
+    "시간",
+    "있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "시간을",
+    "있어"
+   ],
+   "sk": [
+    "g:particles",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L5-tiles-08",
+   "t": "tiles",
+   "en": "My wife likes Korean movies.",
+   "full": "제 아내는 한국 영화를 좋아해요.",
+   "a": [
+    "제",
+    "아내는",
+    "한국",
+    "영화를",
+    "좋아해요"
+   ],
+   "alt": [],
+   "extra": [
+    "저",
+    "영화가"
+   ],
+   "sk": [
+    "g:honor",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-tiles-09",
+   "t": "tiles",
+   "en": "It's raining right now.",
+   "full": "지금 비가 오고 있어요.",
+   "a": [
+    "지금",
+    "비가",
+    "오고",
+    "있어요"
+   ],
+   "alt": [
+    [
+     "비가",
+     "지금",
+     "오고",
+     "있어요"
+    ]
+   ],
+   "extra": [
+    "와고",
+    "비를"
+   ],
+   "sk": [
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L5-tiles-10",
+   "t": "tiles",
+   "en": "Korean movies are fun too.",
+   "full": "한국 영화도 재미있어요.",
+   "a": [
+    "한국",
+    "영화도",
+    "재미있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "영화를",
+    "재미없어요"
+   ],
+   "sk": [
+    "g:particles",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-tiles-11",
+   "t": "tiles",
+   "en": "This movie is boring.",
+   "full": "이 영화는 재미없어요.",
+   "a": [
+    "이",
+    "영화는",
+    "재미없어요"
+   ],
+   "alt": [],
+   "extra": [
+    "영화를",
+    "재미있어요"
+   ],
+   "sk": [
+    "s:vocab",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-tiles-12",
+   "t": "tiles",
+   "en": "What are you doing right now?",
+   "full": "지금 뭐 하고 있어요?",
+   "a": [
+    "지금",
+    "뭐",
+    "하고",
+    "있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "해고",
+    "뭐가"
+   ],
+   "sk": [
+    "g:tense",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L5-listen-01",
+   "t": "listen",
+   "say": "오늘 추워요.",
+   "opts": [
+    "It's cold today.",
+    "It's hot today.",
+    "It's warm today.",
+    "It was cold yesterday.",
+    "It's nice and cool today.",
+    "It's raining today."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-listen-02",
+   "t": "listen",
+   "say": "눈이 오고 있어요.",
+   "opts": [
+    "It's snowing right now.",
+    "It's raining right now.",
+    "It snowed yesterday.",
+    "It's going to snow.",
+    "It isn't snowing.",
+    "The weather is nice right now."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L5-listen-03",
+   "t": "listen",
+   "say": "저도 커피를 좋아해요.",
+   "opts": [
+    "I like coffee too.",
+    "I like coffee.",
+    "I don't like coffee.",
+    "I like beer too.",
+    "I'm drinking coffee too.",
+    "Coffee is good."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L5-listen-04",
+   "t": "listen",
+   "say": "이 영화 재미없어요.",
+   "opts": [
+    "This movie is boring.",
+    "This movie is fun.",
+    "That movie is boring.",
+    "This food isn't good.",
+    "I like this movie.",
+    "This music is boring."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-listen-05",
+   "t": "listen",
+   "say": "지금 영화를 보고 있어요.",
+   "opts": [
+    "I'm watching a movie right now.",
+    "I want to watch a movie.",
+    "I like movies.",
+    "I watched a movie.",
+    "I'm going to a movie.",
+    "I'm not watching a movie."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:tense"
+   ]
+  },
+  {
+   "id": "L5-listen-06",
+   "t": "listen",
+   "say": "시간 없어요.",
+   "opts": [
+    "I don't have time.",
+    "I have time.",
+    "Do you have time?",
+    "What time is it?",
+    "I don't have any money.",
+    "It's three o'clock."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L5-listen-07",
+   "t": "listen",
+   "say": "날씨가 좋네요!",
+   "opts": [
+    "The weather's nice!",
+    "How's the weather?",
+    "The weather's cold!",
+    "It's raining!",
+    "The food's good!",
+    "It's hot!"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-listen-08",
+   "t": "listen",
+   "say": "한국 음식 좋아해요?",
+   "opts": [
+    "Do you like Korean food?",
+    "Is Korean food good?",
+    "Do you like Korean movies?",
+    "Korean food is spicy.",
+    "Do you like Korean music?",
+    "Is this Korean food?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L5-listen-09",
+   "t": "listen",
+   "say": "지금 출근해요.",
+   "opts": [
+    "I'm going to work now.",
+    "I'm going home now.",
+    "I'm busy now.",
+    "I'm tired now.",
+    "I'm working out now.",
+    "I'm getting off work now."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-listen-10",
+   "t": "listen",
+   "say": "오늘은 따뜻해요.",
+   "opts": [
+    "It's warm today.",
+    "It's cold today.",
+    "It's hot today.",
+    "It's nice and cool today.",
+    "It was warm yesterday.",
+    "It's snowing today."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L5-dlg-01",
+   "t": "dlg",
+   "title": "Running into a friend",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "오랜만이에요! 잘 지내요?",
+     "en": "Long time no see! How are you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 잘 지내요.",
+      "네, 잘 지내세요.",
+      "네, 잘 자요."
+     ],
+     "a": 0,
+     "why": "About yourself, no {{시}}: {{잘 지내요}}. {{잘 지내세요}} would honor yourself, and {{잘 자요}} is good night.",
+     "sk": [
+      "g:honor",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "지금 뭐 해요?",
+     "en": "What are you up to now?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "집에 가고 있어요.",
+      "집을 가고 있어요.",
+      "집에 가고 있으세요."
+     ],
+     "a": 0,
+     "why": "{{에}} marks where you're going, and you don't use {{시}} about yourself.",
+     "sk": [
+      "g:tense",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "또 만나요!",
+     "en": "See you again!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 또 만나요!",
+      "네, 오랜만이에요!",
+      "네, 잘 먹었습니다!"
+     ],
+     "a": 0,
+     "why": "Answer a goodbye with the same {{또 만나요}}.",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L5-dlg-02",
+   "t": "dlg",
+   "title": "Coffee with a coworker",
+   "turns": [
+    {
+     "who": "Mr Park",
+     "s": "오늘 춥네요.",
+     "en": "It's cold today, isn't it?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 추워요.",
+      "네, 춥어요.",
+      "네, 더워요."
+     ],
+     "a": 0,
+     "why": "{{춥다}} turns its ㅂ into {{워}}: {{추워요}}.",
+     "sk": [
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Mr Park",
+     "s": "커피 마실래요?",
+     "en": "Would you like some coffee?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 좋아요.",
+      "네, 좋아해요.",
+      "아니요, 좋아요."
+     ],
+     "a": 0,
+     "why": "Accept an offer with {{좋아요}} (sounds good). {{좋아해요}} states a general liking; it doesn't say yes to this coffee.",
+     "sk": [
+      "g:endings",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Mr Park",
+     "s": "여기 있어요.",
+     "en": "Here you go."
+    },
+    {
+     "you": true,
+     "opts": [
+      "감사합니다.",
+      "죄송합니다.",
+      "안녕히 계세요."
+     ],
+     "a": 0,
+     "why": "{{감사합니다}} thanks him. {{죄송합니다}} is an apology.",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L5-dlg-03",
+   "t": "dlg",
+   "title": "Talking about movies",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "저는 한국 영화를 좋아해요.",
+     "en": "I like Korean movies."
+    },
+    {
+     "you": true,
+     "opts": [
+      "저도 좋아해요!",
+      "저도 좋아요해요!",
+      "제도 좋아해요!"
+     ],
+     "a": 0,
+     "why": "{{저}} + {{도}} stays {{저도}}; only {{가}} turns {{저}} into {{제}}. There is no {{좋아요해요}}.",
+     "sk": [
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "주말에 시간 있어요?",
+     "en": "Are you free on the weekend?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 있어요.",
+      "네, 없어요.",
+      "아니요, 있어요."
+     ],
+     "a": 0,
+     "why": "Yes, I have time: {{네, 있어요}}. {{네}} with {{없어요}} contradicts itself.",
+     "sk": [
+      "g:neg",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "주말에 같이 영화 봐요!",
+     "en": "Let's watch a movie together on the weekend!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "좋아요!",
+      "좋아해요!",
+      "몰라요!"
+     ],
+     "a": 0,
+     "why": "{{좋아요}} = sounds good, the way to accept a suggestion.",
+     "sk": [
+      "s:phrase",
+      "g:endings"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L5-dlg-04",
+   "t": "dlg",
+   "title": "A call from a friend",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "지금 뭐 해요?",
+     "en": "What are you doing now?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "일하고 있어요.",
+      "일해고 있어요.",
+      "일하고 있으세요."
+     ],
+     "a": 0,
+     "why": "{{일하다}} drops {{다}} and adds {{고 있어요}}. No {{시}} about yourself.",
+     "sk": [
+      "g:tense",
+      "g:honor"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "시간 있어요? 같이 밥 먹어요.",
+     "en": "Do you have time? Let's eat together."
+    },
+    {
+     "you": true,
+     "opts": [
+      "미안해요, 지금 바빠요.",
+      "미안해요, 지금 바뻐요.",
+      "미안해요, 지금 바빠해요."
+     ],
+     "a": 0,
+     "why": "{{바쁘다}} drops its ㅡ and takes {{아요}}: {{바빠요}}.",
+     "sk": [
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "괜찮아요. 또 만나요!",
+     "en": "That's okay. See you again!"
+    }
+   ]
+  },
+  {
+   "id": "L5-dlg-05",
+   "t": "dlg",
+   "title": "Hobbies",
+   "turns": [
+    {
+     "who": "Ms Kim",
+     "s": "취미가 뭐예요?",
+     "en": "What's your hobby?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "운동을 좋아해요.",
+      "운동이 좋아해요.",
+      "운동을 좋아요."
+     ],
+     "a": 0,
+     "why": "{{좋아해요}} takes an object: {{운동을}}.",
+     "sk": [
+      "g:particles",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Ms Kim",
+     "s": "아, 저도요! 운동 재미있어요.",
+     "en": "Oh, me too! Working out is fun."
+    },
+    {
+     "you": true,
+     "opts": [
+      "맞아요, 재미있어요.",
+      "맞아요, 재미있어해요.",
+      "맞아요, 재미없어요."
+     ],
+     "a": 0,
+     "why": "Agree with {{맞아요}} and repeat {{재미있어요}}. {{재미없어요}} would contradict your {{맞아요}}.",
+     "sk": [
+      "s:phrase",
+      "s:vocab"
+     ]
+    },
+    {
+     "who": "Ms Kim",
+     "s": "음악도 좋아해요?",
+     "en": "Do you like music too?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 음악도 좋아해요.",
+      "네, 음악을도 좋아해요.",
+      "네, 음악도 좋아요해요."
+     ],
+     "a": 0,
+     "why": "{{도}} takes the place of {{을}}; the two never go together.",
+     "sk": [
+      "g:particles"
+     ]
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Small talk with a coworker",
+   "setup": "It's a cold morning and a Korean coworker joins you by the coffee machine. Chat about the weather and what you like.",
+   "persona": "You are Minji, a friendly Korean coworker in Chicago. It is a cold winter morning. You like Korean movies and working out; you don't like the cold. Speak simple polite Korean (해요 style) using mostly words from levels 1-5: weather words, 좋아해요 / 좋아요, 재미있어요, -고 있어요, -네요, 도. Keep sentences short, ask one question at a time, and never use casual speech.",
+   "opening": "오늘 춥네요!",
+   "opening_en": "It's cold today, isn't it!",
+   "goals": [
+    "Agree about the weather",
+    "Say something you like and something you don't",
+    "Ask what she likes",
+    "Say \"me too\" at least once"
+   ]
+  },
+  {
+   "title": "Catching up with a friend",
+   "setup": "You bump into a Korean friend you haven't seen in a long time. Catch up and see if you can meet.",
+   "persona": "You are Junho, a Korean friend the learner hasn't seen in months. You're busy at work these days but free this weekend. Speak simple polite Korean (해요 style) using mostly words from levels 1-5. Ask how they are, what they're doing these days, and whether they have time. Keep sentences short.",
+   "opening": "오랜만이에요! 잘 지내요?",
+   "opening_en": "Long time no see! How are you?",
+   "goals": [
+    "Say how you're doing",
+    "Say what you're doing right now",
+    "Ask if he has time this weekend",
+    "Say goodbye naturally"
+   ]
+  }
+ ],
+ "pron": {
+  "한국 음식 좋아해요?": "한국 음식 쪼아해요",
+  "저도 한국 음식 좋아해요.": "저도 한국 음식 쪼아해요",
+  "저는요": "저는뇨",
+  "저는요?": "저는뇨",
+  "저를요": "저를료",
+  "오늘 날씨가 좋아요.": "오늘 날씨가 조아요",
+  "오늘 눈이 와요.": "오늘 누니 와요"
+ }
+}

@@ -1,0 +1,1552 @@
+{
+ "id": "L4",
+ "n": 4,
+ "title": "Around town, shopping, time",
+ "goal": "Ask where things are, get a taxi, shop and pay in won, and tell the time and day.",
+ "notes": [
+  {
+   "h": "Where is it? Here, there, over there",
+   "p": "{{어디예요?}} asks where something is. Answer with {{여기}} (here, near me), {{거기}} (there, near you) or {{저기}} (over there, away from both of us), plus {{예요}}. Directions are polite commands ending in {{-세요}}: {{쭉 가세요}} (go straight).",
+   "ex": [
+    [
+     "화장실이 어디예요?",
+     "Where's the restroom?"
+    ],
+    [
+     "저기예요",
+     "It's over there."
+    ],
+    [
+     "오른쪽으로 가세요",
+     "Go to the right."
+    ]
+   ]
+  },
+  {
+   "h": "To, at and by",
+   "p": "{{에}} marks where you are going and when something happens: {{한국에 가요}}, {{월요일에}}, {{세 시에}}. Never add {{에}} to {{오늘}}, {{내일}}, {{어제}} or {{지금}}. {{으로}} / {{로}} means \"toward\" or \"by (a way of travel)\": {{공항으로}}, {{지하철로}}, {{택시로}}. Use {{로}} after a vowel or after ㄹ, and {{으로}} after any other consonant. {{에서}} means \"from\" a place: {{여기에서}}.",
+   "ex": [
+    [
+     "내일 한국에 가요",
+     "I'm going to Korea tomorrow."
+    ],
+    [
+     "공항으로 가 주세요",
+     "To the airport, please."
+    ],
+    [
+     "지하철로 가요",
+     "I'm going by subway."
+    ]
+   ]
+  },
+  {
+   "h": "Money",
+   "p": "Prices use Sino-Korean numbers plus {{원}}. Korean groups big numbers in ten-thousands ({{만}}), not thousands: 10,000 is {{만}}, 50,000 is {{오만}}, 15,000 is {{만 오천}}. For 100, 1,000 and 10,000 just say {{백}}, {{천}}, {{만}} with no \"one\" in front. Ask the price with {{얼마예요?}}",
+   "ex": [
+    [
+     "이거 얼마예요?",
+     "How much is this?"
+    ],
+    [
+     "오천 원이에요",
+     "It's 5,000 won."
+    ],
+    [
+     "만 오천 원이에요",
+     "It's 15,000 won."
+    ]
+   ]
+  },
+  {
+   "h": "Telling time and days",
+   "p": "Hours use native numbers (shortened before {{시}}: {{한 시}}, {{두 시}}, {{세 시}}, {{네 시}}), and minutes use Sino-Korean: {{세 시 삼십 분}} is 3:30. {{반}} means half past: {{세 시 반}}. Eleven and twelve o'clock are {{열한 시}} and {{열두 시}}. The days of the week all end in {{요일}}, from {{월요일}} (Monday) to {{일요일}} (Sunday).",
+   "ex": [
+    [
+     "지금 몇 시예요?",
+     "What time is it now?"
+    ],
+    [
+     "두 시 십 분이에요",
+     "It's 2:10."
+    ],
+    [
+     "토요일에 가요",
+     "I'm going on Saturday."
+    ]
+   ]
+  },
+  {
+   "h": "Wanting, and sounds to watch",
+   "p": "Add {{-고 싶어요}} to a verb stem to say you want to do it: {{가다}} becomes {{가고 싶어요}}, {{사다}} becomes {{사고 싶어요}}. Listen for the tense ㅆ: {{싸요}} (it's cheap) and {{사요}} (I buy) differ only in that sound. A final consonant links into the next vowel: {{월요일}} is said {{워료일}} and {{목요일}} is said {{모교일}}. After a final t or p sound, the next consonant tenses: {{몇 시}} sounds like {{멷 씨}} and {{십 분}} like {{십 뿐}}.",
+   "ex": [
+    [
+     "이거 사고 싶어요",
+     "I'd like to buy this."
+    ],
+    [
+     "이거 싸요",
+     "This is cheap."
+    ],
+    [
+     "목요일에 가고 싶어요",
+     "I want to go on Thursday."
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "old": "1dfeb39974",
+   "topic": "Getting around",
+   "t": "어디예요?",
+   "en": "Where is it?",
+   "note": ""
+  },
+  {
+   "old": "35c65d0721",
+   "topic": "Getting around",
+   "t": "화장실이 어디예요?",
+   "en": "Where's the restroom?",
+   "note": ""
+  },
+  {
+   "old": "9dfe5efcc7",
+   "topic": "Getting around",
+   "t": "여기",
+   "en": "here",
+   "note": ""
+  },
+  {
+   "old": "c9168b631a",
+   "topic": "Getting around",
+   "t": "거기",
+   "en": "there (near you)",
+   "note": ""
+  },
+  {
+   "old": "275c4ea023",
+   "topic": "Getting around",
+   "t": "저기",
+   "en": "over there",
+   "note": ""
+  },
+  {
+   "old": "761309e9f8",
+   "topic": "Getting around",
+   "t": "왼쪽",
+   "en": "left side",
+   "note": ""
+  },
+  {
+   "old": "2216ac099e",
+   "topic": "Getting around",
+   "t": "오른쪽",
+   "en": "right side",
+   "note": ""
+  },
+  {
+   "old": "dd74c92f00",
+   "topic": "Getting around",
+   "t": "쭉 가세요",
+   "en": "Go straight",
+   "note": "",
+   "pron": "쭉 까세요"
+  },
+  {
+   "old": "c2ee397a6e",
+   "topic": "Getting around",
+   "t": "택시",
+   "en": "taxi",
+   "note": ""
+  },
+  {
+   "old": "5bc836dc13",
+   "topic": "Getting around",
+   "t": "지하철",
+   "en": "subway",
+   "note": ""
+  },
+  {
+   "old": "84423fb599",
+   "topic": "Getting around",
+   "t": "공항",
+   "en": "airport",
+   "note": ""
+  },
+  {
+   "old": "73bdbcb1d7",
+   "topic": "Getting around",
+   "t": "공항으로 가 주세요",
+   "en": "To the airport, please",
+   "note": "으로 = to / toward. Tell this to a taxi driver."
+  },
+  {
+   "old": "22c5e7c558",
+   "topic": "Getting around",
+   "t": "멀어요",
+   "en": "It's far",
+   "note": ""
+  },
+  {
+   "old": "dae4b0b50f",
+   "topic": "Getting around",
+   "t": "가까워요",
+   "en": "It's close",
+   "note": ""
+  },
+  {
+   "old": "e446b2499e",
+   "topic": "Getting around",
+   "t": "얼마나 걸려요?",
+   "en": "How long does it take?",
+   "note": ""
+  },
+  {
+   "old": "127bd6f8aa",
+   "topic": "Shopping",
+   "t": "비싸요",
+   "en": "It's expensive",
+   "note": ""
+  },
+  {
+   "old": "49fd063150",
+   "topic": "Shopping",
+   "t": "싸요",
+   "en": "It's cheap",
+   "note": "싸요 (cheap) has a tense ㅆ; 사요 (I buy) has a plain ㅅ."
+  },
+  {
+   "old": "e07fe9c5e2",
+   "topic": "Shopping",
+   "t": "이거 사고 싶어요",
+   "en": "I'd like to buy this",
+   "note": "-고 싶어요 = \"I want to …\"."
+  },
+  {
+   "old": "76082ffdb2",
+   "topic": "Shopping",
+   "t": "카드 돼요?",
+   "en": "Can I pay by card?",
+   "note": "Literally \"card works?\""
+  },
+  {
+   "old": "436498db61",
+   "topic": "Shopping",
+   "t": "그냥 보는 거예요",
+   "en": "Just looking",
+   "note": ""
+  },
+  {
+   "old": "183b32aa29",
+   "topic": "Shopping",
+   "t": "좀 깎아 주세요",
+   "en": "Please give me a discount",
+   "note": "Normal at markets, not in department stores."
+  },
+  {
+   "old": "ce4baedfd3",
+   "topic": "Time",
+   "t": "지금",
+   "en": "now",
+   "note": ""
+  },
+  {
+   "old": "1380863939",
+   "topic": "Time",
+   "t": "오늘",
+   "en": "today",
+   "note": ""
+  },
+  {
+   "old": "6b23b7b7dc",
+   "topic": "Time",
+   "t": "내일",
+   "en": "tomorrow",
+   "note": ""
+  },
+  {
+   "old": "a71a36b9a0",
+   "topic": "Time",
+   "t": "어제",
+   "en": "yesterday",
+   "note": ""
+  },
+  {
+   "old": "5eda13c3d2",
+   "topic": "Time",
+   "t": "지금 몇 시예요?",
+   "en": "What time is it now?",
+   "note": ""
+  },
+  {
+   "old": "a808fe58a4",
+   "topic": "Time",
+   "t": "세 시예요",
+   "en": "It's three o'clock",
+   "note": "Hours use native numbers (세), minutes use Sino-Korean (삼십 분 = 30 minutes)."
+  },
+  {
+   "old": "9e029be512",
+   "topic": "Time",
+   "t": "세 시 반",
+   "en": "half past three",
+   "note": ""
+  },
+  {
+   "old": "fb8d49e950",
+   "topic": "Time",
+   "t": "주말",
+   "en": "weekend",
+   "note": ""
+  },
+  {
+   "old": "45baea7f8a",
+   "topic": "Time",
+   "t": "아침",
+   "en": "morning",
+   "note": "Also means breakfast."
+  },
+  {
+   "old": "81275fd45e",
+   "topic": "Time",
+   "t": "저녁",
+   "en": "evening",
+   "note": "Also means dinner."
+  },
+  {
+   "t": "월요일",
+   "en": "Monday",
+   "topic": "Time",
+   "note": "{{요일}} = day of the week. Said {{워료일}}."
+  },
+  {
+   "t": "화요일",
+   "en": "Tuesday",
+   "topic": "Time",
+   "note": ""
+  },
+  {
+   "t": "수요일",
+   "en": "Wednesday",
+   "topic": "Time",
+   "note": ""
+  },
+  {
+   "t": "목요일",
+   "en": "Thursday",
+   "topic": "Time",
+   "note": "Said {{모교일}}."
+  },
+  {
+   "t": "금요일",
+   "en": "Friday",
+   "topic": "Time",
+   "note": "Said {{그묘일}}."
+  },
+  {
+   "t": "토요일",
+   "en": "Saturday",
+   "topic": "Time",
+   "note": ""
+  },
+  {
+   "t": "일요일",
+   "en": "Sunday",
+   "topic": "Time",
+   "note": "Said {{이료일}}."
+  },
+  {
+   "t": "원",
+   "en": "won (Korean money)",
+   "topic": "Shopping",
+   "note": "Prices use Sino-Korean numbers: {{오천 원}} = 5,000 won."
+  },
+  {
+   "t": "오늘은 무슨 요일이에요?",
+   "en": "What day is it today?",
+   "topic": "Time",
+   "note": "{{무슨}} = what kind of. An n sound is added before {{요일}}: said {{무슨 뇨일}}."
+  },
+  {
+   "t": "지하철로 가요",
+   "en": "I'm going by subway",
+   "topic": "Getting around",
+   "note": "{{로}} = by (a way of travel). After a consonant other than ㄹ it is {{으로}}."
+  }
+ ],
+ "items": [
+  {
+   "id": "L4-gap-01",
+   "t": "gap",
+   "q": "지금 ___ 시예요.",
+   "en": "It's two o'clock now.",
+   "opts": [
+    "두",
+    "이",
+    "둘",
+    "이십"
+   ],
+   "a": 0,
+   "why": "Hours use native numbers, and {{둘}} shortens to {{두}}: {{두 시}}.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-gap-02",
+   "t": "gap",
+   "q": "세 시 ___ 분이에요.",
+   "en": "It's 3:30.",
+   "opts": [
+    "삼십",
+    "서른",
+    "세",
+    "셋"
+   ],
+   "a": 0,
+   "why": "Minutes use Sino-Korean numbers: {{삼십 분}}. Only the hour is native.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-gap-03",
+   "t": "gap",
+   "q": "이거 ___ 원이에요.",
+   "en": "This is 5,000 won.",
+   "opts": [
+    "오천",
+    "다섯천",
+    "오천 개",
+    "다섯 개"
+   ],
+   "a": 0,
+   "why": "Money uses Sino-Korean numbers: {{오천 원}}.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-gap-04",
+   "t": "gap",
+   "q": "___ 원이에요.",
+   "en": "It's 10,000 won.",
+   "opts": [
+    "만",
+    "십천",
+    "열천",
+    "천만"
+   ],
+   "a": 0,
+   "why": "Ten thousand is its own number, {{만}}. {{천만}} is ten million.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-gap-05",
+   "t": "gap",
+   "q": "공항___ 가 주세요.",
+   "en": "To the airport, please.",
+   "opts": [
+    "으로",
+    "로",
+    "에서",
+    "는"
+   ],
+   "a": 0,
+   "why": "{{공항}} ends in a consonant (not ㄹ), so \"toward\" is {{으로}}. {{에서}} would mean \"from\".",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-gap-06",
+   "t": "gap",
+   "q": "지하철___ 가요.",
+   "en": "I go by subway.",
+   "opts": [
+    "로",
+    "으로",
+    "에",
+    "을"
+   ],
+   "a": 0,
+   "why": "\"By\" is {{로}} after ㄹ: {{지하철로}}. {{지하철에 가요}} would mean \"I go to the subway\".",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-gap-07",
+   "t": "gap",
+   "q": "내일 한국___ 가요.",
+   "en": "I'm going to Korea tomorrow.",
+   "opts": [
+    "에",
+    "에서",
+    "이",
+    "는"
+   ],
+   "a": 0,
+   "why": "{{에}} marks where you are going: {{한국에 가요}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-gap-08",
+   "t": "gap",
+   "q": "___ 시에 가요?",
+   "en": "What time are you going?",
+   "opts": [
+    "몇",
+    "뭐",
+    "어디",
+    "얼마"
+   ],
+   "a": 0,
+   "why": "{{몇}} = \"how many / what number\": {{몇 시}} = what time.",
+   "sk": [
+    "g:question"
+   ]
+  },
+  {
+   "id": "L4-gap-09",
+   "t": "gap",
+   "q": "월요일___ 가요.",
+   "en": "I'm going on Monday.",
+   "opts": [
+    "에",
+    "에서",
+    "로",
+    "을"
+   ],
+   "a": 0,
+   "why": "Days and clock times take {{에}}: {{월요일에}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-gap-10",
+   "t": "gap",
+   "q": "___ 가요.",
+   "en": "I'm going today.",
+   "opts": [
+    "오늘",
+    "오늘에",
+    "어제",
+    "내일에"
+   ],
+   "a": 0,
+   "why": "{{오늘}}, {{내일}} and {{어제}} never take {{에}}.",
+   "sk": [
+    "g:particles",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L4-gap-11",
+   "t": "gap",
+   "q": "이거 사고 ___.",
+   "en": "I want to buy this.",
+   "opts": [
+    "싶어요",
+    "없어요",
+    "싸요",
+    "주세요"
+   ],
+   "a": 0,
+   "why": "Verb stem + {{-고 싶어요}} = \"want to\": {{사고 싶어요}}.",
+   "sk": [
+    "g:want"
+   ]
+  },
+  {
+   "id": "L4-gap-12",
+   "t": "gap",
+   "q": "___ 시 반이에요.",
+   "en": "It's half past four.",
+   "opts": [
+    "네",
+    "사",
+    "넷",
+    "다섯"
+   ],
+   "a": 0,
+   "why": "Hours are native, and {{넷}} shortens to {{네}}: {{네 시 반}}.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-gap-13",
+   "t": "gap",
+   "q": "이거 ___. 좀 깎아 주세요.",
+   "en": "This is expensive. Please give me a discount.",
+   "opts": [
+    "비싸요",
+    "싸요",
+    "사요",
+    "가까워요"
+   ],
+   "a": 0,
+   "why": "You ask for a discount because it is {{비싸요}} (expensive). {{싸요}} is cheap and {{사요}} is \"I buy\".",
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L4-gap-14",
+   "t": "gap",
+   "q": "오른쪽___ 가세요.",
+   "en": "Go to the right.",
+   "opts": [
+    "으로",
+    "로",
+    "에서",
+    "를"
+   ],
+   "a": 0,
+   "why": "{{오른쪽}} ends in a consonant, so it takes {{으로}}: {{오른쪽으로}}.",
+   "sk": [
+    "g:particles",
+    "g:place"
+   ]
+  },
+  {
+   "id": "L4-gap-15",
+   "t": "gap",
+   "q": "화장실은 ___예요.",
+   "en": "The restroom is over there.",
+   "opts": [
+    "저기",
+    "여기",
+    "거기",
+    "어디"
+   ],
+   "a": 0,
+   "why": "{{저기}} = over there, away from both of you. {{여기}} is here, {{거기}} is there near the listener.",
+   "sk": [
+    "g:place"
+   ]
+  },
+  {
+   "id": "L4-gap-16",
+   "t": "gap",
+   "q": "오늘은 ___이에요.",
+   "en": "Today is Friday.",
+   "opts": [
+    "금요일",
+    "목요일",
+    "토요일",
+    "일요일"
+   ],
+   "a": 0,
+   "why": "{{금요일}} = Friday.",
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L4-pick-01",
+   "t": "pick",
+   "q": "You get into a taxi and want to go to the airport. You tell the driver:",
+   "opts": [
+    "공항으로 가 주세요",
+    "공항에서 가 주세요",
+    "공항이 어디예요?",
+    "공항이 멀어요"
+   ],
+   "a": 0,
+   "why": "{{공항으로 가 주세요}} = \"please go to the airport\". {{에서}} would mean \"from\".",
+   "sk": [
+    "s:phrase",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-pick-02",
+   "t": "pick",
+   "q": "A shop assistant offers to help, but you're only browsing. You say:",
+   "opts": [
+    "그냥 보는 거예요",
+    "이거 사고 싶어요",
+    "좀 깎아 주세요",
+    "카드 돼요?"
+   ],
+   "a": 0,
+   "why": "{{그냥 보는 거예요}} = \"I'm just looking\".",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L4-pick-03",
+   "t": "pick",
+   "q": "Before paying, you want to check whether you can use a credit card. You ask:",
+   "opts": [
+    "카드 돼요?",
+    "얼마예요?",
+    "비싸요?",
+    "카드예요?"
+   ],
+   "a": 0,
+   "why": "{{카드 돼요?}} = \"does card work?\" {{카드예요?}} asks \"is it a card?\"",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L4-pick-04",
+   "t": "pick",
+   "q": "At a street market, you want the seller to lower the price. You say:",
+   "opts": [
+    "좀 깎아 주세요",
+    "계산해 주세요",
+    "싸요",
+    "그냥 보는 거예요"
+   ],
+   "a": 0,
+   "why": "{{좀 깎아 주세요}} asks for a discount.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L4-pick-05",
+   "t": "pick",
+   "q": "Someone asks you the time. It's exactly 7:00. You say:",
+   "opts": [
+    "일곱 시예요",
+    "칠 시예요",
+    "일곱 시 분이에요",
+    "칠 분이에요"
+   ],
+   "a": 0,
+   "why": "Hours use native numbers: {{일곱 시}}. {{칠 분}} would be seven minutes.",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-pick-06",
+   "t": "pick",
+   "q": "You want to know how long the trip to the airport takes. You ask:",
+   "opts": [
+    "얼마나 걸려요?",
+    "얼마예요?",
+    "어디예요?",
+    "몇 시예요?"
+   ],
+   "a": 0,
+   "why": "{{얼마나 걸려요?}} = \"how long does it take?\" {{얼마예요?}} asks the price.",
+   "sk": [
+    "g:question"
+   ]
+  },
+  {
+   "id": "L4-pick-07",
+   "t": "pick",
+   "q": "Someone asks where the subway is. You point to it in the distance and say:",
+   "opts": [
+    "저기예요",
+    "여기예요",
+    "거기예요",
+    "어디예요?"
+   ],
+   "a": 0,
+   "why": "Something away from both of you is {{저기}}.",
+   "sk": [
+    "g:place"
+   ]
+  },
+  {
+   "id": "L4-pick-08",
+   "t": "pick",
+   "q": "The price tag says ₩15,000. Your friend asks the price. You say:",
+   "opts": [
+    "만 오천 원이에요",
+    "십오천 원이에요",
+    "열다섯 천 원이에요",
+    "오천 원이에요"
+   ],
+   "a": 0,
+   "why": "Korean counts in ten-thousands: 15,000 = {{만}} (10,000) + {{오천}} (5,000).",
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-tiles-01",
+   "t": "tiles",
+   "en": "I want to go to Korea.",
+   "full": "한국에 가고 싶어요.",
+   "a": [
+    "한국에",
+    "가고",
+    "싶어요"
+   ],
+   "alt": [],
+   "extra": [
+    "한국에서",
+    "가요"
+   ],
+   "sk": [
+    "g:want",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-tiles-02",
+   "t": "tiles",
+   "en": "To the airport, please.",
+   "full": "공항으로 가 주세요.",
+   "a": [
+    "공항으로",
+    "가",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "공항로",
+    "가요"
+   ],
+   "sk": [
+    "g:particles",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L4-tiles-03",
+   "t": "tiles",
+   "en": "Excuse me, where is the restroom?",
+   "full": "저기요, 화장실이 어디예요?",
+   "a": [
+    "저기요",
+    "화장실이",
+    "어디예요?"
+   ],
+   "alt": [],
+   "extra": [
+    "화장실을",
+    "여기예요"
+   ],
+   "sk": [
+    "g:question",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L4-tiles-04",
+   "t": "tiles",
+   "en": "It's 3:30.",
+   "full": "세 시 삼십 분이에요.",
+   "a": [
+    "세",
+    "시",
+    "삼십",
+    "분이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "삼",
+    "서른"
+   ],
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-tiles-05",
+   "t": "tiles",
+   "en": "I'm going by subway tomorrow.",
+   "full": "내일 지하철로 가요.",
+   "a": [
+    "내일",
+    "지하철로",
+    "가요"
+   ],
+   "alt": [
+    [
+     "지하철로",
+     "내일",
+     "가요"
+    ]
+   ],
+   "extra": [
+    "지하철에",
+    "갔어요"
+   ],
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-tiles-06",
+   "t": "tiles",
+   "en": "This is 3,000 won.",
+   "full": "이거 삼천 원이에요.",
+   "a": [
+    "이거",
+    "삼천",
+    "원이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "세천",
+    "개"
+   ],
+   "sk": [
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-tiles-07",
+   "t": "tiles",
+   "en": "Today is Monday. Tomorrow is Tuesday.",
+   "full": "오늘은 월요일이에요. 내일은 화요일이에요.",
+   "a": [
+    "오늘은",
+    "월요일이에요",
+    "내일은",
+    "화요일이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "오늘에",
+    "어제는"
+   ],
+   "sk": [
+    "s:vocab",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-tiles-08",
+   "t": "tiles",
+   "en": "Turn left over there.",
+   "full": "저기에서 왼쪽으로 가세요.",
+   "a": [
+    "저기에서",
+    "왼쪽으로",
+    "가세요"
+   ],
+   "alt": [],
+   "extra": [
+    "왼쪽에서",
+    "저기로"
+   ],
+   "sk": [
+    "g:place",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-tiles-09",
+   "t": "tiles",
+   "en": "I want to buy two of these.",
+   "full": "이거 두 개 사고 싶어요.",
+   "a": [
+    "이거",
+    "두",
+    "개",
+    "사고",
+    "싶어요"
+   ],
+   "alt": [],
+   "extra": [
+    "둘",
+    "싸고"
+   ],
+   "sk": [
+    "g:want",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L4-tiles-10",
+   "t": "tiles",
+   "en": "The airport is far from here.",
+   "full": "공항은 여기에서 멀어요.",
+   "a": [
+    "공항은",
+    "여기에서",
+    "멀어요"
+   ],
+   "alt": [
+    [
+     "여기에서",
+     "공항은",
+     "멀어요"
+    ]
+   ],
+   "extra": [
+    "가까워요",
+    "여기에"
+   ],
+   "sk": [
+    "g:place",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-tiles-11",
+   "t": "tiles",
+   "en": "What time is it now?",
+   "full": "지금 몇 시예요?",
+   "a": [
+    "지금",
+    "몇",
+    "시예요?"
+   ],
+   "alt": [],
+   "extra": [
+    "뭐",
+    "시에"
+   ],
+   "sk": [
+    "g:question",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-tiles-12",
+   "t": "tiles",
+   "en": "I want to go to the airport by taxi.",
+   "full": "택시로 공항에 가고 싶어요.",
+   "a": [
+    "택시로",
+    "공항에",
+    "가고",
+    "싶어요"
+   ],
+   "alt": [
+    [
+     "공항에",
+     "택시로",
+     "가고",
+     "싶어요"
+    ]
+   ],
+   "extra": [
+    "택시에",
+    "가요"
+   ],
+   "sk": [
+    "g:particles",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L4-listen-01",
+   "t": "listen",
+   "say": "세 시 반이에요.",
+   "opts": [
+    "It's 3:30.",
+    "It's 3:00.",
+    "It's 4:30.",
+    "It's 2:30.",
+    "It's been thirty minutes.",
+    "It's 3:15."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-listen-02",
+   "t": "listen",
+   "say": "오천 원이에요.",
+   "opts": [
+    "It's 5,000 won.",
+    "It's 500 won.",
+    "It's 50,000 won.",
+    "It's 4,000 won.",
+    "It's 1,000 won.",
+    "It's 5 won."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L4-listen-03",
+   "t": "listen",
+   "say": "이거 싸요.",
+   "opts": [
+    "This is cheap.",
+    "I'm buying this.",
+    "This is expensive.",
+    "This is spicy.",
+    "This is far.",
+    "This is delicious."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L4-listen-04",
+   "t": "listen",
+   "say": "공항으로 가 주세요.",
+   "opts": [
+    "To the airport, please.",
+    "Where is the airport?",
+    "Is the airport far?",
+    "I want to go to the airport.",
+    "I'm at the airport.",
+    "To the subway, please."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-listen-05",
+   "t": "listen",
+   "say": "내일 지하철로 가요.",
+   "opts": [
+    "I'm going by subway tomorrow.",
+    "I went by subway yesterday.",
+    "I'm going by taxi tomorrow.",
+    "I'm going to the subway today.",
+    "I want to go by subway tomorrow.",
+    "Where is the subway?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L4-listen-06",
+   "t": "listen",
+   "say": "화장실이 어디예요?",
+   "opts": [
+    "Where's the restroom?",
+    "The restroom is over there.",
+    "Is there a restroom?",
+    "Where is the subway?",
+    "The restroom is here.",
+    "Is the restroom far?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L4-listen-07",
+   "t": "listen",
+   "say": "토요일에 가고 싶어요.",
+   "opts": [
+    "I want to go on Saturday.",
+    "I'm going on Saturday.",
+    "I want to go on Sunday.",
+    "I want to buy it on Saturday.",
+    "I don't want to go on Saturday.",
+    "I want to go on Thursday."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want"
+   ]
+  },
+  {
+   "id": "L4-listen-08",
+   "t": "listen",
+   "say": "지금 몇 시예요?",
+   "opts": [
+    "What time is it now?",
+    "What day is it today?",
+    "How much is it now?",
+    "How long does it take?",
+    "Where is it now?",
+    "What time is it tomorrow?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L4-listen-09",
+   "t": "listen",
+   "say": "왼쪽으로 쭉 가세요.",
+   "opts": [
+    "Keep going to the left.",
+    "Keep going to the right.",
+    "It's on the left.",
+    "Turn right over there.",
+    "Is it on the left?",
+    "Don't go left."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:place"
+   ]
+  },
+  {
+   "id": "L4-listen-10",
+   "t": "listen",
+   "say": "이거 비싸요. 만 원이에요.",
+   "opts": [
+    "This is expensive. It's 10,000 won.",
+    "This is cheap. It's 10,000 won.",
+    "This is expensive. It's 1,000 won.",
+    "This is expensive. It's 100,000 won.",
+    "I'm buying this. It's 10,000 won.",
+    "This is expensive. It's 10 won."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L4-dlg-01",
+   "t": "dlg",
+   "title": "In a taxi",
+   "turns": [
+    {
+     "who": "Driver",
+     "s": "어서 오세요. 어디로 가세요?",
+     "en": "Hello. Where are you headed?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "공항으로 가 주세요.",
+      "공항에서 가 주세요.",
+      "공항이 어디예요?"
+     ],
+     "a": 0,
+     "why": "{{으로}} = toward: {{공항으로 가 주세요}}. {{공항에서}} would mean \"from the airport\".",
+     "sk": [
+      "g:particles",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Driver",
+     "s": "네. 공항은 좀 멀어요.",
+     "en": "Okay. The airport is a bit far."
+    },
+    {
+     "you": true,
+     "opts": [
+      "얼마나 걸려요?",
+      "얼마나 걸려 주세요?",
+      "얼마나 걸렸어요?"
+     ],
+     "a": 0,
+     "why": "{{얼마나 걸려요?}} asks how long it takes. {{걸렸어요}} is past (\"how long did it take?\").",
+     "sk": [
+      "g:question",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Driver",
+     "s": "사십 분 걸려요.",
+     "en": "It takes forty minutes."
+    }
+   ]
+  },
+  {
+   "id": "L4-dlg-02",
+   "t": "dlg",
+   "title": "At a market stall",
+   "turns": [
+    {
+     "who": "Shop owner",
+     "s": "어서 오세요.",
+     "en": "Welcome."
+    },
+    {
+     "you": true,
+     "opts": [
+      "이거 얼마예요?",
+      "이거 어디예요?",
+      "이거 몇 시예요?"
+     ],
+     "a": 0,
+     "why": "{{얼마예요?}} asks the price.",
+     "sk": [
+      "g:question"
+     ]
+    },
+    {
+     "who": "Shop owner",
+     "s": "이만 원이에요.",
+     "en": "It's 20,000 won."
+    },
+    {
+     "you": true,
+     "opts": [
+      "비싸요. 좀 깎아 주세요.",
+      "싸요. 좀 깎아 주세요.",
+      "사요. 좀 깎아 주세요."
+     ],
+     "a": 0,
+     "why": "You ask for a discount because it is {{비싸요}} (expensive). {{싸요}} (cheap) and {{사요}} (I buy) don't fit.",
+     "sk": [
+      "s:vocab",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Shop owner",
+     "s": "그럼 만 팔천 원 주세요.",
+     "en": "Then give me 18,000 won."
+    },
+    {
+     "you": true,
+     "opts": [
+      "카드 돼요?",
+      "카드예요?",
+      "카드 있어요?"
+     ],
+     "a": 0,
+     "why": "{{카드 돼요?}} asks whether you can pay by card. {{카드 있어요?}} asks the seller if she has a card.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Shop owner",
+     "s": "네, 돼요.",
+     "en": "Yes, that's fine."
+    }
+   ]
+  },
+  {
+   "id": "L4-dlg-03",
+   "t": "dlg",
+   "title": "What time is it?",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "지금 몇 시예요?",
+     "en": "What time is it now?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "두 시 십 분이에요.",
+      "이 시 십 분이에요.",
+      "두 시 열 분이에요."
+     ],
+     "a": 0,
+     "why": "Native number for the hour ({{두 시}}), Sino-Korean for the minutes ({{십 분}}).",
+     "sk": [
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "저는 세 시에 공항에 가요.",
+     "en": "I'm going to the airport at three."
+    },
+    {
+     "you": true,
+     "opts": [
+      "공항은 멀어요. 택시로 가세요.",
+      "공항은 멀어요. 택시에 가세요.",
+      "공항은 멀어요. 택시를 가세요."
+     ],
+     "a": 0,
+     "why": "{{로}} = by: {{택시로 가세요}} = \"go by taxi\".",
+     "sk": [
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "네, 고마워요.",
+     "en": "Okay, thanks."
+    }
+   ]
+  },
+  {
+   "id": "L4-dlg-04",
+   "t": "dlg",
+   "title": "Weekend plans",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "주말에 뭐 하고 싶어요?",
+     "en": "What do you want to do this weekend?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "고기 먹고 싶어요.",
+      "고기 먹어요 싶어요.",
+      "고기 먹고 있어요."
+     ],
+     "a": 0,
+     "why": "Verb stem + {{-고 싶어요}}: {{먹고 싶어요}}. {{먹고 있어요}} means \"I'm eating\".",
+     "sk": [
+      "g:want"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "좋아요! 같이 먹어요. 토요일 어때요?",
+     "en": "Great! Let's eat together. How about Saturday?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 토요일에 같이 먹어요.",
+      "네, 토요일에서 같이 먹어요.",
+      "네, 토요일을 같이 먹어요."
+     ],
+     "a": 0,
+     "why": "Days take {{에}}: {{토요일에}}.",
+     "sk": [
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "몇 시에 만나요?",
+     "en": "What time shall we meet?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "여섯 시 반에 만나요.",
+      "육 시 반에 만나요.",
+      "여섯 시 삼십에 만나요."
+     ],
+     "a": 0,
+     "why": "Hours are native ({{여섯 시}}), and {{반}} = half past. Minutes would need {{분}}.",
+     "sk": [
+      "g:numbers",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "좋아요. 토요일에 봐요!",
+     "en": "Great. See you on Saturday!"
+    }
+   ]
+  },
+  {
+   "id": "L4-dlg-05",
+   "t": "dlg",
+   "title": "Giving directions",
+   "turns": [
+    {
+     "who": "Stranger",
+     "s": "저기요, 지하철이 어디예요?",
+     "en": "Excuse me, where's the subway?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "저기예요. 쭉 가세요.",
+      "저기예요. 쭉 가요 주세요.",
+      "저기예요. 쭉 갔어요."
+     ],
+     "a": 0,
+     "why": "Directions use the polite command {{가세요}}: {{쭉 가세요}} = go straight.",
+     "sk": [
+      "g:place",
+      "g:honor"
+     ]
+    },
+    {
+     "who": "Stranger",
+     "s": "멀어요?",
+     "en": "Is it far?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "아니요, 가까워요.",
+      "아니요, 멀어요.",
+      "네, 가까워요."
+     ],
+     "a": 0,
+     "why": "{{아니요}} (no, it isn't far) goes with {{가까워요}} (it's close). The other two contradict themselves.",
+     "sk": [
+      "s:vocab"
+     ]
+    },
+    {
+     "who": "Stranger",
+     "s": "감사합니다!",
+     "en": "Thank you!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "안녕히 가세요.",
+      "안녕히 계세요.",
+      "잘 먹겠습니다."
+     ],
+     "a": 0,
+     "why": "The stranger is walking off, so you say {{안녕히 가세요}}.",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Taxi ride",
+   "setup": "You flag down a taxi in Seoul. Tell the driver where to go and sort out the trip and payment.",
+   "persona": "You are a friendly Seoul taxi driver. The learner wants to go somewhere in the city or to the airport. The airport is far: about forty minutes and around 50,000 won (오만 원). Card payment is fine. Answer questions about time and price with native numbers for hours and Sino-Korean numbers for minutes and money. Speak simple polite Korean (-요 endings; -세요 for requests) using mostly words from levels 1-4, short sentences.",
+   "opening": "어서 오세요. 어디로 가세요?",
+   "opening_en": "Hello. Where are you headed?",
+   "goals": [
+    "Tell the driver where to go",
+    "Ask how long it takes",
+    "Ask how much it is",
+    "Ask if you can pay by card"
+   ]
+  },
+  {
+   "title": "Shopping at a market",
+   "setup": "You are browsing at a stall in a Seoul market. Find something you like, ask the price, and haggle a little.",
+   "persona": "You are a cheerful stall owner at a Seoul market selling cups, chopsticks and small souvenirs. Prices range from 3,000 won (삼천 원) to 20,000 won (이만 원). If the learner asks for a discount, take off 1,000 or 2,000 won. Card is fine. Say prices in Sino-Korean numbers with 원 and count items with native numbers plus 개. Speak simple polite Korean (-요 endings) using mostly words from levels 1-4.",
+   "opening": "어서 오세요. 뭐 찾으세요?",
+   "opening_en": "Welcome. What are you looking for?",
+   "goals": [
+    "Ask the price of something",
+    "Understand a price in won",
+    "Ask for a discount",
+    "Say you want to buy two of something",
+    "Ask if you can pay by card"
+   ]
+  }
+ ],
+ "pron": {
+  "오늘은 무슨 요일이에요?": "오느른 무슨 뇨이리에요",
+  "쭉 가세요": "쭉 까세요"
+ }
+}

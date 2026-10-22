@@ -1,0 +1,1479 @@
+{
+ "id": "L3",
+ "n": 3,
+ "title": "Food and drink",
+ "goal": "Order food and drinks, count things and people, and say what you like to eat.",
+ "notes": [
+  {
+   "h": "Asking for things",
+   "p": "Say the thing first and put {{주세요}} (\"please give me\") last. Adding {{좀}} before {{주세요}} makes the request softer, like \"could I have some\". To ask for the bill, say {{계산해 주세요}}.",
+   "ex": [
+    [
+     "물 좀 주세요",
+     "Some water, please."
+    ],
+    [
+     "이거 주세요",
+     "This one, please."
+    ],
+    [
+     "메뉴 좀 주세요",
+     "The menu, please."
+    ]
+   ]
+  },
+  {
+   "h": "Counting with native numbers",
+   "p": "To count, say the thing, then a native Korean number, then a counter word: {{커피 두 잔}} is \"coffee, two, cups\". Right before a counter, four numbers get shorter: {{하나}} becomes {{한}}, {{둘}} becomes {{두}}, {{셋}} becomes {{세}}, {{넷}} becomes {{네}}. Common counters: {{개}} for things, {{명}} for people, {{잔}} for cups and glasses, {{병}} for bottles. Sino-Korean numbers never go here: {{삼 잔}} is wrong. Staff ask how many you are with the respectful {{몇 분이세요?}}, but you answer about yourselves with {{명}}.",
+   "ex": [
+    [
+     "커피 두 잔 주세요",
+     "Two coffees, please."
+    ],
+    [
+     "맥주 세 병 주세요",
+     "Three bottles of beer, please."
+    ],
+    [
+     "두 명이에요",
+     "There are two of us."
+    ],
+    [
+     "이거 한 개 주세요",
+     "One of these, please."
+    ]
+   ]
+  },
+  {
+   "h": "Eating, drinking and \"I'll have\"",
+   "p": "The thing you eat or drink is marked with {{을}} after a consonant and {{를}} after a vowel: {{밥을}}, {{커피를}}. In casual speech it is often dropped, but never swap the two. Polite verbs end in {{요}}: {{먹어요}} (eat), {{마셔요}} (drink). To say what you'll have, or to ask what someone would like, add {{-ㄹ래요}} after a vowel and {{-을래요}} after a consonant: {{마실래요}}, {{먹을래요}}. {{뭐}} means \"what\".",
+   "ex": [
+    [
+     "커피를 마셔요",
+     "I drink coffee."
+    ],
+    [
+     "밥을 먹어요",
+     "I eat rice."
+    ],
+    [
+     "뭐 먹을래요?",
+     "What would you like to eat?"
+    ],
+    [
+     "저는 맥주 마실래요",
+     "I'll have a beer."
+    ]
+   ]
+  },
+  {
+   "h": "Have, don't have, and \"not\"",
+   "p": "{{있어요}} means \"there is / I have\" and {{없어요}} means \"there isn't / I don't have\". They are a pair, so never say {{안 있어요}}. {{맛있어요}} (delicious) is literally \"taste exists\" and {{맛없어요}} is \"no taste\". For other verbs, put {{안}} right before the verb to mean \"not\": {{안 먹어요}}, {{안 매워요}}.",
+   "ex": [
+    [
+     "소고기 있어요?",
+     "Do you have beef?"
+    ],
+    [
+     "죄송합니다. 소고기는 없어요.",
+     "Sorry, we don't have beef."
+    ],
+    [
+     "저는 고기를 안 먹어요",
+     "I don't eat meat."
+    ]
+   ]
+  },
+  {
+   "h": "Sounds: linking and hidden changes",
+   "p": "A final consonant slides into a following vowel: {{먹어요}} is said {{머거요}} and {{맛있어요}} is said {{마시써요}}. After a final k, t or p sound, the next plain consonant becomes tense: {{맥주}} sounds like {{맥쭈}}, {{숟가락}} like {{숟까락}}. When a syllable ends in two consonant letters, only one is said: {{닭고기}} is {{닥꼬기}}. A p sound before m turns into m: {{밥 먹어요}} sounds like {{밤 머거요}}.",
+   "ex": [
+    [
+     "맛있어요",
+     "It's delicious."
+    ],
+    [
+     "맥주 두 병 주세요",
+     "Two bottles of beer, please."
+    ],
+    [
+     "닭고기 있어요?",
+     "Do you have chicken?"
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "old": "536d82e45c",
+   "topic": "Food",
+   "t": "물",
+   "en": "water",
+   "note": ""
+  },
+  {
+   "old": "b76a52deaf",
+   "topic": "Food",
+   "t": "밥",
+   "en": "rice / a meal",
+   "note": "\"Have you eaten?\" in Korean literally asks about 밥."
+  },
+  {
+   "old": "a07b3559bf",
+   "topic": "Food",
+   "t": "고기",
+   "en": "meat",
+   "note": ""
+  },
+  {
+   "old": "c52710c77a",
+   "topic": "Food",
+   "t": "소고기",
+   "en": "beef",
+   "note": ""
+  },
+  {
+   "old": "d8f6bdf910",
+   "topic": "Food",
+   "t": "돼지고기",
+   "en": "pork",
+   "note": ""
+  },
+  {
+   "old": "e7c9b955b7",
+   "topic": "Food",
+   "t": "닭고기",
+   "en": "chicken (as food)",
+   "note": "Fried chicken is 치킨."
+  },
+  {
+   "old": "9f12f0dbfb",
+   "topic": "Food",
+   "t": "맥주",
+   "en": "beer",
+   "note": ""
+  },
+  {
+   "old": "8b16eb81bf",
+   "topic": "Food",
+   "t": "커피",
+   "en": "coffee",
+   "note": ""
+  },
+  {
+   "old": "c778c5806d",
+   "topic": "Food",
+   "t": "메뉴",
+   "en": "menu",
+   "note": ""
+  },
+  {
+   "old": "29b1213d60",
+   "topic": "Food",
+   "t": "젓가락",
+   "en": "chopsticks",
+   "note": ""
+  },
+  {
+   "old": "0ce0a535dd",
+   "topic": "Food",
+   "t": "숟가락",
+   "en": "spoon",
+   "note": ""
+  },
+  {
+   "old": "1ef7eb1bdd",
+   "topic": "Food",
+   "t": "이거 주세요",
+   "en": "This one, please",
+   "note": "주세요 = \"please give me\". Point and say it."
+  },
+  {
+   "old": "709f589e51",
+   "topic": "Food",
+   "t": "물 좀 주세요",
+   "en": "Water, please",
+   "note": "좀 softens a request, like \"a bit / please\"."
+  },
+  {
+   "old": "adfc17d3e4",
+   "topic": "Food",
+   "t": "계산해 주세요",
+   "en": "The check, please",
+   "note": ""
+  },
+  {
+   "old": "c9e3a3e077",
+   "topic": "Food",
+   "t": "맛있어요",
+   "en": "It's delicious",
+   "note": ""
+  },
+  {
+   "old": "34b4aa2ee3",
+   "topic": "Food",
+   "t": "맛없어요",
+   "en": "It's not good (taste)",
+   "note": ""
+  },
+  {
+   "old": "59d747b911",
+   "topic": "Food",
+   "t": "배고파요",
+   "en": "I'm hungry",
+   "note": ""
+  },
+  {
+   "old": "df24d169fd",
+   "topic": "Food",
+   "t": "배불러요",
+   "en": "I'm full",
+   "note": ""
+  },
+  {
+   "old": "1c01dfa5bd",
+   "topic": "Food",
+   "t": "매워요",
+   "en": "It's spicy",
+   "note": ""
+  },
+  {
+   "old": "6cc1b25267",
+   "topic": "Food",
+   "t": "안 맵게 해 주세요",
+   "en": "Not spicy, please",
+   "note": "안 before a verb = not."
+  },
+  {
+   "old": "126202fff7",
+   "topic": "Food",
+   "t": "얼마예요?",
+   "en": "How much is it?",
+   "note": ""
+  },
+  {
+   "old": "d4a151269f",
+   "topic": "Food",
+   "t": "두 명이에요",
+   "en": "There are two of us",
+   "note": "명 = counter for people."
+  },
+  {
+   "old": "ea211177ca",
+   "topic": "Food",
+   "t": "건배!",
+   "en": "Cheers!",
+   "note": ""
+  },
+  {
+   "old": "a0a3afd82d",
+   "topic": "Food",
+   "t": "뭐 마실래요?",
+   "en": "What will you drink?",
+   "note": "-ㄹ래요 = \"would you like to / I'll …\"."
+  },
+  {
+   "old": "46aa36d1d4",
+   "topic": "Food",
+   "t": "같이 먹어요",
+   "en": "Let's eat together",
+   "note": "The -요 ending can also mean \"let's\" depending on context."
+  },
+  {
+   "t": "있어요",
+   "en": "There is some / We have it",
+   "topic": "Food",
+   "note": "Also \"I have it\". Ask with a rising voice: {{물 있어요?}}"
+  },
+  {
+   "t": "없어요",
+   "en": "There isn't any / We don't have it",
+   "topic": "Food",
+   "note": "The opposite of {{있어요}}. Never say {{안 있어요}}."
+  },
+  {
+   "t": "이거 뭐예요?",
+   "en": "What is this?",
+   "topic": "Food",
+   "note": "{{뭐}} = what. Point at a dish and ask."
+  },
+  {
+   "t": "커피 한 잔 주세요",
+   "en": "One coffee, please",
+   "topic": "Food",
+   "note": "{{잔}} counts cups and glasses. Order: thing, number, counter."
+  },
+  {
+   "t": "맥주 두 병 주세요",
+   "en": "Two bottles of beer, please",
+   "topic": "Food",
+   "note": "{{병}} counts bottles."
+  },
+  {
+   "t": "이거 두 개 주세요",
+   "en": "Two of these, please",
+   "topic": "Food",
+   "note": "{{개}} is the everyday counter for things."
+  },
+  {
+   "t": "몇 분이세요?",
+   "en": "How many in your party?",
+   "topic": "Food",
+   "note": "Staff use the respectful counter {{분}} for you. Answer with {{명}}: {{두 명이에요}}."
+  },
+  {
+   "t": "고기 안 먹어요",
+   "en": "I don't eat meat",
+   "topic": "Food",
+   "note": "{{안}} goes right before the verb."
+  },
+  {
+   "t": "커피를 마셔요",
+   "en": "I drink coffee",
+   "topic": "Food",
+   "note": "{{를}} marks what you drink after a vowel; after a consonant it is {{을}}: {{물을 마셔요}}."
+  },
+  {
+   "t": "뭐 드릴까요?",
+   "en": "What can I get you?",
+   "topic": "Food",
+   "note": "What servers and café staff ask you."
+  }
+ ],
+ "items": [
+  {
+   "id": "L3-gap-01",
+   "t": "gap",
+   "q": "커피 ___ 잔 주세요.",
+   "en": "Two coffees, please.",
+   "opts": [
+    "두",
+    "이",
+    "둘",
+    "두 개"
+   ],
+   "a": 0,
+   "why": "Counters take native numbers, and {{둘}} shortens to {{두}} before a counter.",
+   "sk": [
+    "g:numbers",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-gap-02",
+   "t": "gap",
+   "q": "맥주 ___ 병 주세요.",
+   "en": "Three bottles of beer, please.",
+   "opts": [
+    "세",
+    "삼",
+    "셋",
+    "세 개"
+   ],
+   "a": 0,
+   "why": "Native number before a counter: {{셋}} shortens to {{세}}. {{삼}} is Sino-Korean.",
+   "sk": [
+    "g:numbers",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-gap-03",
+   "t": "gap",
+   "q": "___ 명이에요.",
+   "en": "There are four of us.",
+   "opts": [
+    "네",
+    "사",
+    "넷",
+    "네 개"
+   ],
+   "a": 0,
+   "why": "People are counted with native numbers: {{넷}} shortens to {{네}}, so {{네 명}}.",
+   "sk": [
+    "g:numbers",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-gap-04",
+   "t": "gap",
+   "q": "이거 ___ 주세요.",
+   "en": "One of these, please.",
+   "opts": [
+    "한 개",
+    "하나 개",
+    "일 개",
+    "한 명"
+   ],
+   "a": 0,
+   "why": "{{하나}} becomes {{한}} before a counter, and {{개}} counts things. {{명}} counts people.",
+   "sk": [
+    "g:counters",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L3-gap-05",
+   "t": "gap",
+   "q": "물___ 마셔요.",
+   "en": "I drink water.",
+   "opts": [
+    "을",
+    "를",
+    "에",
+    "이에요"
+   ],
+   "a": 0,
+   "why": "{{물}} ends in a consonant, so the object marker is {{을}}: {{물을}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L3-gap-06",
+   "t": "gap",
+   "q": "커피___ 마셔요.",
+   "en": "I drink coffee.",
+   "opts": [
+    "를",
+    "을",
+    "에",
+    "예요"
+   ],
+   "a": 0,
+   "why": "{{커피}} ends in a vowel, so the object marker is {{를}}: {{커피를}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L3-gap-07",
+   "t": "gap",
+   "q": "밥___ 먹어요.",
+   "en": "I eat rice.",
+   "opts": [
+    "을",
+    "를",
+    "에서",
+    "예요"
+   ],
+   "a": 0,
+   "why": "{{밥}} ends in a consonant, so it takes {{을}}: {{밥을 먹어요}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L3-gap-08",
+   "t": "gap",
+   "q": "저는 고기를 ___ 먹어요.",
+   "en": "I don't eat meat.",
+   "opts": [
+    "안",
+    "아니요",
+    "없어요",
+    "아니에요"
+   ],
+   "a": 0,
+   "why": "{{안}} right before a verb makes it negative. {{아니에요}} only negates nouns (\"it isn't …\").",
+   "sk": [
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-gap-09",
+   "t": "gap",
+   "q": "물 ___ 주세요.",
+   "en": "Some water, please.",
+   "opts": [
+    "좀",
+    "뭐",
+    "안",
+    "이"
+   ],
+   "a": 0,
+   "why": "{{좀}} softens a request: {{물 좀 주세요}}.",
+   "sk": [
+    "s:phrase",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-gap-10",
+   "t": "gap",
+   "q": "죄송합니다. 소고기는 ___.",
+   "en": "Sorry, we don't have beef.",
+   "opts": [
+    "없어요",
+    "있어요",
+    "안 있어요",
+    "아니에요"
+   ],
+   "a": 0,
+   "why": "The opposite of {{있어요}} is {{없어요}}; Korean never says {{안 있어요}}.",
+   "sk": [
+    "g:neg",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-gap-11",
+   "t": "gap",
+   "q": "젓가락 ___?",
+   "en": "Do you have chopsticks?",
+   "opts": [
+    "있어요",
+    "없어요",
+    "먹어요",
+    "맛있어요"
+   ],
+   "a": 0,
+   "why": "{{있어요?}} asks \"is there / do you have?\". {{없어요?}} would ask \"don't you have any?\"",
+   "sk": [
+    "s:vocab",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-gap-12",
+   "t": "gap",
+   "q": "뭐 ___?",
+   "en": "What would you like to eat?",
+   "opts": [
+    "먹을래요",
+    "먹래요",
+    "마실래요",
+    "먹었어요"
+   ],
+   "a": 0,
+   "why": "{{먹다}} ends in a consonant, so it takes {{-을래요}}: {{먹을래요}}. {{마실래요}} is for drinks.",
+   "sk": [
+    "g:want",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L3-gap-13",
+   "t": "gap",
+   "q": "저는 맥주 ___.",
+   "en": "I'll have a beer.",
+   "opts": [
+    "마실래요",
+    "마시을래요",
+    "마셔래요",
+    "맛있어요"
+   ],
+   "a": 0,
+   "why": "{{마시다}} ends in a vowel, so it takes {{-ㄹ래요}}: {{마실래요}}.",
+   "sk": [
+    "g:want",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L3-gap-14",
+   "t": "gap",
+   "q": "물 두 ___ 주세요.",
+   "en": "Two bottles of water, please.",
+   "opts": [
+    "병",
+    "명",
+    "잔",
+    "분"
+   ],
+   "a": 0,
+   "why": "{{병}} counts bottles. {{잔}} is cups or glasses, {{명}} and {{분}} count people.",
+   "sk": [
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-gap-15",
+   "t": "gap",
+   "q": "세 ___이에요.",
+   "en": "There are three of us.",
+   "opts": [
+    "명",
+    "개",
+    "잔",
+    "병"
+   ],
+   "a": 0,
+   "why": "{{명}} counts people: {{세 명이에요}}.",
+   "sk": [
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-gap-16",
+   "t": "gap",
+   "q": "이거 진짜 ___.",
+   "en": "This is really delicious.",
+   "opts": [
+    "맛있어요",
+    "맛없어요",
+    "매워요",
+    "배불러요"
+   ],
+   "a": 0,
+   "why": "{{맛있어요}} = delicious; {{맛없어요}} is the opposite.",
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-pick-01",
+   "t": "pick",
+   "q": "You want to call the server over in a restaurant. You say:",
+   "opts": [
+    "저기요",
+    "잠깐만요",
+    "괜찮아요",
+    "건배!"
+   ],
+   "a": 0,
+   "why": "{{저기요}} is how you get a server's attention.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L3-pick-02",
+   "t": "pick",
+   "q": "You've finished eating and want to pay. You say to the server:",
+   "opts": [
+    "계산해 주세요",
+    "잘 먹겠습니다",
+    "배고파요",
+    "이거 주세요"
+   ],
+   "a": 0,
+   "why": "{{계산해 주세요}} asks for the check.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L3-pick-03",
+   "t": "pick",
+   "q": "Your friend's mother has cooked dinner, and you are about to start eating. You say:",
+   "opts": [
+    "잘 먹겠습니다",
+    "잘 먹었습니다",
+    "맛없어요",
+    "배불러요"
+   ],
+   "a": 0,
+   "why": "{{잘 먹겠습니다}} is said before eating; {{잘 먹었습니다}} after.",
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L3-pick-04",
+   "t": "pick",
+   "q": "You can't handle spicy food. When you order, you ask:",
+   "opts": [
+    "안 맵게 해 주세요",
+    "맵게 해 주세요",
+    "매워요",
+    "안 매워요"
+   ],
+   "a": 0,
+   "why": "{{안 맵게 해 주세요}} = \"please make it not spicy\". {{안 매워요}} only says \"it isn't spicy\".",
+   "sk": [
+    "s:phrase",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-pick-05",
+   "t": "pick",
+   "q": "A server asks {{몇 분이세요?}} You are with one friend. You say:",
+   "opts": [
+    "두 명이에요",
+    "이 명이에요",
+    "두 분이에요",
+    "한 명이에요"
+   ],
+   "a": 0,
+   "why": "You and a friend make two: native {{두}} with the counter {{명}}. {{분}} is the respectful counter staff use for customers, not for yourselves.",
+   "sk": [
+    "g:counters",
+    "g:honor",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L3-pick-06",
+   "t": "pick",
+   "q": "You don't know what a dish on the menu is. You point and ask:",
+   "opts": [
+    "이거 뭐예요?",
+    "이거 주세요",
+    "이거 있어요",
+    "이거 맛없어요"
+   ],
+   "a": 0,
+   "why": "{{이거 뭐예요?}} = \"What is this?\"",
+   "sk": [
+    "g:question",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L3-pick-07",
+   "t": "pick",
+   "q": "You are vegetarian, and the server recommends a pork dish. You say:",
+   "opts": [
+    "저는 고기 안 먹어요",
+    "저는 고기 먹어요",
+    "저는 고기 없어요",
+    "저는 고기 아니에요"
+   ],
+   "a": 0,
+   "why": "{{안}} before the verb: {{고기 안 먹어요}} = \"I don't eat meat\". {{고기 아니에요}} would mean \"I am not meat\".",
+   "sk": [
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-pick-08",
+   "t": "pick",
+   "q": "Your host offers you more food. You've eaten plenty, so you tell her you're full:",
+   "opts": [
+    "배불러요",
+    "배고파요",
+    "맛없어요",
+    "매워요"
+   ],
+   "a": 0,
+   "why": "{{배불러요}} = \"I'm full\"; {{배고파요}} is \"I'm hungry\".",
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-tiles-01",
+   "t": "tiles",
+   "en": "Two coffees, please.",
+   "full": "커피 두 잔 주세요.",
+   "a": [
+    "커피",
+    "두",
+    "잔",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "둘",
+    "이"
+   ],
+   "sk": [
+    "g:counters",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L3-tiles-02",
+   "t": "tiles",
+   "en": "Some water, please.",
+   "full": "물 좀 주세요.",
+   "a": [
+    "물",
+    "좀",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "뭐",
+    "없어요"
+   ],
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L3-tiles-03",
+   "t": "tiles",
+   "en": "I don't eat meat.",
+   "full": "저는 고기를 안 먹어요.",
+   "a": [
+    "저는",
+    "고기를",
+    "안",
+    "먹어요"
+   ],
+   "alt": [],
+   "extra": [
+    "고기가",
+    "없어요"
+   ],
+   "sk": [
+    "g:neg",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L3-tiles-04",
+   "t": "tiles",
+   "en": "Three bottles of beer, please.",
+   "full": "맥주 세 병 주세요.",
+   "a": [
+    "맥주",
+    "세",
+    "병",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "셋",
+    "명"
+   ],
+   "sk": [
+    "g:counters",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L3-tiles-05",
+   "t": "tiles",
+   "en": "I'll have coffee.",
+   "full": "저는 커피 마실래요.",
+   "a": [
+    "저는",
+    "커피",
+    "마실래요"
+   ],
+   "alt": [],
+   "extra": [
+    "마셔래요",
+    "저를"
+   ],
+   "sk": [
+    "g:want",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L3-tiles-06",
+   "t": "tiles",
+   "en": "This coffee is delicious.",
+   "full": "이 커피 맛있어요.",
+   "a": [
+    "이",
+    "커피",
+    "맛있어요"
+   ],
+   "alt": [],
+   "extra": [
+    "맛없어요",
+    "커피를"
+   ],
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-tiles-07",
+   "t": "tiles",
+   "en": "Sorry, we don't have beef.",
+   "full": "죄송합니다. 소고기는 없어요.",
+   "a": [
+    "죄송합니다",
+    "소고기는",
+    "없어요"
+   ],
+   "alt": [],
+   "extra": [
+    "있어요",
+    "소고기를"
+   ],
+   "sk": [
+    "g:neg",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-tiles-08",
+   "t": "tiles",
+   "en": "Two of these, please.",
+   "full": "이거 두 개 주세요.",
+   "a": [
+    "이거",
+    "두",
+    "개",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "둘",
+    "명"
+   ],
+   "sk": [
+    "g:counters",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L3-tiles-09",
+   "t": "tiles",
+   "en": "I'm hungry. Let's eat together.",
+   "full": "배고파요. 같이 먹어요.",
+   "a": [
+    "배고파요",
+    "같이",
+    "먹어요"
+   ],
+   "alt": [],
+   "extra": [
+    "배불러요",
+    "맛있어요"
+   ],
+   "sk": [
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-tiles-10",
+   "t": "tiles",
+   "en": "Not spicy, please.",
+   "full": "안 맵게 해 주세요.",
+   "a": [
+    "안",
+    "맵게",
+    "해",
+    "주세요"
+   ],
+   "alt": [],
+   "extra": [
+    "매워요",
+    "없어요"
+   ],
+   "sk": [
+    "g:neg",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L3-tiles-11",
+   "t": "tiles",
+   "en": "I drink beer.",
+   "full": "저는 맥주를 마셔요.",
+   "a": [
+    "저는",
+    "맥주를",
+    "마셔요"
+   ],
+   "alt": [],
+   "extra": [
+    "맥주을",
+    "저를"
+   ],
+   "sk": [
+    "g:particles",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L3-tiles-12",
+   "t": "tiles",
+   "en": "This meat is beef.",
+   "full": "이 고기는 소고기예요.",
+   "a": [
+    "이",
+    "고기는",
+    "소고기예요"
+   ],
+   "alt": [],
+   "extra": [
+    "고기를",
+    "소고기이에요"
+   ],
+   "sk": [
+    "g:particles",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-listen-01",
+   "t": "listen",
+   "say": "커피 두 잔 주세요.",
+   "opts": [
+    "Two coffees, please.",
+    "Two waters, please.",
+    "Three coffees, please.",
+    "One coffee, please.",
+    "Two bottles of coffee, please.",
+    "Do you have coffee?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-listen-02",
+   "t": "listen",
+   "say": "맥주 세 병 주세요.",
+   "opts": [
+    "Three bottles of beer, please.",
+    "Three glasses of beer, please.",
+    "Four bottles of beer, please.",
+    "Two bottles of beer, please.",
+    "Three bottles of water, please.",
+    "Do you have beer?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:counters",
+    "g:numbers"
+   ]
+  },
+  {
+   "id": "L3-listen-03",
+   "t": "listen",
+   "say": "고기 안 먹어요.",
+   "opts": [
+    "I don't eat meat.",
+    "I eat meat.",
+    "There's no meat.",
+    "The meat isn't good.",
+    "I'll have meat.",
+    "I don't eat rice."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-listen-04",
+   "t": "listen",
+   "say": "이거 맛없어요.",
+   "opts": [
+    "This doesn't taste good.",
+    "This is delicious.",
+    "This is spicy.",
+    "We don't have this.",
+    "This isn't spicy.",
+    "This one, please."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-listen-05",
+   "t": "listen",
+   "say": "물 있어요?",
+   "opts": [
+    "Do you have water?",
+    "Don't you have any water?",
+    "Water, please.",
+    "Is this water?",
+    "Do you have beer?",
+    "I drink water."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L3-listen-06",
+   "t": "listen",
+   "say": "뭐 마실래요?",
+   "opts": [
+    "What will you drink?",
+    "What will you eat?",
+    "What is this?",
+    "Do you have drinks?",
+    "What did you drink?",
+    "Who will drink?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:want",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L3-listen-07",
+   "t": "listen",
+   "say": "배불러요. 잘 먹었습니다.",
+   "opts": [
+    "I'm full. Thank you for the meal.",
+    "I'm hungry. Thank you for the meal.",
+    "I'm full. Let's eat.",
+    "I'm hungry. Let's eat together.",
+    "It's spicy. Thank you.",
+    "I'm full. It wasn't good."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-listen-08",
+   "t": "listen",
+   "say": "이거 두 개 주세요.",
+   "opts": [
+    "Two of these, please.",
+    "Two glasses of this, please.",
+    "Three of these, please.",
+    "This one, please.",
+    "There are two of us.",
+    "Two of those, please."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-listen-09",
+   "t": "listen",
+   "say": "네 명이에요.",
+   "opts": [
+    "There are four of us.",
+    "There are three of us.",
+    "There are two of us.",
+    "There are ten of us.",
+    "Four coffees, please.",
+    "How many of you are there?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:numbers",
+    "g:counters"
+   ]
+  },
+  {
+   "id": "L3-listen-10",
+   "t": "listen",
+   "say": "소고기 있어요?",
+   "opts": [
+    "Do you have beef?",
+    "Do you have pork?",
+    "Do you have chicken?",
+    "There's no beef.",
+    "Beef, please.",
+    "Is this beef?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L3-dlg-01",
+   "t": "dlg",
+   "title": "At a bar",
+   "turns": [
+    {
+     "who": "Server",
+     "s": "어서 오세요. 몇 분이세요?",
+     "en": "Welcome. How many in your party?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "두 명이에요.",
+      "두 분이에요.",
+      "둘 명이에요."
+     ],
+     "a": 0,
+     "why": "Count yourselves with {{명}}; {{분}} is the respectful counter staff use for customers. {{둘}} shortens to {{두}}.",
+     "sk": [
+      "g:counters",
+      "g:honor"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "뭐 드릴까요?",
+     "en": "What can I get you?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "맥주 두 병 주세요.",
+      "맥주 이 병 주세요.",
+      "맥주 두 명 주세요."
+     ],
+     "a": 0,
+     "why": "Bottles take {{병}} with a native number: {{두 병}}.",
+     "sk": [
+      "g:counters",
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "네, 감사합니다.",
+     "en": "Sure, thank you."
+    }
+   ]
+  },
+  {
+   "id": "L3-dlg-02",
+   "t": "dlg",
+   "title": "Ordering food",
+   "turns": [
+    {
+     "who": "Server",
+     "s": "이거 돼지고기예요. 진짜 맛있어요.",
+     "en": "This is pork. It's really delicious."
+    },
+    {
+     "you": true,
+     "opts": [
+      "미안해요. 저는 돼지고기를 안 먹어요.",
+      "미안해요. 저는 돼지고기를 안 있어요.",
+      "미안해요. 저는 돼지고기가 아니에요."
+     ],
+     "a": 0,
+     "why": "{{안}} goes before the verb {{먹어요}}. {{있어요}} is never negated with {{안}}, and {{돼지고기가 아니에요}} would mean \"I am not pork\".",
+     "sk": [
+      "g:neg"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "소고기도 있어요.",
+     "en": "We have beef too."
+    },
+    {
+     "you": true,
+     "opts": [
+      "소고기 주세요. 안 맵게 해 주세요.",
+      "소고기 주세요. 안 맵게 있어요.",
+      "소고기 있어요. 안 맵게 해 주세요."
+     ],
+     "a": 0,
+     "why": "You order with {{주세요}}; {{안 맵게 해 주세요}} = \"please make it not spicy\". The customer doesn't say {{소고기 있어요}} (\"we have beef\").",
+     "sk": [
+      "s:phrase",
+      "g:neg"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "네, 알겠습니다.",
+     "en": "Okay, got it."
+    }
+   ]
+  },
+  {
+   "id": "L3-dlg-03",
+   "t": "dlg",
+   "title": "Dinner with Minji",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "배고파요?",
+     "en": "Are you hungry?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 배고파요.",
+      "네, 배불러요.",
+      "아니요, 배고파요."
+     ],
+     "a": 0,
+     "why": "{{네}} agrees, so the answer must repeat {{배고파요}}. \"Yes, I'm full\" and \"No, I'm hungry\" contradict themselves.",
+     "sk": [
+      "s:vocab"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "같이 먹어요. 뭐 먹을래요?",
+     "en": "Let's eat together. What would you like to eat?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "닭고기 먹을래요.",
+      "닭고기 먹래요.",
+      "닭고기 마실래요."
+     ],
+     "a": 0,
+     "why": "{{먹다}} ends in a consonant, so it takes {{-을래요}}. You eat chicken; {{마실래요}} is for drinks.",
+     "sk": [
+      "g:want",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "맥주 마실래요?",
+     "en": "Would you like a beer?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 마실래요.",
+      "네, 마시래요.",
+      "네, 맥주예요."
+     ],
+     "a": 0,
+     "why": "{{마시다}} ends in a vowel, so it takes {{-ㄹ래요}}: {{마실래요}}. {{맥주예요}} just means \"it's beer\".",
+     "sk": [
+      "g:want",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "건배!",
+     "en": "Cheers!"
+    }
+   ]
+  },
+  {
+   "id": "L3-dlg-04",
+   "t": "dlg",
+   "title": "Finishing the meal",
+   "turns": [
+    {
+     "who": "Server",
+     "s": "맛있게 드셨어요?",
+     "en": "Did you enjoy your meal?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 잘 먹었습니다.",
+      "네, 잘 먹겠습니다.",
+      "아니요, 맛있어요."
+     ],
+     "a": 0,
+     "why": "After a meal you say {{잘 먹었습니다}}; {{잘 먹겠습니다}} is for before eating.",
+     "sk": [
+      "s:phrase",
+      "g:honor"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "감사합니다. 뭐 더 드릴까요?",
+     "en": "Thank you. Can I get you anything else?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "아니요, 괜찮아요. 계산해 주세요.",
+      "아니요, 괜찮아요. 잘 먹겠습니다.",
+      "네, 괜찮아요. 배고파요."
+     ],
+     "a": 0,
+     "why": "{{괜찮아요}} politely declines, and {{계산해 주세요}} asks for the check.",
+     "sk": [
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Server",
+     "s": "네, 잠깐만요.",
+     "en": "Sure, just a moment."
+    }
+   ]
+  },
+  {
+   "id": "L3-dlg-05",
+   "t": "dlg",
+   "title": "At Junho's party",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "맥주 있어요. 마실래요?",
+     "en": "There's beer. Would you like some?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 한 병 주세요.",
+      "네, 한 명 주세요.",
+      "네, 일 병 주세요."
+     ],
+     "a": 0,
+     "why": "A bottle is {{한 병}}: native {{한}} with the counter {{병}}.",
+     "sk": [
+      "g:counters",
+      "g:numbers"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "여기요. 건배!",
+     "en": "Here you go. Cheers!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "건배!",
+      "잘 먹었습니다.",
+      "안녕히 계세요."
+     ],
+     "a": 0,
+     "why": "Answer a toast with {{건배!}}",
+     "sk": [
+      "s:phrase"
+     ]
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Korean barbecue",
+   "setup": "You walk into a Korean barbecue restaurant with a friend. Get a table, order, and pay.",
+   "persona": "You are a friendly server at a Korean barbecue restaurant. The menu has beef (소고기), pork (돼지고기) and chicken (닭고기), plus beer (맥주), water (물) and rice (밥). Pork is the most popular. Ask how many people there are, what they would like, and how many of each. If asked what something is, explain simply. Speak simple polite Korean (-요 endings; staff phrases like 어서 오세요, 뭐 드릴까요? are fine) using mostly words from levels 1-3. Gently repeat the correct form if the learner uses the wrong counter or number.",
+   "opening": "어서 오세요. 몇 분이세요?",
+   "opening_en": "Welcome. How many in your party?",
+   "goals": [
+    "Say how many people you are",
+    "Order meat and drinks with the right counters",
+    "Ask for water or chopsticks",
+    "Ask for the check"
+   ]
+  },
+  {
+   "title": "Lunch with Minji",
+   "setup": "Your Korean friend Minji is deciding where to eat lunch with you.",
+   "persona": "You are Minji, a friendly Korean woman in her thirties and a friend of the learner. You are hungry and want to eat together. You love spicy food and drink coffee after lunch. Ask whether the learner is hungry, what they would like to eat and drink, and whether there is anything they don't eat. Speak simple polite Korean (-요 endings, never casual speech) using mostly words from levels 1-3, short sentences.",
+   "opening": "배고파요? 뭐 먹을래요?",
+   "opening_en": "Are you hungry? What would you like to eat?",
+   "goals": [
+    "Say whether you're hungry",
+    "Say what you'll eat and drink",
+    "Say something you don't eat",
+    "Say whether the food is delicious or spicy"
+   ]
+  }
+ ],
+ "pron": {
+  "잠깐만요": "잠깐만뇨",
+  "네, 잠깐만요.": "네 잠깐만뇨",
+  "맛없어요": "마덥써요",
+  "이거 맛없어요": "이거 마덥써요",
+  "이거 맛없어요.": "이거 마덥써요"
+ }
+}

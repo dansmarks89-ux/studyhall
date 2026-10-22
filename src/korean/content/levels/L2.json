@@ -1,0 +1,1490 @@
+{
+ "id": "L2",
+ "n": 2,
+ "title": "People",
+ "goal": "Introduce yourself and your family, say where you are from and what you do, and ask the same of others.",
+ "notes": [
+  {
+   "h": "I and my",
+   "p": "With people you don't know well, 'I' is {{저}} and 'my' is {{제}}: {{저는 의사예요}} (I'm a doctor), {{제 이름}} (my name), {{제 아내}} (my wife). The casual words {{나}} and {{내}} are for close friends, so leave them for now.",
+   "ex": [
+    [
+     "저는 의사예요",
+     "I'm a doctor."
+    ],
+    [
+     "제 이름은 댄이에요",
+     "My name is Dan."
+    ],
+    [
+     "제 아내예요",
+     "This is my wife."
+    ]
+   ]
+  },
+  {
+   "h": "Am, is, are, and is not",
+   "p": "Add {{이에요}} or {{예요}} to a noun to say 'it is / I am'. After a final consonant use {{이에요}} ({{사람이에요}}); after a vowel use {{예요}} ({{의사예요}}). For 'is not', the noun takes {{이}} or {{가}} and then {{아니에요}}: {{학생이 아니에요}}, {{의사가 아니에요}}. Same rule: {{이}} after a consonant, {{가}} after a vowel.",
+   "ex": [
+    [
+     "저는 미국 사람이에요",
+     "I'm American."
+    ],
+    [
+     "저는 의사예요",
+     "I'm a doctor."
+    ],
+    [
+     "저는 학생이 아니에요",
+     "I'm not a student."
+    ],
+    [
+     "저는 의사가 아니에요",
+     "I'm not a doctor."
+    ]
+   ]
+  },
+  {
+   "h": "The topic marker",
+   "p": "{{은}} or {{는}} after a word marks what you are talking about, like 'as for …': {{저는}} (as for me), {{제 이름은}} (as for my name). Use {{은}} after a consonant and {{는}} after a vowel. Asking someone's name uses {{이}} instead: {{이름이 뭐예요?}}",
+   "ex": [
+    [
+     "저는 미국 사람이에요",
+     "I'm American."
+    ],
+    [
+     "제 이름은 댄이에요",
+     "My name is Dan."
+    ],
+    [
+     "제 친구는 선생님이에요",
+     "My friend is a teacher."
+    ]
+   ]
+  },
+  {
+   "h": "This, that, and that over there",
+   "p": "Korean has three pointing words. {{이}} = this, near me. {{그}} = that, near you, or the one we just mentioned. {{저}} = that over there, far from both of us. Put them before a noun ({{이 사람}}, {{저 사람}}) or use the 'thing' forms {{이거}}, {{그거}}, {{저거}}. Ask about things with {{뭐예요?}} (what is it?) and about people with {{누구예요?}} (who is it?). Careful: {{저}} also means 'I'; the context tells you which.",
+   "ex": [
+    [
+     "이거 뭐예요?",
+     "What is this?"
+    ],
+    [
+     "그거 뭐예요?",
+     "What is that (near you)?"
+    ],
+    [
+     "저 사람은 누구예요?",
+     "Who is that person over there?"
+    ]
+   ]
+  },
+  {
+   "h": "Sounds: linking and tensing",
+   "p": "When a syllable ends in a consonant and the next one starts with a vowel, the consonant slides over: {{사람이에요}} sounds like {{사라미에요}}, and {{이름은}} like {{이르믄}}. After a final ㄱ sound, a following ㅅ is said tense, like ㅆ: {{한국 사람}} sounds like {{한국 싸람}}. Watch the 'said like' line.",
+   "ex": [
+    [
+     "저는 미국 사람이에요",
+     "I'm American."
+    ],
+    [
+     "제 이름은 댄이에요",
+     "My name is Dan."
+    ],
+    [
+     "한국 사람",
+     "a Korean"
+    ]
+   ]
+  }
+ ],
+ "vocab": [
+  {
+   "old": "d9caa03129",
+   "topic": "People",
+   "t": "저",
+   "en": "I / me (polite)",
+   "note": "Use 저 with people you don't know well. 나 is casual."
+  },
+  {
+   "old": "ddcf8f5b15",
+   "topic": "People",
+   "t": "제 이름은 댄이에요",
+   "en": "My name is Dan",
+   "note": "제 = my (polite). 이에요 / 예요 = \"am / is\"."
+  },
+  {
+   "old": "cfa3e137cc",
+   "topic": "People",
+   "t": "이름이 뭐예요?",
+   "en": "What's your name?",
+   "note": ""
+  },
+  {
+   "old": "5444e55a12",
+   "topic": "People",
+   "t": "만나서 반가워요",
+   "en": "Nice to meet you",
+   "note": "",
+   "avoid": [
+    26
+   ]
+  },
+  {
+   "old": "9ff1729a16",
+   "topic": "People",
+   "t": "어디에서 왔어요?",
+   "en": "Where are you from?",
+   "note": ""
+  },
+  {
+   "old": "1f8d8658d3",
+   "topic": "People",
+   "t": "미국에서 왔어요",
+   "en": "I'm from the US",
+   "note": ""
+  },
+  {
+   "old": "985d598837",
+   "topic": "People",
+   "t": "저는 미국 사람이에요",
+   "en": "I'm American",
+   "note": "사람 = person.",
+   "pron": "저는 미국 싸라미에요"
+  },
+  {
+   "old": "7434e24b20",
+   "topic": "People",
+   "t": "저는 의사예요",
+   "en": "I'm a doctor",
+   "note": ""
+  },
+  {
+   "old": "196eaaf53f",
+   "topic": "People",
+   "t": "시카고에 살아요",
+   "en": "I live in Chicago",
+   "note": "에 = in / at."
+  },
+  {
+   "old": "1beaed8cb7",
+   "topic": "People",
+   "t": "잘 지내요?",
+   "en": "How are you doing?",
+   "note": "Literally \"are you living well?\"",
+   "avoid": [
+    10
+   ]
+  },
+  {
+   "old": "1eadbbae37",
+   "topic": "People",
+   "t": "잘 지내요",
+   "en": "I'm doing well",
+   "note": "Same words; your tone of voice makes it a statement.",
+   "avoid": [
+    9
+   ]
+  },
+  {
+   "old": "6d35f5562b",
+   "topic": "People",
+   "t": "무슨 일 해요?",
+   "en": "What do you do for work?",
+   "note": ""
+  },
+  {
+   "old": "4779f31750",
+   "topic": "People",
+   "t": "가족",
+   "en": "family",
+   "note": ""
+  },
+  {
+   "old": "dee5450666",
+   "topic": "People",
+   "t": "아내",
+   "en": "wife",
+   "note": ""
+  },
+  {
+   "old": "ef71695de6",
+   "topic": "People",
+   "t": "남편",
+   "en": "husband",
+   "note": ""
+  },
+  {
+   "old": "c5e69eb880",
+   "topic": "People",
+   "t": "엄마",
+   "en": "mom",
+   "note": "Like \"mom\". 어머니 is the more respectful word."
+  },
+  {
+   "old": "ad4a5b4c21",
+   "topic": "People",
+   "t": "아빠",
+   "en": "dad",
+   "note": "Like \"dad\". 아버지 is the more respectful word."
+  },
+  {
+   "old": "a86509492b",
+   "topic": "People",
+   "t": "친구",
+   "en": "friend",
+   "note": ""
+  },
+  {
+   "old": "6114dfbb98",
+   "topic": "People",
+   "t": "아이",
+   "en": "child",
+   "note": ""
+  },
+  {
+   "old": "8701a0b971",
+   "topic": "People",
+   "t": "사람",
+   "en": "person",
+   "note": ""
+  },
+  {
+   "old": "9df6ec14ac",
+   "topic": "People",
+   "t": "제 아내예요",
+   "en": "This is my wife",
+   "note": ""
+  },
+  {
+   "old": "0504301e55",
+   "topic": "People",
+   "t": "결혼했어요",
+   "en": "I'm married",
+   "note": ""
+  },
+  {
+   "t": "선생님",
+   "en": "teacher",
+   "topic": "Jobs",
+   "note": "Also the polite way to address a teacher."
+  },
+  {
+   "t": "학생",
+   "en": "student",
+   "topic": "Jobs",
+   "note": ""
+  },
+  {
+   "t": "회사원",
+   "en": "office worker",
+   "topic": "Jobs",
+   "note": "The everyday answer for 'I work for a company'."
+  },
+  {
+   "t": "한국 사람",
+   "en": "a Korean (person)",
+   "topic": "People",
+   "note": "Country + {{사람}} = a person from that country: {{미국 사람}}, {{한국 사람}}."
+  },
+  {
+   "t": "처음 뵙겠습니다",
+   "en": "How do you do? (formal, on first meeting)",
+   "topic": "People",
+   "note": "Formal and humble. Said when you are first introduced, often to someone older or senior.",
+   "avoid": [
+    3
+   ]
+  },
+  {
+   "t": "이 사람",
+   "en": "this person",
+   "topic": "This and that",
+   "note": "{{이}} = this, near me."
+  },
+  {
+   "t": "저 사람",
+   "en": "that person over there",
+   "topic": "This and that",
+   "note": "{{저}} = that, far from both of us. Don't confuse it with {{저}} = I."
+  },
+  {
+   "t": "그거",
+   "en": "that (thing near you)",
+   "topic": "This and that",
+   "note": "{{그}} = that, near the person you're talking to, or the one just mentioned."
+  },
+  {
+   "t": "저거",
+   "en": "that (thing over there)",
+   "topic": "This and that",
+   "note": ""
+  },
+  {
+   "t": "이거 뭐예요?",
+   "en": "What is this?",
+   "topic": "This and that",
+   "note": "{{뭐}} = what."
+  },
+  {
+   "t": "누구예요?",
+   "en": "Who is it?",
+   "topic": "This and that",
+   "note": "{{누구}} = who. Use it for people; {{뭐}} is for things."
+  },
+  {
+   "t": "저는 학생이 아니에요",
+   "en": "I'm not a student",
+   "topic": "People",
+   "note": "Noun + {{이}} / {{가}} + {{아니에요}} = is not."
+  },
+  {
+   "t": "씨",
+   "en": "Mr / Ms (after a name)",
+   "topic": "People",
+   "note": "Put it after someone's name to be polite: {{민지 씨}}. Never use it about yourself."
+  }
+ ],
+ "items": [
+  {
+   "id": "L2-gap-01",
+   "t": "gap",
+   "q": "저___ 미국 사람이에요.",
+   "en": "I'm American.",
+   "opts": [
+    "는",
+    "은",
+    "를",
+    "에"
+   ],
+   "a": 0,
+   "why": "{{저}} ends in a vowel, so the topic marker is {{는}}: {{저는}}. {{은}} is the form after a consonant.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-gap-02",
+   "t": "gap",
+   "q": "제 이름___ 민지예요.",
+   "en": "My name is Minji.",
+   "opts": [
+    "은",
+    "는",
+    "을",
+    "에서"
+   ],
+   "a": 0,
+   "why": "{{이름}} ends in a consonant, so the topic marker is {{은}}: {{이름은}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-gap-03",
+   "t": "gap",
+   "q": "저는 의사___.",
+   "en": "I'm a doctor.",
+   "opts": [
+    "예요",
+    "이에요",
+    "에요",
+    "은"
+   ],
+   "a": 0,
+   "why": "{{의사}} ends in a vowel, so it takes {{예요}}. {{이에요}} is for nouns ending in a consonant.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L2-gap-04",
+   "t": "gap",
+   "q": "제 이름은 댄___.",
+   "en": "My name is Dan.",
+   "opts": [
+    "이에요",
+    "예요",
+    "은",
+    "이"
+   ],
+   "a": 0,
+   "why": "{{댄}} ends in a consonant, so it takes {{이에요}}. Said together it sounds like {{대니에요}}.",
+   "sk": [
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L2-gap-05",
+   "t": "gap",
+   "q": "저는 학생이 ___.",
+   "en": "I'm not a student.",
+   "opts": [
+    "아니에요",
+    "안 이에요",
+    "없어요",
+    "이에요"
+   ],
+   "a": 0,
+   "why": "{{아니에요}} is the 'is not' partner of {{이에요}}. You can't put {{안}} in front of {{이에요}}.",
+   "sk": [
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L2-gap-06",
+   "t": "gap",
+   "q": "저는 선생님___ 아니에요.",
+   "en": "I'm not a teacher.",
+   "opts": [
+    "이",
+    "가",
+    "를",
+    "에"
+   ],
+   "a": 0,
+   "why": "Before {{아니에요}} the noun takes {{이}} or {{가}}. {{선생님}} ends in a consonant, so {{이}}.",
+   "sk": [
+    "g:neg",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-gap-07",
+   "t": "gap",
+   "q": "저는 의사___ 아니에요. 선생님이에요.",
+   "en": "I'm not a doctor. I'm a teacher.",
+   "opts": [
+    "가",
+    "이",
+    "를",
+    "에"
+   ],
+   "a": 0,
+   "why": "Before {{아니에요}} the noun takes {{이}} or {{가}}. {{의사}} ends in a vowel, so {{가}}.",
+   "sk": [
+    "g:neg",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-gap-08",
+   "t": "gap",
+   "q": "미국___ 왔어요.",
+   "en": "I'm from the US.",
+   "opts": [
+    "에서",
+    "에",
+    "은",
+    "이에요"
+   ],
+   "a": 0,
+   "why": "{{에서}} = from. {{미국에 왔어요}} would mean 'I came to the US'.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-gap-09",
+   "t": "gap",
+   "q": "이름___ 뭐예요?",
+   "en": "What's your name?",
+   "opts": [
+    "이",
+    "가",
+    "를",
+    "에서"
+   ],
+   "a": 0,
+   "why": "The set question is {{이름이 뭐예요?}} {{이름}} ends in a consonant, so it takes {{이}}, not {{가}}.",
+   "sk": [
+    "g:particles",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-gap-10",
+   "t": "gap",
+   "q": "___ 아내예요.",
+   "en": "This is my wife.",
+   "opts": [
+    "제",
+    "저는",
+    "저",
+    "제가"
+   ],
+   "a": 0,
+   "why": "{{제}} = my. {{저는}} or {{제가}} would make it 'I am the wife'.",
+   "sk": [
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L2-gap-11",
+   "t": "gap",
+   "q": "이 사람___ 누구예요?",
+   "en": "Who is this person?",
+   "opts": [
+    "은",
+    "는",
+    "을",
+    "에"
+   ],
+   "a": 0,
+   "why": "{{사람}} ends in a consonant, so the topic marker is {{은}}: {{이 사람은}}.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-gap-12",
+   "t": "gap",
+   "q": "___ 뭐예요?",
+   "en": "What is that? (pointing at something far from both of you)",
+   "opts": [
+    "저거",
+    "이거",
+    "그거",
+    "저기요"
+   ],
+   "a": 0,
+   "why": "Far from both speakers is {{저}}: {{저거}}. {{이거}} is near you and {{그거}} is near the other person.",
+   "sk": [
+    "g:place",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-gap-13",
+   "t": "gap",
+   "q": "___ 뭐예요?",
+   "en": "What is that? (the thing in the other person's hand)",
+   "opts": [
+    "그거",
+    "이거",
+    "저거",
+    "저는"
+   ],
+   "a": 0,
+   "why": "Near the person you're talking to is {{그}}: {{그거}}.",
+   "sk": [
+    "g:place",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-gap-14",
+   "t": "gap",
+   "q": "무슨 ___ 해요?",
+   "en": "What do you do for work?",
+   "opts": [
+    "일",
+    "이름",
+    "사람",
+    "친구"
+   ],
+   "a": 0,
+   "why": "{{일}} = work, so {{무슨 일 해요?}} = what work do you do?",
+   "sk": [
+    "s:vocab",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-gap-15",
+   "t": "gap",
+   "q": "민지 ___, 만나서 반가워요.",
+   "en": "Nice to meet you, Minji.",
+   "opts": [
+    "씨",
+    "제",
+    "저",
+    "은"
+   ],
+   "a": 0,
+   "why": "Put {{씨}} after someone's name to be polite: {{민지 씨}}.",
+   "sk": [
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L2-gap-16",
+   "t": "gap",
+   "q": "만나서 ___.",
+   "en": "Nice to meet you.",
+   "opts": [
+    "반가워요",
+    "감사합니다",
+    "괜찮아요",
+    "미안해요"
+   ],
+   "a": 0,
+   "why": "{{만나서 반가워요}} = I'm glad to meet you.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L2-pick-01",
+   "t": "pick",
+   "q": "You are being introduced to your spouse's boss for the first time, and you want the formal 'How do you do?'. You say:",
+   "opts": [
+    "처음 뵙겠습니다",
+    "잘 지내요?",
+    "안녕히 계세요",
+    "잘 먹겠습니다"
+   ],
+   "a": 0,
+   "why": "{{처음 뵙겠습니다}} is the formal greeting for a first meeting. {{잘 지내요?}} is for someone you already know.",
+   "sk": [
+    "s:phrase",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L2-pick-02",
+   "t": "pick",
+   "q": "Tell someone that your name is Dan. You say:",
+   "opts": [
+    "제 이름은 댄이에요",
+    "저 이름은 댄이에요",
+    "제 이름은 댄예요",
+    "제 이름을 댄이에요"
+   ],
+   "a": 0,
+   "why": "'My' is {{제}}, {{이름}} takes the topic marker {{은}}, and {{댄}} ends in a consonant, so {{이에요}}.",
+   "sk": [
+    "g:endings",
+    "g:honor",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-pick-03",
+   "t": "pick",
+   "q": "Someone asks {{어디에서 왔어요?}} You are from the US. You say:",
+   "opts": [
+    "미국에서 왔어요",
+    "미국에 왔어요",
+    "미국은 왔어요",
+    "미국 사람에서 왔어요"
+   ],
+   "a": 0,
+   "why": "{{에서}} = from. {{미국에 왔어요}} means 'I came to the US'.",
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-pick-04",
+   "t": "pick",
+   "q": "At a party you want to ask who the man standing across the room is. You say:",
+   "opts": [
+    "저 사람은 누구예요?",
+    "이 사람은 누구예요?",
+    "저 사람은 뭐예요?",
+    "저는 누구예요?"
+   ],
+   "a": 0,
+   "why": "Far away is {{저 사람}}, and you ask about people with {{누구}} (who), not {{뭐}} (what).",
+   "sk": [
+    "g:place",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-pick-05",
+   "t": "pick",
+   "q": "You want to ask a new acquaintance what they do for a living. You say:",
+   "opts": [
+    "무슨 일 해요?",
+    "이름이 뭐예요?",
+    "어디에서 왔어요?",
+    "잘 지내요?"
+   ],
+   "a": 0,
+   "why": "{{무슨 일 해요?}} = what work do you do?",
+   "sk": [
+    "g:question",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L2-pick-06",
+   "t": "pick",
+   "q": "A friend you haven't seen for a while asks {{잘 지내요?}} You're doing well. You say:",
+   "opts": [
+    "네, 잘 지내요.",
+    "네, 잘 먹었습니다.",
+    "네, 처음 뵙겠습니다.",
+    "네, 안녕히 가세요."
+   ],
+   "a": 0,
+   "why": "Answer with the same words as a statement: {{잘 지내요}}.",
+   "sk": [
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L2-pick-07",
+   "t": "pick",
+   "q": "You are introducing your wife to a Korean colleague. You say:",
+   "opts": [
+    "제 아내예요",
+    "제 남편이에요",
+    "저는 아내예요",
+    "제 아내이에요"
+   ],
+   "a": 0,
+   "why": "{{제}} = my, and {{아내}} ends in a vowel, so it takes {{예요}}. {{저는 아내예요}} would mean 'I am a wife'.",
+   "sk": [
+    "g:endings",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L2-pick-08",
+   "t": "pick",
+   "q": "A new acquaintance asks {{선생님이에요?}} You are a doctor, not a teacher. You say:",
+   "opts": [
+    "아니요, 저는 의사예요.",
+    "네, 저는 의사예요.",
+    "아니요, 저는 의사이에요.",
+    "아니요, 저는 선생님이에요."
+   ],
+   "a": 0,
+   "why": "Start with {{아니요}} because you are not a teacher. {{의사}} ends in a vowel, so {{예요}}.",
+   "sk": [
+    "g:endings",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L2-tiles-01",
+   "t": "tiles",
+   "en": "I'm American.",
+   "full": "저는 미국 사람이에요.",
+   "a": [
+    "저는",
+    "미국",
+    "사람이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "제는",
+    "사람예요"
+   ],
+   "sk": [
+    "g:endings",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-tiles-02",
+   "t": "tiles",
+   "en": "My name is Dan.",
+   "full": "제 이름은 댄이에요.",
+   "a": [
+    "제",
+    "이름은",
+    "댄이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "저",
+    "댄예요"
+   ],
+   "sk": [
+    "g:honor",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L2-tiles-03",
+   "t": "tiles",
+   "en": "I'm from the US.",
+   "full": "저는 미국에서 왔어요.",
+   "a": [
+    "저는",
+    "미국에서",
+    "왔어요"
+   ],
+   "alt": [],
+   "extra": [
+    "미국에",
+    "저를"
+   ],
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-tiles-04",
+   "t": "tiles",
+   "en": "I live in Chicago.",
+   "full": "저는 시카고에 살아요.",
+   "a": [
+    "저는",
+    "시카고에",
+    "살아요"
+   ],
+   "alt": [],
+   "extra": [
+    "시카고를",
+    "제는"
+   ],
+   "sk": [
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-tiles-05",
+   "t": "tiles",
+   "en": "This is my wife.",
+   "full": "이 사람은 제 아내예요.",
+   "a": [
+    "이",
+    "사람은",
+    "제",
+    "아내예요"
+   ],
+   "alt": [],
+   "extra": [
+    "저",
+    "아내이에요"
+   ],
+   "sk": [
+    "g:place",
+    "g:honor",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L2-tiles-06",
+   "t": "tiles",
+   "en": "I'm not a teacher.",
+   "full": "저는 선생님이 아니에요.",
+   "a": [
+    "저는",
+    "선생님이",
+    "아니에요"
+   ],
+   "alt": [],
+   "extra": [
+    "선생님가",
+    "안"
+   ],
+   "sk": [
+    "g:neg",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-tiles-07",
+   "t": "tiles",
+   "en": "Who is this person?",
+   "full": "이 사람은 누구예요?",
+   "a": [
+    "이",
+    "사람은",
+    "누구예요"
+   ],
+   "alt": [],
+   "extra": [
+    "저",
+    "뭐예요"
+   ],
+   "sk": [
+    "g:question",
+    "g:place"
+   ]
+  },
+  {
+   "id": "L2-tiles-08",
+   "t": "tiles",
+   "en": "My husband is Korean.",
+   "full": "제 남편은 한국 사람이에요.",
+   "a": [
+    "제",
+    "남편은",
+    "한국",
+    "사람이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "저",
+    "사람예요"
+   ],
+   "sk": [
+    "g:endings",
+    "g:honor"
+   ]
+  },
+  {
+   "id": "L2-tiles-09",
+   "t": "tiles",
+   "en": "My friend is a teacher.",
+   "full": "제 친구는 선생님이에요.",
+   "a": [
+    "제",
+    "친구는",
+    "선생님이에요"
+   ],
+   "alt": [],
+   "extra": [
+    "친구를",
+    "선생님예요"
+   ],
+   "sk": [
+    "g:particles",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L2-tiles-10",
+   "t": "tiles",
+   "en": "Nice to meet you, Minji.",
+   "full": "민지 씨, 만나서 반가워요.",
+   "a": [
+    "민지",
+    "씨",
+    "만나서",
+    "반가워요"
+   ],
+   "alt": [
+    [
+     "만나서",
+     "반가워요",
+     "민지",
+     "씨"
+    ]
+   ],
+   "extra": [
+    "제",
+    "저는"
+   ],
+   "sk": [
+    "g:honor",
+    "s:phrase"
+   ]
+  },
+  {
+   "id": "L2-tiles-11",
+   "t": "tiles",
+   "en": "I'm not an office worker. I'm a doctor.",
+   "full": "저는 회사원이 아니에요. 의사예요.",
+   "a": [
+    "저는",
+    "회사원이",
+    "아니에요",
+    "의사예요"
+   ],
+   "alt": [],
+   "extra": [
+    "회사원가",
+    "의사이에요"
+   ],
+   "sk": [
+    "g:neg",
+    "g:endings"
+   ]
+  },
+  {
+   "id": "L2-tiles-12",
+   "t": "tiles",
+   "en": "Where are you from, Minji?",
+   "full": "민지 씨는 어디에서 왔어요?",
+   "a": [
+    "민지",
+    "씨는",
+    "어디에서",
+    "왔어요"
+   ],
+   "alt": [],
+   "extra": [
+    "어디에",
+    "씨를"
+   ],
+   "sk": [
+    "g:question",
+    "g:particles"
+   ]
+  },
+  {
+   "id": "L2-listen-01",
+   "t": "listen",
+   "say": "저는 미국 사람이에요.",
+   "opts": [
+    "I'm American.",
+    "I'm Korean.",
+    "I'm not American.",
+    "Are you American?",
+    "I'm from Chicago.",
+    "My friend is American."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L2-listen-02",
+   "t": "listen",
+   "say": "제 이름은 민지예요.",
+   "opts": [
+    "My name is Minji.",
+    "What's your name?",
+    "This is Minji.",
+    "My friend's name is Minji.",
+    "I'm not Minji.",
+    "Minji is my wife."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L2-listen-03",
+   "t": "listen",
+   "say": "저는 학생이 아니에요.",
+   "opts": [
+    "I'm not a student.",
+    "I'm a student.",
+    "I'm not a teacher.",
+    "Are you a student?",
+    "I'm a teacher.",
+    "My child is a student."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:neg"
+   ]
+  },
+  {
+   "id": "L2-listen-04",
+   "t": "listen",
+   "say": "이 사람은 제 남편이에요.",
+   "opts": [
+    "This is my husband.",
+    "This is my wife.",
+    "That person over there is my husband.",
+    "This is my friend.",
+    "Is this your husband?",
+    "My husband is a teacher."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:place"
+   ]
+  },
+  {
+   "id": "L2-listen-05",
+   "t": "listen",
+   "say": "어디에서 왔어요?",
+   "opts": [
+    "Where are you from?",
+    "Where do you live?",
+    "What's your name?",
+    "What do you do for work?",
+    "Who is that?",
+    "Where are you going?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-listen-06",
+   "t": "listen",
+   "say": "저거 뭐예요?",
+   "opts": [
+    "What is that over there?",
+    "What is this?",
+    "Who is that?",
+    "Where is that?",
+    "Is that yours?",
+    "What's your name?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:place"
+   ]
+  },
+  {
+   "id": "L2-listen-07",
+   "t": "listen",
+   "say": "시카고에 살아요.",
+   "opts": [
+    "I live in Chicago.",
+    "I'm from Chicago.",
+    "I'm going to Chicago.",
+    "I live in Korea.",
+    "I lived in Chicago.",
+    "I work in Chicago."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L2-listen-08",
+   "t": "listen",
+   "say": "제 친구는 선생님이에요.",
+   "opts": [
+    "My friend is a teacher.",
+    "My friend is a student.",
+    "I'm a teacher.",
+    "My friend is not a teacher.",
+    "My wife is a teacher.",
+    "My friend is an office worker."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "s:vocab"
+   ]
+  },
+  {
+   "id": "L2-listen-09",
+   "t": "listen",
+   "say": "네, 결혼했어요.",
+   "opts": [
+    "Yes, I'm married.",
+    "No, I'm not married.",
+    "Are you married?",
+    "Yes, I have a child.",
+    "Yes, this is my wife.",
+    "Yes, I have a family."
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen"
+   ]
+  },
+  {
+   "id": "L2-listen-10",
+   "t": "listen",
+   "say": "무슨 일 해요?",
+   "opts": [
+    "What do you do for work?",
+    "What's the matter?",
+    "What's your name?",
+    "Where are you from?",
+    "What is this?",
+    "How are you doing?"
+   ],
+   "a": 0,
+   "sk": [
+    "s:listen",
+    "g:question"
+   ]
+  },
+  {
+   "id": "L2-dlg-01",
+   "t": "dlg",
+   "title": "Meeting a neighbour",
+   "turns": [
+    {
+     "who": "Ms Kim",
+     "s": "안녕하세요. 처음 뵙겠습니다. 저는 김민지예요.",
+     "en": "Hello. How do you do? I'm Kim Minji."
+    },
+    {
+     "you": true,
+     "opts": [
+      "안녕하세요. 저는 댄이에요.",
+      "안녕하세요. 저는 댄예요.",
+      "안녕하세요. 제는 댄이에요."
+     ],
+     "a": 0,
+     "why": "'I' is {{저}} with the topic marker {{는}}, and {{댄}} ends in a consonant, so {{이에요}}.",
+     "sk": [
+      "g:endings",
+      "g:honor"
+     ]
+    },
+    {
+     "who": "Ms Kim",
+     "s": "만나서 반가워요. 어디에서 왔어요?",
+     "en": "Nice to meet you. Where are you from?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "미국에서 왔어요.",
+      "미국에 왔어요.",
+      "미국 사람에서 왔어요."
+     ],
+     "a": 0,
+     "why": "{{에서}} = from. {{미국에 왔어요}} would mean 'I came to the US'.",
+     "sk": [
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Ms Kim",
+     "s": "아, 미국 사람이에요? 무슨 일 해요?",
+     "en": "Oh, you're American? What do you do?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "저는 의사예요.",
+      "저는 의사이에요.",
+      "제는 의사예요."
+     ],
+     "a": 0,
+     "why": "{{의사}} ends in a vowel, so {{예요}}. 'I' is {{저는}}; {{제}} only means 'my'.",
+     "sk": [
+      "g:endings",
+      "g:honor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L2-dlg-02",
+   "t": "dlg",
+   "title": "Introducing your wife",
+   "turns": [
+    {
+     "who": "Mr Park",
+     "s": "안녕하세요, 댄 씨!",
+     "en": "Hello, Dan!"
+    },
+    {
+     "you": true,
+     "opts": [
+      "안녕하세요. 제 아내예요.",
+      "안녕하세요. 저 아내예요.",
+      "안녕히 계세요. 제 아내예요."
+     ],
+     "a": 0,
+     "why": "Greet with {{안녕하세요}} and introduce her with {{제}} (my): {{제 아내예요}}.",
+     "sk": [
+      "g:honor",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Mr Park",
+     "s": "아, 반가워요! 아내분은 한국 사람이에요?",
+     "en": "Oh, nice to meet you! Is your wife Korean?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "아니요, 미국 사람이에요.",
+      "아니요, 미국 사람예요.",
+      "아니요, 미국에서 사람이에요."
+     ],
+     "a": 0,
+     "why": "{{사람}} ends in a consonant, so {{사람이에요}}. Country + {{사람}} needs no particle in between.",
+     "sk": [
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Mr Park",
+     "s": "네, 만나서 반가워요!",
+     "en": "Well, it's nice to meet you!"
+    }
+   ]
+  },
+  {
+   "id": "L2-dlg-03",
+   "t": "dlg",
+   "title": "Who's that?",
+   "turns": [
+    {
+     "who": "Minji",
+     "s": "저 사람은 제 친구예요.",
+     "en": "That person over there is my friend."
+    },
+    {
+     "you": true,
+     "opts": [
+      "아, 이름이 뭐예요?",
+      "아, 이름을 뭐예요?",
+      "아, 이름이 뭐이에요?"
+     ],
+     "a": 0,
+     "why": "The set question is {{이름이 뭐예요?}} {{뭐}} ends in a vowel, so {{예요}}.",
+     "sk": [
+      "g:question",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "준호예요. 한국 사람이에요.",
+     "en": "It's Junho. He's Korean."
+    },
+    {
+     "you": true,
+     "opts": [
+      "준호 씨는 무슨 일 해요?",
+      "준호 씨를 무슨 일 해요?",
+      "준호 씨는 무슨 일이에요?"
+     ],
+     "a": 0,
+     "why": "{{준호 씨는}} = as for Junho. {{무슨 일이에요?}} means 'What's the matter?', not 'What's his job?'.",
+     "sk": [
+      "g:question",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Minji",
+     "s": "회사원이에요.",
+     "en": "He's an office worker."
+    }
+   ]
+  },
+  {
+   "id": "L2-dlg-04",
+   "t": "dlg",
+   "title": "What's this?",
+   "turns": [
+    {
+     "who": "Shop owner",
+     "s": "어서 오세요!",
+     "en": "Welcome! (You pick up a jar and want to know what is in it.)"
+    },
+    {
+     "you": true,
+     "opts": [
+      "저기요, 이거 뭐예요?",
+      "저기요, 이거 누구예요?",
+      "저기요, 이거 뭐이에요?"
+     ],
+     "a": 0,
+     "why": "Ask about things with {{뭐}} (what); {{누구}} is for people. {{뭐}} ends in a vowel, so {{뭐예요}}.",
+     "sk": [
+      "g:question",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Shop owner",
+     "s": "그거요? 김치예요.",
+     "en": "That? It's kimchi."
+    },
+    {
+     "you": true,
+     "opts": [
+      "아, 이거 김치예요?",
+      "아, 이거 김치이에요?",
+      "아, 저거 김치예요?"
+     ],
+     "a": 0,
+     "why": "The jar is in your hand, so for you it is {{이거}}, even though the owner calls it {{그거}}. {{김치}} ends in a vowel: {{예요}}.",
+     "sk": [
+      "g:place",
+      "g:endings"
+     ]
+    },
+    {
+     "who": "Shop owner",
+     "s": "네, 한국 김치예요.",
+     "en": "Yes, it's Korean kimchi."
+    }
+   ]
+  },
+  {
+   "id": "L2-dlg-05",
+   "t": "dlg",
+   "title": "Catching up with Junho",
+   "turns": [
+    {
+     "who": "Junho",
+     "s": "댄 씨, 잘 지내요?",
+     "en": "Dan, how are you doing?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 잘 지내요.",
+      "네, 잘 지내세요.",
+      "아니요, 잘 지내요."
+     ],
+     "a": 0,
+     "why": "Talk about yourself without the respectful {{시}}: {{잘 지내요}}. {{잘 지내세요}} is respectful talk about someone else, or 'take care'.",
+     "sk": [
+      "g:honor",
+      "s:phrase"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "결혼했어요?",
+     "en": "Are you married?"
+    },
+    {
+     "you": true,
+     "opts": [
+      "네, 결혼했어요. 아내는 미국 사람이에요.",
+      "네, 결혼했어요. 아내는 미국 사람예요.",
+      "네, 결혼했어요. 아내를 미국 사람이에요."
+     ],
+     "a": 0,
+     "why": "{{아내는}} = as for my wife (topic {{는}}), and {{사람}} ends in a consonant, so {{사람이에요}}.",
+     "sk": [
+      "g:endings",
+      "g:particles"
+     ]
+    },
+    {
+     "who": "Junho",
+     "s": "와, 진짜요?",
+     "en": "Wow, really?"
+    }
+   ]
+  }
+ ],
+ "roleplay": [
+  {
+   "title": "Meeting a new neighbour",
+   "setup": "A Korean woman has just moved in next door in your Chicago building. Introduce yourselves.",
+   "persona": "You are Kim Minji, a Korean office worker in her 30s from Seoul who has just moved to Chicago with her husband. Speak simple polite Korean using mostly words from levels 1-2 (저는 … 이에요/예요, 이름이 뭐예요?, 어디에서 왔어요?, 무슨 일 해요?, 결혼했어요?, 만나서 반가워요). Use short sentences and one question at a time. If the learner gets 이에요/예요 or 은/는 wrong, repeat their sentence back correctly in a friendly way.",
+   "opening": "안녕하세요. 처음 뵙겠습니다. 저는 김민지예요.",
+   "opening_en": "Hello. How do you do? I'm Kim Minji.",
+   "goals": [
+    "Say hello and give your name",
+    "Say where you are from and that you live in Chicago",
+    "Say what you do for work",
+    "Ask her name, where she is from and what she does"
+   ]
+  },
+  {
+   "title": "Introducing your family",
+   "setup": "You run into your Korean colleague Mr Park while you are out with your spouse. Introduce them and chat a little.",
+   "persona": "You are Park Junho, a friendly Korean colleague in his 40s. You are married to a teacher and have one child. Speak simple polite Korean from levels 1-2. Ask who the person with the learner is, ask about their family (아내, 남편, 아이), and answer questions about your own family. Use 이 사람, 저 사람 and 누구예요? naturally. Keep sentences very short.",
+   "opening": "안녕하세요! 이분은 누구세요?",
+   "opening_en": "Hello! And who is this?",
+   "goals": [
+    "Introduce your spouse",
+    "Say your spouse's job and where they are from",
+    "Ask whether Mr Park is married and about his family",
+    "Say goodbye politely"
+   ]
+  }
+ ],
+ "pron": {
+  "저는 미국 사람이에요": "저는 미국 싸라미에요",
+  "무슨 일 해요?": "무슨 닐 해요",
+  "아, 미국 사람이에요? 무슨 일 해요?": "아 미국 싸라미에요 무슨 닐 해요",
+  "준호 씨는 무슨 일 해요?": "준호 씨는 무슨 닐 해요",
+  "준호 씨를 무슨 일 해요?": "준호 씨를 무슨 닐 해요",
+  "무슨 일이에요?": "무슨 니리에요",
+  "준호 씨는 무슨 일이에요?": "준호 씨는 무슨 니리에요"
+ }
+}
