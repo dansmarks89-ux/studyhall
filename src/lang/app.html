@@ -361,7 +361,7 @@ $("s-note").textContent = `Audio is recorded with Microsoft neural ${C.name} voi
 let P = Object.assign({lv:{}}, store.get("progress",{}));
 let db=null, uid=null;
 function mergeP(r){ if(!r) return; for(const id in r.lv||{}){ const a=P.lv[id]||{}, b=r.lv[id]; P.lv[id]={best:Math.max(a.best||0,b.best||0), passed:!!(a.passed||b.passed), tests:Math.max(a.tests||0,b.tests||0), at:Math.max(a.at||0,b.at||0)}; } }
-function saveP(){ store.set("progress",P); dirtyDocs.add("course"); if(db){ clearTimeout(lwt); lwt=setTimeout(flushLR,2000); } }
+function saveP(){ store.set("progress",P); dirtyDocs.add("course"); syncSoon(2000); }
 const unlocked = id => { const i=LIDS.indexOf(id); return i<=0 || !!(P.lv[LIDS[i-1]]&&P.lv[LIDS[i-1]].passed); };
 const DORDER = DSETS.map(s=>s.id);
 const drillUnlocked = id => { const i=DORDER.indexOf(id); return i<=0 || !!(P.lv[DORDER[i-1]]&&P.lv[DORDER[i-1]].passed); };
@@ -422,22 +422,37 @@ function recordUnit(it, res, ctx){
 function logTalk(errs){ const t=Date.now(); errs.forEach((x,i)=>{ const s=SKILLS[x.skill]?x.skill:"s:phrase"; LR.log.push({t:t+i,id:"talk",ok:0,s:"talk",e:s,y:String(x.said||"").slice(0,120),r:String(x.fix||"").slice(0,120),q:String(x.why||"").slice(0,120)}); }); if(LR.log.length>LOG_MAX) LR.log=LR.log.slice(-LOG_MAX); dirtyDocs.add("log"); saveLR(); }
 
 /* saving: browser now, account in the background */
-let dirtyDocs=new Set(), lwriting=false, lwt=null;
-function saveLR(){ store.set("learner", LR); if(db){ clearTimeout(lwt); lwt=setTimeout(flushLR,2500); } }
+let dirtyDocs=new Set(), syncing=false, syncT=null;
+function saveLR(){ store.set("learner", LR); syncSoon(2500); }
+function syncSoon(ms){ if(db){ clearTimeout(syncT); syncT=setTimeout(sync,ms); } }
 function docBody(n){
   if(n==="course") return {lv:P.lv, v:1};
   if(n==="learner") return {sk:LR.sk, w:LR.w, diag:LR.diag, mig:LR.mig, v:1};
   if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return {e:out.reverse(), v:1}; }
   const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return {r, v:1};
 }
-async function flushLR(){
-  if(!db || lwriting || !dirtyDocs.size) return;
-  lwriting=true; const names=[...dirtyDocs]; dirtyDocs.clear();
-  try{ for(const n of names) await db.collection("data/users/"+uid).doc(n).set(docBody(n)); $("sync").textContent="Progress synced to your account"; }
-  catch(e){ names.forEach(n=>dirtyDocs.add(n)); $("sync").textContent="Couldn't sync just now; progress is kept in this browser"; }
-  finally{ lwriting=false; if(dirtyDocs.size) lwt=setTimeout(flushLR,5000); }
+/* Read the account copy and merge it into this device. Runs before every write, so a page
+   left open on one device never overwrites newer work done on another. */
+async function pull(){
+  const qs=await db.collection("data/users/"+uid).get(), have=new Set();
+  qs.docs.forEach(doc=>{ have.add(doc.id); if(mergeLR(doc.id, doc.data()) && doc.id!=="course") dirtyDocs.add(doc.id); });
+  store.set("learner", LR);
+  return have;
 }
-document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="hidden") flushLR(); });
+async function sync(){
+  if(!db || syncing || !dirtyDocs.size) return;
+  syncing=true; let names=[];
+  try{ await pull(); names=[...dirtyDocs]; dirtyDocs.clear(); for(const n of names) await db.collection("data/users/"+uid).doc(n).set(docBody(n)); $("sync").textContent="Progress synced to your account"; }
+  catch(e){ names.forEach(n=>dirtyDocs.add(n)); $("sync").textContent="Couldn't sync just now; progress is kept in this browser"; }
+  finally{ syncing=false; if(dirtyDocs.size) syncT=setTimeout(sync,5000); }
+}
+/* Leaving the page saves; coming back to it pulls in anything done on another device. */
+document.addEventListener("visibilitychange",async()=>{
+  if(document.visibilityState==="hidden") return sync();
+  if(!db || syncing) return;
+  try{ await pull(); sync(); if(["home","weak","cards"].includes(view.name)) render(); }catch(e){}
+});
+window.addEventListener("pagehide",()=>sync());
 function mergeLR(name, d){
   if(!d) return false; let ch=false;
   if(name==="course"){ mergeP(d); store.set("progress",P); return true; }
@@ -462,11 +477,10 @@ async function connect(){
     const user=await window.claude.use("user"), d=await window.claude.use("db");
     if(!user||!d) return; const id=await user.id(); if(!id) return;
     db=d; uid=id;
-    const qs=await db.collection("data/users/"+uid).get(); const have=new Set();
-    qs.docs.forEach(doc=>{ have.add(doc.id); if(mergeLR(doc.id, doc.data()) && doc.id!=="course") dirtyDocs.add(doc.id); });
+    const have=await pull();
     ["course","learner","log",...SHARDS].forEach(n=>{ if(!have.has(n) && JSON.stringify(docBody(n)).length>30) dirtyDocs.add(n); });
     $("sync").textContent="Progress synced to your account";
-    saveLR(); if(dirtyDocs.size) flushLR();
+    sync();
     if(["home","weak","cards"].includes(view.name)) render();
   }catch(e){ $("sync").textContent="Progress saved in this browser (account sync unavailable)"; }
 }
@@ -731,7 +745,7 @@ function renderResult(){
   const misses=r.results.filter(x=>!x.ok), passed=score>=PASS-1e-9;
   let head="";
   if(r.mode==="test"){
-    if(!r.saved){ const p=P.lv[r.id]||{best:0,passed:false,tests:0}; P.lv[r.id]={best:Math.max(p.best||0,score), passed:!!(p.passed||passed), tests:(p.tests||0)+1, at:Date.now()}; saveP(); flushLR(); r.saved=true; }
+    if(!r.saved){ const p=P.lv[r.id]||{best:0,passed:false,tests:0}; P.lv[r.id]={best:Math.max(p.best||0,score), passed:!!(p.passed||passed), tests:(p.tests||0)+1, at:Date.now()}; saveP(); sync(); r.saved=true; }
     head=`<span class="score ${passed?"pass":"fail"}">${right} / ${total}</span><h2>${passed?`Passed with ${Math.round(score*100)}%.${r.nextId?` ${esc(r.nextLabel)} is unlocked.`:" You finished this track."}`:`${Math.round(score*100)}%. You need ${Math.ceil(PASS*total)} of ${total} to pass.`}</h2>
       ${passed?"":`<p style="margin:0">Review the misses below, practise the formats you missed most, then retake the test. Each attempt draws new questions.</p>`}`;
   } else head=`<span class="score">${right} / ${total}</span><h2>Practice done.</h2>`;
@@ -1163,7 +1177,7 @@ function exportAll(){ const docs={}; ["course","learner","log",...SHARDS].forEac
 function importAll(text){
   const o=JSON.parse(String(text).trim()); if(!o || o.app!=="studyhall-"+C.course || !o.docs) throw new Error("bad");
   let n=0; for(const k of ["course","learner","log",...SHARDS]){ if(o.docs[k]){ mergeLR(k,o.docs[k]); dirtyDocs.add(k); n++; } }
-  store.set("progress",P); saveLR(); flushLR(); return n;
+  store.set("progress",P); store.set("learner",LR); sync(); return n;
 }
 $("xCopy").onclick=async()=>{ const t=exportAll(); let ok=false; try{ await navigator.clipboard.writeText(t); ok=true; }catch(e){}
   if(ok) $("xMsg").textContent=`Copied (${Math.round(t.length/1024)} KB). Paste it into the other copy of the course.`;
