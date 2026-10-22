@@ -53,12 +53,15 @@ async function exists(course: string, name: string): Promise<boolean> {
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+// The HD voices sometimes return no audio for a single very short word; those clips use the standard voice.
+const FALLBACK: Record<string, string> = { "ko-KR-SunHi:DragonHDLatestNeural": "ko-KR-SunHiNeural", "ko-KR-Hyunsu:DragonHDLatestNeural": "ko-KR-HyunsuNeural" };
 async function synth(text: string, voice: string, rate: string, lang: string): Promise<Uint8Array> {
   for (let attempt = 0; ; attempt++) {
     try { return await synthOnce(text, voice, rate, lang); }
     catch (e) {
       const m = String((e as Error).message || e);
       if (attempt < 6 && /azure (429|5\d\d)/.test(m)) { await sleep(Math.min(30000, 2500 * (attempt + 1))); continue; }
+      if (/returned only/.test(m) && FALLBACK[voice]) return await synthOnce(text, FALLBACK[voice], rate, lang);
       throw e;
     }
   }
