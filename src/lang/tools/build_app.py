@@ -117,7 +117,7 @@ def ko_guide():
 <ul>{ex('옷','옫','clothes')}{ex('부엌','부억','kitchen')}{ex('닭','닥','chicken; two final letters, only one is said')}</ul></section>
 
 <section><h2>Spelling vs speech</h2>
-<p>Korean spelling shows the parts of a word; speech smooths them together. Cards show a “said like” line whenever the sound differs from the spelling. You don't need to memorize these rules now. Notice them as they come up.</p>
+<p>Korean spelling shows the parts of a word; speech smooths them together. Cards show a “said like” line whenever the sound differs from the spelling. It shows normal connected speech, so some changes cross word gaps too: {say('한국 사람','hanguk ssaram','Korean person')} sounds like <span class="cjk">한국 싸람</span>. You don't need to memorize these rules now. Notice them as they come up.</p>
 <ol>
 <li><b>Linking.</b> A final consonant slides into a next syllable that starts with <span class="cjk">ㅇ</span>.<ul>{ex('한국어','한구거','Korean language')}{ex('음악','으막','music')}</ul></li>
 <li><b>Nasal change.</b> A p, t or k ending before <span class="cjk">ㄴ</span> or <span class="cjk">ㅁ</span> becomes m, n or ng.<ul>{ex('감사합니다','감사함니다','thank you')}{ex('한국말','한궁말','Korean language')}</ul></li>
