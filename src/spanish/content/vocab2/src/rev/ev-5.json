@@ -1,0 +1,198 @@
+{
+ "fix": [
+  {
+   "id": "sv03-ciento",
+   "w": "ciento",
+   "pos": "numeral",
+   "en": "hundred (101–199); per cent (por ciento)",
+   "note": "Cien alone, before nouns, and before mil (cien mil); ciento before smaller numbers (ciento cinco).",
+   "type": [
+    "ciento",
+    "cien"
+   ],
+   "ex": [
+    {
+     "es": "La cuenta fue de ciento veinte pesos.",
+     "en": "The bill was a hundred and twenty pesos.",
+     "hit": "ciento"
+    },
+    {
+     "es": "Estoy cien por ciento seguro, Diego.",
+     "en": "I'm a hundred percent sure, Diego.",
+     "hit": "ciento"
+    },
+    {
+     "es": "Hay un diez por ciento de descuento hoy.",
+     "en": "There's a ten percent discount today.",
+     "hit": "ciento"
+    }
+   ]
+  },
+  {
+   "id": "sv03-atras",
+   "w": "atrás",
+   "pos": "adverb",
+   "en": "behind; in the back",
+   "note": "Before a noun: detrás de la casa; Mexico also says atrás de.",
+   "type": [
+    "atrás"
+   ],
+   "ex": [
+    {
+     "es": "Siéntate atrás con los niños.",
+     "en": "Sit in the back with the kids.",
+     "hit": "atrás"
+    },
+    {
+     "es": "El baño está atrás, a la derecha.",
+     "en": "The bathroom is in the back, on the right.",
+     "hit": "atrás"
+    },
+    {
+     "es": "Prefiero sentarme atrás en el cine.",
+     "en": "I prefer to sit in the back at the movies.",
+     "hit": "atrás"
+    }
+   ]
+  },
+  {
+   "id": "sv03-enfermedad",
+   "w": "la enfermedad",
+   "pos": "noun",
+   "en": "illness, disease",
+   "note": "",
+   "type": [
+    "la enfermedad",
+    "enfermedad"
+   ],
+   "ex": [
+    {
+     "es": "Mi abuelo tiene una enfermedad del corazón.",
+     "en": "My grandfather has heart disease.",
+     "hit": "enfermedad"
+    },
+    {
+     "es": "Faltó al trabajo por enfermedad.",
+     "en": "He missed work because of illness.",
+     "hit": "enfermedad"
+    },
+    {
+     "es": "No te preocupes, esa enfermedad no es contagiosa.",
+     "en": "Don't worry, that disease isn't contagious.",
+     "hit": "enfermedad"
+    }
+   ]
+  },
+  {
+   "id": "sv03-observar",
+   "w": "observar",
+   "pos": "verb",
+   "en": "to observe, watch",
+   "note": "",
+   "type": [
+    "observar"
+   ],
+   "ex": [
+    {
+     "es": "Me gusta observar a la gente en el parque.",
+     "en": "I like watching people in the park.",
+     "hit": "observar"
+    },
+    {
+     "es": "El doctor quiere observarlo esta noche.",
+     "en": "The doctor wants to keep him under observation tonight.",
+     "hit": "observarlo"
+    },
+    {
+     "es": "Observa cómo lo hace el chef.",
+     "en": "Watch how the chef does it.",
+     "hit": "Observa"
+    }
+   ]
+  },
+  {
+   "id": "sv03-tirar",
+   "w": "tirar",
+   "pos": "verb",
+   "en": "to throw (away); to knock over",
+   "note": "",
+   "type": [
+    "tirar"
+   ],
+   "ex": [
+    {
+     "es": "Tira la basura, por favor.",
+     "en": "Throw out the trash, please.",
+     "hit": "Tira"
+    },
+    {
+     "es": "No tires la comida, guárdala.",
+     "en": "Don't throw away the food, save it.",
+     "hit": "tires"
+    },
+    {
+     "es": "El perro tiró el vaso de la mesa.",
+     "en": "The dog knocked the glass off the table.",
+     "hit": "tiró"
+    }
+   ]
+  },
+  {
+   "id": "sv03-sentimiento",
+   "w": "el sentimiento",
+   "pos": "noun",
+   "en": "feeling",
+   "note": "",
+   "type": [
+    "el sentimiento",
+    "sentimiento"
+   ],
+   "ex": [
+    {
+     "es": "Es difícil hablar de mis sentimientos.",
+     "en": "It's hard to talk about my feelings.",
+     "hit": "sentimientos"
+    },
+    {
+     "es": "No quiero herir sus sentimientos.",
+     "en": "I don't want to hurt her feelings.",
+     "hit": "sentimientos"
+    },
+    {
+     "es": "Mi abuelo canta con mucho sentimiento.",
+     "en": "My grandfather sings with a lot of feeling.",
+     "hit": "sentimiento"
+    }
+   ]
+  },
+  {
+   "id": "sv03-resolver",
+   "w": "resolver",
+   "pos": "verb",
+   "en": "to solve, resolve",
+   "note": "Irregular: resuelvo, resuelto.",
+   "type": [
+    "resolver"
+   ],
+   "ex": [
+    {
+     "es": "Vamos a resolver esto juntos.",
+     "en": "We're going to solve this together.",
+     "hit": "resolver"
+    },
+    {
+     "es": "¿Ya resolviste el problema con el banco?",
+     "en": "Did you sort out the problem with the bank?",
+     "hit": "resolviste"
+    },
+    {
+     "es": "Mi hijo resolvió el problema de matemáticas solo.",
+     "en": "My son solved the math problem by himself.",
+     "hit": "resolvió"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixed cien mil rule, atrás de (valid in Mexico), calque 'sentimiento extraño', tú-to-patient context, 'resolver la tarea', two translations."
+}

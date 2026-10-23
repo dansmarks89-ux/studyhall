@@ -1,0 +1,40 @@
+{
+ "fix": [
+  {
+   "id": "VC1-26",
+   "w": "empezar (empieza)",
+   "en": "to start",
+   "ex": [
+    {
+     "es": "Las clases empiezan el lunes.",
+     "en": "Classes start on Monday.",
+     "hit": "empiezan"
+    },
+    {
+     "es": "Si empieza a llover, cancelamos el picnic.",
+     "en": "If it starts raining, we'll cancel the picnic.",
+     "hit": "empieza"
+    }
+   ]
+  },
+  {
+   "id": "VC2-8",
+   "w": "guapo",
+   "en": "good-looking",
+   "ex": [
+    {
+     "es": "¡Qué guapa estás hoy! ¿Vas a una fiesta?",
+     "en": "You look really pretty today! Are you going to a party?",
+     "hit": "guapa"
+    },
+    {
+     "es": "Mi papá era muy guapo de joven.",
+     "en": "My dad was very good-looking when he was young.",
+     "hit": "guapo"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Two small fixes: a stilted 'Empieza a llover' replaced with a natural conditional; 'guapa' translation tightened to the glossed meaning. All other examples accurate and natural."
+}

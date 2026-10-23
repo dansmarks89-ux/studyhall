@@ -1,0 +1,51 @@
+{
+ "fix": [
+  {
+   "id": "L4-v-39",
+   "t": {
+    "s": "오늘은 무슨 요일이에요?",
+    "r": "oneureun museun nyoirieyo",
+    "p": "오느른 무슨 뇨이리에요"
+   },
+   "en": "What day is it today?",
+   "ex": [
+    {
+     "s": "오늘은 무슨 요일이에요? 화요일이에요?",
+     "en": "What day is it today? Is it Tuesday?"
+    },
+    {
+     "s": "휴가 중이라서 요일을 모르겠어요. 오늘은 무슨 요일이에요?",
+     "en": "I'm on vacation, so I've lost track of the days. What day is it today?"
+    },
+    {
+     "s": "오늘은 무슨 요일이에요? 수요일이면 수업이 있어요.",
+     "en": "What day is it today? If it's Wednesday, I have class."
+    }
+   ]
+  },
+  {
+   "id": "L5-v-27",
+   "t": {
+    "s": "저도요",
+    "r": "jeodoyo"
+   },
+   "en": "Me too",
+   "ex": [
+    {
+     "s": "피곤해요? 저도요.",
+     "en": "You're tired? Me too."
+    },
+    {
+     "s": "—저는 한국 음식 좋아해요. —저도요!",
+     "en": "—I like Korean food. —Me too!"
+    },
+    {
+     "s": "아, 저도요! 저도 내일 쉬어요.",
+     "en": "Oh, me too! I'm off tomorrow too."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Solid file. Replaced two awkward examples: an unnatural 'on vacation, so I don't know' line and a context-less 저도요 opener (now a real exchange)."
+}

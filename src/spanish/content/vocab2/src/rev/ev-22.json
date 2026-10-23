@@ -1,0 +1,61 @@
+{
+ "fix": [
+  {
+   "id": "sv12-acoger",
+   "w": "acoger",
+   "pos": "verb",
+   "en": "to take in; to welcome",
+   "note": "",
+   "type": [
+    "acoger"
+   ],
+   "ex": [
+    {
+     "es": "La empresa acoge muy bien a los empleados nuevos.",
+     "en": "The company really welcomes new employees.",
+     "hit": "acoge"
+    },
+    {
+     "es": "El refugio acoge perros abandonados.",
+     "en": "The shelter takes in abandoned dogs.",
+     "hit": "acoge"
+    },
+    {
+     "es": "La familia de Minho me acogió cuando llegué a Seúl.",
+     "en": "Minho's family took me in when I arrived in Seoul.",
+     "hit": "acogió"
+    }
+   ]
+  },
+  {
+   "id": "sv12-helicoptero",
+   "w": "el helicóptero",
+   "pos": "noun",
+   "en": "helicopter",
+   "note": "",
+   "type": [
+    "el helicóptero",
+    "helicóptero"
+   ],
+   "ex": [
+    {
+     "es": "Hicimos un paseo en helicóptero por el cañón.",
+     "en": "We took a helicopter ride over the canyon.",
+     "hit": "helicóptero"
+    },
+    {
+     "es": "Mi hijo quiere un helicóptero de juguete.",
+     "en": "My son wants a toy helicopter.",
+     "hit": "helicóptero"
+    },
+    {
+     "es": "Pasó un helicóptero muy bajo sobre la casa.",
+     "en": "A helicopter flew very low over the house.",
+     "hit": "helicóptero"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file. Fixed an awkward 'took me in in Seoul' translation and 'por la casa' (near/past) mismatched with 'over the house'."
+}

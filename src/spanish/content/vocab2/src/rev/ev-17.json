@@ -1,0 +1,90 @@
+{
+ "fix": [
+  {
+   "id": "sv09-mudarse",
+   "w": "mudarse",
+   "pos": "verb",
+   "en": "to move (house)",
+   "note": "Mudarse = change homes; mover = move an object.",
+   "type": [
+    "mudarse"
+   ],
+   "ex": [
+    {
+     "es": "Nos mudamos a Chicago el año pasado.",
+     "en": "We moved to Chicago last year.",
+     "hit": "mudamos"
+    },
+    {
+     "es": "Mi hermana se va a mudar a otra ciudad.",
+     "en": "My sister is going to move to another city.",
+     "hit": "mudar"
+    },
+    {
+     "es": "¿Cuándo te mudas al nuevo departamento?",
+     "en": "When are you moving to the new apartment?",
+     "hit": "mudas"
+    }
+   ]
+  },
+  {
+   "id": "sv09-pasaje",
+   "w": "el pasaje",
+   "pos": "noun",
+   "en": "ticket (bus, plane); fare",
+   "note": "Mexico often says \"el boleto\" for plane tickets; \"el pasaje\" also = bus fare.",
+   "type": [
+    "el pasaje",
+    "pasaje",
+    "el boleto",
+    "boleto"
+   ],
+   "ex": [
+    {
+     "es": "Ya compré los pasajes a Cancún.",
+     "en": "I already bought the tickets to Cancún.",
+     "hit": "pasajes"
+    },
+    {
+     "es": "¿Cuánto cuesta el pasaje del camión?",
+     "en": "How much is the bus fare?",
+     "hit": "pasaje"
+    },
+    {
+     "es": "Los pasajes son más baratos los martes.",
+     "en": "Tickets are cheaper on Tuesdays.",
+     "hit": "pasajes"
+    }
+   ]
+  },
+  {
+   "id": "sv09-gris",
+   "w": "gris",
+   "pos": "adjective",
+   "en": "gray",
+   "note": "Same form for masculine and feminine; plural grises.",
+   "type": [
+    "gris"
+   ],
+   "ex": [
+    {
+     "es": "Hoy el día está muy gris.",
+     "en": "It's a very gray day today.",
+     "hit": "gris"
+    },
+    {
+     "es": "¿Tiene esta camisa en gris?",
+     "en": "Do you have this shirt in gray?",
+     "hit": "gris"
+    },
+    {
+     "es": "Mi abuela tiene el pelo gris.",
+     "en": "My grandmother has gray hair.",
+     "hit": "gris"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. Removed non-synonym 'mudar' from type; fixed 'en martes' to 'los martes'; smoothed 'está un día gris'."
+}

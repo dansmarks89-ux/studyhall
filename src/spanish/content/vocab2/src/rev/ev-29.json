@@ -1,0 +1,92 @@
+{
+ "fix": [
+  {
+   "id": "sv15-barro",
+   "w": "el barro",
+   "pos": "noun",
+   "en": "mud; clay",
+   "note": "Mexico: mud is usually 'el lodo'; barro is mostly clay. 'Los barros' = pimples.",
+   "type": [
+    "el barro",
+    "barro"
+   ],
+   "ex": [
+    {
+     "es": "Los niños llegaron llenos de barro del parque.",
+     "en": "The kids came back from the park covered in mud.",
+     "hit": "barro"
+    },
+    {
+     "es": "Quítate los zapatos, tienen barro.",
+     "en": "Take off your shoes, they have mud on them.",
+     "hit": "barro"
+    },
+    {
+     "es": "Compramos unas ollas de barro en el mercado.",
+     "en": "We bought some clay pots at the market.",
+     "hit": "barro"
+    }
+   ]
+  },
+  {
+   "id": "sv15-jefa",
+   "w": "la jefa",
+   "pos": "noun",
+   "en": "(female) boss; head; mom (Mexico, slang)",
+   "note": "Feminine of el jefe. In Mexico, 'mi jefa' is also slang for 'my mom'.",
+   "type": [
+    "la jefa",
+    "jefa"
+   ],
+   "ex": [
+    {
+     "es": "Mi jefa me dio el viernes libre.",
+     "en": "My boss gave me Friday off.",
+     "hit": "jefa"
+    },
+    {
+     "es": "La jefa de enfermeras habla español.",
+     "en": "The head nurse speaks Spanish.",
+     "hit": "jefa"
+    },
+    {
+     "es": "Mi jefa y mi jefe llevan treinta años casados.",
+     "en": "My mom and dad have been married for thirty years.",
+     "hit": "jefa"
+    }
+   ]
+  },
+  {
+   "id": "sv15-brecha",
+   "w": "la brecha",
+   "pos": "noun",
+   "en": "gap; dirt road (Mexico)",
+   "note": "",
+   "type": [
+    "la brecha",
+    "brecha"
+   ],
+   "ex": [
+    {
+     "es": "Hay una gran brecha generacional entre mi abuelo y yo.",
+     "en": "There's a big generation gap between my grandpa and me.",
+     "hit": "brecha"
+    },
+    {
+     "es": "En mi empresa hay una brecha salarial entre hombres y mujeres.",
+     "en": "At my company there's a pay gap between men and women.",
+     "hit": "brecha"
+    },
+    {
+     "es": "Tomamos una brecha de tierra para llegar al pueblo.",
+     "en": "We took a dirt road to get to the town.",
+     "hit": "brecha"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sv15-enhorabuena"
+ ],
+ "notes": "Dropped Spain-only 'enhorabuena' (LatAm uses felicidades). Fixed barro note (Mexico mud = lodo), 'brecha' for a platform gap (unnatural), ambiguous 'mi jefa' = mom example."
+}

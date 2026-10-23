@@ -1,0 +1,51 @@
+{
+ "fix": [
+  {
+   "id": "L10-v-26",
+   "t": {
+    "s": "그러면",
+    "r": "geureomyeon"
+   },
+   "en": "then / in that case",
+   "ex": [
+    {
+     "s": "배고파요? 그러면 밥 먹으러 가요.",
+     "en": "You're hungry? Then let's go eat."
+    },
+    {
+     "s": "오후에 비가 온대요? 그러면 우산 가져갈게요.",
+     "en": "It's supposed to rain this afternoon? Then I'll take an umbrella."
+    },
+    {
+     "s": "내일 시간 없어요? 그러면 금요일은 어때요?",
+     "en": "You're not free tomorrow? Then how about Friday?"
+    }
+   ]
+  },
+  {
+   "id": "L10-v-48",
+   "t": {
+    "s": "다음에 또 봐요",
+    "r": "daeume tto bwayo",
+    "p": "다으메 또 봐요"
+   },
+   "en": "See you next time",
+   "ex": [
+    {
+     "s": "휴가 잘 다녀오세요. 다음에 또 봐요!",
+     "en": "Enjoy your vacation. See you next time!"
+    },
+    {
+     "s": "지우 씨, 오늘 고마웠어요. 다음에 또 봐요.",
+     "en": "Ji-woo, thanks for today. See you next time."
+    },
+    {
+     "s": "다음에 또 봐요. 다음엔 제가 살게요.",
+     "en": "See you next time. Next time it's on me."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixed odd 그러면 after own statement; replaced 다음에 또 봐요 said to a teacher (should be 봬요). Rest fine."
+}

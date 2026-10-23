@@ -1,0 +1,75 @@
+{
+ "fix": [
+  {
+   "id": "kv04-105",
+   "t": {
+    "s": "평소"
+   },
+   "pos": "noun",
+   "en": "usual times, ordinarily",
+   "note": "평소에 = usually; 평소처럼 = as usual.",
+   "ex": [
+    {
+     "s": "평소에 몇 시에 일어나요?",
+     "en": "What time do you usually get up?"
+    },
+    {
+     "s": "오늘은 평소보다 길이 막혀요.",
+     "en": "Traffic is worse than usual today."
+    },
+    {
+     "s": "오늘도 평소처럼 일곱 시에 일어났어요.",
+     "en": "I got up at seven today, as usual."
+    }
+   ]
+  },
+  {
+   "id": "kv04-131",
+   "t": {
+    "s": "거부하다"
+   },
+   "pos": "verb",
+   "en": "to refuse, to reject",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이가 약 먹기를 거부해요.",
+     "en": "The kid refuses to take medicine."
+    },
+    {
+     "s": "고양이가 새 사료를 거부해요.",
+     "en": "The cat refuses to eat the new food."
+    },
+    {
+     "s": "케빈은 사진 찍는 걸 거부했어요.",
+     "en": "Kevin refused to have his picture taken."
+    }
+   ]
+  },
+  {
+   "id": "kv04-182",
+   "t": {
+    "s": "각각"
+   },
+   "pos": "adverb",
+   "en": "each, individually",
+   "note": "",
+   "ex": [
+    {
+     "s": "사과가 각각 천 원이에요.",
+     "en": "The apples are 1,000 won each."
+    },
+    {
+     "s": "선물을 각각 포장해 주세요.",
+     "en": "Please wrap the gifts individually."
+    },
+    {
+     "s": "아이들은 각각 자기 방이 있어요.",
+     "en": "The kids each have their own room."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Replaced unnatural 평소처럼 커피 주세요, 대출을 거부 (거절 is natural), smoothed 각각 sentence. Rest accurate."
+}

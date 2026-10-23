@@ -1,0 +1,95 @@
+{
+ "fix": [
+  {
+   "id": "L1-v-09",
+   "t": {
+    "s": "안녕히 계세요",
+    "r": "annyeonghi gyeseyo"
+   },
+   "en": "Goodbye (when you are leaving)",
+   "ex": [
+    {
+     "s": "잘 먹었습니다. 안녕히 계세요.",
+     "en": "Thank you for the meal. Goodbye."
+    },
+    {
+     "s": "먼저 퇴근할게요. 안녕히 계세요.",
+     "en": "I'll head out now. Goodbye."
+    },
+    {
+     "s": "할머니, 안녕히 계세요. 또 올게요.",
+     "en": "Goodbye, Grandma. I'll come again."
+    }
+   ]
+  },
+  {
+   "id": "L1-v-22",
+   "t": {
+    "s": "사",
+    "r": "sa"
+   },
+   "en": "four",
+   "ex": [
+    {
+     "s": "사월에 벚꽃이 피어요.",
+     "en": "The cherry blossoms bloom in April."
+    },
+    {
+     "s": "엘리베이터 타고 사 층으로 가세요.",
+     "en": "Take the elevator to the fourth floor."
+    },
+    {
+     "s": "사 번 출구에서 만나요.",
+     "en": "Let's meet at Exit 4."
+    }
+   ]
+  },
+  {
+   "id": "L1-v-29",
+   "t": {
+    "s": "백",
+    "r": "baek"
+   },
+   "en": "one hundred",
+   "ex": [
+    {
+     "s": "봉투는 백 원이에요.",
+     "en": "A bag is 100 won."
+    },
+    {
+     "s": "할머니가 백 살까지 사셨어요.",
+     "en": "My grandma lived to be 100."
+    },
+    {
+     "s": "백 미터쯤 가면 역이 있어요.",
+     "en": "Go about 100 meters and you'll see the station."
+    }
+   ]
+  },
+  {
+   "id": "L2-v-11",
+   "t": {
+    "s": "무슨 일 해요?",
+    "r": "museun nil haeyo",
+    "p": "무슨 닐 해요"
+   },
+   "en": "What do you do for work?",
+   "ex": [
+    {
+     "s": "혹시 무슨 일 해요?",
+     "en": "If you don't mind me asking, what do you do?"
+    },
+    {
+     "s": "남편분은 무슨 일 하세요?",
+     "en": "What does your husband do for work?"
+    },
+    {
+     "s": "무슨 일 해요? — 은행에서 일해요.",
+     "en": "What do you do for work? — I work at a bank."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. Fixed: 펴요→standard 피어요; unnatural '역까지 백 미터쯤 가세요'; honorific mismatch 남편분은…해요→하세요; awkward English gloss."
+}

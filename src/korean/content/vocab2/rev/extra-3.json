@@ -1,0 +1,52 @@
+{
+ "fix": [
+  {
+   "id": "L6-v-22",
+   "t": {
+    "s": "어떻게요?",
+    "r": "eotteokeyo",
+    "p": "어떠케요"
+   },
+   "en": "How?",
+   "ex": [
+    {
+     "s": "—이거 집에서 만들 수 있어요. —어떻게요?",
+     "en": "—You can make this at home. —How?"
+    },
+    {
+     "s": "—이 앱으로 택시 부를 수 있어요. —어떻게요?",
+     "en": "—You can call a taxi with this app. —How?"
+    },
+    {
+     "s": "—제가 고쳤어요. —정말요? 어떻게요?",
+     "en": "—I fixed it. —Really? How?"
+    }
+   ]
+  },
+  {
+   "id": "L6-v-24",
+   "t": {
+    "s": "했어요",
+    "r": "haesseoyo",
+    "p": "해써요"
+   },
+   "en": "I did (it)",
+   "ex": [
+    {
+     "s": "—숙제 했어요? —네, 다 했어요.",
+     "en": "—Did you do your homework? —Yes, I did it all."
+    },
+    {
+     "s": "어제 집 청소했어요.",
+     "en": "I cleaned the house yesterday."
+    },
+    {
+     "s": "—식당 예약했어요? —네, 아까 했어요.",
+     "en": "—Did you book the restaurant? —Yes, I did it earlier."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Solid file. Replaced an illogical 'How?' reply to 'faster by subway', and one 했어요 example that only used a 하다-compound (now bare 했어요 = I did it)."
+}

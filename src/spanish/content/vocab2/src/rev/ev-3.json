@@ -1,0 +1,36 @@
+{
+ "fix": [
+  {
+   "id": "sv02-web",
+   "w": "la web",
+   "pos": "noun",
+   "en": "web; website",
+   "note": "Página web = web page or website.",
+   "type": [
+    "la web",
+    "web"
+   ],
+   "ex": [
+    {
+     "es": "Toda la información está en la web.",
+     "en": "All the information is on the web.",
+     "hit": "web"
+    },
+    {
+     "es": "Puedes reservar en la página web.",
+     "en": "You can book on the website.",
+     "hit": "web"
+    },
+    {
+     "es": "Mi hermana diseña páginas web.",
+     "en": "My sister designs websites.",
+     "hit": "web"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sv02-video"
+ ],
+ "notes": "Dropped sv02-video (same id/word already in ev-2). Replaced a web example that duplicated ev-2's sitio example and used Spain-style 'la web del museo'. Rest accurate."
+}

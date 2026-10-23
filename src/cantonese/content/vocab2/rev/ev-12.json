@@ -1,0 +1,114 @@
+{
+ "fix": [
+  {
+   "id": "cv07-62",
+   "t": {
+    "s": "年青人",
+    "r": "nin4 cing1 jan4"
+   },
+   "pos": "noun",
+   "en": "young people; young person",
+   "note": "Also written 年輕人 nin4 hing1 jan4.",
+   "ex": [
+    {
+     "s": "而家啲年青人好鍾意用手機。",
+     "r": "ji4 gaa1 di1 nin4 cing1 jan4 hou2 zung1 ji3 jung6 sau2 gei1",
+     "en": "Young people nowadays love using their phones."
+    },
+    {
+     "s": "呢間餐廳好多年青人。",
+     "r": "ni1 gaan1 caan1 teng1 hou2 do1 nin4 cing1 jan4",
+     "en": "This restaurant is full of young people."
+    },
+    {
+     "s": "佢係一個好勤力嘅年青人。",
+     "r": "keoi5 hai6 jat1 go3 hou2 kan4 lik6 ge3 nin4 cing1 jan4",
+     "en": "He's a very hardworking young man."
+    }
+   ]
+  },
+  {
+   "id": "cv07-28",
+   "t": {
+    "s": "雙",
+    "r": "soeng1"
+   },
+   "pos": "other",
+   "en": "pair (of); double",
+   "note": "Measure word for pairs: shoes, socks, chopsticks.",
+   "ex": [
+    {
+     "s": "我想買雙新波鞋。",
+     "r": "ngo5 soeng2 maai5 soeng1 san1 bo1 haai4",
+     "en": "I want to buy a new pair of sneakers."
+    },
+    {
+     "s": "唔該俾多雙筷子。",
+     "r": "m4 goi1 bei2 do1 soeng1 faai3 zi2",
+     "en": "Another pair of chopsticks, please."
+    },
+    {
+     "s": "呢間房有張雙人床。",
+     "r": "ni1 gaan1 fong2 jau5 zoeng1 soeng1 jan4 cong4",
+     "en": "This room has a double bed."
+    }
+   ]
+  },
+  {
+   "id": "cv07-97",
+   "t": {
+    "s": "坐監",
+    "r": "co5 gaam1"
+   },
+   "pos": "verb",
+   "en": "to go to jail, serve time",
+   "note": "",
+   "ex": [
+    {
+     "s": "醉駕會坐監㗎。",
+     "r": "zeoi3 gaa3 wui5 co5 gaam1 gaa3",
+     "en": "Drunk driving can land you in jail."
+    },
+    {
+     "s": "佢因為偷嘢要坐監。",
+     "r": "keoi5 jan1 wai6 tau1 je5 jiu3 co5 gaam1",
+     "en": "He has to go to jail for stealing."
+    },
+    {
+     "s": "冇牌揸車隨時要坐監㗎。",
+     "r": "mou5 paai4 zaa1 ce1 ceoi4 si4 jiu3 co5 gaam1 gaa3",
+     "en": "Driving without a license could land you in jail."
+    }
+   ]
+  },
+  {
+   "id": "cv07-88",
+   "t": {
+    "s": "駁",
+    "r": "bok3"
+   },
+   "pos": "verb",
+   "en": "to connect; to talk back, contradict",
+   "note": "駁嘴 = talk back.",
+   "ex": [
+    {
+     "s": "你條線駁錯咗。",
+     "r": "nei5 tiu4 sin3 bok3 co3 zo2",
+     "en": "You connected the wire wrong."
+    },
+    {
+     "s": "唔好同阿媽駁嘴。",
+     "r": "m4 hou2 tung4 aa3 maa1 bok3 zeoi2",
+     "en": "Don't talk back to Mom."
+    },
+    {
+     "s": "佢講錯嘢，我即刻駁佢。",
+     "r": "keoi5 gong2 co3 je5 ngo5 zik1 hak1 bok3 keoi5",
+     "en": "He said something wrong, so I pushed back right away."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Very clean file. Fixed wrong reading implied for 年輕人 (輕 hing1, not cing1), pos for measure word 雙, 要/can mismatch in a 坐監 example, and an imprecise 駁 translation."
+}

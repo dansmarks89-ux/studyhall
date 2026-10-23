@@ -98,3 +98,21 @@ join auth.users u on u.id = a.user_id
 left join public.invites i on i.email = lower(u.email)
 order by a.day desc, a.n desc;
 ```
+
+## Round 3: big vocabulary tracks, examples, voices and speaking
+
+**Content (all written, then checked by an independent reviewer; reviewer patches live in `rev/` next to `out/`).**
+- Clinic Spanish: `src/spanish/content/vocab2/src/{out,rev}` → `gen_vocab2.py` → `src/spanish/data/vocab2.json` → build writes `spanish/vocab2.<hash>.json`. Everyday track VE01–VE30 (~2,900 most useful words, frequency order), extra clinic words per medical level (VMB1–8, after each VM set), and 2 more examples for every older word (`more`, keyed `<level>:<index>`).
+- Cantonese / Korean: `src/<course>/content/vocab2/{out,rev}` (`ev-N.json` = Everyday set N+1, `extra-N.json` = 3 more examples for the older words) → `python3 src/lang/build.py all` writes `<course>/vocab2.<hash>.json` and adds every new sentence to `<course>/audio.json`.
+- Word Power: every card has 4 examples (`src/vocab/data/items.json`); the page shows 2 and a "More examples" toggle.
+- The apps build their questions from these entries in the browser (ids are based on entry ids, so editing content keeps progress).
+
+**Voices and speech** (`shared/voice.js` + the `tts` function): natural server voices with a picker in each app's Settings, clips cached once per voice and sentence in the `audio` bucket, and speech-to-text for "Say it" and talk-out-loud conversations. Limits per person per day: 600 new clips (`tts_usage`), 400 recognitions (`stt_usage`, migration `supabase/migrations/20261023120000_stt_usage.sql`). Google Chirp 3 HD voices appear automatically if the secret `GOOGLE_TTS_KEY` is set. `tools/voice-test.html` lists the voices, plays samples and tests the microphone.
+
+Record the new Cantonese/Korean clips in the default voices (admin token from `private.secrets`):
+```sql
+select net.http_post('https://wbrssohmepioxapwbcne.supabase.co/functions/v1/tts',
+  jsonb_build_object('op','sync','course','cantonese','token',(select v from private.secrets where k='tts_admin')),
+  headers => '{"Content-Type":"application/json"}'::jsonb);
+-- progress: select * from public.tts_sync;
+```

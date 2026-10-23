@@ -1,0 +1,2321 @@
+[
+ {
+  "id": "sm2-hace-cuanto",
+  "w": "¿Hace cuánto?",
+  "pos": "phrase",
+  "en": "how long ago?",
+  "note": "Answer with hace + time: «hace dos días».",
+  "type": [
+   "¿hace cuánto?",
+   "hace cuánto",
+   "¿hace cuánto tiempo?",
+   "hace cuánto tiempo"
+  ],
+  "ex": [
+   {
+    "es": "¿Hace cuánto empezó el dolor de pecho?",
+    "en": "How long ago did the chest pain start?",
+    "hit": "Hace cuánto"
+   },
+   {
+    "es": "Señora, ¿hace cuánto fue a la sala de emergencias?",
+    "en": "Ma'am, how long ago did you go to the emergency room?",
+    "hit": "hace cuánto"
+   },
+   {
+    "es": "¿Hace cuánto tomó la última pastilla?",
+    "en": "How long ago did you take the last pill?",
+    "hit": "Hace cuánto"
+   }
+  ]
+ },
+ {
+  "id": "sm2-cada-cuanto",
+  "w": "¿Cada cuánto?",
+  "pos": "phrase",
+  "en": "how often?",
+  "note": "Everyday Mexican usage; «¿Con qué frecuencia?» is more formal.",
+  "type": [
+   "¿cada cuánto?",
+   "cada cuánto",
+   "¿con qué frecuencia?",
+   "con qué frecuencia"
+  ],
+  "ex": [
+   {
+    "es": "¿Cada cuánto le dan las palpitaciones?",
+    "en": "How often do you get the palpitations?",
+    "hit": "Cada cuánto"
+   },
+   {
+    "es": "¿Cada cuánto se marea su mamá?",
+    "en": "How often does your mother get dizzy?",
+    "hit": "Cada cuánto"
+   },
+   {
+    "es": "¿Cada cuánto tengo que tomar esta pastilla?",
+    "en": "How often do I have to take this pill?",
+    "hit": "Cada cuánto"
+   }
+  ]
+ },
+ {
+  "id": "sm2-que-lo-trae-por-aqui",
+  "w": "¿Qué lo trae por aquí?",
+  "pos": "phrase",
+  "en": "what brings you in?",
+  "note": "To a woman: «¿Qué la trae por aquí?»",
+  "type": [],
+  "ex": [
+   {
+    "es": "Buenos días, señor Ramírez. ¿Qué lo trae por aquí?",
+    "en": "Good morning, Mr. Ramírez. What brings you in?",
+    "hit": "trae por aquí"
+   },
+   {
+    "es": "Hola, señora Vega. ¿Qué la trae por aquí hoy?",
+    "en": "Hi, Mrs. Vega. What brings you in today?",
+    "hit": "trae por aquí"
+   },
+   {
+    "es": "Soy la doctora Kim. ¿Qué la trae por aquí esta noche?",
+    "en": "I'm Dr. Kim. What brings you in tonight?",
+    "hit": "trae por aquí"
+   }
+  ]
+ },
+ {
+  "id": "sm2-consulta",
+  "w": "la consulta",
+  "pos": "noun",
+  "en": "doctor's visit; appointment",
+  "note": "The visit itself; «la cita» is the booked time slot.",
+  "type": [
+   "la consulta",
+   "consulta"
+  ],
+  "ex": [
+   {
+    "es": "Su consulta con el cardiólogo es el martes a las diez.",
+    "en": "Your visit with the cardiologist is Tuesday at ten.",
+    "hit": "consulta"
+   },
+   {
+    "es": "¿El dolor empezó antes o después de la última consulta?",
+    "en": "Did the pain start before or after your last visit?",
+    "hit": "consulta"
+   },
+   {
+    "es": "Mi esposa quiere entrar a la consulta conmigo.",
+    "en": "My wife wants to come into the visit with me.",
+    "hit": "consulta"
+   }
+  ]
+ },
+ {
+  "id": "sm2-que-le-paso",
+  "w": "¿Qué le pasó?",
+  "pos": "phrase",
+  "en": "what happened (to you)?",
+  "note": "With friends and family: «¿Qué te pasó?»",
+  "type": [
+   "¿qué le pasó?",
+   "qué le pasó",
+   "¿qué pasó?",
+   "qué pasó"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué le pasó anoche en el trabajo?",
+    "en": "What happened to you last night at work?",
+    "hit": "Qué le pasó"
+   },
+   {
+    "es": "¿Qué le pasó a su papá en la cocina?",
+    "en": "What happened to your father in the kitchen?",
+    "hit": "Qué le pasó"
+   },
+   {
+    "es": "Me dicen que fue a urgencias. ¿Qué le pasó?",
+    "en": "They tell me you went to the ER. What happened?",
+    "hit": "Qué le pasó"
+   }
+  ]
+ },
+ {
+  "id": "sm2-que-estaba-haciendo",
+  "w": "¿Qué estaba haciendo?",
+  "pos": "phrase",
+  "en": "what were you doing?",
+  "note": "Imperfect sets the scene: «Estaba caminando cuando empezó.»",
+  "type": [
+   "¿qué estaba haciendo?",
+   "qué estaba haciendo"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué estaba haciendo cuando empezó el dolor?",
+    "en": "What were you doing when the pain started?",
+    "hit": "Qué estaba haciendo"
+   },
+   {
+    "es": "¿Qué estaba haciendo su esposo cuando se desmayó?",
+    "en": "What was your husband doing when he fainted?",
+    "hit": "Qué estaba haciendo"
+   },
+   {
+    "es": "Quiero saber qué estaba haciendo en ese momento.",
+    "en": "I want to know what you were doing at that moment.",
+    "hit": "qué estaba haciendo"
+   }
+  ]
+ },
+ {
+  "id": "sm2-que-hizo",
+  "w": "¿Qué hizo?",
+  "pos": "phrase",
+  "en": "what did you do?",
+  "note": "",
+  "type": [
+   "¿qué hizo?",
+   "qué hizo"
+  ],
+  "ex": [
+   {
+    "es": "Cuando le dio el dolor, ¿qué hizo?",
+    "en": "When the pain hit you, what did you do?",
+    "hit": "qué hizo"
+   },
+   {
+    "es": "¿Y qué hizo después de tomar la pastilla?",
+    "en": "And what did you do after taking the pill?",
+    "hit": "qué hizo"
+   },
+   {
+    "es": "¿Qué hizo usted cuando su mamá se cayó?",
+    "en": "What did you do when your mother fell?",
+    "hit": "Qué hizo"
+   }
+  ]
+ },
+ {
+  "id": "sm2-describir",
+  "w": "describir",
+  "pos": "verb",
+  "en": "to describe",
+  "note": "",
+  "type": [
+   "describir"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede describir el dolor con sus propias palabras?",
+    "en": "Can you describe the pain in your own words?",
+    "hit": "describir"
+   },
+   {
+    "es": "Su hija puede describir lo que vio.",
+    "en": "Your daughter can describe what she saw.",
+    "hit": "describir"
+   },
+   {
+    "es": "Es difícil describir esta sensación por teléfono.",
+    "en": "It's hard to describe this feeling over the phone.",
+    "hit": "describir"
+   }
+  ]
+ },
+ {
+  "id": "sm2-senalar",
+  "w": "señalar",
+  "pos": "verb",
+  "en": "to point to; point out",
+  "note": "",
+  "type": [
+   "señalar"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede señalar con un dedo dónde le duele?",
+    "en": "Can you point with one finger to where it hurts?",
+    "hit": "señalar"
+   },
+   {
+    "es": "El paciente señaló el centro del pecho.",
+    "en": "The patient pointed to the center of his chest.",
+    "hit": "señaló"
+   },
+   {
+    "es": "Aquí le quiero señalar algo en el electrocardiograma.",
+    "en": "Here I want to point out something on the ECG.",
+    "hit": "señalar"
+   }
+  ]
+ },
+ {
+  "id": "sm2-tipo-de-dolor",
+  "w": "el tipo de dolor",
+  "pos": "noun",
+  "en": "kind of pain",
+  "note": "",
+  "type": [
+   "el tipo de dolor",
+   "tipo de dolor"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué tipo de dolor es: presión, ardor o punzada?",
+    "en": "What kind of pain is it: pressure, burning or stabbing?",
+    "hit": "tipo de dolor"
+   },
+   {
+    "es": "Este tipo de dolor muchas veces viene de los músculos.",
+    "en": "This kind of pain often comes from the muscles.",
+    "hit": "tipo de dolor"
+   },
+   {
+    "es": "Mi papá nunca tuvo este tipo de dolor.",
+    "en": "My dad never had this kind of pain.",
+    "hit": "tipo de dolor"
+   }
+  ]
+ },
+ {
+  "id": "sm2-dolor-agudo",
+  "w": "el dolor agudo",
+  "pos": "noun",
+  "en": "sharp pain",
+  "note": "«Agudo» also means acute (sudden onset).",
+  "type": [
+   "el dolor agudo",
+   "dolor agudo"
+  ],
+  "ex": [
+   {
+    "es": "¿Es un dolor agudo o más bien sordo?",
+    "en": "Is it a sharp pain or more of a dull one?",
+    "hit": "dolor agudo"
+   },
+   {
+    "es": "Siento un dolor agudo cuando respiro hondo.",
+    "en": "I feel a sharp pain when I breathe deeply.",
+    "hit": "dolor agudo"
+   },
+   {
+    "es": "Mi esposa tiene un dolor agudo en el costado.",
+    "en": "My wife has a sharp pain in her side.",
+    "hit": "dolor agudo"
+   }
+  ]
+ },
+ {
+  "id": "sm2-dolor-sordo",
+  "w": "el dolor sordo",
+  "pos": "noun",
+  "en": "dull ache",
+  "note": "Patients may also say «una molestia» or «un dolor que no se quita».",
+  "type": [
+   "el dolor sordo",
+   "dolor sordo"
+  ],
+  "ex": [
+   {
+    "es": "¿Es un dolor sordo, como una molestia?",
+    "en": "Is it a dull ache, like a discomfort?",
+    "hit": "dolor sordo"
+   },
+   {
+    "es": "Tengo un dolor sordo en la espalda desde ayer.",
+    "en": "I've had a dull ache in my back since yesterday.",
+    "hit": "dolor sordo"
+   },
+   {
+    "es": "Mi mamá dice que es un dolor sordo, no fuerte.",
+    "en": "My mom says it's a dull ache, not a strong one.",
+    "hit": "dolor sordo"
+   }
+  ]
+ },
+ {
+  "id": "sm2-insoportable",
+  "w": "insoportable",
+  "pos": "adj",
+  "en": "unbearable",
+  "note": "",
+  "type": [
+   "insoportable"
+  ],
+  "ex": [
+   {
+    "es": "El dolor era insoportable, por eso fui a urgencias.",
+    "en": "The pain was unbearable, so I went to the ER.",
+    "hit": "insoportable"
+   },
+   {
+    "es": "Si el dolor se pone insoportable, tiene que llamar al 911.",
+    "en": "If the pain becomes unbearable, you need to call 911.",
+    "hit": "insoportable"
+   },
+   {
+    "es": "Mi hermano dice que el dolor de cabeza es insoportable.",
+    "en": "My brother says the headache is unbearable.",
+    "hit": "insoportable"
+   }
+  ]
+ },
+ {
+  "id": "sm2-aguantar",
+  "w": "aguantar",
+  "pos": "verb",
+  "en": "to put up with; bear",
+  "note": "Patients who «aguantan» often wait too long to seek care.",
+  "type": [
+   "aguantar",
+   "soportar"
+  ],
+  "ex": [
+   {
+    "es": "Aguanté el dolor toda la noche y no dije nada.",
+    "en": "I put up with the pain all night and said nothing.",
+    "hit": "Aguanté"
+   },
+   {
+    "es": "¿Por qué aguantó tres días antes de venir?",
+    "en": "Why did you put up with it three days before coming in?",
+    "hit": "aguantó"
+   },
+   {
+    "es": "Mi papá no se queja; él aguanta mucho.",
+    "en": "My dad doesn't complain; he puts up with a lot.",
+    "hit": "aguanta"
+   }
+  ]
+ },
+ {
+  "id": "sm2-sensacion",
+  "w": "la sensación",
+  "pos": "noun",
+  "en": "feeling; sensation",
+  "note": "",
+  "type": [
+   "la sensación",
+   "sensación"
+  ],
+  "ex": [
+   {
+    "es": "¿Es dolor o es más bien una sensación rara?",
+    "en": "Is it pain, or more of a strange feeling?",
+    "hit": "sensación"
+   },
+   {
+    "es": "Tengo una sensación de presión en el pecho.",
+    "en": "I have a feeling of pressure in my chest.",
+    "hit": "sensación"
+   },
+   {
+    "es": "¿La sensación se le quitó cuando se sentó?",
+    "en": "Did the feeling go away when you sat down?",
+    "hit": "sensación"
+   }
+  ]
+ },
+ {
+  "id": "sm2-parecido",
+  "w": "parecido (a)",
+  "pos": "adj",
+  "en": "similar (to)",
+  "note": "Feminine: parecida.",
+  "type": [
+   "parecido",
+   "parecido a",
+   "similar"
+  ],
+  "ex": [
+   {
+    "es": "¿Es parecido al dolor que tuvo el año pasado?",
+    "en": "Is it similar to the pain you had last year?",
+    "hit": "parecido"
+   },
+   {
+    "es": "Es un dolor parecido al de mi infarto.",
+    "en": "It's a pain similar to the one from my heart attack.",
+    "hit": "parecido"
+   },
+   {
+    "es": "Mi hermana tuvo algo parecido hace dos años.",
+    "en": "My sister had something similar two years ago.",
+    "hit": "parecido"
+   }
+  ]
+ },
+ {
+  "id": "sm2-provocar",
+  "w": "provocar",
+  "pos": "verb",
+  "en": "to bring on; trigger",
+  "note": "",
+  "type": [
+   "provocar",
+   "causar"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué cosas le provocan el dolor?",
+    "en": "What things bring on your pain?",
+    "hit": "provocan"
+   },
+   {
+    "es": "El café le puede provocar palpitaciones.",
+    "en": "Coffee can bring on palpitations for you.",
+    "hit": "provocar"
+   },
+   {
+    "es": "Subir las escaleras del metro me provoca el dolor.",
+    "en": "Climbing the subway stairs brings on the pain.",
+    "hit": "provoca"
+   }
+  ]
+ },
+ {
+  "id": "sm2-aliviar",
+  "w": "aliviar",
+  "pos": "verb",
+  "en": "to relieve; ease",
+  "note": "«El alivio» = relief.",
+  "type": [
+   "aliviar"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué le alivia el dolor?",
+    "en": "What relieves the pain for you?",
+    "hit": "alivia"
+   },
+   {
+    "es": "El paracetamol me alivia un poco, pero regresa.",
+    "en": "Acetaminophen helps me a little, but it comes back.",
+    "hit": "alivia"
+   },
+   {
+    "es": "¿Le alivió la pastilla debajo de la lengua?",
+    "en": "Did the pill under your tongue relieve it?",
+    "hit": "alivió"
+   }
+  ]
+ },
+ {
+  "id": "sm2-calmarse",
+  "w": "calmarse",
+  "pos": "verb",
+  "en": "to ease; settle down (pain)",
+  "note": "Patients say «se me calma» for pain easing.",
+  "type": [
+   "calmarse"
+  ],
+  "ex": [
+   {
+    "es": "Se me calma cuando me quedo quieto.",
+    "en": "It eases when I keep still.",
+    "hit": "calma"
+   },
+   {
+    "es": "¿Se le calmó el dolor con el descanso?",
+    "en": "Did the pain ease with rest?",
+    "hit": "calmó"
+   },
+   {
+    "es": "Ya se calmó un poco, pero sigue ahí.",
+    "en": "It has eased a bit, but it's still there.",
+    "hit": "calmó"
+   }
+  ]
+ },
+ {
+  "id": "sm2-al-respirar",
+  "w": "al respirar",
+  "pos": "phrase",
+  "en": "when breathing",
+  "note": "",
+  "type": [
+   "al respirar",
+   "cuando respira"
+  ],
+  "ex": [
+   {
+    "es": "¿Le duele más al respirar hondo?",
+    "en": "Does it hurt more when you breathe deeply?",
+    "hit": "al respirar"
+   },
+   {
+    "es": "Siento una punzada en el pecho al respirar.",
+    "en": "I feel a stabbing pain in my chest when I breathe.",
+    "hit": "al respirar"
+   },
+   {
+    "es": "El dolor al respirar puede venir de los pulmones.",
+    "en": "Pain when breathing can come from the lungs.",
+    "hit": "al respirar"
+   }
+  ]
+ },
+ {
+  "id": "sm2-al-moverse",
+  "w": "al moverse",
+  "pos": "phrase",
+  "en": "when moving",
+  "note": "",
+  "type": [
+   "al moverse",
+   "cuando se mueve"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor cambia al moverse o al voltearse?",
+    "en": "Does the pain change when you move or turn over?",
+    "hit": "al moverse"
+   },
+   {
+    "es": "Me duele al moverme, no cuando estoy quieto.",
+    "en": "It hurts when I move, not when I'm still.",
+    "hit": "al moverme"
+   },
+   {
+    "es": "Mi abuela se queja al moverse en la cama.",
+    "en": "My grandmother complains when she moves in bed.",
+    "hit": "al moverse"
+   }
+  ]
+ },
+ {
+  "id": "sm2-al-tocar",
+  "w": "al tocar",
+  "pos": "phrase",
+  "en": "when touched; to the touch",
+  "note": "Pain reproduced by pressing often comes from muscle or chest wall.",
+  "type": [
+   "al tocar"
+  ],
+  "ex": [
+   {
+    "es": "¿Le duele al tocar aquí?",
+    "en": "Does it hurt when I touch here?",
+    "hit": "al tocar"
+   },
+   {
+    "es": "La herida me duele al tocarla.",
+    "en": "The wound hurts when I touch it.",
+    "hit": "al tocar"
+   },
+   {
+    "es": "Si duele al tocar, muchas veces es del músculo.",
+    "en": "If it hurts to the touch, it's often from the muscle.",
+    "hit": "al tocar"
+   }
+  ]
+ },
+ {
+  "id": "sm2-agacharse",
+  "w": "agacharse",
+  "pos": "verb",
+  "en": "to bend over; bend down",
+  "note": "",
+  "type": [
+   "agacharse"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor empeora cuando se agacha?",
+    "en": "Does the pain get worse when you bend over?",
+    "hit": "agacha"
+   },
+   {
+    "es": "Me mareo cuando me agacho a amarrarme los zapatos.",
+    "en": "I get dizzy when I bend down to tie my shoes.",
+    "hit": "agacho"
+   },
+   {
+    "es": "Mi esposo ya no puede agacharse sin dolor.",
+    "en": "My husband can't bend over without pain anymore.",
+    "hit": "agacharse"
+   }
+  ]
+ },
+ {
+  "id": "sm2-inclinarse-hacia-adelante",
+  "w": "inclinarse hacia adelante",
+  "pos": "verb",
+  "en": "to lean forward",
+  "note": "Pericarditis pain typically eases when leaning forward.",
+  "type": [
+   "inclinarse hacia adelante",
+   "inclinarse"
+  ],
+  "ex": [
+   {
+    "es": "¿Se le quita el dolor al inclinarse hacia adelante?",
+    "en": "Does the pain go away when you lean forward?",
+    "hit": "inclinarse hacia adelante"
+   },
+   {
+    "es": "Cuando me inclino hacia adelante, se me calma.",
+    "en": "When I lean forward, it eases.",
+    "hit": "inclino hacia adelante"
+   },
+   {
+    "es": "¿Puede inclinarse hacia adelante, por favor?",
+    "en": "Can you lean forward, please?",
+    "hit": "inclinarse hacia adelante"
+   }
+  ]
+ },
+ {
+  "id": "sm2-despues-de-comer",
+  "w": "después de comer",
+  "pos": "phrase",
+  "en": "after eating",
+  "note": "",
+  "type": [
+   "después de comer"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor empieza después de comer?",
+    "en": "Does the pain start after eating?",
+    "hit": "después de comer"
+   },
+   {
+    "es": "Me dan agruras después de comer chile.",
+    "en": "I get heartburn after eating chili.",
+    "hit": "después de comer"
+   },
+   {
+    "es": "Esta medicina se toma después de comer.",
+    "en": "This medicine is taken after eating.",
+    "hit": "después de comer"
+   }
+  ]
+ },
+ {
+  "id": "sm2-comida-grasosa",
+  "w": "la comida grasosa",
+  "pos": "noun",
+  "en": "greasy food; fatty food",
+  "note": "",
+  "type": [
+   "la comida grasosa",
+   "comida grasosa"
+  ],
+  "ex": [
+   {
+    "es": "¿Le duele más con la comida grasosa?",
+    "en": "Does it hurt more with greasy food?",
+    "hit": "comida grasosa"
+   },
+   {
+    "es": "La comida grasosa me cae pesada.",
+    "en": "Greasy food sits heavy on my stomach.",
+    "hit": "comida grasosa"
+   },
+   {
+    "es": "En la fiesta, mi papá comió mucha comida grasosa.",
+    "en": "At the party, my dad ate a lot of greasy food.",
+    "hit": "comida grasosa"
+   }
+  ]
+ },
+ {
+  "id": "sm2-estres",
+  "w": "el estrés",
+  "pos": "noun",
+  "en": "stress",
+  "note": "",
+  "type": [
+   "el estrés",
+   "estrés"
+  ],
+  "ex": [
+   {
+    "es": "¿Le da el dolor con el estrés o con el ejercicio?",
+    "en": "Does the pain come with stress or with exercise?",
+    "hit": "estrés"
+   },
+   {
+    "es": "Con el estrés del trabajo, siento el corazón acelerado.",
+    "en": "With stress at work, my heart feels like it's racing.",
+    "hit": "estrés"
+   },
+   {
+    "es": "Mi mamá tiene mucho estrés desde que murió mi papá.",
+    "en": "My mom has had a lot of stress since my dad died.",
+    "hit": "estrés"
+   }
+  ]
+ },
+ {
+  "id": "sm2-hacer-corajes",
+  "w": "hacer corajes",
+  "pos": "phrase",
+  "en": "to get angry; get worked up",
+  "note": "Mexican. General Spanish: «enojarse».",
+  "type": [
+   "hacer corajes",
+   "hacer coraje",
+   "enojarse"
+  ],
+  "ex": [
+   {
+    "es": "Me duele el pecho cuando hago corajes.",
+    "en": "My chest hurts when I get angry.",
+    "hit": "hago corajes"
+   },
+   {
+    "es": "¿Hizo un coraje justo antes del dolor?",
+    "en": "Did you get angry right before the pain?",
+    "hit": "Hizo un coraje"
+   },
+   {
+    "es": "Mi papá hace corajes por todo y luego se siente mal.",
+    "en": "My dad gets angry about everything and then feels bad.",
+    "hit": "hace corajes"
+   }
+  ]
+ },
+ {
+  "id": "sm2-desvelarse",
+  "w": "desvelarse",
+  "pos": "verb",
+  "en": "to stay up late; lose sleep",
+  "note": "Very common. «El desvelo» = lost sleep.",
+  "type": [
+   "desvelarse"
+  ],
+  "ex": [
+   {
+    "es": "¿Las palpitaciones empeoran cuando se desvela?",
+    "en": "Do the palpitations get worse when you stay up late?",
+    "hit": "desvela"
+   },
+   {
+    "es": "Me desvelé cuidando a mi bebé toda la semana.",
+    "en": "I lost sleep taking care of my baby all week.",
+    "hit": "desvelé"
+   },
+   {
+    "es": "Mi hijo trabaja de noche y se desvela mucho.",
+    "en": "My son works nights and loses a lot of sleep.",
+    "hit": "desvela"
+   }
+  ]
+ },
+ {
+  "id": "sm2-bebida-energetica",
+  "w": "la bebida energética",
+  "pos": "noun",
+  "en": "energy drink",
+  "note": "Patients often just name the brand.",
+  "type": [
+   "la bebida energética",
+   "bebida energética"
+  ],
+  "ex": [
+   {
+    "es": "¿Toma café, refresco o bebidas energéticas?",
+    "en": "Do you drink coffee, soda or energy drinks?",
+    "hit": "bebidas energéticas"
+   },
+   {
+    "es": "Las palpitaciones empezaron después de una bebida energética.",
+    "en": "The palpitations started after an energy drink.",
+    "hit": "bebida energética"
+   },
+   {
+    "es": "Mi hija toma una bebida energética cada mañana.",
+    "en": "My daughter has an energy drink every morning.",
+    "hit": "bebida energética"
+   }
+  ]
+ },
+ {
+  "id": "sm2-debajo-de-la-lengua",
+  "w": "debajo de la lengua",
+  "pos": "phrase",
+  "en": "under the tongue",
+  "note": "How nitroglycerin is taken; technical word: «sublingual».",
+  "type": [
+   "debajo de la lengua",
+   "bajo la lengua"
+  ],
+  "ex": [
+   {
+    "es": "¿Usó la pastilla debajo de la lengua para el dolor?",
+    "en": "Did you use the pill under the tongue for the pain?",
+    "hit": "debajo de la lengua"
+   },
+   {
+    "es": "Esta pastilla se pone debajo de la lengua.",
+    "en": "This pill goes under the tongue.",
+    "hit": "debajo de la lengua"
+   },
+   {
+    "es": "Me puse una debajo de la lengua y se me quitó.",
+    "en": "I put one under my tongue and it went away.",
+    "hit": "debajo de la lengua"
+   }
+  ]
+ },
+ {
+  "id": "sm2-tomar-algo-para-el-dolor",
+  "w": "tomar algo para el dolor",
+  "pos": "phrase",
+  "en": "to take something for the pain",
+  "note": "",
+  "type": [],
+  "ex": [
+   {
+    "es": "¿Tomó algo para el dolor antes de venir?",
+    "en": "Did you take something for the pain before coming in?",
+    "hit": "Tomó algo para el dolor"
+   },
+   {
+    "es": "¿Puedo tomar algo para el dolor con mis otras medicinas?",
+    "en": "Can I take something for pain with my other medicines?",
+    "hit": "tomar algo para el dolor"
+   },
+   {
+    "es": "Mi mamá no quiso tomar algo para el dolor.",
+    "en": "My mom refused to take anything for the pain.",
+    "hit": "tomar algo para el dolor"
+   }
+  ]
+ },
+ {
+  "id": "sm2-antiacido",
+  "w": "el antiácido",
+  "pos": "noun",
+  "en": "antacid",
+  "note": "",
+  "type": [
+   "el antiácido",
+   "antiácido"
+  ],
+  "ex": [
+   {
+    "es": "¿El antiácido le quitó el ardor?",
+    "en": "Did the antacid take away the burning?",
+    "hit": "antiácido"
+   },
+   {
+    "es": "En la farmacia me dieron un antiácido.",
+    "en": "At the pharmacy they gave me an antacid.",
+    "hit": "antiácido"
+   },
+   {
+    "es": "Tomé un antiácido, pero el dolor siguió.",
+    "en": "I took an antacid, but the pain continued.",
+    "hit": "antiácido"
+   }
+  ]
+ },
+ {
+  "id": "sm2-farmacia",
+  "w": "la farmacia",
+  "pos": "noun",
+  "en": "pharmacy",
+  "note": "",
+  "type": [
+   "la farmacia",
+   "farmacia"
+  ],
+  "ex": [
+   {
+    "es": "¿Compró algún medicamento en la farmacia?",
+    "en": "Did you buy any medicine at the pharmacy?",
+    "hit": "farmacia"
+   },
+   {
+    "es": "¿Cuál es su farmacia? Vamos a mandar la receta.",
+    "en": "Which is your pharmacy? We're going to send the prescription.",
+    "hit": "farmacia"
+   },
+   {
+    "es": "Mi hijo fue a la farmacia por las pastillas.",
+    "en": "My son went to the pharmacy for the pills.",
+    "hit": "farmacia"
+   }
+  ]
+ },
+ {
+  "id": "sm2-agruras",
+  "w": "las agruras",
+  "pos": "noun",
+  "en": "heartburn",
+  "note": "Mexican, very common; plural. Also «la acidez».",
+  "type": [
+   "las agruras",
+   "agruras",
+   "la acidez",
+   "acidez"
+  ],
+  "ex": [
+   {
+    "es": "¿Es dolor de pecho o son agruras?",
+    "en": "Is it chest pain or is it heartburn?",
+    "hit": "agruras"
+   },
+   {
+    "es": "Siempre me dan agruras en la noche.",
+    "en": "I always get heartburn at night.",
+    "hit": "agruras"
+   },
+   {
+    "es": "Mi esposo tiene agruras casi todos los días.",
+    "en": "My husband has heartburn almost every day.",
+    "hit": "agruras"
+   }
+  ]
+ },
+ {
+  "id": "sm2-eructar",
+  "w": "eructar",
+  "pos": "verb",
+  "en": "to burp",
+  "note": "",
+  "type": [
+   "eructar"
+  ],
+  "ex": [
+   {
+    "es": "¿Se le quita el dolor cuando eructa?",
+    "en": "Does the pain go away when you burp?",
+    "hit": "eructa"
+   },
+   {
+    "es": "Después de comer eructo mucho y me arde.",
+    "en": "After eating I burp a lot and it burns.",
+    "hit": "eructo"
+   },
+   {
+    "es": "Mi papá eructó y dijo que se sentía mejor.",
+    "en": "My dad burped and said he felt better.",
+    "hit": "eructó"
+   }
+  ]
+ },
+ {
+  "id": "sm2-boca-del-estomago",
+  "w": "la boca del estómago",
+  "pos": "noun",
+  "en": "pit of the stomach; upper belly",
+  "note": "Patients' word for the epigastrium; cardiac pain can be felt here.",
+  "type": [
+   "la boca del estómago",
+   "boca del estómago"
+  ],
+  "ex": [
+   {
+    "es": "Me duele aquí, en la boca del estómago.",
+    "en": "It hurts here, in the pit of my stomach.",
+    "hit": "boca del estómago"
+   },
+   {
+    "es": "¿El dolor empieza en la boca del estómago o en el pecho?",
+    "en": "Does the pain start in the pit of your stomach or your chest?",
+    "hit": "boca del estómago"
+   },
+   {
+    "es": "A veces un infarto se siente en la boca del estómago.",
+    "en": "Sometimes a heart attack is felt in the pit of the stomach.",
+    "hit": "boca del estómago"
+   }
+  ]
+ },
+ {
+  "id": "sm2-costado",
+  "w": "el costado",
+  "pos": "noun",
+  "en": "side (of the body)",
+  "note": "",
+  "type": [
+   "el costado",
+   "costado"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor se va al costado o a la espalda?",
+    "en": "Does the pain go to your side or your back?",
+    "hit": "costado"
+   },
+   {
+    "es": "Me duele el costado izquierdo cuando respiro.",
+    "en": "My left side hurts when I breathe.",
+    "hit": "costado"
+   },
+   {
+    "es": "Ahora voy a revisar su costado derecho.",
+    "en": "Now I'm going to check your right side.",
+    "hit": "costado"
+   }
+  ]
+ },
+ {
+  "id": "sm2-costillas",
+  "w": "las costillas",
+  "pos": "noun",
+  "en": "ribs",
+  "note": "Singular: la costilla.",
+  "type": [
+   "las costillas",
+   "costillas",
+   "la costilla",
+   "costilla"
+  ],
+  "ex": [
+   {
+    "es": "¿Se golpeó las costillas en la caída?",
+    "en": "Did you hit your ribs in the fall?",
+    "hit": "costillas"
+   },
+   {
+    "es": "Me duele debajo de las costillas, del lado derecho.",
+    "en": "It hurts under my ribs, on the right side.",
+    "hit": "costillas"
+   },
+   {
+    "es": "La radiografía no muestra nada en las costillas.",
+    "en": "The X-ray doesn't show anything in the ribs.",
+    "hit": "costillas"
+   }
+  ]
+ },
+ {
+  "id": "sm2-omoplato",
+  "w": "el omóplato",
+  "pos": "noun",
+  "en": "shoulder blade",
+  "note": "Many Mexican patients say «la paleta».",
+  "type": [
+   "el omóplato",
+   "omóplato",
+   "la paleta",
+   "paleta"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor se le corre al omóplato?",
+    "en": "Does the pain spread to your shoulder blade?",
+    "hit": "omóplato"
+   },
+   {
+    "es": "Siento el dolor entre los omóplatos.",
+    "en": "I feel the pain between my shoulder blades.",
+    "hit": "omóplatos"
+   },
+   {
+    "es": "Mi mamá se queja del omóplato izquierdo desde ayer.",
+    "en": "My mom has complained about her left shoulder blade since yesterday.",
+    "hit": "omóplato"
+   }
+  ]
+ },
+ {
+  "id": "sm2-hormigueo",
+  "w": "el hormigueo",
+  "pos": "noun",
+  "en": "tingling; pins and needles",
+  "note": "",
+  "type": [
+   "el hormigueo",
+   "hormigueo"
+  ],
+  "ex": [
+   {
+    "es": "¿Siente hormigueo en el brazo o en la mano?",
+    "en": "Do you feel tingling in your arm or hand?",
+    "hit": "hormigueo"
+   },
+   {
+    "es": "Tengo un hormigueo en los dedos desde anoche.",
+    "en": "I've had tingling in my fingers since last night.",
+    "hit": "hormigueo"
+   },
+   {
+    "es": "Si el hormigueo viene con debilidad, tiene que llamar al 911.",
+    "en": "If the tingling comes with weakness, you need to call 911.",
+    "hit": "hormigueo"
+   }
+  ]
+ },
+ {
+  "id": "sm2-se-me-duerme",
+  "w": "se me duerme (el brazo)",
+  "pos": "phrase",
+  "en": "(my arm) goes numb",
+  "note": "Patients' way to say numb; also «entumido». Ask: «¿Se le duerme?»",
+  "type": [
+   "se me duerme",
+   "se me duerme el brazo"
+  ],
+  "ex": [
+   {
+    "es": "Cuando me duele el pecho, se me duerme el brazo.",
+    "en": "When my chest hurts, my arm goes numb.",
+    "hit": "se me duerme"
+   },
+   {
+    "es": "¿Se le duerme la mano en la noche?",
+    "en": "Does your hand go numb at night?",
+    "hit": "Se le duerme"
+   },
+   {
+    "es": "A mi papá se le durmió la cara de un lado.",
+    "en": "One side of my dad's face went numb.",
+    "hit": "se le durmió"
+   }
+  ]
+ },
+ {
+  "id": "sm2-aplastar",
+  "w": "aplastar",
+  "pos": "verb",
+  "en": "to crush",
+  "note": "Patients: «siento que me aplasta» for crushing chest pain.",
+  "type": [
+   "aplastar"
+  ],
+  "ex": [
+   {
+    "es": "Siento que algo me aplasta el pecho.",
+    "en": "I feel like something is crushing my chest.",
+    "hit": "aplasta"
+   },
+   {
+    "es": "¿Siente que algo le aplasta el pecho?",
+    "en": "Do you feel like something is crushing your chest?",
+    "hit": "aplasta"
+   },
+   {
+    "es": "Mi esposo sentía que algo le aplastaba el pecho.",
+    "en": "My husband felt like something was crushing his chest.",
+    "hit": "aplastaba"
+   }
+  ]
+ },
+ {
+  "id": "sm2-pesadez",
+  "w": "la pesadez",
+  "pos": "noun",
+  "en": "heaviness",
+  "note": "",
+  "type": [
+   "la pesadez",
+   "pesadez"
+  ],
+  "ex": [
+   {
+    "es": "Siento pesadez en el pecho cuando camino rápido.",
+    "en": "I feel heaviness in my chest when I walk fast.",
+    "hit": "pesadez"
+   },
+   {
+    "es": "¿Es dolor o es más bien pesadez?",
+    "en": "Is it pain, or more like heaviness?",
+    "hit": "pesadez"
+   },
+   {
+    "es": "Mi mamá se queja de pesadez en los brazos.",
+    "en": "My mom complains of heaviness in her arms.",
+    "hit": "pesadez"
+   }
+  ]
+ },
+ {
+  "id": "sm2-junto-con",
+  "w": "junto con",
+  "pos": "phrase",
+  "en": "along with; together with",
+  "note": "",
+  "type": [
+   "junto con"
+  ],
+  "ex": [
+   {
+    "es": "¿Tuvo algo más junto con el dolor?",
+    "en": "Did you have anything else along with the pain?",
+    "hit": "junto con"
+   },
+   {
+    "es": "Sentí náuseas junto con el dolor de pecho.",
+    "en": "I felt nauseous along with the chest pain.",
+    "hit": "junto con"
+   },
+   {
+    "es": "Junto con el mareo, mi papá se puso pálido.",
+    "en": "Along with the dizziness, my dad turned pale.",
+    "hit": "Junto con"
+   }
+  ]
+ },
+ {
+  "id": "sm2-tos",
+  "w": "la tos",
+  "pos": "noun",
+  "en": "cough",
+  "note": "",
+  "type": [
+   "la tos",
+   "tos"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene tos desde que empezó el dolor?",
+    "en": "Have you had a cough since the pain started?",
+    "hit": "tos"
+   },
+   {
+    "es": "Tengo una tos seca que no se quita.",
+    "en": "I have a dry cough that won't go away.",
+    "hit": "tos"
+   },
+   {
+    "es": "Compré un jarabe para la tos en la farmacia.",
+    "en": "I bought a cough syrup at the pharmacy.",
+    "hit": "tos"
+   }
+  ]
+ },
+ {
+  "id": "sm2-flema",
+  "w": "la flema",
+  "pos": "noun",
+  "en": "phlegm",
+  "note": "Patients often use the plural: «flemas».",
+  "type": [
+   "la flema",
+   "flema",
+   "las flemas",
+   "flemas"
+  ],
+  "ex": [
+   {
+    "es": "¿La tos es seca o con flema?",
+    "en": "Is the cough dry or with phlegm?",
+    "hit": "flema"
+   },
+   {
+    "es": "Tengo flemas de color verde desde el lunes.",
+    "en": "I've had green phlegm since Monday.",
+    "hit": "flemas"
+   },
+   {
+    "es": "¿Vio sangre en la flema esta semana?",
+    "en": "Did you see blood in the phlegm this week?",
+    "hit": "flema"
+   }
+  ]
+ },
+ {
+  "id": "sm2-calentura",
+  "w": "la calentura",
+  "pos": "noun",
+  "en": "fever",
+  "note": "Common patient word in Mexico; «la fiebre» is the standard word.",
+  "type": [
+   "la calentura",
+   "calentura"
+  ],
+  "ex": [
+   {
+    "es": "¿Tuvo calentura o escalofríos esta semana?",
+    "en": "Did you have a fever or chills this week?",
+    "hit": "calentura"
+   },
+   {
+    "es": "Mi hijo tiene calentura desde anoche.",
+    "en": "My son has had a fever since last night.",
+    "hit": "calentura"
+   },
+   {
+    "es": "¿Cuánta calentura tuvo? ¿Se puso el termómetro?",
+    "en": "How high was the fever? Did you take your temperature?",
+    "hit": "calentura"
+   }
+  ]
+ },
+ {
+  "id": "sm2-gripa",
+  "w": "la gripa",
+  "pos": "noun",
+  "en": "cold; flu",
+  "note": "Mexican; «la gripe» elsewhere. Used for any cold.",
+  "type": [
+   "la gripa",
+   "gripa",
+   "la gripe",
+   "gripe"
+  ],
+  "ex": [
+   {
+    "es": "¿Tuvo gripa o tos hace poco?",
+    "en": "Did you have a cold or cough recently?",
+    "hit": "gripa"
+   },
+   {
+    "es": "Me empezó el dolor después de una gripa.",
+    "en": "The pain started after a cold.",
+    "hit": "gripa"
+   },
+   {
+    "es": "Toda la familia tuvo gripa la semana pasada.",
+    "en": "The whole family had a cold last week.",
+    "hit": "gripa"
+   }
+  ]
+ },
+ {
+  "id": "sm2-tener-el-cuerpo-cortado",
+  "w": "tener el cuerpo cortado",
+  "pos": "phrase",
+  "en": "to feel achy and run-down",
+  "note": "Mexican: general malaise, like a flu coming on.",
+  "type": [
+   "tener el cuerpo cortado"
+  ],
+  "ex": [
+   {
+    "es": "Desde el lunes tengo el cuerpo cortado.",
+    "en": "Since Monday I've felt achy and run-down.",
+    "hit": "tengo el cuerpo cortado"
+   },
+   {
+    "es": "¿Tiene el cuerpo cortado o dolor de músculos?",
+    "en": "Do you feel achy and run-down, or have muscle pain?",
+    "hit": "Tiene el cuerpo cortado"
+   },
+   {
+    "es": "Mi esposa tenía el cuerpo cortado antes del dolor.",
+    "en": "My wife felt achy and run-down before the pain.",
+    "hit": "tenía el cuerpo cortado"
+   }
+  ]
+ },
+ {
+  "id": "sm2-palido",
+  "w": "pálido",
+  "pos": "adj",
+  "en": "pale",
+  "note": "Feminine: pálida. «Ponerse pálido» = to turn pale.",
+  "type": [
+   "pálido",
+   "pálida"
+  ],
+  "ex": [
+   {
+    "es": "¿Alguien le dijo que se veía pálido?",
+    "en": "Did anyone tell you that you looked pale?",
+    "hit": "pálido"
+   },
+   {
+    "es": "Mi papá se puso pálido y empezó a sudar.",
+    "en": "My dad turned pale and started sweating.",
+    "hit": "pálido"
+   },
+   {
+    "es": "Hoy lo veo un poco pálido, señor.",
+    "en": "You look a little pale today, sir.",
+    "hit": "pálido"
+   }
+  ]
+ },
+ {
+  "id": "sm2-raro",
+  "w": "raro",
+  "pos": "adj",
+  "en": "strange; weird",
+  "note": "Feminine: rara. «Me sentí raro» — ask what they mean.",
+  "type": [
+   "raro",
+   "rara",
+   "extraño"
+  ],
+  "ex": [
+   {
+    "es": "Me sentí raro, como que me iba a desmayar.",
+    "en": "I felt weird, like I was going to faint.",
+    "hit": "raro"
+   },
+   {
+    "es": "¿Qué quiere decir con «raro»? ¿Mareado o débil?",
+    "en": "What do you mean by \"weird\"? Dizzy or weak?",
+    "hit": "raro"
+   },
+   {
+    "es": "Mi mamá estaba rara y no contestaba bien.",
+    "en": "My mom was acting strange and wasn't answering right.",
+    "hit": "rara"
+   }
+  ]
+ },
+ {
+  "id": "sm2-ansiedad",
+  "w": "la ansiedad",
+  "pos": "noun",
+  "en": "anxiety",
+  "note": "Patients often say «los nervios» or «me puse nervioso».",
+  "type": [
+   "la ansiedad",
+   "ansiedad",
+   "los nervios",
+   "nervios"
+  ],
+  "ex": [
+   {
+    "es": "¿Sintió ansiedad o miedo antes de las palpitaciones?",
+    "en": "Did you feel anxiety or fear before the palpitations?",
+    "hit": "ansiedad"
+   },
+   {
+    "es": "La ansiedad también puede acelerar el corazón.",
+    "en": "Anxiety can also speed up the heart.",
+    "hit": "ansiedad"
+   },
+   {
+    "es": "Mi hija tiene ansiedad desde el accidente.",
+    "en": "My daughter has had anxiety since the accident.",
+    "hit": "ansiedad"
+   }
+  ]
+ },
+ {
+  "id": "sm2-se-me-bajo-la-presion",
+  "w": "se me bajó la presión",
+  "pos": "phrase",
+  "en": "my blood pressure dropped",
+  "note": "Patients often blame symptoms on this; ask whether it was measured.",
+  "type": [],
+  "ex": [
+   {
+    "es": "Me sentí débil; creo que se me bajó la presión.",
+    "en": "I felt weak; I think my blood pressure dropped.",
+    "hit": "se me bajó la presión"
+   },
+   {
+    "es": "¿Por qué piensa que se le bajó la presión?",
+    "en": "Why do you think your blood pressure dropped?",
+    "hit": "se le bajó la presión"
+   },
+   {
+    "es": "Mi mamá dice que se le bajó la presión en misa.",
+    "en": "My mom says her blood pressure dropped at Mass.",
+    "hit": "se le bajó la presión"
+   }
+  ]
+ },
+ {
+  "id": "sm2-andar",
+  "w": "andar",
+  "pos": "verb",
+  "en": "to be (feeling) lately",
+  "note": "«Ando cansado» = I've been tired lately. Also means to walk.",
+  "type": [
+   "andar"
+  ],
+  "ex": [
+   {
+    "es": "Ando muy cansado desde hace un mes.",
+    "en": "I've been very tired for a month.",
+    "hit": "Ando"
+   },
+   {
+    "es": "¿Cómo anda de la presión, don Luis?",
+    "en": "How's your blood pressure doing, Mr. Luis?",
+    "hit": "anda"
+   },
+   {
+    "es": "Mi papá anda mareado desde el domingo.",
+    "en": "My dad has been dizzy since Sunday.",
+    "hit": "anda"
+   }
+  ]
+ },
+ {
+  "id": "sm2-dolorcito",
+  "w": "el dolorcito",
+  "pos": "noun",
+  "en": "a little pain",
+  "note": "Diminutives can downplay a serious symptom; ask more.",
+  "type": [
+   "el dolorcito",
+   "dolorcito"
+  ],
+  "ex": [
+   {
+    "es": "Nomás es un dolorcito, doctor, no es nada.",
+    "en": "It's just a little pain, doctor, it's nothing.",
+    "hit": "dolorcito"
+   },
+   {
+    "es": "¿Ese dolorcito le da cuando camina?",
+    "en": "Does that little pain come on when you walk?",
+    "hit": "dolorcito"
+   },
+   {
+    "es": "Mi esposo dice «dolorcito», pero no podía caminar.",
+    "en": "My husband says \"little pain,\" but he couldn't walk.",
+    "hit": "dolorcito"
+   }
+  ]
+ },
+ {
+  "id": "sm2-nomas",
+  "w": "nomás",
+  "pos": "adv",
+  "en": "just; only",
+  "note": "Mexican, very common; standard «nada más» or «solo».",
+  "type": [
+   "nomás",
+   "nada más",
+   "solo",
+   "sólo"
+  ],
+  "ex": [
+   {
+    "es": "Nomás me duele cuando subo escaleras.",
+    "en": "It only hurts when I climb stairs.",
+    "hit": "Nomás"
+   },
+   {
+    "es": "¿Nomás en el pecho, o también en el brazo?",
+    "en": "Just in your chest, or also in your arm?",
+    "hit": "Nomás"
+   },
+   {
+    "es": "Fue nomás un ratito, como dos minutos.",
+    "en": "It was just a little while, about two minutes.",
+    "hit": "nomás"
+   }
+  ]
+ },
+ {
+  "id": "sm2-tantito",
+  "w": "tantito",
+  "pos": "adv",
+  "en": "a little bit; a moment",
+  "note": "Mexican; «un poquito».",
+  "type": [
+   "tantito",
+   "un poquito"
+  ],
+  "ex": [
+   {
+    "es": "Me duele tantito, nada más.",
+    "en": "It hurts just a little bit.",
+    "hit": "tantito"
+   },
+   {
+    "es": "Con la pastilla me siento tantito mejor.",
+    "en": "With the pill I feel a little better.",
+    "hit": "tantito"
+   },
+   {
+    "es": "¿Puede esperar tantito? Ya casi lo llaman.",
+    "en": "Can you wait a moment? They'll call you very soon.",
+    "hit": "tantito"
+   }
+  ]
+ },
+ {
+  "id": "sm2-bien-fuerte",
+  "w": "bien fuerte",
+  "pos": "phrase",
+  "en": "really strong; really hard",
+  "note": "In Mexico «bien» + adjective = very.",
+  "type": [
+   "bien fuerte",
+   "muy fuerte"
+  ],
+  "ex": [
+   {
+    "es": "Me dio un dolor bien fuerte en el pecho.",
+    "en": "I got a really strong pain in my chest.",
+    "hit": "bien fuerte"
+   },
+   {
+    "es": "¿Es bien fuerte o es una molestia?",
+    "en": "Is it really strong, or is it a discomfort?",
+    "hit": "bien fuerte"
+   },
+   {
+    "es": "Su corazón latía bien fuerte, yo lo sentí.",
+    "en": "His heart was beating really hard, I felt it.",
+    "hit": "bien fuerte"
+   }
+  ]
+ },
+ {
+  "id": "sm2-me-dio",
+  "w": "me dio (un dolor)",
+  "pos": "phrase",
+  "en": "I got (a pain); it hit me",
+  "note": "Clinician: «¿Cuándo le dio?» = When did it hit you?",
+  "type": [
+   "me dio",
+   "le dio"
+  ],
+  "ex": [
+   {
+    "es": "Me dio el dolor mientras manejaba.",
+    "en": "The pain hit me while I was driving.",
+    "hit": "Me dio"
+   },
+   {
+    "es": "¿A qué hora le dio el dolor?",
+    "en": "What time did the pain hit you?",
+    "hit": "le dio"
+   },
+   {
+    "es": "A mi papá le dio un mareo en el baño.",
+    "en": "My dad got dizzy in the bathroom.",
+    "hit": "le dio"
+   }
+  ]
+ },
+ {
+  "id": "sm2-de-golpe",
+  "w": "de golpe",
+  "pos": "phrase",
+  "en": "all of a sudden",
+  "note": "Same as «de repente»; patients say both.",
+  "type": [
+   "de golpe",
+   "de repente"
+  ],
+  "ex": [
+   {
+    "es": "El dolor empezó de golpe, sin aviso.",
+    "en": "The pain started all of a sudden, without warning.",
+    "hit": "de golpe"
+   },
+   {
+    "es": "¿Empezó de golpe o poco a poco?",
+    "en": "Did it start all of a sudden or little by little?",
+    "hit": "de golpe"
+   },
+   {
+    "es": "Mi abuelo se cayó de golpe en la sala.",
+    "en": "My grandfather suddenly fell in the living room.",
+    "hit": "de golpe"
+   }
+  ]
+ },
+ {
+  "id": "sm2-a-cada-rato",
+  "w": "a cada rato",
+  "pos": "phrase",
+  "en": "all the time; over and over",
+  "note": "Mexican-leaning: means frequently.",
+  "type": [
+   "a cada rato",
+   "cada rato"
+  ],
+  "ex": [
+   {
+    "es": "Me dan palpitaciones a cada rato.",
+    "en": "I get palpitations all the time.",
+    "hit": "a cada rato"
+   },
+   {
+    "es": "¿Le pasa a cada rato o solo a veces?",
+    "en": "Does it happen all the time or only sometimes?",
+    "hit": "a cada rato"
+   },
+   {
+    "es": "Mi mamá se marea a cada rato desde ayer.",
+    "en": "My mom has been getting dizzy over and over since yesterday.",
+    "hit": "a cada rato"
+   }
+  ]
+ },
+ {
+  "id": "sm2-seguido",
+  "w": "seguido",
+  "pos": "adv",
+  "en": "often",
+  "note": "Mexican-leaning: «muy seguido» = very often.",
+  "type": [
+   "seguido",
+   "muy seguido",
+   "a menudo"
+  ],
+  "ex": [
+   {
+    "es": "¿Le da el dolor muy seguido?",
+    "en": "Do you get the pain very often?",
+    "hit": "seguido"
+   },
+   {
+    "es": "Antes casi no, pero ahora me pasa seguido.",
+    "en": "Before, hardly ever, but now it happens often.",
+    "hit": "seguido"
+   },
+   {
+    "es": "¿Viene seguido a esta clínica?",
+    "en": "Do you come to this clinic often?",
+    "hit": "seguido"
+   }
+  ]
+ },
+ {
+  "id": "sm2-de-vez-en-cuando",
+  "w": "de vez en cuando",
+  "pos": "phrase",
+  "en": "from time to time; once in a while",
+  "note": "",
+  "type": [
+   "de vez en cuando"
+  ],
+  "ex": [
+   {
+    "es": "Me duele de vez en cuando, no todos los días.",
+    "en": "It hurts once in a while, not every day.",
+    "hit": "de vez en cuando"
+   },
+   {
+    "es": "¿Las palpitaciones son diarias o de vez en cuando?",
+    "en": "Are the palpitations daily or once in a while?",
+    "hit": "de vez en cuando"
+   },
+   {
+    "es": "Tomo aspirina de vez en cuando para la cabeza.",
+    "en": "I take aspirin once in a while for headaches.",
+    "hit": "de vez en cuando"
+   }
+  ]
+ },
+ {
+  "id": "sm2-cada-vez-mas",
+  "w": "cada vez más",
+  "pos": "phrase",
+  "en": "more and more",
+  "note": "",
+  "type": [
+   "cada vez más"
+  ],
+  "ex": [
+   {
+    "es": "El dolor está cada vez más fuerte.",
+    "en": "The pain is getting stronger and stronger.",
+    "hit": "cada vez más"
+   },
+   {
+    "es": "¿Se cansa cada vez más rápido?",
+    "en": "Do you get tired faster and faster?",
+    "hit": "cada vez más"
+   },
+   {
+    "es": "Mi papá se cansa cada vez más con las escaleras.",
+    "en": "My dad gets more and more tired on the stairs.",
+    "hit": "cada vez más"
+   }
+  ]
+ },
+ {
+  "id": "sm2-cada-vez-que",
+  "w": "cada vez que",
+  "pos": "phrase",
+  "en": "every time (that)",
+  "note": "",
+  "type": [
+   "cada vez que",
+   "siempre que"
+  ],
+  "ex": [
+   {
+    "es": "Cada vez que subo escaleras, me falta el aire.",
+    "en": "Every time I climb stairs, I get short of breath.",
+    "hit": "Cada vez que"
+   },
+   {
+    "es": "¿Le duele cada vez que camina?",
+    "en": "Does it hurt every time you walk?",
+    "hit": "cada vez que"
+   },
+   {
+    "es": "Cada vez que se acuesta, mi mamá empieza a toser.",
+    "en": "Every time she lies down, my mom starts coughing.",
+    "hit": "Cada vez que"
+   }
+  ]
+ },
+ {
+  "id": "sm2-todo-el-tiempo",
+  "w": "todo el tiempo",
+  "pos": "phrase",
+  "en": "all the time; constantly",
+  "note": "",
+  "type": [
+   "todo el tiempo"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor está todo el tiempo o va y viene?",
+    "en": "Is the pain there all the time, or does it come and go?",
+    "hit": "todo el tiempo"
+   },
+   {
+    "es": "Me siento cansado todo el tiempo.",
+    "en": "I feel tired all the time.",
+    "hit": "todo el tiempo"
+   },
+   {
+    "es": "El dolor no está todo el tiempo, solo en la noche.",
+    "en": "The pain isn't there all the time, only at night.",
+    "hit": "todo el tiempo"
+   }
+  ]
+ },
+ {
+  "id": "sm2-en-la-madrugada",
+  "w": "en la madrugada",
+  "pos": "phrase",
+  "en": "in the early morning (before dawn)",
+  "note": "Roughly midnight to dawn; «en la mañana» is later.",
+  "type": [
+   "en la madrugada",
+   "de madrugada"
+  ],
+  "ex": [
+   {
+    "es": "Me despierto con palpitaciones en la madrugada.",
+    "en": "I wake up with palpitations in the early morning.",
+    "hit": "en la madrugada"
+   },
+   {
+    "es": "¿A qué hora en la madrugada le dio?",
+    "en": "What time in the early morning did it hit you?",
+    "hit": "en la madrugada"
+   },
+   {
+    "es": "Mi papá se levantó en la madrugada con dolor.",
+    "en": "My dad got up before dawn with pain.",
+    "hit": "en la madrugada"
+   }
+  ]
+ },
+ {
+  "id": "sm2-al-despertar",
+  "w": "al despertar",
+  "pos": "phrase",
+  "en": "on waking up",
+  "note": "",
+  "type": [
+   "al despertar",
+   "al despertarse"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene el dolor al despertar o más tarde?",
+    "en": "Do you have the pain on waking up or later?",
+    "hit": "al despertar"
+   },
+   {
+    "es": "Al despertar, sentí el corazón muy acelerado.",
+    "en": "On waking up, I felt my heart racing.",
+    "hit": "Al despertar"
+   },
+   {
+    "es": "Mi mamá estaba mareada al despertar hoy.",
+    "en": "My mom was dizzy when she woke up today.",
+    "hit": "al despertar"
+   }
+  ]
+ },
+ {
+  "id": "sm2-unos-minutos",
+  "w": "unos minutos",
+  "pos": "phrase",
+  "en": "a few minutes",
+  "note": "",
+  "type": [
+   "unos minutos",
+   "unos cuantos minutos"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor dura unos minutos o varias horas?",
+    "en": "Does the pain last a few minutes or several hours?",
+    "hit": "unos minutos"
+   },
+   {
+    "es": "Se me quitó después de unos minutos.",
+    "en": "It went away after a few minutes.",
+    "hit": "unos minutos"
+   },
+   {
+    "es": "El doctor la va a ver en unos minutos.",
+    "en": "The doctor is going to see you in a few minutes.",
+    "hit": "unos minutos"
+   }
+  ]
+ },
+ {
+  "id": "sm2-mas-o-menos",
+  "w": "más o menos",
+  "pos": "phrase",
+  "en": "more or less; about",
+  "note": "",
+  "type": [
+   "más o menos",
+   "aproximadamente"
+  ],
+  "ex": [
+   {
+    "es": "¿Más o menos cuánto tiempo le duró?",
+    "en": "About how long did it last?",
+    "hit": "Más o menos"
+   },
+   {
+    "es": "Empezó hace tres días, más o menos.",
+    "en": "It started about three days ago.",
+    "hit": "más o menos"
+   },
+   {
+    "es": "La espera es de veinte minutos, más o menos.",
+    "en": "The wait is about twenty minutes.",
+    "hit": "más o menos"
+   }
+  ]
+ },
+ {
+  "id": "sm2-como-a-las",
+  "w": "como a las (tres)",
+  "pos": "phrase",
+  "en": "around (three o'clock)",
+  "note": "«Como» before a time or amount = about.",
+  "type": [
+   "como a las",
+   "a eso de las"
+  ],
+  "ex": [
+   {
+    "es": "Me dio como a las tres de la mañana.",
+    "en": "It hit me around three in the morning.",
+    "hit": "como a las"
+   },
+   {
+    "es": "¿Fue como a las ocho de la noche?",
+    "en": "Was it around eight at night?",
+    "hit": "como a las"
+   },
+   {
+    "es": "Llegamos a urgencias como a las once.",
+    "en": "We got to the ER around eleven.",
+    "hit": "como a las"
+   }
+  ]
+ },
+ {
+  "id": "sm2-hace-poco",
+  "w": "hace poco",
+  "pos": "phrase",
+  "en": "recently; not long ago",
+  "note": "",
+  "type": [
+   "hace poco",
+   "recientemente"
+  ],
+  "ex": [
+   {
+    "es": "¿Tuvo alguna infección hace poco?",
+    "en": "Did you have an infection recently?",
+    "hit": "hace poco"
+   },
+   {
+    "es": "Hace poco empecé a sentir brincos en el pecho.",
+    "en": "Not long ago I started feeling skips in my chest.",
+    "hit": "Hace poco"
+   },
+   {
+    "es": "Hace poco me cambiaron la pastilla de la presión.",
+    "en": "They recently changed my blood pressure pill.",
+    "hit": "Hace poco"
+   }
+  ]
+ },
+ {
+  "id": "sm2-desde-entonces",
+  "w": "desde entonces",
+  "pos": "phrase",
+  "en": "since then",
+  "note": "",
+  "type": [
+   "desde entonces"
+  ],
+  "ex": [
+   {
+    "es": "Me caí en marzo y desde entonces me duele.",
+    "en": "I fell in March and it has hurt since then.",
+    "hit": "desde entonces"
+   },
+   {
+    "es": "¿Y desde entonces se siente igual?",
+    "en": "And since then you've felt the same?",
+    "hit": "desde entonces"
+   },
+   {
+    "es": "Mi papá tuvo un infarto y desde entonces no fuma.",
+    "en": "My dad had a heart attack and hasn't smoked since then.",
+    "hit": "desde entonces"
+   }
+  ]
+ },
+ {
+  "id": "sm2-desde-que",
+  "w": "desde que",
+  "pos": "phrase",
+  "en": "since (an event)",
+  "note": "«Desde que» + event; «desde hace» + amount of time.",
+  "type": [
+   "desde que"
+  ],
+  "ex": [
+   {
+    "es": "Me siento cansado desde que empecé la pastilla.",
+    "en": "I've felt tired since I started the pill.",
+    "hit": "desde que"
+   },
+   {
+    "es": "¿Tiene el dolor desde que se cayó?",
+    "en": "Have you had the pain since you fell?",
+    "hit": "desde que"
+   },
+   {
+    "es": "Mi mamá tose mucho desde que llegó del viaje.",
+    "en": "My mom has coughed a lot since she got back from the trip.",
+    "hit": "desde que"
+   }
+  ]
+ },
+ {
+  "id": "sm2-al-principio",
+  "w": "al principio",
+  "pos": "phrase",
+  "en": "at first",
+  "note": "",
+  "type": [
+   "al principio"
+  ],
+  "ex": [
+   {
+    "es": "Al principio era leve, pero luego empeoró.",
+    "en": "At first it was mild, but then it got worse.",
+    "hit": "Al principio"
+   },
+   {
+    "es": "Al principio, ¿dónde le dolía?",
+    "en": "At first, where did it hurt?",
+    "hit": "Al principio"
+   },
+   {
+    "es": "Al principio pensé que eran agruras.",
+    "en": "At first I thought it was heartburn.",
+    "hit": "Al principio"
+   }
+  ]
+ },
+ {
+  "id": "sm2-ya-no",
+  "w": "ya no",
+  "pos": "phrase",
+  "en": "no longer; not anymore",
+  "note": "",
+  "type": [
+   "ya no"
+  ],
+  "ex": [
+   {
+    "es": "Ya no me duele, pero estoy preocupado.",
+    "en": "It doesn't hurt anymore, but I'm worried.",
+    "hit": "Ya no"
+   },
+   {
+    "es": "¿Ya no tiene palpitaciones en la noche?",
+    "en": "You don't have palpitations at night anymore?",
+    "hit": "Ya no"
+   },
+   {
+    "es": "Mi esposo ya no quiere ir a urgencias.",
+    "en": "My husband doesn't want to go to the ER anymore.",
+    "hit": "ya no"
+   }
+  ]
+ },
+ {
+  "id": "sm2-sigue-igual",
+  "w": "sigue igual",
+  "pos": "phrase",
+  "en": "it's still the same; no change",
+  "note": "From «seguir». Ask: «¿Está mejor, peor o sigue igual?»",
+  "type": [
+   "sigue igual",
+   "está igual"
+  ],
+  "ex": [
+   {
+    "es": "¿Está mejor, peor o sigue igual?",
+    "en": "Is it better, worse or still the same?",
+    "hit": "sigue igual"
+   },
+   {
+    "es": "El dolor sigue igual que ayer.",
+    "en": "The pain is the same as yesterday.",
+    "hit": "sigue igual"
+   },
+   {
+    "es": "Mi mamá sigue igual, no mejora.",
+    "en": "My mom is still the same, she's not improving.",
+    "hit": "sigue igual"
+   }
+  ]
+ },
+ {
+  "id": "sm2-aparecer",
+  "w": "aparecer",
+  "pos": "verb",
+  "en": "to appear; show up",
+  "note": "",
+  "type": [
+   "aparecer"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuándo apareció la hinchazón en los pies?",
+    "en": "When did the swelling in your feet appear?",
+    "hit": "apareció"
+   },
+   {
+    "es": "Me apareció un moretón en la pierna.",
+    "en": "A bruise showed up on my leg.",
+    "hit": "apareció"
+   },
+   {
+    "es": "El ritmo irregular no apareció en el monitor.",
+    "en": "The irregular rhythm didn't show up on the monitor.",
+    "hit": "apareció"
+   }
+  ]
+ },
+ {
+  "id": "sm2-episodio",
+  "w": "el episodio",
+  "pos": "noun",
+  "en": "episode; spell",
+  "note": "Patients often say «cuando me da» instead.",
+  "type": [
+   "el episodio",
+   "episodio"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuánto duró el último episodio?",
+    "en": "How long did the last episode last?",
+    "hit": "episodio"
+   },
+   {
+    "es": "Tuvo tres episodios de palpitaciones esta semana.",
+    "en": "You had three episodes of palpitations this week.",
+    "hit": "episodios"
+   },
+   {
+    "es": "Si tiene otro episodio, tiene que anotar la hora.",
+    "en": "If you have another episode, you need to write down the time.",
+    "hit": "episodio"
+   }
+  ]
+ },
+ {
+  "id": "sm2-urgencias",
+  "w": "urgencias",
+  "pos": "noun",
+  "en": "the ER",
+  "note": "Common in Mexico: «ir a urgencias». Same as «la sala de emergencias».",
+  "type": [
+   "urgencias",
+   "emergencias"
+  ],
+  "ex": [
+   {
+    "es": "¿Fue a urgencias cuando le dio el dolor?",
+    "en": "Did you go to the ER when the pain hit you?",
+    "hit": "urgencias"
+   },
+   {
+    "es": "Me llevaron a urgencias en ambulancia.",
+    "en": "They took me to the ER in an ambulance.",
+    "hit": "urgencias"
+   },
+   {
+    "es": "Estamos en urgencias con mi papá.",
+    "en": "We're in the ER with my dad.",
+    "hit": "urgencias"
+   }
+  ]
+ },
+ {
+  "id": "sm2-familiar",
+  "w": "el familiar",
+  "pos": "noun",
+  "en": "relative; family member",
+  "note": "False friend as a noun. «Un/una familiar»; also «el pariente».",
+  "type": [
+   "el familiar",
+   "familiar",
+   "el pariente",
+   "pariente"
+  ],
+  "ex": [
+   {
+    "es": "¿Algún familiar vio lo que pasó?",
+    "en": "Did any relative see what happened?",
+    "hit": "familiar"
+   },
+   {
+    "es": "Un familiar puede entrar con usted.",
+    "en": "A family member can come in with you.",
+    "hit": "familiar"
+   },
+   {
+    "es": "Un familiar llamó para preguntar por usted.",
+    "en": "A relative called to ask about you.",
+    "hit": "familiar"
+   }
+  ]
+ },
+ {
+  "id": "sm2-espantarse",
+  "w": "espantarse",
+  "pos": "verb",
+  "en": "to get scared",
+  "note": "Mexican-leaning; «asustarse» is general.",
+  "type": [
+   "espantarse",
+   "asustarse"
+  ],
+  "ex": [
+   {
+    "es": "Me espanté mucho cuando sentí el corazón así.",
+    "en": "I got really scared when I felt my heart like that.",
+    "hit": "espanté"
+   },
+   {
+    "es": "Es normal espantarse con estos síntomas.",
+    "en": "It's normal to get scared with these symptoms.",
+    "hit": "espantarse"
+   },
+   {
+    "es": "Los niños se espantaron cuando su papá se cayó.",
+    "en": "The kids got scared when their dad fell.",
+    "hit": "espantaron"
+   }
+  ]
+ }
+]

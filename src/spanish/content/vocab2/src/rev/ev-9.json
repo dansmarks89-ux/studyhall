@@ -1,0 +1,116 @@
+{
+ "fix": [
+  {
+   "id": "sv05-secundario",
+   "w": "secundario",
+   "pos": "adjective",
+   "en": "secondary; (efectos secundarios) side effects",
+   "note": "La secundaria = middle school (Mexico).",
+   "type": [
+    "secundario"
+   ],
+   "ex": [
+    {
+     "es": "Esta pastilla tiene pocos efectos secundarios.",
+     "en": "This pill has few side effects.",
+     "hit": "secundarios"
+    },
+    {
+     "es": "Tomamos una calle secundaria para evitar el tráfico.",
+     "en": "We took a side street to avoid the traffic.",
+     "hit": "secundaria"
+    },
+    {
+     "es": "Es un detalle secundario, no te preocupes.",
+     "en": "It's a minor detail; don't worry.",
+     "hit": "secundario"
+    }
+   ]
+  },
+  {
+   "id": "sv05-jardin",
+   "w": "el jardín",
+   "pos": "noun",
+   "en": "garden; yard",
+   "note": "Jardín de niños = kindergarten (Mexico).",
+   "type": [
+    "el jardín",
+    "jardín"
+   ],
+   "ex": [
+    {
+     "es": "Los niños están jugando en el jardín.",
+     "en": "The kids are playing in the yard.",
+     "hit": "jardín"
+    },
+    {
+     "es": "Mi esposa siembra tomates en el jardín.",
+     "en": "My wife grows tomatoes in the garden.",
+     "hit": "jardín"
+    },
+    {
+     "es": "El domingo hacemos carne asada en el jardín.",
+     "en": "On Sunday we're having a cookout in the yard.",
+     "hit": "jardín"
+    }
+   ]
+  },
+  {
+   "id": "sv05-conexion",
+   "w": "la conexión",
+   "pos": "noun",
+   "en": "connection",
+   "note": "",
+   "type": [
+    "la conexión",
+    "conexión"
+   ],
+   "ex": [
+    {
+     "es": "La conexión a internet está muy lenta.",
+     "en": "The internet connection is really slow.",
+     "hit": "conexión"
+    },
+    {
+     "es": "Mi vuelo tiene conexión en Dallas.",
+     "en": "My flight has a connection in Dallas.",
+     "hit": "conexión"
+    },
+    {
+     "es": "Sentí una conexión especial con ella desde el principio.",
+     "en": "I felt a special connection with her from the start.",
+     "hit": "conexión"
+    }
+   ]
+  },
+  {
+   "id": "sv05-rural",
+   "w": "rural",
+   "pos": "adjective",
+   "en": "rural, country",
+   "note": "",
+   "type": [
+    "rural"
+   ],
+   "ex": [
+    {
+     "es": "Mis abuelos viven en una zona rural.",
+     "en": "My grandparents live in a rural area.",
+     "hit": "rural"
+    },
+    {
+     "es": "La vida rural es más tranquila que la de la ciudad.",
+     "en": "Country life is quieter than city life.",
+     "hit": "rural"
+    },
+    {
+     "es": "Ji-woo trabaja en una escuela rural.",
+     "en": "Ji-woo works at a rural school.",
+     "hit": "rural"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Replaced examples using unglossed senses (secundaria = middle school, jardín de niños) in non-3rd slots; made layover example natural (conexión); fixed comparison (rural)."
+}

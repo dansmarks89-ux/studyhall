@@ -1,0 +1,87 @@
+{
+ "fix": [
+  {
+   "id": "cv10-42",
+   "t": {
+    "s": "撐",
+    "r": "caang3"
+   },
+   "pos": "verb",
+   "en": "to support, back (someone)",
+   "note": "",
+   "ex": [
+    {
+     "s": "你去試啦，我撐你！",
+     "r": "nei5 heoi3 si3 laa1 ngo5 caang3 nei5",
+     "en": "Go for it—I've got your back!"
+    },
+    {
+     "s": "我哋要撐吓呢啲小店。",
+     "r": "ngo5 dei6 jiu3 caang3 haa5 ni1 di1 siu2 dim3",
+     "en": "We should support these little shops."
+    },
+    {
+     "s": "我哋全家都撐香港隊！",
+     "r": "ngo5 dei6 cyun4 gaa1 dou1 caang3 hoeng1 gong2 deoi2",
+     "en": "Our whole family is cheering for the Hong Kong team!"
+    }
+   ]
+  },
+  {
+   "id": "cv10-86",
+   "t": {
+    "s": "物業",
+    "r": "mat6 jip6"
+   },
+   "pos": "noun",
+   "en": "property, real estate",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢喺香港有兩個物業。",
+     "r": "keoi5 hai2 hoeng1 gong2 jau5 loeng5 go3 mat6 jip6",
+     "en": "She owns two properties in Hong Kong."
+    },
+    {
+     "s": "呢個物業附近有地鐵站。",
+     "r": "ni1 go3 mat6 jip6 fu6 gan6 jau5 dei6 tit3 zaam6",
+     "en": "This property is near an MTR station."
+    },
+    {
+     "s": "部升降機壞咗，快啲打去物業管理處。",
+     "r": "bou6 sing1 gong3 gei1 waai6 zo2 faai3 di1 daa2 heoi3 mat6 jip6 gun2 lei5 cyu3",
+     "en": "The elevator's broken—call the building management office."
+    }
+   ]
+  },
+  {
+   "id": "cv10-91",
+   "t": {
+    "s": "澄清",
+    "r": "cing4 cing1"
+   },
+   "pos": "verb",
+   "en": "to clarify, clear up",
+   "note": "",
+   "ex": [
+    {
+     "s": "我想澄清一樣嘢。",
+     "r": "ngo5 soeng2 cing4 cing1 jat1 joeng6 je5",
+     "en": "I'd like to clarify one thing."
+    },
+    {
+     "s": "佢喺群組度澄清咗個誤會。",
+     "r": "keoi5 hai2 kwan4 zou2 dou6 cing4 cing1 zo2 go3 ng6 wui6",
+     "en": "She cleared up the misunderstanding in the group chat."
+    },
+    {
+     "s": "我講錯咗，等我澄清吓。",
+     "r": "ngo5 gong2 co3 zo2 dang2 ngo5 cing4 cing1 haa5",
+     "en": "I misspoke—let me clarify."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Strong file. Removed Mandarin-style 撐 'stuffed' sense, tightened 物業 gloss, replaced unnatural 打去澄清吓 example. All CHECKs judged correct colloquial readings (incl. 河粉 ho2, 鵝 ngo2, 間 gaan1)."
+}

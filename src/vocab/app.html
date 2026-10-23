@@ -55,12 +55,12 @@ a{color:var(--focus)}
 .card.hi{border-color:var(--trace);box-shadow:0 0 0 1px var(--trace) inset}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .spread{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
-.btn{font:600 1rem var(--f-ui);border-radius:11px;padding:12px 18px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);min-height:46px}
+.btn,.sh-voice-sample{font:600 1rem var(--f-ui);border-radius:11px;padding:12px 18px;cursor:pointer;border:1px solid var(--line);background:var(--panel);color:var(--ink);min-height:46px}
 .btn.primary{background:var(--trace);border-color:var(--trace);color:var(--paper)}
 .btn.block{width:100%}
 .btn:disabled{opacity:.5;cursor:default}
 .btn.small{font-size:.88rem;padding:8px 12px;min-height:38px}
-.btn:focus-visible,.opt:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.btn:focus-visible,.sh-voice-sample:focus-visible,.opt:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
 .stat{background:var(--soft);border-radius:11px;padding:10px 12px}
 .stat b{display:block;font:600 1.35rem var(--f-mono)}
@@ -105,13 +105,15 @@ a{color:var(--focus)}
 .fb h4{margin:0;font-size:1.02rem}
 textarea,input[type=text],input[type=search],select{font:inherit;font-size:1rem;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);width:100%}
 textarea{min-height:84px;resize:vertical}
-label.f{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.92rem}
+label.f,label.sh-voice{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.92rem}
 label.c{display:flex;gap:10px;align-items:center;font-size:.95rem}
 label.c input{width:20px;height:20px}
 /* study card */
 .sc{display:flex;flex-direction:column;gap:12px}
 .sc .def{font-size:1.1rem}
 .sc .ex{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-family:var(--f-display)}
+.moreex summary{cursor:pointer;color:var(--accent,inherit);min-height:44px;display:flex;align-items:center;font-size:.95em}
+.moreex[open] summary{margin-bottom:4px}
 .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.92rem}
 .kv dt{color:var(--muted)} .kv dd{margin:0}
 .story{background:var(--accent-soft);border-radius:10px;padding:10px 12px;font-size:.93rem}
@@ -157,6 +159,7 @@ details.more summary{cursor:pointer;font-weight:600}
 <script src="../shared/supabase.js"></script>
 <script src="../shared/sh.js"></script>
 <script>SH.install("vocab");</script>
+<script src="../shared/voice.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -365,7 +368,15 @@ function fillVoices(sel) {
   sel.innerHTML = voices.map(v => `<option value="${esc(v.voiceURI)}">${esc(v.name)} (${esc(v.lang)})</option>`).join("");
   sel.value = DEV.voice;
 }
+// Study Hall voices (natural neural voices from the server) when available; the device voice otherwise.
+const SV = window.SHVoice || null;
+if (SV) SV.setup({ course: "vocab", fallback: (t, r) => deviceSpeak(t, r) });
 function speak(text) {
+  if (!text) return;
+  if (SV && SV.current() !== "device") { SV.play(String(text).replace(/_{2,}/g, " blank "), { rate: +DEV.rate || 0.95 }).catch(() => deviceSpeak(text)); return; }
+  deviceSpeak(text);
+}
+function deviceSpeak(text, rate) {
   if (!synth) { astatus("This browser has no speech engine. Open Study Hall in Safari, Chrome or Edge to hear words."); return; }
   if (!text) return;
   const seq = ++speakSeq;
@@ -376,7 +387,7 @@ function speak(text) {
     if (seq !== speakSeq) return;
     const u = new SpeechSynthesisUtterance(String(text).replace(/_{2,}/g, " blank "));
     if (v) { u.voice = v; u.lang = v.lang; } else u.lang = "en-US";
-    u.rate = +DEV.rate || 0.95;
+    u.rate = +rate || +DEV.rate || 0.95;
     let started = false;
     u.onstart = () => { started = true; if (seq === speakSeq) astatus(""); };
     u.onerror = e => { if (seq === speakSeq && e.error !== "interrupted" && e.error !== "canceled") astatus(`Audio error "${e.error}". Pick another voice in Settings → Audio and press Test voice.`); };
@@ -620,7 +631,11 @@ function cardHTML(x, opts = {}) {
   h += `<p class="def tap">${esc(cap(x.def))}</p>`;
   if (x.also) h += `<p class="sub tap">Also: ${esc(x.also)}</p>`;
   if (x.why) h += `<p class="note tap"><b>Why it matters:</b> ${esc(x.why)}</p>`;
-  if (x.ex && x.ex.length) h += `<ul class="ex tap">${x.ex.map(e => `<li>${esc(e)} ${playBtn(e)}</li>`).join("")}</ul>`;
+  if (x.ex && x.ex.length) {
+    const li = a => a.map(e => `<li>${esc(e)} ${playBtn(e)}</li>`).join("");
+    h += `<ul class="ex tap">${li(x.ex.slice(0, 2))}</ul>`;
+    if (x.ex.length > 2) h += `<details class="moreex"${x.level < 1 ? " open" : ""}><summary>More examples (${x.ex.length - 2})</summary><ul class="ex tap">${li(x.ex.slice(2))}</ul></details>`;
+  }
   if (x.scenario) h += `<p class="note tap"><b>Example:</b> ${esc(x.scenario)}</p>`;
   if (x.fix) h += `<p class="note tap"><b>How to counter it:</b> ${esc(x.fix)}</p>`;
   if (x.words) h += `<table><tbody>${x.words.map(w => `<tr><td><b>${esc(w.w)}</b></td><td class="tap">${esc(w.m)}</td></tr>`).join("")}</tbody></table>`;
@@ -1379,11 +1394,12 @@ function viewSettings() {
       <option value="often"${s.typed === "often" ? " selected" : ""}>Often: the strongest test of memory</option></select></label>
     <p class="hint">Typed definitions and the sentences you write are graded by Claude through Study Hall's AI. Each check uses one of your daily AI replies. If AI isn't available, you grade yourself.</p></section>
   <section class="card"><h3>Audio</h3>
-    <label class="f">Voice<select id="s-voice"></select></label>
+    <div id="s-shvoice"></div>
+    <label class="f" id="s-devwrap">Device voice<select id="s-voice"></select></label>
     <label class="f">Speed<select id="s-rate">${[["0.75", "Slow"], ["0.95", "Normal"], ["1.1", "Fast"]].map(([v, l]) => `<option value="${v}"${v === DEV.rate ? " selected" : ""}>${l}</option>`).join("")}</select></label>
     <label class="c"><input type="checkbox" id="s-auto"${DEV.auto ? " checked" : ""}> Say new words out loud automatically</label>
     <button class="btn" type="button" id="s-test">Test voice</button>
-    <p class="hint">Audio uses your device's built-in voices, so it sounds different on each device. Audio settings are saved on this device only. If you hear nothing on iPhone, check the silent switch. For a better voice, go to Settings → Accessibility → Spoken Content → Voices → English and download an “Enhanced” U.S. voice.</p></section>
+    <p class="hint">${SV ? "Study Hall voices are natural recorded-quality voices and sound the same on every device; “Device voice” uses this device's built-in voices instead." : "Audio uses your device's built-in voices, so it sounds different on each device."} Audio settings are saved on this device only. If you hear nothing on iPhone, check the silent switch. For a better voice, go to Settings → Accessibility → Spoken Content → Voices → English and download an “Enhanced” U.S. voice.</p></section>
   <section class="card"><h3>Start over</h3><p class="sub">Erase all Word Power progress on every device. This can't be undone.</p><button class="btn" type="button" id="s-reset">Reset my progress</button></section>`;
   const touch = () => { ST.set.ts = Date.now(); save("state"); };
   $("s-goal").onchange = e => { ST.set.goal = +e.target.value; touch(); };
@@ -1391,6 +1407,7 @@ function viewSettings() {
   $("s-typed").onchange = e => { ST.set.typed = e.target.value; touch(); };
   document.querySelectorAll("[data-tr]").forEach(c => c.onchange = () => { ST.set.tracks[c.dataset.tr] = c.checked; touch(); });
   fillVoices($("s-voice"));
+  if (SV) SV.picker($("s-shvoice"), { sample: "Learning a new word is easier when you hear it used in a sentence." });
   $("s-voice").onchange = e => { DEV.voice = e.target.value; saveDev(); };
   $("s-rate").onchange = e => { DEV.rate = e.target.value; saveDev(); };
   $("s-auto").onchange = e => { DEV.auto = e.target.checked; saveDev(); };

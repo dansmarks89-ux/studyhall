@@ -1,0 +1,2276 @@
+[
+ {
+  "id": "sm3-me-aprieta-el-pecho",
+  "w": "me aprieta el pecho",
+  "pos": "phrase",
+  "en": "my chest feels tight",
+  "note": "Patient phrase; you ask: ¿Le aprieta el pecho?",
+  "type": [
+   "me aprieta el pecho"
+  ],
+  "ex": [
+   {
+    "es": "Doctor, cuando subo las escaleras me aprieta el pecho.",
+    "en": "Doctor, when I climb the stairs my chest feels tight.",
+    "hit": "me aprieta el pecho"
+   },
+   {
+    "es": "Llamo porque desde anoche me aprieta el pecho.",
+    "en": "I'm calling because my chest has felt tight since last night.",
+    "hit": "me aprieta el pecho"
+   },
+   {
+    "es": "En las mañanas frías me aprieta el pecho al caminar.",
+    "en": "On cold mornings my chest feels tight when I walk.",
+    "hit": "me aprieta el pecho"
+   }
+  ]
+ },
+ {
+  "id": "sm3-me-duele-al-respirar",
+  "w": "me duele al respirar",
+  "pos": "phrase",
+  "en": "it hurts when I breathe",
+  "note": "Pain with breathing suggests the lining of lung or heart more than angina.",
+  "type": [
+   "me duele al respirar"
+  ],
+  "ex": [
+   {
+    "es": "Me duele al respirar hondo, sobre todo acostado.",
+    "en": "It hurts when I take a deep breath, especially lying down.",
+    "hit": "Me duele al respirar"
+   },
+   {
+    "es": "¿Le duele al respirar o solo al caminar?",
+    "en": "Does it hurt when you breathe or only when you walk?",
+    "hit": "duele al respirar"
+   },
+   {
+    "es": "Mi esposa dice que le duele al respirar desde ayer.",
+    "en": "My wife says it has hurt her to breathe since yesterday.",
+    "hit": "duele al respirar"
+   }
+  ]
+ },
+ {
+  "id": "sm3-agruras",
+  "w": "las agruras",
+  "pos": "noun",
+  "en": "heartburn",
+  "note": "Everyday Mexican word; also la acidez. Technical: reflujo.",
+  "type": [
+   "las agruras",
+   "agruras",
+   "la acidez",
+   "acidez"
+  ],
+  "ex": [
+   {
+    "es": "¿Son agruras o es un dolor diferente?",
+    "en": "Is it heartburn or a different kind of pain?",
+    "hit": "agruras"
+   },
+   {
+    "es": "Pensé que eran agruras, pero no se me quitaba.",
+    "en": "I thought it was heartburn, but it wouldn't go away.",
+    "hit": "agruras"
+   },
+   {
+    "es": "En la farmacia compré algo para las agruras.",
+    "en": "At the pharmacy I bought something for heartburn.",
+    "hit": "agruras"
+   }
+  ]
+ },
+ {
+  "id": "sm3-boca-del-estomago",
+  "w": "la boca del estómago",
+  "pos": "noun",
+  "en": "pit of the stomach (upper belly)",
+  "note": "Patient phrase for the epigastrium; heart pain can be felt here.",
+  "type": [
+   "la boca del estómago",
+   "boca del estómago"
+  ],
+  "ex": [
+   {
+    "es": "Me duele aquí, en la boca del estómago.",
+    "en": "It hurts here, in the pit of my stomach.",
+    "hit": "boca del estómago"
+   },
+   {
+    "es": "¿El dolor empieza en la boca del estómago o en el pecho?",
+    "en": "Does the pain start in the pit of your stomach or in your chest?",
+    "hit": "boca del estómago"
+   },
+   {
+    "es": "Mi papá se quejaba de la boca del estómago.",
+    "en": "My dad was complaining about the pit of his stomach.",
+    "hit": "boca del estómago"
+   }
+  ]
+ },
+ {
+  "id": "sm3-hormigueo",
+  "w": "el hormigueo",
+  "pos": "noun",
+  "en": "tingling; pins and needles",
+  "note": "",
+  "type": [
+   "el hormigueo",
+   "hormigueo"
+  ],
+  "ex": [
+   {
+    "es": "Siento un hormigueo en el brazo izquierdo.",
+    "en": "I feel tingling in my left arm.",
+    "hit": "hormigueo"
+   },
+   {
+    "es": "¿Tiene hormigueo en las manos cuando le pasa?",
+    "en": "Do you get tingling in your hands when it happens?",
+    "hit": "hormigueo"
+   },
+   {
+    "es": "Mi esposo tenía hormigueo en la cara y en la mano.",
+    "en": "My husband had tingling in his face and his hand.",
+    "hit": "hormigueo"
+   }
+  ]
+ },
+ {
+  "id": "sm3-entumido",
+  "w": "entumido",
+  "pos": "adj",
+  "en": "numb; stiff",
+  "note": "Feminine: entumida. Mexican; may mean numb or stiff, so ask which.",
+  "type": [
+   "entumido",
+   "entumida",
+   "adormecido",
+   "adormecida"
+  ],
+  "ex": [
+   {
+    "es": "Tengo la mano entumida desde la mañana.",
+    "en": "My hand has been numb since this morning.",
+    "hit": "entumida"
+   },
+   {
+    "es": "¿Siente el brazo entumido o débil?",
+    "en": "Does your arm feel numb or weak?",
+    "hit": "entumido"
+   },
+   {
+    "es": "Después del dolor, se me quedó entumido el brazo.",
+    "en": "After the pain, my arm stayed numb.",
+    "hit": "entumido"
+   }
+  ]
+ },
+ {
+  "id": "sm3-despues-de-comer",
+  "w": "después de comer",
+  "pos": "phrase",
+  "en": "after eating",
+  "note": "",
+  "type": [
+   "después de comer"
+  ],
+  "ex": [
+   {
+    "es": "¿El dolor le viene después de comer?",
+    "en": "Does the pain come on after you eat?",
+    "hit": "después de comer"
+   },
+   {
+    "es": "Me falta más el aire después de comer mucho.",
+    "en": "I'm more short of breath after eating a lot.",
+    "hit": "después de comer"
+   },
+   {
+    "es": "Muchas personas se marean un poco después de comer.",
+    "en": "Many people get a little dizzy after eating.",
+    "hit": "después de comer"
+   }
+  ]
+ },
+ {
+  "id": "sm3-hacer-corajes",
+  "w": "hacer corajes",
+  "pos": "verb",
+  "en": "to get angry",
+  "note": "Mexican; patients often link symptoms to anger (los corajes).",
+  "type": [
+   "hacer corajes",
+   "hacer coraje"
+  ],
+  "ex": [
+   {
+    "es": "Cuando hago corajes, siento el corazón acelerado.",
+    "en": "When I get angry, I feel my heart racing.",
+    "hit": "hago corajes"
+   },
+   {
+    "es": "¿Le pasa más cuando hace corajes o en reposo?",
+    "en": "Does it happen more when you get angry or at rest?",
+    "hit": "hace corajes"
+   },
+   {
+    "es": "Mi mamá hizo un coraje y se desmayó.",
+    "en": "My mom got angry and fainted.",
+    "hit": "hizo un coraje"
+   }
+  ]
+ },
+ {
+  "id": "sm3-agacharse",
+  "w": "agacharse",
+  "pos": "verb",
+  "en": "to bend over; to crouch",
+  "note": "",
+  "type": [
+   "agacharse"
+  ],
+  "ex": [
+   {
+    "es": "¿Le falta el aire al agacharse?",
+    "en": "Do you get short of breath when you bend over?",
+    "hit": "agacharse"
+   },
+   {
+    "es": "Me mareo cuando me agacho a amarrarme los zapatos.",
+    "en": "I get dizzy when I bend down to tie my shoes.",
+    "hit": "agacho"
+   },
+   {
+    "es": "Ayer me agaché en el jardín y vi todo negro.",
+    "en": "Yesterday I bent down in the garden and everything went black.",
+    "hit": "agaché"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cansarse",
+  "w": "cansarse",
+  "pos": "verb",
+  "en": "to get tired",
+  "note": "",
+  "type": [
+   "cansarse"
+  ],
+  "ex": [
+   {
+    "es": "¿Se cansa más rápido que hace un año?",
+    "en": "Do you get tired faster than a year ago?",
+    "hit": "cansa"
+   },
+   {
+    "es": "Antes caminaba mucho; ahora me canso enseguida.",
+    "en": "I used to walk a lot; now I get tired right away.",
+    "hit": "canso"
+   },
+   {
+    "es": "Mi papá se cansa hasta para bañarse.",
+    "en": "My dad gets tired even just taking a shower.",
+    "hit": "cansa"
+   }
+  ]
+ },
+ {
+  "id": "sm3-agitarse",
+  "w": "agitarse",
+  "pos": "verb",
+  "en": "to get winded; out of breath",
+  "note": "Mexican: 'me agito' = I get winded. Also means to get upset.",
+  "type": [
+   "agitarse"
+  ],
+  "ex": [
+   {
+    "es": "Me agito mucho al subir las escaleras.",
+    "en": "I get really winded climbing the stairs.",
+    "hit": "agito"
+   },
+   {
+    "es": "¿Se agita cuando camina rápido?",
+    "en": "Do you get winded when you walk fast?",
+    "hit": "agita"
+   },
+   {
+    "es": "Mi mamá se agitaba hasta para hablar.",
+    "en": "My mom got winded even just talking.",
+    "hit": "agitaba"
+   }
+  ]
+ },
+ {
+  "id": "sm3-respiracion",
+  "w": "la respiración",
+  "pos": "noun",
+  "en": "breathing",
+  "note": "",
+  "type": [
+   "la respiración",
+   "respiración"
+  ],
+  "ex": [
+   {
+    "es": "Voy a escuchar su respiración con el estetoscopio.",
+    "en": "I'm going to listen to your breathing with the stethoscope.",
+    "hit": "respiración"
+   },
+   {
+    "es": "En la noche, su respiración hacía mucho ruido.",
+    "en": "At night, his breathing made a lot of noise.",
+    "hit": "respiración"
+   },
+   {
+    "es": "¿Cómo está su respiración hoy, mejor o peor?",
+    "en": "How is your breathing today, better or worse?",
+    "hit": "respiración"
+   }
+  ]
+ },
+ {
+  "id": "sm3-silbido",
+  "w": "el silbido",
+  "pos": "noun",
+  "en": "wheezing; whistling in the chest",
+  "note": "Patients may say 'me chifla el pecho'. Technical: sibilancias.",
+  "type": [
+   "el silbido",
+   "silbido",
+   "las sibilancias",
+   "sibilancias"
+  ],
+  "ex": [
+   {
+    "es": "En la noche tengo un silbido en el pecho.",
+    "en": "At night I have a whistling in my chest.",
+    "hit": "silbido"
+   },
+   {
+    "es": "¿Siente un silbido al respirar?",
+    "en": "Do you notice a wheeze when you breathe?",
+    "hit": "silbido"
+   },
+   {
+    "es": "El silbido puede venir del pulmón o del corazón.",
+    "en": "Wheezing can come from the lungs or from the heart.",
+    "hit": "silbido"
+   }
+  ]
+ },
+ {
+  "id": "sm3-tos",
+  "w": "la tos",
+  "pos": "noun",
+  "en": "cough",
+  "note": "Verb: toser.",
+  "type": [
+   "la tos",
+   "tos"
+  ],
+  "ex": [
+   {
+    "es": "¿La tos es seca o con flema?",
+    "en": "Is the cough dry or with phlegm?",
+    "hit": "tos"
+   },
+   {
+    "es": "Tengo tos en la noche cuando me acuesto.",
+    "en": "I have a cough at night when I lie down.",
+    "hit": "tos"
+   },
+   {
+    "es": "Compré un jarabe para la tos, pero sigo igual.",
+    "en": "I bought cough syrup, but I'm still the same.",
+    "hit": "tos"
+   }
+  ]
+ },
+ {
+  "id": "sm3-flema",
+  "w": "la flema",
+  "pos": "noun",
+  "en": "phlegm",
+  "note": "",
+  "type": [
+   "la flema",
+   "flema"
+  ],
+  "ex": [
+   {
+    "es": "Toso con flema blanca en las mañanas.",
+    "en": "I cough up white phlegm in the mornings.",
+    "hit": "flema"
+   },
+   {
+    "es": "¿De qué color es la flema?",
+    "en": "What color is the phlegm?",
+    "hit": "flema"
+   },
+   {
+    "es": "Ayer la flema salió con un poco de sangre.",
+    "en": "Yesterday the phlegm came up with a little blood.",
+    "hit": "flema"
+   }
+  ]
+ },
+ {
+  "id": "sm3-dormir-con-varias-almohadas",
+  "w": "dormir con varias almohadas",
+  "pos": "phrase",
+  "en": "to sleep propped on several pillows",
+  "note": "Plain way to ask about orthopnea (technical: ortopnea); ask how many.",
+  "type": [
+   "dormir con varias almohadas"
+  ],
+  "ex": [
+   {
+    "es": "¿Necesita dormir con varias almohadas para respirar bien?",
+    "en": "Do you need to sleep on several pillows to breathe well?",
+    "hit": "dormir con varias almohadas"
+   },
+   {
+    "es": "Ahora tengo que dormir con varias almohadas.",
+    "en": "Now I have to sleep on several pillows.",
+    "hit": "dormir con varias almohadas"
+   },
+   {
+    "es": "Mi papá empezó a dormir con varias almohadas este mes.",
+    "en": "My dad started sleeping on several pillows this month.",
+    "hit": "dormir con varias almohadas"
+   }
+  ]
+ },
+ {
+  "id": "sm3-no-me-alcanza-el-aire",
+  "w": "no me alcanza el aire",
+  "pos": "phrase",
+  "en": "I can't get enough air",
+  "note": "Common patient phrase for shortness of breath.",
+  "type": [],
+  "ex": [
+   {
+    "es": "Cuando camino dos cuadras, no me alcanza el aire.",
+    "en": "When I walk two blocks, I can't get enough air.",
+    "hit": "no me alcanza el aire"
+   },
+   {
+    "es": "Doctor, en la noche no me alcanza el aire.",
+    "en": "Doctor, at night I can't get enough air.",
+    "hit": "no me alcanza el aire"
+   },
+   {
+    "es": "Mi mamá dice que no le alcanza el aire.",
+    "en": "My mom says she can't get enough air.",
+    "hit": "alcanza el aire"
+   }
+  ]
+ },
+ {
+  "id": "sm3-retener-liquidos",
+  "w": "retener líquidos",
+  "pos": "verb",
+  "en": "to retain fluid",
+  "note": "",
+  "type": [
+   "retener líquidos"
+  ],
+  "ex": [
+   {
+    "es": "Con mucha sal, el cuerpo retiene líquidos.",
+    "en": "With a lot of salt, the body retains fluid.",
+    "hit": "retiene líquidos"
+   },
+   {
+    "es": "Creo que estoy reteniendo líquidos; subí cinco libras.",
+    "en": "I think I'm retaining fluid; I gained five pounds.",
+    "hit": "reteniendo líquidos"
+   },
+   {
+    "es": "Su corazón está débil y por eso retiene líquidos.",
+    "en": "Your heart is weak, and that's why you retain fluid.",
+    "hit": "retiene líquidos"
+   }
+  ]
+ },
+ {
+  "id": "sm3-calcetines",
+  "w": "los calcetines",
+  "pos": "noun",
+  "en": "socks",
+  "note": "Deep sock marks on the legs are a clue to swelling.",
+  "type": [
+   "los calcetines",
+   "calcetines",
+   "las calcetas",
+   "calcetas"
+  ],
+  "ex": [
+   {
+    "es": "¿Le dejan marca los calcetines en las piernas?",
+    "en": "Do your socks leave marks on your legs?",
+    "hit": "calcetines"
+   },
+   {
+    "es": "En la noche los calcetines me aprietan mucho.",
+    "en": "At night my socks feel very tight.",
+    "hit": "calcetines"
+   },
+   {
+    "es": "Voy a bajarle los calcetines para revisar sus tobillos.",
+    "en": "I'm going to lower your socks to check your ankles.",
+    "hit": "calcetines"
+   }
+  ]
+ },
+ {
+  "id": "sm3-me-aprietan-los-zapatos",
+  "w": "me aprietan los zapatos",
+  "pos": "phrase",
+  "en": "my shoes feel tight",
+  "note": "",
+  "type": [
+   "me aprietan los zapatos"
+  ],
+  "ex": [
+   {
+    "es": "En la tarde me aprietan los zapatos.",
+    "en": "In the afternoon my shoes feel tight.",
+    "hit": "me aprietan los zapatos"
+   },
+   {
+    "es": "¿Le aprietan los zapatos más que antes?",
+    "en": "Do your shoes feel tighter than before?",
+    "hit": "aprietan los zapatos"
+   },
+   {
+    "es": "Desde el lunes me aprietan los zapatos y los pantalones.",
+    "en": "Since Monday my shoes and pants have felt tight.",
+    "hit": "me aprietan los zapatos"
+   }
+  ]
+ },
+ {
+  "id": "sm3-hundirse",
+  "w": "hundirse",
+  "pos": "verb",
+  "en": "to sink in; to dent (pitting)",
+  "note": "Skin that stays dented after pressing = pitting edema (technical: edema con fóvea).",
+  "type": [
+   "hundirse"
+  ],
+  "ex": [
+   {
+    "es": "Cuando aprieto aquí, se le hunde la piel.",
+    "en": "When I press here, your skin dents in.",
+    "hit": "hunde"
+   },
+   {
+    "es": "Si me aprieto la pierna, se me hunde la piel.",
+    "en": "If I press on my leg, the skin sinks in.",
+    "hit": "hunde"
+   },
+   {
+    "es": "La piel se hundía más la semana pasada.",
+    "en": "The skin was denting in more last week.",
+    "hit": "hundía"
+   }
+  ]
+ },
+ {
+  "id": "sm3-inflamado",
+  "w": "inflamado",
+  "pos": "adj",
+  "en": "swollen (patients' usual word)",
+  "note": "Feminine: inflamada. Patients often mean swollen, not infected or inflamed.",
+  "type": [
+   "inflamado",
+   "inflamada"
+  ],
+  "ex": [
+   {
+    "es": "Tengo los pies muy inflamados en la tarde.",
+    "en": "My feet are very swollen in the afternoon.",
+    "hit": "inflamados"
+   },
+   {
+    "es": "¿Tiene la panza inflamada también?",
+    "en": "Is your belly swollen too?",
+    "hit": "inflamada"
+   },
+   {
+    "es": "Mi mamá tenía las piernas inflamadas toda la semana.",
+    "en": "My mom's legs were swollen all week.",
+    "hit": "inflamadas"
+   }
+  ]
+ },
+ {
+  "id": "sm3-libras",
+  "w": "las libras",
+  "pos": "noun",
+  "en": "pounds (weight)",
+  "note": "Patients in the US usually weigh themselves in libras, not kilos.",
+  "type": [
+   "las libras",
+   "libras",
+   "la libra",
+   "libra"
+  ],
+  "ex": [
+   {
+    "es": "Hoy usted pesa ciento ochenta libras.",
+    "en": "Today you weigh one hundred eighty pounds.",
+    "hit": "libras"
+   },
+   {
+    "es": "¿Cuántas libras subió esta semana?",
+    "en": "How many pounds did you gain this week?",
+    "hit": "libras"
+   },
+   {
+    "es": "Llamo porque subí tres libras en dos días.",
+    "en": "I'm calling because I gained three pounds in two days.",
+    "hit": "libras"
+   }
+  ]
+ },
+ {
+  "id": "sm3-deshincharse",
+  "w": "deshincharse",
+  "pos": "verb",
+  "en": "to go down (swelling)",
+  "note": "",
+  "type": [
+   "deshincharse"
+  ],
+  "ex": [
+   {
+    "es": "En la mañana se me deshinchan los pies.",
+    "en": "In the morning the swelling in my feet goes down.",
+    "hit": "deshinchan"
+   },
+   {
+    "es": "¿Se le deshinchan las piernas cuando duerme?",
+    "en": "Does the swelling in your legs go down when you sleep?",
+    "hit": "deshinchan"
+   },
+   {
+    "es": "Con el diurético, las piernas se deshincharon bien.",
+    "en": "With the water pill, your legs went down nicely.",
+    "hit": "deshincharon"
+   }
+  ]
+ },
+ {
+  "id": "sm3-acelerarse",
+  "w": "acelerarse",
+  "pos": "verb",
+  "en": "to speed up; to race (heart)",
+  "note": "Patient phrase: 'se me acelera el corazón'.",
+  "type": [
+   "acelerarse"
+  ],
+  "ex": [
+   {
+    "es": "De repente se me acelera el corazón sin razón.",
+    "en": "Suddenly my heart starts racing for no reason.",
+    "hit": "acelera"
+   },
+   {
+    "es": "¿Se le acelera al caminar o en reposo?",
+    "en": "Does it speed up when you walk or at rest?",
+    "hit": "acelera"
+   },
+   {
+    "es": "Anoche se le aceleró el corazón y se asustó.",
+    "en": "Last night his heart raced and he got scared.",
+    "hit": "aceleró"
+   }
+  ]
+ },
+ {
+  "id": "sm3-saltarse-un-latido",
+  "w": "saltarse un latido",
+  "pos": "verb",
+  "en": "to skip a beat",
+  "note": "Patients also say 'se me brinca el corazón'.",
+  "type": [
+   "saltarse un latido"
+  ],
+  "ex": [
+   {
+    "es": "Siento que el corazón se salta un latido.",
+    "en": "I feel like my heart skips a beat.",
+    "hit": "se salta un latido"
+   },
+   {
+    "es": "¿Siente que se salta un latido y luego un golpe?",
+    "en": "Do you feel it skip a beat and then a thump?",
+    "hit": "se salta un latido"
+   },
+   {
+    "es": "El monitor mostró por qué se saltaba un latido.",
+    "en": "The monitor showed why it was skipping a beat.",
+    "hit": "se saltaba un latido"
+   }
+  ]
+ },
+ {
+  "id": "sm3-golpeteo",
+  "w": "el golpeteo",
+  "pos": "noun",
+  "en": "pounding; thumping",
+  "note": "",
+  "type": [
+   "el golpeteo",
+   "golpeteo"
+  ],
+  "ex": [
+   {
+    "es": "Siento un golpeteo fuerte en el pecho.",
+    "en": "I feel a strong pounding in my chest.",
+    "hit": "golpeteo"
+   },
+   {
+    "es": "¿El golpeteo lo siente también en el cuello?",
+    "en": "Do you also feel the pounding in your neck?",
+    "hit": "golpeteo"
+   },
+   {
+    "es": "Le llamo porque el golpeteo empezó anoche y no para.",
+    "en": "I'm calling because the pounding started last night and won't stop.",
+    "hit": "golpeteo"
+   }
+  ]
+ },
+ {
+  "id": "sm3-se-me-para-el-corazon",
+  "w": "se me para el corazón",
+  "pos": "phrase",
+  "en": "my heart (feels like it) stops",
+  "note": "Patient phrase for a pause in the heartbeat.",
+  "type": [],
+  "ex": [
+   {
+    "es": "A veces siento que se me para el corazón.",
+    "en": "Sometimes I feel like my heart stops.",
+    "hit": "se me para el corazón"
+   },
+   {
+    "es": "¿Siente que se le para el corazón un momento?",
+    "en": "Do you feel like your heart stops for a moment?",
+    "hit": "para el corazón"
+   },
+   {
+    "es": "Mi esposa dice que se le para el corazón al acostarse.",
+    "en": "My wife says her heart seems to stop when she lies down.",
+    "hit": "para el corazón"
+   }
+  ]
+ },
+ {
+  "id": "sm3-de-golpe",
+  "w": "de golpe",
+  "pos": "adv",
+  "en": "suddenly; all at once",
+  "note": "Ask if palpitations start and stop de golpe: sudden onset and offset.",
+  "type": [
+   "de golpe"
+  ],
+  "ex": [
+   {
+    "es": "¿Empieza de golpe o poco a poco?",
+    "en": "Does it start all at once or little by little?",
+    "hit": "de golpe"
+   },
+   {
+    "es": "Se me quita de golpe, como un interruptor.",
+    "en": "It goes away all at once, like a switch.",
+    "hit": "de golpe"
+   },
+   {
+    "es": "Mi esposo se cayó de golpe en la cocina.",
+    "en": "My husband suddenly fell down in the kitchen.",
+    "hit": "de golpe"
+   }
+  ]
+ },
+ {
+  "id": "sm3-tomarse-el-pulso",
+  "w": "tomarse el pulso",
+  "pos": "verb",
+  "en": "to take one's pulse",
+  "note": "",
+  "type": [
+   "tomarse el pulso",
+   "tomar el pulso"
+  ],
+  "ex": [
+   {
+    "es": "¿Se tomó el pulso cuando le pasó?",
+    "en": "Did you take your pulse when it happened?",
+    "hit": "tomó el pulso"
+   },
+   {
+    "es": "Mi hija me tomó el pulso y estaba en ciento cincuenta.",
+    "en": "My daughter took my pulse and it was at one hundred fifty.",
+    "hit": "tomó el pulso"
+   },
+   {
+    "es": "Puede tomarse el pulso en la muñeca, así.",
+    "en": "You can take your pulse at your wrist, like this.",
+    "hit": "tomarse el pulso"
+   }
+  ]
+ },
+ {
+  "id": "sm3-marcar-el-ritmo",
+  "w": "marcar el ritmo",
+  "pos": "verb",
+  "en": "to tap out the rhythm",
+  "note": "",
+  "type": [
+   "marcar el ritmo"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede marcar el ritmo con la mano en la mesa?",
+    "en": "Can you tap out the rhythm with your hand on the table?",
+    "hit": "marcar el ritmo"
+   },
+   {
+    "es": "Lo marqué con los dedos y era muy irregular.",
+    "en": "I tapped it out with my fingers and it was very irregular.",
+    "hit": "marqué"
+   },
+   {
+    "es": "Mi esposo marcaba el ritmo y era muy rápido.",
+    "en": "My husband was tapping out the rhythm and it was very fast.",
+    "hit": "marcaba el ritmo"
+   }
+  ]
+ },
+ {
+  "id": "sm3-parejo",
+  "w": "parejo",
+  "pos": "adj",
+  "en": "even; regular (heartbeat)",
+  "note": "Feminine: pareja. Opposite: disparejo. Plain word for a regular rhythm.",
+  "type": [
+   "parejo",
+   "pareja"
+  ],
+  "ex": [
+   {
+    "es": "¿El latido rápido es parejo o irregular?",
+    "en": "Is the fast heartbeat regular or irregular?",
+    "hit": "parejo"
+   },
+   {
+    "es": "Era rápido pero parejo, como un reloj.",
+    "en": "It was fast but even, like a clock.",
+    "hit": "parejo"
+   },
+   {
+    "es": "En el electro de hoy, su ritmo es parejo.",
+    "en": "On today's ECG, your rhythm is regular.",
+    "hit": "parejo"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cada-cuanto",
+  "w": "cada cuánto",
+  "pos": "phrase",
+  "en": "how often",
+  "note": "",
+  "type": [
+   "cada cuánto"
+  ],
+  "ex": [
+   {
+    "es": "¿Cada cuánto le dan las palpitaciones?",
+    "en": "How often do you get the palpitations?",
+    "hit": "Cada cuánto"
+   },
+   {
+    "es": "¿Y cada cuánto se marea, más o menos?",
+    "en": "And how often do you get dizzy, more or less?",
+    "hit": "cada cuánto"
+   },
+   {
+    "es": "No sé cada cuánto; a veces dos veces al mes.",
+    "en": "I don't know how often; sometimes twice a month.",
+    "hit": "cada cuánto"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cafeina",
+  "w": "la cafeína",
+  "pos": "noun",
+  "en": "caffeine",
+  "note": "",
+  "type": [
+   "la cafeína",
+   "cafeína"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuánta cafeína toma al día, en café o refresco?",
+    "en": "How much caffeine do you have a day, in coffee or soda?",
+    "hit": "cafeína"
+   },
+   {
+    "es": "Con la cafeína siento más brincos en el pecho.",
+    "en": "With caffeine I feel more flip-flops in my chest.",
+    "hit": "cafeína"
+   },
+   {
+    "es": "Esa pastilla para el dolor de cabeza tiene cafeína.",
+    "en": "That headache pill has caffeine in it.",
+    "hit": "cafeína"
+   }
+  ]
+ },
+ {
+  "id": "sm3-bebidas-energeticas",
+  "w": "las bebidas energéticas",
+  "pos": "noun",
+  "en": "energy drinks",
+  "note": "",
+  "type": [
+   "las bebidas energéticas",
+   "bebidas energéticas",
+   "la bebida energética"
+  ],
+  "ex": [
+   {
+    "es": "¿Toma bebidas energéticas en el trabajo?",
+    "en": "Do you drink energy drinks at work?",
+    "hit": "bebidas energéticas"
+   },
+   {
+    "es": "Mi hijo toma dos bebidas energéticas al día.",
+    "en": "My son drinks two energy drinks a day.",
+    "hit": "bebidas energéticas"
+   },
+   {
+    "es": "Las palpitaciones empezaron con las bebidas energéticas.",
+    "en": "The palpitations started with the energy drinks.",
+    "hit": "bebidas energéticas"
+   }
+  ]
+ },
+ {
+  "id": "sm3-estres",
+  "w": "el estrés",
+  "pos": "noun",
+  "en": "stress",
+  "note": "",
+  "type": [
+   "el estrés",
+   "estrés"
+  ],
+  "ex": [
+   {
+    "es": "¿Le pasa más con el estrés del trabajo?",
+    "en": "Does it happen more with stress at work?",
+    "hit": "estrés"
+   },
+   {
+    "es": "Este año tuve mucho estrés con la mudanza.",
+    "en": "This year I had a lot of stress with the move.",
+    "hit": "estrés"
+   },
+   {
+    "es": "El estrés puede acelerar el corazón, pero vamos a revisar.",
+    "en": "Stress can speed up the heart, but we're going to check.",
+    "hit": "estrés"
+   }
+  ]
+ },
+ {
+  "id": "sm3-nervios",
+  "w": "los nervios",
+  "pos": "noun",
+  "en": "nerves; anxiety",
+  "note": "Patients often blame 'los nervios'; still look for a heart cause.",
+  "type": [
+   "los nervios",
+   "nervios"
+  ],
+  "ex": [
+   {
+    "es": "Mi familia dice que son los nervios.",
+    "en": "My family says it's my nerves.",
+    "hit": "nervios"
+   },
+   {
+    "es": "¿Cree que son los nervios o algo diferente?",
+    "en": "Do you think it's nerves or something different?",
+    "hit": "nervios"
+   },
+   {
+    "es": "Cuando ando de nervios, el corazón me late fuerte.",
+    "en": "When I'm anxious, my heart pounds.",
+    "hit": "nervios"
+   }
+  ]
+ },
+ {
+  "id": "sm3-se-me-puso-todo-negro",
+  "w": "se me puso todo negro",
+  "pos": "phrase",
+  "en": "everything went black",
+  "note": "Patient phrase for vision blacking out before a faint.",
+  "type": [],
+  "ex": [
+   {
+    "es": "Me paré de la silla y se me puso todo negro.",
+    "en": "I stood up from the chair and everything went black.",
+    "hit": "se me puso todo negro"
+   },
+   {
+    "es": "¿Se le puso todo negro antes de caer?",
+    "en": "Did everything go black before you fell?",
+    "hit": "puso todo negro"
+   },
+   {
+    "es": "Mi mamá dice que se le puso todo negro en misa.",
+    "en": "My mom says everything went black during Mass.",
+    "hit": "puso todo negro"
+   }
+  ]
+ },
+ {
+  "id": "sm3-todo-me-da-vueltas",
+  "w": "todo me da vueltas",
+  "pos": "phrase",
+  "en": "everything is spinning",
+  "note": "Spinning (technical: vértigo) is often the inner ear, unlike feeling faint.",
+  "type": [
+   "todo me da vueltas"
+  ],
+  "ex": [
+   {
+    "es": "Cuando me volteo en la cama, todo me da vueltas.",
+    "en": "When I turn over in bed, everything spins.",
+    "hit": "todo me da vueltas"
+   },
+   {
+    "es": "¿Todo le da vueltas o siente que se va a desmayar?",
+    "en": "Is everything spinning, or do you feel you're going to faint?",
+    "hit": "da vueltas"
+   },
+   {
+    "es": "Mi papá dice que todo le da vueltas desde ayer.",
+    "en": "My dad says everything has been spinning since yesterday.",
+    "hit": "da vueltas"
+   }
+  ]
+ },
+ {
+  "id": "sm3-sin-aviso",
+  "w": "sin aviso",
+  "pos": "phrase",
+  "en": "without warning",
+  "note": "",
+  "type": [
+   "sin aviso"
+  ],
+  "ex": [
+   {
+    "es": "¿Se desmayó sin aviso o sintió algo antes?",
+    "en": "Did you faint without warning or feel something first?",
+    "hit": "sin aviso"
+   },
+   {
+    "es": "Me caí sin aviso; estaba hablando por teléfono.",
+    "en": "I fell without warning; I was talking on the phone.",
+    "hit": "sin aviso"
+   },
+   {
+    "es": "Mi papá se desmayó sin aviso en la mesa.",
+    "en": "My dad fainted without warning at the table.",
+    "hit": "sin aviso"
+   }
+  ]
+ },
+ {
+  "id": "sm3-volver-en-si",
+  "w": "volver en sí",
+  "pos": "verb",
+  "en": "to come to; regain consciousness",
+  "note": "",
+  "type": [
+   "volver en sí"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuánto tardó en volver en sí?",
+    "en": "How long did it take you to come to?",
+    "hit": "volver en sí"
+   },
+   {
+    "es": "Su esposa dice que volvió en sí en un minuto.",
+    "en": "Your wife says you came to in a minute.",
+    "hit": "volvió en sí"
+   },
+   {
+    "es": "Cuando volví en sí, estaba en el piso del baño.",
+    "en": "When I came to, I was on the bathroom floor.",
+    "hit": "volví en sí"
+   }
+  ]
+ },
+ {
+  "id": "sm3-confundido",
+  "w": "confundido",
+  "pos": "adj",
+  "en": "confused",
+  "note": "",
+  "type": [
+   "confundido",
+   "confundida"
+  ],
+  "ex": [
+   {
+    "es": "¿Estaba confundido cuando despertó en el piso?",
+    "en": "Were you confused when you woke up on the floor?",
+    "hit": "confundido"
+   },
+   {
+    "es": "Mi esposa estuvo confundida como media hora.",
+    "en": "My wife was confused for about half an hour.",
+    "hit": "confundida"
+   },
+   {
+    "es": "Desperté rápido y no estaba confundido.",
+    "en": "I woke up quickly and I wasn't confused.",
+    "hit": "confundido"
+   }
+  ]
+ },
+ {
+  "id": "sm3-morderse-la-lengua",
+  "w": "morderse la lengua",
+  "pos": "verb",
+  "en": "to bite one's tongue",
+  "note": "Tongue biting points more to a seizure than to a faint.",
+  "type": [
+   "morderse la lengua"
+  ],
+  "ex": [
+   {
+    "es": "¿Se mordió la lengua cuando se cayó?",
+    "en": "Did you bite your tongue when you fell?",
+    "hit": "mordió la lengua"
+   },
+   {
+    "es": "Me mordí la lengua y me sangró un poco.",
+    "en": "I bit my tongue and it bled a little.",
+    "hit": "mordí la lengua"
+   },
+   {
+    "es": "Su esposa dice que usted no se mordió la lengua.",
+    "en": "Your wife says you didn't bite your tongue.",
+    "hit": "mordió la lengua"
+   }
+  ]
+ },
+ {
+  "id": "sm3-orinarse",
+  "w": "orinarse",
+  "pos": "verb",
+  "en": "to wet oneself",
+  "note": "Patients may say 'me hice pipí'.",
+  "type": [
+   "orinarse"
+  ],
+  "ex": [
+   {
+    "es": "¿Se orinó cuando estaba desmayado?",
+    "en": "Did you wet yourself while you were passed out?",
+    "hit": "orinó"
+   },
+   {
+    "es": "Me oriné y me dio mucha vergüenza.",
+    "en": "I wet myself and I was very embarrassed.",
+    "hit": "oriné"
+   },
+   {
+    "es": "Mi papá se orinó cuando cayó en el baño.",
+    "en": "My dad wet himself when he fell in the bathroom.",
+    "hit": "orinó"
+   }
+  ]
+ },
+ {
+  "id": "sm3-convulsiones",
+  "w": "las convulsiones",
+  "pos": "noun",
+  "en": "seizures; convulsions",
+  "note": "Families may say 'le dieron ataques'.",
+  "type": [
+   "las convulsiones",
+   "convulsiones",
+   "la convulsión",
+   "convulsión"
+  ],
+  "ex": [
+   {
+    "es": "¿Alguien vio si tuvo convulsiones?",
+    "en": "Did anyone see if you had a seizure?",
+    "hit": "convulsiones"
+   },
+   {
+    "es": "De niño tuve convulsiones con la fiebre.",
+    "en": "As a child I had seizures with fever.",
+    "hit": "convulsiones"
+   },
+   {
+    "es": "Se movió un poco, pero no eran convulsiones.",
+    "en": "He moved a little, but it wasn't a seizure.",
+    "hit": "convulsiones"
+   }
+  ]
+ },
+ {
+  "id": "sm3-palido",
+  "w": "pálido",
+  "pos": "adj",
+  "en": "pale",
+  "note": "",
+  "type": [
+   "pálido",
+   "pálida"
+  ],
+  "ex": [
+   {
+    "es": "Se puso muy pálido antes de caerse.",
+    "en": "He turned very pale before he fell.",
+    "hit": "pálido"
+   },
+   {
+    "es": "¿Estaba pálida o morada cuando la encontró?",
+    "en": "Was she pale or blue when you found her?",
+    "hit": "pálida"
+   },
+   {
+    "es": "Hoy se ve un poco pálido; voy a revisarlo.",
+    "en": "You look a little pale today; I'm going to check you.",
+    "hit": "pálido"
+   }
+  ]
+ },
+ {
+  "id": "sm3-presion-baja",
+  "w": "la presión baja",
+  "pos": "noun",
+  "en": "low blood pressure",
+  "note": "",
+  "type": [
+   "la presión baja",
+   "presión baja"
+  ],
+  "ex": [
+   {
+    "es": "Creo que el mareo es de la presión baja.",
+    "en": "I think the dizziness is from low blood pressure.",
+    "hit": "presión baja"
+   },
+   {
+    "es": "Hoy tiene la presión baja; ¿tomó poca agua?",
+    "en": "Your blood pressure is low today; did you drink little water?",
+    "hit": "presión baja"
+   },
+   {
+    "es": "Mi mamá tiene la presión baja en el verano.",
+    "en": "My mom's blood pressure runs low in the summer.",
+    "hit": "presión baja"
+   }
+  ]
+ },
+ {
+  "id": "sm3-deshidratado",
+  "w": "deshidratado",
+  "pos": "adj",
+  "en": "dehydrated",
+  "note": "",
+  "type": [
+   "deshidratado",
+   "deshidratada"
+  ],
+  "ex": [
+   {
+    "es": "Ese día estaba deshidratado por el calor.",
+    "en": "That day I was dehydrated from the heat.",
+    "hit": "deshidratado"
+   },
+   {
+    "es": "¿Tomó poca agua? Puede estar deshidratada.",
+    "en": "Did you drink little water? You may be dehydrated.",
+    "hit": "deshidratada"
+   },
+   {
+    "es": "Llegó a urgencias muy deshidratado y mareado.",
+    "en": "He got to the ER very dehydrated and dizzy.",
+    "hit": "deshidratado"
+   }
+  ]
+ },
+ {
+  "id": "sm3-estar-parado",
+  "w": "estar parado",
+  "pos": "verb",
+  "en": "to be standing",
+  "note": "Mexican: parado = standing (elsewhere de pie). Feminine: parada.",
+  "type": [
+   "estar parado",
+   "estar parada",
+   "estar de pie"
+  ],
+  "ex": [
+   {
+    "es": "¿Estaba parado o sentado cuando se desmayó?",
+    "en": "Were you standing or sitting when you fainted?",
+    "hit": "parado"
+   },
+   {
+    "es": "Estaba parada en la fila del banco.",
+    "en": "I was standing in line at the bank.",
+    "hit": "parada"
+   },
+   {
+    "es": "Me mareo si estoy parado mucho tiempo.",
+    "en": "I get dizzy if I stand for a long time.",
+    "hit": "parado"
+   }
+  ]
+ },
+ {
+  "id": "sm3-tropezarse",
+  "w": "tropezarse",
+  "pos": "verb",
+  "en": "to trip",
+  "note": "",
+  "type": [
+   "tropezarse",
+   "tropezar"
+  ],
+  "ex": [
+   {
+    "es": "¿Se tropezó o se desmayó primero?",
+    "en": "Did you trip, or did you faint first?",
+    "hit": "tropezó"
+   },
+   {
+    "es": "No me tropecé; me caí de repente.",
+    "en": "I didn't trip; I suddenly fell.",
+    "hit": "tropecé"
+   },
+   {
+    "es": "Mi papá se tropezó con la alfombra de la sala.",
+    "en": "My dad tripped on the living room rug.",
+    "hit": "tropezó"
+   }
+  ]
+ },
+ {
+  "id": "sm3-chocar",
+  "w": "chocar",
+  "pos": "verb",
+  "en": "to crash (a car)",
+  "note": "",
+  "type": [
+   "chocar"
+  ],
+  "ex": [
+   {
+    "es": "¿Estaba manejando? ¿Chocó el carro?",
+    "en": "Were you driving? Did you crash the car?",
+    "hit": "Chocó"
+   },
+   {
+    "es": "Casi choco porque me mareé en la carretera.",
+    "en": "I almost crashed because I got dizzy on the highway.",
+    "hit": "choco"
+   },
+   {
+    "es": "Mi esposo se desmayó manejando y chocó.",
+    "en": "My husband fainted while driving and crashed.",
+    "hit": "chocó"
+   }
+  ]
+ },
+ {
+  "id": "sm3-detenerse",
+  "w": "detenerse",
+  "pos": "verb",
+  "en": "to stop (and rest)",
+  "note": "Patients often say 'pararse' instead.",
+  "type": [
+   "detenerse"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene que detenerse a descansar al caminar?",
+    "en": "Do you have to stop and rest when you walk?",
+    "hit": "detenerse"
+   },
+   {
+    "es": "Me detengo cada dos cuadras para respirar.",
+    "en": "I stop every two blocks to catch my breath.",
+    "hit": "detengo"
+   },
+   {
+    "es": "Antes no me detenía en la subida.",
+    "en": "Before, I didn't stop on the hill.",
+    "hit": "detenía"
+   }
+  ]
+ },
+ {
+  "id": "sm3-hacer-el-mandado",
+  "w": "hacer el mandado",
+  "pos": "verb",
+  "en": "to do the grocery shopping",
+  "note": "Mexican; el mandado = groceries or errands.",
+  "type": [
+   "hacer el mandado"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede hacer el mandado sin ayuda?",
+    "en": "Can you do the grocery shopping without help?",
+    "hit": "hacer el mandado"
+   },
+   {
+    "es": "Antes hacía el mandado caminando.",
+    "en": "I used to walk to do the grocery shopping.",
+    "hit": "hacía el mandado"
+   },
+   {
+    "es": "Mi hija hace el mandado porque yo me canso.",
+    "en": "My daughter does the shopping because I get tired.",
+    "hit": "hace el mandado"
+   }
+  ]
+ },
+ {
+  "id": "sm3-quehacer",
+  "w": "el quehacer",
+  "pos": "noun",
+  "en": "housework; chores",
+  "note": "Mexican: 'hacer el quehacer' = do the housework.",
+  "type": [
+   "el quehacer",
+   "quehacer"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede hacer el quehacer de la casa?",
+    "en": "Can you do the housework?",
+    "hit": "quehacer"
+   },
+   {
+    "es": "Con el quehacer me falta el aire.",
+    "en": "Doing the housework makes me short of breath.",
+    "hit": "quehacer"
+   },
+   {
+    "es": "Mi esposo me ayuda con el quehacer ahora.",
+    "en": "My husband helps me with the housework now.",
+    "hit": "quehacer"
+   }
+  ]
+ },
+ {
+  "id": "sm3-barrer",
+  "w": "barrer",
+  "pos": "verb",
+  "en": "to sweep",
+  "note": "",
+  "type": [
+   "barrer"
+  ],
+  "ex": [
+   {
+    "es": "Me mareo cuando barro el patio.",
+    "en": "I get dizzy when I sweep the patio.",
+    "hit": "barro"
+   },
+   {
+    "es": "¿Le falta el aire al barrer o trapear?",
+    "en": "Do you get short of breath when you sweep or mop?",
+    "hit": "barrer"
+   },
+   {
+    "es": "Antes barría toda la casa sin problema.",
+    "en": "I used to sweep the whole house with no problem.",
+    "hit": "barría"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cargar",
+  "w": "cargar",
+  "pos": "verb",
+  "en": "to carry; to lift",
+  "note": "",
+  "type": [
+   "cargar"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede cargar las bolsas del mandado?",
+    "en": "Can you carry the grocery bags?",
+    "hit": "cargar"
+   },
+   {
+    "es": "Me duele el pecho cuando cargo a mi nieto.",
+    "en": "My chest hurts when I carry my grandson.",
+    "hit": "cargo"
+   },
+   {
+    "es": "En el trabajo cargaba cajas pesadas todo el día.",
+    "en": "At work I used to carry heavy boxes all day.",
+    "hit": "cargaba"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cortar-el-pasto",
+  "w": "cortar el pasto",
+  "pos": "verb",
+  "en": "to mow the lawn",
+  "note": "",
+  "type": [
+   "cortar el pasto"
+  ],
+  "ex": [
+   {
+    "es": "¿Todavía puede cortar el pasto usted solo?",
+    "en": "Can you still mow the lawn by yourself?",
+    "hit": "cortar el pasto"
+   },
+   {
+    "es": "El verano pasado cortaba el pasto sin cansarme.",
+    "en": "Last summer I mowed the lawn without getting tired.",
+    "hit": "cortaba el pasto"
+   },
+   {
+    "es": "Ayer corté el pasto y me sentí muy mal.",
+    "en": "Yesterday I mowed the lawn and felt very bad.",
+    "hit": "corté el pasto"
+   }
+  ]
+ },
+ {
+  "id": "sm3-aguantar",
+  "w": "aguantar",
+  "pos": "verb",
+  "en": "to bear; to last; to endure",
+  "note": "",
+  "type": [
+   "aguantar"
+  ],
+  "ex": [
+   {
+    "es": "Ya no aguanto caminar más de una cuadra.",
+    "en": "I can't manage walking more than a block anymore.",
+    "hit": "aguanto"
+   },
+   {
+    "es": "¿Cuánto tiempo aguanta en la caminadora?",
+    "en": "How long can you last on the treadmill?",
+    "hit": "aguanta"
+   },
+   {
+    "es": "Mi papá aguantaba el dolor y no decía nada.",
+    "en": "My dad put up with the pain and didn't say anything.",
+    "hit": "aguantaba"
+   }
+  ]
+ },
+ {
+  "id": "sm3-ya-no-puedo-como-antes",
+  "w": "ya no puedo como antes",
+  "pos": "phrase",
+  "en": "I can't do what I used to",
+  "note": "",
+  "type": [],
+  "ex": [
+   {
+    "es": "Doctor, ya no puedo como antes.",
+    "en": "Doctor, I can't do what I used to.",
+    "hit": "ya no puedo como antes"
+   },
+   {
+    "es": "En el trabajo ya no puedo como antes.",
+    "en": "At work I can't do what I used to.",
+    "hit": "ya no puedo como antes"
+   },
+   {
+    "es": "Me siento viejo; ya no puedo como antes.",
+    "en": "I feel old; I can't do what I used to.",
+    "hit": "ya no puedo como antes"
+   }
+  ]
+ },
+ {
+  "id": "sm3-condicion",
+  "w": "la condición",
+  "pos": "noun",
+  "en": "stamina; physical fitness",
+  "note": "Patients say 'no tengo condición' = I'm out of shape.",
+  "type": [
+   "la condición",
+   "condición",
+   "la condición física"
+  ],
+  "ex": [
+   {
+    "es": "No sé si es el corazón o la falta de condición.",
+    "en": "I don't know if it's my heart or being out of shape.",
+    "hit": "condición"
+   },
+   {
+    "es": "Antes tenía buena condición; jugaba fútbol.",
+    "en": "I used to be in good shape; I played soccer.",
+    "hit": "condición"
+   },
+   {
+    "es": "¿Cree que perdió condición este año?",
+    "en": "Do you think you got out of shape this year?",
+    "hit": "condición"
+   }
+  ]
+ },
+ {
+  "id": "sm3-gimnasio",
+  "w": "el gimnasio",
+  "pos": "noun",
+  "en": "gym",
+  "note": "",
+  "type": [
+   "el gimnasio",
+   "gimnasio"
+  ],
+  "ex": [
+   {
+    "es": "¿Va al gimnasio o hace ejercicio en casa?",
+    "en": "Do you go to the gym or exercise at home?",
+    "hit": "gimnasio"
+   },
+   {
+    "es": "Me dio el mareo en el gimnasio.",
+    "en": "I got dizzy at the gym.",
+    "hit": "gimnasio"
+   },
+   {
+    "es": "Mi hijo me vio pálido en el gimnasio.",
+    "en": "My son saw I was pale at the gym.",
+    "hit": "gimnasio"
+   }
+  ]
+ },
+ {
+  "id": "sm3-correr",
+  "w": "correr",
+  "pos": "verb",
+  "en": "to run",
+  "note": "",
+  "type": [
+   "correr"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede correr un poco sin dolor de pecho?",
+    "en": "Can you run a little without chest pain?",
+    "hit": "correr"
+   },
+   {
+    "es": "De joven corría todos los días.",
+    "en": "When I was young I ran every day.",
+    "hit": "corría"
+   },
+   {
+    "es": "Ayer corrí para alcanzar el camión y me mareé.",
+    "en": "Yesterday I ran to catch the bus and got dizzy.",
+    "hit": "corrí"
+   }
+  ]
+ },
+ {
+  "id": "sm3-subida",
+  "w": "la subida",
+  "pos": "noun",
+  "en": "uphill climb; slope",
+  "note": "",
+  "type": [
+   "la subida",
+   "subida"
+  ],
+  "ex": [
+   {
+    "es": "En la subida me falta el aire.",
+    "en": "Going uphill I get short of breath.",
+    "hit": "subida"
+   },
+   {
+    "es": "¿Le duele el pecho en las subidas?",
+    "en": "Does your chest hurt going uphill?",
+    "hit": "subidas"
+   },
+   {
+    "es": "Mi casa está al final de una subida.",
+    "en": "My house is at the top of a hill.",
+    "hit": "subida"
+   }
+  ]
+ },
+ {
+  "id": "sm3-baston",
+  "w": "el bastón",
+  "pos": "noun",
+  "en": "cane; walking stick",
+  "note": "",
+  "type": [
+   "el bastón",
+   "bastón"
+  ],
+  "ex": [
+   {
+    "es": "¿Camina con bastón o sin ayuda?",
+    "en": "Do you walk with a cane or without help?",
+    "hit": "bastón"
+   },
+   {
+    "es": "Uso bastón por la rodilla, no por el corazón.",
+    "en": "I use a cane because of my knee, not my heart.",
+    "hit": "bastón"
+   },
+   {
+    "es": "Señora, aquí está su bastón.",
+    "en": "Ma'am, here is your cane.",
+    "hit": "bastón"
+   }
+  ]
+ },
+ {
+  "id": "sm3-andadera",
+  "w": "la andadera",
+  "pos": "noun",
+  "en": "walker (mobility aid)",
+  "note": "Mexican; elsewhere el andador.",
+  "type": [
+   "la andadera",
+   "andadera",
+   "el andador",
+   "andador"
+  ],
+  "ex": [
+   {
+    "es": "Mi mamá camina con andadera desde la caída.",
+    "en": "My mom has used a walker since her fall.",
+    "hit": "andadera"
+   },
+   {
+    "es": "¿Usa la andadera dentro de la casa?",
+    "en": "Do you use the walker inside the house?",
+    "hit": "andadera"
+   },
+   {
+    "es": "Puede dejar la andadera aquí, junto a la camilla.",
+    "en": "You can leave the walker here, next to the exam table.",
+    "hit": "andadera"
+   }
+  ]
+ },
+ {
+  "id": "sm3-seguro-medico",
+  "w": "el seguro médico",
+  "pos": "noun",
+  "en": "health insurance",
+  "note": "",
+  "type": [
+   "el seguro médico",
+   "seguro médico",
+   "el seguro",
+   "seguro"
+  ],
+  "ex": [
+   {
+    "es": "¿Me permite la tarjeta de su seguro médico?",
+    "en": "May I have your health insurance card?",
+    "hit": "seguro médico"
+   },
+   {
+    "es": "Mi seguro médico no cubre el monitor.",
+    "en": "My health insurance doesn't cover the monitor.",
+    "hit": "seguro médico"
+   },
+   {
+    "es": "El seguro médico pagó parte de la medicina.",
+    "en": "The insurance paid part of the medicine.",
+    "hit": "seguro médico"
+   }
+  ]
+ },
+ {
+  "id": "sm3-recepcion",
+  "w": "la recepción",
+  "pos": "noun",
+  "en": "front desk; reception",
+  "note": "",
+  "type": [
+   "la recepción",
+   "recepción"
+  ],
+  "ex": [
+   {
+    "es": "Puede pagar en la recepción antes de salir.",
+    "en": "You can pay at the front desk before you leave.",
+    "hit": "recepción"
+   },
+   {
+    "es": "En la recepción le van a dar un cuestionario.",
+    "en": "At the front desk they'll give you a questionnaire.",
+    "hit": "recepción"
+   },
+   {
+    "es": "Le llamo de la recepción para confirmar su cita.",
+    "en": "I'm calling from the front desk to confirm your appointment.",
+    "hit": "recepción"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cuestionario",
+  "w": "el cuestionario",
+  "pos": "noun",
+  "en": "questionnaire",
+  "note": "",
+  "type": [
+   "el cuestionario",
+   "cuestionario"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede contestar este cuestionario sobre sus síntomas?",
+    "en": "Can you answer this questionnaire about your symptoms?",
+    "hit": "cuestionario"
+   },
+   {
+    "es": "No entendí una pregunta del cuestionario.",
+    "en": "I didn't understand a question on the questionnaire.",
+    "hit": "cuestionario"
+   },
+   {
+    "es": "Mi hija me ayudó con el cuestionario.",
+    "en": "My daughter helped me with the questionnaire.",
+    "hit": "cuestionario"
+   }
+  ]
+ },
+ {
+  "id": "sm3-llenar",
+  "w": "llenar",
+  "pos": "verb",
+  "en": "to fill out (a form); to fill",
+  "note": "",
+  "type": [
+   "llenar"
+  ],
+  "ex": [
+   {
+    "es": "¿Ya llenó el formulario en la sala de espera?",
+    "en": "Did you already fill out the form in the waiting room?",
+    "hit": "llenó"
+   },
+   {
+    "es": "Mi esposo me ayuda a llenar los papeles.",
+    "en": "My husband helps me fill out the paperwork.",
+    "hit": "llenar"
+   },
+   {
+    "es": "Ya llené la parte de los síntomas.",
+    "en": "I already filled out the symptoms section.",
+    "hit": "llené"
+   }
+  ]
+ },
+ {
+  "id": "sm3-libreta",
+  "w": "la libreta",
+  "pos": "noun",
+  "en": "small notebook",
+  "note": "",
+  "type": [
+   "la libreta",
+   "libreta"
+  ],
+  "ex": [
+   {
+    "es": "Puede apuntar en una libreta cuándo le pasa.",
+    "en": "You can write down in a notebook when it happens.",
+    "hit": "libreta"
+   },
+   {
+    "es": "Traje mi libreta con la presión de cada día.",
+    "en": "I brought my notebook with my daily blood pressure.",
+    "hit": "libreta"
+   },
+   {
+    "es": "Mi hija apunta mis síntomas en una libreta.",
+    "en": "My daughter writes my symptoms in a notebook.",
+    "hit": "libreta"
+   }
+  ]
+ },
+ {
+  "id": "sm3-familiar",
+  "w": "el familiar",
+  "pos": "noun",
+  "en": "relative; family member",
+  "note": "As a noun, un familiar = any relative.",
+  "type": [
+   "el familiar",
+   "familiar"
+  ],
+  "ex": [
+   {
+    "es": "¿Viene con algún familiar hoy?",
+    "en": "Did you come with a family member today?",
+    "hit": "familiar"
+   },
+   {
+    "es": "Un familiar puede entrar con usted al cuarto.",
+    "en": "A family member can come into the room with you.",
+    "hit": "familiar"
+   },
+   {
+    "es": "Habla un familiar de la señora López.",
+    "en": "This is a relative of Mrs. López speaking.",
+    "hit": "familiar"
+   }
+  ]
+ },
+ {
+  "id": "sm3-esposo-esposa",
+  "w": "el esposo / la esposa",
+  "pos": "noun",
+  "en": "husband / wife",
+  "note": "",
+  "type": [
+   "el esposo",
+   "esposo",
+   "la esposa",
+   "esposa"
+  ],
+  "ex": [
+   {
+    "es": "¿Su esposa estaba con usted cuando se desmayó?",
+    "en": "Was your wife with you when you fainted?",
+    "hit": "esposa"
+   },
+   {
+    "es": "Mi esposo me vio caer en la cocina.",
+    "en": "My husband saw me fall in the kitchen.",
+    "hit": "esposo"
+   },
+   {
+    "es": "Su esposo puede esperar en la sala de espera.",
+    "en": "Your husband can wait in the waiting room.",
+    "hit": "esposo"
+   }
+  ]
+ },
+ {
+  "id": "sm3-reloj-inteligente",
+  "w": "el reloj inteligente",
+  "pos": "noun",
+  "en": "smartwatch",
+  "note": "",
+  "type": [
+   "el reloj inteligente",
+   "reloj inteligente"
+  ],
+  "ex": [
+   {
+    "es": "Mi reloj inteligente dice que tengo el pulso irregular.",
+    "en": "My smartwatch says my pulse is irregular.",
+    "hit": "reloj inteligente"
+   },
+   {
+    "es": "¿Me puede enseñar lo que grabó su reloj inteligente?",
+    "en": "Can you show me what your smartwatch recorded?",
+    "hit": "reloj inteligente"
+   },
+   {
+    "es": "El reloj inteligente ayuda, pero no reemplaza el monitor.",
+    "en": "The smartwatch helps, but it doesn't replace the monitor.",
+    "hit": "reloj inteligente"
+   }
+  ]
+ },
+ {
+  "id": "sm3-oximetro",
+  "w": "el oxímetro",
+  "pos": "noun",
+  "en": "pulse oximeter",
+  "note": "",
+  "type": [
+   "el oxímetro",
+   "oxímetro"
+  ],
+  "ex": [
+   {
+    "es": "En casa, el oxímetro marcaba noventa y dos.",
+    "en": "At home, the oximeter read ninety-two.",
+    "hit": "oxímetro"
+   },
+   {
+    "es": "Voy a poner el oxímetro en su dedo.",
+    "en": "I'm going to put the oximeter on your finger.",
+    "hit": "oxímetro"
+   },
+   {
+    "es": "Compré un oxímetro en la farmacia.",
+    "en": "I bought an oximeter at the pharmacy.",
+    "hit": "oxímetro"
+   }
+  ]
+ },
+ {
+  "id": "sm3-ambulancia",
+  "w": "la ambulancia",
+  "pos": "noun",
+  "en": "ambulance",
+  "note": "",
+  "type": [
+   "la ambulancia",
+   "ambulancia"
+  ],
+  "ex": [
+   {
+    "es": "¿Llegó en ambulancia o lo trajo su familia?",
+    "en": "Did you come by ambulance or did your family bring you?",
+    "hit": "ambulancia"
+   },
+   {
+    "es": "Mi hija llamó a la ambulancia cuando me caí.",
+    "en": "My daughter called the ambulance when I fell.",
+    "hit": "ambulancia"
+   },
+   {
+    "es": "En la ambulancia ya estaba despierto.",
+    "en": "In the ambulance I was already awake.",
+    "hit": "ambulancia"
+   }
+  ]
+ },
+ {
+  "id": "sm3-sintoma",
+  "w": "el síntoma",
+  "pos": "noun",
+  "en": "symptom",
+  "note": "Masculine despite the -a: el síntoma, los síntomas.",
+  "type": [
+   "el síntoma",
+   "síntoma",
+   "los síntomas",
+   "síntomas"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene algún otro síntoma con el dolor?",
+    "en": "Do you have any other symptom with the pain?",
+    "hit": "síntoma"
+   },
+   {
+    "es": "Los síntomas empezaron después de la gripa.",
+    "en": "The symptoms started after the flu.",
+    "hit": "síntomas"
+   },
+   {
+    "es": "Mi papá no quiere hablar de sus síntomas.",
+    "en": "My dad doesn't want to talk about his symptoms.",
+    "hit": "síntomas"
+   }
+  ]
+ },
+ {
+  "id": "sm3-cada-vez-mas",
+  "w": "cada vez más",
+  "pos": "phrase",
+  "en": "more and more",
+  "note": "",
+  "type": [
+   "cada vez más"
+  ],
+  "ex": [
+   {
+    "es": "Me canso cada vez más rápido.",
+    "en": "I get tired faster and faster.",
+    "hit": "cada vez más"
+   },
+   {
+    "es": "¿Las palpitaciones son cada vez más frecuentes?",
+    "en": "Are the palpitations getting more and more frequent?",
+    "hit": "cada vez más"
+   },
+   {
+    "es": "Se le hinchan las piernas cada vez más.",
+    "en": "Her legs are swelling more and more.",
+    "hit": "cada vez más"
+   }
+  ]
+ },
+ {
+  "id": "sm3-igual-que-antes",
+  "w": "igual que antes",
+  "pos": "phrase",
+  "en": "the same as before",
+  "note": "",
+  "type": [
+   "igual que antes"
+  ],
+  "ex": [
+   {
+    "es": "¿Camina igual que antes o menos?",
+    "en": "Do you walk the same as before, or less?",
+    "hit": "igual que antes"
+   },
+   {
+    "es": "Las palpitaciones siguen igual que antes.",
+    "en": "The palpitations are the same as before.",
+    "hit": "igual que antes"
+   },
+   {
+    "es": "Desde el viaje, ya no respiro igual que antes.",
+    "en": "Since the trip, I don't breathe the same as before.",
+    "hit": "igual que antes"
+   }
+  ]
+ },
+ {
+  "id": "sm3-fatiga",
+  "w": "la fatiga",
+  "pos": "noun",
+  "en": "fatigue; (some patients) shortness of breath",
+  "note": "Usually tiredness, but many Caribbean patients mean shortness of breath; ask.",
+  "type": [
+   "la fatiga",
+   "fatiga"
+  ],
+  "ex": [
+   {
+    "es": "Tengo mucha fatiga en las tardes.",
+    "en": "I have a lot of fatigue in the afternoons.",
+    "hit": "fatiga"
+   },
+   {
+    "es": "Cuando dice fatiga, ¿es cansancio o falta de aire?",
+    "en": "When you say fatiga, is it tiredness or shortness of breath?",
+    "hit": "fatiga"
+   },
+   {
+    "es": "A mi mamá le da fatiga al subir las escaleras.",
+    "en": "My mom gets short of breath climbing the stairs.",
+    "hit": "fatiga"
+   }
+  ]
+ },
+ {
+  "id": "sm3-hacer-fila",
+  "w": "hacer fila",
+  "pos": "verb",
+  "en": "to stand in line",
+  "note": "Also hacer cola.",
+  "type": [
+   "hacer fila",
+   "hacer cola"
+  ],
+  "ex": [
+   {
+    "es": "Estaba haciendo fila en el banco y me desmayé.",
+    "en": "I was standing in line at the bank and I fainted.",
+    "hit": "haciendo fila"
+   },
+   {
+    "es": "¿Le pasa cuando hace fila mucho tiempo?",
+    "en": "Does it happen when you stand in line a long time?",
+    "hit": "hace fila"
+   },
+   {
+    "es": "En la farmacia hice fila y me mareé.",
+    "en": "At the pharmacy I stood in line and got dizzy.",
+    "hit": "hice fila"
+   }
+  ]
+ },
+ {
+  "id": "sm3-caer-redondo",
+  "w": "caer redondo",
+  "pos": "verb",
+  "en": "to collapse out cold",
+  "note": "Patient idiom: 'cayó redondo' = dropped fully unconscious.",
+  "type": [
+   "caer redondo"
+  ],
+  "ex": [
+   {
+    "es": "Mi esposo cayó redondo en la cocina.",
+    "en": "My husband dropped out cold in the kitchen.",
+    "hit": "cayó redondo"
+   },
+   {
+    "es": "Me levanté de la cama y caí redondo.",
+    "en": "I got out of bed and collapsed out cold.",
+    "hit": "caí redondo"
+   },
+   {
+    "es": "¿Cayó redondo o pudo sentarse primero?",
+    "en": "Did you drop out cold, or could you sit down first?",
+    "hit": "Cayó redondo"
+   }
+  ]
+ },
+ {
+  "id": "sm3-darse-cuenta-de",
+  "w": "darse cuenta (de)",
+  "pos": "verb",
+  "en": "to realize; to notice",
+  "note": "",
+  "type": [
+   "darse cuenta",
+   "darse cuenta de"
+  ],
+  "ex": [
+   {
+    "es": "No me di cuenta de cuándo me caí.",
+    "en": "I didn't realize when I fell.",
+    "hit": "di cuenta"
+   },
+   {
+    "es": "¿Se dio cuenta si el corazón iba rápido?",
+    "en": "Did you notice if your heart was going fast?",
+    "hit": "dio cuenta"
+   },
+   {
+    "es": "Mi esposa se dio cuenta de que estaba pálido.",
+    "en": "My wife noticed that I was pale.",
+    "hit": "dio cuenta"
+   }
+  ]
+ }
+]

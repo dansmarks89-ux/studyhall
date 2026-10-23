@@ -1,0 +1,108 @@
+{
+ "fix": [
+  {
+   "id": "VM6-10",
+   "w": "el latido",
+   "en": "heartbeat",
+   "ex": [
+    {
+     "es": "¿A veces siente que el corazón se salta un latido?",
+     "en": "Do you sometimes feel like your heart skips a beat?",
+     "hit": "latido"
+    },
+    {
+     "es": "Su pulso es de cuarenta latidos por minuto; es bajo.",
+     "en": "Your pulse is forty beats per minute; that's low.",
+     "hit": "latidos"
+    }
+   ]
+  },
+  {
+   "id": "VM6-23",
+   "w": "el sangrado",
+   "en": "bleeding",
+   "ex": [
+    {
+     "es": "¿Ha notado sangrado de las encías al cepillarse los dientes?",
+     "en": "Have you noticed bleeding from your gums when you brush your teeth?",
+     "hit": "sangrado"
+    },
+    {
+     "es": "Si el sangrado en la ingle no para, presione fuerte y llame al 911.",
+     "en": "If the bleeding at the groin doesn't stop, press hard and call 911.",
+     "hit": "sangrado"
+    }
+   ]
+  },
+  {
+   "id": "VM6-28",
+   "w": "el marcapasos",
+   "en": "pacemaker",
+   "ex": [
+    {
+     "es": "Revisamos su marcapasos cada año en la clínica.",
+     "en": "We check your pacemaker every year in the clinic.",
+     "hit": "marcapasos"
+    },
+    {
+     "es": "Cuando viaje, enseñe la tarjeta de su marcapasos en el aeropuerto.",
+     "en": "When you travel, show your pacemaker card at the airport.",
+     "hit": "marcapasos"
+    }
+   ]
+  },
+  {
+   "id": "VM7-4",
+   "w": "el desfibrilador (DAI)",
+   "en": "defibrillator (ICD)",
+   "ex": [
+    {
+     "es": "Le recomendamos un desfibrilador porque su corazón bombea con muy poca fuerza.",
+     "en": "We recommend a defibrillator because your heart pumps very weakly.",
+     "hit": "desfibrilador"
+    },
+    {
+     "es": "Podemos revisar su DAI a distancia, mientras usted está en casa.",
+     "en": "We can check your ICD remotely while you're at home.",
+     "hit": "DAI"
+    }
+   ]
+  },
+  {
+   "id": "VM7-16",
+   "w": "en ayunas",
+   "en": "fasting (on an empty stomach; add «sin comer ni beber nada» to include drinks)",
+   "ex": [
+    {
+     "es": "¿Está en ayunas desde anoche?",
+     "en": "Have you been fasting since last night?",
+     "hit": "en ayunas"
+    },
+    {
+     "es": "Puede tomar esta pastilla con un trago de agua, aunque esté en ayunas.",
+     "en": "You can take this pill with a sip of water, even though you're fasting.",
+     "hit": "en ayunas"
+    }
+   ]
+  },
+  {
+   "id": "VM7-20",
+   "w": "la descarga eléctrica",
+   "en": "electric shock",
+   "ex": [
+    {
+     "es": "Si el desfibrilador le da una descarga eléctrica, siéntese y llámenos.",
+     "en": "If the defibrillator gives you an electric shock, sit down and call us.",
+     "hit": "descarga eléctrica"
+    },
+    {
+     "es": "Una descarga eléctrica se siente como un golpe fuerte en el pecho.",
+     "en": "An electric shock feels like a hard blow to the chest.",
+     "hit": "descarga eléctrica"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly sound and clinically accurate. Fixed unnatural phrasing (salta un latido, bombea débil, a-distancia line), safety wording (groin bleed that won't stop -> 911; \"sus pastillas\" while fasting -> \"esta pastilla\"), one mistranslation (golpe = blow, not kick)."
+}

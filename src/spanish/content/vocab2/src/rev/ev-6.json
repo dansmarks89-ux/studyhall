@@ -1,0 +1,88 @@
+{
+ "fix": [
+  {
+   "id": "sv04-don",
+   "w": "don",
+   "pos": "noun",
+   "en": "title of respect before a first name",
+   "note": "Like 'Mr.' but used with the first name: don Pepe. Feminine: doña.",
+   "type": [
+    "don"
+   ],
+   "ex": [
+    {
+     "es": "Buenos días, don Ramón, ¿cómo está?",
+     "en": "Good morning, Don Ramón, how are you?",
+     "hit": "don"
+    },
+    {
+     "es": "Don Luis vende las mejores tortillas del barrio.",
+     "en": "Don Luis sells the best tortillas in the neighborhood.",
+     "hit": "Don"
+    },
+    {
+     "es": "Pregúntele a don Jorge, él sabe.",
+     "en": "Ask Don Jorge, he knows.",
+     "hit": "don"
+    }
+   ]
+  },
+  {
+   "id": "sv04-suyo",
+   "w": "suyo",
+   "pos": "pronoun",
+   "en": "his, hers, theirs; yours (formal)",
+   "note": "Feminine: suya. Can be unclear; de él / de ella clarifies.",
+   "type": [
+    "suyo",
+    "suya"
+   ],
+   "ex": [
+    {
+     "es": "Señora, ¿esta bolsa es suya?",
+     "en": "Ma'am, is this bag yours?",
+     "hit": "suya"
+    },
+    {
+     "es": "Un amigo suyo nos va a ayudar con la mudanza.",
+     "en": "A friend of his is going to help us with the move.",
+     "hit": "suyo"
+    },
+    {
+     "es": "Mi coche es azul y el suyo es rojo.",
+     "en": "My car is blue and hers is red.",
+     "hit": "suyo"
+    }
+   ]
+  },
+  {
+   "id": "sv04-sentarse",
+   "w": "sentarse",
+   "pos": "verb",
+   "en": "to sit down",
+   "note": "Siéntate (tú) / siéntese (usted) = sit down.",
+   "type": [
+    "sentarse"
+   ],
+   "ex": [
+    {
+     "es": "Siéntate aquí, a mi lado.",
+     "en": "Sit here, next to me.",
+     "hit": "Siéntate"
+    },
+    {
+     "es": "Siéntese, por favor, el doctor ya viene.",
+     "en": "Please have a seat, the doctor is coming.",
+     "hit": "Siéntese"
+    },
+    {
+     "es": "Nos sentamos cerca de la ventana.",
+     "en": "We sat near the window.",
+     "hit": "sentamos"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file. Fixed: unnatural 'Mr. Ramón' translations (kept Don), suyo pos aligned with tuyo, removed 'sentar' (= to seat someone) from sentarse answers."
+}

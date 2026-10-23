@@ -1,0 +1,172 @@
+{
+ "fix": [
+  {
+   "id": "sm5-por-la-boca",
+   "w": "por la boca",
+   "pos": "phrase",
+   "en": "through the mouth; by mouth",
+   "note": "Also 'por la nariz' = through the nose.",
+   "type": [
+    "por la boca"
+   ],
+   "ex": [
+    {
+     "es": "Respire por la boca, profundo, mientras escucho sus pulmones.",
+     "en": "Breathe through your mouth, deeply, while I listen to your lungs.",
+     "hit": "por la boca"
+    },
+    {
+     "es": "Esta medicina se toma por la boca, con agua.",
+     "en": "This medicine is taken by mouth, with water.",
+     "hit": "por la boca"
+    },
+    {
+     "es": "¿Respira por la boca cuando duerme?",
+     "en": "Do you breathe through your mouth when you sleep?",
+     "hit": "por la boca"
+    }
+   ]
+  },
+  {
+   "id": "sm5-recostarse",
+   "w": "recostarse",
+   "pos": "verb",
+   "en": "to lie down; to lie back",
+   "note": "Gentle, very common word for lying on the table; 'acostarse' also works. Command: Recuéstese.",
+   "type": [
+    "recostarse"
+   ],
+   "ex": [
+    {
+     "es": "Recuéstese en la camilla, con la cabeza en la almohada.",
+     "en": "Lie back on the table, with your head on the pillow.",
+     "hit": "Recuéstese"
+    },
+    {
+     "es": "Para el eco, recuéstese del lado izquierdo, por favor.",
+     "en": "For the echo, lie on your left side, please.",
+     "hit": "recuéstese"
+    },
+    {
+     "es": "No puedo recostarme mucho porque me falta el aire.",
+     "en": "I can't lie back much because I get short of breath.",
+     "hit": "recostarme"
+    }
+   ]
+  },
+  {
+   "id": "sm5-subirse-a-la-camilla",
+   "w": "subirse a la camilla",
+   "pos": "phrase",
+   "en": "to get up on the exam table",
+   "note": "Command: Súbase a la camilla.",
+   "type": [
+    "subirse a la camilla"
+   ],
+   "ex": [
+    {
+     "es": "Súbase a la camilla, yo le ayudo.",
+     "en": "Get up on the table, I'll help you.",
+     "hit": "Súbase a la camilla"
+    },
+    {
+     "es": "Mi mamá necesita ayuda para subirse a la camilla.",
+     "en": "My mom needs help getting up on the table.",
+     "hit": "subirse a la camilla"
+    },
+    {
+     "es": "Quítese los zapatos y súbase a la camilla, por favor.",
+     "en": "Take off your shoes and get up on the table, please.",
+     "hit": "súbase a la camilla"
+    }
+   ]
+  },
+  {
+   "id": "sm5-medir",
+   "w": "medir",
+   "pos": "verb",
+   "en": "to measure; to be (so tall)",
+   "note": "¿Cuánto mide? = How tall are you? Forms: mido, mide.",
+   "type": [
+    "medir"
+   ],
+   "ex": [
+    {
+     "es": "Con este aparatito le vamos a medir el oxígeno.",
+     "en": "With this little device we're going to measure your oxygen.",
+     "hit": "medir"
+    },
+    {
+     "es": "El eco mide qué tan fuerte bombea su corazón.",
+     "en": "The echo measures how strongly your heart pumps.",
+     "hit": "mide"
+    },
+    {
+     "es": "Mido cinco pies y cuatro pulgadas.",
+     "en": "I'm five foot four.",
+     "hit": "Mido"
+    }
+   ]
+  },
+  {
+   "id": "sm5-tomografia",
+   "w": "la tomografía",
+   "pos": "noun",
+   "en": "CT scan",
+   "note": "Formal: 'tomografía computarizada'. Ask about kidneys and contrast allergy first.",
+   "type": [
+    "la tomografía",
+    "tomografía"
+   ],
+   "ex": [
+    {
+     "es": "La tomografía tarda unos minutos y no duele.",
+     "en": "The CT scan takes a few minutes and doesn't hurt.",
+     "hit": "tomografía"
+    },
+    {
+     "es": "Su tomografía es mañana a las ocho, en ayunas.",
+     "en": "Your CT scan is tomorrow at eight, fasting.",
+     "hit": "tomografía"
+    },
+    {
+     "es": "¿Para la tomografía me ponen el contraste?",
+     "en": "For the CT, do they give me the contrast?",
+     "hit": "tomografía"
+    }
+   ]
+  },
+  {
+   "id": "sm5-hijo",
+   "w": "el hijo / la hija",
+   "pos": "noun",
+   "en": "son / daughter",
+   "note": "'Los hijos' = children (sons and daughters).",
+   "type": [
+    "el hijo",
+    "la hija",
+    "hijo",
+    "hija"
+   ],
+   "ex": [
+    {
+     "es": "Mi hija me va a traducir.",
+     "en": "My daughter is going to translate for me.",
+     "hit": "hija"
+    },
+    {
+     "es": "Su hijo puede esperar aquí durante la placa.",
+     "en": "Your son can wait here during the X-ray.",
+     "hit": "hijo"
+    },
+    {
+     "es": "Le habla la hija de la señora Pérez.",
+     "en": "This is Mrs. Pérez's daughter calling.",
+     "hit": "hija"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clinically sound overall. Fixed a wrong phone-call translation, odd breathing advice, height-first medir examples, loose type answer, recostarse gloss. Many headwords duplicate other med levels (tranquilo, peligroso, cafeína, seguro, esposo, agitarse, me da pena): dedup globally."
+}

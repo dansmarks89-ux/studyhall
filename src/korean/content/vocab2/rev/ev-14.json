@@ -1,0 +1,100 @@
+{
+ "fix": [
+  {
+   "id": "kv08-9",
+   "t": {
+    "s": "마련하다"
+   },
+   "pos": "verb",
+   "en": "to prepare, arrange; to get (money, home)",
+   "note": "",
+   "ex": [
+    {
+     "s": "결혼 자금을 마련하고 있어요.",
+     "en": "We're putting together money for the wedding."
+    },
+    {
+     "s": "손님들을 위해 음식을 마련했어요.",
+     "en": "We prepared food for the guests."
+    },
+    {
+     "s": "드디어 우리 집을 마련했어요.",
+     "en": "We finally got a home of our own."
+    }
+   ]
+  },
+  {
+   "id": "kv08-32",
+   "t": {
+    "s": "사원"
+   },
+   "pos": "noun",
+   "en": "employee, staff member",
+   "note": "회사원 = office worker; 신입 사원 = new hire.",
+   "ex": [
+    {
+     "s": "저는 신입 사원이에요.",
+     "en": "I'm a new employee."
+    },
+    {
+     "s": "그 회사는 사원이 백 명쯤 돼요.",
+     "en": "That company has about a hundred employees."
+    },
+    {
+     "s": "사원증을 집에 두고 왔어요.",
+     "en": "I left my employee ID at home."
+    }
+   ]
+  },
+  {
+   "id": "kv08-53",
+   "t": {
+    "s": "저장하다"
+   },
+   "pos": "verb",
+   "en": "to save, store",
+   "note": "",
+   "ex": [
+    {
+     "s": "파일 저장했어요?",
+     "en": "Did you save the file?"
+    },
+    {
+     "s": "제 번호 저장해 주세요.",
+     "en": "Please save my number."
+    },
+    {
+     "s": "사진을 휴대폰에 저장했어요.",
+     "en": "I saved the photo to my phone."
+    }
+   ]
+  },
+  {
+   "id": "kv08-55",
+   "t": {
+    "s": "시험하다"
+   },
+   "pos": "verb",
+   "en": "to test, try out",
+   "note": "Usually 시험해 보다 = to try out.",
+   "ex": [
+    {
+     "s": "새 기능을 시험해 봤어요.",
+     "en": "I tried out the new feature."
+    },
+    {
+     "s": "지금 저를 시험하는 거예요?",
+     "en": "Are you testing me right now?"
+    },
+    {
+     "s": "사기 전에 매장에서 한번 시험해 보세요.",
+     "en": "Try it out in the store before you buy."
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "kv08-54"
+ ],
+ "notes": "Fixed one stiff seat-arrangement sentence, an uncommon 사원 식당, a 저장되다 (passive) example, and a duplicate \"tried out\" example. Dropped 상관 as a duplicate of 상관없다 (ev-15)."
+}

@@ -1,0 +1,56 @@
+{
+ "fix": [
+  {
+   "id": "kv07-28",
+   "t": {
+    "s": "굳이"
+   },
+   "pos": "adverb",
+   "en": "(go) out of one's way; necessarily",
+   "note": "Often with negatives or 'why': 굳이 안 해도 돼요.",
+   "ex": [
+    {
+     "s": "굳이 안 와도 돼요.",
+     "en": "You really don't have to come."
+    },
+    {
+     "s": "굳이 택시 탈 필요 없어요. 가까워요.",
+     "en": "There's no need to take a taxi. It's close."
+    },
+    {
+     "s": "왜 굳이 비싼 걸 샀어요?",
+     "en": "Why did you go and buy the expensive one?"
+    }
+   ]
+  },
+  {
+   "id": "kv07-37",
+   "t": {
+    "s": "튀다"
+   },
+   "pos": "verb",
+   "en": "to splash, spatter; to stand out",
+   "note": "",
+   "ex": [
+    {
+     "s": "기름이 튀니까 조심하세요.",
+     "en": "Watch out, the oil splatters."
+    },
+    {
+     "s": "차가 지나가면서 물이 튀었어요.",
+     "en": "Water splashed when a car went by."
+    },
+    {
+     "s": "그 옷은 너무 튀어요.",
+     "en": "That outfit stands out too much."
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "kv07-43",
+  "kv07-52",
+  "kv07-63"
+ ],
+ "notes": "Dropped 머물다 (dup of 머무르다 kv07-115), 제안하다/판단하다 (dup of nouns 제안/판단 in ev-13). Fixed a near-duplicate 굳이 example and awkward 좀 너무."
+}

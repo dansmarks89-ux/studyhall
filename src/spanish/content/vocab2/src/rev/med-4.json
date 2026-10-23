@@ -1,0 +1,214 @@
+{
+ "fix": [
+  {
+   "id": "sm4-productos-naturistas",
+   "w": "los productos naturistas",
+   "pos": "noun",
+   "en": "natural/herbal products",
+   "note": "Sold at 'la tienda naturista'; ask directly, since patients may not count them as medicine.",
+   "type": [
+    "los productos naturistas",
+    "productos naturistas"
+   ],
+   "ex": [
+    {
+     "es": "¿Toma productos naturistas o tés para la presión?",
+     "en": "Do you take natural products or teas for your blood pressure?",
+     "hit": "productos naturistas"
+    },
+    {
+     "es": "Compro productos naturistas en una tienda de mi barrio.",
+     "en": "I buy natural products at a store in my neighborhood.",
+     "hit": "productos naturistas"
+    },
+    {
+     "es": "Mi tía me manda productos naturistas desde México.",
+     "en": "My aunt sends me natural products from Mexico.",
+     "hit": "productos naturistas"
+    }
+   ]
+  },
+  {
+   "id": "sm4-comezon",
+   "w": "la comezón",
+   "pos": "noun",
+   "en": "itching",
+   "note": "Also 'la picazón'; patients say 'me da comezón'.",
+   "type": [
+    "la comezón",
+    "comezón",
+    "la picazón",
+    "picazón"
+   ],
+   "ex": [
+    {
+     "es": "¿Le dio comezón o ronchas con esa medicina?",
+     "en": "Did that medicine make you itch or break out in hives?",
+     "hit": "comezón"
+    },
+    {
+     "es": "Me da mucha comezón en los brazos desde ayer.",
+     "en": "My arms have been very itchy since yesterday.",
+     "hit": "comezón"
+    },
+    {
+     "es": "Si le da comezón con la pastilla nueva, avísenos.",
+     "en": "If the new pill makes you itch, let us know.",
+     "hit": "comezón"
+    }
+   ]
+  },
+  {
+   "id": "sm4-penicilina",
+   "w": "la penicilina",
+   "pos": "noun",
+   "en": "penicillin",
+   "note": "",
+   "type": [
+    "la penicilina",
+    "penicilina"
+   ],
+   "ex": [
+    {
+     "es": "¿Es alérgico a algún medicamento, como la penicilina?",
+     "en": "Are you allergic to any medicine, like penicillin?",
+     "hit": "penicilina"
+    },
+    {
+     "es": "De niña me dijeron que soy alérgica a la penicilina.",
+     "en": "As a girl I was told I'm allergic to penicillin.",
+     "hit": "penicilina"
+    },
+    {
+     "es": "Este antibiótico no es de la familia de la penicilina.",
+     "en": "This antibiotic isn't in the penicillin family.",
+     "hit": "penicilina"
+    }
+   ]
+  },
+  {
+   "id": "sm4-tos-seca",
+   "w": "la tos seca",
+   "pos": "noun",
+   "en": "dry cough",
+   "note": "A classic side effect of lisinopril-type pressure pills, not an allergy.",
+   "type": [
+    "la tos seca",
+    "tos seca"
+   ],
+   "ex": [
+    {
+     "es": "¿La tos seca empezó después de la pastilla nueva?",
+     "en": "Did the dry cough start after the new pill?",
+     "hit": "tos seca"
+    },
+    {
+     "es": "Tengo una tos seca que no se me quita.",
+     "en": "I have a dry cough that won't go away.",
+     "hit": "tos seca"
+    },
+    {
+     "es": "Esa tos seca puede ser por la pastilla de la presión.",
+     "en": "That dry cough may be from the blood pressure pill.",
+     "hit": "tos seca"
+    }
+   ]
+  },
+  {
+   "id": "sm4-asma",
+   "w": "el asma",
+   "pos": "noun",
+   "en": "asthma",
+   "note": "Feminine, but takes 'el' (stressed a-): el asma, el asma crónica.",
+   "type": [
+    "el asma",
+    "asma"
+   ],
+   "ex": [
+    {
+     "es": "¿Tiene asma o alguna enfermedad de los pulmones?",
+     "en": "Do you have asthma or any lung disease?",
+     "hit": "asma"
+    },
+    {
+     "es": "Tengo asma desde niño, pero ya casi no me da.",
+     "en": "I've had asthma since I was a kid, but I hardly get it now.",
+     "hit": "asma"
+    },
+    {
+     "es": "Con el asma, siempre tiene que tener su inhalador a la mano.",
+     "en": "With asthma, you always need to keep your inhaler handy.",
+     "hit": "asma"
+    }
+   ]
+  },
+  {
+   "id": "sm4-anemia",
+   "w": "la anemia",
+   "pos": "noun",
+   "en": "anemia",
+   "note": "Patients may say 'estoy anémico' / 'anémica'.",
+   "type": [
+    "la anemia",
+    "anemia"
+   ],
+   "ex": [
+    {
+     "es": "¿Algún doctor le ha dicho que tiene anemia?",
+     "en": "Has any doctor told you that you have anemia?",
+     "hit": "anemia"
+    },
+    {
+     "es": "Su análisis muestra anemia; eso puede explicar el cansancio.",
+     "en": "Your test shows anemia; that may explain the tiredness.",
+     "hit": "anemia"
+    },
+    {
+     "es": "Tomo hierro porque tengo anemia.",
+     "en": "I take iron because I have anemia.",
+     "hit": "anemia"
+    }
+   ]
+  },
+  {
+   "id": "sm4-operacion-a-corazon-abierto",
+   "w": "la operación a corazón abierto",
+   "pos": "noun",
+   "en": "open-heart surgery",
+   "note": "Plain words for bypass or valve surgery. Also 'cirugía a corazón abierto'.",
+   "type": [],
+   "ex": [
+    {
+     "es": "¿Ha tenido una operación a corazón abierto?",
+     "en": "Have you had open-heart surgery?",
+     "hit": "operación a corazón abierto"
+    },
+    {
+     "es": "Me hicieron una operación a corazón abierto hace diez años.",
+     "en": "I had open-heart surgery ten years ago.",
+     "hit": "operación a corazón abierto"
+    },
+    {
+     "es": "Mi papá tuvo una operación a corazón abierto en México.",
+     "en": "My dad had open-heart surgery in Mexico.",
+     "hit": "operación a corazón abierto"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sm4-farmacia",
+  "sm4-rinones",
+  "sm4-copago",
+  "sm4-expediente",
+  "sm4-medico-de-cabecera",
+  "sm4-seguro-medico",
+  "sm4-de-vez-en-cuando",
+  "sm4-familiar",
+  "sm4-cafeina",
+  "sm4-bebidas-energeticas",
+  "sm4-presion-baja",
+  "sm4-operacion-de-corazon-abierto"
+ ],
+ "notes": "Dropped 11 duplicates of med-1/2/3 (earliest keeps). 'de corazón abierto'→'a corazón abierto' (new id). Safety: itch, ACE cough hedged. Removed unverified 'sangre baja'; fixed asma note, ambiguous examples."
+}

@@ -1,0 +1,175 @@
+{
+ "fix": [
+  {
+   "id": "sv14-navegar",
+   "w": "navegar",
+   "pos": "verb",
+   "en": "to browse (the web); to sail",
+   "note": "",
+   "type": [
+    "navegar"
+   ],
+   "ex": [
+    {
+     "es": "Paso horas navegando en internet.",
+     "en": "I spend hours browsing the internet.",
+     "hit": "navegando"
+    },
+    {
+     "es": "¿Puedo navegar en internet con tu wifi?",
+     "en": "Can I browse the internet on your wifi?",
+     "hit": "navegar"
+    },
+    {
+     "es": "Fuimos a navegar en el lago el domingo.",
+     "en": "We went sailing on the lake on Sunday.",
+     "hit": "navegar"
+    }
+   ]
+  },
+  {
+   "id": "sv14-colgado",
+   "w": "colgado",
+   "pos": "adjective",
+   "en": "hanging, hung; left hanging",
+   "note": "'Dejar a alguien colgado' = to leave someone hanging / stand them up.",
+   "type": [
+    "colgado"
+   ],
+   "ex": [
+    {
+     "es": "Tu chamarra está colgada detrás de la puerta.",
+     "en": "Your jacket is hanging behind the door.",
+     "hit": "colgada"
+    },
+    {
+     "es": "Diego me dejó colgado en el cine.",
+     "en": "Diego left me hanging at the movies.",
+     "hit": "colgado"
+    },
+    {
+     "es": "Hay un cuadro colgado en la sala.",
+     "en": "There's a painting hanging in the living room.",
+     "hit": "colgado"
+    }
+   ]
+  },
+  {
+   "id": "sv14-olvidado",
+   "w": "olvidado",
+   "pos": "adjective",
+   "en": "forgotten",
+   "note": "",
+   "type": [
+    "olvidado"
+   ],
+   "ex": [
+    {
+     "es": "Encontré un paraguas olvidado en el taxi.",
+     "en": "I found a forgotten umbrella in the taxi.",
+     "hit": "olvidado"
+    },
+    {
+     "es": "Me siento olvidado, nadie me llama.",
+     "en": "I feel forgotten; nobody calls me.",
+     "hit": "olvidado"
+    },
+    {
+     "es": "Encontré unas fotos olvidadas en un cajón.",
+     "en": "I found some forgotten photos in a drawer.",
+     "hit": "olvidadas"
+    }
+   ]
+  },
+  {
+   "id": "sv14-ingrediente",
+   "w": "el ingrediente",
+   "pos": "noun",
+   "en": "ingredient",
+   "note": "",
+   "type": [
+    "el ingrediente",
+    "ingrediente"
+   ],
+   "ex": [
+    {
+     "es": "¿Qué ingredientes necesito para el guacamole?",
+     "en": "What ingredients do I need for the guacamole?",
+     "hit": "ingredientes"
+    },
+    {
+     "es": "Me faltó un ingrediente para la receta.",
+     "en": "I was missing one ingredient for the recipe.",
+     "hit": "ingrediente"
+    },
+    {
+     "es": "¿Este platillo tiene algún ingrediente con nueces?",
+     "en": "Does this dish have anything with nuts in it?",
+     "hit": "ingrediente"
+    }
+   ]
+  },
+  {
+   "id": "sv14-demostracion",
+   "w": "la demostración",
+   "pos": "noun",
+   "en": "demonstration; proof; display",
+   "note": "",
+   "type": [
+    "la demostración",
+    "demostración"
+   ],
+   "ex": [
+    {
+     "es": "El vendedor nos hizo una demostración de la aspiradora.",
+     "en": "The salesman gave us a demonstration of the vacuum.",
+     "hit": "demostración"
+    },
+    {
+     "es": "Fue una demostración de cariño muy bonita.",
+     "en": "It was a really sweet display of affection.",
+     "hit": "demostración"
+    },
+    {
+     "es": "Eso fue la demostración de que sí puedes.",
+     "en": "That was proof that you really can do it.",
+     "hit": "demostración"
+    }
+   ]
+  },
+  {
+   "id": "sv14-molino",
+   "w": "el molino",
+   "pos": "noun",
+   "en": "mill; windmill",
+   "note": "",
+   "type": [
+    "el molino",
+    "molino"
+   ],
+   "ex": [
+    {
+     "es": "Hay un molino antiguo en el pueblo.",
+     "en": "There's an old mill in the town.",
+     "hit": "molino"
+    },
+    {
+     "es": "Vimos muchos molinos de viento en la carretera.",
+     "en": "We saw lots of windmills along the highway.",
+     "hit": "molinos"
+    },
+    {
+     "es": "Llevamos el maíz al molino para hacer masa.",
+     "en": "We took the corn to the mill to make dough.",
+     "hit": "molino"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sv14-retirada",
+  "sv14-competicion",
+  "sv14-localizacion"
+ ],
+ "notes": "Dropped Spain-leaning near-duplicates of el retiro, la competencia, la ubicación. Replaced unnatural/repetitive examples (navegar, olvidado, demostración, molino); clarified colgado gloss; smoother English for ingrediente."
+}

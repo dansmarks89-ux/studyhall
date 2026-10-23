@@ -1,0 +1,75 @@
+{
+ "fix": [
+  {
+   "id": "kv06-119",
+   "t": {
+    "s": "허가"
+   },
+   "pos": "noun",
+   "en": "permission, permit",
+   "note": "Official permission/permit; 허가(를) 받다. Personal permission (parents) is 허락.",
+   "ex": [
+    {
+     "s": "여기서 사진 찍으려면 허가가 필요해요.",
+     "en": "You need permission to take pictures here."
+    },
+    {
+     "s": "이 건물은 허가 없이 못 들어가요.",
+     "en": "You can't enter this building without permission."
+    },
+    {
+     "s": "드디어 가게 영업 허가를 받았어요.",
+     "en": "We finally got a business permit for the store."
+    }
+   ]
+  },
+  {
+   "id": "kv06-131",
+   "t": {
+    "s": "절차"
+   },
+   "pos": "noun",
+   "en": "procedure, process",
+   "note": "",
+   "ex": [
+    {
+     "s": "비자 신청 절차가 복잡해요.",
+     "en": "The visa application process is complicated."
+    },
+    {
+     "s": "환불 절차를 알려 주세요.",
+     "en": "Please tell me the refund procedure."
+    },
+    {
+     "s": "입원 절차가 어떻게 돼요?",
+     "en": "What's the admission process?"
+    }
+   ]
+  },
+  {
+   "id": "kv06-135",
+   "t": {
+    "s": "글자"
+   },
+   "pos": "noun",
+   "en": "letter, written character",
+   "note": "",
+   "ex": [
+    {
+     "s": "글자가 너무 작아서 안 보여요.",
+     "en": "The letters are too small for me to see."
+    },
+    {
+     "s": "한글 글자를 다 외웠어요.",
+     "en": "I memorized all the Hangul letters."
+    },
+    {
+     "s": "간판 글자가 너무 예뻐요.",
+     "en": "The lettering on the sign is so pretty."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixes: 허가 vs 허락 (parental permission is 허락), unnatural 입원 절차는 어디서 해요, redundant 문자 글자."
+}

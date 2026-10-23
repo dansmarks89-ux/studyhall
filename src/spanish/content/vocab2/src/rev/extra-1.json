@@ -1,0 +1,57 @@
+{
+ "fix": [
+  {
+   "id": "VC2-33",
+   "w": "tener prisa",
+   "en": "to be in a hurry",
+   "ex": [
+    {
+     "es": "¿Tienes prisa o tomamos un café?",
+     "en": "Are you in a hurry, or should we grab a coffee?",
+     "hit": "Tienes prisa"
+    },
+    {
+     "es": "Mi esposo siempre tiene prisa en las mañanas.",
+     "en": "My husband is always in a hurry in the mornings.",
+     "hit": "tiene prisa"
+    }
+   ]
+  },
+  {
+   "id": "VC3-29",
+   "w": "manejar",
+   "en": "to drive",
+   "ex": [
+    {
+     "es": "Mi esposo manejó todo el camino a Florida.",
+     "en": "My husband drove the whole way to Florida.",
+     "hit": "manejó"
+    },
+    {
+     "es": "No manejes; tomaste dos cervezas.",
+     "en": "Don't drive; you had two beers.",
+     "hit": "manejes"
+    }
+   ]
+  },
+  {
+   "id": "VC4-8",
+   "w": "mientras",
+   "en": "while",
+   "ex": [
+    {
+     "es": "Mientras esperaba el autobús, me llamó mi mamá.",
+     "en": "While I was waiting for the bus, my mom called me.",
+     "hit": "Mientras"
+    },
+    {
+     "es": "Mi hijo hace la tarea mientras yo preparo la cena.",
+     "en": "My son does his homework while I make dinner.",
+     "hit": "mientras"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Removed a sentence duplicated from VC1-39 (manejar); fixed an illogical 'tener prisa' exchange; replaced an ambiguous imperfect/imperfect 'mientras' sentence. Rest accurate, natural, Latin American register."
+}

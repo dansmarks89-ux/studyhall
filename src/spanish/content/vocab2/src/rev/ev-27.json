@@ -1,0 +1,34 @@
+{
+ "fix": [
+  {
+   "id": "sv14-implicado",
+   "w": "implicado",
+   "pos": "adjective",
+   "en": "involved",
+   "note": "'Involucrado' is more common in everyday Mexican speech.",
+   "type": [
+    "implicado",
+    "involucrado"
+   ],
+   "ex": [
+    {
+     "es": "No quiero estar implicado en ese problema.",
+     "en": "I don't want to be involved in that problem.",
+     "hit": "implicado"
+    },
+    {
+     "es": "El jefe quiere saber quiénes están implicados en el proyecto.",
+     "en": "The boss wants to know who's involved in the project.",
+     "hit": "implicados"
+    },
+    {
+     "es": "Mi hermana estuvo implicada en el accidente, pero está bien.",
+     "en": "My sister was involved in the accident, but she's okay.",
+     "hit": "implicada"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Replaced the calqued 'trabajo implicado' example in implicado with a natural sentence."
+}

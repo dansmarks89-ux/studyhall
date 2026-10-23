@@ -1,0 +1,141 @@
+{
+ "fix": [
+  {
+   "id": "cv03-104",
+   "t": {
+    "s": "聖誕",
+    "r": "sing3 daan3"
+   },
+   "pos": "noun",
+   "en": "Christmas",
+   "note": "聖誕節 = Christmas (the holiday); 聖誕快樂 = Merry Christmas.",
+   "ex": [
+    {
+     "s": "祝你聖誕快樂！",
+     "r": "zuk1 nei5 sing3 daan3 faai3 lok6",
+     "en": "Merry Christmas to you!"
+    },
+    {
+     "s": "你聖誕去邊度玩呀？",
+     "r": "nei5 sing3 daan3 heoi3 bin1 dou6 waan2 aa3",
+     "en": "Where are you going over Christmas?"
+    },
+    {
+     "s": "商場聖誕好多人。",
+     "r": "soeng1 coeng4 sing3 daan3 hou2 do1 jan4",
+     "en": "The malls are packed at Christmas."
+    }
+   ]
+  },
+  {
+   "id": "cv03-117",
+   "t": {
+    "s": "除非",
+    "r": "ceoi4 fei1"
+   },
+   "pos": "conjunction",
+   "en": "unless",
+   "note": "Often paired with 唔係: 除非…，唔係… = unless…, otherwise…",
+   "ex": [
+    {
+     "s": "我唔會去，除非你陪我。",
+     "r": "ngo5 m4 wui5 heoi3 ceoi4 fei1 nei5 pui4 ngo5",
+     "en": "I won't go unless you come with me."
+    },
+    {
+     "s": "除非佢道歉，唔係我唔會原諒佢。",
+     "r": "ceoi4 fei1 keoi5 dou6 hip3 m4 hai6 ngo5 m4 wui5 jyun4 loeng6 keoi5",
+     "en": "Unless he apologizes, I won't forgive him."
+    },
+    {
+     "s": "除非你好肚餓，唔係唔使叫咁多。",
+     "r": "ceoi4 fei1 nei5 hou2 tou5 ngo6 m4 hai6 m4 sai2 giu3 gam3 do1",
+     "en": "Unless you're really hungry, there's no need to order so much."
+    }
+   ]
+  },
+  {
+   "id": "cv03-127",
+   "t": {
+    "s": "出聲",
+    "r": "ceot1 seng1"
+   },
+   "pos": "verb",
+   "en": "to make a sound; to speak up",
+   "note": "",
+   "ex": [
+    {
+     "s": "圖書館入面唔好出聲。",
+     "r": "tou4 syu1 gun2 jap6 min6 m4 hou2 ceot1 seng1",
+     "en": "Don't make noise in the library."
+    },
+    {
+     "s": "有咩需要就出聲啦。",
+     "r": "jau5 me1 seoi1 jiu3 zau6 ceot1 seng1 laa1",
+     "en": "Speak up if you need anything."
+    },
+    {
+     "s": "開會嗰陣，佢一直冇出聲。",
+     "r": "hoi1 wui2 go2 zan6 keoi5 jat1 zik6 mou5 ceot1 seng1",
+     "en": "He didn't say a word the whole meeting."
+    }
+   ]
+  },
+  {
+   "id": "cv03-156",
+   "t": {
+    "s": "初頭",
+    "r": "co1 tau4"
+   },
+   "pos": "noun",
+   "en": "at first; the beginning",
+   "note": "",
+   "ex": [
+    {
+     "s": "初頭我唔鍾意佢。",
+     "r": "co1 tau4 ngo5 m4 zung1 ji3 keoi5",
+     "en": "At first I didn't like him."
+    },
+    {
+     "s": "初頭份工好辛苦，而家慣咗。",
+     "r": "co1 tau4 fan6 gung1 hou2 san1 fu2 ji4 gaa1 gwaan3 zo2",
+     "en": "The job was tough at first, but I'm used to it now."
+    },
+    {
+     "s": "學游水初頭好難。",
+     "r": "hok6 jau4 seoi2 co1 tau4 hou2 naan4",
+     "en": "Learning to swim is hard at first."
+    }
+   ]
+  },
+  {
+   "id": "cv03-191",
+   "t": {
+    "s": "追",
+    "r": "zeoi1"
+   },
+   "pos": "verb",
+   "en": "to chase; to follow (a show); to court",
+   "note": "追劇 = follow a TV series.",
+   "ex": [
+    {
+     "s": "我追唔到巴士。",
+     "r": "ngo5 zeoi1 m4 dou2 baa1 si2",
+     "en": "I ran but couldn't catch the bus."
+    },
+    {
+     "s": "我最近追緊一套韓劇。",
+     "r": "ngo5 zeoi3 gan6 zeoi1 gan2 jat1 tou3 hon4 kek6",
+     "en": "I'm following a Korean drama lately."
+    },
+    {
+     "s": "阿明追咗佢女朋友兩年。",
+     "r": "aa3 ming4 zeoi1 zo2 keoi5 neoi5 pang4 jau5 loeng5 nin4",
+     "en": "Ming pursued his girlfriend for two years."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Solid file. Fixed 除非 clauses to use the 唔係 pattern, replaced an unnatural 下個月初頭 and a written-style 會議上 sentence, corrected two notes (聖誕節, 追劇)."
+}

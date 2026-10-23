@@ -1,0 +1,147 @@
+{
+ "fix": [
+  {
+   "id": "sv09-gira",
+   "w": "la gira",
+   "pos": "noun",
+   "en": "tour (band, business trip)",
+   "note": "Ir de gira = to go on tour.",
+   "type": [
+    "la gira",
+    "gira"
+   ],
+   "ex": [
+    {
+     "es": "Mi banda favorita viene de gira a Chicago.",
+     "en": "My favorite band is coming to Chicago on tour.",
+     "hit": "gira"
+    },
+    {
+     "es": "El comediante va a hacer una gira por todo México.",
+     "en": "The comedian is going to do a tour all over Mexico.",
+     "hit": "gira"
+    },
+    {
+     "es": "Mi jefe está de gira por Asia esta semana.",
+     "en": "My boss is on a trip through Asia this week.",
+     "hit": "gira"
+    }
+   ]
+  },
+  {
+   "id": "sv09-reporte",
+   "w": "el reporte",
+   "pos": "noun",
+   "en": "report",
+   "note": "Common in Mexico; el informe is the standard alternative.",
+   "type": [
+    "el reporte",
+    "reporte",
+    "el informe",
+    "informe"
+   ],
+   "ex": [
+    {
+     "es": "Tengo que entregar el reporte mañana.",
+     "en": "I have to turn in the report tomorrow.",
+     "hit": "reporte"
+    },
+    {
+     "es": "El reporte del clima dice que va a llover.",
+     "en": "The weather report says it's going to rain.",
+     "hit": "reporte"
+    },
+    {
+     "es": "Levanté un reporte en el banco por un cargo raro.",
+     "en": "I filed a report with the bank about a strange charge.",
+     "hit": "reporte"
+    }
+   ]
+  },
+  {
+   "id": "sv09-cristal",
+   "w": "el cristal",
+   "pos": "noun",
+   "en": "glass (pane, lens); crystal",
+   "note": "Window or lens glass; el vidrio is more common in Mexico. A drinking glass is el vaso.",
+   "type": [
+    "el cristal",
+    "cristal"
+   ],
+   "ex": [
+    {
+     "es": "Se rompió el cristal de la ventana.",
+     "en": "The window glass broke.",
+     "hit": "cristal"
+    },
+    {
+     "es": "Limpia el cristal de tus lentes.",
+     "en": "Clean the lenses of your glasses.",
+     "hit": "cristal"
+    },
+    {
+     "es": "Mi celular tiene el cristal estrellado.",
+     "en": "My phone's glass is cracked.",
+     "hit": "cristal"
+    }
+   ]
+  },
+  {
+   "id": "sv09-billete",
+   "w": "el billete",
+   "pos": "noun",
+   "en": "bill, banknote",
+   "note": "In Latin America a ticket is el boleto; billete = ticket mainly in Spain.",
+   "type": [
+    "el billete",
+    "billete"
+   ],
+   "ex": [
+    {
+     "es": "¿Tienes cambio de un billete de quinientos?",
+     "en": "Do you have change for a five-hundred bill?",
+     "hit": "billete"
+    },
+    {
+     "es": "Encontré un billete de veinte en mi chamarra.",
+     "en": "I found a twenty in my jacket.",
+     "hit": "billete"
+    },
+    {
+     "es": "El cajero solo me dio billetes grandes.",
+     "en": "The ATM only gave me big bills.",
+     "hit": "billetes"
+    }
+   ]
+  },
+  {
+   "id": "sv09-masculino",
+   "w": "masculino",
+   "pos": "adjective",
+   "en": "masculine; male, men's",
+   "note": "Feminine masculina.",
+   "type": [
+    "masculino"
+   ],
+   "ex": [
+    {
+     "es": "La palabra mesa no es masculina, es femenina.",
+     "en": "The word 'mesa' isn't masculine, it's feminine.",
+     "hit": "masculina"
+    },
+    {
+     "es": "El equipo masculino de mi escuela ganó.",
+     "en": "My school's men's team won.",
+     "hit": "masculino"
+    },
+    {
+     "es": "Ese perfume es masculino, pero me encanta.",
+     "en": "That's a men's cologne, but I love it.",
+     "hit": "masculino"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Billete refocused on banknote (LatAm ticket = boleto); unnatural gira/reporte examples replaced; masculino agreement fixed; cristal note adds vidrio. Rest accurate."
+}

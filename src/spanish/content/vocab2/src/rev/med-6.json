@@ -1,0 +1,146 @@
+{
+ "fix": [
+  {
+   "id": "sm6-conexion-extra",
+   "w": "la conexión extra",
+   "pos": "noun",
+   "en": "extra electrical connection (pathway)",
+   "note": "Technical: la vía accesoria (WPW). The usual SVT (AVNRT) is inside the AV node instead.",
+   "type": [
+    "la conexión extra",
+    "conexión extra"
+   ],
+   "ex": [
+    {
+     "es": "Usted tiene una conexión extra entre arriba y abajo.",
+     "en": "You have an extra connection between the top and the bottom.",
+     "hit": "conexión extra"
+    },
+    {
+     "es": "La ablación elimina esa conexión extra.",
+     "en": "The ablation gets rid of that extra connection.",
+     "hit": "conexión extra"
+    },
+    {
+     "es": "Mi hijo nació con una conexión extra, ¿verdad?",
+     "en": "My son was born with an extra connection, right?",
+     "hit": "conexión extra"
+    }
+   ]
+  },
+  {
+   "id": "sm6-causa",
+   "w": "la causa",
+   "pos": "noun",
+   "en": "cause",
+   "note": "",
+   "type": [
+    "la causa",
+    "causa"
+   ],
+   "ex": [
+    {
+     "es": "En la fibrilación, la presión alta es una causa muy común.",
+     "en": "In AF, high blood pressure is a very common cause.",
+     "hit": "causa"
+    },
+    {
+     "es": "Todavía no sabemos la causa de su insuficiencia cardíaca.",
+     "en": "We still don't know the cause of your heart failure.",
+     "hit": "causa"
+    },
+    {
+     "es": "¿Cuál fue la causa, doctor? ¿Algo que comí?",
+     "en": "What was the cause, doctor? Something I ate?",
+     "hit": "causa"
+    }
+   ]
+  },
+  {
+   "id": "sm6-en-otras-palabras",
+   "w": "en otras palabras",
+   "pos": "phrase",
+   "en": "in other words",
+   "note": "",
+   "type": [
+    "en otras palabras"
+   ],
+   "ex": [
+    {
+     "es": "En otras palabras, su corazón bombea, pero con poca fuerza.",
+     "en": "In other words, your heart pumps, but weakly.",
+     "hit": "En otras palabras"
+    },
+    {
+     "es": "En otras palabras, ¿necesito un marcapasos o no?",
+     "en": "In other words, do I need a pacemaker or not?",
+     "hit": "En otras palabras"
+    },
+    {
+     "es": "¿Me lo puede decir en otras palabras? No le entendí.",
+     "en": "Can you say it in other words? I didn't understand you.",
+     "hit": "en otras palabras"
+    }
+   ]
+  },
+  {
+   "id": "sm6-aguantar",
+   "w": "aguantar",
+   "pos": "verb",
+   "en": "to bear; to tolerate; to put up with",
+   "note": "",
+   "type": [
+    "aguantar",
+    "soportar"
+   ],
+   "ex": [
+    {
+     "es": "No aguante los síntomas en casa; llámenos.",
+     "en": "Don't put up with the symptoms at home; call us.",
+     "hit": "aguante"
+    },
+    {
+     "es": "Si no aguanta la pastilla, hay otras opciones.",
+     "en": "If you can't tolerate the pill, there are other options.",
+     "hit": "aguanta"
+    },
+    {
+     "es": "Mi papá aguantó las palpitaciones tres días sin decir nada.",
+     "en": "My dad put up with the palpitations for three days without saying anything.",
+     "hit": "aguantó"
+    }
+   ]
+  },
+  {
+   "id": "sm6-familiar",
+   "w": "el familiar",
+   "pos": "noun",
+   "en": "relative; family member",
+   "note": "As a noun, 'un familiar' = a relative; as an adjective it means 'family' or 'familiar'.",
+   "type": [
+    "el familiar",
+    "familiar",
+    "el pariente"
+   ],
+   "ex": [
+    {
+     "es": "Puede entrar un familiar con usted.",
+     "en": "One family member can come in with you.",
+     "hit": "familiar"
+    },
+    {
+     "es": "¿Algún familiar suyo tuvo muerte súbita?",
+     "en": "Did any relative of yours die suddenly?",
+     "hit": "familiar"
+    },
+    {
+     "es": "Soy familiar del señor Ramírez; ¿cómo está?",
+     "en": "I'm a relative of Mr. Ramírez; how is he?",
+     "hit": "familiar"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clinically sound. Fixed SVT/accessory-pathway overgeneralization, overstated 'most common cause' of AF, unnatural patient command, false-friend note. Duplicates med-5 (tranquilo, peligroso, cafeína, seguro, esposo, agitarse, dar pena) and other levels: dedup globally."
+}

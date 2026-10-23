@@ -1,0 +1,203 @@
+{
+ "fix": [
+  {
+   "id": "sv11-boton",
+   "w": "el botón",
+   "pos": "noun",
+   "en": "button",
+   "note": "",
+   "type": [
+    "el botón",
+    "botón"
+   ],
+   "ex": [
+    {
+     "es": "Diego apretó el botón del elevador.",
+     "en": "Diego pressed the elevator button.",
+     "hit": "botón"
+    },
+    {
+     "es": "Se me cayó un botón de la camisa.",
+     "en": "A button fell off my shirt.",
+     "hit": "botón"
+    },
+    {
+     "es": "¿Qué botón aprieto para mandar el mensaje?",
+     "en": "Which button do I press to send the message?",
+     "hit": "botón"
+    }
+   ]
+  },
+  {
+   "id": "sv11-grano",
+   "w": "el grano",
+   "pos": "noun",
+   "en": "grain; bean (coffee); pimple",
+   "note": "Also a pimple on the skin.",
+   "type": [
+    "el grano",
+    "grano"
+   ],
+   "ex": [
+    {
+     "es": "Compramos café en grano para molerlo en casa.",
+     "en": "We buy whole-bean coffee to grind at home.",
+     "hit": "grano"
+    },
+    {
+     "es": "No dejes ni un grano de arroz en el plato.",
+     "en": "Don't leave a single grain of rice on the plate.",
+     "hit": "grano"
+    },
+    {
+     "es": "Me salió un grano en la nariz.",
+     "en": "I got a pimple on my nose.",
+     "hit": "grano"
+    }
+   ]
+  },
+  {
+   "id": "sv11-aficionado",
+   "w": "el aficionado",
+   "pos": "noun",
+   "en": "fan; enthusiast; amateur",
+   "note": "Feminine: la aficionada. Ser aficionado a = to be into something.",
+   "type": [
+    "el aficionado",
+    "aficionado",
+    "la aficionada",
+    "aficionada"
+   ],
+   "ex": [
+    {
+     "es": "Los aficionados gritaron cuando México metió gol.",
+     "en": "The fans screamed when Mexico scored.",
+     "hit": "aficionados"
+    },
+    {
+     "es": "Mi papá es muy aficionado al béisbol.",
+     "en": "My dad is a big baseball fan.",
+     "hit": "aficionado"
+    },
+    {
+     "es": "Ana es aficionada a la fotografía.",
+     "en": "Ana is really into photography.",
+     "hit": "aficionada"
+    }
+   ]
+  },
+  {
+   "id": "sv11-inspirado",
+   "w": "inspirado",
+   "pos": "adjective",
+   "en": "inspired",
+   "note": "",
+   "type": [
+    "inspirado",
+    "inspirada"
+   ],
+   "ex": [
+    {
+     "es": "Hoy me siento inspirado para pintar.",
+     "en": "I feel inspired to paint today.",
+     "hit": "inspirado"
+    },
+    {
+     "es": "Este platillo está inspirado en la cocina de mi abuela.",
+     "en": "This dish is inspired by my grandmother's cooking.",
+     "hit": "inspirado"
+    },
+    {
+     "es": "La película está inspirada en una historia real.",
+     "en": "The movie is inspired by a true story.",
+     "hit": "inspirada"
+    }
+   ]
+  },
+  {
+   "id": "sv11-emocional",
+   "w": "emocional",
+   "pos": "adjective",
+   "en": "emotional",
+   "note": "Emocionado = excited; a moving moment is often emotivo.",
+   "type": [
+    "emocional"
+   ],
+   "ex": [
+    {
+     "es": "Mi hermana es muy emocional; llora por todo.",
+     "en": "My sister is very emotional; she cries at everything.",
+     "hit": "emocional"
+    },
+    {
+     "es": "El estrés afecta tu salud emocional.",
+     "en": "Stress affects your emotional health.",
+     "hit": "emocional"
+    },
+    {
+     "es": "Necesito apoyo emocional, no consejos.",
+     "en": "I need emotional support, not advice.",
+     "hit": "emocional"
+    }
+   ]
+  },
+  {
+   "id": "sv11-estatua",
+   "w": "la estatua",
+   "pos": "noun",
+   "en": "statue",
+   "note": "",
+   "type": [
+    "la estatua",
+    "estatua"
+   ],
+   "ex": [
+    {
+     "es": "Nos tomamos una foto junto a la estatua.",
+     "en": "We took a picture next to the statue.",
+     "hit": "estatua"
+    },
+    {
+     "es": "Hay una estatua de un caballo en la plaza.",
+     "en": "There's a statue of a horse in the plaza.",
+     "hit": "estatua"
+    },
+    {
+     "es": "Mi hija se quedó quieta como una estatua.",
+     "en": "My daughter stood still like a statue.",
+     "hit": "estatua"
+    }
+   ]
+  },
+  {
+   "id": "sv11-angulo",
+   "w": "el ángulo",
+   "pos": "noun",
+   "en": "angle",
+   "note": "",
+   "type": [
+    "el ángulo",
+    "ángulo"
+   ],
+   "ex": [
+    {
+     "es": "Toma la foto desde otro ángulo.",
+     "en": "Take the picture from another angle.",
+     "hit": "ángulo"
+    },
+    {
+     "es": "En la clase de matemáticas aprendimos los ángulos.",
+     "en": "In math class we learned about angles.",
+     "hit": "ángulos"
+    },
+    {
+     "es": "Desde este ángulo se ve todo el estadio.",
+     "en": "From this angle you can see the whole stadium.",
+     "hit": "ángulo"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Minor polish: unnatural or stiff phrasing, an off-gloss example sense (emocional vs emotivo; comprometido = have plans), tense sequence, ambiguous subject, inaccurate notes (grano, paga), loose translations."
+}

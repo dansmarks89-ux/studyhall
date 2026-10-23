@@ -1,0 +1,2737 @@
+[
+ {
+  "id": "sv01-de",
+  "w": "de",
+  "pos": "preposition",
+  "en": "of; from",
+  "note": "Contracts with el: de + el = del.",
+  "type": [
+   "de"
+  ],
+  "ex": [
+   {
+    "es": "Este café es de Colombia.",
+    "en": "This coffee is from Colombia.",
+    "hit": "de"
+   },
+   {
+    "es": "Es el carro de mi hermano.",
+    "en": "It's my brother's car.",
+    "hit": "de"
+   },
+   {
+    "es": "Quiero un vaso de agua, por favor.",
+    "en": "I'd like a glass of water, please.",
+    "hit": "de"
+   }
+  ]
+ },
+ {
+  "id": "sv01-en",
+  "w": "en",
+  "pos": "preposition",
+  "en": "in; on; at",
+  "note": "",
+  "type": [
+   "en"
+  ],
+  "ex": [
+   {
+    "es": "Ya estoy en la oficina.",
+    "en": "I'm already at the office.",
+    "hit": "en"
+   },
+   {
+    "es": "Nos vemos en el parque a las cinco.",
+    "en": "See you at the park at five.",
+    "hit": "en"
+   },
+   {
+    "es": "Mis llaves están en la mesa.",
+    "en": "My keys are on the table.",
+    "hit": "en"
+   }
+  ]
+ },
+ {
+  "id": "sv01-a",
+  "w": "a",
+  "pos": "preposition",
+  "en": "to; at",
+  "note": "Contracts with el: a + el = al. Also marks people: veo a Ana.",
+  "type": [
+   "a"
+  ],
+  "ex": [
+   {
+    "es": "Le di el libro a Kevin.",
+    "en": "I gave the book to Kevin.",
+    "hit": "a"
+   },
+   {
+    "es": "Voy a ir con mi primo.",
+    "en": "I'm going to go with my cousin.",
+    "hit": "a"
+   },
+   {
+    "es": "El viernes voy a Monterrey.",
+    "en": "On Friday I'm going to Monterrey.",
+    "hit": "a"
+   }
+  ]
+ },
+ {
+  "id": "sv01-uno",
+  "w": "uno",
+  "pos": "determiner",
+  "en": "one; a, an",
+  "note": "Before a masculine noun: un (un libro); feminine: una (una casa).",
+  "type": [
+   "uno",
+   "un",
+   "una"
+  ],
+  "ex": [
+   {
+    "es": "Quiero un café con leche.",
+    "en": "I'd like a coffee with milk.",
+    "hit": "un"
+   },
+   {
+    "es": "Tengo una hermana y dos hermanos.",
+    "en": "I have one sister and two brothers.",
+    "hit": "una"
+   },
+   {
+    "es": "Solo quiero uno, gracias.",
+    "en": "I only want one, thanks.",
+    "hit": "uno"
+   }
+  ]
+ },
+ {
+  "id": "sv01-que",
+  "w": "que",
+  "pos": "conjunction",
+  "en": "that; than",
+  "note": "The question word 'what?' takes an accent: ¿qué? tener que = to have to.",
+  "type": [
+   "que"
+  ],
+  "ex": [
+   {
+    "es": "Creo que va a llover.",
+    "en": "I think it's going to rain.",
+    "hit": "que"
+   },
+   {
+    "es": "Mi hermano es más alto que yo.",
+    "en": "My brother is taller than me.",
+    "hit": "que"
+   },
+   {
+    "es": "Tengo que trabajar el sábado.",
+    "en": "I have to work on Saturday.",
+    "hit": "que"
+   }
+  ]
+ },
+ {
+  "id": "sv01-no",
+  "w": "no",
+  "pos": "adverb",
+  "en": "no; not",
+  "note": "Goes right before the verb: no tengo.",
+  "type": [
+   "no"
+  ],
+  "ex": [
+   {
+    "es": "No tengo hambre todavía.",
+    "en": "I'm not hungry yet.",
+    "hit": "No"
+   },
+   {
+    "es": "Hoy no puedo ir, lo siento.",
+    "en": "I can't go today, sorry.",
+    "hit": "no"
+   },
+   {
+    "es": "No, gracias, ya comí mucho.",
+    "en": "No, thanks, I already ate a lot.",
+    "hit": "No"
+   }
+  ]
+ },
+ {
+  "id": "sv01-por",
+  "w": "por",
+  "pos": "preposition",
+  "en": "for; by; through; because of",
+  "note": "por vs. para is tricky: gracias por = thanks for; por la tarde = in the afternoon.",
+  "type": [
+   "por"
+  ],
+  "ex": [
+   {
+    "es": "Muchas gracias por tu ayuda.",
+    "en": "Thanks a lot for your help.",
+    "hit": "por"
+   },
+   {
+    "es": "Te llamo mañana por la tarde.",
+    "en": "I'll call you tomorrow afternoon.",
+    "hit": "por"
+   },
+   {
+    "es": "Caminamos por el parque después de comer.",
+    "en": "We walked through the park after eating.",
+    "hit": "por"
+   }
+  ]
+ },
+ {
+  "id": "sv01-con",
+  "w": "con",
+  "pos": "preposition",
+  "en": "with",
+  "note": "With me / with you: conmigo, contigo.",
+  "type": [
+   "con"
+  ],
+  "ex": [
+   {
+    "es": "Vivo con mi esposa y mi perro.",
+    "en": "I live with my wife and my dog.",
+    "hit": "con"
+   },
+   {
+    "es": "Un taco con todo, por favor.",
+    "en": "A taco with everything, please.",
+    "hit": "con"
+   },
+   {
+    "es": "Hablé con el doctor ayer.",
+    "en": "I talked with the doctor yesterday.",
+    "hit": "con"
+   }
+  ]
+ },
+ {
+  "id": "sv01-su",
+  "w": "su",
+  "pos": "determiner",
+  "en": "his; her; their; your (usted)",
+  "note": "Plural: sus. Also 'your' when you speak to someone as usted.",
+  "type": [
+   "su"
+  ],
+  "ex": [
+   {
+    "es": "Ana dejó su teléfono en casa.",
+    "en": "Ana left her phone at home.",
+    "hit": "su"
+   },
+   {
+    "es": "Los vecinos venden su carro.",
+    "en": "The neighbors are selling their car.",
+    "hit": "su"
+   },
+   {
+    "es": "Señor, ¿este es su asiento?",
+    "en": "Sir, is this your seat?",
+    "hit": "su"
+   }
+  ]
+ },
+ {
+  "id": "sv01-para",
+  "w": "para",
+  "pos": "preposition",
+  "en": "for; in order to",
+  "note": "para + infinitive = in order to: para hablar.",
+  "type": [
+   "para"
+  ],
+  "ex": [
+   {
+    "es": "Este regalo es para ti.",
+    "en": "This gift is for you.",
+    "hit": "para"
+   },
+   {
+    "es": "Estudio español para hablar con mis pacientes.",
+    "en": "I study Spanish to talk with my patients.",
+    "hit": "para"
+   },
+   {
+    "es": "Necesito una mesa para cuatro.",
+    "en": "I need a table for four.",
+    "hit": "para"
+   }
+  ]
+ },
+ {
+  "id": "sv01-haber",
+  "w": "haber",
+  "pos": "verb",
+  "en": "there is/are (hay); to have (auxiliary)",
+  "note": "Learn hay = there is/are; había = there was/were. Also helper verb: he comido.",
+  "type": [
+   "haber",
+   "hay"
+  ],
+  "ex": [
+   {
+    "es": "¿Hay un baño por aquí?",
+    "en": "Is there a bathroom around here?",
+    "hit": "Hay"
+   },
+   {
+    "es": "No hay leche en el refrigerador.",
+    "en": "There's no milk in the fridge.",
+    "hit": "hay"
+   },
+   {
+    "es": "Había mucha gente en la fiesta.",
+    "en": "There were a lot of people at the party.",
+    "hit": "Había"
+   }
+  ]
+ },
+ {
+  "id": "sv01-este",
+  "w": "este",
+  "pos": "determiner",
+  "en": "this",
+  "note": "Feminine: esta; plural: estos, estas. Don't confuse esta (this) with está (is).",
+  "type": [
+   "este",
+   "esta"
+  ],
+  "ex": [
+   {
+    "es": "Este restaurante es muy bueno.",
+    "en": "This restaurant is very good.",
+    "hit": "Este"
+   },
+   {
+    "es": "¿Me puedo probar esta camisa?",
+    "en": "Can I try on this shirt?",
+    "hit": "esta"
+   },
+   {
+    "es": "Este fin de semana voy a descansar.",
+    "en": "This weekend I'm going to rest.",
+    "hit": "Este"
+   }
+  ]
+ },
+ {
+  "id": "sv01-tener",
+  "w": "tener",
+  "pos": "verb",
+  "en": "to have",
+  "note": "Also for age and feelings: tener 30 años, tener hambre. tener que = have to.",
+  "type": [
+   "tener"
+  ],
+  "ex": [
+   {
+    "es": "Tengo dos hijos y una hija.",
+    "en": "I have two sons and a daughter.",
+    "hit": "Tengo"
+   },
+   {
+    "es": "¿Tienes hambre? Hay pizza en la cocina.",
+    "en": "Are you hungry? There's pizza in the kitchen.",
+    "hit": "Tienes"
+   },
+   {
+    "es": "Mi abuela tiene ochenta años.",
+    "en": "My grandmother is eighty years old.",
+    "hit": "tiene"
+   }
+  ]
+ },
+ {
+  "id": "sv01-como",
+  "w": "como",
+  "pos": "conjunction",
+  "en": "like; as; since",
+  "note": "The question word 'how?' takes an accent: ¿cómo?",
+  "type": [
+   "como"
+  ],
+  "ex": [
+   {
+    "es": "Mi hijo es alto como su papá.",
+    "en": "My son is tall like his dad.",
+    "hit": "como"
+   },
+   {
+    "es": "Trabajo como enfermera en un hospital.",
+    "en": "I work as a nurse at a hospital.",
+    "hit": "como"
+   },
+   {
+    "es": "Como es tarde, voy a tomar un taxi.",
+    "en": "Since it's late, I'm going to take a taxi.",
+    "hit": "Como"
+   }
+  ]
+ },
+ {
+  "id": "sv01-mas",
+  "w": "más",
+  "pos": "adverb",
+  "en": "more; most",
+  "note": "Always with an accent. más ... que = more ... than.",
+  "type": [
+   "más"
+  ],
+  "ex": [
+   {
+    "es": "¿Quieres más café o té?",
+    "en": "Do you want more coffee or tea?",
+    "hit": "más"
+   },
+   {
+    "es": "Este hotel es más barato.",
+    "en": "This hotel is cheaper.",
+    "hit": "más"
+   },
+   {
+    "es": "Mi hermana es la más alta de la familia.",
+    "en": "My sister is the tallest in the family.",
+    "hit": "más"
+   }
+  ]
+ },
+ {
+  "id": "sv01-me",
+  "w": "me",
+  "pos": "pronoun",
+  "en": "me; to me; myself",
+  "note": "Goes before a conjugated verb: me llamó. Attached to commands: llámame.",
+  "type": [
+   "me"
+  ],
+  "ex": [
+   {
+    "es": "¿Me pasas la sal, por favor?",
+    "en": "Can you pass me the salt, please?",
+    "hit": "Me"
+   },
+   {
+    "es": "Mi jefe me llamó ayer.",
+    "en": "My boss called me yesterday.",
+    "hit": "me"
+   },
+   {
+    "es": "Hoy me duele mucho la cabeza.",
+    "en": "My head hurts a lot today.",
+    "hit": "me"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hacer",
+  "w": "hacer",
+  "pos": "verb",
+  "en": "to do; to make",
+  "note": "Weather: hace frío, hace calor. Past: hice, hizo.",
+  "type": [
+   "hacer"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué vas a hacer el sábado?",
+    "en": "What are you going to do on Saturday?",
+    "hit": "hacer"
+   },
+   {
+    "es": "Hoy hace mucho calor afuera.",
+    "en": "It's really hot out today.",
+    "hit": "hace"
+   },
+   {
+    "es": "Mi esposa hizo la cena anoche.",
+    "en": "My wife made dinner last night.",
+    "hit": "hizo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-poder",
+  "w": "poder",
+  "pos": "verb",
+  "en": "can; to be able to",
+  "note": "Stem changes: puedo, puedes, puede, podemos, pueden.",
+  "type": [
+   "poder"
+  ],
+  "ex": [
+   {
+    "es": "¿Puedes ayudarme con esto?",
+    "en": "Can you help me with this?",
+    "hit": "Puedes"
+   },
+   {
+    "es": "No puedo ir a la fiesta.",
+    "en": "I can't go to the party.",
+    "hit": "puedo"
+   },
+   {
+    "es": "¿Puedo pagar con tarjeta aquí?",
+    "en": "Can I pay by card here?",
+    "hit": "Puedo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-si",
+  "w": "si",
+  "pos": "conjunction",
+  "en": "if",
+  "note": "No accent. With an accent, sí means 'yes'.",
+  "type": [
+   "si"
+  ],
+  "ex": [
+   {
+    "es": "Si llueve, nos quedamos en casa.",
+    "en": "If it rains, we'll stay home.",
+    "hit": "Si"
+   },
+   {
+    "es": "Avísame si vas a llegar tarde.",
+    "en": "Let me know if you're going to be late.",
+    "hit": "si"
+   },
+   {
+    "es": "No sé si tengo tiempo hoy.",
+    "en": "I don't know if I have time today.",
+    "hit": "si"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ir",
+  "w": "ir",
+  "pos": "verb",
+  "en": "to go",
+  "note": "Very irregular: voy, vas, va, vamos, van; past fui. ir a + infinitive = going to.",
+  "type": [
+   "ir"
+  ],
+  "ex": [
+   {
+    "es": "Mañana voy al mercado con Sofía.",
+    "en": "Tomorrow I'm going to the market with Sofía.",
+    "hit": "voy"
+   },
+   {
+    "es": "¿Fuiste a la playa el verano pasado?",
+    "en": "Did you go to the beach last summer?",
+    "hit": "Fuiste"
+   },
+   {
+    "es": "Prefiero ir al trabajo en metro.",
+    "en": "I'd rather go to work by subway.",
+    "hit": "ir"
+   }
+  ]
+ },
+ {
+  "id": "sv01-todo",
+  "w": "todo",
+  "pos": "determiner",
+  "en": "all; every; everything",
+  "note": "Feminine: toda. todos los días = every day. todo el mundo = everyone.",
+  "type": [
+   "todo",
+   "toda"
+  ],
+  "ex": [
+   {
+    "es": "Me comí todo el pastel.",
+    "en": "I ate the whole cake.",
+    "hit": "todo"
+   },
+   {
+    "es": "Todos mis amigos van a venir.",
+    "en": "All my friends are going to come.",
+    "hit": "Todos"
+   },
+   {
+    "es": "¿Todo bien en el trabajo?",
+    "en": "Is everything okay at work?",
+    "hit": "Todo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-te",
+  "w": "te",
+  "pos": "pronoun",
+  "en": "you; to you (informal)",
+  "note": "Object form of tú. té with an accent means 'tea'.",
+  "type": [
+   "te"
+  ],
+  "ex": [
+   {
+    "es": "Te llamo más tarde, ¿está bien?",
+    "en": "I'll call you later, okay?",
+    "hit": "Te"
+   },
+   {
+    "es": "¿Te gusta la comida mexicana?",
+    "en": "Do you like Mexican food?",
+    "hit": "Te"
+   },
+   {
+    "es": "Mi mamá te manda saludos.",
+    "en": "My mom says hi to you.",
+    "hit": "te"
+   }
+  ]
+ },
+ {
+  "id": "sv01-o",
+  "w": "o",
+  "pos": "conjunction",
+  "en": "or",
+  "note": "Becomes u before a word starting with o-: siete u ocho.",
+  "type": [
+   "o"
+  ],
+  "ex": [
+   {
+    "es": "¿Prefieres agua, leche o cerveza?",
+    "en": "Would you prefer water, milk, or beer?",
+    "hit": "o"
+   },
+   {
+    "es": "Ana llega el lunes o el martes.",
+    "en": "Ana arrives on Monday or Tuesday.",
+    "hit": "o"
+   },
+   {
+    "es": "¿La casa es tuya o es rentada?",
+    "en": "Is the house yours, or is it rented?",
+    "hit": "o"
+   }
+  ]
+ },
+ {
+  "id": "sv01-mi",
+  "w": "mi",
+  "pos": "determiner",
+  "en": "my",
+  "note": "Plural: mis. With an accent, mí means 'me' after a preposition: para mí.",
+  "type": [
+   "mi"
+  ],
+  "ex": [
+   {
+    "es": "Mi casa está cerca del parque.",
+    "en": "My house is near the park.",
+    "hit": "Mi"
+   },
+   {
+    "es": "Te presento a mi esposa.",
+    "en": "This is my wife.",
+    "hit": "mi"
+   },
+   {
+    "es": "Perdí mi teléfono en el taxi.",
+    "en": "I lost my phone in the taxi.",
+    "hit": "mi"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ver",
+  "w": "ver",
+  "pos": "verb",
+  "en": "to see; to watch",
+  "note": "Present: veo, ves, ve. Past: vi, viste, vio. Nos vemos = see you.",
+  "type": [
+   "ver"
+  ],
+  "ex": [
+   {
+    "es": "¿Quieres ver una película hoy?",
+    "en": "Do you want to watch a movie today?",
+    "hit": "ver"
+   },
+   {
+    "es": "Te veo mañana en la escuela.",
+    "en": "I'll see you tomorrow at school.",
+    "hit": "veo"
+   },
+   {
+    "es": "Ayer vi a Diego en el súper.",
+    "en": "Yesterday I saw Diego at the supermarket.",
+    "hit": "vi"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ese",
+  "w": "ese",
+  "pos": "determiner",
+  "en": "that",
+  "note": "Feminine: esa; plural: esos, esas.",
+  "type": [
+   "ese",
+   "esa"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuánto cuesta ese reloj negro?",
+    "en": "How much is that black watch?",
+    "hit": "ese"
+   },
+   {
+    "es": "Esa película fue muy buena.",
+    "en": "That movie was really good.",
+    "hit": "Esa"
+   },
+   {
+    "es": "¿Quién es ese señor de azul?",
+    "en": "Who's that man in blue?",
+    "hit": "ese"
+   }
+  ]
+ },
+ {
+  "id": "sv01-querer",
+  "w": "querer",
+  "pos": "verb",
+  "en": "to want; to love",
+  "note": "te quiero = I love you (family, partner, close friends).",
+  "type": [
+   "querer"
+  ],
+  "ex": [
+   {
+    "es": "Quiero una cerveza bien fría.",
+    "en": "I want a really cold beer.",
+    "hit": "Quiero"
+   },
+   {
+    "es": "¿Quieres ir a caminar mañana?",
+    "en": "Do you want to go for a walk tomorrow?",
+    "hit": "Quieres"
+   },
+   {
+    "es": "Te quiero mucho, mamá, cuídate.",
+    "en": "I love you so much, Mom, take care.",
+    "hit": "quiero"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ano",
+  "w": "el año",
+  "pos": "noun",
+  "en": "year",
+  "note": "Always write the ñ: 'ano' is a different, rude word.",
+  "type": [
+   "el año",
+   "año"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuántos años tiene tu hija?",
+    "en": "How old is your daughter?",
+    "hit": "años"
+   },
+   {
+    "es": "El año pasado fuimos a Perú.",
+    "en": "Last year we went to Peru.",
+    "hit": "año"
+   },
+   {
+    "es": "¡Feliz Año Nuevo a todos!",
+    "en": "Happy New Year, everyone!",
+    "hit": "Año"
+   }
+  ]
+ },
+ {
+  "id": "sv01-tu",
+  "w": "tu",
+  "pos": "determiner",
+  "en": "your (informal)",
+  "note": "No accent. With an accent, tú means 'you'. Plural: tus.",
+  "type": [
+   "tu"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es tu número de teléfono?",
+    "en": "What's your phone number?",
+    "hit": "tu"
+   },
+   {
+    "es": "Me gusta tu camisa nueva.",
+    "en": "I like your new shirt.",
+    "hit": "tu"
+   },
+   {
+    "es": "¿Y cómo sigue tu mamá?",
+    "en": "And how's your mom doing?",
+    "hit": "tu"
+   }
+  ]
+ },
+ {
+  "id": "sv01-yo",
+  "w": "yo",
+  "pos": "pronoun",
+  "en": "I",
+  "note": "Often left out because the verb already shows the person: (yo) tengo.",
+  "type": [
+   "yo"
+  ],
+  "ex": [
+   {
+    "es": "Yo pago la cuenta hoy.",
+    "en": "I'll pay the bill today.",
+    "hit": "Yo"
+   },
+   {
+    "es": "Yo soy de Chicago, ¿y tú?",
+    "en": "I'm from Chicago, and you?",
+    "hit": "Yo"
+   },
+   {
+    "es": "Ella cocina y yo lavo los platos.",
+    "en": "She cooks and I wash the dishes.",
+    "hit": "yo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-otro",
+  "w": "otro",
+  "pos": "determiner",
+  "en": "other; another",
+  "note": "Feminine: otra. Never 'un otro': otro café = another coffee.",
+  "type": [
+   "otro",
+   "otra"
+  ],
+  "ex": [
+   {
+    "es": "¿Me trae otro café, por favor?",
+    "en": "Could you bring me another coffee, please?",
+    "hit": "otro"
+   },
+   {
+    "es": "Me gusta más el otro color.",
+    "en": "I like the other color better.",
+    "hit": "otro"
+   },
+   {
+    "es": "Hoy no puedo, mejor otro día.",
+    "en": "I can't today; let's do another day.",
+    "hit": "otro"
+   }
+  ]
+ },
+ {
+  "id": "sv01-sin",
+  "w": "sin",
+  "pos": "preposition",
+  "en": "without",
+  "note": "",
+  "type": [
+   "sin"
+  ],
+  "ex": [
+   {
+    "es": "Un café sin azúcar, por favor.",
+    "en": "A coffee without sugar, please.",
+    "hit": "sin"
+   },
+   {
+    "es": "Salí sin paraguas y me mojé.",
+    "en": "I went out without an umbrella and got wet.",
+    "hit": "sin"
+   },
+   {
+    "es": "No puedo vivir sin mi celular.",
+    "en": "I can't live without my cell phone.",
+    "hit": "sin"
+   }
+  ]
+ },
+ {
+  "id": "sv01-cuando",
+  "w": "cuando",
+  "pos": "conjunction",
+  "en": "when",
+  "note": "The question word takes an accent: ¿cuándo? About the future it takes the subjunctive: cuando llegues.",
+  "type": [
+   "cuando"
+  ],
+  "ex": [
+   {
+    "es": "Mándame un mensaje cuando llegues a casa.",
+    "en": "Text me when you get home.",
+    "hit": "cuando"
+   },
+   {
+    "es": "Cuando era niño, vivía en Texas.",
+    "en": "When I was a kid, I lived in Texas.",
+    "hit": "Cuando"
+   },
+   {
+    "es": "Me pongo nervioso cuando hablo en público.",
+    "en": "I get nervous when I speak in public.",
+    "hit": "cuando"
+   }
+  ]
+ },
+ {
+  "id": "sv01-muy",
+  "w": "muy",
+  "pos": "adverb",
+  "en": "very; really",
+  "note": "Used before adjectives and adverbs; for 'very much' use mucho.",
+  "type": [
+   "muy"
+  ],
+  "ex": [
+   {
+    "es": "La comida está muy rica.",
+    "en": "The food is really good.",
+    "hit": "muy"
+   },
+   {
+    "es": "Estoy muy cansado hoy.",
+    "en": "I'm very tired today.",
+    "hit": "muy"
+   },
+   {
+    "es": "Su casa es muy grande.",
+    "en": "Their house is very big.",
+    "hit": "muy"
+   }
+  ]
+ },
+ {
+  "id": "sv01-saber",
+  "w": "saber",
+  "pos": "verb",
+  "en": "to know (facts); to know how",
+  "note": "For people and places use conocer. Present: sé, sabes, sabe.",
+  "type": [
+   "saber"
+  ],
+  "ex": [
+   {
+    "es": "No sé dónde está el baño.",
+    "en": "I don't know where the bathroom is.",
+    "hit": "sé"
+   },
+   {
+    "es": "¿Sabes si hay una farmacia cerca?",
+    "en": "Do you know if there's a pharmacy nearby?",
+    "hit": "Sabes"
+   },
+   {
+    "es": "Mi hijo ya sabe leer.",
+    "en": "My son can already read.",
+    "hit": "sabe"
+   }
+  ]
+ },
+ {
+  "id": "sv01-dia",
+  "w": "el día",
+  "pos": "noun",
+  "en": "day",
+  "note": "Masculine even though it ends in -a: el día, buenos días.",
+  "type": [
+   "el día",
+   "día"
+  ],
+  "ex": [
+   {
+    "es": "Buenos días, ¿cómo está usted?",
+    "en": "Good morning, how are you?",
+    "hit": "días"
+   },
+   {
+    "es": "Trabajo ocho horas al día.",
+    "en": "I work eight hours a day.",
+    "hit": "día"
+   },
+   {
+    "es": "¿Qué día es tu cumpleaños?",
+    "en": "What day is your birthday?",
+    "hit": "día"
+   }
+  ]
+ },
+ {
+  "id": "sv01-asi",
+  "w": "así",
+  "pos": "adverb",
+  "en": "like this; like that; so",
+  "note": "Always with an accent. así es = that's right.",
+  "type": [
+   "así"
+  ],
+  "ex": [
+   {
+    "es": "¿Lo corto así o más chico?",
+    "en": "Should I cut it like this or smaller?",
+    "hit": "así"
+   },
+   {
+    "es": "Bueno, así es la vida.",
+    "en": "Oh well, that's life.",
+    "hit": "así"
+   },
+   {
+    "es": "¿Por qué me hablas así?",
+    "en": "Why are you talking to me like that?",
+    "hit": "así"
+   }
+  ]
+ },
+ {
+  "id": "sv01-nuestro",
+  "w": "nuestro",
+  "pos": "determiner",
+  "en": "our",
+  "note": "Feminine: nuestra; plural: nuestros, nuestras.",
+  "type": [
+   "nuestro",
+   "nuestra"
+  ],
+  "ex": [
+   {
+    "es": "Nuestro vuelo sale a las seis.",
+    "en": "Our flight leaves at six.",
+    "hit": "Nuestro"
+   },
+   {
+    "es": "Bienvenidos, esta es nuestra casa.",
+    "en": "Welcome, this is our home.",
+    "hit": "nuestra"
+   },
+   {
+    "es": "Nuestros hijos van a la misma escuela.",
+    "en": "Our kids go to the same school.",
+    "hit": "Nuestros"
+   }
+  ]
+ },
+ {
+  "id": "sv01-eso",
+  "w": "eso",
+  "pos": "pronoun",
+  "en": "that (thing, idea)",
+  "note": "Never followed by a noun: ¿Qué es eso? por eso = that's why.",
+  "type": [
+   "eso"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué es eso que estás comiendo?",
+    "en": "What's that you're eating?",
+    "hit": "eso"
+   },
+   {
+    "es": "Eso me parece bien.",
+    "en": "That sounds good to me.",
+    "hit": "Eso"
+   },
+   {
+    "es": "Por eso llegué tarde al trabajo.",
+    "en": "That's why I got to work late.",
+    "hit": "eso"
+   }
+  ]
+ },
+ {
+  "id": "sv01-deber",
+  "w": "deber",
+  "pos": "verb",
+  "en": "should; must; to owe",
+  "note": "deber + infinitive = should: debes descansar.",
+  "type": [
+   "deber"
+  ],
+  "ex": [
+   {
+    "es": "Debes dormir más, te ves cansado.",
+    "en": "You should sleep more; you look tired.",
+    "hit": "Debes"
+   },
+   {
+    "es": "Disculpe, ¿cuánto le debo?",
+    "en": "Excuse me, how much do I owe you?",
+    "hit": "debo"
+   },
+   {
+    "es": "Los niños deben estar en la cama a las nueve.",
+    "en": "The kids should be in bed at nine.",
+    "hit": "deben"
+   }
+  ]
+ },
+ {
+  "id": "sv01-dos",
+  "w": "dos",
+  "pos": "numeral",
+  "en": "two",
+  "note": "",
+  "type": [
+   "dos"
+  ],
+  "ex": [
+   {
+    "es": "Tengo dos perros y un gato.",
+    "en": "I have two dogs and a cat.",
+    "hit": "dos"
+   },
+   {
+    "es": "Dos tacos de pollo, por favor.",
+    "en": "Two chicken tacos, please.",
+    "hit": "Dos"
+   },
+   {
+    "es": "Nos vemos en dos horas.",
+    "en": "See you in two hours.",
+    "hit": "dos"
+   }
+  ]
+ },
+ {
+  "id": "sv01-bien",
+  "w": "bien",
+  "pos": "adverb",
+  "en": "well; fine; good",
+  "note": "An adverb: hablas bien. For 'good' before a noun use bueno.",
+  "type": [
+   "bien"
+  ],
+  "ex": [
+   {
+    "es": "Estoy bien, gracias, ¿y tú?",
+    "en": "I'm fine, thanks, and you?",
+    "hit": "bien"
+   },
+   {
+    "es": "Hablas español muy bien.",
+    "en": "You speak Spanish very well.",
+    "hit": "bien"
+   },
+   {
+    "es": "¿Dormiste bien en el hotel?",
+    "en": "Did you sleep well at the hotel?",
+    "hit": "bien"
+   }
+  ]
+ },
+ {
+  "id": "sv01-desde",
+  "w": "desde",
+  "pos": "preposition",
+  "en": "since; from",
+  "note": "desde hace = for (a length of time): desde hace tres años.",
+  "type": [
+   "desde"
+  ],
+  "ex": [
+   {
+    "es": "Vivo en Chicago desde 2020.",
+    "en": "I've lived in Chicago since 2020.",
+    "hit": "desde"
+   },
+   {
+    "es": "Te llamo desde el aeropuerto.",
+    "en": "I'm calling you from the airport.",
+    "hit": "desde"
+   },
+   {
+    "es": "Desde mi ventana veo el lago.",
+    "en": "From my window I can see the lake.",
+    "hit": "Desde"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hasta",
+  "w": "hasta",
+  "pos": "preposition",
+  "en": "until; up to; as far as",
+  "note": "hasta luego = see you later; hasta mañana = see you tomorrow.",
+  "type": [
+   "hasta"
+  ],
+  "ex": [
+   {
+    "es": "Bueno, me voy. ¡Hasta mañana!",
+    "en": "Okay, I'm leaving. See you tomorrow!",
+    "hit": "Hasta"
+   },
+   {
+    "es": "La tienda abre hasta las nueve.",
+    "en": "The store is open until nine.",
+    "hit": "hasta"
+   },
+   {
+    "es": "Caminamos hasta la playa desde el hotel.",
+    "en": "We walked all the way to the beach from the hotel.",
+    "hit": "hasta"
+   }
+  ]
+ },
+ {
+  "id": "sv01-pasar",
+  "w": "pasar",
+  "pos": "verb",
+  "en": "to happen; to pass; to spend (time)",
+  "note": "¿Qué pasó? = What happened? In Mexico, ¡pásale! = come in.",
+  "type": [
+   "pasar"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué te pasó en la mano?",
+    "en": "What happened to your hand?",
+    "hit": "pasó"
+   },
+   {
+    "es": "Pasamos el fin de semana en la playa.",
+    "en": "We spent the weekend at the beach.",
+    "hit": "Pasamos"
+   },
+   {
+    "es": "El autobús pasa cada diez minutos.",
+    "en": "The bus comes by every ten minutes.",
+    "hit": "pasa"
+   }
+  ]
+ },
+ {
+  "id": "sv01-esto",
+  "w": "esto",
+  "pos": "pronoun",
+  "en": "this (thing, idea)",
+  "note": "Never followed by a noun: ¿Qué es esto? Don't confuse with estoy (I am).",
+  "type": [
+   "esto"
+  ],
+  "ex": [
+   {
+    "es": "¿Me puede decir cuánto cuesta esto?",
+    "en": "Can you tell me how much this costs?",
+    "hit": "esto"
+   },
+   {
+    "es": "Mmm, esto está muy rico.",
+    "en": "Mmm, this is really tasty.",
+    "hit": "esto"
+   },
+   {
+    "es": "No entiendo esto, ¿me ayudas?",
+    "en": "I don't understand this; can you help me?",
+    "hit": "esto"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ahora",
+  "w": "ahora",
+  "pos": "adverb",
+  "en": "now",
+  "note": "In Mexico, ahorita = right now (or soon, loosely).",
+  "type": [
+   "ahora"
+  ],
+  "ex": [
+   {
+    "es": "Ahora no puedo, estoy manejando.",
+    "en": "I can't right now; I'm driving.",
+    "hit": "Ahora"
+   },
+   {
+    "es": "¿Y dónde vives ahora, Minho?",
+    "en": "So where do you live now, Minho?",
+    "hit": "ahora"
+   },
+   {
+    "es": "Mi hija ahora trabaja en un banco.",
+    "en": "My daughter works at a bank now.",
+    "hit": "ahora"
+   }
+  ]
+ },
+ {
+  "id": "sv01-dejar",
+  "w": "dejar",
+  "pos": "verb",
+  "en": "to leave; to let",
+  "note": "dejar de + infinitive = to stop doing: dejar de fumar.",
+  "type": [
+   "dejar"
+  ],
+  "ex": [
+   {
+    "es": "Dejé las llaves en el carro.",
+    "en": "I left the keys in the car.",
+    "hit": "Dejé"
+   },
+   {
+    "es": "Mis papás no me dejan salir.",
+    "en": "My parents don't let me go out.",
+    "hit": "dejan"
+   },
+   {
+    "es": "Mi papá quiere dejar de fumar.",
+    "en": "My dad wants to quit smoking.",
+    "hit": "dejar"
+   }
+  ]
+ },
+ {
+  "id": "sv01-persona",
+  "w": "la persona",
+  "pos": "noun",
+  "en": "person",
+  "note": "Always feminine, even for a man: es una persona amable.",
+  "type": [
+   "la persona",
+   "persona"
+  ],
+  "ex": [
+   {
+    "es": "Es una persona muy amable.",
+    "en": "She's a very kind person.",
+    "hit": "persona"
+   },
+   {
+    "es": "¿Cuántas personas vienen a la fiesta?",
+    "en": "How many people are coming to the party?",
+    "hit": "personas"
+   },
+   {
+    "es": "El boleto cuesta veinte dólares por persona.",
+    "en": "The ticket costs twenty dollars per person.",
+    "hit": "persona"
+   }
+  ]
+ },
+ {
+  "id": "sv01-cosa",
+  "w": "la cosa",
+  "pos": "noun",
+  "en": "thing",
+  "note": "",
+  "type": [
+   "la cosa",
+   "cosa"
+  ],
+  "ex": [
+   {
+    "es": "Tengo que decirte una cosa.",
+    "en": "I need to tell you something.",
+    "hit": "cosa"
+   },
+   {
+    "es": "¿Dónde puedo poner mis cosas?",
+    "en": "Where can I put my things?",
+    "hit": "cosas"
+   },
+   {
+    "es": "Compré muchas cosas en el mercado.",
+    "en": "I bought a lot of things at the market.",
+    "hit": "cosas"
+   }
+  ]
+ },
+ {
+  "id": "sv01-tiempo",
+  "w": "el tiempo",
+  "pos": "noun",
+  "en": "time; weather",
+  "note": "For clock time use la hora; for 'one time' use la vez.",
+  "type": [
+   "el tiempo",
+   "tiempo"
+  ],
+  "ex": [
+   {
+    "es": "No tengo tiempo para desayunar.",
+    "en": "I don't have time to eat breakfast.",
+    "hit": "tiempo"
+   },
+   {
+    "es": "Hace mucho tiempo que no te veo.",
+    "en": "I haven't seen you in a long time.",
+    "hit": "tiempo"
+   },
+   {
+    "es": "¿Qué tiempo va a hacer mañana?",
+    "en": "What's the weather going to be like tomorrow?",
+    "hit": "tiempo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-donde",
+  "w": "donde",
+  "pos": "pronoun",
+  "en": "where",
+  "note": "No accent in statements; questions use ¿dónde?",
+  "type": [
+   "donde"
+  ],
+  "ex": [
+   {
+    "es": "Esa es la casa donde crecí.",
+    "en": "That's the house where I grew up.",
+    "hit": "donde"
+   },
+   {
+    "es": "El restaurante donde comimos estaba buenísimo.",
+    "en": "The restaurant where we ate was amazing.",
+    "hit": "donde"
+   },
+   {
+    "es": "Vamos al parque donde jugábamos de niños.",
+    "en": "Let's go to the park where we played as kids.",
+    "hit": "donde"
+   }
+  ]
+ },
+ {
+  "id": "sv01-mucho",
+  "w": "mucho",
+  "pos": "determiner",
+  "en": "a lot; much; many",
+  "note": "Agrees with the noun: mucha gente, muchos amigos. As an adverb it doesn't change.",
+  "type": [
+   "mucho",
+   "mucha"
+  ],
+  "ex": [
+   {
+    "es": "Me gusta mucho tu casa.",
+    "en": "I really like your house.",
+    "hit": "mucho"
+   },
+   {
+    "es": "Hay mucho tráfico hoy.",
+    "en": "There's a lot of traffic today.",
+    "hit": "mucho"
+   },
+   {
+    "es": "Tengo muchas preguntas para el doctor.",
+    "en": "I have a lot of questions for the doctor.",
+    "hit": "muchas"
+   }
+  ]
+ },
+ {
+  "id": "sv01-algo",
+  "w": "algo",
+  "pos": "pronoun",
+  "en": "something; anything",
+  "note": "algo más = anything else.",
+  "type": [
+   "algo"
+  ],
+  "ex": [
+   {
+    "es": "¿Quieres comer algo antes de salir?",
+    "en": "Do you want to eat something before we go?",
+    "hit": "algo"
+   },
+   {
+    "es": "¿Le puedo ayudar con algo más?",
+    "en": "Can I help you with anything else?",
+    "hit": "algo"
+   },
+   {
+    "es": "Creo que algo está mal con mi carro.",
+    "en": "I think something's wrong with my car.",
+    "hit": "algo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hablar",
+  "w": "hablar",
+  "pos": "verb",
+  "en": "to speak; to talk",
+  "note": "hablar con = to talk with; hablar de = to talk about.",
+  "type": [
+   "hablar"
+  ],
+  "ex": [
+   {
+    "es": "Mis abuelos hablan solo español.",
+    "en": "My grandparents only speak Spanish.",
+    "hit": "hablan"
+   },
+   {
+    "es": "Hablé con Ana por teléfono anoche.",
+    "en": "I talked to Ana on the phone last night.",
+    "hit": "Hablé"
+   },
+   {
+    "es": "¿Puedes hablar más despacio, por favor?",
+    "en": "Can you speak more slowly, please?",
+    "hit": "hablar"
+   }
+  ]
+ },
+ {
+  "id": "sv01-solo",
+  "w": "solo",
+  "pos": "adverb",
+  "en": "only; alone",
+  "note": "As 'alone' it agrees: sola, solos. Older spelling for 'only': sólo.",
+  "type": [
+   "solo"
+  ],
+  "ex": [
+   {
+    "es": "Solo tengo diez dólares.",
+    "en": "I only have ten dollars.",
+    "hit": "Solo"
+   },
+   {
+    "es": "Mi hijo solo come pizza.",
+    "en": "My son only eats pizza.",
+    "hit": "solo"
+   },
+   {
+    "es": "Vivo solo en un departamento.",
+    "en": "I live alone in an apartment.",
+    "hit": "solo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-vida",
+  "w": "la vida",
+  "pos": "noun",
+  "en": "life",
+  "note": "",
+  "type": [
+   "la vida",
+   "vida"
+  ],
+  "ex": [
+   {
+    "es": "Mi vida cambió mucho este año.",
+    "en": "My life changed a lot this year.",
+    "hit": "vida"
+   },
+   {
+    "es": "Toda mi vida he vivido en Chicago.",
+    "en": "I've lived in Chicago my whole life.",
+    "hit": "vida"
+   },
+   {
+    "es": "La vida en la ciudad es cara.",
+    "en": "Life in the city is expensive.",
+    "hit": "vida"
+   }
+  ]
+ },
+ {
+  "id": "sv01-poner",
+  "w": "poner",
+  "pos": "verb",
+  "en": "to put; to turn on",
+  "note": "Irregular: pongo; past puse; command pon. ponerse = to put on (clothes).",
+  "type": [
+   "poner"
+  ],
+  "ex": [
+   {
+    "es": "¿Dónde pongo las bolsas del súper?",
+    "en": "Where do I put the grocery bags?",
+    "hit": "pongo"
+   },
+   {
+    "es": "Puse la leche en el refrigerador.",
+    "en": "I put the milk in the fridge.",
+    "hit": "Puse"
+   },
+   {
+    "es": "Pon la tele, ya empieza el partido.",
+    "en": "Turn on the TV; the game is starting.",
+    "hit": "Pon"
+   }
+  ]
+ },
+ {
+  "id": "sv01-tan",
+  "w": "tan",
+  "pos": "adverb",
+  "en": "so; as",
+  "note": "tan ... como = as ... as: tan alto como yo.",
+  "type": [
+   "tan"
+  ],
+  "ex": [
+   {
+    "es": "¡Tu hija está tan grande!",
+    "en": "Your daughter is so big!",
+    "hit": "tan"
+   },
+   {
+    "es": "No es tan caro como pensaba.",
+    "en": "It's not as expensive as I thought.",
+    "hit": "tan"
+   },
+   {
+    "es": "¿Por qué llegaste tan tarde?",
+    "en": "Why did you get here so late?",
+    "hit": "tan"
+   }
+  ]
+ },
+ {
+  "id": "sv01-pais",
+  "w": "el país",
+  "pos": "noun",
+  "en": "country",
+  "note": "A nation. For 'the countryside' use el campo.",
+  "type": [
+   "el país",
+   "país"
+  ],
+  "ex": [
+   {
+    "es": "¿De qué país eres?",
+    "en": "What country are you from?",
+    "hit": "país"
+   },
+   {
+    "es": "México es un país muy bonito.",
+    "en": "Mexico is a very beautiful country.",
+    "hit": "país"
+   },
+   {
+    "es": "Quiero visitar otro país el próximo año.",
+    "en": "I want to visit another country next year.",
+    "hit": "país"
+   }
+  ]
+ },
+ {
+  "id": "sv01-quedar",
+  "w": "quedar",
+  "pos": "verb",
+  "en": "to be left; to be located; to fit",
+  "note": "quedarse = to stay: me quedo en casa. te queda bien = it suits you.",
+  "type": [
+   "quedar"
+  ],
+  "ex": [
+   {
+    "es": "Ya no queda café, voy a comprar más.",
+    "en": "There's no coffee left; I'm going to buy more.",
+    "hit": "queda"
+   },
+   {
+    "es": "Disculpe, ¿dónde queda el banco?",
+    "en": "Excuse me, where is the bank?",
+    "hit": "queda"
+   },
+   {
+    "es": "Esa camisa te queda muy bien.",
+    "en": "That shirt looks really good on you.",
+    "hit": "queda"
+   }
+  ]
+ },
+ {
+  "id": "sv01-cada",
+  "w": "cada",
+  "pos": "determiner",
+  "en": "each; every",
+  "note": "Never changes form: cada día, cada semana.",
+  "type": [
+   "cada"
+  ],
+  "ex": [
+   {
+    "es": "Voy al gimnasio cada mañana.",
+    "en": "I go to the gym every morning.",
+    "hit": "cada"
+   },
+   {
+    "es": "Cada uno paga lo suyo.",
+    "en": "Everyone pays for their own.",
+    "hit": "Cada"
+   },
+   {
+    "es": "Tomo una pastilla cada ocho horas.",
+    "en": "I take a pill every eight hours.",
+    "hit": "cada"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ellos",
+  "w": "ellos",
+  "pos": "pronoun",
+  "en": "they; them",
+  "note": "For an all-female group: ellas.",
+  "type": [
+   "ellos",
+   "ellas"
+  ],
+  "ex": [
+   {
+    "es": "Ellos viven cerca de nosotros.",
+    "en": "They live near us.",
+    "hit": "Ellos"
+   },
+   {
+    "es": "¿Ellos vienen a la cena?",
+    "en": "Are they coming to dinner?",
+    "hit": "Ellos"
+   },
+   {
+    "es": "Ellas son mis compañeras de trabajo.",
+    "en": "They're my coworkers.",
+    "hit": "Ellas"
+   }
+  ]
+ },
+ {
+  "id": "sv01-parecer",
+  "w": "parecer",
+  "pos": "verb",
+  "en": "to seem; to look like",
+  "note": "¿Qué te parece? = What do you think? parecerse a = to look like (someone).",
+  "type": [
+   "parecer"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué te parece mi idea?",
+    "en": "What do you think of my idea?",
+    "hit": "parece"
+   },
+   {
+    "es": "Parece que va a llover.",
+    "en": "It looks like it's going to rain.",
+    "hit": "Parece"
+   },
+   {
+    "es": "Tu hijo se parece mucho a ti.",
+    "en": "Your son looks a lot like you.",
+    "hit": "parece"
+   }
+  ]
+ },
+ {
+  "id": "sv01-pensar",
+  "w": "pensar",
+  "pos": "verb",
+  "en": "to think",
+  "note": "Stem change: pienso, piensas. pensar en = to think about.",
+  "type": [
+   "pensar"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué piensas de la película?",
+    "en": "What do you think of the movie?",
+    "hit": "piensas"
+   },
+   {
+    "es": "Estoy pensando en ti, mi amor.",
+    "en": "I'm thinking about you, my love.",
+    "hit": "pensando"
+   },
+   {
+    "es": "Pienso que es buena idea.",
+    "en": "I think it's a good idea.",
+    "hit": "Pienso"
+   }
+  ]
+ },
+ {
+  "id": "sv01-lugar",
+  "w": "el lugar",
+  "pos": "noun",
+  "en": "place",
+  "note": "Also 'room, space': no hay lugar = there's no room.",
+  "type": [
+   "el lugar",
+   "lugar"
+  ],
+  "ex": [
+   {
+    "es": "Este lugar es muy tranquilo.",
+    "en": "This place is very quiet.",
+    "hit": "lugar"
+   },
+   {
+    "es": "¿Conoces un buen lugar para comer?",
+    "en": "Do you know a good place to eat?",
+    "hit": "lugar"
+   },
+   {
+    "es": "No hay lugar para estacionar.",
+    "en": "There's no place to park.",
+    "hit": "lugar"
+   }
+  ]
+ },
+ {
+  "id": "sv01-trabajo",
+  "w": "el trabajo",
+  "pos": "noun",
+  "en": "work; job",
+  "note": "Same spelling as trabajo = I work.",
+  "type": [
+   "el trabajo",
+   "trabajo"
+  ],
+  "ex": [
+   {
+    "es": "Salgo del trabajo a las cinco.",
+    "en": "I get off work at five.",
+    "hit": "trabajo"
+   },
+   {
+    "es": "Mi hermano está buscando trabajo.",
+    "en": "My brother is looking for a job.",
+    "hit": "trabajo"
+   },
+   {
+    "es": "El trabajo de mi esposa es muy estresante.",
+    "en": "My wife's job is very stressful.",
+    "hit": "trabajo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-gracias",
+  "w": "gracias",
+  "pos": "interjection",
+  "en": "thank you; thanks",
+  "note": "muchas gracias = thank you very much. gracias por = thanks for.",
+  "type": [
+   "gracias"
+  ],
+  "ex": [
+   {
+    "es": "Gracias por venir a mi fiesta.",
+    "en": "Thanks for coming to my party.",
+    "hit": "Gracias"
+   },
+   {
+    "es": "Gracias, es usted muy amable.",
+    "en": "Thank you, you're very kind.",
+    "hit": "Gracias"
+   },
+   {
+    "es": "Le mandé un mensaje para darle las gracias.",
+    "en": "I sent her a message to thank her.",
+    "hit": "gracias"
+   }
+  ]
+ },
+ {
+  "id": "sv01-menos",
+  "w": "menos",
+  "pos": "adverb",
+  "en": "less; fewer; minus",
+  "note": "Telling time: las cinco menos diez = ten to five.",
+  "type": [
+   "menos"
+  ],
+  "ex": [
+   {
+    "es": "Son las cinco menos diez.",
+    "en": "It's ten to five.",
+    "hit": "menos"
+   },
+   {
+    "es": "Quiero comer menos azúcar este año.",
+    "en": "I want to eat less sugar this year.",
+    "hit": "menos"
+   },
+   {
+    "es": "Este celular cuesta menos que el otro.",
+    "en": "This cell phone costs less than the other one.",
+    "hit": "menos"
+   }
+  ]
+ },
+ {
+  "id": "sv01-mujer",
+  "w": "la mujer",
+  "pos": "noun",
+  "en": "woman; wife",
+  "note": "mi mujer = my wife (casual); mi esposa is more formal.",
+  "type": [
+   "la mujer",
+   "mujer"
+  ],
+  "ex": [
+   {
+    "es": "Esa mujer es mi jefa.",
+    "en": "That woman is my boss.",
+    "hit": "mujer"
+   },
+   {
+    "es": "Hay una mujer esperándote afuera.",
+    "en": "There's a woman waiting for you outside.",
+    "hit": "mujer"
+   },
+   {
+    "es": "Mi mujer cocina mejor que yo.",
+    "en": "My wife cooks better than I do.",
+    "hit": "mujer"
+   }
+  ]
+ },
+ {
+  "id": "sv01-casa",
+  "w": "la casa",
+  "pos": "noun",
+  "en": "house; home",
+  "note": "en casa = at home; a casa = (to) home.",
+  "type": [
+   "la casa",
+   "casa"
+  ],
+  "ex": [
+   {
+    "es": "Hoy me quedo en casa.",
+    "en": "I'm staying home today.",
+    "hit": "casa"
+   },
+   {
+    "es": "Su casa tiene un jardín enorme.",
+    "en": "Their house has a huge yard.",
+    "hit": "casa"
+   },
+   {
+    "es": "¿A qué hora llegas a casa?",
+    "en": "What time do you get home?",
+    "hit": "casa"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hombre",
+  "w": "el hombre",
+  "pos": "noun",
+  "en": "man",
+  "note": "",
+  "type": [
+   "el hombre",
+   "hombre"
+  ],
+  "ex": [
+   {
+    "es": "Ese hombre es el dueño del restaurante.",
+    "en": "That man is the owner of the restaurant.",
+    "hit": "hombre"
+   },
+   {
+    "es": "El baño de hombres está allá.",
+    "en": "The men's bathroom is over there.",
+    "hit": "hombres"
+   },
+   {
+    "es": "Mi hijo ya es todo un hombre.",
+    "en": "My son is a grown man now.",
+    "hit": "hombre"
+   }
+  ]
+ },
+ {
+  "id": "sv01-aqui",
+  "w": "aquí",
+  "pos": "adverb",
+  "en": "here",
+  "note": "Always with an accent. por aquí = around here.",
+  "type": [
+   "aquí"
+  ],
+  "ex": [
+   {
+    "es": "Ven aquí un momento, por favor.",
+    "en": "Come here for a moment, please.",
+    "hit": "aquí"
+   },
+   {
+    "es": "Aquí tiene su cambio, señor.",
+    "en": "Here's your change, sir.",
+    "hit": "Aquí"
+   },
+   {
+    "es": "Vivo aquí desde hace tres años.",
+    "en": "I've lived here for three years.",
+    "hit": "aquí"
+   }
+  ]
+ },
+ {
+  "id": "sv01-venir",
+  "w": "venir",
+  "pos": "verb",
+  "en": "to come",
+  "note": "Irregular: vengo, vienes, viene; past vine. Ven = come (command).",
+  "type": [
+   "venir"
+  ],
+  "ex": [
+   {
+    "es": "¿Vienes a la fiesta el sábado?",
+    "en": "Are you coming to the party on Saturday?",
+    "hit": "Vienes"
+   },
+   {
+    "es": "Mi mamá viene a visitarnos en diciembre.",
+    "en": "My mom is coming to visit us in December.",
+    "hit": "viene"
+   },
+   {
+    "es": "Hoy vine al trabajo en bici.",
+    "en": "Today I came to work by bike.",
+    "hit": "vine"
+   }
+  ]
+ },
+ {
+  "id": "sv01-tomar",
+  "w": "tomar",
+  "pos": "verb",
+  "en": "to take; to drink",
+  "note": "In Latin America, tomar is the everyday verb for drinking.",
+  "type": [
+   "tomar"
+  ],
+  "ex": [
+   {
+    "es": "Vamos a tomar un café.",
+    "en": "Let's go have a coffee.",
+    "hit": "tomar"
+   },
+   {
+    "es": "Tomé un taxi al aeropuerto.",
+    "en": "I took a taxi to the airport.",
+    "hit": "Tomé"
+   },
+   {
+    "es": "Tome esta pastilla con agua.",
+    "en": "Take this pill with water.",
+    "hit": "Tome"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ultimo",
+  "w": "último",
+  "pos": "adjective",
+  "en": "last; latest",
+  "note": "Feminine: última. la última vez = the last time.",
+  "type": [
+   "último",
+   "última"
+  ],
+  "ex": [
+   {
+    "es": "¿A qué hora sale el último tren?",
+    "en": "What time does the last train leave?",
+    "hit": "último"
+   },
+   {
+    "es": "La última vez que fui, estaba cerrado.",
+    "en": "The last time I went, it was closed.",
+    "hit": "última"
+   },
+   {
+    "es": "¿Viste el último episodio?",
+    "en": "Did you see the latest episode?",
+    "hit": "último"
+   }
+  ]
+ },
+ {
+  "id": "sv01-acuerdo",
+  "w": "el acuerdo",
+  "pos": "noun",
+  "en": "agreement; (de acuerdo) okay, agreed",
+  "note": "de acuerdo = okay, agreed; estoy de acuerdo = I agree.",
+  "type": [
+   "el acuerdo",
+   "acuerdo"
+  ],
+  "ex": [
+   {
+    "es": "Estoy de acuerdo contigo.",
+    "en": "I agree with you.",
+    "hit": "acuerdo"
+   },
+   {
+    "es": "De acuerdo, nos vemos a las ocho.",
+    "en": "Okay, see you at eight.",
+    "hit": "acuerdo"
+   },
+   {
+    "es": "Llegamos a un acuerdo con el dueño.",
+    "en": "We reached an agreement with the owner.",
+    "hit": "acuerdo"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ciudad",
+  "w": "la ciudad",
+  "pos": "noun",
+  "en": "city",
+  "note": "",
+  "type": [
+   "la ciudad",
+   "ciudad"
+  ],
+  "ex": [
+   {
+    "es": "Me encanta esta ciudad.",
+    "en": "I love this city.",
+    "hit": "ciudad"
+   },
+   {
+    "es": "¿En qué ciudad vives?",
+    "en": "What city do you live in?",
+    "hit": "ciudad"
+   },
+   {
+    "es": "El centro de la ciudad tiene mucho tráfico.",
+    "en": "Downtown has a lot of traffic.",
+    "hit": "ciudad"
+   }
+  ]
+ },
+ {
+  "id": "sv01-momento",
+  "w": "el momento",
+  "pos": "noun",
+  "en": "moment",
+  "note": "en este momento = right now. Un momento = just a moment.",
+  "type": [
+   "el momento",
+   "momento"
+  ],
+  "ex": [
+   {
+    "es": "Un momento, por favor, ya vengo.",
+    "en": "One moment, please; I'll be right back.",
+    "hit": "momento"
+   },
+   {
+    "es": "En este momento no puedo hablar.",
+    "en": "I can't talk right now.",
+    "hit": "momento"
+   },
+   {
+    "es": "Fue el mejor momento del viaje.",
+    "en": "It was the best moment of the trip.",
+    "hit": "momento"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hijo",
+  "w": "el hijo",
+  "pos": "noun",
+  "en": "son; child",
+  "note": "la hija = daughter. los hijos = children (sons and daughters).",
+  "type": [
+   "el hijo",
+   "hijo"
+  ],
+  "ex": [
+   {
+    "es": "Mi hijo juega fútbol los sábados.",
+    "en": "My son plays soccer on Saturdays.",
+    "hit": "hijo"
+   },
+   {
+    "es": "¿Cuántos hijos tienen ustedes?",
+    "en": "How many kids do you have?",
+    "hit": "hijos"
+   },
+   {
+    "es": "Mi hija estudia medicina.",
+    "en": "My daughter studies medicine.",
+    "hit": "hija"
+   }
+  ]
+ },
+ {
+  "id": "sv01-problema",
+  "w": "el problema",
+  "pos": "noun",
+  "en": "problem",
+  "note": "Masculine even though it ends in -a: el problema. No hay problema = no problem.",
+  "type": [
+   "el problema",
+   "problema"
+  ],
+  "ex": [
+   {
+    "es": "No hay ningún problema, de verdad.",
+    "en": "It's no problem at all, really.",
+    "hit": "problema"
+   },
+   {
+    "es": "Tengo un problema con mi computadora.",
+    "en": "I have a problem with my computer.",
+    "hit": "problema"
+   },
+   {
+    "es": "El problema es que no tengo dinero.",
+    "en": "The problem is that I don't have money.",
+    "hit": "problema"
+   }
+  ]
+ },
+ {
+  "id": "sv01-amigo",
+  "w": "el amigo",
+  "pos": "noun",
+  "en": "friend",
+  "note": "A female friend: la amiga.",
+  "type": [
+   "el amigo",
+   "amigo",
+   "la amiga",
+   "amiga"
+  ],
+  "ex": [
+   {
+    "es": "Él es mi mejor amigo.",
+    "en": "He's my best friend.",
+    "hit": "amigo"
+   },
+   {
+    "es": "Voy a cenar con unos amigos.",
+    "en": "I'm going to have dinner with some friends.",
+    "hit": "amigos"
+   },
+   {
+    "es": "Mi amiga Sofía vive en Bogotá.",
+    "en": "My friend Sofía lives in Bogotá.",
+    "hit": "amiga"
+   }
+  ]
+ },
+ {
+  "id": "sv01-conocer",
+  "w": "conocer",
+  "pos": "verb",
+  "en": "to know (people, places); to meet",
+  "note": "For facts use saber. Present: conozco. conocer a + person.",
+  "type": [
+   "conocer"
+  ],
+  "ex": [
+   {
+    "es": "¿Conoces a mi hermana?",
+    "en": "Do you know my sister?",
+    "hit": "Conoces"
+   },
+   {
+    "es": "Mucho gusto en conocerla, señora.",
+    "en": "Nice to meet you, ma'am.",
+    "hit": "conocerla"
+   },
+   {
+    "es": "Todavía no conozco Guadalajara.",
+    "en": "I still haven't been to Guadalajara.",
+    "hit": "conozco"
+   }
+  ]
+ },
+ {
+  "id": "sv01-vivir",
+  "w": "vivir",
+  "pos": "verb",
+  "en": "to live",
+  "note": "",
+  "type": [
+   "vivir"
+  ],
+  "ex": [
+   {
+    "es": "¿En qué parte de la ciudad vives?",
+    "en": "What part of the city do you live in?",
+    "hit": "vives"
+   },
+   {
+    "es": "Mis papás viven en Texas.",
+    "en": "My parents live in Texas.",
+    "hit": "viven"
+   },
+   {
+    "es": "Viví dos años en Perú.",
+    "en": "I lived in Peru for two years.",
+    "hit": "Viví"
+   }
+  ]
+ },
+ {
+  "id": "sv01-el",
+  "w": "él",
+  "pos": "pronoun",
+  "en": "he; him",
+  "note": "With an accent. Without it, el means 'the'.",
+  "type": [
+   "él"
+  ],
+  "ex": [
+   {
+    "es": "Él es mi esposo, Diego.",
+    "en": "He's my husband, Diego.",
+    "hit": "Él"
+   },
+   {
+    "es": "Voy al cine con él.",
+    "en": "I'm going to the movies with him.",
+    "hit": "él"
+   },
+   {
+    "es": "¿Él también trabaja en el hospital?",
+    "en": "Does he work at the hospital too?",
+    "hit": "Él"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hora",
+  "w": "la hora",
+  "pos": "noun",
+  "en": "hour; time (of day)",
+  "note": "¿Qué hora es? = What time is it? For time in general use el tiempo.",
+  "type": [
+   "la hora",
+   "hora"
+  ],
+  "ex": [
+   {
+    "es": "Disculpe, ¿qué hora es?",
+    "en": "Excuse me, what time is it?",
+    "hit": "hora"
+   },
+   {
+    "es": "¿A qué hora empieza la película?",
+    "en": "What time does the movie start?",
+    "hit": "hora"
+   },
+   {
+    "es": "Llevo una hora esperando el autobús.",
+    "en": "I've been waiting for the bus for an hour.",
+    "hit": "hora"
+   }
+  ]
+ },
+ {
+  "id": "sv01-ella",
+  "w": "ella",
+  "pos": "pronoun",
+  "en": "she; her",
+  "note": "Plural: ellas.",
+  "type": [
+   "ella"
+  ],
+  "ex": [
+   {
+    "es": "Ella es mi compañera de cuarto.",
+    "en": "She's my roommate.",
+    "hit": "Ella"
+   },
+   {
+    "es": "Ayer hablé con ella por teléfono.",
+    "en": "I talked to her on the phone yesterday.",
+    "hit": "ella"
+   },
+   {
+    "es": "¿Ella sabe que vienes?",
+    "en": "Does she know you're coming?",
+    "hit": "Ella"
+   }
+  ]
+ },
+ {
+  "id": "sv01-necesitar",
+  "w": "necesitar",
+  "pos": "verb",
+  "en": "to need",
+  "note": "",
+  "type": [
+   "necesitar"
+  ],
+  "ex": [
+   {
+    "es": "Necesito ir al baño.",
+    "en": "I need to go to the bathroom.",
+    "hit": "Necesito"
+   },
+   {
+    "es": "¿Necesitas ayuda con las bolsas?",
+    "en": "Do you need help with the bags?",
+    "hit": "Necesitas"
+   },
+   {
+    "es": "Necesitamos comprar leche y huevos.",
+    "en": "We need to buy milk and eggs.",
+    "hit": "Necesitamos"
+   }
+  ]
+ },
+ {
+  "id": "sv01-sentir",
+  "w": "sentir",
+  "pos": "verb",
+  "en": "to feel; to be sorry",
+  "note": "lo siento = I'm sorry. sentirse + adjective: me siento bien.",
+  "type": [
+   "sentir"
+  ],
+  "ex": [
+   {
+    "es": "Lo siento, llegué tarde.",
+    "en": "Sorry, I'm late.",
+    "hit": "siento"
+   },
+   {
+    "es": "¿Cómo te sientes hoy?",
+    "en": "How are you feeling today?",
+    "hit": "sientes"
+   },
+   {
+    "es": "Siento que algo no está bien.",
+    "en": "I feel like something isn't right.",
+    "hit": "Siento"
+   }
+  ]
+ },
+ {
+  "id": "sv01-hoy",
+  "w": "hoy",
+  "pos": "adverb",
+  "en": "today",
+  "note": "",
+  "type": [
+   "hoy"
+  ],
+  "ex": [
+   {
+    "es": "Hoy es mi cumpleaños.",
+    "en": "Today is my birthday.",
+    "hit": "Hoy"
+   },
+   {
+    "es": "¿Qué vamos a comer hoy?",
+    "en": "What are we going to eat today?",
+    "hit": "hoy"
+   },
+   {
+    "es": "La farmacia está cerrada hoy.",
+    "en": "The pharmacy is closed today.",
+    "hit": "hoy"
+   }
+  ]
+ },
+ {
+  "id": "sv01-alguien",
+  "w": "alguien",
+  "pos": "pronoun",
+  "en": "someone; anyone",
+  "note": "Negative: nadie = no one.",
+  "type": [
+   "alguien"
+  ],
+  "ex": [
+   {
+    "es": "¿Alguien quiere más pastel?",
+    "en": "Does anyone want more cake?",
+    "hit": "Alguien"
+   },
+   {
+    "es": "Alguien te llamó hace rato.",
+    "en": "Someone called you a while ago.",
+    "hit": "Alguien"
+   },
+   {
+    "es": "¿Hay alguien en casa?",
+    "en": "Is anyone home?",
+    "hit": "alguien"
+   }
+  ]
+ },
+ {
+  "id": "sv01-tres",
+  "w": "tres",
+  "pos": "numeral",
+  "en": "three",
+  "note": "",
+  "type": [
+   "tres"
+  ],
+  "ex": [
+   {
+    "es": "Tengo tres hermanos mayores.",
+    "en": "I have three older brothers.",
+    "hit": "tres"
+   },
+   {
+    "es": "Llego en tres minutos.",
+    "en": "I'll be there in three minutes.",
+    "hit": "tres"
+   },
+   {
+    "es": "Son tres dólares con cincuenta.",
+    "en": "That's three dollars and fifty cents.",
+    "hit": "tres"
+   }
+  ]
+ },
+ {
+  "id": "sv01-poco",
+  "w": "poco",
+  "pos": "adverb",
+  "en": "little; not much",
+  "note": "un poco = a little: un poco de agua.",
+  "type": [
+   "poco"
+  ],
+  "ex": [
+   {
+    "es": "Hablo un poco de español.",
+    "en": "I speak a little Spanish.",
+    "hit": "poco"
+   },
+   {
+    "es": "Espera un poco, ya casi termino.",
+    "en": "Wait a bit; I'm almost done.",
+    "hit": "poco"
+   },
+   {
+    "es": "Mi hijo come muy poco.",
+    "en": "My son eats very little.",
+    "hit": "poco"
+   }
+  ]
+ },
+ {
+  "id": "sv01-llamar",
+  "w": "llamar",
+  "pos": "verb",
+  "en": "to call",
+  "note": "llamarse = to be called: me llamo Ana = my name is Ana.",
+  "type": [
+   "llamar"
+  ],
+  "ex": [
+   {
+    "es": "Te llamo esta noche.",
+    "en": "I'll call you tonight.",
+    "hit": "llamo"
+   },
+   {
+    "es": "Hola, ¿cómo te llamas?",
+    "en": "Hi, what's your name?",
+    "hit": "llamas"
+   },
+   {
+    "es": "Llamé al doctor para hacer una cita.",
+    "en": "I called the doctor to make an appointment.",
+    "hit": "Llamé"
+   }
+  ]
+ },
+ {
+  "id": "sv01-usar",
+  "w": "usar",
+  "pos": "verb",
+  "en": "to use; to wear",
+  "note": "",
+  "type": [
+   "usar"
+  ],
+  "ex": [
+   {
+    "es": "¿Puedo usar tu baño?",
+    "en": "Can I use your bathroom?",
+    "hit": "usar"
+   },
+   {
+    "es": "Uso lentes para manejar.",
+    "en": "I wear glasses to drive.",
+    "hit": "Uso"
+   },
+   {
+    "es": "¿Cómo se usa esta máquina?",
+    "en": "How do you use this machine?",
+    "hit": "usa"
+   }
+  ]
+ },
+ {
+  "id": "sv01-nombre",
+  "w": "el nombre",
+  "pos": "noun",
+  "en": "name; first name",
+  "note": "Last name: el apellido.",
+  "type": [
+   "el nombre",
+   "nombre"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es su nombre, señora?",
+    "en": "What's your name, ma'am?",
+    "hit": "nombre"
+   },
+   {
+    "es": "No me acuerdo de su nombre.",
+    "en": "I don't remember his name.",
+    "hit": "nombre"
+   },
+   {
+    "es": "Escribe tu nombre aquí.",
+    "en": "Write your name here.",
+    "hit": "nombre"
+   }
+  ]
+ },
+ {
+  "id": "sv01-entender",
+  "w": "entender",
+  "pos": "verb",
+  "en": "to understand",
+  "note": "Stem change: entiendo, entiendes, entiende.",
+  "type": [
+   "entender"
+  ],
+  "ex": [
+   {
+    "es": "No entiendo, ¿puede repetir?",
+    "en": "I don't understand; can you repeat that?",
+    "hit": "entiendo"
+   },
+   {
+    "es": "¿Entendiste lo que dijo la maestra?",
+    "en": "Did you understand what the teacher said?",
+    "hit": "Entendiste"
+   },
+   {
+    "es": "Mi abuela no entiende su celular.",
+    "en": "My grandma can't figure out her cell phone.",
+    "hit": "entiende"
+   }
+  ]
+ },
+ {
+  "id": "sv01-mes",
+  "w": "el mes",
+  "pos": "noun",
+  "en": "month",
+  "note": "Plural: meses.",
+  "type": [
+   "el mes",
+   "mes"
+  ],
+  "ex": [
+   {
+    "es": "Pago la renta cada mes.",
+    "en": "I pay the rent every month.",
+    "hit": "mes"
+   },
+   {
+    "es": "El próximo mes vamos a Cancún.",
+    "en": "Next month we're going to Cancún.",
+    "hit": "mes"
+   },
+   {
+    "es": "Mi bebé tiene tres meses.",
+    "en": "My baby is three months old.",
+    "hit": "meses"
+   }
+  ]
+ },
+ {
+  "id": "sv01-trabajar",
+  "w": "trabajar",
+  "pos": "verb",
+  "en": "to work",
+  "note": "",
+  "type": [
+   "trabajar"
+  ],
+  "ex": [
+   {
+    "es": "¿Y tú en qué trabajas?",
+    "en": "And what do you do for work?",
+    "hit": "trabajas"
+   },
+   {
+    "es": "Trabajo en un hospital.",
+    "en": "I work at a hospital.",
+    "hit": "Trabajo"
+   },
+   {
+    "es": "Mi esposa trabajó toda la noche.",
+    "en": "My wife worked all night.",
+    "hit": "trabajó"
+   }
+  ]
+ },
+ {
+  "id": "sv01-noche",
+  "w": "la noche",
+  "pos": "noun",
+  "en": "night; evening",
+  "note": "buenas noches = good evening / good night. esta noche = tonight.",
+  "type": [
+   "la noche",
+   "noche"
+  ],
+  "ex": [
+   {
+    "es": "Buenas noches, que descanses.",
+    "en": "Good night, sleep well.",
+    "hit": "noches"
+   },
+   {
+    "es": "Trabajo de noche esta semana.",
+    "en": "I'm working nights this week.",
+    "hit": "noche"
+   },
+   {
+    "es": "¿Qué hacemos esta noche?",
+    "en": "What are we doing tonight?",
+    "hit": "noche"
+   }
+  ]
+ }
+]

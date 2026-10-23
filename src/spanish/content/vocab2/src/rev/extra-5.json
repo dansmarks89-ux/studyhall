@@ -1,0 +1,108 @@
+{
+ "fix": [
+  {
+   "id": "VM1-22",
+   "w": "el corazón",
+   "en": "heart",
+   "ex": [
+    {
+     "es": "Su corazón está fuerte, pero el ritmo es irregular.",
+     "en": "Your heart is strong, but the rhythm is irregular.",
+     "hit": "corazón"
+    },
+    {
+     "es": "A veces siento que el corazón me brinca, doctor.",
+     "en": "Sometimes I feel like my heart skips, doctor.",
+     "hit": "corazón"
+    }
+   ]
+  },
+  {
+   "id": "VM1-31",
+   "w": "el tobillo",
+   "en": "ankle",
+   "ex": [
+    {
+     "es": "Le voy a presionar el tobillo para ver si hay hinchazón.",
+     "en": "I'm going to press on your ankle to check for swelling.",
+     "hit": "tobillo"
+    },
+    {
+     "es": "Se me hinchan los tobillos en la tarde.",
+     "en": "My ankles swell in the afternoon.",
+     "hit": "tobillos"
+    }
+   ]
+  },
+  {
+   "id": "VM1-38",
+   "w": "hinchado / hinchada",
+   "en": "swollen",
+   "ex": [
+    {
+     "es": "Tengo las piernas hinchadas en la noche.",
+     "en": "My legs are swollen at night.",
+     "hit": "hinchadas"
+    },
+    {
+     "es": "Tiene el brazo un poco hinchado donde le pusieron el suero.",
+     "en": "Your arm is a little swollen where they put in the IV.",
+     "hit": "hinchado"
+    }
+   ]
+  },
+  {
+   "id": "VM2-2",
+   "w": "¿Cuándo empezó?",
+   "en": "When did it start?",
+   "ex": [
+    {
+     "es": "¿Cuándo empezó la falta de aire, señora?",
+     "en": "When did the shortness of breath start, ma'am?",
+     "hit": "¿Cuándo empezó"
+    },
+    {
+     "es": "—Me siento muy cansado. —¿Cuándo empezó? —Hace como un mes.",
+     "en": "—I feel very tired. —When did it start? —About a month ago.",
+     "hit": "¿Cuándo empezó?"
+    }
+   ]
+  },
+  {
+   "id": "VM2-19",
+   "w": "la presión",
+   "en": "pressure",
+   "ex": [
+    {
+     "es": "Siento presión en el pecho cuando cargo las bolsas del súper.",
+     "en": "I feel pressure in my chest when I carry the grocery bags.",
+     "hit": "presión"
+    },
+    {
+     "es": "¿La presión en el pecho se le va al brazo?",
+     "en": "Does the pressure in your chest go to your arm?",
+     "hit": "presión"
+    }
+   ]
+  },
+  {
+   "id": "VM2-21",
+   "w": "apretado",
+   "en": "tight",
+   "ex": [
+    {
+     "es": "Desde la mañana tengo el pecho apretado y me cuesta respirar.",
+     "en": "Since this morning my chest has felt tight and it's hard to breathe.",
+     "hit": "apretado"
+    },
+    {
+     "es": "¿Siente el pecho apretado también en reposo?",
+     "en": "Does your chest feel tight at rest, too?",
+     "hit": "apretado"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixes: plural-subject mismatch (palpitaciones/empezó), unidiomatic phrasing (apretar su tobillo, dolor apretado, mi corazón brinca), 'estómago hinchado' = bloated not swollen, near-duplicate of 'have' example."
+}

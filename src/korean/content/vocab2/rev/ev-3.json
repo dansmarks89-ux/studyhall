@@ -1,0 +1,190 @@
+{
+ "fix": [
+  {
+   "id": "kv02-102",
+   "t": {
+    "s": "바람"
+   },
+   "pos": "noun",
+   "en": "wind",
+   "note": "바람이 불다 = the wind blows; 바람을 쐬다 = get fresh air.",
+   "ex": [
+    {
+     "s": "오늘 바람이 많이 불어요.",
+     "en": "It's really windy today."
+    },
+    {
+     "s": "바람이 차가우니까 따뜻하게 입으세요.",
+     "en": "The wind is cold, so dress warmly."
+    },
+    {
+     "s": "잠깐 나가서 바람 좀 쐬어요.",
+     "en": "Let's step outside and get some fresh air."
+    }
+   ]
+  },
+  {
+   "id": "kv02-110",
+   "t": {
+    "s": "얘기"
+   },
+   "pos": "noun",
+   "en": "talk, story, chat",
+   "note": "Casual form of 이야기; 얘기하다 = to talk.",
+   "ex": [
+    {
+     "s": "무슨 얘기예요?",
+     "en": "What are you talking about?"
+    },
+    {
+     "s": "그 얘기 들었어요?",
+     "en": "Did you hear about that?"
+    },
+    {
+     "s": "할머니가 옛날 얘기를 해 주셨어요.",
+     "en": "Grandma told us stories from the old days."
+    }
+   ]
+  },
+  {
+   "id": "kv02-144",
+   "t": {
+    "s": "결정"
+   },
+   "pos": "noun",
+   "en": "decision",
+   "note": "결정하다 = to decide.",
+   "ex": [
+    {
+     "s": "아직 결정을 못 했어요.",
+     "en": "I still haven't made a decision."
+    },
+    {
+     "s": "정말 어려운 결정이었어요.",
+     "en": "It was a really tough decision."
+    },
+    {
+     "s": "회사 그만둔 건 잘한 결정이에요.",
+     "en": "Quitting your job was the right decision."
+    }
+   ]
+  },
+  {
+   "id": "kv02-147",
+   "t": {
+    "s": "계약"
+   },
+   "pos": "noun",
+   "en": "contract, lease",
+   "note": "계약하다 = to sign a contract.",
+   "ex": [
+    {
+     "s": "다음 주에 집 계약을 해요.",
+     "en": "I'm signing the lease for the house next week."
+    },
+    {
+     "s": "회사랑 1년 계약을 했어요.",
+     "en": "I signed a one-year contract with the company."
+    },
+    {
+     "s": "계약서를 꼼꼼히 읽어 보세요.",
+     "en": "Read the contract carefully."
+    }
+   ]
+  },
+  {
+   "id": "kv02-163",
+   "t": {
+    "s": "가치"
+   },
+   "pos": "noun",
+   "en": "value, worth",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 식당은 한번 가 볼 가치가 있어요.",
+     "en": "That restaurant is worth a visit."
+    },
+    {
+     "s": "이 시계는 가치가 많이 올랐어요.",
+     "en": "This watch has gone up a lot in value."
+    },
+    {
+     "s": "돈보다 가족이 더 가치 있어요.",
+     "en": "Family is worth more than money."
+    }
+   ]
+  },
+  {
+   "id": "kv02-168",
+   "t": {
+    "s": "완벽하다"
+   },
+   "pos": "adjective",
+   "en": "to be perfect",
+   "note": "",
+   "ex": [
+    {
+     "s": "와, 여행 계획이 완벽하네요!",
+     "en": "Wow, the trip plan is perfect!"
+    },
+    {
+     "s": "한국어가 거의 완벽하네요!",
+     "en": "Your Korean is almost perfect!"
+    },
+    {
+     "s": "완벽하지 않아도 괜찮아요.",
+     "en": "It's okay not to be perfect."
+    }
+   ]
+  },
+  {
+   "id": "kv02-187",
+   "t": {
+    "s": "설명하다"
+   },
+   "pos": "verb",
+   "en": "to explain",
+   "note": "",
+   "ex": [
+    {
+     "s": "다시 한번 설명해 주시겠어요?",
+     "en": "Could you explain it once more?"
+    },
+    {
+     "s": "의사가 검사 결과를 설명했어요.",
+     "en": "The doctor explained the test results."
+    },
+    {
+     "s": "길을 설명하기가 어려워요.",
+     "en": "It's hard to explain the directions."
+    }
+   ]
+  },
+  {
+   "id": "kv02-199",
+   "t": {
+    "s": "위험"
+   },
+   "pos": "noun",
+   "en": "danger, risk",
+   "note": "위험하다 = to be dangerous.",
+   "ex": [
+    {
+     "s": "위험하니까 뛰지 마세요.",
+     "en": "It's dangerous, so don't run."
+    },
+    {
+     "s": "밤에 혼자 다니면 위험해요.",
+     "en": "It's dangerous to walk around alone at night."
+    },
+    {
+     "s": "이 수술은 위험이 크지 않대요.",
+     "en": "They say this surgery isn't very risky."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. 얘기/결정 examples duplicated the 얘기하다/결정하다 entries, so gave them noun uses; fixed 한번 spacing, phone 계약 (약정), translationese, a risky medical claim."
+}

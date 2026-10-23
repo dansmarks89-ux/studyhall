@@ -7,9 +7,13 @@
 Inputs: src/<lang>/content/levels/L1..L10.json (checked with tools/check_level.py),
 src/<lang>/content/sounds_src.json, the pronunciation guide in tools/build_app.py,
 and the shared engine src/lang/app.html.
+Everyday words: src/<lang>/content/vocab2/out/ev-<b>.json (set b+1) and extra-<k>.json (more examples for
+existing vocab), each patched by vocab2/rev/<same name> ({"fix": [entries], "drop": [ids]}) when present.
+They go to <lang>/vocab2.<hash>.json (the previous build's file is kept for pages still open); the claude.ai
+preview build inlines them.
 audio.json lists every clip the page can play; the Supabase "tts" function records the missing ones.
 """
-import json, os, re, sys, hashlib, random
+import json, os, re, sys, hashlib, random, functools
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(HERE, "tools"))
@@ -33,7 +37,8 @@ def build(lang):
     yue = C["code"] == "yue"
     base = os.path.join(REPO, "src", lang, "content")
     if not yue:
-        from ko_pron import pron as ko_pron, rom as ko_rom, strip as ko_strip
+        from ko_pron import rom as ko_rom, strip as ko_strip
+        ko_pron = cached_ko_pron()
     audio = {}  # (voice, text) -> name
 
     def say_text(s):
@@ -142,6 +147,8 @@ def build(lang):
 
     data = {"levels": levels, "drills": drills, "guide": guide,
             "audio": {f"{v}|{t}": n for (v, t), n in audio.items()}}
+    # Everyday words: their clips go into audio.json for the admin sync, not into the page (the page computes the names).
+    v2 = build_vocab2(lang, levels, want)
     cfg = {"course": C["course"], "lang": C["code"], "name": C["name"], "native": C["native"], "htmlLang": C["htmllang"],
            "voice": C["voice"], "voice2": C["voice2"], "romName": C["romName"], "ttsLang": C["ttsLang"],
            "voiceRe": C["voiceRe"], "voiceNameRe": C["voiceNameRe"],
@@ -153,20 +160,227 @@ def build(lang):
     for k in sorted(rep, key=len, reverse=True):
         assert k in src, k
         src = src.replace(k, rep[k])
-    left = re.findall(r"__[A-Z]+__", src)
+    assert src.count("__VOCAB__") == 1
+    left = re.findall(r"__[A-Z]+__", src.replace("__VOCAB__", ""))
     assert not left, left
     outdir = os.path.join(REPO, C["course"])
     os.makedirs(outdir, exist_ok=True)
-    head, body = src.split('<div class="wrap">', 1)
+    index = os.path.join(outdir, "index.html")
+    v2json = json.dumps(v2, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    v2name = f"vocab2.{hashlib.sha256(v2json).hexdigest()[:10]}.json"
+    keep = set(V2FILE.findall(open(index, encoding="utf-8").read())) if os.path.exists(index) else set()
+    open(os.path.join(outdir, v2name), "wb").write(v2json)
+    for f in os.listdir(outdir):
+        if V2FILE.fullmatch(f) and f != v2name and f not in keep:
+            os.remove(os.path.join(outdir, f))
+    head, body = src.replace("__VOCAB__", json.dumps({"url": v2name})).split('<div class="wrap">', 1)
     page = HOSTED_HEAD.replace("__COURSE__", C["course"]).replace("</head>\n<body>\n", head + "</head>\n<body>\n") + '<div class="wrap">' + body + "\n</body>\n</html>\n"
-    open(os.path.join(outdir, "index.html"), "w", encoding="utf-8").write(page)
+    open(index, "w", encoding="utf-8").write(page)
     manifest = [{"n": n, "t": t, "v": v, "r": RATE} for (v, t), n in sorted(audio.items(), key=lambda kv: kv[1])]
     json.dump(manifest, open(os.path.join(outdir, "audio.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-    # claude.ai preview build (no Study Hall sign-in)
+    # claude.ai preview build (no Study Hall sign-in): everyday words inlined
     os.makedirs(os.path.join(REPO, "build"), exist_ok=True)
-    open(os.path.join(REPO, "build", f"{C['course']}-course.html"), "w", encoding="utf-8").write(src)
+    open(os.path.join(REPO, "build", f"{C['course']}-course.html"), "w", encoding="utf-8").write(src.replace("__VOCAB__", '{"data":' + v2json.decode("utf-8") + "}"))
     nitems = sum(len(l["items"]) for l in levels); nv = sum(len(l["vocab"]) for l in levels)
-    print(f"{lang}: {nitems} items, {nv} vocab, {len(drills[-1]['_items'])} drill items, {len(audio)} audio clips, page {os.path.getsize(os.path.join(outdir, 'index.html'))//1024} KB")
+    print(f"{lang}: {nitems} items, {nv} vocab, {len(drills[-1]['_items'])} drill items, {len(audio)} audio clips, page {os.path.getsize(index)//1024} KB, {v2name} {len(v2json)//1024} KB")
+
+
+# ------------------------------------------------------------------ Korean pronunciation cache
+@functools.cache
+def cached_ko_pron():
+    """ko_pron.pron with an on-disk cache in build/ (it takes ~30 ms a sentence); reset when ko_pron.py changes.
+    Delete build/ko_pron_cache.json after upgrading g2pk2 or kiwipiepy."""
+    from ko_pron import pron
+    path = os.path.join(REPO, "build", "ko_pron_cache.json")
+    ver = hashlib.sha256(open(os.path.join(HERE, "tools", "ko_pron.py"), "rb").read()).hexdigest()[:12]
+    try:
+        cache = json.load(open(path, encoding="utf-8"))
+        if cache.get("_v") != ver:
+            cache = {}
+    except (OSError, ValueError):
+        cache = {}
+    cache["_v"] = ver
+    def f(s):
+        if s not in cache:
+            cache[s] = pron(s)
+            if len(cache) % 500 == 0:
+                save()
+        return cache[s]
+    def save():
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        json.dump(cache, open(path, "w", encoding="utf-8"), ensure_ascii=False)
+    import atexit
+    atexit.register(save)
+    return f
+
+
+# ------------------------------------------------------------------ Everyday words (vocab2)
+V2FILE = re.compile(r"vocab2\.[0-9a-f]{10}\.json")
+CJK = re.compile(r"[㐀-䶿一-鿿\U00020000-\U0003FFFF]")
+NONWORD = re.compile(r"[^0-9A-Za-z㐀-䶿一-鿿\U00020000-\U0003FFFF]")  # Cantonese tiles drop these (punctuation, spaces)
+KO_PUNCT = re.compile(r"[?!,.…~\"'“”‘’()]")
+
+
+def build_vocab2(lang, levels, want):
+    """Compact entries for the page: sets of everyday words and extra examples for existing vocab.
+    Each example gets "g" = [start, end, r_from, r_to(, Korean: romanization of the blank)] when the word can be
+    blanked in it exactly once (start/end in code points of s; r_from..r_to-1 = the blanked tokens of the space-separated
+    romanization, -1 when they can't be told apart); each word gets "tl" = the
+    example used for sentence tiles (Cantonese: [index, tile lengths in characters of the example without punctuation])."""
+    yue = lang == "cantonese"
+    d = os.path.join(REPO, "src", lang, "content", "vocab2")
+    if not yue:
+        from ko_pron import rom as ko_rom, strip as ko_strip
+        ko_pron = cached_ko_pron()
+        from kiwipiepy import Kiwi
+        kiwi = Kiwi()
+    else:
+        import pycantonese
+    stats = {"dup_course": 0, "dup_everyday": 0, "no_gap": 0, "no_tiles": 0, "patched": 0, "dropped": 0}
+
+    def load(name):
+        arr = json.load(open(os.path.join(d, "out", name), encoding="utf-8"))
+        rp = os.path.join(d, "rev", name)
+        if os.path.exists(rp):
+            rev = json.load(open(rp, encoding="utf-8"))
+            fix = {e["id"]: e for e in rev.get("fix", [])}
+            drop = set(rev.get("drop", []))
+            stats["patched"] += sum(1 for e in arr if e["id"] in fix)
+            stats["dropped"] += sum(1 for e in arr if e["id"] in drop)
+            have = {e["id"] for e in arr}
+            arr = [fix.get(e["id"], e) for e in arr if e["id"] not in drop] + [e for i, e in fix.items() if i not in have]  # re-added under a new id
+        return arr
+
+    def files(prefix):
+        fs = [(int(m.group(1)), f) for f in os.listdir(os.path.join(d, "out")) if (m := re.fullmatch(prefix + r"-(\d+)\.json", f))] if os.path.isdir(os.path.join(d, "out")) else []
+        return sorted(fs)
+
+    def ko_text(s):
+        p = ko_pron(s)
+        o = {"s": s, "r": ko_rom(p)}
+        if ko_strip(p) != ko_strip(s):
+            o["p"] = p
+        return o
+
+    def ko_span(hw, s):
+        """(start, end) of the word in a Korean example: the headword itself, or for a -다 verb/adjective the
+        conjugated word from its stem to the end of that word (found with the Kiwi tagger)."""
+        if not hw.endswith("다") or s.count(hw) == 1:
+            return (s.find(hw), s.find(hw) + len(hw)) if s.count(hw) == 1 else None
+        stem, toks = hw[:-1], kiwi.tokenize(s)
+        hits = []
+        for i in range(len(toks)):
+            acc = ""
+            for j in range(i, len(toks)):
+                acc += toks[j].form
+                if acc == stem and toks[j].tag[0] in "VX":
+                    hits.append((toks[i].start, toks[j].start + toks[j].len))
+                    break
+                if not stem.startswith(acc):
+                    break
+        if len(hits) != 1:
+            return None
+        a, b = hits[0]
+        while b < len(s) and re.match(r"[가-힣]", s[b]):
+            b += 1
+        return a, b
+
+    def gap(hw, x):
+        """The "g" field for example x, or None if the word can't be blanked exactly once."""
+        s = x["s"]
+        if yue:
+            if s.count(hw) != 1:
+                return None
+            a = s.find(hw)
+            ra = len(CJK.findall(s[:a]))
+            return [a, a + len(hw), ra, ra + len(CJK.findall(hw))]
+        sp = ko_span(hw, s)
+        if not sp:
+            return None
+        a, b = sp
+        ra = len(s[:a].split()) - (1 if a and not s[a - 1].isspace() else 0)
+        rb = len(s[:b].split())
+        if ra >= rb or len(x["r"].split()) != len(s.split()):
+            ra = rb = -1
+        return [a, b, ra, rb, ko_rom(ko_pron(s[a:b]))]
+
+    def tiles(hw, ex):
+        if not yue:
+            for k, x in enumerate(ex):
+                if 3 <= len([w for w in (KO_PUNCT.sub("", t) for t in x["s"].split()) if w]) <= 7:
+                    return [k]
+            return None
+        for k, x in enumerate(ex):
+            s = NONWORD.sub("", x["s"])
+            i = s.find(hw)
+            if i < 0:
+                continue
+            words = (pycantonese.segment(s[:i]) if i else []) + [hw] + (pycantonese.segment(s[i + len(hw):]) if s[i + len(hw):] else [])
+            if 3 <= len(words) <= 8:
+                return [k, [len(w) for w in words]]
+        return None
+
+    def example(x):
+        if yue:
+            assert len(CJK.findall(x["s"])) == len(x["r"].split()), x
+            o = {"s": x["s"], "r": x["r"], "en": x["en"]}
+        else:
+            o = dict(ko_text(x["s"]), en=x["en"])
+        want(x["s"])
+        return o
+
+    def examples(hw, raw):
+        out = []
+        for x in raw:
+            o = example(x)
+            g = gap(hw, o)
+            if g:
+                o["g"] = g
+            else:
+                stats["no_gap"] += 1
+            out.append(o)
+        return out
+
+    seen = {v["t"]["s"] for l in levels for v in l["vocab"]}
+    course = set(seen)
+    sets = []
+    for b, name in files("ev"):
+        words = []
+        for e in load(name):
+            s = e["t"]["s"]
+            if s in seen:
+                stats["dup_course" if s in course else "dup_everyday"] += 1
+                continue
+            seen.add(s)
+            t = {"s": s, "r": e["t"]["r"]} if yue else ko_text(s)
+            want(s)
+            w = {"id": e["id"], "t": t, "pos": e["pos"], "en": e["en"], "note": e.get("note", ""), "ex": examples(s, e["ex"])}
+            tl = tiles(s, w["ex"])
+            if tl:
+                w["tl"] = tl
+            else:
+                stats["no_tiles"] += 1
+            words.append(w)
+        sets.append({"id": f"E{b + 1}", "n": b + 1, "title": f"Everyday words {b + 1}", "words": words})
+
+    voc = {v["id"]: v for l in levels for v in l["vocab"]}
+    extra, flagged = {}, []
+    for k, name in files("extra"):
+        for e in load(name):
+            v = voc.get(e["id"])
+            if not v or v["t"]["s"] != e["t"]["s"]:
+                print(f"  {name}: {e['id']} does not match an existing word; skipped")
+                continue
+            if e.get("flag"):
+                flagged.append(f"{e['id']} ({e['flag']})")
+            extra[e["id"]] = examples(v["t"]["s"], e["ex"])
+    nw = sum(len(s["words"]) for s in sets)
+    print(f"{lang} everyday: {len(sets)} sets, {nw} words; dropped as duplicates: {stats['dup_course']} already in the course, "
+          f"{stats['dup_everyday']} repeated; review patches: {stats['patched']} fixed, {stats['dropped']} dropped; "
+          f"{stats['no_gap']} examples without a gap question, {stats['no_tiles']} words without tiles; extra examples for {len(extra)} words")
+    if flagged:
+        print(f"  flagged by the writers ({len(flagged)}): " + "; ".join(flagged))
+    return {"sets": sets, "extra": extra}
 
 
 # ------------------------------------------------------------------ sound drills
@@ -219,7 +433,8 @@ def build_drills(lang, levels, T, want):
         items = tone_items + pat_items
         return sets + [{"_items": items}]
     # Korean: letters, tight/puffed sets, reading words, spelling vs sound
-    from ko_pron import pron as ko_pron, rom as ko_rom, strip as ko_strip
+    from ko_pron import rom as ko_rom, strip as ko_strip
+    ko_pron = cached_ko_pron()
     src = json.load(open(os.path.join(REPO, "src", lang, "content", "sounds_src.json"), encoding="utf-8"))
     items = []
     basic, extra = [], []
@@ -328,6 +543,7 @@ HOSTED_HEAD = """<!doctype html>
 <meta name="apple-mobile-web-app-title" content="Study Hall">
 <script src="../shared/supabase.js"></script>
 <script src="../shared/sh.js"></script>
+<script src="../shared/voice.js"></script>
 <script>SH.install("__COURSE__"); window.SH_HOSTED = true;</script>
 </head>
 <body>

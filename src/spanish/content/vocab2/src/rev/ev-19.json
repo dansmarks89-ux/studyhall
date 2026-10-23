@@ -1,0 +1,88 @@
+{
+ "fix": [
+  {
+   "id": "sv10-reforzar",
+   "w": "reforzar",
+   "pos": "verb",
+   "en": "to reinforce; to strengthen",
+   "note": "",
+   "type": [
+    "reforzar"
+   ],
+   "ex": [
+    {
+     "es": "Hay que reforzar la puerta, se ve muy débil.",
+     "en": "We need to reinforce the door; it looks really weak.",
+     "hit": "reforzar"
+    },
+    {
+     "es": "El maestro reforzó el tema con más ejemplos.",
+     "en": "The teacher reinforced the topic with more examples.",
+     "hit": "reforzó"
+    },
+    {
+     "es": "Necesito reforzar mi español antes del viaje.",
+     "en": "I need to brush up on my Spanish before the trip.",
+     "hit": "reforzar"
+    }
+   ]
+  },
+  {
+   "id": "sv10-psicologico",
+   "w": "psicológico",
+   "pos": "adjective",
+   "en": "psychological",
+   "note": "",
+   "type": [
+    "psicológico"
+   ],
+   "ex": [
+    {
+     "es": "El estrés también es un problema psicológico.",
+     "en": "Stress is also a psychological problem.",
+     "hit": "psicológico"
+    },
+    {
+     "es": "Su hija recibe apoyo psicológico en la escuela.",
+     "en": "Her daughter gets psychological support at school.",
+     "hit": "psicológico"
+    },
+    {
+     "es": "Mi cansancio es más psicológico que físico.",
+     "en": "My tiredness is more psychological than physical.",
+     "hit": "psicológico"
+    }
+   ]
+  },
+  {
+   "id": "sv10-tonelada",
+   "w": "la tonelada",
+   "pos": "noun",
+   "en": "ton",
+   "note": "Usually a metric ton (1,000 kg).",
+   "type": [
+    "la tonelada",
+    "tonelada"
+   ],
+   "ex": [
+    {
+     "es": "El elefante pesa casi cinco toneladas.",
+     "en": "The elephant weighs almost five tons.",
+     "hit": "toneladas"
+    },
+    {
+     "es": "En la limpieza del barrio juntamos dos toneladas de basura.",
+     "en": "In the neighborhood cleanup we collected two tons of trash.",
+     "hit": "toneladas"
+    },
+    {
+     "es": "El camión llevaba una tonelada de arena.",
+     "en": "The truck was carrying a ton of sand.",
+     "hit": "tonelada"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "tonelada ex2 used an unglossed figurative sense; reforzar ex1 mismatched (loose door); psicológico ex3 implied psychological pain isn't real. Rest verified."
+}

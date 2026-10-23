@@ -1,0 +1,108 @@
+{
+ "fix": [
+  {
+   "id": "VM3-5",
+   "w": "con el esfuerzo",
+   "en": "with exertion",
+   "ex": [
+    {
+     "es": "El dolor me da con el esfuerzo y se quita al descansar.",
+     "en": "The pain comes on with exertion and goes away when I rest.",
+     "hit": "con el esfuerzo"
+    },
+    {
+     "es": "¿Las palpitaciones empeoran con el esfuerzo?",
+     "en": "Do the palpitations get worse with exertion?",
+     "hit": "con el esfuerzo"
+    }
+   ]
+  },
+  {
+   "id": "VM3-9",
+   "w": "la almohada",
+   "en": "pillow",
+   "ex": [
+    {
+     "es": "Ahora necesito tres almohadas para poder respirar.",
+     "en": "Now I need three pillows to be able to breathe.",
+     "hit": "almohadas"
+    },
+    {
+     "es": "¿Puede dormir acostado sin almohada?",
+     "en": "Can you sleep lying down without a pillow?",
+     "hit": "almohada"
+    }
+   ]
+  },
+  {
+   "id": "VM3-12",
+   "w": "hinchado / hinchada",
+   "en": "swollen",
+   "ex": [
+    {
+     "es": "Tengo la cara hinchada cuando me levanto.",
+     "en": "My face is swollen when I get up.",
+     "hit": "hinchada"
+    },
+    {
+     "es": "¿Tiene el brazo hinchado del lado del marcapasos?",
+     "en": "Is your arm swollen on the side of your pacemaker?",
+     "hit": "hinchado"
+    }
+   ]
+  },
+  {
+   "id": "VM3-37",
+   "w": "cansado / cansada",
+   "en": "tired",
+   "ex": [
+    {
+     "es": "Cuando subo al segundo piso, llego muy cansado.",
+     "en": "When I go up to the second floor, I'm very tired by the time I get there.",
+     "hit": "cansado"
+    },
+    {
+     "es": "¿Se siente más cansada que hace un año?",
+     "en": "Do you feel more tired than a year ago?",
+     "hit": "cansada"
+    }
+   ]
+  },
+  {
+   "id": "VM3-42",
+   "w": "sin parar",
+   "en": "without stopping",
+   "ex": [
+    {
+     "es": "¿Puede subir un piso sin parar?",
+     "en": "Can you climb one floor without stopping?",
+     "hit": "sin parar"
+    },
+    {
+     "es": "Tosí toda la noche sin parar.",
+     "en": "I coughed all night without stopping.",
+     "hit": "sin parar"
+    }
+   ]
+  },
+  {
+   "id": "VM4-12",
+   "w": "para adelgazar la sangre",
+   "en": "to thin the blood (how patients describe blood thinners)",
+   "ex": [
+    {
+     "es": "¿Toma algo para adelgazar la sangre, como aspirina?",
+     "en": "Do you take anything to thin your blood, like aspirin?",
+     "hit": "para adelgazar la sangre"
+    },
+    {
+     "es": "Me sangra la nariz desde que tomo la pastilla para adelgazar la sangre.",
+     "en": "I've been getting nosebleeds since I started the pill to thin my blood.",
+     "hit": "para adelgazar la sangre"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixed unnatural phrasing (le empeoran, acostado plano, redundant anoche/después de…llego), vague 'algo' in VM4-12, and clinically inaccurate arm-swelling location for pacemaker (VM3-12)."
+}

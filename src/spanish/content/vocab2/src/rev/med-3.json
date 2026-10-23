@@ -1,0 +1,277 @@
+{
+ "fix": [
+  {
+   "id": "sm3-silbido",
+   "w": "el silbido",
+   "pos": "noun",
+   "en": "wheezing; whistling in the chest",
+   "note": "Patients may say 'me silba el pecho'. Technical: sibilancias.",
+   "type": [
+    "el silbido",
+    "silbido",
+    "las sibilancias",
+    "sibilancias"
+   ],
+   "ex": [
+    {
+     "es": "En la noche tengo un silbido en el pecho.",
+     "en": "At night I have a whistling in my chest.",
+     "hit": "silbido"
+    },
+    {
+     "es": "¿Siente un silbido al respirar?",
+     "en": "Do you notice a wheeze when you breathe?",
+     "hit": "silbido"
+    },
+    {
+     "es": "El silbido puede venir del pulmón o del corazón.",
+     "en": "Wheezing can come from the lungs or from the heart.",
+     "hit": "silbido"
+    }
+   ]
+  },
+  {
+   "id": "sm3-no-me-alcanza-el-aire",
+   "w": "no me alcanza el aire",
+   "pos": "phrase",
+   "en": "I can't get enough air",
+   "note": "Common patient phrase for shortness of breath.",
+   "type": [
+    "no me alcanza el aire"
+   ],
+   "ex": [
+    {
+     "es": "Cuando camino dos cuadras, no me alcanza el aire.",
+     "en": "When I walk two blocks, I can't get enough air.",
+     "hit": "no me alcanza el aire"
+    },
+    {
+     "es": "Doctor, en la noche no me alcanza el aire.",
+     "en": "Doctor, at night I can't get enough air.",
+     "hit": "no me alcanza el aire"
+    },
+    {
+     "es": "Mi mamá dice que no le alcanza el aire.",
+     "en": "My mom says she can't get enough air.",
+     "hit": "alcanza el aire"
+    }
+   ]
+  },
+  {
+   "id": "sm3-retener-liquidos",
+   "w": "retener líquidos",
+   "pos": "verb",
+   "en": "to retain fluid",
+   "note": "",
+   "type": [
+    "retener líquidos"
+   ],
+   "ex": [
+    {
+     "es": "Con mucha sal, el cuerpo retiene líquidos.",
+     "en": "With a lot of salt, the body retains fluid.",
+     "hit": "retiene líquidos"
+    },
+    {
+     "es": "Creo que estoy reteniendo líquidos; subí cinco libras.",
+     "en": "I think I'm retaining fluid; I gained five pounds.",
+     "hit": "reteniendo líquidos"
+    },
+    {
+     "es": "Su corazón está débil y por eso su cuerpo retiene líquidos.",
+     "en": "Your heart is weak, and that's why your body retains fluid.",
+     "hit": "retiene líquidos"
+    }
+   ]
+  },
+  {
+   "id": "sm3-deshincharse",
+   "w": "deshincharse",
+   "pos": "verb",
+   "en": "to go down (swelling)",
+   "note": "",
+   "type": [
+    "deshincharse"
+   ],
+   "ex": [
+    {
+     "es": "En la mañana se me deshinchan los pies.",
+     "en": "In the morning the swelling in my feet goes down.",
+     "hit": "deshinchan"
+    },
+    {
+     "es": "¿Se le deshinchan las piernas cuando duerme?",
+     "en": "Does the swelling in your legs go down when you sleep?",
+     "hit": "deshinchan"
+    },
+    {
+     "es": "Con el diurético, se le deshincharon bien las piernas.",
+     "en": "With the water pill, the swelling in your legs went down nicely.",
+     "hit": "deshincharon"
+    }
+   ]
+  },
+  {
+   "id": "sm3-saltarse-un-latido",
+   "w": "saltarse un latido",
+   "pos": "verb",
+   "en": "to skip a beat",
+   "note": "Patients also say 'se me brinca el corazón'.",
+   "type": [
+    "saltarse un latido"
+   ],
+   "ex": [
+    {
+     "es": "Siento que el corazón se salta un latido.",
+     "en": "I feel like my heart skips a beat.",
+     "hit": "se salta un latido"
+    },
+    {
+     "es": "¿Siente que se salta un latido y luego un golpe?",
+     "en": "Do you feel it skip a beat and then a thump?",
+     "hit": "se salta un latido"
+    },
+    {
+     "es": "El monitor mostró que a veces se salta un latido.",
+     "en": "The monitor showed that your heart sometimes skips a beat.",
+     "hit": "se salta un latido"
+    }
+   ]
+  },
+  {
+   "id": "sm3-nervios",
+   "w": "los nervios",
+   "pos": "noun",
+   "en": "nerves; anxiety",
+   "note": "Patients often blame 'los nervios'; still look for a heart cause.",
+   "type": [
+    "los nervios",
+    "nervios"
+   ],
+   "ex": [
+    {
+     "es": "Mi familia dice que son los nervios.",
+     "en": "My family says it's my nerves.",
+     "hit": "nervios"
+    },
+    {
+     "es": "¿Cree que son los nervios o algo diferente?",
+     "en": "Do you think it's nerves or something different?",
+     "hit": "nervios"
+    },
+    {
+     "es": "Cuando me dan nervios, el corazón me late fuerte.",
+     "en": "When I get nervous, my heart pounds.",
+     "hit": "nervios"
+    }
+   ]
+  },
+  {
+   "id": "sm3-presion-baja",
+   "w": "la presión baja",
+   "pos": "noun",
+   "en": "low blood pressure",
+   "note": "",
+   "type": [
+    "la presión baja",
+    "presión baja"
+   ],
+   "ex": [
+    {
+     "es": "Creo que el mareo es de la presión baja.",
+     "en": "I think the dizziness is from low blood pressure.",
+     "hit": "presión baja"
+    },
+    {
+     "es": "Hoy tiene la presión baja; ¿tomó suficiente agua?",
+     "en": "Your blood pressure is low today; did you drink enough water?",
+     "hit": "presión baja"
+    },
+    {
+     "es": "Mi mamá tiene la presión baja en el verano.",
+     "en": "My mom's blood pressure runs low in the summer.",
+     "hit": "presión baja"
+    }
+   ]
+  },
+  {
+   "id": "sm3-deshidratado",
+   "w": "deshidratado",
+   "pos": "adj",
+   "en": "dehydrated",
+   "note": "",
+   "type": [
+    "deshidratado",
+    "deshidratada"
+   ],
+   "ex": [
+    {
+     "es": "Ese día estaba deshidratado por el calor.",
+     "en": "That day I was dehydrated from the heat.",
+     "hit": "deshidratado"
+    },
+    {
+     "es": "Con este calor, usted puede estar deshidratada.",
+     "en": "In this heat, you may be dehydrated.",
+     "hit": "deshidratada"
+    },
+    {
+     "es": "Llegó a urgencias muy deshidratado y mareado.",
+     "en": "He got to the ER very dehydrated and dizzy.",
+     "hit": "deshidratado"
+    }
+   ]
+  },
+  {
+   "id": "sm3-estar-parado",
+   "w": "estar parado",
+   "pos": "verb",
+   "en": "to be standing",
+   "note": "Latin American: parado = standing (Spain: de pie). Feminine: parada.",
+   "type": [
+    "estar parado",
+    "estar parada",
+    "estar de pie"
+   ],
+   "ex": [
+    {
+     "es": "¿Estaba parado o sentado cuando se desmayó?",
+     "en": "Were you standing or sitting when you fainted?",
+     "hit": "parado"
+    },
+    {
+     "es": "Estaba parada en la fila del banco.",
+     "en": "I was standing in line at the bank.",
+     "hit": "parada"
+    },
+    {
+     "es": "Me mareo si estoy parado mucho tiempo.",
+     "en": "I get dizzy if I stand for a long time.",
+     "hit": "parado"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sm3-recepcion",
+  "sm3-llenar",
+  "sm3-boca-del-estomago",
+  "sm3-esposo-esposa",
+  "sm3-cada-cuanto",
+  "sm3-aguantar",
+  "sm3-agacharse",
+  "sm3-despues-de-comer",
+  "sm3-estres",
+  "sm3-hacer-corajes",
+  "sm3-agruras",
+  "sm3-hormigueo",
+  "sm3-tos",
+  "sm3-flema",
+  "sm3-palido",
+  "sm3-de-golpe",
+  "sm3-cada-vez-mas",
+  "sm3-familiar",
+  "sm3-seguro-medico"
+ ],
+ "notes": "Dropped 19 exact duplicates of med-1/med-2 entries (earliest level keeps). Fixed ambiguous/unnatural examples, unverified 'me chifla el pecho', parado note, missing type."
+}

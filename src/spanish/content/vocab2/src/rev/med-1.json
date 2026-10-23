@@ -1,0 +1,236 @@
+{
+ "fix": [
+  {
+   "id": "sm1-paciente",
+   "w": "el paciente / la paciente",
+   "pos": "noun",
+   "en": "patient",
+   "note": "Same form for men and women; only the article changes.",
+   "type": [
+    "el paciente",
+    "la paciente",
+    "paciente"
+   ],
+   "ex": [
+    {
+     "es": "La paciente de las diez ya está en la sala de espera.",
+     "en": "The ten o'clock patient is already in the waiting room.",
+     "hit": "paciente"
+    },
+    {
+     "es": "Doctora, el paciente del cuarto dos tiene dolor.",
+     "en": "Doctor, the patient in room two is in pain.",
+     "hit": "paciente"
+    },
+    {
+     "es": "¿Usted es el paciente o un familiar?",
+     "en": "Are you the patient or a family member?",
+     "hit": "paciente"
+    }
+   ]
+  },
+  {
+   "id": "sm1-identificacion",
+   "w": "la identificación",
+   "pos": "noun",
+   "en": "ID; identification",
+   "note": "Patients often just say 'mi ID' or 'la licencia'.",
+   "type": [
+    "la identificación",
+    "identificación"
+   ],
+   "ex": [
+    {
+     "es": "¿Tiene una identificación con foto, por favor?",
+     "en": "Do you have a photo ID, please?",
+     "hit": "identificación"
+    },
+    {
+     "es": "Necesito ver su identificación y su tarjeta del seguro.",
+     "en": "I need to see your ID and your insurance card.",
+     "hit": "identificación"
+    },
+    {
+     "es": "Mi mamá no trae su identificación, ¿hay problema?",
+     "en": "My mom doesn't have her ID with her; is that a problem?",
+     "hit": "identificación"
+    }
+   ]
+  },
+  {
+   "id": "sm1-numero-de-telefono",
+   "w": "el número de teléfono",
+   "pos": "noun",
+   "en": "phone number",
+   "note": "",
+   "type": [
+    "el número de teléfono",
+    "número de teléfono"
+   ],
+   "ex": [
+    {
+     "es": "¿Cuál es su número de teléfono, por favor?",
+     "en": "What is your phone number, please?",
+     "hit": "número de teléfono"
+    },
+    {
+     "es": "Le dejo un recado en este número de teléfono.",
+     "en": "I'll leave you a message at this phone number.",
+     "hit": "número de teléfono"
+    },
+    {
+     "es": "Puede llamar al número de teléfono de mi hija.",
+     "en": "You can call my daughter's phone number.",
+     "hit": "número de teléfono"
+    }
+   ]
+  },
+  {
+   "id": "sm1-correo-electronico",
+   "w": "el correo electrónico",
+   "pos": "noun",
+   "en": "email; email address",
+   "note": "Also 'el correo' or 'el email'.",
+   "type": [
+    "el correo electrónico",
+    "correo electrónico",
+    "el correo",
+    "correo",
+    "el email",
+    "email"
+   ],
+   "ex": [
+    {
+     "es": "¿Tiene correo electrónico para recibir sus resultados?",
+     "en": "Do you have an email address to get your results?",
+     "hit": "correo electrónico"
+    },
+    {
+     "es": "No uso correo electrónico, mejor llámeme.",
+     "en": "I don't use email; better to call me.",
+     "hit": "correo electrónico"
+    },
+    {
+     "es": "Le mandamos la hora de la cita por correo electrónico.",
+     "en": "We'll send you the appointment time by email.",
+     "hit": "correo electrónico"
+    }
+   ]
+  },
+  {
+   "id": "sm1-consultorio",
+   "w": "el consultorio",
+   "pos": "noun",
+   "en": "doctor's office; exam room",
+   "note": "A doctor's office: the exam room, or a doctor's private practice.",
+   "type": [
+    "el consultorio",
+    "consultorio"
+   ],
+   "ex": [
+    {
+     "es": "Pase al consultorio número tres, por favor.",
+     "en": "Please go into exam room three.",
+     "hit": "consultorio"
+    },
+    {
+     "es": "La doctora la espera en el consultorio.",
+     "en": "The doctor is waiting for you in the exam room.",
+     "hit": "consultorio"
+    },
+    {
+     "es": "¿El consultorio del cardiólogo está en este piso?",
+     "en": "Is the cardiologist's office on this floor?",
+     "hit": "consultorio"
+    }
+   ]
+  },
+  {
+   "id": "sm1-no-hablo-ingles",
+   "w": "no hablo inglés",
+   "pos": "phrase",
+   "en": "I don't speak English",
+   "note": "",
+   "type": [
+    "no hablo inglés"
+   ],
+   "ex": [
+    {
+     "es": "Perdón, no hablo inglés, ¿alguien habla español?",
+     "en": "Sorry, I don't speak English; does anyone speak Spanish?",
+     "hit": "no hablo inglés"
+    },
+    {
+     "es": "Mi papá no habla inglés, yo le traduzco.",
+     "en": "My dad doesn't speak English; I translate for him.",
+     "hit": "no habla inglés"
+    },
+    {
+     "es": "Señorita, no hablo inglés muy bien.",
+     "en": "Miss, I don't speak English very well.",
+     "hit": "no hablo inglés"
+    }
+   ]
+  },
+  {
+   "id": "sm1-columna",
+   "w": "la columna",
+   "pos": "noun",
+   "en": "spine; backbone",
+   "note": "Patients say 'la columna' for back pain along the spine.",
+   "type": [
+    "la columna",
+    "columna",
+    "la columna vertebral",
+    "columna vertebral"
+   ],
+   "ex": [
+    {
+     "es": "Me duele la columna cuando me agacho.",
+     "en": "My spine hurts when I bend over.",
+     "hit": "columna"
+    },
+    {
+     "es": "¿El dolor está en la columna o a un lado?",
+     "en": "Is the pain in your spine or off to one side?",
+     "hit": "columna"
+    },
+    {
+     "es": "Mi papá tiene problemas de la columna.",
+     "en": "My dad has back problems.",
+     "hit": "columna"
+    }
+   ]
+  },
+  {
+   "id": "sm1-boca-del-estomago",
+   "w": "la boca del estómago",
+   "pos": "noun",
+   "en": "pit of the stomach; upper belly",
+   "note": "Patients' word for the epigastrium, just below the breastbone; heart pain can be felt here.",
+   "type": [
+    "la boca del estómago",
+    "boca del estómago"
+   ],
+   "ex": [
+    {
+     "es": "Siento un ardor en la boca del estómago.",
+     "en": "I feel burning in the pit of my stomach.",
+     "hit": "boca del estómago"
+    },
+    {
+     "es": "¿Le duele aquí, en la boca del estómago?",
+     "en": "Does it hurt here, in the pit of your stomach?",
+     "hit": "boca del estómago"
+    },
+    {
+     "es": "Mi esposo dice que le aprieta la boca del estómago.",
+     "en": "My husband says he feels squeezing in the pit of his stomach.",
+     "hit": "boca del estómago"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean, clinically sound level. Minor fixes: waiting-room wording, 'un familiar', 'recado en', 'mi ID', consultorio note, '¿alguien habla español?', two missing typed answers, boca-del-estómago note now flags cardiac pain."
+}

@@ -1,0 +1,149 @@
+{
+ "fix": [
+  {
+   "id": "sv07-promesa",
+   "w": "la promesa",
+   "pos": "noun",
+   "en": "promise",
+   "note": "Cumplir una promesa = to keep a promise.",
+   "type": [
+    "la promesa",
+    "promesa"
+   ],
+   "ex": [
+    {
+     "es": "Cumplí mi promesa y dejé de fumar.",
+     "en": "I kept my promise and quit smoking.",
+     "hit": "promesa"
+    },
+    {
+     "es": "No hagas promesas que no puedas cumplir.",
+     "en": "Don't make promises you can't keep.",
+     "hit": "promesas"
+    },
+    {
+     "es": "Le hice una promesa a mi hijo: el domingo vamos al parque.",
+     "en": "I made my son a promise: on Sunday we're going to the park.",
+     "hit": "promesa"
+    }
+   ]
+  },
+  {
+   "id": "sv07-brillante",
+   "w": "brillante",
+   "pos": "adjective",
+   "en": "bright; shiny; brilliant",
+   "note": "Same form for masculine and feminine.",
+   "type": [
+    "brillante"
+   ],
+   "ex": [
+    {
+     "es": "El sol está muy brillante hoy, trae lentes de sol.",
+     "en": "The sun is really bright today, bring sunglasses.",
+     "hit": "brillante"
+    },
+    {
+     "es": "Limpié la estufa y quedó brillante.",
+     "en": "I cleaned the stove and it came out shiny.",
+     "hit": "brillante"
+    },
+    {
+     "es": "Tu hija es una estudiante brillante.",
+     "en": "Your daughter is a brilliant student.",
+     "hit": "brillante"
+    }
+   ]
+  },
+  {
+   "id": "sv07-recientemente",
+   "w": "recientemente",
+   "pos": "adverb",
+   "en": "recently",
+   "note": "Latin America also uses recién with verbs: recién llegué = I just arrived.",
+   "type": [
+    "recientemente"
+   ],
+   "ex": [
+    {
+     "es": "Mi hermano se mudó recientemente a Monterrey.",
+     "en": "My brother recently moved to Monterrey.",
+     "hit": "recientemente"
+    },
+    {
+     "es": "¿Has ido al cine recientemente?",
+     "en": "Have you been to the movies recently?",
+     "hit": "recientemente"
+    },
+    {
+     "es": "Recientemente abrieron un café nuevo cerca de mi casa.",
+     "en": "They recently opened a new café near my house.",
+     "hit": "Recientemente"
+    }
+   ]
+  },
+  {
+   "id": "sv07-pacifico",
+   "w": "pacífico",
+   "pos": "adjective",
+   "en": "peaceful; calm",
+   "note": "Feminine: pacífica. El océano Pacífico = the Pacific Ocean.",
+   "type": [
+    "pacífico",
+    "pacífica",
+    "tranquilo"
+   ],
+   "ex": [
+    {
+     "es": "Mi perro es muy pacífico, no muerde.",
+     "en": "My dog is very calm, he doesn't bite.",
+     "hit": "pacífico"
+    },
+    {
+     "es": "Vivimos en un barrio muy pacífico.",
+     "en": "We live in a very peaceful neighborhood.",
+     "hit": "pacífico"
+    },
+    {
+     "es": "Los vecinos resolvieron el problema de forma pacífica.",
+     "en": "The neighbors settled the problem peacefully.",
+     "hit": "pacífica"
+    }
+   ]
+  },
+  {
+   "id": "sv07-propietario",
+   "w": "el propietario",
+   "pos": "noun",
+   "en": "owner",
+   "note": "Feminine: la propietaria. Dueño is more common in speech.",
+   "type": [
+    "el propietario",
+    "propietario",
+    "la propietaria",
+    "propietaria",
+    "el dueño",
+    "dueño"
+   ],
+   "ex": [
+    {
+     "es": "El propietario del departamento vive en el primer piso.",
+     "en": "The owner of the apartment lives on the first floor.",
+     "hit": "propietario"
+    },
+    {
+     "es": "Necesito la firma del propietario del carro.",
+     "en": "I need the car owner's signature.",
+     "hit": "propietario"
+    },
+    {
+     "es": "La propietaria del restaurante nos regaló el postre.",
+     "en": "The restaurant owner gave us dessert on the house.",
+     "hit": "propietaria"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Subjunctive fix (promesa), 'lentes de sol', corrected recién note, pacífico example used proper noun Pacífico outside gloss, propietario type completed."
+}

@@ -1,0 +1,54 @@
+{
+ "fix": [
+  {
+   "id": "kv10-128",
+   "t": {
+    "s": "맨날"
+   },
+   "pos": "adverb",
+   "en": "every day, all the time (casual)",
+   "note": "Very common in speech; 만날 is the same word. Often used when complaining.",
+   "ex": [
+    {
+     "s": "맨날 라면만 먹으면 안 돼요.",
+     "en": "You can't eat just ramyeon all the time."
+    },
+    {
+     "s": "동생은 맨날 늦게 일어나요.",
+     "en": "My little brother always gets up late."
+    },
+    {
+     "s": "왜 맨날 저한테만 그래요?",
+     "en": "Why do you always do this only to me?"
+    }
+   ]
+  },
+  {
+   "id": "kv10-189",
+   "t": {
+    "s": "승인하다"
+   },
+   "pos": "verb",
+   "en": "to approve",
+   "note": "Card approval at checkout uses the noun: 승인이 안 됐어요.",
+   "ex": [
+    {
+     "s": "팀장님이 제 휴가를 승인해 주셨어요.",
+     "en": "My manager approved my vacation."
+    },
+    {
+     "s": "은행에서 대출을 승인해 줬어요.",
+     "en": "The bank approved my loan."
+    },
+    {
+     "s": "학교에서 우리 동아리를 승인했어요.",
+     "en": "The school approved our club."
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "kv10-188"
+ ],
+ "notes": "Dropped 개선하다 (duplicate of 개선 kv10-93 in ev-18). Fixed 맨날 note (standard word, not casual form of 만날) and missing honorific for 팀장님."
+}

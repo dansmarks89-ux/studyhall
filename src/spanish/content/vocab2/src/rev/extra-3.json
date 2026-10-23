@@ -1,0 +1,57 @@
+{
+ "fix": [
+  {
+   "id": "VC6-14",
+   "w": "acordarse (de)",
+   "en": "to remember",
+   "ex": [
+    {
+     "es": "No me acuerdo de dónde dejé el celular.",
+     "en": "I don't remember where I left my phone.",
+     "hit": "acuerdo"
+    },
+    {
+     "es": "¿Te acordaste de comprar leche?",
+     "en": "Did you remember to buy milk?",
+     "hit": "acordaste"
+    }
+   ]
+  },
+  {
+   "id": "VC6-21",
+   "w": "regalar",
+   "en": "to give (as a gift)",
+   "ex": [
+    {
+     "es": "¿Qué le regalaste a tu esposa para su aniversario?",
+     "en": "What did you give your wife for your anniversary?",
+     "hit": "regalaste"
+    },
+    {
+     "es": "Mis compañeros de trabajo me regalaron un pastel.",
+     "en": "My coworkers gave me a cake.",
+     "hit": "regalaron"
+    }
+   ]
+  },
+  {
+   "id": "VC6-36",
+   "w": "la cobija",
+   "en": "the blanket",
+   "ex": [
+    {
+     "es": "Vamos a llevar una cobija para el picnic en el parque.",
+     "en": "We're going to take a blanket for the picnic in the park.",
+     "hit": "cobija"
+    },
+    {
+     "es": "Esta cobija es muy suave; ¿dónde la compraste?",
+     "en": "This blanket is really soft; where did you buy it?",
+     "hit": "cobija"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "acordarse needs 'de' (No me acuerdo de dónde); 'Llevamos' mistranslated as 'brought'; regalar example duplicated another entry's ¿Qué le regalamos a … para su cumpleaños?. Rest accurate."
+}

@@ -1,0 +1,33 @@
+{
+ "fix": [
+  {
+   "id": "sv12-genetico",
+   "w": "genético",
+   "pos": "adjective",
+   "en": "genetic",
+   "note": "",
+   "type": [
+    "genético"
+   ],
+   "ex": [
+    {
+     "es": "El color de ojos es genético.",
+     "en": "Eye color is genetic.",
+     "hit": "genético"
+    },
+    {
+     "es": "El doctor dice que mi colesterol alto es genético.",
+     "en": "The doctor says my high cholesterol is genetic.",
+     "hit": "genético"
+    },
+    {
+     "es": "Le hicieron una prueba genética al bebé.",
+     "en": "They did a genetic test on the baby.",
+     "hit": "genética"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file. Replaced 'high blood pressure in my family is genetic' (clinically overstated; hypertension is mostly multifactorial) with familial high cholesterol."
+}

@@ -1,0 +1,167 @@
+{
+ "fix": [
+  {
+   "id": "kv10-1",
+   "t": {
+    "s": "그림자"
+   },
+   "pos": "noun",
+   "en": "shadow",
+   "note": "",
+   "ex": [
+    {
+     "s": "저녁이 되면 그림자가 길어져요.",
+     "en": "Shadows get longer in the evening."
+    },
+    {
+     "s": "아이가 자기 그림자를 밟으면서 놀아요.",
+     "en": "The kid is playing, stepping on his own shadow."
+    },
+    {
+     "s": "사진에 제 그림자가 나왔어요.",
+     "en": "My shadow showed up in the photo."
+    }
+   ]
+  },
+  {
+   "id": "kv10-2",
+   "t": {
+    "s": "거슬리다"
+   },
+   "pos": "verb",
+   "en": "to bother, grate on (nerves)",
+   "note": "귀에 거슬리다 = grating to the ear.",
+   "ex": [
+    {
+     "s": "옆 사람 전화 소리가 좀 거슬려요.",
+     "en": "The phone noise from the person next to me bothers me."
+    },
+    {
+     "s": "그 말투가 계속 거슬렸어요.",
+     "en": "That tone of voice kept bugging me."
+    },
+    {
+     "s": "셔츠 태그가 계속 거슬려요.",
+     "en": "The shirt tag keeps bothering me."
+    }
+   ]
+  },
+  {
+   "id": "kv10-27",
+   "t": {
+    "s": "제자"
+   },
+   "pos": "noun",
+   "en": "student, pupil (of a teacher)",
+   "note": "Student of a particular teacher or mentor (스승). A student in general is 학생.",
+   "ex": [
+    {
+     "s": "선생님이 옛날 제자를 우연히 만났어요.",
+     "en": "The teacher ran into a former student."
+    },
+    {
+     "s": "저는 김 교수님 제자예요.",
+     "en": "I'm Professor Kim's student."
+    },
+    {
+     "s": "제자들이 선생님께 꽃을 드렸어요.",
+     "en": "The students gave their teacher flowers."
+    }
+   ]
+  },
+  {
+   "id": "kv10-28",
+   "t": {
+    "s": "마디"
+   },
+   "pos": "noun",
+   "en": "word, phrase; joint (of a finger)",
+   "note": "Counter for words: 한마디 = a word, 몇 마디 = a few words.",
+   "ex": [
+    {
+     "s": "그 사람은 몇 마디 하고 나갔어요.",
+     "en": "He said a few words and left."
+    },
+    {
+     "s": "영어는 몇 마디밖에 못 해요.",
+     "en": "I can only speak a few words of English."
+    },
+    {
+     "s": "손가락 마디가 아파요.",
+     "en": "My finger joints hurt."
+    }
+   ]
+  },
+  {
+   "id": "kv10-34",
+   "t": {
+    "s": "살아남다"
+   },
+   "pos": "verb",
+   "en": "to survive",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 화분이 겨울에도 살아남았어요.",
+     "en": "That potted plant survived the winter."
+    },
+    {
+     "s": "이 회사에서 살아남기 힘들어요.",
+     "en": "It's hard to survive at this company."
+    },
+    {
+     "s": "시험 기간에 겨우 살아남았어요.",
+     "en": "I barely survived exam week."
+    }
+   ]
+  },
+  {
+   "id": "kv10-40",
+   "t": {
+    "s": "검사하다"
+   },
+   "pos": "verb",
+   "en": "to examine, test, check",
+   "note": "Medical: 검사를 받다 = to get tested.",
+   "ex": [
+    {
+     "s": "병원에서 눈을 검사했어요.",
+     "en": "I had my eyes checked at the hospital."
+    },
+    {
+     "s": "선생님이 숙제를 검사하셨어요.",
+     "en": "The teacher checked our homework."
+    },
+    {
+     "s": "공항에서 짐을 검사해요.",
+     "en": "They check your luggage at the airport."
+    }
+   ]
+  },
+  {
+   "id": "kv10-71",
+   "t": {
+    "s": "팀장"
+   },
+   "pos": "noun",
+   "en": "team leader, manager",
+   "note": "Address as 팀장님.",
+   "ex": [
+    {
+     "s": "팀장님, 잠깐 시간 괜찮으세요?",
+     "en": "(To your team leader) Do you have a minute?"
+    },
+    {
+     "s": "이번에 팀장으로 승진했어요.",
+     "en": "I was just promoted to team leader."
+    },
+    {
+     "s": "팀장님이 회의에 늦으셨어요.",
+     "en": "Our team leader was late to the meeting."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixed unnatural collocations (시험 기간을 살아남다, 목에 거슬리다, 타이어 검사), sunset/shadow logic, duplicate 한마디 example, wrong 제자 note, gendered translation."
+}

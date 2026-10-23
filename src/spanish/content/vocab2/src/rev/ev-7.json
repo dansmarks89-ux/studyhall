@@ -1,0 +1,88 @@
+{
+ "fix": [
+  {
+   "id": "sv04-recien",
+   "w": "recién",
+   "pos": "adverb",
+   "en": "just, recently; freshly, newly",
+   "note": "Recién casados = newlyweds. Recién llegué (I just arrived) is mostly South American; Mexico prefers acabo de llegar.",
+   "type": [
+    "recién"
+   ],
+   "ex": [
+    {
+     "es": "Recién llegué a la oficina.",
+     "en": "I just got to the office.",
+     "hit": "Recién"
+    },
+    {
+     "es": "El pan está recién hecho.",
+     "en": "The bread is freshly made.",
+     "hit": "recién"
+    },
+    {
+     "es": "Son recién casados, se casaron en junio.",
+     "en": "They're newlyweds; they got married in June.",
+     "hit": "recién"
+    }
+   ]
+  },
+  {
+   "id": "sv04-reirse",
+   "w": "reírse",
+   "pos": "verb",
+   "en": "to laugh",
+   "note": "Reírse de = to laugh at.",
+   "type": [
+    "reírse",
+    "reír"
+   ],
+   "ex": [
+    {
+     "es": "Mi hijo se ríe mucho con las caricaturas.",
+     "en": "My son laughs a lot at cartoons.",
+     "hit": "ríe"
+    },
+    {
+     "es": "Nos reímos mucho en la cena.",
+     "en": "We laughed a lot at dinner.",
+     "hit": "reímos"
+    },
+    {
+     "es": "No te rías, es en serio.",
+     "en": "Don't laugh, I'm serious.",
+     "hit": "rías"
+    }
+   ]
+  },
+  {
+   "id": "sv04-exterior",
+   "w": "exterior",
+   "pos": "adjective",
+   "en": "outside, exterior, outdoor",
+   "note": "Same for masculine and feminine.",
+   "type": [
+    "exterior"
+   ],
+   "ex": [
+    {
+     "es": "Pintamos la pared exterior de la casa.",
+     "en": "We painted the outside wall of the house.",
+     "hit": "exterior"
+    },
+    {
+     "es": "¿Tienen mesas en el área exterior?",
+     "en": "Do you have tables in the outdoor area?",
+     "hit": "exterior"
+    },
+    {
+     "es": "La alberca exterior del hotel cierra en invierno.",
+     "en": "The hotel's outdoor pool closes in winter.",
+     "hit": "exterior"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file. Fixed: Spain-style 'habitación exterior' example, Mexican 'caricaturas' for cartoons, recién note flags recién + preterite as South American (Mexico: acabo de)."
+}

@@ -1,0 +1,88 @@
+{
+ "fix": [
+  {
+   "id": "sv07-residencia",
+   "w": "la residencia",
+   "pos": "noun",
+   "en": "residence; residency; care home",
+   "note": "",
+   "type": [
+    "la residencia",
+    "residencia"
+   ],
+   "ex": [
+    {
+     "es": "Mi primo está haciendo la residencia en cardiología.",
+     "en": "My cousin is doing his residency in cardiology.",
+     "hit": "residencia"
+    },
+    {
+     "es": "Ana vive en una residencia estudiantil cerca de la universidad.",
+     "en": "Ana lives in a student dorm near the university.",
+     "hit": "residencia"
+    },
+    {
+     "es": "Mi abuela ahora vive en una residencia para adultos mayores.",
+     "en": "My grandmother now lives in a senior living home.",
+     "hit": "residencia"
+    }
+   ]
+  },
+  {
+   "id": "sv07-competir",
+   "w": "competir",
+   "pos": "verb",
+   "en": "to compete",
+   "note": "Stem change: compito, compitió.",
+   "type": [
+    "competir"
+   ],
+   "ex": [
+    {
+     "es": "Mi hijo va a competir en un torneo de ajedrez.",
+     "en": "My son is going to compete in a chess tournament.",
+     "hit": "competir"
+    },
+    {
+     "es": "Es difícil competir con las tiendas grandes.",
+     "en": "It's hard to compete with the big stores.",
+     "hit": "competir"
+    },
+    {
+     "es": "Mis hermanos compiten por todo.",
+     "en": "My brothers compete over everything.",
+     "hit": "compiten"
+    }
+   ]
+  },
+  {
+   "id": "sv07-perseguir",
+   "w": "perseguir",
+   "pos": "verb",
+   "en": "to chase; to pursue",
+   "note": "Stem change: persigo, persiguió.",
+   "type": [
+    "perseguir"
+   ],
+   "ex": [
+    {
+     "es": "Mi perro persigue a todos los gatos.",
+     "en": "My dog chases all the cats.",
+     "hit": "persigue"
+    },
+    {
+     "es": "Sofía decidió perseguir su sueño de ser chef.",
+     "en": "Sofía decided to pursue her dream of being a chef.",
+     "hit": "perseguir"
+    },
+    {
+     "es": "Los niños se persiguen en el patio de la escuela.",
+     "en": "The kids chase each other in the schoolyard.",
+     "hit": "persiguen"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Residencia examples made Latin American (residencia estudiantil, adultos mayores; redundant note cleared); stem-change notes added to competir and perseguir."
+}

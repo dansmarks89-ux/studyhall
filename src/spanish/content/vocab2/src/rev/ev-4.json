@@ -1,0 +1,62 @@
+{
+ "fix": [
+  {
+   "id": "sv03-perro",
+   "w": "el perro",
+   "pos": "noun",
+   "en": "dog",
+   "note": "Perrito = puppy, little dog. Female: perra, but many say perrita (perra is also an insult).",
+   "type": [
+    "el perro",
+    "perro"
+   ],
+   "ex": [
+    {
+     "es": "¿Puedo acariciar a tu perro?",
+     "en": "Can I pet your dog?",
+     "hit": "perro"
+    },
+    {
+     "es": "El perro de mis vecinos ladra toda la noche.",
+     "en": "My neighbors' dog barks all night.",
+     "hit": "perro"
+    },
+    {
+     "es": "¿Aceptan perros en el restaurante?",
+     "en": "Do you allow dogs in the restaurant?",
+     "hit": "perros"
+    }
+   ]
+  },
+  {
+   "id": "sv03-texto",
+   "w": "el texto",
+   "pos": "noun",
+   "en": "text",
+   "note": "For a text message, Mexico usually says un mensaje.",
+   "type": [
+    "el texto",
+    "texto"
+   ],
+   "ex": [
+    {
+     "es": "Lee el texto y contesta las preguntas.",
+     "en": "Read the text and answer the questions.",
+     "hit": "texto"
+    },
+    {
+     "es": "El texto de la presentación es muy largo.",
+     "en": "The text of the presentation is very long.",
+     "hit": "texto"
+    },
+    {
+     "es": "Copia el texto y pégalo en el correo.",
+     "en": "Copy the text and paste it into the email.",
+     "hit": "texto"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file. Perro note now flags perra as insult; texto ex3 replaced (text-message sense contradicted its own note)."
+}

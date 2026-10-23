@@ -1,0 +1,2319 @@
+[
+ {
+  "id": "sm1-paciente",
+  "w": "el paciente / la paciente",
+  "pos": "noun",
+  "en": "patient",
+  "note": "Same form for men and women; only the article changes.",
+  "type": [
+   "el paciente",
+   "la paciente",
+   "paciente"
+  ],
+  "ex": [
+   {
+    "es": "La paciente de las diez ya está en la sala.",
+    "en": "The ten o'clock patient is already in the waiting room.",
+    "hit": "paciente"
+   },
+   {
+    "es": "Doctora, el paciente del cuarto dos tiene dolor.",
+    "en": "Doctor, the patient in room two is in pain.",
+    "hit": "paciente"
+   },
+   {
+    "es": "¿Usted es el paciente o el familiar?",
+    "en": "Are you the patient or the family member?",
+    "hit": "paciente"
+   }
+  ]
+ },
+ {
+  "id": "sm1-recepcion",
+  "w": "la recepción",
+  "pos": "noun",
+  "en": "front desk; reception",
+  "note": "",
+  "type": [
+   "la recepción",
+   "recepción"
+  ],
+  "ex": [
+   {
+    "es": "Puede pasar a la recepción con su tarjeta, por favor.",
+    "en": "You can go to the front desk with your card, please.",
+    "hit": "recepción"
+   },
+   {
+    "es": "Puede llamar a la recepción para cambiar su cita.",
+    "en": "You can call the front desk to change your appointment.",
+    "hit": "recepción"
+   },
+   {
+    "es": "En la recepción me piden mi identificación.",
+    "en": "At the front desk they're asking for my ID.",
+    "hit": "recepción"
+   }
+  ]
+ },
+ {
+  "id": "sm1-seguro-medico",
+  "w": "el seguro médico",
+  "pos": "noun",
+  "en": "health insurance",
+  "note": "Many US patients say 'la aseguranza'. 'Seguro' alone also means sure or safe.",
+  "type": [
+   "el seguro médico",
+   "seguro médico",
+   "el seguro",
+   "seguro"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene seguro médico o paga usted?",
+    "en": "Do you have health insurance, or are you paying yourself?",
+    "hit": "seguro médico"
+   },
+   {
+    "es": "No tengo seguro, ¿cuánto cuesta la consulta?",
+    "en": "I don't have insurance; how much is the visit?",
+    "hit": "seguro"
+   },
+   {
+    "es": "Su seguro médico cubre el estudio, no se preocupe.",
+    "en": "Your health insurance covers the test, don't worry.",
+    "hit": "seguro médico"
+   }
+  ]
+ },
+ {
+  "id": "sm1-tarjeta-del-seguro",
+  "w": "la tarjeta del seguro",
+  "pos": "noun",
+  "en": "insurance card",
+  "note": "",
+  "type": [
+   "la tarjeta del seguro",
+   "tarjeta del seguro"
+  ],
+  "ex": [
+   {
+    "es": "¿Me permite su tarjeta del seguro, por favor?",
+    "en": "May I have your insurance card, please?",
+    "hit": "tarjeta del seguro"
+   },
+   {
+    "es": "No traigo la tarjeta del seguro, está en el carro.",
+    "en": "I don't have my insurance card on me; it's in the car.",
+    "hit": "tarjeta del seguro"
+   },
+   {
+    "es": "Su esposa puede mandar una foto de la tarjeta del seguro.",
+    "en": "Your wife can send a photo of the insurance card.",
+    "hit": "tarjeta del seguro"
+   }
+  ]
+ },
+ {
+  "id": "sm1-copago",
+  "w": "el copago",
+  "pos": "noun",
+  "en": "copay",
+  "note": "US clinic term; patients also just say 'el copay'.",
+  "type": [
+   "el copago",
+   "copago"
+  ],
+  "ex": [
+   {
+    "es": "Su copago de hoy es de veinte dólares.",
+    "en": "Your copay today is twenty dollars.",
+    "hit": "copago"
+   },
+   {
+    "es": "¿Cuánto es el copago para ver al cardiólogo?",
+    "en": "How much is the copay to see the cardiologist?",
+    "hit": "copago"
+   },
+   {
+    "es": "En la farmacia, el copago de esta pastilla es bajo.",
+    "en": "At the pharmacy, the copay for this pill is low.",
+    "hit": "copago"
+   }
+  ]
+ },
+ {
+  "id": "sm1-identificacion",
+  "w": "la identificación",
+  "pos": "noun",
+  "en": "ID; identification",
+  "note": "Patients often just say 'la ID' or 'la licencia'.",
+  "type": [
+   "la identificación",
+   "identificación"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene una identificación con foto, por favor?",
+    "en": "Do you have a photo ID, please?",
+    "hit": "identificación"
+   },
+   {
+    "es": "Necesito ver su identificación y su tarjeta del seguro.",
+    "en": "I need to see your ID and your insurance card.",
+    "hit": "identificación"
+   },
+   {
+    "es": "Mi mamá no trae su identificación, ¿hay problema?",
+    "en": "My mom doesn't have her ID with her; is that a problem?",
+    "hit": "identificación"
+   }
+  ]
+ },
+ {
+  "id": "sm1-direccion",
+  "w": "la dirección",
+  "pos": "noun",
+  "en": "address",
+  "note": "Also means 'direction'.",
+  "type": [
+   "la dirección",
+   "dirección"
+  ],
+  "ex": [
+   {
+    "es": "¿Su dirección sigue siendo la misma?",
+    "en": "Is your address still the same?",
+    "hit": "dirección"
+   },
+   {
+    "es": "Le mandamos los resultados a esta dirección, ¿está bien?",
+    "en": "We'll send the results to this address, is that okay?",
+    "hit": "dirección"
+   },
+   {
+    "es": "Doctor, ¿me da la dirección de la farmacia?",
+    "en": "Doctor, can you give me the pharmacy's address?",
+    "hit": "dirección"
+   }
+  ]
+ },
+ {
+  "id": "sm1-numero-de-telefono",
+  "w": "el número de teléfono",
+  "pos": "noun",
+  "en": "phone number",
+  "note": "",
+  "type": [
+   "el número de teléfono",
+   "número de teléfono"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es su número de teléfono, por favor?",
+    "en": "What is your phone number, please?",
+    "hit": "número de teléfono"
+   },
+   {
+    "es": "Le dejo un recado a este número de teléfono.",
+    "en": "I'll leave you a message at this phone number.",
+    "hit": "número de teléfono"
+   },
+   {
+    "es": "Puede llamar al número de teléfono de mi hija.",
+    "en": "You can call my daughter's phone number.",
+    "hit": "número de teléfono"
+   }
+  ]
+ },
+ {
+  "id": "sm1-correo-electronico",
+  "w": "el correo electrónico",
+  "pos": "noun",
+  "en": "email; email address",
+  "note": "Also 'el correo' or 'el email'.",
+  "type": [
+   "el correo electrónico",
+   "correo electrónico",
+   "el correo",
+   "correo",
+   "el email"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene correo electrónico para recibir sus resultados?",
+    "en": "Do you have an email address to get your results?",
+    "hit": "correo electrónico"
+   },
+   {
+    "es": "No uso correo electrónico, mejor llámeme.",
+    "en": "I don't use email; better to call me.",
+    "hit": "correo electrónico"
+   },
+   {
+    "es": "Le mandamos la hora de la cita por correo electrónico.",
+    "en": "We'll send you the appointment time by email.",
+    "hit": "correo electrónico"
+   }
+  ]
+ },
+ {
+  "id": "sm1-contacto-de-emergencia",
+  "w": "el contacto de emergencia",
+  "pos": "noun",
+  "en": "emergency contact",
+  "note": "",
+  "type": [
+   "el contacto de emergencia",
+   "contacto de emergencia"
+  ],
+  "ex": [
+   {
+    "es": "¿Quién es su contacto de emergencia?",
+    "en": "Who is your emergency contact?",
+    "hit": "contacto de emergencia"
+   },
+   {
+    "es": "Mi hijo mayor es mi contacto de emergencia.",
+    "en": "My oldest son is my emergency contact.",
+    "hit": "contacto de emergencia"
+   },
+   {
+    "es": "La llamo porque usted es el contacto de emergencia de su papá.",
+    "en": "I'm calling because you're your father's emergency contact.",
+    "hit": "contacto de emergencia"
+   }
+  ]
+ },
+ {
+  "id": "sm1-llenar",
+  "w": "llenar",
+  "pos": "verb",
+  "en": "to fill out (a form); to fill",
+  "note": "",
+  "type": [
+   "llenar"
+  ],
+  "ex": [
+   {
+    "es": "¿Puede llenar esta hoja en la sala de espera?",
+    "en": "Can you fill out this sheet in the waiting room?",
+    "hit": "llenar"
+   },
+   {
+    "es": "Mi hija me ayuda a llenar los papeles.",
+    "en": "My daughter helps me fill out the paperwork.",
+    "hit": "llenar"
+   },
+   {
+    "es": "Si no puede llenar el formulario, la enfermera le ayuda.",
+    "en": "If you can't fill out the form, the nurse will help you.",
+    "hit": "llenar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-pluma",
+  "w": "la pluma",
+  "pos": "noun",
+  "en": "pen",
+  "note": "Mexico: 'pluma'; elsewhere 'bolígrafo' or 'lapicero'.",
+  "type": [
+   "la pluma",
+   "pluma",
+   "el bolígrafo",
+   "bolígrafo"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene una pluma? Necesito firmar aquí.",
+    "en": "Do you have a pen? I need to sign here.",
+    "hit": "pluma"
+   },
+   {
+    "es": "Aquí tiene una pluma para el formulario.",
+    "en": "Here's a pen for the form.",
+    "hit": "pluma"
+   },
+   {
+    "es": "Doctora, ¿me presta su pluma para apuntar el nombre?",
+    "en": "Doctor, can I borrow your pen to write down the name?",
+    "hit": "pluma"
+   }
+  ]
+ },
+ {
+  "id": "sm1-bano",
+  "w": "el baño",
+  "pos": "noun",
+  "en": "restroom; bathroom",
+  "note": "",
+  "type": [
+   "el baño",
+   "baño"
+  ],
+  "ex": [
+   {
+    "es": "Perdón, ¿dónde está el baño, por favor?",
+    "en": "Excuse me, where is the restroom, please?",
+    "hit": "baño"
+   },
+   {
+    "es": "El baño está al final del pasillo, a la derecha.",
+    "en": "The restroom is at the end of the hall, on the right.",
+    "hit": "baño"
+   },
+   {
+    "es": "Antes del estudio, ¿quiere pasar al baño?",
+    "en": "Before the test, do you want to use the restroom?",
+    "hit": "baño"
+   }
+  ]
+ },
+ {
+  "id": "sm1-estacionamiento",
+  "w": "el estacionamiento",
+  "pos": "noun",
+  "en": "parking lot; parking",
+  "note": "Some countries say 'el parqueo' or 'el parqueadero'.",
+  "type": [
+   "el estacionamiento",
+   "estacionamiento"
+  ],
+  "ex": [
+   {
+    "es": "¿El estacionamiento es gratis para los pacientes?",
+    "en": "Is parking free for patients?",
+    "hit": "estacionamiento"
+   },
+   {
+    "es": "Mi esposo me espera en el estacionamiento.",
+    "en": "My husband is waiting for me in the parking lot.",
+    "hit": "estacionamiento"
+   },
+   {
+    "es": "El estacionamiento está enfrente de la clínica.",
+    "en": "The parking lot is in front of the clinic.",
+    "hit": "estacionamiento"
+   }
+  ]
+ },
+ {
+  "id": "sm1-farmacia",
+  "w": "la farmacia",
+  "pos": "noun",
+  "en": "pharmacy",
+  "note": "",
+  "type": [
+   "la farmacia",
+   "farmacia"
+  ],
+  "ex": [
+   {
+    "es": "¿A qué farmacia le mandamos la receta?",
+    "en": "Which pharmacy should we send the prescription to?",
+    "hit": "farmacia"
+   },
+   {
+    "es": "Mi farmacia está cerca de mi casa.",
+    "en": "My pharmacy is close to my house.",
+    "hit": "farmacia"
+   },
+   {
+    "es": "La farmacia dice que no tiene mi medicina.",
+    "en": "The pharmacy says they don't have my medicine.",
+    "hit": "farmacia"
+   }
+  ]
+ },
+ {
+  "id": "sm1-cancelar",
+  "w": "cancelar",
+  "pos": "verb",
+  "en": "to cancel",
+  "note": "",
+  "type": [
+   "cancelar"
+  ],
+  "ex": [
+   {
+    "es": "Buenos días, necesito cancelar mi cita del jueves.",
+    "en": "Good morning, I need to cancel my Thursday appointment.",
+    "hit": "cancelar"
+   },
+   {
+    "es": "Si quiere cancelar, puede llamar un día antes.",
+    "en": "If you want to cancel, you can call a day ahead.",
+    "hit": "cancelar"
+   },
+   {
+    "es": "Mi papá está enfermo y quiere cancelar la cita.",
+    "en": "My dad is sick and wants to cancel the appointment.",
+    "hit": "cancelar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-consultorio",
+  "w": "el consultorio",
+  "pos": "noun",
+  "en": "doctor's office; exam room",
+  "note": "The doctor's office or exam room, not the whole clinic.",
+  "type": [
+   "el consultorio",
+   "consultorio"
+  ],
+  "ex": [
+   {
+    "es": "Pase al consultorio número tres, por favor.",
+    "en": "Please go into exam room three.",
+    "hit": "consultorio"
+   },
+   {
+    "es": "La doctora la espera en el consultorio.",
+    "en": "The doctor is waiting for you in the exam room.",
+    "hit": "consultorio"
+   },
+   {
+    "es": "¿El consultorio del cardiólogo está en este piso?",
+    "en": "Is the cardiologist's office on this floor?",
+    "hit": "consultorio"
+   }
+  ]
+ },
+ {
+  "id": "sm1-consulta",
+  "w": "la consulta",
+  "pos": "noun",
+  "en": "visit; appointment; consultation",
+  "note": "'Ir a consulta' = to go see the doctor.",
+  "type": [
+   "la consulta",
+   "consulta"
+  ],
+  "ex": [
+   {
+    "es": "La consulta dura unos veinte minutos.",
+    "en": "The visit lasts about twenty minutes.",
+    "hit": "consulta"
+   },
+   {
+    "es": "¿Cuánto cuesta la consulta sin seguro?",
+    "en": "How much is the visit without insurance?",
+    "hit": "consulta"
+   },
+   {
+    "es": "Mi esposa viene conmigo a la consulta.",
+    "en": "My wife is coming with me to the appointment.",
+    "hit": "consulta"
+   }
+  ]
+ },
+ {
+  "id": "sm1-expediente",
+  "w": "el expediente",
+  "pos": "noun",
+  "en": "medical record; chart",
+  "note": "Also 'el historial médico'.",
+  "type": [
+   "el expediente",
+   "expediente",
+   "el historial médico",
+   "historial médico"
+  ],
+  "ex": [
+   {
+    "es": "En su expediente dice que es alérgico a la penicilina.",
+    "en": "Your chart says you're allergic to penicillin.",
+    "hit": "expediente"
+   },
+   {
+    "es": "Un momento, busco su expediente en la computadora.",
+    "en": "One moment, I'm looking up your record on the computer.",
+    "hit": "expediente"
+   },
+   {
+    "es": "¿Puede mandar mi expediente a mi otro doctor?",
+    "en": "Can you send my records to my other doctor?",
+    "hit": "expediente"
+   }
+  ]
+ },
+ {
+  "id": "sm1-pulsera",
+  "w": "la pulsera",
+  "pos": "noun",
+  "en": "wristband; bracelet",
+  "note": "In the hospital: 'la pulsera de identificación', the ID wristband.",
+  "type": [
+   "la pulsera",
+   "pulsera"
+  ],
+  "ex": [
+   {
+    "es": "¿Me permite ver su pulsera? Confirmo su nombre.",
+    "en": "May I see your wristband? I'm confirming your name.",
+    "hit": "pulsera"
+   },
+   {
+    "es": "Doctor, mi nombre en la pulsera está mal.",
+    "en": "Doctor, my name on the wristband is wrong.",
+    "hit": "pulsera"
+   },
+   {
+    "es": "La pulsera tiene su nombre y su fecha de nacimiento.",
+    "en": "The wristband has your name and date of birth.",
+    "hit": "pulsera"
+   }
+  ]
+ },
+ {
+  "id": "sm1-datos",
+  "w": "los datos",
+  "pos": "noun",
+  "en": "personal details; information",
+  "note": "Plural here: 'sus datos' = your personal details.",
+  "type": [
+   "los datos",
+   "datos"
+  ],
+  "ex": [
+   {
+    "es": "Necesito confirmar sus datos antes de la consulta.",
+    "en": "I need to confirm your details before the visit.",
+    "hit": "datos"
+   },
+   {
+    "es": "¿Sus datos siguen iguales, la dirección y el teléfono?",
+    "en": "Are your details the same, address and phone?",
+    "hit": "datos"
+   },
+   {
+    "es": "La enfermera ya tiene todos mis datos.",
+    "en": "The nurse already has all my information.",
+    "hit": "datos"
+   }
+  ]
+ },
+ {
+  "id": "sm1-confirmar",
+  "w": "confirmar",
+  "pos": "verb",
+  "en": "to confirm",
+  "note": "",
+  "type": [
+   "confirmar"
+  ],
+  "ex": [
+   {
+    "es": "Le llamo para confirmar su cita de mañana.",
+    "en": "I'm calling to confirm your appointment tomorrow.",
+    "hit": "confirmar"
+   },
+   {
+    "es": "¿Me puede confirmar su fecha de nacimiento?",
+    "en": "Can you confirm your date of birth for me?",
+    "hit": "confirmar"
+   },
+   {
+    "es": "Antes de la prueba, confirmo su nombre otra vez.",
+    "en": "Before the test, I'm confirming your name again.",
+    "hit": "confirmo"
+   }
+  ]
+ },
+ {
+  "id": "sm1-deletrear",
+  "w": "deletrear",
+  "pos": "verb",
+  "en": "to spell (out loud)",
+  "note": "",
+  "type": [
+   "deletrear"
+  ],
+  "ex": [
+   {
+    "es": "¿Me puede deletrear su apellido, por favor?",
+    "en": "Can you spell your last name for me, please?",
+    "hit": "deletrear"
+   },
+   {
+    "es": "Mi apellido es difícil, se lo deletreo.",
+    "en": "My last name is hard; I'll spell it for you.",
+    "hit": "deletreo"
+   },
+   {
+    "es": "Doctora, ¿puede deletrear el nombre de la medicina?",
+    "en": "Doctor, can you spell the name of the medicine?",
+    "hit": "deletrear"
+   }
+  ]
+ },
+ {
+  "id": "sm1-segundo-apellido",
+  "w": "el segundo apellido",
+  "pos": "noun",
+  "en": "second surname (usually the mother's)",
+  "note": "Many Latin Americans use two surnames: father's first, then mother's.",
+  "type": [
+   "el segundo apellido",
+   "segundo apellido"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es su segundo apellido, señor?",
+    "en": "What is your second last name, sir?",
+    "hit": "segundo apellido"
+   },
+   {
+    "es": "En el sistema no aparece su segundo apellido.",
+    "en": "Your second last name doesn't show up in the system.",
+    "hit": "segundo apellido"
+   },
+   {
+    "es": "Mi segundo apellido es Ramírez, por mi mamá.",
+    "en": "My second last name is Ramírez, from my mom.",
+    "hit": "segundo apellido"
+   }
+  ]
+ },
+ {
+  "id": "sm1-llamarse",
+  "w": "llamarse (me llamo / se llama)",
+  "pos": "verb",
+  "en": "to be called; my name is",
+  "note": "",
+  "type": [
+   "llamarse"
+  ],
+  "ex": [
+   {
+    "es": "Buenos días, me llamo Laura Ruiz y soy su doctora.",
+    "en": "Good morning, my name is Laura Ruiz and I'm your doctor.",
+    "hit": "me llamo"
+   },
+   {
+    "es": "Perdón, ¿cómo se llama su esposo?",
+    "en": "Sorry, what is your husband's name?",
+    "hit": "se llama"
+   },
+   {
+    "es": "Mi papá se llama José Luis Hernández.",
+    "en": "My dad's name is José Luis Hernández.",
+    "hit": "se llama"
+   }
+  ]
+ },
+ {
+  "id": "sm1-me-dicen",
+  "w": "me dicen",
+  "pos": "phrase",
+  "en": "people call me; I go by",
+  "note": "Nicknames are common: Guadalupe → Lupe, Jesús → Chuy, José → Pepe.",
+  "type": [
+   "me dicen"
+  ],
+  "ex": [
+   {
+    "es": "Me llamo Guadalupe, pero me dicen Lupe.",
+    "en": "My name is Guadalupe, but people call me Lupe.",
+    "hit": "me dicen"
+   },
+   {
+    "es": "A mi papá todos le dicen don Chuy.",
+    "en": "Everyone calls my dad don Chuy.",
+    "hit": "le dicen"
+   },
+   {
+    "es": "¿Y cómo le dicen en su casa?",
+    "en": "And what do they call you at home?",
+    "hit": "le dicen"
+   }
+  ]
+ },
+ {
+  "id": "sm1-edad",
+  "w": "la edad",
+  "pos": "noun",
+  "en": "age",
+  "note": "",
+  "type": [
+   "la edad",
+   "edad"
+  ],
+  "ex": [
+   {
+    "es": "¿Me puede decir su edad, por favor?",
+    "en": "Can you tell me your age, please?",
+    "hit": "edad"
+   },
+   {
+    "es": "Mi mamá ya no oye bien por su edad.",
+    "en": "My mom doesn't hear well anymore because of her age.",
+    "hit": "edad"
+   },
+   {
+    "es": "En el formulario falta su edad, señor.",
+    "en": "Your age is missing on the form, sir.",
+    "hit": "edad"
+   }
+  ]
+ },
+ {
+  "id": "sm1-cuantos-anos-tiene",
+  "w": "¿cuántos años tiene?",
+  "pos": "phrase",
+  "en": "how old are you? (usted)",
+  "note": "Age goes with tener: 'Tengo sesenta años', never 'soy sesenta'.",
+  "type": [
+   "cuántos años tiene",
+   "¿cuántos años tiene?"
+  ],
+  "ex": [
+   {
+    "es": "Buenos días, señora, ¿cuántos años tiene?",
+    "en": "Good morning, ma'am, how old are you?",
+    "hit": "cuántos años tiene"
+   },
+   {
+    "es": "¿Cuántos años tiene su papá?",
+    "en": "How old is your father?",
+    "hit": "Cuántos años tiene"
+   },
+   {
+    "es": "Para la dosis, ¿cuántos años tiene el niño?",
+    "en": "For the dose, how old is the child?",
+    "hit": "cuántos años tiene"
+   }
+  ]
+ },
+ {
+  "id": "sm1-correcto",
+  "w": "correcto",
+  "pos": "adjective",
+  "en": "correct; right",
+  "note": "'¿Es correcto?' or '¿correcto?' is a polite way to check details.",
+  "type": [
+   "correcto"
+  ],
+  "ex": [
+   {
+    "es": "Su cumpleaños es el tres de mayo, ¿correcto?",
+    "en": "Your birthday is May third, correct?",
+    "hit": "correcto"
+   },
+   {
+    "es": "Sí, correcto, ese es mi número.",
+    "en": "Yes, that's right, that's my number.",
+    "hit": "correcto"
+   },
+   {
+    "es": "¿Es correcto el nombre en su pulsera?",
+    "en": "Is the name on your wristband correct?",
+    "hit": "correcto"
+   }
+  ]
+ },
+ {
+  "id": "sm1-me-permite",
+  "w": "¿me permite…?",
+  "pos": "phrase",
+  "en": "may I…? (polite request)",
+  "note": "Polite usted request: '¿Me permite su tarjeta?' = may I have your card?",
+  "type": [
+   "me permite",
+   "¿me permite?"
+  ],
+  "ex": [
+   {
+    "es": "¿Me permite su identificación, por favor?",
+    "en": "May I have your ID, please?",
+    "hit": "Me permite"
+   },
+   {
+    "es": "¿Me permite escuchar su corazón?",
+    "en": "May I listen to your heart?",
+    "hit": "Me permite"
+   },
+   {
+    "es": "Doctor, ¿me permite hacer una pregunta?",
+    "en": "Doctor, may I ask a question?",
+    "hit": "me permite"
+   }
+  ]
+ },
+ {
+  "id": "sm1-mil-novecientos",
+  "w": "mil novecientos",
+  "pos": "number",
+  "en": "nineteen hundred (in years 1900–1999)",
+  "note": "Years are said in full: 1958 = mil novecientos cincuenta y ocho.",
+  "type": [
+   "mil novecientos"
+  ],
+  "ex": [
+   {
+    "es": "Nací en mil novecientos cincuenta y ocho.",
+    "en": "I was born in nineteen fifty-eight.",
+    "hit": "mil novecientos"
+   },
+   {
+    "es": "¿Es el cuatro de julio de mil novecientos sesenta?",
+    "en": "Is it July fourth, nineteen sixty?",
+    "hit": "mil novecientos"
+   },
+   {
+    "es": "Mi papá es de mil novecientos cuarenta.",
+    "en": "My dad was born in nineteen forty.",
+    "hit": "mil novecientos"
+   }
+  ]
+ },
+ {
+  "id": "sm1-enero-diciembre",
+  "w": "enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre",
+  "pos": "noun",
+  "en": "the months of the year",
+  "note": "Not capitalized in Spanish. Dates go day, then month: el 5 de mayo.",
+  "type": [],
+  "ex": [
+   {
+    "es": "Mi cumpleaños es el doce de marzo.",
+    "en": "My birthday is March twelfth.",
+    "hit": "marzo"
+   },
+   {
+    "es": "Su próxima cita es en enero, un martes.",
+    "en": "Your next appointment is in January, on a Tuesday.",
+    "hit": "enero"
+   },
+   {
+    "es": "¿Su fecha de nacimiento es el nueve de octubre?",
+    "en": "Is your date of birth October ninth?",
+    "hit": "octubre"
+   }
+  ]
+ },
+ {
+  "id": "sm1-en-punto",
+  "w": "en punto",
+  "pos": "phrase",
+  "en": "on the dot; sharp (time)",
+  "note": "",
+  "type": [
+   "en punto"
+  ],
+  "ex": [
+   {
+    "es": "Su cita es a las nueve en punto.",
+    "en": "Your appointment is at nine sharp.",
+    "hit": "en punto"
+   },
+   {
+    "es": "El doctor empieza a las ocho en punto.",
+    "en": "The doctor starts at eight on the dot.",
+    "hit": "en punto"
+   },
+   {
+    "es": "La farmacia abre a las diez en punto.",
+    "en": "The pharmacy opens at ten sharp.",
+    "hit": "en punto"
+   }
+  ]
+ },
+ {
+  "id": "sm1-cuarto-para-las",
+  "w": "un cuarto para las (tres)",
+  "pos": "phrase",
+  "en": "a quarter to (three)",
+  "note": "Mexican usage; 'las tres menos cuarto' is also understood.",
+  "type": [
+   "un cuarto para las",
+   "cuarto para las"
+  ],
+  "ex": [
+   {
+    "es": "Ya es un cuarto para las once y no me llaman.",
+    "en": "It's already a quarter to eleven and they haven't called me.",
+    "hit": "un cuarto para las"
+   },
+   {
+    "es": "¿Puede venir a un cuarto para las tres?",
+    "en": "Can you come at a quarter to three?",
+    "hit": "un cuarto para las"
+   },
+   {
+    "es": "Mi hijo sale del trabajo a un cuarto para las cinco.",
+    "en": "My son gets off work at a quarter to five.",
+    "hit": "un cuarto para las"
+   }
+  ]
+ },
+ {
+  "id": "sm1-como-esta",
+  "w": "¿cómo está?",
+  "pos": "phrase",
+  "en": "how are you? (usted)",
+  "note": "Use 'está' with patients; '¿cómo estás?' is for friends and family.",
+  "type": [
+   "cómo está",
+   "¿cómo está?"
+  ],
+  "ex": [
+   {
+    "es": "Buenos días, señora Díaz, ¿cómo está?",
+    "en": "Good morning, Mrs. Díaz, how are you?",
+    "hit": "cómo está"
+   },
+   {
+    "es": "Hola, don Ramón, ¿cómo está hoy?",
+    "en": "Hello, don Ramón, how are you today?",
+    "hit": "cómo está"
+   },
+   {
+    "es": "Hola, le habla la enfermera, ¿cómo está?",
+    "en": "Hello, this is the nurse calling, how are you?",
+    "hit": "cómo está"
+   }
+  ]
+ },
+ {
+  "id": "sm1-igualmente",
+  "w": "igualmente",
+  "pos": "interjection",
+  "en": "likewise; same to you",
+  "note": "",
+  "type": [
+   "igualmente"
+  ],
+  "ex": [
+   {
+    "es": "Igualmente, doctor, mucho gusto en conocerlo.",
+    "en": "Likewise, doctor, very nice to meet you.",
+    "hit": "Igualmente"
+   },
+   {
+    "es": "Gracias, señorita, igualmente, buen fin de semana.",
+    "en": "Thank you, miss, same to you, have a good weekend.",
+    "hit": "igualmente"
+   },
+   {
+    "es": "Igualmente, es un placer conocerla, doctora.",
+    "en": "Likewise, it's a pleasure to meet you, doctor.",
+    "hit": "Igualmente"
+   }
+  ]
+ },
+ {
+  "id": "sm1-encantado",
+  "w": "encantado",
+  "pos": "adjective",
+  "en": "pleased to meet you",
+  "note": "A woman says 'encantada'.",
+  "type": [
+   "encantado",
+   "encantada"
+  ],
+  "ex": [
+   {
+    "es": "Encantado, señora, soy el doctor López.",
+    "en": "Pleased to meet you, ma'am, I'm Dr. López.",
+    "hit": "Encantado"
+   },
+   {
+    "es": "Encantada de conocerlo, doctor, soy Elena.",
+    "en": "Pleased to meet you, doctor, I'm Elena.",
+    "hit": "Encantada"
+   },
+   {
+    "es": "Encantado de conocer a su familia, don Luis.",
+    "en": "Pleased to meet your family, don Luis.",
+    "hit": "Encantado"
+   }
+  ]
+ },
+ {
+  "id": "sm1-que-le-vaya-bien",
+  "w": "que le vaya bien",
+  "pos": "phrase",
+  "en": "take care; have a good day (goodbye)",
+  "note": "Set goodbye phrase (usted). To friends: 'que te vaya bien'.",
+  "type": [
+   "que le vaya bien"
+  ],
+  "ex": [
+   {
+    "es": "Gracias por venir, señor, que le vaya bien.",
+    "en": "Thanks for coming, sir, take care.",
+    "hit": "que le vaya bien"
+   },
+   {
+    "es": "Nos vemos en tres meses, que le vaya bien.",
+    "en": "See you in three months, take care.",
+    "hit": "que le vaya bien"
+   },
+   {
+    "es": "Gracias, doctora, que le vaya bien a usted también.",
+    "en": "Thank you, doctor, you take care too.",
+    "hit": "que le vaya bien"
+   }
+  ]
+ },
+ {
+  "id": "sm1-don-dona",
+  "w": "don / doña",
+  "pos": "noun",
+  "en": "respectful title before a first name",
+  "note": "Used with an older person's first name: 'doña María'. Warm and respectful.",
+  "type": [
+   "don",
+   "doña"
+  ],
+  "ex": [
+   {
+    "es": "Buenas tardes, doña Carmen, pase por favor.",
+    "en": "Good afternoon, doña Carmen, please come in.",
+    "hit": "doña"
+   },
+   {
+    "es": "Don Ernesto, ¿le duele el pecho ahorita?",
+    "en": "Don Ernesto, does your chest hurt right now?",
+    "hit": "Don"
+   },
+   {
+    "es": "Doña Rosa es mi abuela, yo la acompaño.",
+    "en": "Doña Rosa is my grandmother; I'm here with her.",
+    "hit": "Doña"
+   }
+  ]
+ },
+ {
+  "id": "sm1-senor-senora",
+  "w": "el señor / la señora",
+  "pos": "noun",
+  "en": "Mr. / Mrs.; sir / ma'am",
+  "note": "With a surname: 'la señora Gómez'. Alone: 'sir' or 'ma'am'.",
+  "type": [
+   "el señor",
+   "la señora",
+   "señor",
+   "señora"
+  ],
+  "ex": [
+   {
+    "es": "Señora, ¿me puede decir su nombre completo?",
+    "en": "Ma'am, can you tell me your full name?",
+    "hit": "Señora"
+   },
+   {
+    "es": "El señor Pérez ya está en el consultorio.",
+    "en": "Mr. Pérez is already in the exam room.",
+    "hit": "señor"
+   },
+   {
+    "es": "Gracias, señor, ¿tiene alguna otra pregunta?",
+    "en": "Thank you, sir, do you have any other questions?",
+    "hit": "señor"
+   }
+  ]
+ },
+ {
+  "id": "sm1-pase-pasele",
+  "w": "pase / pásele",
+  "pos": "phrase",
+  "en": "come in; go ahead",
+  "note": "'Pásele' is a warm, very Mexican way to invite someone in.",
+  "type": [
+   "pase",
+   "pásele"
+  ],
+  "ex": [
+   {
+    "es": "Pásele, señor, el doctor ya lo espera.",
+    "en": "Come on in, sir, the doctor is waiting for you.",
+    "hit": "Pásele"
+   },
+   {
+    "es": "Pase por aquí, por favor, señora.",
+    "en": "Come this way, please, ma'am.",
+    "hit": "Pase"
+   },
+   {
+    "es": "Pásele a la ventanilla dos, por favor.",
+    "en": "Please go ahead to window two.",
+    "hit": "Pásele"
+   }
+  ]
+ },
+ {
+  "id": "sm1-tomar-asiento",
+  "w": "tomar asiento",
+  "pos": "phrase",
+  "en": "to have a seat",
+  "note": "Polite forms: 'Tome asiento' or 'Puede tomar asiento'.",
+  "type": [
+   "tomar asiento"
+  ],
+  "ex": [
+   {
+    "es": "Puede tomar asiento, la llamamos en un momento.",
+    "en": "You can have a seat; we'll call you in a moment.",
+    "hit": "tomar asiento"
+   },
+   {
+    "es": "Tome asiento aquí en la camilla, por favor.",
+    "en": "Please have a seat here on the exam table.",
+    "hit": "Tome asiento"
+   },
+   {
+    "es": "¿Quiere tomar asiento mientras espera a su papá?",
+    "en": "Would you like to sit down while you wait for your dad?",
+    "hit": "tomar asiento"
+   }
+  ]
+ },
+ {
+  "id": "sm1-un-momento",
+  "w": "un momento",
+  "pos": "phrase",
+  "en": "one moment; just a moment",
+  "note": "'Un momentito' sounds softer and very Mexican.",
+  "type": [
+   "un momento",
+   "un momentito"
+  ],
+  "ex": [
+   {
+    "es": "Un momento, por favor, busco su cita.",
+    "en": "One moment, please, I'm looking up your appointment.",
+    "hit": "Un momento"
+   },
+   {
+    "es": "¿Me espera un momentito? Le paso a la doctora.",
+    "en": "Can you hold a moment? I'll put the doctor on.",
+    "hit": "un momentito"
+   },
+   {
+    "es": "Un momento, doctora, no le entendí.",
+    "en": "Just a moment, doctor, I didn't understand you.",
+    "hit": "Un momento"
+   }
+  ]
+ },
+ {
+  "id": "sm1-enseguida",
+  "w": "enseguida",
+  "pos": "adverb",
+  "en": "right away; in a moment",
+  "note": "Also written 'en seguida'.",
+  "type": [
+   "enseguida",
+   "en seguida"
+  ],
+  "ex": [
+   {
+    "es": "La doctora viene enseguida, señora.",
+    "en": "The doctor will be right in, ma'am.",
+    "hit": "enseguida"
+   },
+   {
+    "es": "Enseguida le traigo una cobija.",
+    "en": "I'll bring you a blanket right away.",
+    "hit": "Enseguida"
+   },
+   {
+    "es": "Enseguida le preparo su medicina, señor.",
+    "en": "I'll get your medicine ready right away, sir.",
+    "hit": "Enseguida"
+   }
+  ]
+ },
+ {
+  "id": "sm1-disculpe",
+  "w": "disculpe",
+  "pos": "interjection",
+  "en": "excuse me; I'm sorry",
+  "note": "Polite usted form; 'perdón' also works.",
+  "type": [
+   "disculpe",
+   "perdón"
+  ],
+  "ex": [
+   {
+    "es": "Disculpe la espera, el doctor ya viene.",
+    "en": "Sorry for the wait, the doctor is on his way.",
+    "hit": "Disculpe"
+   },
+   {
+    "es": "Disculpe, ¿es usted la doctora García?",
+    "en": "Excuse me, are you Dr. García?",
+    "hit": "Disculpe"
+   },
+   {
+    "es": "Disculpe, ¿me puede repetir su apellido?",
+    "en": "Sorry, can you repeat your last name?",
+    "hit": "Disculpe"
+   }
+  ]
+ },
+ {
+  "id": "sm1-gracias-por-esperar",
+  "w": "gracias por esperar",
+  "pos": "phrase",
+  "en": "thank you for waiting",
+  "note": "",
+  "type": [
+   "gracias por esperar"
+  ],
+  "ex": [
+   {
+    "es": "Gracias por esperar, ya puede pasar.",
+    "en": "Thank you for waiting, you can come in now.",
+    "hit": "Gracias por esperar"
+   },
+   {
+    "es": "Gracias por esperar en la línea, señora.",
+    "en": "Thank you for holding, ma'am.",
+    "hit": "Gracias por esperar"
+   },
+   {
+    "es": "Señor, gracias por esperar a su esposa aquí.",
+    "en": "Sir, thank you for waiting here for your wife.",
+    "hit": "gracias por esperar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-le-presento-a",
+  "w": "le presento a",
+  "pos": "phrase",
+  "en": "let me introduce you to",
+  "note": "Usted form: 'Le presento a la doctora Kim' = this is Dr. Kim.",
+  "type": [
+   "le presento a"
+  ],
+  "ex": [
+   {
+    "es": "Le presento a mi residente, la doctora Chen.",
+    "en": "Let me introduce my resident, Dr. Chen.",
+    "hit": "Le presento a"
+   },
+   {
+    "es": "Doctor, le presento a mi esposo, Raúl.",
+    "en": "Doctor, this is my husband, Raúl.",
+    "hit": "le presento a"
+   },
+   {
+    "es": "Le presento a la intérprete, ella nos va a ayudar.",
+    "en": "This is the interpreter; she's going to help us.",
+    "hit": "Le presento a"
+   }
+  ]
+ },
+ {
+  "id": "sm1-residente",
+  "w": "el / la residente",
+  "pos": "noun",
+  "en": "resident (doctor in training)",
+  "note": "Same form for men and women.",
+  "type": [
+   "el residente",
+   "la residente",
+   "residente"
+  ],
+  "ex": [
+   {
+    "es": "La residente le hace unas preguntas primero.",
+    "en": "The resident will ask you a few questions first.",
+    "hit": "residente"
+   },
+   {
+    "es": "El residente trabaja con el doctor Sánchez.",
+    "en": "The resident works with Dr. Sánchez.",
+    "hit": "residente"
+   },
+   {
+    "es": "¿El residente también me va a revisar?",
+    "en": "Is the resident going to examine me too?",
+    "hit": "residente"
+   }
+  ]
+ },
+ {
+  "id": "sm1-especialista",
+  "w": "el / la especialista",
+  "pos": "noun",
+  "en": "specialist",
+  "note": "Same form for men and women.",
+  "type": [
+   "el especialista",
+   "la especialista",
+   "especialista"
+  ],
+  "ex": [
+   {
+    "es": "Su doctor lo manda con un especialista del corazón.",
+    "en": "Your doctor is referring you to a heart specialist.",
+    "hit": "especialista"
+   },
+   {
+    "es": "¿Necesito una referencia para ver al especialista?",
+    "en": "Do I need a referral to see the specialist?",
+    "hit": "especialista"
+   },
+   {
+    "es": "La especialista lo ve el martes a las once.",
+    "en": "The specialist will see you Tuesday at eleven.",
+    "hit": "especialista"
+   }
+  ]
+ },
+ {
+  "id": "sm1-medico-de-cabecera",
+  "w": "el médico de cabecera",
+  "pos": "noun",
+  "en": "primary care doctor",
+  "note": "US clinics also say 'el médico primario'.",
+  "type": [
+   "el médico de cabecera",
+   "médico de cabecera",
+   "el médico primario",
+   "médico primario"
+  ],
+  "ex": [
+   {
+    "es": "¿Quién es su médico de cabecera?",
+    "en": "Who is your primary care doctor?",
+    "hit": "médico de cabecera"
+   },
+   {
+    "es": "Mi médico de cabecera me manda con usted.",
+    "en": "My primary care doctor is sending me to you.",
+    "hit": "médico de cabecera"
+   },
+   {
+    "es": "Le mandamos una copia a su médico de cabecera.",
+    "en": "We'll send a copy to your primary care doctor.",
+    "hit": "médico de cabecera"
+   }
+  ]
+ },
+ {
+  "id": "sm1-que-lo-trae-por-aqui",
+  "w": "¿qué lo trae por aquí?",
+  "pos": "phrase",
+  "en": "what brings you in today?",
+  "note": "To a woman: '¿Qué la trae por aquí?'",
+  "type": [],
+  "ex": [
+   {
+    "es": "Buenos días, don Pedro, ¿qué lo trae por aquí?",
+    "en": "Good morning, don Pedro, what brings you in?",
+    "hit": "qué lo trae por aquí"
+   },
+   {
+    "es": "Mucho gusto, señora, ¿qué la trae por aquí hoy?",
+    "en": "Nice to meet you, ma'am, what brings you in today?",
+    "hit": "qué la trae por aquí"
+   },
+   {
+    "es": "Y usted, joven, ¿qué lo trae por aquí?",
+    "en": "And you, young man, what brings you in?",
+    "hit": "qué lo trae por aquí"
+   }
+  ]
+ },
+ {
+  "id": "sm1-en-que-le-puedo-ayudar",
+  "w": "¿en qué le puedo ayudar?",
+  "pos": "phrase",
+  "en": "how can I help you?",
+  "note": "",
+  "type": [],
+  "ex": [
+   {
+    "es": "Buenas tardes, clínica del corazón, ¿en qué le puedo ayudar?",
+    "en": "Good afternoon, heart clinic, how can I help you?",
+    "hit": "en qué le puedo ayudar"
+   },
+   {
+    "es": "Pase, señora, ¿en qué le puedo ayudar?",
+    "en": "Come in, ma'am, how can I help you?",
+    "hit": "en qué le puedo ayudar"
+   },
+   {
+    "es": "Soy la farmacéutica, ¿en qué le puedo ayudar?",
+    "en": "I'm the pharmacist, how can I help you?",
+    "hit": "en qué le puedo ayudar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-venir-por",
+  "w": "venir por",
+  "pos": "phrase",
+  "en": "to come in for (a reason)",
+  "note": "Patient answer: 'Vengo por mi presión' = I'm here about my blood pressure.",
+  "type": [
+   "venir por"
+  ],
+  "ex": [
+   {
+    "es": "Vengo por un dolor en el pecho.",
+    "en": "I'm here because of chest pain.",
+    "hit": "Vengo por"
+   },
+   {
+    "es": "Vengo por los resultados de mi análisis.",
+    "en": "I'm here for my lab results.",
+    "hit": "Vengo por"
+   },
+   {
+    "es": "Mi mamá viene por la revisión de su marcapasos.",
+    "en": "My mom is here for her pacemaker check.",
+    "hit": "viene por"
+   }
+  ]
+ },
+ {
+  "id": "sm1-idioma",
+  "w": "el idioma",
+  "pos": "noun",
+  "en": "language",
+  "note": "Masculine despite the -a: 'el idioma'.",
+  "type": [
+   "el idioma",
+   "idioma"
+  ],
+  "ex": [
+   {
+    "es": "¿En qué idioma prefiere hablar?",
+    "en": "What language do you prefer to speak?",
+    "hit": "idioma"
+   },
+   {
+    "es": "En su expediente dice que su idioma es español.",
+    "en": "Your chart says your language is Spanish.",
+    "hit": "idioma"
+   },
+   {
+    "es": "Mi abuela habla mixteco, es otro idioma.",
+    "en": "My grandmother speaks Mixtec; it's a different language.",
+    "hit": "idioma"
+   }
+  ]
+ },
+ {
+  "id": "sm1-no-hablo-ingles",
+  "w": "no hablo inglés",
+  "pos": "phrase",
+  "en": "I don't speak English",
+  "note": "",
+  "type": [
+   "no hablo inglés"
+  ],
+  "ex": [
+   {
+    "es": "Perdón, no hablo inglés, ¿hay alguien en español?",
+    "en": "Sorry, I don't speak English; is there someone in Spanish?",
+    "hit": "no hablo inglés"
+   },
+   {
+    "es": "Mi papá no habla inglés, yo le traduzco.",
+    "en": "My dad doesn't speak English; I translate for him.",
+    "hit": "no habla inglés"
+   },
+   {
+    "es": "Señorita, no hablo inglés muy bien.",
+    "en": "Miss, I don't speak English very well.",
+    "hit": "no hablo inglés"
+   }
+  ]
+ },
+ {
+  "id": "sm1-un-poquito",
+  "w": "un poquito",
+  "pos": "phrase",
+  "en": "a little bit",
+  "note": "Very common softener: 'me duele un poquito'.",
+  "type": [
+   "un poquito",
+   "un poco"
+  ],
+  "ex": [
+   {
+    "es": "Hablo un poquito de inglés, pero no mucho.",
+    "en": "I speak a little English, but not much.",
+    "hit": "un poquito"
+   },
+   {
+    "es": "Me duele un poquito aquí, del lado derecho.",
+    "en": "It hurts a little here, on the right side.",
+    "hit": "un poquito"
+   },
+   {
+    "es": "¿Puede esperar un poquito? Ya viene la intérprete.",
+    "en": "Can you wait a little bit? The interpreter is coming.",
+    "hit": "un poquito"
+   }
+  ]
+ },
+ {
+  "id": "sm1-traducir",
+  "w": "traducir",
+  "pos": "verb",
+  "en": "to translate; to interpret",
+  "note": "Present: traduzco, traduce. Patients may call the interpreter 'el traductor'.",
+  "type": [
+   "traducir"
+  ],
+  "ex": [
+   {
+    "es": "Mi hija me traduce, si está bien.",
+    "en": "My daughter translates for me, if that's okay.",
+    "hit": "traduce"
+   },
+   {
+    "es": "La intérprete puede traducir todo lo que dice.",
+    "en": "The interpreter can translate everything you say.",
+    "hit": "traducir"
+   },
+   {
+    "es": "Por teléfono, una persona le traduce todo.",
+    "en": "On the phone, a person translates everything for you.",
+    "hit": "traduce"
+   }
+  ]
+ },
+ {
+  "id": "sm1-gratis",
+  "w": "gratis",
+  "pos": "adjective",
+  "en": "free (no cost)",
+  "note": "Never changes form: 'el servicio es gratis'.",
+  "type": [
+   "gratis"
+  ],
+  "ex": [
+   {
+    "es": "El intérprete es gratis para usted.",
+    "en": "The interpreter is free for you.",
+    "hit": "gratis"
+   },
+   {
+    "es": "¿El café de la sala de espera es gratis?",
+    "en": "Is the coffee in the waiting room free?",
+    "hit": "gratis"
+   },
+   {
+    "es": "En esta farmacia, la toma de presión es gratis.",
+    "en": "At this pharmacy, the blood pressure check is free.",
+    "hit": "gratis"
+   }
+  ]
+ },
+ {
+  "id": "sm1-tener-derecho-a",
+  "w": "tener derecho a",
+  "pos": "phrase",
+  "en": "to have the right to",
+  "note": "",
+  "type": [
+   "tener derecho a"
+  ],
+  "ex": [
+   {
+    "es": "Usted tiene derecho a un intérprete gratis.",
+    "en": "You have the right to a free interpreter.",
+    "hit": "tiene derecho a"
+   },
+   {
+    "es": "¿Tengo derecho a ver mi expediente?",
+    "en": "Do I have the right to see my record?",
+    "hit": "Tengo derecho a"
+   },
+   {
+    "es": "Usted tiene derecho a una segunda opinión.",
+    "en": "You have the right to a second opinion.",
+    "hit": "tiene derecho a"
+   }
+  ]
+ },
+ {
+  "id": "sm1-por-telefono",
+  "w": "por teléfono",
+  "pos": "phrase",
+  "en": "by phone; over the phone",
+  "note": "'Por video' = by video, for video interpreters or visits.",
+  "type": [
+   "por teléfono"
+  ],
+  "ex": [
+   {
+    "es": "La intérprete nos ayuda por teléfono.",
+    "en": "The interpreter helps us over the phone.",
+    "hit": "por teléfono"
+   },
+   {
+    "es": "¿Me puede dar los resultados por teléfono?",
+    "en": "Can you give me the results over the phone?",
+    "hit": "por teléfono"
+   },
+   {
+    "es": "Su hijo puede escuchar por teléfono, si usted quiere.",
+    "en": "Your son can listen in by phone, if you want.",
+    "hit": "por teléfono"
+   }
+  ]
+ },
+ {
+  "id": "sm1-parte",
+  "w": "la parte",
+  "pos": "noun",
+  "en": "part; area",
+  "note": "'¿En qué parte le duele?' = Where exactly does it hurt?",
+  "type": [
+   "la parte",
+   "parte"
+  ],
+  "ex": [
+   {
+    "es": "¿En qué parte le duele, señor?",
+    "en": "Where does it hurt, sir?",
+    "hit": "parte"
+   },
+   {
+    "es": "Me duele esta parte de la espalda.",
+    "en": "This part of my back hurts.",
+    "hit": "parte"
+   },
+   {
+    "es": "En esta parte del formulario va su seguro.",
+    "en": "Your insurance goes in this part of the form.",
+    "hit": "parte"
+   }
+  ]
+ },
+ {
+  "id": "sm1-senalar",
+  "w": "señalar",
+  "pos": "verb",
+  "en": "to point (to)",
+  "note": "",
+  "type": [
+   "señalar"
+  ],
+  "ex": [
+   {
+    "es": "¿Me puede señalar dónde le duele?",
+    "en": "Can you point to where it hurts?",
+    "hit": "señalar"
+   },
+   {
+    "es": "Puede señalar con un dedo, por favor.",
+    "en": "You can point with one finger, please.",
+    "hit": "señalar"
+   },
+   {
+    "es": "Mi papá se señala el pecho cuando le duele.",
+    "en": "My dad points to his chest when it hurts.",
+    "hit": "señala"
+   }
+  ]
+ },
+ {
+  "id": "sm1-tocar",
+  "w": "tocar",
+  "pos": "verb",
+  "en": "to touch",
+  "note": "Also 'to play' (music) and 'to knock' (door).",
+  "type": [
+   "tocar"
+  ],
+  "ex": [
+   {
+    "es": "¿Le duele cuando toco aquí?",
+    "en": "Does it hurt when I touch here?",
+    "hit": "toco"
+   },
+   {
+    "es": "Me duele si me toco el pecho.",
+    "en": "It hurts if I touch my chest.",
+    "hit": "toco"
+   },
+   {
+    "es": "Es mejor no tocar la herida con las manos.",
+    "en": "It's best not to touch the wound with your hands.",
+    "hit": "tocar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-por-dentro",
+  "w": "por dentro",
+  "pos": "phrase",
+  "en": "inside; on the inside",
+  "note": "Patients: 'me duele por dentro' = a deep pain, not on the skin.",
+  "type": [
+   "por dentro"
+  ],
+  "ex": [
+   {
+    "es": "Me duele por dentro, no aquí afuera.",
+    "en": "It hurts on the inside, not out here.",
+    "hit": "por dentro"
+   },
+   {
+    "es": "¿Le duele por dentro o en la piel?",
+    "en": "Does it hurt inside or on the skin?",
+    "hit": "por dentro"
+   },
+   {
+    "es": "Mi esposa dice que siente algo raro por dentro.",
+    "en": "My wife says she feels something strange inside.",
+    "hit": "por dentro"
+   }
+  ]
+ },
+ {
+  "id": "sm1-todo-el-cuerpo",
+  "w": "todo el cuerpo",
+  "pos": "phrase",
+  "en": "the whole body; all over",
+  "note": "'Me duele todo el cuerpo' = I ache all over.",
+  "type": [
+   "todo el cuerpo"
+  ],
+  "ex": [
+   {
+    "es": "Me duele todo el cuerpo, doctora.",
+    "en": "I ache all over, doctor.",
+    "hit": "todo el cuerpo"
+   },
+   {
+    "es": "¿Le duele todo el cuerpo o una parte?",
+    "en": "Do you hurt all over or in one area?",
+    "hit": "todo el cuerpo"
+   },
+   {
+    "es": "Mi hijo tiene fiebre y le duele todo el cuerpo.",
+    "en": "My son has a fever and aches all over.",
+    "hit": "todo el cuerpo"
+   }
+  ]
+ },
+ {
+  "id": "sm1-molestar",
+  "w": "molestar (me molesta)",
+  "pos": "verb",
+  "en": "to bother; to hurt a little",
+  "note": "Works like doler: 'me molesta aquí' = it bothers me here.",
+  "type": [
+   "molestar"
+  ],
+  "ex": [
+   {
+    "es": "Me molesta aquí, debajo de las costillas.",
+    "en": "It bothers me here, under the ribs.",
+    "hit": "molesta"
+   },
+   {
+    "es": "¿Le molesta el tobillo cuando camina mucho?",
+    "en": "Does your ankle bother you when you walk a lot?",
+    "hit": "molesta"
+   },
+   {
+    "es": "Disculpe, ¿le molesta si cierro la puerta?",
+    "en": "Excuse me, do you mind if I close the door?",
+    "hit": "molesta"
+   }
+  ]
+ },
+ {
+  "id": "sm1-malestar",
+  "w": "el malestar",
+  "pos": "noun",
+  "en": "discomfort; feeling unwell",
+  "note": "A general unwell feeling, not one specific pain.",
+  "type": [
+   "el malestar",
+   "malestar"
+  ],
+  "ex": [
+   {
+    "es": "Tengo un malestar general desde el lunes.",
+    "en": "I've felt generally unwell since Monday.",
+    "hit": "malestar"
+   },
+   {
+    "es": "¿Qué tipo de malestar tiene, señora?",
+    "en": "What kind of discomfort do you have, ma'am?",
+    "hit": "malestar"
+   },
+   {
+    "es": "Mi mamá tiene malestar en el estómago.",
+    "en": "My mom has an upset stomach.",
+    "hit": "malestar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-mas-o-menos",
+  "w": "más o menos",
+  "pos": "phrase",
+  "en": "so-so; more or less; about",
+  "note": "",
+  "type": [
+   "más o menos"
+  ],
+  "ex": [
+   {
+    "es": "Pues, más o menos, doctor, no muy bien.",
+    "en": "Well, so-so, doctor, not very good.",
+    "hit": "más o menos"
+   },
+   {
+    "es": "Me duele más o menos aquí.",
+    "en": "It hurts more or less here.",
+    "hit": "más o menos"
+   },
+   {
+    "es": "La consulta dura más o menos media hora.",
+    "en": "The visit lasts about half an hour.",
+    "hit": "más o menos"
+   }
+  ]
+ },
+ {
+  "id": "sm1-nuca",
+  "w": "la nuca",
+  "pos": "noun",
+  "en": "back of the neck; nape",
+  "note": "Patients often blame high blood pressure for pain in 'la nuca'.",
+  "type": [
+   "la nuca",
+   "nuca"
+  ],
+  "ex": [
+   {
+    "es": "Me duele la nuca cuando tengo la presión alta.",
+    "en": "The back of my neck hurts when my blood pressure is high.",
+    "hit": "nuca"
+   },
+   {
+    "es": "¿Le duele aquí, en la nuca?",
+    "en": "Does it hurt here, at the back of your neck?",
+    "hit": "nuca"
+   },
+   {
+    "es": "Mi esposo se queja de la nuca todas las mañanas.",
+    "en": "My husband complains about the back of his neck every morning.",
+    "hit": "nuca"
+   }
+  ]
+ },
+ {
+  "id": "sm1-costilla",
+  "w": "la costilla",
+  "pos": "noun",
+  "en": "rib",
+  "note": "Patients often say 'las costillas' for the side of the chest.",
+  "type": [
+   "la costilla",
+   "costilla",
+   "las costillas",
+   "costillas"
+  ],
+  "ex": [
+   {
+    "es": "Me duele aquí, en las costillas.",
+    "en": "It hurts here, in my ribs.",
+    "hit": "costillas"
+   },
+   {
+    "es": "¿Le duele si aprieto esta costilla?",
+    "en": "Does it hurt if I press on this rib?",
+    "hit": "costilla"
+   },
+   {
+    "es": "En la radiografía, las costillas se ven bien.",
+    "en": "On the X-ray, the ribs look fine.",
+    "hit": "costillas"
+   }
+  ]
+ },
+ {
+  "id": "sm1-columna",
+  "w": "la columna",
+  "pos": "noun",
+  "en": "spine; backbone",
+  "note": "Patients say 'la columna' for back pain along the spine.",
+  "type": [
+   "la columna",
+   "columna",
+   "la columna vertebral"
+  ],
+  "ex": [
+   {
+    "es": "Me duele la columna cuando me agacho.",
+    "en": "My spine hurts when I bend over.",
+    "hit": "columna"
+   },
+   {
+    "es": "¿El dolor está en la columna o a un lado?",
+    "en": "Is the pain in your spine or off to one side?",
+    "hit": "columna"
+   },
+   {
+    "es": "Mi papá tiene problemas de la columna.",
+    "en": "My dad has back problems.",
+    "hit": "columna"
+   }
+  ]
+ },
+ {
+  "id": "sm1-cintura",
+  "w": "la cintura",
+  "pos": "noun",
+  "en": "waist; lower back",
+  "note": "Patients often say 'me duele la cintura' meaning the lower back.",
+  "type": [
+   "la cintura",
+   "cintura"
+  ],
+  "ex": [
+   {
+    "es": "Me duele la cintura cuando me levanto.",
+    "en": "My lower back hurts when I get up.",
+    "hit": "cintura"
+   },
+   {
+    "es": "¿Le duele la cintura o más arriba?",
+    "en": "Does your lower back hurt, or higher up?",
+    "hit": "cintura"
+   },
+   {
+    "es": "Ahora le mido la cintura con esta cinta.",
+    "en": "Now I'm measuring your waist with this tape.",
+    "hit": "cintura"
+   }
+  ]
+ },
+ {
+  "id": "sm1-costado",
+  "w": "el costado",
+  "pos": "noun",
+  "en": "side (of the body)",
+  "note": "'De costado' = on your side (lying down).",
+  "type": [
+   "el costado",
+   "costado"
+  ],
+  "ex": [
+   {
+    "es": "Me duele el costado izquierdo cuando respiro.",
+    "en": "My left side hurts when I breathe.",
+    "hit": "costado"
+   },
+   {
+    "es": "¿En qué costado le duele, derecho o izquierdo?",
+    "en": "Which side hurts, right or left?",
+    "hit": "costado"
+   },
+   {
+    "es": "Puede acostarse de costado, por favor.",
+    "en": "You can lie on your side, please.",
+    "hit": "costado"
+   }
+  ]
+ },
+ {
+  "id": "sm1-boca-del-estomago",
+  "w": "la boca del estómago",
+  "pos": "noun",
+  "en": "pit of the stomach; upper belly",
+  "note": "Patient term for the area just below the breastbone (epigastrium).",
+  "type": [
+   "la boca del estómago",
+   "boca del estómago"
+  ],
+  "ex": [
+   {
+    "es": "Siento un ardor en la boca del estómago.",
+    "en": "I feel burning in the pit of my stomach.",
+    "hit": "boca del estómago"
+   },
+   {
+    "es": "¿Le duele aquí, en la boca del estómago?",
+    "en": "Does it hurt here, in the pit of your stomach?",
+    "hit": "boca del estómago"
+   },
+   {
+    "es": "Mi esposo dice que le aprieta la boca del estómago.",
+    "en": "My husband says he feels squeezing in the pit of his stomach.",
+    "hit": "boca del estómago"
+   }
+  ]
+ },
+ {
+  "id": "sm1-rinones",
+  "w": "los riñones",
+  "pos": "noun",
+  "en": "kidneys",
+  "note": "Patients often say 'me duelen los riñones' meaning low back pain.",
+  "type": [
+   "los riñones",
+   "riñones",
+   "el riñón",
+   "riñón"
+  ],
+  "ex": [
+   {
+    "es": "Me duelen los riñones, aquí abajo.",
+    "en": "My kidneys hurt, down here.",
+    "hit": "riñones"
+   },
+   {
+    "es": "Su análisis muestra que los riñones están bien.",
+    "en": "Your lab test shows your kidneys are fine.",
+    "hit": "riñones"
+   },
+   {
+    "es": "Mi mamá tiene problemas de los riñones.",
+    "en": "My mom has kidney problems.",
+    "hit": "riñones"
+   }
+  ]
+ },
+ {
+  "id": "sm1-coyunturas",
+  "w": "las coyunturas",
+  "pos": "noun",
+  "en": "joints",
+  "note": "Everyday word; doctors say 'las articulaciones'.",
+  "type": [
+   "las coyunturas",
+   "coyunturas",
+   "las articulaciones",
+   "articulaciones"
+  ],
+  "ex": [
+   {
+    "es": "Me duelen las coyunturas cuando hace frío.",
+    "en": "My joints hurt when it's cold.",
+    "hit": "coyunturas"
+   },
+   {
+    "es": "¿Le duelen las coyunturas de las manos?",
+    "en": "Do the joints in your hands hurt?",
+    "hit": "coyunturas"
+   },
+   {
+    "es": "Mi abuela tiene artritis en las coyunturas.",
+    "en": "My grandmother has arthritis in her joints.",
+    "hit": "coyunturas"
+   }
+  ]
+ },
+ {
+  "id": "sm1-algo-mas",
+  "w": "¿algo más?",
+  "pos": "phrase",
+  "en": "anything else?",
+  "note": "",
+  "type": [
+   "algo más",
+   "¿algo más?"
+  ],
+  "ex": [
+   {
+    "es": "¿Le duele algo más, aparte del pecho?",
+    "en": "Does anything else hurt, besides your chest?",
+    "hit": "algo más"
+   },
+   {
+    "es": "¿Necesita algo más de la farmacia?",
+    "en": "Do you need anything else from the pharmacy?",
+    "hit": "algo más"
+   },
+   {
+    "es": "Muy bien, ¿algo más, doña Lupe?",
+    "en": "Very good, anything else, doña Lupe?",
+    "hit": "algo más"
+   }
+  ]
+ },
+ {
+  "id": "sm1-duda",
+  "w": "la duda",
+  "pos": "noun",
+  "en": "question; doubt",
+  "note": "'¿Tiene alguna duda?' = Do you have any questions? Very common in clinic.",
+  "type": [
+   "la duda",
+   "duda"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene alguna duda sobre su cita?",
+    "en": "Do you have any questions about your appointment?",
+    "hit": "duda"
+   },
+   {
+    "es": "Doctora, tengo una duda sobre mi pastilla.",
+    "en": "Doctor, I have a question about my pill.",
+    "hit": "duda"
+   },
+   {
+    "es": "Si tiene dudas, puede llamar a este número.",
+    "en": "If you have questions, you can call this number.",
+    "hit": "dudas"
+   }
+  ]
+ },
+ {
+  "id": "sm1-en-privado",
+  "w": "en privado",
+  "pos": "phrase",
+  "en": "in private; privately",
+  "note": "",
+  "type": [
+   "en privado"
+  ],
+  "ex": [
+   {
+    "es": "¿Podemos hablar en privado un momento?",
+    "en": "Can we talk in private for a moment?",
+    "hit": "en privado"
+   },
+   {
+    "es": "Su familia puede esperar afuera; hablamos en privado.",
+    "en": "Your family can wait outside; we'll talk in private.",
+    "hit": "en privado"
+   },
+   {
+    "es": "Doctor, quiero hablar con usted en privado.",
+    "en": "Doctor, I want to talk with you privately.",
+    "hit": "en privado"
+   }
+  ]
+ },
+ {
+  "id": "sm1-acompanar",
+  "w": "acompañar",
+  "pos": "verb",
+  "en": "to accompany; to come with",
+  "note": "",
+  "type": [
+   "acompañar"
+  ],
+  "ex": [
+   {
+    "es": "¿Quién lo acompaña hoy, don Luis?",
+    "en": "Who's here with you today, don Luis?",
+    "hit": "acompaña"
+   },
+   {
+    "es": "Mi hija me acompaña a todas mis citas.",
+    "en": "My daughter comes with me to all my appointments.",
+    "hit": "acompaña"
+   },
+   {
+    "es": "La enfermera la acompaña al consultorio.",
+    "en": "The nurse will take you to the exam room.",
+    "hit": "acompaña"
+   }
+  ]
+ },
+ {
+  "id": "sm1-familiar",
+  "w": "el / la familiar",
+  "pos": "noun",
+  "en": "family member; relative",
+  "note": "'El familiar' = one relative; 'la familia' = the whole family.",
+  "type": [
+   "el familiar",
+   "la familiar",
+   "familiar"
+  ],
+  "ex": [
+   {
+    "es": "¿Usted es familiar del paciente?",
+    "en": "Are you a relative of the patient?",
+    "hit": "familiar"
+   },
+   {
+    "es": "Puede entrar un familiar con usted.",
+    "en": "One family member can come in with you.",
+    "hit": "familiar"
+   },
+   {
+    "es": "Le llamo porque un familiar suyo está en emergencias.",
+    "en": "I'm calling because a relative of yours is in the ER.",
+    "hit": "familiar"
+   }
+  ]
+ },
+ {
+  "id": "sm1-esposo-esposa",
+  "w": "el esposo / la esposa",
+  "pos": "noun",
+  "en": "husband / wife",
+  "note": "'El marido' also means husband.",
+  "type": [
+   "el esposo",
+   "la esposa",
+   "esposo",
+   "esposa",
+   "el marido",
+   "marido"
+  ],
+  "ex": [
+   {
+    "es": "Mi esposo me trae a todas mis citas.",
+    "en": "My husband drives me to all my appointments.",
+    "hit": "esposo"
+   },
+   {
+    "es": "¿Su esposa quiere entrar al consultorio?",
+    "en": "Does your wife want to come into the exam room?",
+    "hit": "esposa"
+   },
+   {
+    "es": "Su esposo está bien, ya está en recuperación.",
+    "en": "Your husband is fine; he's already in recovery.",
+    "hit": "esposo"
+   }
+  ]
+ },
+ {
+  "id": "sm1-hijo-hija",
+  "w": "el hijo / la hija",
+  "pos": "noun",
+  "en": "son / daughter",
+  "note": "'Los hijos' = children (sons and daughters).",
+  "type": [
+   "el hijo",
+   "la hija",
+   "hijo",
+   "hija"
+  ],
+  "ex": [
+   {
+    "es": "Mi hija viene conmigo para traducir.",
+    "en": "My daughter is coming with me to translate.",
+    "hit": "hija"
+   },
+   {
+    "es": "¿Su hijo puede venir por usted?",
+    "en": "Can your son come pick you up?",
+    "hit": "hijo"
+   },
+   {
+    "es": "¿Cuántos hijos tiene y viven cerca?",
+    "en": "How many children do you have, and do they live nearby?",
+    "hit": "hijos"
+   }
+  ]
+ }
+]

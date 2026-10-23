@@ -1,0 +1,72 @@
+{
+ "fix": [
+  {
+   "id": "L2-v-27",
+   "t": {
+    "s": "이 사람",
+    "r": "i saram"
+   },
+   "en": "this person",
+   "ex": [
+    {
+     "s": "이 사람이 제 동생이에요.",
+     "en": "This is my younger sibling."
+    },
+    {
+     "s": "이 사람 알아요?",
+     "en": "Do you know this person?"
+    },
+    {
+     "s": "이 사람 누구예요? 배우예요?",
+     "en": "Who is this person? An actor?"
+    }
+   ]
+  },
+  {
+   "id": "L2-v-28",
+   "t": {
+    "s": "저 사람",
+    "r": "jeo saram"
+   },
+   "en": "that person over there",
+   "ex": [
+    {
+     "s": "저 사람 누구예요?",
+     "en": "Who is that person over there?"
+    },
+    {
+     "s": "저 사람 혹시 민호 씨 아니에요?",
+     "en": "Isn't that person over there Minho?"
+    },
+    {
+     "s": "저 사람한테 길을 물어봐요.",
+     "en": "Let's ask that person over there for directions."
+    }
+   ]
+  },
+  {
+   "id": "L3-v-22",
+   "t": {
+    "s": "건배!",
+    "r": "geonbae"
+   },
+   "en": "Cheers!",
+   "ex": [
+    {
+     "s": "자, 다 같이 건배!",
+     "en": "OK, everyone, cheers!"
+    },
+    {
+     "s": "민호 씨, 생일 축하해요! 건배!",
+     "en": "Happy birthday, Minho! Cheers!"
+    },
+    {
+     "s": "새해 복 많이 받으세요! 건배!",
+     "en": "Happy New Year! Cheers!"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. Fixed: '이/저 사람' used for 사장님/팀장님 (impolite with honorific title) replaced; stilted '생일을 위하여, 건배' replaced."
+}

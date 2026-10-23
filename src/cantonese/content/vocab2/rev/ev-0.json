@@ -1,0 +1,141 @@
+{
+ "fix": [
+  {
+   "id": "cv01-9",
+   "t": {
+    "s": "啲",
+    "r": "di1"
+   },
+   "pos": "measure word",
+   "en": "some; the (plural); a bit (after adjective)",
+   "note": "Plural/uncountable measure word; after an adjective = 'a bit more': 快啲.",
+   "ex": [
+    {
+     "s": "啲餸好好食。",
+     "r": "di1 sung3 hou2 hou2 sik6",
+     "en": "The dishes are really tasty."
+    },
+    {
+     "s": "你可唔可以講慢啲呀？",
+     "r": "nei5 ho2 m4 ho2 ji5 gong2 maan6 di1 aa3",
+     "en": "Could you speak a bit slower?"
+    },
+    {
+     "s": "我想買啲生果。",
+     "r": "ngo5 soeng2 maai5 di1 saang1 gwo2",
+     "en": "I want to buy some fruit."
+    }
+   ]
+  },
+  {
+   "id": "cv01-38",
+   "t": {
+    "s": "可能",
+    "r": "ho2 nang4"
+   },
+   "pos": "adverb",
+   "en": "maybe, possibly; possible",
+   "note": "",
+   "ex": [
+    {
+     "s": "Kevin可能塞緊車。",
+     "r": "ho2 nang4 sak1 gan2 ce1",
+     "en": "Kevin might be stuck in traffic."
+    },
+    {
+     "s": "今晚可能會落雨。",
+     "r": "gam1 maan5 ho2 nang4 wui5 lok6 jyu5",
+     "en": "It might rain tonight."
+    },
+    {
+     "s": "我可能要加班。",
+     "r": "ngo5 ho2 nang4 jiu3 gaa1 baan1",
+     "en": "I might have to work overtime."
+    }
+   ]
+  },
+  {
+   "id": "cv01-39",
+   "t": {
+    "s": "俾",
+    "r": "bei2"
+   },
+   "pos": "verb",
+   "en": "to give; to, for (someone)",
+   "note": "Marks the receiver; also 'let'. Also written 畀.",
+   "ex": [
+    {
+     "s": "唔該俾杯水我。",
+     "r": "m4 goi1 bei2 bui1 seoi2 ngo5",
+     "en": "A glass of water, please."
+    },
+    {
+     "s": "呢份禮物係俾你嘅。",
+     "r": "ni1 fan6 lai5 mat6 hai6 bei2 nei5 ge3",
+     "en": "This gift is for you."
+    },
+    {
+     "s": "今次我俾錢，下次你請。",
+     "r": "gam1 ci3 ngo5 bei2 cin2 haa6 ci3 nei5 ceng2",
+     "en": "I'll pay this time, you treat next time."
+    }
+   ]
+  },
+  {
+   "id": "cv01-42",
+   "t": {
+    "s": "返",
+    "r": "faan1"
+   },
+   "pos": "verb",
+   "en": "to return; go back; (after verb) back",
+   "note": "返工 go to work, 返學 go to school, 還返 give back.",
+   "ex": [
+    {
+     "s": "我八點返工。",
+     "r": "ngo5 baat3 dim2 faan1 gung1",
+     "en": "I go to work at eight."
+    },
+    {
+     "s": "小朋友聽日唔使返學。",
+     "r": "siu2 pang4 jau5 ting1 jat6 m4 sai2 faan1 hok6",
+     "en": "The kids don't have school tomorrow."
+    },
+    {
+     "s": "記得還返本書俾我。",
+     "r": "gei3 dak1 waan4 faan1 bun2 syu1 bei2 ngo5",
+     "en": "Remember to give my book back."
+    }
+   ]
+  },
+  {
+   "id": "cv01-47",
+   "t": {
+    "s": "呢啲",
+    "r": "ni1 di1"
+   },
+   "pos": "pronoun",
+   "en": "these; this (stuff)",
+   "note": "Plural of 呢個; also for uncountables like water or food.",
+   "ex": [
+    {
+     "s": "呢啲係乜嘢嚟㗎？",
+     "r": "ni1 di1 hai6 mat1 je5 lai4 gaa3",
+     "en": "What are these?"
+    },
+    {
+     "s": "呢啲衫要洗。",
+     "r": "ni1 di1 saam1 jiu3 sai2",
+     "en": "These clothes need washing."
+    },
+    {
+     "s": "我唔鍾意食呢啲。",
+     "r": "ngo5 m4 zung1 ji3 sik6 ni1 di1",
+     "en": "I don't like eating this stuff."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Content and Jyutping sound; all 59 dictionary CHECKs are correct colloquial readings (會 wui5, 聽 teng1, 間 gaan1, 平 peng4, 驚 geng1, 個女 neoi2…). Fixed four wrong pos labels and one over-specific translation."
+}

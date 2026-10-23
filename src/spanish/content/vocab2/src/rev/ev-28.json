@@ -1,0 +1,117 @@
+{
+ "fix": [
+  {
+   "id": "sv15-ladrillo",
+   "w": "el ladrillo",
+   "pos": "noun",
+   "en": "brick",
+   "note": "",
+   "type": [
+    "el ladrillo",
+    "ladrillo"
+   ],
+   "ex": [
+    {
+     "es": "La casa de mis abuelos es de ladrillo.",
+     "en": "My grandparents' house is made of brick.",
+     "hit": "ladrillo"
+    },
+    {
+     "es": "Se cayó un ladrillo de la barda del patio.",
+     "en": "A brick fell off the patio wall.",
+     "hit": "ladrillo"
+    },
+    {
+     "es": "Compramos ladrillos para construir la barda.",
+     "en": "We bought bricks to build the wall.",
+     "hit": "ladrillos"
+    }
+   ]
+  },
+  {
+   "id": "sv15-a-solas",
+   "w": "a solas",
+   "pos": "adverb",
+   "en": "alone; in private",
+   "note": "Fixed expression; it doesn't change for gender or number.",
+   "type": [
+    "a solas"
+   ],
+   "ex": [
+    {
+     "es": "Necesito hablar contigo a solas.",
+     "en": "I need to talk to you in private.",
+     "hit": "a solas"
+    },
+    {
+     "es": "Me gusta comer a solas de vez en cuando.",
+     "en": "I like to eat alone once in a while.",
+     "hit": "a solas"
+    },
+    {
+     "es": "Quiero estar a solas un rato.",
+     "en": "I want to be alone for a while.",
+     "hit": "a solas"
+    }
+   ]
+  },
+  {
+   "id": "sv15-movilidad",
+   "w": "la movilidad",
+   "pos": "noun",
+   "en": "mobility",
+   "note": "",
+   "type": [
+    "la movilidad",
+    "movilidad"
+   ],
+   "ex": [
+    {
+     "es": "Después de la operación perdió algo de movilidad.",
+     "en": "After the surgery he lost some mobility.",
+     "hit": "movilidad"
+    },
+    {
+     "es": "En esta ciudad la movilidad es difícil, hay mucho tráfico.",
+     "en": "Getting around this city is hard; there's a lot of traffic.",
+     "hit": "movilidad"
+    },
+    {
+     "es": "Hago yoga para mejorar la movilidad de la espalda.",
+     "en": "I do yoga to improve my back's mobility.",
+     "hit": "movilidad"
+    }
+   ]
+  },
+  {
+   "id": "sv15-sustitucion",
+   "w": "la sustitución",
+   "pos": "noun",
+   "en": "substitution; replacement",
+   "note": "",
+   "type": [
+    "la sustitución",
+    "sustitución"
+   ],
+   "ex": [
+    {
+     "es": "El entrenador hizo una sustitución en el segundo tiempo.",
+     "en": "The coach made a substitution in the second half.",
+     "hit": "sustitución"
+    },
+    {
+     "es": "¿Me puede hacer una sustitución? Quiero ensalada en lugar de papas.",
+     "en": "Can you make a substitution? I'd like salad instead of fries.",
+     "hit": "sustitución"
+    },
+    {
+     "es": "La sustitución de la pantalla del celular cuesta mucho.",
+     "en": "Replacing the phone screen costs a lot.",
+     "hit": "sustitución"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly accurate. Replaced four unnatural examples: 'pesa como un ladrillo', 'déjame a solas', awkward 'movilidad para las bicicletas', stilted 'sustitución de papas por ensalada'."
+}

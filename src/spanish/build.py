@@ -3,22 +3,40 @@
   python3 src/spanish/build.py hosted   -> spanish/index.html (the Study Hall page)
   python3 src/spanish/build.py claude   -> build/clinic-spanish-course.html (claude.ai artifact version)
 
+Both first run content/vocab2/gen_vocab2.py (Everyday words + more clinic words -> data/vocab2.json).
+The hosted page loads that as spanish/vocab2.<hash>.json (named by content, so browsers keep it for good);
+the previous build's file is kept for pages still open, older ones are deleted. The claude version inlines it.
+
 Run from anywhere; paths are relative to this file.
 """
-import json, sys, os
+import hashlib, json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
+subprocess.run([sys.executable, os.path.join(HERE, "content", "vocab2", "gen_vocab2.py")], check=True)
 src = open(os.path.join(HERE, "app.html"), encoding="utf-8").read()
 def j(name): return json.dumps(json.load(open(os.path.join(HERE, "data", name), encoding="utf-8")), ensure_ascii=False, separators=(",", ":"))
 for ph, f in [("__LEVELS__", "levels.tagged.json"), ("__DRILLS__", "drills.tagged.json"), ("__CONJ__", "conj.json"), ("__VERBS__", "cards.tagged.json")]:
     assert src.count(ph) == 1, ph
     src = src.replace(ph, j(f))
 
+assert src.count("__VOCAB2__") == 1
+vocab2 = j("vocab2.json")
+
 target = sys.argv[1]
 if target == "claude":
     out = os.path.join(REPO, "build", "clinic-spanish-course.html"); os.makedirs(os.path.dirname(out), exist_ok=True)
-    open(out, "w", encoding="utf-8").write(src)
+    open(out, "w", encoding="utf-8").write(src.replace("__VOCAB2__", vocab2))
 elif target == "hosted":
+    OUT = os.path.join(REPO, "spanish"); os.makedirs(OUT, exist_ok=True)
+    HASHED = re.compile(r"vocab2\.[0-9a-f]{10}\.json")
+    INDEX = os.path.join(OUT, "index.html")
+    keep = set(HASHED.findall(open(INDEX, encoding="utf-8").read())) if os.path.exists(INDEX) else set()
+    b = vocab2.encode("utf-8"); name = f"vocab2.{hashlib.sha256(b).hexdigest()[:10]}.json"
+    open(os.path.join(OUT, name), "wb").write(b)
+    for f in os.listdir(OUT):
+        if HASHED.fullmatch(f) and f not in keep and f != name: os.remove(os.path.join(OUT, f))
+    print("wrote", name, len(b), "bytes")
+    src = src.replace("__VOCAB2__", json.dumps(name))
     def sub(old, new, count=1):
         global src
         n = src.count(old)
@@ -59,10 +77,9 @@ elif target == "hosted":
             '<meta name="apple-mobile-web-app-title" content="Study Hall">\n'
             + head + extra_css + '\n'
             '<script src="../shared/supabase.js"></script>\n<script src="../shared/sh.js"></script>\n'
-            '<script>SH.install("spanish");</script>\n'
+            '<script>SH.install("spanish");</script>\n<script src="../shared/voice.js"></script>\n'
             '</head>\n<body>\n<div class="wrap">' + body + '\n</body>\n</html>\n')
-    out = os.path.join(REPO, "spanish", "index.html")
-    os.makedirs(os.path.dirname(out), exist_ok=True)
+    out = INDEX
     open(out, "w", encoding="utf-8").write(page)
 else:
     sys.exit("target: claude | hosted")

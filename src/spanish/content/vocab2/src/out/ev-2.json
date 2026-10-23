@@ -1,0 +1,2769 @@
+[
+ {
+  "id": "sv02-precio",
+  "w": "el precio",
+  "pos": "noun",
+  "en": "price",
+  "note": "",
+  "type": [
+   "el precio",
+   "precio"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es el precio de esta chamarra?",
+    "en": "What's the price of this jacket?",
+    "hit": "precio"
+   },
+   {
+    "es": "Los precios de la gasolina subieron otra vez.",
+    "en": "Gas prices went up again.",
+    "hit": "precios"
+   },
+   {
+    "es": "El precio incluye el desayuno.",
+    "en": "The price includes breakfast.",
+    "hit": "precio"
+   }
+  ]
+ },
+ {
+  "id": "sv02-sitio",
+  "w": "el sitio",
+  "pos": "noun",
+  "en": "place; site, website",
+  "note": "Lugar is more common for 'place'; sitio web = website.",
+  "type": [
+   "el sitio",
+   "sitio"
+  ],
+  "ex": [
+   {
+    "es": "Este es un buen sitio para acampar.",
+    "en": "This is a good place to camp.",
+    "hit": "sitio"
+   },
+   {
+    "es": "Ana encontró un sitio bonito para la fiesta.",
+    "en": "Ana found a nice place for the party.",
+    "hit": "sitio"
+   },
+   {
+    "es": "Busqué el horario en el sitio web del museo.",
+    "en": "I looked up the hours on the museum's website.",
+    "hit": "sitio"
+   }
+  ]
+ },
+ {
+  "id": "sv02-mayoria",
+  "w": "la mayoría",
+  "pos": "noun",
+  "en": "majority, most",
+  "note": "La mayoría de + noun = most (of).",
+  "type": [
+   "la mayoría",
+   "mayoría"
+  ],
+  "ex": [
+   {
+    "es": "La mayoría de la gente aquí habla inglés.",
+    "en": "Most people here speak English.",
+    "hit": "mayoría"
+   },
+   {
+    "es": "En la mayoría de los restaurantes aceptan tarjeta.",
+    "en": "Most restaurants take cards.",
+    "hit": "mayoría"
+   },
+   {
+    "es": "La mayoría de mis primos ya están casados.",
+    "en": "Most of my cousins are already married.",
+    "hit": "mayoría"
+   }
+  ]
+ },
+ {
+  "id": "sv02-abrir",
+  "w": "abrir",
+  "pos": "verb",
+  "en": "to open",
+  "note": "Irregular past participle: abierto.",
+  "type": [
+   "abrir"
+  ],
+  "ex": [
+   {
+    "es": "¿Puedes abrir la ventana, por favor?",
+    "en": "Can you open the window, please?",
+    "hit": "abrir"
+   },
+   {
+    "es": "¿A qué hora abre el banco?",
+    "en": "What time does the bank open?",
+    "hit": "abre"
+   },
+   {
+    "es": "Ya abrí la carta de la universidad.",
+    "en": "I already opened the letter from the university.",
+    "hit": "abrí"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cerca",
+  "w": "cerca",
+  "pos": "adverb",
+  "en": "near, close (by)",
+  "note": "Cerca de + place: cerca de mi casa.",
+  "type": [
+   "cerca"
+  ],
+  "ex": [
+   {
+    "es": "Disculpe, ¿hay una farmacia cerca?",
+    "en": "Excuse me, is there a pharmacy nearby?",
+    "hit": "cerca"
+   },
+   {
+    "es": "Vivo muy cerca de mi trabajo.",
+    "en": "I live very close to work.",
+    "hit": "cerca"
+   },
+   {
+    "es": "Mi cumpleaños ya está cerca.",
+    "en": "My birthday is coming up soon.",
+    "hit": "cerca"
+   }
+  ]
+ },
+ {
+  "id": "sv02-aparecer",
+  "w": "aparecer",
+  "pos": "verb",
+  "en": "to appear; to show up",
+  "note": "Present: yo aparezco.",
+  "type": [
+   "aparecer"
+  ],
+  "ex": [
+   {
+    "es": "Diego apareció en la fiesta a medianoche.",
+    "en": "Diego showed up at the party at midnight.",
+    "hit": "apareció"
+   },
+   {
+    "es": "Tu nombre no aparece en la lista.",
+    "en": "Your name doesn't appear on the list.",
+    "hit": "aparece"
+   },
+   {
+    "es": "Mis llaves aparecieron debajo del sofá.",
+    "en": "My keys turned up under the couch.",
+    "hit": "aparecieron"
+   }
+  ]
+ },
+ {
+  "id": "sv02-ayuda",
+  "w": "la ayuda",
+  "pos": "noun",
+  "en": "help",
+  "note": "Verb: ayudar (to help).",
+  "type": [
+   "la ayuda",
+   "ayuda"
+  ],
+  "ex": [
+   {
+    "es": "Gracias por tu ayuda con la mudanza.",
+    "en": "Thanks for your help with the move.",
+    "hit": "ayuda"
+   },
+   {
+    "es": "¿Necesita ayuda con sus maletas?",
+    "en": "Do you need help with your bags?",
+    "hit": "ayuda"
+   },
+   {
+    "es": "Le pedí ayuda a Mei con la tarea.",
+    "en": "I asked Mei for help with the homework.",
+    "hit": "ayuda"
+   }
+  ]
+ },
+ {
+  "id": "sv02-seguridad",
+  "w": "la seguridad",
+  "pos": "noun",
+  "en": "safety; security",
+  "note": "Cinturón de seguridad = seat belt.",
+  "type": [
+   "la seguridad",
+   "seguridad"
+  ],
+  "ex": [
+   {
+    "es": "Ponte el cinturón de seguridad, por favor.",
+    "en": "Put on your seat belt, please.",
+    "hit": "seguridad"
+   },
+   {
+    "es": "Por seguridad, cambia tu contraseña.",
+    "en": "For safety, change your password.",
+    "hit": "seguridad"
+   },
+   {
+    "es": "Hay mucha seguridad en el aeropuerto hoy.",
+    "en": "There's a lot of security at the airport today.",
+    "hit": "seguridad"
+   }
+  ]
+ },
+ {
+  "id": "sv02-lista",
+  "w": "la lista",
+  "pos": "noun",
+  "en": "list",
+  "note": "Listo/lista (adjective) = ready.",
+  "type": [
+   "la lista",
+   "lista"
+  ],
+  "ex": [
+   {
+    "es": "Hice una lista de cosas para el súper.",
+    "en": "I made a list of things for the grocery store.",
+    "hit": "lista"
+   },
+   {
+    "es": "¿Ya estás en la lista de invitados?",
+    "en": "Are you on the guest list yet?",
+    "hit": "lista"
+   },
+   {
+    "es": "El doctor me dio una lista de ejercicios.",
+    "en": "The doctor gave me a list of exercises.",
+    "hit": "lista"
+   }
+  ]
+ },
+ {
+  "id": "sv02-actividad",
+  "w": "la actividad",
+  "pos": "noun",
+  "en": "activity",
+  "note": "",
+  "type": [
+   "la actividad",
+   "actividad"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué actividades hay para los niños?",
+    "en": "What activities are there for the kids?",
+    "hit": "actividades"
+   },
+   {
+    "es": "Caminar es mi actividad favorita.",
+    "en": "Walking is my favorite activity.",
+    "hit": "actividad"
+   },
+   {
+    "es": "Hay mucha actividad en el centro los sábados.",
+    "en": "There's a lot going on downtown on Saturdays.",
+    "hit": "actividad"
+   }
+  ]
+ },
+ {
+  "id": "sv02-principio",
+  "w": "el principio",
+  "pos": "noun",
+  "en": "beginning; principle",
+  "note": "Al principio = at first; a principios de mes = early in the month.",
+  "type": [
+   "el principio",
+   "principio"
+  ],
+  "ex": [
+   {
+    "es": "Al principio no entendía nada.",
+    "en": "At first I didn't understand anything.",
+    "hit": "principio"
+   },
+   {
+    "es": "Pagamos la renta a principios de mes.",
+    "en": "We pay the rent at the beginning of the month.",
+    "hit": "principios"
+   },
+   {
+    "es": "Vamos a ver la película desde el principio.",
+    "en": "Let's watch the movie from the beginning.",
+    "hit": "principio"
+   }
+  ]
+ },
+ {
+  "id": "sv02-sentido",
+  "w": "el sentido",
+  "pos": "noun",
+  "en": "sense; meaning; direction",
+  "note": "No tiene sentido = it doesn't make sense.",
+  "type": [
+   "el sentido",
+   "sentido"
+  ],
+  "ex": [
+   {
+    "es": "Lo que dice no tiene sentido.",
+    "en": "What he's saying doesn't make sense.",
+    "hit": "sentido"
+   },
+   {
+    "es": "Wei tiene muy buen sentido del humor.",
+    "en": "Wei has a great sense of humor.",
+    "hit": "sentido"
+   },
+   {
+    "es": "Esta calle es de un solo sentido.",
+    "en": "This street is one-way.",
+    "hit": "sentido"
+   }
+  ]
+ },
+ {
+  "id": "sv02-minuto",
+  "w": "el minuto",
+  "pos": "noun",
+  "en": "minute",
+  "note": "",
+  "type": [
+   "el minuto",
+   "minuto"
+  ],
+  "ex": [
+   {
+    "es": "¿Tienes un minuto para hablar?",
+    "en": "Do you have a minute to talk?",
+    "hit": "minuto"
+   },
+   {
+    "es": "Dame cinco minutos, ya voy.",
+    "en": "Give me five minutes, I'm coming.",
+    "hit": "minutos"
+   },
+   {
+    "es": "La parada está a diez minutos caminando.",
+    "en": "The stop is a ten-minute walk away.",
+    "hit": "minutos"
+   }
+  ]
+ },
+ {
+  "id": "sv02-ambos",
+  "w": "ambos",
+  "pos": "determiner",
+  "en": "both",
+  "note": "Feminine: ambas. In speech, los dos is more common.",
+  "type": [
+   "ambos",
+   "ambas"
+  ],
+  "ex": [
+   {
+    "es": "Ambos hermanos trabajan en el hospital.",
+    "en": "Both brothers work at the hospital.",
+    "hit": "Ambos"
+   },
+   {
+    "es": "Ambas camisas te quedan muy bien.",
+    "en": "Both shirts look great on you.",
+    "hit": "Ambas"
+   },
+   {
+    "es": "Ambos tenemos el día libre mañana.",
+    "en": "We both have the day off tomorrow.",
+    "hit": "Ambos"
+   }
+  ]
+ },
+ {
+  "id": "sv02-libre",
+  "w": "libre",
+  "pos": "adjective",
+  "en": "free (not busy); available, vacant",
+  "note": "Free of charge is gratis, not libre.",
+  "type": [
+   "libre"
+  ],
+  "ex": [
+   {
+    "es": "¿Estás libre el viernes en la noche?",
+    "en": "Are you free Friday night?",
+    "hit": "libre"
+   },
+   {
+    "es": "En mi tiempo libre me gusta leer.",
+    "en": "In my free time I like to read.",
+    "hit": "libre"
+   },
+   {
+    "es": "Disculpe, ¿está libre este asiento?",
+    "en": "Excuse me, is this seat taken?",
+    "hit": "libre"
+   }
+  ]
+ },
+ {
+  "id": "sv02-necesario",
+  "w": "necesario",
+  "pos": "adjective",
+  "en": "necessary",
+  "note": "No es necesario = there's no need.",
+  "type": [
+   "necesario"
+  ],
+  "ex": [
+   {
+    "es": "No es necesario traer nada a la cena.",
+    "en": "There's no need to bring anything to dinner.",
+    "hit": "necesario"
+   },
+   {
+    "es": "¿Es necesario hacer una cita?",
+    "en": "Is it necessary to make an appointment?",
+    "hit": "necesario"
+   },
+   {
+    "es": "Llevamos solo lo necesario para el viaje.",
+    "en": "We're taking only what we need for the trip.",
+    "hit": "necesario"
+   }
+  ]
+ },
+ {
+  "id": "sv02-red",
+  "w": "la red",
+  "pos": "noun",
+  "en": "network; net",
+  "note": "Las redes sociales = social media.",
+  "type": [
+   "la red",
+   "red"
+  ],
+  "ex": [
+   {
+    "es": "No me puedo conectar a la red.",
+    "en": "I can't connect to the network.",
+    "hit": "red"
+   },
+   {
+    "es": "Kevin pasa horas en redes sociales.",
+    "en": "Kevin spends hours on social media.",
+    "hit": "redes"
+   },
+   {
+    "es": "La pelota pegó en la red.",
+    "en": "The ball hit the net.",
+    "hit": "red"
+   }
+  ]
+ },
+ {
+  "id": "sv02-camino",
+  "w": "el camino",
+  "pos": "noun",
+  "en": "way; path, road",
+  "note": "Estoy en camino = I'm on my way.",
+  "type": [
+   "el camino",
+   "camino"
+  ],
+  "ex": [
+   {
+    "es": "Ya estoy en camino, llego en diez minutos.",
+    "en": "I'm on my way, I'll be there in ten minutes.",
+    "hit": "camino"
+   },
+   {
+    "es": "¿Sabe el camino al hotel?",
+    "en": "Do you know the way to the hotel?",
+    "hit": "camino"
+   },
+   {
+    "es": "Hay un camino muy bonito por el bosque.",
+    "en": "There's a really nice path through the woods.",
+    "hit": "camino"
+   }
+  ]
+ },
+ {
+  "id": "sv02-pregunta",
+  "w": "la pregunta",
+  "pos": "noun",
+  "en": "question",
+  "note": "Hacer una pregunta = to ask a question.",
+  "type": [
+   "la pregunta",
+   "pregunta"
+  ],
+  "ex": [
+   {
+    "es": "Disculpe, ¿puedo hacerle una pregunta?",
+    "en": "Excuse me, may I ask you a question?",
+    "hit": "pregunta"
+   },
+   {
+    "es": "La última pregunta del examen fue difícil.",
+    "en": "The last question on the exam was hard.",
+    "hit": "pregunta"
+   },
+   {
+    "es": "Mi hijo hace preguntas todo el día.",
+    "en": "My son asks questions all day long.",
+    "hit": "preguntas"
+   }
+  ]
+ },
+ {
+  "id": "sv02-pagina",
+  "w": "la página",
+  "pos": "noun",
+  "en": "page",
+  "note": "Página web = web page.",
+  "type": [
+   "la página",
+   "página"
+  ],
+  "ex": [
+   {
+    "es": "Abran el libro en la página veinte.",
+    "en": "Open your books to page twenty.",
+    "hit": "página"
+   },
+   {
+    "es": "Me faltan diez páginas para terminar el libro.",
+    "en": "I have ten pages left to finish the book.",
+    "hit": "páginas"
+   },
+   {
+    "es": "Vi el menú en su página de internet.",
+    "en": "I saw the menu on their website.",
+    "hit": "página"
+   }
+  ]
+ },
+ {
+  "id": "sv02-demas",
+  "w": "los demás",
+  "pos": "pronoun",
+  "en": "the rest; the others",
+  "note": "Los demás = the other people; lo demás = everything else.",
+  "type": [
+   "los demás",
+   "lo demás",
+   "demás"
+  ],
+  "ex": [
+   {
+    "es": "Los demás ya se fueron a casa.",
+    "en": "The others already went home.",
+    "hit": "demás"
+   },
+   {
+    "es": "Yo compro el pan y tú lo demás.",
+    "en": "I'll buy the bread and you get the rest.",
+    "hit": "demás"
+   },
+   {
+    "es": "Hay que respetar a los demás.",
+    "en": "You have to respect other people.",
+    "hit": "demás"
+   }
+  ]
+ },
+ {
+  "id": "sv02-fuera",
+  "w": "fuera",
+  "pos": "adverb",
+  "en": "outside; away",
+  "note": "Fuera de = outside of. On its own, afuera is more common in Mexico.",
+  "type": [
+   "fuera",
+   "afuera"
+  ],
+  "ex": [
+   {
+    "es": "Esta semana voy a estar fuera por trabajo.",
+    "en": "This week I'm going to be away for work.",
+    "hit": "fuera"
+   },
+   {
+    "es": "Hoy vamos a cenar fuera.",
+    "en": "We're eating out tonight.",
+    "hit": "fuera"
+   },
+   {
+    "es": "La clínica está fuera de la ciudad.",
+    "en": "The clinic is outside the city.",
+    "hit": "fuera"
+   }
+  ]
+ },
+ {
+  "id": "sv02-decidir",
+  "w": "decidir",
+  "pos": "verb",
+  "en": "to decide",
+  "note": "",
+  "type": [
+   "decidir"
+  ],
+  "ex": [
+   {
+    "es": "No puedo decidir qué pedir.",
+    "en": "I can't decide what to order.",
+    "hit": "decidir"
+   },
+   {
+    "es": "Decidimos ir a la playa en diciembre.",
+    "en": "We decided to go to the beach in December.",
+    "hit": "Decidimos"
+   },
+   {
+    "es": "¿Ya decidiste qué carrera quieres estudiar?",
+    "en": "Have you decided what you want to study in college?",
+    "hit": "decidiste"
+   }
+  ]
+ },
+ {
+  "id": "sv02-ofrecer",
+  "w": "ofrecer",
+  "pos": "verb",
+  "en": "to offer",
+  "note": "Present: yo ofrezco.",
+  "type": [
+   "ofrecer"
+  ],
+  "ex": [
+   {
+    "es": "¿Le ofrezco algo de tomar?",
+    "en": "Can I offer you something to drink?",
+    "hit": "ofrezco"
+   },
+   {
+    "es": "Me ofrecieron un trabajo en Monterrey.",
+    "en": "They offered me a job in Monterrey.",
+    "hit": "ofrecieron"
+   },
+   {
+    "es": "La tienda ofrece envío gratis.",
+    "en": "The store offers free shipping.",
+    "hit": "ofrece"
+   }
+  ]
+ },
+ {
+  "id": "sv02-mal",
+  "w": "mal",
+  "pos": "adverb",
+  "en": "badly; wrong; unwell",
+  "note": "Mal is the adverb; malo/mala is the adjective (bad).",
+  "type": [
+   "mal"
+  ],
+  "ex": [
+   {
+    "es": "Dormí muy mal anoche por el calor.",
+    "en": "I slept really badly last night because of the heat.",
+    "hit": "mal"
+   },
+   {
+    "es": "Perdón, entendí mal la dirección.",
+    "en": "Sorry, I got the address wrong.",
+    "hit": "mal"
+   },
+   {
+    "es": "Me siento mal, creo que tengo gripa.",
+    "en": "I feel sick, I think I have the flu.",
+    "hit": "mal"
+   }
+  ]
+ },
+ {
+  "id": "sv02-educacion",
+  "w": "la educación",
+  "pos": "noun",
+  "en": "education; manners",
+  "note": "Es de mala educación = it's rude.",
+  "type": [
+   "la educación",
+   "educación"
+  ],
+  "ex": [
+   {
+    "es": "La educación de mis hijos es muy importante.",
+    "en": "My kids' education is very important.",
+    "hit": "educación"
+   },
+   {
+    "es": "Sofía estudió educación en la universidad.",
+    "en": "Sofía studied education in college.",
+    "hit": "educación"
+   },
+   {
+    "es": "Es de mala educación hablar con la boca llena.",
+    "en": "It's rude to talk with your mouth full.",
+    "hit": "educación"
+   }
+  ]
+ },
+ {
+  "id": "sv02-aire",
+  "w": "el aire",
+  "pos": "noun",
+  "en": "air",
+  "note": "Aire acondicionado = air conditioning.",
+  "type": [
+   "el aire",
+   "aire"
+  ],
+  "ex": [
+   {
+    "es": "Abre la ventana, necesito aire fresco.",
+    "en": "Open the window, I need some fresh air.",
+    "hit": "aire"
+   },
+   {
+    "es": "Los niños juegan al aire libre.",
+    "en": "The kids play outdoors.",
+    "hit": "aire"
+   },
+   {
+    "es": "¿Puedes prender el aire? Hace mucho calor.",
+    "en": "Can you turn on the AC? It's really hot.",
+    "hit": "aire"
+   }
+  ]
+ },
+ {
+  "id": "sv02-servir",
+  "w": "servir",
+  "pos": "verb",
+  "en": "to serve; to work, be useful",
+  "note": "¿Para qué sirve? = What is it for?",
+  "type": [
+   "servir"
+  ],
+  "ex": [
+   {
+    "es": "¿Te sirvo un poco más de sopa?",
+    "en": "Can I give you a little more soup?",
+    "hit": "sirvo"
+   },
+   {
+    "es": "En ese restaurante sirven desayunos hasta la una.",
+    "en": "That restaurant serves breakfast until one.",
+    "hit": "sirven"
+   },
+   {
+    "es": "Esta pluma ya no sirve.",
+    "en": "This pen doesn't work anymore.",
+    "hit": "sirve"
+   }
+  ]
+ },
+ {
+  "id": "sv02-aprender",
+  "w": "aprender",
+  "pos": "verb",
+  "en": "to learn",
+  "note": "Aprender a + infinitive: aprender a manejar.",
+  "type": [
+   "aprender"
+  ],
+  "ex": [
+   {
+    "es": "Quiero aprender a cocinar comida coreana.",
+    "en": "I want to learn to cook Korean food.",
+    "hit": "aprender"
+   },
+   {
+    "es": "Mi hija aprendió a nadar este verano.",
+    "en": "My daughter learned to swim this summer.",
+    "hit": "aprendió"
+   },
+   {
+    "es": "Estoy aprendiendo español para el trabajo.",
+    "en": "I'm learning Spanish for work.",
+    "hit": "aprendiendo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cara",
+  "w": "la cara",
+  "pos": "noun",
+  "en": "face",
+  "note": "Caro/cara (adjective) also means expensive.",
+  "type": [
+   "la cara",
+   "cara"
+  ],
+  "ex": [
+   {
+    "es": "Lávate la cara antes de dormir.",
+    "en": "Wash your face before bed.",
+    "hit": "cara"
+   },
+   {
+    "es": "¿Por qué tienes esa cara? ¿Qué pasó?",
+    "en": "Why are you making that face? What happened?",
+    "hit": "cara"
+   },
+   {
+    "es": "Ji-woo tiene la cara roja por el sol.",
+    "en": "Ji-woo's face is red from the sun.",
+    "hit": "cara"
+   }
+  ]
+ },
+ {
+  "id": "sv02-tal",
+  "w": "tal",
+  "pos": "adverb",
+  "en": "qué tal = how's it going; such",
+  "note": "Tal vez = maybe. ¿Qué tal + noun? = How is/was…?",
+  "type": [
+   "tal"
+  ],
+  "ex": [
+   {
+    "es": "Hola, Minho, ¿qué tal todo?",
+    "en": "Hi, Minho, how's everything?",
+    "hit": "tal"
+   },
+   {
+    "es": "¿Qué tal estuvo la comida?",
+    "en": "How was the food?",
+    "hit": "tal"
+   },
+   {
+    "es": "Yo nunca dije tal cosa, te lo juro.",
+    "en": "I never said such a thing, I swear.",
+    "hit": "tal"
+   }
+  ]
+ },
+ {
+  "id": "sv02-prueba",
+  "w": "la prueba",
+  "pos": "noun",
+  "en": "test; proof",
+  "note": "Verb: probar (to try, to taste).",
+  "type": [
+   "la prueba",
+   "prueba"
+  ],
+  "ex": [
+   {
+    "es": "Mañana tengo una prueba de matemáticas.",
+    "en": "I have a math test tomorrow.",
+    "hit": "prueba"
+   },
+   {
+    "es": "Me hice una prueba de COVID en la farmacia.",
+    "en": "I took a COVID test at the pharmacy.",
+    "hit": "prueba"
+   },
+   {
+    "es": "¿Tienes alguna prueba de que pagaste?",
+    "en": "Do you have any proof that you paid?",
+    "hit": "prueba"
+   }
+  ]
+ },
+ {
+  "id": "sv02-interes",
+  "w": "el interés",
+  "pos": "noun",
+  "en": "interest",
+  "note": "Plural: intereses (no accent).",
+  "type": [
+   "el interés",
+   "interés"
+  ],
+  "ex": [
+   {
+    "es": "Kevin no tiene interés en el fútbol.",
+    "en": "Kevin has no interest in soccer.",
+    "hit": "interés"
+   },
+   {
+    "es": "Gracias por su interés en el puesto.",
+    "en": "Thank you for your interest in the position.",
+    "hit": "interés"
+   },
+   {
+    "es": "El banco cobra mucho interés por la tarjeta.",
+    "en": "The bank charges a lot of interest on the card.",
+    "hit": "interés"
+   }
+  ]
+ },
+ {
+  "id": "sv02-usted",
+  "w": "usted",
+  "pos": "pronoun",
+  "en": "you (formal)",
+  "note": "Use with strangers, elders and patients; verbs take the él/ella form.",
+  "type": [
+   "usted"
+  ],
+  "ex": [
+   {
+    "es": "Disculpe, ¿usted es la señora Ramírez?",
+    "en": "Excuse me, are you Mrs. Ramírez?",
+    "hit": "usted"
+   },
+   {
+    "es": "¿Cómo está usted, don Luis?",
+    "en": "How are you, Don Luis?",
+    "hit": "usted"
+   },
+   {
+    "es": "Pase usted primero, por favor.",
+    "en": "After you, please.",
+    "hit": "usted"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cinco",
+  "w": "cinco",
+  "pos": "numeral",
+  "en": "five",
+  "note": "",
+  "type": [
+   "cinco"
+  ],
+  "ex": [
+   {
+    "es": "Tengo cinco primos en Puebla.",
+    "en": "I have five cousins in Puebla.",
+    "hit": "cinco"
+   },
+   {
+    "es": "La película empieza a las cinco.",
+    "en": "The movie starts at five.",
+    "hit": "cinco"
+   },
+   {
+    "es": "Son cinco dólares por persona.",
+    "en": "It's five dollars per person.",
+    "hit": "cinco"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cumplir",
+  "w": "cumplir",
+  "pos": "verb",
+  "en": "to turn (an age); to keep (a promise)",
+  "note": "Cumplir años = to have a birthday.",
+  "type": [
+   "cumplir"
+  ],
+  "ex": [
+   {
+    "es": "Mi abuela cumple noventa años en mayo.",
+    "en": "My grandma turns ninety in May.",
+    "hit": "cumple"
+   },
+   {
+    "es": "¿Cuántos años cumples el sábado?",
+    "en": "How old are you turning on Saturday?",
+    "hit": "cumples"
+   },
+   {
+    "es": "Diego siempre cumple con lo que promete.",
+    "en": "Diego always does what he promises.",
+    "hit": "cumple"
+   }
+  ]
+ },
+ {
+  "id": "sv02-subir",
+  "w": "subir",
+  "pos": "verb",
+  "en": "to go up, rise; to upload",
+  "note": "Subirse a = to get on (bus, car). Opposite: bajar.",
+  "type": [
+   "subir"
+  ],
+  "ex": [
+   {
+    "es": "Sube al tercer piso, ahí está la oficina.",
+    "en": "Go up to the third floor; the office is there.",
+    "hit": "Sube"
+   },
+   {
+    "es": "Los precios subieron mucho este año.",
+    "en": "Prices went up a lot this year.",
+    "hit": "subieron"
+   },
+   {
+    "es": "Ya subí las fotos de la boda.",
+    "en": "I already uploaded the wedding photos.",
+    "hit": "subí"
+   }
+  ]
+ },
+ {
+  "id": "sv02-realmente",
+  "w": "realmente",
+  "pos": "adverb",
+  "en": "really, actually",
+  "note": "In speech, de verdad is often more common.",
+  "type": [
+   "realmente"
+  ],
+  "ex": [
+   {
+    "es": "¿Realmente quieres ir tan temprano?",
+    "en": "Do you really want to go so early?",
+    "hit": "Realmente"
+   },
+   {
+    "es": "No sé realmente qué pasó.",
+    "en": "I don't really know what happened.",
+    "hit": "realmente"
+   },
+   {
+    "es": "La comida estaba realmente buena.",
+    "en": "The food was really good.",
+    "hit": "realmente"
+   }
+  ]
+ },
+ {
+  "id": "sv02-significar",
+  "w": "significar",
+  "pos": "verb",
+  "en": "to mean",
+  "note": "",
+  "type": [
+   "significar"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué significa esta palabra en inglés?",
+    "en": "What does this word mean in English?",
+    "hit": "significa"
+   },
+   {
+    "es": "Tu amistad significa mucho para mí.",
+    "en": "Your friendship means a lot to me.",
+    "hit": "significa"
+   },
+   {
+    "es": "Esa luz roja significa que no hay batería.",
+    "en": "That red light means the battery is dead.",
+    "hit": "significa"
+   }
+  ]
+ },
+ {
+  "id": "sv02-valer",
+  "w": "valer",
+  "pos": "verb",
+  "en": "to be worth; to cost",
+  "note": "Vale la pena = it's worth it.",
+  "type": [
+   "valer"
+  ],
+  "ex": [
+   {
+    "es": "Esa casa vale mucho dinero ahora.",
+    "en": "That house is worth a lot of money now.",
+    "hit": "vale"
+   },
+   {
+    "es": "Vale la pena visitar ese museo.",
+    "en": "That museum is worth visiting.",
+    "hit": "Vale"
+   },
+   {
+    "es": "Disculpe, ¿cuánto vale esta bolsa?",
+    "en": "Excuse me, how much is this bag?",
+    "hit": "vale"
+   }
+  ]
+ },
+ {
+  "id": "sv02-alli",
+  "w": "allí",
+  "pos": "adverb",
+  "en": "there",
+  "note": "In Mexico, ahí and allá are more common in speech.",
+  "type": [
+   "allí",
+   "ahí",
+   "allá"
+  ],
+  "ex": [
+   {
+    "es": "Pon las llaves allí, en la mesa.",
+    "en": "Put the keys there, on the table.",
+    "hit": "allí"
+   },
+   {
+    "es": "¿Ves esa tienda? Allí venden buen café.",
+    "en": "See that store? They sell good coffee there.",
+    "hit": "Allí"
+   },
+   {
+    "es": "Mi familia vivió allí cinco años.",
+    "en": "My family lived there for five years.",
+    "hit": "allí"
+   }
+  ]
+ },
+ {
+  "id": "sv02-diferente",
+  "w": "diferente",
+  "pos": "adjective",
+  "en": "different",
+  "note": "Same form for masculine and feminine.",
+  "type": [
+   "diferente"
+  ],
+  "ex": [
+   {
+    "es": "Este café tiene un sabor diferente.",
+    "en": "This coffee tastes different.",
+    "hit": "diferente"
+   },
+   {
+    "es": "Mis hermanos son muy diferentes.",
+    "en": "My brothers are very different.",
+    "hit": "diferentes"
+   },
+   {
+    "es": "¿Tiene esta camisa en un color diferente?",
+    "en": "Do you have this shirt in a different color?",
+    "hit": "diferente"
+   }
+  ]
+ },
+ {
+  "id": "sv02-tocar",
+  "w": "tocar",
+  "pos": "verb",
+  "en": "to touch; to play (an instrument)",
+  "note": "Me toca = it's my turn. Tocar la puerta = to knock.",
+  "type": [
+   "tocar"
+  ],
+  "ex": [
+   {
+    "es": "No toques la estufa, está caliente.",
+    "en": "Don't touch the stove, it's hot.",
+    "hit": "toques"
+   },
+   {
+    "es": "Por favor, no toque las pinturas.",
+    "en": "Please don't touch the paintings.",
+    "hit": "toque"
+   },
+   {
+    "es": "Mi hermano toca la guitarra en una banda.",
+    "en": "My brother plays guitar in a band.",
+    "hit": "toca"
+   }
+  ]
+ },
+ {
+  "id": "sv02-ocurrir",
+  "w": "ocurrir",
+  "pos": "verb",
+  "en": "to happen, occur",
+  "note": "Se me ocurrió = it occurred to me, I got an idea.",
+  "type": [
+   "ocurrir"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué ocurrió en la reunión de ayer?",
+    "en": "What happened at yesterday's meeting?",
+    "hit": "ocurrió"
+   },
+   {
+    "es": "El accidente ocurrió cerca de mi casa.",
+    "en": "The accident happened near my house.",
+    "hit": "ocurrió"
+   },
+   {
+    "es": "Se me ocurrió una idea para la fiesta.",
+    "en": "I came up with an idea for the party.",
+    "hit": "ocurrió"
+   }
+  ]
+ },
+ {
+  "id": "sv02-atencion",
+  "w": "la atención",
+  "pos": "noun",
+  "en": "attention; service",
+  "note": "Poner atención = to pay attention.",
+  "type": [
+   "la atención",
+   "atención"
+  ],
+  "ex": [
+   {
+    "es": "Pon atención, esto es importante.",
+    "en": "Pay attention, this is important.",
+    "hit": "atención"
+   },
+   {
+    "es": "Muchas gracias por su atención.",
+    "en": "Thank you very much for your attention.",
+    "hit": "atención"
+   },
+   {
+    "es": "La atención en este restaurante es excelente.",
+    "en": "The service at this restaurant is excellent.",
+    "hit": "atención"
+   }
+  ]
+ },
+ {
+  "id": "sv02-respuesta",
+  "w": "la respuesta",
+  "pos": "noun",
+  "en": "answer; reply",
+  "note": "",
+  "type": [
+   "la respuesta",
+   "respuesta"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es la respuesta correcta?",
+    "en": "What's the right answer?",
+    "hit": "respuesta"
+   },
+   {
+    "es": "Todavía no tengo respuesta del banco.",
+    "en": "I still haven't heard back from the bank.",
+    "hit": "respuesta"
+   },
+   {
+    "es": "Le mandé un mensaje y no hubo respuesta.",
+    "en": "I sent him a message and got no reply.",
+    "hit": "respuesta"
+   }
+  ]
+ },
+ {
+  "id": "sv02-serie",
+  "w": "la serie",
+  "pos": "noun",
+  "en": "series; TV show",
+  "note": "Same form in the plural: las series.",
+  "type": [
+   "la serie",
+   "serie"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué serie estás viendo ahora?",
+    "en": "What show are you watching right now?",
+    "hit": "serie"
+   },
+   {
+    "es": "Vimos toda la serie en un fin de semana.",
+    "en": "We watched the whole series in one weekend.",
+    "hit": "serie"
+   },
+   {
+    "es": "Me recomendaron una serie coreana muy buena.",
+    "en": "Someone recommended a really good Korean show to me.",
+    "hit": "serie"
+   }
+  ]
+ },
+ {
+  "id": "sv02-actual",
+  "w": "actual",
+  "pos": "adjective",
+  "en": "current, present",
+  "note": "False friend: 'actually' is en realidad; actualmente = currently.",
+  "type": [
+   "actual"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es tu dirección actual?",
+    "en": "What's your current address?",
+    "hit": "actual"
+   },
+   {
+    "es": "Mi trabajo actual está muy lejos.",
+    "en": "My current job is really far away.",
+    "hit": "actual"
+   },
+   {
+    "es": "El precio actual es más bajo.",
+    "en": "The current price is lower.",
+    "hit": "actual"
+   }
+  ]
+ },
+ {
+  "id": "sv02-video",
+  "w": "el video",
+  "pos": "noun",
+  "en": "video",
+  "note": "Latin America: video; Spain: vídeo.",
+  "type": [
+   "el video",
+   "video"
+  ],
+  "ex": [
+   {
+    "es": "Te mandé un video de los niños.",
+    "en": "I sent you a video of the kids.",
+    "hit": "video"
+   },
+   {
+    "es": "Vimos un video para aprender a bailar.",
+    "en": "We watched a video to learn to dance.",
+    "hit": "video"
+   },
+   {
+    "es": "¿Puedes grabar un video de la ceremonia?",
+    "en": "Can you record a video of the ceremony?",
+    "hit": "video"
+   }
+  ]
+ },
+ {
+  "id": "sv02-comun",
+  "w": "común",
+  "pos": "adjective",
+  "en": "common; shared",
+  "note": "En común = in common. Plural: comunes.",
+  "type": [
+   "común"
+  ],
+  "ex": [
+   {
+    "es": "Es un nombre muy común en México.",
+    "en": "It's a very common name in Mexico.",
+    "hit": "común"
+   },
+   {
+    "es": "Los resfriados son comunes en invierno.",
+    "en": "Colds are common in winter.",
+    "hit": "comunes"
+   },
+   {
+    "es": "Ana y yo tenemos mucho en común.",
+    "en": "Ana and I have a lot in common.",
+    "hit": "común"
+   }
+  ]
+ },
+ {
+  "id": "sv02-blanco",
+  "w": "blanco",
+  "pos": "adjective",
+  "en": "white",
+  "note": "Feminine: blanca. Vino blanco = white wine.",
+  "type": [
+   "blanco"
+  ],
+  "ex": [
+   {
+    "es": "Quiero una camisa blanca para la boda.",
+    "en": "I want a white shirt for the wedding.",
+    "hit": "blanca"
+   },
+   {
+    "es": "¿Me trae una copa de vino blanco?",
+    "en": "Could you bring me a glass of white wine?",
+    "hit": "blanco"
+   },
+   {
+    "es": "El carro de Diego es blanco.",
+    "en": "Diego's car is white.",
+    "hit": "blanco"
+   }
+  ]
+ },
+ {
+  "id": "sv02-voz",
+  "w": "la voz",
+  "pos": "noun",
+  "en": "voice",
+  "note": "Plural: voces. En voz alta = out loud.",
+  "type": [
+   "la voz",
+   "voz"
+  ],
+  "ex": [
+   {
+    "es": "Tienes una voz muy bonita.",
+    "en": "You have a really nice voice.",
+    "hit": "voz"
+   },
+   {
+    "es": "Hoy no tengo voz por el resfriado.",
+    "en": "I've lost my voice today because of my cold.",
+    "hit": "voz"
+   },
+   {
+    "es": "Lee el texto en voz alta, por favor.",
+    "en": "Read the text out loud, please.",
+    "hit": "voz"
+   }
+  ]
+ },
+ {
+  "id": "sv02-salud",
+  "w": "la salud",
+  "pos": "noun",
+  "en": "health; cheers!; bless you!",
+  "note": "¡Salud! is said for a toast and after a sneeze.",
+  "type": [
+   "la salud",
+   "salud"
+  ],
+  "ex": [
+   {
+    "es": "Mi abuelo tiene muy buena salud.",
+    "en": "My grandpa is in very good health.",
+    "hit": "salud"
+   },
+   {
+    "es": "Dejé de fumar por mi salud.",
+    "en": "I quit smoking for my health.",
+    "hit": "salud"
+   },
+   {
+    "es": "Levanten sus copas: ¡salud por los novios!",
+    "en": "Raise your glasses: cheers to the bride and groom!",
+    "hit": "salud"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cierto",
+  "w": "cierto",
+  "pos": "adjective",
+  "en": "true; certain; por cierto = by the way",
+  "note": "",
+  "type": [
+   "cierto"
+  ],
+  "ex": [
+   {
+    "es": "¿Es cierto que te vas a cambiar de casa?",
+    "en": "Is it true that you're moving?",
+    "hit": "cierto"
+   },
+   {
+    "es": "Lo que dice Kevin no es cierto.",
+    "en": "What Kevin says isn't true.",
+    "hit": "cierto"
+   },
+   {
+    "es": "Por cierto, ¿a qué hora es la cena?",
+    "en": "By the way, what time is dinner?",
+    "hit": "cierto"
+   }
+  ]
+ },
+ {
+  "id": "sv02-producto",
+  "w": "el producto",
+  "pos": "noun",
+  "en": "product",
+  "note": "",
+  "type": [
+   "el producto",
+   "producto"
+  ],
+  "ex": [
+   {
+    "es": "Este producto está en oferta.",
+    "en": "This product is on sale.",
+    "hit": "producto"
+   },
+   {
+    "es": "Compro productos locales en el mercado.",
+    "en": "I buy local products at the market.",
+    "hit": "productos"
+   },
+   {
+    "es": "¿Este producto tiene garantía de un año?",
+    "en": "Does this product have a one-year warranty?",
+    "hit": "producto"
+   }
+  ]
+ },
+ {
+  "id": "sv02-musica",
+  "w": "la música",
+  "pos": "noun",
+  "en": "music",
+  "note": "",
+  "type": [
+   "la música",
+   "música"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué tipo de música te gusta?",
+    "en": "What kind of music do you like?",
+    "hit": "música"
+   },
+   {
+    "es": "Pon un poco de música mientras cocinamos.",
+    "en": "Put on some music while we cook.",
+    "hit": "música"
+   },
+   {
+    "es": "Mi hija estudia música en la universidad.",
+    "en": "My daughter studies music in college.",
+    "hit": "música"
+   }
+  ]
+ },
+ {
+  "id": "sv02-participar",
+  "w": "participar",
+  "pos": "verb",
+  "en": "to take part, participate",
+  "note": "Participar en algo = to take part in something.",
+  "type": [
+   "participar"
+  ],
+  "ex": [
+   {
+    "es": "¿Quieres participar en la carrera del domingo?",
+    "en": "Do you want to take part in Sunday's race?",
+    "hit": "participar"
+   },
+   {
+    "es": "Todos los alumnos participaron en el concurso.",
+    "en": "All the students took part in the contest.",
+    "hit": "participaron"
+   },
+   {
+    "es": "Minho siempre participa en clase.",
+    "en": "Minho always participates in class.",
+    "hit": "participa"
+   }
+  ]
+ },
+ {
+  "id": "sv02-suponer",
+  "w": "suponer",
+  "pos": "verb",
+  "en": "to suppose, assume",
+  "note": "Supongo que sí = I guess so. Se supone que = it's supposed to.",
+  "type": [
+   "suponer"
+  ],
+  "ex": [
+   {
+    "es": "Supongo que sí, pero no estoy seguro.",
+    "en": "I guess so, but I'm not sure.",
+    "hit": "Supongo"
+   },
+   {
+    "es": "Supongo que vas a llegar tarde.",
+    "en": "I assume you're going to be late.",
+    "hit": "Supongo"
+   },
+   {
+    "es": "Se supone que el tren sale a las ocho.",
+    "en": "The train is supposed to leave at eight.",
+    "hit": "supone"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cancion",
+  "w": "la canción",
+  "pos": "noun",
+  "en": "song",
+  "note": "Plural: canciones (no accent).",
+  "type": [
+   "la canción",
+   "canción"
+  ],
+  "ex": [
+   {
+    "es": "Esta es mi canción favorita.",
+    "en": "This is my favorite song.",
+    "hit": "canción"
+   },
+   {
+    "es": "¿Cómo se llama esta canción?",
+    "en": "What's this song called?",
+    "hit": "canción"
+   },
+   {
+    "es": "Cantamos canciones en el carro.",
+    "en": "We sing songs in the car.",
+    "hit": "canciones"
+   }
+  ]
+ },
+ {
+  "id": "sv02-largo",
+  "w": "largo",
+  "pos": "adjective",
+  "en": "long",
+  "note": "False friend: 'large' is grande.",
+  "type": [
+   "largo"
+  ],
+  "ex": [
+   {
+    "es": "Fue un día muy largo en el trabajo.",
+    "en": "It was a very long day at work.",
+    "hit": "largo"
+   },
+   {
+    "es": "Sofía tiene el pelo largo.",
+    "en": "Sofía has long hair.",
+    "hit": "largo"
+   },
+   {
+    "es": "El viaje en autobús es muy largo.",
+    "en": "The bus trip is very long.",
+    "hit": "largo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-modo",
+  "w": "el modo",
+  "pos": "noun",
+  "en": "way, manner; mode",
+  "note": "De todos modos = anyway. Modo avión = airplane mode.",
+  "type": [
+   "el modo",
+   "modo"
+  ],
+  "ex": [
+   {
+    "es": "No me gusta su modo de hablar.",
+    "en": "I don't like the way he talks.",
+    "hit": "modo"
+   },
+   {
+    "es": "De todos modos, gracias por venir.",
+    "en": "Anyway, thanks for coming.",
+    "hit": "modos"
+   },
+   {
+    "es": "Pon el celular en modo avión.",
+    "en": "Put your phone on airplane mode.",
+    "hit": "modo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-enviar",
+  "w": "enviar",
+  "pos": "verb",
+  "en": "to send",
+  "note": "Mandar is more common in casual speech.",
+  "type": [
+   "enviar",
+   "mandar"
+  ],
+  "ex": [
+   {
+    "es": "¿Me puedes enviar la dirección?",
+    "en": "Can you send me the address?",
+    "hit": "enviar"
+   },
+   {
+    "es": "Te envié las fotos por correo.",
+    "en": "I sent you the photos by email.",
+    "hit": "envié"
+   },
+   {
+    "es": "Vamos a enviar el paquete mañana.",
+    "en": "We're going to send the package tomorrow.",
+    "hit": "enviar"
+   }
+  ]
+ },
+ {
+  "id": "sv02-oportunidad",
+  "w": "la oportunidad",
+  "pos": "noun",
+  "en": "opportunity, chance",
+  "note": "",
+  "type": [
+   "la oportunidad",
+   "oportunidad"
+  ],
+  "ex": [
+   {
+    "es": "Es una buena oportunidad de trabajo.",
+    "en": "It's a good job opportunity.",
+    "hit": "oportunidad"
+   },
+   {
+    "es": "Dame otra oportunidad, por favor.",
+    "en": "Give me another chance, please.",
+    "hit": "oportunidad"
+   },
+   {
+    "es": "Si tienes la oportunidad, visita Oaxaca.",
+    "en": "If you get the chance, visit Oaxaca.",
+    "hit": "oportunidad"
+   }
+  ]
+ },
+ {
+  "id": "sv02-mensaje",
+  "w": "el mensaje",
+  "pos": "noun",
+  "en": "message; text",
+  "note": "Mandar un mensaje = to send a text.",
+  "type": [
+   "el mensaje",
+   "mensaje"
+  ],
+  "ex": [
+   {
+    "es": "Te mandé un mensaje hace una hora.",
+    "en": "I texted you an hour ago.",
+    "hit": "mensaje"
+   },
+   {
+    "es": "Deje su mensaje después del tono.",
+    "en": "Leave your message after the tone.",
+    "hit": "mensaje"
+   },
+   {
+    "es": "Wei me dejó un mensaje en la puerta.",
+    "en": "Wei left me a message on the door.",
+    "hit": "mensaje"
+   }
+  ]
+ },
+ {
+  "id": "sv02-julio",
+  "w": "julio",
+  "pos": "noun",
+  "en": "July",
+  "note": "Months are not capitalized in Spanish.",
+  "type": [
+   "julio"
+  ],
+  "ex": [
+   {
+    "es": "Nos vamos de vacaciones en julio.",
+    "en": "We're going on vacation in July.",
+    "hit": "julio"
+   },
+   {
+    "es": "Mi cumpleaños es el cuatro de julio.",
+    "en": "My birthday is July fourth.",
+    "hit": "julio"
+   },
+   {
+    "es": "En julio hace mucho calor aquí.",
+    "en": "It's very hot here in July.",
+    "hit": "julio"
+   }
+  ]
+ },
+ {
+  "id": "sv02-demasiado",
+  "w": "demasiado",
+  "pos": "adverb",
+  "en": "too; too much",
+  "note": "Also adjective: demasiada gente = too many people.",
+  "type": [
+   "demasiado"
+  ],
+  "ex": [
+   {
+    "es": "Este café está demasiado caliente.",
+    "en": "This coffee is too hot.",
+    "hit": "demasiado"
+   },
+   {
+    "es": "Comí demasiado en la fiesta.",
+    "en": "I ate too much at the party.",
+    "hit": "demasiado"
+   },
+   {
+    "es": "Trabajas demasiado, descansa un poco.",
+    "en": "You work too much, rest a little.",
+    "hit": "demasiado"
+   }
+  ]
+ },
+ {
+  "id": "sv02-miedo",
+  "w": "el miedo",
+  "pos": "noun",
+  "en": "fear",
+  "note": "Tener miedo = to be afraid. Me da miedo = it scares me.",
+  "type": [
+   "el miedo",
+   "miedo"
+  ],
+  "ex": [
+   {
+    "es": "Mi hijo tiene miedo de la oscuridad.",
+    "en": "My son is afraid of the dark.",
+    "hit": "miedo"
+   },
+   {
+    "es": "Me dan miedo las arañas.",
+    "en": "Spiders scare me.",
+    "hit": "miedo"
+   },
+   {
+    "es": "No tengas miedo, el perro es muy tranquilo.",
+    "en": "Don't be scared, the dog is very calm.",
+    "hit": "miedo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-pesar",
+  "w": "pesar",
+  "pos": "verb",
+  "en": "to weigh",
+  "note": "A pesar de = despite. Pesado = heavy.",
+  "type": [
+   "pesar"
+  ],
+  "ex": [
+   {
+    "es": "Mi maleta pesa veinte kilos.",
+    "en": "My suitcase weighs twenty kilos.",
+    "hit": "pesa"
+   },
+   {
+    "es": "El bebé ya pesa casi cinco kilos.",
+    "en": "The baby already weighs almost five kilos.",
+    "hit": "pesa"
+   },
+   {
+    "es": "La señora pesó los tomates en la báscula.",
+    "en": "The woman weighed the tomatoes on the scale.",
+    "hit": "pesó"
+   }
+  ]
+ },
+ {
+  "id": "sv02-anterior",
+  "w": "anterior",
+  "pos": "adjective",
+  "en": "previous, before",
+  "note": "Same form for masculine and feminine.",
+  "type": [
+   "anterior"
+  ],
+  "ex": [
+   {
+    "es": "Lo vi la semana anterior al viaje.",
+    "en": "I saw him the week before the trip.",
+    "hit": "anterior"
+   },
+   {
+    "es": "Mi trabajo anterior pagaba mejor.",
+    "en": "My previous job paid better.",
+    "hit": "anterior"
+   },
+   {
+    "es": "Regresa a la página anterior.",
+    "en": "Go back to the previous page.",
+    "hit": "anterior"
+   }
+  ]
+ },
+ {
+  "id": "sv02-aceptar",
+  "w": "aceptar",
+  "pos": "verb",
+  "en": "to accept",
+  "note": "",
+  "type": [
+   "aceptar"
+  ],
+  "ex": [
+   {
+    "es": "Disculpe, ¿aceptan tarjeta de crédito?",
+    "en": "Excuse me, do you take credit cards?",
+    "hit": "aceptan"
+   },
+   {
+    "es": "Acepté el trabajo en Chicago.",
+    "en": "I accepted the job in Chicago.",
+    "hit": "Acepté"
+   },
+   {
+    "es": "Ana no quiere aceptar mi ayuda.",
+    "en": "Ana doesn't want to accept my help.",
+    "hit": "aceptar"
+   }
+  ]
+ },
+ {
+  "id": "sv02-cantidad",
+  "w": "la cantidad",
+  "pos": "noun",
+  "en": "amount, quantity",
+  "note": "",
+  "type": [
+   "la cantidad",
+   "cantidad"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué cantidad de arroz necesito?",
+    "en": "How much rice do I need?",
+    "hit": "cantidad"
+   },
+   {
+    "es": "Gastamos una gran cantidad de dinero en la boda.",
+    "en": "We spent a huge amount of money on the wedding.",
+    "hit": "cantidad"
+   },
+   {
+    "es": "Hay una cantidad increíble de gente aquí.",
+    "en": "There's an incredible number of people here.",
+    "hit": "cantidad"
+   }
+  ]
+ },
+ {
+  "id": "sv02-experiencia",
+  "w": "la experiencia",
+  "pos": "noun",
+  "en": "experience",
+  "note": "",
+  "type": [
+   "la experiencia",
+   "experiencia"
+  ],
+  "ex": [
+   {
+    "es": "¿Tiene experiencia trabajando con niños?",
+    "en": "Do you have experience working with children?",
+    "hit": "experiencia"
+   },
+   {
+    "es": "El viaje a Perú fue una experiencia increíble.",
+    "en": "The trip to Peru was an amazing experience.",
+    "hit": "experiencia"
+   },
+   {
+    "es": "Lo sé por experiencia propia.",
+    "en": "I know from my own experience.",
+    "hit": "experiencia"
+   }
+  ]
+ },
+ {
+  "id": "sv02-proximo",
+  "w": "próximo",
+  "pos": "adjective",
+  "en": "next",
+  "note": "Feminine: próxima. La próxima vez = next time.",
+  "type": [
+   "próximo"
+  ],
+  "ex": [
+   {
+    "es": "Nos vemos la próxima semana.",
+    "en": "See you next week.",
+    "hit": "próxima"
+   },
+   {
+    "es": "¿A qué hora sale el próximo tren?",
+    "en": "What time does the next train leave?",
+    "hit": "próximo"
+   },
+   {
+    "es": "La próxima vez yo invito.",
+    "en": "Next time it's on me.",
+    "hit": "próxima"
+   }
+  ]
+ },
+ {
+  "id": "sv02-suerte",
+  "w": "la suerte",
+  "pos": "noun",
+  "en": "luck",
+  "note": "Tener suerte = to be lucky.",
+  "type": [
+   "la suerte",
+   "suerte"
+  ],
+  "ex": [
+   {
+    "es": "¡Buena suerte en tu examen!",
+    "en": "Good luck on your exam!",
+    "hit": "suerte"
+   },
+   {
+    "es": "Qué suerte que encontraste estacionamiento.",
+    "en": "How lucky that you found parking.",
+    "hit": "suerte"
+   },
+   {
+    "es": "Diego tiene mucha suerte en los juegos.",
+    "en": "Diego is really lucky at games.",
+    "hit": "suerte"
+   }
+  ]
+ },
+ {
+  "id": "sv02-partir",
+  "w": "partir",
+  "pos": "verb",
+  "en": "to cut, split; a partir de: starting from",
+  "note": "For 'to leave', salir is more common.",
+  "type": [
+   "partir"
+  ],
+  "ex": [
+   {
+    "es": "¿Quién va a partir el pastel?",
+    "en": "Who's going to cut the cake?",
+    "hit": "partir"
+   },
+   {
+    "es": "Parte la pizza en ocho pedazos.",
+    "en": "Cut the pizza into eight slices.",
+    "hit": "Parte"
+   },
+   {
+    "es": "A partir del lunes voy a trabajar en casa.",
+    "en": "Starting Monday, I'm going to work from home.",
+    "hit": "partir"
+   }
+  ]
+ },
+ {
+  "id": "sv02-opinion",
+  "w": "la opinión",
+  "pos": "noun",
+  "en": "opinion",
+  "note": "Cambiar de opinión = to change your mind.",
+  "type": [
+   "la opinión",
+   "opinión"
+  ],
+  "ex": [
+   {
+    "es": "¿Cuál es tu opinión sobre el nuevo jefe?",
+    "en": "What's your opinion of the new boss?",
+    "hit": "opinión"
+   },
+   {
+    "es": "En mi opinión, este restaurante es mejor.",
+    "en": "In my opinion, this restaurant is better.",
+    "hit": "opinión"
+   },
+   {
+    "es": "Cambié de opinión, mejor me quedo.",
+    "en": "I changed my mind, I'd rather stay.",
+    "hit": "opinión"
+   }
+  ]
+ },
+ {
+  "id": "sv02-espacio",
+  "w": "el espacio",
+  "pos": "noun",
+  "en": "space; room",
+  "note": "",
+  "type": [
+   "el espacio",
+   "espacio"
+  ],
+  "ex": [
+   {
+    "es": "No hay espacio en el refri.",
+    "en": "There's no room in the fridge.",
+    "hit": "espacio"
+   },
+   {
+    "es": "Mi celular ya no tiene espacio para fotos.",
+    "en": "My phone doesn't have space for photos anymore.",
+    "hit": "espacio"
+   },
+   {
+    "es": "Necesito un poco de espacio para pensar.",
+    "en": "I need a little space to think.",
+    "hit": "espacio"
+   }
+  ]
+ },
+ {
+  "id": "sv02-varios",
+  "w": "varios",
+  "pos": "determiner",
+  "en": "several",
+  "note": "Feminine: varias.",
+  "type": [
+   "varios",
+   "varias"
+  ],
+  "ex": [
+   {
+    "es": "Tengo varios amigos en Bogotá.",
+    "en": "I have several friends in Bogotá.",
+    "hit": "varios"
+   },
+   {
+    "es": "Esperé varias horas en el aeropuerto.",
+    "en": "I waited several hours at the airport.",
+    "hit": "varias"
+   },
+   {
+    "es": "Probamos varios restaurantes en el viaje.",
+    "en": "We tried several restaurants on the trip.",
+    "hit": "varios"
+   }
+  ]
+ },
+ {
+  "id": "sv02-apoyo",
+  "w": "el apoyo",
+  "pos": "noun",
+  "en": "support",
+  "note": "Verb: apoyar (to support).",
+  "type": [
+   "el apoyo",
+   "apoyo"
+  ],
+  "ex": [
+   {
+    "es": "Gracias por tu apoyo en este momento difícil.",
+    "en": "Thank you for your support at this difficult time.",
+    "hit": "apoyo"
+   },
+   {
+    "es": "Mi familia siempre me da su apoyo.",
+    "en": "My family always gives me their support.",
+    "hit": "apoyo"
+   },
+   {
+    "es": "El equipo necesita el apoyo de los fans.",
+    "en": "The team needs the fans' support.",
+    "hit": "apoyo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-personal",
+  "w": "personal",
+  "pos": "adjective",
+  "en": "personal; (noun) staff",
+  "note": "El personal = the staff.",
+  "type": [
+   "personal"
+  ],
+  "ex": [
+   {
+    "es": "Es una pregunta muy personal.",
+    "en": "It's a very personal question.",
+    "hit": "personal"
+   },
+   {
+    "es": "Tengo que hacer unas cosas personales.",
+    "en": "I have to take care of some personal things.",
+    "hit": "personales"
+   },
+   {
+    "es": "El personal del hotel fue muy amable.",
+    "en": "The hotel staff was very friendly.",
+    "hit": "personal"
+   }
+  ]
+ },
+ {
+  "id": "sv02-papel",
+  "w": "el papel",
+  "pos": "noun",
+  "en": "paper; role",
+  "note": "Papel de baño = toilet paper.",
+  "type": [
+   "el papel",
+   "papel"
+  ],
+  "ex": [
+   {
+    "es": "¿Tienes un papel y una pluma?",
+    "en": "Do you have a piece of paper and a pen?",
+    "hit": "papel"
+   },
+   {
+    "es": "Ya no hay papel de baño.",
+    "en": "We're out of toilet paper.",
+    "hit": "papel"
+   },
+   {
+    "es": "Ella tiene el papel principal en la obra.",
+    "en": "She has the lead role in the play.",
+    "hit": "papel"
+   }
+  ]
+ },
+ {
+  "id": "sv02-responder",
+  "w": "responder",
+  "pos": "verb",
+  "en": "to answer, reply",
+  "note": "Contestar is a common synonym.",
+  "type": [
+   "responder",
+   "contestar"
+  ],
+  "ex": [
+   {
+    "es": "No respondió mis mensajes en todo el día.",
+    "en": "He didn't answer my messages all day.",
+    "hit": "respondió"
+   },
+   {
+    "es": "¿Puede responder unas preguntas, por favor?",
+    "en": "Could you answer a few questions, please?",
+    "hit": "responder"
+   },
+   {
+    "es": "Tengo que responder este correo hoy.",
+    "en": "I have to reply to this email today.",
+    "hit": "responder"
+   }
+  ]
+ },
+ {
+  "id": "sv02-mercado",
+  "w": "el mercado",
+  "pos": "noun",
+  "en": "market",
+  "note": "",
+  "type": [
+   "el mercado",
+   "mercado"
+  ],
+  "ex": [
+   {
+    "es": "Los domingos compramos fruta en el mercado.",
+    "en": "On Sundays we buy fruit at the market.",
+    "hit": "mercado"
+   },
+   {
+    "es": "El mercado abre a las siete.",
+    "en": "The market opens at seven.",
+    "hit": "mercado"
+   },
+   {
+    "es": "Hay un mercado de artesanías cerca del hotel.",
+    "en": "There's a craft market near the hotel.",
+    "hit": "mercado"
+   }
+  ]
+ },
+ {
+  "id": "sv02-vuelta",
+  "w": "la vuelta",
+  "pos": "noun",
+  "en": "turn; return; stroll",
+  "note": "Dar una vuelta = go for a walk or drive. Ida y vuelta = round trip.",
+  "type": [
+   "la vuelta",
+   "vuelta"
+  ],
+  "ex": [
+   {
+    "es": "Da vuelta a la derecha en el semáforo.",
+    "en": "Turn right at the light.",
+    "hit": "vuelta"
+   },
+   {
+    "es": "Quiero un boleto de ida y vuelta.",
+    "en": "I want a round-trip ticket.",
+    "hit": "vuelta"
+   },
+   {
+    "es": "Vamos a dar una vuelta por el parque.",
+    "en": "Let's go for a walk in the park.",
+    "hit": "vuelta"
+   }
+  ]
+ },
+ {
+  "id": "sv02-resto",
+  "w": "el resto",
+  "pos": "noun",
+  "en": "rest, remainder",
+  "note": "",
+  "type": [
+   "el resto",
+   "resto"
+  ],
+  "ex": [
+   {
+    "es": "Me como la mitad y guardo el resto.",
+    "en": "I'll eat half and save the rest.",
+    "hit": "resto"
+   },
+   {
+    "es": "¿Dónde está el resto del grupo?",
+    "en": "Where's the rest of the group?",
+    "hit": "resto"
+   },
+   {
+    "es": "Ya pagué el resto del carro.",
+    "en": "I already paid off the rest of the car.",
+    "hit": "resto"
+   }
+  ]
+ },
+ {
+  "id": "sv02-vista",
+  "w": "la vista",
+  "pos": "noun",
+  "en": "view; eyesight",
+  "note": "A primera vista = at first sight.",
+  "type": [
+   "la vista",
+   "vista"
+  ],
+  "ex": [
+   {
+    "es": "La vista desde el cuarto es increíble.",
+    "en": "The view from the room is amazing.",
+    "hit": "vista"
+   },
+   {
+    "es": "Queremos una mesa con vista al mar.",
+    "en": "We'd like a table with an ocean view.",
+    "hit": "vista"
+   },
+   {
+    "es": "Tengo mala vista, necesito lentes.",
+    "en": "I have bad eyesight, I need glasses.",
+    "hit": "vista"
+   }
+  ]
+ },
+ {
+  "id": "sv02-elegir",
+  "w": "elegir",
+  "pos": "verb",
+  "en": "to choose",
+  "note": "Present: yo elijo. Escoger is a common synonym.",
+  "type": [
+   "elegir",
+   "escoger"
+  ],
+  "ex": [
+   {
+    "es": "No puedo elegir entre estos dos vestidos.",
+    "en": "I can't choose between these two dresses.",
+    "hit": "elegir"
+   },
+   {
+    "es": "Elige el postre que quieras.",
+    "en": "Choose whatever dessert you want.",
+    "hit": "Elige"
+   },
+   {
+    "es": "¿Por qué elegiste esa universidad?",
+    "en": "Why did you choose that university?",
+    "hit": "elegiste"
+   }
+  ]
+ },
+ {
+  "id": "sv02-duda",
+  "w": "la duda",
+  "pos": "noun",
+  "en": "doubt; question",
+  "note": "¿Tienes alguna duda? = Do you have any questions? Sin duda = no doubt.",
+  "type": [
+   "la duda",
+   "duda"
+  ],
+  "ex": [
+   {
+    "es": "Sin duda, es la mejor pizza de la ciudad.",
+    "en": "Without a doubt, it's the best pizza in town.",
+    "hit": "duda"
+   },
+   {
+    "es": "Tengo mis dudas sobre ese plan.",
+    "en": "I have my doubts about that plan.",
+    "hit": "dudas"
+   },
+   {
+    "es": "Si tiene alguna duda, llámeme.",
+    "en": "If you have any questions, call me.",
+    "hit": "duda"
+   }
+  ]
+ },
+ {
+  "id": "sv02-arte",
+  "w": "el arte",
+  "pos": "noun",
+  "en": "art",
+  "note": "Masculine in the singular; feminine in the plural: las artes.",
+  "type": [
+   "el arte",
+   "arte"
+  ],
+  "ex": [
+   {
+    "es": "Me encanta el arte mexicano.",
+    "en": "I love Mexican art.",
+    "hit": "arte"
+   },
+   {
+    "es": "Vamos al museo de arte el domingo.",
+    "en": "Let's go to the art museum on Sunday.",
+    "hit": "arte"
+   },
+   {
+    "es": "Mi hijo tiene clase de arte los jueves.",
+    "en": "My son has art class on Thursdays.",
+    "hit": "arte"
+   }
+  ]
+ },
+ {
+  "id": "sv02-edad",
+  "w": "la edad",
+  "pos": "noun",
+  "en": "age",
+  "note": "La tercera edad = senior citizens.",
+  "type": [
+   "la edad",
+   "edad"
+  ],
+  "ex": [
+   {
+    "es": "¿Qué edad tiene su hijo?",
+    "en": "How old is your son?",
+    "hit": "edad"
+   },
+   {
+    "es": "A tu edad yo ya trabajaba.",
+    "en": "At your age I was already working.",
+    "hit": "edad"
+   },
+   {
+    "es": "Hay descuento para personas de la tercera edad.",
+    "en": "There's a discount for senior citizens.",
+    "hit": "edad"
+   }
+  ]
+ },
+ {
+  "id": "sv02-chica",
+  "w": "la chica",
+  "pos": "noun",
+  "en": "girl; young woman",
+  "note": "Masculine: el chico. As an adjective, chico/chica also means small.",
+  "type": [
+   "la chica",
+   "chica"
+  ],
+  "ex": [
+   {
+    "es": "La chica de la recepción es muy amable.",
+    "en": "The girl at the front desk is very nice.",
+    "hit": "chica"
+   },
+   {
+    "es": "Salí con unas chicas del trabajo.",
+    "en": "I went out with some girls from work.",
+    "hit": "chicas"
+   },
+   {
+    "es": "Mi sobrina es una chica muy inteligente.",
+    "en": "My niece is a very smart girl.",
+    "hit": "chica"
+   }
+  ]
+ },
+ {
+  "id": "sv02-conocido",
+  "w": "conocido",
+  "pos": "adjective",
+  "en": "well-known; familiar; (noun) acquaintance",
+  "note": "Feminine: conocida.",
+  "type": [
+   "conocido"
+  ],
+  "ex": [
+   {
+    "es": "Es un restaurante muy conocido en la ciudad.",
+    "en": "It's a very well-known restaurant in the city.",
+    "hit": "conocido"
+   },
+   {
+    "es": "Su cara me parece conocida.",
+    "en": "Her face looks familiar.",
+    "hit": "conocida"
+   },
+   {
+    "es": "No es mi amigo, solo es un conocido.",
+    "en": "He's not my friend, just an acquaintance.",
+    "hit": "conocido"
+   }
+  ]
+ },
+ {
+  "id": "sv02-iglesia",
+  "w": "la iglesia",
+  "pos": "noun",
+  "en": "church",
+  "note": "",
+  "type": [
+   "la iglesia",
+   "iglesia"
+  ],
+  "ex": [
+   {
+    "es": "La boda es en la iglesia del pueblo.",
+    "en": "The wedding is at the town church.",
+    "hit": "iglesia"
+   },
+   {
+    "es": "Mis abuelos van a la iglesia los domingos.",
+    "en": "My grandparents go to church on Sundays.",
+    "hit": "iglesia"
+   },
+   {
+    "es": "La iglesia está a dos cuadras del hotel.",
+    "en": "The church is two blocks from the hotel.",
+    "hit": "iglesia"
+   }
+  ]
+ },
+ {
+  "id": "sv02-fondo",
+  "w": "el fondo",
+  "pos": "noun",
+  "en": "bottom; back (end); background",
+  "note": "Al fondo = at the back or end.",
+  "type": [
+   "el fondo",
+   "fondo"
+  ],
+  "ex": [
+   {
+    "es": "Las llaves estaban en el fondo de mi bolsa.",
+    "en": "The keys were at the bottom of my bag.",
+    "hit": "fondo"
+   },
+   {
+    "es": "El baño está al fondo, a la derecha.",
+    "en": "The bathroom is at the back, on the right.",
+    "hit": "fondo"
+   },
+   {
+    "es": "Me gusta el fondo de tu pantalla.",
+    "en": "I like your wallpaper.",
+    "hit": "fondo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-director",
+  "w": "el director",
+  "pos": "noun",
+  "en": "director; principal; manager",
+  "note": "Feminine: la directora. A school principal is el director or la directora.",
+  "type": [
+   "el director",
+   "director",
+   "la directora",
+   "directora"
+  ],
+  "ex": [
+   {
+    "es": "El director de la película es mexicano.",
+    "en": "The movie's director is Mexican.",
+    "hit": "director"
+   },
+   {
+    "es": "Mañana tengo una junta con el director.",
+    "en": "Tomorrow I have a meeting with the director.",
+    "hit": "director"
+   },
+   {
+    "es": "Hablé con la directora de la escuela.",
+    "en": "I talked to the school principal.",
+    "hit": "directora"
+   }
+  ]
+ },
+ {
+  "id": "sv02-mayo",
+  "w": "mayo",
+  "pos": "noun",
+  "en": "May",
+  "note": "Months are not capitalized in Spanish.",
+  "type": [
+   "mayo"
+  ],
+  "ex": [
+   {
+    "es": "Vamos a México en mayo.",
+    "en": "We're going to Mexico in May.",
+    "hit": "mayo"
+   },
+   {
+    "es": "Las clases terminan a finales de mayo.",
+    "en": "Classes end at the end of May.",
+    "hit": "mayo"
+   },
+   {
+    "es": "El diez de mayo es el Día de las Madres en México.",
+    "en": "May tenth is Mother's Day in Mexico.",
+    "hit": "mayo"
+   }
+  ]
+ },
+ {
+  "id": "sv02-tarde",
+  "w": "tarde",
+  "pos": "adverb",
+  "en": "late",
+  "note": "La tarde (noun) = afternoon, evening. Buenas tardes = good afternoon.",
+  "type": [
+   "tarde"
+  ],
+  "ex": [
+   {
+    "es": "Perdón, llegué tarde por el tráfico.",
+    "en": "Sorry, I'm late because of traffic.",
+    "hit": "tarde"
+   },
+   {
+    "es": "Ya es tarde, me voy a dormir.",
+    "en": "It's late, I'm going to bed.",
+    "hit": "tarde"
+   },
+   {
+    "es": "Bueno, mejor tarde que nunca, ¿no?",
+    "en": "Well, better late than never, right?",
+    "hit": "tarde"
+   }
+  ]
+ },
+ {
+  "id": "sv02-puerta",
+  "w": "la puerta",
+  "pos": "noun",
+  "en": "door; gate",
+  "note": "Puerta de embarque = boarding gate. Tocar la puerta = to knock.",
+  "type": [
+   "la puerta",
+   "puerta"
+  ],
+  "ex": [
+   {
+    "es": "¿Puedes cerrar la puerta, por favor?",
+    "en": "Can you close the door, please?",
+    "hit": "puerta"
+   },
+   {
+    "es": "Alguien está tocando la puerta.",
+    "en": "Someone's knocking at the door.",
+    "hit": "puerta"
+   },
+   {
+    "es": "Nuestro vuelo sale de la puerta doce.",
+    "en": "Our flight leaves from gate twelve.",
+    "hit": "puerta"
+   }
+  ]
+ },
+ {
+  "id": "sv02-direccion",
+  "w": "la dirección",
+  "pos": "noun",
+  "en": "address; direction",
+  "note": "",
+  "type": [
+   "la dirección",
+   "dirección"
+  ],
+  "ex": [
+   {
+    "es": "¿Me das tu dirección para mandarte la invitación?",
+    "en": "Can you give me your address so I can send you the invitation?",
+    "hit": "dirección"
+   },
+   {
+    "es": "Escribe tu dirección en el formulario.",
+    "en": "Write your address on the form.",
+    "hit": "dirección"
+   },
+   {
+    "es": "Creo que vamos en la dirección equivocada.",
+    "en": "I think we're going the wrong way.",
+    "hit": "dirección"
+   }
+  ]
+ },
+ {
+  "id": "sv02-profesor",
+  "w": "el profesor",
+  "pos": "noun",
+  "en": "teacher; professor",
+  "note": "Feminine: la profesora. Maestro/maestra is common for schoolteachers.",
+  "type": [
+   "el profesor",
+   "profesor",
+   "la profesora",
+   "profesora"
+  ],
+  "ex": [
+   {
+    "es": "Mi profesor de español es de Colombia.",
+    "en": "My Spanish teacher is from Colombia.",
+    "hit": "profesor"
+   },
+   {
+    "es": "La profesora nos dejó mucha tarea.",
+    "en": "The teacher gave us a lot of homework.",
+    "hit": "profesora"
+   },
+   {
+    "es": "Voy a hablar con el profesor después de clase.",
+    "en": "I'm going to talk to the teacher after class.",
+    "hit": "profesor"
+   }
+  ]
+ }
+]

@@ -1,0 +1,144 @@
+{
+ "fix": [
+  {
+   "id": "kv03-32",
+   "t": {
+    "s": "강"
+   },
+   "pos": "noun",
+   "en": "river",
+   "note": "",
+   "ex": [
+    {
+     "s": "저녁마다 강을 따라 산책해요.",
+     "en": "I take a walk along the river every evening."
+    },
+    {
+     "s": "주말에 한강에서 치킨 먹었어요.",
+     "en": "We ate fried chicken by the Han River on the weekend."
+    },
+    {
+     "s": "이 강은 수영하기에 위험해요.",
+     "en": "This river is dangerous for swimming."
+    }
+   ]
+  },
+  {
+   "id": "kv03-41",
+   "t": {
+    "s": "오래되다"
+   },
+   "pos": "adjective",
+   "en": "to be old, be a long time",
+   "note": "As a modifier: 오래된 집 = an old house.",
+   "ex": [
+    {
+     "s": "이 집은 정말 오래됐어요.",
+     "en": "This house is really old."
+    },
+    {
+     "s": "우리 만난 지 오래됐네요.",
+     "en": "It's been a long time since we've seen each other."
+    },
+    {
+     "s": "오래된 우유는 버리세요.",
+     "en": "Throw out the old milk."
+    }
+   ]
+  },
+  {
+   "id": "kv03-51",
+   "t": {
+    "s": "기대하다"
+   },
+   "pos": "verb",
+   "en": "to look forward to, expect",
+   "note": "기대돼요 = I'm looking forward to it, I'm excited.",
+   "ex": [
+    {
+     "s": "주말 여행을 정말 기대하고 있어요.",
+     "en": "I'm really looking forward to the weekend trip."
+    },
+    {
+     "s": "너무 기대하지 마세요.",
+     "en": "Don't get your hopes up too much."
+    },
+    {
+     "s": "생일 선물 기대할게요.",
+     "en": "I'll be looking forward to my birthday present."
+    }
+   ]
+  },
+  {
+   "id": "kv03-70",
+   "t": {
+    "s": "기억하다"
+   },
+   "pos": "verb",
+   "en": "to remember",
+   "note": "기억이 안 나요 = I can't remember.",
+   "ex": [
+    {
+     "s": "제 이름 기억해요?",
+     "en": "Do you remember my name?"
+    },
+    {
+     "s": "약속 시간 꼭 기억하세요.",
+     "en": "Be sure to remember the appointment time."
+    },
+    {
+     "s": "우리 처음 만난 날 기억해요?",
+     "en": "Do you remember the day we first met?"
+    }
+   ]
+  },
+  {
+   "id": "kv03-74",
+   "t": {
+    "s": "너희"
+   },
+   "pos": "pronoun",
+   "en": "you (plural, casual)",
+   "note": "Casual; also 너희들. Polite plural: 여러분. 너희 엄마 = your mom, even to one friend.",
+   "ex": [
+    {
+     "s": "너희 언제 도착해?",
+     "en": "When are you guys arriving?"
+    },
+    {
+     "s": "너희 엄마 진짜 요리 잘하신다.",
+     "en": "Your mom is such a good cook."
+    },
+    {
+     "s": "얘들아, 너희 숙제 다 했어?",
+     "en": "Kids, did you all finish your homework?"
+    }
+   ]
+  },
+  {
+   "id": "kv03-81",
+   "t": {
+    "s": "언어"
+   },
+   "pos": "noun",
+   "en": "language",
+   "note": "",
+   "ex": [
+    {
+     "s": "언어를 몇 개 할 수 있어요?",
+     "en": "How many languages can you speak?"
+    },
+    {
+     "s": "한국어는 정말 재미있는 언어예요.",
+     "en": "Korean is a really fun language."
+    },
+    {
+     "s": "언어를 배울 때는 연습이 중요해요.",
+     "en": "Practice is important when learning a language."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Examples using a different lemma (기대돼요, 기억이 나다) replaced; 오래되다 is an adjective; compound-only 강 example; unnatural 몇 개 언어; 너희 note clarified."
+}

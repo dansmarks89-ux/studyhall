@@ -1,0 +1,169 @@
+{
+ "fix": [
+  {
+   "id": "kv05-103",
+   "t": {
+    "s": "뇌"
+   },
+   "pos": "noun",
+   "en": "brain",
+   "note": "Everyday speech often uses 머리 for 'head/brains'.",
+   "ex": [
+    {
+     "s": "잠을 못 자면 뇌가 피곤해요.",
+     "en": "Your brain gets tired when you don't sleep."
+    },
+    {
+     "s": "운동은 뇌 건강에도 좋아요.",
+     "en": "Exercise is good for brain health too."
+    },
+    {
+     "s": "뇌에 좋은 음식이 뭐예요?",
+     "en": "What foods are good for the brain?"
+    }
+   ]
+  },
+  {
+   "id": "kv05-114",
+   "t": {
+    "s": "지적하다"
+   },
+   "pos": "verb",
+   "en": "to point out (a mistake)",
+   "note": "",
+   "ex": [
+    {
+     "s": "선생님이 제 발음을 지적하셨어요.",
+     "en": "The teacher pointed out my pronunciation."
+    },
+    {
+     "s": "실수를 지적해 줘서 고마워요.",
+     "en": "Thanks for pointing out my mistake."
+    },
+    {
+     "s": "팀장님은 작은 것까지 다 지적하세요.",
+     "en": "My team leader points out every little thing."
+    }
+   ]
+  },
+  {
+   "id": "kv05-117",
+   "t": {
+    "s": "투표하다"
+   },
+   "pos": "verb",
+   "en": "to vote",
+   "note": "",
+   "ex": [
+    {
+     "s": "어제 투표하러 갔어요?",
+     "en": "Did you go vote yesterday?"
+    },
+    {
+     "s": "점심 메뉴는 투표해서 정해요.",
+     "en": "We vote to decide the lunch menu."
+    },
+    {
+     "s": "반장 선거에서 친구한테 투표했어요.",
+     "en": "I voted for my friend for class president."
+    }
+   ]
+  },
+  {
+   "id": "kv05-118",
+   "t": {
+    "s": "귀"
+   },
+   "pos": "noun",
+   "en": "ear",
+   "note": "",
+   "ex": [
+    {
+     "s": "밖이 추워서 귀가 시려요.",
+     "en": "It's so cold out that my ears are freezing."
+    },
+    {
+     "s": "강아지 귀가 정말 커요.",
+     "en": "The puppy's ears are really big."
+    },
+    {
+     "s": "음악을 크게 들어서 귀가 아파요.",
+     "en": "My ears hurt from listening to loud music."
+    }
+   ]
+  },
+  {
+   "id": "kv05-124",
+   "t": {
+    "s": "늘다"
+   },
+   "pos": "verb",
+   "en": "to increase, grow; to improve",
+   "note": "ㄹ drops before ㄴ/ㅂ/ㅅ: 느는, 늡니다. Transitive: 늘리다.",
+   "ex": [
+    {
+     "s": "매일 연습하니까 한국어가 많이 늘었어요.",
+     "en": "My Korean improved a lot from practicing every day."
+    },
+    {
+     "s": "요즘 일이 늘어서 바빠요.",
+     "en": "I'm busy these days because work has increased."
+    },
+    {
+     "s": "카페 손님이 많이 늘었어요.",
+     "en": "The café has gotten a lot more customers."
+    }
+   ]
+  },
+  {
+   "id": "kv05-149",
+   "t": {
+    "s": "전통"
+   },
+   "pos": "noun",
+   "en": "tradition",
+   "note": "전통적 = traditional (adjectival).",
+   "ex": [
+    {
+     "s": "설날에는 전통 음식을 먹어요.",
+     "en": "We eat traditional food on Lunar New Year."
+    },
+    {
+     "s": "이 시장은 백 년의 전통이 있어요.",
+     "en": "This market has a hundred years of tradition."
+    },
+    {
+     "s": "우리 가족은 전통을 중요하게 생각해요.",
+     "en": "Our family values tradition."
+    }
+   ]
+  },
+  {
+   "id": "kv05-181",
+   "t": {
+    "s": "초반"
+   },
+   "pos": "noun",
+   "en": "early part, beginning",
+   "note": "Opposite: 후반 (latter part).",
+   "ex": [
+    {
+     "s": "저는 삼십 대 초반이에요.",
+     "en": "I'm in my early thirties."
+    },
+    {
+     "s": "영화 초반은 좀 지루했어요.",
+     "en": "The beginning of the movie was a bit boring."
+    },
+    {
+     "s": "경기 초반에 골을 넣었어요.",
+     "en": "We scored a goal early in the game."
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "kv05-195"
+ ],
+ "notes": "Honorific agreement (선생님/팀장님 지적), wrong conjugation in 늘다 note (는→느는), awkward collocations (전통이 오래됐어요, 다음 달 초반), translation fixes; dropped 보고 as duplicate of 보고하다."
+}

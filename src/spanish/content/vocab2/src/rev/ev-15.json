@@ -1,0 +1,61 @@
+{
+ "fix": [
+  {
+   "id": "sv08-ronda",
+   "w": "la ronda",
+   "pos": "noun",
+   "en": "round (drinks, games); rounds",
+   "note": "",
+   "type": [
+    "la ronda",
+    "ronda"
+   ],
+   "ex": [
+    {
+     "es": "Esta ronda la pago yo.",
+     "en": "This round is on me.",
+     "hit": "ronda"
+    },
+    {
+     "es": "Pasamos a la segunda ronda del torneo.",
+     "en": "We made it to the second round of the tournament.",
+     "hit": "ronda"
+    },
+    {
+     "es": "El doctor hace su ronda a las ocho.",
+     "en": "The doctor does his rounds at eight.",
+     "hit": "ronda"
+    }
+   ]
+  },
+  {
+   "id": "sv08-turistico",
+   "w": "turístico",
+   "pos": "adjective",
+   "en": "tourist; touristy",
+   "note": "Feminine: turística.",
+   "type": [
+    "turístico"
+   ],
+   "ex": [
+    {
+     "es": "Ese restaurante es muy turístico y caro.",
+     "en": "That restaurant is very touristy and expensive.",
+     "hit": "turístico"
+    },
+    {
+     "es": "Compramos un paquete turístico a Cancún.",
+     "en": "We bought a vacation package to Cancún.",
+     "hit": "turístico"
+    },
+    {
+     "es": "Mi primo trabaja de guía turístico.",
+     "en": "My cousin works as a tour guide.",
+     "hit": "turístico"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file overall. Added 'rounds' to ronda gloss to cover the hospital example; removed unaccented misspelling from turístico type list."
+}

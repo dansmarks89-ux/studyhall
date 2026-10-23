@@ -1,0 +1,89 @@
+{
+ "fix": [
+  {
+   "id": "sv02-libre",
+   "w": "libre",
+   "pos": "adjective",
+   "en": "free (not busy); available, vacant",
+   "note": "Free of charge is gratis, not libre.",
+   "type": [
+    "libre"
+   ],
+   "ex": [
+    {
+     "es": "¿Estás libre el viernes en la noche?",
+     "en": "Are you free Friday night?",
+     "hit": "libre"
+    },
+    {
+     "es": "En mi tiempo libre me gusta leer.",
+     "en": "In my free time I like to read.",
+     "hit": "libre"
+    },
+    {
+     "es": "Disculpe, ¿está libre este asiento?",
+     "en": "Excuse me, is this seat free?",
+     "hit": "libre"
+    }
+   ]
+  },
+  {
+   "id": "sv02-seguridad",
+   "w": "la seguridad",
+   "pos": "noun",
+   "en": "safety; security",
+   "note": "Cinturón de seguridad = seat belt.",
+   "type": [
+    "la seguridad",
+    "seguridad"
+   ],
+   "ex": [
+    {
+     "es": "Ponte el cinturón de seguridad, por favor.",
+     "en": "Put on your seat belt, please.",
+     "hit": "seguridad"
+    },
+    {
+     "es": "Por seguridad, cambia tu contraseña.",
+     "en": "For security reasons, change your password.",
+     "hit": "seguridad"
+    },
+    {
+     "es": "Hay mucha seguridad en el aeropuerto hoy.",
+     "en": "There's a lot of security at the airport today.",
+     "hit": "seguridad"
+    }
+   ]
+  },
+  {
+   "id": "sv02-interes",
+   "w": "el interés",
+   "pos": "noun",
+   "en": "interest",
+   "note": "Plural: intereses (no accent).",
+   "type": [
+    "el interés",
+    "interés"
+   ],
+   "ex": [
+    {
+     "es": "Kevin no tiene interés en el fútbol.",
+     "en": "Kevin has no interest in soccer.",
+     "hit": "interés"
+    },
+    {
+     "es": "Gracias por su interés en el puesto.",
+     "en": "Thank you for your interest in the position.",
+     "hit": "interés"
+    },
+    {
+     "es": "El banco cobra intereses muy altos por la tarjeta.",
+     "en": "The bank charges really high interest on the card.",
+     "hit": "intereses"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly accurate, natural LatAm Spanish. Fixed a polarity-flipped translation (seat free/taken), a loose 'safety' gloss, and unnatural singular 'mucho interés' for bank interest."
+}

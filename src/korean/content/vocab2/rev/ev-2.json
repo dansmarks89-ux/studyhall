@@ -1,0 +1,167 @@
+{
+ "fix": [
+  {
+   "id": "kv02-4",
+   "t": {
+    "s": "기회"
+   },
+   "pos": "noun",
+   "en": "chance, opportunity",
+   "note": "",
+   "ex": [
+    {
+     "s": "회사에서 좋은 기회가 생겼어요.",
+     "en": "A good opportunity came up at work."
+    },
+    {
+     "s": "다음 기회에 같이 가요.",
+     "en": "Let's go together next time."
+    },
+    {
+     "s": "한국에 갈 기회가 있으면 좋겠어요.",
+     "en": "I hope I get a chance to go to Korea."
+    }
+   ]
+  },
+  {
+   "id": "kv02-14",
+   "t": {
+    "s": "장"
+   },
+   "pos": "noun",
+   "en": "sheet (counter for flat things)",
+   "note": "Use native numbers: 한 장, 두 장. For tickets, photos, paper.",
+   "ex": [
+    {
+     "s": "표 두 장 주세요.",
+     "en": "Two tickets, please."
+    },
+    {
+     "s": "사진 한 장 찍어 주시겠어요?",
+     "en": "Could you take a picture for me?"
+    },
+    {
+     "s": "종이 몇 장 필요해요?",
+     "en": "How many sheets of paper do you need?"
+    }
+   ]
+  },
+  {
+   "id": "kv02-30",
+   "t": {
+    "s": "작가"
+   },
+   "pos": "noun",
+   "en": "writer, author; artist",
+   "note": "",
+   "ex": [
+    {
+     "s": "제가 제일 좋아하는 작가예요.",
+     "en": "They're my favorite author."
+    },
+    {
+     "s": "그 작가 새 책 나왔어요.",
+     "en": "That writer's new book is out."
+    },
+    {
+     "s": "웨이 씨는 웹툰 작가예요.",
+     "en": "Wei is a webtoon artist."
+    }
+   ]
+  },
+  {
+   "id": "kv02-31",
+   "t": {
+    "s": "막다"
+   },
+   "pos": "verb",
+   "en": "to block, stop, prevent",
+   "note": "Passive 막히다: 길이 막혀요 = traffic is jammed.",
+   "ex": [
+    {
+     "s": "차가 길을 막고 있어요.",
+     "en": "A car is blocking the road."
+    },
+    {
+     "s": "물이 새서 수건으로 막았어요.",
+     "en": "Water was leaking, so I blocked it with a towel."
+    },
+    {
+     "s": "엄마가 우리를 못 가게 막았어요.",
+     "en": "Mom stopped us from going."
+    }
+   ]
+  },
+  {
+   "id": "kv02-46",
+   "t": {
+    "s": "저렴하다"
+   },
+   "pos": "adjective",
+   "en": "inexpensive, cheap",
+   "note": "More formal than 싸다; common in shops and ads.",
+   "ex": [
+    {
+     "s": "이 가게가 더 저렴해요.",
+     "en": "This store is cheaper."
+    },
+    {
+     "s": "여기는 점심 메뉴가 저렴하네요.",
+     "en": "The lunch menu here is reasonably priced."
+    },
+    {
+     "s": "저렴한 호텔 찾고 있어요.",
+     "en": "I'm looking for an inexpensive hotel."
+    }
+   ]
+  },
+  {
+   "id": "kv02-59",
+   "t": {
+    "s": "남기다"
+   },
+   "pos": "verb",
+   "en": "to leave (behind); leave (a message)",
+   "note": "",
+   "ex": [
+    {
+     "s": "음식 남기지 마세요.",
+     "en": "Try not to leave any food uneaten."
+    },
+    {
+     "s": "메시지 남겨 주세요.",
+     "en": "Please leave a message."
+    },
+    {
+     "s": "제 케이크도 좀 남겨 주세요.",
+     "en": "Save some cake for me too."
+    }
+   ]
+  },
+  {
+   "id": "kv02-97",
+   "t": {
+    "s": "그대로"
+   },
+   "pos": "adverb",
+   "en": "as it is, the same, exactly",
+   "note": "",
+   "ex": [
+    {
+     "s": "그냥 그대로 두세요.",
+     "en": "Just leave it as it is."
+    },
+    {
+     "s": "10년 전 그대로네요.",
+     "en": "You look just the same as 10 years ago."
+    },
+    {
+     "s": "레시피 그대로 만들었어요.",
+     "en": "I made it exactly by the recipe."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. Fixed unnatural collocations (기회를 받다, 입을 막다 for coughing, 10년 전이랑 그대로), a vague note and three loose translations."
+}

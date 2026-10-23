@@ -1,0 +1,167 @@
+{
+ "fix": [
+  {
+   "id": "kv06-22",
+   "t": {
+    "s": "최소"
+   },
+   "pos": "noun",
+   "en": "minimum, at least",
+   "note": "Often used like 'at least': 최소 한 시간.",
+   "ex": [
+    {
+     "s": "공항까지 최소 한 시간 걸려요.",
+     "en": "It takes at least an hour to the airport."
+    },
+    {
+     "s": "최소 주문 금액이 만 원이에요.",
+     "en": "The minimum order is 10,000 won."
+    },
+    {
+     "s": "하루에 물을 최소 1리터는 마셔요.",
+     "en": "I drink at least a liter of water a day."
+    }
+   ]
+  },
+  {
+   "id": "kv06-24",
+   "t": {
+    "s": "발표"
+   },
+   "pos": "noun",
+   "en": "presentation, announcement",
+   "note": "발표하다 = to present, announce.",
+   "ex": [
+    {
+     "s": "내일 회의에서 발표가 있어요.",
+     "en": "I have a presentation at tomorrow's meeting."
+    },
+    {
+     "s": "발표 준비 때문에 밤을 새웠어요.",
+     "en": "I stayed up all night preparing my presentation."
+    },
+    {
+     "s": "시험 결과 발표가 언제예요?",
+     "en": "When are the exam results announced?"
+    }
+   ]
+  },
+  {
+   "id": "kv06-35",
+   "t": {
+    "s": "오직"
+   },
+   "pos": "adverb",
+   "en": "only, solely",
+   "note": "Emphatic; in casual speech -만 alone is more common.",
+   "ex": [
+    {
+     "s": "아빠는 오직 가족만 생각해요.",
+     "en": "Dad thinks only of his family."
+    },
+    {
+     "s": "이 가게는 오직 현금만 받아요.",
+     "en": "This shop takes cash only."
+    },
+    {
+     "s": "저는 오직 커피만 마셔요.",
+     "en": "I drink nothing but coffee."
+    }
+   ]
+  },
+  {
+   "id": "kv06-44",
+   "t": {
+    "s": "적어도"
+   },
+   "pos": "adverb",
+   "en": "at least",
+   "note": "",
+   "ex": [
+    {
+     "s": "적어도 일주일에 세 번 운동해요.",
+     "en": "I work out at least three times a week."
+    },
+    {
+     "s": "적어도 전화는 했어야죠.",
+     "en": "You should have at least called."
+    },
+    {
+     "s": "거기까지 적어도 삼십 분 걸려요.",
+     "en": "It takes at least thirty minutes to get there."
+    }
+   ]
+  },
+  {
+   "id": "kv06-52",
+   "t": {
+    "s": "페스티벌"
+   },
+   "pos": "noun",
+   "en": "festival",
+   "note": "축제 is the more general Korean word.",
+   "ex": [
+    {
+     "s": "이번 주말에 음악 페스티벌 가요.",
+     "en": "I'm going to a music festival this weekend."
+    },
+    {
+     "s": "페스티벌 표가 다 팔렸어요.",
+     "en": "The festival tickets sold out."
+    },
+    {
+     "s": "작년 페스티벌에서 친구를 만났어요.",
+     "en": "I met my friend at last year's festival."
+    }
+   ]
+  },
+  {
+   "id": "kv06-59",
+   "t": {
+    "s": "신부"
+   },
+   "pos": "noun",
+   "en": "bride; (Catholic) priest",
+   "note": "Bride and groom: 신랑 신부.",
+   "ex": [
+    {
+     "s": "신부가 정말 예뻤어요.",
+     "en": "The bride was really beautiful."
+    },
+    {
+     "s": "신랑 신부 입장!",
+     "en": "Here come the bride and groom!"
+    },
+    {
+     "s": "성당에서 신부님께 인사했어요.",
+     "en": "I said hello to the priest at the Catholic church."
+    }
+   ]
+  },
+  {
+   "id": "kv06-60",
+   "t": {
+    "s": "웃음"
+   },
+   "pos": "noun",
+   "en": "laugh, laughter, smile",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 영화 보고 웃음이 안 멈췄어요.",
+     "en": "I couldn't stop laughing at that movie."
+    },
+    {
+     "s": "아기 웃음소리가 너무 귀여워요.",
+     "en": "The baby's laugh is so cute."
+    },
+    {
+     "s": "회의 중에 웃음을 참았어요.",
+     "en": "I held in a laugh during the meeting."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Fixes: non-standard 샜어요→새웠어요, 웃음소리 spacing, tense mismatch (했어야죠), awkward word order, 축제 wrongly called native Korean, 오직 note, 성당≠cathedral."
+}

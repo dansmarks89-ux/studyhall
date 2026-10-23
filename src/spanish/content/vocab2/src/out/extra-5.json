@@ -1,0 +1,1175 @@
+[
+ {
+  "id": "VM1-12",
+  "w": "la cita",
+  "en": "the appointment",
+  "ex": [
+   {
+    "es": "Necesito cambiar mi cita para el jueves, por favor.",
+    "en": "I need to change my appointment to Thursday, please.",
+    "hit": "cita"
+   },
+   {
+    "es": "Llegue quince minutos antes de su cita, por favor.",
+    "en": "Please arrive fifteen minutes before your appointment.",
+    "hit": "cita"
+   }
+  ]
+ },
+ {
+  "id": "VM1-13",
+  "w": "¿Mande?",
+  "en": "Pardon? / Yes? (Mexico)",
+  "ex": [
+   {
+    "es": "—Señor Ramírez. —¿Mande? —Ya puede pasar, por favor.",
+    "en": "—Mr. Ramírez. —Yes? —You can come in now, please.",
+    "hit": "¿Mande?"
+   },
+   {
+    "es": "¿Mande? ¿Me lo puede repetir más despacio, doctor?",
+    "en": "Pardon? Can you repeat that more slowly, doctor?",
+    "hit": "¿Mande?"
+   }
+  ]
+ },
+ {
+  "id": "VM1-14",
+  "w": "entender (entiende)",
+  "en": "to understand (you understand)",
+  "ex": [
+   {
+    "es": "Perdón, no entiendo. ¿Me lo puede explicar otra vez?",
+    "en": "Sorry, I don't understand. Can you explain it to me again?",
+    "hit": "entiendo"
+   },
+   {
+    "es": "¿Entiende cómo tomar esta pastilla en la mañana?",
+    "en": "Do you understand how to take this pill in the morning?",
+    "hit": "Entiende"
+   }
+  ]
+ },
+ {
+  "id": "VM1-15",
+  "w": "revisar / examinar",
+  "en": "to examine",
+  "ex": [
+   {
+    "es": "Voy a examinar su abdomen; dígame si le duele.",
+    "en": "I'm going to examine your abdomen; tell me if it hurts.",
+    "hit": "examinar"
+   },
+   {
+    "es": "Acuéstese en la camilla, por favor, para revisarle las piernas.",
+    "en": "Please lie down on the exam table so I can examine your legs.",
+    "hit": "revisarle"
+   }
+  ]
+ },
+ {
+  "id": "VM1-16",
+  "w": "la cabeza",
+  "en": "head",
+  "ex": [
+   {
+    "es": "Me duele mucho la cabeza desde la mañana.",
+    "en": "My head has been hurting a lot since this morning.",
+    "hit": "cabeza"
+   },
+   {
+    "es": "¿Se golpeó la cabeza cuando se desmayó?",
+    "en": "Did you hit your head when you fainted?",
+    "hit": "cabeza"
+   }
+  ]
+ },
+ {
+  "id": "VM1-17",
+  "w": "la garganta",
+  "en": "throat",
+  "ex": [
+   {
+    "es": "Tengo la garganta seca y me cuesta tragar.",
+    "en": "My throat is dry and it's hard for me to swallow.",
+    "hit": "garganta"
+   },
+   {
+    "es": "Abra la boca, por favor; voy a ver su garganta.",
+    "en": "Open your mouth, please; I'm going to look at your throat.",
+    "hit": "garganta"
+   }
+  ]
+ },
+ {
+  "id": "VM1-18",
+  "w": "el cuello",
+  "en": "neck",
+  "ex": [
+   {
+    "es": "Voy a escuchar las arterias de su cuello.",
+    "en": "I'm going to listen to the arteries in your neck.",
+    "hit": "cuello"
+   },
+   {
+    "es": "Me duele el cuello cuando volteo la cabeza.",
+    "en": "My neck hurts when I turn my head.",
+    "hit": "cuello"
+   }
+  ]
+ },
+ {
+  "id": "VM1-19",
+  "w": "la mandíbula / la quijada",
+  "en": "jaw",
+  "ex": [
+   {
+    "es": "Siento presión en la quijada cuando camino rápido.",
+    "en": "I feel pressure in my jaw when I walk fast.",
+    "hit": "quijada"
+   },
+   {
+    "es": "¿Le duele la mandíbula al masticar?",
+    "en": "Does your jaw hurt when you chew?",
+    "hit": "mandíbula"
+   }
+  ]
+ },
+ {
+  "id": "VM1-20",
+  "w": "el hombro",
+  "en": "shoulder",
+  "ex": [
+   {
+    "es": "Me duele el hombro derecho desde que me caí.",
+    "en": "My right shoulder has hurt since I fell.",
+    "hit": "hombro"
+   },
+   {
+    "es": "¿Siente el dolor en el hombro o más en el pecho?",
+    "en": "Do you feel the pain in your shoulder or more in your chest?",
+    "hit": "hombro"
+   }
+  ]
+ },
+ {
+  "id": "VM1-21",
+  "w": "el pecho",
+  "en": "chest",
+  "ex": [
+   {
+    "es": "Voy a ponerle unos parches en el pecho para el electrocardiograma.",
+    "en": "I'm going to put some patches on your chest for the EKG.",
+    "hit": "pecho"
+   },
+   {
+    "es": "Me duele el pecho cuando respiro profundo.",
+    "en": "My chest hurts when I take a deep breath.",
+    "hit": "pecho"
+   }
+  ]
+ },
+ {
+  "id": "VM1-22",
+  "w": "el corazón",
+  "en": "heart",
+  "ex": [
+   {
+    "es": "Su corazón está fuerte, pero el ritmo es irregular.",
+    "en": "Your heart is strong, but the rhythm is irregular.",
+    "hit": "corazón"
+   },
+   {
+    "es": "A veces siento que mi corazón brinca, doctor.",
+    "en": "Sometimes I feel my heart jump, doctor.",
+    "hit": "corazón"
+   }
+  ]
+ },
+ {
+  "id": "VM1-23",
+  "w": "los pulmones",
+  "en": "lungs",
+  "ex": [
+   {
+    "es": "La radiografía muestra líquido en los pulmones.",
+    "en": "The X-ray shows fluid in your lungs.",
+    "hit": "pulmones"
+   },
+   {
+    "es": "Sus pulmones se oyen limpios hoy.",
+    "en": "Your lungs sound clear today.",
+    "hit": "pulmones"
+   }
+  ]
+ },
+ {
+  "id": "VM1-24",
+  "w": "el brazo izquierdo",
+  "en": "left arm",
+  "ex": [
+   {
+    "es": "Siento el brazo izquierdo dormido desde anoche.",
+    "en": "My left arm has felt numb since last night.",
+    "hit": "brazo izquierdo"
+   },
+   {
+    "es": "Voy a tomarle la presión en el brazo izquierdo.",
+    "en": "I'm going to take your blood pressure on your left arm.",
+    "hit": "brazo izquierdo"
+   }
+  ]
+ },
+ {
+  "id": "VM1-25",
+  "w": "el brazo derecho",
+  "en": "right arm",
+  "ex": [
+   {
+    "es": "La enfermera le va a sacar sangre del brazo derecho.",
+    "en": "The nurse is going to draw blood from your right arm.",
+    "hit": "brazo derecho"
+   },
+   {
+    "es": "No puedo mover bien el brazo derecho desde ayer.",
+    "en": "I haven't been able to move my right arm well since yesterday.",
+    "hit": "brazo derecho"
+   }
+  ]
+ },
+ {
+  "id": "VM1-26",
+  "w": "la mano",
+  "en": "hand",
+  "ex": [
+   {
+    "es": "Se me duermen los dedos de la mano.",
+    "en": "The fingers on my hand go numb.",
+    "hit": "mano"
+   },
+   {
+    "es": "Deme la mano y levántese despacio, por favor.",
+    "en": "Give me your hand and stand up slowly, please.",
+    "hit": "mano"
+   }
+  ]
+ },
+ {
+  "id": "VM1-27",
+  "w": "la espalda",
+  "en": "back",
+  "ex": [
+   {
+    "es": "El dolor del pecho me pasa a la espalda.",
+    "en": "The chest pain goes through to my back.",
+    "hit": "espalda"
+   },
+   {
+    "es": "Me duele la espalda por cargar cajas en el trabajo.",
+    "en": "My back hurts from carrying boxes at work.",
+    "hit": "espalda"
+   }
+  ]
+ },
+ {
+  "id": "VM1-28",
+  "w": "el estómago / la panza",
+  "en": "stomach / belly",
+  "ex": [
+   {
+    "es": "Me duele la panza después de comer.",
+    "en": "My belly hurts after I eat.",
+    "hit": "panza"
+   },
+   {
+    "es": "Tome esta pastilla con comida para proteger el estómago.",
+    "en": "Take this pill with food to protect your stomach.",
+    "hit": "estómago"
+   }
+  ]
+ },
+ {
+  "id": "VM1-29",
+  "w": "la pierna",
+  "en": "leg",
+  "ex": [
+   {
+    "es": "Tengo la pierna izquierda más hinchada que la derecha.",
+    "en": "My left leg is more swollen than the right one.",
+    "hit": "pierna"
+   },
+   {
+    "es": "Mantenga la pierna derecha estirada por cuatro horas.",
+    "en": "Keep your right leg straight for four hours.",
+    "hit": "pierna"
+   }
+  ]
+ },
+ {
+  "id": "VM1-30",
+  "w": "la rodilla",
+  "en": "knee",
+  "ex": [
+   {
+    "es": "Me operaron de la rodilla el año pasado.",
+    "en": "I had knee surgery last year.",
+    "hit": "rodilla"
+   },
+   {
+    "es": "¿Tiene hinchazón en la rodilla o solo dolor?",
+    "en": "Do you have swelling in your knee, or just pain?",
+    "hit": "rodilla"
+   }
+  ]
+ },
+ {
+  "id": "VM1-31",
+  "w": "el tobillo",
+  "en": "ankle",
+  "ex": [
+   {
+    "es": "Voy a apretar su tobillo para ver si hay hinchazón.",
+    "en": "I'm going to press on your ankle to check for swelling.",
+    "hit": "tobillo"
+   },
+   {
+    "es": "Se me hinchan los tobillos en la tarde.",
+    "en": "My ankles swell in the afternoon.",
+    "hit": "tobillos"
+   }
+  ]
+ },
+ {
+  "id": "VM1-32",
+  "w": "el pie",
+  "en": "foot",
+  "ex": [
+   {
+    "es": "Tengo una herida en el pie que no sana.",
+    "en": "I have a sore on my foot that won't heal.",
+    "hit": "pie"
+   },
+   {
+    "es": "Quítese los zapatos; quiero revisarle los pies.",
+    "en": "Take off your shoes; I want to check your feet.",
+    "hit": "pies"
+   }
+  ]
+ },
+ {
+  "id": "VM1-33",
+  "w": "el dolor",
+  "en": "pain",
+  "ex": [
+   {
+    "es": "¿El dolor es peor en la mañana o en la noche?",
+    "en": "Is the pain worse in the morning or at night?",
+    "hit": "dolor"
+   },
+   {
+    "es": "Le voy a dar algo para el dolor.",
+    "en": "I'm going to give you something for the pain.",
+    "hit": "dolor"
+   }
+  ]
+ },
+ {
+  "id": "VM1-34",
+  "w": "doler (me duele / le duele)",
+  "en": "to hurt (it hurts me / it hurts you)",
+  "ex": [
+   {
+    "es": "Me duele aquí, abajo de las costillas.",
+    "en": "It hurts here, below my ribs.",
+    "hit": "duele"
+   },
+   {
+    "es": "¿Todavía le duele donde le pusieron el catéter?",
+    "en": "Does it still hurt where they put the catheter in?",
+    "hit": "duele"
+   }
+  ]
+ },
+ {
+  "id": "VM1-35",
+  "w": "la falta de aire",
+  "en": "shortness of breath",
+  "ex": [
+   {
+    "es": "En la noche me despierto con falta de aire.",
+    "en": "At night I wake up short of breath.",
+    "hit": "falta de aire"
+   },
+   {
+    "es": "¿La falta de aire es peor que la semana pasada?",
+    "en": "Is the shortness of breath worse than last week?",
+    "hit": "falta de aire"
+   }
+  ]
+ },
+ {
+  "id": "VM1-36",
+  "w": "el mareo",
+  "en": "dizziness",
+  "ex": [
+   {
+    "es": "¿Siente mareo cuando se levanta rápido?",
+    "en": "Do you feel dizzy when you get up quickly?",
+    "hit": "mareo"
+   },
+   {
+    "es": "Me dio un mareo muy fuerte en la regadera.",
+    "en": "I got really dizzy in the shower.",
+    "hit": "mareo"
+   }
+  ]
+ },
+ {
+  "id": "VM1-37",
+  "w": "las náuseas",
+  "en": "nausea",
+  "ex": [
+   {
+    "es": "Esta medicina le puede dar náuseas al principio.",
+    "en": "This medicine can give you nausea at first.",
+    "hit": "náuseas"
+   },
+   {
+    "es": "Tuve náuseas y sudor frío con el dolor de pecho.",
+    "en": "I had nausea and a cold sweat with the chest pain.",
+    "hit": "náuseas"
+   }
+  ]
+ },
+ {
+  "id": "VM1-38",
+  "w": "hinchado / hinchada",
+  "en": "swollen",
+  "ex": [
+   {
+    "es": "Tengo las piernas hinchadas en la noche.",
+    "en": "My legs are swollen at night.",
+    "hit": "hinchadas"
+   },
+   {
+    "es": "¿Siente el estómago hinchado después de comer?",
+    "en": "Does your stomach feel swollen after you eat?",
+    "hit": "hinchado"
+   }
+  ]
+ },
+ {
+  "id": "VM1-39",
+  "w": "del cero al diez",
+  "en": "from zero to ten",
+  "ex": [
+   {
+    "es": "Del cero al diez, yo diría que es un siete.",
+    "en": "From zero to ten, I'd say it's a seven.",
+    "hit": "Del cero al diez"
+   },
+   {
+    "es": "¿Y ahora, del cero al diez, cómo está el dolor?",
+    "en": "And now, from zero to ten, how is the pain?",
+    "hit": "del cero al diez"
+   }
+  ]
+ },
+ {
+  "id": "VM1-40",
+  "w": "leve",
+  "en": "mild",
+  "ex": [
+   {
+    "es": "Tiene una fuga leve en una válvula del corazón.",
+    "en": "You have a mild leak in one of your heart valves.",
+    "hit": "leve"
+   },
+   {
+    "es": "El mareo es leve y se me quita rápido.",
+    "en": "The dizziness is mild and goes away quickly.",
+    "hit": "leve"
+   }
+  ]
+ },
+ {
+  "id": "VM1-41",
+  "w": "fuerte",
+  "en": "strong / severe",
+  "ex": [
+   {
+    "es": "Es un dolor fuerte que no me deja dormir.",
+    "en": "It's a severe pain that won't let me sleep.",
+    "hit": "fuerte"
+   },
+   {
+    "es": "Si el dolor se pone más fuerte, llame al 911.",
+    "en": "If the pain gets stronger, call 911.",
+    "hit": "fuerte"
+   }
+  ]
+ },
+ {
+  "id": "VM1-42",
+  "w": "lunes, martes, miércoles, jueves, viernes, sábado, domingo",
+  "en": "Monday through Sunday",
+  "ex": [
+   {
+    "es": "¿Puede venir el viernes para el ecocardiograma?",
+    "en": "Can you come on Friday for the echocardiogram?",
+    "hit": "viernes"
+   },
+   {
+    "es": "El dolor empezó el domingo en la noche.",
+    "en": "The pain started Sunday night.",
+    "hit": "domingo"
+   }
+  ]
+ },
+ {
+  "id": "VM1-43",
+  "w": "a la una / a las dos y media",
+  "en": "at one o'clock / at two-thirty",
+  "ex": [
+   {
+    "es": "Su ecocardiograma es mañana a las dos y media.",
+    "en": "Your echocardiogram is tomorrow at two-thirty.",
+    "hit": "a las dos y media"
+   },
+   {
+    "es": "Tomé la pastilla a la una de la tarde.",
+    "en": "I took the pill at one in the afternoon.",
+    "hit": "a la una"
+   }
+  ]
+ },
+ {
+  "id": "VM2-0",
+  "w": "empezar (empezó / empecé)",
+  "en": "to start (it started / I started)",
+  "ex": [
+   {
+    "es": "¿El dolor empezó cuando estaba haciendo ejercicio?",
+    "en": "Did the pain start while you were exercising?",
+    "hit": "empezó"
+   },
+   {
+    "es": "Empecé a tomar la pastilla nueva el lunes.",
+    "en": "I started taking the new pill on Monday.",
+    "hit": "Empecé"
+   }
+  ]
+ },
+ {
+  "id": "VM2-1",
+  "w": "comenzar",
+  "en": "to begin",
+  "ex": [
+   {
+    "es": "¿Cuándo comenzaron los mareos, señor?",
+    "en": "When did the dizziness begin, sir?",
+    "hit": "comenzaron"
+   },
+   {
+    "es": "Vamos a comenzar con una dosis baja.",
+    "en": "We're going to begin with a low dose.",
+    "hit": "comenzar"
+   }
+  ]
+ },
+ {
+  "id": "VM2-2",
+  "w": "¿Cuándo empezó?",
+  "en": "When did it start?",
+  "ex": [
+   {
+    "es": "¿Cuándo empezó la falta de aire, señora?",
+    "en": "When did the shortness of breath start, ma'am?",
+    "hit": "¿Cuándo empezó"
+   },
+   {
+    "es": "—Tengo palpitaciones. —¿Cuándo empezó? —Hace como un mes.",
+    "en": "—I have palpitations. —When did it start? —About a month ago.",
+    "hit": "¿Cuándo empezó?"
+   }
+  ]
+ },
+ {
+  "id": "VM2-3",
+  "w": "hace dos días",
+  "en": "two days ago",
+  "ex": [
+   {
+    "es": "Me caí en la casa hace dos días.",
+    "en": "I fell at home two days ago.",
+    "hit": "hace dos días"
+   },
+   {
+    "es": "Dejé de tomar la medicina hace dos días.",
+    "en": "I stopped taking the medicine two days ago.",
+    "hit": "hace dos días"
+   }
+  ]
+ },
+ {
+  "id": "VM2-4",
+  "w": "desde hace una semana",
+  "en": "for a week (and still ongoing)",
+  "ex": [
+   {
+    "es": "Toso en las noches desde hace una semana.",
+    "en": "I've been coughing at night for a week.",
+    "hit": "desde hace una semana"
+   },
+   {
+    "es": "¿Tiene los pies hinchados desde hace una semana?",
+    "en": "Have your feet been swollen for a week?",
+    "hit": "desde hace una semana"
+   }
+  ]
+ },
+ {
+  "id": "VM2-5",
+  "w": "¿Desde cuándo?",
+  "en": "Since when? / How long?",
+  "ex": [
+   {
+    "es": "¿Desde cuándo se siente tan cansado?",
+    "en": "How long have you been feeling so tired?",
+    "hit": "¿Desde cuándo"
+   },
+   {
+    "es": "—Me falta el aire. —¿Desde cuándo? —Desde el sábado.",
+    "en": "—I'm short of breath. —Since when? —Since Saturday.",
+    "hit": "¿Desde cuándo?"
+   }
+  ]
+ },
+ {
+  "id": "VM2-6",
+  "w": "anoche",
+  "en": "last night",
+  "ex": [
+   {
+    "es": "¿Tomó su pastilla anoche antes de dormir?",
+    "en": "Did you take your pill last night before bed?",
+    "hit": "anoche"
+   },
+   {
+    "es": "Anoche me desperté con el corazón muy rápido.",
+    "en": "Last night I woke up with my heart racing.",
+    "hit": "Anoche"
+   }
+  ]
+ },
+ {
+  "id": "VM2-7",
+  "w": "ayer en la tarde",
+  "en": "yesterday afternoon",
+  "ex": [
+   {
+    "es": "Me dio el mareo ayer en la tarde, en el trabajo.",
+    "en": "I got dizzy yesterday afternoon, at work.",
+    "hit": "ayer en la tarde"
+   },
+   {
+    "es": "¿Qué estaba haciendo ayer en la tarde cuando empezó?",
+    "en": "What were you doing yesterday afternoon when it started?",
+    "hit": "ayer en la tarde"
+   }
+  ]
+ },
+ {
+  "id": "VM2-8",
+  "w": "la semana pasada",
+  "en": "last week",
+  "ex": [
+   {
+    "es": "¿Cómo se ha sentido desde la semana pasada?",
+    "en": "How have you been feeling since last week?",
+    "hit": "la semana pasada"
+   },
+   {
+    "es": "La semana pasada me cambiaron la dosis.",
+    "en": "Last week they changed my dose.",
+    "hit": "La semana pasada"
+   }
+  ]
+ },
+ {
+  "id": "VM2-9",
+  "w": "el mes pasado",
+  "en": "last month",
+  "ex": [
+   {
+    "es": "Me hicieron una prueba de esfuerzo el mes pasado.",
+    "en": "I had a stress test last month.",
+    "hit": "el mes pasado"
+   },
+   {
+    "es": "¿Ha bajado de peso desde el mes pasado?",
+    "en": "Have you lost weight since last month?",
+    "hit": "el mes pasado"
+   }
+  ]
+ },
+ {
+  "id": "VM2-10",
+  "w": "la primera vez",
+  "en": "the first time",
+  "ex": [
+   {
+    "es": "Es la primera vez que el corazón me late así.",
+    "en": "It's the first time my heart has beaten like this.",
+    "hit": "la primera vez"
+   },
+   {
+    "es": "¿Cuándo fue la primera vez que sintió las palpitaciones?",
+    "en": "When was the first time you felt the palpitations?",
+    "hit": "la primera vez"
+   }
+  ]
+ },
+ {
+  "id": "VM2-11",
+  "w": "la última vez",
+  "en": "the last time",
+  "ex": [
+   {
+    "es": "La última vez que me desmayé fue en enero.",
+    "en": "The last time I fainted was in January.",
+    "hit": "La última vez"
+   },
+   {
+    "es": "¿Le dio el mismo dolor la última vez?",
+    "en": "Did you get the same pain the last time?",
+    "hit": "la última vez"
+   }
+  ]
+ },
+ {
+  "id": "VM2-12",
+  "w": "otra vez",
+  "en": "again",
+  "ex": [
+   {
+    "es": "Si le pasa otra vez, venga a urgencias.",
+    "en": "If it happens again, come to the ER.",
+    "hit": "otra vez"
+   },
+   {
+    "es": "Respire hondo otra vez, por favor.",
+    "en": "Take a deep breath again, please.",
+    "hit": "otra vez"
+   }
+  ]
+ },
+ {
+  "id": "VM2-13",
+  "w": "durar (duró)",
+  "en": "to last (it lasted)",
+  "ex": [
+   {
+    "es": "El mareo me duró como cinco minutos.",
+    "en": "The dizziness lasted about five minutes.",
+    "hit": "duró"
+   },
+   {
+    "es": "¿Cuánto duran las palpitaciones, segundos u horas?",
+    "en": "How long do the palpitations last, seconds or hours?",
+    "hit": "duran"
+   }
+  ]
+ },
+ {
+  "id": "VM2-14",
+  "w": "de repente",
+  "en": "suddenly",
+  "ex": [
+   {
+    "es": "De repente sentí el corazón muy acelerado.",
+    "en": "Suddenly I felt my heart racing.",
+    "hit": "De repente"
+   },
+   {
+    "es": "¿Se desmayó de repente o sintió algo antes?",
+    "en": "Did you faint suddenly, or did you feel something before?",
+    "hit": "de repente"
+   }
+  ]
+ },
+ {
+  "id": "VM2-15",
+  "w": "poco a poco",
+  "en": "gradually",
+  "ex": [
+   {
+    "es": "Vamos a subir la dosis poco a poco.",
+    "en": "We're going to raise the dose gradually.",
+    "hit": "poco a poco"
+   },
+   {
+    "es": "La hinchazón de las piernas empeoró poco a poco.",
+    "en": "The swelling in my legs got worse gradually.",
+    "hit": "poco a poco"
+   }
+  ]
+ },
+ {
+  "id": "VM2-16",
+  "w": "constante",
+  "en": "constant",
+  "ex": [
+   {
+    "es": "Tengo un dolor constante en el pecho desde ayer.",
+    "en": "I've had constant pain in my chest since yesterday.",
+    "hit": "constante"
+   },
+   {
+    "es": "¿El mareo es constante o solo cuando se levanta?",
+    "en": "Is the dizziness constant, or only when you stand up?",
+    "hit": "constante"
+   }
+  ]
+ },
+ {
+  "id": "VM2-17",
+  "w": "va y viene",
+  "en": "it comes and goes",
+  "ex": [
+   {
+    "es": "El mareo va y viene durante el día.",
+    "en": "The dizziness comes and goes during the day.",
+    "hit": "va y viene"
+   },
+   {
+    "es": "¿Las palpitaciones son constantes o van y vienen?",
+    "en": "Are the palpitations constant, or do they come and go?",
+    "hit": "van y vienen"
+   }
+  ]
+ },
+ {
+  "id": "VM2-18",
+  "w": "la opresión",
+  "en": "pressure / tightness",
+  "ex": [
+   {
+    "es": "¿Siente la opresión al caminar o también en reposo?",
+    "en": "Do you feel the tightness when you walk, or also at rest?",
+    "hit": "opresión"
+   },
+   {
+    "es": "La opresión se me quitó cuando me senté.",
+    "en": "The tightness went away when I sat down.",
+    "hit": "opresión"
+   }
+  ]
+ },
+ {
+  "id": "VM2-19",
+  "w": "la presión",
+  "en": "pressure",
+  "ex": [
+   {
+    "es": "Siento una presión fuerte aquí, en el pecho.",
+    "en": "I feel a strong pressure here, in my chest.",
+    "hit": "presión"
+   },
+   {
+    "es": "¿La presión en el pecho se le va al brazo?",
+    "en": "Does the pressure in your chest go to your arm?",
+    "hit": "presión"
+   }
+  ]
+ },
+ {
+  "id": "VM2-20",
+  "w": "como un peso",
+  "en": "like a weight",
+  "ex": [
+   {
+    "es": "Siento como un peso en el pecho al caminar.",
+    "en": "I feel something like a weight on my chest when I walk.",
+    "hit": "como un peso"
+   },
+   {
+    "es": "¿Es como un peso o más como una punzada?",
+    "en": "Is it like a weight, or more like a stabbing pain?",
+    "hit": "como un peso"
+   }
+  ]
+ },
+ {
+  "id": "VM2-21",
+  "w": "apretado",
+  "en": "tight",
+  "ex": [
+   {
+    "es": "Es un dolor apretado, como una banda.",
+    "en": "It's a tight pain, like a band.",
+    "hit": "apretado"
+   },
+   {
+    "es": "¿Siente el pecho apretado también en reposo?",
+    "en": "Does your chest feel tight at rest, too?",
+    "hit": "apretado"
+   }
+  ]
+ },
+ {
+  "id": "VM2-22",
+  "w": "el ardor",
+  "en": "burning",
+  "ex": [
+   {
+    "es": "¿El ardor sube del estómago a la garganta?",
+    "en": "Does the burning rise from your stomach to your throat?",
+    "hit": "ardor"
+   },
+   {
+    "es": "Siento ardor en el pecho cuando me acuesto después de cenar.",
+    "en": "I feel burning in my chest when I lie down after dinner.",
+    "hit": "ardor"
+   }
+  ]
+ },
+ {
+  "id": "VM2-23",
+  "w": "la punzada",
+  "en": "a sharp, stabbing pain",
+  "ex": [
+   {
+    "es": "Siento una punzada cuando respiro hondo.",
+    "en": "I feel a stabbing pain when I breathe deeply.",
+    "hit": "punzada"
+   },
+   {
+    "es": "¿La punzada dura segundos o minutos?",
+    "en": "Does the stabbing pain last seconds or minutes?",
+    "hit": "punzada"
+   }
+  ]
+ },
+ {
+  "id": "VM2-24",
+  "w": "el centro del pecho",
+  "en": "the middle of the chest",
+  "ex": [
+   {
+    "es": "¿El dolor está en el centro del pecho o a un lado?",
+    "en": "Is the pain in the middle of your chest or off to one side?",
+    "hit": "el centro del pecho"
+   },
+   {
+    "es": "Ponga la mano donde le duele: ¿en el centro del pecho?",
+    "en": "Put your hand where it hurts: in the middle of your chest?",
+    "hit": "el centro del pecho"
+   }
+  ]
+ },
+ {
+  "id": "VM2-25",
+  "w": "se le corre / se le va (a)",
+  "en": "it spreads / it goes (to) — asking the patient",
+  "ex": [
+   {
+    "es": "¿Se le va el dolor a la espalda?",
+    "en": "Does the pain go to your back?",
+    "hit": "Se le va"
+   },
+   {
+    "es": "Cuando le duele, ¿se le corre al cuello o a la quijada?",
+    "en": "When it hurts, does it spread to your neck or jaw?",
+    "hit": "se le corre"
+   }
+  ]
+ },
+ {
+  "id": "VM2-26",
+  "w": "se me corre / se me va (a)",
+  "en": "it spreads / it goes (to) — patient speaking",
+  "ex": [
+   {
+    "es": "El dolor se me corre por todo el brazo izquierdo.",
+    "en": "The pain spreads down my whole left arm.",
+    "hit": "se me corre"
+   },
+   {
+    "es": "Empieza en el pecho y se me va a la espalda.",
+    "en": "It starts in my chest and goes to my back.",
+    "hit": "se me va"
+   }
+  ]
+ },
+ {
+  "id": "VM2-27",
+  "w": "al caminar",
+  "en": "when walking",
+  "ex": [
+   {
+    "es": "¿Siente dolor en las piernas al caminar?",
+    "en": "Do you feel pain in your legs when walking?",
+    "hit": "al caminar"
+   },
+   {
+    "es": "Al caminar rápido, me empieza el dolor de pecho.",
+    "en": "When I walk fast, the chest pain starts.",
+    "hit": "Al caminar"
+   }
+  ]
+ },
+ {
+  "id": "VM2-28",
+  "w": "al subir escaleras",
+  "en": "when climbing stairs",
+  "ex": [
+   {
+    "es": "¿Se cansa más que antes al subir escaleras?",
+    "en": "Do you get more tired than before when climbing stairs?",
+    "hit": "al subir escaleras"
+   },
+   {
+    "es": "Al subir escaleras, tengo que parar a descansar.",
+    "en": "When I climb stairs, I have to stop and rest.",
+    "hit": "Al subir escaleras"
+   }
+  ]
+ },
+ {
+  "id": "VM2-29",
+  "w": "al acostarse",
+  "en": "when lying down",
+  "ex": [
+   {
+    "es": "¿Necesita más almohadas al acostarse para poder respirar?",
+    "en": "Do you need more pillows when you lie down so you can breathe?",
+    "hit": "al acostarse"
+   },
+   {
+    "es": "¿Siente más las palpitaciones al acostarse?",
+    "en": "Do you feel the palpitations more when you lie down?",
+    "hit": "al acostarse"
+   }
+  ]
+ },
+ {
+  "id": "VM2-30",
+  "w": "con el esfuerzo",
+  "en": "with exertion",
+  "ex": [
+   {
+    "es": "La falta de aire me da solo con el esfuerzo.",
+    "en": "I only get short of breath with exertion.",
+    "hit": "con el esfuerzo"
+   },
+   {
+    "es": "¿Siente mareo con el esfuerzo, como al cargar algo pesado?",
+    "en": "Do you feel dizzy with exertion, like when lifting something heavy?",
+    "hit": "con el esfuerzo"
+   }
+  ]
+ },
+ {
+  "id": "VM2-31",
+  "w": "en reposo",
+  "en": "at rest",
+  "ex": [
+   {
+    "es": "Ahora el dolor me da también en reposo.",
+    "en": "Now the pain comes on even at rest.",
+    "hit": "en reposo"
+   },
+   {
+    "es": "Su frecuencia cardíaca en reposo está un poco alta.",
+    "en": "Your resting heart rate is a little high.",
+    "hit": "en reposo"
+   }
+  ]
+ },
+ {
+  "id": "VM2-32",
+  "w": "descansar / el descanso",
+  "en": "to rest / rest",
+  "ex": [
+   {
+    "es": "Después del procedimiento, descanse dos días en casa.",
+    "en": "After the procedure, rest at home for two days.",
+    "hit": "descanse"
+   },
+   {
+    "es": "Con el descanso, el dolor se me quita en minutos.",
+    "en": "With rest, the pain goes away in minutes.",
+    "hit": "descanso"
+   }
+  ]
+ },
+ {
+  "id": "VM2-33",
+  "w": "se le quita / se me quita",
+  "en": "it goes away (for you / for me)",
+  "ex": [
+   {
+    "es": "Cuando me siento, se me quita el dolor.",
+    "en": "When I sit down, the pain goes away.",
+    "hit": "se me quita"
+   },
+   {
+    "es": "¿Se le quita la falta de aire con el inhalador?",
+    "en": "Does the shortness of breath go away with the inhaler?",
+    "hit": "Se le quita"
+   }
+  ]
+ },
+ {
+  "id": "VM2-34",
+  "w": "empeorar",
+  "en": "to get worse",
+  "ex": [
+   {
+    "es": "Si la hinchazón empeora, llámenos enseguida.",
+    "en": "If the swelling gets worse, call us right away.",
+    "hit": "empeora"
+   },
+   {
+    "es": "La falta de aire empeoró en los últimos tres días.",
+    "en": "The shortness of breath got worse over the last three days.",
+    "hit": "empeoró"
+   }
+  ]
+ },
+ {
+  "id": "VM2-35",
+  "w": "mejorar",
+  "en": "to get better",
+  "ex": [
+   {
+    "es": "¿Ha mejorado la falta de aire con la nueva medicina?",
+    "en": "Has the shortness of breath gotten better with the new medicine?",
+    "hit": "mejorado"
+   },
+   {
+    "es": "Las palpitaciones mejoraron después del procedimiento.",
+    "en": "The palpitations got better after the procedure.",
+    "hit": "mejoraron"
+   }
+  ]
+ },
+ {
+  "id": "VM2-36",
+  "w": "sentir (sintió / sentí)",
+  "en": "to feel (you felt / I felt)",
+  "ex": [
+   {
+    "es": "Sentí el corazón muy rápido y me asusté.",
+    "en": "I felt my heart racing and got scared.",
+    "hit": "Sentí"
+   },
+   {
+    "es": "¿Sintió dolor de pecho antes de desmayarse?",
+    "en": "Did you feel chest pain before you fainted?",
+    "hit": "Sintió"
+   }
+  ]
+ }
+]

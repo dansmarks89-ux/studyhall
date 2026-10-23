@@ -1,0 +1,98 @@
+{
+ "fix": [
+  {
+   "id": "kv09-121",
+   "t": {
+    "s": "풍부하다"
+   },
+   "pos": "adjective",
+   "en": "rich, plentiful, abundant",
+   "note": "",
+   "ex": [
+    {
+     "s": "이 과일은 비타민이 풍부해요.",
+     "en": "This fruit is rich in vitamins."
+    },
+    {
+     "s": "그 선생님은 경험이 풍부해요.",
+     "en": "That teacher has a lot of experience."
+    },
+    {
+     "s": "제 친구는 표정이 정말 풍부해요.",
+     "en": "My friend has a really expressive face."
+    }
+   ]
+  },
+  {
+   "id": "kv09-122",
+   "t": {
+    "s": "더하다"
+   },
+   "pos": "verb",
+   "en": "to add",
+   "note": "",
+   "ex": [
+    {
+     "s": "2에 3을 더하면 5예요.",
+     "en": "If you add 3 to 2, you get 5."
+    },
+    {
+     "s": "두 사람 점수를 더하면 몇 점이에요?",
+     "en": "If you add up both people's scores, what's the total?"
+    },
+    {
+     "s": "이 가격에 배송비를 더해야 해요.",
+     "en": "You have to add shipping to this price."
+    }
+   ]
+  },
+  {
+   "id": "kv09-124",
+   "t": {
+    "s": "찌르다"
+   },
+   "pos": "verb",
+   "en": "to prick, poke, stab",
+   "note": "르-irregular: 찔러요; 찔리다 = to get pricked.",
+   "ex": [
+    {
+     "s": "포크로 찔러 보면 익었는지 알 수 있어요.",
+     "en": "Poke it with a fork to see if it's cooked."
+    },
+    {
+     "s": "친구가 제 옆구리를 쿡 찔렀어요.",
+     "en": "My friend poked me in the side."
+    },
+    {
+     "s": "부엌에서 냄새가 코를 찔러요.",
+     "en": "The smell from the kitchen stings my nose."
+    }
+   ]
+  },
+  {
+   "id": "kv09-161",
+   "t": {
+    "s": "교과서"
+   },
+   "pos": "noun",
+   "en": "textbook",
+   "note": "",
+   "ex": [
+    {
+     "s": "교과서 몇 쪽이에요?",
+     "en": "What page in the textbook?"
+    },
+    {
+     "s": "교과서를 집에 두고 왔어요.",
+     "en": "I left my textbook at home."
+    },
+    {
+     "s": "동생이 교과서에 낙서를 했어요.",
+     "en": "My little brother doodled in his textbook."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean overall. Replaced passive 찔리다 example with active 찌르다; unnatural 소금을 더하다 and confusing English-textbook example replaced; fixed 'expressive faces' translation."
+}

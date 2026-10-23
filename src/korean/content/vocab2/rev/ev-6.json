@@ -1,0 +1,167 @@
+{
+ "fix": [
+  {
+   "id": "kv04-19",
+   "t": {
+    "s": "미리"
+   },
+   "pos": "adverb",
+   "en": "in advance, ahead of time",
+   "note": "",
+   "ex": [
+    {
+     "s": "미리 예약하는 게 좋아요.",
+     "en": "It's better to book in advance."
+    },
+    {
+     "s": "늦으면 미리 연락 주세요.",
+     "en": "If you're running late, let me know ahead of time."
+    },
+    {
+     "s": "미리 말해 줘서 고마워요.",
+     "en": "Thanks for telling me ahead of time."
+    }
+   ]
+  },
+  {
+   "id": "kv04-35",
+   "t": {
+    "s": "직업"
+   },
+   "pos": "noun",
+   "en": "job, occupation",
+   "note": "",
+   "ex": [
+    {
+     "s": "직업이 뭐예요?",
+     "en": "What do you do for a living?"
+    },
+    {
+     "s": "제 직업은 간호사예요.",
+     "en": "I'm a nurse by profession."
+    },
+    {
+     "s": "아빠는 직업상 출장이 많아요.",
+     "en": "My dad travels a lot for work."
+    }
+   ]
+  },
+  {
+   "id": "kv04-36",
+   "t": {
+    "s": "기쁘다"
+   },
+   "pos": "adjective",
+   "en": "glad, happy",
+   "note": "으-irregular: 기뻐요. For someone else's joy, use 기뻐하다.",
+   "ex": [
+    {
+     "s": "다시 만나서 정말 기뻐요.",
+     "en": "I'm so happy to see you again."
+    },
+    {
+     "s": "합격 소식을 듣고 정말 기뻤어요.",
+     "en": "I was so happy to hear I'd passed."
+    },
+    {
+     "s": "선물을 받아서 너무 기뻐요.",
+     "en": "I'm so happy to get a present."
+    }
+   ]
+  },
+  {
+   "id": "kv04-53",
+   "t": {
+    "s": "멈추다"
+   },
+   "pos": "verb",
+   "en": "to stop",
+   "note": "",
+   "ex": [
+    {
+     "s": "엘리베이터가 갑자기 멈췄어요.",
+     "en": "The elevator suddenly stopped."
+    },
+    {
+     "s": "택시가 집 앞에서 멈췄어요.",
+     "en": "The taxi stopped in front of the house."
+    },
+    {
+     "s": "컴퓨터가 자꾸 멈춰요.",
+     "en": "My computer keeps freezing."
+    }
+   ]
+  },
+  {
+   "id": "kv04-54",
+   "t": {
+    "s": "편지"
+   },
+   "pos": "noun",
+   "en": "letter",
+   "note": "",
+   "ex": [
+    {
+     "s": "할머니한테 편지를 썼어요.",
+     "en": "I wrote a letter to my grandma."
+    },
+    {
+     "s": "생일 선물에 짧은 편지를 같이 넣었어요.",
+     "en": "I tucked a short letter in with the birthday present."
+    },
+    {
+     "s": "요즘은 편지 대신 문자를 보내요.",
+     "en": "These days people text instead of writing letters."
+    }
+   ]
+  },
+  {
+   "id": "kv04-66",
+   "t": {
+    "s": "그러니까"
+   },
+   "pos": "conjunction",
+   "en": "so, that's why; I mean",
+   "note": "",
+   "ex": [
+    {
+     "s": "비가 와요. 그러니까 우산 가져가세요.",
+     "en": "It's raining, so take an umbrella."
+    },
+    {
+     "s": "그러니까 제가 미리 말했잖아요.",
+     "en": "See? I told you ahead of time."
+    },
+    {
+     "s": "그러니까 제 말은, 내일 하자는 거예요.",
+     "en": "I mean, what I'm saying is let's do it tomorrow."
+    }
+   ]
+  },
+  {
+   "id": "kv04-75",
+   "t": {
+    "s": "평균"
+   },
+   "pos": "noun",
+   "en": "average",
+   "note": "",
+   "ex": [
+    {
+     "s": "하루에 평균 몇 시간 자요?",
+     "en": "How many hours a day do you sleep on average?"
+    },
+    {
+     "s": "이번 시험 평균은 70점이었어요.",
+     "en": "The average on this test was 70."
+    },
+    {
+     "s": "여기 월세가 평균보다 비싸요.",
+     "en": "Rent here is higher than average."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Replaced calques/unnatural lines: 도와줘서 미리 고마워요, 만나서 기뻐요 (greeting is 반가워요), 비가 멈추면 (그치다), 보통 평균 redundancy, 직업 때문에; fixed 그러니까 mistranslation."
+}

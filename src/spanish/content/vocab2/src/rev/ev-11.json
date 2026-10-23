@@ -1,0 +1,144 @@
+{
+ "fix": [
+  {
+   "id": "sv06-encargar",
+   "w": "encargar",
+   "pos": "verb",
+   "en": "to order (goods); to entrust",
+   "note": "Mexico: ¿Te encargo...? = Can you watch...? Encargarse de = to take care of.",
+   "type": [
+    "encargar"
+   ],
+   "ex": [
+    {
+     "es": "Encargué un pastel para la fiesta de Mei.",
+     "en": "I ordered a cake for Mei's party.",
+     "hit": "Encargué"
+    },
+    {
+     "es": "¿Te encargo mis llaves mientras voy al baño?",
+     "en": "Can you watch my keys while I go to the restroom?",
+     "hit": "encargo"
+    },
+    {
+     "es": "Mi jefe me encargó el informe del mes.",
+     "en": "My boss put me in charge of the monthly report.",
+     "hit": "encargó"
+    }
+   ]
+  },
+  {
+   "id": "sv06-marido",
+   "w": "el marido",
+   "pos": "noun",
+   "en": "husband",
+   "note": "In Mexico el esposo is more common, especially in polite speech.",
+   "type": [
+    "el marido",
+    "marido",
+    "el esposo",
+    "esposo"
+   ],
+   "ex": [
+    {
+     "es": "Mi marido cocina los domingos.",
+     "en": "My husband cooks on Sundays.",
+     "hit": "marido"
+    },
+    {
+     "es": "Ana vino a la fiesta con su marido.",
+     "en": "Ana came to the party with her husband.",
+     "hit": "marido"
+    },
+    {
+     "es": "Le compré una corbata a mi marido.",
+     "en": "I bought my husband a tie.",
+     "hit": "marido"
+    }
+   ]
+  },
+  {
+   "id": "sv06-obvio",
+   "w": "obvio",
+   "pos": "adjective",
+   "en": "obvious",
+   "note": "¡Obvio! alone = Of course! (casual). Feminine: obvia.",
+   "type": [
+    "obvio"
+   ],
+   "ex": [
+    {
+     "es": "Es obvio que está enojado.",
+     "en": "It's obvious that he's angry.",
+     "hit": "obvio"
+    },
+    {
+     "es": "—¿Vienes a la fiesta? —¡Obvio!",
+     "en": "\"Are you coming to the party?\" \"Obviously!\"",
+     "hit": "Obvio"
+    },
+    {
+     "es": "La respuesta era obvia, pero no la vi.",
+     "en": "The answer was obvious, but I didn't see it.",
+     "hit": "obvia"
+    }
+   ]
+  },
+  {
+   "id": "sv06-violento",
+   "w": "violento",
+   "pos": "adjective",
+   "en": "violent; rough",
+   "note": "Feminine: violenta.",
+   "type": [
+    "violento"
+   ],
+   "ex": [
+    {
+     "es": "No me gustan las películas violentas.",
+     "en": "I don't like violent movies.",
+     "hit": "violentas"
+    },
+    {
+     "es": "Fue un partido muy violento, hubo tres expulsados.",
+     "en": "It was a really violent game; three players were sent off.",
+     "hit": "violento"
+    },
+    {
+     "es": "No seas violento con el perro, Diego.",
+     "en": "Don't be rough with the dog, Diego.",
+     "hit": "violento"
+    }
+   ]
+  },
+  {
+   "id": "sv06-amenazar",
+   "w": "amenazar",
+   "pos": "verb",
+   "en": "to threaten",
+   "note": "Amenazar con + infinitive = to threaten to.",
+   "type": [
+    "amenazar"
+   ],
+   "ex": [
+    {
+     "es": "Lleva toda la tarde amenazando con llover.",
+     "en": "It's been threatening to rain all afternoon.",
+     "hit": "amenazando"
+    },
+    {
+     "es": "Mi jefe amenazó con cancelar las vacaciones.",
+     "en": "My boss threatened to cancel the vacation.",
+     "hit": "amenazó"
+    },
+    {
+     "es": "Mi hermana me amenazó con decirle a mamá.",
+     "en": "My sister threatened to tell Mom.",
+     "hit": "amenazó"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. Fixed Mexican encargar pattern (te encargo), dialogue dash, unnatural \"viento violento\" and \"está amenazando con llover\", and the marido/esposo note."
+}

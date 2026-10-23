@@ -1,0 +1,23 @@
+{
+ "fix": [
+  {
+   "id": "VM4-30",
+   "w": "la apnea del sueño",
+   "en": "sleep apnea",
+   "ex": [
+    {
+     "es": "Si ronca y tiene sueño en el día, puede tener apnea del sueño.",
+     "en": "If you snore and feel sleepy during the day, you may have sleep apnea.",
+     "hit": "apnea del sueño"
+    },
+    {
+     "es": "La apnea del sueño puede afectar el ritmo del corazón.",
+     "en": "Sleep apnea can affect your heart rhythm.",
+     "hit": "apnea del sueño"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "High quality overall; one clinical-accuracy fix: sleep apnea cue is daytime sleepiness (tiene sueño), not just tiredness."
+}

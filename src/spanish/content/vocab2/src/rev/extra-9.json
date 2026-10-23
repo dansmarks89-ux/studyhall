@@ -1,0 +1,40 @@
+{
+ "fix": [
+  {
+   "id": "VM8-3",
+   "w": "el pegamento para la piel",
+   "en": "skin glue",
+   "ex": [
+    {
+     "es": "El pegamento para la piel se cae solo en una o dos semanas.",
+     "en": "The skin glue comes off on its own in one to two weeks.",
+     "hit": "pegamento para la piel"
+    },
+    {
+     "es": "No le ponga cremas al pegamento para la piel.",
+     "en": "Don't put creams on the skin glue.",
+     "hit": "pegamento para la piel"
+    }
+   ]
+  },
+  {
+   "id": "VM8-17",
+   "w": "rojo y caliente",
+   "en": "red and warm",
+   "ex": [
+    {
+     "es": "¿Tiene la pierna roja y caliente?",
+     "en": "Is your leg red and warm?",
+     "hit": "roja y caliente"
+    },
+    {
+     "es": "Tengo el brazo rojo y caliente desde ayer.",
+     "en": "My arm has been red and warm since yesterday.",
+     "hit": "rojo y caliente"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean overall. Fixed skin-glue timing (falls off in 1-2 weeks, not ~2) and a less natural patient line (El brazo está -> Tengo el brazo)."
+}

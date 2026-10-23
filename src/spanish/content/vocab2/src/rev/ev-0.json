@@ -1,0 +1,89 @@
+{
+ "fix": [
+  {
+   "id": "sv01-ano",
+   "w": "el año",
+   "pos": "noun",
+   "en": "year",
+   "note": "Always write the ñ: ano (no tilde) means 'anus'.",
+   "type": [
+    "el año",
+    "año"
+   ],
+   "ex": [
+    {
+     "es": "¿Cuántos años tiene tu hija?",
+     "en": "How old is your daughter?",
+     "hit": "años"
+    },
+    {
+     "es": "El año pasado fuimos a Perú.",
+     "en": "Last year we went to Peru.",
+     "hit": "año"
+    },
+    {
+     "es": "¡Feliz Año Nuevo a todos!",
+     "en": "Happy New Year, everyone!",
+     "hit": "Año"
+    }
+   ]
+  },
+  {
+   "id": "sv01-donde",
+   "w": "donde",
+   "pos": "adverb",
+   "en": "where",
+   "note": "No accent in statements; questions use ¿dónde?",
+   "type": [
+    "donde"
+   ],
+   "ex": [
+    {
+     "es": "Esa es la casa donde crecí.",
+     "en": "That's the house where I grew up.",
+     "hit": "donde"
+    },
+    {
+     "es": "El restaurante donde comimos estaba buenísimo.",
+     "en": "The restaurant where we ate was amazing.",
+     "hit": "donde"
+    },
+    {
+     "es": "Vamos al parque donde jugábamos de niños.",
+     "en": "Let's go to the park where we played as kids.",
+     "hit": "donde"
+    }
+   ]
+  },
+  {
+   "id": "sv01-mujer",
+   "w": "la mujer",
+   "pos": "noun",
+   "en": "woman; wife",
+   "note": "mi mujer = my wife (casual); mi esposa is the neutral, safe choice.",
+   "type": [
+    "la mujer",
+    "mujer"
+   ],
+   "ex": [
+    {
+     "es": "Esa mujer es mi jefa.",
+     "en": "That woman is my boss.",
+     "hit": "mujer"
+    },
+    {
+     "es": "Hay una mujer esperándote afuera.",
+     "en": "There's a woman waiting for you outside.",
+     "hit": "mujer"
+    },
+    {
+     "es": "Mi mujer cocina mejor que yo.",
+     "en": "My wife cooks better than I do.",
+     "hit": "mujer"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Clean file. Fixed the año note (ano = anus), donde pos (relative adverb), and softened the mujer/esposa register note."
+}

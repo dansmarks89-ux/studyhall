@@ -1,0 +1,106 @@
+{
+ "fix": [
+  {
+   "id": "L7-v-18",
+   "t": {
+    "s": "生日",
+    "r": "saang1 jat6"
+   },
+   "en": "birthday",
+   "ex": [
+    {
+     "s": "祝你生日快樂！",
+     "r": "zuk1 nei5 saang1 jat6 faai3 lok6",
+     "en": "Happy birthday!"
+    },
+    {
+     "s": "今日係我老婆生日。",
+     "r": "gam1 jat6 hai6 ngo5 lou5 po4 saang1 jat6",
+     "en": "Today is my wife's birthday."
+    },
+    {
+     "s": "我哋去餐廳幫佢做生日。",
+     "r": "ngo5 dei6 heoi3 caan1 teng1 bong1 keoi5 zou6 saang1 jat6",
+     "en": "We're celebrating his birthday at a restaurant."
+    }
+   ]
+  },
+  {
+   "id": "L7-v-34",
+   "t": {
+    "s": "之後",
+    "r": "zi1 hau6"
+   },
+   "en": "after / afterwards",
+   "ex": [
+    {
+     "s": "放工之後我去健身室。",
+     "r": "fong3 gung1 zi1 hau6 ngo5 heoi3 gin6 san1 sat1",
+     "en": "After work I go to the gym."
+    },
+    {
+     "s": "食完飯之後一齊去行街啦。",
+     "r": "sik6 jyun4 faan6 zi1 hau6 jat1 cai4 heoi3 haang4 gaai1 laa1",
+     "en": "After dinner, let's go shopping together."
+    },
+    {
+     "s": "佢去咗美國，之後就冇再見過佢。",
+     "r": "keoi5 heoi3 zo2 mei5 gwok3 zi1 hau6 zau6 mou5 zoi3 gin3 gwo3 keoi5",
+     "en": "He went to America, and after that I never saw him again."
+    }
+   ]
+  },
+  {
+   "id": "L8-v-28",
+   "t": {
+    "s": "一個禮拜兩次",
+    "r": "jat1 go3 lai5 baai3 loeng5 ci3"
+   },
+   "en": "twice a week",
+   "ex": [
+    {
+     "s": "「你幾耐去一次健身室呀？」「一個禮拜兩次。」",
+     "r": "nei5 gei2 noi6 heoi3 jat1 ci3 gin6 san1 sat1 aa3 jat1 go3 lai5 baai3 loeng5 ci3",
+     "en": "\"How often do you go to the gym?\" \"Twice a week.\""
+    },
+    {
+     "s": "我哋出去食飯，大概一個禮拜兩次。",
+     "r": "ngo5 dei6 ceot1 heoi3 sik6 faan6 daai6 koi3 jat1 go3 lai5 baai3 loeng5 ci3",
+     "en": "We eat out about twice a week."
+    },
+    {
+     "s": "游水班一個禮拜兩次，逢星期二同四。",
+     "r": "jau4 seoi2 baan1 jat1 go3 lai5 baai3 loeng5 ci3 fung4 sing1 kei4 ji6 tung4 sei3",
+     "en": "Swimming class is twice a week, on Tuesdays and Thursdays."
+    }
+   ]
+  },
+  {
+   "id": "L8-v-29",
+   "t": {
+    "s": "分鐘",
+    "r": "fan1 zung1"
+   },
+   "en": "minute(s)",
+   "ex": [
+    {
+     "s": "由我屋企行去地鐵站要十分鐘。",
+     "r": "jau4 ngo5 uk1 kei2 haang4 heoi3 dei6 tit3 zaam6 jiu3 sap6 fan1 zung1",
+     "en": "It's a ten-minute walk from my place to the MTR station."
+    },
+    {
+     "s": "等多五分鐘啦。",
+     "r": "dang2 do1 ng5 fan1 zung1 laa1",
+     "en": "Wait five more minutes."
+    },
+    {
+     "s": "啲麵要煮三分鐘。",
+     "r": "di1 min6 jiu3 zyu2 saam1 fan1 zung1",
+     "en": "The noodles need to cook for three minutes."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly accurate. Fixed unnatural preverbal frequency order (一個禮拜兩次去健身), 個麵→啲麵, two loose translations (moved→went; 'taking him to' → celebrating)."
+}

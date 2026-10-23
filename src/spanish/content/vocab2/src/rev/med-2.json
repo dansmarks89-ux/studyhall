@@ -1,0 +1,123 @@
+{
+ "fix": [
+  {
+   "id": "sm2-tipo-de-dolor",
+   "w": "el tipo de dolor",
+   "pos": "noun",
+   "en": "kind of pain",
+   "note": "",
+   "type": [
+    "el tipo de dolor",
+    "tipo de dolor"
+   ],
+   "ex": [
+    {
+     "es": "¿Qué tipo de dolor es: presión, ardor o punzada?",
+     "en": "What kind of pain is it: pressure, burning or stabbing?",
+     "hit": "tipo de dolor"
+    },
+    {
+     "es": "¿Ya tuvo este tipo de dolor antes?",
+     "en": "Have you had this kind of pain before?",
+     "hit": "tipo de dolor"
+    },
+    {
+     "es": "Mi papá nunca tuvo este tipo de dolor.",
+     "en": "My dad never had this kind of pain.",
+     "hit": "tipo de dolor"
+    }
+   ]
+  },
+  {
+   "id": "sm2-al-tocar",
+   "w": "al tocar",
+   "pos": "phrase",
+   "en": "when touched; to the touch",
+   "note": "Pain reproduced by pressing is often chest wall, but this doesn't rule out a cardiac cause.",
+   "type": [
+    "al tocar"
+   ],
+   "ex": [
+    {
+     "es": "¿Le duele al tocar aquí?",
+     "en": "Does it hurt when I touch here?",
+     "hit": "al tocar"
+    },
+    {
+     "es": "La herida me duele al tocarla.",
+     "en": "The wound hurts when I touch it.",
+     "hit": "al tocar"
+    },
+    {
+     "es": "Si duele al tocar, muchas veces es del músculo.",
+     "en": "If it hurts to the touch, it's often from the muscle.",
+     "hit": "al tocar"
+    }
+   ]
+  },
+  {
+   "id": "sm2-tomar-algo-para-el-dolor",
+   "w": "tomar algo para el dolor",
+   "pos": "phrase",
+   "en": "to take something for the pain",
+   "note": "",
+   "type": [],
+   "ex": [
+    {
+     "es": "¿Tomó algo para el dolor antes de venir?",
+     "en": "Did you take something for the pain before coming in?",
+     "hit": "Tomó algo para el dolor"
+    },
+    {
+     "es": "¿Puedo tomar algo para el dolor con mis otras medicinas?",
+     "en": "Can I take something for pain with my other medicines?",
+     "hit": "tomar algo para el dolor"
+    },
+    {
+     "es": "Mi mamá quiere tomar algo para el dolor, ¿puede?",
+     "en": "My mom wants to take something for the pain; can she?",
+     "hit": "tomar algo para el dolor"
+    }
+   ]
+  },
+  {
+   "id": "sm2-andar",
+   "w": "andar",
+   "pos": "verb",
+   "en": "to be (feeling) lately",
+   "note": "«Ando cansado» = I've been tired lately. Also means to walk.",
+   "type": [
+    "andar"
+   ],
+   "ex": [
+    {
+     "es": "Ando muy cansado desde hace un mes.",
+     "en": "I've been very tired for a month.",
+     "hit": "Ando"
+    },
+    {
+     "es": "¿Cómo anda de la presión, don Luis?",
+     "en": "How's your blood pressure doing, don Luis?",
+     "hit": "anda"
+    },
+    {
+     "es": "Mi papá anda mareado desde el domingo.",
+     "en": "My dad has been dizzy since Sunday.",
+     "hit": "anda"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sm2-que-lo-trae-por-aqui",
+  "sm2-consulta",
+  "sm2-senalar",
+  "sm2-farmacia",
+  "sm2-boca-del-estomago",
+  "sm2-costado",
+  "sm2-costillas",
+  "sm2-mas-o-menos",
+  "sm2-familiar"
+ ],
+ "notes": "Dropped 9 duplicates of med-1 (consulta, farmacia, familiar, costado, etc.). Fixed: musculoskeletal-reassurance example, chest-wall note now says tenderness doesn't exclude cardiac pain, 'no quiso tomar algo', 'don Luis'."
+}

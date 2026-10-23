@@ -1,0 +1,173 @@
+{
+ "fix": [
+  {
+   "id": "sv06-musical",
+   "w": "musical",
+   "pos": "adjective",
+   "en": "musical",
+   "note": "",
+   "type": [
+    "musical"
+   ],
+   "ex": [
+    {
+     "es": "Mi hijo toca en un grupo musical.",
+     "en": "My son plays in a band.",
+     "hit": "musical"
+    },
+    {
+     "es": "Mi hermana tiene mucho talento musical.",
+     "en": "My sister has a lot of musical talent.",
+     "hit": "musical"
+    },
+    {
+     "es": "La tienda vende instrumentos musicales usados.",
+     "en": "The store sells used musical instruments.",
+     "hit": "musicales"
+    }
+   ]
+  },
+  {
+   "id": "sv06-llegada",
+   "w": "la llegada",
+   "pos": "noun",
+   "en": "arrival",
+   "note": "Llegadas = arrivals (at an airport).",
+   "type": [
+    "la llegada",
+    "llegada"
+   ],
+   "ex": [
+    {
+     "es": "Desde la llegada del bebé, no dormimos.",
+     "en": "Since the baby arrived, we haven't slept.",
+     "hit": "llegada"
+    },
+    {
+     "es": "Te espero en la zona de llegadas.",
+     "en": "I'll wait for you in the arrivals area.",
+     "hit": "llegadas"
+    },
+    {
+     "es": "Celebramos la llegada del año nuevo con amigos.",
+     "en": "We celebrated the arrival of the new year with friends.",
+     "hit": "llegada"
+    }
+   ]
+  },
+  {
+   "id": "sv06-cola",
+   "w": "la cola",
+   "pos": "noun",
+   "en": "line (queue); tail",
+   "note": "In Mexico, la fila (hacer fila) is more common for a line.",
+   "type": [
+    "la cola",
+    "cola"
+   ],
+   "ex": [
+    {
+     "es": "Hay una cola enorme en el banco.",
+     "en": "There's a huge line at the bank.",
+     "hit": "cola"
+    },
+    {
+     "es": "Hicimos cola dos horas para el concierto.",
+     "en": "We waited in line for two hours for the concert.",
+     "hit": "cola"
+    },
+    {
+     "es": "Mi perro mueve la cola cuando llego.",
+     "en": "My dog wags his tail when I get home.",
+     "hit": "cola"
+    }
+   ]
+  },
+  {
+   "id": "sv06-ingeniero",
+   "w": "el ingeniero",
+   "pos": "noun",
+   "en": "engineer",
+   "note": "Feminine: la ingeniera. In Mexico also used as a title (Ingeniero López).",
+   "type": [
+    "el ingeniero",
+    "ingeniero",
+    "la ingeniera",
+    "ingeniera"
+   ],
+   "ex": [
+    {
+     "es": "Mi hermano estudia para ser ingeniero.",
+     "en": "My brother is studying to be an engineer.",
+     "hit": "ingeniero"
+    },
+    {
+     "es": "Una ingeniera revisó la casa que queremos comprar.",
+     "en": "An engineer inspected the house we want to buy.",
+     "hit": "ingeniera"
+    },
+    {
+     "es": "Mi papá trabajó treinta años como ingeniero.",
+     "en": "My dad worked as an engineer for thirty years.",
+     "hit": "ingeniero"
+    }
+   ]
+  },
+  {
+   "id": "sv06-juzgar",
+   "w": "juzgar",
+   "pos": "verb",
+   "en": "to judge",
+   "note": "",
+   "type": [
+    "juzgar"
+   ],
+   "ex": [
+    {
+     "es": "No me juzgues, tenía mucha hambre.",
+     "en": "Don't judge me, I was really hungry.",
+     "hit": "juzgues"
+    },
+    {
+     "es": "No hay que juzgar a la gente por su ropa.",
+     "en": "You shouldn't judge people by their clothes.",
+     "hit": "juzgar"
+    },
+    {
+     "es": "Mi mamá va a juzgar los pasteles del concurso.",
+     "en": "My mom is going to judge the cakes in the contest.",
+     "hit": "juzgar"
+    }
+   ]
+  },
+  {
+   "id": "sv06-temer",
+   "w": "temer",
+   "pos": "verb",
+   "en": "to fear, be afraid",
+   "note": "Me temo que = I'm afraid that (polite bad news). Tener miedo is more common.",
+   "type": [
+    "temer"
+   ],
+   "ex": [
+    {
+     "es": "Me temo que no hay mesas disponibles.",
+     "en": "I'm afraid there are no tables available.",
+     "hit": "temo"
+    },
+    {
+     "es": "Mi hijo les teme a los perros grandes.",
+     "en": "My son is afraid of big dogs.",
+     "hit": "teme"
+    },
+    {
+     "es": "No temas pedir ayuda en el trabajo.",
+     "en": "Don't be afraid to ask for help at work.",
+     "hit": "temas"
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Mostly clean. Fixed an infinitive-subject ambiguity (ingeniera), unnatural collocations (equipo musical, juzgar el concurso), le→les with plural, translation tense, and the cola/fila note for Mexico."
+}

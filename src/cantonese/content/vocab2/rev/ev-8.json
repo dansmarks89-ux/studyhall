@@ -1,0 +1,114 @@
+{
+ "fix": [
+  {
+   "id": "cv05-14",
+   "t": {
+    "s": "基本",
+    "r": "gei1 bun2"
+   },
+   "pos": "adjective",
+   "en": "basic; fundamental",
+   "note": "基本上 = basically.",
+   "ex": [
+    {
+     "s": "我識講基本嘅廣東話。",
+     "r": "ngo5 sik1 gong2 gei1 bun2 ge3 gwong2 dung1 waa2",
+     "en": "I can speak basic Cantonese."
+    },
+    {
+     "s": "基本上我日日都返工。",
+     "r": "gei1 bun2 soeng6 ngo5 jat6 jat6 dou1 faan1 gung1",
+     "en": "Basically, I work every day."
+    },
+    {
+     "s": "呢啲係最基本嘅嘢嚟㗎。",
+     "r": "ni1 di1 hai6 zeoi3 gei1 bun2 ge3 je5 lai4 gaa3",
+     "en": "These are the most basic things."
+    }
+   ]
+  },
+  {
+   "id": "cv05-26",
+   "t": {
+    "s": "以嚟",
+    "r": "ji5 lai4"
+   },
+   "pos": "other",
+   "en": "since; (over a period) so far",
+   "note": "Follows a time phrase: 一直以嚟 = all along. Also written 以來 (ji5 loi4).",
+   "ex": [
+    {
+     "s": "一直以嚟我都好鍾意貓。",
+     "r": "jat1 zik6 ji5 lai4 ngo5 dou1 hou2 zung1 ji3 maau1",
+     "en": "I've always loved cats."
+    },
+    {
+     "s": "呢幾年以嚟，啲樓貴咗好多。",
+     "r": "ni1 gei2 nin4 ji5 lai4 di1 lau2 gwai3 zo2 hou2 do1",
+     "en": "Flats have gotten much pricier over the past few years."
+    },
+    {
+     "s": "自從搬屋以嚟，我都未見過鄰居。",
+     "r": "zi6 cung4 bun1 uk1 ji5 lai4 ngo5 dou1 mei6 gin3 gwo3 leon4 geoi1",
+     "en": "Since I moved, I haven't met my neighbors."
+    }
+   ]
+  },
+  {
+   "id": "cv05-39",
+   "t": {
+    "s": "窮",
+    "r": "kung4"
+   },
+   "pos": "adjective",
+   "en": "poor; broke",
+   "note": "",
+   "ex": [
+    {
+     "s": "我細個屋企好窮。",
+     "r": "ngo5 sai3 go3 uk1 kei2 hou2 kung4",
+     "en": "My family was very poor when I was little."
+    },
+    {
+     "s": "月尾我窮到冇錢食飯。",
+     "r": "jyut6 mei5 ngo5 kung4 dou3 mou5 cin2 sik6 faan6",
+     "en": "At the end of the month I'm so broke I can't afford to eat."
+    },
+    {
+     "s": "去完旅行，我而家好窮呀。",
+     "r": "heoi3 jyun4 leoi5 hang4 ngo5 ji4 gaa1 hou2 kung4 aa3",
+     "en": "After the trip I'm really broke."
+    }
+   ]
+  },
+  {
+   "id": "cv05-97",
+   "t": {
+    "s": "金",
+    "r": "gam1"
+   },
+   "pos": "noun",
+   "en": "gold",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢隻戒指係金㗎。",
+     "r": "keoi5 zek3 gaai3 zi2 hai6 gam1 gaa3",
+     "en": "Her ring is gold."
+    },
+    {
+     "s": "我結婚嗰陣，阿媽送咗啲金俾我。",
+     "r": "ngo5 git3 fan1 go2 zan6 aa3 maa1 sung3 zo2 di1 gam1 bei2 ngo5",
+     "en": "My mom gave me some gold when I got married."
+    },
+    {
+     "s": "而家金好貴。",
+     "r": "ji4 gaa1 gam1 hou2 gwai3",
+     "en": "Gold is really expensive now."
+    }
+   ]
+  }
+ ],
+ "drop": [],
+ "notes": "Generally accurate; Jyutping all verified, dictionary CHECKs are colloquial readings (correct). Fixed: Chinese text in an en gloss, pos/note for 以嚟, two unnatural/terse sentences, one loose translation."
+}

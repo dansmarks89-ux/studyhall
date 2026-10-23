@@ -1,0 +1,174 @@
+{
+ "fix": [
+  {
+   "id": "sv01-nino",
+   "w": "el niño",
+   "pos": "noun",
+   "en": "boy; child, kid",
+   "note": "Girl: la niña. Los niños can mean children in general.",
+   "type": [
+    "el niño",
+    "niño"
+   ],
+   "ex": [
+    {
+     "es": "Los niños están jugando en el patio.",
+     "en": "The kids are playing in the yard.",
+     "hit": "niños"
+    },
+    {
+     "es": "De niño, me encantaba jugar fútbol.",
+     "en": "As a kid, I loved playing soccer.",
+     "hit": "niño"
+    },
+    {
+     "es": "¿Tienen menú para niños, por favor?",
+     "en": "Do you have a kids' menu, please?",
+     "hit": "niños"
+    }
+   ]
+  },
+  {
+   "id": "sv01-pasado",
+   "w": "pasado",
+   "pos": "adjective",
+   "en": "last; past",
+   "note": "El año pasado = last year.",
+   "type": [
+    "pasado"
+   ],
+   "ex": [
+    {
+     "es": "El mes pasado empecé un trabajo nuevo.",
+     "en": "Last month I started a new job.",
+     "hit": "pasado"
+    },
+    {
+     "es": "La semana pasada estuve enfermo.",
+     "en": "I was sick last week.",
+     "hit": "pasada"
+    },
+    {
+     "es": "El sábado pasado comimos en casa de Sofía.",
+     "en": "Last Saturday we ate at Sofía's house.",
+     "hit": "pasado"
+    }
+   ]
+  },
+  {
+   "id": "sv01-madre",
+   "w": "la madre",
+   "pos": "noun",
+   "en": "mother",
+   "note": "Mamá is more common in speech. In Mexico, madre appears in many rude slang phrases.",
+   "type": [
+    "la madre",
+    "madre"
+   ],
+   "ex": [
+    {
+     "es": "Mi madre cumple sesenta años en junio.",
+     "en": "My mother turns sixty in June.",
+     "hit": "madre"
+    },
+    {
+     "es": "En México, el Día de la Madre es el diez de mayo.",
+     "en": "In Mexico, Mother's Day is May tenth.",
+     "hit": "Madre"
+    },
+    {
+     "es": "La madre de Minho es enfermera.",
+     "en": "Minho's mother is a nurse.",
+     "hit": "madre"
+    }
+   ]
+  },
+  {
+   "id": "sv01-si2",
+   "w": "sí",
+   "pos": "interjection",
+   "en": "yes",
+   "note": "With accent = yes; si without accent = if.",
+   "type": [
+    "sí"
+   ],
+   "ex": [
+    {
+     "es": "Sí, claro, nos vemos a las seis.",
+     "en": "Yes, sure, see you at six.",
+     "hit": "Sí"
+    },
+    {
+     "es": "Creo que sí, pero le pregunto a Ana.",
+     "en": "I think so, but I'll ask Ana.",
+     "hit": "sí"
+    },
+    {
+     "es": "Le dije que sí al trabajo nuevo.",
+     "en": "I said yes to the new job.",
+     "hit": "sí"
+    }
+   ]
+  },
+  {
+   "id": "sv01-tu2",
+   "w": "tú",
+   "pos": "pronoun",
+   "en": "you (informal)",
+   "note": "With accent = you; tu = your. Use usted with strangers and elders.",
+   "type": [
+    "tú"
+   ],
+   "ex": [
+    {
+     "es": "¿Y tú, de dónde eres?",
+     "en": "And you, where are you from?",
+     "hit": "tú"
+    },
+    {
+     "es": "Tú siempre llegas tarde a todo.",
+     "en": "You're always late for everything.",
+     "hit": "Tú"
+    },
+    {
+     "es": "Si tú cocinas, yo lavo los platos.",
+     "en": "If you cook, I'll wash the dishes.",
+     "hit": "tú"
+    }
+   ]
+  },
+  {
+   "id": "sv01-mi2",
+   "w": "mí",
+   "pos": "pronoun",
+   "en": "me (after a preposition)",
+   "note": "With accent = me; mi = my. With me = conmigo.",
+   "type": [
+    "mí"
+   ],
+   "ex": [
+    {
+     "es": "¿Este regalo es para mí?",
+     "en": "Is this gift for me?",
+     "hit": "mí"
+    },
+    {
+     "es": "A mí me gusta el café sin azúcar.",
+     "en": "Personally, I like my coffee without sugar.",
+     "hit": "mí"
+    },
+    {
+     "es": "Nadie se sentó junto a mí en el avión.",
+     "en": "Nobody sat next to me on the plane.",
+     "hit": "mí"
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "sv01-si",
+  "sv01-tu",
+  "sv01-mi"
+ ],
+ "notes": "No headword duplicates ev-0, but ids sv01-si/tu/mi collide with ev-0 (si/tu/mi vs sí/tú/mí): re-issued as sv01-si2/tu2/mi2. Replaced two examples copied from ev-0; madre slang note."
+}

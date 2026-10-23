@@ -1,0 +1,146 @@
+{
+ "fix": [
+  {
+   "id": "kv08-101",
+   "t": {
+    "s": "견디다"
+   },
+   "pos": "verb",
+   "en": "to endure, bear, withstand",
+   "note": "",
+   "ex": [
+    {
+     "s": "더위를 못 견디겠어요.",
+     "en": "I can't stand this heat."
+    },
+    {
+     "s": "이 식물은 추위를 잘 견뎌요.",
+     "en": "This plant handles the cold well."
+    },
+    {
+     "s": "조금만 더 견디면 주말이에요.",
+     "en": "Hang in there a little longer and it's the weekend."
+    }
+   ]
+  },
+  {
+   "id": "kv08-106",
+   "t": {
+    "s": "기도"
+   },
+   "pos": "noun",
+   "en": "prayer",
+   "note": "기도하다 = to pray.",
+   "ex": [
+    {
+     "s": "우리 가족은 밥 먹기 전에 기도해요.",
+     "en": "Our family prays before eating."
+    },
+    {
+     "s": "수술 잘되도록 기도할게요.",
+     "en": "I'll pray that the surgery goes well."
+    },
+    {
+     "s": "할머니는 매일 아침 기도를 하세요.",
+     "en": "Grandma prays every morning."
+    }
+   ]
+  },
+  {
+   "id": "kv08-107",
+   "t": {
+    "s": "상상"
+   },
+   "pos": "noun",
+   "en": "imagination; imagining",
+   "note": "상상하다 = to imagine.",
+   "ex": [
+    {
+     "s": "그건 상상도 못 했어요.",
+     "en": "I never imagined that."
+    },
+    {
+     "s": "이 집에 사는 걸 상상해 보세요.",
+     "en": "Imagine living in this house."
+    },
+    {
+     "s": "아이들은 상상을 정말 많이 해요.",
+     "en": "Kids imagine all kinds of things."
+    }
+   ]
+  },
+  {
+   "id": "kv08-115",
+   "t": {
+    "s": "후반"
+   },
+   "pos": "noun",
+   "en": "latter half, second half; late (period)",
+   "note": "Opposite: 전반 (first half). 초반 = early part.",
+   "ex": [
+    {
+     "s": "그 사람은 20대 후반이에요.",
+     "en": "He's in his late twenties."
+    },
+    {
+     "s": "축구 경기 후반에 골을 넣었어요.",
+     "en": "They scored in the second half of the soccer game."
+    },
+    {
+     "s": "이번 주 후반에 비가 온대요.",
+     "en": "They say it'll rain later this week."
+    }
+   ]
+  },
+  {
+   "id": "kv08-116",
+   "t": {
+    "s": "고용하다"
+   },
+   "pos": "verb",
+   "en": "to hire, employ",
+   "note": "Somewhat formal; 사람을 쓰다 is casual.",
+   "ex": [
+    {
+     "s": "가게에서 아르바이트생을 두 명 고용했어요.",
+     "en": "The store hired two part-timers."
+    },
+    {
+     "s": "회사에서 새 직원을 세 명 고용했어요.",
+     "en": "The company hired three new employees."
+    },
+    {
+     "s": "변호사를 고용해야 할까요?",
+     "en": "Should I hire a lawyer?"
+    }
+   ]
+  },
+  {
+   "id": "kv08-150",
+   "t": {
+    "s": "대답"
+   },
+   "pos": "noun",
+   "en": "answer, reply",
+   "note": "대답하다 = to answer (a person). 답 = answer (to a problem).",
+   "ex": [
+    {
+     "s": "제 질문에 대답해 주세요.",
+     "en": "Please answer my question."
+    },
+    {
+     "s": "문을 두드렸는데 대답이 없어요.",
+     "en": "I knocked on the door, but no one answered."
+    },
+    {
+     "s": "아이가 불러도 대답을 안 해요.",
+     "en": "My kid won't answer when I call him."
+    }
+   ]
+  }
+ ],
+ "drop": [
+  "kv08-157"
+ ],
+ "notes": "Fixed odd collocations (shoes 견디다, 이사 고용, 다음 달 후반, text 대답), 잘되다 spacing, one loose translation. Dropped 저장 as a duplicate of 저장하다 (ev-14)."
+}
