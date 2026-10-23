@@ -15,8 +15,8 @@ Language and study apps with sign-in, saved progress and AI practice, for a smal
 | `shared/supabase.js` | Supabase browser library (v2.117.2, vendored) |
 | `spanish/index.html` | Clinic Spanish course (built file, do not edit by hand) |
 | `src/spanish/` | Course source: `app.html`, compiled data, original content and specs |
-| `vocab/index.html` | Word Power (built file, do not edit by hand) |
-| `src/vocab/` | Word Power source: `app.html`, `data/items.json` (2,428 reviewed items), and `content/` (spec, reviewer instructions, review patches, pipeline scripts) |
+| `vocab/` | Word Power, built: `index.html` plus hashed `data.*.json` and `gloss.*.json` (do not edit by hand) |
+| `src/vocab/` | Word Power source: `app.html`; `data/items.json` (8,820 reviewed cards), `data/passages.json` (390 reading passages), `data/gloss.json` (tap-to-define dictionary); `content/` (round 1) and `content/round2/` (specs, reviewer instructions, review patches, pipeline scripts) |
 | `cantonese/index.html`, `korean/index.html` | Cantonese and Korean courses (built files, do not edit by hand). `audio.json` beside each lists every recorded clip |
 | `src/lang/` | Shared engine for both courses: `app.html`, `build.py`, `tools/check_level.py` (content checker), `tools/ko_pron.py` (Korean pronunciation) |
 | `src/cantonese/content/`, `src/korean/content/` | Course content: `SPEC.md`, `levels/L1–L10.json` (checked and independently reviewed), `bank/` (original phrase banks) |
@@ -30,7 +30,7 @@ Rebuild the Spanish page after changing `src/spanish/app.html` or its data:
 python3 src/spanish/build.py hosted
 ```
 
-Rebuild Word Power after changing `src/vocab/app.html` or `src/vocab/data/items.json`:
+Rebuild Word Power after changing `src/vocab/app.html` or anything in `src/vocab/data/`:
 
 ```
 python3 src/vocab/build.py
