@@ -1,0 +1,123 @@
+[
+ {
+  "id": "k-mutation",
+  "set": {
+   "def": "a change in the genes of a living thing or virus, which may be harmful, helpful or harmless"
+  },
+  "why": "'genetic code' technically means the codon-to-amino-acid table, not an organism's DNA sequence; examples and cloze are about viruses, which the old def ('living thing') did not cover"
+ },
+ {
+  "id": "k-rational-number",
+  "set": {
+   "def": "any number, positive, negative or zero, that can be written as a fraction of two whole numbers, with the bottom not zero"
+  },
+  "why": "In US school math 'whole numbers' are 0,1,2,..., so the old def left out negative fractions such as -1/2, which are rational"
+ },
+ {
+  "id": "k-golden-mean",
+  "set": {
+   "note": "In math, golden mean is also another name for the golden ratio, about 1.618; that is a different idea.",
+   "ex": [
+    "Following the golden mean, Aristotle said generosity lies between being stingy and wasting money.",
+    "Priya applies the golden mean to work, putting in steady effort without slacking off or burning herself out."
+   ]
+  },
+  "why": "Old note said the golden mean is 'not the same as the golden ratio', but 'golden mean' is a standard name for the golden ratio in math; ex2 'effort that is ... burned-out' was ungrammatical"
+ },
+ {
+  "id": "k-carcinogen",
+  "set": {
+   "ex": [
+    "Tobacco smoke is a known carcinogen, linked to lung cancer and many other cancers.",
+    "Workers removing old insulation wear masks because asbestos is a powerful carcinogen."
+   ]
+  },
+  "why": "ex1 'many chemicals that are known to be a carcinogen' was ungrammatical (plural/singular mismatch)"
+ },
+ {
+  "id": "k-probiotic",
+  "set": {
+   "ex": [
+    "Yogurt with live cultures is one of the most common sources of probiotics.",
+    "Hannah's doctor suggested a probiotic to help her stomach recover after a course of antibiotics."
+   ],
+   "cloze": {
+    "s": "The yogurt label said each cup is packed with ___, live bacteria that help keep the gut healthy.",
+    "a": "probiotics"
+   }
+  },
+  "why": "'sources of a probiotic' and 'contains a probiotic with billions of bacteria' were unnatural usage"
+ },
+ {
+  "id": "k-adrenaline",
+  "set": {
+   "ex": [
+    "Her heart pounded as adrenaline surged through her body when the car swerved toward her.",
+    "Tomás carries an adrenaline injector pen in case he has a severe allergic reaction to peanuts."
+   ]
+  },
+  "remove_dx": [
+   "k-endorphin"
+  ],
+  "why": "'a pen of adrenaline' is unnatural; endorphin removed because 'a rush of endorphins' is a common collocation that could tempt in the cloze"
+ },
+ {
+  "id": "k-endorphin",
+  "remove_dx": [
+   "k-hormone"
+  ],
+  "why": "beta-endorphin is released into the blood by the pituitary and affects mood, so the hormone def could be argued as a correct answer to (a)"
+ },
+ {
+  "id": "k-cache",
+  "remove_dx": [
+   "k-ram"
+  ],
+  "why": "RAM also holds copies of recently used data for fast access (browser memory cache lives in RAM); could answer (b) or the cloze"
+ },
+ {
+  "id": "k-ram",
+  "remove_dx": [
+   "k-cache"
+  ],
+  "why": "a CPU cache is also short-term working memory wiped at power-off, so the cache def/term overlaps RAM's"
+ },
+ {
+  "id": "k-continental-divide",
+  "remove_dx": [
+   "k-watershed"
+  ],
+  "why": "'watershed' also means a ridge dividing drainage areas; 'Rivers west of the watershed in the Rockies drain toward the Pacific' fits the cloze"
+ },
+ {
+  "id": "k-primary-election",
+  "set": {
+   "ant": []
+  },
+  "why": "general election is the counterpart stage, not an opposite; a forced antonym for test (f)"
+ },
+ {
+  "id": "k-flamenco",
+  "set": {
+   "why": "It is closely tied to the Romani people of Andalusia and is on UNESCO's list of the world's intangible cultural heritage."
+  },
+  "why": "'grew largely from the Romani people' overstates a contested origin (Andalusian, Moorish, Jewish and Romani influences); UNESCO listing (2010) is intangible heritage"
+ },
+ {
+  "id": "k-lobbying",
+  "set": {
+   "why": "Companies, unions and advocacy groups all do it; in the US it is legal, and paid lobbyists must usually report their work publicly."
+  },
+  "why": "Not all lobbying must be publicly reported; federal disclosure applies to paid lobbyists above set thresholds"
+ },
+ {
+  "id": "k-hedge-fund",
+  "set": {
+   "ex": [
+    "The hedge fund made a fortune by betting that the company's stock would fall.",
+    "Most ordinary savers cannot join a hedge fund, since these funds are open only to wealthy investors and require large minimums."
+   ]
+  },
+  "why": "ex2 had a number mismatch ('a hedge fund ... they require') and omitted the main barrier, investor-eligibility rules"
+ }
+]

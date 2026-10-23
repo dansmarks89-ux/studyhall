@@ -1,0 +1,271 @@
+[
+ {
+  "id": "v-urgent",
+  "remove_dx": [
+   "v-substantial"
+  ],
+  "why": "'needed substantial repairs' also fills the cloze"
+ },
+ {
+  "id": "v-continuous",
+  "remove_dx": [
+   "v-chronic"
+  ],
+  "why": "'chronic crying' could plausibly fill the cloze"
+ },
+ {
+  "id": "v-regret",
+  "set": {
+   "syn": []
+  },
+  "why": "'rue' is archaic/literary; a level-1 learner would not recognize it"
+ },
+ {
+  "id": "v-ruin",
+  "set": {
+   "ant": [
+    "repair",
+    "restore"
+   ]
+  },
+  "why": "'save' is a forced opposite of ruin"
+ },
+ {
+  "id": "v-meanwhile",
+  "set": {
+   "cloze": {
+    "s": "Dinner will be ready in an hour. ___, you can set the table and pour the drinks.",
+    "a": "Meanwhile"
+   }
+  },
+  "why": "old cloze could also take 'presumably'/'occasionally'; new one leaves only meanwhile"
+ },
+ {
+  "id": "v-instantly",
+  "set": {
+   "syn": [
+    "immediately",
+    "promptly"
+   ]
+  },
+  "why": "'instantaneously' is much harder than the headword"
+ },
+ {
+  "id": "v-traditionally",
+  "remove_dx": [
+   "v-consistently",
+   "v-increasingly"
+  ],
+  "why": "'people consistently/increasingly take off their shoes' also fills the cloze sensibly"
+ },
+ {
+  "id": "v-wisdom",
+  "set": {
+   "ant": [
+    "foolishness"
+   ]
+  },
+  "why": "'folly' is too rare for level 1"
+ },
+ {
+  "id": "v-ignorance",
+  "set": {
+   "syn": [
+    "unawareness"
+   ],
+   "ant": [
+    "knowledge",
+    "awareness"
+   ]
+  },
+  "why": "'inexperience' is not a synonym; 'wisdom' is a forced opposite"
+ },
+ {
+  "id": "v-legend",
+  "set": {
+   "syn": [
+    "myth",
+    "tale"
+   ]
+  },
+  "why": "'folklore' is a body of stories, not a synonym for one legend"
+ },
+ {
+  "id": "v-legend",
+  "remove_dx": [
+   "v-notion"
+  ],
+  "why": "'There is an old notion that a ghost walks the halls' also fills the cloze"
+ },
+ {
+  "id": "v-impressive",
+  "remove_dx": [
+   "v-unexpected"
+  ],
+  "why": "an 'unexpected performance' could also earn the ovation in the cloze"
+ },
+ {
+  "id": "v-bold",
+  "remove_dx": [
+   "v-prominent"
+  ],
+  "why": "prominent's def 'easy to see because it stands out' overlaps bold's also-sense (bold type) for question (g)"
+ },
+ {
+  "id": "v-tremendous",
+  "remove_dx": [
+   "v-extraordinary"
+  ],
+  "why": "near-synonym; 'an extraordinary effort' fills the cloze"
+ },
+ {
+  "id": "v-comparable",
+  "remove_dx": [
+   "v-decent",
+   "v-steady"
+  ],
+  "why": "'Both job offers had decent/steady pay, so...' also fills the cloze"
+ },
+ {
+  "id": "v-compete",
+  "set": {
+   "syn": [
+    "contend"
+   ]
+  },
+  "why": "'vie' is too rare for a level-1 learner"
+ },
+ {
+  "id": "v-precisely",
+  "remove_dx": [
+   "v-consistently"
+  ],
+  "why": "'measure the flour consistently' also fits the cloze"
+ },
+ {
+  "id": "v-notably",
+  "set": {
+   "ex": [
+    "Several cities, notably Denver and Austin, have grown quickly in recent years.",
+    "Several players missed practice, notably the team's captain and its top scorer."
+   ]
+  },
+  "why": "ex 2 ('notably silent') used the 'to a remarkable degree' sense, not the defined 'especially; pointing out an example' sense"
+ },
+ {
+  "id": "v-innovation",
+  "set": {
+   "ex": [
+    "The smartphone was one of the biggest innovations of the past fifty years.",
+    "The company rewards innovation by giving staff time to work on new ideas."
+   ]
+  },
+  "why": "'early 2000s' dating of the smartphone is contestable (earlier devices existed; mass adoption came later)"
+ },
+ {
+  "id": "v-considerable",
+  "remove_dx": [
+   "v-impressive"
+  ],
+  "why": "'took impressive effort' plausibly fills the cloze"
+ },
+ {
+  "id": "v-dignity",
+  "remove_dx": [
+   "v-courage"
+  ],
+  "why": "'faced the accusations with quiet courage' also fills the cloze"
+ },
+ {
+  "id": "v-survival",
+  "set": {
+   "syn": []
+  },
+  "why": "'continuation'/'persistence' are not true synonyms of survival"
+ },
+ {
+  "id": "v-accordingly",
+  "remove_dx": [
+   "v-thoroughly"
+  ],
+  "why": "'plan the meal thoroughly' also fills the cloze"
+ },
+ {
+  "id": "v-exclusively",
+  "remove_dx": [
+   "v-temporarily"
+  ],
+  "why": "'open temporarily to hotel guests' also fills the cloze"
+ },
+ {
+  "id": "v-dominant",
+  "set": {
+   "ex": [
+    "The company is the dominant player in the smartphone market.",
+    "As a teenager, Malik was the dominant player on his basketball team, scoring most of its points."
+   ]
+  },
+  "why": "ex 2 ('dominant color') used the 'most common' sense, not the defined 'strongest, with power or control' sense"
+ },
+ {
+  "id": "v-adequate",
+  "remove_dx": [
+   "v-excessive"
+  ],
+  "why": "'excessive' could be taken as the opposite of adequate in question (f)"
+ },
+ {
+  "id": "v-engage",
+  "remove_dx": [
+   "v-attract",
+   "v-assist"
+  ],
+  "why": "attract's def ('make them interested') matches engage's also-sense (g); 'assist in activities' could fill the cloze"
+ },
+ {
+  "id": "v-commit",
+  "set": {
+   "syn": [
+    "carry out"
+   ]
+  },
+  "why": "'perpetrate' is far harder than the headword"
+ },
+ {
+  "id": "v-pretend",
+  "remove_dx": [
+   "v-insist"
+  ],
+  "why": "'kids like to insist they are pirates' could fill the cloze"
+ },
+ {
+  "id": "v-console",
+  "remove_dx": [
+   "v-embrace",
+   "v-inspire"
+  ],
+  "why": "'tried to embrace/inspire the crying player' also fills the cloze"
+ },
+ {
+  "id": "v-intense",
+  "remove_dx": [
+   "v-tremendous",
+   "v-moderate"
+  ],
+  "why": "tremendous is a near-synonym and fills the cloze; moderate is a near-opposite (f)"
+ },
+ {
+  "id": "v-reverse",
+  "remove_dx": [
+   "v-eliminate"
+  ],
+  "why": "'decided to eliminate its new policy' also fills the cloze"
+ },
+ {
+  "id": "v-extraordinary",
+  "remove_dx": [
+   "v-tremendous"
+  ],
+  "why": "near-synonym (WordNet: 'extraordinarily good or great')"
+ }
+]

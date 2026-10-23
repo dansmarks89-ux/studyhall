@@ -1,0 +1,249 @@
+[
+ {
+  "id": "v-excited",
+  "set": {
+   "def": "feeling very happy and full of energy, often because something good is about to happen"
+  },
+  "why": "'because something good is about to happen' was too narrow; people are also excited about things happening now"
+ },
+ {
+  "id": "v-literally",
+  "set": {
+   "syn": [
+    "exactly",
+    "actually"
+   ],
+   "cloze": {
+    "s": "When Yuki first heard “it’s raining cats and dogs,” she thought animals were ___ falling from the sky.",
+    "a": "literally"
+   }
+  },
+  "why": "old cloze showed the emphatic slang use and 'honestly'/'seriously' also fit it; new cloze shows the literal sense; 'really' dropped from syn as it pushes the intensifier sense"
+ },
+ {
+  "id": "v-literally",
+  "remove_dx": [
+   "v-honestly",
+   "v-seriously",
+   "v-indeed"
+  ],
+  "why": "near-synonyms of 'actually/really'; would be defensible answers for the synonym question"
+ },
+ {
+  "id": "v-extremely",
+  "remove_dx": [
+   "v-hardly",
+   "v-fairly",
+   "v-definitely"
+  ],
+  "why": "hardly/fairly are near-opposites for the opposite question (ant slightly/mildly); definitely and fairly also fill the cloze"
+ },
+ {
+  "id": "v-apply",
+  "remove_dx": [
+   "v-register"
+  ],
+  "why": "'you need to register online before Friday' fits the cloze sensibly"
+ },
+ {
+  "id": "v-prefer",
+  "remove_dx": [
+   "v-purchase"
+  ],
+  "why": "'Would you purchase the window seat or the aisle seat' fits the cloze"
+ },
+ {
+  "id": "v-prepare",
+  "set": {
+   "syn": [
+    "get ready"
+   ]
+  },
+  "why": "'ready' as a verb is not recognizable to learners; 'arrange' is not a synonym of prepare"
+ },
+ {
+  "id": "v-contract",
+  "set": {
+   "def": "an official agreement, usually written, between people or companies that the law can make them keep"
+  },
+  "why": "contracts can be spoken; 'written' alone was inaccurate"
+ },
+ {
+  "id": "v-opposition",
+  "remove_dx": [
+   "v-agreement"
+  ],
+  "why": "near-opposite of opposition (ant: support, approval); would be a defensible answer to the opposite question"
+ },
+ {
+  "id": "v-minimum",
+  "remove_dx": [
+   "v-exact"
+  ],
+  "why": "'pay an exact amount of twenty dollars' fits the cloze"
+ },
+ {
+  "id": "v-mainly",
+  "remove_dx": [
+   "v-specifically",
+   "v-obviously"
+  ],
+  "why": "'sold well, specifically/obviously because a famous actor praised it' both fit the cloze"
+ },
+ {
+  "id": "v-everywhere",
+  "remove_dx": [
+   "v-widely"
+  ],
+  "why": "def 'by many people or in many places' is a near-synonym of everywhere"
+ },
+ {
+  "id": "v-receive",
+  "remove_dx": [
+   "v-deserve"
+  ],
+  "why": "'Every child will deserve a small gift' fits the cloze sensibly"
+ },
+ {
+  "id": "v-manage",
+  "set": {
+   "syn": [
+    "succeed"
+   ]
+  },
+  "why": "'cope' means deal with a difficulty, not succeed in doing something; not a synonym in this sense"
+ },
+ {
+  "id": "v-strike",
+  "set": {
+   "syn": [
+    "hit",
+    "knock"
+   ],
+   "ex": [
+    "Lightning can strike the same place more than once.",
+    "A falling branch struck Hannah’s car and cracked the windshield."
+   ]
+  },
+  "why": "'smash' means break violently, not a synonym; 'strike the ball into the outfield' is unnatural and confusing since a 'strike' in baseball means a miss"
+ },
+ {
+  "id": "v-throughout",
+  "remove_dx": [
+   "v-constantly"
+  ],
+  "why": "'the fans stayed on their feet constantly' fits the cloze"
+ },
+ {
+  "id": "v-usual",
+  "set": {
+   "ant": [
+    "unusual",
+    "rare"
+   ]
+  },
+  "why": "'strange' is a forced opposite of usual"
+ },
+ {
+  "id": "v-random",
+  "remove_dx": [
+   "v-regular"
+  ],
+  "why": "near-opposite of random (ant planned/deliberate); defensible answer to the opposite question"
+ },
+ {
+  "id": "v-protect",
+  "remove_dx": [
+   "v-destroy"
+  ],
+  "why": "near-opposite of protect (ant endanger/harm); defensible answer to the opposite question"
+ },
+ {
+  "id": "v-mess",
+  "remove_dx": [
+   "v-variety"
+  ],
+  "why": "'the living room was a variety of cups, plates, and wrapping paper' fits the cloze"
+ },
+ {
+  "id": "v-particularly",
+  "remove_dx": [
+   "v-truly"
+  ],
+  "why": "'the dessert was truly good' fits the cloze"
+ },
+ {
+  "id": "v-truly",
+  "remove_dx": [
+   "v-definitely"
+  ],
+  "why": "'I definitely believe that you did your best' fits the cloze"
+ },
+ {
+  "id": "v-protection",
+  "remove_dx": [
+   "v-insurance"
+  ],
+  "why": "'Wear a helmet for insurance' is a sensible figurative fill of the cloze"
+ },
+ {
+  "id": "v-depth",
+  "set": {
+   "ant": []
+  },
+  "why": "'height' is a forced opposite of depth"
+ },
+ {
+  "id": "v-enemy",
+  "set": {
+   "syn": [
+    "foe",
+    "opponent"
+   ]
+  },
+  "why": "'rival' means a competitor, not someone who hates or fights you"
+ },
+ {
+  "id": "v-closely",
+  "remove_dx": [
+   "v-properly"
+  ],
+  "why": "'The nurse properly watched the patient's heart rate' fits the cloze"
+ },
+ {
+  "id": "v-fit",
+  "set": {
+   "syn": []
+  },
+  "why": "'suit' means to look good on someone, not to be the right size; not a synonym in this sense"
+ },
+ {
+  "id": "v-resistance",
+  "set": {
+   "ex": [
+    "The plan to close the park met strong resistance from neighbors.",
+    "When the company tried to cut lunch breaks, it ran into resistance from almost every worker."
+   ]
+  },
+  "why": "'body's resistance to illness' shows a different sense (ability to fight off disease) than the def"
+ },
+ {
+  "id": "v-conservative",
+  "set": {
+   "ex": [
+    "My grandfather has conservative tastes and always wears a plain suit and tie.",
+    "The small town is conservative, and many people there were unhappy when the old church was turned into a bar."
+   ]
+  },
+  "why": "'conservative estimate' shows the cautious/low-guess sense, not the def's 'keep traditional ways' sense"
+ },
+ {
+  "id": "v-reaction",
+  "set": {
+   "syn": [
+    "response"
+   ]
+  },
+  "why": "'reply' is a spoken or written answer; a reaction can be a feeling or action, so not a synonym"
+ }
+]

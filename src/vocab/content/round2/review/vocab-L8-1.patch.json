@@ -1,0 +1,169 @@
+[
+ {
+  "id": "v-blowhard",
+  "set": {
+   "def": "a person who boasts loudly and often, making what they have done sound much bigger than it was"
+  },
+  "why": "def was garbled ('...than it was or their opinions')"
+ },
+ {
+  "id": "v-bamboozle",
+  "remove_dx": [
+   "v-regale",
+   "v-assail"
+  ],
+  "why": "'regale/assail you with fancy charts' fit the cloze grammatically and loosely in sense"
+ },
+ {
+  "id": "v-pillory",
+  "remove_dx": [
+   "v-jeer",
+   "v-admonish"
+  ],
+  "why": "jeer (mock publicly) overlaps the def; both fit 'critics rushed to ___ the CEO'"
+ },
+ {
+  "id": "v-enjoin",
+  "remove_dx": [
+   "v-admonish"
+  ],
+  "why": "'admonishes all staff to report...' fits the cloze; admonish to do = urge"
+ },
+ {
+  "id": "v-noncommittal",
+  "remove_dx": [
+   "v-impassive",
+   "v-wholehearted"
+  ],
+  "why": "impassive overlaps 'not showing what you think'; wholehearted is a near-opposite (f)"
+ },
+ {
+  "id": "v-unapproachable",
+  "remove_dx": [
+   "v-impassive"
+  ],
+  "why": "'cold stare... made him seem impassive' fits the cloze"
+ },
+ {
+  "id": "v-pragmatically",
+  "remove_dx": [
+   "v-soberly",
+   "v-unrealistically"
+  ],
+  "why": "soberly (sensibly) fits the cloze and overlaps syn 'sensibly'; unrealistically is a near-opposite (f)"
+ },
+ {
+  "id": "v-turgid",
+  "remove_dx": [
+   "v-soporific"
+  ],
+  "why": "'its soporific style... made it a chore to read' fits the cloze; overlaps 'boring'"
+ },
+ {
+  "id": "v-contemptuously",
+  "remove_dx": [
+   "v-indignantly"
+  ],
+  "why": "'waved the beggar away indignantly' fits the cloze"
+ },
+ {
+  "id": "v-newfangled",
+  "remove_dx": [
+   "v-stodgy"
+  ],
+  "why": "stodgy (old-fashioned) is a near-opposite (f)"
+ },
+ {
+  "id": "v-estimable",
+  "remove_dx": [
+   "v-ignominious"
+  ],
+  "why": "ignominious (shameful) is a near-opposite of estimable (f)"
+ },
+ {
+  "id": "v-indistinctly",
+  "remove_dx": [
+   "v-imperceptibly"
+  ],
+  "why": "'can hardly be seen or noticed' overlaps 'cannot be clearly seen' for (a)/(b)"
+ },
+ {
+  "id": "v-capsize",
+  "set": {
+   "syn": [
+    "overturn",
+    "flip",
+    "tip over"
+   ]
+  },
+  "why": "'upset' in the boat sense is not recognizable to learners as a synonym"
+ },
+ {
+  "id": "v-dryly",
+  "set": {
+   "syn": [
+    "wryly",
+    "ironically"
+   ]
+  },
+  "why": "'sardonically' implies scorn; dry humor need not be scornful"
+ },
+ {
+  "id": "v-fatalism",
+  "set": {
+   "ant": []
+  },
+  "why": "optimism is not the opposite of fatalism (belief in fixed fate); forced antonym"
+ },
+ {
+  "id": "v-mannerism",
+  "set": {
+   "syn": [
+    "habit",
+    "quirk",
+    "tic"
+   ]
+  },
+  "why": "'trait' is a general quality, not a habit of movement/speech"
+ },
+ {
+  "id": "v-pallor",
+  "set": {
+   "syn": [
+    "paleness",
+    "pastiness"
+   ]
+  },
+  "why": "'wanness' is rarer than the headword; learners would not recognize it"
+ },
+ {
+  "id": "v-incinerate",
+  "set": {
+   "syn": [
+    "burn",
+    "torch"
+   ]
+  },
+  "why": "'cremate' applies only to dead bodies; not a synonym in this general sense"
+ },
+ {
+  "id": "v-condescend",
+  "set": {
+   "ex": [
+    "Aisha hates it when salespeople condescend to her, explaining things she already knows.",
+    "Good teachers explain hard ideas without condescending to their students."
+   ]
+  },
+  "why": "removed 'about cars' framing, which leans on a gender cliche"
+ },
+ {
+  "id": "v-assail",
+  "set": {
+   "ex": [
+    "The new law was assailed by business groups and unions alike.",
+    "The protesters assailed the police line with rocks and bottles."
+   ]
+  },
+  "why": "'Doubts assailed Sofia' shows a figurative sense not covered by the def"
+ }
+]

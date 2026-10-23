@@ -1,0 +1,244 @@
+[
+ {
+  "id": "v-riotous",
+  "remove_dx": [
+   "v-staid"
+  ],
+  "why": "staid (serious, dull) is a near-opposite of riotous; would be a correct answer to (f)"
+ },
+ {
+  "id": "v-bevy",
+  "remove_dx": [
+   "v-cornucopia"
+  ],
+  "why": "cornucopia (large supply of many things) overlaps bevy's 'large group of things'; fits 'a ___ of features'"
+ },
+ {
+  "id": "v-meritocracy",
+  "set": {
+   "ant": [
+    "aristocracy"
+   ]
+  },
+  "why": "nepotism is a practice, not a system; forced opposite"
+ },
+ {
+  "id": "v-showmanship",
+  "set": {
+   "syn": [
+    "theatricality",
+    "panache",
+    "flamboyance"
+   ]
+  },
+  "why": "flair means natural talent, not showmanship"
+ },
+ {
+  "id": "v-lithe",
+  "remove_dx": [
+   "v-wiry"
+  ],
+  "why": "wiry (thin but strong) is a near-synonym of lithe; could answer (e)/(b)"
+ },
+ {
+  "id": "v-restive",
+  "remove_dx": [
+   "v-recalcitrant"
+  ],
+  "why": "restive also means resisting control; recalcitrant is a near-synonym for (e)"
+ },
+ {
+  "id": "v-facetious",
+  "set": {
+   "syn": [
+    "flippant",
+    "joking",
+    "tongue-in-cheek"
+   ],
+   "cloze": {
+    "s": "When Wei joked that the flooded basement was now an indoor pool, his ___ comment did not amuse his worried parents.",
+    "a": "facetious"
+   }
+  },
+  "why": "glib means smooth but shallow, not joking; old cloze didn't signal joking, so 'uncouth' also fit"
+ },
+ {
+  "id": "v-facetious",
+  "remove_dx": [
+   "v-uncouth"
+  ],
+  "why": "uncouth comments fit the old cloze sensibly"
+ },
+ {
+  "id": "v-pester",
+  "remove_dx": [
+   "v-rile"
+  ],
+  "why": "rile (to annoy) is a near-synonym of pester for (e)"
+ },
+ {
+  "id": "v-inundation",
+  "remove_dx": [
+   "v-profusion"
+  ],
+  "why": "profusion (very large amount) overlaps inundation's 'overwhelming amount'; near-synonym for (e)"
+ },
+ {
+  "id": "v-calamitous",
+  "remove_dx": [
+   "v-injurious"
+  ],
+  "why": "injurious (causing harm or damage) overlaps the def and fits the cloze 'a ___ effect on farmers'"
+ },
+ {
+  "id": "v-languid",
+  "remove_dx": [
+   "v-breakneck"
+  ],
+  "why": "breakneck (extremely fast) is a near-opposite of a languid pace; would answer (f)"
+ },
+ {
+  "id": "v-deferential",
+  "set": {
+   "syn": [
+    "respectful",
+    "polite",
+    "submissive"
+   ]
+  },
+  "why": "dutiful means doing one's duty, not deferring to others"
+ },
+ {
+  "id": "v-roundly",
+  "set": {
+   "def": "in a complete and strong way, used mostly when something is criticized, rejected or defeated"
+  },
+  "why": "'often by many people at once' is not part of the meaning; 'roundly beaten' in ex 2 has nothing to do with many people"
+ },
+ {
+  "id": "v-bequeath",
+  "remove_dx": [
+   "v-consign",
+   "v-endow"
+  ],
+  "why": "'consign her book collection to the library' and 'endow' fit the will cloze sensibly"
+ },
+ {
+  "id": "v-transpire",
+  "set": {
+   "also": "to become known, often after being kept secret (“It later transpired that the letter was fake”)"
+  },
+  "why": "the sense is 'become known', not 'slowly become known'"
+ },
+ {
+  "id": "v-impresario",
+  "set": {
+   "syn": [
+    "producer",
+    "promoter",
+    "showman"
+   ]
+  },
+  "why": "manager is not a synonym of impresario"
+ },
+ {
+  "id": "v-disincentive",
+  "set": {
+   "syn": [
+    "deterrent",
+    "discouragement"
+   ]
+  },
+  "why": "hindrance is an obstacle, not something that reduces willingness"
+ },
+ {
+  "id": "v-expletive",
+  "set": {
+   "syn": [
+    "curse",
+    "obscenity",
+    "swear word"
+   ]
+  },
+  "why": "'oath' in this sense is dated; learners know it as a promise"
+ },
+ {
+  "id": "v-enliven",
+  "set": {
+   "syn": [
+    "brighten",
+    "animate",
+    "liven up"
+   ]
+  },
+  "why": "'cheer' is not a true synonym (you can't 'cheer an apartment')"
+ },
+ {
+  "id": "v-sprightly",
+  "remove_dx": [
+   "v-irrepressible"
+  ],
+  "why": "irrepressible (too lively and energetic to hold back) is a near-synonym and fits the cloze"
+ },
+ {
+  "id": "v-vestigial",
+  "set": {
+   "syn": [
+    "residual",
+    "leftover"
+   ]
+  },
+  "why": "learners know rudimentary as 'basic', not 'leftover'; misleading synonym"
+ },
+ {
+  "id": "v-elegiac",
+  "remove_dx": [
+   "v-morose",
+   "v-effervescent"
+  ],
+  "why": "morose (sad) is a near-synonym and fits 'a ___ poem'; effervescent (lively, cheerful) is a near-opposite for (f)"
+ },
+ {
+  "id": "v-unfailing",
+  "remove_dx": [
+   "v-fallible"
+  ],
+  "why": "fallible (able to fail) is a near-opposite of unfailing; would answer (f)"
+ },
+ {
+  "id": "v-chivalrous",
+  "remove_dx": [
+   "v-brusque"
+  ],
+  "why": "brusque (seems rude) is a near-opposite of chivalrous, whose ant includes rude"
+ },
+ {
+  "id": "v-flagrantly",
+  "remove_dx": [
+   "v-blithely",
+   "v-slyly"
+  ],
+  "why": "'blithely ran the red light' fits the cloze; slyly (secretly) is a near-opposite of flagrantly"
+ },
+ {
+  "id": "v-extradite",
+  "set": {
+   "def": "to officially hand over a person accused of a crime to another country or state so they can be tried there"
+  },
+  "why": "'send back' is inaccurate: extradition hands someone to the place that wants to try them, not necessarily back"
+ },
+ {
+  "id": "v-morsel",
+  "remove_dx": [
+   "v-vestige"
+  ],
+  "why": "vestige (small remaining trace) is close to morsel's second sense 'a small amount of anything' for (g)"
+ },
+ {
+  "id": "v-meekly",
+  "remove_dx": [
+   "v-sheepishly"
+  ],
+  "why": "sheepishly fits the cloze exactly (puppy caught digging follows owner back inside)"
+ }
+]

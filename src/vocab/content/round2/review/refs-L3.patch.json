@@ -1,0 +1,114 @@
+[
+ {
+  "id": "f-sword-of-damocles",
+  "set": {
+   "story": "The Roman writer Cicero tells of Damocles, a courtier who envied the tyrant Dionysius of Syracuse. Dionysius let him enjoy a royal feast in his place, but hung a sword above his head by a single horsehair to show how a ruler always lives in danger."
+  },
+  "why": "In Cicero (Tusculan Disputations 5.61-62) Damocles is placed on a golden couch at a banquet, not on a throne."
+ },
+ {
+  "id": "f-spin-straw-into-gold",
+  "set": {
+   "story": "In the Brothers Grimm fairy tale “Rumpelstiltskin,” a miller boasts that his daughter can spin straw into gold, and the king demands she do it. A strange little man does it for her, first for her necklace and ring, and finally for a terrible promise: her first child."
+  },
+  "why": "Story implied the work was done for a terrible promise from the start; the first two nights he takes a necklace and ring."
+ },
+ {
+  "id": "f-abandon-all-hope-ye-who-enter-here",
+  "set": {
+   "story": "In Dante's Inferno, written in Italian in the early 1300s, these words are written above the gate of Hell, which the poet passes through on his journey."
+  },
+  "why": "Dante describes the words as written in dark letters above the gate, not carved."
+ },
+ {
+  "id": "f-a-thorn-in-someones-side",
+  "set": {
+   "cloze": {
+    "s": "“That reporter asks me hard questions at every press event,” the mayor complained. “He's been ___ for years.”",
+    "a": "a thorn in my side"
+   }
+  },
+  "why": "'became a thorn in the side for the mayor' is unidiomatic; the phrase takes a possessive."
+ },
+ {
+  "id": "f-an-albatross-around-ones-neck",
+  "set": {
+   "cloze": {
+    "s": "The senator can't escape that old scandal; it has been ___ in every campaign since.",
+    "a": "an albatross around his neck"
+   }
+  },
+  "why": "'has been an albatross around the neck for the senator' is unidiomatic; the phrase takes a possessive."
+ },
+ {
+  "id": "f-the-meek-shall-inherit-the-earth",
+  "remove_dx": [
+   "f-pride-goes-before-a-fall"
+  ],
+  "why": "Cloze (loud, fighting candidates lose to the calm one) can also sensibly take 'pride goes before a fall'."
+ },
+ {
+  "id": "f-pygmalion",
+  "set": {
+   "syn": [
+    "mentor"
+   ]
+  },
+  "why": "'makeover' is a process, not a synonym for a person who reshapes someone."
+ },
+ {
+  "id": "f-thespian",
+  "set": {
+   "syn": [
+    "actor",
+    "performer"
+   ]
+  },
+  "why": "'player' for actor is dated; learners mostly know it as a sports/game term, so the syn question becomes confusing."
+ },
+ {
+  "id": "f-lucy-and-the-football",
+  "set": {
+   "syn": []
+  },
+  "why": "'bait and switch' means advertising one thing and selling another, not a repeatedly broken promise; not a synonym."
+ },
+ {
+  "id": "f-separate-the-wheat-from-the-chaff",
+  "set": {
+   "ant": []
+  },
+  "why": "'lump together' is a forced opposite, not an established antonym."
+ },
+ {
+  "id": "f-the-spirit-is-willing-but-the-flesh-is-weak",
+  "set": {
+   "ex": [
+    "I meant to go running at dawn and stayed in bed instead; the spirit is willing but the flesh is weak.",
+    "Malik promised to skip dessert all month; the spirit was willing, but the flesh was weak."
+   ]
+  },
+  "why": "ex1 garbled the saying as 'the spirit is willing and the flesh is weak'."
+ },
+ {
+  "id": "f-kismet",
+  "set": {
+   "ant": []
+  },
+  "why": "'coincidence' is a forced opposite (chance vs. fate is not a true antonym pair, and kismet often is a lucky coincidence)."
+ },
+ {
+  "id": "f-release-the-kraken",
+  "set": {
+   "story": "The Kraken is a giant sea monster from Scandinavian folklore. The Clash of the Titans films placed it in a Greek myth, and in the 2010 version Zeus (Liam Neeson) bellows “Release the Kraken!”, a line that became a popular joke."
+  },
+  "why": "The 1981 original already put the Kraken in the Perseus myth (Olivier: 'Let loose the Kraken!'); story implied the 2010 film did it first."
+ },
+ {
+  "id": "f-the-left-hand-doesnt-know-what-the-right-hand-is-doing",
+  "remove_dx": [
+   "f-the-blind-leading-the-blind"
+  ],
+  "why": "'in this company, the blind leading the blind' could plausibly fill the cloze about a confused, badly run company."
+ }
+]

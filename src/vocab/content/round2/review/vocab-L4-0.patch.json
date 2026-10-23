@@ -1,0 +1,197 @@
+[
+ {
+  "id": "v-opaque",
+  "remove_dx": [
+   "v-hefty"
+  ],
+  "why": "'hefty curtains' (heavy ones) could plausibly fill the darkness cloze"
+ },
+ {
+  "id": "v-lofty",
+  "set": {
+   "syn": [
+    "high",
+    "grand",
+    "ambitious"
+   ]
+  },
+  "why": "'noble' belongs to the moral-elevation sense, not 'very high and ambitious'"
+ },
+ {
+  "id": "v-disparate",
+  "remove_dx": [
+   "v-cohesive"
+  ],
+  "why": "near-opposite of disparate (disparate vs cohesive groups) - conflicts with opposite question"
+ },
+ {
+  "id": "v-sully",
+  "set": {
+   "syn": [
+    "tarnish",
+    "stain",
+    "taint"
+   ]
+  },
+  "why": "'besmirch' is rarer than the headword; learners at this level would not recognize it"
+ },
+ {
+  "id": "v-prowess",
+  "remove_dx": [
+   "v-valor"
+  ],
+  "why": "prowess also means courage in battle (per its own note), overlapping valor"
+ },
+ {
+  "id": "v-farce",
+  "remove_dx": [
+   "v-calamity"
+  ],
+  "why": "'the election was a complete calamity' can sensibly fill the cloze"
+ },
+ {
+  "id": "v-repel",
+  "remove_dx": [
+   "v-disperse"
+  ],
+  "why": "'coating designed to disperse water' could plausibly fill the cloze"
+ },
+ {
+  "id": "v-impede",
+  "remove_dx": [
+   "v-jeopardize"
+  ],
+  "why": "'fallen trees jeopardized the ambulance's progress' can sensibly fill the cloze"
+ },
+ {
+  "id": "v-presumption",
+  "remove_dx": [
+   "v-fallacy"
+  ],
+  "why": "'starts from the fallacy that people act in their own interest, which experts doubt' fits the cloze; overlapping meaning"
+ },
+ {
+  "id": "v-sorely",
+  "remove_dx": [
+   "v-acutely",
+   "v-undeniably"
+  ],
+  "why": "acutely's def ('very strongly, used for feelings') nearly matches sorely; 'undeniably in need of repairs' and 'acutely in need' fill the cloze"
+ },
+ {
+  "id": "v-steadfast",
+  "remove_dx": [
+   "v-ardent"
+  ],
+  "why": "'the team's ardent fans never stopped coming' fills the cloze; near-synonym in this context"
+ },
+ {
+  "id": "v-momentous",
+  "remove_dx": [
+   "v-fruitful"
+  ],
+  "why": "'a fruitful step' could arguably fill the treaty cloze"
+ },
+ {
+  "id": "v-hectic",
+  "remove_dx": [
+   "v-fraught"
+  ],
+  "why": "'Mornings are fraught in our house' (stressful) can sensibly fill the cloze"
+ },
+ {
+  "id": "v-rebuttal",
+  "set": {
+   "syn": [
+    "counterargument",
+    "refutation"
+   ]
+  },
+  "why": "'reply' is a broader word, not a true synonym (a reply need not argue a claim is wrong)"
+ },
+ {
+  "id": "v-arbitrarily",
+  "set": {
+   "ant": [
+    "systematically"
+   ]
+  },
+  "why": "'deliberately' is not a true opposite; an arbitrary choice can be made deliberately"
+ },
+ {
+  "id": "v-devout",
+  "remove_dx": [
+   "v-ardent"
+  ],
+  "why": "devout also means strongly committed (its own note: 'a devout fan'), overlapping ardent; 'ardent monks' could fill the cloze"
+ },
+ {
+  "id": "v-flatter",
+  "set": {
+   "ex": [
+    "He tried to flatter the boss by praising every idea she suggested.",
+    "Liam flattered his aunt, praising her cooking for an hour, because he wanted to borrow her car."
+   ]
+  },
+  "why": "ex2 'Sofia was flattered when...' shows the feel-pleased sense, not the defined sense of insincere praise"
+ },
+ {
+  "id": "v-dispel",
+  "set": {
+   "syn": [
+    "banish",
+    "dismiss",
+    "eliminate"
+   ]
+  },
+  "why": "'allay' is rarer than the headword and would not be recognized by most learners at this level"
+ },
+ {
+  "id": "v-undeniably",
+  "remove_dx": [
+   "v-strikingly",
+   "v-exceedingly"
+  ],
+  "why": "'it was strikingly/exceedingly beautiful to look at' both fill the cloze sensibly"
+ },
+ {
+  "id": "v-curt",
+  "remove_dx": [
+   "v-cryptic"
+  ],
+  "why": "'His answer was so cryptic, just a single word...' can sensibly fill the cloze"
+ },
+ {
+  "id": "v-vendetta",
+  "set": {
+   "syn": [
+    "feud"
+   ]
+  },
+  "why": "a grudge is a lasting feeling, not a campaign to harm someone; not a true synonym"
+ },
+ {
+  "id": "v-egregious",
+  "remove_dx": [
+   "v-ludicrous"
+  ],
+  "why": "'Leaving the vault open overnight was a ludicrous mistake' fills the cloze sensibly"
+ },
+ {
+  "id": "v-shabby",
+  "remove_dx": [
+   "v-deplorable"
+  ],
+  "why": "deplorable's def 'very bad or unfair' matches the also-sense 'unfair or not kind' (check g)"
+ },
+ {
+  "id": "v-accomplice",
+  "set": {
+   "syn": [
+    "partner in crime",
+    "collaborator"
+   ]
+  },
+  "why": "'confederate' in this sense is rare and unrecognizable to most learners"
+ }
+]

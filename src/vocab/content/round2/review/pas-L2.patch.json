@@ -1,0 +1,97 @@
+[
+ {
+  "id": "g-L2-02",
+  "set": {
+   "text": "High on the steep sides of mountains, where the wind never seems to stop, a small purple-pink flower called moss campion grows in tight cushions. It is a hardy plant that can survive freezing nights and months under snow. Its leaves are packed so closely together that they hold warm air near the ground. Because of this, it can thrive where taller plants quickly die. Hikers often see the bright cushions scattered across the rocks like dropped buttons. Warm, sunny days are not abundant up there, so the plant grows very slowly, and a large cushion may be many years old. Even so, the plant is fragile in one way: a single careless boot can crush years of growth. That is why walkers are asked to stay on the path."
+  },
+  "why": "Fact fix: moss campion grows slowly because of the short, cold growing season (and poor soil), not mainly because water is scarce; the causal claim 'water is not abundant, so it grows slowly' was not supportable."
+ },
+ {
+  "id": "g-L2-14",
+  "set": {
+   "text": "Coffee is a major commodity, traded all around the world, and its price can be surprisingly volatile. Brazil grows more coffee than any other country, so bad weather there affects everyone. When frost or drought damages the crops, a shortage can follow within months. Consequently, the price of coffee beans may rise quickly. Many café owners buy their beans wholesale, in large sacks. A sudden surge in those costs can squeeze a small business. Leila, who roasts her own beans for her café in Chicago, explains that she cannot change her menu prices every week. \"Instead, I buy extra raw beans when prices are low and store them,\" she says. \"They keep for months. It doesn't always work, but it helps.\""
+  },
+  "why": "Fact fixes: 'one of the world's most traded commodities' is an unverified ranking claim (softened); most cafés buy roasted beans from roasters, not importers, and roasted beans go stale, so stockpiling them when cheap is unrealistic. Leila now roasts her own and stores raw (green) beans, which do keep for months. Questions unchanged and still correct."
+ },
+ {
+  "id": "g-L2-21",
+  "set": {
+   "text": "Before modern technology, lighthouses were a key part of maritime safety. Each one warned ships of a hazard, such as rocks or a sandbar near the shore. Some lighthouses stood on small islands, where a lone keeper lived, sometimes for months without visitors. The job required great devotion. On stormy nights, the keeper had to keep the lamp burning continuously, climbing the stairs to add oil and clean the glass. When dense fog rolled in and the light could not be seen, keepers rang a bell or sounded a horn instead. Today, almost all lighthouses in the United States run automatically, but many people still visit them to imagine that quiet, watchful life."
+  },
+  "why": "Fact softening: many island lighthouses had several keepers or families; 'on many small islands a lone keeper' overstated it. 'Lone' still used in its card meaning."
+ },
+ {
+  "id": "g-L2-27",
+  "set": {
+   "text": "In 1928, the Scottish scientist Alexander Fleming came back from a holiday to find that mold had grown on one of his dishes of bacteria. He had not added it intentionally; it was a coincidence that a tiny bit of mold had landed there. But Fleming noticed something strange: around the mold, the bacteria had died. At that time, even a small cut could lead to a lethal infection. His curiosity led him to study the mold, which made a substance he named penicillin. Even so, it took more than ten years for its true value to emerge. In the 1940s, a team at Oxford led by Howard Florey, working with Ernst Chain, turned it into a medicine that doctors could use on patients. The breakthrough saved millions of lives."
+  },
+  "why": "Fact precision: the Oxford team was led by Florey; Chain was a key member, not co-leader. Q2 option still matches."
+ },
+ {
+  "id": "g-L2-29",
+  "set": {
+   "text": "When Mateo's great-aunt moved to a smaller home, she gave him her old piano. It had not been played in thirty years. A repairman named Mr. Adeyemi came to look at it. After a thorough check of every key and string, he had good news: the wooden case was still intact, with no cracks. The ivory keys, however, were fragile and had to be handled with great care. Mr. Adeyemi did not want to modify the piano too much, because its age was part of its charm. He replaced the worn strings but chose to incorporate the original pedals and brass hinges into the repair. When he finished, Mateo played a simple tune. The sound was splendid, warm and full, filling the whole house."
+  },
+  "why": "Fact fix: a piano's main frame (plate) is cast iron, not wood, so 'wooden frame' was wrong; 'brass handles' are not a standard piano part (brass hinges are)."
+ },
+ {
+  "id": "g-L2-07",
+  "set": {
+   "text": "Building the Brooklyn Bridge in New York was a huge undertaking. Construction began in 1870, and the bridge's length was unprecedented: when it opened, it was the longest suspension bridge in the world. The designer, John Roebling, had died in 1869, so his son Washington took over. Then Washington became seriously ill and could no longer visit the site. His wife, Emily, became the link between him and the workers, carrying his instructions and learning the engineering herself. This obstacle could have stopped the project, but it did not. The bridge's eventual opening came in 1883, thirteen years after work began. It was a great feat of engineering, and the Roebling family became renowned for it."
+  },
+  "why": "Wording fix: 'When construction began in 1870, its length was unprecedented: when it opened...' was illogical (length is not unprecedented 'when construction began') and stacked two when-clauses; 'had died the year before' now read as the year before the opening, so changed to 'in 1869'. Facts verified: work began 1870, John Roebling died 1869, opened 1883, longest suspension bridge at opening, Emily Roebling's role."
+ },
+ {
+  "id": "g-L2-19",
+  "set": {
+   "text": "For fifty years, the Hillside and Riverside high school soccer teams have had a fierce rivalry. Fans paint their faces and fill the stands for every match. This year's final was tense, tied 1–1 with ten minutes left. Then Riverside's goalkeeper, Kofi, fell and hurt his ankle badly. The stadium went quiet. Hillside's captain, Tariq, walked over, knelt beside him, and put a hand on his shoulder while the medical staff worked. It was a small gesture, but the crowd noticed. Hillside fans, usually loud and teasing, clapped for Kofi as he was helped off. A local newspaper later called it a moment of solidarity between two towns that rarely agree on anything. Kofi said the other side had been sympathetic, which meant more to him than the score.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-fierce",
+     "q": "In the passage, what does “fierce” mean?",
+     "options": [
+      "friendly and relaxed",
+      "wild and ready to attack, like an animal",
+      "short and quickly forgotten",
+      "quiet and polite",
+      "unfair and dishonest",
+      "very strong and intense"
+     ],
+     "answer": 5,
+     "why": "The two teams have competed hard for fifty years, with packed stands, so the rivalry is very strong and intense, not about a wild animal."
+    },
+    {
+     "kind": "word",
+     "word": "v-gesture",
+     "q": "In the passage, what does “gesture” mean?",
+     "options": [
+      "a loud cheer from the crowd",
+      "a written message",
+      "a movement of the body that shows a feeling",
+      "a rule of the game",
+      "a gift of money",
+      "a goal scored late in a match"
+     ],
+     "answer": 2,
+     "why": "Mei's hand on Kofi's shoulder was a small movement that showed she cared."
+    },
+    {
+     "kind": "idea",
+     "q": "Why did the Hillside fans start clapping?",
+     "options": [
+      "They were moved by Tariq's kindness and wanted to support Kofi.",
+      "Hillside had just scored the winning goal.",
+      "Kofi had made an amazing save.",
+      "The match had ended in a tie.",
+      "The newspaper asked them to clap.",
+      "Mei waved to them to cheer louder."
+     ],
+     "answer": 0,
+     "why": "After Mei's kind action, the usually teasing fans clapped for the injured goalkeeper as he left the field."
+    }
+   ]
+  },
+  "why": "Consistency fix: a high-school final between Kofi's team and a captain named Mei reads as a boys' team against a girls' team; renamed the captain (text and idea-question option 0). Answer unchanged."
+ }
+]

@@ -1,0 +1,426 @@
+[
+ {
+  "id": "v-time",
+  "set": {
+   "ex": [
+    "What time does the movie start tonight?",
+    "How much time do you need to finish your homework?"
+   ]
+  },
+  "why": "ex2 used the 'experience/occasion' sense, not the defined sense"
+ },
+ {
+  "id": "v-new",
+  "set": {
+   "cloze": {
+    "s": "Our house is not old. It was built last year, so it is ___.",
+    "a": "new"
+   }
+  },
+  "why": "cloze: large/small/red/local fit 'a ___ house'"
+ },
+ {
+  "id": "v-life",
+  "remove_dx": [
+   "v-week",
+   "v-morning"
+  ],
+  "why": "'the rest of her week/morning' also fits cloze"
+ },
+ {
+  "id": "v-great",
+  "remove_dx": [
+   "v-happy",
+   "v-special"
+  ],
+  "why": "'a happy/special time' fits cloze"
+ },
+ {
+  "id": "v-little",
+  "set": {
+   "cloze": {
+    "s": "This bug is so ___ that I can hardly see it.",
+    "a": "little"
+   }
+  },
+  "why": "cloze used 'little brother' (= younger) sense, and 'young' fit"
+ },
+ {
+  "id": "v-feel",
+  "remove_dx": [
+   "v-move"
+  ],
+  "why": "'I move much better' could fill cloze"
+ },
+ {
+  "id": "v-play",
+  "remove_dx": [
+   "v-try"
+  ],
+  "why": "'Let's try soccer' fits cloze"
+ },
+ {
+  "id": "v-name",
+  "remove_dx": [
+   "v-age"
+  ],
+  "why": "'wrote each student's age on a card' fits cloze"
+ },
+ {
+  "id": "v-set",
+  "remove_dx": [
+   "v-get"
+  ],
+  "why": "'get the plates on the table' fits cloze"
+ },
+ {
+  "id": "v-public",
+  "set": {
+   "cloze": {
+    "s": "This park is not private; it is ___, so anyone can play there.",
+    "a": "public"
+   }
+  },
+  "why": "cloze: big/small/nice/red/free all fit 'the ___ pool'"
+ },
+ {
+  "id": "v-already",
+  "remove_dx": [
+   "v-actually"
+  ],
+  "why": "'I actually had a snack' fits cloze"
+ },
+ {
+  "id": "v-please",
+  "remove_dx": [
+   "v-now"
+  ],
+  "why": "'May I now have another cookie?' fits cloze"
+ },
+ {
+  "id": "v-actually",
+  "remove_dx": [
+   "v-probably"
+  ],
+  "why": "'but he was probably reading' fits cloze"
+ },
+ {
+  "id": "v-whole",
+  "remove_dx": [
+   "v-full"
+  ],
+  "why": "'It rained the full week' fits cloze; near-synonym"
+ },
+ {
+  "id": "v-together",
+  "set": {
+   "cloze": {
+    "s": "Let's all sit ___ at one big table.",
+    "a": "together"
+   }
+  },
+  "why": "cloze: 'sang the song often/well' also fit"
+ },
+ {
+  "id": "v-important",
+  "remove_dx": [
+   "v-special"
+  ],
+  "why": "'very special for all living things' could fill cloze"
+ },
+ {
+  "id": "v-level",
+  "set": {
+   "ex": [
+    "The water level in the lake went up.",
+    "Hannah reads at a high level for her age."
+   ]
+  },
+  "why": "ex2 (game levels) not covered by def"
+ },
+ {
+  "id": "v-true",
+  "set": {
+   "cloze": {
+    "s": "Grandpa's story sounds made up, but every word of it is ___.",
+    "a": "true"
+   }
+  },
+  "why": "cloze: good/important/nice fit 'Not everything you read online is ___'"
+ },
+ {
+  "id": "v-true",
+  "remove_dx": [
+   "v-important",
+   "v-good"
+  ],
+  "why": "could still loosely fill new cloze"
+ },
+ {
+  "id": "v-probably",
+  "remove_dx": [
+   "v-maybe"
+  ],
+  "why": "near-synonym (test e) and 'it will maybe rain' fits cloze"
+ },
+ {
+  "id": "v-community",
+  "remove_dx": [
+   "v-team"
+  ],
+  "why": "'Everyone in our team came to the town picnic' fits cloze"
+ },
+ {
+  "id": "v-light",
+  "set": {
+   "ex": [
+    "Open the curtains to let the light in.",
+    "The sun gives us light."
+   ],
+   "cloze": {
+    "s": "Plants need water and ___ from the sun to grow.",
+    "a": "light"
+   }
+  },
+  "why": "ex1/cloze used the lamp sense ('turn on the light'), not the defined sense"
+ },
+ {
+  "id": "v-light",
+  "remove_dx": [
+   "v-night"
+  ],
+  "why": "night ('the dark time') is a near-opposite of light (test f)"
+ },
+ {
+  "id": "v-soon",
+  "set": {
+   "ant": []
+  },
+  "why": "'later' is not a true opposite of 'soon'"
+ },
+ {
+  "id": "v-major",
+  "remove_dx": [
+   "v-special"
+  ],
+  "why": "'a special news story' fits cloze"
+ },
+ {
+  "id": "v-know",
+  "remove_dx": [
+   "v-show"
+  ],
+  "why": "'She will show the way to the station' fits cloze"
+ },
+ {
+  "id": "v-need",
+  "remove_dx": [
+   "v-have",
+   "v-get"
+  ],
+  "why": "'You have/get a ticket to get on the train' fits cloze"
+ },
+ {
+  "id": "v-work",
+  "remove_dx": [
+   "v-leave"
+  ],
+  "why": "'has to leave late tonight' fits cloze"
+ },
+ {
+  "id": "v-home",
+  "set": {
+   "ex": [
+    "Kwame's home is next to a big park.",
+    "Our home has a big yard."
+   ]
+  },
+  "why": "ex1 used 'home' as an adverb; item is a noun"
+ },
+ {
+  "id": "v-high",
+  "set": {
+   "ex": [
+    "That mountain is very high.",
+    "That shelf is too high for me to reach."
+   ],
+   "cloze": {
+    "s": "The fence is too ___ for the dog to jump over.",
+    "a": "high"
+   }
+  },
+  "why": "ex1 and cloze used 'high' as an adverb (flew high, high up); item is an adjective"
+ },
+ {
+  "id": "v-high",
+  "remove_dx": [
+   "v-large"
+  ],
+  "why": "'too large for the dog to jump over' fits new cloze"
+ },
+ {
+  "id": "v-thought",
+  "remove_dx": [
+   "v-reason",
+   "v-question"
+  ],
+  "why": "'That is a good reason/question' fits cloze"
+ },
+ {
+  "id": "v-bad",
+  "set": {
+   "cloze": {
+    "s": "The food at that place tastes ___, so we never eat there.",
+    "a": "bad"
+   },
+   "syn": []
+  },
+  "why": "cloze used the 'feeling sorry' sense; 'poor' is not a synonym a starter learner knows in this sense (reads as 'not rich')"
+ },
+ {
+  "id": "v-run",
+  "remove_dx": [
+   "v-leave",
+   "v-pay"
+  ],
+  "why": "'I have to leave/pay to get there on time' fits cloze"
+ },
+ {
+  "id": "v-maybe",
+  "set": {
+   "def": "it might be true or might happen; no one is sure"
+  },
+  "why": "plain-word rule: def defined 'maybe' with the harder word 'perhaps'"
+ },
+ {
+  "id": "v-maybe",
+  "remove_dx": [
+   "v-probably"
+  ],
+  "why": "'Probably I can come later' fits cloze; near-synonym"
+ },
+ {
+  "id": "v-local",
+  "set": {
+   "cloze": {
+    "s": "The ___ news is about our own town, not the whole country.",
+    "a": "local"
+   }
+  },
+  "why": "cloze: nice/special/free/red fit 'the ___ school down the street'"
+ },
+ {
+  "id": "v-social",
+  "set": {
+   "cloze": {
+    "s": "Ming is very ___ and loves to talk with new people.",
+    "a": "social"
+   }
+  },
+  "why": "cloze: little/large/happy fit '___ animals that like to be with others'"
+ },
+ {
+  "id": "v-social",
+  "remove_dx": [
+   "v-happy"
+  ],
+  "why": "'very happy and loves to talk' could fill new cloze"
+ },
+ {
+  "id": "v-often",
+  "remove_dx": [
+   "v-always",
+   "v-now"
+  ],
+  "why": "'We always/now eat dinner together' fits cloze"
+ },
+ {
+  "id": "v-university",
+  "set": {
+   "ex": [
+    "My sister goes to a university in Chicago.",
+    "Priya studies science at the university."
+   ],
+   "cloze": {
+    "s": "After high school, Jamal went to a ___ to study science.",
+    "a": "university"
+   }
+  },
+  "why": "'goes to university' is British usage; in the US law is not studied right after high school"
+ },
+ {
+  "id": "v-almost",
+  "set": {
+   "def": "not all the way, but very close",
+   "cloze": {
+    "s": "My glass is ___ empty. Can I have more juice?",
+    "a": "almost"
+   }
+  },
+  "why": "plain-word rule: def used harder 'nearly'; cloze 'Our glass' unnatural"
+ },
+ {
+  "id": "v-almost",
+  "remove_dx": [
+   "v-already",
+   "v-now"
+  ],
+  "why": "'My glass is already/now empty' fits cloze"
+ },
+ {
+  "id": "v-large",
+  "remove_dx": [
+   "v-new",
+   "v-old"
+  ],
+  "why": "'a new/old house with ten rooms' fits cloze"
+ },
+ {
+  "id": "v-pretty",
+  "remove_dx": [
+   "v-big",
+   "v-small"
+  ],
+  "why": "'What a big/small flower!' fits cloze"
+ },
+ {
+  "id": "v-international",
+  "set": {
+   "syn": []
+  },
+  "why": "'global' (worldwide) is not a synonym of 'between countries' (an international airport is not a global airport)"
+ },
+ {
+  "id": "v-international",
+  "remove_dx": [
+   "v-public"
+  ],
+  "why": "'The public meeting had people from twenty countries' fits cloze"
+ },
+ {
+  "id": "v-special",
+  "remove_dx": [
+   "v-important",
+   "v-great",
+   "v-good"
+  ],
+  "why": "'important/great/good days like weddings' fits cloze"
+ },
+ {
+  "id": "v-low",
+  "set": {
+   "ex": [
+    "The cat jumped over the low wall.",
+    "This chair is too low for the table."
+   ]
+  },
+  "why": "ex2 used 'low' as an adverb (flew low); item is an adjective"
+ },
+ {
+  "id": "v-low",
+  "remove_dx": [
+   "v-special"
+  ],
+  "why": "'a special shelf for the little kids' could fill cloze"
+ }
+]

@@ -1,0 +1,235 @@
+[
+ {
+  "id": "v-unruffled",
+  "remove_dx": [
+   "v-decorous"
+  ],
+  "why": "decorous def includes 'calm' and fits the cloze ('remained decorous and answered politely')"
+ },
+ {
+  "id": "v-euphemistic",
+  "remove_dx": [
+   "v-unsparing"
+  ],
+  "why": "unsparing (not holding back from harsh truths) is a near-opposite; bad for (f)"
+ },
+ {
+  "id": "v-graceless",
+  "remove_dx": [
+   "v-elephantine"
+  ],
+  "why": "elephantine def 'clumsy' overlaps graceless/its syn 'clumsy'"
+ },
+ {
+  "id": "v-gamely",
+  "remove_dx": [
+   "v-obstinately"
+  ],
+  "why": "'fought on obstinately until the final whistle' also fits the cloze"
+ },
+ {
+  "id": "v-abjectly",
+  "remove_dx": [
+   "v-abysmally"
+  ],
+  "why": "'abysmally failed' fits the cloze equally; near-synonym of 'miserably'"
+ },
+ {
+  "id": "v-repast",
+  "set": {
+   "syn": [
+    "meal"
+   ]
+  },
+  "why": "feast/spread imply a large meal; a repast can be simple (see ex 1)"
+ },
+ {
+  "id": "v-blustering",
+  "set": {
+   "syn": [
+    "swaggering",
+    "bullying"
+   ]
+  },
+  "why": "blustery describes wind/weather, not a person's talk"
+ },
+ {
+  "id": "v-blustering",
+  "remove_dx": [
+   "v-truculent"
+  ],
+  "why": "truculent (aggressive, combative) is a near-synonym and fits the cloze"
+ },
+ {
+  "id": "v-untarnished",
+  "set": {
+   "syn": [
+    "unblemished",
+    "spotless",
+    "unspoiled"
+   ]
+  },
+  "why": "intact is not a synonym of untarnished (reputation sense)"
+ },
+ {
+  "id": "v-hardscrabble",
+  "remove_dx": [
+   "v-remunerative"
+  ],
+  "why": "remunerative (paying well) is a near-opposite; bad for (f)"
+ },
+ {
+  "id": "v-bugaboo",
+  "remove_dx": [
+   "v-vexation"
+  ],
+  "why": "'Jamal's lifelong vexation' can also fill the cloze"
+ },
+ {
+  "id": "v-unglamorous",
+  "set": {
+   "def": "dull, ordinary or hard, with nothing exciting or attractive about it"
+  },
+  "why": "old def defined an adjective with a noun phrase ('hard work')"
+ },
+ {
+  "id": "v-speculatively",
+  "set": {
+   "def": "in a way based on guesses or ideas rather than known facts"
+  },
+  "why": "adverb def was phrased as an adjective"
+ },
+ {
+  "id": "v-sinewy",
+  "set": {
+   "syn": [
+    "wiry",
+    "muscular",
+    "lean"
+   ]
+  },
+  "why": "brawny means big and heavily built, the opposite of lean"
+ },
+ {
+  "id": "v-inquisitorial",
+  "remove_dx": [
+   "v-mistrustful"
+  ],
+  "why": "'her father's mistrustful questions' fits the cloze sensibly"
+ },
+ {
+  "id": "v-unblinking",
+  "remove_dx": [
+   "v-undisguised"
+  ],
+  "why": "undisguised (shown openly, not hidden) overlaps the also-sense 'honest and direct'; bad for (g)"
+ },
+ {
+  "id": "v-bigwig",
+  "remove_dx": [
+   "v-potentate"
+  ],
+  "why": "potentate (a powerful ruler) is a near-synonym and fits 'The local ___ arrived in a limousine'"
+ },
+ {
+  "id": "v-panegyric",
+  "set": {
+   "syn": [
+    "tribute",
+    "encomium"
+   ]
+  },
+  "why": "eulogy contradicts the item's own note; accolade is an award/honor, not a speech of praise"
+ },
+ {
+  "id": "v-panegyric",
+  "remove_dx": [
+   "v-hagiography"
+  ],
+  "why": "hagiography (writing that praises its subject too much) overlaps the def 'writing that gives very high praise'"
+ },
+ {
+  "id": "v-malcontent",
+  "set": {
+   "syn": [
+    "complainer",
+    "grumbler",
+    "troublemaker"
+   ],
+   "ant": []
+  },
+  "why": "rebel is not a synonym; optimist is a forced opposite"
+ },
+ {
+  "id": "v-malcontent",
+  "remove_dx": [
+   "v-meddler"
+  ],
+  "why": "'a handful of meddlers kept writing angry letters' also fits the cloze"
+ },
+ {
+  "id": "v-absently",
+  "remove_dx": [
+   "v-unthinkingly"
+  ],
+  "why": "unthinkingly is a near-synonym and fits 'Priya ___ twirled a pencil'"
+ },
+ {
+  "id": "v-audaciously",
+  "remove_dx": [
+   "v-gamely"
+  ],
+  "why": "gamely (bravely) is a near-synonym of audaciously (boldly, fearlessly); bad for (e)"
+ },
+ {
+  "id": "v-glowering",
+  "remove_dx": [
+   "v-crotchety"
+  ],
+  "why": "'The crotchety old man ... frowned at anyone who whispered' fits the cloze"
+ },
+ {
+  "id": "v-unverifiable",
+  "remove_dx": [
+   "v-contestable"
+  ],
+  "why": "'the old story ... remains contestable' also fits the cloze"
+ },
+ {
+  "id": "v-stolid",
+  "remove_dx": [
+   "v-unflappable",
+   "v-tremulous",
+   "v-discombobulated"
+  ],
+  "why": "unflappable is a near-synonym and fits the cloze; tremulous and discombobulated are near-opposites (bad for (f))"
+ },
+ {
+  "id": "v-preposterously",
+  "remove_dx": [
+   "v-fiendishly"
+  ],
+  "why": "'fiendishly expensive' can also fill the cloze"
+ },
+ {
+  "id": "v-laggard",
+  "set": {
+   "syn": [
+    "straggler",
+    "slowpoke",
+    "dawdler"
+   ]
+  },
+  "why": "latecomer means someone who arrives late, not someone who lags behind"
+ },
+ {
+  "id": "v-fumigate",
+  "set": {
+   "syn": [
+    "disinfect",
+    "sanitize"
+   ]
+  },
+  "why": "purify is not a synonym of fumigate"
+ }
+]

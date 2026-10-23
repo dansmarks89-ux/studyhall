@@ -1,0 +1,154 @@
+[
+ {
+  "id": "f-gadarene",
+  "set": {
+   "story": "In the Gospels, Jesus drives demons into a herd of pigs, which rush down a steep bank into the water and drown. In the King James Bible, Mark and Luke place the event in 'the country of the Gadarenes.'"
+  },
+  "why": "KJV Matthew 8:28 says 'Gergesenes', not 'Gadarenes'; the English word comes from KJV Mark 5:1 / Luke 8:26"
+ },
+ {
+  "id": "f-lysenkoism",
+  "set": {
+   "story": "Soviet biologist Trofim Lysenko rejected genetics and made false claims about growing crops, and Stalin backed him. Leading geneticist Nikolai Vavilov was arrested in 1940 and died in prison in 1943; from 1948 genetics was effectively banned, and thousands of biologists lost their jobs."
+  },
+  "why": "Chronology error: story implied Vavilov died in prison after the 1948 ban; he died in 1943"
+ },
+ {
+  "id": "f-the-sorcerers-apprentice",
+  "set": {
+   "story": "In Goethe's 1797 poem, an apprentice uses magic to make a broom carry water but cannot stop it. When he splits it with an axe, each half becomes a new broom, and both keep fetching water until his master returns. Disney's Fantasia (1940) made it famous."
+  },
+  "why": "Poem: each half becomes a whole broom and together they work twice as fast; 'each piece fetches water faster' misstates it"
+ },
+ {
+  "id": "f-barmecide-feast",
+  "set": {
+   "story": "In a tale from the One Thousand and One Nights, a rich nobleman of the Barmecide family invites a starving beggar to a grand feast, then serves only empty dishes and describes imaginary food. The beggar plays along, and the host finally serves a real meal."
+  },
+  "why": "Barmecide is a family name (the Barmakids); the host is 'the Barmecide', a member of it, not a man named Barmecide"
+ },
+ {
+  "id": "f-mess-of-pottage",
+  "set": {
+   "ex": [
+    "Selling the family farm to a developer for quick cash felt like trading it for a mess of pottage.",
+    "Olga later realized she had given up her pension for a mess of pottage: a slightly higher salary."
+   ]
+  },
+  "why": "Ex 2 called the act of giving up the pension the 'mess of pottage'; the pottage is the small thing received"
+ },
+ {
+  "id": "f-el-dorado",
+  "set": {
+   "syn": [
+    "gold mine"
+   ]
+  },
+  "why": "'paradise' is not a synonym (a perfect, happy place, not a place of wealth sought in vain)"
+ },
+ {
+  "id": "f-el-dorado",
+  "remove_dx": [
+   "f-rich-as-croesus"
+  ],
+  "why": "Same wealth idea; risky as a wrong answer for (e) closest-in-meaning"
+ },
+ {
+  "id": "f-rich-as-croesus",
+  "remove_dx": [
+   "f-grub-street",
+   "f-el-dorado"
+  ],
+  "why": "Grub Street (poorly paid) is a near-opposite for (f); El Dorado (place of wealth) is a near-synonym for (e)"
+ },
+ {
+  "id": "f-lucullan",
+  "remove_dx": [
+   "f-brobdingnagian"
+  ],
+  "why": "'___ banquets' with lobster and caviar: 'Brobdingnagian banquets' (huge) also fits the cloze"
+ },
+ {
+  "id": "f-koan",
+  "remove_dx": [
+   "f-delphic"
+  ],
+  "why": "Delphic (mysterious, cryptic) overlaps a koan's puzzling, hard-to-understand sense for (b)/(e)"
+ },
+ {
+  "id": "f-laodicean",
+  "remove_dx": [
+   "f-lilliputian"
+  ],
+  "why": "'Her interest had become ___': Lilliputian (tiny/petty) could also fill the cloze"
+ },
+ {
+  "id": "f-panglossian",
+  "remove_dx": [
+   "f-doublethink"
+  ],
+  "why": "'The minister's ___ speech claimed the economy was perfect even as factories closed' also fits doublethink/propaganda"
+ },
+ {
+  "id": "f-micawber",
+  "remove_dx": [
+   "f-lotus-eater"
+  ],
+  "why": "Lotus-eater (lazy, ignores responsibilities) overlaps 'instead of taking action' and could fit 'spending like a ___'"
+ },
+ {
+  "id": "f-the-sorcerers-apprentice",
+  "remove_dx": [
+   "f-golem"
+  ],
+  "why": "Golem def includes 'a creation that grows beyond its maker's control', the same idea"
+ },
+ {
+  "id": "f-mrs-grundy",
+  "remove_dx": [
+   "f-javert"
+  ],
+  "why": "Javert (merciless rule-enforcer) overlaps 'objects to anything that breaks the rules' for (b)"
+ },
+ {
+  "id": "f-apres-moi-le-deluge",
+  "remove_dx": [
+   "f-dog-in-the-manger"
+  ],
+  "why": "'a careless ___ attitude': 'dog-in-the-manger attitude' is a common phrase and fits grammatically and roughly in meaning"
+ },
+ {
+  "id": "f-who-watches-the-watchmen",
+  "set": {
+   "story": "The Roman poet Juvenal asked 'Quis custodiet ipsos custodes?' (who will guard the guards themselves?) in a satire about locking up a wife, since a clever wife could win over the guards themselves. It is now asked about holding powerful people accountable."
+  },
+  "why": "Juvenal says the cunning wife 'begins with them' (wins the guards over); 'bribed' is not in the text"
+ },
+ {
+  "id": "f-mrs-grundy",
+  "set": {
+   "syn": [
+    "prude",
+    "puritan"
+   ]
+  },
+  "why": "'killjoy' (spoils fun) is not a synonym of a prim judge of propriety"
+ },
+ {
+  "id": "f-panglossian",
+  "set": {
+   "ant": [
+    "pessimistic",
+    "gloomy"
+   ]
+  },
+  "why": "'cynical' (distrusting motives) is not the opposite of blindly optimistic"
+ },
+ {
+  "id": "f-the-quality-of-mercy-is-not-strained",
+  "remove_dx": [
+   "f-the-milk-of-human-kindness"
+  ],
+  "why": "Compassion/mercy overlap; risky for (b) and the cloze"
+ }
+]

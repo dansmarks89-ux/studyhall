@@ -1,0 +1,334 @@
+[
+ {
+  "id": "v-ridiculous",
+  "remove_dx": [
+   "v-bizarre"
+  ],
+  "why": "'completely bizarre' also fits the cat-driving cloze"
+ },
+ {
+  "id": "v-mandatory",
+  "remove_dx": [
+   "v-vital"
+  ],
+  "why": "'Attendance is vital, so no one may skip' is a sensible fill"
+ },
+ {
+  "id": "v-pathetic",
+  "remove_dx": [
+   "v-extraordinary"
+  ],
+  "why": "near-opposite of pathetic (ant: impressive) for test (f)"
+ },
+ {
+  "id": "v-permanently",
+  "remove_dx": [
+   "v-severely"
+  ],
+  "why": "'The fire severely damaged the old church' fits the cloze"
+ },
+ {
+  "id": "v-permanently",
+  "set": {
+   "syn": [
+    "forever",
+    "for good"
+   ]
+  },
+  "why": "'lastingly' is rare; a level-1 learner would not recognize it"
+ },
+ {
+  "id": "v-chaos",
+  "remove_dx": [
+   "v-stability"
+  ],
+  "why": "near-opposite of chaos (ant: order, calm) for test (f)"
+ },
+ {
+  "id": "v-identical",
+  "remove_dx": [
+   "v-diverse"
+  ],
+  "why": "near-opposite of identical (ant: different) for test (f)"
+ },
+ {
+  "id": "v-remarkable",
+  "remove_dx": [
+   "v-bizarre"
+  ],
+  "why": "'It is bizarre that the old tree survived' fits the cloze; overlapping meaning (unusual)"
+ },
+ {
+  "id": "v-severely",
+  "remove_dx": [
+   "v-gradually"
+  ],
+  "why": "'The drought gradually reduced this year's crops' fits the cloze"
+ },
+ {
+  "id": "v-anxious",
+  "remove_dx": [
+   "v-eager"
+  ],
+  "why": "eager's def 'wanting very much to do or have something' matches the also-sense of anxious (test g)"
+ },
+ {
+  "id": "v-sheer",
+  "remove_dx": [
+   "v-extraordinary"
+  ],
+  "why": "'finished the marathon through extraordinary determination' fits the cloze"
+ },
+ {
+  "id": "v-corrupt",
+  "remove_dx": [
+   "v-genuine"
+  ],
+  "why": "genuine's def includes 'honest', the listed antonym of corrupt (test f)"
+ },
+ {
+  "id": "v-excessive",
+  "remove_dx": [
+   "v-brutal"
+  ],
+  "why": "'the fine was brutal for such a small mistake' is a plausible fill"
+ },
+ {
+  "id": "v-slight",
+  "remove_dx": [
+   "v-delicate"
+  ],
+  "why": "'a delicate difference in shade' is a plausible fill"
+ },
+ {
+  "id": "v-exceptional",
+  "remove_dx": [
+   "v-tremendous"
+  ],
+  "why": "tremendous is a near-synonym of exceptional in common use (test e)"
+ },
+ {
+  "id": "v-estimate",
+  "remove_dx": [
+   "v-predict"
+  ],
+  "why": "predict is a near-synonym (ex 2 'Experts estimate the bridge will take two years' is a prediction)"
+ },
+ {
+  "id": "v-estimate",
+  "set": {
+   "syn": [
+    "guess",
+    "judge",
+    "gauge"
+   ]
+  },
+  "why": "'calculate' implies an exact figure, the opposite of estimating"
+ },
+ {
+  "id": "v-yield",
+  "remove_dx": [
+   "v-earn"
+  ],
+  "why": "in the profit sense 'yield' and 'earn' are near-synonyms (an investment yields/earns 5%)"
+ },
+ {
+  "id": "v-feedback",
+  "remove_dx": [
+   "v-insight"
+  ],
+  "why": "'her boss gave her some insight on how to make it shorter' fits the cloze"
+ },
+ {
+  "id": "v-discipline",
+  "remove_dx": [
+   "v-determination",
+   "v-sacrifice"
+  ],
+  "why": "'Saving money every month takes determination/sacrifice' both fit the cloze"
+ },
+ {
+  "id": "v-discipline",
+  "set": {
+   "def": "the ability to control your own behavior and follow rules, even when it is hard",
+   "ant": []
+  },
+  "why": "old def ('training that teaches...') did not match ex 1 / cloze, which show the self-control ability; chaos is not an opposite of self-control"
+ },
+ {
+  "id": "v-awkward",
+  "remove_dx": [
+   "v-confident"
+  ],
+  "why": "near-opposite of feeling awkward (ant: comfortable, relaxed) for test (f)"
+ },
+ {
+  "id": "v-argue",
+  "remove_dx": [
+   "v-justify"
+  ],
+  "why": "justify's def 'give a good reason why something is right' matches the also-sense 'give reasons for or against an idea' (test g)"
+ },
+ {
+  "id": "v-extract",
+  "remove_dx": [
+   "v-capture"
+  ],
+  "why": "'This machine can capture every drop of juice' is a plausible fill"
+ },
+ {
+  "id": "v-repeatedly",
+  "remove_dx": [
+   "v-deliberately"
+  ],
+  "why": "'The child deliberately kicked the back of my seat' fits the cloze"
+ },
+ {
+  "id": "v-repeatedly",
+  "set": {
+   "syn": [
+    "often",
+    "frequently",
+    "again and again"
+   ]
+  },
+  "why": "'constantly' means all the time without stopping, not many separate times"
+ },
+ {
+  "id": "v-likewise",
+  "set": {
+   "def": "in the same way, or doing the same thing as someone just mentioned"
+  },
+  "why": "old def ended in the dangling fragment 'the same is true of'"
+ },
+ {
+  "id": "v-belief",
+  "set": {
+   "def": "something you feel sure is true or real, whether or not it can be proved"
+  },
+  "why": "old def implied beliefs always lack proof"
+ },
+ {
+  "id": "v-verdict",
+  "set": {
+   "def": "the official decision a jury or judge makes at the end of a trial, such as whether someone is guilty"
+  },
+  "why": "civil verdicts decide liability, not guilt; old def claimed every verdict is about guilt"
+ },
+ {
+  "id": "v-ceremony",
+  "set": {
+   "syn": [
+    "ritual",
+    "service"
+   ]
+  },
+  "why": "'celebration' is not a synonym (a funeral ceremony is not a celebration)"
+ },
+ {
+  "id": "v-equality",
+  "set": {
+   "syn": [
+    "fairness"
+   ]
+  },
+  "why": "'justice' is not a synonym of equality"
+ },
+ {
+  "id": "v-convince",
+  "set": {
+   "syn": [
+    "persuade"
+   ]
+  },
+  "why": "'assure' means to tell someone to remove worry, not to convince"
+ },
+ {
+  "id": "v-miserable",
+  "set": {
+   "syn": [
+    "unhappy",
+    "sad"
+   ]
+  },
+  "why": "'wretched' is too rare for level-1 learners to recognize"
+ },
+ {
+  "id": "v-enthusiasm",
+  "set": {
+   "syn": [
+    "excitement",
+    "passion",
+    "eagerness"
+   ]
+  },
+  "why": "'zeal' is too rare for level-1 learners to recognize"
+ },
+ {
+  "id": "v-scandal",
+  "set": {
+   "syn": [
+    "disgrace"
+   ]
+  },
+  "why": "'outrage' is the public anger, not the event itself"
+ },
+ {
+  "id": "v-uncertainty",
+  "set": {
+   "ant": [
+    "certainty"
+   ]
+  },
+  "why": "'confidence' is not a true opposite of uncertainty"
+ },
+ {
+  "id": "v-formerly",
+  "remove_dx": [
+   "v-traditionally"
+  ],
+  "why": "'Istanbul was traditionally known as Constantinople' is a plausible fill"
+ },
+ {
+  "id": "v-regard",
+  "remove_dx": [
+   "v-define"
+  ],
+  "why": "'Most experts define the new bridge as a great success' is a plausible fill"
+ },
+ {
+  "id": "v-hire",
+  "remove_dx": [
+   "v-attract"
+  ],
+  "why": "'it needs to attract fifty new workers this year' fits the cloze"
+ },
+ {
+  "id": "v-collapse",
+  "remove_dx": [
+   "v-yield"
+  ],
+  "why": "yield also means to give way/break under pressure, a near-synonym of collapse (test e)"
+ },
+ {
+  "id": "v-belief",
+  "remove_dx": [
+   "v-legend"
+  ],
+  "why": "'It is a common legend that we use only ten percent of our brains' is a plausible fill"
+ },
+ {
+  "id": "v-decent",
+  "remove_dx": [
+   "v-suitable"
+  ],
+  "why": "'it was suitable enough for a quick lunch' fits the cloze; near-synonym of decent (acceptable)"
+ },
+ {
+  "id": "v-swift",
+  "remove_dx": [
+   "v-efficient"
+  ],
+  "why": "'The firefighters' efficient arrival kept the fire from spreading' is a plausible fill"
+ }
+]

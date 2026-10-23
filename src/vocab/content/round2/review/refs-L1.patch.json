@@ -1,0 +1,116 @@
+[
+ {
+  "id": "f-the-weight-of-the-world-on-your-shoulders",
+  "remove_dx": [
+   "f-a-cross-to-bear"
+  ],
+  "why": "a cross to bear is a near-synonym (a heavy burden one carries); overlaps the def and the syn 'heavy burden'"
+ },
+ {
+  "id": "f-a-journey-of-a-thousand-miles-begins-with-a-single-step",
+  "remove_dx": [
+   "f-slow-and-steady-wins-the-race"
+  ],
+  "why": "'Slow and steady wins the race; just run one mile today' also fits the cloze sensibly"
+ },
+ {
+  "id": "f-all-that-glitters-is-not-gold",
+  "remove_dx": [
+   "f-trojan-horse"
+  ],
+  "why": "Trojan horse's def (looks harmless/welcome but is bad inside) overlaps 'looks attractive outside but may not be good'"
+ },
+ {
+  "id": "f-the-little-engine-that-could",
+  "remove_dx": [
+   "f-cinderella-story"
+  ],
+  "why": "Cinderella story (unexpected success by an overlooked team) is a near-synonym; overlaps def and syn 'underdog'"
+ },
+ {
+  "id": "f-this-too-shall-pass",
+  "remove_dx": [
+   "f-keep-calm-and-carry-on"
+  ],
+  "why": "cloze reads 'told the players to stay calm: ___' -- 'Keep calm and carry on' fits it perfectly"
+ },
+ {
+  "id": "f-uncle-sam",
+  "remove_dx": [
+   "f-big-brother"
+  ],
+  "why": "Big Brother also names a (controlling) government; too close for 'closest in meaning'/def questions with syn 'the government'"
+ },
+ {
+  "id": "f-domino-effect",
+  "remove_dx": [
+   "f-pandoras-box"
+  ],
+  "why": "Pandora's box def ('unleashes a whole series of ... problems') overlaps 'one event causes a chain of events'"
+ },
+ {
+  "id": "f-domino-effect",
+  "set": {
+   "syn": [
+    "chain reaction",
+    "ripple effect"
+   ]
+  },
+  "why": "'knock-on effect' is chiefly British; spec is American English and learners may not know it"
+ },
+ {
+  "id": "f-grin-like-a-cheshire-cat",
+  "set": {
+   "def": "to smile very widely, often looking very pleased with yourself, as if you know a secret"
+  },
+  "why": "plain-word rule: 'sly' flagged; rewrite keeps the pleased/knowing sense in common words"
+ },
+ {
+  "id": "f-keep-calm-and-carry-on",
+  "set": {
+   "ex": [
+    "When the power went out during the exam, the teacher told everyone to keep calm and carry on.",
+    "The office flooded on Monday, but Olga put up a sign saying “Keep Calm and Carry On” and kept working from the hallway."
+   ]
+  },
+  "why": "ex2 was self-contradictory (all mugs say the slogan yet each has a different ending) and did not show the meaning"
+ },
+ {
+  "id": "f-low-man-on-the-totem-pole",
+  "set": {
+   "story": "Totem poles are tall carved wooden poles made by Indigenous peoples of the Pacific Northwest coast of North America. The phrase was in use by the late 1930s and was made famous by H. Allen Smith's 1941 humor book Low Man on a Totem Pole; it assumes the top figure is most important, but many Native carvers did not rank figures that way, and some put the most important at the bottom."
+  },
+  "why": "'common by the 1930s' overstates: earliest known uses are 1939-1941; spread by the 1941 H. Allen Smith book"
+ },
+ {
+  "id": "f-gremlin",
+  "set": {
+   "def": "a hidden fault that makes a machine or system break down for no clear reason, jokingly blamed on a tiny made-up creature"
+  },
+  "why": "def described only the creature, but syn (glitch, bug), ex2 and the cloze all use the 'unexplained fault' sense; def now matches the tested syn"
+ },
+ {
+  "id": "f-patient-zero",
+  "set": {
+   "syn": []
+  },
+  "why": "'index case' is medical jargon a level-1 learner would not recognize"
+ },
+ {
+  "id": "f-gung-ho",
+  "set": {
+   "syn": [
+    "eager",
+    "enthusiastic"
+   ]
+  },
+  "why": "'zealous' is a harder word than the term for a level-1 learner"
+ },
+ {
+  "id": "f-may-the-force-be-with-you",
+  "remove_dx": [
+   "f-keep-calm-and-carry-on"
+  ],
+  "why": "a friend could sensibly whisper 'Keep calm and carry on' before a job interview; cloze ambiguity"
+ }
+]

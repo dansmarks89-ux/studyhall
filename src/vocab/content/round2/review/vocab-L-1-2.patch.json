@@ -1,0 +1,266 @@
+[
+ {
+  "id": "v-perfect",
+  "remove_dx": [
+   "v-super"
+  ],
+  "why": "'super' fits the cloze (no mistakes, test was super) and overlaps 'very good'"
+ },
+ {
+  "id": "v-federal",
+  "remove_dx": [
+   "v-political"
+  ],
+  "why": "'political' def (about government) is confusable with 'federal' in (a)/(b)"
+ },
+ {
+  "id": "v-modern",
+  "remove_dx": [
+   "v-easy",
+   "v-beautiful"
+  ],
+  "why": "both fit the cloze sensibly (phones today are very easy/beautiful compared to old ones)"
+ },
+ {
+  "id": "v-network",
+  "remove_dx": [
+   "v-club"
+  ],
+  "why": "'club' (a group of people...) overlaps the def 'a group of people or things joined together'"
+ },
+ {
+  "id": "v-nearly",
+  "remove_dx": [
+   "v-completely"
+  ],
+  "why": "'The glass is completely full, so stop pouring' also fits the cloze"
+ },
+ {
+  "id": "v-previous",
+  "remove_dx": [
+   "v-original"
+  ],
+  "why": "'The original teacher left, so we have a new one now' also fits the cloze"
+ },
+ {
+  "id": "v-strong",
+  "remove_dx": [
+   "v-huge"
+  ],
+  "why": "'The huge man carried the sofa by himself' also fits the cloze"
+ },
+ {
+  "id": "v-lead",
+  "remove_dx": [
+   "v-walk"
+  ],
+  "why": "'The teacher will walk the children to the bus' fits the cloze exactly"
+ },
+ {
+  "id": "v-online",
+  "remove_dx": [
+   "v-modern"
+  ],
+  "why": "'modern banking on my phone' also fits the cloze"
+ },
+ {
+  "id": "v-finally",
+  "remove_dx": [
+   "v-completely"
+  ],
+  "why": "'we completely finished the puzzle' also fits the cloze"
+ },
+ {
+  "id": "v-cool",
+  "remove_dx": [
+   "v-beautiful"
+  ],
+  "why": "'hot all day, but the evening was beautiful' also fits the cloze"
+ },
+ {
+  "id": "v-legal",
+  "remove_dx": [
+   "v-okay"
+  ],
+  "why": "'It is not okay to drive without a license' fits the cloze"
+ },
+ {
+  "id": "v-recent",
+  "remove_dx": [
+   "v-daily"
+  ],
+  "why": "'In a daily test, Malik got the best score' also fits the cloze"
+ },
+ {
+  "id": "v-original",
+  "remove_dx": [
+   "v-former"
+  ],
+  "why": "'the former color was white' also fits the cloze; near-synonym"
+ },
+ {
+  "id": "v-send",
+  "remove_dx": [
+   "v-write"
+  ],
+  "why": "'Can you write me a text' fits the cloze"
+ },
+ {
+  "id": "v-economic",
+  "remove_dx": [
+   "v-political"
+  ],
+  "why": "'the country has political problems' also fits the cloze"
+ },
+ {
+  "id": "v-visit",
+  "remove_dx": [
+   "v-enjoy"
+  ],
+  "why": "'Let's enjoy the museum this weekend' fits the cloze"
+ },
+ {
+  "id": "v-include",
+  "remove_dx": [
+   "v-add"
+  ],
+  "why": "'add' (put one thing in with another) overlaps include's sense; 'add your name on the form' fits ex/def"
+ },
+ {
+  "id": "v-cut",
+  "set": {
+   "def": "to open or split something with a knife or other sharp tool"
+  },
+  "why": "def said 'with a knife' but cloze uses scissors and ex2 is a paper cut"
+ },
+ {
+  "id": "v-return",
+  "set": {
+   "cloze": {
+    "s": "Birds fly south for the winter and ___ in spring.",
+    "a": "return"
+   }
+  },
+  "why": "birds fly south in fall, not 'in winter'"
+ },
+ {
+  "id": "v-former",
+  "set": {
+   "ex": [
+    "Mr. Lee is my former teacher.",
+    "Kwame's office is in a former bank on Main Street."
+   ],
+   "cloze": {
+    "s": "Ms. Park coached us last year, so she is now our ___ coach.",
+    "a": "former"
+   },
+   "syn": [
+    "past",
+    "previous"
+   ]
+  },
+  "why": "ex2 was clumsy (coffee shop 'is a former bank'); cloze let 'funny'/'personal' fit; 'earlier' is not a natural synonym (*my earlier teacher)"
+ },
+ {
+  "id": "v-road",
+  "set": {
+   "def": "a wide path made for cars and trucks to drive on"
+  },
+  "why": "'a long, hard way' reads as 'a difficult way' to learners"
+ },
+ {
+  "id": "v-complete",
+  "set": {
+   "ex": [
+    "I have a complete set of the books.",
+    "Ana has a complete set of colored pencils, with every color."
+   ],
+   "syn": [
+    "whole",
+    "full"
+   ],
+   "ant": []
+  },
+  "why": "ex2, syn 'finished' and ant 'unfinished' were the 'done' sense, not the defined 'all parts present' sense"
+ },
+ {
+  "id": "v-simply",
+  "set": {
+   "def": "in a plain, easy way, without extra things",
+   "also": "only; just, and nothing more (“I simply forgot to call.”)"
+  },
+  "why": "'clear' doesn't fit 'dressed simply'; the very common 'just/only' sense (WordNet sense 1) was missing"
+ },
+ {
+  "id": "v-sleep",
+  "set": {
+   "def": "to rest your body with your eyes closed, usually at night"
+  },
+  "why": "def said 'at night' but ex1 is babies sleeping during the day"
+ },
+ {
+  "id": "v-wall",
+  "set": {
+   "ex": [
+    "We hung a picture on the wall.",
+    "Kwame put a clock on the kitchen wall."
+   ]
+  },
+  "why": "ex2 (garden stone wall) did not match def 'side of a room or building'"
+ },
+ {
+  "id": "v-tonight",
+  "set": {
+   "cloze": {
+    "s": "I can't come to dinner ___, but I can come tomorrow night.",
+    "a": "tonight"
+   }
+  },
+  "why": "old cloze let 'tomorrow', 'usually', 'sometimes' fit"
+ },
+ {
+  "id": "v-gold",
+  "set": {
+   "def": "a shiny yellow metal that costs a lot"
+  },
+  "why": "old def ('used to make rings') did not separate gold from silver etc."
+ },
+ {
+  "id": "v-design",
+  "set": {
+   "syn": []
+  },
+  "why": "'plan' is not a synonym of design in the 'how it looks' sense (a clean, simple plan ≠ design)"
+ },
+ {
+  "id": "v-student",
+  "set": {
+   "ant": []
+  },
+  "why": "'teacher' is a converse role, not an opposite; forced"
+ },
+ {
+  "id": "v-walk",
+  "set": {
+   "ant": []
+  },
+  "why": "'run' is a contrast, not an opposite; forced"
+ },
+ {
+  "id": "v-street",
+  "set": {
+   "ex": [
+    "We live on a quiet street near the park.",
+    "Our street has big trees on both sides."
+   ]
+  },
+  "why": "ex2 duplicated v-cross ex1 word for word"
+ },
+ {
+  "id": "v-union",
+  "remove_dx": [
+   "v-committee"
+  ],
+  "why": "'The nurses' committee asked the hospital for higher pay' also fits the cloze"
+ }
+]

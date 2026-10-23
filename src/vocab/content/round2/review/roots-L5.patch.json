@@ -1,0 +1,154 @@
+[
+ {
+  "id": "r-phag-phagy",
+  "remove_dx": [
+   "r-troph"
+  ],
+  "why": "troph 'food, nourishment' overlaps 'eating, swallowing'; defensible as an answer for phag"
+ },
+ {
+  "id": "r-ferous",
+  "remove_dx": [
+   "r-ose"
+  ],
+  "why": "-ose 'full of; having much of' overlaps -ferous 'producing/containing' (carboniferous, odoriferous)"
+ },
+ {
+  "id": "r-ose",
+  "remove_dx": [
+   "r-ferous"
+  ],
+  "why": "-ferous 'bearing; producing' overlaps 'full of; having much of'"
+ },
+ {
+  "id": "r-cumb-cub",
+  "remove_dx": [
+   "r-somn"
+  ],
+  "why": "cubare 'lie down' was also used for lying in bed/sleeping (cubicle = bedroom); 'sleep' is too close a distractor"
+ },
+ {
+  "id": "r-ichthy",
+  "remove_dx": [
+   "r-hypn"
+  ],
+  "why": "hypn and somn both have def 'sleep'; drawing both shows two identical choices"
+ },
+ {
+  "id": "r-odont",
+  "remove_dx": [
+   "r-pisc"
+  ],
+  "why": "pisc and ichthy both have def 'fish'; drawing both shows two identical choices"
+ },
+ {
+  "id": "r-frater-frat",
+  "set": {
+   "words": [
+    {
+     "w": "fraternal",
+     "m": "to do with brothers; brotherly"
+    },
+    {
+     "w": "fraternity",
+     "m": "a social club for male students; a brotherhood"
+    },
+    {
+     "w": "fratricide",
+     "m": "the killing of one's own brother"
+    },
+    {
+     "w": "fraternize",
+     "m": "to be friendly with someone, especially someone from the other side"
+    }
+   ]
+  },
+  "why": "friar does not visibly contain frater/frat (Old French frere); learners cannot see the element. Replaced with fraternize (Latin fraternus)"
+ },
+ {
+  "id": "r-pisc",
+  "set": {
+   "words": [
+    {
+     "w": "Pisces",
+     "m": "the star sign shown as two fish"
+    },
+    {
+     "w": "piscine",
+     "m": "to do with fish"
+    },
+    {
+     "w": "piscivore",
+     "m": "an animal that eats fish"
+    },
+    {
+     "w": "piscatorial",
+     "m": "to do with fishing or people who fish"
+    }
+   ]
+  },
+  "why": "porpoise does not visibly contain pisc (via Old French porpois); replaced with piscatorial (Latin piscator 'fisherman', from piscis)"
+ },
+ {
+  "id": "r-cata",
+  "set": {
+   "words": [
+    {
+     "w": "catastrophe",
+     "m": "a sudden disaster; literally an 'overturning'"
+    },
+    {
+     "w": "cataract",
+     "m": "a large waterfall; also a cloudy area in the eye's lens"
+    },
+    {
+     "w": "cathode",
+     "m": "the part of an electric device where current flows out; literally 'way down'"
+    },
+    {
+     "w": "cataclysm",
+     "m": "a huge, violent event such as a great flood"
+    }
+   ]
+  },
+  "why": "cathode is the POSITIVE terminal of a discharging battery; 'the negative end of a battery' is false"
+ },
+ {
+  "id": "r-sarc",
+  "set": {
+   "words": [
+    {
+     "w": "sarcasm",
+     "m": "mocking speech; from a Greek word meaning 'to tear flesh'"
+    },
+    {
+     "w": "sarcophagus",
+     "m": "a stone coffin"
+    },
+    {
+     "w": "sarcoma",
+     "m": "a cancer that starts in bone, muscle, fat or similar body tissue"
+    },
+    {
+     "w": "sarcopenia",
+     "m": "loss of muscle as people age"
+    }
+   ]
+  },
+  "why": "'bone, muscle or other soft tissue' wrongly implies bone is soft tissue"
+ },
+ {
+  "id": "r-somn",
+  "remove_dx": [
+   "r-cumb-cub"
+  ],
+  "why": "cumb/cub 'lie down' (cubicle = sleeping room) is too close to 'sleep'"
+ },
+ {
+  "id": "r-exo",
+  "remove_dx": [
+   "r-meta"
+  ],
+  "why": "meta- 'beyond' overlaps exo- 'outside, outer'"
+ }
+]

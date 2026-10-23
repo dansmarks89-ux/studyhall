@@ -1,0 +1,101 @@
+[
+ {
+  "id": "k-stream-of-consciousness",
+  "set": {
+   "note": "The phrase was made famous by the psychologist William James in 1890 to describe how thought flows.",
+   "syn": [],
+   "why": "It is a key feature of modern novels such as James Joyce's Ulysses and Virginia Woolf's Mrs. Dalloway."
+  },
+  "why": "Note falsely says William James first used the phrase (Alexander Bain used it in 1855; James popularized it in 1890). 'Interior monologue' is a related but distinct technique, not a synonym. US title style 'Mrs. Dalloway'."
+ },
+ {
+  "id": "k-sepsis",
+  "set": {
+   "syn": [],
+   "note": "Sometimes called \"blood poisoning,\" but doctors say that older name is not accurate."
+  },
+  "why": "Sepsis Alliance: 'blood poisoning' is an older, inaccurate term and should not be used interchangeably with sepsis, so it cannot be the tested synonym; note claimed it is simply the everyday name."
+ },
+ {
+  "id": "k-veil-of-ignorance",
+  "set": {
+   "why": "Named and made famous by John Rawls in his 1971 book A Theory of Justice, it is a widely used way to think about what makes a society fair."
+  },
+  "why": "'Proposed by John Rawls in 1971' is inaccurate: the thought experiment was described earlier by Vickrey (1945) and Harsanyi (1953); Rawls coined the term and made it famous."
+ },
+ {
+  "id": "k-exoplanet",
+  "set": {
+   "def": "a planet outside our solar system, usually one that circles a star other than our Sun",
+   "why": "Thousands have been found, and scientists study them to learn how planets form and whether life could exist elsewhere."
+  },
+  "why": "NASA defines an exoplanet as any planet beyond our solar system, including rogue planets bound to no star; 'why' claim that they are 'the main places' searched for life is unsupported (Mars, Europa, Enceladus are major targets)."
+ },
+ {
+  "id": "k-covalent-bond",
+  "set": {
+   "def": "a link between two atoms that holds them together because they share one or more pairs of electrons"
+  },
+  "why": "Double and triple covalent bonds share two or three pairs; 'a pair' is inaccurate."
+ },
+ {
+  "id": "k-asymptote",
+  "set": {
+   "def": "a straight line that a curve on a graph gets closer and closer to as it stretches farther out"
+  },
+  "why": "Curves can touch or cross an asymptote (e.g., sin x / x crosses y = 0 repeatedly), so 'without ever quite touching' is false as a definition."
+ },
+ {
+  "id": "k-triage",
+  "set": {
+   "def": "the sorting of sick or injured people by how urgently they need care, so the most urgent cases are treated first"
+  },
+  "why": "'Worst cases are treated first' is misleading: in disasters the most badly hurt who are unlikely to survive may be given lower priority; triage ranks by urgency."
+ },
+ {
+  "id": "k-palliative-care",
+  "set": {
+   "syn": []
+  },
+  "why": "'Comfort care' usually means end-of-life care focused only on comfort after curative treatment stops, which contradicts this item's own point that palliative care can accompany cure-directed treatment; not a true synonym."
+ },
+ {
+  "id": "k-deepfake",
+  "set": {
+   "def": "a realistic fake video, photo or voice clip, made with AI, of a real person doing or saying something they never did"
+  },
+  "why": "Def mentions voice clips but only 'doing'; deepfakes most often fake speech (as in the item's own example and cloze)."
+ },
+ {
+  "id": "k-linear-perspective",
+  "set": {
+   "def": "a drawing method that makes a flat picture look deep by making parallel lines seem to meet at one far point",
+   "why": "Developed in Florence in the early 1400s, it changed Western painting and is still widely taught in drawing classes."
+  },
+  "why": "Parallel lines only appear to meet; 'in every drawing class' is an unverifiable overclaim."
+ },
+ {
+  "id": "k-anaphylaxis",
+  "set": {
+   "ex": [
+    "When Fatima's lips swelled after eating a cookie with nuts, her friend used her epinephrine pen to treat the anaphylaxis.",
+    "A bee sting can trigger anaphylaxis in people who are badly allergic to the venom."
+   ]
+  },
+  "why": "Epinephrine treats anaphylaxis but does not reliably 'stop' it (the item's own note says an ER visit is still needed)."
+ },
+ {
+  "id": "k-conservation-of-energy",
+  "remove_dx": [
+   "k-entropy"
+  ],
+  "why": "Cloze 'it would break the law of ___' about perpetual motion: 'entropy' (the second law of thermodynamics) also forbids perpetual motion and fits sensibly."
+ },
+ {
+  "id": "k-martial-law",
+  "remove_dx": [
+   "k-rule-of-law"
+  ],
+  "why": "(f) 'opposite of martial law': 'rule of law' reads as a near-opposite of military rule, competing with 'civilian rule'."
+ }
+]

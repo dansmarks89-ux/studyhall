@@ -1,0 +1,79 @@
+[
+ {
+  "id": "r-itis",
+  "remove_dx": [
+   "r-osis",
+   "r-algia"
+  ],
+  "why": "-osis 'a condition... often a disease' fits -itis as an answer to (b); -algia 'pain' overlaps the 'sore' in the -itis def"
+ },
+ {
+  "id": "r-para",
+  "remove_dx": [
+   "r-syn-sym"
+  ],
+  "why": "'together, with' overlaps 'alongside'; a learner could defensibly pick it for para-"
+ },
+ {
+  "id": "r-per",
+  "remove_dx": [
+   "r-pan"
+  ],
+  "why": "'all, every' overlaps the 'completely' sense of per-"
+ },
+ {
+  "id": "r-corp",
+  "set": {
+   "words": [
+    {
+     "w": "corpse",
+     "m": "a dead body"
+    },
+    {
+     "w": "corps",
+     "m": "an organized group, such as a part of an army"
+    },
+    {
+     "w": "corporation",
+     "m": "a company that the law treats as a single body"
+    },
+    {
+     "w": "incorporate",
+     "m": "to include something as part of a whole"
+    }
+   ]
+  },
+  "why": "corporations need not be large; the core meaning is a company treated by law as one body"
+ },
+ {
+  "id": "r-pac",
+  "set": {
+   "words": [
+    {
+     "w": "pacify",
+     "m": "to calm someone who is angry or upset"
+    },
+    {
+     "w": "pacifist",
+     "m": "a person who believes war is always wrong"
+    },
+    {
+     "w": "pacifier",
+     "m": "a rubber or plastic object a baby sucks on to stay calm"
+    },
+    {
+     "w": "Pacific",
+     "m": "the largest ocean, named by Magellan for its calm waters"
+    }
+   ]
+  },
+  "why": "pacifiers are mostly silicone/plastic today, not only rubber"
+ },
+ {
+  "id": "r-mand",
+  "set": {
+   "def": "order; hand over into someone's care"
+  },
+  "why": "plain-word rule: 'entrust' is as hard as the root it defines"
+ }
+]

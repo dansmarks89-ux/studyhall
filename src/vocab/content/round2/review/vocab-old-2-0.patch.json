@@ -1,0 +1,295 @@
+[
+ {
+  "id": "v-decidedly",
+  "remove_dx": [
+   "v-blatantly",
+   "v-tentatively",
+   "v-scarcely"
+  ],
+  "why": "blatantly ('in a very obvious way') overlaps the def; tentatively (unsure) and scarcely (barely) are near-opposites, so they compete with slightly/marginally in the opposite question"
+ },
+ {
+  "id": "v-hinder",
+  "remove_dx": [
+   "v-nurture"
+  ],
+  "why": "nurture (encourage growth) is a near-opposite of hinder; competes with help/facilitate in (f)"
+ },
+ {
+  "id": "v-contradict",
+  "remove_dx": [
+   "v-bolster"
+  ],
+  "why": "bolster (support/strengthen a claim) is a near-opposite of contradict, whose ant list includes 'support'"
+ },
+ {
+  "id": "v-jeopardize",
+  "remove_dx": [
+   "v-bolster"
+  ],
+  "why": "'bolster your chances' vs 'jeopardize your chances': near-opposite, competes with protect/safeguard in (f)"
+ },
+ {
+  "id": "v-rapport",
+  "remove_dx": [
+   "v-animosity"
+  ],
+  "why": "animosity (hostility between people) is the opposite of rapport; ant list includes 'hostility'"
+ },
+ {
+  "id": "v-adversity",
+  "remove_dx": [
+   "v-anguish"
+  ],
+  "why": "anguish (severe suffering) is close enough to hardship/suffering to be a defensible 'closest meaning' pick in (e)"
+ },
+ {
+  "id": "v-innocuous",
+  "remove_dx": [
+   "v-nefarious"
+  ],
+  "why": "nefarious (wicked, harmful) is a near-opposite of innocuous (harmless)"
+ },
+ {
+  "id": "v-impart",
+  "remove_dx": [
+   "v-divulge"
+  ],
+  "why": "divulge (reveal information) is a dictionary synonym of impart ('to make known; disclose')"
+ },
+ {
+  "id": "v-disseminate",
+  "remove_dx": [
+   "v-divulge"
+  ],
+  "why": "divulge (make information known) is close enough to spread/circulate to be picked in (e)"
+ },
+ {
+  "id": "v-revere",
+  "remove_dx": [
+   "v-belittle"
+  ],
+  "why": "belittle (make seem of little value) is a near-opposite of revere; competes with despise/scorn in (f)"
+ },
+ {
+  "id": "v-thwart",
+  "remove_dx": [
+   "v-expedite"
+  ],
+  "why": "expedite (make happen faster) is a plausible opposite of thwart; competes with assist/enable in (f)"
+ },
+ {
+  "id": "v-rescind",
+  "remove_dx": [
+   "v-reinstate"
+  ],
+  "why": "'rescind the ban' vs 'reinstate the ban': reinstate is a near-opposite, competes with enact/uphold in (f)"
+ },
+ {
+  "id": "v-apprehension",
+  "remove_dx": [
+   "v-complacency"
+  ],
+  "why": "complacency (ignoring possible dangers) is a near-opposite of apprehension (fear of danger)"
+ },
+ {
+  "id": "v-complacency",
+  "remove_dx": [
+   "v-apprehension"
+  ],
+  "why": "apprehension (worry about danger) is a near-opposite of complacency; competes with vigilance/alertness in (f)"
+ },
+ {
+  "id": "v-juncture",
+  "remove_dx": [
+   "v-cusp"
+  ],
+  "why": "cusp (the point at which something is about to change) is a near-synonym of juncture (an important point in time)"
+ },
+ {
+  "id": "v-contentious",
+  "set": {
+   "syn": [
+    "controversial",
+    "disputed",
+    "heated"
+   ],
+   "ant": [
+    "uncontroversial"
+   ]
+  },
+  "why": "'argumentative' describes the person sense (the also), not 'causing argument; disputed'; 'agreeable' (pleasant/willing) is not an opposite of a disputed issue"
+ },
+ {
+  "id": "v-outspoken",
+  "set": {
+   "syn": [
+    "frank",
+    "candid",
+    "blunt",
+    "direct"
+   ],
+   "ant": [
+    "reserved",
+    "guarded"
+   ]
+  },
+  "why": "forthright and reticent are much rarer than the headword; learners at this level would not recognize them"
+ },
+ {
+  "id": "v-propensity",
+  "set": {
+   "ant": []
+  },
+  "why": "aversion (a strong dislike) is not the opposite of a tendency; forced antonym"
+ },
+ {
+  "id": "v-disingenuous",
+  "set": {
+   "syn": [
+    "insincere",
+    "deceitful",
+    "dishonest"
+   ]
+  },
+  "why": "hypocritical (claiming standards you do not follow) is a different idea, not a synonym"
+ },
+ {
+  "id": "v-emphatic",
+  "set": {
+   "syn": [
+    "forceful",
+    "firm",
+    "insistent"
+   ]
+  },
+  "why": "'decisive' fits 'an emphatic victory', not this sense (expressed with force and clarity)"
+ },
+ {
+  "id": "v-henceforth",
+  "set": {
+   "syn": [
+    "from now on",
+    "hereafter"
+   ]
+  },
+  "why": "'in future' is chiefly British; spec requires American usage"
+ },
+ {
+  "id": "v-indispensable",
+  "set": {
+   "ant": [
+    "unnecessary",
+    "expendable"
+   ]
+  },
+  "why": "'dispensable' is rare (z2.2) and a giveaway of the headword"
+ },
+ {
+  "id": "v-jeopardize",
+  "set": {
+   "syn": [
+    "endanger",
+    "threaten",
+    "risk"
+   ]
+  },
+  "why": "'imperil' is much rarer than the headword"
+ },
+ {
+  "id": "v-resent",
+  "set": {
+   "syn": [
+    "take offense at"
+   ]
+  },
+  "why": "'begrudge' is much rarer than the headword and a learner at this level would not recognize it"
+ },
+ {
+  "id": "v-outweigh",
+  "set": {
+   "syn": [
+    "exceed",
+    "override"
+   ]
+  },
+  "why": "'outstrip' is rare and usually means to go faster or grow beyond, not to be more important"
+ },
+ {
+  "id": "v-denounce",
+  "set": {
+   "syn": [
+    "condemn",
+    "criticize",
+    "censure"
+   ]
+  },
+  "why": "'decry' is much rarer than the headword"
+ },
+ {
+  "id": "v-apathy",
+  "set": {
+   "syn": [
+    "indifference"
+   ]
+  },
+  "why": "'unconcern' is very rare and 'disinterest' is rarer than the headword and often confused with disinterested (impartial)"
+ },
+ {
+  "id": "v-malice",
+  "set": {
+   "syn": [
+    "spite",
+    "ill will",
+    "hostility"
+   ]
+  },
+  "why": "'malevolence' is much rarer than the headword"
+ },
+ {
+  "id": "v-revere",
+  "set": {
+   "syn": [
+    "honor",
+    "respect",
+    "idolize"
+   ]
+  },
+  "why": "'venerate' is much rarer than the headword"
+ },
+ {
+  "id": "v-meager",
+  "set": {
+   "syn": [
+    "scant",
+    "paltry",
+    "inadequate"
+   ]
+  },
+  "why": "'scanty' is rare; 'sparse' means thinly spread, not too small in amount"
+ },
+ {
+  "id": "v-blatantly",
+  "set": {
+   "syn": [
+    "openly",
+    "shamelessly"
+   ]
+  },
+  "why": "'brazenly' and 'flagrantly' are much rarer than the headword"
+ },
+ {
+  "id": "v-negate",
+  "set": {
+   "also": "to show that something is not true (“The DNA results negated the witness's story.”)"
+  },
+  "why": "old also said 'say that something is not true; deny' but its example ('No evidence could negate her claim') shows the disprove sense, and evidence cannot 'say'"
+ },
+ {
+  "id": "v-cusp",
+  "set": {
+   "also": "a raised point on the chewing surface of a tooth (“Each molar has several cusps.”)"
+  },
+  "why": "a tooth cusp is a raised point on the tooth, not 'where two curves meet' (that is the geometry sense); old wording blended two senses"
+ }
+]

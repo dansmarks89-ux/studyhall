@@ -1,0 +1,100 @@
+[
+ {
+  "id": "v-diffident",
+  "remove_dx": [
+   "v-ebullient"
+  ],
+  "why": "ebullient (bursting with cheerful energy) is a near-opposite of shy/diffident; could be a defensible answer to the opposite question"
+ },
+ {
+  "id": "v-bemoan",
+  "remove_dx": [
+   "v-extol"
+  ],
+  "why": "extol (praise enthusiastically) is a near-opposite of bemoan; ambiguous on the opposite question"
+ },
+ {
+  "id": "v-dispassionately",
+  "remove_dx": [
+   "v-stoically"
+  ],
+  "why": "stoically (calmly, without showing emotion) is a near-synonym; ambiguous on the closest-meaning question"
+ },
+ {
+  "id": "v-chutzpah",
+  "remove_dx": [
+   "v-compunction"
+  ],
+  "why": "compunction (guilt, moral hesitation) is a near-opposite of shameless boldness"
+ },
+ {
+  "id": "v-iniquitous",
+  "remove_dx": [
+   "v-venial"
+  ],
+  "why": "venial (minor, easily forgiven wrong) is a near-opposite of grossly wicked; ambiguous on the opposite question"
+ },
+ {
+  "id": "v-sardonically",
+  "remove_dx": [
+   "v-disparagingly"
+  ],
+  "why": "disparagingly overlaps with sneeringly/mockingly; near-synonym on the closest-meaning question"
+ },
+ {
+  "id": "v-scathingly",
+  "remove_dx": [
+   "v-sardonically"
+  ],
+  "why": "sardonically (bitter, mocking) overlaps with caustically/witheringly; near-synonym on the closest-meaning question"
+ },
+ {
+  "id": "v-disabuse",
+  "remove_dx": [
+   "v-hoodwink"
+  ],
+  "why": "hoodwink (to deceive) is the opposite of disabuse (to free from a false belief); defensible answer to the opposite question"
+ },
+ {
+  "id": "v-dissolute",
+  "set": {
+   "syn": [
+    "debauched",
+    "degenerate",
+    "decadent"
+   ]
+  },
+  "why": "'dissipated' in this sense is rarer than the headword and most learners read it as 'scattered/faded'"
+ },
+ {
+  "id": "v-invidious",
+  "set": {
+   "syn": [
+    "unfair",
+    "discriminatory"
+   ]
+  },
+  "why": "'objectionable' is a generic word for anything offensive, not a synonym of invidious"
+ },
+ {
+  "id": "v-ersatz",
+  "set": {
+   "def": "made or used in place of the real thing and usually not as good; fake or imitation"
+  },
+  "why": "plain-word rule: 'inferior substitute' and 'artificial' replaced with plainer words"
+ },
+ {
+  "id": "v-entreat",
+  "set": {
+   "def": "to ask someone seriously and with strong feeling to do something; to beg"
+  },
+  "why": "plain-word rule: 'earnestly' is about as hard as the headword"
+ },
+ {
+  "id": "v-impute",
+  "set": {
+   "def": "to claim that someone has a certain fault, motive or quality, or is to blame, often without proof"
+  },
+  "why": "plain-word rule: 'attribute' is itself a hard word and is listed as the synonym"
+ }
+]

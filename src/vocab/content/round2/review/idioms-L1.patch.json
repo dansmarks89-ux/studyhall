@@ -1,0 +1,144 @@
+[
+ {
+  "id": "i-play-it-by-ear",
+  "remove_dx": [
+   "i-take-a-rain-check"
+  ],
+  "why": "cloze 'let's ___ and pick a dinner time later' also fits 'take a rain check' (postpone dinner)"
+ },
+ {
+  "id": "i-face-the-music",
+  "remove_dx": [
+   "i-clear-the-air"
+  ],
+  "why": "cloze 'tell his parents and ___' also fits 'clear the air'"
+ },
+ {
+  "id": "i-in-a-nutshell",
+  "remove_dx": [
+   "i-beat-around-the-bush"
+  ],
+  "why": "near-opposite of in a nutshell; would be a second right answer to the opposite question"
+ },
+ {
+  "id": "i-its-not-rocket-science",
+  "remove_dx": [
+   "i-a-no-brainer"
+  ],
+  "why": "overlapping meaning (easy/obvious); near-synonym for (b) and (e)"
+ },
+ {
+  "id": "i-keep-someone-in-the-dark",
+  "remove_dx": [
+   "i-spill-the-beans"
+  ],
+  "why": "spill the beans (reveal a secret) is a near-opposite; clashes with opposite question (ant: fill someone in)"
+ },
+ {
+  "id": "i-get-your-act-together",
+  "remove_dx": [
+   "i-pull-ones-weight"
+  ],
+  "why": "cloze 'you need to ___ or you'll lose this job' also fits 'pull your weight'"
+ },
+ {
+  "id": "i-get-your-act-together",
+  "set": {
+   "syn": [
+    "shape up"
+   ],
+   "ant": []
+  },
+  "why": "'pull yourself together' means regain emotional control, not become organized/responsible; 'fall apart' is a forced opposite"
+ },
+ {
+  "id": "i-get-the-hang-of",
+  "set": {
+   "syn": [
+    "master",
+    "pick up"
+   ]
+  },
+  "why": "'get used to' means become accustomed, not learn a skill"
+ },
+ {
+  "id": "i-off-the-top-of-my-head",
+  "set": {
+   "syn": [
+    "offhand"
+   ]
+  },
+  "why": "'roughly' means approximately, not 'from quick memory without checking'"
+ },
+ {
+  "id": "i-let-off-steam",
+  "set": {
+   "syn": [
+    "blow off steam",
+    "vent"
+   ]
+  },
+  "why": "'unwind' means relax, not release strong feelings/energy"
+ },
+ {
+  "id": "i-look-on-the-bright-side",
+  "set": {
+   "ant": []
+  },
+  "why": "'look on the dark side' is not an established phrase; forced opposite"
+ },
+ {
+  "id": "i-safe-and-sound",
+  "set": {
+   "syn": [
+    "unharmed",
+    "unhurt"
+   ]
+  },
+  "why": "'safe' repeats a word of the term, making the synonym question a giveaway"
+ },
+ {
+  "id": "i-on-thin-ice",
+  "set": {
+   "def": "in a dangerous position where one more mistake could get you into serious trouble"
+  },
+  "why": "plain-word flag: 'risky' replaced with a more common word"
+ },
+ {
+  "id": "i-bark-up-the-wrong-tree",
+  "set": {
+   "def": "to look for something, or blame someone, in the wrong place because of a wrong idea"
+  },
+  "why": "plain-word flag: 'mistaken' replaced"
+ },
+ {
+  "id": "i-rain-on-someones-parade",
+  "set": {
+   "def": "to ruin someone's happy plans or excitement"
+  },
+  "why": "plain-word flag: 'spoil' replaced with more common 'ruin'"
+ },
+ {
+  "id": "i-break-the-ice",
+  "set": {
+   "syn": []
+  },
+  "why": "'warm up the room' is not an established idiom a learner would recognize as a synonym"
+ },
+ {
+  "id": "i-get-out-of-hand",
+  "set": {
+   "syn": [
+    "get out of control"
+   ]
+  },
+  "why": "'spiral' alone means rise/fall rapidly, not become impossible to control"
+ },
+ {
+  "id": "i-sick-and-tired",
+  "remove_dx": [
+   "i-get-on-someones-nerves"
+  ],
+  "why": "overlapping meaning (being annoyed by repeated things); competes on near-synonym question"
+ }
+]

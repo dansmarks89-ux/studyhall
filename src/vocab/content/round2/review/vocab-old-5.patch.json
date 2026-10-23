@@ -1,0 +1,195 @@
+[
+ {
+  "id": "v-avuncular",
+  "remove_dx": [
+   "v-saturnine"
+  ],
+  "why": "saturnine (gloomy, seldom cheerful) is a near-opposite of avuncular; defensible answer to (f)"
+ },
+ {
+  "id": "v-querulous",
+  "remove_dx": [
+   "v-insouciant"
+  ],
+  "why": "insouciant (relaxed, carefree) is near the listed antonym easygoing; defensible answer to (f)"
+ },
+ {
+  "id": "v-sententious",
+  "remove_dx": [
+   "v-bumptious"
+  ],
+  "why": "bumptious (self-important) overlaps sententious/pompous; defensible answer to (e)"
+ },
+ {
+  "id": "v-chary",
+  "remove_dx": [
+   "v-insouciant"
+  ],
+  "why": "insouciant (unconcerned) is a near-opposite of chary (cautious); defensible answer to (f)"
+ },
+ {
+  "id": "v-saturnine",
+  "remove_dx": [
+   "v-lachrymose"
+  ],
+  "why": "lachrymose (sad, mournful) overlaps saturnine (gloomy); defensible answer to (e)"
+ },
+ {
+  "id": "v-timorous",
+  "remove_dx": [
+   "v-bumptious",
+   "v-chary"
+  ],
+  "why": "bumptious (too sure of oneself) is a near-opposite (f); chary (cautious, wary) is a near-synonym (e)"
+ },
+ {
+  "id": "v-insouciant",
+  "remove_dx": [
+   "v-timorous"
+  ],
+  "why": "timorous (nervous, fearful) is a near-opposite of insouciant (anxious/worried are its antonyms)"
+ },
+ {
+  "id": "v-equable",
+  "remove_dx": [
+   "v-querulous"
+  ],
+  "why": "querulous (bad-tempered) is a near-opposite of equable (even-tempered); defensible answer to (f)"
+ },
+ {
+  "id": "v-burgeon",
+  "remove_dx": [
+   "v-retrench"
+  ],
+  "why": "retrench (cut back) is a near-opposite of burgeon (shrink is a listed antonym)"
+ },
+ {
+  "id": "v-explicate",
+  "remove_dx": [
+   "v-equivocate"
+  ],
+  "why": "equivocate (speak vaguely) is a near-opposite of explicate (obscure/confuse are its antonyms)"
+ },
+ {
+  "id": "v-fulminate",
+  "remove_dx": [
+   "v-lionize"
+  ],
+  "why": "lionize (glorify, admire) is a near-opposite of fulminate (praise is its antonym)"
+ },
+ {
+  "id": "v-demur",
+  "remove_dx": [
+   "v-gainsay"
+  ],
+  "why": "gainsay (speak against) overlaps demur (object, protest); defensible answer to (e)"
+ },
+ {
+  "id": "v-circumscribe",
+  "remove_dx": [
+   "v-burgeon"
+  ],
+  "why": "burgeon (expand) matches circumscribe's antonym expand; defensible answer to (f)"
+ },
+ {
+  "id": "v-lionize",
+  "remove_dx": [
+   "v-excoriate"
+  ],
+  "why": "excoriate (criticize severely) is a near-opposite of lionize (disparage/denigrate are its antonyms)"
+ },
+ {
+  "id": "v-bonhomie",
+  "remove_dx": [
+   "v-hauteur"
+  ],
+  "why": "hauteur (proud, cold superiority) is a near-opposite of bonhomie (coldness is a listed antonym)"
+ },
+ {
+  "id": "v-sycophancy",
+  "remove_dx": [
+   "v-encomium"
+  ],
+  "why": "encomium (high praise) overlaps flattery, sycophancy's synonym; defensible answer to (e)"
+ },
+ {
+  "id": "v-interminably",
+  "remove_dx": [
+   "v-laconically"
+  ],
+  "why": "laconically (using few words) is a near-opposite of interminably (briefly is its antonym)"
+ },
+ {
+  "id": "v-laconically",
+  "remove_dx": [
+   "v-interminably",
+   "v-effusively"
+  ],
+  "why": "interminably (endlessly long) and effusively (gushing) are near-opposites of laconically (verbosely is its antonym)"
+ },
+ {
+  "id": "v-cavalierly",
+  "remove_dx": [
+   "v-advisedly"
+  ],
+  "why": "advisedly (after careful thought) is a near-opposite of cavalierly (carefully is its antonym)"
+ },
+ {
+  "id": "v-disdainfully",
+  "remove_dx": [
+   "v-effusively"
+  ],
+  "why": "effusively (warm praise) is a near-opposite of disdainfully (admiringly is its antonym)"
+ },
+ {
+  "id": "v-diffidence",
+  "remove_dx": [
+   "v-ebullience"
+  ],
+  "why": "ebullience (bubbly, confident enthusiasm) is a near-opposite of diffidence (shyness); remove for (f)"
+ },
+ {
+  "id": "v-ebullience",
+  "remove_dx": [
+   "v-diffidence"
+  ],
+  "why": "diffidence (shy holding back) is a near-opposite of ebullience; remove for (f)"
+ },
+ {
+  "id": "v-effusively",
+  "remove_dx": [
+   "v-disdainfully"
+  ],
+  "why": "disdainfully (scornful, cold) is a near-opposite of effusively (coolly/coldly are its antonyms)"
+ },
+ {
+  "id": "v-gainsay",
+  "set": {
+   "syn": [
+    "deny",
+    "contradict",
+    "dispute"
+   ]
+  },
+  "why": "syn: refute means to prove something false, not merely to deny it; not a true synonym"
+ },
+ {
+  "id": "v-autodidact",
+  "set": {
+   "syn": [
+    "self-taught person"
+   ]
+  },
+  "why": "syn: self-learner is not an established English word"
+ },
+ {
+  "id": "v-presciently",
+  "set": {
+   "syn": [
+    "prophetically",
+    "farsightedly"
+   ]
+  },
+  "why": "syn: perceptively means with sharp insight into the present, not foresight of the future"
+ }
+]

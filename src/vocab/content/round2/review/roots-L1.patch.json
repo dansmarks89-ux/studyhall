@@ -1,0 +1,92 @@
+[
+ {
+  "id": "r-ship",
+  "remove_dx": [
+   "r-hood",
+   "r-dom"
+  ],
+  "why": "-hood ('a state') and -dom ('rank, condition') overlap -ship's position/state meaning (membership, hardship)"
+ },
+ {
+  "id": "r-hood",
+  "remove_dx": [
+   "r-dom",
+   "r-ship"
+  ],
+  "why": "-dom ('condition') and -ship ('position, relationship') overlap -hood's 'a state' meaning"
+ },
+ {
+  "id": "r-hood",
+  "set": {
+   "words": [
+    {
+     "w": "childhood",
+     "m": "the time of life when a person is a child"
+    },
+    {
+     "w": "adulthood",
+     "m": "the time of life when a person is grown up"
+    },
+    {
+     "w": "parenthood",
+     "m": "the state of being a parent"
+    },
+    {
+     "w": "neighborhood",
+     "m": "the people who live near one another, or the area where they live"
+    }
+   ]
+  },
+  "why": "neighborhood gloss only said 'an area', which illustrates none of the three meanings in def; now shows the 'group' sense"
+ },
+ {
+  "id": "r-dom",
+  "set": {
+   "def": "a state or condition; or the land or rank of a ruler"
+  },
+  "why": "plain-word rule: 'realm' is harder than the root being taught"
+ },
+ {
+  "id": "r-dom",
+  "remove_dx": [
+   "r-ship"
+  ],
+  "why": "-ship 'position' overlaps -dom 'rank'"
+ },
+ {
+  "id": "r-ic",
+  "remove_dx": [
+   "r-ous"
+  ],
+  "why": "-ous 'having the quality of' is near-identical to -ic 'having the nature of'"
+ },
+ {
+  "id": "r-out",
+  "remove_dx": [
+   "r-trans"
+  ],
+  "why": "trans- 'beyond' overlaps out- 'more than, going beyond'"
+ },
+ {
+  "id": "r-mid",
+  "remove_dx": [
+   "r-inter",
+   "r-semi"
+  ],
+  "why": "inter- 'between' ~ 'in the middle of'; semi- 'half' ~ midway 'halfway'"
+ },
+ {
+  "id": "r-pro",
+  "remove_dx": [
+   "r-fore"
+  ],
+  "why": "Latin pro- also means 'before, in front' (provide, protect); fore- def is a defensible answer"
+ },
+ {
+  "id": "r-ive",
+  "remove_dx": [
+   "r-ous"
+  ],
+  "why": "-ous 'having the quality of' overlaps -ive (attractive, protective describe a quality); defensible as a correct answer"
+ }
+]

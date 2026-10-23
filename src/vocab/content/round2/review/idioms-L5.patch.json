@@ -1,0 +1,164 @@
+[
+ {
+  "id": "i-neither-fish-nor-fowl",
+  "set": {
+   "syn": []
+  },
+  "why": "'neither here nor there' means 'unimportant/irrelevant', not 'not clearly one thing or another'; false synonym for (e)"
+ },
+ {
+  "id": "i-its-an-ill-wind-that-blows-nobody-any-good",
+  "set": {
+   "syn": []
+  },
+  "why": "'every cloud has a silver lining' = some good in a bad thing for the sufferer; ill wind = one person's misfortune benefits someone else; not a synonym"
+ },
+ {
+  "id": "i-non-compos-mentis",
+  "set": {
+   "syn": [
+    "of unsound mind",
+    "not in one's right mind"
+   ]
+  },
+  "why": "'incompetent' in everyday English means lacking skill; misleading synonym for learners"
+ },
+ {
+  "id": "i-hors-de-combat",
+  "set": {
+   "syn": [
+    "out of action",
+    "sidelined"
+   ]
+  },
+  "why": "'disabled' is not a synonym of 'out of action for now' in modern usage; misleading"
+ },
+ {
+  "id": "i-weltschmerz",
+  "set": {
+   "syn": [
+    "world-weariness",
+    "melancholy"
+   ]
+  },
+  "why": "'despair' is much stronger than the vague, wistful sadness of Weltschmerz"
+ },
+ {
+  "id": "i-casus-belli",
+  "set": {
+   "syn": [
+    "pretext for war"
+   ]
+  },
+  "why": "'justification' is far too broad to count as a synonym"
+ },
+ {
+  "id": "i-cause-celebre",
+  "set": {
+   "syn": [
+    "controversy"
+   ]
+  },
+  "why": "a cause celebre need not be a scandal; 'scandal' is not a true synonym"
+ },
+ {
+  "id": "i-soi-disant",
+  "set": {
+   "syn": [
+    "self-styled",
+    "so-called"
+   ]
+  },
+  "why": "'would-be' means aspiring/hoping to be, not claiming to be; false synonym"
+ },
+ {
+  "id": "i-amour-propre",
+  "set": {
+   "syn": [
+    "self-esteem",
+    "pride"
+   ]
+  },
+  "why": "'vanity' is excessive pride in looks/achievements, a different (more negative) notion than sense of one's own worth"
+ },
+ {
+  "id": "i-ne-plus-ultra",
+  "set": {
+   "ant": []
+  },
+  "why": "'the worst' is a forced opposite; no real antonym"
+ },
+ {
+  "id": "i-in-the-teeth-of",
+  "set": {
+   "ant": []
+  },
+  "why": "'with the support of' is a forced, non-idiomatic opposite"
+ },
+ {
+  "id": "i-stick-in-ones-craw",
+  "set": {
+   "ant": []
+  },
+  "why": "'please' is a forced opposite of 'keep rankling'"
+ },
+ {
+  "id": "i-primus-inter-pares",
+  "set": {
+   "cloze": {
+    "s": "The chief justice has no more votes than the other judges; she is merely ___ on the court.",
+    "a": "primus inter pares"
+   }
+  },
+  "why": "old cloze read 'first among equals among them', redundant"
+ },
+ {
+  "id": "i-make-a-virtue-of-necessity",
+  "set": {
+   "origin": "An old idea also found in Latin writers; in English it appears in Chaucer's 'The Knight's Tale': 'To maken vertu of necessitee.'"
+  },
+  "why": "'first recorded in the Knight's Tale' is not secure: Chaucer also uses it in Troilus and Criseyde (Book IV), which may be earlier, and the idea is older in Latin"
+ },
+ {
+  "id": "i-the-mills-of-god-grind-slowly",
+  "set": {
+   "origin": "An ancient Greek saying; best known in English from Longfellow's 1846 translation of Friedrich von Logau: 'Though the mills of God grind slowly, yet they grind exceeding small.'"
+  },
+  "why": "English form existed before Longfellow (George Herbert, 'God's mill grinds slow but sure', 1652); 'known in English from' overstated"
+ },
+ {
+  "id": "i-ne-plus-ultra",
+  "remove_dx": [
+   "i-of-the-first-water"
+  ],
+  "why": "'of the highest quality' overlaps 'the best possible example'; valid answer to (b)/(e)"
+ },
+ {
+  "id": "i-coup-de-theatre",
+  "remove_dx": [
+   "i-volte-face"
+  ],
+  "why": "a sudden reversal is close to 'plot twist'/dramatic turn; risky for (b)/(e)"
+ },
+ {
+  "id": "i-dolce-far-niente",
+  "remove_dx": [
+   "i-yeomans-work"
+  ],
+  "why": "'hard work' is a near-opposite; valid answer to (f) alongside 'toil'"
+ },
+ {
+  "id": "i-a-cats-paw",
+  "remove_dx": [
+   "i-hold-the-whip-hand"
+  ],
+  "why": "being in control is a near-opposite of being someone's tool; ambiguous for (f) with ant 'mastermind'"
+ },
+ {
+  "id": "i-make-a-rod-for-ones-own-back",
+  "remove_dx": [
+   "i-hoist-with-ones-own-petard"
+  ],
+  "why": "'harmed by one's own scheme' overlaps 'cause problems for yourself'; could answer (b)/(e)"
+ }
+]

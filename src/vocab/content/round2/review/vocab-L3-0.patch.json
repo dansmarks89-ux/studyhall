@@ -1,0 +1,195 @@
+[
+ {
+  "id": "v-invasive",
+  "set": {
+   "ex": [
+    "The invasive weed spread across the lake in two summers, crowding out the native plants.",
+    "Doctors found the tumor early, before it became invasive and grew into the healthy tissue around it."
+   ]
+  },
+  "why": "ex2: an invasive tumor grows into nearby tissue; reaching other organs is metastasis, a different stage"
+ },
+ {
+  "id": "v-invasive",
+  "remove_dx": [
+   "v-prolific"
+  ],
+  "why": "'prolific vines ... choking the trees' also fits the cloze"
+ },
+ {
+  "id": "v-authoritarian",
+  "set": {
+   "ant": [
+    "democratic",
+    "permissive"
+   ]
+  },
+  "why": "'liberal' as an opposite is ambiguous and reads as partisan in US English"
+ },
+ {
+  "id": "v-chiefly",
+  "set": {
+   "ant": [
+    "partly"
+   ]
+  },
+  "why": "'slightly' is not an opposite of chiefly (mainly)"
+ },
+ {
+  "id": "v-cling",
+  "set": {
+   "ex": [
+    "The frightened children clung to their father's legs on the first day of school.",
+    "Wet sand tends to cling to your feet as you walk off the beach."
+   ]
+  },
+  "why": "ex1 used present tense for a single past event; awkward"
+ },
+ {
+  "id": "v-vacancy",
+  "set": {
+   "syn": [
+    "opening"
+   ]
+  },
+  "why": "'position' is not a synonym: a position is not necessarily empty"
+ },
+ {
+  "id": "v-dialect",
+  "set": {
+   "cloze": {
+    "s": "People from the north and south of the country speak different ___, but they can usually understand each other.",
+    "a": "dialects"
+   }
+  },
+  "why": "cloze used '___s' with a='dialect'; blank must be filled exactly by cloze.a"
+ },
+ {
+  "id": "v-contingency",
+  "set": {
+   "syn": [
+    "possibility",
+    "eventuality"
+   ]
+  },
+  "why": "'emergency' is not a synonym; a contingency is a possible event, not necessarily an emergency"
+ },
+ {
+  "id": "v-upbeat",
+  "set": {
+   "cloze": {
+    "s": "Sales were rising, so the CEO gave a cheerful, ___ speech about the company's bright future.",
+    "a": "upbeat"
+   }
+  },
+  "why": "old cloze's 'an ___' ruled out every consonant-initial option, giving the answer away"
+ },
+ {
+  "id": "v-upbeat",
+  "remove_dx": [
+   "v-articulate",
+   "v-candid"
+  ],
+  "why": "'an articulate speech' / 'a candid speech' also fit the cloze"
+ },
+ {
+  "id": "v-hereditary",
+  "set": {
+   "ex": [
+    "The doctor asked Wei whether any hereditary heart problems ran in his family.",
+    "In some countries, the role of king or queen is hereditary and passes from parent to child."
+   ]
+  },
+  "why": "ex2 claimed the crown always passes to the oldest child; succession rules vary"
+ },
+ {
+  "id": "v-peripheral",
+  "remove_dx": [
+   "v-superficial"
+  ],
+  "why": "'deal with the superficial details later' also fits the cloze"
+ },
+ {
+  "id": "v-uneasy",
+  "set": {
+   "ex": [
+    "Kwame felt uneasy when the stranger kept following him through the parking lot.",
+    "Hannah grew uneasy when her son still was not home an hour after dark."
+   ]
+  },
+  "why": "ex2 'uneasy peace' shows the 'unstable' sense, not the defined 'worried' sense"
+ },
+ {
+  "id": "v-boast",
+  "set": {
+   "syn": [
+    "brag",
+    "show off"
+   ]
+  },
+  "why": "'gloat' means taking pleasure in a win or another's failure; not a synonym of boast"
+ },
+ {
+  "id": "v-indefinitely",
+  "set": {
+   "ant": []
+  },
+  "why": "'temporarily'/'briefly' are not true opposites: an indefinite closure is also temporary"
+ },
+ {
+  "id": "v-abide",
+  "remove_dx": [
+   "v-uphold"
+  ],
+  "why": "uphold (support/maintain a rule or decision) overlaps 'accept and follow a rule, decision'"
+ },
+ {
+  "id": "v-unleash",
+  "remove_dx": [
+   "v-induce"
+  ],
+  "why": "'the joke induced a burst of laughter' also fits the cloze"
+ },
+ {
+  "id": "v-indicative",
+  "remove_dx": [
+   "v-reminiscent"
+  ],
+  "why": "'reminiscent of a strong economy' also fits the cloze (both take 'of')"
+ },
+ {
+  "id": "v-exquisite",
+  "remove_dx": [
+   "v-intriguing"
+  ],
+  "why": "'carved with such intriguing detail that experts traveled to see it' also fits the cloze"
+ },
+ {
+  "id": "v-traverse",
+  "remove_dx": [
+   "v-roam"
+  ],
+  "why": "roam (travel around a wide area) overlaps the def 'travel across or through an area'"
+ },
+ {
+  "id": "v-perennial",
+  "remove_dx": [
+   "v-rampant"
+  ],
+  "why": "'a rampant problem' could also fill the cloze"
+ },
+ {
+  "id": "v-dissent",
+  "remove_dx": [
+   "v-hostility"
+  ],
+  "why": "'there was some hostility from the younger staff' also fits the cloze"
+ },
+ {
+  "id": "v-mistakenly",
+  "remove_dx": [
+   "v-knowingly"
+  ],
+  "why": "near-opposite of mistakenly (test f) and could fill the cloze"
+ }
+]

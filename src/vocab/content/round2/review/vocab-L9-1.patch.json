@@ -1,0 +1,204 @@
+[
+ {
+  "id": "v-revile",
+  "set": {
+   "def": "to criticize someone very harshly and angrily, often with insults and in public"
+  },
+  "why": "old def made public hatred the purpose/result of the verb; reviling is the abusive criticism itself"
+ },
+ {
+  "id": "v-extemporaneous",
+  "set": {
+   "def": "spoken or performed without a written script, either made up on the spot or prepared but not read word for word",
+   "note": "In public-speaking courses it means prepared ahead but delivered from brief notes, not read from a script."
+  },
+  "why": "extemporaneous speeches in the public-speaking sense use brief notes; 'given without notes' and the note were inaccurate"
+ },
+ {
+  "id": "v-overplay",
+  "set": {
+   "cloze": {
+    "s": "Critics accused the TV station of ___ the danger, since the storm turned out to be a light shower.",
+    "a": "overplaying"
+   }
+  },
+  "why": "old cloze tested the idiom 'overplay one's hand' (a different sense), not the taught def"
+ },
+ {
+  "id": "v-vacillating",
+  "set": {
+   "cloze": {
+    "s": "Frustrated by her ___ boss, who said yes on Monday and no on Tuesday, Hannah asked for a final decision in writing.",
+    "a": "vacillating"
+   },
+   "syn": [
+    "indecisive",
+    "wavering"
+   ]
+  },
+  "why": "old cloze used the verb/gerund ('weeks of vacillating between') not the adjective; 'hesitant' means slow to act, not changing one's mind"
+ },
+ {
+  "id": "v-allusive",
+  "set": {
+   "syn": [
+    "indirect"
+   ]
+  },
+  "why": "'suggestive' mainly means hinting at sex; not a synonym in this sense"
+ },
+ {
+  "id": "v-rakish",
+  "set": {
+   "syn": [
+    "dashing",
+    "jaunty"
+   ]
+  },
+  "why": "'dapper' means neat and trim, lacking the daring/raffish sense"
+ },
+ {
+  "id": "v-unexceptional",
+  "set": {
+   "syn": [
+    "ordinary",
+    "average",
+    "unremarkable"
+   ]
+  },
+  "why": "'mediocre' means below standard (negative); unexceptional is neutral ordinary"
+ },
+ {
+  "id": "v-avowedly",
+  "set": {
+   "syn": [
+    "openly",
+    "professedly"
+   ]
+  },
+  "why": "'admittedly' is a conceding sentence adverb, not 'openly declared'"
+ },
+ {
+  "id": "v-ethnocentrism",
+  "set": {
+   "syn": [
+    "cultural bias"
+   ]
+  },
+  "why": "'insularity' is isolation/narrowness, not judging others by one's own culture"
+ },
+ {
+  "id": "v-pockmarked",
+  "set": {
+   "syn": [
+    "pitted",
+    "scarred"
+   ]
+  },
+  "why": "'dented' means pushed in by a blow, not covered with pits or scars"
+ },
+ {
+  "id": "v-domesticate",
+  "set": {
+   "syn": [
+    "tame"
+   ]
+  },
+  "why": "'breed' is not a synonym of domesticate"
+ },
+ {
+  "id": "v-irretrievable",
+  "set": {
+   "syn": [
+    "unrecoverable",
+    "irreparable",
+    "lost"
+   ]
+  },
+  "why": "'hopeless' is not a synonym of 'impossible to get back'"
+ },
+ {
+  "id": "v-forebear",
+  "set": {
+   "syn": [
+    "ancestor",
+    "forefather"
+   ]
+  },
+  "why": "'predecessor' means someone who held a post before you, not an ancestor"
+ },
+ {
+  "id": "v-forlornly",
+  "set": {
+   "syn": [
+    "sadly",
+    "dejectedly",
+    "miserably"
+   ]
+  },
+  "why": "'wistfully' means with sad longing, not lonely and without hope"
+ },
+ {
+  "id": "v-avowedly",
+  "remove_dx": [
+   "v-rabidly"
+  ],
+  "why": "'The group is rabidly against the new mall' fits the cloze"
+ },
+ {
+  "id": "v-unquestioningly",
+  "remove_dx": [
+   "v-unhesitatingly"
+  ],
+  "why": "'never accepts results unhesitatingly' fits the cloze"
+ },
+ {
+  "id": "v-unthinkingly",
+  "remove_dx": [
+   "v-unhesitatingly"
+  ],
+  "why": "'She unhesitatingly tossed the receipt' fits the cloze"
+ },
+ {
+  "id": "v-trounce",
+  "remove_dx": [
+   "v-outclass"
+  ],
+  "why": "overlapping def (be far better than a rival); 'was outclassed' fits the cloze"
+ },
+ {
+  "id": "v-glumly",
+  "remove_dx": [
+   "v-abjectly"
+  ],
+  "why": "def 'hopeless and miserable' overlaps 'sad... no hope'"
+ },
+ {
+  "id": "v-heartrending",
+  "remove_dx": [
+   "v-doleful"
+  ],
+  "why": "def 'very sad' overlaps; risk in (a)/(b)"
+ },
+ {
+  "id": "v-prevarication",
+  "remove_dx": [
+   "v-insincerity"
+  ],
+  "why": "def overlaps (saying what you don't mean vs avoiding truth); could fill the cloze"
+ },
+ {
+  "id": "v-imperturbable",
+  "remove_dx": [
+   "v-unblinking"
+  ],
+  "why": "def 'showing no fear or feeling' overlaps; 'the unblinking goalkeeper' fits cloze"
+ },
+ {
+  "id": "v-stridently",
+  "remove_dx": [
+   "v-lustily"
+  ],
+  "why": "'complained so lustily' (loudly, energetically) fits the cloze"
+ }
+]

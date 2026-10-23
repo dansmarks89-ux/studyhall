@@ -1,0 +1,231 @@
+[
+ {
+  "id": "v-resplendent",
+  "remove_dx": [
+   "v-stupendous"
+  ],
+  "why": "'The palace looked stupendous at night' fits the cloze; near-synonym of magnificent/dazzling"
+ },
+ {
+  "id": "v-tangential",
+  "set": {
+   "syn": [
+    "peripheral",
+    "incidental"
+   ]
+  },
+  "why": "'unrelated' is wrong (tangential = slightly related); 'side' is not a usable single-word synonym"
+ },
+ {
+  "id": "v-myopic",
+  "set": {
+   "syn": [
+    "shortsighted"
+   ]
+  },
+  "why": "'narrow-minded' means intolerant of other views, not lacking foresight"
+ },
+ {
+  "id": "v-favoritism",
+  "set": {
+   "syn": [
+    "bias",
+    "partiality"
+   ]
+  },
+  "why": "'nepotism' is only favoritism to relatives; 'preference' lacks the unfairness"
+ },
+ {
+  "id": "v-unease",
+  "remove_dx": [
+   "v-consternation"
+  ],
+  "why": "'filled him with consternation' fits the cloze; overlapping worry sense"
+ },
+ {
+  "id": "v-bewilderment",
+  "remove_dx": [
+   "v-consternation"
+  ],
+  "why": "'looked at the map in consternation' fits the cloze; near-synonym (confusion)"
+ },
+ {
+  "id": "v-lurid",
+  "remove_dx": [
+   "v-gaudy",
+   "v-resplendent"
+  ],
+  "why": "gaudy's def ('too bright... looks cheap') matches the also sense 'unpleasantly bright in color'; resplendent ('very bright, colorful') too close"
+ },
+ {
+  "id": "v-magnanimous",
+  "remove_dx": [
+   "v-genial"
+  ],
+  "why": "'In a genial speech, the mayor thanked her opponent' fits the cloze sensibly"
+ },
+ {
+  "id": "v-immeasurably",
+  "remove_dx": [
+   "v-singularly"
+  ],
+  "why": "singularly ('to a very unusual or extreme degree') overlaps 'to a very great degree' in (b) and (e)"
+ },
+ {
+  "id": "v-waver",
+  "remove_dx": [
+   "v-backtrack"
+  ],
+  "why": "backtrack ('change something you said or planned') overlaps 'change one's mind' in the def"
+ },
+ {
+  "id": "v-fragmentary",
+  "remove_dx": [
+   "v-piecemeal"
+  ],
+  "why": "piecemeal ('in small, separate steps') overlaps 'made up of small, separate pieces'"
+ },
+ {
+  "id": "v-dispossessed",
+  "remove_dx": [
+   "v-downtrodden"
+  ],
+  "why": "'the downtrodden villagers had nowhere to live' fits the cloze sensibly"
+ },
+ {
+  "id": "v-baffle",
+  "remove_dx": [
+   "v-elude"
+  ],
+  "why": "elude's def includes 'to be hard to understand', overlapping baffle"
+ },
+ {
+  "id": "v-absolve",
+  "set": {
+   "def": "to say or decide that someone is not to blame, or to free them from a duty"
+  },
+  "why": "old def ('officially say not guilty') misses the duty sense used in ex 2 and the non-official use"
+ },
+ {
+  "id": "v-pander",
+  "set": {
+   "syn": [
+    "cater",
+    "indulge"
+   ]
+  },
+  "why": "'play up' does not mean pander ('play to' would)"
+ },
+ {
+  "id": "v-cynic",
+  "set": {
+   "syn": [
+    "skeptic",
+    "doubter"
+   ]
+  },
+  "why": "a pessimist expects bad outcomes; not a synonym of cynic (doubts people's motives)"
+ },
+ {
+  "id": "v-kitsch",
+  "set": {
+   "syn": []
+  },
+  "why": "'schlock' is slang most learners would not recognize"
+ },
+ {
+  "id": "v-outlast",
+  "set": {
+   "syn": [
+    "outlive",
+    "survive"
+   ]
+  },
+  "why": "'outwear' is rare; learners would not recognize it"
+ },
+ {
+  "id": "v-panache",
+  "set": {
+   "syn": [
+    "flair",
+    "style",
+    "verve"
+   ]
+  },
+  "why": "'dash' in this sense is dated and not recognizable to most learners"
+ },
+ {
+  "id": "v-briskly",
+  "set": {
+   "syn": [
+    "quickly",
+    "rapidly",
+    "energetically"
+   ]
+  },
+  "why": "'smartly' (= briskly) is a dated sense most learners read as 'intelligently'"
+ },
+ {
+  "id": "v-formulaic",
+  "set": {
+   "syn": [
+    "predictable",
+    "unoriginal",
+    "clichéd"
+   ]
+  },
+  "why": "'stock' as an adjective is not recognizable as a synonym at this level"
+ },
+ {
+  "id": "v-unseemly",
+  "set": {
+   "syn": [
+    "improper",
+    "unbecoming",
+    "inappropriate"
+   ],
+   "ant": [
+    "proper",
+    "appropriate"
+   ]
+  },
+  "why": "'indecent'/'decent' usually carry a sexual-propriety sense, not the 'in poor taste' sense"
+ },
+ {
+  "id": "v-unmistakably",
+  "set": {
+   "ant": [
+    "ambiguously"
+   ]
+  },
+  "why": "'doubtfully' is not an opposite of unmistakably; 'ambiguously' is"
+ },
+ {
+  "id": "v-allay",
+  "remove_dx": [
+   "v-quash"
+  ],
+  "why": "'To quash parents' worries' is a plausible fill for the cloze"
+ },
+ {
+  "id": "v-adjourn",
+  "set": {
+   "syn": [
+    "suspend",
+    "recess",
+    "break off"
+   ]
+  },
+  "why": "'postpone' means delay before starting, not stop a meeting in progress"
+ },
+ {
+  "id": "v-benevolence",
+  "set": {
+   "ex": [
+    "Thanks to the benevolence of a local family, the town now has a new park.",
+    "Patients remembered the old doctor for his benevolence and patience."
+   ]
+  },
+  "why": "'a gift from the benevolence of' is unnatural phrasing"
+ }
+]

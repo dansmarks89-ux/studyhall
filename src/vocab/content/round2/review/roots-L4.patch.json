@@ -1,0 +1,91 @@
+[
+ {
+  "id": "r-pac-pax",
+  "remove_dx": [
+   "r-plac"
+  ],
+  "why": "plac 'please; calm' overlaps 'peace' (pacify and appease both mean to calm); a learner could defensibly pick it"
+ },
+ {
+  "id": "r-osis",
+  "remove_dx": [
+   "r-itis",
+   "r-mania"
+  ],
+  "why": "-itis is itself 'a condition, often a disease'; -mania 'madness' is a (mental) condition; both could answer 'which means a condition, often a disease?'"
+ },
+ {
+  "id": "r-mania",
+  "remove_dx": [
+   "r-osis"
+  ],
+  "why": "'a condition, often a disease' can defensibly describe madness (cf. psychosis), so it competes as an answer for -mania"
+ },
+ {
+  "id": "r-archi-arch",
+  "remove_dx": [
+   "r-proto",
+   "r-paleo"
+  ],
+  "why": "Greek arkhe also means 'first, beginning' (archetype) and arch- in archaic means 'ancient'; 'first; earliest' and 'old, ancient' are defensible readings of arch-"
+ },
+ {
+  "id": "r-neur-neuro",
+  "remove_dx": [
+   "r-cord-cor"
+  ],
+  "why": "cord and cardi both show the def 'heart'; two identical choices on one screen"
+ },
+ {
+  "id": "r-corp-corpor",
+  "remove_dx": [
+   "r-cord-cor"
+  ],
+  "why": "cord and cardi both show the def 'heart'; two identical choices on one screen"
+ },
+ {
+  "id": "r-capit",
+  "remove_dx": [
+   "r-cord-cor"
+  ],
+  "why": "cord and cardi both show the def 'heart'; two identical choices on one screen"
+ },
+ {
+  "id": "r-vinc-vict",
+  "remove_dx": [
+   "r-cord-cor"
+  ],
+  "why": "cord and cardi both show the def 'heart'; two identical choices on one screen"
+ },
+ {
+  "id": "r-am-ami",
+  "set": {
+   "words": [
+    {
+     "w": "amiable",
+     "m": "friendly and pleasant"
+    },
+    {
+     "w": "amicable",
+     "m": "friendly and without bad feeling, as in an amicable divorce"
+    },
+    {
+     "w": "amateur",
+     "m": "someone who does an activity for love of it, not for pay"
+    },
+    {
+     "w": "enamored",
+     "m": "filled with love or strong liking"
+    }
+   ]
+  },
+  "why": "grammar: 'as an amicable divorce' -> 'as in an amicable divorce'"
+ },
+ {
+  "id": "r-paleo",
+  "remove_dx": [
+   "r-archi-arch"
+  ],
+  "why": "in (b) 'Which means old, ancient?' the term arch- is defensible: Greek arkhaios 'ancient' gives archaic, archaeology"
+ }
+]

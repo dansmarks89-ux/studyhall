@@ -1,0 +1,37 @@
+[
+ {
+  "id": "p-inference-dna-database-match",
+  "set": {
+   "q": "A DNA profile from a crime scene would match about 1 in every million people. Police search a DNA database that holds profiles for only some of the city’s 5 million residents and find one match, a man with no other link to the crime. Which is best supported?"
+  },
+  "why": "If the database covered the whole city, finding only one match would contradict 'about five people would be expected to match' and make option 3 arguable; the database must cover only part of the city."
+ },
+ {
+  "id": "c-zero-risk-bias",
+  "remove_dx": [
+   "c-scope-insensitivity"
+  ],
+  "why": "Both tests (choosing a small risk over a far larger one) can also be read as ignoring the scale of harm, i.e. scope insensitivity."
+ },
+ {
+  "id": "p-odd-one-out-panegyric",
+  "set": {
+   "why": "Every other word names an angry verbal attack; a panegyric is a speech or piece of writing full of praise. Broadside may look unrelated, but it also means a fierce spoken or written attack."
+  },
+  "why": "'Harangue may sound gentler' is an odd, unsupported claim; name the genuinely tempting distractor instead."
+ },
+ {
+  "id": "c-kettle-logic",
+  "set": {
+   "tests": [
+    {
+     "s": "Asked about the missing report, Kai says he already sent it, that his laptop crashed before he could finish it, and that nobody ever assigned it to him."
+    },
+    {
+     "s": "A teenager tells his parents he didn’t take the car, that he only drove it around the block, and that they had said he could use it anyway."
+    }
+   ]
+  },
+  "why": "Original excuses ('already sent it', 'not due until next week') are consistent with each other, so the test did not clearly show mutually contradictory excuses."
+ }
+]

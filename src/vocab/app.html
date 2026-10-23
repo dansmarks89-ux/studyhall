@@ -134,6 +134,18 @@ td.nw{white-space:nowrap}
 dialog{border:0;border-radius:16px;padding:0;max-width:600px;width:calc(100% - 24px);background:var(--panel);color:var(--ink);max-height:88vh;overflow-y:auto;overscroll-behavior:contain}
 dialog::backdrop{background:rgba(0,0,0,.45)}
 dialog .in{padding:18px;display:flex;flex-direction:column;gap:12px}
+dialog.sheet{margin:auto auto 0;width:100%;border-radius:16px 16px 0 0;max-height:75vh}
+dialog.sheet::backdrop{background:rgba(0,0,0,.2)}
+dialog.sheet .in{padding-bottom:max(18px,env(safe-area-inset-bottom))}
+dialog.sheet .btn.small,dialog.sheet .play{min-height:44px}
+#glin{display:flex;flex-direction:column;gap:12px}
+.gle{display:flex;flex-direction:column;gap:6px}
+.gle+.gle{border-top:1px solid var(--line);padding-top:12px}
+.gle b{font:600 1.2rem var(--f-display)}
+.gle ol{margin:0;padding-left:20px}
+.passage{font-family:var(--f-display);font-size:1.12rem;line-height:1.65}
+.tap{cursor:pointer;-webkit-tap-highlight-color:transparent} /* the pointer cursor makes iOS Safari report taps on plain text as clicks */
+::highlight(tap){background-color:var(--focus);color:var(--paper)}
 details.more{border:1px solid var(--line);border-radius:12px;padding:10px 14px}
 details.more summary{cursor:pointer;font-weight:600}
 .hint{font-size:.85rem;color:var(--muted)}
@@ -152,7 +164,7 @@ details.more summary{cursor:pointer;font-weight:600}
     <h1><a href="../" class="shhome" aria-label="Study Hall home">Study Hall</a> <span aria-hidden="true">/</span> Word Power</h1>
     <div class="meta"><span class="sub" id="sync">Progress saved on this device</span><span class="sub" id="shwho"></span></div>
   </header>
-  <nav class="tabs" id="tabs" aria-label="Sections">
+  <nav class="tabs" id="tabs" aria-label="Sections" hidden>
     <button type="button" data-tab="today">Today</button>
     <button type="button" data-tab="tracks">Tracks</button>
     <button type="button" data-tab="progress">Progress</button>
@@ -162,7 +174,7 @@ details.more summary{cursor:pointer;font-weight:600}
   <main id="main"></main>
 </div>
 <dialog id="dlg"><div class="in" id="dlgin"></div></dialog>
-<script>const DATA = __DATA__;</script>
+<dialog id="gl" class="sheet" aria-label="Dictionary"><div class="in"><div id="glin" role="status"></div><button class="btn block" type="button" id="glclose">Close</button></div></dialog>
 <script>
 "use strict";
 /* ============ helpers ============ */
@@ -170,6 +182,7 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const pickN = (a, n) => shuffle(a).slice(0, n);
+const getJSON = url => fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
 const store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
@@ -184,27 +197,47 @@ const playBtn = (say, label) => `<button class="play${label ? "" : " icon"}" typ
 const cap = s => s ? s[0].toUpperCase() + s.slice(1) : s;
 
 /* ============ content ============ */
-const BY = {}; DATA.forEach(x => { BY[x.id] = x; });
+const DATA_URL = "__DATA__", GLOSS_URL = "__GLOSS__"; // file names filled in by build.py
+let DATA = [];
+const BY = {};
 const TR = {
-  vocab:     { name: "Vocabulary",       min: 0, max: 10, icon: "Aa", blurb: "Words from everyday to rare, ranked with real word-frequency data." },
-  roots:     { name: "Word roots",       min: 1, max: 3,  icon: "√",  blurb: "Prefixes, roots and suffixes that unlock thousands of words." },
+  vocab:     { name: "Vocabulary",       min: -2, max: 10, icon: "Aa", blurb: "Words from everyday to rare, ranked with real word-frequency data." },
+  roots:     { name: "Word roots",       min: 1, max: 5,  icon: "√",  blurb: "Prefixes, roots and suffixes that unlock thousands of words." },
   idioms:    { name: "Idioms & phrases", min: 1, max: 5,  icon: "“”", blurb: "Expressions, set phrases and foreign phrases used in English." },
   refs:      { name: "References",       min: 1, max: 5,  icon: "§",  blurb: "Allusions from myth, scripture, literature, history, science and film." },
   knowledge: { name: "Knowledge",        min: 1, max: 5,  icon: "◎",  blurb: "Core ideas from science, health, history, law, money and the arts." },
-  reasoning: { name: "Reasoning",        min: 1, max: 3,  icon: "∴",  blurb: "Spot faulty arguments and biases; solve language and logic problems." }
+  reasoning: { name: "Reasoning",        min: 1, max: 5,  icon: "∴",  blurb: "Spot faulty arguments and biases; solve language and logic problems." }
 };
 const TORDER = ["vocab", "roots", "idioms", "refs", "knowledge", "reasoning"];
-const LIST = {}, PROB = {};
+const LIST = {}, PROB = {}, PAS = {}, PASLV = {}; // PAS: reading passages by id (not cards); PASLV: passage ids by level
 TORDER.forEach(t => { LIST[t] = {}; });
-DATA.forEach(x => {
-  if (x.id.startsWith("p-")) { (PROB[x.level] = PROB[x.level] || []).push(x.id); return; }
-  (LIST[x.track][x.level] = LIST[x.track][x.level] || []).push(x.id);
-});
-TORDER.forEach(t => { for (const l in LIST[t]) LIST[t][l].sort((a, b) => hash(a) - hash(b)); });
-for (const l in PROB) PROB[l].sort((a, b) => hash(a) - hash(b));
-const lvName = (t, l) => t === "vocab" && +l === 0 ? "Foundations" : "Level " + l;
+function index(d) {
+  DATA = d.items;
+  DATA.forEach(x => {
+    BY[x.id] = x;
+    if (x.id.startsWith("p-")) { (PROB[x.level] = PROB[x.level] || []).push(x.id); return; }
+    (LIST[x.track][x.level] = LIST[x.track][x.level] || []).push(x.id);
+  });
+  d.passages.forEach(g => { PAS[g.id] = g; (PASLV[g.level] = PASLV[g.level] || []).push(g.id); });
+  TORDER.forEach(t => { for (const l in LIST[t]) LIST[t][l].sort((a, b) => hash(a) - hash(b)); });
+  for (const l in PROB) PROB[l].sort((a, b) => hash(a) - hash(b));
+}
+const VNAMES = { "-2": ["Starter 1", "S1"], "-1": ["Starter 2", "S2"], 0: ["Foundations", "F"] };
+const lvName = (t, l) => t === "vocab" && VNAMES[l] ? VNAMES[l][0] : "Level " + l;
+const lvIcon = (t, l) => t === "vocab" && VNAMES[l] ? VNAMES[l][1] : String(l);
 const isProb = id => id.startsWith("p-");
 const isConcept = id => id.startsWith("c-");
+/* syn/ant only for vocabulary: other tracks' wrong options are long phrases, so a one-word answer would stand out. */
+const canAsk = (x, qt) => qt === "syn" || qt === "ant" ? x.track === "vocab" && !!(x[qt] && x[qt].length) : qt === "also" ? !!x.also : true;
+const formsOf = x => [x.term, x.cloze && x.cloze.a, ...(x.forms || []).map(f => f.replace(/\s*\(.*\)\s*/, ""))].filter(Boolean).map(f => f.trim().toLowerCase());
+const INFL = /^(?:s|es|ed|ing|er|est|ly|en|ies|ied|ier|iest|ily)$/;
+const WORD = /(\p{L}+(?:['’-]\p{L}+)*)/gu; // a word: letters with internal apostrophes or hyphens (captured, so split() keeps the words)
+/* Is the single word w (any case) the item's term or one of its forms, allowing regular endings
+   (cut → cuts, notice → noticed, carry → carried, stop → stopped)? Terms under 3 letters only match exactly. */
+function isFormOf(w, x) {
+  w = w.toLowerCase().replace(/’/g, "'");
+  return formsOf(x).some(f => w === f || f.length > 2 && [f, f.replace(/[ey]$/, ""), f + f.slice(-1)].some(b => w.startsWith(b) && INFL.test(w.slice(b.length))));
+}
 const countTrack = t => Object.values(LIST[t]).reduce((s, a) => s + a.length, 0) + (t === "reasoning" ? Object.values(PROB).reduce((s, a) => s + a.length, 0) : 0);
 const kindWord = x => x.track === "vocab" ? "word" : x.track === "idioms" ? "phrase" : x.track === "refs" ? "reference" : x.track === "knowledge" ? "term" : x.track === "roots" ? "word part" : "idea";
 
@@ -390,12 +423,19 @@ Their sentence: """${String(sentence).slice(0, 600)}"""
 Judge whether the sentence uses "${x.term}" correctly and naturally in that meaning. Ignore small typos unless they change the meaning.
 Reply with JSON only: {"verdict":"good"|"awkward"|"wrong","feedback":"1-2 short, specific sentences","better":"an improved version of their sentence, or empty string if it is already good"}`;
   const r = await s.json(p, { maxTokens: 400 });
-  if (!r || !r.verdict) throw Object.assign(new Error("The reply was unclear."), { code: "invalid_json" });
+  if (!r || !["good", "awkward", "wrong"].includes(r.verdict)) throw Object.assign(new Error("The reply was unclear."), { code: "invalid_json" });
   return r;
 }
 
 /* ============ levels ============ */
-function startLv(t) { const p = ST.pl && ST.pl[t]; return p && p.start != null ? p.start : TR[t].min; }
+/* A placement stores P, the highest level passed (TR[t].min - 1 for none), and start = P + 1 (capped), which older
+   copies of the app read. Here the start is worked out from P, so a placement saved when roots and reasoning ended
+   at level 3 moves on to level 4. An old placement (no v field) with vocab P = -1 meant "nothing passed" when
+   Foundations was the lowest level: P + 1 still starts it at Foundations, and its results say so.
+   With no placement, vocabulary starts at Foundations, as it always has; English learners reach the Starter levels
+   through the placement question or the Skip dialog. */
+const oldVocabNone = p => !p.v && p.vocab.P === -1;
+function startLv(t) { const p = ST.pl && ST.pl[t]; return p ? Math.min(TR[t].max, p.P + 1) : t === "vocab" ? 0 : TR[t].min; }
 function lvRec(t, l) { return (ST.lv[t] || {})[l]; }
 function cur(t) { let c = startLv(t); while (c < TR[t].max && lvRec(t, c) && lvRec(t, c).passed) c++; return c; }
 function trackOn(t) { return t === "vocab" || !!ST.set.tracks[t]; }
@@ -426,6 +466,10 @@ function grade(id, result) { // result: true | false | "partial"
   else r = [Math.max(0, Math.floor(st / 2)), n + 10, old[2] + 1, old[3], n];
   if (st >= 3 && old[2] > 0) { ST.ret[1]++; if (result === true) ST.ret[0]++; const h = ST.hist[today()] = ST.hist[today()] || [0, 0, 0, 0, 0]; h[4]++; if (result === true) h[3]++; }
   R[id] = r;
+}
+function solved(id, ok) { // reasoning problems and reading passages: right → away for 60 days, wrong → back after a day
+  const n = nowMin(), o = R[id] || [0, n, 0, 0, 0];
+  R[id] = ok ? [1, n + 60 * DAY, o[2] + 1, o[3] + 1, n] : [0, n + DAY, o[2] + 1, o[3], n];
 }
 function setKnown(id, stage, days) { const n = nowMin(); const o = R[id] || [0, n, 0, 0, 0]; R[id] = [stage, n + Math.round(days * DAY * (0.9 + Math.random() * 0.2)), o[2] + 1, o[3] + 1, n]; }
 function dueList() {
@@ -471,9 +515,9 @@ function qtypesFor(x, stage) {
   const multi = /\s/.test(x.term);
   if (stage <= 1) return ["mean"];
   if (stage === 2) return ["cloze"];
-  if (stage === 3) return ["word", "cloze"];
-  const late = ["cloze", "mean", "word"];
-  if (TYPEDOK()) { late.push("tdef"); if (ST.set.typed === "often") late.push("tdef", "tword"); if (!multi && x.track === "vocab") late.push("tword"); }
+  if (stage === 3) return ["word", "cloze", "syn", "ant"].filter(qt => canAsk(x, qt));
+  const late = ["cloze", "mean", "word", "syn", "ant", "also"].filter(qt => canAsk(x, qt));
+  if (TYPEDOK()) { late.push("tdef", "sent"); if (ST.set.typed === "often") late.push("tdef", "tword", "sent"); if (!multi && x.track === "vocab") late.push("tword"); }
   return late;
 }
 function chooseQt(id, avoid) {
@@ -488,19 +532,19 @@ function makeQ(id, qt) {
   const head = (label) => `<h3>${esc(label)}</h3>`;
   if (qt === "prob") {
     const order = shuffle(x.options.map((o, i) => i));
-    return { qt, id, html: `${head(cap(x.kind) + " problem")}<p class="prompt" style="white-space:pre-line">${esc(x.q)}</p>`,
+    return { qt, id, html: `${head(cap(x.kind) + " problem")}<p class="prompt tap" style="white-space:pre-line">${esc(x.q)}</p>`,
       opts: order.map(i => ({ label: x.options[i], ok: i === x.answer })) };
   }
   if (qt === "scenario") {
     const t = x.tests[Math.floor(Math.random() * x.tests.length)];
     const ds = distractors(x, 5);
-    return { qt, id, html: `${head("Which reasoning problem does this show?")}<p class="prompt">${esc(t.s)}</p>`,
+    return { qt, id, html: `${head("Which reasoning problem does this show?")}<p class="prompt tap">${esc(t.s)}</p>`,
       opts: shuffle([{ label: cap(x.term), ok: true, ref: x.id }, ...ds.map(d => ({ label: cap(d.term), ok: false, ref: d.id }))]) };
   }
   if (qt === "rootword") {
     const w = x.words[Math.floor(Math.random() * x.words.length)];
     const ds = distractors(x, 5);
-    return { qt, id, html: `${head("Word part")}<p class="prompt">In <b>${esc(w.w)}</b> (${esc(w.m)}), the part <b>${esc(x.term)}</b> means…</p>`,
+    return { qt, id, html: `${head("Word part")}<p class="prompt tap">In <b>${esc(w.w)}</b> (${esc(w.m)}), the part <b>${esc(x.term)}</b> means…</p>`,
       opts: shuffle([{ label: x.def, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.def, ok: false, ref: d.id }))]) };
   }
   if (qt === "mean") {
@@ -512,13 +556,25 @@ function makeQ(id, qt) {
   }
   if (qt === "word") {
     const ds = distractors(x, 5);
-    return { qt, id, html: `${head("Which " + kindWord(x) + " fits this meaning?")}<p class="prompt">${esc(cap(x.def))}</p>${x.pos ? `<span class="sub">${esc(x.pos)}</span>` : ""}`,
+    return { qt, id, html: `${head("Which " + kindWord(x) + " fits this meaning?")}<p class="prompt tap">${esc(cap(x.def))}</p>${x.pos ? `<span class="sub">${esc(x.pos)}</span>` : ""}`,
       opts: shuffle([{ label: x.term, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.term, ok: false, ref: d.id }))]) };
+  }
+  if (qt === "syn" || qt === "ant") {
+    const ds = distractors(x, 5);
+    return { qt, id, say: x.term, html: `${head(`Which word ${qt === "syn" ? "is closest in meaning to" : "means the opposite of"}…`)}
+      <div class="row"><span class="term">${esc(x.term)}</span>${playBtn(x.term)}</div>`,
+      opts: shuffle([{ label: pickOne(x[qt]), ok: true }, ...ds.map(d => ({ label: d.term, ok: false, ref: d.id }))]) };
+  }
+  if (qt === "also") {
+    const ds = distractors(x, 5);
+    return { qt, id, say: x.term, html: `${head("Besides its main meaning, what else can it mean?")}
+      <div class="row"><span class="term">${esc(x.term)}</span>${playBtn(x.term)}</div><p class="sub tap">Main meaning: ${esc(x.def)}</p>`,
+      opts: shuffle([{ label: x.also.split(" (“")[0].trim(), ok: true, ref: x.id }, ...ds.map(d => ({ label: d.def, ok: false, ref: d.id }))]) };
   }
   if (qt === "cloze") {
     const ds = distractors(x, 5);
     const s = esc(x.cloze.s).replace("___", '<span class="blank" aria-label="blank">&nbsp;</span>');
-    return { qt, id, html: `${head("Fill the blank")}<p class="cloze">${s}</p><p class="hint">Choose the ${kindWord(x)} that fits${x.track === "vocab" || x.track === "idioms" ? " (it may change form, e.g. -ed or -s)" : ""}.</p>`,
+    return { qt, id, html: `${head("Fill the blank")}<p class="cloze tap">${s}</p><p class="hint">Choose the ${kindWord(x)} that fits${x.track === "vocab" || x.track === "idioms" ? " (it may change form, e.g. -ed or -s)" : ""}.</p>`,
       opts: shuffle([{ label: x.term, ok: true, ref: x.id }, ...ds.map(d => ({ label: d.term, ok: false, ref: d.id }))]) };
   }
   if (qt === "tdef") {
@@ -526,8 +582,12 @@ function makeQ(id, qt) {
       <p class="hint">Type what it means. A short phrase is enough. Claude grades the meaning, not the exact wording.</p>` };
   }
   if (qt === "tword") {
-    return { qt, id, typed: "word", html: `${head("Type the word")}<p class="prompt">${esc(cap(x.def))}</p>
+    return { qt, id, typed: "word", html: `${head("Type the word")}<p class="prompt tap">${esc(cap(x.def))}</p>
       <p class="hint">${x.pos ? esc(x.pos) + " · " : ""}starts with “${esc(x.term[0])}”, ${x.term.length} letters</p>` };
+  }
+  if (qt === "sent") {
+    return { qt, id, typed: "sent", html: `${head("Use it in a sentence of your own")}<div class="row"><span class="term">${esc(x.term)}</span>${playBtn(x.term)}</div>
+      <p class="hint">Write one sentence that shows what it means. Claude checks that it's used correctly.</p>` };
   }
 }
 function lev(a, b) {
@@ -539,9 +599,7 @@ function lev(a, b) {
 function checkTypedWord(x, ans) {
   const a = ans.trim().toLowerCase().replace(/[^a-z' -]/g, "");
   if (!a) return { ok: false };
-  const acc = new Set([x.term.toLowerCase(), (x.cloze && x.cloze.a || "").toLowerCase()]);
-  (x.forms || []).forEach(f => acc.add(f.replace(/\s*\(.*\)\s*/, "").trim().toLowerCase()));
-  if (acc.has(a)) return { ok: true };
+  if (formsOf(x).includes(a)) return { ok: true };
   if (x.term.length >= 5 && lev(a, x.term.toLowerCase()) <= 1) return { ok: true, spell: true };
   return { ok: false };
 }
@@ -549,9 +607,9 @@ function checkTypedWord(x, ans) {
 /* ============ study card ============ */
 function cardHTML(x, opts = {}) {
   if (isProb(x.id)) {
-    return `<div class="sc"><h3>${esc(cap(x.kind))} problem · ${esc(lvName("reasoning", x.level))}</h3><p style="white-space:pre-line">${esc(x.q)}</p>
-      <ol type="A">${x.options.map((o, i) => `<li${i === x.answer ? ' style="font-weight:600"' : ""}>${esc(o)}${i === x.answer ? " ✓" : ""}</li>`).join("")}</ol>
-      <p class="note">${esc(x.why)}</p></div>`;
+    return `<div class="sc"><h3>${esc(cap(x.kind))} problem · ${esc(lvName("reasoning", x.level))}</h3><p class="tap" style="white-space:pre-line">${esc(x.q)}</p>
+      <ol type="A" class="tap">${x.options.map((o, i) => `<li${i === x.answer ? ' style="font-weight:600"' : ""}>${esc(o)}${i === x.answer ? " ✓" : ""}</li>`).join("")}</ol>
+      <p class="note tap">${esc(x.why)}</p></div>`;
   }
   const say = x.track === "roots" ? "" : playBtn(x.term, "Hear it");
   const meta = [TR[x.track].name, lvName(x.track, x.level), x.pos, x.domain, x.source, x.kind && x.track === "reasoning" ? x.kind : (x.kind === "foreign" ? (x.lang || "foreign") + " phrase" : ""), x.register && x.register !== "neutral" ? x.register : "", x.type ? x.type + " · " + x.origin : ""].filter(Boolean);
@@ -559,21 +617,21 @@ function cardHTML(x, opts = {}) {
     <div class="spread"><h3>${esc(meta.join(" · "))}</h3></div>
     <div class="row"><span class="term">${esc(x.term)}</span>${say}</div>`;
   if (x.pr) h += `<div class="say" title="Pronunciation">${esc(x.pr.say)} <span style="opacity:.7">${esc(x.pr.ipa)}</span></div>`;
-  h += `<p class="def">${esc(cap(x.def))}</p>`;
-  if (x.also) h += `<p class="sub">Also: ${esc(x.also)}</p>`;
-  if (x.why) h += `<p class="note"><b>Why it matters:</b> ${esc(x.why)}</p>`;
-  if (x.ex && x.ex.length) h += `<ul class="ex">${x.ex.map(e => `<li>${esc(e)} ${playBtn(e)}</li>`).join("")}</ul>`;
-  if (x.scenario) h += `<p class="note"><b>Example:</b> ${esc(x.scenario)}</p>`;
-  if (x.fix) h += `<p class="note"><b>How to counter it:</b> ${esc(x.fix)}</p>`;
-  if (x.words) h += `<table><tbody>${x.words.map(w => `<tr><td><b>${esc(w.w)}</b></td><td>${esc(w.m)}</td></tr>`).join("")}</tbody></table>`;
-  if (x.story) h += `<p class="story"><b>Where it comes from${x.source ? " (" + esc(x.source) + ")" : ""}:</b> ${esc(x.story)}</p>`;
-  if (x.origin && x.track !== "roots") h += `<p class="story"><b>Origin:</b> ${esc(x.origin)}</p>`;
-  if (x.note) h += `<p class="note">${esc(x.note)}</p>`;
+  h += `<p class="def tap">${esc(cap(x.def))}</p>`;
+  if (x.also) h += `<p class="sub tap">Also: ${esc(x.also)}</p>`;
+  if (x.why) h += `<p class="note tap"><b>Why it matters:</b> ${esc(x.why)}</p>`;
+  if (x.ex && x.ex.length) h += `<ul class="ex tap">${x.ex.map(e => `<li>${esc(e)} ${playBtn(e)}</li>`).join("")}</ul>`;
+  if (x.scenario) h += `<p class="note tap"><b>Example:</b> ${esc(x.scenario)}</p>`;
+  if (x.fix) h += `<p class="note tap"><b>How to counter it:</b> ${esc(x.fix)}</p>`;
+  if (x.words) h += `<table><tbody>${x.words.map(w => `<tr><td><b>${esc(w.w)}</b></td><td class="tap">${esc(w.m)}</td></tr>`).join("")}</tbody></table>`;
+  if (x.story) h += `<p class="story tap"><b>Where it comes from${x.source ? " (" + esc(x.source) + ")" : ""}:</b> ${esc(x.story)}</p>`;
+  if (x.origin && x.track !== "roots") h += `<p class="story tap"><b>Origin:</b> ${esc(x.origin)}</p>`;
+  if (x.note) h += `<p class="note tap">${esc(x.note)}</p>`;
   const kv = [];
   if (x.syn && x.syn.length) kv.push(["Similar", x.syn.join(", ")]);
   if (x.ant && x.ant.length) kv.push(["Opposite", x.ant.join(", ")]);
   if (x.forms && x.forms.length) kv.push(["Forms", x.forms.join(", ")]);
-  if (kv.length) h += `<dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>`;
+  if (kv.length) h += `<dl class="kv">${kv.map(([k, v]) => `<dt>${esc(k)}</dt><dd class="tap">${esc(v)}</dd>`).join("")}</dl>`;
   if (!opts.noSentence && x.track !== "roots" && x.track !== "reasoning") h += sentenceBox(x);
   return h + `</div>`;
 }
@@ -598,22 +656,89 @@ document.addEventListener("click", async e => {
   } catch (err) { out.innerHTML = `<div class="fb mid"><p>${esc(aiErr(err))}</p></div>`; }
   b.disabled = false;
 });
+function pin(id) { R[id] = [0, nowMin(), 0, 0, nowMin()]; save("srs"); if (!SESSION && TABVIEWS.includes(VIEW.name)) render(); }
+function statusBits(id) { // a card's status chip, and the button that adds it to the next session while it is unstudied
+  const st = statusOf(id);
+  return { chip: `<span class="chip ${st === "n" ? "mute" : ""}">${{ n: "Not studied yet", q: "In your next session", l: "Learning", k: "Known", m: "Mastered" }[st]}</span>`,
+    add: st === "n" ? `<button class="btn small" type="button" data-pin="${esc(id)}">Add to my next session</button>` : "" };
+}
 function openCard(id) {
-  const x = BY[id]; const st = statusOf(id);
-  const stLabel = { n: "Not studied yet", q: "In your next session", l: "Learning", k: "Known", m: "Mastered" }[st];
-  $("dlgin").innerHTML = `${cardHTML(x)}
-    <div class="spread"><span class="chip ${st === "n" ? "mute" : ""}">${stLabel}</span>
-    <div class="row">${st === "n" ? `<button class="btn small" type="button" id="pinit">Add to my next session</button>` : ""}<button class="btn small primary" type="button" id="dlgclose">Close</button></div></div>`;
-  $("dlg").showModal();
+  const b = statusBits(id);
+  $("dlgin").innerHTML = `${cardHTML(BY[id])}
+    <div class="spread">${b.chip}<div class="row">${b.add}<button class="btn small primary" type="button" id="dlgclose">Close</button></div></div>`;
+  if (!$("dlg").open) $("dlg").showModal();
   $("dlgclose").onclick = () => $("dlg").close();
-  if ($("pinit")) $("pinit").onclick = () => { R[id] = [0, nowMin(), 0, 0, nowMin()]; save("srs"); $("dlg").close(); if (!SESSION) render(); };
+  const add = $("dlgin").querySelector("[data-pin]"); if (add) add.onclick = () => { $("dlg").close(); pin(id); };
 }
 $("dlg").addEventListener("click", e => { if (e.target === $("dlg")) $("dlg").close(); });
+
+/* ============ tap a word to look it up ============ */
+let GLOSS = null, tapT; // GLOSS: the dictionary (a promise), loaded on the first tap
+const loadGloss = () => GLOSS = GLOSS || getJSON(GLOSS_URL).catch(e => { GLOSS = null; throw e; });
+/* The word under the point, and the hyphen-separated part of it under the point (the dictionary has single words:
+   "long-term" → "term"), or null when the tap isn't on a word. The caret already picks the line, so the word's box
+   gets some slack: a fingertip often lands in the gap between lines. */
+function wordAt(x, y) {
+  let node, off;
+  if (document.caretRangeFromPoint) { const r = document.caretRangeFromPoint(x, y); if (r) { node = r.startContainer; off = r.startOffset; } }
+  else if (document.caretPositionFromPoint) { const c = document.caretPositionFromPoint(x, y); if (c) { node = c.offsetNode; off = c.offset; } }
+  if (!node || node.nodeType !== Node.TEXT_NODE) return null;
+  for (const m of node.data.matchAll(WORD)) {
+    if (m.index > off) break;
+    if (off > m.index + m[0].length) continue;
+    const range = document.createRange(); range.setStart(node, m.index); range.setEnd(node, m.index + m[0].length);
+    const on = [...range.getClientRects()].some(b => x >= b.left - 2 && x <= b.right + 2 && y >= b.top - 6 && y <= b.bottom + 6);
+    return on ? { word: m[0], part: m[0].split("-")[m[0].slice(0, off - m.index).split("-").length - 1], range } : null;
+  }
+  return null;
+}
+/* Is a question on screen and not yet answered (or a passage being read before its questions)? */
+const asking = () => !!SESSION && !SESSION.locked && ["q", "pq", "read"].includes(SESSION.steps[SESSION.i].t);
+/* While a question is unanswered, looking up its answer is blocked: the asked item's term or forms, or in reading,
+   the target word of any word question not yet answered. Reasoning problems block every lookup: context and
+   similar/opposite problems are vocabulary questions in disguise, and the others have no hard words. */
+function guarded(words, ents) {
+  const S = SESSION; if (!S) return false;
+  const st = S.steps[S.i]; if (st.t === "q" && !S.locked && isProb(st.id)) return true;
+  const ids = S.kind === "read" ? S.steps.slice(S.i + (S.locked ? 1 : 0)).filter(s => s.t === "pq" && s.id !== s.g).map(s => s.id)
+    : st.t === "q" && !S.locked ? [st.id] : [];
+  return ids.some(id => words.some(w => isFormOf(w, BY[id])) || ents.some(e => e.i === id));
+}
+function glEntry(e, live) { // live: a question is unanswered, so no "Open card" (a card lists synonyms and examples)
+  const b = e.i && statusBits(e.i);
+  return `<div class="gle"><div class="row"><b>${esc(e.w)}</b><span class="sub">${esc(e.p)}</span>${playBtn(e.w)}</div>
+    <ol>${e.s.slice(0, 3).map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+    ${b ? `<div class="row">${b.chip}${live ? "" : `<button class="btn small" type="button" data-glopen="${esc(e.i)}">Open card</button>`}${b.add}</div>` : ""}</div>`;
+}
+async function lookUp(word, part) {
+  const gl = $("gl"), body = $("glin");
+  body.innerHTML = `<p class="hint">Looking up “${esc(word)}”…</p>`;
+  if (!gl.open) gl.showModal();
+  let G;
+  try { G = await loadGloss(); } catch (e) { body.innerHTML = `<p>Couldn't load the dictionary. Check your connection and tap the word again.</p>`; return; }
+  const own = (o, k) => Object.hasOwn(o, k) ? o[k] : null; // the words "constructor" and "toString" are not Object's
+  const find = s => { const w = s.toLowerCase().replace(/’/g, "'"); return own(G.f, w) || own(G.f, w.replace(/'s$/, "")); };
+  const shown = [word, part].find(find) || word;
+  const ents = (find(shown) || []).map(k => own(G.d, k)).filter(Boolean);
+  body.innerHTML = guarded([word, shown], ents) ? `<p>Answer first — you can look this up afterwards.</p>`
+    : ents.length ? ents.map(e => glEntry(e, asking())).join("") : `<p>No dictionary entry for “${esc(shown)}”.</p>`;
+  body.querySelectorAll("[data-glopen]").forEach(b => b.onclick = () => { gl.close(); openCard(b.dataset.glopen); });
+  body.querySelectorAll("[data-pin]").forEach(b => b.onclick = () => { pin(b.dataset.pin); lookUp(word, part); });
+}
+document.addEventListener("click", e => {
+  if (!e.target.closest(".tap") || e.target.closest("button,a,summary,input,textarea,select,.term") || !getSelection().isCollapsed) return;
+  const hit = wordAt(e.clientX, e.clientY); if (!hit) return;
+  if (window.CSS && CSS.highlights) { CSS.highlights.set("tap", new Highlight(hit.range)); clearTimeout(tapT); tapT = setTimeout(() => CSS.highlights.delete("tap"), 900); }
+  lookUp(hit.word, hit.part);
+});
+$("gl").addEventListener("click", e => { if (e.target === $("gl")) $("gl").close(); });
+$("gl").addEventListener("close", () => { const t = $("tans"); if (t && !t.disabled) t.focus(); }); // brings the phone keyboard back
+$("glclose").onclick = () => $("gl").close();
 
 /* ============ sessions ============ */
 let SESSION = null;
 function startSession(kind, steps, title, opts = {}) {
-  SESSION = { kind, steps, i: 0, title, right: 0, total: 0, retries: {}, missed: [], learned: 0, level: opts.level, track: opts.track, onEnd: opts.onEnd, answers: [] };
+  SESSION = { kind, steps, i: 0, title, right: 0, total: 0, retries: {}, missed: [], learned: 0, level: opts.level, track: opts.track, onEnd: opts.onEnd };
   window.scrollTo(0, 0); renderStep();
 }
 function buildDaily(extraNew) {
@@ -627,7 +752,7 @@ function buildDaily(extraNew) {
     const grp = news.slice(g, g + 3);
     grp.forEach(id => steps.push({ t: "learn", id }));
     pushRev(3);
-    grp.forEach(id => steps.push({ t: "q", id, src: "new", qt: isConcept(id) ? "mean" : "mean" }));
+    grp.forEach(id => steps.push({ t: "q", id, src: "new", qt: "mean" }));
     pushRev(4);
   }
   pushRev(due.length);
@@ -638,9 +763,39 @@ function pickProblems(n) {
   const nm = nowMin(), out = [];
   Object.keys(R).filter(id => isProb(id) && BY[id] && R[id][0] === 0 && R[id][1] <= nm).forEach(id => { if (out.length < n) out.push(id); });
   const c = cur("reasoning");
-  const order = []; for (let l = c; l <= 3; l++) order.push(l); for (let l = 1; l < c; l++) order.push(l);
+  const order = []; for (let l = c; l <= TR.reasoning.max; l++) order.push(l); for (let l = TR.reasoning.min; l < c; l++) order.push(l);
   for (const l of order) for (const id of PROB[l] || []) { if (out.length >= n) break; if (!R[id] && !out.includes(id)) out.push(id); }
   return out;
+}
+/* Reading: a passage that is due again comes first (like reasoning problems). Otherwise the current vocabulary level,
+   then the levels below, then above; at each level an unread passage whose target words are at least half studied,
+   else any unread one. */
+function pickPassage() {
+  const n = nowMin(), c = cur("vocab");
+  const due = Object.keys(R).filter(id => PAS[id] && R[id][1] <= n).sort((a, b) => R[a][1] - R[b][1])[0];
+  if (due) return due;
+  const order = [c]; for (let l = c - 1; l >= TR.vocab.min; l--) order.push(l); for (let l = c + 1; l <= TR.vocab.max; l++) order.push(l);
+  for (const l of order) {
+    const unread = (PASLV[l] || []).filter(id => !R[id]);
+    const id = unread.find(g => 2 * PAS[g].words.filter(seen).length >= PAS[g].words.length) || unread[0];
+    if (id) return id;
+  }
+  return null;
+}
+function startReading(gid) {
+  const g = PAS[gid];
+  startSession("read", [{ t: "read", g: gid }, ...g.qs.map((q, k) => ({ t: "pq", g: gid, k, id: q.kind === "word" ? q.word : gid }))], "Reading");
+}
+function passageHTML(g) {
+  const targets = g.words.map(id => BY[id]);
+  const text = g.text.split(WORD).map((s, i) => i % 2 && targets.some(x => isFormOf(s, x)) ? `<b>${esc(s)}</b>` : esc(s)).join("");
+  return `<p class="passage tap">${text}</p>`;
+}
+function passageQ(step) {
+  const g = PAS[step.g], q = g.qs[step.k];
+  return { qt: "pq", why: q.why, html: `<h3>Question ${step.k + 1} of ${g.qs.length}</h3><p class="prompt tap">${esc(q.q)}</p>
+    <details class="more"><summary>Reread the passage</summary>${passageHTML(g)}</details>`,
+    opts: shuffle(q.options.map((o, i) => ({ label: o, ok: i === q.answer }))) };
 }
 function renderStep() {
   const S = SESSION; if (!S) return;
@@ -663,6 +818,15 @@ function renderStep() {
       S.steps.splice(S.i + 1, 0, { t: "q", id: step.id, src: "knew", qt: isConcept(step.id) ? "scenario" : BY[step.id].track === "roots" ? "word" : "cloze" });
       S.i++; renderStep();
     };
+  } else if (step.t === "read") {
+    const g = PAS[step.g];
+    $("main").innerHTML = `${top}<section class="card"><h3>Reading · ${esc(lvName("vocab", g.level))}</h3>
+      <div class="spread"><h2>${esc(g.title)}</h2><button class="play" type="button" data-say="${esc(g.text)}" aria-label="Listen to the passage">${PLAYSVG}Listen</button></div>${passageHTML(g)}
+      <p class="hint">Tap any word to look it up (words in bold open after the questions).</p>
+      <button class="btn primary block" type="button" id="got">Answer ${g.qs.length} questions</button></section>`;
+    $("got").onclick = () => { S.i++; renderStep(); };
+  } else if (step.t === "pq") {
+    renderQuestion(top, passageQ(step), step);
   } else {
     const qt = step.qt || chooseQt(step.id);
     step.qt = qt;
@@ -677,10 +841,10 @@ function learnStart(id) {
   save("srs", "state");
 }
 function renderQuestion(top, q, step) {
-  const S = SESSION; const x = BY[q.id];
+  const S = SESSION;
   let h = `${top}<section class="card" id="qcard">${q.html}`;
   if (q.typed) {
-    h += `<form id="tform" style="display:flex;flex-direction:column;gap:10px">${q.typed === "def"
+    h += `<form id="tform" style="display:flex;flex-direction:column;gap:10px">${q.typed !== "word"
       ? `<textarea id="tans" aria-label="Your answer" autocomplete="off" autocapitalize="off"></textarea>`
       : `<input type="text" id="tans" aria-label="Your answer" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">`}
       <div class="row"><button class="btn primary" type="submit" id="tsub">Check</button><button class="btn" type="button" id="tidk">I don't know</button></div></form>`;
@@ -727,15 +891,15 @@ async function finishTyped(q, step, ans, idk) {
   }
   $("fbx").innerHTML = `<p class="hint">Claude is checking your answer…</p>`;
   try {
-    const r = await aiGradeDef(x, ans);
+    const r = await (q.typed === "sent" ? aiSentence(x, ans) : aiGradeDef(x, ans));
     if (SESSION !== S0) return; // the learner left this session while Claude was grading
-    const res = r.verdict === "correct" ? true : r.verdict === "partial" ? "partial" : false;
+    const res = { correct: true, good: true, partial: "partial", awkward: "partial" }[r.verdict] || false;
     record(step, res);
-    feedback(q, step, res, { ai: r, mine: ans.trim() });
+    feedback(q, step, res, { ai: r });
   } catch (err) {
     if (SESSION !== S0) return;
     // AI unavailable: let the learner compare and grade themselves.
-    $("fbx").innerHTML = `<div class="fb mid"><h4>Grade it yourself</h4><p>${esc(aiErr(err))}</p><p><b>You wrote:</b> ${esc(ans.trim())}</p><p><b>Meaning:</b> ${esc(cap(x.def))}</p>
+    $("fbx").innerHTML = `<div class="fb tap mid"><h4>Grade it yourself</h4><p>${esc(aiErr(err))}</p><p><b>You wrote:</b> ${esc(ans.trim())}</p><p><b>Meaning:</b> ${esc(cap(x.def))}</p>
       <div class="row"><button class="btn small primary" type="button" id="selfok">I had it</button><button class="btn small" type="button" id="selfno">I didn't</button></div></div>`;
     $("selfok").onclick = () => { record(step, true); feedback(q, step, true, {}); };
     $("selfno").onclick = () => { record(step, false); feedback(q, step, false, {}); };
@@ -744,15 +908,11 @@ async function finishTyped(q, step, ans, idk) {
 function record(step, res) {
   const S = SESSION; const id = step.id; const ok = res === true;
   S.total++; if (ok) S.right++;
-  S.answers.push({ id, ok, qt: step.qt, src: step.src });
+  if (S.kind === "read") return readRecord(step, ok);
   if (!ok) S.missed.push(id);
   if (S.kind === "place") return placeRecord(step, ok);
   if (S.kind === "test") return testRecord(step, ok);
-  if (isProb(id)) {
-    const n = nowMin(); const o = R[id] || [0, n, 0, 0, 0];
-    R[id] = ok ? [1, n + 60 * DAY, o[2] + 1, o[3] + 1, n] : [0, n + DAY, o[2] + 1, o[3], n];
-    logDay("rev", ok); save("srs", "state"); return;
-  }
+  if (isProb(id)) { solved(id, ok); logDay("rev", ok); save("srs", "state"); return; }
   step.prev = R[id] ? R[id].slice() : null;
   srsApply(step, res);
   if (step.src !== "new" && step.src !== "knew") logDay("rev", ok);
@@ -763,6 +923,12 @@ function record(step, res) {
   }
   save("srs", "state");
 }
+function readRecord(step, ok) {
+  const g = PAS[step.g];
+  if (!ok && step.id !== g.id && seen(step.id)) { grade(step.id, false); SESSION.missed.push(step.id); } // a studied word missed in context goes back to review
+  if (step.k === g.qs.length - 1) solved(g.id, SESSION.right === g.qs.length);
+  logDay("rev", ok); save("srs", "state");
+}
 function srsApply(step, res) {
   const id = step.id, n = nowMin(), ok = res === true;
   if (step.src === "knew") { if (ok) setKnown(id, 3, 7); else R[id] = [0, n + 10, 1, 0, n]; }
@@ -771,22 +937,23 @@ function srsApply(step, res) {
   else grade(id, res);
 }
 function feedback(q, step, res, o) {
-  const x = BY[q.id]; const S = SESSION;
-  const ok = res === true;
+  const S = SESSION, ok = res === true;
   const cls = ok ? "ok" : res === "partial" ? "mid" : "no";
-  let title = ok ? pickOne(["Correct.", "Right.", "Yes — nicely done.", "Correct!"]) : res === "partial" ? "Partly right." : o.idk ? "Here's the answer." : "Not quite.";
+  const title = ok ? pickOne(["Correct.", "Right.", "Yes — nicely done.", "Correct!"]) : res === "partial" ? "Partly right." : o.idk ? "Here's the answer." : "Not quite.";
+  if (q.qt === "pq") return showFeedback(cls, title, `<p>${esc(q.why)}</p>`); // reading questions have no card
+  const x = BY[q.id];
   let body = "";
-  if (o.ai) body += `<p>${esc(o.ai.feedback || "")}</p><p class="hint">Graded by Claude. <button class="linkbtn" type="button" id="override">${ok ? "Mark as wrong" : "I was right — count it"}</button></p>`;
+  if (o.ai) body += `<p>${esc(o.ai.feedback || "")}</p>${o.ai.better ? `<p><b>Try:</b> ${esc(o.ai.better)}</p>` : ""}<p class="hint">Graded by Claude. <button class="linkbtn" type="button" id="override">${ok ? "Mark as wrong" : "I was right — count it"}</button></p>`;
   if (o.typedNote) body += `<p>${esc(o.typedNote)}</p>`;
   if (o.wrongRef && BY[o.wrongRef] && o.wrongRef !== x.id) {
     const w = BY[o.wrongRef];
-    body += `<p class="sub">You chose ${q.qt === "mean" || q.qt === "rootword" ? `the meaning of <b>${esc(w.term)}</b>` : `<b>${esc(w.term)}</b>, which means “${esc(w.def)}”`}.</p>`;
+    body += `<p class="sub">You chose ${["mean", "rootword", "also"].includes(q.qt) ? `the meaning of <b>${esc(w.term)}</b>` : `<b>${esc(w.term)}</b>, which means “${esc(w.def)}”`}.</p>`;
   }
   if (isProb(x.id)) body += `<p><b>Answer:</b> ${esc(x.options[x.answer])}</p><p>${esc(x.why)}</p>`;
   else if (S.kind !== "place") body += `<details class="more" ${ok ? "" : "open"}><summary>${esc(x.term)}</summary>${cardHTML(x, { noSentence: S.kind === "test" })}</details>`;
   else body += ok ? "" : `<p><b>${esc(x.term)}</b>: ${esc(x.def)}</p>`;
-  $("fbx").innerHTML = `<div class="fb ${cls}" role="status"><h4>${title}</h4>${body}</div><button class="btn primary block" type="button" id="next" style="margin-top:12px">Continue</button>`;
-  if (o.ai && $("override")) $("override").onclick = () => {
+  showFeedback(cls, title, body);
+  if (o.ai) $("override").onclick = () => {
     // learner overrides the AI grade
     const flip = !ok;
     if (step.prev) R[x.id] = step.prev; else delete R[x.id];
@@ -802,13 +969,17 @@ function feedback(q, step, res, o) {
     $("override").replaceWith(Object.assign(document.createElement("span"), { textContent: flip ? "Counted as right." : "Counted as wrong." }));
   };
   if (!ok && !isProb(x.id) && x.track !== "roots" && S.kind !== "place" && DEV.auto) speak(x.term);
+}
+function showFeedback(cls, title, body) {
+  const S = SESSION;
+  $("fbx").innerHTML = `<div class="fb tap ${cls}" role="status"><h4>${title}</h4>${body}</div><button class="btn primary block" type="button" id="next" style="margin-top:12px">Continue</button>`;
   $("next").focus({ preventScroll: true });
   $("next").scrollIntoView({ block: "nearest", behavior: "smooth" });
   $("next").onclick = () => { S.locked = false; S.i++; window.scrollTo(0, 0); renderStep(); };
 }
 const pickOne = a => a[Math.floor(Math.random() * a.length)];
 document.addEventListener("keydown", e => {
-  if (!SESSION || $("dlg").open) return;
+  if (!SESSION || $("dlg").open || $("gl").open) return;
   if (e.target.closest("textarea,input,select")) return;
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   if ((e.key === "Enter" || e.key === " ") && e.target.closest("button,a,summary")) return;
@@ -843,7 +1014,7 @@ const PINFO = {
   reasoning: "Reasoning — logic, inference and spotting faulty arguments."
 };
 function newRun() {
-  const run = { ts: Date.now(), sec: 0, v: { lv: 2, block: [], bi: 0, ok: 0, res: {}, extra: false }, q: {}, res: {}, ans: {} };
+  const run = { ts: Date.now(), sec: 0, v: { lv: null, block: [], bi: 0, ok: 0, res: {}, conf: {} }, q: {}, res: {}, ans: {} };
   PSECS.slice(1).forEach(t => {
     const qs = [];
     for (let l = TR[t].min; l <= TR[t].max; l++) {
@@ -853,24 +1024,55 @@ function newRun() {
     }
     run.q[t] = qs; run.res[t] = { i: 0 };
   });
-  run.v.block = pickN(LIST.vocab[2], 5);
   return run;
+}
+/* Vocabulary placement. A level passes at 80% of the words asked there: 4 of 5 for a lone block, 12 of 15 once confirmed.
+   The sweep moves up a level after a pass and down after a fail until something passes. The boundary is the pair
+   (P passed, P + 1 failed); both get 10 more words, and if that moves the boundary, the new pair is confirmed too.
+   Then 5-word blocks probe upward from P + 2 while the level below scored at least 40%.
+   The next block depends only on the scores so far, so a paused test resumes exactly, whichever device saved it.
+   Returns [level, number of words], or null when the vocabulary part is done. */
+const vPass = r => 5 * r[0] >= 4 * r[1];
+const vFail = res => Object.keys(res).map(Number).sort((a, b) => a - b).find(l => !vPass(res[l])); // lowest failed level, if any
+function vocabNext(v) {
+  const { min, max } = TR.vocab, { res, conf } = v;
+  const F = vFail(res);
+  if (F == null) { const top = Math.max(...Object.keys(res).map(Number)); return top < max ? [top + 1, 5] : conf[max] ? null : [max, 10]; }
+  const P = F - 1;
+  if (P >= min && !res[P]) return [P, 5];
+  if (!conf[F]) return [F, 10];
+  if (P >= min && !conf[P]) return [P, 10];
+  for (let l = F + 1; l <= max && 5 * res[l - 1][0] >= 2 * res[l - 1][1]; l++) if (!res[l]) return [l, 5];
+  return null;
+}
+function vocabBlock([lv, n]) { // never asks a word twice: every word asked so far is in RUN.ans
+  const v = RUN.v;
+  if (n > 5) v.conf[lv] = 1;
+  Object.assign(v, { lv, block: pickN(LIST.vocab[lv].filter(id => RUN.ans[id] == null), n), bi: 0, ok: 0 });
+  save("run");
 }
 function placeQt(id) { return isProb(id) ? "prob" : isConcept(id) ? "scenario" : "mean"; }
 function startPlacement(resume) {
   if (!resume || !RUN) { RUN = newRun(); save("run"); }
+  else if (!RUN.v.conf) RUN.v.conf = {}; // a test started before the boundary was confirmed
   placeIntro();
 }
 function placeIntro() {
   const t = PSECS[RUN.sec];
   VIEW = { name: "screen" };
   if (!t) return finishPlacement();
-  const n = t === "vocab" ? "about 25–40" : RUN.q[t].length;
+  const n = t === "vocab" ? "about 30–60" : RUN.q[t].length;
+  const ask = t === "vocab" && !RUN.v.block.length; // the vocabulary part starts with one question about the learner
   setTabs(null);
   $("main").innerHTML = `<section class="card"><h3>Placement test · part ${RUN.sec + 1} of ${PSECS.length}</h3><h2>${esc(TR[t].name)}</h2><p>${esc(PINFO[t])}</p>
     <p class="sub">${n} questions. Use <b>I don't know</b> instead of guessing; guesses make your level less accurate. You can pause any time and pick up where you left off, on any device.</p>
-    <div class="row"><button class="btn primary" type="button" id="pgo">Start part ${RUN.sec + 1}</button><button class="btn" type="button" id="pback">Later</button></div></section>`;
-  $("pgo").onclick = () => placeSection();
+    ${ask ? `<p><b>Is English your first language, or are you still learning it?</b></p>
+    <div class="list"><button class="li" type="button" data-start="2"><span class="tx"><span class="t">English is my first language</span><span class="d">Or I'm fluent in it</span></span></button>
+      <button class="li" type="button" data-start="${TR.vocab.min}"><span class="tx"><span class="t">I'm still learning English</span><span class="d">The test starts with everyday words</span></span></button></div>
+    <button class="btn" type="button" id="pback">Later</button>`
+    : `<div class="row"><button class="btn primary" type="button" id="pgo">Start part ${RUN.sec + 1}</button><button class="btn" type="button" id="pback">Later</button></div>`}</section>`;
+  if ($("pgo")) $("pgo").onclick = () => placeSection();
+  document.querySelectorAll("[data-start]").forEach(b => b.onclick = () => { vocabBlock([+b.dataset.start, 5]); placeSection(); });
   $("pback").onclick = () => go("today");
 }
 function placeSection() {
@@ -890,39 +1092,33 @@ function placeRecord(step, ok) {
 function placeAfterSteps() {
   const t = PSECS[RUN.sec];
   if (t === "vocab") {
-    const v = RUN.v; const lv = v.lv;
-    v.res[lv] = [v.ok, v.block.length];
-    const pass = v.ok >= 4;
-    const passedAny = Object.keys(v.res).some(l => v.res[l][0] >= 4);
-    let next = null;
-    if (pass) { if (lv < 10 && !v.res[lv + 1]) next = lv + 1; }
-    else if (!passedAny) { if (lv > 0 && !v.res[lv - 1]) next = lv - 1; }
-    else if (!v.extra && lv < 10 && !v.res[lv + 1]) { v.extra = true; next = lv + 1; }
-    if (next != null) { v.lv = next; v.block = pickN(LIST.vocab[next], 5); v.bi = 0; v.ok = 0; save("run"); return placeSection(); }
+    const v = RUN.v, r = v.res[v.lv] || [0, 0];
+    v.res[v.lv] = [r[0] + v.ok, r[1] + v.block.length];
+    const next = vocabNext(v);
+    if (next) { vocabBlock(next); return placeSection(); }
   }
   RUN.sec++; save("run");
   placeIntro();
 }
 function pausePlacement() { SESSION = null; save("run"); flush(); go("today"); }
 function finishPlacement() {
-  const run = RUN; const pl = { at: Date.now() };
-  // vocabulary
-  const vr = run.v.res; const passed = Object.keys(vr).filter(l => vr[l][0] >= 4).map(Number);
-  const P = passed.length ? Math.max(...passed) : -1;
-  pl.vocab = { P, start: Math.min(10, P + 1), res: vr };
+  const run = RUN, pl = { at: Date.now(), v: 2 };
+  // vocabulary: the highest level passed with no failed level beneath it (untested levels below the first one tested count as known)
+  const vr = run.v.res, F = vFail(vr);
+  const P = F == null ? TR.vocab.max : F - 1;
+  pl.vocab = { P, start: Math.min(TR.vocab.max, P + 1), res: vr };
   // other tracks: a level counts if at least 60% of its questions were right (2 of 3; 3 of 4 for reasoning); placement = highest unbroken run of levels
   PSECS.slice(1).forEach(t => {
     const per = {};
     run.q[t].forEach(id => { const l = BY[id].level; per[l] = per[l] || [0, 0]; if (run.ans[id] != null) { per[l][1]++; per[l][0] += run.ans[id]; } });
     let Pt = TR[t].min - 1;
     for (let l = TR[t].min; l <= TR[t].max; l++) { const r = per[l]; if (r && r[1] && r[0] >= Math.ceil(r[1] * 0.6)) Pt = l; else break; }
-    pl[t] = { P: Pt, start: Math.min(TR[t].max, Math.max(TR[t].min, Pt + 1)), res: per, all: Pt >= TR[t].max };
+    pl[t] = { P: Pt, start: Math.min(TR[t].max, Pt + 1), res: per };
   });
-  pl.vocab.all = P >= 10;
   // items answered correctly are treated as already known (checked again in about a week)
   for (const id in run.ans) {
     if (!BY[id]) continue;
-    if (isProb(id)) { if (run.ans[id]) { const n = nowMin(); R[id] = [1, n + 60 * DAY, 1, 1, n]; } continue; }
+    if (isProb(id)) { if (run.ans[id]) solved(id, true); continue; }
     if (run.ans[id] && !seen(id)) setKnown(id, 3, 7);
   }
   ST.pl = pl; RUN = null; RUNCLR = Date.now();
@@ -934,17 +1130,17 @@ function showResults(fresh) {
   const pl = ST.pl; if (!pl) return go("today");
   VIEW = { name: "screen" };
   setTabs(fresh ? null : "progress");
-  const v = pl.vocab;
+  const v = pl.vocab, vs = startLv("vocab"), { min, max } = TR.vocab;
   const ex = lv => (LIST.vocab[lv] || []).slice(0, 3).map(id => BY[id].term);
   const prof = [];
-  for (let l = 0; l <= 10; l++) { const r = v.res && v.res[l]; prof.push(`<div class="r"><span>${esc(lvName("vocab", l))}</span><div class="bar"><i style="width:${r ? Math.round(100 * r[0] / r[1]) : 0}%"></i></div><b>${r ? (+r[0] || 0) + "/" + (+r[1] || 0) : (v.P >= 0 && l < Object.keys(v.res).map(Number).sort((a, b) => a - b)[0] ? "✓" : "–")}</b></div>`); }
-  const sum = v.P < 0 ? `You're starting at <b>Foundations</b>, the core words that matter most for reading news, forms and work. That's the right place to build from.`
-    : v.all ? `You knew the words at every level, including the rarest. Use the level tests to confirm, then keep going through review and the other tracks.`
-    : `Your vocabulary is solid through <b>${esc(lvName("vocab", v.P))}</b> (words like ${ex(v.P).map(w => "<i>" + esc(w) + "</i>").join(", ")}). You'll start at <b>${esc(lvName("vocab", v.start))}</b>, with words like ${ex(v.start).map(w => "<i>" + esc(w) + "</i>").join(", ")}.`;
-  const rows = PSECS.slice(1).map(t => { const p = pl[t]; return `<tr><td>${esc(TR[t].name)}</td><td>${p.P < TR[t].min ? "Start at Level " + TR[t].min : p.all ? "All levels ✓" : "Solid through Level " + p.P}</td><td>${p.all ? "Review & test out" : "Level " + p.start}</td></tr>`; }).join("");
+  for (let l = min; l <= max; l++) { const r = v.res[l]; prof.push(`<div class="r"><span>${esc(lvName("vocab", l))}</span><div class="bar"><i style="width:${r ? Math.round(100 * r[0] / r[1]) : 0}%"></i></div><b>${r ? (+r[0] || 0) + "/" + (+r[1] || 0) : l <= v.P && !oldVocabNone(pl) ? "✓" : "–"}</b></div>`); }
+  const sum = v.P < min || oldVocabNone(pl) ? `You're starting at <b>${esc(lvName("vocab", vs))}</b>, ${vs === min ? "the most common everyday words" : "the core words that matter most for reading news, forms and work"}. That's the right place to build from.`
+    : v.P >= max ? `You knew the words at every level, including the rarest. Use the level tests to confirm, then keep going through review and the other tracks.`
+    : `Your vocabulary is solid through <b>${esc(lvName("vocab", v.P))}</b> (words like ${ex(v.P).map(w => "<i>" + esc(w) + "</i>").join(", ")}). You'll start at <b>${esc(lvName("vocab", vs))}</b>, with words like ${ex(vs).map(w => "<i>" + esc(w) + "</i>").join(", ")}.`;
+  const rows = PSECS.slice(1).map(t => { const p = pl[t], all = p.P >= TR[t].max; return `<tr><td>${esc(TR[t].name)}</td><td>${p.P < TR[t].min ? "Start at Level " + TR[t].min : all ? "All levels ✓" : "Solid through Level " + p.P}</td><td>${all ? "Review & test out" : "Level " + startLv(t)}</td></tr>`; }).join("");
   $("main").innerHTML = `<section class="card"><h3>Placement results${pl.manual ? " (chosen by you)" : ""}</h3><h2>Your starting point</h2>
     <p>${sum}</p>${pl.manual ? "" : `<div class="prof" aria-label="Vocabulary by level">${prof.join("")}</div>
-    <p class="hint">Bars show how many of the 5 test words you knew at each level. A ✓ means levels below where you started, counted as known because you passed the levels above them. 4 out of 5 counts as a pass.</p>`}
+    <p class="hint">Bars show how many test words you knew at each level: blocks of 5, and 15 at the levels where the test checked your boundary more closely. A ✓ marks levels below where the test began, counted as known because you passed the levels above them. 80% counts as a pass (4 of 5, or 12 of 15).</p>`}
     <table><thead><tr><th>Track</th><th>Result</th><th>You start at</th></tr></thead><tbody>${rows}</tbody></table>
     <p class="sub">Words you got right in the test are marked as known and checked again in about a week, so they don't become new cards.</p>
     ${fresh ? `<button class="btn primary block" type="button" id="rgo">Start learning</button>` : `<button class="btn block" type="button" id="rretake">Retake the placement test</button>`}</section>`;
@@ -959,12 +1155,12 @@ function confirmRetake() {
 }
 function skipPlacement() {
   $("dlgin").innerHTML = `<h2>Choose where to start</h2><p>The placement test is more accurate, and you can take it later from Progress. For now, where should vocabulary start?</p>
-    <div class="list">${[[0, "Building the basics", "Foundations: core words for news, work and forms"], [3, "Average reader", "Level 3: words like ambiguous, pragmatic, empirical"], [6, "Strong reader", "Level 6: words like mercurial, nebulous, quandary"], [8, "Very advanced", "Level 8: words like obsequious, garrulous, sophistry"]]
-      .map(([l, t, d]) => `<button class="li" type="button" data-sk="${l}"><span class="ic">${l}</span><span class="tx"><span class="t">${t}</span><span class="d">${d}</span></span></button>`).join("")}</div>
+    <div class="list">${[[TR.vocab.min, "New to English", "Starter 1: the most common everyday words"], [0, "Building the basics", "Foundations: core words for news, work and forms"], [3, "Average reader", "Level 3: words like ambiguous, pragmatic, empirical"], [6, "Strong reader", "Level 6: words like mercurial, nebulous, quandary"], [8, "Very advanced", "Level 8: words like obsequious, garrulous, sophistry"]]
+      .map(([l, t, d]) => `<button class="li" type="button" data-sk="${l}"><span class="ic">${esc(lvIcon("vocab", l))}</span><span class="tx"><span class="t">${t}</span><span class="d">${d}</span></span></button>`).join("")}</div>
     <button class="btn" type="button" id="skc">Cancel</button>`;
   $("dlg").showModal(); $("skc").onclick = () => $("dlg").close();
   document.querySelectorAll("[data-sk]").forEach(b => b.onclick = () => {
-    const l = +b.dataset.sk; const pl = { at: Date.now(), manual: true, vocab: { P: l - 1, start: l, res: {} } };
+    const l = +b.dataset.sk; const pl = { at: Date.now(), v: 2, manual: true, vocab: { P: l - 1, start: l, res: {} } };
     PSECS.slice(1).forEach(t => { pl[t] = { P: TR[t].min - 1, start: TR[t].min, res: {} }; });
     ST.pl = pl; save("state"); $("dlg").close(); go("today");
   });
@@ -977,7 +1173,7 @@ function startTest(t, l) {
   const ids = pickN(pool, Math.min(testSize(t), pool.length));
   const steps = ids.map(id => {
     const x = BY[id];
-    const qt = isProb(id) ? "prob" : isConcept(id) ? pickOne(["scenario", "scenario", "mean"]) : x.track === "roots" ? pickOne(["mean", "rootword", "word"]) : pickOne(["mean", "cloze", "word"]);
+    const qt = isProb(id) ? "prob" : isConcept(id) ? pickOne(["scenario", "scenario", "mean"]) : x.track === "roots" ? pickOne(["mean", "rootword", "word"]) : pickOne(["mean", "cloze", "word", "syn", "ant"].filter(q => canAsk(x, q)));
     return { t: "q", id, qt, src: "test" };
   });
   $("dlg").open && $("dlg").close();
@@ -985,7 +1181,7 @@ function startTest(t, l) {
 }
 function testRecord(step, ok) {
   const id = step.id; const n = nowMin();
-  if (isProb(id)) { const o = R[id] || [0, n, 0, 0, 0]; R[id] = ok ? [1, n + 60 * DAY, o[2] + 1, o[3] + 1, n] : [0, n + DAY, o[2] + 1, o[3], n]; }
+  if (isProb(id)) solved(id, ok);
   else if (!seen(id)) { if (ok) setKnown(id, 2, 3); else R[id] = [0, n, 1, 0, n]; }
   else if (!ok) grade(id, false);
   else if (R[id][1] <= n) grade(id, true);
@@ -1035,9 +1231,8 @@ function render() {
 }
 function itemLi(id) {
   const x = BY[id]; const st = statusOf(id);
-  const label = isProb(id) ? x.term : x.term;
   const d = isProb(id) ? x.q : x.def;
-  return `<li><button class="li" type="button" data-open="${esc(id)}"><span class="dot ${st === "l" || st === "q" ? "l" : st}" aria-hidden="true"></span><span class="tx"><span class="t">${esc(label)}</span><span class="d">${esc(d)}</span></span></button></li>`;
+  return `<li><button class="li" type="button" data-open="${esc(id)}"><span class="dot ${st === "l" || st === "q" ? "l" : st}" aria-hidden="true"></span><span class="tx"><span class="t">${esc(x.term)}</span><span class="d">${esc(d)}</span></span></button></li>`;
 }
 function bindItemLis() { document.querySelectorAll("[data-open]").forEach(b => b.onclick = () => openCard(b.dataset.open)); }
 function searchBox() {
@@ -1063,7 +1258,7 @@ function viewToday() {
   let h = "";
   if (RUN) h += `<section class="card hi"><h3>Placement test in progress</h3><p>You're on part ${RUN.sec + 1} of ${PSECS.length} (${esc(TR[PSECS[RUN.sec]] ? TR[PSECS[RUN.sec]].name : "")}).</p><button class="btn primary" type="button" id="pres">Continue the placement test</button></section>`;
   else if (!ST.pl) h += `<section class="card hi"><h3>Start here</h3><h2>Find your level</h2>
-    <p>A placement test of about 80–100 questions (around 20–25 minutes) measures your vocabulary, idioms, cultural references, general knowledge, word roots and reasoning. You can pause it any time and finish later. Your daily lessons then start at the right level for each track.</p>
+    <p>A placement test of about 100–130 questions (around 25–35 minutes) measures your vocabulary, idioms, cultural references, general knowledge, word roots and reasoning. You can pause it any time and finish later. Your daily lessons then start at the right level for each track.</p>
     <div class="row"><button class="btn primary" type="button" id="pstart">Take the placement test</button><button class="btn" type="button" id="pskip">Skip — I'll choose</button></div></section>`;
   const doneGoal = nToday >= goal;
   h += `<section class="card"><div class="goal"><div class="ring" style="--p:${+pct || 0}"><span>${+nToday || 0}/${+goal || 0}</span></div>
@@ -1073,6 +1268,7 @@ function viewToday() {
       <button class="btn small" type="button" data-more="5">Learn 5 more</button>
       <button class="btn small" type="button" data-more="10">10 more</button>
       <button class="btn small" type="button" data-more="20">20 more</button></div>
+    <button class="btn block" type="button" id="read">Read a passage · 3 questions</button>
     ${trackOn("reasoning") ? `<button class="btn block" type="button" id="workout">Reasoning workout · 5 problems</button>` : ""}
   </section>`;
   h += `<section class="card">${searchBox()}</section>`;
@@ -1085,6 +1281,7 @@ function viewToday() {
   if ($("pskip")) $("pskip").onclick = () => skipPlacement();
   if ($("daily")) $("daily").onclick = () => { const s = buildDaily(); if (!s.length) return toast("Nothing due right now. Try “Learn 5 more”."); startSession("daily", s, "Today"); };
   document.querySelectorAll("[data-more]").forEach(b => b.onclick = () => { const s = buildDaily(+b.dataset.more); if (!s.length) return toast("You've studied everything in your switched-on tracks."); startSession("more", s, "More"); });
+  $("read").onclick = () => { const g = pickPassage(); if (!g) return toast("You've read every passage. Ones you missed come back after a day."); startReading(g); };
   if ($("workout")) $("workout").onclick = () => { const p = pickProblems(5); if (!p.length) return toast("You've solved every problem. Wrong ones come back after a day."); startSession("practice", p.map(id => ({ t: "q", id, src: "prob" })), "Workout"); };
 }
 function toast(msg) { astatus(msg); setTimeout(() => astatus(""), 4000); }
@@ -1111,7 +1308,7 @@ function viewTrack(t) {
     const ids = idsAt(t, l); let learned = 0; ids.forEach(id => { const s = statusOf(id); if (s === "l" || s === "k" || s === "m" || (isProb(id) && R[id] && R[id][0] >= 1)) learned++; });
     const rec = lvRec(t, l);
     const tag = rec && rec.passed ? `<span class="chip">Passed ${+rec.best || 0}%</span>` : l === c ? `<span class="chip warn">Current</span>` : l < c ? `<span class="chip mute">Placed</span>` : rec ? `<span class="chip mute">Best ${+rec.best || 0}%</span>` : "";
-    rows += `<li><button class="li" type="button" data-lv="${l}"><span class="ic">${t === "vocab" && l === 0 ? "F" : l}</span><span class="tx"><span class="t">${esc(lvName(t, l))} ${tag}</span><span class="d">${learned} of ${ids.length} learned</span><span class="bar" style="margin-top:6px"><i style="width:${Math.round(100 * learned / ids.length)}%"></i></span></span></button></li>`;
+    rows += `<li><button class="li" type="button" data-lv="${l}"><span class="ic">${esc(lvIcon(t, l))}</span><span class="tx"><span class="t">${esc(lvName(t, l))} ${tag}</span><span class="d">${learned} of ${ids.length} learned</span><span class="bar" style="margin-top:6px"><i style="width:${Math.round(100 * learned / ids.length)}%"></i></span></span></button></li>`;
   }
   $("main").innerHTML = `<section class="card"><button class="linkbtn" type="button" id="back">← All tracks</button><h2>${esc(TR[t].name)}</h2><p class="sub">${esc(TR[t].blurb)}</p>
     <p class="sub">New items come from your current level first. Pass a level's test with <b>above 90%</b> to move up. You can open, study or test any level.</p>
@@ -1147,8 +1344,9 @@ function viewProgress() {
   const vals = days.map(([k]) => { const h = ST.hist[k] || [0, 0, 0]; return h[0] + h[1]; }); const mx = Math.max(1, ...vals);
   const hard = Object.keys(R).filter(id => BY[id] && !isProb(id) && R[id][2] - R[id][3] >= 2).sort((a, b) => (R[b][2] - R[b][3]) - (R[a][2] - R[a][3])).slice(0, 15);
   const vocabWords = Object.keys(R).filter(id => id.startsWith("v-") && (statusOf(id) === "k" || statusOf(id) === "m")).length;
+  const read = Object.keys(R).filter(id => PAS[id]).length;
   $("main").innerHTML = `<section class="card"><h2>Progress</h2>
-    <div class="stats"><div class="stat"><b>${learned}</b><span>items studied</span></div><div class="stat"><b>${known}</b><span>known</span></div><div class="stat"><b>${mastered}</b><span>mastered</span></div><div class="stat"><b>${ret}</b><span>remembered after a week or more</span></div></div>
+    <div class="stats"><div class="stat"><b>${learned}</b><span>items studied</span></div><div class="stat"><b>${known}</b><span>known</span></div><div class="stat"><b>${mastered}</b><span>mastered</span></div><div class="stat"><b>${ret}</b><span>remembered after a week or more</span></div><div class="stat"><b>${read}</b><span>passages read</span></div></div>
     <p class="hint"><b>Known</b> means answered correctly at spaced intervals for a week or more. <b>Mastered</b> means still correct after more than a month. <b>Remembered</b> is the share of answers that were right on items last seen at least a week before.</p>
     <p class="sub">Vocabulary words known: <b>${vocabWords}</b> of ${countTrack("vocab")}.</p></section>
   <section class="card"><h3>Last 14 days (answers + new items)</h3><div class="chart" aria-label="Activity chart">${vals.map(v => `<div style="height:${Math.round(100 * v / mx)}%" title="${v}"></div>`).join("")}</div>
@@ -1179,7 +1377,7 @@ function viewSettings() {
       <select id="s-typed"><option value="off"${s.typed === "off" ? " selected" : ""}>Off: multiple choice and fill-in only</option>
       <option value="some"${s.typed === "some" ? " selected" : ""}>Sometimes, for well-learned items (recommended)</option>
       <option value="often"${s.typed === "often" ? " selected" : ""}>Often: the strongest test of memory</option></select></label>
-    <p class="hint">Typed definitions are graded by Claude through Study Hall's AI. Each check uses one of your daily AI replies. If AI isn't available, you grade yourself.</p></section>
+    <p class="hint">Typed definitions and the sentences you write are graded by Claude through Study Hall's AI. Each check uses one of your daily AI replies. If AI isn't available, you grade yourself.</p></section>
   <section class="card"><h3>Audio</h3>
     <label class="f">Voice<select id="s-voice"></select></label>
     <label class="f">Speed<select id="s-rate">${[["0.75", "Slow"], ["0.95", "Normal"], ["1.1", "Fast"]].map(([v, l]) => `<option value="${v}"${v === DEV.rate ? " selected" : ""}>${l}</option>`).join("")}</select></label>
@@ -1205,8 +1403,18 @@ function viewSettings() {
 }
 
 /* ============ start ============ */
-render();
-connect();
+function start() {
+  $("main").innerHTML = `<section class="card center"><p class="sub" role="status">Loading…</p></section>`;
+  getJSON(DATA_URL).then(d => { index(d); render(); connect(); }, () => {
+    $("main").innerHTML = `<section class="card center"><h2>Word Power didn't load</h2><p>The word list couldn't be downloaded. Check your internet connection, then try again.</p><button class="btn primary" type="button" id="retry">Try again</button></section>`;
+    $("retry").onclick = start;
+  });
+}
+start();
+/* On a first visit the service worker takes control after the data has loaded, so fetch it once more through the
+   worker, which saves it for offline use (if that fails, the next visit saves it). */
+if ("serviceWorker" in navigator && !navigator.serviceWorker.controller)
+  navigator.serviceWorker.addEventListener("controllerchange", () => fetch(DATA_URL).catch(() => {}), { once: true });
 setTimeout(() => { if (synth && !voices.length) loadVoices(); }, 1500);
 </script>
 </body>

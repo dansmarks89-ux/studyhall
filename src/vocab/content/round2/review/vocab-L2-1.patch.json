@@ -1,0 +1,349 @@
+[
+ {
+  "id": "v-destined",
+  "set": {
+   "syn": [
+    "fated",
+    "bound"
+   ]
+  },
+  "why": "'doomed' covers only bad outcomes (as the note itself says); not a true synonym of the general sense"
+ },
+ {
+  "id": "v-sovereign",
+  "set": {
+   "ant": [
+    "dependent"
+   ]
+  },
+  "why": "'subject' as an adjective is obscure for learners and a weak opposite"
+ },
+ {
+  "id": "v-remotely",
+  "set": {
+   "syn": [],
+   "ant": [
+    "in person",
+    "on-site"
+   ]
+  },
+  "why": "'distantly' does not mean remotely in this sense (you can't 'work distantly'); 'locally' is a forced opposite; real opposite is in person/on-site"
+ },
+ {
+  "id": "v-continuously",
+  "set": {
+   "syn": [
+    "constantly",
+    "nonstop"
+   ]
+  },
+  "why": "'uninterruptedly' is far rarer than the headword; learners won't recognize it"
+ },
+ {
+  "id": "v-offset",
+  "remove_dx": [
+   "v-minimize"
+  ],
+  "why": "'The rise in ticket prices was minimized by lower costs' also fits the cloze sensibly"
+ },
+ {
+  "id": "v-conclude",
+  "remove_dx": [
+   "v-reckon"
+  ],
+  "why": "'led the detective to reckon that...' fits the cloze; reckon is a near-synonym (think/judge)"
+ },
+ {
+  "id": "v-denial",
+  "set": {
+   "syn": [
+    "contradiction"
+   ]
+  },
+  "why": "'rejection' means refusing, not stating something is untrue"
+ },
+ {
+  "id": "v-likelihood",
+  "set": {
+   "ant": [
+    "improbability"
+   ]
+  },
+  "why": "'unlikelihood' is a rare, forced form"
+ },
+ {
+  "id": "v-commodity",
+  "set": {
+   "syn": [
+    "product",
+    "goods"
+   ]
+  },
+  "why": "singular 'good' reads as the adjective to learners; 'goods' is the noun in use"
+ },
+ {
+  "id": "v-metaphor",
+  "set": {
+   "syn": [
+    "figure of speech"
+   ]
+  },
+  "why": "'image' and 'symbol' are not synonyms of metaphor (a symbol is a different device)"
+ },
+ {
+  "id": "v-contention",
+  "set": {
+   "def": "strong disagreement or arguing between people about something"
+  },
+  "why": "'angry' overstates it; a 'point of contention' need not be angry (WordNet: strong disagreement)"
+ },
+ {
+  "id": "v-withdrawn",
+  "remove_dx": [
+   "v-insecure"
+  ],
+  "why": "'had become so insecure that she barely spoke to anyone' also fits the cloze"
+ },
+ {
+  "id": "v-prospective",
+  "set": {
+   "syn": [
+    "potential",
+    "future",
+    "possible"
+   ]
+  },
+  "why": "'likely' is not a synonym here ('likely students/buyers' is not used)"
+ },
+ {
+  "id": "v-imposing",
+  "set": {
+   "syn": [
+    "impressive",
+    "grand",
+    "majestic"
+   ]
+  },
+  "why": "'striking' means eye-catching, not large and awe-inspiring"
+ },
+ {
+  "id": "v-definitive",
+  "remove_dx": [
+   "v-vague",
+   "v-disputed"
+  ],
+  "why": "near-opposites of definitive (a vague/disputed answer vs a definitive one) - breaks the opposite question"
+ },
+ {
+  "id": "v-splendid",
+  "remove_dx": [
+   "v-memorable"
+  ],
+  "why": "'The palace was memorable, with golden ceilings' fits the cloze sensibly"
+ },
+ {
+  "id": "v-regulate",
+  "remove_dx": [
+   "v-probe"
+  ],
+  "why": "'an agency created to probe banks' fits the cloze sensibly"
+ },
+ {
+  "id": "v-initiate",
+  "remove_dx": [
+   "v-coordinate"
+  ],
+  "why": "'The bank will coordinate an investigation' fits the cloze sensibly"
+ },
+ {
+  "id": "v-appoint",
+  "set": {
+   "syn": [
+    "name",
+    "choose",
+    "assign"
+   ]
+  },
+  "why": "'nominate' means to propose someone as a candidate, not to officially place them in the job"
+ },
+ {
+  "id": "v-colleague",
+  "remove_dx": [
+   "v-mentor"
+  ],
+  "why": "'She shares an office with a mentor from the sales team' fits the cloze"
+ },
+ {
+  "id": "v-clarity",
+  "set": {
+   "syn": [
+    "clearness",
+    "precision"
+   ]
+  },
+  "why": "'simplicity' is not a synonym of clarity"
+ },
+ {
+  "id": "v-temptation",
+  "remove_dx": [
+   "v-greed"
+  ],
+  "why": "greed's def (selfish wish for more) overlaps temptation's def (strong wish for something you should not have) in the def-matching questions"
+ },
+ {
+  "id": "v-unexpectedly",
+  "set": {
+   "syn": [
+    "surprisingly"
+   ]
+  },
+  "remove_dx": [
+   "v-dramatically"
+  ],
+  "why": "'suddenly' is not a synonym (unexpected need not be sudden); 'dramatically won the debate, surprising everyone' fits the cloze"
+ },
+ {
+  "id": "v-flawed",
+  "remove_dx": [
+   "v-robust",
+   "v-thorough",
+   "v-mistaken"
+  ],
+  "why": "robust/thorough are near-opposites (a robust/thorough study vs a flawed one); mistaken is a near-synonym (a mistaken/flawed argument)"
+ },
+ {
+  "id": "v-coordinate",
+  "remove_dx": [
+   "v-execute"
+  ],
+  "why": "'Our office will execute travel plans for all twelve speakers' fits the cloze sensibly"
+ },
+ {
+  "id": "v-utilize",
+  "remove_dx": [
+   "v-adapt",
+   "v-modify"
+  ],
+  "why": "'The new hospital will adapt/modify robots to deliver medicine' both fit the cloze sensibly"
+ },
+ {
+  "id": "v-outbreak",
+  "set": {
+   "syn": [
+    "flare-up",
+    "eruption"
+   ]
+  },
+  "why": "'outburst' is used of emotion or noise, not disease or war breaking out"
+ },
+ {
+  "id": "v-impulse",
+  "set": {
+   "syn": [
+    "urge",
+    "whim",
+    "desire"
+   ]
+  },
+  "why": "'instinct' is an inborn tendency, not a sudden wish"
+ },
+ {
+  "id": "v-wildly",
+  "remove_dx": [
+   "v-sharply",
+   "v-steadily"
+  ],
+  "why": "'Gas prices swung sharply' fits the cloze naturally; steadily is a near-opposite of wildly"
+ },
+ {
+  "id": "v-timely",
+  "set": {
+   "syn": [
+    "prompt",
+    "well-timed"
+   ]
+  },
+  "why": "'punctual' describes people arriving on time, not well-timed actions or warnings"
+ },
+ {
+  "id": "v-utter",
+  "set": {
+   "ex": [
+    "Olga stared in utter surprise when her friends jumped out and shouted “Happy birthday!”",
+    "The kitchen was in utter chaos after the kids tried to bake a cake on their own."
+   ]
+  },
+  "why": "'an utter success' is unnatural; utter is used mainly with negative or emotion nouns (utter chaos, utter surprise)"
+ },
+ {
+  "id": "v-immense",
+  "remove_dx": [
+   "v-profound"
+  ],
+  "why": "profound's def ('very great, deep, or intense') overlaps immense ('extremely large in degree') - near-synonym"
+ },
+ {
+  "id": "v-refined",
+  "remove_dx": [
+   "v-naive"
+  ],
+  "why": "naive is a near-opposite of refined/sophisticated"
+ },
+ {
+  "id": "v-steadily",
+  "set": {
+   "syn": [
+    "gradually",
+    "consistently"
+   ]
+  },
+  "why": "'constantly' means all the time, not at an even rate"
+ },
+ {
+  "id": "v-deploy",
+  "remove_dx": [
+   "v-persuade",
+   "v-appoint"
+  ],
+  "why": "'The state will persuade/appoint hundreds of firefighters to fight the fires' both fit the cloze sensibly"
+ },
+ {
+  "id": "v-probe",
+  "remove_dx": [
+   "v-clarify"
+  ],
+  "why": "'Investigators were sent to clarify the cause of the collapse' fits the cloze sensibly"
+ },
+ {
+  "id": "v-memorable",
+  "remove_dx": [
+   "v-splendid"
+  ],
+  "why": "'one of the most splendid moments of Olga's life' fits the cloze"
+ },
+ {
+  "id": "v-prose",
+  "set": {
+   "syn": []
+  },
+  "why": "'writing' and 'text' are not synonyms of prose (poetry is also writing/text); no true one-word synonym"
+ },
+ {
+  "id": "v-diplomacy",
+  "set": {
+   "syn": [
+    "negotiation"
+   ]
+  },
+  "why": "'statesmanship' is a statesman's skill in government, not talks between nations; also too rare for level 2"
+ },
+ {
+  "id": "v-infamous",
+  "set": {
+   "syn": [
+    "notorious"
+   ]
+  },
+  "why": "'disreputable' means not respected/shady, not famous for something bad"
+ }
+]

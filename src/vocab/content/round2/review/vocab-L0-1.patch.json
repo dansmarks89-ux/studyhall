@@ -1,0 +1,350 @@
+[
+ {
+  "id": "v-strength",
+  "set": {
+   "def": "the power of your body to lift or move heavy things, or of a thing to hold up under pressure"
+  },
+  "why": "def contained 'strong', an obvious form of the term"
+ },
+ {
+  "id": "v-flat",
+  "set": {
+   "def": "level and even, with no parts higher or lower than the rest",
+   "syn": [
+    "level",
+    "even"
+   ]
+  },
+  "why": "'smooth' is wrong: a flat surface can be rough; removed from def and syn"
+ },
+ {
+  "id": "v-trial",
+  "set": {
+   "def": "the process in a court where a judge or jury hears the facts and decides a case"
+  },
+  "why": "'a meeting' is misleading, and trials do not only decide guilt (civil trials)"
+ },
+ {
+  "id": "v-excuse",
+  "set": {
+   "syn": [
+    "reason",
+    "explanation"
+   ],
+   "also": "to forgive someone for a small mistake or rude act (“Please excuse my messy handwriting.”)"
+  },
+  "why": "'pretext' too hard for level 0; also-sense was misdefined ('say you are not upset')"
+ },
+ {
+  "id": "v-guilty",
+  "set": {
+   "ex": [
+    "The jury found the driver guilty of causing the crash while driving drunk.",
+    "The thief admitted he was guilty and returned the stolen bike to its owner."
+   ]
+  },
+  "why": "a jury does not try a speeding ticket; replaced with a realistic criminal case"
+ },
+ {
+  "id": "v-easily",
+  "set": {
+   "syn": [
+    "effortlessly"
+   ]
+  },
+  "why": "'simply' is not a synonym of easily"
+ },
+ {
+  "id": "v-behavior",
+  "set": {
+   "syn": [
+    "conduct",
+    "actions"
+   ]
+  },
+  "why": "'manners' means polite behavior, not behavior in general"
+ },
+ {
+  "id": "v-dedicated",
+  "set": {
+   "syn": [
+    "devoted",
+    "committed"
+   ]
+  },
+  "why": "'loyal' is not a synonym of dedicated"
+ },
+ {
+  "id": "v-improve",
+  "set": {
+   "syn": [
+    "better",
+    "enhance"
+   ]
+  },
+  "why": "'develop' is not a synonym of improve"
+ },
+ {
+  "id": "v-impossible",
+  "set": {
+   "syn": [
+    "unachievable"
+   ]
+  },
+  "why": "'unthinkable' means too shocking to consider, not impossible"
+ },
+ {
+  "id": "v-survive",
+  "set": {
+   "syn": [
+    "endure",
+    "live through"
+   ]
+  },
+  "why": "'outlive' means live longer than someone, a different sense"
+ },
+ {
+  "id": "v-economy",
+  "set": {
+   "syn": []
+  },
+  "why": "'financial system' is not a genuine synonym a learner would recognize"
+ },
+ {
+  "id": "v-describe",
+  "set": {
+   "syn": [
+    "portray"
+   ]
+  },
+  "why": "'explain' is not a synonym: describe = say what it is like; explain = make clear how/why"
+ },
+ {
+  "id": "v-explain",
+  "set": {
+   "syn": [
+    "clarify"
+   ]
+  },
+  "why": "'describe' is not a synonym of explain"
+ },
+ {
+  "id": "v-crowd",
+  "set": {
+   "syn": [
+    "throng"
+   ]
+  },
+  "why": "'horde' carries a disorderly/negative sense and is not a neutral synonym"
+ },
+ {
+  "id": "v-broad",
+  "set": {
+   "ant": [
+    "narrow"
+   ]
+  },
+  "why": "'thin' is not an opposite of broad (width)"
+ },
+ {
+  "id": "v-spend",
+  "set": {
+   "ant": [
+    "save"
+   ]
+  },
+  "why": "'earn' is a contrast, not an opposite of spend"
+ },
+ {
+  "id": "v-criminal",
+  "remove_dx": [
+   "v-evil"
+  ],
+  "why": "evil is a near-synonym of criminal (e)"
+ },
+ {
+  "id": "v-easily",
+  "remove_dx": [
+   "v-immediately"
+  ],
+  "why": "'lifted it immediately with one hand' fits the cloze"
+ },
+ {
+  "id": "v-surely",
+  "remove_dx": [
+   "v-possibly",
+   "v-obviously"
+  ],
+  "why": "both fit the cloze 'It's already ten o'clock; ___ the bus will come soon'"
+ },
+ {
+  "id": "v-officially",
+  "remove_dx": [
+   "v-immediately"
+  ],
+  "why": "'The mayor immediately announced...' fits the cloze"
+ },
+ {
+  "id": "v-worry",
+  "remove_dx": [
+   "v-fear"
+  ],
+  "why": "fear's def ('worried that something bad will happen') is a near-synonym of worry"
+ },
+ {
+  "id": "v-global",
+  "remove_dx": [
+   "v-domestic"
+  ],
+  "why": "domestic is a near-opposite of global (f)"
+ },
+ {
+  "id": "v-minor",
+  "remove_dx": [
+   "v-basic"
+  ],
+  "why": "'It was only a basic mistake' fits the cloze"
+ },
+ {
+  "id": "v-foundation",
+  "remove_dx": [
+   "v-origin"
+  ],
+  "why": "origin ('point where something begins') overlaps the also-sense 'idea or fact something is built on' (g)"
+ },
+ {
+  "id": "v-possibility",
+  "remove_dx": [
+   "v-advantage"
+  ],
+  "why": "'discussing the advantage of opening a second office' fits the cloze"
+ },
+ {
+  "id": "v-definitely",
+  "remove_dx": [
+   "v-hopefully"
+  ],
+  "why": "'Kwame is hopefully going to floss every day' fits the cloze"
+ },
+ {
+  "id": "v-hopefully",
+  "remove_dx": [
+   "v-definitely",
+   "v-typically"
+  ],
+  "why": "'Definitely/Typically, the doctor will have the results by tomorrow' can fill the blank"
+ },
+ {
+  "id": "v-exact",
+  "remove_dx": [
+   "v-actual"
+  ],
+  "why": "'needs the actual dose, not a rough guess' fits the cloze"
+ },
+ {
+  "id": "v-equal",
+  "remove_dx": [
+   "v-appropriate"
+  ],
+  "why": "'they deserve appropriate pay' fits the cloze"
+ },
+ {
+  "id": "v-generally",
+  "remove_dx": [
+   "v-fairly",
+   "v-seriously"
+  ],
+  "why": "'Summers here are fairly/seriously hot' fits the cloze"
+ },
+ {
+  "id": "v-wonder",
+  "remove_dx": [
+   "v-doubt"
+  ],
+  "why": "doubt overlaps the 'wonder whether' sense (ex2); near-synonym"
+ },
+ {
+  "id": "v-admit",
+  "remove_dx": [
+   "v-grant"
+  ],
+  "why": "grant = admit ('I grant that'); its 'allow' def also overlaps the also-sense (g)"
+ },
+ {
+  "id": "v-demand",
+  "remove_dx": [
+   "v-suggest"
+  ],
+  "why": "'knocked on our door to suggest that we turn the music down' fits the cloze"
+ },
+ {
+  "id": "v-limit",
+  "remove_dx": [
+   "v-contain"
+  ],
+  "why": "contain also means limit/keep in check; near-synonym (e)"
+ },
+ {
+  "id": "v-portion",
+  "remove_dx": [
+   "v-sector"
+  ],
+  "why": "sector = a part/section; near-synonym (e)"
+ },
+ {
+  "id": "v-produce",
+  "remove_dx": [
+   "v-supply"
+  ],
+  "why": "'Bees supply honey' fits the cloze"
+ },
+ {
+  "id": "v-supply",
+  "remove_dx": [
+   "v-produce"
+  ],
+  "why": "'A dam produces water and electricity' fits the cloze"
+ },
+ {
+  "id": "v-request",
+  "remove_dx": [
+   "v-appeal"
+  ],
+  "why": "appeal = formally ask; overlapping def and near-synonym"
+ },
+ {
+  "id": "v-wise",
+  "remove_dx": [
+   "v-necessary"
+  ],
+  "why": "'It would be necessary to check the weather' fits the cloze"
+ },
+ {
+  "id": "v-negative",
+  "remove_dx": [
+   "v-evil"
+  ],
+  "why": "evil is a near-synonym of negative's syn 'bad' (e)"
+ },
+ {
+  "id": "v-seriously",
+  "remove_dx": [
+   "v-significantly"
+  ],
+  "why": "'by a large amount' overlaps the also-sense 'badly; to a worrying degree' (g)"
+ },
+ {
+  "id": "v-statistics",
+  "remove_dx": [
+   "v-analysis"
+  ],
+  "why": "'careful study' def overlaps the also-sense 'the study of numbers and data' (g)"
+ },
+ {
+  "id": "v-volume",
+  "remove_dx": [
+   "v-scale"
+  ],
+  "why": "'the size or level of something' overlaps the also-sense 'the amount of something' (g)"
+ }
+]

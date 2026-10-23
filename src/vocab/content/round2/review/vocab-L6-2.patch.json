@@ -1,0 +1,259 @@
+[
+ {
+  "id": "v-orchestrate",
+  "set": {
+   "def": "to carefully plan and organize a complicated event or effort, often from behind the scenes",
+   "also": "to arrange a piece of music so that a large group of instruments can play it (“She orchestrated the folk song for a full symphony.”)"
+  },
+  "why": "also-def contained 'orchestra' (obvious form of the term, giveaway in test g); band example wrong; 'often secretly' overstated"
+ },
+ {
+  "id": "v-offhand",
+  "set": {
+   "also": "without looking it up or taking time to check (“I don't know the answer offhand.”)"
+  },
+  "remove_dx": [
+   "v-facile"
+  ],
+  "why": "'right away' misstates the sense; facile def ('said too easily, without careful thought') overlaps offhand def"
+ },
+ {
+  "id": "v-inane",
+  "remove_dx": [
+   "v-tangential",
+   "v-extraneous"
+  ],
+  "why": "'a tangential/extraneous remark about the weather' also fits the cloze"
+ },
+ {
+  "id": "v-insufferable",
+  "remove_dx": [
+   "v-odious"
+  ],
+  "why": "odious is a near-synonym and fits 'an ___ guest' cloze"
+ },
+ {
+  "id": "v-affable",
+  "remove_dx": [
+   "v-disarming",
+   "v-gregarious"
+  ],
+  "why": "both fit 'Kwame's ___ manner made new employees feel comfortable'; disarming is a near-synonym"
+ },
+ {
+  "id": "v-vivacious",
+  "remove_dx": [
+   "v-gregarious"
+  ],
+  "why": "gregarious receptionist greeting everyone with jokes fits the cloze; near-synonym"
+ },
+ {
+  "id": "v-disarming",
+  "remove_dx": [
+   "v-vivacious"
+  ],
+  "why": "'warm, vivacious manner soon had him laughing' fits the cloze"
+ },
+ {
+  "id": "v-handily",
+  "remove_dx": [
+   "v-impeccably"
+  ],
+  "why": "'passed the driving test impeccably, making no mistakes' fits the cloze"
+ },
+ {
+  "id": "v-amply",
+  "remove_dx": [
+   "v-painstakingly"
+  ],
+  "why": "'risks were painstakingly explained' fits the cloze"
+ },
+ {
+  "id": "v-fittingly",
+  "remove_dx": [
+   "v-deservedly"
+  ],
+  "why": "'deservedly named after the teacher' fits the cloze and example"
+ },
+ {
+  "id": "v-unambiguously",
+  "remove_dx": [
+   "v-pointedly"
+  ],
+  "why": "'stated pointedly that phones were not allowed' fits the cloze"
+ },
+ {
+  "id": "v-alarmingly",
+  "remove_dx": [
+   "v-unmistakably"
+  ],
+  "why": "'fever was unmistakably high' fits the cloze"
+ },
+ {
+  "id": "v-engulf",
+  "remove_dx": [
+   "v-obliterate"
+  ],
+  "why": "'floodwaters began to obliterate the village' fits the cloze"
+ },
+ {
+  "id": "v-opportune",
+  "remove_dx": [
+   "v-fortuitous"
+  ],
+  "why": "overlapping meaning (lucky timing); 'a fortuitous time' plausible"
+ },
+ {
+  "id": "v-sanguine",
+  "remove_dx": [
+   "v-jubilant"
+  ],
+  "why": "'less jubilant than the family' arguably fits the cloze"
+ },
+ {
+  "id": "v-didactic",
+  "remove_dx": [
+   "v-patronizing"
+  ],
+  "why": "overlaps the preachy/lecturing sense; plausible in cloze"
+ },
+ {
+  "id": "v-impropriety",
+  "set": {
+   "syn": [
+    "misconduct",
+    "wrongdoing"
+   ],
+   "ant": [
+    "propriety"
+   ]
+  },
+  "why": "'indecency'/'decency' carry a sexual/modesty sense, not this one"
+ },
+ {
+  "id": "v-gratuity",
+  "set": {
+   "syn": [
+    "tip"
+   ]
+  },
+  "why": "'bonus' is not a synonym of a tip/gratuity"
+ },
+ {
+  "id": "v-befall",
+  "set": {
+   "syn": [
+    "happen to",
+    "strike"
+   ]
+  },
+  "why": "'beset' (trouble persistently) is not a synonym of befall"
+ },
+ {
+  "id": "v-demonstrably",
+  "set": {
+   "syn": [
+    "clearly",
+    "provably",
+    "plainly"
+   ]
+  },
+  "why": "'evidently' usually means 'apparently', not 'provably'"
+ },
+ {
+  "id": "v-reclusive",
+  "set": {
+   "syn": [
+    "solitary",
+    "withdrawn",
+    "hermitlike"
+   ]
+  },
+  "why": "'secluded' describes places, not a person who avoids others"
+ },
+ {
+  "id": "v-conciliatory",
+  "set": {
+   "syn": [
+    "peacemaking",
+    "appeasing",
+    "soothing"
+   ]
+  },
+  "why": "'friendly' is not a true synonym of conciliatory"
+ },
+ {
+  "id": "v-culminate",
+  "set": {
+   "ant": []
+  },
+  "why": "'begin/start' are forced opposites"
+ },
+ {
+  "id": "v-upshot",
+  "set": {
+   "ant": []
+  },
+  "why": "'cause/origin' are forced opposites"
+ },
+ {
+  "id": "v-devolve",
+  "set": {
+   "ant": [
+    "improve"
+   ]
+  },
+  "why": "'evolve' is not a genuine opposite of devolve in this sense"
+ },
+ {
+  "id": "v-fanaticism",
+  "set": {
+   "ex": [
+    "Religious and political fanaticism has led to violence many times in history.",
+    "His fanaticism about fitness meant he trained even when he was injured."
+   ]
+  },
+  "why": "'in many parts of history' is unidiomatic"
+ },
+ {
+  "id": "v-ineptitude",
+  "remove_dx": [
+   "v-misstep"
+  ],
+  "why": "'failed because of the manager's misstep' fits the cloze"
+ },
+ {
+  "id": "v-pointedly",
+  "set": {
+   "syn": [
+    "deliberately",
+    "intentionally"
+   ]
+  },
+  "remove_dx": [
+   "v-resolutely"
+  ],
+  "why": "'markedly' means noticeably, not pointedly; 'resolutely turned to the next person' fits the cloze"
+ },
+ {
+  "id": "v-condolence",
+  "set": {
+   "syn": [
+    "sympathy",
+    "commiseration"
+   ]
+  },
+  "why": "'comfort' is not a synonym of condolence"
+ },
+ {
+  "id": "v-industrious",
+  "set": {
+   "syn": [
+    "hardworking",
+    "diligent",
+    "tireless"
+   ]
+  },
+  "why": "'busy' and 'productive' are not true synonyms of industrious"
+ }
+]

@@ -1,0 +1,358 @@
+[
+ {
+  "id": "v-absolutely",
+  "remove_dx": [
+   "v-truly"
+  ],
+  "why": "near-synonym; 'truly beautiful' also fills the cloze"
+ },
+ {
+  "id": "v-highly",
+  "remove_dx": [
+   "v-definitely"
+  ],
+  "why": "'definitely skilled' also fills the cloze"
+ },
+ {
+  "id": "v-somewhat",
+  "remove_dx": [
+   "v-definitely"
+  ],
+  "why": "'felt definitely better, though it still hurt' also fills the cloze"
+ },
+ {
+  "id": "v-accept",
+  "remove_dx": [
+   "v-claim"
+  ],
+  "why": "'claim the award on behalf of his team' also fills the cloze"
+ },
+ {
+  "id": "v-option",
+  "remove_dx": [
+   "v-approach"
+  ],
+  "why": "'our only approach was to take the long road' also fills the cloze; overlapping meaning"
+ },
+ {
+  "id": "v-grand",
+  "remove_dx": [
+   "v-traditional",
+   "v-hidden"
+  ],
+  "why": "'a traditional/hidden palace' could sensibly fill the cloze"
+ },
+ {
+  "id": "v-fairly",
+  "remove_dx": [
+   "v-honestly",
+   "v-generally",
+   "v-apparently",
+   "v-basically"
+  ],
+  "why": "honestly's def overlaps the also-sense ('in an honest way'); generally/apparently/basically fit the cloze"
+ },
+ {
+  "id": "v-fairly",
+  "set": {
+   "cloze": {
+    "s": "Sofia's Spanish is ___ good: not perfect, but good enough to chat with her neighbors.",
+    "a": "fairly"
+   }
+  },
+  "why": "old cloze ('___ cheap') let many adverb options fit; new one forces the degree sense"
+ },
+ {
+  "id": "v-novel",
+  "remove_dx": [
+   "v-usual",
+   "v-conservative"
+  ],
+  "why": "near-opposites of novel (test f)"
+ },
+ {
+  "id": "v-obviously",
+  "remove_dx": [
+   "v-highly",
+   "v-fairly"
+  ],
+  "why": "'highly/fairly nervous' also fill the cloze"
+ },
+ {
+  "id": "v-somehow",
+  "remove_dx": [
+   "v-eventually",
+   "v-ultimately"
+  ],
+  "why": "'eventually/ultimately made it to the meeting' also fill the cloze"
+ },
+ {
+  "id": "v-famous",
+  "remove_dx": [
+   "v-rich"
+  ],
+  "why": "'became rich almost overnight' also fills the cloze"
+ },
+ {
+  "id": "v-balance",
+  "remove_dx": [
+   "v-remain"
+  ],
+  "why": "'had to remain on a narrow beam' also fills the cloze"
+ },
+ {
+  "id": "v-memory",
+  "remove_dx": [
+   "v-intelligence"
+  ],
+  "why": "'an amazing intelligence and can recall' could fill the cloze"
+ },
+ {
+  "id": "v-literature",
+  "remove_dx": [
+   "v-reference"
+  ],
+  "why": "'the library's reference section' fills the cloze"
+ },
+ {
+  "id": "v-attractive",
+  "remove_dx": [
+   "v-brilliant"
+  ],
+  "why": "'bright colors... very brilliant' fills the cloze"
+ },
+ {
+  "id": "v-beyond",
+  "remove_dx": [
+   "v-widely"
+  ],
+  "why": "'open sea stretching widely' fills the cloze"
+ },
+ {
+  "id": "v-significantly",
+  "remove_dx": [
+   "v-throughout",
+   "v-eventually",
+   "v-hardly"
+  ],
+  "why": "hardly is a near-opposite (test f); throughout/eventually fit the cloze"
+ },
+ {
+  "id": "v-significantly",
+  "set": {
+   "cloze": {
+    "s": "Our electric bill dropped ___ after we added solar panels, from $200 a month to $60.",
+    "a": "significantly"
+   }
+  },
+  "why": "old cloze ('The new medicine ___ lowered') accepted possibly/apparently/surely/typically/eventually"
+ },
+ {
+  "id": "v-wealth",
+  "remove_dx": [
+   "v-influence"
+  ],
+  "why": "'Despite his great influence, ... small, simple house' fills the cloze"
+ },
+ {
+  "id": "v-realize",
+  "remove_dx": [
+   "v-suspect",
+   "v-suppose"
+  ],
+  "why": "'Liam suspected/supposed he was at the wrong stop' fill the cloze"
+ },
+ {
+  "id": "v-arrest",
+  "remove_dx": [
+   "v-search",
+   "v-notice"
+  ],
+  "why": "'The thief was searched/noticed minutes after leaving' fill the cloze"
+ },
+ {
+  "id": "v-corporate",
+  "remove_dx": [
+   "v-dedicated"
+  ],
+  "why": "'Many dedicated workers in big firms' fills the cloze"
+ },
+ {
+  "id": "v-creative",
+  "remove_dx": [
+   "v-brilliant",
+   "v-independent"
+  ],
+  "why": "'hired brilliant/independent writers' fill the cloze"
+ },
+ {
+  "id": "v-ultimate",
+  "remove_dx": [
+   "v-extreme",
+   "v-immediate"
+  ],
+  "why": "extreme is a WordNet synonym (utmost/extreme); immediate is a near-opposite (immediate vs ultimate cause)"
+ },
+ {
+  "id": "v-imagine",
+  "remove_dx": [
+   "v-explain"
+  ],
+  "why": "'hard to explain what life was like' fills the cloze"
+ },
+ {
+  "id": "v-guard",
+  "remove_dx": [
+   "v-transport"
+  ],
+  "why": "'hired to transport the paintings' fills the cloze"
+ },
+ {
+  "id": "v-launch",
+  "remove_dx": [
+   "v-prepare"
+  ],
+  "why": "'will prepare its new recycling campaign' fills the cloze"
+ },
+ {
+  "id": "v-independence",
+  "remove_dx": [
+   "v-territory"
+  ],
+  "why": "'fought a long war for territory from the empire' fills the cloze"
+ },
+ {
+  "id": "v-error",
+  "remove_dx": [
+   "v-excuse"
+  ],
+  "why": "'making an excuse when he called the goal' fills the cloze"
+ },
+ {
+  "id": "v-perfectly",
+  "remove_dx": [
+   "v-entirely",
+   "v-eventually"
+  ],
+  "why": "entirely = the also-sense 'completely or fully' (test g); 'landed eventually despite the winds' fills the cloze"
+ },
+ {
+  "id": "v-normally",
+  "remove_dx": [
+   "v-frequently"
+  ],
+  "why": "'I frequently go to bed at ten, but last night...' fills the cloze"
+ },
+ {
+  "id": "v-maximum",
+  "remove_dx": [
+   "v-peak"
+  ],
+  "why": "peak ('the highest point, level, or amount') is a near-synonym of maximum"
+ },
+ {
+  "id": "v-prevent",
+  "set": {
+   "syn": [
+    "stop",
+    "block"
+   ]
+  },
+  "why": "'avoid' (stay away from) is not a synonym of prevent (stop from happening)"
+ },
+ {
+  "id": "v-theory",
+  "set": {
+   "syn": [
+    "explanation"
+   ]
+  },
+  "why": "'hypothesis' contradicts the item's own note (a theory is well tested, not a guess)"
+ },
+ {
+  "id": "v-solution",
+  "set": {
+   "ant": []
+  },
+  "why": "'problem' is not a genuine opposite of solution"
+ },
+ {
+  "id": "v-perfectly",
+  "set": {
+   "syn": [
+    "flawlessly"
+   ]
+  },
+  "why": "'ideally' means 'in the best case', not 'without mistakes'"
+ },
+ {
+  "id": "v-honor",
+  "set": {
+   "syn": [
+    "privilege",
+    "respect"
+   ],
+   "ex": [
+    "It was an honor for Wei to speak at his old school's graduation.",
+    "The town held a dinner in honor of the nurses who worked through the storm."
+   ]
+  },
+  "why": "'pride' is not a synonym of honor; 'buried with full honors' shows a different sense (ceremonies) than the def"
+ },
+ {
+  "id": "v-existence",
+  "set": {
+   "syn": [
+    "being",
+    "life"
+   ]
+  },
+  "why": "'presence' (being in a place) is not a synonym of existence"
+ },
+ {
+  "id": "v-rural",
+  "set": {
+   "syn": [
+    "country"
+   ]
+  },
+  "why": "'rustic' means simple/rough in style, not 'in the countryside'"
+ },
+ {
+  "id": "v-cycle",
+  "set": {
+   "syn": [
+    "round",
+    "loop"
+   ]
+  },
+  "why": "'rotation' (turning, or taking turns) is not a synonym of this sense"
+ },
+ {
+  "id": "v-client",
+  "set": {
+   "def": "a person or business that pays a professional, such as a lawyer, for a service"
+  },
+  "why": "old def ('pays someone for a service, such as a lawyer') can be read as the client being a lawyer"
+ },
+ {
+  "id": "v-trend",
+  "set": {
+   "cloze": {
+    "s": "For ten years, the ___ in home prices has been upward, with prices rising a little each year.",
+    "a": "trend"
+   }
+  },
+  "why": "old cloze ('newest trend among young shoppers') used the fashion sense, not the defined 'general direction of change' sense"
+ },
+ {
+  "id": "v-opposite",
+  "set": {
+   "ex": [
+    "The two brothers have opposite personalities: one is loud, and the other is very quiet.",
+    "Wei turned left out of the station, but the hotel was in the opposite direction."
+   ]
+  },
+  "why": "ex2 was illogical ('Instead of slowing down, the car moved in the opposite direction')"
+ }
+]

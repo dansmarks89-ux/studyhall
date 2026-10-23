@@ -1,0 +1,354 @@
+[
+ {
+  "id": "v-have",
+  "remove_dx": [
+   "v-watch"
+  ],
+  "why": "'watch two dogs and a fish at home' (pet-sitting) also fits cloze"
+ },
+ {
+  "id": "v-like",
+  "remove_dx": [
+   "v-know"
+  ],
+  "why": "'I know this song, so please play it again' is sensible"
+ },
+ {
+  "id": "v-get",
+  "remove_dx": [
+   "v-read"
+  ],
+  "why": "'hope to read a letter from my friend soon' fits cloze"
+ },
+ {
+  "id": "v-say",
+  "remove_dx": [
+   "v-understand"
+  ],
+  "why": "'The baby can understand \"mama\" now' fits cloze"
+ },
+ {
+  "id": "v-long",
+  "remove_dx": [
+   "v-pretty"
+  ],
+  "why": "'a very pretty neck' fits cloze"
+ },
+ {
+  "id": "v-old",
+  "set": {
+   "def": "having lived or lasted a long time; not young or new",
+   "cloze": {
+    "s": "This house was built over a hundred years ago, so it is very ___.",
+    "a": "old"
+   }
+  },
+  "why": "def covered only living things but ex2/cloze use the 'not new' sense; old cloze also fit 'white' ('This white house was built...')"
+ },
+ {
+  "id": "v-next",
+  "remove_dx": [
+   "v-short"
+  ],
+  "why": "'we will play the short one' fits cloze"
+ },
+ {
+  "id": "v-team",
+  "remove_dx": [
+   "v-school"
+  ],
+  "why": "'players from each soccer school' is arguably sensible"
+ },
+ {
+  "id": "v-government",
+  "set": {
+   "def": "the group of people who run a country, state, or city"
+  },
+  "why": "ex2 uses 'city government' but def said only country or state"
+ },
+ {
+  "id": "v-today",
+  "set": {
+   "ex": [
+    "Today is my best friend's birthday.",
+    "Today is the first day of school."
+   ]
+  },
+  "why": "both examples used 'today' as an adverb; pos is noun"
+ },
+ {
+  "id": "v-now",
+  "remove_dx": [
+   "v-away"
+  ],
+  "why": "'The bus is leaving right away' fits cloze exactly"
+ },
+ {
+  "id": "v-service",
+  "remove_dx": [
+   "v-place"
+  ],
+  "why": "'the waiter was kind and quick, so the place was great' fits cloze"
+ },
+ {
+  "id": "v-area",
+  "set": {
+   "ex": [
+    "We live in a quiet area near the river.",
+    "This area of the city has many shops."
+   ],
+   "syn": [
+    "region"
+   ]
+  },
+  "why": "two near-identical examples; 'zone' is not a natural synonym for a starter learner"
+ },
+ {
+  "id": "v-course",
+  "remove_dx": [
+   "v-school"
+  ],
+  "why": "'signed up for a ten-week Spanish school' fits cloze"
+ },
+ {
+  "id": "v-single",
+  "remove_dx": [
+   "v-good"
+  ],
+  "why": "'He did not say a good word all day' fits cloze"
+ },
+ {
+  "id": "v-court",
+  "remove_dx": [
+   "v-case",
+   "v-office"
+  ],
+  "why": "'The judge in the case said...' fits cloze; 'office' marginal"
+ },
+ {
+  "id": "v-control",
+  "remove_dx": [
+   "v-turn",
+   "v-move"
+  ],
+  "why": "'buttons to turn/move the plane' fit cloze"
+ },
+ {
+  "id": "v-history",
+  "remove_dx": [
+   "v-music"
+  ],
+  "why": "'Music tells us what life was like...' arguably fits"
+ },
+ {
+  "id": "v-girl",
+  "set": {
+   "cloze": {
+    "s": "The little ___ and her brother played in the park.",
+    "a": "girl"
+   }
+  },
+  "why": "'girl wore a pink dress' is a gender cliche (spec: no stereotypes)"
+ },
+ {
+  "id": "v-nice",
+  "remove_dx": [
+   "v-big"
+  ],
+  "why": "'It was big of you to help me' is idiomatic and fits cloze"
+ },
+ {
+  "id": "v-past",
+  "remove_dx": [
+   "v-water"
+  ],
+  "why": "'Dinosaurs lived in the water, long before people' fits cloze"
+ },
+ {
+  "id": "v-happy",
+  "remove_dx": [
+   "v-bad"
+  ],
+  "why": "(f) 'bad' (feeling bad) is a near-opposite of happy"
+ },
+ {
+  "id": "v-heart",
+  "set": {
+   "cloze": {
+    "s": "Put your hand on your chest to feel your ___ beat.",
+    "a": "heart"
+   }
+  },
+  "why": "cloze was nearly identical to ex1 ('Your heart beats faster when you run'); spec needs a different third sentence"
+ },
+ {
+  "id": "v-good",
+  "remove_dx": [
+   "v-special"
+  ],
+  "why": "'The movie was so special that we watched it twice' fits cloze"
+ },
+ {
+  "id": "v-really",
+  "remove_dx": [
+   "v-almost",
+   "v-once"
+  ],
+  "why": "'Did you almost/once eat all ten cookies?' fit cloze"
+ },
+ {
+  "id": "v-world",
+  "remove_dx": [
+   "v-north"
+  ],
+  "why": "'many countries and languages in the north' is sensible"
+ },
+ {
+  "id": "v-use",
+  "remove_dx": [
+   "v-buy"
+  ],
+  "why": "'We buy a knife to cut the bread' fits cloze"
+ },
+ {
+  "id": "v-put",
+  "remove_dx": [
+   "v-keep"
+  ],
+  "why": "'keep the books back on the shelf' marginally fits"
+ },
+ {
+  "id": "v-free",
+  "remove_dx": [
+   "v-open"
+  ],
+  "why": "'the concert is open' (to all) marginally fits"
+ },
+ {
+  "id": "v-away",
+  "remove_dx": [
+   "v-again"
+  ],
+  "why": "'The bird flew again when I opened the window' is sensible"
+ },
+ {
+  "id": "v-point",
+  "remove_dx": [
+   "v-second",
+   "v-question"
+  ],
+  "why": "'won the game by just one second' fits cloze; 'one question' marginal"
+ },
+ {
+  "id": "v-order",
+  "remove_dx": [
+   "v-make"
+  ],
+  "why": "'I will make a hot chocolate' marginally fits"
+ },
+ {
+  "id": "v-general",
+  "remove_dx": [
+   "v-big",
+   "v-special"
+  ],
+  "why": "'I just want a big picture' is idiomatic and fits cloze; (f) 'special' is a near-opposite of general"
+ },
+ {
+  "id": "v-young",
+  "set": {
+   "ex": [
+    "Grandma had red hair when she was young.",
+    "The young girl rode her bike."
+   ]
+  },
+  "why": "ex1 ('too young to drive') duplicated the cloze sentence"
+ },
+ {
+  "id": "v-south",
+  "remove_dx": [
+   "v-area"
+  ],
+  "why": "'The warm wind came from the area' marginally fits"
+ },
+ {
+  "id": "v-wrong",
+  "remove_dx": [
+   "v-bad"
+  ],
+  "why": "(e) 'bad' is a near-synonym of wrong"
+ },
+ {
+  "id": "v-remember",
+  "remove_dx": [
+   "v-check"
+  ],
+  "why": "'Can you check where you put the keys?' fits cloze"
+ },
+ {
+  "id": "v-wait",
+  "remove_dx": [
+   "v-stop"
+  ],
+  "why": "'Please stop here until your name is called' fits cloze"
+ },
+ {
+  "id": "v-data",
+  "remove_dx": [
+   "v-case",
+   "v-idea"
+  ],
+  "why": "'studied the case to see which plan worked best' fits cloze; 'idea' marginal"
+ },
+ {
+  "id": "v-watch",
+  "remove_dx": [
+   "v-try"
+  ],
+  "why": "'Let's try a movie tonight' marginally fits"
+ },
+ {
+  "id": "v-police",
+  "remove_dx": [
+   "v-woman"
+  ],
+  "why": "'The woman stopped the car that was going too fast' fits cloze"
+ },
+ {
+  "id": "v-short",
+  "set": {
+   "def": "not long in size or time, or not tall"
+  },
+  "why": "'small from head to feet' is awkward/unclear for starter learners"
+ },
+ {
+  "id": "v-short",
+  "remove_dx": [
+   "v-great",
+   "v-late"
+  ],
+  "why": "'The movie was late, only about one hour' and 'was great' fit cloze"
+ },
+ {
+  "id": "v-never",
+  "remove_dx": [
+   "v-often",
+   "v-almost"
+  ],
+  "why": "(f) 'often' is a near-opposite of never; 'he is almost late' marginally fits cloze"
+ },
+ {
+  "id": "v-day",
+  "remove_dx": [
+   "v-food"
+  ],
+  "why": "'The food was hot, but the night was cool' is sensible"
+ },
+ {
+  "id": "v-company",
+  "remove_dx": [
+   "v-office"
+  ],
+  "why": "'started her own office that sells shoes' marginally fits"
+ }
+]

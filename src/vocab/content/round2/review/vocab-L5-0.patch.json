@@ -1,0 +1,312 @@
+[
+ {
+  "id": "v-cabal",
+  "set": {
+   "ex": [
+    "In the novel, a cabal of palace advisers secretly plots to seize the throne.",
+    "Critics claimed a cabal of insiders was secretly running the club."
+   ]
+  },
+  "why": "Example used the 'cabal of bankers controlling the world' trope, a well-known antisemitic conspiracy theme"
+ },
+ {
+  "id": "v-immerse",
+  "set": {
+   "def": "to involve yourself or someone else completely in an activity or subject"
+  },
+  "why": "Def was intransitive ('to become') but the verb is transitive (immerse yourself/someone in)"
+ },
+ {
+  "id": "v-sporadically",
+  "set": {
+   "syn": [
+    "occasionally",
+    "intermittently",
+    "irregularly"
+   ]
+  },
+  "why": "'periodically' means at regular intervals, the opposite of sporadic"
+ },
+ {
+  "id": "v-keenly",
+  "set": {
+   "cloze": {
+    "s": "Having grown up poor, she was ___ aware of how hard it is to pay the rent.",
+    "a": "keenly"
+   }
+  },
+  "why": "Cloze 'watching ___' used a different sense (closely/eagerly) from the def, and 'discreetly' could also fill it"
+ },
+ {
+  "id": "v-inert",
+  "set": {
+   "ex": [
+    "The injured hiker lay inert on the trail until the medics arrived.",
+    "The committee has been inert for months, and nothing on its list has been done."
+   ]
+  },
+  "why": "Example illogical: patient already on the stretcher before the medics arrived"
+ },
+ {
+  "id": "v-discernible",
+  "set": {
+   "ex": [
+    "There was no discernible difference between the two paint colors.",
+    "Without her glasses, Yuki saw only a faint shape in the fog, barely discernible against the gray."
+   ]
+  },
+  "why": "Example 'barely make out a discernible shape' was redundant and awkward"
+ },
+ {
+  "id": "v-allusion",
+  "set": {
+   "ex": [
+    "The coach's speech included an allusion to the story of David and Goliath before the big game.",
+    "Her line about a “house divided” was an allusion to a famous speech by Abraham Lincoln."
+   ]
+  },
+  "why": "Calling a boss 'the emperor' is a nickname/metaphor, not an allusion to an outside work or event"
+ },
+ {
+  "id": "v-macabre",
+  "set": {
+   "ex": [
+    "The museum's macabre display of skulls and old execution tools made some visitors feel sick.",
+    "Hannah has a macabre sense of humor and loves jokes about funerals."
+   ]
+  },
+  "why": "Surgical tools are not about death; example did not show the meaning"
+ },
+ {
+  "id": "v-evasive",
+  "set": {
+   "syn": [
+    "vague",
+    "indirect"
+   ]
+  },
+  "why": "'elusive' means hard to catch or find, not evasive in answering"
+ },
+ {
+  "id": "v-gaunt",
+  "set": {
+   "ant": [
+    "plump",
+    "chubby"
+   ]
+  },
+  "why": "'healthy' is not an opposite of gaunt (thin)"
+ },
+ {
+  "id": "v-retract",
+  "set": {
+   "ant": [
+    "affirm"
+   ]
+  },
+  "why": "'repeat' is not an opposite of retract"
+ },
+ {
+  "id": "v-topple",
+  "set": {
+   "ant": [
+    "prop up"
+   ]
+  },
+  "why": "'raise' is a forced opposite"
+ },
+ {
+  "id": "v-headway",
+  "set": {
+   "syn": [
+    "progress",
+    "advance"
+   ]
+  },
+  "why": "'ground' alone is not a synonym a learner would recognize"
+ },
+ {
+  "id": "v-forerunner",
+  "set": {
+   "syn": [
+    "predecessor",
+    "precursor",
+    "ancestor"
+   ]
+  },
+  "why": "'pioneer' means the first to do something, not a thing that came before and led to another"
+ },
+ {
+  "id": "v-futility",
+  "set": {
+   "ant": [
+    "usefulness"
+   ]
+  },
+  "why": "'value' is a forced opposite"
+ },
+ {
+  "id": "v-habitually",
+  "set": {
+   "syn": [
+    "routinely",
+    "regularly",
+    "usually"
+   ]
+  },
+  "why": "'constantly' means all the time, not as a habit"
+ },
+ {
+  "id": "v-connotation",
+  "set": {
+   "syn": [
+    "association",
+    "implication",
+    "overtone"
+   ]
+  },
+  "why": "'nuance' (a subtle difference) is not a synonym"
+ },
+ {
+  "id": "v-evocative",
+  "set": {
+   "syn": [
+    "suggestive",
+    "reminiscent",
+    "vivid"
+   ]
+  },
+  "why": "'expressive' is not a synonym of evocative"
+ },
+ {
+  "id": "v-allegory",
+  "set": {
+   "syn": [
+    "parable",
+    "fable"
+   ]
+  },
+  "why": "'symbol' is not a synonym of allegory (a whole story)"
+ },
+ {
+  "id": "v-inert",
+  "remove_dx": [
+   "v-nimble"
+  ],
+  "why": "nimble (able to move quickly) is a near-opposite of inert (f)"
+ },
+ {
+  "id": "v-opinionated",
+  "remove_dx": [
+   "v-pompous",
+   "v-presumptuous"
+  ],
+  "why": "both could sensibly fill 'so ___ that she corrects everyone's views'"
+ },
+ {
+  "id": "v-forerunner",
+  "remove_dx": [
+   "v-archetype"
+  ],
+  "why": "archetype (original model) could fill 'a ___ of today's calculators'"
+ },
+ {
+  "id": "v-intently",
+  "remove_dx": [
+   "v-idly"
+  ],
+  "why": "idly could fill 'watched the bird ___'; also near-opposite of intently (f)"
+ },
+ {
+  "id": "v-dreary",
+  "remove_dx": [
+   "v-exuberant"
+  ],
+  "why": "exuberant (full of cheer) is a near-opposite of dreary (f)"
+ },
+ {
+  "id": "v-resounding",
+  "remove_dx": [
+   "v-commendable"
+  ],
+  "why": "'a commendable victory' also fits the cloze"
+ },
+ {
+  "id": "v-defuse",
+  "remove_dx": [
+   "v-dissipate"
+  ],
+  "why": "'dissipate the conflict/tension' also fits the cloze"
+ },
+ {
+  "id": "v-disband",
+  "remove_dx": [
+   "v-unify"
+  ],
+  "why": "unify is a near-opposite of disband (f)"
+ },
+ {
+  "id": "v-persevere",
+  "remove_dx": [
+   "v-succumb"
+  ],
+  "why": "succumb (give in) is a near-opposite of persevere (f)"
+ },
+ {
+  "id": "v-discerning",
+  "remove_dx": [
+   "v-exacting"
+  ],
+  "why": "'a truly exacting wine expert' could also fit the cloze"
+ },
+ {
+  "id": "v-exasperated",
+  "remove_dx": [
+   "v-livid",
+   "v-docile"
+  ],
+  "why": "livid is a near-synonym and fits the cloze (e/c); docile (calm) is a near-opposite (f)"
+ },
+ {
+  "id": "v-categorically",
+  "remove_dx": [
+   "v-conclusively"
+  ],
+  "why": "conclusively is a near-synonym (e)"
+ },
+ {
+  "id": "v-rationalize",
+  "remove_dx": [
+   "v-downplay"
+  ],
+  "why": "'tried to downplay skipping the gym by claiming...' also fits the cloze"
+ },
+ {
+  "id": "v-unmistakable",
+  "remove_dx": [
+   "v-resounding"
+  ],
+  "why": "resounding ('clear... leaving no doubt') is a near-synonym (e)"
+ },
+ {
+  "id": "v-divest",
+  "remove_dx": [
+   "v-cede"
+  ],
+  "why": "cede (give up) is a near-synonym and could fill 'decided to ___ their shares'"
+ },
+ {
+  "id": "v-profusely",
+  "remove_dx": [
+   "v-incessantly"
+  ],
+  "why": "'thanked the mechanic incessantly, shaking his hand again and again' also fits"
+ },
+ {
+  "id": "v-heartily",
+  "remove_dx": [
+   "v-graciously"
+  ],
+  "why": "'Maria graciously agreed with the plan' also fits the cloze"
+ }
+]

@@ -1,0 +1,215 @@
+[
+ {
+  "id": "v-encumber",
+  "remove_dx": [
+   "v-circumscribe"
+  ],
+  "why": "'Too many rules can circumscribe a small business' also fits the cloze"
+ },
+ {
+  "id": "v-puckish",
+  "remove_dx": [
+   "v-buffoonish"
+  ],
+  "why": "'buffoonish comedian' sensibly fills the cloze"
+ },
+ {
+  "id": "v-circumlocution",
+  "remove_dx": [
+   "v-psychobabble"
+  ],
+  "why": "'used so much psychobabble that nobody understood' also fits the cloze"
+ },
+ {
+  "id": "v-circumlocution",
+  "set": {
+   "syn": [
+    "wordiness",
+    "verbosity"
+   ]
+  },
+  "why": "periphrasis is rarer than the headword; learners would not recognize it"
+ },
+ {
+  "id": "v-forthrightly",
+  "remove_dx": [
+   "v-guardedly"
+  ],
+  "why": "guardedly is a near-opposite of forthrightly (fails opposite question)"
+ },
+ {
+  "id": "v-parvenu",
+  "set": {
+   "def": "a person who has suddenly become rich or powerful but is not accepted by people already in that social class"
+  },
+  "why": "'not accepted by those of the same class' is ambiguous/confusing"
+ },
+ {
+  "id": "v-parvenu",
+  "remove_dx": [
+   "v-nonentity"
+  ],
+  "why": "'the elite club treated her as a nonentity' also fits the cloze"
+ },
+ {
+  "id": "v-simper",
+  "set": {
+   "ant": []
+  },
+  "why": "scowl/frown are opposites of smile, not of simper (an affected smile); forced"
+ },
+ {
+  "id": "v-primp",
+  "set": {
+   "syn": [
+    "preen",
+    "groom"
+   ]
+  },
+  "why": "prettify means to decorate a thing, not to groom oneself"
+ },
+ {
+  "id": "v-sanguinary",
+  "set": {
+   "syn": [
+    "bloody",
+    "murderous"
+   ]
+  },
+  "why": "bloodthirsty is the other sense (eager for violence), not 'involving much bloodshed'"
+ },
+ {
+  "id": "v-faddish",
+  "set": {
+   "def": "popular for only a short time, or too eager to follow passing trends"
+  },
+  "why": "'popular or eager for only a short time' is garbled"
+ },
+ {
+  "id": "v-craftily",
+  "set": {
+   "ant": [
+    "openly",
+    "honestly"
+   ]
+  },
+  "why": "naively is not an opposite of craftily"
+ },
+ {
+  "id": "v-vulgarian",
+  "set": {
+   "syn": [
+    "boor",
+    "lout"
+   ]
+  },
+  "why": "philistine means someone hostile to art/culture, a different sense"
+ },
+ {
+  "id": "v-careerism",
+  "set": {
+   "syn": [
+    "opportunism"
+   ],
+   "ex": [
+    "Critics accused the young official of careerism after he changed positions to win a promotion.",
+    "The novel mocks the careerism of young lawyers who will do anything to make partner."
+   ]
+  },
+  "why": "ambition is neutral, not a synonym; senators do not get 'promotions'"
+ },
+ {
+  "id": "v-somnolence",
+  "set": {
+   "syn": [
+    "sleepiness",
+    "drowsiness"
+   ]
+  },
+  "why": "lethargy is lack of energy, not sleepiness"
+ },
+ {
+  "id": "v-dyspeptic",
+  "remove_dx": [
+   "v-hypercritical"
+  ],
+  "why": "'The hypercritical old neighbor complained about everything' also fits the cloze"
+ },
+ {
+  "id": "v-incurious",
+  "remove_dx": [
+   "v-fainthearted"
+  ],
+  "why": "'A good journalist cannot be fainthearted' also fits the cloze"
+ },
+ {
+  "id": "v-forbearing",
+  "remove_dx": [
+   "v-levelheaded"
+  ],
+  "why": "'their levelheaded host just smiled and cleaned up' also fits the cloze"
+ },
+ {
+  "id": "v-unrelieved",
+  "remove_dx": [
+   "v-saturnine"
+  ],
+  "why": "'saturnine gloom' could plausibly fill the cloze"
+ },
+ {
+  "id": "v-sanctimony",
+  "remove_dx": [
+   "v-vituperation"
+  ],
+  "why": "'Tired of her brother's vituperation' also fits the cloze"
+ },
+ {
+  "id": "v-psychobabble",
+  "remove_dx": [
+   "v-pablum"
+  ],
+  "why": "'full of empty pablum ... with no practical advice' also fits the cloze"
+ },
+ {
+  "id": "v-lambent",
+  "set": {
+   "ant": [
+    "glaring"
+   ]
+  },
+  "why": "dim is not an opposite of softly glowing"
+ },
+ {
+  "id": "v-interpose",
+  "set": {
+   "ant": []
+  },
+  "why": "withdraw/remove are forced opposites"
+ },
+ {
+  "id": "v-potboiler",
+  "set": {
+   "syn": [
+    "hackwork"
+   ]
+  },
+  "why": "page-turner is a positive word for a gripping book, not a synonym"
+ },
+ {
+  "id": "v-extemporaneously",
+  "set": {
+   "def": "without having prepared or written anything out beforehand; made up on the spot"
+  },
+  "why": "def began with a participle ('speaking or performing'), not an adverb sense; also covers the jazz example"
+ },
+ {
+  "id": "v-disbar",
+  "set": {
+   "ex": [
+    "The attorney was disbarred after stealing money from his clients.",
+    "A state's highest court can disbar lawyers who lie to a judge."
+   ]
+  },
+  "why": "in most US states the court, not the state bar, disbars"
+ }
+]

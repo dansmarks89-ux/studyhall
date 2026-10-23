@@ -1,0 +1,289 @@
+[
+ {
+  "id": "v-unsparing",
+  "remove_dx": [
+   "v-unblinking"
+  ],
+  "why": "unblinking ~ unflinching (a listed syn); fits cloze 'unblinking in its criticism'"
+ },
+ {
+  "id": "v-slapdash",
+  "remove_dx": [
+   "v-execrable"
+  ],
+  "why": "'execrable work meant the roof started leaking' fits cloze"
+ },
+ {
+  "id": "v-oversimplify",
+  "remove_dx": [
+   "v-misconstrue"
+  ],
+  "why": "'would badly misconstrue a complex problem' fits cloze"
+ },
+ {
+  "id": "v-hotheaded",
+  "remove_dx": [
+   "v-wrongheaded"
+  ],
+  "why": "'Diego's wrongheaded reaction ... only made things worse' fits cloze"
+ },
+ {
+  "id": "v-lank",
+  "remove_dx": [
+   "v-willowy"
+  ],
+  "set": {
+   "ant": [
+    "bouncy",
+    "glossy"
+   ]
+  },
+  "why": "willowy def (tall and slim) matches the also sense; 'thick' is not an opposite of lank"
+ },
+ {
+  "id": "v-sagely",
+  "remove_dx": [
+   "v-glibly"
+  ],
+  "why": "'the old man said glibly' can fill the cloze"
+ },
+ {
+  "id": "v-uncommunicative",
+  "remove_dx": [
+   "v-crotchety"
+  ],
+  "why": "'grew quiet and crotchety, refusing to say what was bothering her' fits cloze"
+ },
+ {
+  "id": "v-artless",
+  "remove_dx": [
+   "v-slipshod"
+  ],
+  "why": "def (done carelessly) overlaps the also sense 'done without skill; clumsy'"
+ },
+ {
+  "id": "v-unworldly",
+  "remove_dx": [
+   "v-suggestible"
+  ],
+  "why": "def 'easily influenced, quick to accept ideas' overlaps 'innocent and trusting'"
+ },
+ {
+  "id": "v-inexpressible",
+  "remove_dx": [
+   "v-unendurable"
+  ],
+  "set": {
+   "ant": []
+  },
+  "why": "'his sadness was so unendurable' fits cloze; 'describable' is a forced opposite"
+ },
+ {
+  "id": "v-halfhearted",
+  "remove_dx": [
+   "v-purposeless"
+  ],
+  "set": {
+   "syn": [
+    "lukewarm",
+    "unenthusiastic",
+    "perfunctory"
+   ]
+  },
+  "why": "'purposeless defense' fits cloze; 'feeble' is not a synonym (weak, not lacking enthusiasm)"
+ },
+ {
+  "id": "v-disorient",
+  "remove_dx": [
+   "v-unnerve"
+  ],
+  "set": {
+   "syn": [
+    "confuse",
+    "bewilder",
+    "befuddle"
+   ]
+  },
+  "why": "'designed to unnerve the enemy soldiers' fits cloze; 'disorientate' is British-only"
+ },
+ {
+  "id": "v-flinty",
+  "remove_dx": [
+   "v-glowering"
+  ],
+  "why": "'a glowering man of few words who never ... let anyone see him smile' fits cloze"
+ },
+ {
+  "id": "v-maunder",
+  "remove_dx": [
+   "v-dawdle"
+  ],
+  "why": "dawdle def (move slowly or waste time) matches the also sense 'move or act slowly without a clear purpose'"
+ },
+ {
+  "id": "v-synecdoche",
+  "set": {
+   "ex": [
+    "Calling a car your “wheels” is a common synecdoche.",
+    "Asking for someone's “hand” in marriage is a synecdoche, since the hand stands for the whole person."
+   ]
+  },
+  "why": "'Washington' for the U.S. government is standard metonymy, not synecdoche (the item's own note draws that line)"
+ },
+ {
+  "id": "v-beneficence",
+  "set": {
+   "syn": [
+    "kindness",
+    "generosity",
+    "charity"
+   ]
+  },
+  "why": "syn 'benevolence' contradicts the note, which distinguishes it from beneficence"
+ },
+ {
+  "id": "v-mentee",
+  "set": {
+   "ex": [
+    "Each senior engineer is paired with a new hire and meets with that mentee every week.",
+    "Kwame stayed in touch with his former mentee long after she started her own company."
+   ],
+   "syn": [
+    "protégé"
+   ]
+  },
+  "why": "ex1 said the new engineer meets 'her mentee' (wrong role); apprentice/trainee are not synonyms"
+ },
+ {
+  "id": "v-swashbuckler",
+  "set": {
+   "ex": [
+    "Old Hollywood films often starred swashbucklers who leaped from ship to ship with sword in hand.",
+    "The novel's hero is a swashbuckler who duels his way across the rooftops of old Paris."
+   ]
+  },
+  "why": "ex2 used the 'film' sense (the also sense), not the defined sense"
+ },
+ {
+  "id": "v-bacchanal",
+  "set": {
+   "syn": [
+    "revel",
+    "carousal"
+   ]
+  },
+  "why": "'orgy' carries a sexual sense; spec bars sexual content"
+ },
+ {
+  "id": "v-absentmindedly",
+  "set": {
+   "syn": [
+    "distractedly",
+    "inattentively"
+   ]
+  },
+  "why": "'vaguely' is not a synonym"
+ },
+ {
+  "id": "v-perceptibly",
+  "set": {
+   "syn": [
+    "noticeably",
+    "visibly",
+    "appreciably"
+   ]
+  },
+  "why": "'markedly' means strongly, contradicting 'often only slightly'"
+ },
+ {
+  "id": "v-gentility",
+  "set": {
+   "syn": [
+    "refinement",
+    "elegance",
+    "politeness"
+   ]
+  },
+  "why": "'civility' is basic courtesy, lacks the refinement/class sense"
+ },
+ {
+  "id": "v-factotum",
+  "set": {
+   "syn": [
+    "jack-of-all-trades",
+    "handyman"
+   ]
+  },
+  "why": "'assistant' too broad to be a synonym"
+ },
+ {
+  "id": "v-protestation",
+  "set": {
+   "ant": []
+  },
+  "why": "'admission' is a forced opposite"
+ },
+ {
+  "id": "v-tautological",
+  "set": {
+   "ant": []
+  },
+  "why": "'concise' is not a true opposite of tautological"
+ },
+ {
+  "id": "v-coquettish",
+  "set": {
+   "ant": [
+    "reserved"
+   ]
+  },
+  "why": "'shy' is near 'coy', which is listed as a synonym"
+ },
+ {
+  "id": "v-straggler",
+  "set": {
+   "syn": [
+    "laggard",
+    "dawdler"
+   ]
+  },
+  "why": "'latecomer' means arriving late, not falling behind a group"
+ },
+ {
+  "id": "v-procrastinator",
+  "set": {
+   "syn": []
+  },
+  "why": "'dawdler' (slow mover) is not a synonym; 'delayer' is rare"
+ },
+ {
+  "id": "v-profiteer",
+  "set": {
+   "syn": [
+    "exploiter"
+   ]
+  },
+  "why": "'racketeer' (organized crime) and 'gouger' (rare) are not true/recognizable synonyms"
+ },
+ {
+  "id": "v-huckster",
+  "set": {
+   "syn": [
+    "peddler",
+    "hawker",
+    "hustler"
+   ]
+  },
+  "why": "'con man' is a swindler, not a seller/promoter"
+ },
+ {
+  "id": "v-workaday",
+  "set": {
+   "ant": [
+    "special",
+    "extraordinary"
+   ]
+  },
+  "why": "'exotic' is a forced opposite"
+ }
+]

@@ -1,0 +1,155 @@
+[
+ {
+  "id": "v-operate",
+  "set": {
+   "also": "for a business or service to be open and working (“the store operates seven days a week”)"
+  },
+  "why": "also combined two senses (surgery; business running) joined by 'or' — one plain sense per spec 12"
+ },
+ {
+  "id": "v-critical",
+  "set": {
+   "also": "extremely important, because a lot depends on it (“a critical decision”)"
+  },
+  "why": "also had two examples in the parenthesis; format needs one short example"
+ },
+ {
+  "id": "v-critical",
+  "remove_dx": [
+   "v-severe"
+  ],
+  "why": "(g) severe 'very serious or bad' overlaps the second sense (critical = very serious, as in critical condition)"
+ },
+ {
+  "id": "v-assets",
+  "remove_dx": [
+   "v-advantage"
+  ],
+  "why": "(g) advantage def matches the also sense 'a useful or valuable quality, skill, or person'"
+ },
+ {
+  "id": "v-significant",
+  "remove_dx": [
+   "v-critical"
+  ],
+  "why": "(e) critical (very important) is a near-synonym of significant"
+ },
+ {
+  "id": "v-bizarre",
+  "remove_dx": [
+   "v-conventional"
+  ],
+  "why": "(f) conventional ('traditional and ordinary') is a near-opposite of bizarre"
+ },
+ {
+  "id": "v-embrace",
+  "remove_dx": [
+   "v-abandon"
+  ],
+  "why": "(f) abandon (give up a plan/idea) is a near-opposite of embrace"
+ },
+ {
+  "id": "v-abandon",
+  "remove_dx": [
+   "v-proceed",
+   "v-withdraw"
+  ],
+  "why": "(f) proceed = continue, which is listed in ant; (e) withdraw (remove yourself from an activity) is a near-synonym of quit/give up"
+ },
+ {
+  "id": "v-acknowledge",
+  "remove_dx": [
+   "v-detect"
+  ],
+  "why": "(g) detect 'to notice' is too close to the also sense 'to show you have noticed someone'"
+ },
+ {
+  "id": "v-approximately",
+  "remove_dx": [
+   "v-specifically"
+  ],
+  "why": "(f) specifically ('clearly and exactly') is a near-opposite of approximately"
+ },
+ {
+  "id": "v-approximately",
+  "set": {
+   "syn": [
+    "about",
+    "roughly",
+    "around"
+   ]
+  },
+  "why": "'nearly' means almost (just under), not approximately (either side of a number)"
+ },
+ {
+  "id": "v-substantial",
+  "remove_dx": [
+   "v-subtle"
+  ],
+  "why": "(f) subtle ('small ... hard to notice') is a near-opposite of substantial"
+ },
+ {
+  "id": "v-prominent",
+  "remove_dx": [
+   "v-subtle"
+  ],
+  "why": "(f) subtle ('not obvious') is the opposite of prominent's 'easy to see because it stands out'"
+ },
+ {
+  "id": "v-inevitable",
+  "set": {
+   "ant": [
+    "avoidable"
+   ]
+  },
+  "why": "'unlikely' is not an opposite of inevitable (something can be avoidable yet likely); forced antonym"
+ },
+ {
+  "id": "v-justify",
+  "set": {
+   "syn": [
+    "defend",
+    "warrant"
+   ]
+  },
+  "why": "'explain' is not a synonym: explaining a choice does not mean showing it is right"
+ },
+ {
+  "id": "v-slightly",
+  "remove_dx": [
+   "v-entirely"
+  ],
+  "why": "(f) entirely ('completely') is a near-opposite of slightly"
+ },
+ {
+  "id": "v-harsh",
+  "remove_dx": [
+   "v-hostile"
+  ],
+  "why": "(e) hostile (angry, unfriendly) is close enough to harsh/cruel to be a defensible 'closest meaning' answer"
+ },
+ {
+  "id": "v-utterly",
+  "remove_dx": [
+   "v-virtually"
+  ],
+  "why": "(e) virtually 'almost completely' is a near-synonym of utterly 'completely'"
+ },
+ {
+  "id": "v-initiative",
+  "set": {
+   "syn": [
+    "drive",
+    "resourcefulness"
+   ]
+  },
+  "why": "'enterprise' in this sense is rare; learners know it as 'a business' and would be misled"
+ },
+ {
+  "id": "v-virtually",
+  "remove_dx": [
+   "v-utterly"
+  ],
+  "why": "(e) utterly 'completely' is too close to virtually 'almost completely' for a closest-meaning question"
+ }
+]

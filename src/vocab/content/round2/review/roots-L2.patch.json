@@ -1,0 +1,83 @@
+[
+ {
+  "id": "r-mega",
+  "remove_dx": [
+   "r-ultra"
+  ],
+  "why": "ultra- 'extremely' overlaps mega- 'huge/extremely' (megastar = extremely famous; 'mega rich')"
+ },
+ {
+  "id": "r-ultra",
+  "remove_dx": [
+   "r-mega"
+  ],
+  "why": "mega- overlaps ultra- 'extremely' in everyday use"
+ },
+ {
+  "id": "r-urb",
+  "remove_dx": [
+   "r-civ"
+  ],
+  "why": "civ (Latin civis/civitas) is the source of English 'city'; could be taken as a correct answer for 'city'"
+ },
+ {
+  "id": "r-mar",
+  "remove_dx": [
+   "r-hydr"
+  ],
+  "why": "hydr 'water' is too close to 'sea' for a learner; ambiguous distractor"
+ },
+ {
+  "id": "r-some",
+  "set": {
+   "def": "causing; tending to"
+  },
+  "why": "quarrelsome means tending to quarrel, not 'tending to cause'; new def covers all four example words (troublesome, tiresome, bothersome = causing; quarrelsome = tending to)"
+ },
+ {
+  "id": "r-some",
+  "remove_dx": [
+   "r-ous"
+  ],
+  "why": "-ous 'full of; having the quality of' overlaps -some (troublesome = full of trouble)"
+ },
+ {
+  "id": "r-spir",
+  "remove_dx": [
+   "r-psych"
+  ],
+  "why": "Latin spiritus also means spirit/soul (spirit is a listed word), so 'mind, soul' is defensible for spir"
+ },
+ {
+  "id": "r-retro",
+  "remove_dx": [
+   "r-ante",
+   "r-de"
+  ],
+  "why": "ante- 'before' overlaps 'back in time'; de- 'reverse' overlaps 'backward'"
+ },
+ {
+  "id": "r-equ-equi",
+  "set": {
+   "words": [
+    {
+     "w": "equator",
+     "m": "the imaginary line that divides the earth into two equal halves"
+    },
+    {
+     "w": "equivalent",
+     "m": "equal in value or meaning"
+    },
+    {
+     "w": "equilibrium",
+     "m": "a state of balance"
+    },
+    {
+     "w": "equidistant",
+     "m": "the same distance from two places"
+    }
+   ]
+  },
+  "why": "equator gloss did not show the 'equal' meaning; it divides the earth into equal halves (aequator, 'equalizer')"
+ }
+]

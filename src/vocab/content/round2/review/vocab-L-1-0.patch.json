@@ -1,0 +1,216 @@
+[
+ {
+  "id": "v-building",
+  "set": {
+   "def": "a house, school, or other place with walls and a roof"
+  },
+  "why": "'people make and use inside' is awkward and unclear"
+ },
+ {
+  "id": "v-sometimes",
+  "remove_dx": [
+   "v-tomorrow",
+   "v-tonight"
+  ],
+  "why": "'but tomorrow/tonight I ride my bike' also fills the cloze sensibly"
+ },
+ {
+  "id": "v-meet",
+  "set": {
+   "ex": [
+    "Nice to meet you, I'm Sofia.",
+    "Kwame met his best friend on the first day of school."
+   ]
+  },
+  "why": "ex2 'Let's meet at the park' shows the get-together sense, not the defined first-time sense"
+ },
+ {
+  "id": "v-step",
+  "set": {
+   "cloze": {
+    "s": "She walked slowly on the ice, one small ___ at a time.",
+    "a": "step"
+   }
+  },
+  "why": "cloze nearly repeated ex1 (baby's first step); spec wants a different sentence"
+ },
+ {
+  "id": "v-goal",
+  "set": {
+   "also": "a point scored when the ball goes into the net (“Diego scored a goal in the last minute.”)"
+  },
+  "why": "'got a goal' is unnatural; 'scored a goal' is the normal collocation"
+ },
+ {
+  "id": "v-district",
+  "set": {
+   "def": "one area of a city or country, marked off for a special purpose"
+  },
+  "why": "'with its own use' is vague/misleading; districts are marked off for school, voting or business purposes"
+ },
+ {
+  "id": "v-tomorrow",
+  "remove_dx": [
+   "v-tonight"
+  ],
+  "why": "'I will clean my room tonight' fills the cloze sensibly"
+ },
+ {
+  "id": "v-interesting",
+  "remove_dx": [
+   "v-amazing",
+   "v-difficult"
+  ],
+  "why": "'so amazing/so difficult that I read it twice' both fill the cloze sensibly"
+ },
+ {
+  "id": "v-political",
+  "remove_dx": [
+   "v-economic"
+  ],
+  "why": "'a long economic speech' can fill the cloze; overlapping 'about government/country' sense"
+ },
+ {
+  "id": "v-market",
+  "set": {
+   "def": "a place where people buy and sell food and other things"
+  },
+  "why": "'goods' is too hard for a level -1 definition"
+ },
+ {
+  "id": "v-current",
+  "remove_dx": [
+   "v-personal"
+  ],
+  "why": "'write your personal phone number' fills the cloze sensibly"
+ },
+ {
+  "id": "v-alone",
+  "remove_dx": [
+   "v-safe"
+  ],
+  "why": "'Malik was safe in the room' could fill the cloze"
+ },
+ {
+  "id": "v-natural",
+  "remove_dx": [
+   "v-green"
+  ],
+  "why": "'green materials' (eco-friendly) could fill the cloze"
+ },
+ {
+  "id": "v-crazy",
+  "remove_dx": [
+   "v-funny"
+  ],
+  "why": "'a funny thing to do' fills the cloze sensibly"
+ },
+ {
+  "id": "v-specific",
+  "remove_dx": [
+   "v-simple",
+   "v-easy"
+  ],
+  "why": "'give me simple/easy directions, like street names' fills the cloze sensibly"
+ },
+ {
+  "id": "v-double",
+  "set": {
+   "def": "to become, or to make something, two times as big"
+  },
+  "why": "ex2 'If you double three' is the transitive sense, which the def did not cover"
+ },
+ {
+  "id": "v-worth",
+  "set": {
+   "ex": [
+    "This old coin is worth a lot of money.",
+    "The show was great, so it was worth the long wait."
+   ]
+  },
+  "why": "'The long line was worth the wait' is illogical (the line is the wait)"
+ },
+ {
+  "id": "v-amazing",
+  "remove_dx": [
+   "v-beautiful"
+  ],
+  "why": "near-synonym in the praise sense; risky for (a)/(e)"
+ },
+ {
+  "id": "v-financial",
+  "remove_dx": [
+   "v-personal"
+  ],
+  "why": "'asked the bank for personal advice about saving money' fills the cloze sensibly"
+ },
+ {
+  "id": "v-writing",
+  "set": {
+   "ex": [
+    "Maria does her writing every morning before work.",
+    "Writing helps Jamal remember what he learned."
+   ]
+  },
+  "why": "'spends an hour on writing' is unnatural"
+ },
+ {
+  "id": "v-pass",
+  "set": {
+   "def": "to go by someone or something and keep moving",
+   "cloze": {
+    "s": "Every day, I ___ the bakery on my way to school.",
+    "a": "pass"
+   }
+  },
+  "why": "def contained 'past', an obvious relative of 'pass'; cloze 'Every day ... will' was ungrammatical"
+ },
+ {
+  "id": "v-individual",
+  "set": {
+   "cloze": {
+    "s": "Each ___ in the class will get a turn to speak.",
+    "a": "individual"
+   }
+  },
+  "remove_dx": [
+   "v-player"
+  ],
+  "why": "cloze nearly repeated ex2; 'won by one player' also fit the old cloze"
+ },
+ {
+  "id": "v-situation",
+  "remove_dx": [
+   "v-issue"
+  ],
+  "why": "'a dangerous issue for drivers' could fill the cloze"
+ },
+ {
+  "id": "v-travel",
+  "remove_dx": [
+   "v-drive"
+  ],
+  "why": "'wants to drive around the world' fills the cloze sensibly"
+ },
+ {
+  "id": "v-response",
+  "remove_dx": [
+   "v-action"
+  ],
+  "why": "'his only action was a shrug' fills the cloze sensibly"
+ },
+ {
+  "id": "v-ground",
+  "set": {
+   "ant": []
+  },
+  "why": "'sky' is a forced opposite of ground"
+ },
+ {
+  "id": "v-allow",
+  "set": {
+   "ant": []
+  },
+  "why": "'stop' is not a true opposite of allow"
+ }
+]

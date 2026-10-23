@@ -1,0 +1,112 @@
+[
+ {
+  "id": "f-atlantis",
+  "set": {
+   "story": "The Greek philosopher Plato, writing around 360 BCE, described Atlantis, a rich and powerful island nation that sank into the sea in a single day and night. Most scholars believe he invented it as a moral tale about pride and power."
+  },
+  "why": "'Scholars agree' overstates consensus, and the lesson is about hubris/the ideal state rather than 'government' generally"
+ },
+ {
+  "id": "f-kumbaya",
+  "set": {
+   "story": "“Kumbaya” (“come by here”) is an African American spiritual, first recorded in 1926, asking God to come and help people in need. It became a popular campfire song and was sung in the civil rights movement in the 1950s and 1960s; later, people began using it to mock calls for easy harmony."
+  },
+  "why": "Campfire popularity began in the late 1950s (Folksmiths 1957, Song Sampler 1956), not only the 1960s"
+ },
+ {
+  "id": "f-lightning-rod",
+  "set": {
+   "story": "In the 1750s, Benjamin Franklin promoted the lightning rod, a metal rod on a roof that catches lightning strikes and carries the electricity safely into the ground."
+  },
+  "why": "A lightning rod intercepts strikes that would hit the building; it does not meaningfully 'attract' lightning"
+ },
+ {
+  "id": "f-bogeyman",
+  "set": {
+   "story": "In folklore around the world, the bogeyman is a monster with no fixed appearance that adults say will come for children who misbehave. Spanish-speaking countries have a similar figure called El Coco or El Cuco.",
+   "syn": [
+    "monster"
+   ]
+  },
+  "why": "Bogeyman has no specific appearance rather than being 'shapeless'; 'bugbear' is too rare for a level-2 learner and today mostly means a pet peeve"
+ },
+ {
+  "id": "f-renaissance-man",
+  "set": {
+   "syn": [
+    "polymath",
+    "jack-of-all-trades"
+   ],
+   "ex": [
+    "A surgeon, jazz pianist and published poet, Dr. Okafor is a true Renaissance man.",
+    "Wei is a Renaissance man who builds furniture, speaks four languages and writes code."
+   ]
+  },
+  "why": "'all-rounder' is chiefly British (spec requires American usage); second example used 'Renaissance woman' instead of the term"
+ },
+ {
+  "id": "f-the-straight-and-narrow",
+  "set": {
+   "ex": [
+    "After his release from prison, Liam stayed on the straight and narrow, working two jobs and saving money.",
+    "The coach kept her young players on the straight and narrow with strict curfews and study hours."
+   ],
+   "cloze": {
+    "s": "Her mentor helped her quit gambling and stay on ___ for good.",
+    "a": "the straight and narrow"
+   }
+  },
+  "why": "Avoid pairing a Latino name with prison and an East Asian name with gambling (stereotype risk)"
+ },
+ {
+  "id": "f-fall-from-grace",
+  "set": {
+   "ex": [
+    "The star chef’s fall from grace began when health inspectors shut down his flagship restaurant.",
+    "Once the league’s top scorer, the striker suffered a fall from grace after failing a drug test."
+   ]
+  },
+  "why": "Avoid pairing a name associated with a specific group with a failed drug test (stereotype risk)"
+ },
+ {
+  "id": "f-gold-standard",
+  "set": {
+   "ex": [
+    "Randomized studies that compare a drug with a fake pill are the gold standard for testing new medicines.",
+    "Her hotel’s customer service has become the gold standard in the industry."
+   ]
+  },
+  "why": "The gold-standard trial is defined by randomization and control, not size; 'large studies' was inaccurate"
+ },
+ {
+  "id": "f-unicorn",
+  "remove_dx": [
+   "f-white-whale"
+  ],
+  "why": "Recruiters can plausibly call an elusive dream candidate their 'white whale', so it can fill the cloze"
+ },
+ {
+  "id": "f-white-whale",
+  "remove_dx": [
+   "f-unicorn"
+  ],
+  "why": "'unicorn' (rare, hard-to-find thing) can sensibly fill 'has been Jamal’s ___' and overlaps the elusive-goal sense"
+ },
+ {
+  "id": "f-nostradamus",
+  "remove_dx": [
+   "f-pundit"
+  ],
+  "why": "Pundits are known for making predictions; tempting overlap with 'a person who claims to predict the future'"
+ },
+ {
+  "id": "f-the-buck-stops-here",
+  "set": {
+   "ex": [
+    "When the product failed, the CEO told reporters, “The buck stops here,” and apologized.",
+    "As team captain, Aisha tells her teammates after every loss that the buck stops here, with her."
+   ]
+  },
+  "why": "Second example used 'the buck stops with her', which does not contain the full term"
+ }
+]

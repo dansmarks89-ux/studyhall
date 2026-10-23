@@ -1,0 +1,138 @@
+[
+ {
+  "id": "v-arbitrary",
+  "remove_dx": [
+   "v-deliberate"
+  ],
+  "why": "deliberate (done after careful thought) is a near-opposite of arbitrary; ambiguous in (f)"
+ },
+ {
+  "id": "v-autonomy",
+  "remove_dx": [
+   "v-reliance"
+  ],
+  "why": "reliance (depending on others) is a near-opposite of autonomy (ant: dependence)"
+ },
+ {
+  "id": "v-scrutiny",
+  "remove_dx": [
+   "v-oversight"
+  ],
+  "why": "oversight is a near-opposite (failing to notice) and its other sense 'supervision' is a near-synonym"
+ },
+ {
+  "id": "v-condemn",
+  "remove_dx": [
+   "v-impose"
+  ],
+  "why": "impose 'force a ... punishment on people' overlaps condemn's also-sense 'officially order a punishment' in (g)"
+ },
+ {
+  "id": "v-dubious",
+  "remove_dx": [
+   "v-plausible"
+  ],
+  "why": "plausible (likely to be true) is a near-opposite of dubious (open to doubt)"
+ },
+ {
+  "id": "v-candid",
+  "remove_dx": [
+   "v-dubious"
+  ],
+  "why": "dubious 'probably not honest' is a near-opposite of candid (honest)"
+ },
+ {
+  "id": "v-resilient",
+  "remove_dx": [
+   "v-susceptible"
+  ],
+  "why": "susceptible (easily harmed) is a near-opposite of resilient (ant: vulnerable)"
+ },
+ {
+  "id": "v-undermine",
+  "remove_dx": [
+   "v-consolidate"
+  ],
+  "why": "consolidate 'make a position stronger and more secure' is an opposite of undermine (ant: strengthen)"
+ },
+ {
+  "id": "v-uphold",
+  "remove_dx": [
+   "v-undermine"
+  ],
+  "why": "undermine (weaken a principle/decision) is a near-opposite of uphold"
+ },
+ {
+  "id": "v-adhere",
+  "remove_dx": [
+   "v-defy"
+  ],
+  "why": "defy 'refuse to obey a rule' is a direct opposite of adhere (ant: violate, disregard)"
+ },
+ {
+  "id": "v-concede",
+  "remove_dx": [
+   "v-prevail"
+  ],
+  "why": "prevail (win) is a near-opposite of concede in its 'admit you have lost' sense"
+ },
+ {
+  "id": "v-affinity",
+  "remove_dx": [
+   "v-resentment"
+  ],
+  "why": "resentment (bitter anger toward someone) could be read as the opposite of affinity (ant: dislike)"
+ },
+ {
+  "id": "v-rift",
+  "remove_dx": [
+   "v-affinity"
+  ],
+  "why": "affinity (feeling of connection) is a near-opposite of rift (break in a relationship)"
+ },
+ {
+  "id": "v-absurd",
+  "remove_dx": [
+   "v-credible"
+  ],
+  "why": "credible (believable) is a near-opposite of absurd (ant: reasonable, sensible)"
+ },
+ {
+  "id": "v-redundant",
+  "set": {
+   "also": "extra, and kept ready as a backup in case the main part fails (“the plane has redundant safety systems”)"
+  },
+  "why": "old also-sense was British-only (spec excludes British-only usage; not common for American learners); replaced with the common American technical sense"
+ },
+ {
+  "id": "v-paradox",
+  "set": {
+   "def": "a statement or situation that seems to say two opposite things at once, yet may still be true"
+  },
+  "why": "plain-word rule: 'self-contradictory' is harder than the headword"
+ },
+ {
+  "id": "v-sufficiently",
+  "set": {
+   "def": "enough for what is needed; to the degree that is required"
+  },
+  "why": "plain-word rule: defined with 'adequate', a hard near-synonym"
+ },
+ {
+  "id": "v-backlash",
+  "set": {
+   "ant": []
+  },
+  "why": "'support' is a forced opposite; backlash has no real antonym"
+ },
+ {
+  "id": "v-comprise",
+  "set": {
+   "syn": [
+    "consist of",
+    "contain"
+   ]
+  },
+  "why": "'include' is not a true synonym: comprise means made up of all the parts, include can mean only some"
+ }
+]

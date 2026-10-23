@@ -1,0 +1,215 @@
+[
+ {
+  "id": "v-earnest",
+  "remove_dx": [
+   "v-candid"
+  ],
+  "why": "candid (honest and direct) overlaps the def and fits the apology cloze"
+ },
+ {
+  "id": "v-align",
+  "remove_dx": [
+   "v-endorse"
+  ],
+  "why": "endorse def (publicly support) matches the also sense 'to agree with or support' for (g)"
+ },
+ {
+  "id": "v-usher",
+  "remove_dx": [
+   "v-evacuate"
+  ],
+  "why": "'evacuated the reporters out of the building' also fits the cloze"
+ },
+ {
+  "id": "v-persona",
+  "remove_dx": [
+   "v-aura"
+  ],
+  "why": "aura (quality a person gives off) is close to 'image a person shows others'; when in doubt remove"
+ },
+ {
+  "id": "v-hostility",
+  "remove_dx": [
+   "v-resentment"
+  ],
+  "why": "'met with jeers, insults, and resentment' also fits the cloze; overlapping angry-feeling def"
+ },
+ {
+  "id": "v-vastly",
+  "remove_dx": [
+   "v-drastically"
+  ],
+  "why": "'drastically different numbers' sensibly fits the cloze"
+ },
+ {
+  "id": "v-despise",
+  "remove_dx": [
+   "v-dread"
+  ],
+  "why": "'she truly dreads the taste of olives' sensibly fits the cloze"
+ },
+ {
+  "id": "v-picturesque",
+  "remove_dx": [
+   "v-sublime"
+  ],
+  "why": "sublime (great beauty) overlaps in (a)/(b) and could be argued for the postcard cloze"
+ },
+ {
+  "id": "v-lure",
+  "remove_dx": [
+   "v-manipulate"
+  ],
+  "why": "'The scammers manipulated victims with promises of easy money' fits the cloze"
+ },
+ {
+  "id": "v-competence",
+  "remove_dx": [
+   "v-diligence"
+  ],
+  "why": "'The surgeon's skill and diligence in the operating room' fits the cloze"
+ },
+ {
+  "id": "v-expressly",
+  "remove_dx": [
+   "v-purposely"
+  ],
+  "why": "purposely ('on purpose') could be chosen for the also sense 'for one particular purpose only' in (g)"
+ },
+ {
+  "id": "v-contradictory",
+  "remove_dx": [
+   "v-ambiguous"
+  ],
+  "why": "'the data is ambiguous' also sensibly fits the cloze"
+ },
+ {
+  "id": "v-divert",
+  "remove_dx": [
+   "v-navigate"
+  ],
+  "why": "'the pilot had to navigate the flight to another airport' could fit the cloze"
+ },
+ {
+  "id": "v-feud",
+  "remove_dx": [
+   "v-hostility"
+  ],
+  "why": "'The neighbors' hostility began with a fence dispute' fits the cloze; overlapping def"
+ },
+ {
+  "id": "v-periodically",
+  "remove_dx": [
+   "v-seldom"
+  ],
+  "why": "'updates itself seldom, about once a month' is arguable in the cloze; when in doubt remove"
+ },
+ {
+  "id": "v-compassionate",
+  "set": {
+   "ex": [
+    "The compassionate nurse held the frightened patient's hand during the procedure.",
+    "Kwame's compassionate words helped his grieving friend feel less alone after the funeral."
+   ]
+  },
+  "why": "'compassionate leave' is a British fixed term (US: bereavement leave) and does not show the meaning"
+ },
+ {
+  "id": "v-coherent",
+  "set": {
+   "ex": [
+    "Priya turned her messy notes into a coherent report that everyone on the team could follow.",
+    "Wei's first essay jumped from idea to idea, but his second draft was far more coherent."
+   ]
+  },
+  "why": "ex2 used a different sense (patient able to think and speak clearly), not the defined 'logical, parts fit together' sense"
+ },
+ {
+  "id": "v-bribe",
+  "set": {
+   "ex": [
+    "The businessman tried to bribe a city official to approve his building plans.",
+    "The driver was arrested after he tried to bribe a police officer with cash to avoid a ticket."
+   ]
+  },
+  "why": "ex2 (bribing kids with candy to clean rooms) contradicts the def 'to do something wrong or against the rules'"
+ },
+ {
+  "id": "v-feud",
+  "set": {
+   "ex": [
+    "The two families have had a feud over the land for three generations.",
+    "The two talk-show hosts' public feud played out on social media for months."
+   ]
+  },
+  "why": "'rappers' feud' leans on a genre cliché; neutral replacement"
+ },
+ {
+  "id": "v-muster",
+  "set": {
+   "also": "to come together, or bring a group such as soldiers together, in one place (“The troops mustered at dawn.”)"
+  },
+  "why": "the example uses the intransitive sense (troops gathered), but the def said only 'to bring ... together'"
+ },
+ {
+  "id": "v-monumental",
+  "set": {
+   "syn": [
+    "enormous",
+    "huge",
+    "tremendous"
+   ]
+  },
+  "why": "'historic' is not a synonym in this sense (a monumental mistake is not historic)"
+ },
+ {
+  "id": "v-accusation",
+  "set": {
+   "ant": []
+  },
+  "why": "'denial' is a reply to an accusation, not its opposite; forced antonym"
+ },
+ {
+  "id": "v-casualty",
+  "set": {
+   "ant": []
+  },
+  "why": "'survivor' is not an opposite: injured people who survive are also casualties"
+ },
+ {
+  "id": "v-desperation",
+  "set": {
+   "syn": [
+    "despair",
+    "hopelessness"
+   ]
+  },
+  "why": "'anguish' means severe pain/suffering, not the ready-to-try-anything hopelessness defined"
+ },
+ {
+  "id": "v-posture",
+  "set": {
+   "syn": [
+    "stance",
+    "bearing"
+   ]
+  },
+  "why": "'carriage' in this sense is rare and most learners would not recognize it as a synonym"
+ },
+ {
+  "id": "v-bureaucratic",
+  "set": {
+   "syn": [
+    "administrative"
+   ]
+  },
+  "why": "'official' is not a synonym of the defined 'too many slow, complicated rules' sense"
+ },
+ {
+  "id": "v-progressively",
+  "remove_dx": [
+   "v-comparatively"
+  ],
+  "why": "'the days grew comparatively shorter' can sensibly fill the cloze"
+ }
+]

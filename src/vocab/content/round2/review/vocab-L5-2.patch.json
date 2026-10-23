@@ -1,0 +1,283 @@
+[
+ {
+  "id": "v-flamboyant",
+  "remove_dx": [
+   "v-opulent"
+  ],
+  "why": "opulent (rich, showy, expensive-looking) is too close to flamboyant for def/syn questions"
+ },
+ {
+  "id": "v-flamboyant",
+  "set": {
+   "syn": [
+    "showy",
+    "flashy",
+    "colorful"
+   ]
+  },
+  "why": "'dazzling' means impressive/brilliant, not a true synonym of flamboyant"
+ },
+ {
+  "id": "v-devious",
+  "remove_dx": [
+   "v-sordid"
+  ],
+  "why": "'her sordid plan' also fits the forging-emails cloze"
+ },
+ {
+  "id": "v-fanciful",
+  "set": {
+   "syn": [
+    "imaginative",
+    "unrealistic",
+    "whimsical"
+   ]
+  },
+  "why": "learners read 'fantastic' as 'great'; misleading as a tested synonym"
+ },
+ {
+  "id": "v-docile",
+  "remove_dx": [
+   "v-intractable"
+  ],
+  "why": "intractable is the standard antonym of docile/tractable (test f)"
+ },
+ {
+  "id": "v-precocious",
+  "set": {
+   "syn": [
+    "advanced",
+    "mature"
+   ]
+  },
+  "why": "'gifted' means talented, not early-developing; not a true synonym"
+ },
+ {
+  "id": "v-preside",
+  "remove_dx": [
+   "v-convene"
+  ],
+  "why": "convene (call a formal meeting) overlaps preside's meeting sense"
+ },
+ {
+  "id": "v-preside",
+  "set": {
+   "ex": [
+    "Judge Okafor will preside over the trial when it begins next month.",
+    "The eldest member of the family presided at the wedding dinner."
+   ],
+   "also": "to be in charge while something happens over a period of time (“The CEO presided over years of growth.”)"
+  },
+  "why": "ex1 was 7 words (spec 8-25); 'also' wrongly restricted the sense to 'a period of change'"
+ },
+ {
+  "id": "v-accrue",
+  "set": {
+   "ant": []
+  },
+  "why": "decrease/diminish are not real opposites of accrue"
+ },
+ {
+  "id": "v-indict",
+  "set": {
+   "syn": [
+    "charge",
+    "accuse"
+   ]
+  },
+  "why": "'prosecute' (carry on a court case) is not the same as indict"
+ },
+ {
+  "id": "v-arrears",
+  "set": {
+   "syn": [
+    "debt"
+   ]
+  },
+  "why": "'dues' are regular fees for membership, not overdue money"
+ },
+ {
+  "id": "v-juxtaposition",
+  "set": {
+   "syn": [
+    "contrast",
+    "pairing"
+   ]
+  },
+  "why": "'comparison' is not a synonym of placing side by side"
+ },
+ {
+  "id": "v-adage",
+  "set": {
+   "syn": [
+    "saying",
+    "proverb",
+    "maxim"
+   ]
+  },
+  "why": "a motto is a guiding phrase of a person/group, not an old saying of general truth"
+ },
+ {
+  "id": "v-transgression",
+  "set": {
+   "ex": [
+    "The senator publicly apologized for his past transgressions and promised to do better.",
+    "Even a minor transgression, like being late, could get a player benched."
+   ]
+  },
+  "why": "ex1 was 7 words (spec 8-25)"
+ },
+ {
+  "id": "v-indiscriminately",
+  "set": {
+   "syn": [
+    "randomly",
+    "carelessly",
+    "haphazardly"
+   ]
+  },
+  "why": "'wantonly' means deliberately and cruelly, not indiscriminately"
+ },
+ {
+  "id": "v-sordid",
+  "remove_dx": [
+   "v-decadent"
+  ],
+  "why": "decadent (falling moral standards) overlaps sordid's def question"
+ },
+ {
+  "id": "v-banish",
+  "remove_dx": [
+   "v-quell"
+  ],
+  "why": "quell's def (calm a strong feeling such as fear) matches banish's 'also' sense (test g)"
+ },
+ {
+  "id": "v-plummet",
+  "remove_dx": [
+   "v-topple"
+  ],
+  "why": "topple ('to fall over') tempts on 'fall very quickly' def question"
+ },
+ {
+  "id": "v-foyer",
+  "set": {
+   "syn": [
+    "lobby",
+    "entrance hall",
+    "entryway"
+   ]
+  },
+  "why": "'vestibule' is rarer than foyer; learners would not recognize it"
+ },
+ {
+  "id": "v-cede",
+  "remove_dx": [
+   "v-forsake",
+   "v-bestow"
+  ],
+  "why": "forsake ('give up something completely') and bestow ('give something to someone') overlap cede's def/cloze"
+ },
+ {
+  "id": "v-pragmatism",
+  "set": {
+   "syn": [
+    "practicality",
+    "realism"
+   ]
+  },
+  "why": "'sense' is too vague to be a tested synonym"
+ },
+ {
+  "id": "v-scathing",
+  "remove_dx": [
+   "v-belligerent"
+  ],
+  "why": "'a belligerent speech' could also fill the coach cloze"
+ },
+ {
+  "id": "v-combative",
+  "remove_dx": [
+   "v-surly"
+  ],
+  "why": "surly (bad-tempered, rude) overlaps combative and could fit the cloze"
+ },
+ {
+  "id": "v-impassioned",
+  "remove_dx": [
+   "v-lackluster"
+  ],
+  "why": "lackluster (lacking energy/excitement) is a near-opposite (test f)"
+ },
+ {
+  "id": "v-intractable",
+  "remove_dx": [
+   "v-insurmountable"
+  ],
+  "why": "insurmountable is a near-synonym and fits 'the ___ conflict'"
+ },
+ {
+  "id": "v-abysmal",
+  "remove_dx": [
+   "v-shoddy"
+  ],
+  "why": "shoddy (badly made or done) is a near-synonym of abysmal"
+ },
+ {
+  "id": "v-opulent",
+  "remove_dx": [
+   "v-drab"
+  ],
+  "why": "drab is a near-opposite of opulent (test f)"
+ },
+ {
+  "id": "v-bonanza",
+  "set": {
+   "def": "something that suddenly brings great wealth, profit, or good luck"
+  },
+  "why": "a bonanza is the source of sudden wealth itself, not a 'chance' to get it (examples show the toy/storm itself)"
+ },
+ {
+  "id": "v-erstwhile",
+  "set": {
+   "cloze": {
+    "s": "The two ___ enemies now run a business together and laugh about their old fights.",
+    "a": "erstwhile"
+   }
+  },
+  "why": "'a museum about its ___ workers' is unnatural usage and a weak context"
+ },
+ {
+  "id": "v-windfall",
+  "set": {
+   "ant": []
+  },
+  "why": "loss/setback are forced opposites"
+ },
+ {
+  "id": "v-minuscule",
+  "remove_dx": [
+   "v-paltry"
+  ],
+  "why": "paltry (very small in amount) is a near-synonym (test e, def question)"
+ },
+ {
+  "id": "v-infamy",
+  "set": {
+   "ant": [
+    "honor"
+   ]
+  },
+  "why": "ant listed 'fame'/'renown' while the item's own note says infamy is not the opposite of fame"
+ },
+ {
+  "id": "v-orator",
+  "set": {
+   "syn": [
+    "speaker",
+    "speechmaker"
+   ]
+  },
+  "why": "'lecturer' is a teacher who gives talks; 'rhetorician' is rarer than orator"
+ }
+]

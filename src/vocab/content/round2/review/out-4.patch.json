@@ -1,0 +1,610 @@
+[
+ {
+  "id": "v-cantankerous",
+  "set": {
+   "def": "bad-tempered, always ready to argue, and hard to deal with, often as a lasting habit",
+   "syn": [
+    "irritable",
+    "grouchy",
+    "quarrelsome"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-fractious",
+  "set": {
+   "def": "easily upset and hard to control, often arguing or causing trouble; also used of groups that keep fighting among themselves"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-serendipitous",
+  "set": {
+   "syn": [
+    "fortunate",
+    "lucky",
+    "fortuitous"
+   ]
+  },
+  "why": "chance is not a clean adjective synonym"
+ },
+ {
+  "id": "v-quixotic",
+  "set": {
+   "def": "full of noble but unrealistic hopes and plans that have little chance of working in the real world"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-germane",
+  "set": {
+   "syn": [
+    "relevant",
+    "pertinent",
+    "applicable"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-dissolute",
+  "set": {
+   "ant": [
+    "virtuous",
+    "moral"
+   ]
+  },
+  "why": "drop obscure ant"
+ },
+ {
+  "id": "v-impassive",
+  "set": {
+   "def": "showing no emotion or reaction, especially on the face; calm and hard to read"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-acerbic",
+  "set": {
+   "def": "sharp, biting, and harsh in speech or humor; critical in a clever, mocking way",
+   "syn": [
+    "caustic",
+    "cutting",
+    "sardonic"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-adroit",
+  "set": {
+   "def": "clever and skilled, especially in handling difficult situations or using the hands",
+   "ant": [
+    "clumsy",
+    "inept"
+   ]
+  },
+  "why": "plainer def; drop obscure ant"
+ },
+ {
+  "id": "v-cloying",
+  "set": {
+   "def": "too sweet or too sentimental, to the point of becoming unpleasant or almost making you feel sick",
+   "syn": [
+    "saccharine",
+    "sickly",
+    "syrupy"
+   ],
+   "ant": []
+  },
+  "why": "plainer def; drop obscure syn; subtle/understated not true opposites"
+ },
+ {
+  "id": "v-redolent",
+  "set": {
+   "ant": []
+  },
+  "why": "odorless only opposes the minor smell sense"
+ },
+ {
+  "id": "v-bellicose",
+  "set": {
+   "ant": [
+    "peaceful",
+    "conciliatory"
+   ]
+  },
+  "why": "pacific would be misread as the ocean"
+ },
+ {
+  "id": "v-indolent",
+  "set": {
+   "also": "of a disease, developing slowly and causing little pain or few symptoms (“an indolent tumor”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-fatuous",
+  "set": {
+   "def": "silly and pointless, often in a self-satisfied way that shows little thought; foolish"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-lackadaisical",
+  "set": {
+   "def": "lacking enthusiasm and effort; careless in a relaxed way, as if it does not matter"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-parsimonious",
+  "set": {
+   "def": "extremely unwilling to spend money or use resources, even when spending is needed",
+   "also": "of an explanation or theory, as simple as possible while still fitting the facts (“the most parsimonious explanation”)"
+  },
+  "why": "plainer def; also format without the term"
+ },
+ {
+  "id": "v-ebullient",
+  "set": {
+   "def": "very cheerful and bursting with energy and enthusiasm"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-obsequious",
+  "set": {
+   "syn": [
+    "servile",
+    "fawning",
+    "sycophantic"
+   ],
+   "ant": []
+  },
+  "why": "drop obscure syn; assertive/independent not true opposites"
+ },
+ {
+  "id": "v-pugnacious",
+  "set": {
+   "def": "eager to argue or fight, and quick to start a conflict"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-garrulous",
+  "set": {
+   "def": "talking far too much, especially about things that do not matter",
+   "syn": [
+    "talkative",
+    "chatty",
+    "loquacious"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-desultory",
+  "set": {
+   "def": "lacking a plan, purpose, or enthusiasm; jumping from one thing to another without a clear aim",
+   "syn": [
+    "halfhearted",
+    "aimless",
+    "random"
+   ]
+  },
+  "why": "plainer def; casual not a true synonym"
+ },
+ {
+  "id": "v-abstruse",
+  "set": {
+   "syn": [
+    "obscure",
+    "esoteric",
+    "arcane"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-rebuff",
+  "set": {
+   "def": "to reject an offer, request, or friendly approach in a sharp or rude way",
+   "also": "a sharp or rude refusal of an offer or request (“Her proposal met with a sharp rebuff”)"
+  },
+  "why": "plainer def; also format"
+ },
+ {
+  "id": "v-lampoon",
+  "set": {
+   "def": "to publicly make fun of a person or thing, often in writing, cartoons, or comedy that makes their faults look silly",
+   "ant": [
+    "praise"
+   ],
+   "also": "a piece of writing, art, or comedy that mocks a person or thing (“The show was a sharp lampoon of office life”)"
+  },
+  "why": "plainer def; honor not a true opposite; also format"
+ },
+ {
+  "id": "v-coddle",
+  "set": {
+   "def": "to treat someone too gently and protect them too much, giving them whatever they want",
+   "syn": [
+    "pamper",
+    "spoil",
+    "indulge"
+   ],
+   "also": "to cook an egg gently in water just below boiling (“She coddled the eggs for breakfast”)"
+  },
+  "why": "plainer def; drop syn containing the term; also format"
+ },
+ {
+  "id": "v-entreat",
+  "set": {
+   "ant": []
+  },
+  "why": "command/demand are not opposites of begging"
+ },
+ {
+  "id": "v-galvanize",
+  "set": {
+   "def": "to shock or move people into taking sudden action",
+   "also": "to coat iron or steel with zinc to protect it from rust (“galvanized steel pipes”)"
+  },
+  "why": "plainer def; also format"
+ },
+ {
+  "id": "v-impinge",
+  "set": {
+   "def": "to have an effect on something, often by limiting it or cutting into it"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-outstrip",
+  "set": {
+   "def": "to exceed someone or something in amount or ability, or to move faster and get ahead"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-admonish",
+  "set": {
+   "def": "to warn someone or tell them firmly that they did wrong, though usually not harshly"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-bemoan",
+  "set": {
+   "syn": [
+    "lament",
+    "deplore",
+    "regret"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-inculcate",
+  "set": {
+   "syn": [
+    "instill",
+    "implant",
+    "ingrain"
+   ]
+  },
+  "why": "impress is misleading here"
+ },
+ {
+  "id": "v-venerate",
+  "set": {
+   "def": "to treat with very deep respect and honor, often because of age or holiness"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-regale",
+  "set": {
+   "def": "to entertain someone with stories, jokes, or lively talk, often at length"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-deign",
+  "set": {
+   "def": "to do something one considers beneath one's dignity, often reluctantly or with obvious unwillingness"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-renege",
+  "set": {
+   "syn": [
+    "back out",
+    "go back on"
+   ]
+  },
+  "why": "default is not a true synonym"
+ },
+ {
+  "id": "v-flout",
+  "set": {
+   "def": "to openly ignore or break a rule, law, or custom, showing no respect for it"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-ingratiate",
+  "set": {
+   "def": "to deliberately try to win someone's favor or approval, often with praise one does not really mean"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-commiserate",
+  "set": {
+   "def": "to express sympathy or share sadness with someone about something bad that has happened to them",
+   "syn": [
+    "sympathize",
+    "console"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-cajole",
+  "set": {
+   "def": "to gently persuade someone to do something through praise, promises, or repeated urging",
+   "syn": [
+    "coax",
+    "persuade",
+    "sweet-talk"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-presage",
+  "set": {
+   "also": "a sign or warning that something will happen (“a presage of trouble to come”)"
+  },
+  "why": "also format, plainer"
+ },
+ {
+  "id": "v-chide",
+  "set": {
+   "def": "to tell someone mildly that they have done something wrong; to criticize gently"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-indelibly",
+  "set": {
+   "syn": [
+    "permanently",
+    "lastingly",
+    "enduringly"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-ruefully",
+  "set": {
+   "def": "in a way that shows regret or sorrow, often with a touch of sad, self-mocking humor",
+   "syn": [
+    "regretfully",
+    "sorrowfully",
+    "wryly"
+   ]
+  },
+  "why": "plainer def; sheepishly not a true synonym"
+ },
+ {
+  "id": "v-furtively",
+  "set": {
+   "def": "in a secret, sneaky way, trying not to be noticed"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-indubitably",
+  "set": {
+   "def": "without any doubt; certainly and beyond question"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-askance",
+  "set": {
+   "def": "with suspicion, distrust, or a feeling of not approving, as in a doubtful sideways look"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-umbrage",
+  "set": {
+   "def": "a feeling of being offended or upset, especially by something seen as an insult"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-linchpin",
+  "set": {
+   "also": "a pin passed through the end of an axle to keep a wheel in place (“the cart's linchpin had snapped”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-chutzpah",
+  "set": {
+   "def": "extreme boldness or nerve, without shame, which people may either admire or find rude"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-neophyte",
+  "set": {
+   "syn": [
+    "novice",
+    "beginner",
+    "newcomer"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-largesse",
+  "set": {
+   "syn": [
+    "generosity",
+    "bounty"
+   ]
+  },
+  "why": "drop obscure syn; philanthropy is a different idea"
+ },
+ {
+  "id": "v-interloper",
+  "set": {
+   "def": "someone who enters or gets involved in a place or situation where they are not wanted or do not belong"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-kerfuffle",
+  "set": {
+   "def": "a noisy fuss or stir, especially one caused by a minor disagreement"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-equivocation",
+  "set": {
+   "syn": [
+    "evasion",
+    "hedging",
+    "ambiguity"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-dilettante",
+  "set": {
+   "def": "a person who takes up an art or subject for fun, without serious commitment or deep knowledge",
+   "syn": [
+    "dabbler",
+    "amateur"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-imprimatur",
+  "set": {
+   "also": "an official license from the Catholic Church to print a religious book (“The book carries the bishop's imprimatur”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-bombast",
+  "set": {
+   "def": "grand, puffed-up language that sounds important but has little real meaning",
+   "syn": [
+    "pomposity",
+    "bluster",
+    "hot air"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-repartee",
+  "set": {
+   "syn": [
+    "banter",
+    "wit",
+    "wordplay"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-chicanery",
+  "set": {
+   "def": "the use of clever tricks or dishonest methods to get what one wants"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-nonchalance",
+  "set": {
+   "syn": [
+    "composure",
+    "coolness",
+    "indifference"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-profligacy",
+  "set": {
+   "def": "reckless waste, especially spending money or resources far too freely",
+   "syn": [
+    "extravagance",
+    "wastefulness"
+   ],
+   "also": "wild, immoral living devoted to pleasure (“a life of profligacy and excess”)"
+  },
+  "why": "plainer def; drop obscure/inexact syn; also format"
+ },
+ {
+  "id": "v-recrimination",
+  "set": {
+   "syn": [
+    "blame"
+   ]
+  },
+  "why": "drop nonstandard syn"
+ },
+ {
+  "id": "v-sycophant",
+  "set": {
+   "def": "a person who praises powerful people too much, in order to gain favor or advantage",
+   "ant": []
+  },
+  "why": "plainer def; critic is not a true opposite"
+ },
+ {
+  "id": "v-bugbear",
+  "set": {
+   "def": "a thing that keeps causing irritation, worry, or fear, often over a long time"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-verisimilitude",
+  "set": {
+   "syn": [
+    "realism",
+    "authenticity",
+    "plausibility"
+   ]
+  },
+  "why": "drop nonstandard syn"
+ },
+ {
+  "id": "v-sophistry",
+  "set": {
+   "def": "clever-sounding but false or misleading reasoning, often used to trick people",
+   "syn": [
+    "specious reasoning",
+    "fallacy"
+   ]
+  },
+  "why": "plainer def; drop obscure/inexact syn"
+ }
+]

@@ -1,0 +1,235 @@
+[
+ {
+  "id": "v-evident",
+  "remove_dx": [
+   "v-obscure"
+  ],
+  "why": "obscure ('unclear') is a near-opposite of evident; also correct for (f)"
+ },
+ {
+  "id": "v-obscure",
+  "remove_dx": [
+   "v-notorious"
+  ],
+  "why": "notorious ('widely known') is an opposite of obscure ('little known'); also correct for (f)"
+ },
+ {
+  "id": "v-tendency",
+  "remove_dx": [
+   "v-instinct"
+  ],
+  "why": "instinct ('a natural way of behaving') overlaps tendency's def; also correct for (a)/(e)"
+ },
+ {
+  "id": "v-facilitate",
+  "remove_dx": [
+   "v-restrict"
+  ],
+  "why": "restrict ('limit') is a near-opposite of facilitate; also correct for (f)"
+ },
+ {
+  "id": "v-sustain",
+  "remove_dx": [
+   "v-neglect"
+  ],
+  "why": "neglect ('fail to give care') is a near-opposite of sustain ('support'); risky for (f)"
+ },
+ {
+  "id": "v-covert",
+  "remove_dx": [
+   "v-candid"
+  ],
+  "why": "candid ('honest and open') is a near-opposite of covert; risky for (f)"
+ },
+ {
+  "id": "v-prevail",
+  "remove_dx": [
+   "v-concede"
+  ],
+  "why": "concede ('admit you have lost') is a near-opposite of prevail ('win'); also correct for (f)"
+ },
+ {
+  "id": "v-conform",
+  "remove_dx": [
+   "v-defy"
+  ],
+  "why": "defy is the opposite of conform; also correct for (f)"
+ },
+ {
+  "id": "v-defy",
+  "remove_dx": [
+   "v-conform"
+  ],
+  "why": "conform is the opposite of defy; also correct for (f)"
+ },
+ {
+  "id": "v-consolidate",
+  "remove_dx": [
+   "v-undermine"
+  ],
+  "why": "undermine ('make weaker') is a near-opposite of consolidate ('make stronger'); also correct for (f)"
+ },
+ {
+  "id": "v-invariably",
+  "remove_dx": [
+   "v-seldom"
+  ],
+  "why": "seldom ('not often') is an opposite of invariably ('always'); also correct for (f)"
+ },
+ {
+  "id": "v-rigorous",
+  "remove_dx": [
+   "v-prudent"
+  ],
+  "why": "prudent ('careful and sensible') overlaps rigorous ('thorough and careful'); risky for (e)"
+ },
+ {
+  "id": "v-tendency",
+  "set": {
+   "def": "a habit or pattern of being likely to act or happen in a certain way"
+  },
+  "why": "plain-word: 'likelihood' is no more common than the headword"
+ },
+ {
+  "id": "v-tolerate",
+  "set": {
+   "def": "to accept or put up with something you do not like, without trying to stop it"
+  },
+  "why": "plain-word: 'unpleasant'/'disliked' are no more common than the headword"
+ },
+ {
+  "id": "v-substantially",
+  "set": {
+   "def": "by a large amount; to a great degree"
+  },
+  "why": "plain-word: 'considerably' is rarer than the headword"
+ },
+ {
+  "id": "v-rigorous",
+  "set": {
+   "def": "very careful and complete, following strict rules or standards"
+  },
+  "why": "plain-word: 'extremely thorough' defines with a near-equal word; same meaning in plainer words"
+ },
+ {
+  "id": "v-niche",
+  "set": {
+   "def": "a small, special area of work or business that suits a particular person, product, or interest"
+  },
+  "why": "plain-word: 'specialized' replaced with plainer wording"
+ },
+ {
+  "id": "v-mutually",
+  "set": {
+   "def": "in a way that is felt, done, or shared by each of two or more people or groups"
+  },
+  "why": "plain-word: 'parties' (legal sense) is hard for learners"
+ },
+ {
+  "id": "v-arrogant",
+  "set": {
+   "syn": [
+    "conceited",
+    "cocky",
+    "self-important"
+   ]
+  },
+  "why": "syn: 'haughty' is too rare for a level-2 learner to recognize"
+ },
+ {
+  "id": "v-blunt",
+  "set": {
+   "ant": [
+    "diplomatic"
+   ]
+  },
+  "why": "ant: 'tactful' is too rare for a level-2 learner"
+ },
+ {
+  "id": "v-transparency",
+  "set": {
+   "syn": [
+    "openness"
+   ]
+  },
+  "why": "syn: 'candor' is too rare for a level-2 learner"
+ },
+ {
+  "id": "v-hesitate",
+  "set": {
+   "syn": [
+    "pause",
+    "hold back"
+   ]
+  },
+  "why": "syn: 'waver'/'falter' are too rare for a level-2 learner"
+ },
+ {
+  "id": "v-obsolete",
+  "set": {
+   "syn": [
+    "outdated",
+    "antiquated"
+   ]
+  },
+  "why": "syn: 'outmoded' is too rare for a level-3 learner"
+ },
+ {
+  "id": "v-aftermath",
+  "set": {
+   "syn": [
+    "consequences",
+    "aftereffects"
+   ]
+  },
+  "why": "syn: 'wake' only means this inside the phrase 'in the wake of'; alone it misleads"
+ },
+ {
+  "id": "v-anomaly",
+  "set": {
+   "syn": [
+    "oddity",
+    "aberration",
+    "exception"
+   ]
+  },
+  "why": "syn: 'irregularity' is rare and less precise"
+ },
+ {
+  "id": "v-undertake",
+  "set": {
+   "syn": [
+    "take on",
+    "tackle",
+    "embark on"
+   ]
+  },
+  "why": "syn: 'assume' is not a synonym in the main sense (begin a task)"
+ },
+ {
+  "id": "v-precedent",
+  "set": {
+   "syn": [
+    "model",
+    "example"
+   ]
+  },
+  "why": "syn: 'standard' is not a true synonym of precedent"
+ },
+ {
+  "id": "v-reconcile",
+  "set": {
+   "ant": []
+  },
+  "why": "ant: 'separate' is a forced opposite of restoring friendly relations"
+ },
+ {
+  "id": "v-obstacle",
+  "set": {
+   "ant": [
+    "aid"
+   ]
+  },
+  "why": "ant: 'advantage' is a forced opposite of obstacle"
+ }
+]

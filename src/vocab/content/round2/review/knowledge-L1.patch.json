@@ -1,0 +1,117 @@
+[
+ {
+  "id": "k-portrait",
+  "set": {
+   "cloze": {
+    "s": "The artist spent weeks painting a ___ of the mayor, getting her face and smile just right.",
+    "a": "portrait"
+   }
+  },
+  "why": "old cloze gave the answer away ('National Portrait Gallery') and its claim that a painted portrait of every president hangs there was unverified"
+ },
+ {
+  "id": "k-monarchy",
+  "set": {
+   "note": "In a constitutional monarchy, such as Sweden or Spain, the king or queen is mostly a symbol and elected leaders govern."
+  },
+  "why": "Japan has an emperor, not a king or queen"
+ },
+ {
+  "id": "k-world-war-i",
+  "set": {
+   "ex": [
+    "Millions of soldiers died in World War I, many in muddy trenches in France and Belgium.",
+    "Sofia's great-great-grandfather drove an army ambulance in France during World War I."
+   ]
+  },
+  "why": "US Army Nurse Corps was women-only in WWI; 'grandfather served as an army nurse' was historically doubtful"
+ },
+ {
+  "id": "k-novel",
+  "remove_dx": [
+   "k-fiction"
+  ],
+  "why": "fiction's def (made-up stories) overlaps novel's for (a)/(b)"
+ },
+ {
+  "id": "k-fiction",
+  "remove_dx": [
+   "k-novel",
+   "k-autobiography"
+  ],
+  "why": "novel overlaps fiction's def; autobiography is nonfiction, a near-opposite for (f)"
+ },
+ {
+  "id": "k-poetry",
+  "remove_dx": [
+   "k-rhyme",
+   "k-fiction"
+  ],
+  "why": "rhyme also means verse/a short poem (near-synonym for (e)); 'known for fiction inspired by jazz' fits the Langston Hughes cloze"
+ },
+ {
+  "id": "k-justice",
+  "remove_dx": [
+   "k-equality"
+  ],
+  "why": "equality (same rights and treatment for all) overlaps 'rules applied fairly to all'"
+ },
+ {
+  "id": "k-equality",
+  "remove_dx": [
+   "k-justice"
+  ],
+  "why": "'the law guarantees justice before the court' also fills the cloze; defs overlap"
+ },
+ {
+  "id": "k-liberty",
+  "remove_dx": [
+   "k-free-will",
+   "k-human-rights"
+  ],
+  "why": "free will ('choices genuinely your own') and human rights ('basic freedoms') overlap 'freedom to act as you choose'"
+ },
+ {
+  "id": "k-logic",
+  "remove_dx": [
+   "k-argument"
+  ],
+  "why": "argument ('reasons given to support a conclusion') overlaps logic's def"
+ },
+ {
+  "id": "k-monarchy",
+  "remove_dx": [
+   "k-democracy"
+  ],
+  "why": "democracy is a near-opposite of monarchy (ant: republic) for (f)"
+ },
+ {
+  "id": "k-social-media",
+  "remove_dx": [
+   "k-internet"
+  ],
+  "why": "'shared millions of times on (the) internet' can fill the cloze"
+ },
+ {
+  "id": "k-credit-card",
+  "remove_dx": [
+   "k-loan",
+   "k-mortgage"
+  ],
+  "why": "'the interest on Hannah's loan/mortgage kept growing' also fills the cloze"
+ },
+ {
+  "id": "k-freedom-of-speech",
+  "remove_dx": [
+   "k-dictatorship"
+  ],
+  "why": "dictatorship reads as a near-opposite for the opposite question (ant: censorship)"
+ },
+ {
+  "id": "k-smartphone",
+  "set": {
+   "note": "Older mobile phones that mainly make calls and send texts are often called basic phones or feature phones."
+  },
+  "why": "'flip phone' names a shape, not a type; several current smartphones fold and flip"
+ }
+]

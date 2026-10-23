@@ -1,0 +1,158 @@
+[
+ {
+  "id": "v-nominally",
+  "remove_dx": [
+   "v-marginally"
+  ],
+  "why": "marginally ('by only a small amount') is the also-sense of nominally; correct answer to (g)"
+ },
+ {
+  "id": "v-aversion",
+  "remove_dx": [
+   "v-inclination"
+  ],
+  "why": "inclination is a near-opposite of aversion; invalidates (f)"
+ },
+ {
+  "id": "v-simplistic",
+  "remove_dx": [
+   "v-rudimentary"
+  ],
+  "why": "rudimentary ('very basic') is near-synonym and fits cloze 'the plan's ___ approach'"
+ },
+ {
+  "id": "v-tainted",
+  "remove_dx": [
+   "v-stagnant",
+   "v-opaque"
+  ],
+  "why": "'stagnant water' (and arguably 'opaque water') also sensibly fills the cloze about water unsafe to drink"
+ },
+ {
+  "id": "v-wholeheartedly",
+  "remove_dx": [
+   "v-unquestionably",
+   "v-undeniably"
+  ],
+  "why": "'unquestionably/undeniably supported her decision' also fits the cloze sensibly"
+ },
+ {
+  "id": "v-excessively",
+  "remove_dx": [
+   "v-notoriously"
+  ],
+  "why": "'notoriously long' also fits the cloze about overlong instructions"
+ },
+ {
+  "id": "v-disciple",
+  "remove_dx": [
+   "v-proponent"
+  ],
+  "why": "proponent (supporter who promotes ideas) is close to disciple for (e) and can fill 'devoted ___ of the yoga master'"
+ },
+ {
+  "id": "v-impulsive",
+  "set": {
+   "ex": [
+    "Jamal made an impulsive decision to quit his job and travel for a year.",
+    "Stores place candy near the register to tempt impulsive shoppers waiting in line."
+   ]
+  },
+  "why": "'impulsive buying' is unidiomatic; the set phrase is 'impulse buying'"
+ },
+ {
+  "id": "v-inquire",
+  "set": {
+   "ex": [
+    "Maria called the hotel to inquire about rooms for the holiday weekend.",
+    "Several customers inquired whether the store would be open on the holiday."
+   ]
+  },
+  "why": "'Police are inquiring into the cause' shows the 'investigate' sense, not the defined 'ask for information' sense"
+ },
+ {
+  "id": "v-salient",
+  "set": {
+   "def": "most important or most easily noticed"
+  },
+  "why": "'most easy' is ungrammatical"
+ },
+ {
+  "id": "v-makeshift",
+  "set": {
+   "syn": [
+    "improvised",
+    "temporary"
+   ]
+  },
+  "why": "'rough' is not a true synonym of makeshift"
+ },
+ {
+  "id": "v-infer",
+  "set": {
+   "syn": [
+    "deduce",
+    "conclude",
+    "gather"
+   ]
+  },
+  "why": "verb 'reason' is not a synonym of infer (it means to think logically, not to draw a conclusion)"
+ },
+ {
+  "id": "v-lurk",
+  "set": {
+   "syn": [
+    "hide"
+   ]
+  },
+  "why": "'skulk' is far rarer than lurk; learners would not recognize it"
+ },
+ {
+  "id": "v-entourage",
+  "set": {
+   "syn": [
+    "following"
+   ]
+  },
+  "why": "'escort' is a protective guard, not an entourage; 'retinue' is rarer than the headword"
+ },
+ {
+  "id": "v-foresight",
+  "set": {
+   "syn": [
+    "forethought",
+    "vision"
+   ]
+  },
+  "why": "'prudence' (caution) and 'planning' (an activity) are not synonyms of foresight"
+ },
+ {
+  "id": "v-subtly",
+  "set": {
+   "syn": [
+    "slightly",
+    "delicately"
+   ]
+  },
+  "why": "'quietly' is not a synonym of subtly"
+ },
+ {
+  "id": "v-seminal",
+  "set": {
+   "syn": [
+    "influential",
+    "groundbreaking"
+   ]
+  },
+  "why": "'formative' (shaping early development) is a different meaning from seminal"
+ },
+ {
+  "id": "v-bastion",
+  "set": {
+   "syn": [
+    "stronghold"
+   ]
+  },
+  "why": "'bulwark' and 'citadel' are rarer than bastion; citadel is a literal fortress, not the defined sense"
+ }
+]

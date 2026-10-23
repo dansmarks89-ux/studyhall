@@ -1,0 +1,188 @@
+[
+ {
+  "id": "v-energy",
+  "set": {
+   "def": "the power in your body that lets you move, work, and play",
+   "syn": []
+  },
+  "why": "def described stamina ('for a long time'); 'strength' is not a synonym of energy"
+ },
+ {
+  "id": "v-likely",
+  "set": {
+   "syn": []
+  },
+  "why": "'probable' is too hard for a starter-level synonym question"
+ },
+ {
+  "id": "v-relationship",
+  "set": {
+   "syn": []
+  },
+  "why": "'bond' is not a simple or exact synonym at starter level"
+ },
+ {
+  "id": "v-learn",
+  "set": {
+   "syn": []
+  },
+  "why": "'study' is not a synonym of learn (you can study without learning)"
+ },
+ {
+  "id": "v-trust",
+  "set": {
+   "syn": []
+  },
+  "why": "'believe' (accept as true) is not a synonym of trust (rely on someone)"
+ },
+ {
+  "id": "v-model",
+  "set": {
+   "syn": []
+  },
+  "why": "'copy' is not a true synonym of a scale model"
+ },
+ {
+  "id": "v-focus",
+  "set": {
+   "syn": []
+  },
+  "why": "'concentrate' is harder than the headword; starter syn must be very simple"
+ },
+ {
+  "id": "v-usually",
+  "set": {
+   "syn": [
+    "mostly",
+    "normally"
+   ]
+  },
+  "why": "'often' does not mean 'most of the time'"
+ },
+ {
+  "id": "v-board",
+  "set": {
+   "def": "a long, flat piece of wood used to build things"
+  },
+  "why": "def omitted 'flat'; a board is flat sawn wood"
+ },
+ {
+  "id": "v-training",
+  "set": {
+   "def": "teaching and practice that help you learn a skill or job"
+  },
+  "why": "def limited to jobs, but ex/cloze show dogs and runners"
+ },
+ {
+  "id": "v-oil",
+  "set": {
+   "def": "a thick, slippery liquid used in cooking and in machines"
+  },
+  "why": "'stuff' is vague; oil is a liquid"
+ },
+ {
+  "id": "v-style",
+  "set": {
+   "ex": [
+    "I like the style of your new haircut.",
+    "He has a calm style of teaching."
+   ]
+  },
+  "why": "'your style of hair' is unnatural English"
+ },
+ {
+  "id": "v-serious",
+  "set": {
+   "cloze": {
+    "s": "The storm did ___ damage, and many families lost their homes.",
+    "a": "serious"
+   }
+  },
+  "why": "old cloze was awkward and 'difficult' also fit it"
+ },
+ {
+  "id": "v-respect",
+  "remove_dx": [
+   "v-interest"
+  ],
+  "why": "'to show interest' also fits the cloze"
+ },
+ {
+  "id": "v-staff",
+  "remove_dx": [
+   "v-management"
+  ],
+  "why": "management (people who run a business) overlaps 'people who work for a company'"
+ },
+ {
+  "id": "v-completely",
+  "remove_dx": [
+   "v-finally"
+  ],
+  "why": "'The snow finally covered the car' also fits the cloze"
+ },
+ {
+  "id": "v-super",
+  "remove_dx": [
+   "v-fine"
+  ],
+  "why": "'The party was fine, and everyone had fun' also fits the cloze"
+ },
+ {
+  "id": "v-foreign",
+  "remove_dx": [
+   "v-western"
+  ],
+  "why": "'trying western food from other countries' also fits the cloze"
+ },
+ {
+  "id": "v-main",
+  "remove_dx": [
+   "v-simple"
+  ],
+  "why": "'The simple reason I moved was...' also fits the cloze"
+ },
+ {
+  "id": "v-present",
+  "remove_dx": [
+   "v-moment"
+  ],
+  "why": "'a very short time' is too close to the also-sense 'the time happening now'"
+ },
+ {
+  "id": "v-okay",
+  "remove_dx": [
+   "v-average",
+   "v-normal"
+  ],
+  "why": "average ('not very good and not very bad') matches okay's sense; 'I'm normal now' roughly fits the cloze"
+ },
+ {
+  "id": "v-normal",
+  "remove_dx": [
+   "v-okay"
+  ],
+  "why": "'It is okay for babies to cry when hungry' also fits the cloze"
+ },
+ {
+  "id": "v-industry",
+  "remove_dx": [
+   "v-field"
+  ],
+  "why": "'work in the movie field' also fits the cloze"
+ },
+ {
+  "id": "v-below",
+  "remove_dx": [
+   "v-behind"
+  ],
+  "why": "'we could see the city far behind' also fits the cloze"
+ },
+ {
+  "id": "v-perhaps",
+  "remove_dx": [
+   "v-sometimes"
+  ],
+  "why": "'sometimes they are in the car' also fits the cloze"
+ }
+]

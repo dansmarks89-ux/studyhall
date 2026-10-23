@@ -1,0 +1,58 @@
+[
+ {
+  "id": "c-contrapositive",
+  "remove_dx": [
+   "c-necessary-vs-sufficient-condition"
+  ],
+  "why": "wristband test (not checked -> no wristband) also reads as a necessary-condition case; ambiguous for (d)"
+ },
+ {
+  "id": "c-double-blind-study",
+  "remove_dx": [
+   "c-control-group"
+  ],
+  "why": "test 1 implies a fake-spray comparison group, so control group is a defensible answer to (d)"
+ },
+ {
+  "id": "c-double-blind-study",
+  "set": {
+   "note": "In a single-blind study, usually only the participants don’t know which treatment they are getting."
+  },
+  "why": "single-blind can also mean only the assessors are blinded; 'only the participants' stated as absolute is not always true"
+ },
+ {
+  "id": "c-just-world-fallacy",
+  "remove_dx": [
+   "c-fundamental-attribution-error"
+  ],
+  "why": "tests blame the victim's character (e.g. 'must have been greedy'), which also fits fundamental attribution error"
+ },
+ {
+  "id": "c-curse-of-knowledge",
+  "set": {
+   "scenario": "A software engineer tells a new coworker from the sales team to “just clear the cache and update the browser,” not realizing those words mean nothing to him."
+  },
+  "why": "'grandmother who doesn't understand tech' is an age stereotype the spec forbids"
+ },
+ {
+  "id": "p-context-ascetic",
+  "set": {
+   "options": [
+    "lonely",
+    "simple and without comforts, by choice",
+    "wealthy but hidden",
+    "artistic and creative",
+    "lazy and careless",
+    "busy and crowded"
+   ]
+  },
+  "why": "correct option was 3x longer and more detailed than every distractor, a giveaway"
+ },
+ {
+  "id": "c-nocebo-effect",
+  "set": {
+   "def": "real unpleasant symptoms that people feel because they expect something to harm them, even when it is fake or harmless"
+  },
+  "why": "def limited to 'a treatment', but both tests (wristband, switched-off cell tower) are not treatments; def must cover them"
+ }
+]

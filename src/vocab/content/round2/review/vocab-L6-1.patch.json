@@ -1,0 +1,192 @@
+[
+ {
+  "id": "v-irrefutable",
+  "remove_dx": [
+   "v-fallacious"
+  ],
+  "why": "fallacious (based on faulty reasoning) is a near-opposite of irrefutable"
+ },
+ {
+  "id": "v-legitimize",
+  "set": {
+   "syn": [
+    "validate",
+    "legalize",
+    "authorize"
+   ]
+  },
+  "why": "'justify' means to show something is right, not to make it accepted or legal; not a true synonym"
+ },
+ {
+  "id": "v-insolence",
+  "remove_dx": [
+   "v-propriety"
+  ],
+  "why": "propriety (polite, proper behavior) is a near-opposite of insolence (ant: politeness, respect)"
+ },
+ {
+  "id": "v-decry",
+  "set": {
+   "cloze": {
+    "s": "At the board meeting, many parents were quick to ___ the school's decision to cancel art classes, calling it a terrible mistake.",
+    "a": "decry"
+   }
+  },
+  "why": "original context did not signal criticism; 'scrutinize' could also fill it"
+ },
+ {
+  "id": "v-wrest",
+  "remove_dx": [
+   "v-abdicate"
+  ],
+  "why": "abdicate (give up a position) is a near-opposite of wrest (take by force); ant list has surrender/yield"
+ },
+ {
+  "id": "v-prosaic",
+  "remove_dx": [
+   "v-stupendous"
+  ],
+  "why": "stupendous (amazing) is a near-opposite of prosaic (ant: extraordinary, exciting)"
+ },
+ {
+  "id": "v-frenzied",
+  "remove_dx": [
+   "v-nonchalant"
+  ],
+  "why": "nonchalant (calm and relaxed) is an opposite of frenzied (ant: calm, relaxed)"
+ },
+ {
+  "id": "v-condescension",
+  "remove_dx": [
+   "v-derision"
+  ],
+  "why": "derision (mocking someone as worthless) overlaps with condescension's synonym disdain; could be picked as closest in meaning"
+ },
+ {
+  "id": "v-startle",
+  "remove_dx": [
+   "v-confound"
+  ],
+  "why": "confound's def includes 'surprise someone'; overlaps with startle in the meaning/closest-meaning questions"
+ },
+ {
+  "id": "v-appreciable",
+  "set": {
+   "note": "Comes from the “notice or measure” sense of appreciate, not the “be thankful” sense."
+  },
+  "why": "'Not related to' appreciate is misleading: the words share a root; the difference is only of sense"
+ },
+ {
+  "id": "v-afresh",
+  "set": {
+   "syn": [
+    "anew",
+    "again"
+   ]
+  },
+  "why": "'over' alone is not a recognizable synonym of afresh"
+ },
+ {
+  "id": "v-throes",
+  "set": {
+   "syn": [
+    "midst",
+    "struggle"
+   ]
+  },
+  "why": "'agony' matches the old 'violent pangs' sense, not the taught 'in the throes of (a difficult process)' sense"
+ },
+ {
+  "id": "v-sentimentality",
+  "set": {
+   "syn": [
+    "sappiness",
+    "schmaltz"
+   ]
+  },
+  "why": "'mawkishness' is rarer than the headword; learners at this level would not recognize it"
+ },
+ {
+  "id": "v-jovial",
+  "remove_dx": [
+   "v-despondent"
+  ],
+  "why": "despondent (very unhappy, hopeless) is a near-opposite of jovial (ant: gloomy, grumpy)"
+ },
+ {
+  "id": "v-affluence",
+  "remove_dx": [
+   "v-paucity"
+  ],
+  "why": "paucity (having very little) is a near-opposite of affluence (ant: poverty, want)"
+ },
+ {
+  "id": "v-abate",
+  "remove_dx": [
+   "v-whittle"
+  ],
+  "why": "whittle (reduce gradually) overlaps with abate (become less); could be picked as closest in meaning"
+ },
+ {
+  "id": "v-fallacious",
+  "remove_dx": [
+   "v-apocryphal"
+  ],
+  "why": "apocryphal (believed but probably not true) overlaps with fallacious's synonyms false/mistaken"
+ },
+ {
+  "id": "v-matriarch",
+  "set": {
+   "syn": []
+  },
+  "why": "'head' and 'elder' are not true synonyms of matriarch (no gender, no family-leader sense)"
+ },
+ {
+  "id": "v-sacrilege",
+  "set": {
+   "syn": [
+    "desecration",
+    "blasphemy",
+    "irreverence"
+   ]
+  },
+  "why": "'profanity' today chiefly means swearing, not disrespect for something sacred"
+ },
+ {
+  "id": "v-oxymoron",
+  "set": {
+   "syn": [
+    "contradiction in terms"
+   ]
+  },
+  "why": "'paradox' contradicts the item's own note; 'contradiction' alone is broader than a phrase joining opposites"
+ },
+ {
+  "id": "v-deservedly",
+  "remove_dx": [
+   "v-fittingly"
+  ],
+  "why": "fittingly (in a way that is right for the situation) overlaps with deservedly/rightly and could fill the cloze"
+ },
+ {
+  "id": "v-justly",
+  "remove_dx": [
+   "v-amply"
+  ],
+  "why": "'amply honored' could plausibly fill the cloze"
+ },
+ {
+  "id": "v-inclement",
+  "set": {
+   "def": "of weather: bad and unpleasant, with rain, snow, strong wind, or cold"
+  },
+  "why": "inclement weather need not be cold (e.g., summer thunderstorms); old def required cold"
+ },
+ {
+  "id": "v-deplete",
+  "remove_dx": [
+   "v-rejuvenate"
+  ],
+  "why": "rejuvenate (restore energy) is a near-opposite of deplete (ant: replenish, restore)"
+ }
+]

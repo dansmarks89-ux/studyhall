@@ -1,0 +1,196 @@
+[
+ {
+  "id": "v-overt",
+  "remove_dx": [
+   "v-brazen",
+   "v-cryptic"
+  ],
+  "why": "brazen fits the cloze (threat made loudly in front of everyone); cryptic is a near-opposite of overt for (f)"
+ },
+ {
+  "id": "v-quaint",
+  "remove_dx": [
+   "v-shabby"
+  ],
+  "why": "shabby plausibly fits cloze about an inn with creaky wooden floors"
+ },
+ {
+  "id": "v-morbid",
+  "set": {
+   "syn": [
+    "macabre",
+    "ghoulish"
+   ],
+   "ant": []
+  },
+  "why": "gloomy/grim are not synonyms of morbid (unhealthy interest in death); cheerful/wholesome are forced opposites"
+ },
+ {
+  "id": "v-abound",
+  "set": {
+   "syn": [
+    "teem"
+   ]
+  },
+  "why": "proliferate means increase rapidly, not exist in large numbers"
+ },
+ {
+  "id": "v-treatise",
+  "set": {
+   "syn": [
+    "study",
+    "monograph"
+   ]
+  },
+  "why": "an essay is typically short; a treatise is long and detailed"
+ },
+ {
+  "id": "v-oblivion",
+  "set": {
+   "syn": [
+    "obscurity"
+   ]
+  },
+  "why": "nothingness is a different sense, not 'being forgotten'"
+ },
+ {
+  "id": "v-enclave",
+  "set": {
+   "syn": [
+    "pocket"
+   ]
+  },
+  "why": "district is not a synonym of enclave (any area, not a culturally distinct one)"
+ },
+ {
+  "id": "v-vocation",
+  "set": {
+   "syn": [
+    "calling",
+    "mission"
+   ]
+  },
+  "why": "career is not a synonym of the 'calling' sense defined"
+ },
+ {
+  "id": "v-unison",
+  "set": {
+   "syn": []
+  },
+  "why": "harmony and agreement are not synonyms of 'doing something at exactly the same time'"
+ },
+ {
+  "id": "v-advantageous",
+  "set": {
+   "ant": [
+    "disadvantageous",
+    "unfavorable"
+   ]
+  },
+  "why": "harmful is a forced opposite"
+ },
+ {
+  "id": "v-interchangeable",
+  "set": {
+   "ant": []
+  },
+  "why": "unique is not a genuine opposite of interchangeable"
+ },
+ {
+  "id": "v-fraught",
+  "remove_dx": [
+   "v-contentious"
+  ],
+  "why": "contentious (causing heated argument) overlaps the also-sense 'causing great worry and tension' for (g)"
+ },
+ {
+  "id": "v-exceedingly",
+  "remove_dx": [
+   "v-undeniably",
+   "v-strikingly"
+  ],
+  "why": "'undeniably rare' and 'strikingly rare' sensibly fill the cloze"
+ },
+ {
+  "id": "v-copious",
+  "remove_dx": [
+   "v-hefty"
+  ],
+  "why": "hefty (much larger than usual) is a near-synonym and 'hefty amounts of water' fits the cloze"
+ },
+ {
+  "id": "v-ploy",
+  "remove_dx": [
+   "v-pretext"
+  ],
+  "why": "pretext overlaps (a false reason/trick to get out of something) in (b) and the examples"
+ },
+ {
+  "id": "v-marginally",
+  "remove_dx": [
+   "v-exceedingly"
+  ],
+  "why": "exceedingly is a near-opposite of marginally for (f)"
+ },
+ {
+  "id": "v-colossal",
+  "remove_dx": [
+   "v-copious"
+  ],
+  "why": "copious (large in amount) is a near-synonym of colossal for (e)"
+ },
+ {
+  "id": "v-fickle",
+  "set": {
+   "ex": [
+    "Sports fans can be fickle, cheering a player one week and booing him the next.",
+    "Teenagers can be fickle about music, loving a band one month and forgetting it the next."
+   ]
+  },
+  "why": "weather example shows a different sense (unpredictable change) than the def (opinions, feelings, loyalties)"
+ },
+ {
+  "id": "v-implicitly",
+  "remove_dx": [
+   "v-subtly"
+  ],
+  "why": "'Fatima subtly blamed her brother' sensibly fills the cloze"
+ },
+ {
+  "id": "v-overtly",
+  "remove_dx": [
+   "v-subtly"
+  ],
+  "why": "subtly is a near-opposite of overtly for (f)"
+ },
+ {
+  "id": "v-expansive",
+  "remove_dx": [
+   "v-cordial"
+  ],
+  "why": "cordial (warm and friendly) overlaps the also-sense 'friendly, open, willing to talk' for (g)"
+ },
+ {
+  "id": "v-conscientious",
+  "remove_dx": [
+   "v-exemplary"
+  ],
+  "why": "'An exemplary employee, Olga stayed late...' sensibly fills the cloze"
+ },
+ {
+  "id": "v-grossly",
+  "remove_dx": [
+   "v-downright"
+  ],
+  "why": "downright (stressing how bad something is) is a near-synonym of grossly for (e)/(b)"
+ },
+ {
+  "id": "v-disproportionately",
+  "set": {
+   "syn": [
+    "unequally"
+   ]
+  },
+  "why": "excessively means too much, not out of proportion; not a synonym"
+ }
+]

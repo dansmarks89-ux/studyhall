@@ -1,0 +1,284 @@
+[
+ {
+  "id": "v-outrageous",
+  "remove_dx": [
+   "v-costly"
+  ],
+  "why": "costly (very expensive) fits the cloze about a $40 ticket"
+ },
+ {
+  "id": "v-unstable",
+  "remove_dx": [
+   "v-fragile",
+   "v-uncertain"
+  ],
+  "why": "fragile fits the bridge cloze; uncertain is a near-synonym (unstable situation)"
+ },
+ {
+  "id": "v-unstable",
+  "set": {
+   "syn": [
+    "unsteady",
+    "shaky",
+    "wobbly"
+   ]
+  },
+  "why": "insecure is read by learners as 'lacking confidence', not a clear synonym here"
+ },
+ {
+  "id": "v-exotic",
+  "set": {
+   "syn": [
+    "foreign",
+    "unusual"
+   ]
+  },
+  "why": "striking is not a synonym of exotic"
+ },
+ {
+  "id": "v-ironically",
+  "remove_dx": [
+   "v-unexpectedly"
+  ],
+  "why": "unexpectedly overlaps the def and fits the dentist cloze"
+ },
+ {
+  "id": "v-wholesale",
+  "remove_dx": [
+   "v-extensively"
+  ],
+  "why": "extensively matches the also sense (on a large scale)"
+ },
+ {
+  "id": "v-wade",
+  "remove_dx": [
+   "v-forge"
+  ],
+  "why": "forge (move ahead) could fill 'forged across the shallow stream'"
+ },
+ {
+  "id": "v-clarify",
+  "remove_dx": [
+   "v-modify"
+  ],
+  "why": "'email the teacher to modify the due date' is sensible"
+ },
+ {
+  "id": "v-foil",
+  "remove_dx": [
+   "v-halt",
+   "v-expose"
+  ],
+  "why": "'Police halted/exposed the plot' both fit the cloze sensibly"
+ },
+ {
+  "id": "v-hazard",
+  "set": {
+   "ant": []
+  },
+  "why": "safeguard is a forced opposite"
+ },
+ {
+  "id": "v-necessity",
+  "set": {
+   "ant": [
+    "luxury"
+   ]
+  },
+  "why": "option is a forced opposite"
+ },
+ {
+  "id": "v-uprising",
+  "set": {
+   "syn": [
+    "rebellion",
+    "revolt"
+   ]
+  },
+  "why": "revolution is not a synonym (an uprising need not overthrow anyone)"
+ },
+ {
+  "id": "v-uprising",
+  "remove_dx": [
+   "v-confrontation",
+   "v-treason"
+  ],
+  "why": "'violent confrontation' and 'treason against the king' are both plausible in the cloze"
+ },
+ {
+  "id": "v-wrath",
+  "set": {
+   "ant": [
+    "calm"
+   ]
+  },
+  "why": "forgiveness is not a true opposite of anger"
+ },
+ {
+  "id": "v-accountability",
+  "remove_dx": [
+   "v-transparency"
+  ],
+  "why": "transparency fits 'public demanded ___ from leaders who hid the problem' and is a near-synonym in governance"
+ },
+ {
+  "id": "v-accountability",
+  "set": {
+   "syn": [
+    "responsibility"
+   ]
+  },
+  "why": "answerability is too rare for a learner to recognize"
+ },
+ {
+  "id": "v-misery",
+  "set": {
+   "syn": [
+    "suffering",
+    "distress",
+    "sorrow"
+   ]
+  },
+  "why": "wretchedness is too rare for this level"
+ },
+ {
+  "id": "v-superb",
+  "remove_dx": [
+   "v-memorable"
+  ],
+  "why": "'the meal was memorable, praising every dish' fits the cloze"
+ },
+ {
+  "id": "v-probable",
+  "remove_dx": [
+   "v-credible"
+  ],
+  "why": "credible (seems true) overlaps 'likely to be true' and is a near-synonym"
+ },
+ {
+  "id": "v-dodge",
+  "set": {
+   "ex": [
+    "Malik dodged to the left just as the snowball flew past his head.",
+    "The mayor dodged reporters' questions about the missing money."
+   ]
+  },
+  "why": "a goalkeeper does not dodge the ball; example showed the wrong action"
+ },
+ {
+  "id": "v-verify",
+  "set": {
+   "ant": [
+    "disprove"
+   ]
+  },
+  "why": "contradict is not a true opposite of verify"
+ },
+ {
+  "id": "v-interference",
+  "set": {
+   "syn": [
+    "meddling",
+    "intrusion"
+   ]
+  },
+  "why": "intervention is neutral, not a synonym of unwanted meddling"
+ },
+ {
+  "id": "v-responsive",
+  "set": {
+   "ex": [
+    "The company is very responsive to customer complaints.",
+    "Our landlord is very responsive and usually fixes problems the same day we report them."
+   ]
+  },
+  "why": "'responsive design' is a technical web-layout sense, not the defined meaning"
+ },
+ {
+  "id": "v-pierce",
+  "set": {
+   "syn": [
+    "puncture",
+    "penetrate",
+    "prick"
+   ]
+  },
+  "why": "stab is not a synonym (it describes the attack, not making a hole)"
+ },
+ {
+  "id": "v-tenure",
+  "set": {
+   "syn": [
+    "term"
+   ]
+  },
+  "why": "incumbency is too rare for a learner at this level"
+ },
+ {
+  "id": "v-subsidiary",
+  "set": {
+   "syn": [
+    "affiliate"
+   ]
+  },
+  "why": "branch and division are parts of one company, not separately owned companies"
+ },
+ {
+  "id": "v-admire",
+  "set": {
+   "syn": [
+    "respect",
+    "esteem",
+    "appreciate"
+   ]
+  },
+  "why": "praise means to speak approvingly, not a synonym of admire"
+ },
+ {
+  "id": "v-vicinity",
+  "remove_dx": [
+   "v-proximity"
+  ],
+  "why": "proximity is a near-synonym and fits 'living in the ___ of the factory'"
+ },
+ {
+  "id": "v-mentality",
+  "set": {
+   "cloze": {
+    "s": "Growing up poor left him with a save-everything ___: he still keeps every receipt and reuses every bag.",
+    "a": "mentality"
+   }
+  },
+  "why": "'a saving mentality' is not a natural phrase"
+ },
+ {
+  "id": "v-halt",
+  "set": {
+   "syn": [
+    "stop",
+    "pause",
+    "suspend"
+   ]
+  },
+  "why": "end is not a synonym; a halt is often temporary"
+ },
+ {
+  "id": "v-reconciliation",
+  "set": {
+   "syn": [
+    "peacemaking"
+   ]
+  },
+  "why": "reunion means meeting again, not making peace"
+ },
+ {
+  "id": "v-motto",
+  "set": {
+   "ex": [
+    "The Scouts' motto, “Be prepared,” reminds members to get ready for emergencies.",
+    "Diego’s motto in life is “Work hard and be kind.”"
+   ]
+  },
+  "why": "'printed on every handbook' is an unverified factual claim"
+ }
+]

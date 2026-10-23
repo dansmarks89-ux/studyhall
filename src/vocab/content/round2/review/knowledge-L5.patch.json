@@ -1,0 +1,162 @@
+[
+ {
+  "id": "k-endosymbiotic-theory",
+  "set": {
+   "ex": [
+    "Lynn Margulis championed the endosymbiotic theory in 1967, when many biologists still rejected it.",
+    "The endosymbiotic theory suggests that nearly every cell in your body carries the descendants of ancient bacteria."
+   ]
+  },
+  "why": "Mature red blood cells have no mitochondria, so 'every cell' is false."
+ },
+ {
+  "id": "k-packet-switching",
+  "set": {
+   "ex": [
+    "Thanks to packet switching, pieces of Yuki's video call may travel by different routes and still be put back in the right order.",
+    "Paul Baran and Donald Davies developed packet switching independently in the 1960s."
+   ]
+  },
+  "why": "Packets often arrive out of order and are reassembled; 'still arrive in order' is wrong."
+ },
+ {
+  "id": "k-wallace-line",
+  "set": {
+   "ex": [
+    "Bali and Lombok are only about 35 kilometers apart, yet they sit on opposite sides of the Wallace Line.",
+    "Tigers once lived on Bali, west of the Wallace Line, but never on nearby Lombok, just to the east."
+   ]
+  },
+  "why": "Monkeys (macaques) live on Sulawesi, east of the line, so 'monkeys live west' is false."
+ },
+ {
+  "id": "k-endorheic-basin",
+  "set": {
+   "ex": [
+    "The Great Basin in Nevada and Utah is a huge endorheic basin with no outlet to the sea.",
+    "Because it is an endorheic basin, the Caspian Sea's level rises and falls with the balance between river inflow and evaporation."
+   ]
+  },
+  "why": "Caspian level depends heavily on Volga inflow, not 'rainfall and evaporation alone'."
+ },
+ {
+  "id": "k-karst",
+  "set": {
+   "def": "land where water slowly eats away limestone or similar rock, leaving caves, holes in the ground and underground rivers"
+  },
+  "why": "Karst forms in rock that dissolves in water; limestone is not 'soft rock'."
+ },
+ {
+  "id": "k-apoptosis",
+  "set": {
+   "cloze": {
+    "s": "Every day the body clears out billions of worn-out cells through ___, a built-in program that makes them quietly break down.",
+    "a": "apoptosis"
+   }
+  },
+  "why": "Skin cells die by cornification, usually treated as distinct from classic apoptosis; cloze claim was shaky."
+ },
+ {
+  "id": "k-mens-rea",
+  "set": {
+   "ex": [
+    "The defense argued there was no mens rea, since Diego truly believed the bike he took was his own.",
+    "Most serious crimes require both a harmful act and mens rea."
+   ]
+  },
+  "why": "A sudden seizure is an involuntary-act (actus reus/automatism) defense, not the clean mens rea example."
+ },
+ {
+  "id": "k-jus-soli",
+  "set": {
+   "why": "Countries differ on it: many countries in the Americas grant citizenship this way, while most of Europe and Asia do not."
+  },
+  "why": "US birthright citizenship is currently a live legal/political dispute; avoid a contested current claim."
+ },
+ {
+  "id": "k-higgs-boson",
+  "set": {
+   "def": "a tiny particle tied to an invisible field that gives many basic particles their mass, first detected in 2012"
+  },
+  "why": "The Higgs field does not give mass to photons or gluons; 'other basic particles' overstates."
+ },
+ {
+  "id": "k-quantum-entanglement",
+  "set": {
+   "cloze": {
+    "s": "Because of ___, measuring the polarization of one photon told the lab team the polarization of its partner miles away.",
+    "a": "quantum entanglement"
+   }
+  },
+  "why": "Entangled-photon experiments measure polarization; 'spin of a photon' is imprecise."
+ },
+ {
+  "id": "k-public-key-cryptography",
+  "set": {
+   "why": "It lets strangers communicate safely online and underpins secure websites, digital signatures and online payments."
+  },
+  "why": "'Protects every ... email' is false; most email is not public-key encrypted end to end."
+ },
+ {
+  "id": "k-topology",
+  "set": {
+   "why": "It is used throughout modern physics and data analysis, and explains why a coffee mug and a doughnut count as the same shape."
+  },
+  "why": "'Network topology' is a different, loose use of the word; claiming topology underlies network design misleads."
+ },
+ {
+  "id": "k-kingdom-of-aksum",
+  "set": {
+   "ex": [
+    "Tall carved stone pillars raised by the Kingdom of Aksum still stand in northern Ethiopia.",
+    "King Ezana made Christianity the official religion of the Kingdom of Aksum in the 300s."
+   ]
+  },
+  "why": "Aksum's monuments are single-stone stelae (pillars), not towers."
+ },
+ {
+  "id": "k-von-neumann-architecture",
+  "set": {
+   "syn": []
+  },
+  "why": "'Stored-program design' also covers the Harvard architecture; not a true synonym."
+ },
+ {
+  "id": "k-nocebo-effect",
+  "set": {
+   "ex": [
+    "In the trial, some people taking sugar pills reported headaches, a likely sign of the nocebo effect.",
+    "Dr. Okafor worried that frightening warnings could trigger a nocebo effect in anxious patients."
+   ]
+  },
+  "why": "Headaches in a placebo arm are not a 'clear' sign (could be coincidence); iatrogenic overlaps (nocebo harm is often called iatrogenic)."
+ },
+ {
+  "id": "k-nocebo-effect",
+  "remove_dx": [
+   "k-iatrogenic"
+  ],
+  "why": "Headaches in a placebo arm are not a 'clear' sign (could be coincidence); iatrogenic overlaps (nocebo harm is often called iatrogenic)."
+ },
+ {
+  "id": "k-iatrogenic",
+  "remove_dx": [
+   "k-nocebo-effect"
+  ],
+  "why": "Nocebo harm is often described as a kind of iatrogenic harm; ambiguous for (a)/(b)."
+ },
+ {
+  "id": "k-cosmic-microwave-background",
+  "set": {
+   "def": "weak radiation left over from the early universe, which still reaches us almost evenly from every direction in the sky"
+  },
+  "why": "It is not perfectly even; the item's own example cites tiny temperature differences."
+ },
+ {
+  "id": "k-solipsism",
+  "remove_dx": [
+   "k-cogito-ergo-sum"
+  ],
+  "why": "Cogito's def ('thinking proves one's own existence') overlaps 'only your own mind is sure to exist'."
+ }
+]

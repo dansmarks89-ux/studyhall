@@ -1,0 +1,210 @@
+[
+ {
+  "id": "v-leniency",
+  "set": {
+   "def": "being gentle and forgiving, especially in punishing; being less strict than people expect"
+  },
+  "why": "plain-word rule: 'mildness' (zipf 1.8) is rarer than 'leniency' (2.8)"
+ },
+ {
+  "id": "v-elude",
+  "set": {
+   "ant": []
+  },
+  "why": "'capture' is a forced opposite (elude = escape; capture is the pursuer's act)"
+ },
+ {
+  "id": "v-anathema",
+  "set": {
+   "syn": [
+    "abomination"
+   ]
+  },
+  "why": "'bane' means a cause of constant trouble, not something hated/unacceptable"
+ },
+ {
+  "id": "v-parlance",
+  "set": {
+   "syn": [
+    "jargon",
+    "lingo",
+    "terminology"
+   ]
+  },
+  "why": "'idiom' in this sense is obscure and confusing (learners read it as a set phrase)"
+ },
+ {
+  "id": "v-belie",
+  "set": {
+   "ant": [
+    "reveal"
+   ]
+  },
+  "remove_dx": [
+   "v-exude"
+  ],
+  "why": "'show' conflicts with the def's own 'show that it is untrue'; exude (show a feeling clearly) is a near-opposite of belie for (f)"
+ },
+ {
+  "id": "v-voluminous",
+  "set": {
+   "ant": [
+    "scanty"
+   ]
+  },
+  "why": "'slight' is not a real opposite of voluminous"
+ },
+ {
+  "id": "v-covet",
+  "set": {
+   "syn": [
+    "desire",
+    "crave",
+    "envy"
+   ]
+  },
+  "why": "'hanker after' is too rare for learners to recognize"
+ },
+ {
+  "id": "v-succinctly",
+  "set": {
+   "syn": [
+    "concisely",
+    "briefly"
+   ],
+   "ant": [
+    "verbosely",
+    "long-windedly"
+   ]
+  },
+  "why": "'pithily'/'tersely' too rare; 'wordily' barely in use"
+ },
+ {
+  "id": "v-belatedly",
+  "set": {
+   "syn": [
+    "late",
+    "after the fact"
+   ]
+  },
+  "why": "'tardily' too rare for learners to recognize"
+ },
+ {
+  "id": "v-confidante",
+  "set": {
+   "syn": [
+    "intimate",
+    "close friend"
+   ]
+  },
+  "why": "'confidant' is just a spelling variant of the term, a giveaway in (e)"
+ },
+ {
+  "id": "v-fastidious",
+  "remove_dx": [
+   "v-haphazard"
+  ],
+  "why": "haphazard (without care, messy) is a near-opposite for (f)"
+ },
+ {
+  "id": "v-allude",
+  "remove_dx": [
+   "v-stipulate"
+  ],
+  "why": "stipulate (state clearly) is a near-opposite of allude for (f), whose ant is 'state'"
+ },
+ {
+  "id": "v-forestall",
+  "remove_dx": [
+   "v-instigate",
+   "v-engender"
+  ],
+  "why": "both mean cause to start, near-opposites of forestall (prevent) for (f)"
+ },
+ {
+  "id": "v-instigate",
+  "remove_dx": [
+   "v-forestall"
+  ],
+  "why": "forestall (prevent ahead of time) is a near-opposite for (f)"
+ },
+ {
+  "id": "v-flippant",
+  "remove_dx": [
+   "v-tactful"
+  ],
+  "why": "tactful is a near-opposite of flippant (ant: serious, respectful) for (f)"
+ },
+ {
+  "id": "v-tactful",
+  "remove_dx": [
+   "v-brusque"
+  ],
+  "why": "brusque (rude, blunt) is a near-opposite; tactful's ant includes 'blunt'"
+ },
+ {
+  "id": "v-unpretentious",
+  "remove_dx": [
+   "v-garish"
+  ],
+  "why": "garish (showy) is a near-opposite; ant includes 'showy'"
+ },
+ {
+  "id": "v-droll",
+  "remove_dx": [
+   "v-staid"
+  ],
+  "why": "staid (serious, dull) is a near-opposite; ant includes 'serious'"
+ },
+ {
+  "id": "v-foolhardy",
+  "remove_dx": [
+   "v-leery"
+  ],
+  "why": "leery (careful, fearing danger) is a near-opposite; ant includes 'cautious'"
+ },
+ {
+  "id": "v-perfunctory",
+  "remove_dx": [
+   "v-scrupulous"
+  ],
+  "why": "scrupulous (thorough, careful) is a near-opposite; ant includes 'thorough'"
+ },
+ {
+  "id": "v-vilify",
+  "remove_dx": [
+   "v-berate"
+  ],
+  "why": "berate (attack someone angrily in words) is a near-synonym for (e)"
+ },
+ {
+  "id": "v-artifice",
+  "remove_dx": [
+   "v-obfuscation"
+  ],
+  "why": "obfuscation (deliberately confusing to hide the truth) overlaps with artifice/deception for (e)"
+ },
+ {
+  "id": "v-judiciously",
+  "remove_dx": [
+   "v-haphazardly"
+  ],
+  "why": "haphazardly (careless, without plan) is a near-opposite for (f)"
+ },
+ {
+  "id": "v-gingerly",
+  "remove_dx": [
+   "v-haphazardly",
+   "v-unceremoniously",
+   "v-assiduously"
+  ],
+  "why": "haphazardly/unceremoniously (careless, rough) are near-opposites; assiduously (with great care) is a near-synonym of carefully"
+ },
+ {
+  "id": "v-nonchalantly",
+  "remove_dx": [
+   "v-warily"
+  ],
+  "why": "warily (cautiously, watching for danger) is a near-opposite of nonchalantly for (f)"
+ }
+]

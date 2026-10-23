@@ -1,0 +1,165 @@
+[
+ {
+  "id": "i-a-hatchet-job",
+  "set": {
+   "also": ""
+  },
+  "why": "'a careless job of cutting or editing' is not listed as a sense by Merriam-Webster, Oxford Learner's or Britannica (only the harsh-attack sense); rule 12 requires a real, common second sense; empty string disables the also question"
+ },
+ {
+  "id": "i-baptism-of-fire",
+  "set": {
+   "origin": "In the 1800s it meant a soldier’s first battle, translating a French phrase; earlier it was a religious term."
+  },
+  "why": "'First meant a soldier's first battle' is false: the phrase had an earlier religious sense (Ecclesiastical Greek baptisma pyros); the military sense dates from 1857 per Etymonline"
+ },
+ {
+  "id": "i-nouveau-riche",
+  "set": {
+   "def": "people who have recently become rich and show off their money in a loud way, often without good taste"
+  },
+  "why": "plain-word rule: 'flashy' flagged; rewritten in plainer words with the same meaning"
+ },
+ {
+  "id": "i-par-excellence",
+  "set": {
+   "ex": [
+    "Many travelers see Paris as the romantic city par excellence.",
+    "For many fans, she remains the jazz singer par excellence."
+   ]
+  },
+  "why": "first example had only 7 words (spec 8-25)"
+ },
+ {
+  "id": "i-on-the-horns-of-a-dilemma",
+  "set": {
+   "ex": [
+    "Laid off and offered a job across the country, Tomás was on the horns of a dilemma.",
+    "The mayor is on the horns of a dilemma: raise taxes or cut library hours."
+   ]
+  },
+  "why": "'cut police funding' echoes a partisan slogan; swapped for a neutral budget choice"
+ },
+ {
+  "id": "i-play-possum",
+  "set": {
+   "ex": [
+    "When his mom called him to do chores, Liam played possum on the couch.",
+    "Our cat plays possum, lying still with her eyes shut, whenever it's time for her trip to the vet."
+   ]
+  },
+  "why": "hiding under the bed is not pretending to be asleep or dead; example now shows the meaning"
+ },
+ {
+  "id": "i-set-great-store-by",
+  "set": {
+   "note": "Also “set store by” or “put great store by.”"
+  },
+  "why": "'put great store in' is not a standard dictionary variant; dictionaries give 'set/put (great) store by'"
+ },
+ {
+  "id": "i-kick-the-can-down-the-road",
+  "set": {
+   "ant": [
+    "tackle head-on"
+   ]
+  },
+  "why": "'face the music' means accept punishment or consequences, not deal with a problem now; forced antonym"
+ },
+ {
+  "id": "i-handle-with-kid-gloves",
+  "set": {
+   "ant": []
+  },
+  "remove_dx": [
+   "i-ride-roughshod-over"
+  ],
+  "why": "'manhandle' is literal rough physical handling, a forced opposite of the figurative idiom; 'ride roughshod over' is a near-opposite and would be a second right answer to (f)"
+ },
+ {
+  "id": "i-the-thin-end-of-the-wedge",
+  "set": {
+   "syn": [
+    "slippery slope"
+   ]
+  },
+  "why": "'first step' is generic and 'foot in the door' means a first chance/opening, not a feared start of bad changes; 'slippery slope' is the true near-synonym"
+ },
+ {
+  "id": "i-double-entendre",
+  "set": {
+   "syn": [
+    "double meaning"
+   ]
+  },
+  "why": "'innuendo' is a hinting remark, not a two-way phrase; 'pun' is wordplay generally; only 'double meaning' is a true synonym"
+ },
+ {
+  "id": "i-the-lay-of-the-land",
+  "set": {
+   "syn": [
+    "the situation"
+   ]
+  },
+  "why": "'the landscape' in this figurative sense is not a recognized synonym for learners"
+ },
+ {
+  "id": "i-doppelganger",
+  "set": {
+   "syn": [
+    "lookalike",
+    "double"
+   ]
+  },
+  "why": "'twin' contradicts the def ('not related')"
+ },
+ {
+  "id": "i-dyed-in-the-wool",
+  "remove_dx": [
+   "i-stick-to-ones-guns"
+  ],
+  "why": "'refuse to change your opinion' overlaps 'holding a belief firmly, unlikely to change'; could answer (a)/(b)"
+ },
+ {
+  "id": "i-a-hard-row-to-hoe",
+  "remove_dx": [
+   "i-a-war-of-attrition"
+  ],
+  "why": "'a long struggle' overlaps the def, and 'she had a war of attrition ahead in the election' also fits the cloze"
+ },
+ {
+  "id": "i-touch-and-go",
+  "remove_dx": [
+   "i-cut-and-dried"
+  ],
+  "why": "'cut and dried' (settled, certain) is a near-opposite; a second right answer to (f)"
+ },
+ {
+  "id": "i-also-ran",
+  "remove_dx": [
+   "i-carry-the-day"
+  ],
+  "why": "'carry the day' (to win) is a near-opposite; a second right answer to (f)"
+ },
+ {
+  "id": "i-ivory-tower",
+  "remove_dx": [
+   "i-bully-pulpit"
+  ],
+  "why": "'ideas sound brilliant from her bully pulpit' also fits the cloze grammatically and sensibly"
+ },
+ {
+  "id": "i-swan-song",
+  "remove_dx": [
+   "i-piece-de-resistance"
+  ],
+  "why": "'chose a sold-out concert as his pièce de résistance' also fits the cloze sensibly"
+ },
+ {
+  "id": "i-fly-by-night",
+  "remove_dx": [
+   "i-a-snake-in-the-grass"
+  ],
+  "why": "'a person who secretly works against you' overlaps 'a person that cannot be trusted'; could answer (b)"
+ }
+]

@@ -1,0 +1,142 @@
+[
+ {
+  "id": "k-black-hole",
+  "set": {
+   "why": "Many form when giant stars collapse, and they help scientists test our deepest ideas about gravity."
+  },
+  "why": "Not all black holes form from collapsing stars (supermassive ones' origin is unsettled); 'They form when' overstated."
+ },
+ {
+  "id": "k-anesthesia",
+  "set": {
+   "def": "medicine that stops a patient from feeling pain during surgery, by numbing part of the body or putting them fully to sleep"
+  },
+  "why": "Old def's 'one small area or fully asleep' excluded regional anesthesia (spinal/epidural numbs a large area)."
+ },
+ {
+  "id": "k-type-2-diabetes",
+  "set": {
+   "cloze": {
+    "s": "Unlike type 1, which often starts in childhood, ___ most often develops in adults and is linked to lifestyle.",
+    "a": "type 2 diabetes"
+   }
+  },
+  "why": "Type 1 does not 'usually' start in childhood; a large share of cases begin in adulthood. 'often' is accurate."
+ },
+ {
+  "id": "k-dietary-fiber",
+  "set": {
+   "note": "Found mainly in plant foods; meat, eggs and dairy contain none."
+  },
+  "why": "'Found only in plant foods' is false: mushrooms (fungi) also supply dietary fiber."
+ },
+ {
+  "id": "k-artery",
+  "set": {
+   "ex": [
+    "The nurse pressed two fingers on the artery in Malik's wrist to count his pulse.",
+    "Fatty buildup inside an artery can slowly narrow it and reduce the flow of blood through it."
+   ]
+  },
+  "why": "Narrowing of a generic artery does not reduce blood flow 'to the heart'; only coronary arteries supply the heart."
+ },
+ {
+  "id": "k-net-worth",
+  "set": {
+   "ex": [
+    "Tomás owns a house worth $300,000 but owes $200,000 on it, so it adds $100,000 to his net worth.",
+    "By saving part of every paycheck, Aisha raised her net worth even though her salary stayed the same."
+   ]
+  },
+  "why": "Paying off a loan with existing money leaves net worth unchanged; the old example taught a false financial idea."
+ },
+ {
+  "id": "k-national-debt",
+  "set": {
+   "ex": [
+    "Every year that the government spends more than it collects, the national debt grows.",
+    "Liam's economics teacher explained that selling government bonds is how the country borrows the money that makes up the national debt."
+   ]
+  },
+  "why": "Ex 1 was ungrammatical ('Each year the government spends..., the debt grows')."
+ },
+ {
+  "id": "k-humanism",
+  "set": {
+   "def": "a way of thinking that centers on human worth, reason and achievement, rather than on religious teaching alone"
+  },
+  "why": "Old def ('rather than religious authority') is false for Renaissance humanism, which the item's why/cloze teach and the note says was mostly Christian."
+ },
+ {
+  "id": "k-communism",
+  "set": {
+   "why": "Inspired by Karl Marx, it became the stated goal of the ruling parties in the Soviet Union and China and a central force in the Cold War."
+  },
+  "why": "'was the official goal of ... China' wrongly implies China's ruling party has dropped it."
+ },
+ {
+  "id": "k-server",
+  "set": {
+   "syn": []
+  },
+  "why": "'host' is not a synonym: any networked device, including clients, is a host."
+ },
+ {
+  "id": "k-plaintiff",
+  "set": {
+   "syn": []
+  },
+  "why": "'complainant' is rarer than the term; fails the learner-recognizable synonym rule."
+ },
+ {
+  "id": "k-abstract-art",
+  "set": {
+   "syn": []
+  },
+  "why": "'nonrepresentational art' is a harder term than the headword; fails the learner-recognizable synonym rule."
+ },
+ {
+  "id": "k-atheism",
+  "remove_dx": [
+   "k-agnosticism",
+   "k-skepticism"
+  ],
+  "why": "Near-synonyms of atheism/unbelief for the 'closest in meaning' question."
+ },
+ {
+  "id": "k-pacifism",
+  "remove_dx": [
+   "k-civil-disobedience"
+  ],
+  "why": "Nonviolent; tempting near-synonym for 'closest in meaning to pacifism' (answer: nonviolence)."
+ },
+ {
+  "id": "k-individualism",
+  "remove_dx": [
+   "k-communism",
+   "k-confucianism"
+  ],
+  "why": "Collectivist ideas commonly set against individualism; near-opposites for the antonym question (answer: collectivism)."
+ },
+ {
+  "id": "k-static-electricity",
+  "remove_dx": [
+   "k-friction"
+  ],
+  "why": "Rubbing (friction) causes the charge; 'friction built up as they tumbled' can plausibly fill the cloze."
+ },
+ {
+  "id": "k-tsunami",
+  "remove_dx": [
+   "k-tide"
+  ],
+  "why": "Confusable with syn 'tidal wave' and loosely fits the cloze about the sea pulling back."
+ },
+ {
+  "id": "k-water-cycle",
+  "set": {
+   "syn": []
+  },
+  "why": "'hydrologic cycle' is a harder technical term than the headword; fails the learner-recognizable synonym rule."
+ }
+]

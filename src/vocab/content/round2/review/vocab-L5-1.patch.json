@@ -1,0 +1,252 @@
+[
+ {
+  "id": "v-nepotism",
+  "set": {
+   "def": "the unfair practice by people in power of giving jobs or favors to their own relatives",
+   "syn": [
+    "favoritism"
+   ]
+  },
+  "why": "Nepotism is favoritism to relatives; favors to friends is cronyism, so 'cronyism' is not a synonym and the def must separate them; 'bias' too broad."
+ },
+ {
+  "id": "v-obtuse",
+  "remove_dx": [
+   "v-disingenuous"
+  ],
+  "why": "disingenuous ('pretending to know less than one does') overlaps the def's 'acting as if you do not understand it'."
+ },
+ {
+  "id": "v-aloof",
+  "remove_dx": [
+   "v-introspective"
+  ],
+  "why": "'found him introspective and hard to know' also fits the cloze sensibly."
+ },
+ {
+  "id": "v-cursory",
+  "remove_dx": [
+   "v-shoddy"
+  ],
+  "why": "shoddy ('done with little care') overlaps 'done quickly and without much care'."
+ },
+ {
+  "id": "v-wry",
+  "remove_dx": [
+   "v-caustic"
+  ],
+  "why": "caustic (bitterly sarcastic) is a near-synonym of the listed syn 'sardonic' for question (e)."
+ },
+ {
+  "id": "v-surly",
+  "remove_dx": [
+   "v-aloof"
+  ],
+  "why": "aloof ('not friendly') overlaps surly's 'not at all friendly' and could fit 'the ___ clerk'."
+ },
+ {
+  "id": "v-sobering",
+  "remove_dx": [
+   "v-disconcerting"
+  ],
+  "why": "'a disconcerting reminder of how quickly health can change' also fits the cloze."
+ },
+ {
+  "id": "v-gravitate",
+  "set": {
+   "syn": [
+    "drift",
+    "be drawn"
+   ]
+  },
+  "remove_dx": [
+   "v-congregate"
+  ],
+  "why": "'move' and 'head' are not synonyms of being naturally drawn; congregate could loosely fill 'children ___ toward the toys'."
+ },
+ {
+  "id": "v-resurrect",
+  "set": {
+   "ant": [
+    "abandon"
+   ]
+  },
+  "why": "'bury' is a forced opposite."
+ },
+ {
+  "id": "v-assailant",
+  "set": {
+   "syn": [
+    "attacker",
+    "aggressor"
+   ]
+  },
+  "why": "'mugger' is a robber specifically, not a synonym."
+ },
+ {
+  "id": "v-tirelessly",
+  "set": {
+   "syn": [
+    "untiringly",
+    "relentlessly"
+   ]
+  },
+  "why": "'constantly' means all the time, not with untiring effort."
+ },
+ {
+  "id": "v-conclusively",
+  "set": {
+   "ant": [
+    "inconclusively"
+   ]
+  },
+  "why": "'doubtfully' (with doubt, hesitantly) is not a true opposite."
+ },
+ {
+  "id": "v-presumptuous",
+  "set": {
+   "syn": [
+    "forward",
+    "arrogant",
+    "pushy"
+   ]
+  },
+  "why": "'bold' is often positive and 'overconfident' is about self-belief, not overstepping; neither is a true synonym."
+ },
+ {
+  "id": "v-mystique",
+  "set": {
+   "syn": [
+    "mystery",
+    "allure",
+    "aura",
+    "glamour"
+   ]
+  },
+  "why": "'charisma' is personal charm, not an air of mystery."
+ },
+ {
+  "id": "v-outwardly",
+  "set": {
+   "syn": [
+    "apparently",
+    "seemingly",
+    "externally"
+   ]
+  },
+  "why": "'visibly' means noticeably, without the outward-vs-inward contrast."
+ },
+ {
+  "id": "v-talisman",
+  "remove_dx": [
+   "v-mainstay"
+  ],
+  "why": "mainstay ('most important part something depends on') overlaps the also-sense (source of strength for a team) for question (g)."
+ },
+ {
+  "id": "v-flattery",
+  "set": {
+   "syn": [
+    "sweet talk",
+    "buttering up"
+   ]
+  },
+  "why": "'praise' and 'compliments' lack the insincere/excessive meaning; not true synonyms."
+ },
+ {
+  "id": "v-entrust",
+  "set": {
+   "syn": [
+    "assign",
+    "delegate"
+   ]
+  },
+  "why": "'consign' is rarer than the headword and not one a level-5 learner would recognize as a synonym."
+ },
+ {
+  "id": "v-glorify",
+  "remove_dx": [
+   "v-revere"
+  ],
+  "why": "revere ('deeply respect and admire') matches the also-sense 'to praise and honor, especially God' for question (g)."
+ },
+ {
+  "id": "v-sedition",
+  "set": {
+   "syn": [
+    "incitement",
+    "subversion"
+   ]
+  },
+  "why": "'insurrection' is an actual armed uprising, not speech urging rebellion."
+ },
+ {
+  "id": "v-seclusion",
+  "set": {
+   "syn": [
+    "isolation",
+    "privacy",
+    "solitude"
+   ]
+  },
+  "why": "'retirement' in this sense is dated and misleading."
+ },
+ {
+  "id": "v-coherence",
+  "set": {
+   "ant": [
+    "incoherence",
+    "confusion"
+   ]
+  },
+  "why": "Add the direct opposite; 'confusion' alone is weak."
+ },
+ {
+  "id": "v-vindictive",
+  "set": {
+   "syn": [
+    "vengeful",
+    "spiteful"
+   ]
+  },
+  "why": "'malicious' means wanting to harm in general, without the revenge sense."
+ },
+ {
+  "id": "v-unruly",
+  "remove_dx": [
+   "v-belligerent"
+  ],
+  "why": "'struggled to calm the belligerent class' is also sensible in the cloze."
+ },
+ {
+  "id": "v-decadent",
+  "set": {
+   "ant": []
+  },
+  "why": "'virtuous' is a forced opposite."
+ },
+ {
+  "id": "v-monolithic",
+  "set": {
+   "syn": [
+    "uniform",
+    "rigid"
+   ],
+   "ant": [
+    "diverse",
+    "varied"
+   ]
+  },
+  "why": "'massive' is not a synonym in the 'all the same' sense used; 'flexible' is a weak opposite."
+ },
+ {
+  "id": "v-atone",
+  "set": {
+   "syn": [
+    "make amends",
+    "compensate"
+   ]
+  },
+  "why": "'repent' means to feel sorry, not to make up for a wrong."
+ }
+]

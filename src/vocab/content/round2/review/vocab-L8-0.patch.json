@@ -1,0 +1,352 @@
+[
+ {
+  "id": "v-smarmy",
+  "remove_dx": [
+   "v-obsequious",
+   "v-profuse",
+   "v-repetitious"
+  ],
+  "why": "obsequious is a near-synonym and fits 'His ___ flattery'; profuse/repetitious flattery also fit the cloze"
+ },
+ {
+  "id": "v-ornery",
+  "remove_dx": [
+   "v-churlish"
+  ],
+  "why": "churlish (rude and bad-tempered) is a near-synonym and fits 'My ___ neighbor yells...'"
+ },
+ {
+  "id": "v-sclerotic",
+  "remove_dx": [
+   "v-stodgy"
+  ],
+  "why": "stodgy (old-fashioned, unwilling to change) is a near-synonym and fits the cloze 'too set in its ways'"
+ },
+ {
+  "id": "v-desecrate",
+  "remove_dx": [
+   "v-deface"
+  ],
+  "why": "deface fits the cloze exactly ('___ its altar with spray paint')"
+ },
+ {
+  "id": "v-unremitting",
+  "remove_dx": [
+   "v-undiminished"
+  ],
+  "why": "undiminished overlaps the def (not becoming less intense) and fits '___ shelling'"
+ },
+ {
+  "id": "v-ignoramus",
+  "remove_dx": [
+   "v-polymath"
+  ],
+  "why": "polymath is an opposite of ignoramus (breaks the opposite question)"
+ },
+ {
+  "id": "v-astutely",
+  "remove_dx": [
+   "v-rashly",
+   "v-pragmatically"
+  ],
+  "why": "rashly is a near-opposite of astutely; pragmatically could also fill 'Kwame ___ bought land'"
+ },
+ {
+  "id": "v-incredulously",
+  "remove_dx": [
+   "v-dryly"
+  ],
+  "why": "'Diego laughed dryly and asked him to repeat it' also fits the cloze"
+ },
+ {
+  "id": "v-unfailingly",
+  "remove_dx": [
+   "v-indubitably"
+  ],
+  "why": "'___ cheerful' can take indubitably; remove to keep the cloze single-answer"
+ },
+ {
+  "id": "v-tomfoolery",
+  "remove_dx": [
+   "v-brouhaha"
+  ],
+  "why": "'Stop the brouhaha and get back to work' is a plausible fill"
+ },
+ {
+  "id": "v-inequitable",
+  "remove_dx": [
+   "v-ignoble"
+  ],
+  "why": "'Paying two workers different amounts ... is ignoble' is a plausible fill"
+ },
+ {
+  "id": "v-ensnare",
+  "remove_dx": [
+   "v-stymie"
+  ],
+  "why": "'set up a fake website to stymie the thieves' is a plausible fill"
+ },
+ {
+  "id": "v-dispensable",
+  "remove_dx": [
+   "v-anodyne"
+  ],
+  "why": "'The editor cut every anodyne paragraph' is a plausible fill"
+ },
+ {
+  "id": "v-ungovernable",
+  "set": {
+   "syn": [
+    "unruly",
+    "uncontrollable"
+   ]
+  },
+  "why": "'wild' is too loose to be a tested synonym"
+ },
+ {
+  "id": "v-repetitious",
+  "set": {
+   "syn": [
+    "repetitive",
+    "monotonous"
+   ]
+  },
+  "why": "'tedious' means boring, not repeating; not a synonym"
+ },
+ {
+  "id": "v-unhurried",
+  "set": {
+   "syn": [
+    "leisurely",
+    "relaxed"
+   ]
+  },
+  "why": "'easy' is not a recognizable synonym of unhurried on its own"
+ },
+ {
+  "id": "v-romanticize",
+  "set": {
+   "ant": []
+  },
+  "why": "'demystify' is not an opposite of romanticize"
+ },
+ {
+  "id": "v-brandish",
+  "set": {
+   "syn": [
+    "wave",
+    "flourish"
+   ]
+  },
+  "why": "wield = hold and use (not wave); flaunt = show off possessions; neither is a true synonym"
+ },
+ {
+  "id": "v-immensity",
+  "set": {
+   "syn": [
+    "vastness",
+    "hugeness"
+   ]
+  },
+  "why": "'enormity' in careful usage means great wickedness; misleading as a synonym"
+ },
+ {
+  "id": "v-expectantly",
+  "set": {
+   "syn": [
+    "eagerly",
+    "hopefully"
+   ]
+  },
+  "why": "'anxiously' means worriedly, not expectantly"
+ },
+ {
+  "id": "v-clamber",
+  "set": {
+   "syn": [
+    "scramble",
+    "climb"
+   ]
+  },
+  "why": "'scrabble' (scratch/grope) is rare and not a recognizable synonym"
+ },
+ {
+  "id": "v-compartmentalize",
+  "set": {
+   "syn": [
+    "separate",
+    "divide"
+   ]
+  },
+  "why": "'segregate' carries a social/racial sense; not a fitting synonym here"
+ },
+ {
+  "id": "v-wantonly",
+  "set": {
+   "syn": [
+    "senselessly",
+    "needlessly"
+   ],
+   "ant": []
+  },
+  "why": "recklessly means without care, not deliberately; 'carefully' is not a real opposite of deliberate needless harm"
+ },
+ {
+  "id": "v-billow",
+  "set": {
+   "syn": [
+    "swell",
+    "puff out"
+   ]
+  },
+  "why": "'surge' is not a synonym of billow"
+ },
+ {
+  "id": "v-agog",
+  "set": {
+   "syn": [
+    "eager",
+    "excited",
+    "curious"
+   ]
+  },
+  "why": "'enthralled' means held spellbound, not eagerly expectant"
+ },
+ {
+  "id": "v-dispensable",
+  "set": {
+   "syn": [
+    "unnecessary",
+    "expendable",
+    "nonessential"
+   ]
+  },
+  "why": "'disposable' means made to be thrown away; not a synonym"
+ },
+ {
+  "id": "v-preen",
+  "set": {
+   "syn": [
+    "primp",
+    "groom"
+   ]
+  },
+  "why": "'strut' is a way of walking, not a synonym of preen"
+ },
+ {
+  "id": "v-disburse",
+  "set": {
+   "syn": [
+    "pay out",
+    "distribute"
+   ]
+  },
+  "why": "'spend' is too loose"
+ },
+ {
+  "id": "v-chortle",
+  "set": {
+   "syn": [
+    "chuckle",
+    "laugh"
+   ]
+  },
+  "why": "'cackle' is a shrill, harsh laugh, not a chortle"
+ },
+ {
+  "id": "v-niggling",
+  "set": {
+   "syn": [
+    "nagging",
+    "persistent"
+   ]
+  },
+  "why": "'troublesome' is too loose"
+ },
+ {
+  "id": "v-profuse",
+  "set": {
+   "ex": [
+    "Diego offered profuse apologies after spilling coffee on his colleague's laptop.",
+    "The nurse noticed the patient's profuse sweating and called the doctor right away."
+   ]
+  },
+  "why": "example 2 used 'profusely', not the term"
+ },
+ {
+  "id": "v-doyen",
+  "set": {
+   "ex": [
+    "He was the doyen of food critics, and one review from him could make a restaurant famous.",
+    "At ninety, he was the doyen of the city's jazz musicians."
+   ]
+  },
+  "why": "example 1 used 'doyen' for a woman, contradicting the item's own form 'doyenne (for a woman)'"
+ },
+ {
+  "id": "v-sobriquet",
+  "set": {
+   "def": "a nickname, especially one that describes a person or place"
+  },
+  "why": "a sobriquet need not be funny or loving ('the Iron Lady'); def was misleading"
+ },
+ {
+  "id": "v-disenfranchise",
+  "set": {
+   "ex": [
+    "For decades, unfair literacy tests were used to disenfranchise Black voters in the American South.",
+    "Many workers felt disenfranchised when the union was shut out of the talks."
+   ]
+  },
+  "why": "example 1 referenced the current partisan voter-ID dispute; replaced with settled history"
+ },
+ {
+  "id": "v-watchword",
+  "set": {
+   "syn": [
+    "motto",
+    "slogan",
+    "catchword"
+   ]
+  },
+  "why": "'byword' here means an exemplar (and is taught as such in this set); not a synonym of watchword"
+ },
+ {
+  "id": "v-jingoistic",
+  "set": {
+   "syn": [
+    "nationalistic",
+    "warmongering"
+   ]
+  },
+  "why": "most learners know 'chauvinistic' only in its sexist sense; misleading as the tested synonym"
+ },
+ {
+  "id": "v-unrealistically",
+  "remove_dx": [
+   "v-fortuitously"
+  ],
+  "why": "'shows the hero fortuitously walking away from a car crash' also fits the cloze"
+ },
+ {
+  "id": "v-tenaciously",
+  "remove_dx": [
+   "v-wearily"
+  ],
+  "why": "'held on wearily to the rock face' is a plausible fill"
+ },
+ {
+  "id": "v-rashly",
+  "remove_dx": [
+   "v-charitably"
+  ],
+  "why": "'He charitably promised to pay for everyone's dinner' also fits the cloze"
+ },
+ {
+  "id": "v-churlish",
+  "set": {
+   "def": "rude and mean, especially by failing to be polite or thankful when you should be"
+  },
+  "why": "both examples and the cloze use the ungracious/ungrateful sense, which the def did not cover"
+ }
+]

@@ -1,0 +1,234 @@
+[
+ {
+  "id": "v-previously",
+  "remove_dx": [
+   "v-eventually",
+   "v-ultimately"
+  ],
+  "why": "(f) 'at some later time' / 'in the end' are near-opposites of previously"
+ },
+ {
+  "id": "v-eventually",
+  "remove_dx": [
+   "v-previously"
+  ],
+  "why": "(f) previously ('at an earlier time') is a near-opposite of eventually"
+ },
+ {
+  "id": "v-ultimately",
+  "remove_dx": [
+   "v-previously"
+  ],
+  "why": "(f) previously is a near-opposite of ultimately (ant: initially)"
+ },
+ {
+  "id": "v-entirely",
+  "remove_dx": [
+   "v-slightly",
+   "v-largely"
+  ],
+  "why": "(f) slightly is a near-opposite of entirely (ant partly); (e) largely ('mostly') is a near-synonym"
+ },
+ {
+  "id": "v-largely",
+  "remove_dx": [
+   "v-entirely"
+  ],
+  "why": "(e) entirely ('completely') could be picked as closest in meaning to largely"
+ },
+ {
+  "id": "v-specifically",
+  "remove_dx": [
+   "v-approximately"
+  ],
+  "why": "(f) approximately ('not exactly') is a near-opposite of the 'clearly and exactly' sense (ant vaguely)"
+ },
+ {
+  "id": "v-establish",
+  "remove_dx": [
+   "v-eliminate"
+  ],
+  "why": "(f) eliminate is a near-synonym of the listed antonym abolish, so a near-opposite of establish"
+ },
+ {
+  "id": "v-demonstrate",
+  "remove_dx": [
+   "v-advocate"
+  ],
+  "why": "(g) advocate's def 'publicly support or argue for a cause' overlaps the also sense 'take part in a public protest'"
+ },
+ {
+  "id": "v-withdraw",
+  "remove_dx": [
+   "v-abandon"
+  ],
+  "why": "(e) abandon ('give up a plan completely') overlaps withdraw ('remove yourself from an activity')"
+ },
+ {
+  "id": "v-consider",
+  "remove_dx": [
+   "v-suspect"
+  ],
+  "why": "(g) suspect's def 'to think something is probably true' overlaps the also sense 'to think of someone in a certain way'"
+ },
+ {
+  "id": "v-maintain",
+  "remove_dx": [
+   "v-tend"
+  ],
+  "why": "(e) tend also means 'look after' (tend the garden), a near-synonym of maintain"
+ },
+ {
+  "id": "v-reasonable",
+  "remove_dx": [
+   "v-appropriate"
+  ],
+  "why": "(e) appropriate ('suitable or right') is close enough to reasonable/sensible to be picked"
+ },
+ {
+  "id": "v-reputation",
+  "remove_dx": [
+   "v-perception"
+  ],
+  "why": "(a)/(b) 'public perception' is near-synonymous with reputation; def overlap"
+ },
+ {
+  "id": "v-consensus",
+  "remove_dx": [
+   "v-tension"
+  ],
+  "why": "(f) tension ('a feeling of conflict between people or groups') is a near-opposite of consensus (ant disagreement)"
+ },
+ {
+  "id": "v-alternative",
+  "set": {
+   "also": "different from what is usual or traditional (“alternative medicine”)"
+  },
+  "why": "also was not a second sense (same meaning, just the adjective) and began 'as an adjective', which would show as a quiz answer; replaced with the real second sense"
+ },
+ {
+  "id": "v-recognize",
+  "set": {
+   "also": "to publicly praise or thank someone for their work or achievements (“she was recognized for her years of service”)"
+  },
+  "why": "also joined several senses ('true, legal, or deserves praise'); spec 12 wants one plain sense, matched to the example"
+ },
+ {
+  "id": "v-contemporary",
+  "set": {
+   "also": "a person who lived or worked at the same time as someone else (“Shakespeare’s contemporaries”)"
+  },
+  "why": "also definition was adjectival but its example uses the noun 'contemporaries'; aligned def to the example"
+ },
+ {
+  "id": "v-appeal",
+  "set": {
+   "ant": []
+  },
+  "why": "'accept' is a forced antonym of the court sense and confusing alongside the 'be attractive' sense"
+ },
+ {
+  "id": "v-essentially",
+  "set": {
+   "syn": [
+    "basically",
+    "fundamentally",
+    "at heart"
+   ]
+  },
+  "why": "'in essence' contains the term's root, a giveaway in the synonym question"
+ },
+ {
+  "id": "v-allegedly",
+  "set": {
+   "syn": [
+    "reportedly",
+    "supposedly"
+   ]
+  },
+  "why": "'reputedly' is much rarer than the term; learners at this level will not recognize it"
+ },
+ {
+  "id": "v-necessarily",
+  "set": {
+   "syn": [
+    "inevitably",
+    "automatically"
+   ]
+  },
+  "why": "'unavoidably' is rare (zipf 2.4) for a level-1 learner"
+ },
+ {
+  "id": "v-transition",
+  "set": {
+   "syn": [
+    "change",
+    "shift"
+   ]
+  },
+  "why": "'changeover' is rare and not a word learners at this level would recognize"
+ },
+ {
+  "id": "v-consequence",
+  "set": {
+   "syn": [
+    "result",
+    "effect",
+    "outcome"
+   ]
+  },
+  "why": "'repercussion' is far rarer than the term (zipf 2.3)"
+ },
+ {
+  "id": "v-largely",
+  "set": {
+   "ant": []
+  },
+  "why": "'slightly' is not a true opposite of 'mostly'; no clean antonym exists"
+ },
+ {
+  "id": "v-heritage",
+  "set": {
+   "syn": [
+    "tradition",
+    "inheritance",
+    "legacy"
+   ]
+  },
+  "why": "'ancestry' means family descent, not traditions and culture passed down"
+ },
+ {
+  "id": "v-competitive",
+  "set": {
+   "ant": []
+  },
+  "why": "'noncompetitive' is very rare and not a word learners would recognize"
+ },
+ {
+  "id": "v-hostile",
+  "set": {
+   "syn": [
+    "unfriendly",
+    "aggressive"
+   ]
+  },
+  "why": "'unwelcoming' is rare (zipf 2.2) and narrower than hostile"
+ },
+ {
+  "id": "v-benefit",
+  "set": {
+   "syn": [
+    "advantage",
+    "gain"
+   ]
+  },
+  "why": "'perk' means a job extra, narrower than the general sense"
+ },
+ {
+  "id": "v-obligation",
+  "set": {
+   "ant": []
+  },
+  "why": "'choice'/'option' are forced opposites, not true antonyms of a duty"
+ }
+]

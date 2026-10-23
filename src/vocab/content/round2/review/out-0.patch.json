@@ -1,0 +1,937 @@
+[
+ {
+  "id": "v-consider",
+  "set": {
+   "also": "to think of someone or something in a certain way (“I consider her a close friend”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-maintain",
+  "set": {
+   "ant": [
+    "neglect"
+   ]
+  },
+  "why": "abandon is not an opposite"
+ },
+ {
+  "id": "v-suggest",
+  "set": {
+   "also": "to show that something may be true without saying it directly (“the data suggest a link”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-exist",
+  "set": {
+   "ant": []
+  },
+  "why": "vanish/disappear are not true opposites"
+ },
+ {
+  "id": "v-ensure",
+  "set": {
+   "syn": [
+    "make sure",
+    "guarantee"
+   ]
+  },
+  "why": "secure is not a synonym in this sense"
+ },
+ {
+  "id": "v-achieve",
+  "set": {
+   "def": "to reach a goal or get a result you wanted through effort or skill"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-afford",
+  "set": {
+   "syn": [
+    "pay for"
+   ]
+  },
+  "why": "manage is not a true synonym"
+ },
+ {
+  "id": "v-tend",
+  "set": {
+   "def": "to usually act in a particular way, or to be likely to happen",
+   "syn": [
+    "be inclined",
+    "be likely"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-recognize",
+  "set": {
+   "also": "to officially accept that something is true, legal, or deserves praise (“she was recognized for her years of service”)"
+  },
+  "why": "also needs example"
+ },
+ {
+  "id": "v-conduct",
+  "set": {
+   "def": "to plan and carry out an activity such as research, a test, or an interview",
+   "also": "the way a person acts, especially in public or at work (“a code of conduct”)"
+  },
+  "why": "plainer def and also"
+ },
+ {
+  "id": "v-contain",
+  "set": {
+   "also": "to keep something dangerous from spreading (“firefighters worked to contain the fire”)",
+   "syn": [
+    "hold",
+    "include"
+   ],
+   "ant": []
+  },
+  "why": "plainer also; carry/exclude not true syn/ant"
+ },
+ {
+  "id": "v-promote",
+  "set": {
+   "also": "to help something grow, do well, or become popular (“the campaign promotes healthy eating”)"
+  },
+  "why": "also needs example"
+ },
+ {
+  "id": "v-grant",
+  "set": {
+   "also": "money given by a government or organization for a certain purpose, such as research (“she won a grant to study ocean life”)"
+  },
+  "why": "plainer also with example"
+ },
+ {
+  "id": "v-claim",
+  "set": {
+   "also": "to ask for something that you have a right to (“claim a refund”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-suspect",
+  "set": {
+   "syn": [
+    "suppose",
+    "believe"
+   ]
+  },
+  "why": "sense is not a synonym"
+ },
+ {
+  "id": "v-annual",
+  "set": {
+   "def": "happening once every year, or counted or measured over one year"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-independent",
+  "set": {
+   "def": "free from outside control; not needing other people for help or money",
+   "syn": [
+    "self-reliant",
+    "self-sufficient"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-commercial",
+  "set": {
+   "also": "an ad on TV, radio, or online video (“a commercial for a new car”)",
+   "syn": [
+    "business",
+    "profit-making"
+   ]
+  },
+  "why": "plainer also; drop obscure syn"
+ },
+ {
+  "id": "v-overall",
+  "set": {
+   "also": "in general; when you think about everything together (“Overall, it was a good year”)",
+   "syn": [
+    "general",
+    "total"
+   ]
+  },
+  "why": "plainer also; comprehensive not a synonym"
+ },
+ {
+  "id": "v-effective",
+  "set": {
+   "syn": [
+    "successful"
+   ]
+  },
+  "why": "productive/potent not true synonyms"
+ },
+ {
+  "id": "v-primary",
+  "set": {
+   "also": "an election in which a political party chooses its candidate (“she won the state primary in March”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-responsible",
+  "set": {
+   "also": "able to be trusted to do the right thing (“a responsible driver”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-complex",
+  "set": {
+   "also": "a group of buildings that are connected or used together (“an apartment complex”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-critical",
+  "set": {
+   "def": "pointing out faults; saying what is wrong with someone or something",
+   "syn": [
+    "disapproving",
+    "negative"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-unique",
+  "set": {
+   "syn": [
+    "one-of-a-kind"
+   ]
+  },
+  "why": "distinctive/singular not apt synonyms"
+ },
+ {
+  "id": "v-initial",
+  "set": {
+   "also": "the first letter of a name (“her initials are J.M.”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-essential",
+  "set": {
+   "also": "the most basic things you need (“pack only the essentials”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-reasonable",
+  "set": {
+   "def": "fair and showing good sense; not extreme or silly"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-constant",
+  "set": {
+   "ant": [
+    "occasional"
+   ]
+  },
+  "why": "drop obscure ant"
+ },
+ {
+  "id": "v-equivalent",
+  "set": {
+   "also": "something that is equal in value or amount to something else (“the equivalent of a week’s pay”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-domestic",
+  "set": {
+   "also": "having to do with the home or family (“domestic chores”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-competitive",
+  "set": {
+   "syn": [
+    "ambitious",
+    "driven"
+   ]
+  },
+  "why": "combative is not a synonym"
+ },
+ {
+  "id": "v-approach",
+  "set": {
+   "also": "to come nearer to someone or something (“a storm is approaching”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-impact",
+  "set": {
+   "syn": [
+    "effect",
+    "influence"
+   ],
+   "also": "to have a strong effect on something (“the strike impacted travel across the city”)"
+  },
+  "why": "consequence not a synonym; also format"
+ },
+ {
+  "id": "v-analysis",
+  "set": {
+   "def": "a careful study of something, done by looking closely at each of its parts"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-commission",
+  "set": {
+   "also": "money paid to someone who sells things, based on how much they sell (“she earns a commission on every car she sells”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-investment",
+  "set": {
+   "syn": [
+    "stake"
+   ]
+  },
+  "why": "venture is not a synonym"
+ },
+ {
+  "id": "v-benefit",
+  "set": {
+   "also": "to help or be good for someone (“the change will benefit everyone”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-budget",
+  "set": {
+   "syn": [
+    "spending plan"
+   ]
+  },
+  "why": "allowance is not a synonym"
+ },
+ {
+  "id": "v-authority",
+  "set": {
+   "syn": [
+    "power",
+    "control",
+    "right"
+   ],
+   "also": "an expert whose knowledge of a subject is trusted (“she is an authority on bird life”)"
+  },
+  "why": "drop obscure syn; also format"
+ },
+ {
+  "id": "v-concept",
+  "set": {
+   "syn": [
+    "idea",
+    "notion"
+   ]
+  },
+  "why": "principle is not a synonym"
+ },
+ {
+  "id": "v-survey",
+  "set": {
+   "def": "a set of questions asked of many people to learn what they think or do",
+   "also": "to look carefully over a whole area or scene (“she surveyed the damage after the storm”)"
+  },
+  "why": "plainer def and also"
+ },
+ {
+  "id": "v-era",
+  "set": {
+   "syn": [
+    "age",
+    "period"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-conflict",
+  "set": {
+   "def": "a serious argument or fight between people, groups, or countries"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-revenue",
+  "set": {
+   "def": "the total money a business or government takes in before any costs are taken away",
+   "syn": [
+    "income",
+    "sales"
+   ]
+  },
+  "why": "plainer def; drop obscure syn"
+ },
+ {
+  "id": "v-threat",
+  "set": {
+   "def": "a person or thing likely to cause harm, or a warning that someone plans to cause harm"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-assets",
+  "set": {
+   "also": "a useful or valuable quality, skill, or person (“her patience is a real asset”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-incident",
+  "set": {
+   "def": "an event, especially one that is unusual, bad, or violent"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-legislation",
+  "set": {
+   "syn": [
+    "laws",
+    "bills"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-influence",
+  "set": {
+   "def": "the power to change how someone thinks or acts, without forcing them",
+   "also": "to change or affect how someone thinks or acts (“friends can influence your choices”)"
+  },
+  "why": "plainer def and also"
+ },
+ {
+  "id": "v-lack",
+  "set": {
+   "also": "to be without something or not have enough of it (“he lacks experience”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-therefore",
+  "set": {
+   "def": "for that reason; as a result of what was just said"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-indeed",
+  "set": {
+   "def": "used to agree strongly with or confirm something said before, or to make a point stronger"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-widely",
+  "set": {
+   "ant": []
+  },
+  "why": "rarely is not a true opposite"
+ },
+ {
+  "id": "v-contemporary",
+  "set": {
+   "also": "living or happening in the same period as someone else (“Shakespeare’s contemporaries”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-consistent",
+  "set": {
+   "also": "matching or agreeing with other facts (“consistent with the evidence”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-stark",
+  "set": {
+   "def": "very plain and obvious in a bad or harsh way, with nothing to hide it",
+   "also": "completely or totally (“stark naked”)"
+  },
+  "why": "plainer def and also"
+ },
+ {
+  "id": "v-genuine",
+  "set": {
+   "def": "real and exactly what it seems to be; also, honest and true in feeling"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-comprehensive",
+  "set": {
+   "def": "including all or nearly all parts or details of something; complete"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-prominent",
+  "set": {
+   "syn": [
+    "well-known",
+    "leading",
+    "notable"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-diverse",
+  "set": {
+   "ant": [
+    "uniform"
+   ]
+  },
+  "why": "drop obscure ant"
+ },
+ {
+  "id": "v-harsh",
+  "set": {
+   "def": "rough, cruel, or too strict in a way that hurts or is hard to bear"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-sophisticated",
+  "set": {
+   "def": "highly developed and complex, or showing knowledge of the world and good taste"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-modest",
+  "set": {
+   "def": "not talking too much or too proudly about your own skills or successes",
+   "syn": [
+    "humble",
+    "unassuming"
+   ],
+   "also": "fairly small or limited (“a modest salary”)"
+  },
+  "why": "plainer def; drop obscure syn; also format"
+ },
+ {
+  "id": "v-hostile",
+  "set": {
+   "def": "not friendly; angry and ready to argue or fight",
+   "syn": [
+    "unfriendly",
+    "aggressive",
+    "unwelcoming"
+   ],
+   "ant": [
+    "friendly",
+    "welcoming"
+   ]
+  },
+  "why": "plainer def; drop obscure syn/ant"
+ },
+ {
+  "id": "v-regardless",
+  "set": {
+   "syn": [
+    "anyway",
+    "nonetheless"
+   ]
+  },
+  "why": "irrespective is not used alone as a synonym"
+ },
+ {
+  "id": "v-virtually",
+  "set": {
+   "also": "online or by computer rather than in person (“The class met virtually”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-hence",
+  "set": {
+   "also": "from now, in the future (“two weeks hence”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-namely",
+  "set": {
+   "syn": [
+    "specifically",
+    "that is"
+   ]
+  },
+  "why": "to wit is archaic"
+ },
+ {
+  "id": "v-deliberately",
+  "set": {
+   "also": "slowly and carefully (“He spoke deliberately”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-simultaneously",
+  "set": {
+   "ant": [
+    "sequentially"
+   ]
+  },
+  "why": "separately is not a true opposite"
+ },
+ {
+  "id": "v-establish",
+  "set": {
+   "also": "to show or prove that something is true (“establish the cause of the fire”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-pursue",
+  "set": {
+   "also": "to chase someone or something (“Police pursued the stolen car”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-implement",
+  "set": {
+   "syn": [
+    "carry out",
+    "execute",
+    "enact"
+   ],
+   "also": "a tool, especially one used for farming or cooking (“farm implements”)"
+  },
+  "why": "apply not a true synonym; plainer also"
+ },
+ {
+  "id": "v-acknowledge",
+  "set": {
+   "also": "to show that you have noticed or seen someone (“She acknowledged me with a nod”)"
+  },
+  "why": "plainer also, format"
+ },
+ {
+  "id": "v-preserve",
+  "set": {
+   "def": "to keep something safe from harm, damage, or change so that it lasts"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-embrace",
+  "set": {
+   "ant": [
+    "reject",
+    "resist"
+   ],
+   "also": "to hug someone (“The sisters embraced at the airport”)"
+  },
+  "why": "drop obscure ant; also format"
+ },
+ {
+  "id": "v-eliminate",
+  "set": {
+   "syn": [
+    "remove",
+    "get rid of",
+    "cut out"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-justify",
+  "set": {
+   "syn": [
+    "defend",
+    "explain",
+    "warrant"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-advocate",
+  "set": {
+   "also": "a person who publicly supports a cause or speaks for others (“an advocate for patients”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-demonstrate",
+  "set": {
+   "also": "to take part in a public protest (“thousands demonstrated outside city hall”)"
+  },
+  "why": "also needs example"
+ },
+ {
+  "id": "v-alter",
+  "set": {
+   "ant": [
+    "preserve"
+   ]
+  },
+  "why": "keep is not a true opposite"
+ },
+ {
+  "id": "v-comply",
+  "set": {
+   "def": "to do what a rule, law, order, or request says you must do"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-differ",
+  "set": {
+   "syn": [
+    "vary",
+    "contrast",
+    "disagree"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-insist",
+  "set": {
+   "ant": []
+  },
+  "why": "concede/yield are not true opposites"
+ },
+ {
+  "id": "v-overcome",
+  "set": {
+   "syn": [
+    "conquer",
+    "beat",
+    "defeat"
+   ],
+   "also": "strongly affected by a feeling, such as joy or sadness (“overcome with grief”)"
+  },
+  "why": "drop obscure syn; plainer also"
+ },
+ {
+  "id": "v-threshold",
+  "set": {
+   "also": "the strip of wood or stone across the bottom of a door, where you step in (“she paused at the threshold”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-reputation",
+  "set": {
+   "syn": [
+    "name",
+    "standing",
+    "image"
+   ]
+  },
+  "why": "renown is not a synonym"
+ },
+ {
+  "id": "v-atmosphere",
+  "set": {
+   "also": "the layer of gases around Earth or another planet (“Earth’s atmosphere”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-commitment",
+  "set": {
+   "def": "loyal support for a person, cause, or activity, or a firm promise to do something"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-legacy",
+  "set": {
+   "syn": [
+    "inheritance",
+    "heritage"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-initiative",
+  "set": {
+   "also": "a new plan or program to solve a problem (“a city initiative to plant trees”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-impression",
+  "set": {
+   "also": "a copy of a famous person’s voice or way of acting, done for fun (“he does a great impression of a famous actor”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-integrity",
+  "set": {
+   "also": "the state of being whole, strong, and in one piece (“the bridge’s structural integrity”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-interpretation",
+  "set": {
+   "syn": [
+    "explanation",
+    "reading",
+    "understanding"
+   ]
+  },
+  "why": "analysis is not a synonym"
+ },
+ {
+  "id": "v-tension",
+  "set": {
+   "def": "a nervous, worried feeling, or a feeling of conflict between people or groups",
+   "also": "tightness in a muscle, rope, or wire (“tension in her shoulders”)"
+  },
+  "why": "plainer def; also format"
+ },
+ {
+  "id": "v-sacrifice",
+  "set": {
+   "syn": [],
+   "also": "to give up something valuable for something more important (“She sacrificed sleep to finish the project”)"
+  },
+  "why": "self-denial not a true synonym; plainer also"
+ },
+ {
+  "id": "v-judgment",
+  "set": {
+   "def": "the ability to make good decisions or form wise opinions",
+   "syn": [
+    "wisdom",
+    "good sense"
+   ],
+   "also": "a decision made by a court of law (“the court issued its judgment”)"
+  },
+  "why": "plainer def; drop obscure syn; also format"
+ },
+ {
+  "id": "v-controversy",
+  "set": {
+   "syn": [
+    "dispute",
+    "debate",
+    "disagreement"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-scope",
+  "set": {
+   "also": "room or chance for something to happen (“There is scope for improvement”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-insight",
+  "set": {
+   "syn": [
+    "understanding",
+    "perception",
+    "awareness"
+   ]
+  },
+  "why": "intuition is not a synonym"
+ },
+ {
+  "id": "v-notion",
+  "set": {
+   "def": "an idea or belief, often one that is not clear or is wrong"
+  },
+  "why": "plainer def"
+ },
+ {
+  "id": "v-testimony",
+  "set": {
+   "syn": [
+    "evidence",
+    "statement",
+    "account"
+   ],
+   "also": "proof or a sign of something (“a testimony to her hard work”)"
+  },
+  "why": "legal jargon syn; also format"
+ },
+ {
+  "id": "v-compromise",
+  "set": {
+   "also": "to put something at risk or make it less safe (“compromise security”)"
+  },
+  "why": "plainer also"
+ },
+ {
+  "id": "v-consensus",
+  "set": {
+   "syn": [
+    "agreement",
+    "accord"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-distinction",
+  "set": {
+   "also": "great skill or honor that makes someone stand out (“graduated with distinction”)"
+  },
+  "why": "also format"
+ },
+ {
+  "id": "v-prospect",
+  "set": {
+   "def": "the chance or possibility that something will happen in the future",
+   "also": "a possible customer, candidate, or player (“a top college football prospect”)"
+  },
+  "why": "plainer def; also format"
+ },
+ {
+  "id": "v-momentum",
+  "set": {
+   "syn": [
+    "drive",
+    "energy",
+    "force"
+   ]
+  },
+  "why": "drop obscure syn"
+ },
+ {
+  "id": "v-assumption",
+  "set": {
+   "syn": [
+    "presumption",
+    "premise"
+   ]
+  },
+  "why": "drop obscure syn"
+ }
+]

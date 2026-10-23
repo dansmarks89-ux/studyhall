@@ -1,0 +1,245 @@
+[
+ {
+  "id": "v-sullenly",
+  "remove_dx": [
+   "v-pensively",
+   "v-listlessly"
+  ],
+  "why": "cloze 'stared ___ out the window' is also natural with pensively/listlessly"
+ },
+ {
+  "id": "v-despairingly",
+  "remove_dx": [
+   "v-plaintively"
+  ],
+  "why": "cloze 'shouted ___ into the empty valley, sure no one would hear' fits plaintively"
+ },
+ {
+  "id": "v-tremulously",
+  "remove_dx": [
+   "v-plaintively",
+   "v-despairingly"
+  ],
+  "why": "cloze 'Close to tears, the boy ___ explained' fits plaintively/despairingly"
+ },
+ {
+  "id": "v-voracity",
+  "remove_dx": [
+   "v-doggedness"
+  ],
+  "why": "cloze 'studied with such ___ that she finished the reading list in a week' fits doggedness"
+ },
+ {
+  "id": "v-scandalize",
+  "remove_dx": [
+   "v-disconcert"
+  ],
+  "why": "cloze 'so frank that it managed to ___ many readers' fits disconcert"
+ },
+ {
+  "id": "v-highfalutin",
+  "remove_dx": [
+   "v-recondite"
+  ],
+  "why": "cloze '___ words like paradigmatic lost the audience' fits recondite (obscure words)"
+ },
+ {
+  "id": "v-parenthetically",
+  "remove_dx": [
+   "v-breezily"
+  ],
+  "why": "cloze 'She added, almost ___, that...' fits breezily"
+ },
+ {
+  "id": "v-fabulist",
+  "remove_dx": [
+   "v-mountebank"
+  ],
+  "why": "mountebank (fake, con man) also fits cloze about a teller of tall tales; near-synonym for (e)"
+ },
+ {
+  "id": "v-vituperation",
+  "remove_dx": [
+   "v-malediction"
+  ],
+  "why": "'a stream of maledictions against his critics' fits cloze; overlapping meaning (abusive words)"
+ },
+ {
+  "id": "v-remunerate",
+  "remove_dx": [
+   "v-requite"
+  ],
+  "why": "requite (repay) is near-synonym for (e) and can fit cloze 'requite the consultants'"
+ },
+ {
+  "id": "v-shopworn",
+  "remove_dx": [
+   "v-faddish"
+  ],
+  "why": "cloze 'the same ___ slogans' is sensibly filled by faddish"
+ },
+ {
+  "id": "v-levelheaded",
+  "remove_dx": [
+   "v-scatterbrained"
+  ],
+  "why": "near-opposite of levelheaded; breaks (f)"
+ },
+ {
+  "id": "v-lambaste",
+  "remove_dx": [
+   "v-lionize"
+  ],
+  "why": "near-opposite (lavish praise) of lambaste; breaks (f)"
+ },
+ {
+  "id": "v-affability",
+  "remove_dx": [
+   "v-discourtesy"
+  ],
+  "why": "near-opposite of affability; breaks (f)"
+ },
+ {
+  "id": "v-raffish",
+  "remove_dx": [
+   "v-discreditable"
+  ],
+  "why": "close in meaning to raffish (disreputable); risk in (a)/(e)"
+ },
+ {
+  "id": "v-outfox",
+  "set": {
+   "syn": [
+    "outwit",
+    "outsmart",
+    "outmaneuver"
+   ]
+  },
+  "why": "'trick' means deceive, not beat by cleverness; not a true synonym"
+ },
+ {
+  "id": "v-raffish",
+  "set": {
+   "syn": [
+    "rakish"
+   ]
+  },
+  "why": "'dashing' and 'jaunty' lack the disreputable sense; not synonyms"
+ },
+ {
+  "id": "v-petrify",
+  "set": {
+   "syn": [
+    "terrify",
+    "paralyze"
+   ]
+  },
+  "why": "'horrify' means shock/disgust, not freeze with fear"
+ },
+ {
+  "id": "v-ruminative",
+  "set": {
+   "ant": []
+  },
+  "why": "'thoughtless' means inconsiderate; not the opposite of ruminative"
+ },
+ {
+  "id": "v-creditworthy",
+  "set": {
+   "syn": [],
+   "ant": []
+  },
+  "why": "'solvent/insolvent' describe current ability to pay debts, not judged reliability as a borrower; not true synonym/antonym"
+ },
+ {
+  "id": "v-pleasantry",
+  "set": {
+   "syn": [
+    "small talk",
+    "courtesy"
+   ]
+  },
+  "why": "'nicety' means a fine detail, not a polite remark"
+ },
+ {
+  "id": "v-backpedal",
+  "set": {
+   "ant": [
+    "persist"
+   ]
+  },
+  "why": "'insist' is not an opposite of backpedal"
+ },
+ {
+  "id": "v-gofer",
+  "set": {
+   "ant": []
+  },
+  "why": "'boss' is a forced opposite"
+ },
+ {
+  "id": "v-precocity",
+  "set": {
+   "syn": [
+    "precociousness"
+   ]
+  },
+  "why": "'giftedness' does not mean early development; not a synonym"
+ },
+ {
+  "id": "v-transliterate",
+  "set": {
+   "note": "Not the same as translate, which puts the meaning into another language; transliterate changes only the letters."
+  },
+  "why": "old note wrongly said translating 'changes the meaning'"
+ },
+ {
+  "id": "v-woebegone",
+  "remove_dx": [
+   "v-dyspeptic"
+  ],
+  "why": "cloze 'stood at the stop looking ___' after rain and a missed bus fits dyspeptic (grumpy)"
+ },
+ {
+  "id": "v-enervating",
+  "remove_dx": [
+   "v-insupportable"
+  ],
+  "why": "cloze 'a week of ___ humidity' fits insupportable"
+ },
+ {
+  "id": "v-misappropriate",
+  "remove_dx": [
+   "v-arrogate"
+  ],
+  "why": "cloze 'she had ___ the money' sensibly takes arrogated; overlapping meaning (taking without right)"
+ },
+ {
+  "id": "v-untutored",
+  "set": {
+   "syn": [
+    "untaught",
+    "untrained",
+    "unschooled"
+   ]
+  },
+  "why": "'self-taught' means learned on one's own, not simply untaught"
+ },
+ {
+  "id": "v-prudery",
+  "set": {
+   "syn": [
+    "primness",
+    "prudishness"
+   ]
+  },
+  "why": "'priggishness' is general moral smugness, not shock about sex"
+ },
+ {
+  "id": "v-deathblow",
+  "set": {
+   "ant": []
+  },
+  "why": "'lifeline' is a forced opposite"
+ }
+]

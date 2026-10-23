@@ -1,0 +1,233 @@
+[
+ {
+  "id": "v-mendacity",
+  "set": {
+   "note": "Do not confuse with *mendicant*, which means a beggar."
+  },
+  "why": "'Not related' is false: Latin mendax and mendicus both come from menda 'fault' (Etymonline)"
+ },
+ {
+  "id": "v-constrict",
+  "set": {
+   "ex": [
+    "Cold weather can constrict the blood vessels in your hands and feet.",
+    "A collar that is too tight can constrict a dog's throat and make it cough."
+   ]
+  },
+  "why": "'until the animal can no longer breathe' is a contested claim (research shows constrictors kill mainly by stopping blood flow)"
+ },
+ {
+  "id": "v-boggle",
+  "set": {
+   "ex": [
+    "The sheer size of the universe boggles the mind.",
+    "It boggles Olga's mind that anyone could leave a dog in a hot car."
+   ]
+  },
+  "why": "'It boggles Olga that' is not idiomatic; the verb takes 'the mind'/'someone's mind'"
+ },
+ {
+  "id": "v-bulldoze",
+  "set": {
+   "def": "to force a plan through, or push someone into doing something, using pressure and ignoring objections"
+  },
+  "why": "'force a person through' is not a real usage; def now covers both examples"
+ },
+ {
+  "id": "v-dignify",
+  "set": {
+   "def": "to give something respect or serious attention, or to make it seem more important or worthy than it is"
+  },
+  "why": "old def ('often when it does not deserve it') misdescribes the core sense"
+ },
+ {
+  "id": "v-enshrine",
+  "set": {
+   "syn": [
+    "preserve",
+    "embody",
+    "protect"
+   ]
+  },
+  "why": "'establish' is not a synonym"
+ },
+ {
+  "id": "v-enshrine",
+  "remove_dx": [
+   "v-venerate"
+  ],
+  "why": "venerate (hold sacred) is a near-synonym for (a)/(e)"
+ },
+ {
+  "id": "v-bleary",
+  "set": {
+   "syn": [
+    "blurry",
+    "sleepy",
+    "unfocused"
+   ]
+  },
+  "why": "'bloodshot' means red-eyed, not a synonym"
+ },
+ {
+  "id": "v-wearily",
+  "set": {
+   "syn": [
+    "tiredly",
+    "exhaustedly"
+   ]
+  },
+  "why": "'sleepily' is not a synonym of wearily"
+ },
+ {
+  "id": "v-misanthrope",
+  "set": {
+   "syn": [
+    "cynic"
+   ]
+  },
+  "why": "'recluse' (someone who lives apart) is not a synonym"
+ },
+ {
+  "id": "v-expropriate",
+  "set": {
+   "ant": []
+  },
+  "why": "'return/restore' are forced opposites"
+ },
+ {
+  "id": "v-unceasing",
+  "remove_dx": [
+   "v-evanescent"
+  ],
+  "why": "near-opposite (lasting a short time) for (f)"
+ },
+ {
+  "id": "v-reverential",
+  "remove_dx": [
+   "v-nonplussed"
+  ],
+  "why": "'fell into a nonplussed silence' could fill the cloze"
+ },
+ {
+  "id": "v-gratuitously",
+  "remove_dx": [
+   "v-indescribably"
+  ],
+  "why": "'indescribably harsh' fits the cloze"
+ },
+ {
+  "id": "v-soberly",
+  "remove_dx": [
+   "v-wearily"
+  ],
+  "why": "'the captain wearily explained' fits the cloze"
+ },
+ {
+  "id": "v-baleful",
+  "remove_dx": [
+   "v-inimical"
+  ],
+  "why": "near-synonym (hostile/harmful) for (a)/(e)"
+ },
+ {
+  "id": "v-stigmatize",
+  "remove_dx": [
+   "v-dehumanize"
+  ],
+  "why": "overlapping meaning; fits the cloze"
+ },
+ {
+  "id": "v-vociferously",
+  "remove_dx": [
+   "v-contemptuously"
+  ],
+  "why": "'objected contemptuously, shouting and booing' fits the cloze"
+ },
+ {
+  "id": "v-deface",
+  "remove_dx": [
+   "v-desecrate"
+  ],
+  "why": "near-synonym for (e); fits the cloze"
+ },
+ {
+  "id": "v-boggle",
+  "remove_dx": [
+   "v-unsettle",
+   "v-bamboozle"
+  ],
+  "why": "'unsettle the mind' fits the cloze; bamboozle (confuse) is a near-synonym"
+ },
+ {
+  "id": "v-stodgy",
+  "remove_dx": [
+   "v-anodyne"
+  ],
+  "why": "near-synonym (bland/dull); 'anodyne reputation' fits the cloze"
+ },
+ {
+  "id": "v-dignify",
+  "remove_dx": [
+   "v-pillory"
+  ],
+  "why": "near-opposite (publicly shame) for (f)"
+ },
+ {
+  "id": "v-outflank",
+  "remove_dx": [
+   "v-demoralize"
+  ],
+  "why": "'demoralize its main competitor' fits the cloze"
+ },
+ {
+  "id": "v-insistently",
+  "remove_dx": [
+   "v-expectantly"
+  ],
+  "why": "'barked expectantly at the door' fits the cloze"
+ },
+ {
+  "id": "v-indignantly",
+  "remove_dx": [
+   "v-tenaciously"
+  ],
+  "why": "'tenaciously denied it' fits the cloze"
+ },
+ {
+  "id": "v-screed",
+  "remove_dx": [
+   "v-disparagement"
+  ],
+  "why": "overlapping meaning (angry attack in words); borderline cloze fit"
+ },
+ {
+  "id": "v-hoary",
+  "remove_dx": [
+   "v-newfangled"
+  ],
+  "why": "opposite of hoary for (f)"
+ },
+ {
+  "id": "v-wend",
+  "remove_dx": [
+   "v-bulldoze"
+  ],
+  "why": "'bulldozed their way through the streets' fits the cloze"
+ },
+ {
+  "id": "v-voraciously",
+  "remove_dx": [
+   "v-inordinately"
+  ],
+  "why": "'ate inordinately' fits the cloze"
+ },
+ {
+  "id": "v-charitably",
+  "remove_dx": [
+   "v-dryly",
+   "v-contemptuously"
+  ],
+  "why": "'Speaking dryly' fits the cloze; contemptuously is a near-opposite for (f)"
+ }
+]

@@ -1,0 +1,673 @@
+[
+ {
+  "id": "g-L1-02",
+  "set": {
+   "text": "When the last train to Leeds stopped between two stations, there was confusion in Carriage C. The lights flickered, and nobody knew why the train had stopped. A man said he had an urgent meeting at nine and could not be late. For a moment it felt like chaos, with phones ringing and bags falling from the racks. Then the conductor, Amara Osei, walked through the train. She spoke calmly and tried to assure everyone that the problem was small: a signal had failed further down the line. She thanked people for their patience and promised hot drinks at the next station. The repair was swift, and twenty minutes later the train began to move again.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-assure",
+     "q": "In the passage, what does “assure” mean?",
+     "options": [
+      "check something for yourself",
+      "buy insurance for the trip",
+      "give orders in a loud voice",
+      "tell people something is true so they stop worrying",
+      "warn people about danger",
+      "ask people many questions"
+     ],
+     "answer": 3,
+     "why": "Amara told passengers the problem was small so they would feel calm. “Warn about danger” is close to the opposite."
+    },
+    {
+     "kind": "word",
+     "word": "v-swift",
+     "q": "In the passage, what does “swift” mean?",
+     "options": [
+      "slow and careful",
+      "quick, done without delay",
+      "very expensive",
+      "done in secret",
+      "difficult and tiring",
+      "only partly finished"
+     ],
+     "answer": 1,
+     "why": "Twenty minutes later the train moved again, so the repair was quick."
+    },
+    {
+     "kind": "idea",
+     "q": "Why did the train stop?",
+     "options": [
+      "The lights in Carriage C broke.",
+      "A man needed to get off for a meeting.",
+      "The conductor stopped it to serve drinks.",
+      "Bags fell onto the tracks.",
+      "The train ran out of power at a station.",
+      "A signal further down the line had failed."
+     ],
+     "answer": 5,
+     "why": "Amara explained that a signal had failed further down the line. The flickering lights happened, but they were not the cause."
+    }
+   ],
+   "words": [
+    "v-confusion",
+    "v-urgent",
+    "v-chaos",
+    "v-assure",
+    "v-patience",
+    "v-swift"
+   ]
+  },
+  "why": "Ambiguous pronoun: 'nobody knew why they had stopped' right after 'the lights flickered' reads as the lights stopping; made it the train."
+ },
+ {
+  "id": "g-L1-07",
+  "set": {
+   "text": "When Priya moved to Chicago for her first job, she had to find an apartment quickly. Her top priority was safety, followed by a short trip to work. She made a list of costs to estimate how much rent she could pay each month. Her dream apartment had a view of the lake, but it was not realistic on her salary. She planned to share with her friend Tess. Tess wanted a big kitchen; Priya wanted two bathrooms. In the end the two made a compromise: a place with one bathroom and a medium-sized kitchen, in a quiet building close to a train stop. The kitchen is adequate for two people who mostly cook simple meals. The location is convenient, since the grocery store is right across the street.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-realistic",
+     "q": "In the passage, what does “realistic” mean?",
+     "options": [
+      "looking just like a photo",
+      "very expensive",
+      "popular with many people",
+      "dangerous",
+      "possible with the money she really had",
+      "far away"
+     ],
+     "answer": 4,
+     "why": "She could not really afford the lake view on her salary. “Looking like a photo” is a different use of realistic."
+    },
+    {
+     "kind": "word",
+     "word": "v-adequate",
+     "q": "In the passage, what does “adequate” mean?",
+     "options": [
+      "large and beautiful",
+      "too small to use",
+      "good enough, but not more than that",
+      "very modern",
+      "dirty",
+      "shared with neighbors"
+     ],
+     "answer": 2,
+     "why": "The kitchen is good enough for two people who cook simple meals. “Too small to use” goes too far."
+    },
+    {
+     "kind": "idea",
+     "q": "What was Priya's most important need when looking for an apartment?",
+     "options": [
+      "Safety",
+      "A view of the lake",
+      "A big kitchen",
+      "A store across the street",
+      "A short trip to work",
+      "Low rent above everything else"
+     ],
+     "answer": 0,
+     "why": "The passage says her top priority was safety, followed by a short trip to work. The big kitchen was Tess's wish."
+    }
+   ],
+   "words": [
+    "v-priority",
+    "v-estimate",
+    "v-realistic",
+    "v-compromise",
+    "v-adequate",
+    "v-convenient"
+   ]
+  },
+  "why": "'Compromise' (card: each side gives up part of what it wants) was misused: in the original both Tess's big kitchen and the view were lost entirely and Priya gave nothing up. Rewrote so each friend gives up part of her wish."
+ },
+ {
+  "id": "g-L1-08",
+  "set": {
+   "text": "On Saturday, the Harbor City Museum opened its new wing with a short ceremony on the front steps. The wing is home to contemporary art, including paintings and sculptures made in the last twenty years. Its magnificent glass roof lets sunlight fall across the main hall. The museum hopes the new space will attract younger visitors who do not often go to galleries. One room is a tribute to Elena Ruiz, a local painter who taught free art classes to children for forty years. Several artists in the show say she was their first inspiration. Entry to the new wing will be free on the first Sunday of every month.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-contemporary",
+     "q": "In the passage, what does “contemporary” mean?",
+     "options": [
+      "from hundreds of years ago",
+      "happening at the same time as an older event",
+      "on show for a short time only",
+      "very expensive",
+      "made by famous artists",
+      "modern; made in the present time"
+     ],
+     "answer": 5,
+     "why": "The art was made in the last twenty years, so it is modern. Another meaning, “living at the same time as,” does not fit here."
+    },
+    {
+     "kind": "word",
+     "word": "v-tribute",
+     "q": "In the passage, what does “tribute” mean?",
+     "options": [
+      "money paid to a ruler",
+      "a complaint about someone",
+      "something done to show respect and thanks for someone",
+      "an art lesson",
+      "a copy of a painting",
+      "a gift shop"
+     ],
+     "answer": 2,
+     "why": "The room honors Elena Ruiz for her years of teaching. Money paid to a ruler is an old, different meaning."
+    },
+    {
+     "kind": "idea",
+     "q": "Why does the new wing have a room about Elena Ruiz?",
+     "options": [
+      "She paid for the glass roof.",
+      "She taught free art classes for many years and inspired several of the artists.",
+      "She is the youngest artist in the show.",
+      "She opened the museum on Saturday.",
+      "She sold all her paintings to the museum.",
+      "She designed the new wing."
+     ],
+     "answer": 1,
+     "why": "She taught children free for forty years, and several artists say she inspired them."
+    }
+   ],
+   "words": [
+    "v-ceremony",
+    "v-contemporary",
+    "v-magnificent",
+    "v-attract",
+    "v-tribute",
+    "v-inspiration"
+   ]
+  },
+  "why": "Idea question said the room is 'named for' Elena Ruiz; the passage only says it is a tribute to her. Reworded the question so its premise matches the text."
+ },
+ {
+  "id": "g-L1-09",
+  "set": {
+   "text": "Last month, Mr. Okafor got a call from a woman who said she worked for his bank. She told him someone was trying to withdraw money from his account and asked for his password to stop it. He felt suspicious, because the bank had always told customers it would never ask for a password. He refused to give it and hung up instantly. Then he called the number printed on the back of his bank card. A real staff member was able to confirm that the first call was fake and that his money was safe. She thanked him for protecting his privacy and told him to share personal details only with people he truly trusts.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-withdraw",
+     "q": "In the passage, what does “withdraw” mean?",
+     "options": [
+      "put money into an account",
+      "move away from a place",
+      "draw a picture again",
+      "take money out of an account",
+      "borrow money from a friend",
+      "count money"
+     ],
+     "answer": 3,
+     "why": "The caller claimed someone was taking money out of his account. Putting money in is the opposite."
+    },
+    {
+     "kind": "word",
+     "word": "v-suspicious",
+     "q": "In the passage, what does “suspicious” mean?",
+     "options": [
+      "not trusting; feeling that something wrong was happening",
+      "very sleepy",
+      "happy and relaxed",
+      "angry at the bank",
+      "strange-looking to other people",
+      "confused about his password"
+     ],
+     "answer": 0,
+     "why": "He did not trust the caller because the bank never asks for passwords."
+    },
+    {
+     "kind": "idea",
+     "q": "What made Mr. Okafor doubt the caller?",
+     "options": [
+      "The caller spoke in a strange accent.",
+      "His bank card was missing.",
+      "The call came late at night.",
+      "He had no money in the account.",
+      "The caller knew his name.",
+      "His bank had said it would never ask for a password."
+     ],
+     "answer": 5,
+     "why": "He felt suspicious because the bank had always told customers it would never ask for a password."
+    }
+   ],
+   "words": [
+    "v-withdraw",
+    "v-suspicious",
+    "v-refuse",
+    "v-instantly",
+    "v-confirm",
+    "v-privacy"
+   ]
+  },
+  "why": "'He decided to refuse' had no object (refuse what?); made the refusal explicit."
+ },
+ {
+  "id": "g-L1-16",
+  "set": {
+   "text": "On a hill above the town of Hollowmere, a small weather station records the temperature, wind and rain every ten minutes. Its tools are precise, measuring temperature to one tenth of a degree. Students from the local college use the data to predict storms. Last winter they noticed a strange phenomenon: fog formed in the valley on clear nights while the hilltop stayed clear. A rapid drop in temperature after sunset seemed to cause it. The students found that the fog tended to occur when the wind was very light. Their charts now indicate the nights when drivers on the valley road should take extra care.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-phenomenon",
+     "q": "In the passage, what does “phenomenon” mean?",
+     "options": [
+      "a very successful person",
+      "a weather machine",
+      "a mistake in the data",
+      "a weather report",
+      "a rule of science",
+      "something that can be seen happening, especially something unusual"
+     ],
+     "answer": 5,
+     "why": "The fog in the valley was an unusual event they observed. “A very successful person” is another use of the word."
+    },
+    {
+     "kind": "word",
+     "word": "v-occur",
+     "q": "In the passage, what does “occur” mean?",
+     "options": [
+      "stop",
+      "happen",
+      "be measured",
+      "be removed",
+      "be warned about",
+      "stay hidden"
+     ],
+     "answer": 1,
+     "why": "The fog tended to happen on nights with light wind."
+    },
+    {
+     "kind": "idea",
+     "q": "When does the valley fog tend to form?",
+     "options": [
+      "On clear nights when the wind is very light",
+      "On windy afternoons",
+      "Only during storms",
+      "When the hilltop is foggy too",
+      "Early in the morning in summer",
+      "When the temperature rises after sunset"
+     ],
+     "answer": 0,
+     "why": "The passage links the fog to clear nights, a quick drop in temperature and very light wind. The temperature falls, not rises."
+    }
+   ],
+   "words": [
+    "v-precise",
+    "v-predict",
+    "v-phenomenon",
+    "v-rapid",
+    "v-occur",
+    "v-indicate"
+   ]
+  },
+  "why": "Invented a weather station and college study for Kirkby, a real town; made the town fictional. Also 'the hilltop stayed dry' is wrong for fog (fog is not rain); changed to 'stayed clear'."
+ },
+ {
+  "id": "g-L1-20",
+  "set": {
+   "text": "When Yuki's family moved abroad to Germany for her mother's job, Yuki was eleven and spoke no German. The first months were hard. At school she felt a deep sense of isolation, sitting alone at lunch while other children chatted. She tried to cope by drawing in her notebook and writing long emails to friends in Osaka. Her teacher helped with the transition by pairing her with a classmate, Leni, who spoke a little English. The two girls learned to communicate with words, hand signs and many drawings. Slowly Yuki got used to the new routines, like cycling to school in the rain. Nowadays she even dreams in two languages.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-isolation",
+     "q": "In the passage, what does “isolation” mean?",
+     "options": [
+      "being sick",
+      "being very busy",
+      "being alone and cut off from others",
+      "being angry",
+      "being punished",
+      "being lost in a city"
+     ],
+     "answer": 2,
+     "why": "She sat alone at lunch while others chatted, so she felt alone and separated."
+    },
+    {
+     "kind": "word",
+     "word": "v-cope",
+     "q": "In the passage, what does “cope” mean?",
+     "options": [
+      "give up",
+      "copy others",
+      "complain loudly",
+      "hide from people",
+      "run away",
+      "deal with a hard situation"
+     ],
+     "answer": 5,
+     "why": "Drawing and writing to friends helped her manage a hard time. “Give up” is the opposite."
+    },
+    {
+     "kind": "idea",
+     "q": "How did Yuki's teacher help her?",
+     "options": [
+      "She taught Yuki German after school.",
+      "She paired Yuki with a classmate who spoke some English.",
+      "She let Yuki eat lunch in the classroom.",
+      "She sent emails to Yuki's friends in Osaka.",
+      "She gave Yuki a bicycle.",
+      "She moved Yuki to a Japanese school."
+     ],
+     "answer": 1,
+     "why": "The teacher paired her with Leni, who spoke a little English."
+    }
+   ],
+   "words": [
+    "v-abroad",
+    "v-isolation",
+    "v-cope",
+    "v-transition",
+    "v-communicate",
+    "v-nowadays"
+   ]
+  },
+  "why": "'adjust to the new routines' uses the intransitive 'get used to' sense; the card teaches 'to change something a little so it works or fits better'. Swapped adjust for the unused level word 'nowadays' (card: at the present time, compared with the past)."
+ },
+ {
+  "id": "g-L1-22",
+  "set": {
+   "text": "The library's photography contest is open to anyone over sixteen who lives in the county. Younger people are not eligible this year, but there will be a youth contest in the spring. Each person may submit up to three photos by email. To avoid bias, the judges see the photos without names, so every entry is anonymous until the winners are chosen. Last year's winning picture, by a grandfather named Faisal Karim, showed a gray heron standing on the edge of a frozen pond. The judges called it striking because of the bright orange sunset behind the bird. They said it showed excellent judgment about light and timing.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-anonymous",
+     "q": "In the passage, what does “anonymous” mean?",
+     "options": [
+      "very famous",
+      "turned down by the judges",
+      "printed in black and white",
+      "with no name shown",
+      "secret and against the rules",
+      "shown to everyone"
+     ],
+     "answer": 3,
+     "why": "The judges see the photos without names. “Very famous” is close to the opposite."
+    },
+    {
+     "kind": "word",
+     "word": "v-striking",
+     "q": "In the passage, what does “striking” mean?",
+     "options": [
+      "hitting something hard",
+      "so unusual that it catches your attention right away",
+      "refusing to work",
+      "dark and gloomy",
+      "very small",
+      "painted by hand"
+     ],
+     "answer": 1,
+     "why": "The bright sunset behind the gray bird made the photo stand out. Hitting and refusing to work are other uses of strike."
+    },
+    {
+     "kind": "idea",
+     "q": "Why do the judges see the photos without names?",
+     "options": [
+      "Because most people forget to add names",
+      "To save time during judging",
+      "Because only grandfathers enter",
+      "So the photos can be printed faster",
+      "Because the library lost the names",
+      "So they judge each photo fairly, without favoring anyone"
+     ],
+     "answer": 5,
+     "why": "Hiding names is done “to avoid bias,” so judges cannot favor people they know."
+    }
+   ],
+   "words": [
+    "v-eligible",
+    "v-submit",
+    "v-bias",
+    "v-anonymous",
+    "v-striking",
+    "v-judgment"
+   ]
+  },
+  "why": "'standing in a frozen pond' is physically odd (a frozen pond is solid ice); changed to 'on the edge of'."
+ },
+ {
+  "id": "g-L1-24",
+  "set": {
+   "text": "Before the regional final, the debate team at Ridgeview High faced a problem: they could not agree on how to begin their speech. Daniel wanted to open with a funny story, while Fatima thought a list of facts was more logical. The two began to argue in the library, and the tension grew so strong that nobody else wanted to speak. Their coach, Mr. Lindqvist, asked each of them to explain their stance in two minutes without being interrupted. Then the team voted, and there was a clear consensus. Almost everyone liked a mix: start with a short story, then move quickly to facts. That plan helped resolve the fight, and they won the round.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-stance",
+     "q": "In the passage, what does “stance” mean?",
+     "options": [
+      "the way you stand with your feet",
+      "a short speech",
+      "a vote",
+      "a funny story",
+      "a rule of debate",
+      "opinion about an issue"
+     ],
+     "answer": 5,
+     "why": "Each student explained what they thought about how to start. The way you stand is a different meaning."
+    },
+    {
+     "kind": "word",
+     "word": "v-consensus",
+     "q": "In the passage, what does “consensus” mean?",
+     "options": [
+      "a count of all the people",
+      "a strong argument",
+      "a vote that failed",
+      "agreement among all or most of the group",
+      "a list of facts",
+      "the winning team"
+     ],
+     "answer": 3,
+     "why": "After the vote almost everyone agreed on the mix. “A count of people” is a careless reading, like census."
+    },
+    {
+     "kind": "idea",
+     "q": "What plan did the team finally choose?",
+     "options": [
+      "Begin with a short story, then move quickly to facts.",
+      "Begin with a long list of facts.",
+      "Use only Daniel's funny story.",
+      "Let the coach write the speech.",
+      "Skip the opening and start with questions.",
+      "Let Fatima speak alone."
+     ],
+     "answer": 0,
+     "why": "Most members liked a mix: a short story first, then facts."
+    }
+   ],
+   "words": [
+    "v-logical",
+    "v-argue",
+    "v-tension",
+    "v-stance",
+    "v-consensus",
+    "v-resolve"
+   ]
+  },
+  "why": "'There was no full consensus, but most members liked a mix' contradicts the card (consensus = agreement among all OR most), and the word question's answer then described exactly what the passage said was absent. Rewrote so the vote shows a clear consensus."
+ },
+ {
+  "id": "g-L1-27",
+  "set": {
+   "text": "When Nadia Khoury's grandmother turned ninety, Nadia decided to trace the family's history. She started with an old shoebox of letters. The first clue was a postcard from Brazil, written in Arabic in 1924. Nadia read through the letters thoroughly, noting every name and date. To obtain more facts, she wrote to a church in São Paulo and asked for copies of its old records. The records would reveal something unexpected: her great-grandfather had a twin brother who stayed in Brazil and opened a fabric shop. Last year, Nadia flew to São Paulo and met twenty cousins she had never known about.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-trace",
+     "q": "In the passage, what does “trace” mean?",
+     "options": [
+      "copy a drawing by going over its lines",
+      "forget",
+      "write down quickly",
+      "sell",
+      "find where something came from by following it back",
+      "repair"
+     ],
+     "answer": 4,
+     "why": "Nadia followed her family's history back through letters and records. Copying a drawing is a different meaning of trace."
+    },
+    {
+     "kind": "word",
+     "word": "v-thoroughly",
+     "q": "In the passage, what does “thoroughly” mean?",
+     "options": [
+      "quickly",
+      "only partly",
+      "carefully and completely",
+      "angrily",
+      "with friends",
+      "out loud"
+     ],
+     "answer": 2,
+     "why": "She paid attention to every name and date. “Only partly” is the opposite."
+    },
+    {
+     "kind": "idea",
+     "q": "What surprising fact did the records show?",
+     "options": [
+      "Her grandmother was born in São Paulo.",
+      "Her great-grandfather had a twin brother who stayed in Brazil.",
+      "The postcard was written in Portuguese.",
+      "Her great-grandfather opened a fabric shop.",
+      "The church had lost all its records.",
+      "Nadia had no living cousins."
+     ],
+     "answer": 1,
+     "why": "The records revealed the twin brother. It was the twin, not the great-grandfather, who opened the shop."
+    }
+   ],
+   "words": [
+    "v-trace",
+    "v-clue",
+    "v-thoroughly",
+    "v-obtain",
+    "v-reveal",
+    "v-unexpected"
+   ]
+  },
+  "why": "Logic gap: a São Paulo church's birth records could not show the birth of a great-grandfather (and twin) who arrived from abroad. Changed to the church's old records."
+ },
+ {
+  "id": "g-L1-12",
+  "set": {
+   "text": "For five years, the chess team at Lincoln High lost every match to its rival, Eastbrook Academy. This year, the coach, Ms. Tanaka, tried new tactics. Instead of waiting for mistakes, her players made bold moves early, attacking before Eastbrook was ready. Most people thought the odds were against Lincoln, since Eastbrook had two state champions. But the Lincoln players felt confident after weeks of practice. In the final game, Eastbrook's best player attacked hard, and Lincoln's youngest member, Omar, had to defend his queen for almost an hour. When Omar finally won, his teammates cheered so loudly that the judge asked them to leave the room.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-odds",
+     "q": "In the passage, what does “odds” mean?",
+     "options": [
+      "strange events",
+      "money for the trip",
+      "the number of players",
+      "how likely something was to happen",
+      "the rules of chess",
+      "leftover chess pieces"
+     ],
+     "answer": 3,
+     "why": "People thought Lincoln was unlikely to win. “Strange events” is a careless reading of odd."
+    },
+    {
+     "kind": "word",
+     "word": "v-tactics",
+     "q": "In the passage, what does “tactics” mean?",
+     "options": [
+      "rules set by the judge",
+      "tricks used to cheat",
+      "practice times",
+      "the pieces on the board",
+      "feelings of fear",
+      "planned ways of playing to win"
+     ],
+     "answer": 5,
+     "why": "The coach changed how the team planned to win, by attacking early."
+    },
+    {
+     "kind": "idea",
+     "q": "Why did most people expect Lincoln to lose?",
+     "options": [
+      "Omar was too young to play.",
+      "Eastbrook had two state champions and had beaten Lincoln for five years.",
+      "Lincoln had no coach.",
+      "Lincoln's players did not practice.",
+      "The judge favored Eastbrook.",
+      "Lincoln played too slowly."
+     ],
+     "answer": 1,
+     "why": "The passage says Eastbrook had two state champions and had won every match for five years."
+    }
+   ],
+   "words": [
+    "v-rival",
+    "v-tactics",
+    "v-bold",
+    "v-odds",
+    "v-confident",
+    "v-defend"
+   ]
+  },
+  "why": "'Aggressive' card sense is angry/threatening behavior; 'aggressive moves' in chess is a different (forceful-play) sense. Swapped in the unused level word 'bold' (willing to take risks and act with confidence)."
+ },
+ {
+  "id": "g-L1-15",
+  "set": {
+   "text": "Tomás Herrera never learned to swim as a child, and for years he felt anxious whenever his kids splashed in the pool. At forty, he finally signed up for lessons. On the first day, he stood in the shallow end, where the water reached only his waist, and his heart was pounding. His teacher, Grace, offered calm guidance: breathe out slowly, relax your shoulders, trust the water. It took courage just to put his face under. Over ten weeks his progress was slow but steady. Now he swims a full length of the pool without stopping. He regrets only one thing, he says: that he waited so long to try.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-shallow",
+     "q": "In the passage, what does “shallow” mean?",
+     "options": [
+      "not deep",
+      "not serious about feelings",
+      "very cold",
+      "crowded",
+      "warm",
+      "far away"
+     ],
+     "answer": 0,
+     "why": "The water reached only his waist, so it was not deep. “Not serious” is a different meaning of shallow."
+    },
+    {
+     "kind": "word",
+     "word": "v-steady",
+     "q": "In the passage, what does “steady” mean?",
+     "options": [
+      "very fast",
+      "sudden",
+      "unsure",
+      "even and regular, without big stops",
+      "hard to see",
+      "costly"
+     ],
+     "answer": 3,
+     "why": "His progress kept going at an even pace, even though it was slow."
+    },
+    {
+     "kind": "idea",
+     "q": "What does Tomás feel sorry about now?",
+     "options": [
+      "That he chose Grace as his teacher",
+      "That he stood in the shallow end",
+      "That he waited so many years to learn",
+      "That his kids splashed in the pool",
+      "That he cannot swim a full length",
+      "That the lessons lasted ten weeks"
+     ],
+     "answer": 2,
+     "why": "He says his only regret is that he waited so long to try. He can now swim a full length."
+    }
+   ],
+   "words": [
+    "v-anxious",
+    "v-shallow",
+    "v-guidance",
+    "v-courage",
+    "v-steady",
+    "v-regret"
+   ]
+  },
+  "why": "'Regret' card is a verb, but the passage used the noun ('His only regret'). Rewrote to use the verb."
+ }
+]

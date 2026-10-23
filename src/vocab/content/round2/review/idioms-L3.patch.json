@@ -1,0 +1,186 @@
+[
+ {
+  "id": "i-a-sacred-cow",
+  "remove_dx": [
+   "i-set-in-stone"
+  ],
+  "why": "'set in stone' also fits the cloze ('the holiday party is no longer set in stone; it could be cut')"
+ },
+ {
+  "id": "i-drag-ones-feet",
+  "remove_dx": [
+   "i-pass-the-buck"
+  ],
+  "why": "'kept passing the buck, taking months to answer our claim' also fits the cloze sensibly"
+ },
+ {
+  "id": "i-a-tall-order",
+  "remove_dx": [
+   "i-low-hanging-fruit"
+  ],
+  "why": "near-opposite of the term; a valid answer to the (f) opposite question alongside 'piece of cake'"
+ },
+ {
+  "id": "i-hang-in-the-balance",
+  "remove_dx": [
+   "i-the-jury-is-still-out"
+  ],
+  "why": "def 'not yet reached a decision' overlaps 'result is uncertain'; could answer (b)"
+ },
+ {
+  "id": "i-behind-closed-doors",
+  "remove_dx": [
+   "i-off-the-record"
+  ],
+  "why": "near-synonym ('privately, not to be reported'); could answer (b)/(e)"
+ },
+ {
+  "id": "i-throw-caution-to-the-wind",
+  "remove_dx": [
+   "i-walk-on-eggshells"
+  ],
+  "why": "'act very carefully' is a near-opposite; could answer (f) alongside 'play it safe'"
+ },
+ {
+  "id": "i-lock-stock-and-barrel",
+  "remove_dx": [
+   "i-by-and-large"
+  ],
+  "why": "'mostly/on the whole' is close to 'completely' and also close to the antonym 'partly'; ambiguous for (e)/(f)"
+ },
+ {
+  "id": "i-a-house-of-cards",
+  "remove_dx": [
+   "i-a-paper-tiger"
+  ],
+  "why": "both mean something that looks strong but is weak; could answer (b)"
+ },
+ {
+  "id": "i-a-paper-tiger",
+  "remove_dx": [
+   "i-a-house-of-cards"
+  ],
+  "why": "both mean something that looks strong but is weak; could answer (b)"
+ },
+ {
+  "id": "i-a-red-flag",
+  "set": {
+   "ant": []
+  },
+  "why": "'green light' means permission to proceed, not the opposite of a warning sign; forced antonym"
+ },
+ {
+  "id": "i-at-arms-length",
+  "set": {
+   "ant": []
+  },
+  "why": "'up close' is a physical-distance phrase, not a true opposite of keeping someone emotionally distant"
+ },
+ {
+  "id": "i-a-flash-in-the-pan",
+  "set": {
+   "syn": [
+    "one-hit wonder"
+   ]
+  },
+  "why": "'fluke' means a lucky chance, not a short-lived success; not a synonym"
+ },
+ {
+  "id": "i-per-capita",
+  "set": {
+   "syn": [
+    "per person"
+   ]
+  },
+  "why": "'each' is not a synonym of 'per capita'"
+ },
+ {
+  "id": "i-a-loose-cannon",
+  "set": {
+   "syn": [
+    "wild card"
+   ]
+  },
+  "why": "'maverick' means an independent nonconformist, often positive; not a synonym of an uncontrolled troublemaker"
+ },
+ {
+  "id": "i-across-the-board",
+  "set": {
+   "syn": [
+    "universally",
+    "for everyone"
+   ]
+  },
+  "why": "'overall' does not mean 'applying to everyone equally'"
+ },
+ {
+  "id": "i-hold-the-fort",
+  "set": {
+   "note": "Americans more often say 'hold down the fort.'"
+  },
+  "why": "spec is American English, where 'hold down the fort' is the usual form"
+ },
+ {
+  "id": "i-low-hanging-fruit",
+  "set": {
+   "syn": [
+    "quick wins"
+   ]
+  },
+  "why": "'easy target' means someone easy to attack or criticize, not an easy task; not a synonym"
+ },
+ {
+  "id": "i-a-rule-of-thumb",
+  "set": {
+   "cloze": {
+    "s": "As ___, plan to spend no more than a third of your income on rent.",
+    "a": "a rule of thumb"
+   }
+  },
+  "why": "old cloze ('A good ___') clashed with the term's article, so no listed term filled it grammatically"
+ },
+ {
+  "id": "i-a-wild-card",
+  "set": {
+   "cloze": {
+    "s": "Everything is ready for the launch; how customers will react to the price is ___.",
+    "a": "a wild card"
+   }
+  },
+  "why": "old cloze ('the only ___') clashed with the term's article; answer now matches the term"
+ },
+ {
+  "id": "i-the-pecking-order",
+  "set": {
+   "cloze": {
+    "s": "In the newsroom, senior editors sat at the top of ___ and interns at the bottom.",
+    "a": "the pecking order"
+   }
+  },
+  "why": "old cloze ('In the newsroom ___') clashed with the term's article; answer now matches the term"
+ },
+ {
+  "id": "i-a-lame-duck",
+  "set": {
+   "ex": [
+    "With two months left in office, the governor was a lame duck.",
+    "The lame-duck council could not pass any major laws before the new members arrived."
+   ]
+  },
+  "why": "used as a modifier before a noun, the compound is hyphenated: 'lame-duck council'"
+ },
+ {
+  "id": "i-a-paper-tiger",
+  "set": {
+   "origin": "A translation of the Chinese zhilaohu, recorded in English since the 1830s; Mao Zedong's 1946 use made it famous."
+  },
+  "why": "the phrase was in English print from 1836, long before Mao; old wording implied Mao introduced it"
+ },
+ {
+  "id": "i-a-lame-duck",
+  "remove_dx": [
+   "i-a-paper-tiger"
+  ],
+  "why": "'looks powerful but is weak' overlaps 'holds office but has little power'; could fit the cloze/answer (b)"
+ }
+]

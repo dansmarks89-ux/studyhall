@@ -1,0 +1,181 @@
+[
+ {
+  "id": "v-fervent",
+  "remove_dx": [
+   "v-placid"
+  ],
+  "why": "placid (calm, not easily excited) is a near-opposite of fervent"
+ },
+ {
+  "id": "v-placid",
+  "remove_dx": [
+   "v-tumultuous"
+  ],
+  "why": "tumultuous ('not calm at all') is an opposite of placid"
+ },
+ {
+  "id": "v-insidious",
+  "remove_dx": [
+   "v-palpable"
+  ],
+  "why": "palpable ('obvious') is a near-opposite of insidious (ant: obvious)"
+ },
+ {
+  "id": "v-tentatively",
+  "remove_dx": [
+   "v-decidedly",
+   "v-vehemently"
+  ],
+  "why": "decidedly ('definitely') matches ant 'definitely'; vehemently is a near-opposite"
+ },
+ {
+  "id": "v-vehemently",
+  "remove_dx": [
+   "v-tentatively"
+  ],
+  "why": "tentatively is a near-opposite of vehemently"
+ },
+ {
+  "id": "v-rectify",
+  "remove_dx": [
+   "v-escalate"
+  ],
+  "why": "escalate (syn 'worsen') matches rectify's antonym 'worsen'"
+ },
+ {
+  "id": "v-perpetuate",
+  "remove_dx": [
+   "v-eradicate"
+  ],
+  "why": "eradicate (end completely) is a near-opposite of perpetuate (ant: end, stop)"
+ },
+ {
+  "id": "v-nurture",
+  "remove_dx": [
+   "v-hinder"
+  ],
+  "why": "hinder is a near-opposite of nurture (encourage growth)"
+ },
+ {
+  "id": "v-exacerbate",
+  "remove_dx": [
+   "v-quell"
+  ],
+  "why": "quell (calm, put an end to unrest) is a near-opposite of exacerbate (ant: ease, relieve)"
+ },
+ {
+  "id": "v-astute",
+  "remove_dx": [
+   "v-oblivious"
+  ],
+  "why": "oblivious is a near-opposite of astute/perceptive"
+ },
+ {
+  "id": "v-scarcely",
+  "set": {
+   "ant": []
+  },
+  "why": "'easily' and 'fully' are forced opposites of scarcely; no true antonym"
+ },
+ {
+  "id": "v-evoke",
+  "set": {
+   "ant": []
+  },
+  "why": "'suppress' is not a genuine opposite of evoke"
+ },
+ {
+  "id": "v-adamant",
+  "set": {
+   "ant": [
+    "flexible",
+    "yielding"
+   ]
+  },
+  "why": "'hesitant' is not an opposite of adamant (firm, unwilling to change mind)"
+ },
+ {
+  "id": "v-deem",
+  "set": {
+   "syn": [
+    "consider",
+    "judge",
+    "regard"
+   ]
+  },
+  "why": "'hold' in this sense is not one a learner would recognize as a synonym"
+ },
+ {
+  "id": "v-demeanor",
+  "set": {
+   "syn": [
+    "manner",
+    "bearing",
+    "conduct"
+   ]
+  },
+  "why": "'attitude' is an inner stance, not outward manner; not a true synonym"
+ },
+ {
+  "id": "v-preclude",
+  "set": {
+   "syn": [
+    "prevent",
+    "rule out",
+    "exclude"
+   ]
+  },
+  "why": "'prohibit' means forbid by rule, a different meaning"
+ },
+ {
+  "id": "v-insidious",
+  "set": {
+   "syn": [
+    "stealthy",
+    "sneaky",
+    "treacherous"
+   ]
+  },
+  "why": "'subtle' lacks the harmful sense; not a synonym"
+ },
+ {
+  "id": "v-abhorrent",
+  "set": {
+   "syn": [
+    "disgusting",
+    "detestable",
+    "repugnant",
+    "abominable"
+   ]
+  },
+  "why": "'loathsome' is rarer than the headword; 'disgusting' is a recognizable synonym"
+ },
+ {
+  "id": "v-idiosyncratic",
+  "set": {
+   "def": "belonging only to one person or thing; unusual and highly individual in style"
+  },
+  "why": "plain-word: 'peculiar to' uses a rare sense of 'peculiar' that learners read as 'strange'"
+ },
+ {
+  "id": "v-resourceful",
+  "set": {
+   "def": "good at finding clever ways to solve problems, especially when money, tools, or help are limited"
+  },
+  "why": "plain-word: 'means' in the sense 'resources' is unclear to learners"
+ },
+ {
+  "id": "v-epiphany",
+  "set": {
+   "also": "a Christian holiday traditionally held on January 6, twelve days after Christmas (“Many churches hold a special service at Epiphany.”)"
+  },
+  "why": "not always held on Jan 6 (e.g. US Catholic Sunday observance, Julian-calendar churches); add 'traditionally'"
+ },
+ {
+  "id": "v-impediment",
+  "set": {
+   "also": "a problem that makes it hard for someone to speak clearly (“He has a mild speech impediment.”)"
+  },
+  "why": "speech impediments (e.g. stuttering) are not always physical"
+ }
+]

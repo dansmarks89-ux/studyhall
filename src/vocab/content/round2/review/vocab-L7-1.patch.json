@@ -1,0 +1,19 @@
+[
+ {"id": "v-saccharine", "set": {"note": "Usually negative. Do not confuse with saccharin (no final e), the artificial sweetener."}, "why": "Note claims the adjective comes from saccharin; false: the adjective dates from the 1670s, the sweetener was named in 1879 (etymonline)"},
+ {"id": "v-saccharine", "remove_dx": ["v-winsome"], "why": "winsome (sweet, charming) overlaps the 'sweet' part of the def for question (b)"},
+ {"id": "v-listless", "set": {"syn": ["sluggish", "lethargic", "lifeless"]}, "why": "weary means tired, not lacking energy and interest"},
+ {"id": "v-iconoclastic", "remove_dx": ["v-uninhibited"], "why": "'uninhibited designs broke every rule' also fits the cloze sensibly"},
+ {"id": "v-peaceable", "set": {"syn": ["peaceful", "nonviolent", "peace-loving"]}, "why": "calm and gentle are not synonyms of 'wanting to avoid fighting'"},
+ {"id": "v-wiry", "set": {"syn": ["lean", "sinewy"]}, "why": "tough is not a synonym of thin-but-muscular"},
+ {"id": "v-emanate", "set": {"syn": ["radiate", "issue", "flow"]}, "why": "spring (from) means to originate, not to come out of a source like light or smell"},
+ {"id": "v-impound", "set": {"def": "of police or officials: to take away and hold property, such as a car, until a fine is paid or a matter is settled"}, "why": "'until a rule is met' is unclear and inaccurate"},
+ {"id": "v-knell", "set": {"syn": ["toll"]}, "why": "peal and chime are cheerful or musical ringing, not a slow funeral bell"},
+ {"id": "v-tedium", "remove_dx": ["v-drudgery"], "why": "drudgery (boring repetitive work) is a near-synonym; fits (b), (e) and the cloze"},
+ {"id": "v-studiously", "remove_dx": ["v-slyly"], "why": "'the senator slyly avoided answering' also fits the cloze"},
+ {"id": "v-incalculable", "set": {"syn": ["immeasurable", "inestimable", "countless"], "ant": ["measurable"]}, "why": "limitless/limited are loose, not true synonym/antonym in this sense"},
+ {"id": "v-saboteur", "set": {"syn": []}, "why": "wrecker is rare and subversive means someone who undermines a government, not a true synonym"},
+ {"id": "v-despotic", "set": {"ant": ["democratic"]}, "why": "'liberal' as opposite is ambiguous and politically loaded"},
+ {"id": "v-gnaw", "remove_dx": ["v-irk"], "why": "irk (annoy, keeps bothering) overlaps the also-sense 'worry or trouble someone steadily' for question (g)"},
+ {"id": "v-rile", "remove_dx": ["v-pester"], "why": "pester (annoy) is a near-synonym of rile; fits (b) and (e)"},
+ {"id": "v-eavesdrop", "set": {"syn": ["listen in", "snoop"]}, "why": "overhear means hearing by accident, the opposite of secret deliberate listening"}
+]

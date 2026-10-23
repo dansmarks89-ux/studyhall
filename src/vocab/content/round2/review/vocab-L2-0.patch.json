@@ -1,0 +1,318 @@
+[
+ {
+  "id": "v-dense",
+  "set": {
+   "ex": [
+    "The hikers lost the trail in the dense forest and had to turn back.",
+    "The neighborhood is dense with apartment buildings, small shops, and narrow streets."
+   ],
+   "also": "slow to understand things (“Sorry if I’m being dense, but can you explain that again?”)"
+  },
+  "why": "ex2 claims Tokyo is one of the world's most densely populated cities, which is disputable; also the extra '(informal)' parenthesis breaks the also format (definition must come before the single example parenthesis)"
+ },
+ {
+  "id": "v-privileged",
+  "set": {
+   "ex": [
+    "Maria grew up in a privileged family with a private tutor and summer trips abroad.",
+    "Jamal knew he was privileged, since he never had to worry about paying for college."
+   ],
+   "syn": [
+    "advantaged",
+    "fortunate"
+   ]
+  },
+  "why": "ex2 uses the 'honored' sense (I feel privileged to...), not the defined sense of having special advantages; 'lucky' is too loose as a synonym"
+ },
+ {
+  "id": "v-idle",
+  "set": {
+   "cloze": {
+    "s": "The factory has been ___ since the strike began, and not one machine has run in a month.",
+    "a": "idle"
+   },
+   "syn": [
+    "inactive",
+    "unused"
+   ]
+  },
+  "why": "cloze contradicts the def (a car with its engine running is not 'not working'); 'unemployed' is not a synonym in this sense (machines, time)"
+ },
+ {
+  "id": "v-recession",
+  "set": {
+   "syn": [
+    "downturn",
+    "slump"
+   ]
+  },
+  "why": "'depression' is not a synonym; the item's own note says it is a much longer and more severe event"
+ },
+ {
+  "id": "v-disgrace",
+  "set": {
+   "syn": [
+    "shame",
+    "dishonor",
+    "humiliation"
+   ]
+  },
+  "why": "'scandal' is an event, not the state of lost respect; not a synonym"
+ },
+ {
+  "id": "v-onset",
+  "set": {
+   "syn": [
+    "start",
+    "beginning"
+   ]
+  },
+  "why": "'outbreak' only fits disease or war; 'the outbreak of winter' is wrong, so it is not a synonym in this sense"
+ },
+ {
+  "id": "v-preceding",
+  "set": {
+   "syn": [
+    "previous",
+    "prior",
+    "earlier"
+   ]
+  },
+  "why": "'former' does not mean 'coming just before' (the former year is not idiomatic)"
+ },
+ {
+  "id": "v-maturity",
+  "set": {
+   "syn": [
+    "wisdom",
+    "sense"
+   ]
+  },
+  "why": "'adulthood' is a synonym of the second sense (fully grown), not of the defined sense (behaving responsibly)"
+ },
+ {
+  "id": "v-preferably",
+  "set": {
+   "syn": [
+    "ideally",
+    "by choice"
+   ]
+  },
+  "why": "'rather' is not a standalone synonym of preferably"
+ },
+ {
+  "id": "v-continually",
+  "set": {
+   "syn": [
+    "constantly",
+    "repeatedly",
+    "always"
+   ]
+  },
+  "why": "'regularly' (at fixed intervals) is not a synonym of continually"
+ },
+ {
+  "id": "v-gaze",
+  "set": {
+   "syn": [
+    "stare",
+    "look"
+   ]
+  },
+  "why": "'gape' means stare open-mouthed in surprise, the opposite of calm wonder the note describes"
+ },
+ {
+  "id": "v-tenant",
+  "set": {
+   "syn": [
+    "renter",
+    "occupant"
+   ]
+  },
+  "why": "'lodger' is chiefly British and means a person renting a room in someone's home"
+ },
+ {
+  "id": "v-awe",
+  "set": {
+   "ant": []
+  },
+  "why": "'indifference' is a forced antonym; awe has no real opposite"
+ },
+ {
+  "id": "v-respectable",
+  "remove_dx": [
+   "v-splendid"
+  ],
+  "why": "'splendid' sensibly fills the cloze (look splendid in court)"
+ },
+ {
+  "id": "v-systematic",
+  "remove_dx": [
+   "v-lengthy"
+  ],
+  "why": "'lengthy' sensibly fills the cloze (a lengthy check of every part)"
+ },
+ {
+  "id": "v-routinely",
+  "remove_dx": [
+   "v-presently"
+  ],
+  "why": "'presently' sensibly fills the cloze (The airline presently sells more tickets...)"
+ },
+ {
+  "id": "v-rightly",
+  "remove_dx": [
+   "v-sincerely",
+   "v-undoubtedly"
+  ],
+  "why": "'sincerely' and 'undoubtedly' can grammatically and sensibly fill the cloze (was sincerely praised)"
+ },
+ {
+  "id": "v-positively",
+  "remove_dx": [
+   "v-exceptionally"
+  ],
+  "why": "exceptionally (extremely) matches the also sense 'truly or completely' (positively awful)"
+ },
+ {
+  "id": "v-kindle",
+  "remove_dx": [
+   "v-sustain"
+  ],
+  "why": "'sustain' sensibly fills the cloze (helped sustain Hannah's curiosity)"
+ },
+ {
+  "id": "v-refuge",
+  "remove_dx": [
+   "v-hospitality"
+  ],
+  "why": "'hospitality' sensibly fills the cloze (families found hospitality in the school gym)"
+ },
+ {
+  "id": "v-lifelong",
+  "remove_dx": [
+   "v-persistent"
+  ],
+  "why": "'persistent' is a near-synonym for the 'closest in meaning' question (syn includes 'lasting')"
+ },
+ {
+  "id": "v-prestigious",
+  "remove_dx": [
+   "v-superb"
+  ],
+  "why": "'superb' overlaps 'of very high quality' in the def and fits the cloze (such a superb law firm)"
+ },
+ {
+  "id": "v-vicious",
+  "remove_dx": [
+   "v-outrageous"
+  ],
+  "why": "'outrageous attack' is a sensible fill for the cloze"
+ },
+ {
+  "id": "v-forthcoming",
+  "remove_dx": [
+   "v-outright"
+  ],
+  "why": "outright's def 'open and direct' matches the also sense 'willing to speak openly'"
+ },
+ {
+  "id": "v-renewable",
+  "remove_dx": [
+   "v-abundant"
+  ],
+  "why": "'abundant' sensibly fills the cloze (solar power is an abundant source of energy)"
+ },
+ {
+  "id": "v-grasp",
+  "remove_dx": [
+   "v-clarify",
+   "v-convey"
+  ],
+  "why": "'clarify' and 'convey' sensibly fill the cloze (staff struggle to clarify/convey them)"
+ },
+ {
+  "id": "v-confrontation",
+  "remove_dx": [
+   "v-outbreak"
+  ],
+  "why": "'outbreak' sensibly fills the cloze (prevent a violent outbreak outside the courthouse)"
+ },
+ {
+  "id": "v-costly",
+  "remove_dx": [
+   "v-steep"
+  ],
+  "why": "'steep' commonly means expensive (a steep price), so it is a near-synonym for the closest-meaning question"
+ },
+ {
+  "id": "v-fragile",
+  "remove_dx": [
+   "v-resistant"
+  ],
+  "why": "'resistant' (as in shock-resistant) reads as an opposite of fragile in the opposite question"
+ },
+ {
+  "id": "v-decisive",
+  "remove_dx": [
+   "v-timely"
+  ],
+  "why": "'timely' sensibly fills the cloze (her goal in the final minute proved timely)"
+ },
+ {
+  "id": "v-recurring",
+  "remove_dx": [
+   "v-persistent"
+  ],
+  "why": "'persistent' fits the cloze (a persistent problem) and is a near-synonym"
+ },
+ {
+  "id": "v-illustrate",
+  "remove_dx": [
+   "v-convey"
+  ],
+  "why": "'convey' sensibly fills the cloze (To convey her point, the speaker showed a chart)"
+ },
+ {
+  "id": "v-breakthrough",
+  "remove_dx": [
+   "v-catalyst"
+  ],
+  "why": "'catalyst' sensibly fills the cloze (a catalyst that could lead to cheaper batteries)"
+ },
+ {
+  "id": "v-efficiently",
+  "remove_dx": [
+   "v-accurately"
+  ],
+  "why": "'accurately' sensibly fills the cloze (ships orders more accurately thanks to sorting robots)"
+ },
+ {
+  "id": "v-abundant",
+  "remove_dx": [
+   "v-immense"
+  ],
+  "why": "'immense' (extremely large in amount) is a near-synonym for the closest-meaning question"
+ },
+ {
+  "id": "v-distribute",
+  "remove_dx": [
+   "v-dispatch"
+  ],
+  "why": "'dispatch' (send to a place) overlaps 'deliver things to places' in the def"
+ },
+ {
+  "id": "v-brace",
+  "remove_dx": [
+   "v-anticipate"
+  ],
+  "why": "anticipate's def 'expect and often prepare for it in advance' overlaps 'get ready for something about to happen'"
+ },
+ {
+  "id": "v-vague",
+  "remove_dx": [
+   "v-absurd"
+  ],
+  "why": "an absurd answer that explained nothing is a sensible fill for the cloze"
+ }
+]

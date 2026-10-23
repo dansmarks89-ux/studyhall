@@ -1,0 +1,217 @@
+[
+ {
+  "id": "v-inopportune",
+  "set": {
+   "cloze": {
+    "s": "The fire alarm went off at a truly ___ moment, right as the bride began her vows.",
+    "a": "inopportune"
+   }
+  },
+  "why": "old cloze 'an ___ move' let foolhardy fit the meaning, and the article 'an' gave the answer away"
+ },
+ {
+  "id": "v-bashful",
+  "set": {
+   "syn": [
+    "shy",
+    "timid",
+    "self-conscious"
+   ]
+  },
+  "why": "coy (pretending to be shy, often flirting) and sheepish (embarrassed after a mistake) are not true synonyms"
+ },
+ {
+  "id": "v-discursive",
+  "remove_dx": [
+   "v-interminable"
+  ],
+  "why": "'interminable letter' could also fill the cloze"
+ },
+ {
+  "id": "v-preempt",
+  "set": {
+   "syn": [
+    "forestall",
+    "prevent"
+   ]
+  },
+  "why": "'anticipate' most often means 'expect', which misleads learners"
+ },
+ {
+  "id": "v-dethrone",
+  "remove_dx": [
+   "v-marginalize"
+  ],
+  "why": "'hopes to marginalize the market leader' could also fill the cloze"
+ },
+ {
+  "id": "v-usurper",
+  "set": {
+   "syn": []
+  },
+  "why": "pretender (one who claims a throne) and impostor (one who pretends to be someone else) are not synonyms"
+ },
+ {
+  "id": "v-unanimity",
+  "set": {
+   "syn": [
+    "agreement",
+    "consensus",
+    "accord"
+   ]
+  },
+  "why": "harmony is too loose to count as a synonym"
+ },
+ {
+  "id": "v-interlocutor",
+  "set": {
+   "syn": [
+    "conversation partner"
+   ]
+  },
+  "why": "conversationalist means someone good at talking; speaker is not a synonym"
+ },
+ {
+  "id": "v-cornucopia",
+  "remove_dx": [
+   "v-bevy"
+  ],
+  "why": "bevy (a large group of things) is a near-synonym and could fill 'a ___ of dishes'"
+ },
+ {
+  "id": "v-avidly",
+  "remove_dx": [
+   "v-assiduously"
+  ],
+  "why": "'assiduously follows the season, never missing a game' could also fill the cloze"
+ },
+ {
+  "id": "v-glutton",
+  "set": {
+   "syn": [
+    "overeater",
+    "pig"
+   ]
+  },
+  "why": "gourmand often means a food lover, not someone who overeats"
+ },
+ {
+  "id": "v-collegial",
+  "set": {
+   "ant": [
+    "hostile",
+    "unfriendly"
+   ]
+  },
+  "why": "competitive is not the opposite of collegial"
+ },
+ {
+  "id": "v-perpetrate",
+  "set": {
+   "syn": [
+    "commit",
+    "carry out"
+   ],
+   "cloze": {
+    "s": "The two brothers ___ the fraud themselves, faking every signature without help from anyone.",
+    "a": "perpetrated"
+   }
+  },
+  "why": "inflict is not a synonym; old cloze repeated example 1 (same gang, same burglaries)"
+ },
+ {
+  "id": "v-ennui",
+  "set": {
+   "syn": [
+    "boredom",
+    "listlessness",
+    "weariness"
+   ]
+  },
+  "why": "tedium is the quality of being boring, not the feeling"
+ },
+ {
+  "id": "v-philistine",
+  "set": {
+   "syn": [
+    "lowbrow"
+   ]
+  },
+  "why": "a boor is a rude person, not someone who does not value art"
+ },
+ {
+  "id": "v-escapade",
+  "set": {
+   "syn": [
+    "adventure",
+    "exploit",
+    "caper"
+   ]
+  },
+  "why": "a prank is a trick played on someone, not an adventure"
+ },
+ {
+  "id": "v-revelry",
+  "remove_dx": [
+   "v-exhilaration"
+  ],
+  "why": "'fans in noisy exhilaration' could arguably fill the cloze"
+ },
+ {
+  "id": "v-stealthily",
+  "remove_dx": [
+   "v-gingerly",
+   "v-warily"
+  ],
+  "why": "both could fill 'moved ___ through the dark house, avoiding every creaky floorboard'"
+ },
+ {
+  "id": "v-edifying",
+  "remove_dx": [
+   "v-encyclopedic"
+  ],
+  "why": "'found the documentary truly encyclopedic; he learned more...' also fits the cloze"
+ },
+ {
+  "id": "v-inauspicious",
+  "remove_dx": [
+   "v-inopportune"
+  ],
+  "why": "near-synonym (bad time vs bad sign); fits 'an ___ beginning'"
+ },
+ {
+  "id": "v-boorish",
+  "remove_dx": [
+   "v-contemptible"
+  ],
+  "why": "'talking on his phone during the funeral was contemptible' also fits the cloze"
+ },
+ {
+  "id": "v-unreservedly",
+  "remove_dx": [
+   "v-meekly"
+  ],
+  "why": "'apologized meekly, accepting full blame' also fits the cloze"
+ },
+ {
+  "id": "v-unabashedly",
+  "remove_dx": [
+   "v-belatedly"
+  ],
+  "why": "'He belatedly admitted that...' also fits the cloze"
+ },
+ {
+  "id": "v-pontificate",
+  "remove_dx": [
+   "v-bicker"
+  ],
+  "why": "'Pundits who bicker on TV about every topic' also fits the cloze"
+ },
+ {
+  "id": "v-studious",
+  "remove_dx": [
+   "v-indefatigable"
+  ],
+  "why": "could arguably fill \"so ___ in college that his roommates rarely saw him without a textbook\""
+ }
+]

@@ -1,0 +1,58 @@
+[
+ {
+  "id": "p-analogy-flammable-burn",
+  "set": {
+   "options": [
+    "dissolve",
+    "water",
+    "melt",
+    "liquid",
+    "freeze",
+    "boil"
+   ]
+  },
+  "why": "'solve' is also a correct answer: soluble also means 'able to be solved' (a soluble problem), so flammable:burn :: soluble:solve holds; replaced with 'boil'."
+ },
+ {
+  "id": "p-analogy-oar-rowboat",
+  "set": {
+   "why": "An oar is the part you move with your body to make a rowboat go, and a pedal is the part you move to make a bicycle go. A wheel is part of the bike, but you don’t move it directly."
+  },
+  "why": "Old 'why' said you push an oar; rowers pull the oar."
+ },
+ {
+  "id": "p-context-brusque",
+  "set": {
+   "why": "A quick brush-off like “Not my problem. Next!” is short and rude, and it left Tomás feeling dismissed. Nothing suggests the clerk was nervous; the reply was simply abrupt."
+  },
+  "why": "Old 'why' called the four-word reply a 'two-word dismissal' and gendered the unnamed clerk."
+ },
+ {
+  "id": "p-inference-car-leaves-at-7",
+  "set": {
+   "options": [
+    "Malik is lying.",
+    "Malik’s car was stolen.",
+    "The neighbor is mistaken.",
+    "Malik drove to the store.",
+    "Either Malik was not home all evening, or someone else took his car.",
+    "Malik was asleep."
+   ]
+  },
+  "why": "'drove' is not strictly forced (the car could be taken without Malik driving it); 'took' makes the correct option strictly must-be-true and matches the why."
+ },
+ {
+  "id": "p-odd-one-out-earthquake",
+  "set": {
+   "why": "All the others are kinds of weather: storms, or seasonal winds and rains, in the air. An earthquake is a shaking of the ground caused by movement of rock deep underground. A monsoon is a seasonal wind that brings months of heavy rain, so it is weather too."
+  },
+  "why": "Old 'why' said the others are 'weather caused by wind, rain or snow' — muddled (a tornado is wind, not caused by it)."
+ },
+ {
+  "id": "c-optimism-bias",
+  "remove_dx": [
+   "c-illusion-of-control"
+  ],
+  "why": "Test 1 (Diego thinks he is careful enough that texting won't make him crash) also reads as illusion of control; research on driving risk links the two directly."
+ }
+]

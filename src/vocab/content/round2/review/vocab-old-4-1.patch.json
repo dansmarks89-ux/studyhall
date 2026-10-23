@@ -1,0 +1,159 @@
+[
+ {
+  "id": "v-impassive",
+  "remove_dx": [
+   "v-ebullient"
+  ],
+  "why": "ebullient is close to the antonym 'animated'; could be picked for 'opposite of impassive'"
+ },
+ {
+  "id": "v-bellicose",
+  "remove_dx": [
+   "v-irascible"
+  ],
+  "why": "irascible (quick to anger) is a near-synonym of bellicose/combative"
+ },
+ {
+  "id": "v-indolent",
+  "set": {
+   "syn": [
+    "lazy",
+    "idle",
+    "slothful"
+   ]
+  },
+  "why": "sluggish means slow-moving, not unwilling to work; not a true synonym"
+ },
+ {
+  "id": "v-ebullient",
+  "remove_dx": [
+   "v-lackadaisical",
+   "v-diffident"
+  ],
+  "why": "lackadaisical (lacking enthusiasm) is a near-opposite; diffident (shy, hesitant) is close to the antonym 'subdued'"
+ },
+ {
+  "id": "v-pugnacious",
+  "remove_dx": [
+   "v-diffident"
+  ],
+  "why": "diffident (shy, unassertive) is a near-opposite, close to the listed antonym 'meek'"
+ },
+ {
+  "id": "v-lampoon",
+  "remove_dx": [
+   "v-extol"
+  ],
+  "why": "extol means 'praise', the listed antonym; it would be a correct answer to 'opposite of lampoon'"
+ },
+ {
+  "id": "v-chide",
+  "remove_dx": [
+   "v-extol"
+  ],
+  "why": "extol means 'praise', the listed antonym; it would be a correct answer to 'opposite of chide'"
+ },
+ {
+  "id": "v-galvanize",
+  "remove_dx": [
+   "v-stymie"
+  ],
+  "why": "stymie (block progress) is a near-opposite of galvanize (spur to action)"
+ },
+ {
+  "id": "v-extol",
+  "remove_dx": [
+   "v-venerate"
+  ],
+  "why": "venerate (honor with deep respect) is a near-synonym of extol/laud"
+ },
+ {
+  "id": "v-palpably",
+  "remove_dx": [
+   "v-indubitably"
+  ],
+  "why": "indubitably (certainly, beyond question) overlaps with 'obviously/clearly'"
+ },
+ {
+  "id": "v-indubitably",
+  "remove_dx": [
+   "v-palpably"
+  ],
+  "why": "palpably (obviously, clearly) is a near-synonym of indubitably/certainly"
+ },
+ {
+  "id": "v-stoically",
+  "remove_dx": [
+   "v-dispassionately"
+  ],
+  "why": "dispassionately (calmly, without feeling) is a near-synonym of the listed syn 'calmly'/'impassively'"
+ },
+ {
+  "id": "v-askance",
+  "remove_dx": [
+   "v-indubitably"
+  ],
+  "why": "indubitably (without any doubt) is a near-opposite of askance (doubtfully)"
+ },
+ {
+  "id": "v-ingenuous",
+  "remove_dx": [
+   "v-mendacious",
+   "v-perfidious"
+  ],
+  "why": "lying and two-faced are near-opposites of ingenuous (innocent, open, guileless); could be picked for 'opposite of ingenuous'"
+ },
+ {
+  "id": "v-bilk",
+  "remove_dx": [
+   "v-pilfer"
+  ],
+  "why": "pilfer (steal small things) overlaps with bilk (cheat out of money)"
+ },
+ {
+  "id": "v-hoodwink",
+  "remove_dx": [
+   "v-disabuse"
+  ],
+  "why": "disabuse (free someone from a false belief) is the opposite of hoodwink"
+ },
+ {
+  "id": "v-indolence",
+  "set": {
+   "syn": [
+    "laziness",
+    "idleness",
+    "sloth"
+   ]
+  },
+  "why": "inertia means resistance to change or motion, not laziness; not a true synonym"
+ },
+ {
+  "id": "v-poseur",
+  "set": {
+   "def": "someone who puts on a fake manner to impress others, pretending to be something they are not"
+  },
+  "why": "'affected' (in this sense) is harder than the headword; plain-word rule"
+ },
+ {
+  "id": "v-abstruse",
+  "set": {
+   "def": "very hard to understand because the ideas are complex, specialized, or far from everyday knowledge"
+  },
+  "why": "def used 'obscure', itself a listed synonym and a hard word; plain-word rule"
+ },
+ {
+  "id": "v-equivocation",
+  "set": {
+   "def": "the use of vague, unclear wording on purpose to avoid taking a clear position"
+  },
+  "why": "'ambiguous' is a hard word that is also a listed synonym; plain-word rule"
+ },
+ {
+  "id": "v-imprimatur",
+  "set": {
+   "def": "official approval, or a public stamp of support from a respected person or group"
+  },
+  "why": "'authoritative endorsement' defines a hard word with hard words; plain-word rule"
+ }
+]

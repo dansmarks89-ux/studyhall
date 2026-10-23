@@ -1,0 +1,117 @@
+[
+ {
+  "id": "i-curiosity-killed-the-cat",
+  "set": {
+   "origin": "An older proverb, 'care'll kill a cat' (care meaning worry), appears in Ben Jonson's 1598 play; the 'curiosity' version is first recorded in the late 1860s."
+  },
+  "why": "Jonson's line is 'care'll kill a cat', not 'care killed the cat'; earliest 'curiosity' form is 1868, so 'by the late 1800s' is vague and 'began' overstated"
+ },
+ {
+  "id": "i-neck-and-neck",
+  "set": {
+   "def": "very close or level in a race or contest, so that it is unclear who will win",
+   "syn": [
+    "close",
+    "even"
+   ]
+  },
+  "why": "'exactly even' is wrong; the idiom means very close/level, not exactly tied; 'tied' removed from syn for the same reason"
+ },
+ {
+  "id": "i-keep-your-head-above-water",
+  "set": {
+   "def": "to barely manage to cope with a hard situation, especially money problems or too much work"
+  },
+  "why": "'just manage to survive' is ambiguous for learners ('just' = only?) and the money-only focus does not cover the homework cloze"
+ },
+ {
+  "id": "i-a-dark-horse",
+  "set": {
+   "syn": []
+  },
+  "why": "'underdog' is not a synonym: an underdog is known and expected to lose; a dark horse is little known. Would be tested as the right answer to (e)"
+ },
+ {
+  "id": "i-the-grass-is-always-greener-on-the-other-side",
+  "set": {
+   "ex": [
+    "Kwame keeps changing jobs and is never happy where he is; the grass is always greener on the other side.",
+    "City people dream of farm life and farmers dream of the city; the grass is always greener on the other side."
+   ]
+  },
+  "why": "ex 1 'keeps changing jobs, but the grass is...' is illogical with 'but' and does not show the meaning"
+ },
+ {
+  "id": "i-a-wake-up-call",
+  "remove_dx": [
+   "i-a-blessing-in-disguise"
+  ],
+  "why": "'Failing the first quiz was a blessing in disguise for Sofia, and she started studying' also fits the cloze sensibly"
+ },
+ {
+  "id": "i-beat-a-dead-horse",
+  "remove_dx": [
+   "i-rock-the-boat"
+  ],
+  "why": "'arguing for it again would be rocking the boat' also fits the cloze"
+ },
+ {
+  "id": "i-bend-over-backwards",
+  "remove_dx": [
+   "i-jump-through-hoops"
+  ],
+  "why": "'jumped through hoops to make the interns feel welcome' fits the cloze; overlapping meaning (great effort)"
+ },
+ {
+  "id": "i-take-something-with-a-grain-of-salt",
+  "remove_dx": [
+   "i-read-between-the-lines"
+  ],
+  "why": "'read between the lines before you share it' grammatically and plausibly fits the rumor-site cloze; related sense of not taking text at face value"
+ },
+ {
+  "id": "i-the-grass-is-always-greener-on-the-other-side",
+  "remove_dx": [
+   "i-green-with-envy"
+  ],
+  "why": "cloze is about Yuki envying a friend's life, so 'green with envy' is a tempting near-fit; overlapping theme"
+ },
+ {
+  "id": "i-take-a-back-seat",
+  "remove_dx": [
+   "i-pick-ones-battles"
+  ],
+  "why": "'happy to pick his battles and let her run the shop' is a plausible fill; both involve stepping back"
+ },
+ {
+  "id": "i-the-whole-nine-yards",
+  "remove_dx": [
+   "i-bend-over-backwards"
+  ],
+  "why": "overlapping sense of doing more than needed; when in doubt remove"
+ },
+ {
+  "id": "i-rain-or-shine",
+  "remove_dx": [
+   "i-around-the-clock"
+  ],
+  "why": "both mean 'no matter what / without stopping' for schedules ('open around the clock' vs 'open rain or shine'); near-overlap in (a)/(b)"
+ },
+ {
+  "id": "i-catch-someone-red-handed",
+  "set": {
+   "cloze": {
+    "s": "A teenager was painting graffiti on the wall at midnight when the guard ___.",
+    "a": "caught him red-handed"
+   }
+  },
+  "why": "old cloze answer 'caught the teenager red-handed' required a word ('teenager') the sentence never gives"
+ },
+ {
+  "id": "i-steal-someones-thunder",
+  "set": {
+   "origin": "An 18th-century story, possibly embellished, says playwright John Dennis devised new stage thunder for his 1709 play and protested when another production used it: 'That is my thunder!'"
+  },
+  "why": "Dennis improved an existing thunder device rather than inventing the effect; the anecdote is poorly documented, so flag it as possibly embellished"
+ }
+]

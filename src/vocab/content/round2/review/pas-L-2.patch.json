@@ -1,0 +1,368 @@
+[
+ {
+  "id": "g-L-2-02",
+  "set": {
+   "text": "Our soccer team played the Blue Hawks on Sunday. In the morning, it started to rain. We played anyway. The ball was hard to control on the wet grass. At the end, the Blue Hawks won by one goal. Coach Park said, 'You all played hard. Keep trying!' We still had fun.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-try",
+     "q": "In the passage, what does “trying” mean?",
+     "options": [
+      "winning the game",
+      "giving up",
+      "working hard to do something well",
+      "tasting something to see if you like it",
+      "being sad",
+      "running away"
+     ],
+     "answer": 2,
+     "why": "The coach wants the players to keep working hard to play well. Here it does not mean tasting food, and it is the opposite of giving up."
+    },
+    {
+     "kind": "word",
+     "word": "v-control",
+     "q": "In the passage, what does “control” mean?",
+     "options": [
+      "to make it go where you want",
+      "to see it clearly",
+      "to kick it very hard",
+      "to find it after losing it",
+      "to keep it dry",
+      "to share it with others"
+     ],
+     "answer": 0,
+     "why": "On wet grass the ball was hard to make go where the players wanted."
+    },
+    {
+     "kind": "idea",
+     "q": "Did the writer's team win the game?",
+     "options": [
+      "No, they lost by one goal, but they still had fun",
+      "Yes, they won by one goal",
+      "No, the game was stopped by the rain",
+      "Yes, and the coach said they were the best",
+      "No, and they were very sad",
+      "No one won; the score was the same"
+     ],
+     "answer": 0,
+     "why": "The Blue Hawks won by one goal, so the writer's team lost. But the writer says 'We still had fun.'"
+    }
+   ],
+   "words": [
+    "v-team",
+    "v-morning",
+    "v-control",
+    "v-end",
+    "v-try",
+    "v-fun"
+   ]
+  },
+  "why": "Soccer is scored in goals, not points: 'won by one point' was wrong for soccer. Changed to 'one goal' and swapped v-point for v-try (coach now says 'Keep trying!') with a new word question."
+ },
+ {
+  "id": "g-L-2-06",
+  "set": {
+   "text": "Today the Okafor family is moving to a new house. Dad carries big boxes to the truck. Mom puts her guitar in its case so it will not break. Little Ada holds her cat. She feels a bit sad to leave her old room. But her new room has a big window that looks out on a park.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-case",
+     "q": "In the passage, what does “case” mean?",
+     "options": [
+      "a problem for the police",
+      "a box or cover that keeps things safe",
+      "a big bag for clothes",
+      "a shelf in the kitchen",
+      "an example of something",
+      "a box for trash"
+     ],
+     "answer": 1,
+     "why": "Mom puts her guitar in its case so it will not break, so the case keeps it safe."
+    },
+    {
+     "kind": "word",
+     "word": "v-bit",
+     "q": "In the passage, what does “bit” mean?",
+     "options": [
+      "very",
+      "not at all",
+      "a little",
+      "a small piece of food",
+      "for a long time",
+      "more and more"
+     ],
+     "answer": 2,
+     "why": "Ada is a little sad, but the next sentence says her new room is nice."
+    },
+    {
+     "kind": "idea",
+     "q": "Why does Ada feel sad?",
+     "options": [
+      "Her cat is lost",
+      "Her new room is very small",
+      "She cannot go to the park",
+      "Her cups broke",
+      "She has to leave her old room",
+      "She does not like the truck"
+     ],
+     "answer": 4,
+     "why": "The passage says she feels sad to leave her old room. Her new room has a big window, so it is not small."
+    }
+   ],
+   "words": [
+    "v-today",
+    "v-family",
+    "v-case",
+    "v-feel",
+    "v-bit",
+    "v-leave"
+   ]
+  },
+  "why": "'Puts her best cups in a soft case' is unnatural English (cups go in a box); changed to a guitar in its case, the natural use of the card meaning."
+ },
+ {
+  "id": "g-L-2-22",
+  "set": {
+   "text": "The Patel family was driving to the beach. Suddenly, the car made a strange noise and stopped. Dad got out and looked at the car. 'I don't know what is wrong,' he said. Mom called a man who fixes cars. He came in his truck one hour later. He fixed the problem fast. His service cost fifty dollars. Soon they were on the road again.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-service",
+     "q": "In the passage, what does “service” mean?",
+     "options": [
+      "a meeting at a church",
+      "a set of plates for dinner",
+      "the work the man did for them",
+      "a free gift",
+      "a part of the car",
+      "a police car"
+     ],
+     "answer": 2,
+     "why": "The man fixed the car, and that work cost fifty dollars. It was not free."
+    },
+    {
+     "kind": "word",
+     "word": "v-wrong",
+     "q": "In the passage, what does “wrong” mean?",
+     "options": [
+      "not the way it should be",
+      "right",
+      "new",
+      "very loud",
+      "far away",
+      "fast"
+     ],
+     "answer": 0,
+     "why": "The car stopped, so something in it was not the way it should be."
+    },
+    {
+     "kind": "idea",
+     "q": "Who fixed the car?",
+     "options": [
+      "Dad",
+      "Mom",
+      "The man Mom called",
+      "No one",
+      "A man at the beach",
+      "The whole family"
+     ],
+     "answer": 2,
+     "why": "Dad did not know what was wrong. Mom called a man who fixes cars, and he fixed the problem."
+    }
+   ],
+   "words": [
+    "v-stop",
+    "v-know",
+    "v-wrong",
+    "v-service",
+    "v-problem",
+    "v-again"
+   ]
+  },
+  "why": "'Called a service that fixes cars' uses service as 'a business', and the keyed option said 'a business', not the card meaning (work done for others). Rewrote so 'His service cost fifty dollars' = the work he did; updated both affected questions."
+ },
+ {
+  "id": "g-L-2-24",
+  "set": {
+   "text": "The city government wants to make a new law. Dogs in the park must walk next to their owners. This rule matters a lot to dog owners. Some like the idea, and some do not. So next Tuesday there will be a meeting at City Hall. Anyone can come and talk about it. Officer Grant from the police will answer questions. The doors will be open at six o'clock.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-matter",
+     "q": "In the passage, what does “matters” mean?",
+     "options": [
+      "is a thing you can touch",
+      "is a problem",
+      "is about money",
+      "is a new rule",
+      "makes people angry",
+      "is important"
+     ],
+     "answer": 5,
+     "why": "The rule is important to dog owners because it changes how they walk their dogs."
+    },
+    {
+     "kind": "word",
+     "word": "v-open",
+     "q": "In the passage, what does “open” mean?",
+     "options": [
+      "outside, with no roof",
+      "not closed, so people can go in",
+      "honest",
+      "not decided yet",
+      "turned on",
+      "locked"
+     ],
+     "answer": 1,
+     "why": "At six o'clock the doors will not be closed, so people can go in to the meeting. 'Locked' is the opposite."
+    },
+    {
+     "kind": "idea",
+     "q": "Why will there be a meeting?",
+     "options": [
+      "To pick a new police officer",
+      "To build a new park",
+      "To give dogs away",
+      "To say the law is already done",
+      "So people can talk about the new dog law",
+      "To teach dogs to walk"
+     ],
+     "answer": 4,
+     "why": "Some people like the idea and some do not, so there is a meeting where anyone can talk about it."
+    }
+   ],
+   "words": [
+    "v-government",
+    "v-law",
+    "v-matter",
+    "v-talk",
+    "v-police",
+    "v-open"
+   ]
+  },
+  "why": "'Open to all' (available to everyone) is a different sense from the card (not closed, so things can go in or out). Rewrote to 'The doors will be open at six o'clock' and rebuilt the open question."
+ },
+ {
+  "id": "g-L-2-26",
+  "set": {
+   "text": "Grandpa Femi has a box of photos. One rainy afternoon, he looks at them with his granddaughter, Zara. 'This is me when I was young,' he says. 'And this girl is your grandma. We met at a birthday party.' He smiles. 'I remember the music and the cake. It was a special day.' Zara asks him to tell her more.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-party",
+     "q": "In the passage, what does “party” mean?",
+     "options": [
+      "a group that wants to run the government",
+      "a school class",
+      "a time when people meet to eat and have fun",
+      "a trip",
+      "a part of something",
+      "a quiet dinner for two"
+     ],
+     "answer": 2,
+     "why": "A birthday party has music and cake, so it is a time for fun. It is not a political party here."
+    },
+    {
+     "kind": "word",
+     "word": "v-remember",
+     "q": "In the passage, what does “remember” mean?",
+     "options": [
+      "forgets",
+      "writes down",
+      "likes",
+      "still has it in his mind; does not forget",
+      "hears about from others",
+      "makes up"
+     ],
+     "answer": 3,
+     "why": "Many years later, Grandpa still has the music and the cake in his mind. He did not forget them."
+    },
+    {
+     "kind": "idea",
+     "q": "Where did Grandpa meet Grandma?",
+     "options": [
+      "On a rainy afternoon",
+      "At school",
+      "In a photo shop",
+      "At Zara's house",
+      "At a birthday party",
+      "At a music store"
+     ],
+     "answer": 4,
+     "why": "Grandpa says, 'We met at a birthday party.' The rainy afternoon is when he shows Zara the photos."
+    }
+   ],
+   "words": [
+    "v-young",
+    "v-girl",
+    "v-party",
+    "v-remember",
+    "v-special",
+    "v-tell"
+   ]
+  },
+  "why": "The text uses present 'I remember', but the options were past tense ('forgot', 'did not forget'); put all options in matching present form."
+ },
+ {
+  "id": "g-L-2-30",
+  "set": {
+   "text": "Last year, Nadia's family moved to a new country. At first, school was hard for her. She did not speak any English, and she was sure she would never make friends. But a girl named Lily sat with her at lunch, and she did not miss a single day. Now Nadia speaks English well, and Lily is her best friend.",
+   "qs": [
+    {
+     "kind": "word",
+     "word": "v-hard",
+     "q": "In the passage, what does “hard” mean?",
+     "options": [
+      "not soft",
+      "cold",
+      "boring",
+      "not easy",
+      "fun",
+      "far away"
+     ],
+     "answer": 3,
+     "why": "School was not easy because Nadia did not speak English. “Not soft” is another meaning of hard."
+    },
+    {
+     "kind": "word",
+     "word": "v-never",
+     "q": "In the passage, what does “never” mean?",
+     "options": [
+      "always",
+      "soon",
+      "not at any time",
+      "maybe",
+      "one time",
+      "later"
+     ],
+     "answer": 2,
+     "why": "Nadia thought there would be no time at all when she would make friends."
+    },
+    {
+     "kind": "idea",
+     "q": "How did Lily help Nadia?",
+     "options": [
+      "She taught her in class",
+      "She moved with her family",
+      "She spoke Nadia's language",
+      "She sat with her at lunch every day",
+      "She gave her a book",
+      "She helped her at home"
+     ],
+     "answer": 3,
+     "why": "Lily sat with Nadia at lunch and did not miss a single day."
+    }
+   ],
+   "words": [
+    "v-move",
+    "v-country",
+    "v-hard",
+    "v-never",
+    "v-single",
+    "v-now"
+   ]
+  },
+  "why": "'Lily did not miss a single day' could mean Lily never missed school, so the keyed idea answer ('sat with her at lunch every day') was not clearly supported. Joined the sentences so it ties to lunch."
+ }
+]

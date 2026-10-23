@@ -1,0 +1,156 @@
+[
+ {
+  "id": "v-implore",
+  "set": {
+   "def": "to beg someone very seriously and with strong feeling to do something"
+  },
+  "why": "plain-word: 'earnestly' is about as rare as 'implore' itself"
+ },
+ {
+  "id": "v-whittle",
+  "set": {
+   "def": "to reduce something gradually, bit by bit; or to shape wood by cutting off thin pieces with a knife"
+  },
+  "why": "'at first' reads as a step in a process; the two senses need a plain 'or'"
+ },
+ {
+  "id": "v-espouse",
+  "set": {
+   "also": ""
+  },
+  "why": "'to marry' is an archaic sense, not a common one (rule 12); empty string disables the also question"
+ },
+ {
+  "id": "v-eloquence",
+  "set": {
+   "syn": [
+    "fluency",
+    "expressiveness",
+    "oratory"
+   ],
+   "ant": []
+  },
+  "why": "'articulateness'/'inarticulateness' are near-unused words learners won't recognize"
+ },
+ {
+  "id": "v-wistfully",
+  "set": {
+   "syn": [
+    "longingly",
+    "nostalgically",
+    "sadly"
+   ]
+  },
+  "why": "'yearningly' is a near-unused word"
+ },
+ {
+  "id": "v-judicious",
+  "set": {
+   "syn": [
+    "wise",
+    "prudent",
+    "sensible"
+   ]
+  },
+  "why": "'shrewd' implies sharp, self-serving cleverness, not careful good judgment"
+ },
+ {
+  "id": "v-obfuscation",
+  "set": {
+   "syn": [
+    "obscuring",
+    "muddying"
+   ]
+  },
+  "why": "'evasion' means avoiding a question or duty, not making something confusing"
+ },
+ {
+  "id": "v-haphazardly",
+  "remove_dx": [
+   "v-assiduously",
+   "v-judiciously",
+   "v-gingerly",
+   "v-warily"
+  ],
+  "why": "all mean 'carefully/cautiously', defensible answers to 'opposite of haphazardly' (ant includes 'carefully')"
+ },
+ {
+  "id": "v-assiduously",
+  "remove_dx": [
+   "v-haphazardly",
+   "v-judiciously"
+  ],
+  "why": "haphazardly ('in a careless way') is an opposite; judiciously ('carefully') overlaps the meaning"
+ },
+ {
+  "id": "v-warily",
+  "remove_dx": [
+   "v-judiciously",
+   "v-nonchalantly"
+  ],
+  "why": "judiciously ('carefully') is near-synonym; nonchalantly ('no worry') is a near-opposite"
+ },
+ {
+  "id": "v-haphazard",
+  "remove_dx": [
+   "v-judicious"
+  ],
+  "why": "judicious ('careful thinking') is defensible as an opposite of haphazard"
+ },
+ {
+  "id": "v-irrepressible",
+  "remove_dx": [
+   "v-staid"
+  ],
+  "why": "staid ('serious, dull') is a near-opposite of irrepressible (too lively)"
+ },
+ {
+  "id": "v-effusive",
+  "remove_dx": [
+   "v-dispassionate"
+  ],
+  "why": "dispassionate ('not influenced by strong emotion') is defensible as an opposite of effusive"
+ },
+ {
+  "id": "v-convivial",
+  "remove_dx": [
+   "v-brusque"
+  ],
+  "why": "brusque ('rude, curt') is a near-opposite of convivial (ant includes 'unfriendly')"
+ },
+ {
+  "id": "v-cogent",
+  "remove_dx": [
+   "v-ineffectual"
+  ],
+  "why": "ineffectual is defensible as an opposite of cogent (ant: weak, unconvincing)"
+ },
+ {
+  "id": "v-ineffectual",
+  "remove_dx": [
+   "v-cogent"
+  ],
+  "why": "cogent ('convincing') is defensible as an opposite of ineffectual (ant: effective)"
+ },
+ {
+  "id": "v-raucous",
+  "remove_dx": [
+   "v-unassuming"
+  ],
+  "why": "unassuming ('modest and quiet') could be picked as an opposite of raucous (ant: quiet)"
+ },
+ {
+  "id": "v-painstakingly",
+  "remove_dx": [
+   "v-summarily"
+  ],
+  "why": "summarily ('without careful thought') is defensible as an opposite of painstakingly"
+ },
+ {
+  "id": "v-obliterate",
+  "remove_dx": [
+   "v-engender"
+  ],
+  "why": "engender ('cause to come into being') is defensible as an opposite (ant includes 'create')"
+ }
+]

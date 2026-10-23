@@ -1,0 +1,290 @@
+[
+ {
+  "id": "v-curious",
+  "remove_dx": [
+   "v-extraordinary"
+  ],
+  "why": "(g) its def 'very unusual, surprising' matches the also-sense 'strange or unusual'"
+ },
+ {
+  "id": "v-convenient",
+  "set": {
+   "ant": [
+    "inconvenient"
+   ]
+  },
+  "why": "'awkward' as opposite is a marginal sense; confusing at level 1"
+ },
+ {
+  "id": "v-neutral",
+  "remove_dx": [
+   "v-partial"
+  ],
+  "why": "(f) partial also means biased, an opposite of neutral"
+ },
+ {
+  "id": "v-invisible",
+  "remove_dx": [
+   "v-transparent"
+  ],
+  "why": "transparent (see-through) overlaps 'cannot be seen'; risky for (b)/(e)"
+ },
+ {
+  "id": "v-subsequently",
+  "remove_dx": [
+   "v-accordingly"
+  ],
+  "why": "'got a job offer and accordingly moved there' fits the cloze"
+ },
+ {
+  "id": "v-temporarily",
+  "set": {
+   "syn": [
+    "briefly"
+   ]
+  },
+  "why": "'provisionally' is rarer than the headword; learners won't recognize it"
+ },
+ {
+  "id": "v-conservation",
+  "set": {
+   "def": "protecting nature, animals and plants, and using things like water and energy carefully so they are not wasted"
+  },
+  "why": "def omitted the careful-use sense shown in ex 2 ('Water conservation')"
+ },
+ {
+  "id": "v-practical",
+  "remove_dx": [
+   "v-suitable"
+  ],
+  "why": "'isn't suitable for a small team' fits the cloze"
+ },
+ {
+  "id": "v-infinite",
+  "remove_dx": [
+   "v-enormous"
+  ],
+  "why": "'an enormous number of possible stories' fits the cloze (also vowel-initial)"
+ },
+ {
+  "id": "v-beneficial",
+  "remove_dx": [
+   "v-vital"
+  ],
+  "why": "'can be vital to your health' fits the cloze"
+ },
+ {
+  "id": "v-earn",
+  "set": {
+   "syn": [
+    "make",
+    "gain"
+   ]
+  },
+  "why": "'deserve' is not a synonym of earn in the money sense"
+ },
+ {
+  "id": "v-resolve",
+  "remove_dx": [
+   "v-intend"
+  ],
+  "why": "(g) intend 'have a plan or purpose to do something' matches also-sense 'make a firm decision to do something'"
+ },
+ {
+  "id": "v-roughly",
+  "set": {
+   "syn": [
+    "about",
+    "approximately",
+    "around"
+   ]
+  },
+  "why": "'nearly' means slightly less than, not approximately"
+ },
+ {
+  "id": "v-roughly",
+  "remove_dx": [
+   "v-barely"
+  ],
+  "why": "'The city has barely two million people' fits the cloze"
+ },
+ {
+  "id": "v-frankly",
+  "set": {
+   "syn": [
+    "honestly",
+    "openly"
+   ]
+  },
+  "why": "'candidly' is rarer than the headword"
+ },
+ {
+  "id": "v-tribute",
+  "set": {
+   "syn": [
+    "honor"
+   ]
+  },
+  "why": "'homage' is rarer than the headword"
+ },
+ {
+  "id": "v-ally",
+  "remove_dx": [
+   "v-coalition"
+  ],
+  "why": "coalition def (group/countries joining for a shared purpose) overlaps ally for (b)"
+ },
+ {
+  "id": "v-brutal",
+  "remove_dx": [
+   "v-bitter",
+   "v-intense"
+  ],
+  "why": "'The winter was so bitter/intense' both fit the cloze"
+ },
+ {
+  "id": "v-magnificent",
+  "remove_dx": [
+   "v-striking"
+  ],
+  "why": "'The palace has striking gardens' fits the cloze"
+ },
+ {
+  "id": "v-explore",
+  "set": {
+   "syn": [
+    "tour"
+   ]
+  },
+  "why": "'survey' is not a true synonym of explore in this sense"
+ },
+ {
+  "id": "v-privilege",
+  "set": {
+   "def": "a special right or advantage that only some people or groups have",
+   "ex": [
+    "Senior staff have the privilege of parking right next to the building.",
+    "In some countries, going to college is a privilege that only rich families can afford."
+   ]
+  },
+  "why": "ex 2 ('a privilege to work with') used the honor sense, not the def; 'only one person or group' too narrow"
+ },
+ {
+  "id": "v-confusion",
+  "set": {
+   "syn": [
+    "uncertainty",
+    "puzzlement"
+   ],
+   "ant": [
+    "clarity"
+   ]
+  },
+  "why": "'disorder'/'order' belong to the chaos sense, not the defined mental-state sense"
+ },
+ {
+  "id": "v-requirement",
+  "set": {
+   "syn": [
+    "condition",
+    "necessity"
+   ]
+  },
+  "why": "'prerequisite' is rarer than the headword"
+ },
+ {
+  "id": "v-conviction",
+  "remove_dx": [
+   "v-conclusion",
+   "v-impression"
+  ],
+  "why": "'His conclusion/impression that the plan would work never weakened' both fit the cloze"
+ },
+ {
+  "id": "v-absence",
+  "set": {
+   "syn": []
+  },
+  "why": "'nonattendance' is a rare, awkward word, not a learner-recognizable synonym"
+ },
+ {
+  "id": "v-fraud",
+  "set": {
+   "syn": [
+    "deception",
+    "scam"
+   ],
+   "ant": []
+  },
+  "why": "'swindle' rarer than headword; 'honesty' is a forced opposite of a crime"
+ },
+ {
+  "id": "v-fraud",
+  "remove_dx": [
+   "v-corruption"
+  ],
+  "why": "'charged with corruption' plausibly fits the cloze"
+ },
+ {
+  "id": "v-inspire",
+  "remove_dx": [
+   "v-enable"
+  ],
+  "why": "'can enable kids to take up a new sport' grammatically fits the cloze"
+ },
+ {
+  "id": "v-liberty",
+  "remove_dx": [
+   "v-dignity"
+  ],
+  "why": "'The prisoner's dignity was restored' fits the cloze"
+ },
+ {
+  "id": "v-breach",
+  "set": {
+   "ex": [
+    "Leaving the job before the year was over was a breach of Olga's contract.",
+    "The coach said skipping practice without telling anyone was a breach of team rules."
+   ]
+  },
+  "why": "ex 2 ('data breach') shows the also-sense (break-in), duplicating the also example, not the defined sense"
+ },
+ {
+  "id": "v-accessible",
+  "set": {
+   "syn": [
+    "reachable"
+   ]
+  },
+  "why": "'available' is not a synonym of accessible (easy to reach/enter)"
+ },
+ {
+  "id": "v-beg",
+  "set": {
+   "syn": [
+    "plead"
+   ]
+  },
+  "why": "'implore' is rarer than the headword"
+ },
+ {
+  "id": "v-tactics",
+  "set": {
+   "syn": [
+    "methods",
+    "approach"
+   ]
+  },
+  "why": "'strategy' contradicts the item's own note that tactics differ from strategy"
+ },
+ {
+  "id": "v-spite",
+  "set": {
+   "syn": [
+    "malice",
+    "meanness"
+   ]
+  },
+  "why": "'hatred' is not a synonym of spite"
+ }
+]

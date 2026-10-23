@@ -1,0 +1,432 @@
+[
+ {
+  "id": "v-lambast",
+  "drop": true,
+  "why": "Duplicate of v-lambaste (same word, same level, in vocab-L10-2); lambaste is the main spelling"
+ },
+ {
+  "id": "v-molder",
+  "set": {
+   "def": "to slowly rot, decay, or crumble away over time"
+  },
+  "why": "Main def already contained the 'left unused/forgotten' sense, so it overlapped the 'also' second sense tested in (g)"
+ },
+ {
+  "id": "v-dishearten",
+  "set": {
+   "syn": [
+    "discourage",
+    "dispirit",
+    "dismay"
+   ]
+  },
+  "why": "'deject' as a verb is rare; learners won't recognize it"
+ },
+ {
+  "id": "v-demagogic",
+  "set": {
+   "ex": [
+    "The candidate's demagogic speeches blamed outsiders for every problem in the country.",
+    "Historians warn that demagogic leaders often rise during times of economic hardship."
+   ]
+  },
+  "why": "Example tied demagoguery to immigrants, which reads as partisan; made neutral"
+ },
+ {
+  "id": "v-unstinting",
+  "set": {
+   "syn": [
+    "generous",
+    "lavish",
+    "wholehearted"
+   ]
+  },
+  "why": "'unsparing' usually means harsh/merciless today, misleading as a synonym test answer"
+ },
+ {
+  "id": "v-hypercritical",
+  "set": {
+   "syn": [
+    "faultfinding",
+    "nitpicking",
+    "overcritical"
+   ]
+  },
+  "why": "'captious' too rare for a synonym test at this level"
+ },
+ {
+  "id": "v-acquiescent",
+  "set": {
+   "cloze": {
+    "s": "The new manager expected her staff to be ___, but the team questioned every decision.",
+    "a": "acquiescent"
+   }
+  },
+  "why": "'an ___' gave away a vowel-initial answer and let 'incurious' fit; rewrote cloze"
+ },
+ {
+  "id": "v-unexpurgated",
+  "set": {
+   "syn": [
+    "uncensored",
+    "complete",
+    "uncut"
+   ],
+   "ant": [
+    "censored",
+    "expurgated"
+   ]
+  },
+  "why": "'unabridged' means not shortened, not uncensored; 'bowdlerized' too rare for an antonym answer"
+ },
+ {
+  "id": "v-impetuosity",
+  "set": {
+   "syn": [
+    "rashness",
+    "impulsiveness",
+    "recklessness"
+   ]
+  },
+  "why": "'haste' means speed, not rash impulsiveness"
+ },
+ {
+  "id": "v-incontrovertibly",
+  "set": {
+   "ant": []
+  },
+  "why": "'doubtfully'/'questionably' are forced opposites"
+ },
+ {
+  "id": "v-whippersnapper",
+  "set": {
+   "ant": []
+  },
+  "why": "'elder'/'veteran' are forced opposites"
+ },
+ {
+  "id": "v-reify",
+  "set": {
+   "syn": [
+    "embody"
+   ],
+   "ant": []
+  },
+  "why": "'materialize' means appear (wrong sense); 'concretize' too rare; 'abstract' a forced opposite"
+ },
+ {
+  "id": "v-felicitate",
+  "set": {
+   "syn": [
+    "congratulate"
+   ]
+  },
+  "why": "'honor' is not a synonym of congratulate"
+ },
+ {
+  "id": "v-abashed",
+  "set": {
+   "ant": [
+    "unabashed",
+    "shameless"
+   ]
+  },
+  "why": "'proud' is not a genuine opposite of abashed"
+ },
+ {
+  "id": "v-malediction",
+  "set": {
+   "syn": [
+    "curse",
+    "hex"
+   ]
+  },
+  "why": "'imprecation' too rare for a synonym test"
+ },
+ {
+  "id": "v-presentiment",
+  "set": {
+   "syn": [
+    "premonition",
+    "foreboding",
+    "hunch"
+   ]
+  },
+  "why": "'intuition' is broader, not a synonym of a foreboding"
+ },
+ {
+  "id": "v-muckraker",
+  "set": {
+   "syn": []
+  },
+  "why": "'investigator'/'reporter' are not synonyms (too broad)"
+ },
+ {
+  "id": "v-tragicomic",
+  "set": {
+   "syn": []
+  },
+  "why": "'bittersweet' means pleasant mixed with sad, not funny+tragic"
+ },
+ {
+  "id": "v-epigrammatic",
+  "set": {
+   "syn": [
+    "pithy",
+    "witty",
+    "concise"
+   ]
+  },
+  "why": "'terse' lacks the cleverness/wit sense"
+ },
+ {
+  "id": "v-intersperse",
+  "set": {
+   "ant": []
+  },
+  "why": "'group'/'cluster' are forced opposites"
+ },
+ {
+  "id": "v-inroad",
+  "set": {
+   "syn": [
+    "advance",
+    "headway",
+    "progress"
+   ]
+  },
+  "why": "'encroachment' too hard for a synonym answer"
+ },
+ {
+  "id": "v-aboveboard",
+  "set": {
+   "syn": [
+    "honest",
+    "legitimate",
+    "open"
+   ]
+  },
+  "why": "'legal' is not a synonym of honest/open"
+ },
+ {
+  "id": "v-belabor",
+  "set": {
+   "ant": [
+    "gloss over"
+   ]
+  },
+  "why": "'skim' is not an opposite of belabor"
+ },
+ {
+  "id": "v-editorialize",
+  "set": {
+   "syn": [
+    "opine",
+    "comment"
+   ]
+  },
+  "why": "'moralize' means lecture on right and wrong, not insert opinion into reporting"
+ },
+ {
+  "id": "v-catcall",
+  "set": {
+   "syn": [
+    "jeer",
+    "boo",
+    "taunt"
+   ]
+  },
+  "why": "'whistle' alone is not a synonym"
+ },
+ {
+  "id": "v-unilateralism",
+  "set": {
+   "syn": []
+  },
+  "why": "'isolationism' (staying out of world affairs) is a different policy"
+ },
+ {
+  "id": "v-doublethink",
+  "set": {
+   "syn": [
+    "self-deception"
+   ]
+  },
+  "why": "'hypocrisy' (saying one thing, doing another) is not doublethink"
+ },
+ {
+  "id": "v-lagniappe",
+  "set": {
+   "syn": [
+    "bonus",
+    "extra",
+    "freebie"
+   ]
+  },
+  "why": "'perk' is a job benefit, not a free extra with a purchase"
+ },
+ {
+  "id": "v-reprove",
+  "remove_dx": [
+   "v-remonstrate"
+  ],
+  "why": "remonstrate's def ('telling someone they are wrong') overlaps reprove"
+ },
+ {
+  "id": "v-acquiescent",
+  "remove_dx": [
+   "v-incurious"
+  ],
+  "why": "could fit the cloze"
+ },
+ {
+  "id": "v-offhandedly",
+  "remove_dx": [
+   "v-extemporaneously"
+  ],
+  "why": "offhand also means impromptu/without preparation (WordNet sense 1)"
+ },
+ {
+  "id": "v-pablum",
+  "remove_dx": [
+   "v-vacuity"
+  ],
+  "why": "near-synonym; fits def question and cloze"
+ },
+ {
+  "id": "v-guardedly",
+  "remove_dx": [
+   "v-evasively",
+   "v-effusively"
+  ],
+  "why": "evasively is a near-synonym; effusively is a near-opposite (f)"
+ },
+ {
+  "id": "v-misgiving",
+  "remove_dx": [
+   "v-insouciance"
+  ],
+  "why": "near-opposite (lack of worry) for (f)"
+ },
+ {
+  "id": "v-indigence",
+  "remove_dx": [
+   "v-plutocrat"
+  ],
+  "why": "semantic opposite (rich person) could be picked for (f)"
+ },
+ {
+  "id": "v-ceremonious",
+  "remove_dx": [
+   "v-insouciant"
+  ],
+  "why": "casual/relaxed is a near-opposite for (f)"
+ },
+ {
+  "id": "v-clannish",
+  "remove_dx": [
+   "v-companionable"
+  ],
+  "why": "friendly/welcoming is a near-opposite for (f)"
+ },
+ {
+  "id": "v-tetchy",
+  "remove_dx": [
+   "v-companionable"
+  ],
+  "why": "friendly, relaxed is a near-opposite of tetchy for (f)"
+ },
+ {
+  "id": "v-unhinge",
+  "remove_dx": [
+   "v-propitiate"
+  ],
+  "why": "'calm their anger' is a near-opposite (ant: calm)"
+ },
+ {
+  "id": "v-exculpate",
+  "remove_dx": [
+   "v-arraign"
+  ],
+  "why": "formally charging is a near-opposite of clearing (f)"
+ },
+ {
+  "id": "v-cheerless",
+  "remove_dx": [
+   "v-woebegone"
+  ],
+  "why": "near-synonym (sad, miserable) for (e)"
+ },
+ {
+  "id": "v-icily",
+  "remove_dx": [
+   "v-haughtily"
+  ],
+  "why": "fits the cloze 'greeted him ___ and refused to smile'"
+ },
+ {
+  "id": "v-ineluctably",
+  "remove_dx": [
+   "v-remorselessly"
+  ],
+  "why": "'without stopping or easing' fits the cloze 'slid ___ into recession'"
+ },
+ {
+  "id": "v-pedantically",
+  "remove_dx": [
+   "v-breezily"
+  ],
+  "why": "could fit the cloze 'he said ___, interrupting the chef'"
+ },
+ {
+  "id": "v-resignedly",
+  "remove_dx": [
+   "v-breezily",
+   "v-sullenly"
+  ],
+  "why": "both could fit 'shrugged ___ and packed the food back'"
+ },
+ {
+  "id": "v-editorialize",
+  "remove_dx": [
+   "v-philosophize",
+   "v-prevaricate"
+  ],
+  "why": "both could fit 'warned the witness not to ___'"
+ },
+ {
+  "id": "v-dishearten",
+  "remove_dx": [
+   "v-fluster"
+  ],
+  "why": "fits 'Don't let one bad test score ___ you'"
+ },
+ {
+  "id": "v-unstinting",
+  "remove_dx": [
+   "v-punctilious"
+  ],
+  "why": "fits 'thirty years of ___ care for her patients'"
+ },
+ {
+  "id": "v-bacchanalian",
+  "remove_dx": [
+   "v-louche"
+  ],
+  "why": "could fit 'turned into a ___ party' and overlaps the debauched sense"
+ },
+ {
+  "id": "v-unsubstantial",
+  "remove_dx": [
+   "v-unreasoning"
+  ],
+  "why": "could fit 'The essay's argument was ___'"
+ },
+ {
+  "id": "v-obscurantism",
+  "remove_dx": [
+   "v-casuistry"
+  ],
+  "why": "misleading reasoning overlaps; could fit 'guilty of ___'"
+ }
+]
