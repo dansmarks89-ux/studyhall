@@ -162,7 +162,7 @@
         btn = document.createElement("button"), note = document.createElement("span");
     lab.className = "sh-voice"; sel.style.minHeight = "44px";
     lab.appendChild(document.createTextNode("Voice ")); lab.appendChild(sel);
-    btn.type = "button"; btn.className = "sh-voice-sample"; btn.textContent = "Play sample"; btn.style.minHeight = "44px";
+    btn.type = "button"; btn.className = "sh-btn sm"; btn.textContent = "Play sample"; btn.style.minHeight = "44px";
     note.className = "sh-voice-note"; note.setAttribute("aria-live", "polite");
     el.appendChild(lab); el.appendChild(btn); el.appendChild(note);
     function option(value, text) { var o = document.createElement("option"); o.value = value; o.textContent = text; sel.appendChild(o); }

@@ -116,3 +116,12 @@ select net.http_post('https://wbrssohmepioxapwbcne.supabase.co/functions/v1/tts'
   headers => '{"Content-Type":"application/json"}'::jsonb);
 -- progress: select * from public.tts_sync;
 ```
+
+## Round 4: structured paths and the new look
+
+- **Design system:** `shared/ui.css` + `shared/ui.js` (`window.SHUI`) used by every page: color schemes Automatic / Bold / Night / Soft (Settings → Color scheme, saved per device), one accent per app, tactile buttons, answer feedback motion, results screen, points and levels (level n→n+1 needs 500 + 250·(n−1) points), shared line icons (`SHUI.icon`). Reduced-motion settings are respected.
+- **Learning structure** (spec: Learn · Practice · Settings tabs): a first-visit placement test, then one path of units and lessons with a single Continue button. Lessons (short ≈ 10 min, long ≈ 15 min) run Meet → Recognize → Recall → Grammar/Verbs → Sentences (build, shadow, Say it) → optional AI chat, with spaced reviews mixed in, and a unit check unlocks the next unit.
+  - Spanish: two paths, Everyday and Clinic (built in `src/spanish/build.py`; grammar units shared). Verb drills use `src/spanish/data/conj.json` + `conj2.json` (every course verb; `content/pipeline/conj2.py`).
+  - Cantonese: a Tones unit first, optional Characters practice. Korean: Hangul first, verb endings from `src/korean/content/conj/conj.json` (`build_conj.py`).
+  - Word Power keeps its own structure, restyled, with points.
+- Each app writes a small `stats` progress doc that the home page reads.

@@ -23,4 +23,5 @@ def table(lem):
             row.append(s)
         out.append(row)
     if lem=="ir": out[9][3]="vamos"
+    if lem=="despertar": out[5:7]=[[f.replace("despierto","despertado") for f in r] for r in out[5:7]]  # verbecc uses the adjective as the participle
     return out
