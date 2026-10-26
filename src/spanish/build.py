@@ -3,9 +3,10 @@
   python3 src/spanish/build.py hosted   -> spanish/index.html (the Study Hall page)
   python3 src/spanish/build.py claude   -> build/clinic-spanish-course.html (claude.ai artifact version)
 
-Both first run content/vocab2/gen_vocab2.py (Everyday words + more clinic words -> data/vocab2.json).
-The hosted page loads that as spanish/vocab2.<hash>.json (named by content, so browsers keep it for good);
-the previous build's file is kept for pages still open, older ones are deleted. The claude version inlines it,
+Both first run content/vocab2/gen_vocab2.py (Everyday words + more clinic words -> data/vocab2.json) and
+content/verbs/gen_verbs.py (the verb lessons -> data/verbs.json). The hosted page loads those as
+spanish/vocab2.<hash>.json and spanish/verbs.<hash>.json (named by content, so browsers keep them for good);
+the previous build's files are kept for pages still open, older ones are deleted. The claude version inlines them,
 and inlines shared/ui.css and shared/ui.js too (the hosted page links them).
 
 The two learning paths (Everyday, Clinic) are built here from the existing content, so the same lesson always
@@ -22,6 +23,7 @@ import hashlib, json, math, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 subprocess.run([sys.executable, os.path.join(HERE, "content", "vocab2", "gen_vocab2.py")], check=True)
+subprocess.run([sys.executable, os.path.join(HERE, "content", "verbs", "gen_verbs.py")], check=True)
 def load(name): return json.load(open(os.path.join(HERE, "data", name), encoding="utf-8"))
 def dumps(o): return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
 
@@ -91,8 +93,8 @@ for ph, data in [("__LEVELS__", LEVELS), ("__DRILLS__", load("drills.tagged.json
                  ("__VERBS__", load("cards.tagged.json")), ("__PATH__", PATH)]:
     assert src.count(ph) == 1, ph
     src = src.replace(ph, dumps(data))
-assert src.count("__VOCAB2__") == 1
-vocab2 = dumps(VOCAB2)
+LAZY = {"__VOCAB2__": ("vocab2", dumps(VOCAB2)), "__VERBLESSONS__": ("verbs", dumps(load("verbs.json")))}   # loaded after the page
+for ph in LAZY: assert src.count(ph) == 1, ph
 SHARED = '<link rel="stylesheet" href="../shared/ui.css">\n<script src="../shared/ui.js"></script>'
 assert src.count(SHARED) == 1 and src.count("<!--HOSTED-->") == 1
 
@@ -101,18 +103,20 @@ if target == "claude":
     out = os.path.join(REPO, "build", "clinic-spanish-course.html"); os.makedirs(os.path.dirname(out), exist_ok=True)
     shared = lambda f: open(os.path.join(REPO, "shared", f), encoding="utf-8").read()
     src = src.replace(SHARED, f"<style>\n{shared('ui.css')}</style>\n<script>\n{shared('ui.js')}</script>").replace("<!--HOSTED-->", "")
-    open(out, "w", encoding="utf-8").write(src.replace("__VOCAB2__", vocab2))
+    for ph, (_, body) in LAZY.items(): src = src.replace(ph, body)
+    open(out, "w", encoding="utf-8").write(src)
 elif target == "hosted":
     OUT = os.path.join(REPO, "spanish"); os.makedirs(OUT, exist_ok=True)
-    HASHED = re.compile(r"vocab2\.[0-9a-f]{10}\.json")
+    HASHED = re.compile(r"(?:vocab2|verbs)\.[0-9a-f]{10}\.json")
     INDEX = os.path.join(OUT, "index.html")
     keep = set(HASHED.findall(open(INDEX, encoding="utf-8").read())) if os.path.exists(INDEX) else set()
-    b = vocab2.encode("utf-8"); name = f"vocab2.{hashlib.sha256(b).hexdigest()[:10]}.json"
-    open(os.path.join(OUT, name), "wb").write(b)
+    for ph, (stem, body) in LAZY.items():
+        b = body.encode("utf-8"); name = f"{stem}.{hashlib.sha256(b).hexdigest()[:10]}.json"
+        open(os.path.join(OUT, name), "wb").write(b); keep.add(name)
+        print("wrote", name, len(b), "bytes")
+        src = src.replace(ph, json.dumps(name))
     for f in os.listdir(OUT):
-        if HASHED.fullmatch(f) and f not in keep and f != name: os.remove(os.path.join(OUT, f))
-    print("wrote", name, len(b), "bytes")
-    src = src.replace("__VOCAB2__", json.dumps(name))
+        if HASHED.fullmatch(f) and f not in keep: os.remove(os.path.join(OUT, f))
     def sub(old, new):
         global src
         assert src.count(old) == 1, old

@@ -1,0 +1,89 @@
+{
+ "preferir": {
+  "s": {
+   "2": {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Si no prefieren otra cosa, pedimos pizza.",
+    "en": "Unless you all would prefer something else, we'll order pizza.",
+    "f": "prefieren"
+   },
+   "17": {
+    "t": "Conditional",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca preferiríamos el dinero a la salud de nuestros hijos.",
+    "en": "We'd never prefer money to our kids' health.",
+    "f": "preferiríamos"
+   }
+  }
+ },
+ "costar": {
+  "set": {
+   "third": true
+  }
+ },
+ "valer": {
+  "set": {
+   "third": true
+  },
+  "s": {
+   "2": {
+    "t": "Present",
+    "p": 2,
+    "k": "neg",
+    "es": "Esta receta no vale sin la firma del médico.",
+    "en": "This prescription isn't valid without the doctor's signature.",
+    "f": "vale"
+   },
+   "22": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Las casas de este barrio ya habían valido tanto antes?",
+    "en": "Had the houses in this neighborhood ever been worth this much before?",
+    "f": "habían valido"
+   }
+  }
+ },
+ "importar": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿A tu mamá le va a importar que llevemos al perro?",
+    "en": "Is your mom going to mind if we bring the dog?",
+    "f": "va a importar"
+   }
+  }
+ },
+ "cuidar": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "stmt",
+    "es": "La doctora nos pidió que cuidáramos mucho la herida.",
+    "en": "The doctor asked us to take good care of the wound.",
+    "f": "cuidáramos",
+    "clue": "nos pidió que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "cuidarse": {
+  "set": {
+   "cmd": "pos"
+  },
+  "s": {
+   "32": null
+  }
+ }
+}

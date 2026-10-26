@@ -1,0 +1,120 @@
+{
+ "empezar": {
+  "s": {
+   "21": {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando llegué al cine, la película ya había empezado.",
+    "en": "When I got to the theater, the movie had already started.",
+    "f": "había empezado",
+    "clue": "Cuando llegué al cine",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "mirar": {
+  "set": {
+   "note": "Regular -ar verb: no stem or spelling changes. No preposition before a thing (*mirar la pantalla*), but personal *a* before people (*mirar a su hijo*). To watch TV or a movie, Mexico mostly uses *ver*."
+  },
+  "s": {
+   "2": {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Muchos clientes no miran la fecha de caducidad.",
+    "en": "A lot of customers don't look at the expiration date.",
+    "f": "miran"
+   },
+   "6": {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "De niños, mis hermanos miraban los aviones desde la azotea.",
+    "en": "As kids, my brothers would watch the planes from the roof.",
+    "f": "miraban",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Imperfect subjunctive"
+    ]
+   },
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a mirar el menú o ya saben qué pedir?",
+    "en": "Are you all going to look at the menu, or do you already know what to order?",
+    "f": "Van a mirar"
+   },
+   "11": {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "No voy a mirar la herida; me da miedo.",
+    "en": "I'm not going to look at the wound; it scares me.",
+    "f": "voy a mirar"
+   },
+   "14": {
+    "t": "Future",
+    "p": 0,
+    "k": "neg",
+    "es": "No miraré hacia abajo cuando crucemos el puente.",
+    "en": "I won't look down when we cross the bridge.",
+    "f": "miraré"
+   },
+   "17": {
+    "t": "Conditional",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos nunca mirarían mi diario sin permiso.",
+    "en": "My kids would never look at my diary without permission.",
+    "f": "mirarían"
+   },
+   "25": {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Quieres que miremos otros modelos antes de comprar?",
+    "en": "Do you want us to look at other models before buying?",
+    "f": "miremos"
+   }
+  }
+ },
+ "pagar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando salgo a comer con mi papá, él siempre paga.",
+    "en": "When I go out to eat with my dad, he always pays.",
+    "f": "paga",
+    "clue": "Cuando salgo a comer",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "preguntar": {
+  "s": {
+   "5": {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "No preguntamos cómo llegar y nos perdimos.",
+    "en": "We didn't ask how to get there, and we got lost.",
+    "f": "preguntamos"
+   }
+  }
+ }
+}

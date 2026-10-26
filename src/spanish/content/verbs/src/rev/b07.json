@@ -1,0 +1,92 @@
+{
+ "despertarse": {
+  "s": {
+   "5": {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "No nos despertamos con la alarma y perdimos el vuelo.",
+    "en": "We didn't wake up when the alarm went off, and we missed our flight.",
+    "f": "nos despertamos"
+   },
+   "12": {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "El paciente se despertará dentro de una hora.",
+    "en": "The patient will wake up in an hour.",
+    "f": "se despertará",
+    "clue": "dentro de una hora",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Pluperfect"
+    ]
+   }
+  }
+ },
+ "viajar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Últimamente mi esposo viaja dos veces al mes.",
+    "en": "Lately my husband travels twice a month.",
+    "f": "viaja",
+    "clue": "dos veces al mes",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "visitar": {
+  "s": {
+   "18": {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Hoy ya hemos visitado a cinco pacientes en sus casas.",
+    "en": "Today we've already visited five patients at their homes.",
+    "f": "hemos visitado",
+    "clue": "Hoy",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "invitar": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿Va a invitar a mucha gente a la quinceañera de su hija?",
+    "en": "Are you going to invite a lot of people to your daughter's quinceañera?",
+    "f": "Va a invitar"
+   },
+   "14": {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi hija no invitará a toda la clase a su fiesta.",
+    "en": "My daughter won't invite the whole class to her party.",
+    "f": "invitará"
+   },
+   "28": {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "q",
+    "es": "¿Le pidieron que invitara a un familiar?",
+    "en": "Did they ask you to invite a family member?",
+    "f": "invitara"
+   }
+  }
+ }
+}

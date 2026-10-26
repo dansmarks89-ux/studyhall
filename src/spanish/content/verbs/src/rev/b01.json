@@ -1,0 +1,229 @@
+{
+ "ser": {
+  "s": {
+   "34": {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "obj",
+    "es": "Mi abuela parecía muy estricta, pero no lo era.",
+    "en": "My grandmother seemed very strict, but she wasn't.",
+    "f": "lo era"
+   }
+  }
+ },
+ "estar": {
+  "s": {
+   "31": {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Estate atento al teléfono, por si llama el doctor.",
+    "en": "Keep an ear out for the phone in case the doctor calls.",
+    "f": "Estate"
+   }
+  }
+ },
+ "ir": {
+  "s": {
+   "33": {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Cómo le va con la nueva dieta?",
+    "en": "How are you doing on the new diet?",
+    "f": "le va"
+   }
+  }
+ },
+ "hacer": {
+  "s": {
+   "18": {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Hasta ahora, los médicos no han hecho un diagnóstico.",
+    "en": "So far, the doctors haven't made a diagnosis.",
+    "f": "han hecho",
+    "clue": "Hasta ahora",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "Si mis hijos hicieran más deporte, dormirían mejor.",
+    "en": "If my kids played more sports, they'd sleep better.",
+    "f": "hicieran",
+    "clue": "Si",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "tener": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si tuviera más tiempo, aprendería a tocar la guitarra.",
+    "en": "If I had more time, I'd learn to play the guitar.",
+    "f": "tuviera",
+    "clue": "Si",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "poder": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si pudiera, trabajaría desde casa todos los días.",
+    "en": "If I could, I'd work from home every day.",
+    "f": "pudiera",
+    "clue": "Si",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   }
+  },
+  "set": {
+   "uses": [
+    {
+     "es": "poder + infinitive",
+     "en": "can, to be able to (do)",
+     "x": "¿Puede levantar el brazo?",
+     "xen": "Can you raise your arm?"
+    },
+    {
+     "es": "¿Podría …?",
+     "en": "Could you …? (polite request)",
+     "x": "¿Podría esperar un momento?",
+     "xen": "Could you wait a moment?"
+    },
+    {
+     "es": "se puede + infinitive",
+     "en": "one can; it's OK to",
+     "x": "¿Se puede comer antes del examen?",
+     "xen": "Is it OK to eat before the test?"
+    }
+   ]
+  }
+ },
+ "querer": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Si mi hijo quisiera, podría jugar en el equipo.",
+    "en": "If my son wanted to, he could play on the team.",
+    "f": "quisiera",
+    "clue": "Si mi hijo",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "decir": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "Si los pacientes dijeran la verdad, todo sería más fácil.",
+    "en": "If patients told the truth, everything would be easier.",
+    "f": "dijeran",
+    "clue": "Si los pacientes",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "ver": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si viera a tu papá, le daría las gracias.",
+    "en": "If I saw your dad, I'd thank him.",
+    "f": "viera",
+    "clue": "Si",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   "31": {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Ve esta serie, te va a encantar.",
+    "en": "Watch this series; you're going to love it.",
+    "f": "Ve"
+   }
+  }
+ },
+ "venir": {
+  "s": {
+   "21": {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Cuando nos mudamos aquí, ya habíamos venido varias veces de vacaciones.",
+    "en": "When we moved here, we had already come here on vacation several times.",
+    "f": "habíamos venido",
+    "clue": "Cuando nos mudamos aquí",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "poner": {
+  "s": {
+   "6": {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Cuando éramos niños, mis papás siempre ponían música los domingos.",
+    "en": "When we were kids, my parents always put on music on Sundays.",
+    "f": "ponían",
+    "clue": "Cuando éramos niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ }
+}

@@ -163,6 +163,7 @@ const DR = __DRILLS__;
 const CONJ = __CONJ__;   // verb tables: conj.json ∪ conj2.json; reflexive verbs keyed as taught ("sentarse")
 const VERBS = __VERBS__;
 const V2_SRC = __VOCAB2__;
+const VB_SRC = __VERBLESSONS__;   // the verb lessons (data/verbs.json): a separate file on the hosted page
 const HOSTED = !!window.SH;
 const PASS = 0.9, TEST_SIZE = 30;      // a level's test (and its unit check)
 const WPASS = 0.8, WTEST_SIZE = 20;    // the check of an Everyday or more-clinic-words set
@@ -270,15 +271,18 @@ document.addEventListener("click",e=>{ const b=e.target.closest("[data-say]"); i
 /* course doc P: test results per level / set (lv) and old answer counts (it).
    learner doc LR: review schedule (srs, in shards), skills (sk), words (w), mistakes (log), intro cards (intro), and the path:
    path (current path id), len (lesson length), ts (when those two were set), done (lesson ids), checks (unit ids passed or
-   tested out), placed (when the learner chose a start: date, path, unit; test: by the placement test), pts (points). pos (unit + lesson per path) is written to the account
+   tested out), placed (when the learner chose a start: date, path, unit; test: by the placement test), pts (points),
+   vb (verb lessons: verb -> {at: first day, t: tenses practiced, n: lessons}), vn (path lessons finished since the last verb
+   lesson), vlast ("new" or "rev": what the last verb lesson was), vts (when vn / vlast changed), vall (verb lessons use every
+   tense, not only those reached; set with path and len). pos (unit + lesson per path) is written to the account
    for other pages, worked out from done + checks. resetAt: when the learner last started over (older docs are ignored). */
-function freshLR(){ return {v:2, srs:{}, sk:{}, w:{}, log:[], diag:null, mig:{}, intro:{}, path:"", len:"short", ts:0, done:new Set(), checks:new Set(), placed:null, pts:0, resetAt:0}; }
+function freshLR(){ return {v:2, srs:{}, sk:{}, w:{}, log:[], diag:null, mig:{}, intro:{}, path:"", len:"short", ts:0, done:new Set(), checks:new Set(), placed:null, pts:0, vb:{}, vn:0, vlast:"", vts:0, vall:false, resetAt:0}; }
 function loadLR(o){ const r=Object.assign(freshLR(), o); r.done=new Set(o.done||[]); r.checks=new Set(o.checks||[]); return r; }
 let P = Object.assign({lv:{}, it:{}}, store.get("csc:progress",{}));
 let LR = loadLR(store.get("csc:learner",{}));
 let db=null, uid=null, dirtyDocs=new Set(), syncing=false, syncT=null, syncDue=0, statsSent="";
 let syncText = "Progress is saved in this browser.";
-const SHARDS = ["srs-L","srs-V","srs-J","srs-T","srs-W"], DOCS = ["course","learner","log",...SHARDS];
+const SHARDS = ["srs-L","srs-V","srs-J","srs-T","srs-W","srs-B"], DOCS = ["course","learner","log",...SHARDS];
 function persist(){ store.set("csc:progress",P); store.set("csc:learner",LR); }
 function mergeP(r){
   for(const id in r.lv||{}){ const a=P.lv[id]||{}, b=r.lv[id]; P.lv[id]={best:Math.max(a.best||0,b.best||0), passed:!!(a.passed||b.passed), tests:Math.max(a.tests||0,b.tests||0), at:Math.max(a.at||0,b.at||0)}; }
@@ -339,7 +343,8 @@ function docBody(n){
   const r0={resetAt:LR.resetAt};
   if(n==="course") return Object.assign(r0, {lv:P.lv, it:P.it, v:1});
   if(n==="learner") return Object.assign(r0, {sk:LR.sk, w:LR.w, diag:LR.diag, mig:LR.mig, intro:LR.intro, path:LR.path, len:LR.len, ts:LR.ts,
-    done:[...LR.done], checks:[...LR.checks], placed:LR.placed, pts:LR.pts, pos:{every:posOf("every"), clinic:posOf("clinic")}, v:2});
+    done:[...LR.done], checks:[...LR.checks], placed:LR.placed, pts:LR.pts, vb:LR.vb, vn:LR.vn, vlast:LR.vlast, vts:LR.vts, vall:LR.vall,
+    pos:{every:posOf("every"), clinic:posOf("clinic")}, v:2});
   if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return Object.assign(r0, {e:out.reverse(), v:2}); }
   const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return Object.assign(r0, {r, v:2});
 }
@@ -356,7 +361,14 @@ function mergeLR(name, d){
     for(const f of ["done","checks"]){ const b=new Set(d[f]||[]); b.forEach(x=>LR[f].add(x)); if(LR[f].size>b.size) ch=true; }
     if(d.placed && (!LR.placed || d.placed.at>LR.placed.at)) LR.placed=d.placed; else if(LR.placed && (!d.placed || LR.placed.at>d.placed.at)) ch=true;
     if((d.pts||0)>LR.pts) LR.pts=d.pts; else if(LR.pts>(d.pts||0)) ch=true;
-    if((d.ts||0)>LR.ts){ LR.path=d.path; LR.len=d.len; LR.ts=d.ts; } else if(LR.ts>(d.ts||0)) ch=true;
+    if((d.ts||0)>LR.ts){ LR.path=d.path; LR.len=d.len; LR.vall=!!d.vall; LR.ts=d.ts; } else if(LR.ts>(d.ts||0)) ch=true;
+    const rv=d.vb||{};
+    for(const v in rv){ const a=LR.vb[v], b=rv[v];
+      const m=a ? {at:Math.min(a.at,b.at), t:[...new Set(a.t.concat(b.t))], n:Math.max(a.n,b.n)} : b;
+      if(a && (m.t.length>b.t.length || m.at<b.at || m.n>b.n)) ch=true;
+      LR.vb[v]=m; }
+    if(Object.keys(LR.vb).some(v=>!rv[v])) ch=true;
+    if((d.vts||0)>LR.vts){ LR.vn=d.vn||0; LR.vlast=d.vlast||""; LR.vts=d.vts; } else if(LR.vts>(d.vts||0)) ch=true;
   } else if(name==="log"){
     const seen=new Set((d.e||[]).map(e=>e.t+"|"+e.id)), mine=new Set(LR.log.map(e=>e.t+"|"+e.id));
     if(LR.log.some(e=>!seen.has(e.t+"|"+e.id))) ch=true;
@@ -600,7 +612,8 @@ const SETIDS = Object.fromEntries(DR.tsets.concat(DR.vsets).map(s=>[s.id,new Set
    p:<lv>:<i>:ls  listen to a phrase      p:<lv>:<i>:tl  build a phrase from tiles
    v:<word>:cz<i> type the word into its example (from the word's example question)
    tl:<word>:<i>  build the word's example i from tiles
-   cj:<verb>:<tense>:<person> type a verb form   cjp:<verb>:<tense>:<person> pick a verb form */
+   cj:<verb>:<tense>:<person> type a verb form   cjp:<verb>:<tense>:<person> pick a verb form
+   vc / vt / vl / vw:<verb>:<hash of the sentence>  a verb-lesson sentence (see vsItem) */
 function itemFor(id){
   if(ALL[id]) return ALL[id].it;
   let it=null, m;
@@ -619,6 +632,7 @@ function itemFor(id){
       it=tilesItem(id, x[0], x[1], others, [m[1]], ["s:order"]); }
   }
   else if((m=id.match(/^(cjp?):(.+):([^:]+):(\d)$/))) it=verbItem(m[2], m[3], +m[4], m[1]==="cjp");
+  else if((m=id.match(/^v([ctlw]):(.+:[0-9a-z]+)$/))){ const x=VB.sid[m[2]]; if(x) it=vsItem(m[1], x); }
   if(it) ALL[id]={it, gen:true};
   return it;
 }
@@ -655,10 +669,11 @@ function vforms(v, t){
   return CONJ[v][TENSES.indexOf(t)].map(f=> f && t==="Command (−)" ? "no "+f : f);
 }
 const persLabel = (t, p) => isCmd(t) ? CPERS[p] : PERS[p];
+const tenseUse = t => t==="ir a" ? "What is going to happen: a form of ir, then a, then the infinitive." : DR.use[t];
 function verbItem(v, t, p, pick){
   if(!CONJ[v] || !TSK[t]) return null;
   const F=vforms(v,t), f=F[p]; if(!f) return null;
-  const tl=TLABEL[t]||t, why=`**${tl}.** ${t==="ir a" ? "What is going to happen: a form of ir, then a, then the infinitive." : DR.use[t]} *${v}*: ${F.filter(Boolean).join(", ")}.`;
+  const tl=TLABEL[t]||t, why=`**${tl}.** ${tenseUse(t)} *${v}*: ${F.filter(Boolean).join(", ")}.`;
   const tag={tn:t, sk:[TSK[t]], lem:v, pn:p, say:f, why};
   if(pick){
     const R=seeded(`${v}:${t}:${p}`), seen=new Set([f]), opts=[f];
@@ -683,7 +698,7 @@ function verbQuestions(verbs, n, inLesson){
   const out=[];
   for(const v of verbs){
     if(out.length>=2*n) break;
-    if(GUSTAR.has(v)) continue;
+    if(isThird(v)) continue;
     const ts=open.filter(t=>vforms(v,t).some(Boolean)); if(!ts.length) continue;
     const t1=out.length ? ts[Math.floor(Math.random()*ts.length)] : ts[ts.length-1], t2=ts[Math.floor(Math.random()*ts.length)];
     const ps=t=>shuffle([0,1,2,3,4].filter(p=>vforms(v,t)[p]));
@@ -693,11 +708,128 @@ function verbQuestions(verbs, n, inLesson){
   }
   return out;
 }
-/* Verbs met most recently (for lessons without a verb, and for verb practice). */
+/* Verbs met most recently (for lessons without a verb, and for verb practice): verbs of words met and verbs of verb lessons. */
 function recentVerbs(n){
+  const met=Object.keys(LR.intro).map(k=>[verbOf(k), LR.intro[k]]).concat(Object.entries(LR.vb).map(([v,o])=>[v, o.at]));
   const out=[];
-  for(const k of Object.keys(LR.intro).sort((a,b)=>LR.intro[b]-LR.intro[a])){ const v=verbOf(k); if(v && !GUSTAR.has(v) && !out.includes(v)) out.push(v); if(out.length>=n) break; }
+  // (CONJ: a verb synced from a newer build may lack a table here)
+  for(const [v] of met.filter(x=>x[0] && CONJ[x[0]]).sort((a,b)=>b[1]-a[1])){ if(!isThird(v) && !out.includes(v)) out.push(v); if(out.length>=n) break; }
   return out;
+}
+
+/* ---------- verb lessons: one verb in the tenses reached (data/verbs.json; content/verbs/VERBS.md) ----------
+   Every VERB_EVERY finished path lessons, Continue starts a verb lesson. The verb is the most useful one (the path's order)
+   not studied yet, or, every other time while there is one, a verb studied before that has tenses reached since ("rev").
+   A lesson works through up to VCAP tenses not yet practiced with that verb (then ones practiced before). */
+const VB = {state:"loading", order:null, verbs:null, sid:{}};   // sid: "verb:hash of the sentence" -> sentence (s.v = its verb)
+function addVB(d){ VB.order=d.order; VB.verbs=d.verbs; for(const v in d.verbs) d.verbs[v].s.forEach(x=>{ x.v=v; VB.sid[v+":"+hashStr(x.es)]=x; }); }
+const VERB_EVERY = 3;
+const VCAP = {short:4, long:6};
+const VQ = {short:{per:3, sent:3, which:2, say:2}, long:{per:3, sent:5, which:3, say:3}};   // per: questions per tense (more when fewer tenses)
+const VT_ALL = TENSE_ORDER.flatMap(t=>t==="Present perfect" ? [t,"Pluperfect"] : [t]);   // the pluperfect has no lesson of its own on the paths
+const reachedTenses = () => LR.vall ? VT_ALL : TENSE_ORDER.filter(t=>tenseOpen(t));
+/* said of things (gustar, latir, costar…): only the it / they forms */
+const isThird = v => GUSTAR.has(v) || !!(VB.verbs && VB.verbs[v] && VB.verbs[v].third);
+const vPersons = (v, t) => { const F=vforms(v,t); return (isThird(v) ? [2,4] : [0,1,2,3,4]).filter(p=>F[p]); };
+const vSents = (v, t) => VB.verbs[v].s.filter(x=>x.t===t);
+function vAllowed(v, t){
+  const c=VB.verbs[v].cmd;
+  return t==="Command (+)" ? (c==="both"||c==="pos") && !isThird(v) : t==="Command (−)" ? (c==="both"||c==="neg") && !isThird(v) : true;
+}
+const vAvail = v => reachedTenses().filter(t=>vAllowed(v,t) && vPersons(v,t).length && vSents(v,t).length);
+const vbFresh = v => { const had=(LR.vb[v]||{t:[]}).t; return vAvail(v).filter(t=>!had.includes(t)); };
+function vbNext(){
+  if(VB.state!=="ok") return null;
+  const order=VB.order[pathId()], fresh=order.find(v=>!LR.vb[v] && vAvail(v).length), back=order.find(v=>LR.vb[v] && vbFresh(v).length);
+  return back && (LR.vlast==="new" || !fresh) ? {v:back, mode:"rev"} : fresh ? {v:fresh, mode:"new"} : null;
+}
+const vbDue = () => LR.vn>=VERB_EVERY ? vbNext() : null;
+/* One sentence as a question. kind c: type the verb into it (the English shown); t: build it from tiles; l: hear it, pick the
+   meaning; w: which tense? (no English; the clue decides; options = the same person in tenses reached that are wrong there). */
+function vsItem(kind, x){
+  const v=x.v, id=`v${kind}:${v}:${hashStr(x.es)}`, tl=TLABEL[x.t]||x.t;
+  const why=`**${tl}.** ${tenseUse(x.t)}${x.clue?` The clue: *${x.clue}*.`:""}`;
+  const tag={tn:x.t, lem:v, pn:x.p, sk:[TSK[x.t]].concat(x.k==="obj"?["g:objpron"]:[]), say:x.es, more:[]};
+  if(kind==="c"){
+    let i=x.i, ans=x.f;
+    if(x.t==="Command (−)" && /^no /i.test(ans)){ i+=3; ans=ans.slice(3); }   // the no stays in the sentence
+    const a=new Set([ans]);
+    if(x.t==="ir a" && v!==base(v)){ const ir=CONJ.ir[0][x.p]; a.add(`${REFL[x.p]} ${ir} a ${base(v)}`).add(`${ir} a ${base(v)}${REFL[x.p]}`); }   // me voy a sentar = voy a sentarme
+    const hint=[v, isThird(v) ? "" : persLabel(x.t,x.p), x.k==="obj" ? "with its pronoun" : ""].filter(Boolean).join(", ");   // "you" can be tú or usted
+    return Object.assign({t:"fill", id, q:x.es.slice(0,i)+"___"+x.es.slice(i+ans.length), en:x.en, hint, a:[...a], show:x.es, why, k:"vcz"}, tag);
+  }
+  if(kind==="t") return Object.assign(tilesItem(id, x.es, x.en, VB.verbs[v].s.filter(o=>o!==x).map(o=>o.es), null, tag.sk), tag, {why});
+  const R=seeded(id);
+  if(kind==="l"){
+    const seen=new Set([lc(x.en)]), opts=[x.en];
+    for(const o of sshuffle(VB.verbs[v].s,R).sort((a,b)=>(b.t===x.t)-(a.t===x.t))){ if(opts.length<4 && !seen.has(lc(o.en))){ seen.add(lc(o.en)); opts.push(o.en); } }
+    return Object.assign({t:"listen", id, opts, a:0, why, k:"vlisten"}, tag, {sk:["s:listen", TSK[x.t]]});
+  }
+  if(kind==="w"){
+    if(x.k!=="stmt") return null;
+    const reach=new Set(reachedTenses()), seen=new Set([lc(x.f)]), opts=[x.f], up=f=>x.i ? f : f[0].toUpperCase()+f.slice(1);
+    for(const t of sshuffle(x.wrong,R)){ const f=reach.has(t) && vforms(v,t)[x.p]; if(f && opts.length<4 && !seen.has(lc(f))){ seen.add(lc(f)); opts.push(up(f)); } }
+    if(opts.length < (reach.size>3 ? 3 : 2)) return null;   // two options only while few tenses are open
+    return Object.assign({t:"mc", id, q:x.es.slice(0,x.i)+"___"+x.es.slice(x.i+x.f.length), qen:`Which form of ${v} fits? The clue decides.`, opts, a:0,
+      why:`“${x.en}” ${why}`, k:"vwhich"}, tag);
+  }
+  return null;
+}
+function startVerbLesson(v, mode, back){
+  const E=VB.verbs[v], ln=LR.len==="long"?"long":"short", Q=VQ[ln], avail=vAvail(v), had=(LR.vb[v]||{t:[]}).t;
+  let pick=avail.filter(t=>!had.includes(t)).slice(0,VCAP[ln]);
+  pick=pick.concat(shuffle(avail.filter(t=>!pick.includes(t))).slice(0,VCAP[ln]-pick.length));
+  const focus=avail.filter(t=>pick.includes(t)), R=seeded(v+":"+today()), seq=[], step={}, usedS=new Set();
+  if(!focus.length) return;
+  const add=(it, label)=>{ if(!it || step[it.id]) return false; seq.push(it); step[it.id]=label; if(it.say) usedS.add(it.say); return true; };
+  seq.push({t:"vmeet", id:"vmeet:"+v, v, mode, focus});
+  // each tense: its forms, then pick a form, type the verb into a sentence, type a form, … (more per tense when there are fewer)
+  const per=Math.max(Q.per, Math.ceil(2*Q.per/focus.length)+1);
+  let from=0;
+  focus.forEach((t,j)=>{
+    // statements last: they are kept for "Which tense?"; the card's example is another sentence, which no question then uses
+    const ps=sshuffle(vPersons(v,t),R), ss=sshuffle(vSents(v,t),R).sort((a,b)=>(a.k==="stmt")-(b.k==="stmt"));
+    const ex=ss.filter(o=>o.k!=="stmt").pop() || ss[0];
+    usedS.add(ex.es);
+    seq.push({t:"vtense", id:`vtense:${v}:${t}`, v, tn:t, ex:[ex.es, ex.en]});
+    let n=0, pi=0, si=0;
+    const next=()=>{ while(si<ss.length){ const x=ss[si++]; if(!usedS.has(x.es)) return x; } return null; };
+    // verbs said of things have no person drills: their sentences, typed and heard by turns (the statement too when it's the only tense)
+    const plan=isThird(v) ? (focus.length>1 ? ["cz","l"] : ["cz","l","cz"]) : ["pick","cz","type","pick","type","cz","pick"];   // at most two sentences typed
+    for(const kd of plan){
+      if(n>=per) break;
+      let it=null;
+      if(kd==="cz" || kd==="l"){ const x=next(); it=x && vsItem(kd==="cz"?"c":"l", x); }
+      else if(pi<ps.length) it=itemFor(`${kd==="pick"?"cjp":"cj"}:${v}:${t}:${ps[pi++]}`);
+      if(add(it, TLABEL[t]||t)) n++;
+    }
+    if(!j) from=seq.length;   // reviews go after the first tense
+  });
+  // sentence types, from the tenses reached (today's first): a question and an object-pronoun sentence from tiles, a negative by ear, a command
+  const pool=avail.flatMap(t=>vSents(v,t)), inFocus=x=>focus.includes(x.t);
+  const pref=list=>sshuffle(list,R).sort((a,b)=>inFocus(b)-inFocus(a));
+  let n=0;
+  for(const [k,qk] of [["q","t"],["neg","l"],["obj","t"],["cmd","c"],["q","l"],["neg","t"],["obj","c"],["stmt","l"]]){
+    if(n>=Q.sent) break;
+    const x=pref(pool.filter(o=>o.k===k && !usedS.has(o.es)))[0];
+    if(x && add(vsItem(qk==="t" && !fitsTiles(x.es) ? "c" : qk, x), "Sentences")) n++;
+  }
+  // which tense?
+  let w=0;
+  for(const x of pref(pool.filter(o=>o.k==="stmt" && !usedS.has(o.es)))){ if(w>=Q.which) break; if(add(vsItem("w",x), "Which tense?")) w++; }
+  // say it: the sentences with the fewest untaught words; in units 1-3 one with untaught words is shadowed (the model plays first)
+  const K=knownSet(introducedWords(), [v]);
+  const early=pathUnits().indexOf(curUnit())<3 && !!curUnit();
+  const says=sshuffle(pool.concat(E.uses.map(u=>({es:u.x, en:u.xen}))).filter(x=>!usedS.has(x.es) && x.es.split(/\s+/).length<=14),R)
+    .map(x=>({x, n:unknownIn(x.es,K)})).sort((a,b)=>a.n-b.n).slice(0,Q.say);
+  says.forEach(({x,n:u},j)=>add({t:"say", id:"say:"+hashStr(x.es), es:x.es, en:x.en, nosrs:true, sk:["s:speak"], shadow:j%2===1 || (early && u>0)}, "Say it"));
+  // reviews (about 30%): other verbs first, at most 3 on words the placement test let the learner skip
+  const isV=it=>/^srs-[JB]$/.test(shardOf(it.id));
+  let nOut=0;
+  const due=dueItems(new Set(Object.keys(step))).filter(it=>it.lem!==v && (!testedOut(it.id) || nOut++<3));
+  const rev=due.filter(isV).concat(due.filter(it=>!isV(it))).slice(0, LEN[ln].rev), n0=seq.length-from;
+  rev.forEach((it,j)=>{ seq.splice(from+Math.floor((j+0.5)*n0/rev.length)+j, 0, it); step[it.id]="Review"; });
+  launch({kind:"verb", title:`Verb: ${v}`, verb:v, mode, focus, units:spread(seq), src:"verb", requeue:true, step, back});
 }
 
 function itemAvailable(id){
@@ -711,6 +843,7 @@ function shardOf(id){
   if(/^[CM]\d-/.test(id)) return "srs-L";
   if(/^(v|p|tl):/.test(id)) return "srs-V";
   if(/^cjp?:/.test(id)) return "srs-J";
+  if(/^v[ctlw]:/.test(id)) return "srs-B";   // verb-lesson sentences
   if(id.startsWith("wt:")||id.startsWith("fc:")) return "srs-W";
   return "srs-T";
 }
@@ -857,7 +990,9 @@ function dueItems(exclude){
   const w=it=>(it.sk||[]).some(s=>weak.has(s)) ? 0 : 1;
   return out.sort((a,b)=>(w(a)-w(b)) || (LR.srs[a.id][0]-LR.srs[b.id][0]) || (LR.srs[a.id][1]-LR.srs[b.id][1]));
 }
-const dueCount = () => { const d=today(); let n=0; for(const id in LR.srs) if(LR.srs[id][1]<=d && !id.startsWith("wt:")) n++; return n; };
+/* verb-lesson sentences count only when they can be shown (the verb lessons are loaded, the sentence still exists, a
+   "Which tense?" has enough tenses open) */
+const dueCount = () => { const d=today(); let n=0; for(const id in LR.srs) if(LR.srs[id][1]<=d && !id.startsWith("wt:") && (!/^v[ctlw]:/.test(id) || itemFor(id))) n++; return n; };
 
 /* ================= the paths ================= */
 const pathId = () => LR.path || "every";
@@ -890,7 +1025,8 @@ function lessonTitle(u, ls){
 function nextStep(){
   if(!LR.placed) return {text:"Placement test"};
   const ids=pathUnits(), u=curUnit(); if(!u) return {text:"Path complete"};
-  const n=ids.indexOf(u)+1, ls=curLesson(u);
+  const n=ids.indexOf(u)+1, ls=curLesson(u), vb=vbDue();
+  if(vb) return {u, n, vb, text:`Unit ${n} · Verb lesson: ${vb.v}`};
   return ls ? {u, ls, n, l:lessonsOf(u).indexOf(ls)+1, text:`Unit ${n} · Lesson ${lessonsOf(u).indexOf(ls)+1}: ${lessonTitle(u,ls)}`}
             : {u, n, check:true, text:`Unit ${n} · Unit check: ${UNITS[u].title}`};
 }
@@ -924,7 +1060,7 @@ function wordQ(k, kinds){
 
 /* ================= views ================= */
 let view={name:"learn"};
-const TAB_OF = {learn:"learn", practice:"practice", settings:"settings", weak:"practice", cards:"practice", drills:"practice", drill:"practice", convs:"practice", unit:"learn"};
+const TAB_OF = {learn:"learn", practice:"practice", settings:"settings", weak:"practice", cards:"practice", drills:"practice", drill:"practice", convs:"practice", verbs:"practice", unit:"learn"};
 const go = v => { view=v; render(); window.scrollTo(0,0); };
 function render(){
   stopAudio(); micCancel(); astatus("");
@@ -932,7 +1068,7 @@ function render(){
   $("tabs").hidden=!tab;
   document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ if(b.dataset.tab===tab) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current"); });
   ({learn:renderLearn, practice:renderPractice, settings:renderSettings, welcome:renderWelcome, known:renderKnown, placed:renderPlaced,
-    unit:renderUnit, drills:renderDrills, drill:renderDrill, convs:renderConvs, weak:renderWeak, cards:renderCards, talk:renderTalk, run:renderRun})[view.name]();
+    unit:renderUnit, drills:renderDrills, drill:renderDrill, convs:renderConvs, weak:renderWeak, cards:renderCards, verbs:renderVerbs, talk:renderTalk, run:renderRun})[view.name]();
 }
 /* first visit: path choice, then placement; afterwards Learn */
 function route(){ go(LR.placed ? {name:"learn"} : {name:"welcome"}); }
@@ -949,15 +1085,16 @@ function wireBack(to){ $("back").onclick=()=>go(to); }
 function renderLearn(){
   const p=pathId(), ids=pathUnits(p), cu=curUnit(p), lv=SHUI.points.levelOf(LR.pts), nx=nextStep(), len=LR.len==="long"?"long":"short";
   const open = view.open || cu;
-  const waiting = nx.u && v2Wait(nx.u);
+  const waiting = nx.u && !nx.vb && v2Wait(nx.u);
   const node = (u,i) => {
     const done=LR.checks.has(u), cur=u===cu, st=cur?"current":done?"done":"locked", U=UNITS[u], L=lessonsOf(u), ls=lessonState(u), nDone=ls.filter(Boolean).length;
     const sub = done ? ((P.lv[U.kind==="level"?u:U.set]||{}).passed ? "Passed" : "Tested out") : cur ? `${nDone} of ${L.length} lessons done` : `${L.length} lessons`;
     let inner="";
     if(open===u){
       const next=curLesson(u);
-      inner = `<div class="unit-in"><ol class="lessons">${L.map((x,j)=>{ const d=ls[j], nxt=x===next && (cur||done), can=d||nxt;
-          return `<li><button class="lesson${d?" done":""}${nxt?" next":""}" type="button" data-ls="${u}|${j}"${can?"":" disabled"}><span class="ck" aria-hidden="true">${d?"✓":j+1}</span><span class="tx">Lesson ${j+1}<span>${esc(lessonTitle(u,x))}</span></span>${nxt?'<span class="sh-tag">Next</span>':""}</button></li>`; }).join("")}</ol>
+      const vrow = cur && nx.vb ? `<li><button class="lesson next" type="button" data-vb="1"><span class="ck" aria-hidden="true">V</span><span class="tx">Verb lesson<span>${esc(nx.vb.v)}: ${esc(VB.verbs[nx.vb.v].en)}</span></span><span class="sh-tag">Next</span></button></li>` : "";
+      inner = `<div class="unit-in"><ol class="lessons">${L.map((x,j)=>{ const d=ls[j], nxt=x===next && (cur||done), can=d||nxt, tag=nxt && !vrow;
+          return `${x===next?vrow:""}<li><button class="lesson${d?" done":""}${tag?" next":""}" type="button" data-ls="${u}|${j}"${can?"":" disabled"}><span class="ck" aria-hidden="true">${d?"✓":j+1}</span><span class="tx">Lesson ${j+1}<span>${esc(lessonTitle(u,x))}</span></span>${tag?'<span class="sh-tag">Next</span>':""}</button></li>`; }).join("")}${next?"":vrow}</ol>
         <div class="row">${cur && !next ? `<button class="sh-btn primary sm" type="button" data-check="${u}">Take the unit check</button>` : !done ? `<button class="sh-btn sm" type="button" data-check="${u}">Test out: take the unit check</button>` : ""}<button class="sh-btn sm ghost" type="button" data-notes="${u}">Notes and practice</button></div></div>`;
     }
     return `<li class="${st}"><span class="sh-node">${done?"✓":i+1}</span><div class="sh-path-body"><button class="unit-h" type="button" data-open="${u}" aria-expanded="${open===u}"><b>Unit ${i+1} · ${esc(U.title)}</b><span class="sub">${sub}</span></button>${inner}</div></li>`;
@@ -968,14 +1105,15 @@ function renderLearn(){
     ${newCard ? `<section class="sh-card"><h2>New: ${p==="clinic"?"hundreds of clinic words were":"thousands of everyday words were"} added to your path.</h2><p>Take a quick level check so you don't repeat what you know.</p>
       <div class="pair"><button class="sh-btn primary" type="button" id="ncFind">Find my level</button><button class="sh-btn" type="button" id="ncNo">Not now</button></div></section>` : ""}
     <section class="sh-card go">
-      <div class="what"><span class="sub">${nx.u ? `Unit ${nx.n} · ${esc(UNITS[nx.u].title)}` : "Your path"}</span><b>${nx.ls ? `Lesson ${nx.l}: ${esc(lessonTitle(nx.u,nx.ls))}` : nx.check ? "Unit check" : "You've finished this path. Practice keeps it fresh."}</b></div>
-      ${nx.u ? `<button class="sh-btn primary block" type="button" id="cont"${waiting?" disabled":""}>${waiting && V2.state==="loading"?"Loading words…":nx.check?"Take the unit check":fresh?(nx.n===1&&nx.l===1?"Start lesson 1":`Start Unit ${nx.n}`):"Continue"}</button>` : ""}
+      <div class="what"><span class="sub">${nx.u ? `Unit ${nx.n} · ${esc(UNITS[nx.u].title)}` : "Your path"}</span><b>${nx.vb ? `Verb lesson: ${esc(nx.vb.v)}, ${esc(VB.verbs[nx.vb.v].en)}` : nx.ls ? `Lesson ${nx.l}: ${esc(lessonTitle(nx.u,nx.ls))}` : nx.check ? "Unit check" : "You've finished this path. Practice keeps it fresh."}</b></div>
+      ${nx.u ? `<button class="sh-btn primary block" type="button" id="cont"${waiting?" disabled":""}>${waiting && V2.state==="loading"?"Loading words…":nx.vb?"Start the verb lesson":nx.check?"Take the unit check":fresh?(nx.n===1&&nx.l===1?"Start lesson 1":`Start Unit ${nx.n}`):"Continue"}</button>` : ""}
       ${V2.state==="fail" && nx.u && UNITS[nx.u].kind==="words" ? `<p class="sub">The word lists couldn't be loaded. Check your internet connection and reload the page.</p>` : ""}
       <div class="lenseg">${seg(Object.keys(LEN).map(k=>[k,lenLabel(k)]), len, "len", "Lesson length")}</div>
     </section>
     <h2 class="sect">Your path</h2>
     <ol class="sh-path">${ids.map(node).join("")}</ol>`;
-  if($("cont")) $("cont").onclick=()=> nx.check ? startCheck(nx.u) : startLesson(nx.u, nx.ls);
+  if($("cont")) $("cont").onclick=()=> nx.vb ? startVerbLesson(nx.vb.v, nx.vb.mode) : nx.check ? startCheck(nx.u) : startLesson(nx.u, nx.ls);
+  $("view").querySelectorAll("[data-vb]").forEach(b=>b.onclick=()=>startVerbLesson(nx.vb.v, nx.vb.mode));
   $("view").querySelectorAll("[data-len]").forEach(b=>b.onclick=()=>{ setPathPrefs({len:b.dataset.len}); render(); });
   if(newCard){ const seen=()=>{ LR.mig.card=2; dirtyDocs.add("learner"); saveLR(); };
     $("ncFind").onclick=()=>{ if(V2.state!=="ok") return wordsWait(); seen(); startPlacement(); }; $("ncNo").onclick=()=>{ seen(); render(); }; }
@@ -1060,10 +1198,11 @@ function renderPlaced(){
 
 /* ---------- what the learner has been taught: lesson sentences use only these words where they can ---------- */
 const FUNC = new Set("a al algo con como cómo cuál cuándo cuánto de del dónde e el él ella ellas ellos en es esa ese eso esta este esto está están estoy hay la las le les lo los me mi mis muy más ni no nos o para pero por porque qué que quién se sí si sin su sus también te tu tú tus un una uno unos unas usted ustedes y ya yo".split(" ").map(strip));
-/* the words met (and every form of their verbs), plus FUNC; compared lowercase without accents */
-function knownSet(keys){
+/* the words met (and every form of their verbs, and of verbs), plus FUNC; compared lowercase without accents */
+function knownSet(keys, verbs=[]){
   const K=new Set(FUNC), add=s=>String(s).toLowerCase().split(/[^\p{L}]+/u).forEach(t=>{ if(t) K.add(strip(t)); });
   for(const k of keys){ const W=WORD[k]; if(!W) continue; add(cleanSay(W.w)); const v=verbOf(k); if(v) CONJ[v].forEach(row=>row.forEach(add)); }
+  verbs.forEach(v=>CONJ[v].forEach(row=>row.forEach(add)));
   return K;
 }
 /* how many words of a sentence haven't been taught (plurals and gender forms of a known word count as known, and so do
@@ -1170,7 +1309,8 @@ function renderPractice(){
   const more=[tile("pListen","listen","Listening","Hear it, then pick what it means"),
     tile("pSpeak","mic","Speaking","Say it and repeat after the model, out loud"),
     met && tile("pVocab","words","Vocabulary",`${plural(met,"word")} you've met: typing and examples`),
-    verbs && tile("pVerbs","grammar","Verbs","Your verbs in the tenses you've learned"),
+    tile("pVerbL","grammar","Verb lessons","One verb at a time, in every tense you've reached"),
+    verbs && tile("pVerbs","grammar","Verb forms","Quick forms of your verbs in the tenses you've learned"),
     convs && tile("pConv","chat","Conversations",`${plural(convs,"role-play")} with an AI partner`),
     tile("pDrills","check","Drill sets","Vocabulary and verb-tense sets with tests"),
     tile("pCards","cards","Verb cards","The 50 core verbs in every tense")].filter(Boolean);
@@ -1184,6 +1324,7 @@ function renderPractice(){
   on("pSpeak", ()=>{ const s=buildSpeak(); skillRun("Speaking", s.units, s.talk); });
   on("pVocab", ()=>skillRun("Vocabulary", buildVocab()));
   on("pVerbs", ()=>skillRun("Verbs", verbQuestions(shuffle(recentVerbs(10)), 6)));
+  on("pVerbL", ()=>go({name:"verbs"}));
   on("pConv", ()=>go({name:"convs"})); on("pDrills", ()=>go({name:"drills"})); on("pCards", ()=>go({name:"cards"}));
 }
 function skillRun(title, units, talkLv){
@@ -1248,6 +1389,21 @@ function renderConvs(){
       : `<p class="note">Conversations open as you reach each level on your path.</p>`}`;
   wireBack({name:"practice"});
   $("view").querySelectorAll("[data-talk]").forEach(b=>b.onclick=()=>{ const [id,i,v]=b.dataset.talk.split("|"); startTalk(LV[id], +i, v==="1", {back:{name:"convs"}}); });
+}
+/* Verb lessons: the next one (an extra, any time) and every verb studied, to go over again. */
+function renderVerbs(){
+  if(VB.state!=="ok"){ $("view").innerHTML=head("Practice")+`<h1>Verb lessons</h1><p class="sub">${VB.state==="fail"?"The verb lessons couldn't be loaded. Check your internet connection and reload the page.":"Loading the verb lessons…"}</p>`; return wireBack({name:"practice"}); }
+  const nx=vbNext(), mine=VB.order[pathId()].filter(v=>LR.vb[v]);
+  const row=v=>{ const a=vAvail(v), t=LR.vb[v].t.filter(x=>a.includes(x)).length;
+    return `<li><button class="sh-tile" type="button" data-v="${esc(v)}"${a.length?"":" disabled"}><span class="sh-ic">${SHUI.icon("grammar")}</span><span class="tx"><span class="t">${esc(v)}</span><span class="d">${esc(VB.verbs[v].en)}. Practiced in ${t} of ${plural(a.length,"tense")}</span></span></button></li>`; };
+  $("view").innerHTML = head("Practice") + `<h1>Verb lessons</h1>
+    <p class="sub">Every ${VERB_EVERY+1}th lesson on your path is about one verb: its forms, sentences in each tense${LR.vall?"":" you've reached"}, questions, negatives, pronouns and commands. Do an extra one here, or go over a verb again.</p>
+    ${nx ? `<section class="sh-card"><span class="sh-tag" style="align-self:flex-start">${nx.mode==="rev"?"Back for new tenses":"Next verb"}</span><h2>${esc(nx.v)}</h2><p class="sub">${esc(VB.verbs[nx.v].en)}</p><button class="sh-btn primary block" type="button" id="vNext">Start a verb lesson</button></section>`
+      : `<p class="note">${reachedTenses().length ? "You've studied every verb in the tenses you've reached. New tenses bring them back." : "Verb lessons start once your path reaches the present tense."}</p>`}
+    ${mine.length ? `<h2 class="sect">Your verbs</h2><ul class="list">${mine.map(row).join("")}</ul>` : ""}`;
+  wireBack({name:"practice"});
+  if($("vNext")) $("vNext").onclick=()=>startVerbLesson(nx.v, nx.mode, {name:"verbs"});
+  $("view").querySelectorAll("[data-v]").forEach(b=>b.onclick=()=>{ const v=b.dataset.v; startVerbLesson(v, vbFresh(v).length ? "rev" : "again", {name:"verbs"}); });
 }
 function renderDrills(){
   const tile = id => { const un=drillUnlocked(id), p=P.lv[id]||{}, isT=id[0]==="T", s=VSET[id];
@@ -1344,7 +1500,7 @@ function startDrill(id, mode, kind){
 
 /* ================= runs: lessons, practice, checks and placement ================= */
 let run=null;
-const isQ = u => !["intro","gram","talk"].includes(u.t);
+const isQ = u => !["intro","gram","talk","vmeet","vtense"].includes(u.t);
 const countQ = us => us.reduce((a,u)=>a+(isQ(u)?decisions(u):0),0);
 function launch(o){ run=Object.assign({i:0, results:[], pts0:LR.pts, owed:0, intros:0, spoken:0, flip:false}, o); run.total=countQ(run.units); run.max=Math.floor(1.4*run.total); go({name:"run"}); }
 const kindLabel = it => (run.step && run.step[it.id]) || ({v2e:"Meaning", e2v:"Spanish word", ex:"Fill the gap", type:"Type the Spanish", cz:"Type the missing word", conj:"Type the verb form",
@@ -1387,7 +1543,7 @@ function quitRun(){
   const r=run;
   if(r.kind==="place") return confirmDlg("Stop the test?", "You'll start where the questions so far put you.", "Stop and see my result", ()=>r.onEnd(r));
   if(r.kind==="test") return confirmDlg("Leave the check?", "This attempt won't be saved.", "Leave", ()=>go(r.back));
-  if(r.kind==="lesson") return confirmDlg("Leave this lesson?", "Your answers so far are saved, but the lesson won't count as done until you finish it.", "Leave", ()=>go({name:"learn", hl:true}));
+  if(r.kind==="lesson" || r.kind==="verb") return confirmDlg("Leave this lesson?", "Your answers so far are saved, but the lesson won't count as done until you finish it.", "Leave", ()=>go(r.back || {name:"learn", hl:true}));
   if(r.results.length) return endRun(true);
   go(r.back);
 }
@@ -1402,7 +1558,13 @@ function endRun(early){
   if(r.kind==="place") return r.onEnd(r);
   const right=r.results.filter(x=>x.ok).length, total=r.results.length, score=total ? right/total : 0;
   let title=early?"Session ended":"Session done", note="", passed=false, firstPass=false;
-  if(r.kind==="lesson" && !early){ LR.done.add(r.lesson.id); SHUI.points.award(LR, LESSON_PTS); title="Lesson done"; const u=r.unit; if(!curLesson(u) && !LR.checks.has(u)) note="That was the last lesson in this unit. The unit check is ready on your path."; }
+  if(r.kind==="lesson" && !early){ if(!LR.done.has(r.lesson.id)){ LR.vn++; LR.vts=Date.now(); } LR.done.add(r.lesson.id); SHUI.points.award(LR, LESSON_PTS); title="Lesson done"; const u=r.unit; if(!curLesson(u) && !LR.checks.has(u)) note="That was the last lesson in this unit. The unit check is ready on your path."; }
+  if(r.kind==="verb" && !early){
+    const o=LR.vb[r.verb]||{at:today(), t:[], n:0};
+    LR.vb[r.verb]={at:o.at, t:[...new Set(o.t.concat(r.focus))], n:o.n+1};
+    if(r.mode!=="again"){ LR.vlast=r.mode; LR.vts=Date.now(); if(!r.back) LR.vn=0; }   // an extra one from Practice doesn't move the path's
+    SHUI.points.award(LR, LESSON_PTS); title="Verb lesson done";
+  }
   if(r.kind==="test"){
     SHUI.points.award(LR, r.owed);
     passed = score>=r.pass-1e-9;
@@ -1416,7 +1578,7 @@ function endRun(early){
   view={name:"results"}; $("tabs").hidden=true;
   const misses=r.results.filter(x=>!x.ok);
   const toLearn = () => go({name:"learn", hl:true});
-  const actions = r.kind==="lesson" ? [{label:"Continue", primary:true, onClick:toLearn}]
+  const actions = r.kind==="lesson" || r.kind==="verb" ? [{label:"Continue", primary:true, onClick:r.back ? ()=>go(r.back) : toLearn}]
     : r.kind==="test" ? (passed ? [{label:"Continue", primary:true, onClick:toLearn}] : [{label:"Try again", primary:true, onClick:r.retry}, {label:"Back", onClick:()=>go(r.back)}])
     : [{label:"Done", primary:true, onClick:()=>go(r.back)}, {label:"Practice again", onClick:r.retry}];
   if(r.talk) actions.splice(1,0,{label:"Start a spoken conversation", onClick:()=>startTalk(LV[r.talk], 0, true, {back:{name:"practice"}})});
@@ -1460,6 +1622,8 @@ function meaningOf(it){
 function mountUnit(ex, it, quiet, done){
   if(it.t==="intro") return mountIntro(ex, it, ()=>{ run.intros++; done([]); });
   if(it.t==="gram") return mountGram(ex, it, ()=>done([]));
+  if(it.t==="vmeet") return mountVerbMeet(ex, it, ()=>done([]));
+  if(it.t==="vtense") return mountVerbTense(ex, it, ()=>done([]));
   if(it.t==="talk") return mountTalkStep(ex, it, ()=>done([]));
   if(it.t==="wt") return mountWholeTense(ex, it, done);
   if(it.t==="say") return mountSay(ex, it, done);
@@ -1591,6 +1755,27 @@ function mountGram(ex, it, done){
   ex.innerHTML=`<span class="sh-tag" style="align-self:flex-start">Grammar</span><h1>${esc(g.h)}</h1><div class="gram q"><p>${md(head)}</p>${exList(ex2.slice(0,2))}
     ${rest||ex2.length>2?`<details><summary>More about this</summary><div class="q">${rest?`<p>${md(rest)}</p>`:""}${ex2.length>2?exList(ex2.slice(2)):""}</div></details>`:""}</div>
     <button class="sh-btn primary block dock" type="button" id="gotIt">Got it</button>`;
+  $("gotIt").focus({preventScroll:true}); $("gotIt").onclick=done;
+}
+/* a verb lesson's first card: the verb, today's tenses, how it conjugates and its key patterns */
+function mountVerbMeet(ex, it, done){
+  const E=VB.verbs[it.v], tl=t=>TLABEL[t]||t;
+  ex.innerHTML=`<span class="sh-tag" style="align-self:flex-start">${it.mode==="rev"?"Verb lesson: new tenses":"Verb lesson"}</span>
+    <div class="word"><b>${esc(it.v)}</b><button class="sh-play" type="button" data-say="${esc(it.v)}" aria-label="Play">${SHUI.icon("play")}</button></div>
+    <p class="mean">${esc(E.en)}</p><div class="row">${it.focus.map(t=>`<span class="sh-tag mute">${esc(tl(t))}</span>`).join("")}</div><p>${md(E.note)}</p>
+    <h3>Key patterns</h3><ul class="exl">${E.uses.map(u=>`<li>${playBtn(u.x)}<span><span class="es">${esc(u.es)}</span><span class="en">${esc(u.en)}</span><span>${esc(u.x)}</span><span class="en">${esc(u.xen)}</span></span></li>`).join("")}</ul>
+    <button class="sh-btn primary block dock" type="button" id="gotIt">Got it</button>`;
+  autoSay(it.v);
+  $("gotIt").focus({preventScroll:true}); $("gotIt").onclick=done;
+}
+/* one tense of the verb: what the tense is for, the forms, an example (it.ex, chosen by startVerbLesson) */
+function mountVerbTense(ex, it, done){
+  const v=it.v, t=it.tn, F=vforms(v,t), ps=vPersons(v,t), th=isThird(v);
+  ex.innerHTML=`<span class="sh-tag" style="align-self:flex-start">${esc(TLABEL[t]||t)}</span><h1>${esc(v)}</h1><p>${md(tenseUse(t))}</p>
+    <dl class="forms">${ps.map(p=>`<dt>${th ? (p===2?"one thing":"more than one") : esc(persLabel(t,p))}</dt><dd>${esc(F[p])} ${playBtn(F[p])}</dd>`).join("")}</dl>
+    ${exList([it.ex])}${FORM[t]?`<details><summary>How it's formed</summary><p>${md(FORM[t])}</p></details>`:""}
+    <button class="sh-btn primary block dock" type="button" id="gotIt">Got it</button>`;
+  autoSay(ps.map(p=>F[p]).join(", "));
   $("gotIt").focus({preventScroll:true}); $("gotIt").onclick=done;
 }
 /* optional: a 3-exchange spoken conversation with the lesson's words */
@@ -2060,6 +2245,7 @@ function renderSettings(){
   $("view").innerHTML = head() + `<h1>Settings</h1>
     <section class="sh-card"><h2>Lessons</h2>
       <h3>Length</h3><div class="lenseg">${seg(Object.keys(LEN).map(k=>[k,lenLabel(k)]), len, "len", "Lesson length")}</div><p class="sub">Short lessons teach up to ${Z.short} new words, long ones up to ${Z.long}, with reviews mixed in.</p>
+      <h3>Verb lessons</h3>${seg([["reached","Tenses I've reached"],["all","All tenses"]], LR.vall?"all":"reached", "vall", "Verb lesson tenses")}<p class="sub">Every ${VERB_EVERY+1}th lesson is about one verb. With all tenses, verb lessons also teach tenses your path hasn't reached yet.</p>
       <h3>Path</h3>${seg(Object.keys(PATHS).map(k=>[k,PATHS[k].name]), pathId(), "path", "Path")}<p class="sub">Each path keeps its own place. Grammar units you finish count in both.</p>
       <h3>Placement test</h3><p class="sub">${pl&&pl.test?`Last placed ${new Date(pl.at).toLocaleDateString()}${pl.unit?`, at ${esc(UNITS[pl.unit].title)}`:""}. `:""}Retaking it never undoes units you've finished.</p><button class="sh-btn sm" type="button" id="s-place">${pl&&pl.test?"Retake":"Take"} the placement test</button></section>
     <section class="sh-card"><h2>Color scheme</h2><p class="sub">One choice for all of Study Hall on this device.</p><div id="themes"></div></section>
@@ -2077,6 +2263,7 @@ function renderSettings(){
     <section class="sh-card"><h2>Reset my progress</h2><p class="sub">Erase all Clinic Spanish progress${db?" on every device":""}. This can't be undone.</p><button class="sh-btn sm" type="button" id="s-reset">Erase my progress</button></section>`;
   $("view").querySelectorAll("[data-len]").forEach(b=>b.onclick=()=>{ setPathPrefs({len:b.dataset.len}); render(); });
   $("view").querySelectorAll("[data-path]").forEach(b=>b.onclick=()=>{ setPathPrefs({path:b.dataset.path}); render(); });
+  $("view").querySelectorAll("[data-vall]").forEach(b=>b.onclick=()=>{ setPathPrefs({vall:b.dataset.vall==="all"}); render(); });
   SHUI.theme.picker($("themes"));
   if(SHV) SHV.picker($("s-picker"), {sample:SAMPLE});
   fillVoices();
@@ -2134,6 +2321,10 @@ connect();
   .then(d=>{ addV2(d); V2.state="ok"; })
   .catch(()=>{ V2.state="fail"; })
   .then(()=>{ mapOldProgress(); refresh(); });
+(typeof VB_SRC==="string" ? fetch(VB_SRC).then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); }) : Promise.resolve(VB_SRC))
+  .then(d=>{ addVB(d); VB.state="ok"; })
+  .catch(()=>{ VB.state="fail"; })
+  .then(refresh);
 </script>
 </body>
 </html>

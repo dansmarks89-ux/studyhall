@@ -1,0 +1,96 @@
+{
+ "decidir": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 0,
+    "k": "stmt",
+    "es": "Mañana voy a decidir qué carro compro.",
+    "en": "Tomorrow I'm going to decide which car to buy.",
+    "f": "voy a decidir",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "intentar": {
+  "s": {
+   "18": {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Hasta ahora, la paciente ha intentado bajar de peso tres veces.",
+    "en": "So far, the patient has tried to lose weight three times.",
+    "f": "ha intentado",
+    "clue": "Hasta ahora",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "lograr": {
+  "s": {
+   "29": {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "neg",
+    "es": "Me dio tristeza que no lográramos ver a la abuela.",
+    "en": "I was sad that we didn't manage to see Grandma.",
+    "f": "lográramos"
+   }
+  }
+ },
+ "ganar": {
+  "s": {
+   "32": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Conteste esta breve encuesta y gane un premio.",
+    "en": "Answer this short survey and win a prize.",
+    "f": "gane"
+   }
+  }
+ },
+ "ofrecer": {
+  "s": {
+   "23": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Nunca le habían ofrecido una segunda opinión.",
+    "en": "They had never offered him a second opinion.",
+    "f": "habían ofrecido"
+   }
+  }
+ },
+ "arreglar": {
+  "s": {
+   "1": {
+    "t": "Present",
+    "p": 4,
+    "k": "q",
+    "es": "¿Aquí arreglan celulares?",
+    "en": "Do they fix cell phones here?",
+    "f": "arreglan"
+   },
+   "14": {
+    "t": "Future",
+    "p": 1,
+    "k": "neg",
+    "es": "Gritando no arreglarás nada.",
+    "en": "You won't fix anything by yelling.",
+    "f": "arreglarás"
+   }
+  }
+ }
+}

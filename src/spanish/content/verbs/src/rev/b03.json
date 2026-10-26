@@ -1,0 +1,161 @@
+{
+ "tomar": {
+  "s": {
+   "23": {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca antes habíamos tomado un avión.",
+    "en": "We had never taken a plane before.",
+    "f": "habíamos tomado"
+   },
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "La doctora me recomendó que tomara mucha agua.",
+    "en": "The doctor recommended that I drink a lot of water.",
+    "f": "tomara",
+    "clue": "me recomendó que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "esperar": {
+  "s": {
+   "20": {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Nunca he esperado tanto en un restaurante.",
+    "en": "I've never waited so long at a restaurant.",
+    "f": "he esperado"
+   },
+   "29": {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Les pedí que no me esperaran.",
+    "en": "I asked them not to wait for me.",
+    "f": "esperaran"
+   }
+  }
+ },
+ "contar": {
+  "s": {
+   "16": {
+    "t": "Conditional",
+    "p": 2,
+    "k": "q",
+    "es": "¿Nos contaría un poco sobre sus antecedentes médicos?",
+    "en": "Could you tell us a little about your medical history?",
+    "f": "contaría"
+   }
+  }
+ },
+ "necesitar": {
+  "s": {
+   "6": {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Cuando éramos estudiantes, siempre necesitábamos dinero.",
+    "en": "When we were students, we always needed money.",
+    "f": "necesitábamos",
+    "clue": "Cuando éramos estudiantes",
+    "wrong": [
+     "Future",
+     "ir a",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "sentir": {
+  "s": {
+   "3": {
+    "t": "Preterite",
+    "p": 2,
+    "k": "stmt",
+    "es": "Anoche mi esposo sintió un dolor fuerte en el pecho.",
+    "en": "Last night my husband felt a severe pain in his chest.",
+    "f": "sintió",
+    "clue": "Anoche",
+    "wrong": [
+     "Future",
+     "ir a",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "6": {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "De niños, sentíamos miedo en la casa de mi abuela.",
+    "en": "As kids, we used to feel scared at my grandmother's house.",
+    "f": "sentíamos",
+    "clue": "De niños",
+    "wrong": [
+     "Future",
+     "ir a",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "trabajar": {
+  "s": {
+   "6": {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Cuando éramos jóvenes, trabajábamos en un restaurante.",
+    "en": "When we were young, we worked at a restaurant.",
+    "f": "trabajábamos",
+    "clue": "Cuando éramos jóvenes",
+    "wrong": [
+     "Future",
+     "ir a",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "buscar": {
+  "s": {
+   "11": {
+    "t": "ir a",
+    "p": 1,
+    "k": "neg",
+    "es": "Si te dan el ascenso, no vas a buscar otro trabajo.",
+    "en": "If you get the promotion, you're not going to look for another job.",
+    "f": "vas a buscar"
+   }
+  }
+ },
+ "entender": {
+  "s": {
+   "3": {
+    "t": "Preterite",
+    "p": 3,
+    "k": "stmt",
+    "es": "Ayer por fin entendimos la tarea de matemáticas.",
+    "en": "Yesterday we finally understood the math homework.",
+    "f": "entendimos",
+    "clue": "Ayer",
+    "wrong": [
+     "Future",
+     "ir a",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ }
+}

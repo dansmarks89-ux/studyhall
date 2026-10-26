@@ -1,7 +1,7 @@
 """Build data/conj2.json: tables (same shape as conj.json) for every course verb that conj.json lacks.
 
 Verbs come from vocab2.json entries with pos "verb" plus the "to …" entries of the level vocab and the
-drill vocab sets. Headwords are reduced to the infinitive as taught: "(…)" notes are dropped, "a / b"
+drill vocab sets, plus every verb of the verb lessons (content/verbs/order.json). Headwords are reduced to the infinitive as taught: "(…)" notes are dropped, "a / b"
 gives both verbs, a trailing governed preposition is dropped ("encargarse de" -> "encargarse");
 anything still longer than one word is a phrase and is skipped.
 Base tables come from conj.table (verbecc), corrected by hand where it is wrong (MODEL, PARTICIPLE, FIX,
@@ -13,6 +13,7 @@ written accent) to affirmative commands.
 import json, re
 from pathlib import Path
 from conj import table
+from accents import enclitic
 
 DATA = Path(__file__).resolve().parents[2] / "data"
 VERB = re.compile(r"[a-záéíóúñü]*(ar|er|ir|ír)(se)?")
@@ -66,34 +67,8 @@ def course_verbs():
     heads = [e["w"] for s in vocab2["sets"] for e in s["entries"] if e.get("pos") == "verb"]
     heads += [w for lv in levels for w, en in lv["vocab"] if en.startswith("to ")]
     heads += [e["w"] for s in drills["vsets"] for e in s["entries"] if e["en"].startswith("to ")]
-    return {v for h in heads for v in infinitives(h)}
-
-
-def stressed_vowel(word):
-    """Index of the vowel carrying the stress (diphthongs: the strong vowel, or the second of ui/iu)."""
-    acc = [i for i, c in enumerate(word) if c in "áéíóú"]
-    if acc:
-        return acc[0]
-    w = re.sub(r"(?<=[qg])u(?=[ei])", "#", word)   # silent u
-    syl = [m.span() for m in re.finditer(r"[iuü]?[aeo][iu]?|[iuü][iu]?", w)]
-    a, b = syl[-2] if w[-1] in "aeiouns" and len(syl) > 1 else syl[-1]
-    nucleus = w[a:b]
-    k = next((i for i, c in enumerate(nucleus) if c in "aeo"), len(nucleus) - 1)
-    return a + k
-
-
-def enclitic(form, pron):
-    """form + pron with the written accent the new word needs (levanta+te -> levántate, detén+te -> detente)."""
-    i = stressed_vowel(form)
-    plain = form[:i] + form[i].translate(str.maketrans("áéíóú", "aeiou")) + form[i + 1:]
-    word = plain + pron
-    after = re.sub(r"(?<=[qg])u(?=[ei])", "#", word[i + 1:])
-    after = re.sub(r"^[iu](?![aeo])", "", after) if form[i] in "aeoáéó" else after   # rest of the nucleus
-    later = len(re.findall(r"[iuü]?[aeo][iu]?|[iuü][iu]?", after))
-    hiatus = form[i] in "íú" and bool(re.search("[aeiou]", form[i - 1:i] + form[i + 1:i + 2]))
-    if later >= 2 or hiatus:
-        word = word[:i] + "áéíóú"["aeiou".index(word[i])] + word[i + 1:]
-    return word
+    lessons = json.loads((DATA.parent / "content" / "verbs" / "order.json").read_text(encoding="utf-8"))["order"]["every"]
+    return {v for h in heads for v in infinitives(h)} | set(lessons)
 
 
 def reflexive(tb):

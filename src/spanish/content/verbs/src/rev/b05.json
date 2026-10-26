@@ -1,0 +1,268 @@
+{
+ "olvidar": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 0,
+    "k": "stmt",
+    "es": "El próximo fin de semana voy a olvidar el trabajo por completo.",
+    "en": "Next weekend I'm going to forget about work completely.",
+    "f": "voy a olvidar",
+    "clue": "El próximo fin de semana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "terminar": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo mes vamos a terminar de pintar la casa.",
+    "en": "Next month we're going to finish painting the house.",
+    "f": "vamos a terminar",
+    "clue": "El próximo mes",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "entrar": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Dentro de cinco minutos, la enfermera va a entrar a revisarlo.",
+    "en": "In five minutes, the nurse is going to come in to check on you.",
+    "f": "va a entrar",
+    "clue": "Dentro de cinco minutos",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "oír": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 4,
+    "k": "stmt",
+    "es": "Mañana van a oír a mi hija cantar en el coro.",
+    "en": "Tomorrow you guys are going to hear my daughter sing in the choir.",
+    "f": "van a oír",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   },
+   "32": null
+  },
+  "set": {
+   "cmd": "pos"
+  }
+ },
+ "traer": {
+  "s": {
+   "12": {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "El próximo mes traerán los muebles nuevos.",
+    "en": "Next month they'll bring the new furniture.",
+    "f": "traerán",
+    "clue": "El próximo mes",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Present perfect"
+    ]
+   }
+  },
+  "set": {
+   "uses": [
+    {
+     "es": "traer + noun",
+     "en": "to bring (something)",
+     "x": "¿Trajo sus estudios?",
+     "xen": "Did you bring your test results?"
+    },
+    {
+     "es": "traerle algo a alguien",
+     "en": "to bring someone something",
+     "x": "Te traje un regalo de Oaxaca.",
+     "xen": "I brought you a present from Oaxaca."
+    },
+    {
+     "es": "traer (dinero, lentes…)",
+     "en": "to have (money, glasses…) on you",
+     "x": "¿Traes cambio para el estacionamiento?",
+     "xen": "Do you have change for parking?"
+    }
+   ]
+  }
+ },
+ "usar": {
+  "s": {
+   "12": {
+    "t": "Future",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo año usaremos un sistema nuevo en la clínica.",
+    "en": "Next year we'll use a new system at the clinic.",
+    "f": "usaremos",
+    "clue": "El próximo año",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "aprender": {
+  "set": {
+   "cmd": "pos"
+  },
+  "s": {
+   "32": null
+  }
+ },
+ "estudiar": {
+  "s": {
+   "3": {
+    "t": "Preterite",
+    "p": 4,
+    "k": "stmt",
+    "es": "Mis papás estudiaron en la misma escuela hace cuarenta años.",
+    "en": "My parents went to the same school forty years ago.",
+    "f": "estudiaron",
+    "clue": "hace cuarenta años",
+    "wrong": [
+     "Future",
+     "ir a",
+     "Present subjunctive"
+    ]
+   },
+   "9": {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "Mañana vamos a estudiar juntos en la biblioteca.",
+    "en": "Tomorrow we're going to study together at the library.",
+    "f": "vamos a estudiar",
+    "clue": "Mañana",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   },
+   "18": {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Desde que abrimos, hemos estudiado a cien pacientes con este problema.",
+    "en": "Since we opened, we've studied a hundred patients with this problem.",
+    "f": "hemos estudiado",
+    "clue": "Desde que abrimos",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "26": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Es mejor que tu hijo no estudie toda la noche.",
+    "en": "It's better for your son not to stay up all night studying.",
+    "f": "estudie"
+   }
+  }
+ },
+ "sacar": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "Mañana le vamos a sacar sangre en ayunas.",
+    "en": "Tomorrow we're going to draw your blood while you're fasting.",
+    "f": "vamos a sacar",
+    "clue": "Mañana",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Imperfect subjunctive"
+    ]
+   },
+   "12": {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "El próximo año sacarán una nueva versión del programa.",
+    "en": "Next year they'll release a new version of the software.",
+    "f": "sacarán",
+    "clue": "El próximo año",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Present perfect"
+    ]
+   },
+   "18": {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "stmt",
+    "es": "Hasta ahora has sacado tres libros de la biblioteca.",
+    "en": "So far you've checked out three books from the library.",
+    "f": "has sacado",
+    "clue": "Hasta ahora",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "25": {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "q",
+    "es": "¿Es necesario que me saquen la muela?",
+    "en": "Do they really need to pull my tooth?",
+    "f": "saquen"
+   }
+  }
+ },
+ "caer": {
+  "s": {
+   "4": {
+    "t": "Preterite",
+    "p": 2,
+    "k": "q",
+    "es": "¿Cayó mucho granizo en tu colonia?",
+    "en": "Did a lot of hail fall in your neighborhood?",
+    "f": "Cayó"
+   }
+  }
+ }
+}

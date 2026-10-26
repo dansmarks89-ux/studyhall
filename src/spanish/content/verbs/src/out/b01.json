@@ -1,0 +1,5204 @@
+{
+ "ser": {
+  "en": "to be (identity, origin, traits, time)",
+  "note": "Highly irregular. Present *soy, eres, es, somos, son*; imperfect *era, éramos*. Preterite *fui, fue* and imperfect subjunctive *fuera* are the same as for *ir*; present subjunctive *sea*; tú command *sé*.",
+  "uses": [
+   {
+    "es": "ser + profession / nationality",
+    "en": "to be (who or what someone is)",
+    "x": "Mi esposa es enfermera.",
+    "xen": "My wife is a nurse."
+   },
+   {
+    "es": "ser de + place",
+    "en": "to be from",
+    "x": "¿De dónde es usted?",
+    "xen": "Where are you from?"
+   },
+   {
+    "es": "ser la una / son las …",
+    "en": "it is … o'clock",
+    "x": "Son las tres y media.",
+    "xen": "It's three thirty."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 3,
+    "k": "stmt",
+    "es": "Normalmente somos cuatro en la cena del domingo.",
+    "en": "There are usually four of us at Sunday dinner.",
+    "f": "somos",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Usted es alérgico a la penicilina?",
+    "en": "Are you allergic to penicillin?",
+    "f": "es"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Estos síntomas no son graves.",
+    "en": "These symptoms aren't serious.",
+    "f": "son"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "stmt",
+    "es": "La boda de mi prima fue el sábado pasado.",
+    "en": "My cousin's wedding was last Saturday.",
+    "f": "fue",
+    "clue": "el sábado pasado",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Fuiste tú el que dejó la puerta abierta?",
+    "en": "Were you the one who left the door open?",
+    "f": "Fuiste"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "neg",
+    "es": "Los resultados no fueron lo que esperábamos.",
+    "en": "The results weren't what we expected.",
+    "f": "fueron"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "De niño era muy tímido en la escuela.",
+    "en": "As a kid, I was very shy at school.",
+    "f": "era",
+    "clue": "De niño",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Eras buena para las matemáticas en la escuela?",
+    "en": "Were you good at math in school?",
+    "f": "Eras"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis abuelos no eran ricos, pero vivían bien.",
+    "en": "My grandparents weren't rich, but they lived well.",
+    "f": "eran"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "La reunión va a ser mañana a las diez.",
+    "en": "The meeting is going to be tomorrow at ten.",
+    "f": "va a ser",
+    "clue": "mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Cuántos van a ser para la cena?",
+    "en": "How many of you are going to be there for dinner?",
+    "f": "van a ser"
+   },
+   {
+    "t": "ir a",
+    "p": 1,
+    "k": "neg",
+    "es": "No vas a ser el único nuevo en la escuela.",
+    "en": "You're not going to be the only new kid at school.",
+    "f": "vas a ser"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "La recuperación será lenta durante el próximo mes.",
+    "en": "Recovery will be slow over the next month.",
+    "f": "será",
+    "clue": "el próximo mes",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "q",
+    "es": "¿Seré capaz de volver a correr?",
+    "en": "Will I be able to run again?",
+    "f": "Seré"
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "neg",
+    "es": "Con este sueldo, nunca seremos ricos.",
+    "en": "On this salary, we'll never be rich.",
+    "f": "seremos"
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "stmt",
+    "es": "Si pudiéramos operarlo hoy, sería mejor.",
+    "en": "If we could operate on him today, it would be better.",
+    "f": "sería",
+    "clue": "Si pudiéramos operarlo hoy",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Serías tan amable de pasarme la sal?",
+    "en": "Would you be so kind as to pass me the salt?",
+    "f": "Serías"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "neg",
+    "es": "Sin tu ayuda, yo no sería médico.",
+    "en": "Without your help, I wouldn't be a doctor.",
+    "f": "sería"
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Hasta ahora, el tratamiento ha sido un éxito.",
+    "en": "So far, the treatment has been a success.",
+    "f": "ha sido",
+    "clue": "Hasta ahora",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Alguna vez has sido voluntario en un hospital?",
+    "en": "Have you ever been a volunteer at a hospital?",
+    "f": "has sido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos nunca han sido buenos para levantarse temprano.",
+    "en": "My kids have never been good at getting up early.",
+    "f": "han sido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Nunca antes había sido tan feliz.",
+    "en": "I had never been so happy before.",
+    "f": "había sido",
+    "clue": "Nunca antes",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Había sido paciente de este hospital antes?",
+    "en": "Had you been a patient at this hospital before?",
+    "f": "Había sido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Antes de la boda, no habíamos sido muy cercanos.",
+    "en": "Before the wedding, we hadn't been very close.",
+    "f": "habíamos sido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Ojalá que no sea nada grave, doctor.",
+    "en": "I hope it's nothing serious, doctor.",
+    "f": "sea",
+    "clue": "Ojalá",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Quieres que sea yo quien maneje?",
+    "en": "Do you want me to be the one who drives?",
+    "f": "sea"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Esperamos que los efectos secundarios no sean fuertes.",
+    "en": "We hope the side effects aren't strong.",
+    "f": "sean"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si yo fuera tú, descansaría más.",
+    "en": "If I were you, I'd rest more.",
+    "f": "fuera",
+    "clue": "Si",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harías si fueras presidente?",
+    "en": "What would you do if you were president?",
+    "f": "fueras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Lo dice como si no fuera nada serio.",
+    "en": "He says it as if it weren't anything serious.",
+    "f": "fuera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Sea sincero con el médico sobre lo que come.",
+    "en": "Be honest with the doctor about what you eat.",
+    "f": "Sea"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Sé amable con tu hermanito.",
+    "en": "Be nice to your little brother.",
+    "f": "Sé"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No sea tímido, pregunte lo que quiera.",
+    "en": "Don't be shy; ask whatever you want.",
+    "f": "No sea"
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "El lunar parece peligroso, pero no lo es.",
+    "en": "The mole looks dangerous, but it isn't.",
+    "f": "lo es"
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "obj",
+    "es": "Mi papá trabajaba de maestro, y mi abuelo también lo era.",
+    "en": "My dad worked as a teacher, and my grandfather was one too.",
+    "f": "lo era"
+   }
+  ]
+ },
+ "estar": {
+  "en": "to be (location, condition, state)",
+  "note": "Irregular: present *estoy*, with written accents on *estás, está, están*; preterite stem *estuv-* (*estuve, estuvo*); subjunctive *esté*. It also forms the progressive: *estoy trabajando*.",
+  "uses": [
+   {
+    "es": "estar + how someone is",
+    "en": "to be (feeling, condition)",
+    "x": "Mi mamá está muy cansada hoy.",
+    "xen": "My mom is very tired today."
+   },
+   {
+    "es": "estar + place",
+    "en": "to be (located)",
+    "x": "La farmacia está en el primer piso.",
+    "xen": "The pharmacy is on the first floor."
+   },
+   {
+    "es": "estar + -ando / -iendo",
+    "en": "to be doing (right now)",
+    "x": "Estamos esperando al doctor.",
+    "xen": "We're waiting for the doctor."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Ahora mismo estoy en la sala de espera.",
+    "en": "Right now I'm in the waiting room.",
+    "f": "estoy",
+    "clue": "Ahora mismo",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Está tomando algún medicamento?",
+    "en": "Are you taking any medication?",
+    "f": "Está"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás no están en casa los martes.",
+    "en": "My parents aren't home on Tuesdays.",
+    "f": "están"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "stmt",
+    "es": "Anoche estuvimos en urgencias hasta las dos.",
+    "en": "Last night we were in the ER until two.",
+    "f": "estuvimos",
+    "clue": "Anoche",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Estuviste en la fiesta de Carlos el viernes?",
+    "en": "Were you at Carlos's party on Friday?",
+    "f": "Estuviste"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi jefe no estuvo en la reunión de ayer.",
+    "en": "My boss wasn't at yesterday's meeting.",
+    "f": "estuvo"
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando llegó la ambulancia, el paciente estaba inconsciente.",
+    "en": "When the ambulance arrived, the patient was unconscious.",
+    "f": "estaba",
+    "clue": "Cuando llegó la ambulancia",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Dónde estabas cuando te llamé?",
+    "en": "Where were you when I called you?",
+    "f": "estabas"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "No estaba seguro de la dirección, así que llamé.",
+    "en": "I wasn't sure of the address, so I called.",
+    "f": "estaba"
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "stmt",
+    "es": "Mis suegros van a estar aquí el próximo fin de semana.",
+    "en": "My in-laws are going to be here next weekend.",
+    "f": "van a estar",
+    "clue": "el próximo fin de semana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿Va a estar alguien con usted después de la cirugía?",
+    "en": "Is someone going to be with you after the surgery?",
+    "f": "Va a estar"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "Mañana no voy a estar en la oficina.",
+    "en": "I'm not going to be in the office tomorrow.",
+    "f": "voy a estar"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Dentro de una hora, el cuarto estará listo.",
+    "en": "The room will be ready in an hour.",
+    "f": "estará",
+    "clue": "Dentro de una hora",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Estarás en casa cuando lleguen los niños?",
+    "en": "Will you be home when the kids get there?",
+    "f": "Estarás"
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "neg",
+    "es": "No estaremos en la ciudad para Navidad.",
+    "en": "We won't be in town for Christmas.",
+    "f": "estaremos"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si no fuera por mis hijos, estaría muy solo.",
+    "en": "If it weren't for my kids, I'd be very lonely.",
+    "f": "estaría",
+    "clue": "Si no fuera por mis hijos",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "q",
+    "es": "¿Estaría dispuesto a participar en un estudio?",
+    "en": "Would you be willing to take part in a study?",
+    "f": "Estaría"
+   },
+   {
+    "t": "Conditional",
+    "p": 4,
+    "k": "neg",
+    "es": "Sin el seguro, mis papás no estarían tan tranquilos.",
+    "en": "Without the insurance, my parents wouldn't be so calm.",
+    "f": "estarían"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Últimamente he estado muy cansado.",
+    "en": "Lately I've been very tired.",
+    "f": "he estado",
+    "clue": "Últimamente",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Alguna vez has estado en Guatemala?",
+    "en": "Have you ever been to Guatemala?",
+    "f": "has estado"
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "neg",
+    "es": "Su presión no ha estado bien controlada este mes.",
+    "en": "Her blood pressure hasn't been well controlled this month.",
+    "f": "ha estado"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Hasta ese viaje, nunca habíamos estado en la playa.",
+    "en": "Until that trip, we had never been to the beach.",
+    "f": "habíamos estado",
+    "clue": "Hasta ese viaje",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Había estado internado alguna vez?",
+    "en": "Had you ever been hospitalized before?",
+    "f": "Había estado"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Los niños nunca habían estado en un avión.",
+    "en": "The kids had never been on a plane.",
+    "f": "habían estado"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que esté en ayunas para el análisis.",
+    "en": "It's important for you to be fasting for the blood test.",
+    "f": "esté",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Quieres que estemos allí a las ocho?",
+    "en": "Do you want us to be there at eight?",
+    "f": "estemos"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Ojalá no estés enojada conmigo.",
+    "en": "I hope you're not mad at me.",
+    "f": "estés"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "El doctor pidió que los familiares estuvieran en la sala de espera.",
+    "en": "The doctor asked the family to be in the waiting room.",
+    "f": "estuvieran",
+    "clue": "pidió que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harías si estuvieras en mi lugar?",
+    "en": "What would you do if you were in my shoes?",
+    "f": "estuvieras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "neg",
+    "es": "Si no estuviera tan cansado, saldría con ustedes.",
+    "en": "If I weren't so tired, I'd go out with you guys.",
+    "f": "estuviera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Esté aquí media hora antes de su cita.",
+    "en": "Be here half an hour before your appointment.",
+    "f": "Esté"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Está atento al teléfono, por si llama el doctor.",
+    "en": "Keep an ear out for the phone in case the doctor calls.",
+    "f": "Está"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No esté nervioso, es un procedimiento sencillo.",
+    "en": "Don't be nervous; it's a simple procedure.",
+    "f": "No esté"
+   },
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "obj",
+    "es": "Todos me ven preocupado, pero no lo estoy.",
+    "en": "Everyone thinks I look worried, but I'm not.",
+    "f": "lo estoy"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "obj",
+    "es": "Los zapatos ya le están chicos al niño.",
+    "en": "The shoes are already too small for the boy.",
+    "f": "le están"
+   }
+  ]
+ },
+ "tener": {
+  "en": "to have; to be (hungry, afraid, … years old)",
+  "note": "Irregular. Present *tengo*, and e→ie in *tienes, tiene, tienen*. Preterite stem *tuv-* (*tuve, tuvo*); future *tendré*, conditional *tendría*; subjunctive *tenga*; tú command *ten*.",
+  "uses": [
+   {
+    "es": "tener que + infinitive",
+    "en": "to have to",
+    "x": "Tengo que trabajar el sábado.",
+    "xen": "I have to work on Saturday."
+   },
+   {
+    "es": "tener … años",
+    "en": "to be … years old",
+    "x": "Mi hija tiene seis años.",
+    "xen": "My daughter is six years old."
+   },
+   {
+    "es": "tener dolor / fiebre / miedo",
+    "en": "to have pain / a fever / to be afraid",
+    "x": "¿Tiene fiebre?",
+    "xen": "Do you have a fever?"
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente tengo clase de yoga los martes.",
+    "en": "I usually have yoga class on Tuesdays.",
+    "f": "tengo",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Tiene alergia a algún medicamento?",
+    "en": "Are you allergic to any medication?",
+    "f": "Tiene"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis vecinos no tienen carro.",
+    "en": "My neighbors don't have a car.",
+    "f": "tienen"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "stmt",
+    "es": "Hace dos días mi hijo tuvo fiebre muy alta.",
+    "en": "Two days ago my son had a very high fever.",
+    "f": "tuvo",
+    "clue": "Hace dos días",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Tuviste problemas para encontrar la clínica?",
+    "en": "Did you have trouble finding the clinic?",
+    "f": "Tuviste"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "No tuvimos tiempo de desayunar.",
+    "en": "We didn't have time to eat breakfast.",
+    "f": "tuvimos"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "De niño tenía un perro que se llamaba Max.",
+    "en": "As a kid, I had a dog named Max.",
+    "f": "tenía",
+    "clue": "De niño",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Tenía dolor de pecho antes de desmayarse?",
+    "en": "Did you have chest pain before you fainted?",
+    "f": "Tenía"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis abuelos no tenían luz en el rancho.",
+    "en": "My grandparents didn't have electricity on the ranch.",
+    "f": "tenían"
+   },
+   {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo mes vamos a tener otro bebé.",
+    "en": "Next month we're going to have another baby.",
+    "f": "vamos a tener",
+    "clue": "El próximo mes",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 1,
+    "k": "q",
+    "es": "¿Vas a tener tiempo para comer hoy?",
+    "en": "Are you going to have time to eat today?",
+    "f": "Vas a tener"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "neg",
+    "es": "Con esta pastilla, no va a tener tanto dolor.",
+    "en": "With this pill, you won't have as much pain.",
+    "f": "va a tener"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Dentro de dos semanas tendrá los resultados.",
+    "en": "You'll have the results in two weeks.",
+    "f": "tendrá",
+    "clue": "Dentro de dos semanas",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "q",
+    "es": "¿Tendré que dejar de tomar café?",
+    "en": "Will I have to stop drinking coffee?",
+    "f": "Tendré"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos no tendrán clases el lunes.",
+    "en": "My kids won't have school on Monday.",
+    "f": "tendrán"
+   },
+   {
+    "t": "Conditional",
+    "p": 3,
+    "k": "stmt",
+    "es": "Si ganáramos más, tendríamos una casa más grande.",
+    "en": "If we earned more, we'd have a bigger house.",
+    "f": "tendríamos",
+    "clue": "Si ganáramos más",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Tendrías un minuto para ayudarme?",
+    "en": "Would you have a minute to help me?",
+    "f": "Tendrías"
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "neg",
+    "es": "Si tomara sus pastillas, no tendría la presión tan alta.",
+    "en": "If she took her pills, her blood pressure wouldn't be so high.",
+    "f": "tendría"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Hoy ya he tenido tres reuniones.",
+    "en": "I've already had three meetings today.",
+    "f": "he tenido",
+    "clue": "Hoy ya",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ha tenido alguna cirugía antes?",
+    "en": "Have you had any surgeries before?",
+    "f": "Ha tenido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Los niños todavía no han tenido varicela.",
+    "en": "The kids haven't had chickenpox yet.",
+    "f": "han tenido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando llegó al hospital, ya había tenido dos infartos.",
+    "en": "When he got to the hospital, he had already had two heart attacks.",
+    "f": "había tenido",
+    "clue": "Cuando llegó al hospital",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Habías tenido un trabajo así antes?",
+    "en": "Had you had a job like that before?",
+    "f": "Habías tenido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca habíamos tenido tanta suerte.",
+    "en": "We had never been so lucky.",
+    "f": "habíamos tenido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "stmt",
+    "es": "Quiero que tengas cuidado con el carro nuevo.",
+    "en": "I want you to be careful with the new car.",
+    "f": "tengas",
+    "clue": "Quiero que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Es normal que tenga tanto sueño con esta medicina?",
+    "en": "Is it normal for me to be so sleepy on this medicine?",
+    "f": "tenga"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Ojalá que los niños no tengan tarea este fin de semana.",
+    "en": "I hope the kids don't have homework this weekend.",
+    "f": "tengan"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si tuviera más tiempo, aprendería a tocar la guitarra.",
+    "en": "If I had more time, I'd learn to play the guitar.",
+    "f": "tuviera",
+    "clue": "Si",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "q",
+    "es": "¿Qué haría si tuviera dolor de pecho otra vez?",
+    "en": "What would you do if you had chest pain again?",
+    "f": "tuviera"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "neg",
+    "es": "Gastamos como si no tuviéramos que pagar la renta.",
+    "en": "We spend as if we didn't have to pay rent.",
+    "f": "tuviéramos"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Tenga a mano su lista de medicamentos.",
+    "en": "Have your medication list handy.",
+    "f": "Tenga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Ten cuidado, el piso está mojado.",
+    "en": "Be careful, the floor is wet.",
+    "f": "Ten"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No tenga miedo, no le va a doler.",
+    "en": "Don't be afraid; it isn't going to hurt.",
+    "f": "No tenga"
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Los análisis? Los tiene la enfermera.",
+    "en": "The lab results? The nurse has them.",
+    "f": "Los tiene"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "obj",
+    "es": "La tenía en la mano hace un momento.",
+    "en": "I had it in my hand a moment ago.",
+    "f": "La tenía"
+   }
+  ]
+ },
+ "ir": {
+  "en": "to go",
+  "note": "Highly irregular. Present *voy, vas, va, vamos, van*; imperfect *iba, íbamos*; preterite *fui, fue* (the same as *ser*); subjunctive *vaya*; tú command *ve*. *Ir a* + infinitive is the everyday way to talk about the future.",
+  "uses": [
+   {
+    "es": "ir a + place",
+    "en": "to go to",
+    "x": "Mañana voy al dentista.",
+    "xen": "I'm going to the dentist tomorrow."
+   },
+   {
+    "es": "ir a + infinitive",
+    "en": "to be going to (do)",
+    "x": "Vamos a comer a las dos.",
+    "xen": "We're going to eat at two."
+   },
+   {
+    "es": "irle bien / mal (a alguien)",
+    "en": "to go well / badly (for someone)",
+    "x": "Me fue bien en el examen.",
+    "xen": "My exam went well."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente voy al gimnasio antes del trabajo.",
+    "en": "I usually go to the gym before work.",
+    "f": "voy",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Va al baño con más frecuencia que antes?",
+    "en": "Are you going to the bathroom more often than before?",
+    "f": "Va"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Los niños no van a la escuela los sábados.",
+    "en": "The kids don't go to school on Saturdays.",
+    "f": "van"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "stmt",
+    "es": "El lunes pasado fuimos al cine con los niños.",
+    "en": "Last Monday we went to the movies with the kids.",
+    "f": "fuimos",
+    "clue": "El lunes pasado",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Fuiste a la farmacia por mi medicina?",
+    "en": "Did you go to the pharmacy to get my medicine?",
+    "f": "Fuiste"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi esposo no fue a su cita de ayer.",
+    "en": "My husband didn't go to his appointment yesterday.",
+    "f": "fue"
+   },
+   {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "De niños, íbamos a la playa todos los veranos.",
+    "en": "As kids, we went to the beach every summer.",
+    "f": "íbamos",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Ibas a misa con tus abuelos?",
+    "en": "Did you use to go to Mass with your grandparents?",
+    "f": "Ibas"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Antes nunca iba al médico.",
+    "en": "I never used to go to the doctor.",
+    "f": "iba"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mañana mi hija va a ir a casa de una amiga.",
+    "en": "Tomorrow my daughter is going to go to a friend's house.",
+    "f": "va a ir",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a ir a la fiesta de Ana?",
+    "en": "Are you guys going to go to Ana's party?",
+    "f": "Van a ir"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "No voy a ir a trabajar con esta fiebre.",
+    "en": "I'm not going to go to work with this fever.",
+    "f": "voy a ir"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "El próximo año mis papás irán a Perú.",
+    "en": "Next year my parents will go to Peru.",
+    "f": "irán",
+    "clue": "El próximo año",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Irás a la boda de tu primo?",
+    "en": "Will you go to your cousin's wedding?",
+    "f": "Irás"
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "neg",
+    "es": "No iremos de vacaciones este año.",
+    "en": "We won't go on vacation this year.",
+    "f": "iremos"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En su lugar, yo iría a urgencias ahora mismo.",
+    "en": "If I were you, I'd go to the ER right now.",
+    "f": "iría",
+    "clue": "En su lugar",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Irías conmigo al concierto el sábado?",
+    "en": "Would you go with me to the concert on Saturday?",
+    "f": "Irías"
+   },
+   {
+    "t": "Conditional",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás nunca irían a un restaurante tan caro.",
+    "en": "My parents would never go to such an expensive restaurant.",
+    "f": "irían"
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Este mes mi mamá ya ha ido tres veces al médico.",
+    "en": "My mom has already been to the doctor three times this month.",
+    "f": "ha ido",
+    "clue": "ya",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Has ido alguna vez a México?",
+    "en": "Have you ever been to Mexico?",
+    "f": "Has ido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Todavía no hemos ido al nuevo supermercado.",
+    "en": "We haven't been to the new supermarket yet.",
+    "f": "hemos ido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando la conocí, ya había ido a muchos países.",
+    "en": "When I met her, she had already been to many countries.",
+    "f": "había ido",
+    "clue": "Cuando la conocí",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Habías ido a ese restaurante antes?",
+    "en": "Had you been to that restaurant before?",
+    "f": "Habías ido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Nunca había ido a un hospital tan grande.",
+    "en": "I had never been to such a big hospital.",
+    "f": "había ido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que vaya al laboratorio en ayunas.",
+    "en": "It's important that you go to the lab without eating first.",
+    "f": "vaya",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Quieres que vayamos juntos al súper?",
+    "en": "Do you want us to go to the store together?",
+    "f": "vayamos"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Mi mamá prefiere que no vayas sola de noche.",
+    "en": "My mom would rather you not go alone at night.",
+    "f": "vayas"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "El doctor les pidió que fueran a terapia dos veces por semana.",
+    "en": "The doctor asked them to go to therapy twice a week.",
+    "f": "fueran",
+    "clue": "pidió que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Te molestaría que fuera yo en tu lugar?",
+    "en": "Would you mind if I went instead of you?",
+    "f": "fuera"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Si no fuera a sus citas, su diabetes empeoraría.",
+    "en": "If she didn't go to her appointments, her diabetes would get worse.",
+    "f": "fuera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Vaya a urgencias si le sube la fiebre.",
+    "en": "Go to the ER if your fever goes up.",
+    "f": "Vaya"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Ve a lavarte las manos antes de comer.",
+    "en": "Go wash your hands before you eat.",
+    "f": "Ve"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No vaya a trabajar mañana; descanse en casa.",
+    "en": "Don't go to work tomorrow; rest at home.",
+    "f": "No vaya"
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Cómo le va con la nueva dieta?",
+    "en": "How's it going with the new diet?",
+    "f": "le va"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "obj",
+    "es": "A mis hijos les fue muy bien en la escuela este año.",
+    "en": "My kids did very well in school this year.",
+    "f": "les fue"
+   }
+  ]
+ },
+ "hacer": {
+  "en": "to do; to make",
+  "note": "Irregular. Present *hago* (the other persons are regular); preterite stem *hic-*, with *hizo*; future *haré*; participle *hecho*; subjunctive *haga*; tú command *haz*.",
+  "uses": [
+   {
+    "es": "hace + time",
+    "en": "… ago",
+    "x": "Me operaron hace dos años.",
+    "xen": "I had surgery two years ago."
+   },
+   {
+    "es": "hacer ejercicio / la tarea / las compras",
+    "en": "to exercise / do homework / do the shopping",
+    "x": "¿Usted hace ejercicio?",
+    "xen": "Do you exercise?"
+   },
+   {
+    "es": "hace frío / calor",
+    "en": "it's cold / hot (weather)",
+    "x": "Hoy hace mucho calor.",
+    "xen": "It's really hot today."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "stmt",
+    "es": "Normalmente mis papás hacen las compras los sábados.",
+    "en": "My parents usually do the grocery shopping on Saturdays.",
+    "f": "hacen",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Hace ejercicio regularmente?",
+    "en": "Do you exercise regularly?",
+    "f": "Hace"
+   },
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "neg",
+    "es": "Los domingos no hago nada.",
+    "en": "On Sundays I don't do anything.",
+    "f": "hago"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "stmt",
+    "es": "Anoche hice lasaña para la cena.",
+    "en": "Last night I made lasagna for dinner.",
+    "f": "hice",
+    "clue": "Anoche",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "q",
+    "es": "¿Le hicieron una radiografía en urgencias?",
+    "en": "Did they take an X-ray of you in the ER?",
+    "f": "hicieron"
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "neg",
+    "es": "Hoy no hiciste la cama.",
+    "en": "You didn't make your bed today.",
+    "f": "hiciste"
+   },
+   {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "De niños, hacíamos tamales con mi abuela en Navidad.",
+    "en": "As kids, we made tamales with my grandma at Christmas.",
+    "f": "hacíamos",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Qué hacía cuando empezó el dolor?",
+    "en": "What were you doing when the pain started?",
+    "f": "hacía"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Antes mis papás no hacían ejercicio.",
+    "en": "My parents didn't use to exercise.",
+    "f": "hacían"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "stmt",
+    "es": "El sábado que viene voy a hacer una carne asada.",
+    "en": "This coming Saturday I'm going to have a barbecue.",
+    "f": "voy a hacer",
+    "clue": "El sábado que viene",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Me van a hacer más análisis?",
+    "en": "Are they going to run more tests on me?",
+    "f": "van a hacer"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "neg",
+    "es": "Este año la empresa no va a hacer fiesta de Navidad.",
+    "en": "This year the company isn't going to have a Christmas party.",
+    "f": "va a hacer"
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "stmt",
+    "es": "Algún día haremos un viaje a Japón.",
+    "en": "Someday we'll take a trip to Japan.",
+    "f": "haremos",
+    "clue": "Algún día",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harás en las vacaciones de verano?",
+    "en": "What will you do over summer vacation?",
+    "f": "harás"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "Esta pastilla no le hará daño al estómago.",
+    "en": "This pill won't hurt your stomach.",
+    "f": "hará"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En tu lugar, yo haría la cita hoy mismo.",
+    "en": "If I were you, I'd make the appointment today.",
+    "f": "haría",
+    "clue": "En tu lugar",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "q",
+    "es": "¿Me haría un favor?",
+    "en": "Would you do me a favor?",
+    "f": "haría"
+   },
+   {
+    "t": "Conditional",
+    "p": 3,
+    "k": "neg",
+    "es": "Sin internet, no haríamos nada en el trabajo.",
+    "en": "Without the internet, we wouldn't get anything done at work.",
+    "f": "haríamos"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Los médicos todavía no han hecho un diagnóstico.",
+    "en": "The doctors haven't made a diagnosis yet.",
+    "f": "han hecho",
+    "clue": "todavía no",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Ya has hecho las maletas?",
+    "en": "Have you packed your bags yet?",
+    "f": "has hecho"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Nunca he hecho yoga.",
+    "en": "I've never done yoga.",
+    "f": "he hecho"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Cuando llegaron los invitados, ya habíamos hecho toda la comida.",
+    "en": "When the guests arrived, we had already made all the food.",
+    "f": "habíamos hecho",
+    "clue": "Cuando llegaron los invitados",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Se había hecho una prueba de esfuerzo antes?",
+    "en": "Had you had a stress test before?",
+    "f": "había hecho"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "neg",
+    "es": "Nunca habías hecho un viaje tan largo, ¿verdad?",
+    "en": "You'd never taken such a long trip, right?",
+    "f": "habías hecho"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que haga ejercicio todos los días.",
+    "en": "It's important that you exercise every day.",
+    "f": "haga",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Qué quieres que hagamos el fin de semana?",
+    "en": "What do you want us to do this weekend?",
+    "f": "hagamos"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Te pido que no hagas ruido, el bebé está dormido.",
+    "en": "Please don't make any noise; the baby's asleep.",
+    "f": "hagas"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "Si mis hijos hicieran más deporte, dormirían mejor.",
+    "en": "If my kids played more sports, they'd sleep better.",
+    "f": "hicieran",
+    "clue": "Si",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Te importaría que hiciera una llamada rápida?",
+    "en": "Would you mind if I made a quick call?",
+    "f": "hiciera"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Le pedí a mi papá que no hiciera esfuerzos por un mes.",
+    "en": "I asked my dad not to overexert himself for a month.",
+    "f": "hiciera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Haga una lista de todas sus pastillas.",
+    "en": "Make a list of all your pills.",
+    "f": "Haga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Haz la tarea antes de ver la tele.",
+    "en": "Do your homework before you watch TV.",
+    "f": "Haz"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No haga movimientos bruscos con el brazo.",
+    "en": "Don't make any sudden movements with your arm.",
+    "f": "No haga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "Estos ejercicios son fáciles; hágalos dos veces al día.",
+    "en": "These exercises are easy; do them twice a day.",
+    "f": "hágalos"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "obj",
+    "es": "Este pastel lo hice yo.",
+    "en": "I made this cake myself.",
+    "f": "lo hice"
+   }
+  ]
+ },
+ "poder": {
+  "en": "to be able to; can; may",
+  "note": "Irregular. Present o→ue (*puedo, puede, pueden*, but *podemos*); preterite stem *pud-* (*pude, pudo*); future *podré*, conditional *podría*; subjunctive *pueda*. Usually followed by an infinitive.",
+  "uses": [
+   {
+    "es": "poder + infinitive",
+    "en": "can, to be able to (do)",
+    "x": "¿Puede levantar el brazo?",
+    "xen": "Can you raise your arm?"
+   },
+   {
+    "es": "¿Podría …?",
+    "en": "Could you …? (polite request)",
+    "x": "¿Podría esperar un momento?",
+    "xen": "Could you wait a moment?"
+   },
+   {
+    "es": "se puede + infinitive",
+    "en": "one can; is it allowed to",
+    "x": "¿Se puede comer antes del examen?",
+    "xen": "Is it OK to eat before the test?"
+   }
+  ],
+  "cmd": "none",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente puedo salir del trabajo a las cinco.",
+    "en": "I can usually leave work at five.",
+    "f": "puedo",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Puede respirar profundo?",
+    "en": "Can you take a deep breath?",
+    "f": "Puede"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás no pueden venir a la fiesta.",
+    "en": "My parents can't come to the party.",
+    "f": "pueden"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "stmt",
+    "es": "Ayer por fin pudimos hablar con el especialista.",
+    "en": "Yesterday we were finally able to talk to the specialist.",
+    "f": "pudimos",
+    "clue": "Ayer",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Pudiste encontrar estacionamiento?",
+    "en": "Were you able to find parking?",
+    "f": "Pudiste"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi mamá no pudo dormir anoche por el dolor.",
+    "en": "My mom couldn't sleep last night because of the pain.",
+    "f": "pudo"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "De joven podía correr diez kilómetros sin parar.",
+    "en": "When I was young, I could run ten kilometers without stopping.",
+    "f": "podía",
+    "clue": "De joven",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Podía caminar sin dolor antes del accidente?",
+    "en": "Could you walk without pain before the accident?",
+    "f": "Podía"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis abuelos no podían pagar la escuela de sus hijos.",
+    "en": "My grandparents couldn't afford school for their kids.",
+    "f": "podían"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mañana va a poder comer normalmente otra vez.",
+    "en": "Tomorrow you're going to be able to eat normally again.",
+    "f": "va a poder",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 1,
+    "k": "q",
+    "es": "¿Vas a poder llevarme al aeropuerto?",
+    "en": "Are you going to be able to take me to the airport?",
+    "f": "Vas a poder"
+   },
+   {
+    "t": "ir a",
+    "p": 3,
+    "k": "neg",
+    "es": "No vamos a poder ir a la boda.",
+    "en": "We're not going to be able to go to the wedding.",
+    "f": "vamos a poder"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "El próximo año mis hijos podrán ir solos a la escuela.",
+    "en": "Next year my kids will be able to go to school by themselves.",
+    "f": "podrán",
+    "clue": "El próximo año",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "q",
+    "es": "¿Podré manejar después del procedimiento?",
+    "en": "Will I be able to drive after the procedure?",
+    "f": "Podré"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "El paciente no podrá recibir visitas hasta mañana.",
+    "en": "The patient won't be able to have visitors until tomorrow.",
+    "f": "podrá"
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "stmt",
+    "es": "Si estudiaras más, podrías entrar a medicina.",
+    "en": "If you studied more, you could get into med school.",
+    "f": "podrías",
+    "clue": "Si estudiaras más",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "q",
+    "es": "¿Podría hablar más despacio, por favor?",
+    "en": "Could you speak more slowly, please?",
+    "f": "Podría"
+   },
+   {
+    "t": "Conditional",
+    "p": 3,
+    "k": "neg",
+    "es": "Sin su ayuda, no podríamos pagar la renta.",
+    "en": "Without his help, we couldn't pay the rent.",
+    "f": "podríamos"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Desde la operación, he podido caminar sin bastón.",
+    "en": "Since the operation, I've been able to walk without a cane.",
+    "f": "he podido",
+    "clue": "Desde la operación",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ha podido tomar sus medicinas sin problema?",
+    "en": "Have you been able to take your medicines without any trouble?",
+    "f": "Ha podido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos todavía no han podido ver a su abuela.",
+    "en": "My kids still haven't been able to see their grandma.",
+    "f": "han podido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Hasta ese año, nunca habíamos podido tomar vacaciones.",
+    "en": "Until that year, we had never been able to take a vacation.",
+    "f": "habíamos podido",
+    "clue": "Hasta ese año",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Había podido dormir antes de llegar a urgencias?",
+    "en": "Had you been able to sleep before you came to the ER?",
+    "f": "Había podido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "No había podido hablar con ella en meses.",
+    "en": "I hadn't been able to talk to her in months.",
+    "f": "había podido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Ojalá que mi hermano pueda venir en Navidad.",
+    "en": "I hope my brother can come for Christmas.",
+    "f": "pueda",
+    "clue": "Ojalá",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Hay algo que pueda hacer por ti?",
+    "en": "Is there anything I can do for you?",
+    "f": "pueda"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Me preocupa que mis papás no puedan pagar el tratamiento.",
+    "en": "I'm worried my parents won't be able to pay for the treatment.",
+    "f": "puedan"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si pudiera, trabajaría desde casa todos los días.",
+    "en": "If I could, I'd work from home every day.",
+    "f": "pudiera",
+    "clue": "Si",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harías si pudieras vivir en otro país?",
+    "en": "What would you do if you could live in another country?",
+    "f": "pudieras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Si mi esposa no pudiera trabajar, no tendríamos seguro.",
+    "en": "If my wife couldn't work, we wouldn't have insurance.",
+    "f": "pudiera"
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Me puede repetir su fecha de nacimiento?",
+    "en": "Could you repeat your date of birth for me?",
+    "f": "Me puede"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "obj",
+    "es": "Busqué las llaves por todos lados, pero no las pude encontrar.",
+    "en": "I looked everywhere for the keys, but I couldn't find them.",
+    "f": "las pude"
+   }
+  ]
+ },
+ "querer": {
+  "en": "to want; to love (a person)",
+  "note": "Stem change e→ie in the present (*quiero, quiere, quieren*, but *queremos*) and subjunctive (*quiera*). Irregular preterite *quise, quiso*; future *querré* (double r). *Quisiera* is a polite \"I'd like\".",
+  "uses": [
+   {
+    "es": "querer + infinitive",
+    "en": "to want to (do)",
+    "x": "Quiero hablar con el doctor.",
+    "xen": "I want to talk to the doctor."
+   },
+   {
+    "es": "querer que + subjunctive",
+    "en": "to want someone to (do)",
+    "x": "Quiero que descanse.",
+    "xen": "I want you to rest."
+   },
+   {
+    "es": "querer a + person",
+    "en": "to love (someone)",
+    "x": "Quiero mucho a mis abuelos.",
+    "xen": "I love my grandparents very much."
+   }
+  ],
+  "cmd": "none",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Ahora mismo solo quiero dormir.",
+    "en": "Right now I just want to sleep.",
+    "f": "quiero",
+    "clue": "Ahora mismo",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Quiere que le explique el procedimiento otra vez?",
+    "en": "Do you want me to explain the procedure again?",
+    "f": "Quiere"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Los niños no quieren comer verduras.",
+    "en": "The kids don't want to eat vegetables.",
+    "f": "quieren"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "stmt",
+    "es": "Ayer quise llamarte, pero no tuve tiempo.",
+    "en": "Yesterday I wanted to call you, but I didn't have time.",
+    "f": "quise",
+    "clue": "Ayer",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "q",
+    "es": "¿Por qué no quiso quedarse en el hospital?",
+    "en": "Why didn't he want to stay in the hospital?",
+    "f": "quiso"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás no quisieron vender la casa.",
+    "en": "My parents refused to sell the house.",
+    "f": "quisieron"
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "De niña, mi esposa quería ser veterinaria.",
+    "en": "As a girl, my wife wanted to be a vet.",
+    "f": "quería",
+    "clue": "De niña",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué querías decirme ayer?",
+    "en": "What did you want to tell me yesterday?",
+    "f": "querías"
+   },
+   {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "No queríamos molestarlo tan tarde, doctor.",
+    "en": "We didn't want to bother you so late, doctor.",
+    "f": "queríamos"
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "stmt",
+    "es": "Mañana los niños van a querer ir a la playa.",
+    "en": "Tomorrow the kids are going to want to go to the beach.",
+    "f": "van a querer",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 1,
+    "k": "q",
+    "es": "¿Vas a querer postre?",
+    "en": "Are you going to want dessert?",
+    "f": "Vas a querer"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "neg",
+    "es": "Al principio no va a querer comer mucho.",
+    "en": "At first he's not going to want to eat much.",
+    "f": "va a querer"
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "stmt",
+    "es": "Algún día querrás tener hijos.",
+    "en": "Someday you'll want to have kids.",
+    "f": "querrás",
+    "clue": "Algún día",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "q",
+    "es": "¿Querrá venir con nosotros tu hermano?",
+    "en": "Do you think your brother will want to come with us?",
+    "f": "Querrá"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos no querrán irse de la playa.",
+    "en": "My kids won't want to leave the beach.",
+    "f": "querrán"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En su lugar, yo querría una segunda opinión.",
+    "en": "In your place, I'd want a second opinion.",
+    "f": "querría",
+    "clue": "En su lugar",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Querrías venir a cenar el viernes?",
+    "en": "Would you like to come to dinner on Friday?",
+    "f": "Querrías"
+   },
+   {
+    "t": "Conditional",
+    "p": 3,
+    "k": "neg",
+    "es": "Nosotros nunca querríamos vivir en una ciudad tan grande.",
+    "en": "We would never want to live in such a big city.",
+    "f": "querríamos"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Desde niña he querido ser cirujana.",
+    "en": "I've wanted to be a surgeon since I was a girl.",
+    "f": "he querido",
+    "clue": "Desde niña",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Alguna vez ha querido dejar de fumar?",
+    "en": "Have you ever wanted to quit smoking?",
+    "f": "ha querido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos todavía no han querido probar el pescado.",
+    "en": "My kids still haven't been willing to try fish.",
+    "f": "han querido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Antes de enfermarse, mi papá nunca había querido ir al médico.",
+    "en": "Before he got sick, my dad had never wanted to go to the doctor.",
+    "f": "había querido",
+    "clue": "Antes de enfermarse",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Siempre habías querido ser maestra?",
+    "en": "Had you always wanted to be a teacher?",
+    "f": "habías querido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "No habíamos querido decirles nada a los niños.",
+    "en": "We hadn't wanted to tell the kids anything.",
+    "f": "habíamos querido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Ojalá que mi hija quiera estudiar medicina.",
+    "en": "I hope my daughter wants to study medicine.",
+    "f": "quiera",
+    "clue": "Ojalá",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Es normal que no quiera comer nada?",
+    "en": "Is it normal that I don't want to eat anything?",
+    "f": "quiera"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Me sorprende que tus papás no quieran venir.",
+    "en": "I'm surprised your parents don't want to come.",
+    "f": "quieran"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Si mi hijo quisiera, podría jugar en el equipo.",
+    "en": "If my son wanted to, he could play on the team.",
+    "f": "quisiera",
+    "clue": "Si mi hijo",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Me lo dirías si no quisieras ir?",
+    "en": "Would you tell me if you didn't want to go?",
+    "f": "quisieras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "neg",
+    "es": "Si no quisiera ayudarte, no estaría aquí.",
+    "en": "If I didn't want to help you, I wouldn't be here.",
+    "f": "quisiera"
+   },
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "obj",
+    "es": "Te quiero mucho, mamá.",
+    "en": "I love you very much, Mom.",
+    "f": "Te quiero"
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "obj",
+    "es": "Mi abuela nos quería muchísimo a todos.",
+    "en": "My grandmother loved all of us so much.",
+    "f": "nos quería"
+   }
+  ]
+ },
+ "decir": {
+  "en": "to say; to tell",
+  "note": "Irregular. Present *digo*, and e→i in *dices, dice, dicen*; preterite stem *dij-* (*dije, dijeron*); future *diré*; participle *dicho*; subjunctive *diga*; tú command *di*.",
+  "uses": [
+   {
+    "es": "decir que …",
+    "en": "to say that …",
+    "x": "El doctor dice que estoy mejor.",
+    "xen": "The doctor says I'm better."
+   },
+   {
+    "es": "decirle algo a alguien",
+    "en": "to tell someone something",
+    "x": "Le voy a decir la verdad.",
+    "xen": "I'm going to tell you the truth."
+   },
+   {
+    "es": "¿Cómo se dice …?",
+    "en": "How do you say …?",
+    "x": "¿Cómo se dice «rash» en español?",
+    "xen": "How do you say \"rash\" in Spanish?"
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Todos los días mi hijo me dice que me quiere.",
+    "en": "Every day my son tells me he loves me.",
+    "f": "dice",
+    "clue": "Todos los días",
+    "wrong": [
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 1,
+    "k": "q",
+    "es": "¿Por qué dices eso?",
+    "en": "Why do you say that?",
+    "f": "dices"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Los pacientes a veces no dicen toda la verdad.",
+    "en": "Patients sometimes don't tell the whole truth.",
+    "f": "dicen"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "stmt",
+    "es": "Ayer el cardiólogo dijo que todo está bien.",
+    "en": "Yesterday the cardiologist said everything is fine.",
+    "f": "dijo",
+    "clue": "Ayer",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Le dijiste a tu jefe que estás enfermo?",
+    "en": "Did you tell your boss you're sick?",
+    "f": "dijiste"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "neg",
+    "es": "No le dije nada a mi esposa.",
+    "en": "I didn't tell my wife anything.",
+    "f": "dije"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "De niño, mis papás siempre me decían que comiera verduras.",
+    "en": "When I was a kid, my parents always told me to eat vegetables.",
+    "f": "decían",
+    "clue": "De niño",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Qué decía su doctor anterior sobre su presión?",
+    "en": "What did your previous doctor say about your blood pressure?",
+    "f": "decía"
+   },
+   {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Antes no decíamos nada cuando algo nos molestaba.",
+    "en": "Back then, we didn't say anything when something bothered us.",
+    "f": "decíamos"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "stmt",
+    "es": "Mañana le voy a decir la verdad a mi novia.",
+    "en": "Tomorrow I'm going to tell my girlfriend the truth.",
+    "f": "voy a decir",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿Me va a decir los resultados hoy?",
+    "en": "Are you going to tell me the results today?",
+    "f": "va a decir"
+   },
+   {
+    "t": "ir a",
+    "p": 3,
+    "k": "neg",
+    "es": "No le vamos a decir nada a la abuela.",
+    "en": "We're not going to tell Grandma anything.",
+    "f": "vamos a decir"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "Dentro de una semana, los análisis nos dirán más.",
+    "en": "In a week, the tests will tell us more.",
+    "f": "dirán",
+    "clue": "Dentro de una semana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué dirás cuando te pregunten?",
+    "en": "What will you say when they ask you?",
+    "f": "dirás"
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "neg",
+    "es": "No diré nada, te lo prometo.",
+    "en": "I won't say anything, I promise.",
+    "f": "diré"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Yo en tu lugar le diría todo a tu mamá.",
+    "en": "If I were you, I'd tell your mom everything.",
+    "f": "diría",
+    "clue": "en tu lugar",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué le dirías a tu hijo en esa situación?",
+    "en": "What would you tell your son in that situation?",
+    "f": "dirías"
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi abuelo nunca diría una mentira.",
+    "en": "My grandfather would never tell a lie.",
+    "f": "diría"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Hasta ahora, los médicos han dicho muy poco.",
+    "en": "So far, the doctors have said very little.",
+    "f": "han dicho",
+    "clue": "Hasta ahora",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ya le ha dicho a su familia lo del diagnóstico?",
+    "en": "Have you told your family about the diagnosis yet?",
+    "f": "ha dicho"
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "neg",
+    "es": "Nunca me has dicho tu segundo nombre.",
+    "en": "You've never told me your middle name.",
+    "f": "has dicho"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Cuando me preguntaron, ya les había dicho todo.",
+    "en": "When they asked me, I had already told them everything.",
+    "f": "había dicho",
+    "clue": "Cuando me preguntaron",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿El médico le había dicho que tenía diabetes?",
+    "en": "Had the doctor told you that you had diabetes?",
+    "f": "había dicho"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos no me habían dicho nada de la fiesta.",
+    "en": "My kids hadn't told me anything about the party.",
+    "f": "habían dicho"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que nos diga si tiene dolor.",
+    "en": "It's important that you tell us if you're in pain.",
+    "f": "diga",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Qué quieres que le digamos a tu papá?",
+    "en": "What do you want us to tell your dad?",
+    "f": "digamos"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Te pido que no le digas a nadie.",
+    "en": "I'm asking you not to tell anyone.",
+    "f": "digas"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "Si los pacientes dijeran la verdad, todo sería más fácil.",
+    "en": "If patients told the truth, everything would be easier.",
+    "f": "dijeran",
+    "clue": "Si los pacientes",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Te molestaría que le dijera a Ana?",
+    "en": "Would you mind if I told Ana?",
+    "f": "dijera"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Le pedí a mi hermano que no dijera nada.",
+    "en": "I asked my brother not to say anything.",
+    "f": "dijera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Diga «a», por favor.",
+    "en": "Say \"ah,\" please.",
+    "f": "Diga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Di la verdad: ¿quién rompió el vaso?",
+    "en": "Tell the truth: who broke the glass?",
+    "f": "Di"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No diga eso, lo está haciendo muy bien.",
+    "en": "Don't say that; you're doing very well.",
+    "f": "No diga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "Dígame dónde le duele.",
+    "en": "Tell me where it hurts.",
+    "f": "Dígame"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "obj",
+    "es": "Ya se lo dije a mi jefe.",
+    "en": "I already told my boss.",
+    "f": "se lo dije"
+   }
+  ]
+ },
+ "ver": {
+  "en": "to see; to watch",
+  "note": "Nearly regular, with short forms: present *veo* (then *ves, ve, vemos, ven*); imperfect *veía*; preterite *vi, vio* with no written accents; participle *visto*; subjunctive *vea*; tú command *ve*.",
+  "uses": [
+   {
+    "es": "ver la tele / una película",
+    "en": "to watch TV / a movie",
+    "x": "Los viernes vemos una película en casa.",
+    "xen": "On Fridays we watch a movie at home."
+   },
+   {
+    "es": "ver a + person",
+    "en": "to see (someone)",
+    "x": "La doctora lo va a ver en un momento.",
+    "xen": "The doctor will see you in a moment."
+   },
+   {
+    "es": "a ver",
+    "en": "let's see",
+    "x": "A ver, ¿dónde le duele?",
+    "xen": "Let's see, where does it hurt?"
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 3,
+    "k": "stmt",
+    "es": "Normalmente vemos las noticias después de cenar.",
+    "en": "We usually watch the news after dinner.",
+    "f": "vemos",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ve bien con los lentes nuevos?",
+    "en": "Do you see well with your new glasses?",
+    "f": "Ve"
+   },
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "neg",
+    "es": "Casi nunca veo a mis primos.",
+    "en": "I hardly ever see my cousins.",
+    "f": "veo"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "stmt",
+    "es": "Anoche mis hijos vieron una película de terror.",
+    "en": "Last night my kids watched a horror movie.",
+    "f": "vieron",
+    "clue": "Anoche",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Viste el partido el domingo?",
+    "en": "Did you see the game on Sunday?",
+    "f": "Viste"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "neg",
+    "es": "El doctor no vio nada raro en la radiografía.",
+    "en": "The doctor didn't see anything unusual on the X-ray.",
+    "f": "vio"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "De niño veía caricaturas todas las mañanas.",
+    "en": "As a kid, I watched cartoons every morning.",
+    "f": "veía",
+    "clue": "De niño",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Veías mucho a tus abuelos cuando eras chico?",
+    "en": "Did you see your grandparents a lot when you were little?",
+    "f": "Veías"
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "neg",
+    "es": "Antes de la operación, mi mamá no veía bien de lejos.",
+    "en": "Before her operation, my mom couldn't see well at a distance.",
+    "f": "veía"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mañana el especialista va a ver sus resultados.",
+    "en": "Tomorrow the specialist is going to look at your results.",
+    "f": "va a ver",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a ver la serie nueva esta noche?",
+    "en": "Are you guys going to watch the new series tonight?",
+    "f": "Van a ver"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "No voy a ver a mi familia hasta diciembre.",
+    "en": "I'm not going to see my family until December.",
+    "f": "voy a ver"
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "stmt",
+    "es": "Dentro de unos días verás la diferencia.",
+    "en": "In a few days you'll see the difference.",
+    "f": "verás",
+    "clue": "Dentro de unos días",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "q",
+    "es": "¿Nos veremos en la boda de Laura?",
+    "en": "Will we see each other at Laura's wedding?",
+    "f": "veremos"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "Sin ejercicio, no verá resultados con la dieta.",
+    "en": "Without exercise, you won't see results from the diet.",
+    "f": "verá"
+   },
+   {
+    "t": "Conditional",
+    "p": 4,
+    "k": "stmt",
+    "es": "Si vivieran más cerca, mis papás verían más a los nietos.",
+    "en": "If they lived closer, my parents would see the grandkids more.",
+    "f": "verían",
+    "clue": "Si vivieran más cerca",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Verías esa película otra vez?",
+    "en": "Would you watch that movie again?",
+    "f": "Verías"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "neg",
+    "es": "Yo nunca vería una película tan violenta.",
+    "en": "I would never watch such a violent movie.",
+    "f": "vería"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Hoy ya he visto a veinte pacientes.",
+    "en": "I've already seen twenty patients today.",
+    "f": "he visto",
+    "clue": "Hoy ya",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Alguna vez ha visto sangre en la orina?",
+    "en": "Have you ever seen blood in your urine?",
+    "f": "ha visto"
+   },
+   {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Todavía no hemos visto la casa nueva de mis suegros.",
+    "en": "We haven't seen my in-laws' new house yet.",
+    "f": "hemos visto"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Cuando llegamos, los médicos ya habían visto la radiografía.",
+    "en": "When we arrived, the doctors had already seen the X-ray.",
+    "f": "habían visto",
+    "clue": "Cuando llegamos",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Ya habías visto esta película?",
+    "en": "Had you already seen this movie?",
+    "f": "habías visto"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Nunca había visto un caso así.",
+    "en": "I had never seen a case like that.",
+    "f": "había visto"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Quiero que la vea un especialista.",
+    "en": "I want a specialist to see her.",
+    "f": "vea",
+    "clue": "Quiero que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Quieres que veamos una película esta noche?",
+    "en": "Do you want to watch a movie together tonight?",
+    "f": "veamos"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Ojalá que no veas a tu ex en la fiesta.",
+    "en": "I hope you don't run into your ex at the party.",
+    "f": "veas"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si viera a tu papá, le daría las gracias.",
+    "en": "If I saw your dad, I'd thank him.",
+    "f": "viera",
+    "clue": "Si",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harías si vieras un accidente en la calle?",
+    "en": "What would you do if you saw an accident on the street?",
+    "f": "vieras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Pasaron a mi lado como si no me vieran.",
+    "en": "They walked right past me as if they didn't see me.",
+    "f": "vieran"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Vea este video antes de la cirugía.",
+    "en": "Watch this video before the surgery.",
+    "f": "Vea"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Ve lo que hiciste con la pared.",
+    "en": "Look what you did to the wall.",
+    "f": "Ve"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No vea pantallas una hora antes de dormir.",
+    "en": "Don't look at screens for an hour before bed.",
+    "f": "No vea"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "obj",
+    "es": "La vi ayer en el súper.",
+    "en": "I saw her yesterday at the store.",
+    "f": "La vi"
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Ya lo ha visto el cardiólogo?",
+    "en": "Has the cardiologist seen you yet?",
+    "f": "lo ha visto"
+   }
+  ]
+ },
+ "dar": {
+  "en": "to give",
+  "note": "Irregular. Present *doy* (then *das, da, damos, dan*); the preterite takes -er/-ir endings: *di, dio, dieron*; subjunctive *dé* (accent to tell it from *de*), *des, den*; imperfect subjunctive *diera*.",
+  "uses": [
+   {
+    "es": "darle algo a alguien",
+    "en": "to give someone something",
+    "x": "Le voy a dar una receta.",
+    "xen": "I'm going to give you a prescription."
+   },
+   {
+    "es": "dar las gracias",
+    "en": "to thank",
+    "x": "Quiero darle las gracias, doctor.",
+    "xen": "I want to thank you, doctor."
+   },
+   {
+    "es": "dar miedo / sueño / hambre",
+    "en": "to make (someone) scared / sleepy / hungry",
+    "x": "Esta pastilla me da sueño.",
+    "xen": "This pill makes me sleepy."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente le doy la medicina a mi papá a las ocho.",
+    "en": "I usually give my dad his medicine at eight.",
+    "f": "doy",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Le da miedo la aguja?",
+    "en": "Are you afraid of the needle?",
+    "f": "da"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "En esa tienda no dan bolsas.",
+    "en": "That store doesn't give out bags.",
+    "f": "dan"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "stmt",
+    "es": "Hace dos días le dieron de alta a mi abuela.",
+    "en": "Two days ago they discharged my grandmother.",
+    "f": "dieron",
+    "clue": "Hace dos días",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Le diste el mensaje a tu papá?",
+    "en": "Did you give your dad the message?",
+    "f": "diste"
+   },
+   {
+    "t": "Preterite",
+    "p": 0,
+    "k": "neg",
+    "es": "No le di las gracias a la enfermera.",
+    "en": "I didn't thank the nurse.",
+    "f": "di"
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "De niña, mi abuela siempre me daba dulces.",
+    "en": "When I was a girl, my grandma always gave me candy.",
+    "f": "daba",
+    "clue": "De niña",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Te daban dinero tus papás para la escuela?",
+    "en": "Did your parents use to give you money for school?",
+    "f": "daban"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Antes no le daba importancia a la presión alta.",
+    "en": "I didn't use to take high blood pressure seriously.",
+    "f": "daba"
+   },
+   {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo fin de semana vamos a dar un paseo en bicicleta.",
+    "en": "Next weekend we're going to go for a bike ride.",
+    "f": "vamos a dar",
+    "clue": "El próximo fin de semana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿Me va a dar algo para el dolor?",
+    "en": "Are you going to give me something for the pain?",
+    "f": "va a dar"
+   },
+   {
+    "t": "ir a",
+    "p": 1,
+    "k": "neg",
+    "es": "No le vas a dar dulces al niño antes de cenar.",
+    "en": "You're not going to give the boy candy before dinner.",
+    "f": "vas a dar"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "Dentro de un mes nos darán las llaves de la casa.",
+    "en": "In a month they'll give us the keys to the house.",
+    "f": "darán",
+    "clue": "Dentro de un mes",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Le darás el regalo a tu mamá el domingo?",
+    "en": "Will you give your mom the present on Sunday?",
+    "f": "darás"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "Esta medicina no le dará sueño.",
+    "en": "This medicine won't make you sleepy.",
+    "f": "dará"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si ganara la lotería, le daría la mitad a mi mamá.",
+    "en": "If I won the lottery, I'd give half to my mom.",
+    "f": "daría",
+    "clue": "Si ganara la lotería",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "q",
+    "es": "¿Me daría su número de teléfono?",
+    "en": "Could you give me your phone number?",
+    "f": "daría"
+   },
+   {
+    "t": "Conditional",
+    "p": 4,
+    "k": "neg",
+    "es": "Sin receta, en la farmacia no le darían ese medicamento.",
+    "en": "Without a prescription, the pharmacy wouldn't give you that medication.",
+    "f": "darían"
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Últimamente la rodilla me ha dado muchos problemas.",
+    "en": "Lately my knee has been giving me a lot of trouble.",
+    "f": "ha dado",
+    "clue": "Últimamente",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Ya le has dado de comer al bebé?",
+    "en": "Have you fed the baby yet?",
+    "f": "has dado"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Todavía no nos han dado los resultados.",
+    "en": "They still haven't given us the results.",
+    "f": "han dado"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando el doctor llegó, la enfermera ya le había dado el analgésico.",
+    "en": "When the doctor arrived, the nurse had already given him the painkiller.",
+    "f": "había dado",
+    "clue": "Cuando el doctor llegó",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Ya le habías dado tu número?",
+    "en": "Had you already given him your number?",
+    "f": "habías dado"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca habíamos dado una fiesta tan grande.",
+    "en": "We had never thrown such a big party.",
+    "f": "habíamos dado"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que le dé la medicina con comida.",
+    "en": "It's important that you give her the medicine with food.",
+    "f": "dé",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Quiere que le dé una cita para el lunes?",
+    "en": "Do you want me to give you an appointment for Monday?",
+    "f": "dé"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Ojalá que no nos den malas noticias.",
+    "en": "I hope they don't give us bad news.",
+    "f": "den"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "stmt",
+    "es": "Mi hijo quería que le diéramos un perro de regalo.",
+    "en": "My son wanted us to give him a dog as a present.",
+    "f": "diéramos",
+    "clue": "quería que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "q",
+    "es": "¿Y si le dieran otra medicina?",
+    "en": "And what if they gave him a different medicine?",
+    "f": "dieran"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Si no le dieras tanto azúcar, el niño dormiría mejor.",
+    "en": "If you didn't give him so much sugar, the boy would sleep better.",
+    "f": "dieras"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Dé un paso hacia adelante, por favor.",
+    "en": "Take a step forward, please.",
+    "f": "Dé"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Da vuelta a la derecha en el semáforo.",
+    "en": "Turn right at the light.",
+    "f": "Da"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No dé sus datos personales por teléfono.",
+    "en": "Don't give out your personal information over the phone.",
+    "f": "No dé"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "Deme el brazo izquierdo, por favor.",
+    "en": "Give me your left arm, please.",
+    "f": "Deme"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "obj",
+    "es": "Me lo dieron en la farmacia.",
+    "en": "They gave it to me at the pharmacy.",
+    "f": "Me lo dieron"
+   }
+  ]
+ },
+ "saber": {
+  "en": "to know (facts, how to); to taste",
+  "note": "Irregular. Present *sé* (with an accent), then regular *sabes, sabe*…; preterite stem *sup-* (*supe, supo*), often meaning \"found out\"; future *sabré*; subjunctive *sepa*.",
+  "uses": [
+   {
+    "es": "saber + infinitive",
+    "en": "to know how to (do)",
+    "x": "¿Sabe nadar?",
+    "xen": "Do you know how to swim?"
+   },
+   {
+    "es": "saber que / si / dónde …",
+    "en": "to know that / whether / where …",
+    "x": "No sé dónde está la farmacia.",
+    "xen": "I don't know where the pharmacy is."
+   },
+   {
+    "es": "saber a",
+    "en": "to taste like",
+    "x": "Este jarabe sabe a fresa.",
+    "xen": "This syrup tastes like strawberry."
+   }
+  ],
+  "cmd": "none",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Ahora ya sé cómo usar el inhalador.",
+    "en": "Now I know how to use the inhaler.",
+    "f": "sé",
+    "clue": "Ahora",
+    "wrong": [
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Sabe qué medicamentos toma?",
+    "en": "Do you know what medications you take?",
+    "f": "Sabe"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás no saben usar el celular.",
+    "en": "My parents don't know how to use a cell phone.",
+    "f": "saben"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "stmt",
+    "es": "Ayer supimos que mi hermana está embarazada.",
+    "en": "Yesterday we found out my sister is pregnant.",
+    "f": "supimos",
+    "clue": "Ayer",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Cómo supiste que estaba enfermo?",
+    "en": "How did you find out he was sick?",
+    "f": "supiste"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi abuelo nunca supo leer.",
+    "en": "My grandfather never learned to read.",
+    "f": "supo"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "De niños, mis hermanos sabían nadar mejor que yo.",
+    "en": "As kids, my brothers could swim better than I could.",
+    "f": "sabían",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Sabías que el doctor Ruiz se jubiló?",
+    "en": "Did you know that Dr. Ruiz retired?",
+    "f": "Sabías"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "No sabía que tenía la presión alta.",
+    "en": "I didn't know I had high blood pressure.",
+    "f": "sabía"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mañana va a saber los resultados de la biopsia.",
+    "en": "Tomorrow you're going to know the biopsy results.",
+    "f": "va a saber",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Cómo van a saber dónde estamos?",
+    "en": "How are they going to know where we are?",
+    "f": "van a saber"
+   },
+   {
+    "t": "ir a",
+    "p": 3,
+    "k": "neg",
+    "es": "Así no vamos a saber nunca la verdad.",
+    "en": "This way we're never going to know the truth.",
+    "f": "vamos a saber"
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "stmt",
+    "es": "Dentro de una semana sabré si me dieron el trabajo.",
+    "en": "In a week I'll know if I got the job.",
+    "f": "sabré",
+    "clue": "Dentro de una semana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Sabrás llegar sola al hotel?",
+    "en": "Will you know how to get to the hotel on your own?",
+    "f": "Sabrás"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "neg",
+    "es": "Los médicos no sabrán la causa hasta tener la resonancia.",
+    "en": "The doctors won't know the cause until they have the MRI.",
+    "f": "sabrán"
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "stmt",
+    "es": "Si mi abuela estuviera aquí, sabría qué hacer.",
+    "en": "If my grandmother were here, she'd know what to do.",
+    "f": "sabría",
+    "clue": "Si mi abuela estuviera aquí",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Sabrías explicarme cómo funciona esto?",
+    "en": "Would you be able to explain to me how this works?",
+    "f": "Sabrías"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "neg",
+    "es": "Sin el GPS, no sabría llegar a tu casa.",
+    "en": "Without GPS, I wouldn't know how to get to your house.",
+    "f": "sabría"
+   },
+   {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Desde el principio, hemos sabido que era grave.",
+    "en": "We've known from the start that it was serious.",
+    "f": "hemos sabido",
+    "clue": "Desde el principio",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ha sabido algo de su hijo?",
+    "en": "Have you heard anything from your son?",
+    "f": "Ha sabido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos nunca han sabido guardar un secreto.",
+    "en": "My kids have never been able to keep a secret.",
+    "f": "han sabido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Hasta ese día, nunca había sabido de su enfermedad.",
+    "en": "Until that day, I had never known about her illness.",
+    "f": "había sabido",
+    "clue": "Hasta ese día",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Sus hijos no habían sabido nada del accidente?",
+    "en": "Your kids hadn't heard anything about the accident?",
+    "f": "habían sabido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "No habíamos sabido nada de ellos en años.",
+    "en": "We hadn't heard anything from them in years.",
+    "f": "habíamos sabido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que su familia sepa usar el glucómetro.",
+    "en": "It's important for your family to know how to use the glucose meter.",
+    "f": "sepa",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Es necesario que sepas manejar para ese trabajo?",
+    "en": "Do you need to know how to drive for that job?",
+    "f": "sepas"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Espero que los niños no sepan nada de la fiesta sorpresa.",
+    "en": "I hope the kids don't know anything about the surprise party.",
+    "f": "sepan"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si supiera cocinar, no comería en la calle.",
+    "en": "If I knew how to cook, I wouldn't eat out.",
+    "f": "supiera",
+    "clue": "Si",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harías si supieras que te mienten?",
+    "en": "What would you do if you knew they were lying to you?",
+    "f": "supieras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi jefe actúa como si no supiera nada del problema.",
+    "en": "My boss acts as if he didn't know anything about the problem.",
+    "f": "supiera"
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Su familia ya lo sabe?",
+    "en": "Does your family know yet?",
+    "f": "lo sabe"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "obj",
+    "es": "Mis papás lo supieron por las redes sociales.",
+    "en": "My parents found out on social media.",
+    "f": "lo supieron"
+   }
+  ]
+ },
+ "venir": {
+  "en": "to come",
+  "note": "Irregular. Present *vengo*, and e→ie in *vienes, viene, vienen*; preterite stem *vin-* (*vine, vino*); future *vendré*; subjunctive *venga*; tú command *ven*.",
+  "uses": [
+   {
+    "es": "venir a + infinitive",
+    "en": "to come to (do)",
+    "x": "Vengo a recoger mis resultados.",
+    "xen": "I'm here to pick up my results."
+   },
+   {
+    "es": "venir de",
+    "en": "to come from",
+    "x": "Vengo del laboratorio.",
+    "xen": "I'm coming from the lab."
+   },
+   {
+    "es": "la semana / el mes que viene",
+    "en": "next week / next month",
+    "x": "La semana que viene tengo vacaciones.",
+    "xen": "Next week I'm on vacation."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "stmt",
+    "es": "Normalmente mis suegros vienen a comer los domingos.",
+    "en": "My in-laws usually come over for lunch on Sundays.",
+    "f": "vienen",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Viene alguien a recogerlo después del procedimiento?",
+    "en": "Is someone coming to pick you up after the procedure?",
+    "f": "Viene"
+   },
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "neg",
+    "es": "Hoy no vengo a cenar, tengo guardia.",
+    "en": "I'm not coming home for dinner tonight; I'm on call.",
+    "f": "vengo"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "stmt",
+    "es": "El lunes pasado vino el técnico a arreglar la lavadora.",
+    "en": "Last Monday the repairman came to fix the washing machine.",
+    "f": "vino",
+    "clue": "El lunes pasado",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Por qué no viniste a la fiesta?",
+    "en": "Why didn't you come to the party?",
+    "f": "viniste"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "neg",
+    "es": "Los pacientes de las nueve no vinieron.",
+    "en": "The nine o'clock patients didn't come.",
+    "f": "vinieron"
+   },
+   {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "De niños, veníamos a este parque todos los domingos.",
+    "en": "As kids, we used to come to this park every Sunday.",
+    "f": "veníamos",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿El dolor iba y venía?",
+    "en": "Did the pain come and go?",
+    "f": "venía"
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "neg",
+    "es": "Antes no venías tanto a visitarme.",
+    "en": "You didn't use to come visit me so much.",
+    "f": "venías"
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "stmt",
+    "es": "El próximo mes van a venir mis primos de Texas.",
+    "en": "Next month my cousins from Texas are going to come.",
+    "f": "van a venir",
+    "clue": "El próximo mes",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿Va a venir su esposa a la consulta?",
+    "en": "Is your wife going to come to the appointment?",
+    "f": "Va a venir"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "No voy a venir a trabajar el viernes.",
+    "en": "I'm not going to come in to work on Friday.",
+    "f": "voy a venir"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Dentro de diez minutos vendrá la enfermera.",
+    "en": "The nurse will come in ten minutes.",
+    "f": "vendrá",
+    "clue": "Dentro de diez minutos",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 1,
+    "k": "q",
+    "es": "¿Vendrás a mi graduación?",
+    "en": "Will you come to my graduation?",
+    "f": "Vendrás"
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "neg",
+    "es": "Este año no vendremos para Navidad.",
+    "en": "This year we won't come for Christmas.",
+    "f": "vendremos"
+   },
+   {
+    "t": "Conditional",
+    "p": 4,
+    "k": "stmt",
+    "es": "Si los invitáramos, mis primos vendrían encantados.",
+    "en": "If we invited them, my cousins would gladly come.",
+    "f": "vendrían",
+    "clue": "Si los invitáramos",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Vendrías conmigo a la cita del cardiólogo?",
+    "en": "Would you come with me to the cardiologist appointment?",
+    "f": "Vendrías"
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "neg",
+    "es": "Mi hermano nunca vendría a vivir con nosotros.",
+    "en": "My brother would never come live with us.",
+    "f": "vendría"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Desde que abrió la clínica, han venido muchos pacientes.",
+    "en": "Since the clinic opened, a lot of patients have come.",
+    "f": "han venido",
+    "clue": "Desde que abrió la clínica",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Has venido alguna vez a este restaurante?",
+    "en": "Have you ever come to this restaurant before?",
+    "f": "Has venido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Nunca he venido a esta parte de la ciudad.",
+    "en": "I've never been to this part of the city.",
+    "f": "he venido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Cuando nos llamó el doctor, ya habíamos venido al hospital.",
+    "en": "When the doctor called us, we had already come to the hospital.",
+    "f": "habíamos venido",
+    "clue": "Cuando nos llamó el doctor",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Había venido antes a esta clínica?",
+    "en": "Had you come to this clinic before?",
+    "f": "Había venido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás nunca habían venido a visitarme a Chicago.",
+    "en": "My parents had never come to visit me in Chicago.",
+    "f": "habían venido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que venga acompañado el día de la cirugía.",
+    "en": "It's important that you come with someone on the day of the surgery.",
+    "f": "venga",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "q",
+    "es": "¿Quieres que tus papás vengan a la boda?",
+    "en": "Do you want your parents to come to the wedding?",
+    "f": "vengan"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Mejor que no vengas en carro; no hay estacionamiento.",
+    "en": "You'd better not come by car; there's no parking.",
+    "f": "vengas"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Mi mamá me pidió que viniera temprano.",
+    "en": "My mom asked me to come early.",
+    "f": "viniera",
+    "clue": "pidió que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Te gustaría que viniéramos el sábado?",
+    "en": "Would you like us to come on Saturday?",
+    "f": "viniéramos"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Si el dolor no viniera de noche, dormiría mejor.",
+    "en": "If the pain didn't come at night, I'd sleep better.",
+    "f": "viniera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Venga en ayunas mañana a las ocho.",
+    "en": "Come in tomorrow at eight without eating anything first.",
+    "f": "Venga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Ven a comer, ya está la comida.",
+    "en": "Come eat, the food's ready.",
+    "f": "Ven"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No venga si tiene fiebre; llame primero.",
+    "en": "Don't come in if you have a fever; call first.",
+    "f": "No venga"
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Le viene bien el jueves a las diez?",
+    "en": "Does Thursday at ten work for you?",
+    "f": "Le viene"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "obj",
+    "es": "De repente le vino un dolor fuerte en el pecho.",
+    "en": "Suddenly he got a sharp pain in his chest.",
+    "f": "le vino"
+   }
+  ]
+ },
+ "poner": {
+  "en": "to put; to set; to give (a shot)",
+  "note": "Irregular. Present *pongo* (the other persons are regular); preterite stem *pus-* (*puse, puso*); future *pondré*; participle *puesto*; subjunctive *ponga*; tú command *pon*.",
+  "uses": [
+   {
+    "es": "poner + thing + place",
+    "en": "to put (something somewhere)",
+    "x": "Ponga su bolsa en la silla.",
+    "xen": "Put your bag on the chair."
+   },
+   {
+    "es": "ponerle una vacuna / inyección / suero",
+    "en": "to give (someone) a shot / an injection / an IV",
+    "x": "Le vamos a poner una vacuna.",
+    "xen": "We're going to give you a shot."
+   },
+   {
+    "es": "poner la mesa / la tele / música",
+    "en": "to set the table / turn on the TV / put on music",
+    "x": "¿Puedes poner la tele?",
+    "xen": "Can you turn on the TV?"
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente pongo el despertador a las seis.",
+    "en": "I usually set the alarm for six.",
+    "f": "pongo",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 1,
+    "k": "q",
+    "es": "¿Dónde pones las llaves cuando llegas?",
+    "en": "Where do you put your keys when you get home?",
+    "f": "pones"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos nunca ponen su ropa sucia en el cesto.",
+    "en": "My kids never put their dirty clothes in the hamper.",
+    "f": "ponen"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "stmt",
+    "es": "Anoche la enfermera le puso suero a mi papá.",
+    "en": "Last night the nurse put my dad on an IV.",
+    "f": "puso",
+    "clue": "Anoche",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Dónde pusiste mis lentes?",
+    "en": "Where did you put my glasses?",
+    "f": "pusiste"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "No pusimos la alarma y llegamos tarde.",
+    "en": "We didn't set the alarm, and we got there late.",
+    "f": "pusimos"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "De niños, mis papás siempre ponían música los domingos.",
+    "en": "When we were kids, my parents always put on music on Sundays.",
+    "f": "ponían",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué te ponías para ir a la escuela?",
+    "en": "What did you use to wear to school?",
+    "f": "ponías"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Antes no le ponía azúcar al café.",
+    "en": "I didn't use to put sugar in my coffee.",
+    "f": "ponía"
+   },
+   {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "Mañana le vamos a poner un yeso nuevo.",
+    "en": "Tomorrow we're going to put a new cast on you.",
+    "f": "vamos a poner",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿Me va a poner una inyección?",
+    "en": "Are you going to give me a shot?",
+    "f": "va a poner"
+   },
+   {
+    "t": "ir a",
+    "p": 1,
+    "k": "neg",
+    "es": "No vas a poner esa canción otra vez, ¿verdad?",
+    "en": "You're not going to put that song on again, are you?",
+    "f": "vas a poner"
+   },
+   {
+    "t": "Future",
+    "p": 4,
+    "k": "stmt",
+    "es": "El próximo año pondrán un semáforo en esta esquina.",
+    "en": "Next year they'll put a traffic light on this corner.",
+    "f": "pondrán",
+    "clue": "El próximo año",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "q",
+    "es": "¿Dónde pondré todas estas cajas?",
+    "en": "Where am I going to put all these boxes?",
+    "f": "pondré"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "La doctora no le pondrá anestesia general.",
+    "en": "The doctor won't give you general anesthesia.",
+    "f": "pondrá"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Si tuviera más espacio, pondría una mesa más grande.",
+    "en": "If I had more space, I'd put in a bigger table.",
+    "f": "pondría",
+    "clue": "Si tuviera más espacio",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "q",
+    "es": "¿Dónde pondrías el sofá?",
+    "en": "Where would you put the couch?",
+    "f": "pondrías"
+   },
+   {
+    "t": "Conditional",
+    "p": 3,
+    "k": "neg",
+    "es": "Nosotros nunca pondríamos a la abuela en un asilo.",
+    "en": "We would never put Grandma in a nursing home.",
+    "f": "pondríamos"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Hoy ya le han puesto dos bolsas de suero.",
+    "en": "Today they've already given him two bags of IV fluid.",
+    "f": "han puesto",
+    "clue": "Hoy ya",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ya se ha puesto la vacuna de la gripe?",
+    "en": "Have you gotten your flu shot yet?",
+    "f": "ha puesto"
+   },
+   {
+    "t": "Present perfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Todavía no he puesto la ropa en la lavadora.",
+    "en": "I haven't put the laundry in the washer yet.",
+    "f": "he puesto"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando llegamos, mi mamá ya había puesto la mesa.",
+    "en": "When we arrived, my mom had already set the table.",
+    "f": "había puesto",
+    "clue": "Cuando llegamos",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Habías puesto la carne en el refrigerador?",
+    "en": "Had you put the meat in the fridge?",
+    "f": "Habías puesto"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis vecinos nunca habían puesto luces de Navidad.",
+    "en": "My neighbors had never put up Christmas lights.",
+    "f": "habían puesto"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que ponga la pierna en alto.",
+    "en": "It's important that you keep your leg elevated.",
+    "f": "ponga",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Quieres que ponga música?",
+    "en": "Do you want me to put on some music?",
+    "f": "ponga"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Ojalá que no pongan reguetón en la fiesta.",
+    "en": "I hope they don't play reggaeton at the party.",
+    "f": "pongan"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "stmt",
+    "es": "La maestra nos pidió que pusiéramos atención.",
+    "en": "The teacher asked us to pay attention.",
+    "f": "pusiéramos",
+    "clue": "pidió que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "q",
+    "es": "¿Qué harías si te pusieran a cargo del proyecto?",
+    "en": "What would you do if they put you in charge of the project?",
+    "f": "pusieran"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Si no pusieras la tele tan alta, el bebé dormiría.",
+    "en": "If you didn't have the TV so loud, the baby would sleep.",
+    "f": "pusieras"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Ponga el brazo sobre la mesa, por favor.",
+    "en": "Put your arm on the table, please.",
+    "f": "Ponga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Pon el celular en silencio, por favor.",
+    "en": "Put your phone on silent, please.",
+    "f": "Pon"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No ponga hielo directo sobre la piel.",
+    "en": "Don't put ice directly on your skin.",
+    "f": "No ponga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "Póngalo debajo de la lengua.",
+    "en": "Put it under your tongue.",
+    "f": "Póngalo"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "obj",
+    "es": "Le pusieron un marcapasos el año pasado.",
+    "en": "They put in a pacemaker for him last year.",
+    "f": "Le pusieron"
+   }
+  ]
+ },
+ "salir": {
+  "en": "to leave; to go out; to come out",
+  "note": "Present *salgo* (the other persons are regular); future *saldré* and conditional *saldría* (with a *d*); subjunctive *salga*; tú command *sal*. The preterite is regular: *salí, salió*.",
+  "uses": [
+   {
+    "es": "salir de + place",
+    "en": "to leave (a place)",
+    "x": "Salgo del trabajo a las cinco.",
+    "xen": "I leave work at five."
+   },
+   {
+    "es": "salir con",
+    "en": "to go out with; to date",
+    "x": "Mi hija sale con un chico de su clase.",
+    "xen": "My daughter is dating a boy from her class."
+   },
+   {
+    "es": "salir bien / mal",
+    "en": "to turn out well / badly",
+    "x": "La cirugía salió muy bien.",
+    "xen": "The surgery went very well."
+   }
+  ],
+  "cmd": "both",
+  "s": [
+   {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente salgo a correr antes del desayuno.",
+    "en": "I usually go out for a run before breakfast.",
+    "f": "salgo",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿A qué hora sale el próximo camión?",
+    "en": "What time does the next bus leave?",
+    "f": "sale"
+   },
+   {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis abuelos casi no salen de la casa.",
+    "en": "My grandparents hardly ever leave the house.",
+    "f": "salen"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "stmt",
+    "es": "Ayer mis hijos salieron temprano de la escuela.",
+    "en": "Yesterday my kids got out of school early.",
+    "f": "salieron",
+    "clue": "Ayer",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿A qué hora saliste de la fiesta anoche?",
+    "en": "What time did you leave the party last night?",
+    "f": "saliste"
+   },
+   {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "No salimos el fin de semana porque llovió.",
+    "en": "We didn't go out last weekend because it rained.",
+    "f": "salimos"
+   },
+   {
+    "t": "Imperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Cuando era joven, salía a bailar todos los sábados.",
+    "en": "When I was young, I went out dancing every Saturday.",
+    "f": "salía",
+    "clue": "Cuando era joven",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Le salía sangre de la nariz con frecuencia?",
+    "en": "Did your nose use to bleed often?",
+    "f": "salía"
+   },
+   {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Antes mis hijas no salían solas de noche.",
+    "en": "My daughters didn't use to go out alone at night.",
+    "f": "salían"
+   },
+   {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mañana mi esposa va a salir con sus amigas.",
+    "en": "Tomorrow my wife is going to go out with her friends.",
+    "f": "va a salir",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿A qué hora van a salir del trabajo?",
+    "en": "What time are you guys going to get off work?",
+    "f": "van a salir"
+   },
+   {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "Con esta lluvia, no voy a salir de la casa.",
+    "en": "With this rain, I'm not going to leave the house.",
+    "f": "voy a salir"
+   },
+   {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "El vuelo saldrá dentro de una hora.",
+    "en": "The flight will leave in an hour.",
+    "f": "saldrá",
+    "clue": "dentro de una hora",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Future",
+    "p": 0,
+    "k": "q",
+    "es": "¿Cuándo saldré del hospital?",
+    "en": "When will I get out of the hospital?",
+    "f": "saldré"
+   },
+   {
+    "t": "Future",
+    "p": 3,
+    "k": "neg",
+    "es": "Con este frío, no saldremos a ningún lado.",
+    "en": "With this cold, we won't go anywhere.",
+    "f": "saldremos"
+   },
+   {
+    "t": "Conditional",
+    "p": 1,
+    "k": "stmt",
+    "es": "Si no tuvieras tanta tarea, saldrías más con tus amigos.",
+    "en": "If you didn't have so much homework, you'd go out more with your friends.",
+    "f": "saldrías",
+    "clue": "Si no tuvieras tanta tarea",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Conditional",
+    "p": 2,
+    "k": "q",
+    "es": "¿Saldría con nosotros a cenar el viernes?",
+    "en": "Would you go out to dinner with us on Friday?",
+    "f": "Saldría"
+   },
+   {
+    "t": "Conditional",
+    "p": 0,
+    "k": "neg",
+    "es": "Yo no saldría con esta fiebre.",
+    "en": "I wouldn't go out with this fever.",
+    "f": "saldría"
+   },
+   {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Hasta ahora todos los análisis han salido bien.",
+    "en": "So far all the tests have come back fine.",
+    "f": "han salido",
+    "clue": "Hasta ahora",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Has salido alguna vez en la tele?",
+    "en": "Have you ever been on TV?",
+    "f": "Has salido"
+   },
+   {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "neg",
+    "es": "El paciente todavía no ha salido de la cirugía.",
+    "en": "The patient still hasn't come out of surgery.",
+    "f": "ha salido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando llegué a su casa, mi amiga ya había salido.",
+    "en": "When I got to her house, my friend had already left.",
+    "f": "había salido",
+    "clue": "Cuando llegué a su casa",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Habías salido del país antes?",
+    "en": "Had you been out of the country before?",
+    "f": "Habías salido"
+   },
+   {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca habíamos salido de vacaciones sin los niños.",
+    "en": "We had never gone on vacation without the kids.",
+    "f": "habíamos salido"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Antes de que salga de aquí, le doy la receta.",
+    "en": "Before you leave, I'll give you the prescription.",
+    "f": "salga",
+    "clue": "Antes de que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 3,
+    "k": "q",
+    "es": "¿Quieres que salgamos a caminar un rato?",
+    "en": "Do you want to go out for a walk for a bit?",
+    "f": "salgamos"
+   },
+   {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Ojalá que no salgas tarde del trabajo hoy.",
+    "en": "I hope you don't get off work late today.",
+    "f": "salgas"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "stmt",
+    "es": "La doctora quería que sus pacientes salieran a caminar todos los días.",
+    "en": "The doctor wanted her patients to go out walking every day.",
+    "f": "salieran",
+    "clue": "quería que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 1,
+    "k": "q",
+    "es": "¿Qué harías si salieras temprano del trabajo?",
+    "en": "What would you do if you got off work early?",
+    "f": "salieras"
+   },
+   {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "neg",
+    "es": "Si no saliera tan tarde de la oficina, cocinaría más.",
+    "en": "If I didn't leave the office so late, I'd cook more.",
+    "f": "saliera"
+   },
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Salga por la puerta de la derecha.",
+    "en": "Go out through the door on the right.",
+    "f": "Salga"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Sal de ahí, te vas a caer.",
+    "en": "Get out of there, you're going to fall.",
+    "f": "Sal"
+   },
+   {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No salga de la casa hasta que baje la fiebre.",
+    "en": "Don't leave the house until your fever goes down.",
+    "f": "No salga"
+   },
+   {
+    "t": "Preterite",
+    "p": 4,
+    "k": "obj",
+    "es": "¿Cuándo le salieron estas manchas en la piel?",
+    "en": "When did these spots show up on your skin?",
+    "f": "le salieron"
+   },
+   {
+    "t": "Preterite",
+    "p": 2,
+    "k": "obj",
+    "es": "¿Cuánto te salió el boleto de avión?",
+    "en": "How much did the plane ticket cost you?",
+    "f": "te salió"
+   }
+  ]
+ }
+}

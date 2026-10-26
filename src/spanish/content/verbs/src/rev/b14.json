@@ -1,0 +1,73 @@
+{
+ "disfrutar": {
+  "set": {
+   "cmd": "pos"
+  },
+  "s": {
+   "32": null
+  }
+ },
+ "compartir": {
+  "s": {
+   "18": {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "Desde que nos mudamos, hemos compartido todos los gastos.",
+    "en": "Since we moved in, we've split all the expenses.",
+    "f": "hemos compartido",
+    "clue": "Desde que nos mudamos",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "rechazar": {
+  "s": {
+   "23": {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "neg",
+    "es": "Tú nunca habías rechazado una invitación mía.",
+    "en": "You had never turned down an invitation from me.",
+    "f": "habías rechazado"
+   }
+  }
+ },
+ "amar": {
+  "s": {
+   "2": {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hermanos no aman a los animales como yo.",
+    "en": "My brothers don't love animals the way I do.",
+    "f": "aman"
+   },
+   "11": {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "No voy a amar a nadie como a ti.",
+    "en": "I'm not going to love anyone the way I love you.",
+    "f": "voy a amar"
+   }
+  }
+ },
+ "besar": {
+  "s": {
+   "28": {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "q",
+    "es": "¿Te molestaría que tu novia besara a un actor en una película?",
+    "en": "Would it bother you if your girlfriend kissed an actor in a movie?",
+    "f": "besara"
+   }
+  }
+ }
+}

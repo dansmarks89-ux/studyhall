@@ -1,0 +1,29 @@
+{
+ "temblar": {
+  "s": {
+   "23": {"t": "Pluperfect", "p": 0, "k": "neg", "es": "Antes de ese día, nunca había temblado de miedo.", "en": "Before that day, I had never shaken with fear.", "f": "había temblado"}
+  }
+ },
+ "aliviarse": {
+  "set": {"cmd": "pos"},
+  "add": [
+   {"t": "Command (+)", "p": 2, "k": "cmd", "es": "Alíviese pronto, señora, y descanse mucho.", "en": "Get well soon, ma'am, and get plenty of rest.", "f": "Alíviese"},
+   {"t": "Command (+)", "p": 1, "k": "cmd", "es": "¡Alíviate pronto, mi amor!", "en": "Get well soon, sweetie!", "f": "Alíviate"}
+  ]
+ },
+ "calmarse": {
+  "set": {"cmd": "pos", "note": "Regular -ar verb with *me, te, se, nos, se*: *me calmo, se calmó, se calme*. Affirmative commands attach the pronoun and take an accent: *cálmese* (usted), *cálmate* (tú)."},
+  "s": {"32": null}
+ },
+ "desabrocharse": {
+  "s": {
+   "19": {"t": "Present perfect", "p": 1, "k": "q", "es": "¿Alguna vez te has desabrochado el pantalón después de comer?", "en": "Have you ever unbuttoned your pants after a meal?", "f": "te has desabrochado"}
+  }
+ },
+ "roncar": {
+  "s": {
+   "10": {"t": "ir a", "p": 3, "k": "q", "es": "¿Vamos a roncar si dormimos sin almohada?", "en": "Are we going to snore if we sleep without a pillow?", "f": "Vamos a roncar"},
+   "21": {"t": "Pluperfect", "p": 0, "k": "stmt", "es": "Mi esposa estaba cansada porque yo había roncado toda la noche.", "en": "My wife was tired because I had snored all night.", "f": "había roncado", "clue": "estaba cansada", "wrong": ["Future", "Present perfect", "Present subjunctive"]}
+  }
+ }
+}

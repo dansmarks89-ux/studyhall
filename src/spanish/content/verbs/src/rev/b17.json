@@ -1,0 +1,62 @@
+{
+ "arder": {
+  "set": {
+   "third": true
+  }
+ },
+ "recetar": {
+  "s": {
+   "2": {
+    "t": "Present",
+    "p": 4,
+    "k": "neg",
+    "es": "En esta clínica no recetan antibióticos por teléfono.",
+    "en": "At this clinic, they don't prescribe antibiotics over the phone.",
+    "f": "recetan"
+   }
+  }
+ },
+ "revisar": {
+  "s": {
+   "29": {
+    "t": "Imperfect subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Les pedí a mis papás que no revisaran mi celular.",
+    "en": "I asked my parents not to check my phone.",
+    "f": "revisaran"
+   }
+  }
+ },
+ "medir": {
+  "s": {
+   "13": {
+    "t": "Future",
+    "p": 0,
+    "k": "q",
+    "es": "¿Cuánto mediré cuando sea grande?",
+    "en": "How tall will I be when I grow up?",
+    "f": "mediré"
+   }
+  }
+ },
+ "jalar": {
+  "s": {
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Quiero que me jale los dedos con toda su fuerza.",
+    "en": "I want you to pull on my fingers as hard as you can.",
+    "f": "jale",
+    "clue": "Quiero que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ }
+}

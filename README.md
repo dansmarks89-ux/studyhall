@@ -125,3 +125,8 @@ select net.http_post('https://wbrssohmepioxapwbcne.supabase.co/functions/v1/tts'
   - Cantonese: a Tones unit first, optional Characters practice. Korean: Hangul first, verb endings from `src/korean/content/conj/conj.json` (`build_conj.py`).
   - Word Power keeps its own structure, restyled, with points.
 - Each app writes a small `stats` progress doc that the home page reads.
+
+## Round 5: Spanish verb lessons
+
+- **Verb lessons** (Clinic Spanish only): every 4th lesson on either path is about one verb. Meet the verb (meaning, how it conjugates, key patterns) → each tense: its forms, pick a form, type a form, type the verb into a sentence → sentence types (question and object-pronoun sentences from tiles, a negative by ear, commands) → "Which tense?" (the clue word decides) → Say it, with spaced reviews mixed in. Verbs come in order of usefulness per path (`src/spanish/content/verbs/order.json`, 266 verbs); a verb studied before comes back, taking turns with new verbs, when new tenses are reached. Settings → Lessons → Verb lessons: tenses reached (default) or all tenses. Practice → Verb lessons: an extra one any time, or go over a studied verb.
+- **Content:** `src/spanish/content/verbs/` — `VERBS.md` (the writing spec), `src/out/bNN.json` (authored), `src/rev/bNN.json` (independent review patches), `check.py` (forms against the verb tables, counts, punctuation), `gen_verbs.py` (applies the reviews, checks, drops "Which tense?" options that could be a correct reading, writes `data/verbs.json`). The build ships it as `spanish/verbs.<hash>.json`, loaded after the page like `vocab2`. Verb tables for the new verbs come from `content/pipeline/conj2.py`, which now also reads `order.json`.

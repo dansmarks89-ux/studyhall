@@ -1,0 +1,61 @@
+{
+ "preparar": {
+  "s": {
+   "5": {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "Ayer no preparamos los papeles para la cita.",
+    "en": "We didn't get the paperwork ready for the appointment yesterday.",
+    "f": "preparamos"
+   }
+  }
+ },
+ "descansar": {
+  "s": {
+   "5": {
+    "t": "Preterite",
+    "p": 3,
+    "k": "neg",
+    "es": "En las últimas vacaciones no descansamos nada con los niños.",
+    "en": "We didn't rest at all on our last vacation with the kids.",
+    "f": "descansamos"
+   }
+  }
+ },
+ "sonreír": {
+  "s": {
+   "13": {
+    "t": "Future",
+    "p": 4,
+    "k": "q",
+    "es": "¿Crees que los niños sonreirán para la foto?",
+    "en": "Do you think the kids will smile for the photo?",
+    "f": "sonreirán"
+   }
+  }
+ },
+ "reírse": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "stmt",
+    "es": "Mi abuela contaba chistes para que nos riéramos.",
+    "en": "My grandma used to tell jokes to make us laugh.",
+    "f": "nos riéramos",
+    "clue": "contaba chistes para que",
+    "wrong": [
+     "Present",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "almorzar": {
+  "set": {
+   "note": "Stem change o→ue in the present (*almuerzo, almuerzas, almuerza, almuerzan*, but *almorzamos*); z→c before e: preterite *almorcé*, subjunctive *almuerce, almorcemos*. In Mexico, *comer* is the usual verb for the midday meal."
+  }
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "mover": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a mover a mi papá a terapia intensiva?",
+    "en": "Are they going to move my dad to intensive care?",
+    "f": "Van a mover"
+   }
+  }
+ },
+ "colgar": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a colgar mi ropa en el clóset de la habitación?",
+    "en": "Are they going to hang my clothes in the closet in my room?",
+    "f": "Van a colgar"
+   },
+   "16": {
+    "t": "Conditional",
+    "p": 4,
+    "k": "q",
+    "es": "¿Ustedes colgarían este cuadro en la entrada?",
+    "en": "Would you guys hang this painting in the entryway?",
+    "f": "colgarían"
+   }
+  }
+ },
+ "apagar": {
+  "s": {
+   "19": {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Ustedes ya han apagado la calefacción?",
+    "en": "Have you guys already turned off the heat?",
+    "f": "han apagado"
+   }
+  }
+ },
+ "tirar": {
+  "s": {
+   "1": {
+    "t": "Present",
+    "p": 4,
+    "k": "q",
+    "es": "¿Dónde tiran ustedes las pilas usadas?",
+    "en": "Where do you guys throw away used batteries?",
+    "f": "tiran"
+   }
+  },
+  "set": {
+   "note": "Regular -ar verb: *tiro, tiras, tira*; preterite *tiré, tiró*; subjunctive and *usted* command *tire*. It also means to knock over or spill: *tiré el café*."
+  }
+ },
+ "agradecer": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a agradecer a los bomberos de alguna manera?",
+    "en": "Are you all going to thank the firefighters somehow?",
+    "f": "Van a agradecer"
+   },
+   "14": {
+    "t": "Future",
+    "p": 0,
+    "k": "neg",
+    "es": "Nunca le agradeceré lo suficiente su ayuda, doctora.",
+    "en": "I'll never be able to thank you enough for your help, doctor.",
+    "f": "agradeceré"
+   },
+   "20": {
+    "t": "Present perfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Todavía no les hemos agradecido a los vecinos su ayuda.",
+    "en": "We still haven't thanked the neighbors for their help.",
+    "f": "hemos agradecido"
+   }
+  }
+ },
+ "conducir": {
+  "s": {
+   "14": {
+    "t": "Future",
+    "p": 4,
+    "k": "neg",
+    "es": "Tranquilos, ustedes no conducirán; los llevará un chofer.",
+    "en": "Don't worry, you guys won't drive; a driver will take you.",
+    "f": "conducirán"
+   },
+   "22": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Habían conducido antes por esa carretera?",
+    "en": "Had you all driven on that highway before?",
+    "f": "Habían conducido"
+   }
+  }
+ },
+ "prender": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a prender el asador para la carne?",
+    "en": "Are you guys going to fire up the grill for the meat?",
+    "f": "Van a prender"
+   }
+  }
+ },
+ "empujar": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a empujar la puerta o esperamos a que abran?",
+    "en": "Are you guys going to push the door, or should we wait for them to open it?",
+    "f": "Van a empujar"
+   },
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No empuje la puerta; se abre sola.",
+    "en": "Don't push the door; it opens by itself.",
+    "f": "No empuje"
+   }
+  }
+ },
+ "traducir": {
+  "s": {
+   "7": {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿En su trabajo anterior ustedes traducían documentos médicos?",
+    "en": "At your old job, did you all translate medical documents?",
+    "f": "traducían"
+   }
+  }
+ },
+ "construir": {
+  "set": {
+   "uses": [
+    {
+     "es": "construir + edificio / casa",
+     "en": "to build (a building, a house)",
+     "x": "Están construyendo un hospital nuevo.",
+     "xen": "They're building a new hospital."
+    },
+    {
+     "es": "construir … con sus propias manos",
+     "en": "to build … with one's own hands",
+     "x": "Mi abuelo construyó esta casa con sus propias manos.",
+     "xen": "My grandfather built this house with his own hands."
+    }
+   ]
+  }
+ }
+}

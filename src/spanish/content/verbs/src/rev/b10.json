@@ -1,0 +1,119 @@
+{
+ "acordarse": {
+  "set": {
+   "cmd": "pos"
+  },
+  "s": {
+   "32": null
+  }
+ },
+ "divertirse": {
+  "set": {
+   "cmd": "pos"
+  },
+  "s": {
+   "32": null,
+   "9": {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo sábado nos vamos a divertir en la feria.",
+    "en": "Next Saturday we're going to have fun at the fair.",
+    "f": "nos vamos a divertir",
+    "clue": "El próximo sábado",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "alquilar": {
+  "s": {
+   "12": {
+    "t": "Future",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo año alquilaremos una casa más grande.",
+    "en": "Next year we'll rent a bigger house.",
+    "f": "alquilaremos",
+    "clue": "El próximo año",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "casarse": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 3,
+    "k": "stmt",
+    "es": "El próximo verano nos vamos a casar en la playa.",
+    "en": "Next summer we're going to get married on the beach.",
+    "f": "nos vamos a casar",
+    "clue": "El próximo verano",
+    "wrong": [
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "equivocarse": {
+  "s": {
+   "9": {
+    "t": "ir a",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mañana, sin el GPS, mi papá se va a equivocar de camino.",
+    "en": "Tomorrow, without the GPS, my dad is going to take the wrong road.",
+    "f": "se va a equivocar",
+    "clue": "Mañana",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Pluperfect",
+     "Present subjunctive"
+    ]
+   },
+   "4": {
+    "t": "Preterite",
+    "p": 4,
+    "k": "q",
+    "es": "¿Se equivocaron en la farmacia con su receta?",
+    "en": "Did they make a mistake with your prescription at the pharmacy?",
+    "f": "Se equivocaron"
+   }
+  }
+ },
+ "enojarse": {
+  "s": {
+   "22": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Los vecinos ya se habían enojado antes por el ruido?",
+    "en": "Had the neighbors gotten angry about the noise before?",
+    "f": "se habían enojado"
+   }
+  }
+ },
+ "nacer": {
+  "s": {
+   "8": {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "neg",
+    "es": "Cuando compramos esta casa, tú todavía no nacías.",
+    "en": "When we bought this house, you hadn't been born yet.",
+    "f": "nacías"
+   }
+  }
+ }
+}
