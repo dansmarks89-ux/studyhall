@@ -1,0 +1,9 @@
+{
+  "name": "studyhall",
+  "private": true,
+  "description": "Dev tools only: ESLint for src/lint.py. The site itself has no build dependencies.",
+  "devDependencies": {
+    "eslint": "10.13.0",
+    "globals": "17.13.0"
+  }
+}

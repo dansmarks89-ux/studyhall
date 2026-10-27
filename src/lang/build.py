@@ -13,7 +13,7 @@ They go to <lang>/vocab2.<hash>.json (the previous build's file is kept for page
 preview build inlines them.
 audio.json lists every clip the page can play; the Supabase "tts" function records the missing ones.
 """
-import json, os, re, sys, hashlib, random, functools
+import json, os, re, subprocess, sys, hashlib, random, functools
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(HERE, "tools"))
@@ -790,3 +790,4 @@ if __name__ == "__main__":
     which = sys.argv[1] if len(sys.argv) > 1 else "all"
     for lang in (["cantonese", "korean"] if which == "all" else [which]):
         build(lang)
+    sys.exit(subprocess.run([sys.executable, os.path.join(os.path.dirname(HERE), "lint.py")]).returncode)

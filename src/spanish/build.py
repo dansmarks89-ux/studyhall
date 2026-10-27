@@ -142,3 +142,4 @@ elif target == "hosted":
 else:
     sys.exit("target: claude | hosted")
 print("wrote", out, os.path.getsize(out))
+sys.exit(subprocess.run([sys.executable, os.path.join(os.path.dirname(HERE), "lint.py")]).returncode)

@@ -1719,7 +1719,6 @@ function mountUnit(ex, it, quiet, done){
       }
       if(k>=it.turns.length){ box.innerHTML='<button class="sh-btn primary block" type="button" id="dEnd">Continue</button>'; $("dEnd").focus({preventScroll:true}); $("dEnd").onclick=()=>done(results); return; }
       const t=it.turns[k], order=shuffle(t.opts.map((o,i)=>[i,o]));
-      dk++;
       box.innerHTML = `<p class="sub">Your reply:</p>${opts(order,false)}`;
       box.querySelectorAll(".sh-opt").forEach(b=>b.onclick=()=>{
         const pick=+b.dataset.i, ok=pick===t.a;

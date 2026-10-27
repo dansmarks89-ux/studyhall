@@ -24,6 +24,13 @@ Language and study apps with sign-in, saved progress and AI practice, for a smal
 | `supabase/functions/tts/index.ts` | The voice function: records course audio with Microsoft Azure neural voices into the public `audio` bucket, and reads AI replies aloud |
 | `sw.js`, `manifest.webmanifest`, `icons/` | Home-screen app support |
 
+Every build ends with `src/lint.py`, which fails the build if a page script uses a name that was never declared
+(in strict mode that stops an exercise on screen). It needs Node; run this once per clone first:
+
+```
+npm ci
+```
+
 Rebuild the Spanish page after changing `src/spanish/app.html` or its data:
 
 ```

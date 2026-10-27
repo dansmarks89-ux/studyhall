@@ -7,7 +7,7 @@ The data files are named by a hash of their content, so browsers can keep them f
 The previous build's files (the ones the old index.html names) are kept for one more deploy, for devices that
 still have the old page; older hashed files in vocab/ are deleted.
 """
-import hashlib, json, os, re, sys
+import hashlib, json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.dirname(HERE))
 OUT = os.path.join(ROOT, "vocab")
@@ -38,3 +38,4 @@ for f in os.listdir(OUT):
     if HASHED.fullmatch(f) and f not in keep and f not in names: os.remove(os.path.join(OUT, f))
 open(INDEX, "w", encoding="utf-8").write(src.replace("__DATA__", names[0]).replace("__GLOSS__", names[1]))
 print("wrote", INDEX, len(items), "items,", len(passages), "passages")
+sys.exit(subprocess.run([sys.executable, os.path.join(os.path.dirname(HERE), "lint.py")]).returncode)
