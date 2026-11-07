@@ -278,7 +278,7 @@ document.addEventListener("click",e=>{ const b=e.target.closest("[data-say]"); i
    vb (verb lessons: verb -> {at: first day, t: tenses practiced, n: lessons}), vn (path lessons finished since the last verb
    lesson), vlast ("new" or "rev": what the last verb lesson was), vts (when vn / vlast changed), vall (verb lessons use every
    tense, not only those reached; set with path and len). pos (unit + lesson per path) is written to the account
-   for other pages, worked out from done + checks. resetAt: when the learner last started over (older docs are ignored). */
+   for other pages, worked out from taught + checks. resetAt: when the learner last started over (older docs are ignored). */
 function freshLR(){ return {v:2, srs:{}, sk:{}, w:{}, log:[], diag:null, mig:{}, intro:{}, path:"", len:"short", ts:0, taught:new Set(), checks:new Set(), placed:null, pts:0, vb:{}, vn:0, vlast:"", vts:0, vall:false, resetAt:0}; }
 function loadLR(o){ const r=Object.assign(freshLR(), o); r.taught=taughtOf(o); delete r.done; r.checks=new Set(o.checks||[]); return r; }
 /* the words a learner doc says were taught: taught, plus the words of the lessons in an older doc's done (5-word "-s" and
@@ -397,7 +397,7 @@ function migrateLegacy(){
   if(LR.mig.legacy) return;
   const d=today(); let k=0;
   for(const id in P.it||{}){
-    if(!ALL[id] || LR.srs[id]) continue;
+    if(!ALL[id] || recOf(id)) continue;
     const [n,c]=P.it[id]; if(!n) continue;
     const acc=c/n, b=acc>=0.8?2:acc>=0.5?1:0;
     LR.srs[id]=[b, d+1+(k++%5), n, c, d-1]; dirtyDocs.add(shardOf(id));
@@ -411,7 +411,7 @@ function mapOldProgress(){
   let ch=foldWordSrs();
   for(const u in UNITS){ const old=P.lv[UNITS[u].kind==="level"?u:UNITS[u].set]; if(old && old.passed && !LR.checks.has(u)){ LR.checks.add(u); ch=true; } }
   if(!LR.mig.path && boot.acct && V2.state==="ok"){
-    for(const u in UNITS) chunks(UNITS[u].w, 5).forEach(w=>{ if(w.every(k=>WORD[k] && isIntroduced(k))) w.forEach(k=>LR.taught.add(k)); });
+    for(const u in UNITS) for(const n of [5,7]) chunks(UNITS[u].w, n).forEach(w=>{ if(w.every(k=>WORD[k] && isIntroduced(k))) w.forEach(k=>LR.taught.add(k)); });
     if(Object.keys(LR.srs).length && !LR.mig.card) LR.mig.card=1;
     LR.mig.path=true; ch=true;
   }
@@ -914,7 +914,8 @@ function wordOfQ(id){
   if((m=id.match(/^tl:(.+):\d+$/))) return m[1];
   return null;
 }
-const recOf = id => { const k=wordOfQ(id); return LR.srs[k ? "w:"+k : id]; };
+const srsKey = id => { const k=wordOfQ(id); return k ? "w:"+k : id; };   // where a question's review schedule is kept
+const recOf = id => LR.srs[srsKey(id)];
 function foldWordSrs(){
   const by={};
   for(const id in LR.srs){ const k=wordOfQ(id); if(k){ (by[k]=by[k]||[]).push([id, LR.srs[id]]); delete LR.srs[id]; } }
@@ -949,7 +950,7 @@ function recordUnit(it, res, ctx){
   if(!it || !res.length || (ctx && ctx.noRecord)) return;
   const d=today(), allOk=res.every(x=>x.ok);
   if(!it.nosrs){   // "Say it" units feed the skill record and log but have no review schedule
-    const wk=wordOfQ(it.id), key=wk ? "w:"+wk : it.id, r=LR.srs[key]||[0,d,0,0,d], g=res[0].grade;
+    const key=srsKey(it.id), wk=key!==it.id, r=LR.srs[key]||[0,d,0,0,d], g=res[0].grade;
     let b=r[0];
     if(g!==undefined) b = g===0 ? 0 : g===1 ? Math.max(1,b) : g===2 ? b+1 : b+2;
     else b = allOk ? b+1 : 0;
@@ -1037,7 +1038,7 @@ function weakWords(){
 }
 function reviewState(ids){
   const d=today(); let due=0;
-  for(const key of new Set([...ids].map(id=>{ const k=wordOfQ(id); return k ? "w:"+k : id; }))){ const r=LR.srs[key]; if(r && r[1]<=d) due++; }
+  for(const key of new Set([...ids].map(srsKey))){ const r=LR.srs[key]; if(r && r[1]<=d) due++; }
   const ev=LR.log.filter(e=>ids.has(e.id)).slice(-20);
   const acc = ev.length>=10 ? ev.filter(e=>e.ok).length/ev.length : null;
   return {due, acc, needs: due>=8 || (acc!==null && acc<0.8)};
@@ -1061,7 +1062,6 @@ const dueCount = () => { const d=today(); let n=0; for(const id in LR.srs) if(LR
 /* ================= the paths ================= */
 const pathId = () => LR.path || "every";
 const pathUnits = p => PATH.paths[p||pathId()];
-const unitWords = u => UNITS[u].w;
 /* A unit's lessons: the words taught (LR.taught), then the rest, in the unit's order, LEN[length].w words a lesson (a single
    word left at the end joins the lesson before), so changing the length never repeats or skips a word. id: the unit,
    first word and size. chunks: the even split the build used for lessons before (old progress names those lessons). */
@@ -1112,7 +1112,7 @@ function testOut(units){
   const d=today(); let k=0;
   units.forEach(u=>{
     LR.checks.add(u);
-    unitWords(u).forEach(w=>{
+    UNITS[u].w.forEach(w=>{
       if(!LR.intro[w]) LR.intro[w]=d;
       if(wordQ(w,["v2e","e2v"]) && !LR.srs["w:"+w]){ LR.srs["w:"+w]=[4, d+14+(k++%28), 1, 1, d, ""]; dirtyDocs.add("srs-V"); }
     });
@@ -1167,7 +1167,7 @@ function renderLearn(){
     if(open===u){
       const vrow = cur && nx.vb ? `<li><button class="lesson next" type="button" data-vb="1"><span class="ck" aria-hidden="true">V</span><span class="tx">Verb lesson<span>${esc(nx.vb.v)}: ${esc(VB.verbs[nx.vb.v].en)}</span></span><span class="sh-tag">Next</span></button></li>` : "";
       inner = `<div class="unit-in"><ol class="lessons">${L.map((x,j)=>{ const d=done || ci<0 || j<ci, nxt=j===ci && cur, can=d||nxt, tag=nxt && !vrow;
-          return `${j===ci?vrow:""}<li><button class="lesson${d?" done":""}${tag?" next":""}" type="button" data-ls="${u}|${j}"${can?"":" disabled"}><span class="ck" aria-hidden="true">${d?"✓":j+1}</span><span class="tx">Lesson ${j+1}<span>${esc(lessonTitle(u,x))}</span></span>${tag?'<span class="sh-tag">Next</span>':""}</button></li>`; }).join("")}${ci<0?vrow:""}</ol>
+          return `${j===ci?vrow:""}<li><button class="lesson${d?" done":""}${tag?" next":""}" type="button" data-ls="${u}|${x.w[0]}"${can?"":" disabled"}><span class="ck" aria-hidden="true">${d?"✓":j+1}</span><span class="tx">Lesson ${j+1}<span>${esc(lessonTitle(u,x))}</span></span>${tag?'<span class="sh-tag">Next</span>':""}</button></li>`; }).join("")}${ci<0?vrow:""}</ol>
         <div class="row">${cur && ci<0 ? `<button class="sh-btn primary sm" type="button" data-check="${u}">Take the unit check</button>` : !done ? `<button class="sh-btn sm" type="button" data-check="${u}">Test out: take the unit check</button>` : ""}<button class="sh-btn sm ghost" type="button" data-notes="${u}">Notes and practice</button></div></div>`;
     }
     return `<li class="${st}"><span class="sh-node">${done?"✓":i+1}</span><div class="sh-path-body"><button class="unit-h" type="button" data-open="${u}" aria-expanded="${open===u}"><b>Unit ${i+1} · ${esc(U.title)}</b><span class="sub">${sub}</span></button>${inner}</div></li>`;
@@ -1196,7 +1196,8 @@ function renderLearn(){
     $("ncFind").onclick=()=>{ if(V2.state!=="ok") return wordsWait(); seen(); startPlacement(); }; $("ncNo").onclick=()=>{ seen(); render(); }; }
   $("view").querySelectorAll("[data-path]").forEach(b=>b.onclick=()=>{ setPathPrefs({path:b.dataset.path}); go({name:"learn"}); });
   $("view").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{ view.open = open===b.dataset.open ? "-" : b.dataset.open; render(); });
-  $("view").querySelectorAll("[data-ls]").forEach(b=>b.onclick=()=>{ const [u,j]=b.dataset.ls.split("|"); if(v2Wait(u)) return wordsWait(); startLesson(u, lessonsOf(u)[+j]); });
+  // a lesson button names its first word: a sync since the list was drawn can regroup the lessons, never lose a word
+  $("view").querySelectorAll("[data-ls]").forEach(b=>b.onclick=()=>{ const [u,k]=b.dataset.ls.split("|"); if(v2Wait(u)) return wordsWait(); startLesson(u, lessonsOf(u).find(L=>L.w.includes(k))); });
   $("view").querySelectorAll("[data-check]").forEach(b=>b.onclick=()=>{ const u=b.dataset.check; if(LR.checks.has(u)||u===cu && !curLesson(u)) return startCheck(u);
     confirmDlg("Test out of this unit?", `Take the unit check for “${UNITS[u].title}” now. Pass it and the unit counts as done.`, "Take the check", ()=>startCheck(u)); });
   $("view").querySelectorAll("[data-notes]").forEach(b=>b.onclick=()=>openUnit(b.dataset.notes));
@@ -1227,7 +1228,7 @@ function renderKnown(){
    ≥4/5: the unit is known, skip ahead 2 units (1 once near the boundary); 3/5: test the next unit once more (it decides);
    ≤2/5: stop there (if units were skipped just before, test those first). Stops after 15 minutes or 60 questions. */
 function placeItems(u){
-  const ws=shuffle(unitWords(u).filter(k=>WORD[k])), out=[], used=new Set();
+  const ws=shuffle(UNITS[u].w.filter(k=>WORD[k])), out=[], used=new Set();
   const take=kinds=>{ for(const k of ws){ if(used.has(k)) continue; const it=wordQ(k,kinds); if(it){ used.add(k); out.push(it); return; } } };
   take(["listen"]); take(["v2e"]); take(["e2v"]); take(["v2e","e2v"]);
   const g = UNITS[u].kind==="level" ? shuffle(LV[u].items.filter(i=>i.t==="mc"||i.t==="fill"))[0] : null;
@@ -1335,7 +1336,7 @@ async function startLesson(u, ls){
   const lessonVerbs=[...new Set(words.map(verbOf).filter(Boolean))];
   const vq=verbQuestions(lessonVerbs.length?lessonVerbs:recentVerbs(3), L.gram, ls), grammar=[];
   for(let j=0; grammar.length<L.gram && (j<inLv.length || j<vq.length); j++) [inLv[j], vq[j]].forEach(it=>{ if(it && grammar.length<L.gram) grammar.push(it); });
-  const cards=(ls.g||[]).map(gi=>({t:"gram", id:`gram:${u}:${gi}`, lv:u, gi}));
+  const cards=ls.g.map(gi=>({t:"gram", id:`gram:${u}:${gi}`, lv:u, gi}));
   // sentences, the ones with the fewest untaught words first. In units 1-3, "Say it" from the English only when every word
   // was taught; otherwise the learner shadows the shortest example (the model plays first).
   const exs=words.flatMap(k=>WORD[k].ex.map((x,i)=>({k, i, es:x[0], en:x[1], n:unknownIn(x[0],K)})));

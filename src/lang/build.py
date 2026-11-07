@@ -17,6 +17,8 @@ import json, os, re, subprocess, sys, hashlib, random, functools
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(HERE, "tools"))
+sys.path.insert(0, os.path.dirname(HERE))
+from lessons import overlap_start
 
 CONF = {
     "cantonese": dict(code="yue", name="Cantonese", native="廣東話", htmllang="zh-HK", course="cantonese",
@@ -216,7 +218,7 @@ def build(lang):
 
 # ------------------------------------------------------------------ the learning path
 # Lesson sizes (about 5, 10 and 15 minutes at ~20 s a question and ~25 s a card): new words in a quick, short and long
-# lesson (the page makes word lessons from the words not taught yet), and for the sound unit questions or Hangul letters
+# lesson (the page makes word lessons: the words taught, then the rest), and for the sound unit questions or Hangul letters
 # per lesson (about 10 minutes; a quick one is a lesson of more than QUICK_D cards cut in two).
 WORDS = {"quick": 3, "short": 5, "long": 7}
 DRILL_Q, LETTERS, QUICK_D = 25, 8, 12
@@ -253,12 +255,14 @@ def gloss(en):
 def build_path(C, levels, drills, v2):
     """The course as one path of units: the sound unit (drill sets), then each level followed by two Everyday sets.
     Every unit has o = its place in the path (words or drill items before it).
-    The sound unit has lessons: ls (ids <unit>-<n>, about 10 minutes) and lq (quick: those of more than QUICK_D cards cut in two, ids
-    <unit>-Q<n>); fields d = drill items asked, m = drill items introduced first (Hangul letters), set = drill set,
-    t = title (the drill set's), o = place in the path.
+    The sound unit has lessons: ls (ids <unit>-<n>, about 10 minutes) and lq (quick: those of more than QUICK_D cards
+    cut in two, ids <unit>-Q<n>); fields d = drill items asked, m = drill items introduced first (Hangul letters),
+    set = drill set, t = title (the drill set's), o = place in the path.
     A word unit has its words in order (w, vocab ids), their titles as a lesson title shows them (tt), and na: for each
-    level note, the index of the word whose lesson shows it as a Grammar card (the first word of the 5-word lesson it was
-    given before lessons were made on the page). The page makes the lessons from the words not taught yet, by length.
+    level note, the index of the word whose lesson shows it as a Grammar card, a word of the 5-word lesson it was given
+    before lessons were made on the page (so old progress keeps its notes): the first word there the note mentions, else
+    the first one in the page's 5-word lesson that shares the most of it. The page makes the lessons, by length: the
+    words taught, then the rest.
     old = {s, l}: where each 5-word and 7-word lesson started, so progress saved with those lesson ids
     (<unit>-<n>, <unit>-L<n>) still reads as the words taught.
     The page picks each lesson's grammar items, sentences and reviews when it starts.
@@ -312,7 +316,10 @@ def build_path(C, levels, drills, v2):
         vocab = sorted(l["vocab"], key=lambda v: topics.index(v["topic"]))  # stable: the level's order within each topic
         parts = split(vocab, WORDS["short"])
         # Grammar cards: each note goes to the first lesson with a word it mentions (spread out, in note order).
-        notes, at, cap = [[] for _ in parts], 0, -(-len(l["notes"]) // len(parts))
+        # The page shows a note with the lesson that has its anchor word: in that 5-word lesson, the first word the note
+        # mentions, else the first word of it in the page's 5-word lesson that shares the most of it.
+        notes, at, cap, first = [[] for _ in parts], 0, -(-len(l["notes"]) // len(parts)), starts(parts)
+        na = []
         for i, nb in enumerate(l["notes"]):
             said = {json.loads(t)["s"] for t in TAGTEXT.findall(nb["p"])} | {e[0]["s"] for e in nb["ex"]}
             hit = next((k for k, part in enumerate(parts) if any(v["t"]["s"] in said for v in part)), None)
@@ -320,10 +327,10 @@ def build_path(C, levels, drills, v2):
             while at < len(parts) - 1 and len(notes[at]) >= cap:
                 at += 1
             notes[at].append(i)
-        first = starts(parts)
-        assert [i for part in notes for i in part] == list(range(len(l["notes"])))
-        return {"w": [v["id"] for v in vocab], "tt": [clean(v["t"]["s"]) for v in vocab],
-                "na": [first[k] for k in range(len(parts)) for _ in notes[k]],
+            old = range(first[at], first[at] + len(parts[at]))
+            hit_j = next((j for j in old if vocab[j]["t"]["s"] in said), None)
+            na.append(overlap_start(old, len(vocab)) if hit_j is None else hit_j)
+        return {"w": [v["id"] for v in vocab], "tt": [clean(v["t"]["s"]) for v in vocab], "na": na,
                 "old": {"s": first, "l": starts(split(vocab, WORDS["long"]))}}
 
     units = []
@@ -681,7 +688,6 @@ def attach_needs(lang, levels, v2):
 
 # ------------------------------------------------------------------ sound drills
 def build_drills(lang, levels, T, want):
-    rnd = random.Random(7)
     if lang == "cantonese":
         import ToJyutping
         src = json.load(open(os.path.join(REPO, "src", lang, "content", "sounds_src.json"), encoding="utf-8"))

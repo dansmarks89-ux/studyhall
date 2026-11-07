@@ -470,7 +470,8 @@ function bump(map, key, ok){ const r=map[key]||[0,0,0]; const n=r[1]+1, a=r[1]==
    that turns up again later (a page still open on the old version syncing) counts only if it was answered after the
    word's last answer, as one more answer (right when it left box 0). */
 function wordOfQ(id){ const m=id.match(/^(?:e:|x:)?([^:]+):(?:vm|ve|vl|sp|tl|g\d+)$/); return m ? m[1] : null; }
-const recOf = id => { const k=wordOfQ(id); return LR.srs[k ? "w:"+k : id]; };
+const srsKey = id => { const k=wordOfQ(id); return k ? "w:"+k : id; };   // where a question's review schedule is kept
+const recOf = id => LR.srs[srsKey(id)];
 function foldWordSrs(){
   const by={};
   for(const id in LR.srs){ const k=wordOfQ(id); if(k){ (by[k]=by[k]||[]).push([id, LR.srs[id]]); delete LR.srs[id]; dirtyDocs.add(shardOf(id)); } }
@@ -497,11 +498,13 @@ function wordReview(k, r){
 }
 function recordUnit(it, res, ctx){
   if(!it || !res.length || ctx.noRecord || it.again) return;  // again = asked a second time in the same lesson
-  const d=today(), allOk=res.every(x=>x.ok), wk=wordOfQ(it.id), key=wk ? "w:"+wk : it.id, r=LR.srs[key]||[0,d,0,0,d], g=res[0].grade;
-  let b=r[0];
-  if(g!==undefined) b = g===0?0 : g===1?Math.max(1,b) : g===2?b+1 : b+2; else b = allOk ? b+1 : 0;
-  if(wk && allOk && r[2] && r[4]===d) b=r[0];   // a word answered again the same day stays in its box
-  b=Math.min(b,6); LR.srs[key]=[b, d+INT[b], r[2]+1, r[3]+(allOk?1:0), d].concat(wk ? [it.id] : []); dirtyDocs.add(shardOf(key));
+  const d=today(), allOk=res.every(x=>x.ok), key=srsKey(it.id), wk=key!==it.id, r=LR.srs[key]||[0,d,0,0,d], g=res[0].grade;
+  if(!res[0].quiet){   // a sentence built from tiles instead of spoken leaves its speaking schedule alone
+    let b=r[0];
+    if(g!==undefined) b = g===0?0 : g===1?Math.max(1,b) : g===2?b+1 : b+2; else b = allOk ? b+1 : 0;
+    if(wk && allOk && r[2] && r[4]===d) b=r[0];   // a word answered again the same day stays in its box
+    b=Math.min(b,6); LR.srs[key]=[b, d+INT[b], r[2]+1, r[3]+(allOk?1:0), d].concat(wk ? [it.id] : []); dirtyDocs.add(shardOf(key));
+  }
   res.forEach(x=>{
     (x.sk||it.sk||[]).forEach(s=>bump(LR.sk,s,x.ok));
     (it.w||[]).forEach(w=>{ bump(LR.w,w,x.ok); const l=LR.ld[w]; if(x.ok && introduced(w) && (!l || l[1]!==d)) LR.ld[w]=[(l?l[0]:0)+1, d]; });
@@ -539,7 +542,7 @@ async function pull(){
   if(ra>RA) wipe(ra);
   for(const n in docs){
     if((docs[n].ra||0)<RA){ dirtyDocs.add(n); continue; }
-    if(mergeLR(n, docs[n]) && n!=="course") dirtyDocs.add(n);
+    if(mergeLR(n, docs[n])) dirtyDocs.add(n);
   }
   foldWordSrs();
   store.set("learner", LR);
@@ -569,7 +572,10 @@ document.addEventListener("visibilitychange",async()=>{
 window.addEventListener("pagehide",()=>sync());
 function mergeLR(name, d){
   let ch=false;
-  if(name==="course"){ mergeP(d); store.set("progress",P); return true; }
+  if(name==="course"){   // changed: the account copy lacks words taught here (a page on the older version wrote it)
+    mergeP(d); store.set("progress",P);
+    const dt=d.taught||{}; return Object.keys(P.taught).some(w=>!dt[w]);
+  }
   if(name==="learner"){
     for(const m of ["sk","w"]) for(const k in d[m]||{}){ const a=LR[m][k], b=d[m][k]; if(!a || b[1]>a[1]) LR[m][k]=b; else if(a[1]>b[1]) ch=true; }
     if(d.diag && (!LR.diag || d.diag.day>LR.diag.day)) LR.diag=d.diag; else if(LR.diag && (!d.diag || LR.diag.day>d.diag.day)) ch=true;
@@ -612,8 +618,8 @@ async function connect(){
    A sound lesson is done when finished (P.done), when its cards were all in sound lessons finished at either length, or
    its drill set was passed on the old pages; a word lesson when its words are taught. Either, when its unit is done: its
    check passed or tested out, or its old test passed. The current unit is the first one not done; units after it are
-   locked (their check can be taken to test out). L.o / L.last = the place in the path of the lesson's first and last
-   word or card (words or cards before it). */
+   locked (their check can be taken to test out). L.last = the place in the path of the lesson's last word or card
+   (words or cards before it; a sound lesson also has L.o, its first). */
 const UNITS = D.path.units, UBY = Object.fromEntries(UNITS.map((u,i)=>{ u.i=i; return [u.id,u]; }));
 const LBY = {};   // sound lessons by id
 UNITS.forEach(u=>[u.ls||[], u.lq||[]].forEach(ls=>ls.forEach((L,k)=>{ L.u=u; L.k=k; L.last=L.o+L.d.length-1; LBY[L.id]=L; })));
@@ -631,13 +637,14 @@ function lessonsOf(u, len=lenOf()){
   const n=D.path.size[len], ls=parts(t,n).concat(parts(u.w.filter(w=>!taught(w)),n)).map((w,k)=>{
     const at=w.map(x=>u.w.indexOf(x));
     return {id:`${u.id}~${at[0]}+${w.length}`, u, k, w, len, n:u.na.map((a,i)=>at.includes(a)?i:-1).filter(i=>i>=0),
-      t:[...new Set(at.map(i=>u.tt[i]).filter(Boolean))].slice(0,3).join(", "), o:u.o+at[0], last:u.o+Math.max(...at)};
+      t:[...new Set(at.map(i=>u.tt[i]).filter(Boolean))].slice(0,3).join(", "), last:u.o+Math.max(...at)};
   });
   LCACHE.set(u.id+"|"+len, {key, ls});
   return ls;
 }
-const lessonById = id => LBY[id] || lessonsOf(UBY[id.split("~")[0]]).find(L=>L.id===id);
-const lessonKeys = L => L.w || L.d;  // the words (or sound cards) a lesson brings in
+// A word lesson by its id (unit~first word's index+size): the lesson with that word now, as a sync since the id was shown
+// can regroup a unit's lessons (never lose a word).
+const lessonById = id => { if(LBY[id]) return LBY[id]; const [uid, at]=id.split("~"), u=UBY[uid], w=u.w[parseInt(at)]; return lessonsOf(u).find(L=>L.w.includes(w)); };
 let coveredN=-1, coveredS=new Set();
 const covered = () => { const ids=Object.keys(P.done); if(ids.length!==coveredN){ coveredN=ids.length; coveredS=new Set(ids.flatMap(id=>LBY[id] ? LBY[id].d : [])); } return coveredS; };
 const passedLv = id => !!(P.lv[id] && P.lv[id].passed);
@@ -647,19 +654,18 @@ const curUnit = () => UNITS.find(u=>!unitDone(u)) || null;  // null = the whole 
 const nextIn = ls => ls.find(L=>!lessonDone(L)) || null;
 const nextLesson = u => nextIn(lessonsOf(u));
 const unitOpen = u => u.i <= (curUnit()||{i:UNITS.length}).i || unitDone(u);
-const lastO = L => L.last;
 /* Progress saved before lessons were made here names word lessons by id (<unit>-<n>: 5 words, <unit>-L<n>: 7 words):
    they become their words, taught on the day they were done. */
 function foldDone(){
   for(const id in P.done){
     const m=id.match(/^(.+)-(L?)(\d+)$/), u=m && UBY[m[1]]; if(!u || !u.w) continue;
-    const st=u.old[m[2]?"l":"s"], k=m[3]-1;
+    const st=u.old[m[2]?"l":"s"], k=m[3]-1; if(k>=st.length) continue;   // (no such lesson: left as it is)
     u.w.slice(st[k], st[k+1]).forEach(w=>{ if(!P.taught[w] || P.done[id]<P.taught[w]) P.taught[w]=P.done[id]; });
     delete P.done[id];
   }
 }
 foldDone();
-const posO = () => { const u=curUnit(); if(!u) return Infinity; const ls=lessonsOf(u); return lastO(nextIn(ls) || ls[ls.length-1]); };  // how far the path is reached
+const posO = () => { const u=curUnit(); if(!u) return Infinity; const ls=lessonsOf(u); return (nextIn(ls) || ls[ls.length-1]).last; };  // how far the path is reached
 const formsAt = o => C.forms.filter(f=>FORM_AT[f.k]<=o);
 const unitLabel = u => `Unit ${u.i+1}`, unitName = u => `${unitLabel(u)} · ${u.title}`;
 const lessonT = L => L.u.k==="drill" ? esc(L.t) : `<span lang="${C.htmlLang}">${esc(L.t)}</span>`;  // word lessons are titled by their words
@@ -693,7 +699,10 @@ function statsDoc(){
    Sentences use examples whose words have all been met (see unknown()). No 4 questions of one kind in a row, and never
    the same word twice in a row. */
 const LESSON_PTS = 100, RECOG = ["vl","vm","ve"];
-const LPLAN = {quick:{rec:1, gram:1, sent:1, take:1}, short:{rec:2, gram:2, sent:1, take:3}, long:{rec:2, gram:3, sent:2, take:6}};   // take: sentence questions kept
+// Per length: its name, minutes when the next lesson can't be timed, recognition questions per word, grammar questions,
+// sentence sets and the sentence questions kept (the new words per lesson are D.path.size, shared with the build).
+const LEN = {quick:{n:"Quick", min:5, rec:1, gram:1, sent:1, take:1}, short:{n:"Short", min:10, rec:2, gram:2, sent:1, take:3},
+  long:{n:"Long", min:15, rec:2, gram:3, sent:2, take:6}};
 const isCard = u => /^(intro|note|dintro|dlist|talk)$/.test(u.t);
 const qkind = u => u.t+(u.mode?"_"+u.mode:"");
 const keyOf = u => (u.w||[])[0] || u.src || u.id;
@@ -786,14 +795,14 @@ function sentenceUnits(u, words, n, unk){
 function buildLesson(L){
   const u=L.u;
   if(u.k==="drill") return drillLesson(L);
-  const words=L.w.map(id=>VOC[id]), known=knownIn(words), unk=x=>unknown(x, known), seq=[], G=LPLAN[L.len];
+  const words=L.w.map(id=>VOC[id]), known=knownIn(words), unk=x=>unknown(x, known), seq=[], G=LEN[L.len];
   let wi=0;
   split3(words).forEach(ws=>{  // 2-3 words: their cards, then their recognition questions
     const qs=ws.map(v=>{ const k=wi++; seq.push({t:"intro", v:v.id}); return [RECOG[k%3], RECOG[(k+1)%3]].slice(0,G.rec).map(t=>itemOf(qid(v,t))); });
     seq.push(...untangle(qs.map(q=>q[0]).concat(qs.flatMap(q=>q.slice(1)))));
   });
   L.n.forEach(i=>seq.push({t:"note", lv:u.id, n:i}));
-  seq.push(...shuffle([...words.map((v,i)=>recallOf(v,i,unk)), ...grammarUnits(u, words, lastO(L), G.gram, unk), ...sentenceUnits(u, words, G.sent, unk).slice(0,G.take)]));
+  seq.push(...shuffle([...words.map((v,i)=>recallOf(v,i,unk)), ...grammarUnits(u, words, L.last, G.gram, unk), ...sentenceUnits(u, words, G.sent, unk).slice(0,G.take)]));
   const out=withReviews(seq, lessonReviews(new Set(L.w), Math.round(seq.reduce((a,x)=>a+decisions(x),0)/3)));  // reviews: about a quarter of the questions
   if(sampleFn && L.len!=="quick") out.push({t:"talk"});  // fetched at start: building stays inside the tap, so iOS lets the first card's audio play
   return out;
@@ -890,9 +899,8 @@ const tile = (id, ic, t, d, dis) => `<button class="sh-tile" type="button" id="$
 /* Learn: level, the next lesson, the path */
 // The length switch, with the minutes the next lesson of each length takes (u = the current unit, when it can be built).
 // The sound unit's long lessons are its short ones.
-const LENS = {quick:["Quick",5], short:["Short",10], long:["Long",15]};
-const lenSeg = u => `<div class="sh-seg" role="group" aria-label="Lesson length">${Object.keys(LENS).map(k=>{ const L=u && nextIn(lessonsOf(u,k));
-  return `<button type="button" data-len="${k}" class="len${lenOf()===k?" on":""}" aria-pressed="${lenOf()===k}"><b>${LENS[k][0]}</b><span>${L ? lessonMin(L) : LENS[k][1]} min</span></button>`; }).join("")}</div>`;
+const lenSeg = u => `<div class="sh-seg" role="group" aria-label="Lesson length">${Object.keys(LEN).map(k=>{ const L=u && nextIn(lessonsOf(u,k));
+  return `<button type="button" data-len="${k}" class="len${lenOf()===k?" on":""}" aria-pressed="${lenOf()===k}"><b>${LEN[k].n}</b><span>${L ? lessonMin(L) : LEN[k].min} min</span></button>`; }).join("")}</div>`;
 const wireLen = () => V().querySelectorAll("[data-len]").forEach(b=>b.onclick=()=>{ P.len=b.dataset.len; P.lenAt=Date.now(); saveP(); render(); const n=V().querySelector(`[data-len="${P.len}"]`); if(n) n.focus(); });
 function renderLearn(){
   const lv=SHUI.points.levelOf(P.pts), u=curUnit(), L=u&&nextLesson(u);
@@ -1269,7 +1277,8 @@ function wgUnit(it){
   const q={s:ch.slice(0,g[0]).join("")+"___"+ch.slice(g[1]).join(""), r:g[2]<0?"":[...rt.slice(0,g[2]),"___",...rt.slice(g[3])].join(" ")};
   return {t:"gap", id:it.id, sk:it.sk, w:it.w, v:it.v, q, en:x.en, opts:gapOptions(v,it,ans), a:0, why:"", full:x};
 }
-const CJKRE=/[㐀-䶿一-鿿\u{20000}-\u{3FFFF}]/gu, NONWORD=/[^0-9A-Za-z㐀-䶿一-鿿\u{20000}-\u{3FFFF}]/gu, KO_PUNCT=/[?!,.…~"'“”‘’()]/g;
+const HAN="㐀-䶿一-鿿\u{20000}-\u{3FFFF}";   // the characters a Jyutping syllable belongs to
+const CJKRE=new RegExp(`[${HAN}]`,"gu"), NONWORD=new RegExp(`[^0-9A-Za-z${HAN}]`,"gu"), KO_PUNCT=/[?!,.…~"'“”‘’()]/g;
 function wtUnit(it){
   const v=VOC[it.v], x=v.ex[it.k], rt=x.r.split(" ");
   let a;
@@ -1599,17 +1608,17 @@ const sayUnits = n => weightedPick(speakables().map(x=>Object.assign(x,{t:"say",
 const shadowUnits = n => weightedPick(speakables().map(x=>Object.assign(x,{t:"shadow", id:"sh:"+x.id})), n);
 /* Can't speak right now (S.quiet): a "Say it" or shadowing sentence is built from tiles instead (Korean: its words;
    Cantonese: its characters, a run of other letters or digits as one tile), and counts for word order, not speaking. */
-const CJK1=/^[㐀-䶿一-鿿\u{20000}-\u{3FFFF}]$/u;
+const HAN1=new RegExp(`^[${HAN}]$`,"u"), YUE_TILE=new RegExp(`[${HAN}]|(?:(?![${HAN}])[\\p{L}\\p{N}])+`,"gu");
 function quietTiles(it){
   const rt=(it.s.r||"").split(/\s+/).filter(Boolean); let a, so=0;
-  if(YUE) a=(it.s.s.replace(NONWORD,"").match(/[㐀-䶿一-鿿\u{20000}-\u{3FFFF}]|[^㐀-䶿一-鿿\u{20000}-\u{3FFFF}]+/gu)||[]).map(t=>({s:t, r:CJK1.test(t) ? rt[so++]||"" : ""}));
+  if(YUE) a=(it.s.s.match(YUE_TILE)||[]).map(t=>({s:t, r:HAN1.test(t) ? rt[so++]||"" : ""}));
   else { const ws=it.s.s.split(/\s+/); a=ws.map((w,i)=>({s:w.replace(KO_PUNCT,""), r:rt.length===ws.length?rt[i]:""})).filter(o=>o.s); }
   return {t:"tiles", id:it.id, sk:["g:order"], w:it.w, en:it.en, full:it.s, a, alt:[], extra:[]};
 }
 function mountSay(ex, it, done){
   const shadow=it.t==="shadow";
   if(S.quiet){   // shadowing: hear it first (its play button under the label)
-    mountUnit(ex, quietTiles(it), "practice", res=>done(res.map(x=>Object.assign(x, {sk:["g:order"]}))));
+    mountUnit(ex, quietTiles(it), "practice", res=>done(res.map(x=>Object.assign(x, {sk:["g:order"], quiet:true}))));
     if(shadow){ ex.querySelector(".kind").insertAdjacentHTML("afterend", bigPlay(it.s.s)); speak(it.s.s, {btn:ex.querySelector(".sh-play")}); }
     return;
   }
@@ -1744,7 +1753,7 @@ function weakWords(){ return Object.entries(LR.w).filter(([k,[a,n]])=>n>=2 && a<
 const unitIds = u => new Set(u.k==="level" ? lvItems(u.id).map(i=>i.id) : u.k==="drill" ? u.sets.flatMap(s=>DS[s].items.map(x=>"d:"+x)) : (ES[u.id]||{items:[]}).items);
 function reviewState(ids){
   const d=today(); let due=0;
-  for(const key of new Set([...ids].map(id=>{ const k=wordOfQ(id); return k ? "w:"+k : id; }))){ const r=LR.srs[key]; if(r && r[1]<=d) due++; }
+  for(const key of new Set([...ids].map(srsKey))){ const r=LR.srs[key]; if(r && r[1]<=d) due++; }
   const ev=LR.log.filter(e=>ids.has(e.id)).slice(-20), a=ev.length>=10 ? ev.filter(e=>e.ok).length/ev.length : null;
   return {due, acc:a, needs: due>=8 || (a!==null && a<0.8)};
 }
@@ -1777,7 +1786,7 @@ function renderWeak(){
   V().querySelectorAll("[data-fc]").forEach(b=>b.onclick=()=>{ const key=b.dataset.fc, ids=new Set(LR.log.filter(e=>e.c===key).map(e=>e.id)); if(focus(confText(key), [...ids].map(itemOf).filter(Boolean), 8)===false) none(b); });
   V().querySelectorAll("[data-study]").forEach(b=>b.onclick=()=>go({name:"unit", id:b.dataset.study, tab:"learn"}));
   V().querySelectorAll("[data-gen]").forEach(b=>b.onclick=()=>genPractice(b.dataset.gen, b));
-  V().querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{ const d=today(), keys=new Set([...unitIds(UBY[b.dataset.rl])].map(id=>{ const k=wordOfQ(id); return k ? "w:"+k : id; }).filter(k=>LR.srs[k]));
+  V().querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{ const d=today(), keys=new Set([...unitIds(UBY[b.dataset.rl])].map(srsKey).filter(k=>LR.srs[k]));
     const pool=[...keys].map(k=>k.startsWith("w:") ? wordReview(k.slice(2), LR.srs[k]) : itemOf(k)).filter(Boolean), due=pool.filter(i=>recOf(i.id)[1]<=d); focus("Review", due.length>=6?due:pool); });
   on("practiceWords", ()=>focus("Words to review", words.flatMap(w=>["vm","vl","ve"].map(k=>itemOf(qid(w.v,k))))));
   on("getDiag", getDiagnosis);

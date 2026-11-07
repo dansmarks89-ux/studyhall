@@ -11,17 +11,20 @@ and inlines shared/ui.css and shared/ui.js too (the hosted page links them).
 
 The two learning paths (Everyday, Clinic) are built here from the existing content: every unit is a course level
 (C1..C8, M1..M8) or a word set (Everyday E01..E30, more clinic words MB1..MB8) with its words in order (w). The app
-makes the lessons from the words not taught yet (3, 5 or 7 at a time, by lesson length), so changing the length never
-repeats a word. A level's grammar note j goes with the lesson that teaches word ga[j]: the first word of the 5-word
-lesson it had before lessons were made in the app (old progress keeps its notes). Word keys match the app's: "C1:4" = level C1 vocab[4], "C1:p2" = its phrases[2],
+makes the lessons: the words taught, then the rest, 3, 5 or 7 at a time by lesson length, so changing the length never
+repeats or skips a word. A level's grammar note j goes with the lesson that teaches word ga[j], a word of the 5-word
+lesson it had before lessons were made in the app (so old progress keeps its notes): the first one in the app's 5-word
+lesson that shares the most of it. Word keys match the app's: "C1:4" = level C1 vocab[4], "C1:p2" = its phrases[2],
 "E01:sv01-de" = an Everyday entry. TENSES says where the grammar that teaches each verb tense sits, found from the
-levels' grammar headings: a tense opens in lessons once the lesson with that note is done (or the unit is passed).
+levels' grammar headings: a tense opens in lessons once the word its note goes with is taught (or the unit is passed).
 
 Run from anywhere; paths are relative to this file.
 """
 import hashlib, json, math, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
+sys.path.insert(0, os.path.dirname(HERE))
+from lessons import overlap_start
 subprocess.run([sys.executable, os.path.join(HERE, "content", "vocab2", "gen_vocab2.py")], check=True)
 subprocess.run([sys.executable, os.path.join(HERE, "content", "verbs", "gen_verbs.py")], check=True)
 def load(name): return json.load(open(os.path.join(HERE, "data", name), encoding="utf-8"))
@@ -48,8 +51,13 @@ def unit(uid):
     else:
         s = SETS[uid]; words, notes = [f"{uid}:{e['id']}" for e in s["entries"]], 0
         u = {"kind": "words", "set": s["id"], "title": s["title"]}
-    k = math.ceil(len(words) / 5)   # note j was in 5-word lesson j * k // notes, which starts at word len * i // k
-    u["w"], u["ga"] = words, [len(words) * (j * k // notes) // k for j in range(notes)]
+    # note j was in the evenly split 5-word lesson i = j * k // notes (words len * i // k up to len * (i + 1) // k);
+    # its anchor is the first word of that lesson in the page's 5-word lesson that shares the most of it
+    k = math.ceil(len(words) / 5)
+    def anchor(j):
+        i = j * k // notes
+        return overlap_start(range(len(words) * i // k, len(words) * (i + 1) // k), len(words))
+    u["w"], u["ga"] = words, [anchor(j) for j in range(notes)]
     return u
 
 every = []
