@@ -35,6 +35,7 @@
      .sh-chip        points chip: build with SHUI.chip(pts, {id, unit}); SHUI.points.award animates it
      + .sh-tag       small status pill (accent-soft); .mute (surface-2), .good (good-soft), .gold
      .sh-seg         segmented control: <div class="sh-seg" role="group"><button class="on" aria-pressed="true">
+                     + .len on a button: two lines, <b>name</b><span>detail</span> (lesson lengths)
      .sh-progress    <div class="sh-progress"><i style="width:40%"></i></div>; width changes spring;
                      + .thin (12px), + .grow (fills from 0 on first paint)
      .sh-ring        SVG from SHUI.ring()
@@ -221,6 +222,8 @@ details.sh-card:not([open]) { gap: 0; } /* no gap under the title for the hidden
   flex: 1; min-width: 0; min-height: 44px; border: 0; border-radius: 12px; background: transparent; color: var(--ink);
   font: 700 15px/1.2 var(--font); cursor: pointer; transition: background-color .18s ease, color .18s ease, transform .08s ease;
 }
+.sh-seg > button.len { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; padding: 4px 6px; }
+.sh-seg > button.len span { font-weight: 500; font-size: 14px; }
 .sh-seg > button.on { background: var(--ink); color: var(--bg); }
 .sh-seg > button:active { transform: scale(.96); }
 

@@ -736,9 +736,14 @@ function startSession(kind, steps, title, opts = {}) {
   SESSION = { kind, steps, i: 0, title, right: 0, total: 0, retries: {}, missed: [], learned: 0, level: opts.level, track: opts.track, onEnd: opts.onEnd, pts0: ST.pts, bar: 0 };
   window.scrollTo(0, 0); renderStep();
 }
-function buildDaily(extraNew) {
-  const due = dueList().slice(0, 100);
-  const k = extraNew != null ? extraNew : Math.max(0, ST.set.goal - (ST.day.d === today() ? ST.day.n : 0));
+/* Today's session: reviews first (up to 8), then the new items 3 at a time (their cards, a few reviews, their meaning
+   questions, more reviews), then the rest of the reviews (up to 100) and, with the reasoning track on, a problem.
+   extraNew: "Learn N more" instead of what is left of the goal. quick (about 5 minutes): up to 3 of the goal's new
+   items and 10 reviews, no problem; the other reviews wait for the next session. */
+function buildDaily(extraNew, quick) {
+  const due = dueList().slice(0, quick ? 10 : 100);
+  const left = Math.max(0, ST.set.goal - (ST.day.d === today() ? ST.day.n : 0));
+  const k = extraNew != null ? extraNew : quick ? Math.min(3, left) : left;
   const news = pickNew(k);
   const steps = []; let di = 0;
   const pushRev = n => { for (let j = 0; j < n && di < due.length; j++, di++) steps.push({ t: "q", id: due[di], src: "rev" }); };
@@ -751,7 +756,7 @@ function buildDaily(extraNew) {
     pushRev(4);
   }
   pushRev(due.length);
-  if (trackOn("reasoning") && extraNew == null) { const p = pickProblems(1)[0]; if (p) steps.push({ t: "q", id: p, src: "prob" }); }
+  if (trackOn("reasoning") && extraNew == null && !quick) { const p = pickProblems(1)[0]; if (p) steps.push({ t: "q", id: p, src: "prob" }); }
   return steps;
 }
 function pickProblems(n) {
@@ -1283,7 +1288,8 @@ function viewToday() {
   h += `<section class="sh-card"><div class="spread"><h2>${doneGoal && !due ? "Done for today" : "Today"}</h2>${streak ? `<span class="sh-tag gold">${streak}-day streak</span>` : ""}</div>
     <div class="sh-progress grow" role="progressbar" aria-label="New items today" aria-valuemin="0" aria-valuemax="${+goal || 0}" aria-valuenow="${+nToday || 0}"><i style="width:${+pct || 0}%"></i></div>
     <p class="sub">${nToday} of ${goal} new today. ${due} review${due === 1 ? "" : "s"} due. ${rToday} answered today.</p>
-    ${(!doneGoal || due) ? `<button class="sh-btn primary block" type="button" id="daily">${!doneGoal ? `Start today's session` : `Review ${due} due`}</button>` : ""}
+    ${(!doneGoal || due) ? `<button class="sh-btn primary block" type="button" id="daily">${!doneGoal ? `Start today's session` : `Review ${due} due`}</button>
+      <button class="sh-btn block two" type="button" id="quick">Quick session<small>about 5 min: ${doneGoal ? "" : `${Math.min(3, goal - nToday)} new, `}up to 10 reviews</small></button>` : ""}
     <p class="sub">Want more? Learn</p>
     <div class="three"><button class="sh-btn sm" type="button" data-more="5">5 more</button><button class="sh-btn sm" type="button" data-more="10">10 more</button><button class="sh-btn sm" type="button" data-more="20">20 more</button></div>
   </section>
@@ -1294,6 +1300,7 @@ function viewToday() {
   bindSearch();
   if ($("pres")) $("pres").onclick = () => startPlacement(true);
   if ($("daily")) $("daily").onclick = () => { const s = buildDaily(); if (!s.length) return toast("Nothing due right now. Try “Learn 5 more”."); startSession("daily", s, "Today"); };
+  if ($("quick")) $("quick").onclick = () => { const s = buildDaily(null, true); if (!s.length) return toast("Nothing due right now. Try “Learn 5 more”."); startSession("daily", s, "Quick session"); };
   document.querySelectorAll("[data-more]").forEach(b => b.onclick = () => { const s = buildDaily(+b.dataset.more); if (!s.length) return toast("You've studied everything in your switched-on tracks."); startSession("more", s, "More"); });
   $("read").onclick = () => { const g = pickPassage(); if (!g) return toast("You've read every passage. Ones you missed come back after a day."); startReading(g); };
   if ($("workout")) $("workout").onclick = () => { const p = pickProblems(5); if (!p.length) return toast("You've solved every problem. Wrong ones come back after a day."); startSession("practice", p.map(id => ({ t: "q", id, src: "prob" })), "Workout"); };

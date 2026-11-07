@@ -98,8 +98,6 @@ svg line.st{stroke:var(--surface-2)} svg path.ct{stroke:var(--accent);fill:none}
 .tile:disabled{cursor:default}
 .ans{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .ans>.tx{flex:1 1 200px}
-.sh-seg>button.len{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:4px 6px}
-.sh-seg>button.len span{font-weight:500;font-size:14px}
 .sh-tile[id^="talk-"] .d{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .why{color:inherit;font-size:16px}
 .sh-sheet .exs{font-size:15px}
@@ -236,8 +234,10 @@ const plural = (n, w) => `${n} ${w}${n===1?"":"s"}`;
 const cps = s => Array.from(s);
 
 /* ---------------- settings (this device) ---------------- */
-const S = Object.assign({speed:"0.85", auto:true, romq:true, romCard:!YUE, dev:false, voice:"", cdir:"rec", cnew:"15", clv:"all", autoSend:true}, store.get("settings",{}));
+const S = Object.assign({speed:"0.85", auto:true, romq:true, romCard:!YUE, dev:false, voice:"", cdir:"rec", cnew:"15", clv:"all", autoSend:true, quiet:false}, store.get("settings",{}));   // quiet: can't speak right now
 const saveS = () => store.set("settings", S);
+const quietSwitch = () => `<label class="c" for="quiet"><input type="checkbox" id="quiet"${S.quiet?" checked":""}> Can't speak right now (build instead)</label>`;
+const wireQuiet = () => { const q=$("quiet"); if(q) q.onchange=e=>{ S.quiet=e.target.checked; saveS(); }; };
 const ROM = C.romName;
 const romQ = () => S.romq;
 
@@ -371,7 +371,7 @@ if(VOICE){
 const INT=[1,2,4,8,16,35,80], MIN_N=8, WEAK=0.8, LOG_MAX=1500;
 const dayOf = ms => Math.floor((ms/60000 - new Date(ms).getTimezoneOffset())/1440) - 18262;
 const today = () => dayOf(Date.now());
-const freshP = () => ({lv:{}, done:{}, checks:{}, placed:null, pts:0, len:"short", lenAt:0, nw:0});
+const freshP = () => ({lv:{}, done:{}, taught:{}, checks:{}, placed:null, pts:0, len:"short", lenAt:0, nw:0});
 const freshLR = () => ({srs:{}, sk:{}, w:{}, log:[], diag:null, mig:{path:today()}, intro:{}, ld:{}});
 let RA = store.get("ra",0);
 let P = Object.assign(freshP(), store.get("progress",{}));
@@ -381,7 +381,8 @@ let db=null, uid=null;
 function mergeP(r){
   if(!r) return;
   for(const id in r.lv||{}){ const a=P.lv[id]||{}, b=r.lv[id]; P.lv[id]={best:Math.max(a.best||0,b.best||0), passed:!!(a.passed||b.passed), tests:Math.max(a.tests||0,b.tests||0), at:Math.max(a.at||0,b.at||0)}; }
-  for(const id in r.done||{}) if(!P.done[id] || r.done[id]<P.done[id]) P.done[id]=r.done[id];
+  for(const f of ["done","taught"]) for(const id in r[f]||{}) if(!P[f][id] || r[f][id]<P[f][id]) P[f][id]=r[f][id];
+  foldDone();
   for(const id in r.checks||{}) if(!P.checks[id] || P.checks[id]==="t") P.checks[id]=r.checks[id];
   if(r.placed && (!P.placed || r.placed.at>P.placed.at)) P.placed=r.placed;
   P.pts=Math.max(P.pts||0, r.pts||0);  // points only ever grow
@@ -458,16 +459,49 @@ function itemOf(id){
   if((m=id.match(/^k:([mh]):(.+)$/)) && VOC[m[2]]) return {id, t:"k"+m[1], v:m[2], sk:["s:chars"], w:[m[2]]};
   return null;
 }
-const shardOf = id => /^(e|x|say|sh):/.test(id) ? "srs-W" : id.startsWith("c:") ? "srs-C" : id.startsWith("d:") ? "srs-D" : id.startsWith("k:") ? "srs-K" : /^(cj|as):/.test(id) ? "srs-G" : /:(v[mel]|sp)$/.test(id) ? "srs-V" : "srs-L";
+const shardOf = id => id.startsWith("w:") ? "srs-V" : /^(e|x|say|sh):/.test(id) ? "srs-W" : id.startsWith("c:") ? "srs-C" : id.startsWith("d:") ? "srs-D" : id.startsWith("k:") ? "srs-K" : /^(cj|as):/.test(id) ? "srs-G" : /:(v[mel]|sp)$/.test(id) ? "srs-V" : "srs-L";
 const SHARDS = ["srs-L","srs-V","srs-D","srs-C","srs-W","srs-K","srs-G"];
 const DOCS = ["course","learner","log",...SHARDS];
 function bump(map, key, ok){ const r=map[key]||[0,0,0]; const n=r[1]+1, a=r[1]===0?(ok?1:0):r[0]+Math.max(1/n,0.15)*((ok?1:0)-r[0]); map[key]=[Math.round(a*1000)/1000, n, today()]; }
+/* One review schedule per word: a word's questions (<word>:vm|ve|vl|sp, e:<word>:vm|ve|vl|sp|tl|g<k>, x:<word>:g<k>)
+   share LR.srs["w:"+word] = [box, due, answers, right, last day, last question id], so a due word comes back once, as a
+   question other than the one it had last time. Records from before (one per question) fold into their word's: the
+   lowest box and earliest due day (the weakest form decides), answers summed, the latest question. A question record
+   that turns up again later (a page still open on the old version syncing) counts only if it was answered after the
+   word's last answer, as one more answer (right when it left box 0). */
+function wordOfQ(id){ const m=id.match(/^(?:e:|x:)?([^:]+):(?:vm|ve|vl|sp|tl|g\d+)$/); return m ? m[1] : null; }
+const recOf = id => { const k=wordOfQ(id); return LR.srs[k ? "w:"+k : id]; };
+function foldWordSrs(){
+  const by={};
+  for(const id in LR.srs){ const k=wordOfQ(id); if(k){ (by[k]=by[k]||[]).push([id, LR.srs[id]]); delete LR.srs[id]; dirtyDocs.add(shardOf(id)); } }
+  for(const k in by){
+    const cur=LR.srs["w:"+k], rs=cur ? by[k].filter(([,r])=>r[4]>cur[4]) : by[k];
+    if(!rs.length) continue;
+    const last=rs.reduce((a,b)=>b[1][4]>a[1][4] ? b : a), all=rs.map(x=>x[1]).concat(cur ? [cur] : []);
+    const [n,ok]=cur ? [cur[2]+rs.length, cur[3]+rs.filter(x=>x[1][0]>0).length] : [rs.reduce((a,x)=>a+x[1][2],0), rs.reduce((a,x)=>a+x[1][3],0)];
+    LR.srs["w:"+k]=[Math.min(...all.map(r=>r[0])), Math.min(...all.map(r=>r[1])), n, ok, last[1][4], last[0]];
+  }
+  if(Object.keys(by).length){ dirtyDocs.add("srs-V"); saveLR(); }
+}
+/* A due word as one question: not the one it had last time, nor (when it has another) of the same kind; recall
+   (spelling, the example gap, building an example) from box 2 up, recognition before that, when the word has one. */
+const WREC = new Set(["vm","ve","vl"]);
+function wordReview(k, r){
+  const v=VOC[k]; if(!v || !(v.ev ? introduced(k) : unitOpen(UBY[v.lv]))) return null;
+  const last=r[5] ? itemOf(r[5]) : null;
+  const its=[...["vm","ve","vl"].map(t=>itemOf(qid(v,t))), spellParts(v) && itemOf(qid(v,"sp")), ...gapIds(v).map(itemOf), v.tl && itemOf(qid(v,"tl"))]
+    .filter(i=>i && i.id!==r[5]);
+  const other=its.filter(i=>!last || i.t!==last.t), pool=other.length ? other : its;
+  const pref=pool.filter(i=>WREC.has(i.t)===(r[0]<2)), from=pref.length ? pref : pool;
+  return from.length ? from[Math.floor(Math.random()*from.length)] : null;
+}
 function recordUnit(it, res, ctx){
   if(!it || !res.length || ctx.noRecord || it.again) return;  // again = asked a second time in the same lesson
-  const d=today(), allOk=res.every(x=>x.ok), r=LR.srs[it.id]||[0,d,0,0,d], g=res[0].grade;
+  const d=today(), allOk=res.every(x=>x.ok), wk=wordOfQ(it.id), key=wk ? "w:"+wk : it.id, r=LR.srs[key]||[0,d,0,0,d], g=res[0].grade;
   let b=r[0];
   if(g!==undefined) b = g===0?0 : g===1?Math.max(1,b) : g===2?b+1 : b+2; else b = allOk ? b+1 : 0;
-  b=Math.min(b,6); LR.srs[it.id]=[b, d+INT[b], r[2]+1, r[3]+(allOk?1:0), d]; dirtyDocs.add(shardOf(it.id));
+  if(wk && allOk && r[2] && r[4]===d) b=r[0];   // a word answered again the same day stays in its box
+  b=Math.min(b,6); LR.srs[key]=[b, d+INT[b], r[2]+1, r[3]+(allOk?1:0), d].concat(wk ? [it.id] : []); dirtyDocs.add(shardOf(key));
   res.forEach(x=>{
     (x.sk||it.sk||[]).forEach(s=>bump(LR.sk,s,x.ok));
     (it.w||[]).forEach(w=>{ bump(LR.w,w,x.ok); const l=LR.ld[w]; if(x.ok && introduced(w) && (!l || l[1]!==d)) LR.ld[w]=[(l?l[0]:0)+1, d]; });
@@ -482,6 +516,7 @@ function logTalk(errs){ const t=Date.now(); errs.forEach((x,i)=>{ const s=SKILLS
 
 /* saving: browser now, account in the background */
 let dirtyDocs=new Set(), syncing=false, syncT=null, syncDue=0, statsSent="";
+foldWordSrs();
 let syncMsg="Progress saved on this device";  // shown under Settings, Account
 const setSync = m => { syncMsg=m; const el=$("sync"); if(el) el.textContent=m; };
 function saveLR(){ store.set("learner", LR); syncSoon(30000); }  // batched: every sync downloads all progress documents; leaving the page syncs at once
@@ -492,7 +527,7 @@ function docBody(n){
   if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return {e:out.reverse(), ra:RA, v:1}; }
   const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return {r, ra:RA, v:1};
 }
-const hasData = n => n==="course" ? !!(P.placed || P.pts || Object.keys(P.lv).length || Object.keys(P.done).length) : n==="learner" ? Object.keys(LR.intro).length+Object.keys(LR.sk).length>0
+const hasData = n => n==="course" ? !!(P.placed || P.pts || Object.keys(P.lv).length || Object.keys(P.done).length || Object.keys(P.taught).length) : n==="learner" ? Object.keys(LR.intro).length+Object.keys(LR.sk).length>0
   : n==="log" ? LR.log.length>0 : Object.keys(LR.srs).some(id=>shardOf(id)===n);
 function wipe(ra){ RA=ra; store.set("ra",RA); P=freshP(); LR=freshLR(); store.set("progress",P); store.set("learner",LR); }
 /* Read the account copy and merge it into this device. Runs before every write, so a page left open on one device
@@ -506,6 +541,7 @@ async function pull(){
     if((docs[n].ra||0)<RA){ dirtyDocs.add(n); continue; }
     if(mergeLR(n, docs[n]) && n!=="course") dirtyDocs.add(n);
   }
+  foldWordSrs();
   store.set("learner", LR);
   return new Set(Object.keys(docs));
 }
@@ -568,44 +604,79 @@ async function connect(){
   }catch(e){ setSync("Progress saved on this device (account sync unavailable)"); }
 }
 /* ---------------- the path ----------------
-   Units (from the build): the sound unit (drill sets), then each level followed by two Everyday sets, each cut into
-   short lessons (u.ls) and, separately, long ones (u.ll) over the same words; the lesson length picks the list. A lesson
-   is done when finished, when everything in it was in lessons finished at either length, when its unit is done, or when
-   it was done on the old pages (its drill set passed, or all its words met before the path existed). A unit is done when
-   its check is passed or tested out, or its old test passed. The current unit is the first one not done; units after it
-   are locked (their check can be taken to test out). L.o = the lesson's place in the path (words or cards before it). */
+   Units (from the build): the sound unit (drill sets), then each level followed by two Everyday sets. The sound unit has
+   its lessons: ls (about 10 minutes) and lq (quick, each of those cut in two). A word unit has its words in order (u.w);
+   its lessons are made here: the words taught (P.taught, or met before the path existed), then the rest, each
+   D.path.size[length] words a lesson (a single word left at the end joins the lesson before), so changing the length
+   never repeats or skips a word. A level's grammar note i comes with the lesson that has word u.na[i].
+   A sound lesson is done when finished (P.done), when its cards were all in sound lessons finished at either length, or
+   its drill set was passed on the old pages; a word lesson when its words are taught. Either, when its unit is done: its
+   check passed or tested out, or its old test passed. The current unit is the first one not done; units after it are
+   locked (their check can be taken to test out). L.o / L.last = the place in the path of the lesson's first and last
+   word or card (words or cards before it). */
 const UNITS = D.path.units, UBY = Object.fromEntries(UNITS.map((u,i)=>{ u.i=i; return [u.id,u]; }));
-const LBY = {};
-UNITS.forEach(u=>[u.ls, u.ll||[]].forEach(ls=>ls.forEach((L,k)=>{ L.u=u; L.k=k; L.long=ls===u.ll; LBY[L.id]=L; })));
+const LBY = {};   // sound lessons by id
+UNITS.forEach(u=>[u.ls||[], u.lq||[]].forEach(ls=>ls.forEach((L,k)=>{ L.u=u; L.k=k; L.last=L.o+L.d.length-1; LBY[L.id]=L; })));
 const FORM_AT = Object.fromEntries(D.path.forms);
 const SOUND = UNITS[0];
-const lessonsOf = u => P.len==="long" && u.ll ? u.ll : u.ls;  // the sound unit has one length
+const lenOf = () => D.path.size[P.len] ? P.len : "short";
+const taught = w => !!P.taught[w] || metBefore(w);
+const parts = (a, n) => { const out=[]; for(let i=0; i<a.length; i+=n) out.push(a.slice(i,i+n)); if(out.length>1 && out[out.length-1].length===1) out[out.length-2].push(...out.pop()); return out; };
+/* A unit's lessons at a length (the one chosen by default), the same objects while nothing changes. */
+const LCACHE = new Map();
+function lessonsOf(u, len=lenOf()){
+  if(!u.w) return len==="quick" ? u.lq : u.ls;
+  const t=u.w.filter(taught), key=len+"|"+t.join(","), c=LCACHE.get(u.id+"|"+len);
+  if(c && c.key===key) return c.ls;
+  const n=D.path.size[len], ls=parts(t,n).concat(parts(u.w.filter(w=>!taught(w)),n)).map((w,k)=>{
+    const at=w.map(x=>u.w.indexOf(x));
+    return {id:`${u.id}~${at[0]}+${w.length}`, u, k, w, len, n:u.na.map((a,i)=>at.includes(a)?i:-1).filter(i=>i>=0),
+      t:[...new Set(at.map(i=>u.tt[i]).filter(Boolean))].slice(0,3).join(", "), o:u.o+at[0], last:u.o+Math.max(...at)};
+  });
+  LCACHE.set(u.id+"|"+len, {key, ls});
+  return ls;
+}
+const lessonById = id => LBY[id] || lessonsOf(UBY[id.split("~")[0]]).find(L=>L.id===id);
 const lessonKeys = L => L.w || L.d;  // the words (or sound cards) a lesson brings in
 let coveredN=-1, coveredS=new Set();
-const covered = () => { const ids=Object.keys(P.done); if(ids.length!==coveredN){ coveredN=ids.length; coveredS=new Set(ids.flatMap(id=>LBY[id] ? lessonKeys(LBY[id]) : [])); } return coveredS; };
+const covered = () => { const ids=Object.keys(P.done); if(ids.length!==coveredN){ coveredN=ids.length; coveredS=new Set(ids.flatMap(id=>LBY[id] ? LBY[id].d : [])); } return coveredS; };
 const passedLv = id => !!(P.lv[id] && P.lv[id].passed);
 const unitDone = u => !!P.checks[u.id] || (u.k==="drill" ? u.sets.every(passedLv) || LEVELS.some(l=>passedLv(l.id)) : passedLv(u.id));
-const lessonDone = L => !!P.done[L.id] || unitDone(L.u) || (L.set && passedLv(L.set)) || lessonKeys(L).every(k=>covered().has(k) || (L.w && metBefore(k)));
+const lessonDone = L => unitDone(L.u) || (L.w ? L.w.every(taught) : !!P.done[L.id] || passedLv(L.set) || L.d.every(k=>covered().has(k)));
 const curUnit = () => UNITS.find(u=>!unitDone(u)) || null;  // null = the whole path is done
 const nextIn = ls => ls.find(L=>!lessonDone(L)) || null;
 const nextLesson = u => nextIn(lessonsOf(u));
 const unitOpen = u => u.i <= (curUnit()||{i:UNITS.length}).i || unitDone(u);
-const lastO = L => L.o + lessonKeys(L).length - 1;
+const lastO = L => L.last;
+/* Progress saved before lessons were made here names word lessons by id (<unit>-<n>: 5 words, <unit>-L<n>: 7 words):
+   they become their words, taught on the day they were done. */
+function foldDone(){
+  for(const id in P.done){
+    const m=id.match(/^(.+)-(L?)(\d+)$/), u=m && UBY[m[1]]; if(!u || !u.w) continue;
+    const st=u.old[m[2]?"l":"s"], k=m[3]-1;
+    u.w.slice(st[k], st[k+1]).forEach(w=>{ if(!P.taught[w] || P.done[id]<P.taught[w]) P.taught[w]=P.done[id]; });
+    delete P.done[id];
+  }
+}
+foldDone();
 const posO = () => { const u=curUnit(); if(!u) return Infinity; const ls=lessonsOf(u); return lastO(nextIn(ls) || ls[ls.length-1]); };  // how far the path is reached
 const formsAt = o => C.forms.filter(f=>FORM_AT[f.k]<=o);
 const unitLabel = u => `Unit ${u.i+1}`, unitName = u => `${unitLabel(u)} · ${u.title}`;
 const lessonT = L => L.u.k==="drill" ? esc(L.t) : `<span lang="${C.htmlLang}">${esc(L.t)}</span>`;  // word lessons are titled by their words
 const CHECK_PASS = u => u.k==="level" ? 0.9 : 0.8;
-const hasProgress = () => Object.keys(P.lv).length+Object.keys(P.done).length+Object.keys(P.checks).length+Object.keys(LR.intro).length+Object.keys(LR.srs).length>0;
+const hasProgress = () => Object.keys(P.lv).length+Object.keys(P.done).length+Object.keys(P.taught).length+Object.keys(P.checks).length+Object.keys(LR.intro).length+Object.keys(LR.srs).length>0;
 function itemAvailable(id){
   const a=ALL[id];
   if(a) return a.set ? introduced(a.it.v) : a.lv ? unitOpen(UBY[a.lv]) : unitOpen(SOUND);
   if(id.startsWith("c:")){ const v=VOC[id.split(":")[2]]; return !!v && !!v.lv && unitOpen(UBY[v.lv]); }  // flashcards of the levels reached
   const it=itemOf(id); return !!it && introduced(it.v);
 }
-const dueItems = () => { const d=today(); return Object.keys(LR.srs).filter(id=>LR.srs[id][1]<=d && !/^(c|k):/.test(id) && itemAvailable(id)).map(itemOf); };
-const acc = id => { const r=LR.srs[id]; return r[3]/Math.max(1,r[2]); };
-const weakFirst = items => items.sort((a,b)=>(acc(a.id)-acc(b.id)) || (LR.srs[a.id][1]-LR.srs[b.id][1]));
+const dueItems = () => { const d=today(), out=[];
+  for(const id in LR.srs){ const r=LR.srs[id]; if(r[1]>d || /^(c|k):/.test(id)) continue;
+    const it=id.startsWith("w:") ? wordReview(id.slice(2), r) : itemAvailable(id) && itemOf(id); if(it) out.push(it); }
+  return out; };
+const acc = id => { const r=recOf(id); return r[3]/Math.max(1,r[2]); };
+const weakFirst = items => items.sort((a,b)=>(acc(a.id)-acc(b.id)) || (recOf(a.id)[1]-recOf(b.id)[1]));
 /* The summary the Study Hall home page shows. */
 function statsDoc(){
   const u=curUnit(), L=u&&nextLesson(u);
@@ -613,14 +684,16 @@ function statsDoc(){
   return {pts:P.pts, level:SHUI.points.levelOf(P.pts).level, next, due:dueItems().length};
 }
 
-/* Lessons: about 10 minutes (short, about 5 new words) or 15 (long, about 7). The words come 2-3 at a time: their
-   cards, then two recognition questions per word (hear it, see it, or pick the word for the English, rotating); then,
-   mixed together: one recall per word (build it from tiles or fill it into an example, alternating), 2-3 grammar or verb
-   questions, and the sentences (build one, shadow one, Say it one; two each in a long lesson). Reviews due from earlier
-   lessons make about a quarter of the questions (at most 3 of them tested-out words) and are spread through it.
+/* Lessons: about 5 minutes (quick, 3 new words), 10 (short, 5) or 15 (long, 7). The words come 2-3 at a time: their
+   cards, then two recognition questions per word (one in a quick lesson; hear it, see it, or pick the word for the
+   English, rotating); then, mixed together: one recall per word (build it from tiles or fill it into an example,
+   alternating), 1-3 grammar or verb questions, and the sentences (build one, shadow one, Say it one; two each in a long
+   lesson; a quick lesson builds one). Reviews due from earlier lessons make about a quarter of the questions (at most 3
+   of them tested-out words) and are spread through it. The optional chat at the end is left out of quick lessons.
    Sentences use examples whose words have all been met (see unknown()). No 4 questions of one kind in a row, and never
    the same word twice in a row. */
 const LESSON_PTS = 100, RECOG = ["vl","vm","ve"];
+const LPLAN = {quick:{rec:1, gram:1, sent:1, take:1}, short:{rec:2, gram:2, sent:1, take:3}, long:{rec:2, gram:3, sent:2, take:6}};   // take: sentence questions kept
 const isCard = u => /^(intro|note|dintro|dlist|talk)$/.test(u.t);
 const qkind = u => u.t+(u.mode?"_"+u.mode:"");
 const keyOf = u => (u.w||[])[0] || u.src || u.id;
@@ -650,7 +723,7 @@ function untangle(seq){
 }
 // Reviews due (not of this lesson's words), weakest first; at most 3 tested-out ones.
 function lessonReviews(mine, n){
-  const testedOut=id=>{ const r=LR.srs[id]; return r[0]>=5 && r[2]<=1; }; let t=0;
+  const testedOut=id=>{ const r=recOf(id); return r[0]>=5 && r[2]<=1; }; let t=0;
   return weakFirst(dueItems().filter(it=>!(it.w||[]).some(w=>mine.has(w)))).filter(it=>!testedOut(it.id) || ++t<=3).slice(0,n).map(it=>Object.assign({},it,{rev:true}));
 }
 // Spread the reviews through the questions after the first card, then untangle.
@@ -713,16 +786,16 @@ function sentenceUnits(u, words, n, unk){
 function buildLesson(L){
   const u=L.u;
   if(u.k==="drill") return drillLesson(L);
-  const words=L.w.map(id=>VOC[id]), known=knownIn(words), unk=x=>unknown(x, known), seq=[];
+  const words=L.w.map(id=>VOC[id]), known=knownIn(words), unk=x=>unknown(x, known), seq=[], G=LPLAN[L.len];
   let wi=0;
   split3(words).forEach(ws=>{  // 2-3 words: their cards, then their recognition questions
-    const qs=ws.map(v=>{ const k=wi++; seq.push({t:"intro", v:v.id}); return [RECOG[k%3], RECOG[(k+1)%3]].map(t=>itemOf(qid(v,t))); });
-    seq.push(...untangle(qs.map(q=>q[0]).concat(qs.map(q=>q[1]))));
+    const qs=ws.map(v=>{ const k=wi++; seq.push({t:"intro", v:v.id}); return [RECOG[k%3], RECOG[(k+1)%3]].slice(0,G.rec).map(t=>itemOf(qid(v,t))); });
+    seq.push(...untangle(qs.map(q=>q[0]).concat(qs.flatMap(q=>q.slice(1)))));
   });
-  (L.n||[]).forEach(i=>seq.push({t:"note", lv:u.id, n:i}));
-  seq.push(...shuffle([...words.map((v,i)=>recallOf(v,i,unk)), ...grammarUnits(u, words, lastO(L), L.long?3:2, unk), ...sentenceUnits(u, words, L.long?2:1, unk)]));
+  L.n.forEach(i=>seq.push({t:"note", lv:u.id, n:i}));
+  seq.push(...shuffle([...words.map((v,i)=>recallOf(v,i,unk)), ...grammarUnits(u, words, lastO(L), G.gram, unk), ...sentenceUnits(u, words, G.sent, unk).slice(0,G.take)]));
   const out=withReviews(seq, lessonReviews(new Set(L.w), Math.round(seq.reduce((a,x)=>a+decisions(x),0)/3)));  // reviews: about a quarter of the questions
-  if(sampleFn) out.push({t:"talk"});  // fetched at start: building stays inside the tap, so iOS lets the first card's audio play
+  if(sampleFn && L.len!=="quick") out.push({t:"talk"});  // fetched at start: building stays inside the tap, so iOS lets the first card's audio play
   return out;
 }
 const split3 = xs => { const k=Math.ceil(xs.length/3), out=[]; for(let j=0, i=0;j<k;j++){ const n=Math.floor((j+1)*xs.length/k)-Math.floor(j*xs.length/k); out.push(xs.slice(i,i+n)); i+=n; } return out; };  // runs of 2-3
@@ -760,7 +833,7 @@ function checkItems(u){
    "known" review state, due in 20 to 60 days, so they come back now and then to confirm instead of every day. */
 function markKnown(u){
   const d=today();
-  const ids = u.k==="drill" ? u.sets.flatMap(s=>DS[s].items.map(x=>"d:"+x)) : u.ls.flatMap(L=>L.w).filter(w=>VOC[w]).map(w=>{ if(!LR.intro[w]) LR.intro[w]=d; return qid(VOC[w],"vm"); });
+  const ids = u.k==="drill" ? u.sets.flatMap(s=>DS[s].items.map(x=>"d:"+x)) : u.w.filter(w=>VOC[w]).map(w=>{ if(!LR.intro[w]) LR.intro[w]=d; return "w:"+w; });
   ids.forEach(id=>{ if(!LR.srs[id]){ LR.srs[id]=[5, d+20+hash32(id)%41, 1, 1, d]; dirtyDocs.add(shardOf(id)); } });
   dirtyDocs.add("learner"); saveLR();
 }
@@ -816,8 +889,10 @@ const tile = (id, ic, t, d, dis) => `<button class="sh-tile" type="button" id="$
 
 /* Learn: level, the next lesson, the path */
 // The length switch, with the minutes the next lesson of each length takes (u = the current unit, when it can be built).
-const lenSeg = u => { const m={}; ["ls","ll"].forEach(k=>{ const L=u && nextIn(u[k]); m[k==="ls"?"short":"long"]=L ? lessonMin(L) : k==="ls"?10:15; });
-  return `<div class="sh-seg" role="group" aria-label="Lesson length">${["short","long"].map(k=>`<button type="button" data-len="${k}" class="len${P.len===k?" on":""}" aria-pressed="${P.len===k}"><b>${k==="short"?"Short":"Long"}</b><span>about ${m[k]} min</span></button>`).join("")}</div>`; };
+// The sound unit's long lessons are its short ones.
+const LENS = {quick:["Quick",5], short:["Short",10], long:["Long",15]};
+const lenSeg = u => `<div class="sh-seg" role="group" aria-label="Lesson length">${Object.keys(LENS).map(k=>{ const L=u && nextIn(lessonsOf(u,k));
+  return `<button type="button" data-len="${k}" class="len${lenOf()===k?" on":""}" aria-pressed="${lenOf()===k}"><b>${LENS[k][0]}</b><span>${L ? lessonMin(L) : LENS[k][1]} min</span></button>`; }).join("")}</div>`;
 const wireLen = () => V().querySelectorAll("[data-len]").forEach(b=>b.onclick=()=>{ P.len=b.dataset.len; P.lenAt=Date.now(); saveP(); render(); const n=V().querySelector(`[data-len="${P.len}"]`); if(n) n.focus(); });
 function renderLearn(){
   const lv=SHUI.points.levelOf(P.pts), u=curUnit(), L=u&&nextLesson(u);
@@ -825,7 +900,7 @@ function renderLearn(){
   if(!u) cont=`<div class="sh-card cont"><h2>You finished the path</h2><p class="sub">Reviews, skill practice and conversations in Practice keep it all fresh.</p><button class="sh-btn primary block" type="button" id="toPractice">Go to Practice</button></div>`;
   else if(L && L.u.k==="words" && EV!=="ready") cont=`<div class="sh-card cont"><span class="sh-label">${esc(unitName(u))}</span><p>${EV==="loading"?"Loading the words for this lesson…":"The words for this lesson couldn't load. Check your connection and reload the page."}</p></div>`;
   else if(L) cont=`<div class="sh-card cont"><span class="sh-label">${esc(unitName(u))}</span><h2>Lesson ${L.k+1}: ${lessonT(L)}</h2>
-      <button class="sh-btn primary block" type="button" id="continue">${Object.keys(P.done).length?"Continue":`Start lesson ${L.k+1}`}</button>${u.ll ? lenSeg(u) : `<p class="sub">About ${lessonMin(L)} min</p>`}</div>`;
+      <button class="sh-btn primary block" type="button" id="continue">${Object.keys(P.done).length+Object.keys(P.taught).length?"Continue":`Start lesson ${L.k+1}`}</button>${lenSeg(u)}${quietSwitch()}</div>`;
   else cont=`<div class="sh-card cont"><span class="sh-label">${esc(unitName(u))}</span><h2>Unit check</h2><p class="sub">${u.k==="level"?"30 questions, 90%":"20 questions, 80%"} to pass. Passing opens the next unit and earns 50 points.</p><button class="sh-btn primary block" type="button" id="continue">Take the unit check</button></div>`;
   const news = P.placed && P.placed.how==="carried" && !P.nw ? `<section class="sh-card"><span class="sh-tag gold">New</span><p>Thousands of everyday words were added to your path. Take a quick level check so you don't repeat what you know.</p>
     <div class="btns"><button class="sh-btn primary" type="button" id="nwFind">Find my level</button><button class="sh-btn" type="button" id="nwNo">Not now</button></div></section>` : "";
@@ -843,8 +918,8 @@ function renderLearn(){
   on("continue", ()=>L ? startLesson(L) : startCheck(u));
   on("nwFind", ()=>{ P.nw=1; saveP(); go({name:"place", step:"know", retake:"learn"}); });
   on("nwNo", ()=>{ P.nw=1; saveP(); renderLearn(); });
-  wireLen();
-  V().querySelectorAll("[data-lesson]").forEach(b=>b.onclick=()=>startLesson(LBY[b.dataset.lesson]));
+  wireLen(); wireQuiet();
+  V().querySelectorAll("[data-lesson]").forEach(b=>b.onclick=()=>startLesson(lessonById(b.dataset.lesson)));
   V().querySelectorAll("[data-check],[data-test]").forEach(b=>b.onclick=()=>startCheck(UBY[b.dataset.check||b.dataset.test]));
   V().querySelectorAll("[data-unit]").forEach(b=>b.onclick=()=>go({name:"unit", id:b.dataset.unit, tab:"learn"}));
 }
@@ -873,7 +948,7 @@ function renderUnit(){
   wireBack(back);
   on("uPractice", ()=>startPractice(u.title, weightedPick(pool,12), {name:"unit", id:u.id, tab:"learn"}));
   on("uCheck", ()=>startCheck(u));
-  V().querySelectorAll("[data-lesson]").forEach(b=>b.onclick=()=>startLesson(LBY[b.dataset.lesson]));
+  V().querySelectorAll("[data-lesson]").forEach(b=>b.onclick=()=>startLesson(lessonById(b.dataset.lesson)));
   fixSayButtons();
 }
 function unitPool(u){
@@ -938,10 +1013,11 @@ function startPractice(title, units, back){
 
 /* Settings */
 function renderSettings(){
-  const wu=UNITS.find(x=>x.ll && !unitDone(x)), pl=P.placed, touch=matchMedia("(pointer: coarse)").matches;
+  const wu=curUnit(), pl=P.placed, touch=matchMedia("(pointer: coarse)").matches;
   V().innerHTML = topBar() + `<h1>Settings</h1>
     <section class="sh-card"><h2>Lessons</h2>${lenSeg(wu && (wu.k!=="words" || EV==="ready") ? wu : null)}
-      <p class="sub">A short lesson brings in about 5 new words, a long one about 7. The minutes are for your next lesson.</p>
+      <p class="sub">A quick lesson brings in 3 new words, a short one about 5, a long one about 7. The minutes are for your next lesson.</p>
+      ${quietSwitch()}
       <label class="c"><input type="checkbox" id="s-romq"> Show ${esc(ROM)} on questions</label>
       ${pl && pl.how==="test" ? `<p>Last placed ${esc(dayText(pl.at))}: started at ${esc(unitName(UNITS[Math.min(pl.u,UNITS.length-1)]))}.</p>` : ""}<p class="sub">The placement test can move you ahead, never back: units you've finished stay finished.</p>
       <button class="sh-btn" type="button" id="s-place">${pl && pl.how==="test" ? "Retake the placement test" : "Take the placement test"}</button></section>
@@ -964,7 +1040,7 @@ function renderSettings(){
   if(window.SH_HOSTED && window.SH) SH.currentUser().then(user=>{ if(!user || !$("who")) return;
     $("who").innerHTML=`<span>${esc(user.email)}</span><button class="sh-btn sm" type="button" id="signout">Sign out</button>`;
     $("signout").onclick=async()=>{ await SH.sb.auth.signOut(); location.replace(SH.root); }; }).catch(()=>{});
-  wireLen();
+  wireLen(); wireQuiet();
   SHUI.theme.picker($("s-theme"));
   if(VOICE){
     $("s-dev-l").hidden=true; $("s-test").hidden=true; $("s-picker").hidden=false;
@@ -1074,7 +1150,7 @@ function finishRun(r, o){
 }
 const missed = r => [...new Set(r.results.filter(x=>!x.ok).map(x=>x.id))].map(id=>r.units.find(u=>u.id===id && decisions(u))).filter(Boolean);
 function endLesson(r){
-  if(!P.done[r.L.id]) P.done[r.L.id]=today();
+  if(r.L.w) r.L.w.forEach(w=>{ if(!P.taught[w]) P.taught[w]=today(); }); else if(!P.done[r.L.id]) P.done[r.L.id]=today();
   SHUI.points.award(P, LESSON_PTS); saveP();
   const m=missed(r);
   finishRun(r, {title:"Lesson done", newWords:r.met||null, spoken:r.spoken||null, actions:[{label:"Continue", primary:true, onClick:()=>go({name:"learn"})}]
@@ -1125,7 +1201,7 @@ function mountStep(ex, u, done){
     return card(head("New letter", tx({s:it.s},{cls:"huge",rom:false}), it.ex)+`<h2>${esc(it.rom)}</h2><p>${esc(it.how)}</p><p class="sub">Example: <span class="tg" lang="${C.htmlLang}">${esc(it.ex)}</span></p>`, ()=>done([]), it.ex); }
   if(u.t==="dlist") return card(`<span class="sh-tag">Listen first</span><h2>${esc(DS[u.set].title)}</h2><p class="sub">${esc(DS[u.set].sub)}. Play each one and copy it out loud.</p>${drillStudy(u.set, u.d)}`, ()=>done([]));
   if(u.t==="talk"){
-    ex.innerHTML=`<span class="sh-tag">Optional</span><h2 class="prompt">Talk it out</h2><p>A three-turn chat with an AI partner that uses this lesson's words. Its replies are read aloud${micOK()?", and you can answer with the microphone":""}.</p>
+    ex.innerHTML=`<span class="sh-tag">Optional</span><h2 class="prompt">Talk it out</h2><p>A three-turn chat with an AI partner that uses this lesson's words.${S.quiet?" You type your replies.":` Its replies are read aloud${micOK()?", and you can answer with the microphone":""}.`}</p>
       <div class="cta"><button class="sh-btn primary block" type="button" id="tStart">Start the chat</button><button class="sh-btn block" type="button" id="next">Skip</button></div>`;
     on("next", ()=>done([])); on("tStart", ()=>lessonTalk(run)); return;
   }
@@ -1440,7 +1516,7 @@ function renderDrill(){
 }
 function weightedPick(pool, n){
   const d=today();
-  const w=pool.map(i=>{ const r=LR.srs[i.id]; if(!r) return 3; if(r[0]===0) return 4; if(r[1]<=d) return 3; return 1+2*(1-r[3]/Math.max(1,r[2])); });
+  const w=pool.map(i=>{ const r=recOf(i.id); if(!r) return 3; if(r[0]===0) return 4; if(r[1]<=d) return 3; return 1+2*(1-r[3]/Math.max(1,r[2])); });
   const out=[], idx=pool.map((_,i)=>i);
   while(out.length<n && idx.length){ const tot=idx.reduce((a,i)=>a+w[i],0); let r=Math.random()*tot, k=0; for(;k<idx.length;k++){ r-=w[idx[k]]; if(r<=0) break; } k=Math.min(k,idx.length-1); out.push(pool[idx[k]]); idx.splice(k,1); }
   return out;
@@ -1521,17 +1597,33 @@ function speakables(){
 }
 const sayUnits = n => weightedPick(speakables().map(x=>Object.assign(x,{t:"say", id:"say:"+x.id})), n);
 const shadowUnits = n => weightedPick(speakables().map(x=>Object.assign(x,{t:"shadow", id:"sh:"+x.id})), n);
+/* Can't speak right now (S.quiet): a "Say it" or shadowing sentence is built from tiles instead (Korean: its words;
+   Cantonese: its characters, a run of other letters or digits as one tile), and counts for word order, not speaking. */
+const CJK1=/^[㐀-䶿一-鿿\u{20000}-\u{3FFFF}]$/u;
+function quietTiles(it){
+  const rt=(it.s.r||"").split(/\s+/).filter(Boolean); let a, so=0;
+  if(YUE) a=(it.s.s.replace(NONWORD,"").match(/[㐀-䶿一-鿿\u{20000}-\u{3FFFF}]|[^㐀-䶿一-鿿\u{20000}-\u{3FFFF}]+/gu)||[]).map(t=>({s:t, r:CJK1.test(t) ? rt[so++]||"" : ""}));
+  else { const ws=it.s.s.split(/\s+/); a=ws.map((w,i)=>({s:w.replace(KO_PUNCT,""), r:rt.length===ws.length?rt[i]:""})).filter(o=>o.s); }
+  return {t:"tiles", id:it.id, sk:["g:order"], w:it.w, en:it.en, full:it.s, a, alt:[], extra:[]};
+}
 function mountSay(ex, it, done){
   const shadow=it.t==="shadow";
+  if(S.quiet){   // shadowing: hear it first (its play button under the label)
+    mountUnit(ex, quietTiles(it), "practice", res=>done(res.map(x=>Object.assign(x, {sk:["g:order"]}))));
+    if(shadow){ ex.querySelector(".kind").insertAdjacentHTML("afterend", bigPlay(it.s.s)); speak(it.s.s, {btn:ex.querySelector(".sh-play")}); }
+    return;
+  }
   ex.innerHTML = shadow ? `<span class="kind">${esc(catOf(it))}</span><p class="prompt">Play it, then say it with the same rhythm and ${YUE?"tones":"melody"}.</p><div class="wordhead">${tx(it.s,{cls:"mid"})}<button class="sh-play" type="button" data-say="${esc(it.s.s)}" aria-label="Play">${SHUI.icon("play")}</button></div><p class="qen">${esc(it.en)}</p><div id="sayArea" class="stack"></div>`
     : `<span class="kind">${esc(catOf(it))}</span><p class="prompt">Say it in ${esc(C.name)}: “${esc(it.en)}”</p><div id="sayArea" class="stack"></div>`;
   if(shadow) speak(it.s.s, {btn:ex.querySelector(".sh-play")});
   const area=$("sayArea"), finish=(ok, your)=>done([{id:it.id, ok, sk:it.sk, q:it.en, your, right:it.s.s, say:it.s.s}]);
   const btns=html=>`<div class="btns">${html}</div>`;
-  const wire=()=>{ [["saySkip",()=>done([])],["sayType",typed],["sayRep",repeat],["sayMicMode",listen]].forEach(([id,f])=>on(id, ()=>{ cancelRec(); dropSheet(); f(); })); };
+  const quiet=()=>{ S.quiet=true; saveS(); mountSay(ex, it, done); };
+  const wire=()=>{ [["saySkip",()=>done([])],["sayType",typed],["sayRep",repeat],["sayMicMode",listen],["sayQuiet",quiet]].forEach(([id,f])=>on(id, ()=>{ cancelRec(); dropSheet(); f(); })); };
+  const quietBtn=`<button class="sh-btn ghost block" type="button" id="sayQuiet">Can't speak right now</button>`;
   function listen(){
     area.innerHTML=`<div class="micwrap"><div class="sh-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><button class="sh-mic" type="button" id="sayMic" aria-label="Speak">${SHUI.icon("mic")}</button><p class="sub" id="sayStat" role="status">Tap and speak</p></div>`
-      + btns(`<button class="sh-btn" type="button" id="sayType">Type instead</button><button class="sh-btn" type="button" id="saySkip">Skip</button>`);
+      + btns(`<button class="sh-btn" type="button" id="sayType">Type instead</button><button class="sh-btn" type="button" id="saySkip">Skip</button>`) + quietBtn;
     wire();
     const stat=m=>{ $("sayStat").textContent=m; };
     micButton($("sayMic"), {
@@ -1559,7 +1651,8 @@ function mountSay(ex, it, done){
   }
   function repeat(){
     area.innerHTML=(shadow?"":`<div class="ans">${playBtn(it.s.s,"Play")}${tx(it.s,{cls:"mid"})}</div>`)+`<p>${shadow?"":"Listen, then say it out loud. "}Did you say it?</p>`
-      + btns(`<button class="sh-btn" type="button" id="sayNo">Not yet</button><button class="sh-btn primary" type="button" id="sayYes">I said it</button>`);
+      + btns(`<button class="sh-btn" type="button" id="sayNo">Not yet</button><button class="sh-btn primary" type="button" id="sayYes">I said it</button>`) + quietBtn;
+    wire();
     on("sayYes", ()=>{ run.spoken++; award(it); finish(true,"(said it out loud)"); }); on("sayNo", ()=>finish(false,"(not yet)"));
     if(!shadow) speak(it.s.s);
   }
@@ -1650,7 +1743,8 @@ function confText(key){ const [want,got]=key.split("→"); return /^tones? /.tes
 function weakWords(){ return Object.entries(LR.w).filter(([k,[a,n]])=>n>=2 && a<0.75 && VOC[k]).sort((x,y)=>x[1][0]-y[1][0]).slice(0,12).map(([k,[a,n]])=>({v:VOC[k],a,n})); }
 const unitIds = u => new Set(u.k==="level" ? lvItems(u.id).map(i=>i.id) : u.k==="drill" ? u.sets.flatMap(s=>DS[s].items.map(x=>"d:"+x)) : (ES[u.id]||{items:[]}).items);
 function reviewState(ids){
-  const d=today(); let due=0; for(const id of ids){ const r=LR.srs[id]; if(r && r[1]<=d) due++; }
+  const d=today(); let due=0;
+  for(const key of new Set([...ids].map(id=>{ const k=wordOfQ(id); return k ? "w:"+k : id; }))){ const r=LR.srs[key]; if(r && r[1]<=d) due++; }
   const ev=LR.log.filter(e=>ids.has(e.id)).slice(-20), a=ev.length>=10 ? ev.filter(e=>e.ok).length/ev.length : null;
   return {due, acc:a, needs: due>=8 || (a!==null && a<0.8)};
 }
@@ -1683,7 +1777,8 @@ function renderWeak(){
   V().querySelectorAll("[data-fc]").forEach(b=>b.onclick=()=>{ const key=b.dataset.fc, ids=new Set(LR.log.filter(e=>e.c===key).map(e=>e.id)); if(focus(confText(key), [...ids].map(itemOf).filter(Boolean), 8)===false) none(b); });
   V().querySelectorAll("[data-study]").forEach(b=>b.onclick=()=>go({name:"unit", id:b.dataset.study, tab:"learn"}));
   V().querySelectorAll("[data-gen]").forEach(b=>b.onclick=()=>genPractice(b.dataset.gen, b));
-  V().querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{ const d=today(), pool=[...unitIds(UBY[b.dataset.rl])].filter(i=>LR.srs[i]).map(itemOf).filter(Boolean), due=pool.filter(i=>LR.srs[i.id][1]<=d); focus("Review", due.length>=6?due:pool); });
+  V().querySelectorAll("[data-rl]").forEach(b=>b.onclick=()=>{ const d=today(), keys=new Set([...unitIds(UBY[b.dataset.rl])].map(id=>{ const k=wordOfQ(id); return k ? "w:"+k : id; }).filter(k=>LR.srs[k]));
+    const pool=[...keys].map(k=>k.startsWith("w:") ? wordReview(k.slice(2), LR.srs[k]) : itemOf(k)).filter(Boolean), due=pool.filter(i=>recOf(i.id)[1]<=d); focus("Review", due.length>=6?due:pool); });
   on("practiceWords", ()=>focus("Words to review", words.flatMap(w=>["vm","vl","ve"].map(k=>itemOf(qid(w.v,k))))));
   on("getDiag", getDiagnosis);
 }
@@ -1722,7 +1817,7 @@ function startTalk(l, r, voice, o){ talk=Object.assign({l, r, voice:!!voice, lin
 function lessonTalk(r){
   const words=r.L.w.map(id=>VOC[id]), l=LEVELS.filter(x=>UBY[x.id].i<=r.L.u.i).pop() || LEVELS[0];
   startTalk(l, {title:"Talk it out", setup:"A short chat that uses this lesson's words.", goals:["Use one of the new words","Reply three times"], opening:C.talkOpen, opening_en:"Hello!",
-    persona:`a friendly local having a relaxed chat. Bring in these words naturally: ${words.map(v=>`${v.t.s} (${v.en})`).join(", ")}`}, true, {limit:3, then:()=>{ run.i++; go({name:"run"}); }});
+    persona:`a friendly local having a relaxed chat. Bring in these words naturally: ${words.map(v=>`${v.t.s} (${v.en})`).join(", ")}`}, !S.quiet, {limit:3, then:()=>{ run.i++; go({name:"run"}); }});
 }
 function renderTalk(){
   const t=talk, r=t.r, mine=t.lines.filter(x=>x.who==="me").length, over=t.limit && mine>=t.limit;
@@ -1882,7 +1977,7 @@ function exportAll(){ const docs={}; DOCS.forEach(n=>docs[n]=docBody(n)); return
 function importAll(text){
   const o=JSON.parse(String(text).trim()); if(!o || o.app!=="studyhall-"+C.course || !o.docs) throw new Error("bad");
   let n=0; for(const k of DOCS){ if(o.docs[k]){ mergeLR(k,o.docs[k]); dirtyDocs.add(k); n++; } }
-  store.set("progress",P); store.set("learner",LR); sync(); return n;
+  foldWordSrs(); store.set("progress",P); store.set("learner",LR); sync(); return n;
 }
 
 /* ---------------- start ---------------- */

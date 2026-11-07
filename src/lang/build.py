@@ -209,17 +209,17 @@ def build(lang):
     os.makedirs(os.path.join(REPO, "build"), exist_ok=True)
     open(os.path.join(REPO, "build", f"{C['course']}-course.html"), "w", encoding="utf-8").write(preview)
     nitems = sum(len(l["items"]) for l in levels); nv = sum(len(l["vocab"]) for l in levels)
-    nl = sum(len(u["ls"]) for u in data["path"]["units"]), sum(len(u.get("ll", [])) for u in data["path"]["units"])
-    print(f"{lang}: {nitems} items, {nv} vocab, {len(drills[-1]['_items'])} drill items, {len(data['path']['units'])} units, {nl[0]} short / {nl[1]} long lessons, "
+    nw = sum(len(u.get("w", [])) for u in data["path"]["units"])
+    print(f"{lang}: {nitems} items, {nv} vocab, {len(drills[-1]['_items'])} drill items, {len(data['path']['units'])} units, {nw} path words, "
           f"{len(audio)} audio clips, page {os.path.getsize(index)//1024} KB, {v2name} {len(v2json)//1024} KB")
 
 
 # ------------------------------------------------------------------ the learning path
-# Lesson sizes (about 10 and 15 minutes at ~20 s a question and ~25 s a card): new words in a short and in a long
-# lesson (separate lessons of each unit), and for the sound unit (one length, about 10 minutes) questions or Hangul
-# letters per lesson.
-WORDS = {"short": 5, "long": 7}
-DRILL_Q, LETTERS = 25, 8
+# Lesson sizes (about 5, 10 and 15 minutes at ~20 s a question and ~25 s a card): new words in a quick, short and long
+# lesson (the page makes word lessons from the words not taught yet), and for the sound unit questions or Hangul letters
+# per lesson (about 10 minutes; a quick one is a lesson of more than QUICK_D cards cut in two).
+WORDS = {"quick": 3, "short": 5, "long": 7}
+DRILL_Q, LETTERS, QUICK_D = 25, 8, 12
 TAGTEXT = re.compile(r"\{\{(\{.+?\})\}\}")  # the {{json}} tags prose() leaves in notes
 EDGE = "？?！!。.，,、；;：:～~…\"'“”‘’()（）「」 "
 
@@ -251,14 +251,18 @@ def gloss(en):
 
 
 def build_path(C, levels, drills, v2):
-    """The course as one path of units, each cut into short lessons (ls, ids <unit>-<n>) and, separately, long lessons
-    (ll, ids <unit>-L<n>; not in the sound unit); the learner's lesson length picks the list (same words, same order).
-    Units: the sound unit (drill sets), then each level followed by two Everyday sets.
-    Lesson fields: w = new words (vocab ids), n = indexes of the level notes shown as Grammar cards, d = drill items
-    asked, m = drill items introduced first (Hangul letters), set = drill set, t = title (target words, or the drill set's
-    title for the sound unit), o = place in the path (words or drill items before the lesson's first one).
+    """The course as one path of units: the sound unit (drill sets), then each level followed by two Everyday sets.
+    Every unit has o = its place in the path (words or drill items before it).
+    The sound unit has lessons: ls (ids <unit>-<n>, about 10 minutes) and lq (quick: those of more than QUICK_D cards cut in two, ids
+    <unit>-Q<n>); fields d = drill items asked, m = drill items introduced first (Hangul letters), set = drill set,
+    t = title (the drill set's), o = place in the path.
+    A word unit has its words in order (w, vocab ids), their titles as a lesson title shows them (tt), and na: for each
+    level note, the index of the word whose lesson shows it as a Grammar card (the first word of the 5-word lesson it was
+    given before lessons were made on the page). The page makes the lessons from the words not taught yet, by length.
+    old = {s, l}: where each 5-word and 7-word lesson started, so progress saved with those lesson ids
+    (<unit>-<n>, <unit>-L<n>) still reads as the words taught.
     The page picks each lesson's grammar items, sentences and reviews when it starts.
-    forms = [[form, o of the short lesson whose Grammar card teaches it], ...]."""
+    forms = [[form, o of the word whose Grammar card teaches it], ...]."""
     LV = {l["id"]: l for l in levels}
     ES = {s["id"]: s for s in v2["sets"]}
     DS = {d["id"]: d for d in drills if "id" in d}
@@ -266,7 +270,19 @@ def build_path(C, levels, drills, v2):
     snd = C["sounds"]
     order = [snd["id"]] + [u for n in range(1, 11) for u in (f"L{n}", f"E{2 * n - 1}", f"E{2 * n}")]
     rnd = random.Random(11)
-    title = lambda ws: ", ".join(list(dict.fromkeys(c for c in (clean(w["t"]["s"]) for w in ws) if c))[:3])
+    def quick(ls):  # each sound lesson of more than QUICK_D cards cut in two (Hangul: its letters, with half the listening trios each)
+        out = []
+        for L in ls:
+            if len(L["d"]) <= QUICK_D:
+                parts = [{"d": L["d"], "m": L["m"]}]
+            elif L["m"]:
+                ms, rest = split(L["m"], -(-len(L["m"]) // 2), True), [i for i in L["d"] if i not in L["m"]]
+                parts = [{"d": m + rest[k::len(ms)], "m": m} for k, m in enumerate(ms)]
+            else:
+                parts = [{"d": d, "m": []} for d in split(L["d"], -(-len(L["d"]) // 2), True)]
+            for k, q in enumerate(parts):
+                out.append(dict(q, set=L["set"], t=L["t"] + (f" ({k + 1} of {len(parts)})" if len(parts) > 1 else "")))
+        return out
     def drill_lessons():
         ls = []
         for sid in snd["sets"]:
@@ -288,10 +304,13 @@ def build_path(C, levels, drills, v2):
             L["t"] = DS[L["set"]]["title"] + (f", part {seen[L['set']]}" if per[L["set"]] > 1 else "")
         return ls
 
-    def level_lessons(l, n):
+    def starts(parts):
+        return [sum(len(p) for p in parts[:k]) for k in range(len(parts))]
+
+    def level_unit(l):
         topics = list(dict.fromkeys(v["topic"] for v in l["vocab"]))
         vocab = sorted(l["vocab"], key=lambda v: topics.index(v["topic"]))  # stable: the level's order within each topic
-        parts = split(vocab, n)
+        parts = split(vocab, WORDS["short"])
         # Grammar cards: each note goes to the first lesson with a word it mentions (spread out, in note order).
         notes, at, cap = [[] for _ in parts], 0, -(-len(l["notes"]) // len(parts))
         for i, nb in enumerate(l["notes"]):
@@ -301,36 +320,41 @@ def build_path(C, levels, drills, v2):
             while at < len(parts) - 1 and len(notes[at]) >= cap:
                 at += 1
             notes[at].append(i)
-        return [{"w": [v["id"] for v in part], "n": notes[k], "t": title(part)} for k, part in enumerate(parts)]
+        first = starts(parts)
+        assert [i for part in notes for i in part] == list(range(len(l["notes"])))
+        return {"w": [v["id"] for v in vocab], "tt": [clean(v["t"]["s"]) for v in vocab],
+                "na": [first[k] for k in range(len(parts)) for _ in notes[k]],
+                "old": {"s": first, "l": starts(split(vocab, WORDS["long"]))}}
 
     units = []
     for uid in order:
         if uid == snd["id"]:
-            units.append({"id": uid, "k": "drill", "title": snd["title"], "sub": snd["sub"], "sets": snd["sets"], "ls": drill_lessons()})
+            ls = drill_lessons()
+            units.append({"id": uid, "k": "drill", "title": snd["title"], "sub": snd["sub"], "sets": snd["sets"], "ls": ls, "lq": quick(ls)})
         elif uid in LV:
             l = LV[uid]
-            units.append({"id": uid, "k": "level", "title": l["title"], "sub": l["goal"],
-                          "ls": level_lessons(l, WORDS["short"]), "ll": level_lessons(l, WORDS["long"])})
+            units.append(dict({"id": uid, "k": "level", "title": l["title"], "sub": l["goal"]}, **level_unit(l)))
         elif uid in ES:
             e = ES[uid]
-            lessons = lambda n: [{"w": [w["id"] for w in part], "t": title(part)} for part in split(e["words"], n)]
             units.append({"id": uid, "k": "words", "title": e["title"], "sub": ", ".join(gloss(w["en"]) for w in e["words"][:4]),
-                          "ls": lessons(WORDS["short"]), "ll": lessons(WORDS["long"])})
+                          "w": [w["id"] for w in e["words"]], "tt": [clean(w["t"]["s"]) for w in e["words"]], "na": [],
+                          "old": {"s": starts(split(e["words"], WORDS["short"])), "l": starts(split(e["words"], WORDS["long"]))}})
     o = 0
     for u in units:
-        for key, tag in (("ls", ""), ("ll", "L")):
+        u["o"] = o
+        for key, tag in (("ls", ""), ("lq", "Q")):
             at = o
             for k, L in enumerate(u.get(key, [])):
                 L["id"], L["o"] = f"{u['id']}-{tag}{k + 1}", at
-                at += len(L.get("w") or L["d"])
-        o += sum(len(L.get("w") or L["d"]) for L in u["ls"])
+                at += len(L["d"])
+        o += len(u["w"]) if "w" in u else sum(len(L["d"]) for L in u["ls"])
     forms = []
     for f in C["forms"]:
         lid, head = f["at"]
         u = next(u for u in units if u["id"] == lid)
         i = next(i for i, nb in enumerate(LV[lid]["notes"]) if nb["h"].startswith(head))
-        forms.append([f["k"], next(L["o"] for L in u["ls"] if i in L["n"])])
-    return {"units": units, "forms": forms}
+        forms.append([f["k"], u["o"] + u["na"][i]])
+    return {"units": units, "forms": forms, "size": WORDS}
 
 
 # ------------------------------------------------------------------ Korean pronunciation cache

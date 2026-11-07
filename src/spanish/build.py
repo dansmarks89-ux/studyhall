@@ -9,11 +9,11 @@ spanish/vocab2.<hash>.json and spanish/verbs.<hash>.json (named by content, so b
 the previous build's files are kept for pages still open, older ones are deleted. The claude version inlines them,
 and inlines shared/ui.css and shared/ui.js too (the hosted page links them).
 
-The two learning paths (Everyday, Clinic) are built here from the existing content, so the same lesson always
-has the same words: every unit is a course level (C1..C8, M1..M8) or a word set (Everyday E01..E30, more clinic
-words MB1..MB8), split into lessons of up to 5 (short, about 10 minutes) or 7 (long, about 15 minutes) new words (per word two
-recognition questions and one recall, plus grammar, sentences and reviews), with a level's grammar notes spread
-over its lessons in order. Word keys match the app's: "C1:4" = level C1 vocab[4], "C1:p2" = its phrases[2],
+The two learning paths (Everyday, Clinic) are built here from the existing content: every unit is a course level
+(C1..C8, M1..M8) or a word set (Everyday E01..E30, more clinic words MB1..MB8) with its words in order (w). The app
+makes the lessons from the words not taught yet (3, 5 or 7 at a time, by lesson length), so changing the length never
+repeats a word. A level's grammar note j goes with the lesson that teaches word ga[j]: the first word of the 5-word
+lesson it had before lessons were made in the app (old progress keeps its notes). Word keys match the app's: "C1:4" = level C1 vocab[4], "C1:p2" = its phrases[2],
 "E01:sv01-de" = an Everyday entry. TENSES says where the grammar that teaches each verb tense sits, found from the
 levels' grammar headings: a tense opens in lessons once the lesson with that note is done (or the unit is passed).
 
@@ -36,10 +36,6 @@ assert not set(CONJ) & set(CONJ2)
 CONJ.update(CONJ2)  # conj2 = every other verb the course teaches; reflexive verbs keyed as taught ("sentarse")
 
 # ---------- paths ----------
-SIZE = {"short": 5, "long": 7}
-def chunks(words, size):
-    k = math.ceil(len(words) / size)
-    return [words[len(words) * i // k: len(words) * (i + 1) // k] for i in range(k)]
 def level_words(l):
     """The level's vocabulary in order, with its phrases spread evenly through it."""
     v = [((i + .5) / len(l["vocab"]), f"{l['id']}:{i}") for i in range(len(l["vocab"]))]
@@ -52,12 +48,8 @@ def unit(uid):
     else:
         s = SETS[uid]; words, notes = [f"{uid}:{e['id']}" for e in s["entries"]], 0
         u = {"kind": "words", "set": s["id"], "title": s["title"]}
-    u["lessons"] = {}
-    for ln, size in SIZE.items():
-        parts = chunks(words, size)
-        at = {}  # grammar note j goes to lesson floor(j * lessons / notes)
-        for j in range(notes): at.setdefault(j * len(parts) // notes, []).append(j)
-        u["lessons"][ln] = [dict({"id": f"{uid}-{ln[0]}{i + 1}", "w": w}, **({"g": at[i]} if i in at else {})) for i, w in enumerate(parts)]
+    k = math.ceil(len(words) / 5)   # note j was in 5-word lesson j * k // notes, which starts at word len * i // k
+    u["w"], u["ga"] = words, [len(words) * (j * k // notes) // k for j in range(notes)]
     return u
 
 every = []
@@ -85,7 +77,7 @@ for tense, rx, track in TAUGHT:
     assert hit, (tense, rx)
     TENSES.setdefault(tense, []).append(hit)
 assert TENSES["Present"] == [["C1", 4]] and TENSES["Command (+)"] == [["C7", 4], ["M5", 0]], TENSES
-PATH = {"units": UNITS, "paths": {"every": every, "clinic": clinic}, "tenses": TENSES, "size": SIZE}
+PATH = {"units": UNITS, "paths": {"every": every, "clinic": clinic}, "tenses": TENSES}
 
 # ---------- page ----------
 src = open(os.path.join(HERE, "app.html"), encoding="utf-8").read()
