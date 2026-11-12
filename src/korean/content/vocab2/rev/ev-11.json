@@ -41,8 +41,8 @@
      "en": "Please tell me the refund procedure."
     },
     {
-     "s": "입원 절차가 어떻게 돼요?",
-     "en": "What's the admission process?"
+     "s": "회원 가입 절차가 어떻게 돼요?",
+     "en": "What's the sign-up process?"
     }
    ]
   },
@@ -90,7 +90,28 @@
      "s": "팀장님이 마감 날짜를 강조하셨어요.",
      "en": "The team leader stressed the deadline."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "선생님이",
+     "이",
+     "부분을",
+     "여러",
+     "번",
+     "강조하셨어요"
+    ],
+    "alt": [
+     [
+      "선생님이",
+      "여러",
+      "번",
+      "이",
+      "부분을",
+      "강조하셨어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv06-151",
@@ -110,8 +131,8 @@
      "en": "Grandma prays every morning."
     },
     {
-     "s": "수술이 잘되기를 기도했어요.",
-     "en": "We prayed for the surgery to go well."
+     "s": "여행 내내 날씨가 좋기를 기도했어요.",
+     "en": "I prayed for good weather for the whole trip."
     }
    ]
   },
@@ -129,8 +150,8 @@
      "en": "Look over the lease carefully."
     },
     {
-     "s": "의사 선생님이 목을 살펴보셨어요.",
-     "en": "The doctor examined my throat."
+     "s": "중고차를 사기 전에 꼼꼼히 살펴봤어요.",
+     "en": "I looked the used car over carefully before buying it."
     },
     {
      "s": "가게를 천천히 살펴보고 있어요.",
@@ -159,7 +180,26 @@
      "s": "술 마셨으니까 대리 불러요.",
      "en": "We've been drinking, so let's call a designated driver."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "박",
+     "대리님은",
+     "지금",
+     "회의",
+     "중이세요"
+    ],
+    "alt": [
+     [
+      "지금",
+      "박",
+      "대리님은",
+      "회의",
+      "중이세요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv06-107",
@@ -179,8 +219,8 @@
      "en": "Thanks for helping. You're a real angel."
     },
     {
-     "s": "그 간호사분은 정말 천사 같으셨어요.",
-     "en": "That nurse was a real angel."
+     "s": "제 룸메이트는 정말 천사 같아요.",
+     "en": "My roommate is a real angel."
     }
    ]
   },
@@ -318,6 +358,926 @@
       "출발",
       "직전에",
       "찾았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-114",
+   "t": {
+    "s": "정확히"
+   },
+   "pos": "adverb",
+   "en": "exactly, precisely",
+   "note": "",
+   "ex": [
+    {
+     "s": "정확히 몇 시에 만나요?",
+     "en": "What time exactly are we meeting?"
+    },
+    {
+     "s": "주소를 정확히 알려 주세요.",
+     "en": "Please tell me the exact address."
+    },
+    {
+     "s": "그 사람 이름이 정확히 기억이 안 나요.",
+     "en": "I can't remember that person's name exactly."
+    }
+   ]
+  },
+  {
+   "id": "kv06-120",
+   "t": {
+    "s": "주간"
+   },
+   "pos": "noun",
+   "en": "week, weekly; daytime",
+   "note": "",
+   "ex": [
+    {
+     "s": "주간 날씨를 확인했어요.",
+     "en": "I checked the weekly weather forecast."
+    },
+    {
+     "s": "매주 월요일에 주간 회의가 있어요.",
+     "en": "There's a weekly meeting every Monday."
+    },
+    {
+     "s": "이번 달에는 주간 근무만 해요.",
+     "en": "I only work day shifts this month."
+    }
+   ]
+  },
+  {
+   "id": "kv06-126",
+   "t": {
+    "s": "확률"
+   },
+   "pos": "noun",
+   "en": "probability, chance",
+   "note": "",
+   "ex": [
+    {
+     "s": "내일 비 올 확률이 높대요.",
+     "en": "They say there's a high chance of rain tomorrow."
+    },
+    {
+     "s": "로또에 당첨될 확률이 얼마나 돼요?",
+     "en": "What are the odds of winning the lottery?"
+    },
+    {
+     "s": "그 버스를 탈 확률은 거의 없어요.",
+     "en": "There's almost no chance we'll catch that bus."
+    }
+   ]
+  },
+  {
+   "id": "kv06-130",
+   "t": {
+    "s": "용어"
+   },
+   "pos": "noun",
+   "en": "term, terminology",
+   "note": "",
+   "ex": [
+    {
+     "s": "컴퓨터 용어는 너무 어려워요.",
+     "en": "Computer terms are so hard."
+    },
+    {
+     "s": "이 용어가 무슨 뜻이에요?",
+     "en": "What does this term mean?"
+    },
+    {
+     "s": "회사 용어에 아직 익숙하지 않아요.",
+     "en": "I'm still not used to the company jargon."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "컴퓨터",
+     "용어는",
+     "너무",
+     "어려워요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv06-158",
+   "t": {
+    "s": "예정되다"
+   },
+   "pos": "verb",
+   "en": "to be scheduled, be planned",
+   "note": "Also common: N 예정이에요 (it's planned).",
+   "ex": [
+    {
+     "s": "회의는 세 시로 예정돼 있어요.",
+     "en": "The meeting is scheduled for three o'clock."
+    },
+    {
+     "s": "결혼식은 다음 달로 예정돼 있어요.",
+     "en": "The wedding is planned for next month."
+    },
+    {
+     "s": "이사는 다음 주 토요일로 예정돼 있어요.",
+     "en": "The move is scheduled for next Saturday."
+    }
+   ]
+  },
+  {
+   "id": "kv06-192",
+   "t": {
+    "s": "널리"
+   },
+   "pos": "adverb",
+   "en": "widely",
+   "note": "",
+   "ex": [
+    {
+     "s": "이 노래는 널리 알려져 있어요.",
+     "en": "This song is widely known."
+    },
+    {
+     "s": "이 앱은 전 세계에서 널리 쓰여요.",
+     "en": "This app is widely used around the world."
+    },
+    {
+     "s": "그 식당은 맛있다고 널리 소문났어요.",
+     "en": "Word has spread far and wide that that restaurant is good."
+    }
+   ]
+  },
+  {
+   "id": "kv06-110",
+   "t": {
+    "s": "따다"
+   },
+   "pos": "verb",
+   "en": "to pick (fruit); to get (a license)",
+   "note": "",
+   "ex": [
+    {
+     "s": "주말에 가족이랑 딸기를 따러 갔어요.",
+     "en": "On the weekend we went strawberry picking as a family."
+    },
+    {
+     "s": "마당에서 토마토를 땄어요.",
+     "en": "I picked tomatoes in the yard."
+    },
+    {
+     "s": "작년에 드디어 운전면허를 땄어요.",
+     "en": "I finally got my driver's license last year."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말에",
+     "가족이랑",
+     "딸기를",
+     "따러",
+     "갔어요"
+    ],
+    "alt": [
+     [
+      "가족이랑",
+      "주말에",
+      "딸기를",
+      "따러",
+      "갔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-116",
+   "t": {
+    "s": "아마도"
+   },
+   "pos": "adverb",
+   "en": "probably, perhaps",
+   "note": "A slightly stronger form of 아마.",
+   "ex": [
+    {
+     "s": "아마도 내일은 비가 올 거예요.",
+     "en": "It'll probably rain tomorrow."
+    },
+    {
+     "s": "민호는 아마도 아직 회사에 있을 거예요.",
+     "en": "Minho is probably still at the office."
+    },
+    {
+     "s": "아마도 다음 달에 이사할 것 같아요.",
+     "en": "We'll probably move next month."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아마도",
+     "내일은",
+     "비가",
+     "올",
+     "거예요"
+    ],
+    "alt": [
+     [
+      "내일은",
+      "아마도",
+      "비가",
+      "올",
+      "거예요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-122",
+   "t": {
+    "s": "접근하다"
+   },
+   "pos": "verb",
+   "en": "to approach, get close to",
+   "note": "",
+   "ex": [
+    {
+     "s": "모르는 개한테 갑자기 접근하지 마세요.",
+     "en": "Don't suddenly approach a dog you don't know."
+    },
+    {
+     "s": "이 문제는 다르게 접근해 봐요.",
+     "en": "Let's approach this problem differently."
+    },
+    {
+     "s": "태풍이 접근하고 있대요.",
+     "en": "They say a typhoon is approaching."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "모르는",
+     "개한테",
+     "갑자기",
+     "접근하지",
+     "마세요"
+    ],
+    "alt": [
+     [
+      "갑자기",
+      "모르는",
+      "개한테",
+      "접근하지",
+      "마세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-125",
+   "t": {
+    "s": "종일"
+   },
+   "pos": "noun",
+   "en": "all day",
+   "note": "Often 하루 종일.",
+   "ex": [
+    {
+     "s": "하루 종일 비가 왔어요.",
+     "en": "It rained all day."
+    },
+    {
+     "s": "오늘은 종일 회의만 했어요.",
+     "en": "I was in meetings all day today."
+    },
+    {
+     "s": "주말에 종일 집에서 쉬었어요.",
+     "en": "I rested at home all day on the weekend."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "하루",
+     "종일",
+     "비가",
+     "왔어요"
+    ],
+    "alt": [
+     [
+      "비가",
+      "하루",
+      "종일",
+      "왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-134",
+   "t": {
+    "s": "쳐다보다"
+   },
+   "pos": "verb",
+   "en": "to stare at, look at",
+   "note": "",
+   "ex": [
+    {
+     "s": "사람들이 왜 저를 쳐다봐요?",
+     "en": "Why are people staring at me?"
+    },
+    {
+     "s": "아이가 아이스크림을 계속 쳐다봐요.",
+     "en": "The kid keeps staring at the ice cream."
+    },
+    {
+     "s": "하루 종일 핸드폰만 쳐다보고 있어요.",
+     "en": "He's been staring at his phone all day."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "사람들이",
+     "왜",
+     "저를",
+     "쳐다봐요"
+    ],
+    "alt": [
+     [
+      "왜",
+      "사람들이",
+      "저를",
+      "쳐다봐요"
+     ],
+     [
+      "사람들이",
+      "저를",
+      "왜",
+      "쳐다봐요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-143",
+   "t": {
+    "s": "비록"
+   },
+   "pos": "adverb",
+   "en": "although, even though",
+   "note": "Used with -지만 / -아도: 비록 작지만.",
+   "ex": [
+    {
+     "s": "비록 작지만 우리 집이 좋아요.",
+     "en": "Although it's small, I like our home."
+    },
+    {
+     "s": "비록 졌지만 재미있었어요.",
+     "en": "Even though we lost, it was fun."
+    },
+    {
+     "s": "비록 비싸지만 맛은 최고예요.",
+     "en": "Although it's expensive, the taste is the best."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "비록",
+     "작지만",
+     "우리",
+     "집이",
+     "좋아요"
+    ],
+    "alt": [
+     [
+      "우리",
+      "집이",
+      "비록",
+      "작지만",
+      "좋아요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-148",
+   "t": {
+    "s": "쌓다"
+   },
+   "pos": "verb",
+   "en": "to stack, pile up; to build up",
+   "note": "",
+   "ex": [
+    {
+     "s": "이삿짐 상자를 거실에 쌓아 놨어요.",
+     "en": "I piled the moving boxes in the living room."
+    },
+    {
+     "s": "아이들이 블록을 높이 쌓았어요.",
+     "en": "The kids stacked the blocks up high."
+    },
+    {
+     "s": "그 회사에서 경험을 많이 쌓았어요.",
+     "en": "I built up a lot of experience at that company."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이삿짐",
+     "상자를",
+     "거실에",
+     "쌓아",
+     "놨어요"
+    ],
+    "alt": [
+     [
+      "거실에",
+      "이삿짐",
+      "상자를",
+      "쌓아",
+      "놨어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-155",
+   "t": {
+    "s": "주문하다"
+   },
+   "pos": "verb",
+   "en": "to order",
+   "note": "",
+   "ex": [
+    {
+     "s": "뭐 주문하실래요?",
+     "en": "What would you like to order?"
+    },
+    {
+     "s": "인터넷으로 책을 주문했어요.",
+     "en": "I ordered a book online."
+    },
+    {
+     "s": "오늘 저녁은 치킨 주문할까요?",
+     "en": "Shall we order chicken for dinner tonight?"
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "인터넷으로",
+     "책을",
+     "주문했어요"
+    ],
+    "alt": [
+     [
+      "책을",
+      "인터넷으로",
+      "주문했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-159",
+   "t": {
+    "s": "유리"
+   },
+   "pos": "noun",
+   "en": "glass (material)",
+   "note": "",
+   "ex": [
+    {
+     "s": "카페에서 유리컵을 깼어요.",
+     "en": "I broke a glass at the café."
+    },
+    {
+     "s": "차 앞 유리에 금이 갔어요.",
+     "en": "There's a crack in the car's windshield."
+    },
+    {
+     "s": "유리병은 따로 버려야 돼요.",
+     "en": "Glass bottles have to be thrown out separately."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "카페에서",
+     "유리컵을",
+     "깼어요"
+    ],
+    "alt": [
+     [
+      "유리컵을",
+      "카페에서",
+      "깼어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-164",
+   "t": {
+    "s": "적극적"
+   },
+   "pos": "noun",
+   "en": "active, proactive",
+   "note": "Used as 적극적으로 (actively) or 적극적인 N.",
+   "ex": [
+    {
+     "s": "수업에 적극적으로 참여하세요.",
+     "en": "Participate actively in class."
+    },
+    {
+     "s": "민수 씨는 일에 정말 적극적이에요.",
+     "en": "Minsu is really proactive at work."
+    },
+    {
+     "s": "그 사람이 먼저 적극적으로 연락했어요.",
+     "en": "He was the one who eagerly reached out first."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "수업에",
+     "적극적으로",
+     "참여하세요"
+    ],
+    "alt": [
+     [
+      "적극적으로",
+      "수업에",
+      "참여하세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-165",
+   "t": {
+    "s": "애니메이션"
+   },
+   "pos": "noun",
+   "en": "animation, cartoon",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이들이랑 애니메이션 영화를 봤어요.",
+     "en": "I watched an animated movie with the kids."
+    },
+    {
+     "s": "일본 애니메이션 좋아해요?",
+     "en": "Do you like Japanese animation?"
+    },
+    {
+     "s": "대학에서 애니메이션을 전공했어요.",
+     "en": "I majored in animation in college."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이들이랑",
+     "애니메이션",
+     "영화를",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "애니메이션",
+      "영화를",
+      "아이들이랑",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-174",
+   "t": {
+    "s": "중학교"
+   },
+   "pos": "noun",
+   "en": "middle school",
+   "note": "",
+   "ex": [
+    {
+     "s": "딸이 내년에 중학교에 들어가요.",
+     "en": "My daughter starts middle school next year."
+    },
+    {
+     "s": "중학교 친구들을 오랜만에 만났어요.",
+     "en": "I met my middle school friends after a long time."
+    },
+    {
+     "s": "이 근처에 중학교가 있어요?",
+     "en": "Is there a middle school near here?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "딸이",
+     "내년에",
+     "중학교에",
+     "들어가요"
+    ],
+    "alt": [
+     [
+      "내년에",
+      "딸이",
+      "중학교에",
+      "들어가요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-180",
+   "t": {
+    "s": "화재"
+   },
+   "pos": "noun",
+   "en": "fire (as an accident)",
+   "note": "The flame itself is 불; 화재 is a fire incident.",
+   "ex": [
+    {
+     "s": "어젯밤 동네 식당에서 화재가 났어요.",
+     "en": "Last night there was a fire at a local restaurant."
+    },
+    {
+     "s": "화재 경보가 울려서 다 나갔어요.",
+     "en": "The fire alarm went off, so everyone went outside."
+    },
+    {
+     "s": "집에 화재 보험 들었어요?",
+     "en": "Do you have fire insurance on your house?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "어젯밤",
+     "동네",
+     "식당에서",
+     "화재가",
+     "났어요"
+    ],
+    "alt": [
+     [
+      "동네",
+      "식당에서",
+      "어젯밤",
+      "화재가",
+      "났어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-181",
+   "t": {
+    "s": "우편"
+   },
+   "pos": "noun",
+   "en": "mail, post",
+   "note": "",
+   "ex": [
+    {
+     "s": "서류를 우편으로 보냈어요.",
+     "en": "I sent the documents by mail."
+    },
+    {
+     "s": "결혼식 초대장이 우편으로 왔어요.",
+     "en": "A wedding invitation came in the mail."
+    },
+    {
+     "s": "우편 요금이 얼마예요?",
+     "en": "How much is the postage?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "서류를",
+     "우편으로",
+     "보냈어요"
+    ],
+    "alt": [
+     [
+      "우편으로",
+      "서류를",
+      "보냈어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-186",
+   "t": {
+    "s": "과연"
+   },
+   "pos": "adverb",
+   "en": "indeed, as expected; I wonder if",
+   "note": "",
+   "ex": [
+    {
+     "s": "과연 소문대로 맛있네요.",
+     "en": "It really is as delicious as people say."
+    },
+    {
+     "s": "과연 서울은 사람이 많네요.",
+     "en": "Seoul really does have a lot of people."
+    },
+    {
+     "s": "과연 내일까지 끝낼 수 있을까요?",
+     "en": "I wonder if we can really finish by tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "과연",
+     "소문대로",
+     "맛있네요"
+    ],
+    "alt": [
+     [
+      "소문대로",
+      "과연",
+      "맛있네요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-187",
+   "t": {
+    "s": "아예"
+   },
+   "pos": "adverb",
+   "en": "altogether; (not) at all; from the start",
+   "note": "",
+   "ex": [
+    {
+     "s": "아예 처음부터 다시 할게요.",
+     "en": "I'll just start over from the very beginning."
+    },
+    {
+     "s": "고기는 아예 안 먹어요.",
+     "en": "I don't eat meat at all."
+    },
+    {
+     "s": "아예 핸드폰을 꺼 놨어요.",
+     "en": "I just turned my phone off altogether."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아예",
+     "처음부터",
+     "다시",
+     "할게요"
+    ],
+    "alt": [
+     [
+      "처음부터",
+      "아예",
+      "다시",
+      "할게요"
+     ],
+     [
+      "아예",
+      "다시",
+      "처음부터",
+      "할게요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-197",
+   "t": {
+    "s": "저지르다"
+   },
+   "pos": "verb",
+   "en": "to commit (a mistake, wrong)",
+   "note": "르-irregular: 저질러요.",
+   "ex": [
+    {
+     "s": "회사에서 큰 실수를 저질렀어요.",
+     "en": "I made a big mistake at work."
+    },
+    {
+     "s": "아이가 또 사고를 저질렀어요.",
+     "en": "The kid got into trouble again."
+    },
+    {
+     "s": "충동구매를 또 저질렀어요.",
+     "en": "I made another impulse purchase."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "회사에서",
+     "큰",
+     "실수를",
+     "저질렀어요"
+    ],
+    "alt": [
+     [
+      "큰",
+      "실수를",
+      "회사에서",
+      "저질렀어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-198",
+   "t": {
+    "s": "시내"
+   },
+   "pos": "noun",
+   "en": "downtown, city center",
+   "note": "",
+   "ex": [
+    {
+     "s": "주말에 시내에 쇼핑하러 가요.",
+     "en": "I'm going downtown to shop this weekend."
+    },
+    {
+     "s": "시내까지 버스로 얼마나 걸려요?",
+     "en": "How long does it take to get downtown by bus?"
+    },
+    {
+     "s": "시내에서 친구를 만났어요.",
+     "en": "I met a friend downtown."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말에",
+     "시내에",
+     "쇼핑하러",
+     "가요"
+    ],
+    "alt": [
+     [
+      "주말에",
+      "쇼핑하러",
+      "시내에",
+      "가요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-178",
+   "t": {
+    "s": "종종"
+   },
+   "pos": "adverb",
+   "en": "often, from time to time",
+   "note": "",
+   "ex": [
+    {
+     "s": "저는 종종 혼자 영화를 봐요.",
+     "en": "I often watch movies by myself."
+    },
+    {
+     "s": "이 식당에 종종 와요.",
+     "en": "I come to this restaurant from time to time."
+    },
+    {
+     "s": "부모님께 종종 전화해요.",
+     "en": "I call my parents now and then."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "부모님께",
+     "종종",
+     "전화해요"
+    ],
+    "alt": [
+     [
+      "종종",
+      "부모님께",
+      "전화해요"
      ]
     ]
    }

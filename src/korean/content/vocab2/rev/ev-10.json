@@ -90,7 +90,26 @@
      "s": "거기까지 적어도 삼십 분 걸려요.",
      "en": "It takes at least thirty minutes to get there."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "적어도",
+     "일주일에",
+     "세",
+     "번",
+     "운동해요"
+    ],
+    "alt": [
+     [
+      "일주일에",
+      "적어도",
+      "세",
+      "번",
+      "운동해요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv06-52",
@@ -205,7 +224,924 @@
      "s": "결혼 십 주년을 맞이해서 여행 가요.",
      "en": "We're taking a trip to mark our 10th anniversary."
     }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "공항에서",
+     "가족을",
+     "맞이했어요"
+    ],
+    "alt": [
+     [
+      "가족을",
+      "공항에서",
+      "맞이했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-10",
+   "t": {
+    "s": "찾아가다"
+   },
+   "pos": "verb",
+   "en": "to go see, visit (a person/place)",
+   "note": "",
+   "ex": [
+    {
+     "s": "주말에 할머니를 찾아갈 거예요.",
+     "en": "I'm going to visit my grandma this weekend."
+    },
+    {
+     "s": "고향 친구를 오랜만에 찾아갔어요.",
+     "en": "I went to see a friend from my hometown after a long time."
+    },
+    {
+     "s": "모르면 사무실로 직접 찾아가세요.",
+     "en": "If you don't know, go to the office in person."
+    }
    ]
+  },
+  {
+   "id": "kv06-14",
+   "t": {
+    "s": "매년"
+   },
+   "pos": "adverb",
+   "en": "every year",
+   "note": "",
+   "ex": [
+    {
+     "s": "매년 여름에 가족 여행을 가요.",
+     "en": "We take a family trip every summer."
+    },
+    {
+     "s": "집세가 매년 올라요.",
+     "en": "The rent goes up every year."
+    },
+    {
+     "s": "매년 크리스마스에 가족이 다 모여요.",
+     "en": "Every year the whole family gets together at Christmas."
+    }
+   ]
+  },
+  {
+   "id": "kv06-32",
+   "t": {
+    "s": "눕다"
+   },
+   "pos": "verb",
+   "en": "to lie down",
+   "note": "ㅂ-irregular: 누워요.",
+   "ex": [
+    {
+     "s": "피곤해서 잠깐 누웠어요.",
+     "en": "I was tired, so I lay down for a bit."
+    },
+    {
+     "s": "침대에 누워서 휴대폰을 봤어요.",
+     "en": "I lay in bed looking at my phone."
+    },
+    {
+     "s": "피곤하면 소파에 누우세요.",
+     "en": "If you're tired, lie down on the sofa."
+    }
+   ]
+  },
+  {
+   "id": "kv06-49",
+   "t": {
+    "s": "테스트"
+   },
+   "pos": "noun",
+   "en": "test",
+   "note": "",
+   "ex": [
+    {
+     "s": "내일 영어 테스트가 있어요.",
+     "en": "I have an English test tomorrow."
+    },
+    {
+     "s": "영어 학원에서 레벨 테스트를 봤어요.",
+     "en": "I took a placement test at the English academy."
+    },
+    {
+     "s": "이 앱으로 성격 테스트 해 봤어요?",
+     "en": "Have you tried the personality test on this app?"
+    }
+   ]
+  },
+  {
+   "id": "kv06-54",
+   "t": {
+    "s": "내려가다"
+   },
+   "pos": "verb",
+   "en": "to go down",
+   "note": "",
+   "ex": [
+    {
+     "s": "엘리베이터 타고 내려갈게요.",
+     "en": "I'll take the elevator down."
+    },
+    {
+     "s": "기온이 많이 내려갔어요.",
+     "en": "The temperature has dropped a lot."
+    },
+    {
+     "s": "주말에 부산에 내려가요.",
+     "en": "I'm going down to Busan this weekend."
+    }
+   ]
+  },
+  {
+   "id": "kv06-96",
+   "t": {
+    "s": "보험"
+   },
+   "pos": "noun",
+   "en": "insurance",
+   "note": "",
+   "ex": [
+    {
+     "s": "여행자 보험 들었어요?",
+     "en": "Did you get travel insurance?"
+    },
+    {
+     "s": "휴대폰 보험에 가입했어요.",
+     "en": "I got phone insurance."
+    },
+    {
+     "s": "자동차 보험을 갱신했어요.",
+     "en": "I renewed my car insurance."
+    }
+   ]
+  },
+  {
+   "id": "kv06-77",
+   "t": {
+    "s": "음성"
+   },
+   "pos": "noun",
+   "en": "voice (recorded or digital)",
+   "note": "음성 메시지 = voice message; 음성 인식 = voice recognition.",
+   "ex": [
+    {
+     "s": "음성 메시지 남겨 주세요.",
+     "en": "Please leave a voice message."
+    },
+    {
+     "s": "음성으로 검색하면 편해요.",
+     "en": "Voice search is convenient."
+    },
+    {
+     "s": "이 앱은 음성 인식이 잘 돼요.",
+     "en": "This app's voice recognition works well."
+    }
+   ]
+  },
+  {
+   "id": "kv06-2",
+   "t": {
+    "s": "목록"
+   },
+   "pos": "noun",
+   "en": "list",
+   "note": "",
+   "ex": [
+    {
+     "s": "장 볼 목록을 만들었어요.",
+     "en": "I made a grocery list."
+    },
+    {
+     "s": "할 일 목록이 너무 길어요.",
+     "en": "My to-do list is too long."
+    },
+    {
+     "s": "이번 여행에서 갈 곳 목록이에요.",
+     "en": "This is the list of places to go on this trip."
+    }
+   ]
+  },
+  {
+   "id": "kv06-8",
+   "t": {
+    "s": "타입"
+   },
+   "pos": "noun",
+   "en": "type, someone's type",
+   "note": "Loanword from English 'type'. For 'my type' people also say 스타일 or 이상형 (ideal type).",
+   "ex": [
+    {
+     "s": "그 사람은 제 타입이 아니에요.",
+     "en": "He's not my type."
+    },
+    {
+     "s": "어떤 타입의 노트북을 찾으세요?",
+     "en": "What type of laptop are you looking for?"
+    },
+    {
+     "s": "C타입 충전기 있어요?",
+     "en": "Do you have a USB-C charger?"
+    }
+   ]
+  },
+  {
+   "id": "kv06-1",
+   "t": {
+    "s": "지우다"
+   },
+   "pos": "verb",
+   "en": "to erase, delete, remove",
+   "note": "",
+   "ex": [
+    {
+     "s": "사진을 실수로 지웠어요.",
+     "en": "I deleted the photo by mistake."
+    },
+    {
+     "s": "화장 지우고 바로 잘게요.",
+     "en": "I'll take off my makeup and go straight to bed."
+    },
+    {
+     "s": "칠판 좀 지워 줄래요?",
+     "en": "Could you erase the board?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "사진을",
+     "실수로",
+     "지웠어요"
+    ],
+    "alt": [
+     [
+      "실수로",
+      "사진을",
+      "지웠어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-6",
+   "t": {
+    "s": "가리키다"
+   },
+   "pos": "verb",
+   "en": "to point at, point to",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이가 강아지를 손으로 가리켰어요.",
+     "en": "The child pointed at the puppy."
+    },
+    {
+     "s": "시계가 벌써 열두 시를 가리키고 있어요.",
+     "en": "The clock already says twelve."
+    },
+    {
+     "s": "메뉴에서 이걸 가리키면서 주문했어요.",
+     "en": "I ordered by pointing at this on the menu."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이가",
+     "강아지를",
+     "손으로",
+     "가리켰어요"
+    ],
+    "alt": [
+     [
+      "아이가",
+      "손으로",
+      "강아지를",
+      "가리켰어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-13",
+   "t": {
+    "s": "지르다"
+   },
+   "pos": "verb",
+   "en": "to shout, yell (소리를 지르다)",
+   "note": "Irregular: 질러요. Also 불을 지르다 'set a fire'.",
+   "ex": [
+    {
+     "s": "아기가 갑자기 소리를 질렀어요.",
+     "en": "The baby suddenly screamed."
+    },
+    {
+     "s": "콘서트에서 너무 소리 질러서 목이 아파요.",
+     "en": "I yelled so much at the concert my throat hurts."
+    },
+    {
+     "s": "소리 지르지 말고 천천히 말해요.",
+     "en": "Don't shout, speak slowly."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아기가",
+     "갑자기",
+     "소리를",
+     "질렀어요"
+    ],
+    "alt": [
+     [
+      "갑자기",
+      "아기가",
+      "소리를",
+      "질렀어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-16",
+   "t": {
+    "s": "쥐"
+   },
+   "pos": "noun",
+   "en": "mouse, rat; (leg) cramp",
+   "note": "쥐가 나다 = to get a cramp.",
+   "ex": [
+    {
+     "s": "부엌에서 쥐를 봤어요!",
+     "en": "I saw a mouse in the kitchen!"
+    },
+    {
+     "s": "고양이가 쥐를 잡았어요.",
+     "en": "The cat caught a mouse."
+    },
+    {
+     "s": "수영하다가 다리에 쥐가 났어요.",
+     "en": "I got a cramp in my leg while swimming."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "부엌에서",
+     "쥐를",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "쥐를",
+      "부엌에서",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-17",
+   "t": {
+    "s": "일상"
+   },
+   "pos": "noun",
+   "en": "daily life, everyday routine",
+   "note": "",
+   "ex": [
+    {
+     "s": "요즘 일상이 너무 바빠요.",
+     "en": "My daily life is so busy lately."
+    },
+    {
+     "s": "여행 끝나고 다시 일상으로 돌아왔어요.",
+     "en": "After the trip, I went back to my routine."
+    },
+    {
+     "s": "인스타에 일상 사진을 올려요.",
+     "en": "I post everyday photos on Instagram."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "일상이",
+     "너무",
+     "바빠요"
+    ],
+    "alt": [
+     [
+      "일상이",
+      "요즘",
+      "너무",
+      "바빠요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-29",
+   "t": {
+    "s": "이틀"
+   },
+   "pos": "noun",
+   "en": "two days",
+   "note": "Native count: 하루, 이틀, 사흘.",
+   "ex": [
+    {
+     "s": "이틀 동안 비가 왔어요.",
+     "en": "It rained for two days."
+    },
+    {
+     "s": "감기 때문에 이틀 쉬었어요.",
+     "en": "I took two days off because of a cold."
+    },
+    {
+     "s": "배송은 이틀 정도 걸려요.",
+     "en": "Delivery takes about two days."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이틀",
+     "동안",
+     "비가",
+     "왔어요"
+    ],
+    "alt": [
+     [
+      "비가",
+      "이틀",
+      "동안",
+      "왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-38",
+   "t": {
+    "s": "식물"
+   },
+   "pos": "noun",
+   "en": "plant",
+   "note": "",
+   "ex": [
+    {
+     "s": "집에서 식물을 키워요.",
+     "en": "I grow plants at home."
+    },
+    {
+     "s": "식물에 물 줬어요?",
+     "en": "Did you water the plants?"
+    },
+    {
+     "s": "이 식물은 햇빛이 많이 필요해요.",
+     "en": "This plant needs a lot of sunlight."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "집에서",
+     "식물을",
+     "키워요"
+    ],
+    "alt": [
+     [
+      "식물을",
+      "집에서",
+      "키워요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-50",
+   "t": {
+    "s": "위험하다"
+   },
+   "pos": "adjective",
+   "en": "dangerous",
+   "note": "",
+   "ex": [
+    {
+     "s": "밤에 혼자 걸으면 위험해요.",
+     "en": "It's dangerous to walk alone at night."
+    },
+    {
+     "s": "운전하면서 문자 하면 위험해요.",
+     "en": "Texting while driving is dangerous."
+    },
+    {
+     "s": "이 길은 차가 많아서 위험해요.",
+     "en": "This road is dangerous because of all the cars."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "밤에",
+     "혼자",
+     "걸으면",
+     "위험해요"
+    ],
+    "alt": [
+     [
+      "혼자",
+      "밤에",
+      "걸으면",
+      "위험해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-65",
+   "t": {
+    "s": "보고서"
+   },
+   "pos": "noun",
+   "en": "report (written)",
+   "note": "",
+   "ex": [
+    {
+     "s": "금요일까지 보고서를 내야 해요.",
+     "en": "I have to submit the report by Friday."
+    },
+    {
+     "s": "보고서 다 썼어요?",
+     "en": "Did you finish writing the report?"
+    },
+    {
+     "s": "과학 숙제로 보고서를 썼어요.",
+     "en": "I wrote a report for science homework."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "금요일까지",
+     "보고서를",
+     "내야",
+     "해요"
+    ],
+    "alt": [
+     [
+      "보고서를",
+      "금요일까지",
+      "내야",
+      "해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-67",
+   "t": {
+    "s": "간만에"
+   },
+   "pos": "adverb",
+   "en": "after a long time, for once",
+   "note": "Casual; same as 오랜만에.",
+   "ex": [
+    {
+     "s": "간만에 친구들을 만났어요.",
+     "en": "I met my friends for the first time in a while."
+    },
+    {
+     "s": "간만에 날씨가 좋네요.",
+     "en": "The weather's nice for once."
+    },
+    {
+     "s": "간만에 집에서 요리했어요.",
+     "en": "I cooked at home for the first time in ages."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "간만에",
+     "친구들을",
+     "만났어요"
+    ],
+    "alt": [
+     [
+      "친구들을",
+      "간만에",
+      "만났어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-72",
+   "t": {
+    "s": "데리다"
+   },
+   "pos": "verb",
+   "en": "to take/bring (a person)",
+   "note": "Used as 데리고 가다/오다, 데리러 가다.",
+   "ex": [
+    {
+     "s": "아이를 학교에 데려다줬어요.",
+     "en": "I dropped my kid off at school."
+    },
+    {
+     "s": "공항에 데리러 갈게요.",
+     "en": "I'll come pick you up at the airport."
+    },
+    {
+     "s": "강아지를 데리고 산책했어요.",
+     "en": "I took the dog for a walk."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이를",
+     "학교에",
+     "데려다줬어요"
+    ],
+    "alt": [
+     [
+      "학교에",
+      "아이를",
+      "데려다줬어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-76",
+   "t": {
+    "s": "여행하다"
+   },
+   "pos": "verb",
+   "en": "to travel",
+   "note": "",
+   "ex": [
+    {
+     "s": "유럽을 한 달 동안 여행했어요.",
+     "en": "I traveled around Europe for a month."
+    },
+    {
+     "s": "혼자 여행하는 걸 좋아해요.",
+     "en": "I like traveling alone."
+    },
+    {
+     "s": "가족이랑 같이 여행하고 싶어요.",
+     "en": "I want to travel with my family."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "유럽을",
+     "한",
+     "달",
+     "동안",
+     "여행했어요"
+    ],
+    "alt": [
+     [
+      "한",
+      "달",
+      "동안",
+      "유럽을",
+      "여행했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-78",
+   "t": {
+    "s": "늘어나다"
+   },
+   "pos": "verb",
+   "en": "to increase, grow, stretch",
+   "note": "",
+   "ex": [
+    {
+     "s": "요즘 몸무게가 늘어났어요.",
+     "en": "I've put on weight lately."
+    },
+    {
+     "s": "가게에 손님이 많이 늘어났어요.",
+     "en": "The store's customers have really increased."
+    },
+    {
+     "s": "티셔츠 목이 늘어났어요.",
+     "en": "The neck of my T-shirt got stretched out."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "몸무게가",
+     "늘어났어요"
+    ],
+    "alt": [
+     [
+      "몸무게가",
+      "요즘",
+      "늘어났어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-81",
+   "t": {
+    "s": "심다"
+   },
+   "pos": "verb",
+   "en": "to plant",
+   "note": "",
+   "ex": [
+    {
+     "s": "마당에 나무를 심었어요.",
+     "en": "I planted a tree in the yard."
+    },
+    {
+     "s": "봄에 꽃을 심을 거예요.",
+     "en": "I'm going to plant flowers in spring."
+    },
+    {
+     "s": "아이랑 같이 토마토를 심었어요.",
+     "en": "I planted tomatoes with my kid."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "마당에",
+     "나무를",
+     "심었어요"
+    ],
+    "alt": [
+     [
+      "나무를",
+      "마당에",
+      "심었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-95",
+   "t": {
+    "s": "그치다"
+   },
+   "pos": "verb",
+   "en": "to stop (rain, crying)",
+   "note": "",
+   "ex": [
+    {
+     "s": "비가 그쳤어요.",
+     "en": "The rain stopped."
+    },
+    {
+     "s": "아기가 드디어 울음을 그쳤어요.",
+     "en": "The baby finally stopped crying."
+    },
+    {
+     "s": "눈이 그치면 나갈게요.",
+     "en": "I'll go out when the snow stops."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "아기가",
+     "드디어",
+     "울음을",
+     "그쳤어요"
+    ],
+    "alt": [
+     [
+      "드디어",
+      "아기가",
+      "울음을",
+      "그쳤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-97",
+   "t": {
+    "s": "월드컵"
+   },
+   "pos": "noun",
+   "en": "World Cup",
+   "note": "",
+   "ex": [
+    {
+     "s": "친구들이랑 치킨 먹으면서 월드컵 봤어요.",
+     "en": "I watched the World Cup with friends over chicken."
+    },
+    {
+     "s": "월드컵 때 거리에서 응원했어요.",
+     "en": "We cheered in the streets during the World Cup."
+    },
+    {
+     "s": "다음 월드컵은 어디서 해요?",
+     "en": "Where is the next World Cup?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "친구들이랑",
+     "치킨",
+     "먹으면서",
+     "월드컵",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "치킨",
+      "먹으면서",
+      "친구들이랑",
+      "월드컵",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv06-99",
+   "t": {
+    "s": "톤"
+   },
+   "pos": "noun",
+   "en": "tone (voice, color, skin)",
+   "note": "Loanword: 피부 톤 = skin tone; 목소리 톤 = tone of voice.",
+   "ex": [
+    {
+     "s": "목소리 톤이 좋아요.",
+     "en": "You have a nice tone of voice."
+    },
+    {
+     "s": "제 피부 톤에 맞는 색을 찾고 있어요.",
+     "en": "I'm looking for a shade that matches my skin tone."
+    },
+    {
+     "s": "벽 색깔은 밝은 톤으로 할래요.",
+     "en": "I want a light tone for the wall color."
+    }
+   ]
+  },
+  {
+   "id": "kv06-98",
+   "t": {
+    "s": "그곳"
+   },
+   "pos": "pronoun",
+   "en": "that place, there",
+   "note": "More written; in speech 거기 is usual.",
+   "ex": [
+    {
+     "s": "그곳은 꼭 다시 가고 싶어요.",
+     "en": "I really want to go back to that place."
+    },
+    {
+     "s": "그곳에서 남편을 처음 만났어요.",
+     "en": "That's where I first met my husband."
+    },
+    {
+     "s": "그곳 음식이 정말 맛있었어요.",
+     "en": "The food there was really good."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그곳은",
+     "꼭",
+     "다시",
+     "가고",
+     "싶어요"
+    ],
+    "alt": [
+     [
+      "그곳은",
+      "다시",
+      "꼭",
+      "가고",
+      "싶어요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],
