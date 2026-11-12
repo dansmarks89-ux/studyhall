@@ -27,6 +27,397 @@
      "hit": "lluvia"
     }
    ]
+  },
+  {
+   "id": "sv05-pared",
+   "w": "la pared",
+   "pos": "noun",
+   "en": "wall",
+   "note": "Feminine. A freestanding or boundary wall is often el muro or, in Mexico, la barda.",
+   "type": [
+    "la pared",
+    "pared"
+   ],
+   "ex": [
+    {
+     "es": "Vamos a pintar las paredes de blanco.",
+     "en": "We're going to paint the walls white.",
+     "hit": "paredes"
+    },
+    {
+     "es": "Cuelga el cuadro en esa pared.",
+     "en": "Hang the picture on that wall.",
+     "hit": "pared"
+    },
+    {
+     "es": "Se oye todo a través de la pared.",
+     "en": "You can hear everything through the wall.",
+     "hit": "pared"
+    }
+   ]
+  },
+  {
+   "id": "sv05-bolsa",
+   "w": "la bolsa",
+   "pos": "noun",
+   "en": "bag; purse",
+   "note": "In Mexico bolsa also means purse and often pocket (la bolsa del pantalón); elsewhere: el bolsillo.",
+   "type": [
+    "la bolsa",
+    "bolsa"
+   ],
+   "ex": [
+    {
+     "es": "¿Quiere una bolsa, señora?",
+     "en": "Would you like a bag, ma'am?",
+     "hit": "bolsa"
+    },
+    {
+     "es": "Dejé mis llaves en la bolsa.",
+     "en": "I left my keys in my purse.",
+     "hit": "bolsa"
+    },
+    {
+     "es": "Trae bolsas para el súper.",
+     "en": "Bring bags for the supermarket.",
+     "hit": "bolsas"
+    }
+   ]
+  },
+  {
+   "id": "sv05-extranjero",
+   "w": "extranjero",
+   "pos": "adjective",
+   "en": "foreign; foreigner; abroad (el extranjero)",
+   "note": "en el extranjero = abroad.",
+   "type": [
+    "extranjero",
+    "el extranjero",
+    "extranjera"
+   ],
+   "ex": [
+    {
+     "es": "Muchos turistas extranjeros visitan Oaxaca.",
+     "en": "Many foreign tourists visit Oaxaca.",
+     "hit": "extranjeros"
+    },
+    {
+     "es": "¿Aceptan tarjetas extranjeras aquí?",
+     "en": "Do you accept foreign cards here?",
+     "hit": "extranjeras"
+    },
+    {
+     "es": "Mi prima vive en el extranjero.",
+     "en": "My cousin lives abroad.",
+     "hit": "extranjero"
+    }
+   ]
+  },
+  {
+   "id": "sv05-ordenar",
+   "w": "ordenar",
+   "pos": "verb",
+   "en": "to order (food); to tidy up",
+   "note": "In Mexico ordenar is common for ordering food; pedir works too.",
+   "type": [
+    "ordenar"
+   ],
+   "ex": [
+    {
+     "es": "¿Ya están listos para ordenar?",
+     "en": "Are you ready to order?",
+     "hit": "ordenar"
+    },
+    {
+     "es": "Ordené una pizza para la cena.",
+     "en": "I ordered a pizza for dinner.",
+     "hit": "Ordené"
+    },
+    {
+     "es": "Tengo que ordenar mi cuarto hoy.",
+     "en": "I have to tidy up my room today.",
+     "hit": "ordenar"
+    }
+   ]
+  },
+  {
+   "id": "sv05-registrarse",
+   "w": "registrarse",
+   "pos": "verb",
+   "en": "to register, sign up; to check in",
+   "note": "registrarse en el hotel = to check in at the hotel.",
+   "type": [
+    "registrarse"
+   ],
+   "ex": [
+    {
+     "es": "Tienes que registrarte en la página primero.",
+     "en": "You have to sign up on the site first.",
+     "hit": "registrarte"
+    },
+    {
+     "es": "Nos registramos en el hotel a las tres.",
+     "en": "We checked in at the hotel at three.",
+     "hit": "registramos"
+    },
+    {
+     "es": "Me registré para la clase de yoga.",
+     "en": "I signed up for the yoga class.",
+     "hit": "registré"
+    }
+   ]
+  },
+  {
+   "id": "sv05-clasico",
+   "w": "clásico",
+   "pos": "adjective",
+   "en": "classic; classical",
+   "note": "música clásica = classical music.",
+   "type": [
+    "clásico",
+    "clásica"
+   ],
+   "ex": [
+    {
+     "es": "Me encantan las películas clásicas.",
+     "en": "I love classic movies.",
+     "hit": "clásicas"
+    },
+    {
+     "es": "Mi hija estudia música clásica en la escuela.",
+     "en": "My daughter studies classical music at school.",
+     "hit": "clásica"
+    },
+    {
+     "es": "Es un error clásico de principiante.",
+     "en": "It's a classic beginner's mistake.",
+     "hit": "clásico"
+    }
+   ]
+  },
+  {
+   "id": "sv05-oscuro",
+   "w": "oscuro",
+   "pos": "adjective",
+   "en": "dark",
+   "note": "",
+   "type": [
+    "oscuro",
+    "oscura"
+   ],
+   "ex": [
+    {
+     "es": "La calle está muy oscura de noche.",
+     "en": "The street is very dark at night.",
+     "hit": "oscura"
+    },
+    {
+     "es": "¿Tienes esta camisa en azul oscuro?",
+     "en": "Do you have this shirt in dark blue?",
+     "hit": "oscuro"
+    },
+    {
+     "es": "Ya está oscuro, mejor regresamos.",
+     "en": "It's already dark, we'd better go back.",
+     "hit": "oscuro"
+    }
+   ]
+  },
+  {
+   "id": "sv05-electrico",
+   "w": "eléctrico",
+   "pos": "adjective",
+   "en": "electric; electrical",
+   "note": "",
+   "type": [
+    "eléctrico",
+    "eléctrica"
+   ],
+   "ex": [
+    {
+     "es": "Mi vecino se compró un coche eléctrico.",
+     "en": "My neighbor bought an electric car.",
+     "hit": "eléctrico"
+    },
+    {
+     "es": "Hay un problema eléctrico en la cocina.",
+     "en": "There's an electrical problem in the kitchen.",
+     "hit": "eléctrico"
+    },
+    {
+     "es": "Uso un cepillo de dientes eléctrico.",
+     "en": "I use an electric toothbrush.",
+     "hit": "eléctrico"
+    }
+   ]
+  },
+  {
+   "id": "sv05-peligroso",
+   "w": "peligroso",
+   "pos": "adjective",
+   "en": "dangerous",
+   "note": "",
+   "type": [
+    "peligroso",
+    "peligrosa"
+   ],
+   "ex": [
+    {
+     "es": "Esa carretera es peligrosa de noche.",
+     "en": "That highway is dangerous at night.",
+     "hit": "peligrosa"
+    },
+    {
+     "es": "Es peligroso nadar aquí.",
+     "en": "It's dangerous to swim here.",
+     "hit": "peligroso"
+    },
+    {
+     "es": "Manejar con el teléfono es muy peligroso.",
+     "en": "Driving while on your phone is very dangerous.",
+     "hit": "peligroso"
+    }
+   ]
+  },
+  {
+   "id": "sv05-deportivo",
+   "w": "deportivo",
+   "pos": "adjective",
+   "en": "sports; sporty",
+   "note": "ropa deportiva = workout clothes; coche deportivo = sports car.",
+   "type": [
+    "deportivo",
+    "deportiva"
+   ],
+   "ex": [
+    {
+     "es": "Necesito ropa deportiva para el gimnasio.",
+     "en": "I need workout clothes for the gym.",
+     "hit": "deportiva"
+    },
+    {
+     "es": "Mi hermano siempre quiso un coche deportivo.",
+     "en": "My brother always wanted a sports car.",
+     "hit": "deportivo"
+    },
+    {
+     "es": "Hay un centro deportivo cerca de la casa.",
+     "en": "There's a sports center near the house.",
+     "hit": "deportivo"
+    }
+   ]
+  },
+  {
+   "id": "sv05-especifico",
+   "w": "específico",
+   "pos": "adjective",
+   "en": "specific",
+   "note": "",
+   "type": [
+    "específico",
+    "específica"
+   ],
+   "ex": [
+    {
+     "es": "¿Busca algo específico, señora?",
+     "en": "Are you looking for something specific, ma'am?",
+     "hit": "específico"
+    },
+    {
+     "es": "El doctor me dio instrucciones muy específicas.",
+     "en": "The doctor gave me very specific instructions.",
+     "hit": "específicas"
+    },
+    {
+     "es": "No tengo un día específico, cualquier día está bien.",
+     "en": "I don't have a specific day, any day is fine.",
+     "hit": "específico"
+    }
+   ]
+  },
+  {
+   "id": "sv05-cientifico",
+   "w": "científico",
+   "pos": "adjective",
+   "en": "scientific; scientist",
+   "note": "As a noun: el científico / la científica = scientist.",
+   "type": [
+    "científico",
+    "científica"
+   ],
+   "ex": [
+    {
+     "es": "No hay prueba científica de eso.",
+     "en": "There's no scientific proof of that.",
+     "hit": "científica"
+    },
+    {
+     "es": "Leí un artículo científico sobre el sueño.",
+     "en": "I read a scientific article about sleep.",
+     "hit": "científico"
+    },
+    {
+     "es": "Mi hija quiere ser científica.",
+     "en": "My daughter wants to be a scientist.",
+     "hit": "científica"
+    }
+   ]
+  },
+  {
+   "id": "sv05-universitario",
+   "w": "universitario",
+   "pos": "adjective",
+   "en": "university, college; college student",
+   "note": "As a noun: un universitario = a college student.",
+   "type": [
+    "universitario",
+    "universitaria"
+   ],
+   "ex": [
+    {
+     "es": "Mi hermano todavía es estudiante universitario.",
+     "en": "My brother is still a college student.",
+     "hit": "universitario"
+    },
+    {
+     "es": "La vida universitaria fue muy divertida.",
+     "en": "College life was a lot of fun.",
+     "hit": "universitaria"
+    },
+    {
+     "es": "Ese equipo universitario es muy bueno.",
+     "en": "That college team is very good.",
+     "hit": "universitario"
+    }
+   ]
+  },
+  {
+   "id": "sv05-escrito",
+   "w": "escrito",
+   "pos": "adjective",
+   "en": "written",
+   "note": "por escrito = in writing.",
+   "type": [
+    "escrito",
+    "escrita"
+   ],
+   "ex": [
+    {
+     "es": "Mañana tengo un examen escrito.",
+     "en": "Tomorrow I have a written test.",
+     "hit": "escrito"
+    },
+    {
+     "es": "Necesito la oferta por escrito.",
+     "en": "I need the offer in writing.",
+     "hit": "escrito"
+    },
+    {
+     "es": "Las instrucciones están escritas en inglés.",
+     "en": "The instructions are written in English.",
+     "hit": "escritas"
+    }
+   ]
   }
  ],
  "drop": [],

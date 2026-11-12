@@ -7,8 +7,7 @@
    "en": "hundred (101–199); per cent (por ciento)",
    "note": "Cien alone, before nouns, and before mil (cien mil); ciento before smaller numbers (ciento cinco).",
    "type": [
-    "ciento",
-    "cien"
+    "ciento"
    ],
    "ex": [
     {
@@ -189,6 +188,321 @@
      "es": "Mi hijo resolvió el problema de matemáticas solo.",
      "en": "My son solved the math problem by himself.",
      "hit": "resolvió"
+    }
+   ]
+  },
+  {
+   "id": "sv03-extrano",
+   "w": "extraño",
+   "pos": "adjective",
+   "en": "strange, weird",
+   "note": "Raro is more common in speech for 'weird'.",
+   "type": [
+    "extraño",
+    "raro",
+    "extraña",
+    "rara"
+   ],
+   "ex": [
+    {
+     "es": "¡Qué extraño! La tienda está cerrada hoy.",
+     "en": "How strange! The store is closed today.",
+     "hit": "extraño"
+    },
+    {
+     "es": "Mi teléfono hace un ruido extraño.",
+     "en": "My phone is making a strange noise.",
+     "hit": "extraño"
+    },
+    {
+     "es": "Me siento un poco extraño en la casa nueva.",
+     "en": "I feel a little strange in the new house.",
+     "hit": "extraño"
+    }
+   ]
+  },
+  {
+   "id": "sv03-bonito",
+   "w": "bonito",
+   "pos": "adjective",
+   "en": "pretty, nice",
+   "note": "",
+   "type": [
+    "bonito",
+    "lindo",
+    "bonita",
+    "linda"
+   ],
+   "ex": [
+    {
+     "es": "¡Qué bonito está el día!",
+     "en": "What a nice day it is!",
+     "hit": "bonito"
+    },
+    {
+     "es": "Tienes una casa muy bonita.",
+     "en": "You have a very pretty house.",
+     "hit": "bonita"
+    },
+    {
+     "es": "Me regalaron un reloj muy bonito.",
+     "en": "They gave me a really nice watch.",
+     "hit": "bonito"
+    }
+   ]
+  },
+  {
+   "id": "sv03-frances",
+   "w": "francés",
+   "pos": "adjective",
+   "en": "French; French (language)",
+   "note": "Feminine: francesa (no accent). El francés = the French language.",
+   "type": [
+    "francés",
+    "francesa"
+   ],
+   "ex": [
+    {
+     "es": "Vamos a cenar en un restaurante francés.",
+     "en": "We're going to have dinner at a French restaurant.",
+     "hit": "francés"
+    },
+    {
+     "es": "Mi vecino es francés y cocina increíble.",
+     "en": "My neighbor is French and cooks amazingly.",
+     "hit": "francés"
+    },
+    {
+     "es": "Estoy tomando clases de francés en línea.",
+     "en": "I'm taking French classes online.",
+     "hit": "francés"
+    }
+   ]
+  },
+  {
+   "id": "sv03-corto",
+   "w": "corto",
+   "pos": "adjective",
+   "en": "short (length, time)",
+   "note": "For a person's height use bajo: Diego es bajo.",
+   "type": [
+    "corto",
+    "corta"
+   ],
+   "ex": [
+    {
+     "es": "Fue un viaje corto pero muy bonito.",
+     "en": "It was a short but really nice trip.",
+     "hit": "corto"
+    },
+    {
+     "es": "La película es corta, dura una hora.",
+     "en": "The movie is short, it lasts an hour.",
+     "hit": "corta"
+    },
+    {
+     "es": "Me corté el pelo muy corto.",
+     "en": "I cut my hair really short.",
+     "hit": "corto"
+    }
+   ]
+  },
+  {
+   "id": "sv03-fisico",
+   "w": "físico",
+   "pos": "adjective",
+   "en": "physical",
+   "note": "Feminine: física. El físico = someone's looks or build.",
+   "type": [
+    "físico",
+    "física"
+   ],
+   "ex": [
+    {
+     "es": "Mi trabajo es muy físico.",
+     "en": "My job is very physical.",
+     "hit": "físico"
+    },
+    {
+     "es": "El doctor me hizo un examen físico.",
+     "en": "The doctor gave me a physical exam.",
+     "hit": "físico"
+    },
+    {
+     "es": "Prefiero un libro físico, no digital.",
+     "en": "I prefer a physical book, not a digital one.",
+     "hit": "físico"
+    }
+   ]
+  },
+  {
+   "id": "sv03-lindo",
+   "w": "lindo",
+   "pos": "adjective",
+   "en": "pretty, nice, cute; sweet",
+   "note": "Very common in Latin America; also means kind or sweet.",
+   "type": [
+    "lindo",
+    "bonito",
+    "linda",
+    "bonita"
+   ],
+   "ex": [
+    {
+     "es": "¡Qué vestido tan lindo!",
+     "en": "What a pretty dress!",
+     "hit": "lindo"
+    },
+    {
+     "es": "Hace un día muy lindo hoy.",
+     "en": "It's a really nice day today.",
+     "hit": "lindo"
+    },
+    {
+     "es": "Gracias por la ayuda, eres muy linda.",
+     "en": "Thanks for the help, you're very sweet.",
+     "hit": "linda"
+    }
+   ]
+  },
+  {
+   "id": "sv03-falso",
+   "w": "falso",
+   "pos": "adjective",
+   "en": "false; fake",
+   "note": "",
+   "type": [
+    "falso",
+    "falsa"
+   ],
+   "ex": [
+    {
+     "es": "Eso es falso, yo no dije eso.",
+     "en": "That's false, I didn't say that.",
+     "hit": "falso"
+    },
+    {
+     "es": "Creo que ese billete es falso.",
+     "en": "I think that bill is fake.",
+     "hit": "falso"
+    },
+    {
+     "es": "Tranquilo, fue una falsa alarma.",
+     "en": "Relax, it was a false alarm.",
+     "hit": "falsa"
+    }
+   ]
+  },
+  {
+   "id": "sv03-distinto",
+   "w": "distinto",
+   "pos": "adjective",
+   "en": "different",
+   "note": "",
+   "type": [
+    "distinto",
+    "diferente",
+    "distinta"
+   ],
+   "ex": [
+    {
+     "es": "Mi hermano y yo somos muy distintos.",
+     "en": "My brother and I are very different.",
+     "hit": "distintos"
+    },
+    {
+     "es": "Hoy te ves distinta, ¿te cortaste el pelo?",
+     "en": "You look different today, did you cut your hair?",
+     "hit": "distinta"
+    },
+    {
+     "es": "Quiero probar algo distinto del menú.",
+     "en": "I want to try something different from the menu.",
+     "hit": "distinto"
+    }
+   ]
+  },
+  {
+   "id": "sv03-correcto",
+   "w": "correcto",
+   "pos": "adjective",
+   "en": "correct, right",
+   "note": "",
+   "type": [
+    "correcto",
+    "correcta"
+   ],
+   "ex": [
+    {
+     "es": "¿Es la dirección correcta?",
+     "en": "Is this the right address?",
+     "hit": "correcta"
+    },
+    {
+     "es": "Sí, correcto, nos vemos a las ocho.",
+     "en": "Yes, that's right, see you at eight.",
+     "hit": "correcto"
+    },
+    {
+     "es": "Lo correcto es pedir perdón.",
+     "en": "The right thing is to apologize.",
+     "hit": "correcto"
+    }
+   ]
+  },
+  {
+   "id": "sv03-famoso",
+   "w": "famoso",
+   "pos": "adjective",
+   "en": "famous",
+   "note": "",
+   "type": [
+    "famoso",
+    "famosa"
+   ],
+   "ex": [
+    {
+     "es": "Este restaurante es famoso por sus tacos.",
+     "en": "This restaurant is famous for its tacos.",
+     "hit": "famoso"
+    },
+    {
+     "es": "Su papá es un cantante famoso.",
+     "en": "His dad is a famous singer.",
+     "hit": "famoso"
+    },
+    {
+     "es": "Vimos a una actriz famosa en el aeropuerto.",
+     "en": "We saw a famous actress at the airport.",
+     "hit": "famosa"
+    }
+   ]
+  },
+  {
+   "id": "sv03-unido",
+   "w": "unido",
+   "pos": "adjective",
+   "en": "united; close (family, friends)",
+   "note": "Estados Unidos = United States.",
+   "type": [
+    "unido",
+    "unida"
+   ],
+   "ex": [
+    {
+     "es": "Somos una familia muy unida.",
+     "en": "We're a very close family.",
+     "hit": "unida"
+    },
+    {
+     "es": "Ana y Mei son muy unidas.",
+     "en": "Ana and Mei are very close.",
+     "hit": "unidas"
+    },
+    {
+     "es": "El equipo está muy unido este año.",
+     "en": "The team is very united this year.",
+     "hit": "unido"
     }
    ]
   }

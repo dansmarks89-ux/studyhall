@@ -14,6 +14,14 @@
      "Conditional",
      "Present subjunctive"
     ]
+   },
+   "10": {
+    "t": "ir a",
+    "p": 2,
+    "k": "q",
+    "es": "¿La cicatriz va a desaparecer con el tiempo?",
+    "en": "Is the scar going to go away with time?",
+    "f": "va a desaparecer"
    }
   }
  },
@@ -109,6 +117,35 @@
      "Conditional",
      "Present subjunctive"
     ]
+   },
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Pasee un poco por el pasillo varias veces al día.",
+    "en": "Walk around the hallway a little several times a day.",
+    "f": "Pasee"
+   },
+   "22": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Ya habían paseado por el centro antes de la cena?",
+    "en": "Had you all already walked around downtown before dinner?",
+    "f": "habían paseado"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todas las mañanas paseo al perro antes del trabajo.",
+    "en": "Every morning I walk the dog before work.",
+    "f": "paseo",
+    "clue": "Todas las mañanas",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -125,6 +162,19 @@
     "wrong": [
      "Future",
      "Conditional",
+     "Present subjunctive"
+    ]
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Casi todas las noches sueño con exámenes.",
+    "en": "Almost every night I dream about exams.",
+    "f": "sueño",
+    "clue": "Casi todas las noches",
+    "wrong": [
+     "Future",
      "Present subjunctive"
     ]
    }
@@ -193,6 +243,14 @@
     "es": "¿Su hijo ya le había confiado sus problemas antes?",
     "en": "Had your son confided his problems to you before?",
     "f": "había confiado"
+   },
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Van a confiar en la nueva niñera?",
+    "en": "Are you all going to trust the new babysitter?",
+    "f": "Van a confiar"
    }
   }
  },
@@ -205,6 +263,14 @@
     "es": "No le vamos a negar la ayuda a nadie.",
     "en": "We're not going to refuse anyone help.",
     "f": "vamos a negar"
+   },
+   "33": {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "obj",
+    "es": "¿Le han negado la incapacidad en su trabajo?",
+    "en": "Have they denied you medical leave at work?",
+    "f": "Le han negado"
    }
   }
  },
@@ -231,6 +297,129 @@
     "es": "Te lo prohíbo, ¿me oíste?",
     "en": "I forbid you to do it, do you hear me?",
     "f": "Te lo prohíbo"
+   }
+  },
+  "set": {
+   "uses": [
+    {
+     "es": "prohibirle a alguien + infinitive",
+     "en": "to forbid someone to",
+     "x": "Mi doctor me prohibió fumar.",
+     "xen": "My doctor forbade me to smoke."
+    },
+    {
+     "es": "prohibir que + subjunctive",
+     "en": "not to let someone do",
+     "x": "Mi mamá prohíbe que comamos en la sala.",
+     "xen": "My mom doesn't let us eat in the living room."
+    },
+    {
+     "es": "prohibido + infinitive (signs)",
+     "en": "no …ing",
+     "x": "Prohibido fumar.",
+     "xen": "No smoking."
+    }
+   ]
+  }
+ },
+ "sugerir": {
+  "s": {
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Qué van a sugerir para la fiesta de fin de año?",
+    "en": "What are you all going to suggest for the year-end party?",
+    "f": "van a sugerir"
+   },
+   "0": {
+    "t": "Present",
+    "p": 4,
+    "k": "stmt",
+    "es": "Normalmente los cardiólogos sugieren caminar media hora al día.",
+    "en": "Cardiologists normally suggest walking half an hour a day.",
+    "f": "sugieren",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "permitir": {
+  "s": {
+   "12": {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Dentro de unas semanas, la rodilla le permitirá correr otra vez.",
+    "en": "In a few weeks, your knee will let you run again.",
+    "f": "permitirá",
+    "clue": "Dentro de unas semanas",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Pluperfect"
+    ]
+   },
+   "1": {
+    "t": "Present",
+    "p": 4,
+    "k": "q",
+    "es": "¿En tu empresa te permiten trabajar desde casa?",
+    "en": "At your company, do they let you work from home?",
+    "f": "permiten"
+   }
+  }
+ },
+ "aconsejar": {
+  "s": {
+   "5": {
+    "t": "Preterite",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis papás no me aconsejaron nada sobre el dinero.",
+    "en": "My parents didn't advise me at all about money.",
+    "f": "aconsejaron"
+   },
+   "14": {
+    "t": "Future",
+    "p": 0,
+    "k": "neg",
+    "es": "No te aconsejaré nada sin saber toda la historia.",
+    "en": "I won't advise you on anything without knowing the whole story.",
+    "f": "aconsejaré"
+   },
+   "25": {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Quieres que te aconseje o que solo te escuche?",
+    "en": "Do you want me to advise you or just listen?",
+    "f": "aconseje"
+   },
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Mi amiga me pidió que la aconsejara sobre su boda.",
+    "en": "My friend asked me to advise her about her wedding.",
+    "f": "aconsejara",
+    "clue": "me pidió que",
+    "wrong": [
+     "Present",
+     "Future",
+     "Conditional"
+    ]
+   },
+   "19": {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Le han aconsejado hacer más ejercicio?",
+    "en": "Have they advised you to exercise more?",
+    "f": "han aconsejado"
    }
   }
  }

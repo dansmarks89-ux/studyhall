@@ -29,16 +29,16 @@
    "p": "For warning signs that may really happen, use *si* + present indicative, then a command or the present/future. Never use the present subjunctive after *si*.",
    "ex": [
     [
-     "Si le sangra la ingle, apriete fuerte y llame al 911.",
-     "If your groin bleeds, press hard and call 911."
+     "Si le sangra la ingle, acuéstese y apriete fuerte. Si no para de sangrar, llame al 911.",
+     "If your groin bleeds, lie down and press hard. If it doesn't stop bleeding, call 911."
     ],
     [
      "Si la herida se pone roja o caliente, llámenos.",
      "If the wound gets red or warm, call us."
     ],
     [
-     "Si tiene dolor de pecho, vaya a emergencias.",
-     "If you have chest pain, go to the emergency room."
+     "Si no puede comunicarse con la clínica, vaya a emergencias.",
+     "If you can't reach the clinic, go to the emergency room."
     ]
    ]
   },
@@ -62,7 +62,7 @@
   },
   {
    "h": "Reported instructions and como si",
-   "p": "When the trigger verb is in the past (*me dijo que*, *me pidió que*), the subjunctive moves to the imperfect subjunctive: *La enfermera me dijo que llamara si tenía fiebre.* *Como si* always takes the imperfect subjunctive: *Siento como si el corazón me latiera muy rápido.*",
+   "p": "When the trigger verb is in the past (*me dijo que*, *me pidió que*), the subjunctive moves to the imperfect subjunctive: *La enfermera me dijo que llamara si tenía fiebre.* *Como si* takes the imperfect subjunctive (or the pluperfect subjunctive, *como si hubiera…*, for an earlier action), never the present: *Siento como si el corazón me latiera muy rápido.*",
    "ex": [
     [
      "El doctor me dijo que no manejara.",
@@ -281,8 +281,8 @@
    "Don't raise your arm above your shoulder."
   ],
   [
-   "Si le sangra la ingle, apriete fuerte y llame al 911.",
-   "If your groin bleeds, press hard and call 911."
+   "Si le sangra la ingle, acuéstese y apriete fuerte. Si no para de sangrar, llame al 911.",
+   "If your groin bleeds, lie down and press hard. If it doesn't stop bleeding, call 911."
   ],
   [
    "Si tiene dolor de pecho o falta de aire, llame al 911.",
@@ -342,8 +342,8 @@
   {
    "id": "M8-mc-02",
    "t": "mc",
-   "q": "Si le sangra la ingle, ___ fuerte con la mano y llame al 911.",
-   "qen": "If your groin bleeds, press hard with your hand and call 911.",
+   "q": "Si le sangra la ingle, acuéstese y ___ fuerte con la mano. Si no para de sangrar, llame al 911.",
+   "qen": "If your groin bleeds, lie down and press hard with your hand. If it doesn't stop bleeding, call 911.",
    "opts": [
     "aprieta",
     "apriete",
@@ -356,7 +356,7 @@
   {
    "id": "M8-mc-03",
    "t": "mc",
-   "q": "After an ablation, which symptom means call 911 / go to the ER right away?",
+   "q": "After an ablation, which symptom means call 911 right away?",
    "opts": [
     "un moretón pequeño en la ingle",
     "un poco de cansancio",
@@ -539,7 +539,7 @@
     "lata"
    ],
    "a": 1,
-   "why": "*Como si* always takes the imperfect subjunctive → *latiera*."
+   "why": "*Como si* takes the imperfect subjunctive here (never the present) → *latiera*."
   },
   {
    "id": "M8-mc-17",
@@ -610,8 +610,8 @@
   {
    "id": "M8-fill-02",
    "t": "fill",
-   "q": "Si le sangra la ingle, ___ fuerte y llame al 911.",
-   "en": "If your groin bleeds, press hard and call 911.",
+   "q": "Si le sangra la ingle, acuéstese y ___ fuerte. Si no para de sangrar, llame al 911.",
+   "en": "If your groin bleeds, lie down and press hard. If it doesn't stop bleeding, call 911.",
    "hint": "apretar (usted command)",
    "a": [
     "apriete"
@@ -701,8 +701,8 @@
   {
    "id": "M8-fill-10",
    "t": "fill",
-   "q": "Si tiene dolor de pecho, vaya a la sala de ___.",
-   "en": "If you have chest pain, go to the emergency room.",
+   "q": "Si no puede comunicarse con la clínica, vaya a la sala de ___.",
+   "en": "If you can't reach the clinic, go to the emergency room.",
    "hint": "emergency room",
    "a": [
     "emergencias",
@@ -839,14 +839,16 @@
   {
    "id": "M8-tiles-02",
    "t": "tiles",
-   "en": "If your groin bleeds, press hard and call 911.",
-   "a": "Si le sangra la ingle, apriete fuerte y llame al 911.",
+   "en": "If your groin bleeds, lie down and press hard.",
+   "a": "Si le sangra la ingle, acuéstese y apriete fuerte.",
    "alt": [
-    "Apriete fuerte y llame al 911 si le sangra la ingle."
+    "Acuéstese y apriete fuerte si le sangra la ingle.",
+    "Si la ingle le sangra, acuéstese y apriete fuerte.",
+    "Acuéstese y apriete fuerte si la ingle le sangra."
    ],
    "extra": [
     "aprieta",
-    "llamó"
+    "acuéstate"
    ]
   },
   {
@@ -880,14 +882,14 @@
   {
    "id": "M8-tiles-05",
    "t": "tiles",
-   "en": "Go to the emergency room if you have chest pain.",
-   "a": "Vaya a emergencias si tiene dolor de pecho.",
+   "en": "Go to the emergency room if you can't reach the clinic.",
+   "a": "Vaya a emergencias si no puede comunicarse con la clínica.",
    "alt": [
-    "Si tiene dolor de pecho, vaya a emergencias."
+    "Si no puede comunicarse con la clínica, vaya a emergencias."
    ],
    "extra": [
-    "va",
-    "tenga"
+    "ve",
+    "pueda"
    ]
   },
   {
@@ -920,7 +922,9 @@
    "en": "Don't drive until your doctor tells you.",
    "a": "No maneje hasta que su médico le diga.",
    "alt": [
-    "Hasta que su médico le diga, no maneje."
+    "Hasta que su médico le diga, no maneje.",
+    "No maneje hasta que le diga su médico.",
+    "Hasta que le diga su médico, no maneje."
    ],
    "extra": [
     "dice",
@@ -1179,11 +1183,11 @@
      "you": true,
      "opts": [
       "Si le sangra, póngase hielo y espere a su cita.",
-      "Si le sangra, apriete fuerte con la mano y llame al 911.",
+      "Si le sangra, acuéstese y apriete fuerte con la mano. Si no para de sangrar, llame al 911.",
       "Si le sangrara, no haría nada."
      ],
      "a": 1,
-     "why": "Groin bleeding: firm pressure and call 911. *Si* + present + commands for a real possibility."
+     "why": "Groin bleeding: lie down and press hard; if it doesn't stop, call 911. *Si* + present + commands for a real possibility."
     },
     {
      "who": "Paciente",
@@ -1414,7 +1418,7 @@
      "you": true,
      "opts": [
       "Nada; ya no hay ningún riesgo.",
-      "Si a él le sangra la ingle, apriete fuerte encima y llame al 911. Si él tiene dolor de pecho, falta de aire, se desmaya o se le cae un lado de la cara, también llame al 911.",
+      "Si a él le sangra la ingle, acuéstelo y apriete fuerte encima; si no para de sangrar, llame al 911. Si él tiene dolor de pecho, falta de aire, se desmaya o se le cae un lado de la cara, también llame al 911.",
       "Si le sangraba la ingle, llamaba al 911."
      ],
      "a": 1,
@@ -1446,7 +1450,7 @@
    "opening": "Buenos días, doctor. Ya me quiero ir a mi casa. ¿Qué tengo que hacer?",
    "goals": [
     "Explain groin care: showering vs no tub or pool for a few days, no heavy lifting or straining for a few days",
-    "Explain what to do if the groin bleeds (press hard, call 911) and the other emergency signs",
+    "Explain what to do if the groin bleeds (lie down and press hard; call 911 if it does not stop) and the other emergency signs",
     "Find out that she plans to stop her blood thinner and tell her to keep taking it unless her doctor tells her otherwise",
     "Give generic return-to-work and follow-up plans without specific numbers",
     "Use teach-back and correct her mistake about groin bleeding"

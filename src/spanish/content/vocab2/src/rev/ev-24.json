@@ -34,7 +34,8 @@
    "en": "seventh",
    "note": "",
    "type": [
-    "séptimo"
+    "séptimo",
+    "séptima"
    ],
    "ex": [
     {
@@ -106,6 +107,423 @@
      "es": "Los gatos son menos dependientes que los perros.",
      "en": "Cats are less dependent than dogs.",
      "hit": "dependientes"
+    }
+   ]
+  },
+  {
+   "id": "sv13-comparado",
+   "w": "comparado",
+   "pos": "adjective",
+   "en": "compared (to)",
+   "note": "Usually 'comparado con'; agrees with the noun: comparada, comparados.",
+   "type": [
+    "comparado",
+    "comparada"
+   ],
+   "ex": [
+    {
+     "es": "Comparado con Chicago, aquí casi no hace frío.",
+     "en": "Compared to Chicago, it's hardly cold here.",
+     "hit": "Comparado"
+    },
+    {
+     "es": "Este celular es barato comparado con el otro.",
+     "en": "This phone is cheap compared to the other one.",
+     "hit": "comparado"
+    },
+    {
+     "es": "Comparada con mi hermana, yo cocino muy poco.",
+     "en": "Compared to my sister, I cook very little.",
+     "hit": "Comparada"
+    }
+   ]
+  },
+  {
+   "id": "sv13-roto",
+   "w": "roto",
+   "pos": "adjective",
+   "en": "broken; torn",
+   "note": "Irregular participle of romper. For a machine that stops working, Mexico says 'descompuesto'.",
+   "type": [
+    "roto",
+    "rota"
+   ],
+   "ex": [
+    {
+     "es": "Cuidado, ese vaso está roto.",
+     "en": "Careful, that glass is broken.",
+     "hit": "roto"
+    },
+    {
+     "es": "No puedo leer tu mensaje; tengo la pantalla rota.",
+     "en": "I can't read your message; my screen is cracked.",
+     "hit": "rota"
+    },
+    {
+     "es": "Diego llevaba unos pantalones rotos en la rodilla.",
+     "en": "Diego was wearing pants torn at the knee.",
+     "hit": "rotos"
+    }
+   ]
+  },
+  {
+   "id": "sv13-generoso",
+   "w": "generoso",
+   "pos": "adjective",
+   "en": "generous",
+   "note": "",
+   "type": [
+    "generoso",
+    "generosa"
+   ],
+   "ex": [
+    {
+     "es": "Mi tío es muy generoso con sus sobrinos.",
+     "en": "My uncle is very generous with his nieces and nephews.",
+     "hit": "generoso"
+    },
+    {
+     "es": "Nos dieron un descuento generoso por ser clientes frecuentes.",
+     "en": "They gave us a generous discount for being regular customers.",
+     "hit": "generoso"
+    },
+    {
+     "es": "Fue muy generoso de tu parte ayudarme con la mudanza.",
+     "en": "It was very generous of you to help me with the move.",
+     "hit": "generoso"
+    }
+   ]
+  },
+  {
+   "id": "sv13-flaco",
+   "w": "flaco",
+   "pos": "adjective",
+   "en": "skinny; thin",
+   "note": "Feminine flaca. Informal; 'delgado' is more polite. Also used as an affectionate nickname.",
+   "type": [
+    "flaco",
+    "flaca"
+   ],
+   "ex": [
+    {
+     "es": "Estás muy flaco; ¿estás comiendo bien?",
+     "en": "You're really skinny; are you eating well?",
+     "hit": "flaco"
+    },
+    {
+     "es": "Mi perro está flaco porque no quiere comer.",
+     "en": "My dog is thin because he won't eat.",
+     "hit": "flaco"
+    },
+    {
+     "es": "Esos pantalones son para gente muy flaca.",
+     "en": "Those pants are for really skinny people.",
+     "hit": "flaca"
+    }
+   ]
+  },
+  {
+   "id": "sv13-solidario",
+   "w": "solidario",
+   "pos": "adjective",
+   "en": "supportive; caring toward others",
+   "note": "Feminine solidaria. Describes people who help others in need; no exact English equivalent.",
+   "type": [
+    "solidario",
+    "solidaria"
+   ],
+   "ex": [
+    {
+     "es": "Mis vecinos fueron muy solidarios después del incendio.",
+     "en": "My neighbors were very supportive after the fire.",
+     "hit": "solidarios"
+    },
+    {
+     "es": "Ji-woo es una persona muy solidaria.",
+     "en": "Ji-woo is a very caring person.",
+     "hit": "solidaria"
+    },
+    {
+     "es": "Hay que ser solidario con los compañeros nuevos.",
+     "en": "You have to be supportive of new coworkers.",
+     "hit": "solidario"
+    }
+   ]
+  },
+  {
+   "id": "sv13-millonario",
+   "w": "millonario",
+   "pos": "adjective",
+   "en": "millionaire; worth millions",
+   "note": "Also a noun: el millonario.",
+   "type": [
+    "millonario",
+    "millonaria"
+   ],
+   "ex": [
+    {
+     "es": "Si fuera millonario, compraría una casa en la playa.",
+     "en": "If I were a millionaire, I'd buy a house on the beach.",
+     "hit": "millonario"
+    },
+    {
+     "es": "El equipo firmó un contrato millonario con el jugador.",
+     "en": "The team signed a multimillion-dollar contract with the player.",
+     "hit": "millonario"
+    },
+    {
+     "es": "Mi vecino se hizo millonario con su negocio.",
+     "en": "My neighbor became a millionaire with his business.",
+     "hit": "millonario"
+    }
+   ]
+  },
+  {
+   "id": "sv13-decidido",
+   "w": "decidido",
+   "pos": "adjective",
+   "en": "determined; decided",
+   "note": "Feminine decidida. 'Estar decidido a' = to be determined to.",
+   "type": [
+    "decidido",
+    "decidida"
+   ],
+   "ex": [
+    {
+     "es": "Estoy decidido a aprender español este año.",
+     "en": "I'm determined to learn Spanish this year.",
+     "hit": "decidido"
+    },
+    {
+     "es": "Mi hija es muy decidida; sabe lo que quiere.",
+     "en": "My daughter is very determined; she knows what she wants.",
+     "hit": "decidida"
+    },
+    {
+     "es": "Ya está decidido: nos vamos a Cancún.",
+     "en": "It's decided: we're going to Cancún.",
+     "hit": "decidido"
+    }
+   ]
+  },
+  {
+   "id": "sv13-clinico",
+   "w": "clínico",
+   "pos": "adjective",
+   "en": "clinical; medical",
+   "note": "'Análisis clínicos' = lab tests; 'expediente clínico' = medical record (Mexico).",
+   "type": [
+    "clínico",
+    "clínica"
+   ],
+   "ex": [
+    {
+     "es": "Tengo que hacerme unos análisis clínicos.",
+     "en": "I have to get some lab tests done.",
+     "hit": "clínicos"
+    },
+    {
+     "es": "Mi esposa trabaja en un laboratorio clínico.",
+     "en": "My wife works in a medical lab.",
+     "hit": "clínico"
+    },
+    {
+     "es": "Pide tu expediente clínico en la recepción.",
+     "en": "Ask for your medical record at the front desk.",
+     "hit": "clínico"
+    }
+   ]
+  },
+  {
+   "id": "sv13-metalico",
+   "w": "metálico",
+   "pos": "adjective",
+   "en": "metallic; metal",
+   "note": "",
+   "type": [
+    "metálico",
+    "metálica"
+   ],
+   "ex": [
+    {
+     "es": "La puerta metálica hace mucho ruido.",
+     "en": "The metal door makes a lot of noise.",
+     "hit": "metálica"
+    },
+    {
+     "es": "El agua tiene un sabor metálico.",
+     "en": "The water has a metallic taste.",
+     "hit": "metálico"
+    },
+    {
+     "es": "Quiero pintar el carro de gris metálico.",
+     "en": "I want to paint the car metallic gray.",
+     "hit": "metálico"
+    }
+   ]
+  },
+  {
+   "id": "sv13-calido",
+   "w": "cálido",
+   "pos": "adjective",
+   "en": "warm",
+   "note": "For climate, colors or people; for hot food or water use 'caliente'.",
+   "type": [
+    "cálido",
+    "cálida"
+   ],
+   "ex": [
+    {
+     "es": "Me gusta el clima cálido de la costa.",
+     "en": "I like the warm climate on the coast.",
+     "hit": "cálido"
+    },
+    {
+     "es": "Su familia nos dio una bienvenida muy cálida.",
+     "en": "Her family gave us a very warm welcome.",
+     "hit": "cálida"
+    },
+    {
+     "es": "Para la sala quiero colores cálidos.",
+     "en": "For the living room I want warm colors.",
+     "hit": "cálidos"
+    }
+   ]
+  },
+  {
+   "id": "sv13-originario",
+   "w": "originario",
+   "pos": "adjective",
+   "en": "originally from; native (to)",
+   "note": "Used with 'de': originario de Puebla. Feminine originaria.",
+   "type": [
+    "originario",
+    "originaria"
+   ],
+   "ex": [
+    {
+     "es": "Mi esposa es originaria de Puebla.",
+     "en": "My wife is originally from Puebla.",
+     "hit": "originaria"
+    },
+    {
+     "es": "El chocolate es originario de México.",
+     "en": "Chocolate is native to Mexico.",
+     "hit": "originario"
+    },
+    {
+     "es": "Este platillo es originario del norte del país.",
+     "en": "This dish comes from the north of the country.",
+     "hit": "originario"
+    }
+   ]
+  },
+  {
+   "id": "sv13-consecutivo",
+   "w": "consecutivo",
+   "pos": "adjective",
+   "en": "consecutive; in a row",
+   "note": "",
+   "type": [
+    "consecutivo",
+    "consecutiva"
+   ],
+   "ex": [
+    {
+     "es": "Llovió tres días consecutivos.",
+     "en": "It rained three days in a row.",
+     "hit": "consecutivos"
+    },
+    {
+     "es": "Es la segunda semana consecutiva que llegas tarde.",
+     "en": "It's the second week in a row that you're late.",
+     "hit": "consecutiva"
+    },
+    {
+     "es": "Ganaron el campeonato por tercer año consecutivo.",
+     "en": "They won the championship for the third year in a row.",
+     "hit": "consecutivo"
+    }
+   ]
+  },
+  {
+   "id": "sv13-naturalmente",
+   "w": "naturalmente",
+   "pos": "adverb",
+   "en": "naturally; of course",
+   "note": "",
+   "type": [
+    "naturalmente"
+   ],
+   "ex": [
+    {
+     "es": "Mi cabello es naturalmente rizado.",
+     "en": "My hair is naturally curly.",
+     "hit": "naturalmente"
+    },
+    {
+     "es": "Habla naturalmente, como si estuvieras con amigos.",
+     "en": "Speak naturally, as if you were with friends.",
+     "hit": "naturalmente"
+    },
+    {
+     "es": "Estas fresas se cultivaron naturalmente, sin químicos.",
+     "en": "These strawberries were grown naturally, without chemicals.",
+     "hit": "naturalmente"
+    }
+   ]
+  },
+  {
+   "id": "sv13-lamentablemente",
+   "w": "lamentablemente",
+   "pos": "adverb",
+   "en": "unfortunately",
+   "note": "",
+   "type": [
+    "lamentablemente"
+   ],
+   "ex": [
+    {
+     "es": "Lamentablemente, no puedo ir a tu fiesta.",
+     "en": "Unfortunately, I can't go to your party.",
+     "hit": "Lamentablemente"
+    },
+    {
+     "es": "Lamentablemente, el vuelo se canceló.",
+     "en": "Unfortunately, the flight was canceled.",
+     "hit": "Lamentablemente"
+    },
+    {
+     "es": "Lamentablemente, ya no tenemos esa talla.",
+     "en": "Unfortunately, we don't have that size anymore.",
+     "hit": "Lamentablemente"
+    }
+   ]
+  },
+  {
+   "id": "sv13-evidentemente",
+   "w": "evidentemente",
+   "pos": "adverb",
+   "en": "obviously; clearly",
+   "note": "",
+   "type": [
+    "evidentemente"
+   ],
+   "ex": [
+    {
+     "es": "Evidentemente, no durmió bien anoche.",
+     "en": "Obviously, he didn't sleep well last night.",
+     "hit": "Evidentemente"
+    },
+    {
+     "es": "Evidentemente el restaurante estaba cerrado; no había nadie.",
+     "en": "Clearly the restaurant was closed; there was nobody there.",
+     "hit": "Evidentemente"
+    },
+    {
+     "es": "Llegaron mojados; evidentemente está lloviendo afuera.",
+     "en": "They came in wet; it's obviously raining outside.",
+     "hit": "evidentemente"
     }
    ]
   }

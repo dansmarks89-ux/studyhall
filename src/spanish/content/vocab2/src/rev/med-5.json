@@ -11,7 +11,7 @@
    ],
    "ex": [
     {
-     "es": "Respire por la boca, profundo, mientras escucho sus pulmones.",
+     "es": "Respire por la boca, profundo, mientras le escucho los pulmones.",
      "en": "Breathe through your mouth, deeply, while I listen to your lungs.",
      "hit": "por la boca"
     },
@@ -163,6 +163,325 @@
      "es": "Le habla la hija de la señora Pérez.",
      "en": "This is Mrs. Pérez's daughter calling.",
      "hit": "hija"
+    }
+   ]
+  },
+  {
+   "id": "sm5-saturacion-de-oxigeno",
+   "w": "la saturación (de oxígeno)",
+   "pos": "noun",
+   "en": "oxygen level (saturation)",
+   "note": "Plain way: 'el oxígeno en la sangre'.",
+   "type": [
+    "la saturación",
+    "saturación",
+    "la saturación de oxígeno",
+    "saturación de oxígeno"
+   ],
+   "ex": [
+    {
+     "es": "Su saturación está bien, noventa y ocho por ciento.",
+     "en": "Your oxygen level is good, ninety-eight percent.",
+     "hit": "saturación"
+    },
+    {
+     "es": "Durante la prueba vamos a medir la saturación.",
+     "en": "During the test we're going to measure your oxygen level.",
+     "hit": "saturación"
+    },
+    {
+     "es": "¿Cuánto le marca la saturación en el aparatito?",
+     "en": "What does the oxygen level read on the little device?",
+     "hit": "saturación"
+    }
+   ]
+  },
+  {
+   "id": "sm5-resonancia-magnetica",
+   "w": "la resonancia (magnética)",
+   "pos": "noun",
+   "en": "MRI",
+   "note": "Ask about pacemakers, defibrillators and metal first.",
+   "type": [
+    "la resonancia",
+    "resonancia",
+    "la resonancia magnética",
+    "resonancia magnética"
+   ],
+   "ex": [
+    {
+     "es": "La resonancia hace mucho ruido; le damos tapones para los oídos.",
+     "en": "The MRI is very loud; we give you earplugs.",
+     "hit": "resonancia"
+    },
+    {
+     "es": "Traigo marcapasos, ¿me pueden hacer la resonancia?",
+     "en": "I have a pacemaker; can they do the MRI on me?",
+     "hit": "resonancia"
+    },
+    {
+     "es": "Mañana tiene la resonancia; no traiga nada de metal.",
+     "en": "Tomorrow is your MRI; don't bring anything metal.",
+     "hit": "resonancia"
+    }
+   ]
+  },
+  {
+   "id": "sm5-seguro-medico",
+   "w": "el seguro (médico)",
+   "pos": "noun",
+   "en": "(health) insurance",
+   "note": "'La tarjeta del seguro' = insurance card. In Mexico 'el Seguro' can mean IMSS.",
+   "type": [
+    "el seguro",
+    "seguro",
+    "el seguro médico",
+    "seguro médico"
+   ],
+   "ex": [
+    {
+     "es": "¿Me permite su tarjeta del seguro, por favor?",
+     "en": "May I have your insurance card, please?",
+     "hit": "seguro"
+    },
+    {
+     "es": "¿El seguro cubre la prueba de esfuerzo?",
+     "en": "Does insurance cover the stress test?",
+     "hit": "seguro"
+    },
+    {
+     "es": "Mi mamá no tiene seguro; ¿cuánto cuesta el eco?",
+     "en": "My mom doesn't have insurance; how much does the echo cost?",
+     "hit": "seguro"
+    }
+   ]
+  },
+  {
+   "id": "sm5-orden-medica",
+   "w": "la orden (médica)",
+   "pos": "noun",
+   "en": "(doctor's) order for a test",
+   "note": "Feminine here; 'el orden' means order/tidiness.",
+   "type": [
+    "la orden",
+    "orden",
+    "la orden médica",
+    "orden médica"
+   ],
+   "ex": [
+    {
+     "es": "Para el eco necesitamos la orden de su doctor.",
+     "en": "For the echo we need your doctor's order.",
+     "hit": "orden"
+    },
+    {
+     "es": "Ya le mandé la orden al laboratorio.",
+     "en": "I already sent the order to the lab.",
+     "hit": "orden"
+    },
+    {
+     "es": "Traigo la orden para el análisis de sangre.",
+     "en": "I have the order for the blood test.",
+     "hit": "orden"
+    }
+   ]
+  },
+  {
+   "id": "sm5-liga",
+   "w": "la liga",
+   "pos": "noun",
+   "en": "tourniquet; rubber band",
+   "note": "Mexican everyday word at blood draws; technical: 'el torniquete'.",
+   "type": [
+    "la liga",
+    "liga",
+    "el torniquete",
+    "torniquete"
+   ],
+   "ex": [
+    {
+     "es": "Le voy a poner una liga en el brazo.",
+     "en": "I'm going to put a tourniquet on your arm.",
+     "hit": "liga"
+    },
+    {
+     "es": "Antes del suero, la enfermera le pone una liga.",
+     "en": "Before the IV, the nurse puts a tourniquet on you.",
+     "hit": "liga"
+    },
+    {
+     "es": "La liga me aprieta mucho.",
+     "en": "The tourniquet is squeezing me a lot.",
+     "hit": "liga"
+    }
+   ]
+  },
+  {
+   "id": "sm5-brasier",
+   "w": "el brasier",
+   "pos": "noun",
+   "en": "bra",
+   "note": "Mexico: 'brasier'; also 'el sostén'.",
+   "type": [
+    "el brasier",
+    "brasier",
+    "el sostén",
+    "sostén"
+   ],
+   "ex": [
+    {
+     "es": "Quítese el brasier y póngase la bata con la abertura adelante.",
+     "en": "Take off your bra and put on the gown open in front.",
+     "hit": "brasier"
+    },
+    {
+     "es": "¿Me puedo dejar el brasier para el electro?",
+     "en": "Can I keep my bra on for the ECG?",
+     "hit": "brasier"
+    },
+    {
+     "es": "Para la placa, el brasier no puede tener metal.",
+     "en": "For the X-ray, the bra can't have metal.",
+     "hit": "brasier"
+    }
+   ]
+  },
+  {
+   "id": "sm5-seno",
+   "w": "el seno",
+   "pos": "noun",
+   "en": "breast",
+   "note": "Respectful clinical word; 'el pecho' is also used. Plural: los senos.",
+   "type": [
+    "el seno",
+    "seno",
+    "los senos",
+    "senos"
+   ],
+   "ex": [
+    {
+     "es": "Este parche va debajo del seno izquierdo; ¿me permite?",
+     "en": "This patch goes under your left breast; may I?",
+     "hit": "seno"
+    },
+    {
+     "es": "¿Puede levantar un poco el seno izquierdo?",
+     "en": "Can you lift your left breast a little?",
+     "hit": "seno"
+    },
+    {
+     "es": "Tengo un dolor debajo del seno izquierdo.",
+     "en": "I have a pain under my left breast.",
+     "hit": "seno"
+    }
+   ]
+  },
+  {
+   "id": "sm5-estudio",
+   "w": "el estudio",
+   "pos": "noun",
+   "en": "(medical) test; scan",
+   "note": "Very common in Mexico: 'hacerse unos estudios' = get some tests.",
+   "type": [
+    "el estudio",
+    "estudio",
+    "los estudios",
+    "estudios"
+   ],
+   "ex": [
+    {
+     "es": "¿Para qué estudio viene hoy?",
+     "en": "What test are you here for today?",
+     "hit": "estudio"
+    },
+    {
+     "es": "Le vamos a hacer unos estudios del corazón.",
+     "en": "We're going to do some heart tests on you.",
+     "hit": "estudios"
+    },
+    {
+     "es": "¿Cuánto tarda el estudio de mi esposa?",
+     "en": "How long does my wife's test take?",
+     "hit": "estudio"
+    }
+   ]
+  },
+  {
+   "id": "sm5-se-me-duerme-el-brazo",
+   "w": "se me duerme el brazo",
+   "pos": "phrase",
+   "en": "my arm goes numb (falls asleep)",
+   "note": "Common with the blood pressure cuff. 'Se me durmió' = it went numb.",
+   "type": [],
+   "ex": [
+    {
+     "es": "Se me duerme el brazo con el brazalete.",
+     "en": "My arm goes numb with the cuff.",
+     "hit": "duerme el brazo"
+    },
+    {
+     "es": "¿Se le duerme el brazo? Ya casi le quito el brazalete.",
+     "en": "Is your arm going numb? I'll take the cuff off in a moment.",
+     "hit": "duerme el brazo"
+    },
+    {
+     "es": "En la noche se me duerme el brazo izquierdo.",
+     "en": "At night my left arm goes numb.",
+     "hit": "duerme el brazo"
+    }
+   ]
+  },
+  {
+   "id": "sm5-abrir-la-boca",
+   "w": "abrir la boca",
+   "pos": "phrase",
+   "en": "to open one's mouth",
+   "note": "Command: Abra la boca.",
+   "type": [
+    "abrir la boca"
+   ],
+   "ex": [
+    {
+     "es": "Abra la boca y diga 'ah', por favor.",
+     "en": "Open your mouth and say 'ah', please.",
+     "hit": "Abra la boca"
+    },
+    {
+     "es": "Para la nitroglicerina, abra la boca y póngala debajo de la lengua.",
+     "en": "For the nitroglycerin, open your mouth and put it under your tongue.",
+     "hit": "abra la boca"
+    },
+    {
+     "es": "Mamá, abre la boca, el doctor te quiere ver la garganta.",
+     "en": "Mom, open your mouth, the doctor wants to see your throat.",
+     "hit": "abre la boca"
+    }
+   ]
+  },
+  {
+   "id": "sm5-presionar",
+   "w": "presionar",
+   "pos": "verb",
+   "en": "to press (on)",
+   "note": "Patients may say 'apretar'.",
+   "type": [
+    "presionar"
+   ],
+   "ex": [
+    {
+     "es": "Le voy a presionar el tobillo para ver si está hinchado.",
+     "en": "I'm going to press on your ankle to see if it's swollen.",
+     "hit": "presionar"
+    },
+    {
+     "es": "Presione aquí con el algodón unos minutos.",
+     "en": "Press here with the cotton for a few minutes.",
+     "hit": "Presione"
+    },
+    {
+     "es": "Cuando me presiona el pecho, me duele más.",
+     "en": "When you press on my chest, it hurts more.",
+     "hit": "presiona"
     }
    ]
   }

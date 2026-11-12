@@ -35,7 +35,8 @@
    "en": "last; past",
    "note": "El año pasado = last year.",
    "type": [
-    "pasado"
+    "pasado",
+    "pasada"
    ],
    "ex": [
     {
@@ -161,6 +162,201 @@
      "es": "Nadie se sentó junto a mí en el avión.",
      "en": "Nobody sat next to me on the plane.",
      "hit": "mí"
+    }
+   ]
+  },
+  {
+   "id": "sv01-ahi",
+   "w": "ahí",
+   "pos": "adverb",
+   "en": "there",
+   "note": "Ahí = there (near you); allá = over there. Don't confuse with hay.",
+   "type": [
+    "ahí"
+   ],
+   "ex": [
+    {
+     "es": "Deja las bolsas ahí, en la mesa.",
+     "en": "Leave the bags there, on the table.",
+     "hit": "ahí"
+    },
+    {
+     "es": "¿Estás ahí? Creo que se cortó la llamada.",
+     "en": "Are you there? I think the call dropped.",
+     "hit": "ahí"
+    },
+    {
+     "es": "Mira, ahí viene nuestro autobús.",
+     "en": "Look, there's our bus coming.",
+     "hit": "ahí"
+    }
+   ]
+  },
+  {
+   "id": "sv01-leer",
+   "w": "leer",
+   "pos": "verb",
+   "en": "to read",
+   "note": "",
+   "type": [
+    "leer"
+   ],
+   "ex": [
+    {
+     "es": "Me gusta leer antes de dormir.",
+     "en": "I like to read before bed.",
+     "hit": "leer"
+    },
+    {
+     "es": "¿Ya leíste el mensaje que te mandé?",
+     "en": "Did you read the message I sent you?",
+     "hit": "leíste"
+    },
+    {
+     "es": "Los niños leen un cuento en clase.",
+     "en": "The kids are reading a story in class.",
+     "hit": "leen"
+    }
+   ]
+  },
+  {
+   "id": "sv01-malo",
+   "w": "malo",
+   "pos": "adjective",
+   "en": "bad",
+   "note": "Becomes mal before a masculine noun: un mal día. Feminine: mala.",
+   "type": [
+    "malo",
+    "mala"
+   ],
+   "ex": [
+    {
+     "es": "La comida de ese lugar es muy mala.",
+     "en": "The food at that place is really bad.",
+     "hit": "mala"
+    },
+    {
+     "es": "Hoy tuve un mal día en el trabajo.",
+     "en": "I had a bad day at work today.",
+     "hit": "mal"
+    },
+    {
+     "es": "No es mala idea llevar un paraguas.",
+     "en": "It's not a bad idea to bring an umbrella.",
+     "hit": "mala"
+    }
+   ]
+  },
+  {
+   "id": "sv01-segundo",
+   "w": "segundo",
+   "pos": "adjective",
+   "en": "second",
+   "note": "Also a noun: un segundo = one second (of time).",
+   "type": [
+    "segundo",
+    "segunda"
+   ],
+   "ex": [
+    {
+     "es": "Vivo en el segundo piso.",
+     "en": "I live on the second floor.",
+     "hit": "segundo"
+    },
+    {
+     "es": "Es la segunda vez que pierdo las llaves.",
+     "en": "It's the second time I've lost my keys.",
+     "hit": "segunda"
+    },
+    {
+     "es": "Espérame un segundo, ya bajo.",
+     "en": "Wait a second, I'm coming down.",
+     "hit": "segundo"
+    }
+   ]
+  },
+  {
+   "id": "sv01-junto",
+   "w": "junto",
+   "pos": "adjective",
+   "en": "together; next to",
+   "note": "Usually plural: juntos, juntas. Junto a = next to.",
+   "type": [
+    "junto",
+    "juntos",
+    "junta"
+   ],
+   "ex": [
+    {
+     "es": "¿Vamos juntos a la fiesta?",
+     "en": "Shall we go to the party together?",
+     "hit": "juntos"
+    },
+    {
+     "es": "Mi esposa y yo cocinamos juntos los domingos.",
+     "en": "My wife and I cook together on Sundays.",
+     "hit": "juntos"
+    },
+    {
+     "es": "La farmacia está junto al banco.",
+     "en": "The pharmacy is next to the bank.",
+     "hit": "junto"
+    }
+   ]
+  },
+  {
+   "id": "sv01-claro",
+   "w": "claro",
+   "pos": "adjective",
+   "en": "clear; light (color); of course",
+   "note": "¡Claro! = Of course! Very common reply.",
+   "type": [
+    "claro",
+    "clara"
+   ],
+   "ex": [
+    {
+     "es": "¡Claro! Te ayudo con gusto.",
+     "en": "Of course! I'd be happy to help you.",
+     "hit": "Claro"
+    },
+    {
+     "es": "El cielo está muy claro hoy.",
+     "en": "The sky is really clear today.",
+     "hit": "claro"
+    },
+    {
+     "es": "Busco una camisa azul claro.",
+     "en": "I'm looking for a light blue shirt.",
+     "hit": "claro"
+    }
+   ]
+  },
+  {
+   "id": "sv01-seguro",
+   "w": "seguro",
+   "pos": "adjective",
+   "en": "sure; safe",
+   "note": "Also a noun: el seguro = insurance.",
+   "type": [
+    "seguro",
+    "segura"
+   ],
+   "ex": [
+    {
+     "es": "¿Estás seguro? Yo creo que es mañana.",
+     "en": "Are you sure? I think it's tomorrow.",
+     "hit": "seguro"
+    },
+    {
+     "es": "No estoy segura de que pueda ir hoy.",
+     "en": "I'm not sure I can go today.",
+     "hit": "segura"
+    },
+    {
+     "es": "Este barrio es muy seguro de noche.",
+     "en": "This neighborhood is very safe at night.",
+     "hit": "seguro"
     }
    ]
   }

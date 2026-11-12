@@ -20,6 +20,21 @@
     "es": "En las últimas vacaciones no descansamos nada con los niños.",
     "en": "We didn't rest at all on our last vacation with the kids.",
     "f": "descansamos"
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Le recomiendo que descanse unos días.",
+    "en": "I recommend that you rest for a few days.",
+    "f": "descanse",
+    "clue": "Le recomiendo que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
    }
   }
  },
@@ -56,6 +71,77 @@
  "almorzar": {
   "set": {
    "note": "Stem change o→ue in the present (*almuerzo, almuerzas, almuerza, almuerzan*, but *almorzamos*); z→c before e: preterite *almorcé*, subjunctive *almuerce, almorcemos*. In Mexico, *comer* is the usual verb for the midday meal."
+  }
+ },
+ "cantar": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No cante ni grite por unos días.",
+    "en": "Don't sing or shout for a few days.",
+    "f": "No cante"
+   },
+   "21": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Cuando llegamos al estadio, ya habían cantado el himno.",
+    "en": "When we got to the stadium, they had already sung the anthem.",
+    "f": "habían cantado",
+    "clue": "Cuando llegamos al estadio",
+    "wrong": [
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "desayunar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Como entro a las siete, desayuno en el carro.",
+    "en": "Since I start work at seven, I eat breakfast in the car.",
+    "f": "desayuno",
+    "clue": "Como entro a las siete",
+    "wrong": [
+     "Imperfect",
+     "Conditional",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "cenar": {
+  "s": {
+   "22": {
+    "t": "Pluperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Había cenado muy pesado antes del dolor de pecho?",
+    "en": "Had you eaten a heavy dinner before the chest pain started?",
+    "f": "Había cenado"
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Conviene que cene unas horas antes de acostarse.",
+    "en": "It's a good idea for you to eat dinner a few hours before going to bed.",
+    "f": "cene",
+    "clue": "Conviene que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
   }
  }
 }

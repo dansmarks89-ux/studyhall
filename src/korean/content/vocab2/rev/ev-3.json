@@ -21,7 +21,24 @@
      "s": "잠깐 나가서 바람 좀 쐬어요.",
      "en": "Let's step outside and get some fresh air."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "바람이",
+     "많이",
+     "불어요"
+    ],
+    "alt": [
+     [
+      "바람이",
+      "오늘",
+      "많이",
+      "불어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv02-110",
@@ -67,7 +84,24 @@
      "s": "회사 그만둔 건 잘한 결정이에요.",
      "en": "Quitting your job was the right decision."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아직",
+     "결정을",
+     "못",
+     "했어요"
+    ],
+    "alt": [
+     [
+      "결정을",
+      "아직",
+      "못",
+      "했어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv02-147",
@@ -83,14 +117,33 @@
      "en": "I'm signing the lease for the house next week."
     },
     {
-     "s": "회사랑 1년 계약을 했어요.",
+     "s": "회사랑 일 년 계약을 했어요.",
      "en": "I signed a one-year contract with the company."
     },
     {
      "s": "계약서를 꼼꼼히 읽어 보세요.",
      "en": "Read the contract carefully."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "다음",
+     "주에",
+     "집",
+     "계약을",
+     "해요"
+    ],
+    "alt": [
+     [
+      "집",
+      "계약을",
+      "다음",
+      "주에",
+      "해요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv02-163",
@@ -183,6 +236,841 @@
      "en": "They say this surgery isn't very risky."
     }
    ]
+  },
+  {
+   "id": "kv02-172",
+   "t": {
+    "s": "추천하다"
+   },
+   "pos": "verb",
+   "en": "to recommend",
+   "note": "",
+   "ex": [
+    {
+     "s": "맛집 좀 추천해 주세요.",
+     "en": "Please recommend a good restaurant."
+    },
+    {
+     "s": "이 책 정말 추천해요.",
+     "en": "I really recommend this book."
+    },
+    {
+     "s": "의사 선생님이 이 약을 추천하셨어요.",
+     "en": "The doctor recommended this medicine."
+    }
+   ]
+  },
+  {
+   "id": "kv02-103",
+   "t": {
+    "s": "층"
+   },
+   "pos": "noun",
+   "en": "floor, story (of a building)",
+   "note": "Use Sino-Korean numbers: 일 층, 이 층.",
+   "ex": [
+    {
+     "s": "화장실은 이 층에 있어요.",
+     "en": "The restroom is on the second floor."
+    },
+    {
+     "s": "저희 집은 십 층이에요.",
+     "en": "Our place is on the 10th floor."
+    },
+    {
+     "s": "엘리베이터에서 몇 층 가세요?",
+     "en": "Which floor are you going to? (in the elevator)"
+    }
+   ]
+  },
+  {
+   "id": "kv02-106",
+   "t": {
+    "s": "건물"
+   },
+   "pos": "noun",
+   "en": "building",
+   "note": "",
+   "ex": [
+    {
+     "s": "저 높은 건물이 우리 회사예요.",
+     "en": "That tall building is our office."
+    },
+    {
+     "s": "이 건물에는 주차장이 없어요.",
+     "en": "This building doesn't have a parking lot."
+    },
+    {
+     "s": "병원은 은행 건물 삼 층에 있어요.",
+     "en": "The clinic is on the 3rd floor of the bank building."
+    }
+   ]
+  },
+  {
+   "id": "kv02-125",
+   "t": {
+    "s": "프로"
+   },
+   "pos": "noun",
+   "en": "percent (spoken); a pro",
+   "note": "Casual for 퍼센트; also short for 프로그램.",
+   "ex": [
+    {
+     "s": "오늘 모든 옷이 삼십 프로 할인이에요.",
+     "en": "All clothes are 30 percent off today."
+    },
+    {
+     "s": "배터리가 십 프로밖에 안 남았어요.",
+     "en": "Only 10 percent battery left."
+    },
+    {
+     "s": "우리 형은 프로 골프 선수예요.",
+     "en": "My older brother is a pro golfer."
+    }
+   ]
+  },
+  {
+   "id": "kv02-129",
+   "t": {
+    "s": "개월"
+   },
+   "pos": "noun",
+   "en": "months (counter)",
+   "note": "Use Sino-Korean numbers: 삼 개월. Month names use 월.",
+   "ex": [
+    {
+     "s": "한국어를 배운 지 육 개월 됐어요.",
+     "en": "It's been 6 months since I started learning Korean."
+    },
+    {
+     "s": "우리 아기는 이제 팔 개월이에요.",
+     "en": "Our baby is 8 months old now."
+    },
+    {
+     "s": "헬스장을 삼 개월 등록했어요.",
+     "en": "I signed up at the gym for 3 months."
+    }
+   ]
+  },
+  {
+   "id": "kv02-167",
+   "t": {
+    "s": "넘다"
+   },
+   "pos": "verb",
+   "en": "to go over, exceed; to be past",
+   "note": "",
+   "ex": [
+    {
+     "s": "벌써 열 시가 넘었어요.",
+     "en": "It's already past ten."
+    },
+    {
+     "s": "저희 할머니는 아흔이 넘으셨어요.",
+     "en": "My grandma is over ninety."
+    },
+    {
+     "s": "이 가방은 이십삼 킬로가 넘어요.",
+     "en": "This bag is over 23 kilos."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "벌써",
+     "열",
+     "시가",
+     "넘었어요"
+    ],
+    "alt": [
+     [
+      "열",
+      "시가",
+      "벌써",
+      "넘었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-200",
+   "t": {
+    "s": "올라가다"
+   },
+   "pos": "verb",
+   "en": "to go up, climb",
+   "note": "",
+   "ex": [
+    {
+     "s": "엘리베이터로 오 층에 올라가세요.",
+     "en": "Take the elevator up to the 5th floor."
+    },
+    {
+     "s": "계단으로 올라갈까요?",
+     "en": "Shall we take the stairs up?"
+    },
+    {
+     "s": "산 정상까지 올라갔어요.",
+     "en": "I climbed all the way to the top of the mountain."
+    }
+   ]
+  },
+  {
+   "id": "kv02-179",
+   "t": {
+    "s": "싸우다"
+   },
+   "pos": "verb",
+   "en": "to fight, argue",
+   "note": "",
+   "ex": [
+    {
+     "s": "어제 남편이랑 싸웠어요.",
+     "en": "I had a fight with my husband yesterday."
+    },
+    {
+     "s": "애들이 장난감 때문에 싸워요.",
+     "en": "The kids are fighting over a toy."
+    },
+    {
+     "s": "우리 팀은 끝까지 열심히 싸웠어요.",
+     "en": "Our team fought hard to the end."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "어제",
+     "남편이랑",
+     "싸웠어요"
+    ],
+    "alt": [
+     [
+      "남편이랑",
+      "어제",
+      "싸웠어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-104",
+   "t": {
+    "s": "주소"
+   },
+   "pos": "noun",
+   "en": "address",
+   "note": "",
+   "ex": [
+    {
+     "s": "주소 좀 문자로 보내 주세요.",
+     "en": "Please text me the address."
+    },
+    {
+     "s": "택배 주소를 잘못 썼어요.",
+     "en": "I wrote the wrong delivery address."
+    },
+    {
+     "s": "이메일 주소가 어떻게 되세요?",
+     "en": "What's your email address?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주소",
+     "좀",
+     "문자로",
+     "보내",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "문자로",
+      "주소",
+      "좀",
+      "보내",
+      "주세요"
+     ],
+     [
+      "주소",
+      "문자로",
+      "좀",
+      "보내",
+      "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-111",
+   "t": {
+    "s": "대다"
+   },
+   "pos": "verb",
+   "en": "to put against, touch; to park",
+   "note": "",
+   "ex": [
+    {
+     "s": "카드를 여기에 대 주세요.",
+     "en": "Please tap your card here."
+    },
+    {
+     "s": "그림에 손을 대지 마세요.",
+     "en": "Please don't touch the painting."
+    },
+    {
+     "s": "차를 어디에 대면 돼요?",
+     "en": "Where can I park the car?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "카드를",
+     "여기에",
+     "대",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "여기에",
+      "카드를",
+      "대",
+      "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-116",
+   "t": {
+    "s": "돌아가다"
+   },
+   "pos": "verb",
+   "en": "to go back, return",
+   "note": "돌아가시다 also means to pass away (honorific).",
+   "ex": [
+    {
+     "s": "이제 집에 돌아가야 해요.",
+     "en": "I have to go back home now."
+    },
+    {
+     "s": "휴가 끝나고 회사로 돌아갔어요.",
+     "en": "I went back to work after vacation."
+    },
+    {
+     "s": "한국으로 언제 돌아가요?",
+     "en": "When are you going back to Korea?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이제",
+     "집에",
+     "돌아가야",
+     "해요"
+    ],
+    "alt": [
+     [
+      "집에",
+      "이제",
+      "돌아가야",
+      "해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-121",
+   "t": {
+    "s": "치료"
+   },
+   "pos": "noun",
+   "en": "treatment, therapy",
+   "note": "치료하다 = to treat; 치료받다 = to get treated.",
+   "ex": [
+    {
+     "s": "치과 치료가 아직 남았어요.",
+     "en": "I still have dental treatment left."
+    },
+    {
+     "s": "무릎 치료를 받고 있어요.",
+     "en": "I'm getting treatment for my knee."
+    },
+    {
+     "s": "강아지가 아파서 동물병원에서 치료받았어요.",
+     "en": "The puppy was sick, so it got treated at the vet."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "치과",
+     "치료가",
+     "아직",
+     "남았어요"
+    ],
+    "alt": [
+     [
+      "아직",
+      "치과",
+      "치료가",
+      "남았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-126",
+   "t": {
+    "s": "입"
+   },
+   "pos": "noun",
+   "en": "mouth",
+   "note": "",
+   "ex": [
+    {
+     "s": "입을 크게 벌리세요.",
+     "en": "Open your mouth wide."
+    },
+    {
+     "s": "음식이 너무 뜨거워서 입을 데었어요.",
+     "en": "The food was so hot I burned my mouth."
+    },
+    {
+     "s": "이 음식은 제 입에 딱 맞아요.",
+     "en": "This food is exactly to my taste."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "입을",
+     "크게",
+     "벌리세요"
+    ],
+    "alt": [
+     [
+      "크게",
+      "입을",
+      "벌리세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-127",
+   "t": {
+    "s": "나무"
+   },
+   "pos": "noun",
+   "en": "tree; wood",
+   "note": "",
+   "ex": [
+    {
+     "s": "우리 집 앞에 큰 나무가 있어요.",
+     "en": "There's a big tree in front of our house."
+    },
+    {
+     "s": "가을이라 나무들이 빨갛게 변했어요.",
+     "en": "It's fall, so the trees have turned red."
+    },
+    {
+     "s": "이 식탁은 나무로 만들었어요.",
+     "en": "This dining table is made of wood."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "우리",
+     "집",
+     "앞에",
+     "큰",
+     "나무가",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "큰",
+      "나무가",
+      "우리",
+      "집",
+      "앞에",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-128",
+   "t": {
+    "s": "작업"
+   },
+   "pos": "noun",
+   "en": "work, task (being done)",
+   "note": "",
+   "ex": [
+    {
+     "s": "오늘 작업은 여기까지 해요.",
+     "en": "Let's stop today's work here."
+    },
+    {
+     "s": "이 작업은 시간이 좀 걸려요.",
+     "en": "This task takes some time."
+    },
+    {
+     "s": "집 수리 작업이 내일 끝나요.",
+     "en": "The home repair work finishes tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "작업은",
+     "여기까지",
+     "해요"
+    ],
+    "alt": [
+     [
+      "작업은",
+      "오늘",
+      "여기까지",
+      "해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-136",
+   "t": {
+    "s": "영상"
+   },
+   "pos": "noun",
+   "en": "video, footage",
+   "note": "",
+   "ex": [
+    {
+     "s": "유튜브에서 요리 영상을 봤어요.",
+     "en": "I watched a cooking video on YouTube."
+    },
+    {
+     "s": "아이 생일 영상을 찍었어요.",
+     "en": "I filmed a video of my kid's birthday."
+    },
+    {
+     "s": "그 영상 링크 좀 보내 주세요.",
+     "en": "Please send me the link to that video."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "유튜브에서",
+     "요리",
+     "영상을",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "요리",
+      "영상을",
+      "유튜브에서",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-142",
+   "t": {
+    "s": "하늘"
+   },
+   "pos": "noun",
+   "en": "sky",
+   "note": "",
+   "ex": [
+    {
+     "s": "오늘 하늘이 정말 맑아요.",
+     "en": "The sky is really clear today."
+    },
+    {
+     "s": "비행기 창문으로 하늘을 봤어요.",
+     "en": "I looked at the sky from the plane window."
+    },
+    {
+     "s": "하늘이 어두워요. 비가 올 것 같아요.",
+     "en": "The sky is dark. Looks like rain."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "하늘이",
+     "정말",
+     "맑아요"
+    ],
+    "alt": [
+     [
+      "하늘이",
+      "오늘",
+      "정말",
+      "맑아요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-145",
+   "t": {
+    "s": "비슷하다"
+   },
+   "pos": "adjective",
+   "en": "to be similar",
+   "note": "",
+   "ex": [
+    {
+     "s": "형이랑 저는 목소리가 비슷해요.",
+     "en": "My brother and I have similar voices."
+    },
+    {
+     "s": "이거랑 비슷한 색 있어요?",
+     "en": "Do you have a color similar to this?"
+    },
+    {
+     "s": "두 가게 가격이 거의 비슷해요.",
+     "en": "The two stores' prices are about the same."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "형이랑",
+     "저는",
+     "목소리가",
+     "비슷해요"
+    ],
+    "alt": [
+     [
+      "저는",
+      "형이랑",
+      "목소리가",
+      "비슷해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-154",
+   "t": {
+    "s": "이벤트"
+   },
+   "pos": "noun",
+   "en": "promotion, special event; surprise",
+   "note": "Often a store promotion or a planned surprise.",
+   "ex": [
+    {
+     "s": "이번 주에 커피 할인 이벤트를 해요.",
+     "en": "They're running a coffee discount promotion this week."
+    },
+    {
+     "s": "앱에서 이벤트에 참여하면 쿠폰을 줘요.",
+     "en": "If you join the event in the app, they give you a coupon."
+    },
+    {
+     "s": "남편 생일에 깜짝 이벤트를 했어요.",
+     "en": "I planned a surprise for my husband's birthday."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이번",
+     "주에",
+     "커피",
+     "할인",
+     "이벤트를",
+     "해요"
+    ],
+    "alt": [
+     [
+      "커피",
+      "할인",
+      "이벤트를",
+      "이번",
+      "주에",
+      "해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-159",
+   "t": {
+    "s": "전기"
+   },
+   "pos": "noun",
+   "en": "electricity, power",
+   "note": "Also means biography (different hanja).",
+   "ex": [
+    {
+     "s": "이번 달 전기 요금이 많이 나왔어요.",
+     "en": "The electricity bill was high this month."
+    },
+    {
+     "s": "태풍 때문에 전기가 나갔어요.",
+     "en": "The power went out because of the typhoon."
+    },
+    {
+     "s": "다음에는 전기차를 사고 싶어요.",
+     "en": "Next time I want to buy an electric car."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이번",
+     "달",
+     "전기",
+     "요금이",
+     "많이",
+     "나왔어요"
+    ],
+    "alt": [
+     [
+      "전기",
+      "요금이",
+      "이번",
+      "달",
+      "많이",
+      "나왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-161",
+   "t": {
+    "s": "변화"
+   },
+   "pos": "noun",
+   "en": "change",
+   "note": "",
+   "ex": [
+    {
+     "s": "요즘 날씨 변화가 심해요.",
+     "en": "The weather has been changing a lot lately."
+    },
+    {
+     "s": "이사 온 후에 생활에 큰 변화가 있었어요.",
+     "en": "My life changed a lot after moving here."
+    },
+    {
+     "s": "새 직장은 저한테 좋은 변화예요.",
+     "en": "The new job is a good change for me."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "날씨",
+     "변화가",
+     "심해요"
+    ],
+    "alt": [
+     [
+      "날씨",
+      "변화가",
+      "요즘",
+      "심해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-162",
+   "t": {
+    "s": "향하다"
+   },
+   "pos": "verb",
+   "en": "to head toward; to face",
+   "note": "",
+   "ex": [
+    {
+     "s": "지금 공항으로 향하고 있어요.",
+     "en": "I'm heading to the airport now."
+    },
+    {
+     "s": "집으로 향하는 길에 빵을 샀어요.",
+     "en": "I bought bread on my way home."
+    },
+    {
+     "s": "우리 집 창문은 남쪽을 향해 있어요.",
+     "en": "Our windows face south."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "지금",
+     "공항으로",
+     "향하고",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "공항으로",
+      "지금",
+      "향하고",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-166",
+   "t": {
+    "s": "만큼"
+   },
+   "pos": "noun",
+   "en": "as much as, as ... as",
+   "note": "Attached to nouns (형만큼); spaced after verbs (먹을 만큼).",
+   "ex": [
+    {
+     "s": "저도 형만큼 키가 커요.",
+     "en": "I'm as tall as my older brother."
+    },
+    {
+     "s": "먹을 만큼만 가져가세요.",
+     "en": "Only take as much as you'll eat."
+    },
+    {
+     "s": "생각만큼 어렵지 않았어요.",
+     "en": "It wasn't as hard as I thought."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "저도",
+     "형만큼",
+     "키가",
+     "커요"
+    ],
+    "alt": [
+     [
+      "저도",
+      "키가",
+      "형만큼",
+      "커요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

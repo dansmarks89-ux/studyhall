@@ -16,6 +16,14 @@
     "es": "Nunca preferiríamos el dinero a la salud de nuestros hijos.",
     "en": "We'd never prefer money to our kids' health.",
     "f": "preferiríamos"
+   },
+   "23": {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca antes habíamos preferido quedarnos en casa en vacaciones.",
+    "en": "We had never preferred to stay home on vacation before.",
+    "f": "habíamos preferido"
    }
   }
  },
@@ -84,6 +92,49 @@
   },
   "s": {
    "32": null
+  }
+ },
+ "repetir": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No repita la dosis sin preguntarle a su médico.",
+    "en": "Don't take another dose without asking your doctor.",
+    "f": "No repita"
+   }
+  }
+ },
+ "probar": {
+  "s": {
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Quiero que pruebe esta pomada unos días.",
+    "en": "I want you to try this ointment for a few days.",
+    "f": "pruebe",
+    "clue": "Quiero que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "responder": {
+  "s": {
+   "26": {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "neg",
+    "es": "Es mejor que no respondas cuando estás enojado.",
+    "en": "It's better if you don't reply when you're angry.",
+    "f": "respondas"
+   }
   }
  }
 }

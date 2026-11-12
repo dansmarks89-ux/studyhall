@@ -8,7 +8,7 @@
   "grammar": [
     {
       "h": "Preterite for the event: ¿Cuándo empezó?",
-      "p": "A symptom that started, lasted or ended is a completed event, so it takes the preterite. You ask with usted forms (*empezó*, *sintió*, *duró*, *tomó*, *fue*); the patient answers with yo forms (*empecé*, *sentí*, *tomé*, *fui*). Note *sentir* → *sintió* (e → i in the usted form) and the spelling change *empezar* → *empecé*. Patients often say *me empezó* / *me dio* (it started on me / it came on me).",
+      "p": "A symptom that started, lasted or ended is a completed event, so it takes the preterite. You ask with third-person forms, which serve both for usted and for *el dolor* (*empezó*, *sintió*, *duró*, *tomó*, *fue*); the patient answers with yo forms (*empecé*, *sentí*, *tomé*, *fui*). Note *sentir* → *sintió* (e → i in the usted form) and the spelling change *empezar* → *empecé*. Patients often say *me empezó* / *me dio* (it started on me / it came on me).",
       "ex": [
         [
           "¿Cuándo empezó el dolor?",
@@ -44,7 +44,7 @@
     },
     {
       "h": "What it feels like and where it goes",
-      "p": "Ask *¿Cómo es el dolor?* Patients say *es como una opresión / una presión*, *como un peso*, *apretado*, *un ardor* (burning), *una punzada* (a sharp, stabbing pain). For radiation ask *¿Se le corre a otra parte?* or *¿Se le va al brazo?* The patient answers *se me corre…* / *se me va…*: *me* because it is their own body.",
+      "p": "Ask *¿Cómo es el dolor?* Patients say *es como una opresión / una presión*, *como un peso*, *apretado*, *un ardor* (burning), *una punzada* (a sharp, stabbing pain). For radiation ask *¿Se le corre a otra parte?* or *¿Se le va al brazo?* The patient answers *se me corre…* / *se me va…*: *le* = on you (usted, the doctor asking), *me* = on me (the patient answering).",
       "ex": [
         [
           "Es como un peso en el pecho.",
@@ -342,7 +342,7 @@
         "empezó"
       ],
       "a": 3,
-      "why": "A past event, asked of the patient (usted) → empezó. Empecé is 'I started'."
+      "why": "A past event; the subject is el dolor (third person) → empezó. Empecé is 'I started'."
     },
     {
       "id": "M2-mc-02",
@@ -764,9 +764,10 @@
       "hint": "suddenly: de ___",
       "a": [
         "repente",
-        "golpe"
+        "golpe",
+        "pronto"
       ],
-      "why": "De repente (or de golpe) = suddenly."
+      "why": "De repente (or de golpe, de pronto) = suddenly."
     },
     {
       "id": "M2-fill-16",
@@ -1171,7 +1172,7 @@
             "¿Cuándo va a empezar?"
           ],
           "a": 0,
-          "why": "Ask about onset with usted preterite: empezó."
+          "why": "Ask about onset with the preterite: empezó (the subject is the pain). Empecé is 'I started'."
         },
         {
           "who": "Paciente",

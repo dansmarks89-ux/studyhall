@@ -82,6 +82,174 @@
      "hit": "intereses"
     }
    ]
+  },
+  {
+   "id": "sv02-necesario",
+   "w": "necesario",
+   "pos": "adjective",
+   "en": "necessary",
+   "note": "No es necesario = there's no need.",
+   "type": [
+    "necesario",
+    "necesaria"
+   ],
+   "ex": [
+    {
+     "es": "No es necesario traer nada a la cena.",
+     "en": "There's no need to bring anything to dinner.",
+     "hit": "necesario"
+    },
+    {
+     "es": "¿Es necesario hacer una cita?",
+     "en": "Is it necessary to make an appointment?",
+     "hit": "necesario"
+    },
+    {
+     "es": "Llevamos solo lo necesario para el viaje.",
+     "en": "We're taking only what we need for the trip.",
+     "hit": "necesario"
+    }
+   ]
+  },
+  {
+   "id": "sv02-blanco",
+   "w": "blanco",
+   "pos": "adjective",
+   "en": "white",
+   "note": "Feminine: blanca. Vino blanco = white wine.",
+   "type": [
+    "blanco",
+    "blanca"
+   ],
+   "ex": [
+    {
+     "es": "Quiero una camisa blanca para la boda.",
+     "en": "I want a white shirt for the wedding.",
+     "hit": "blanca"
+    },
+    {
+     "es": "¿Me trae una copa de vino blanco?",
+     "en": "Could you bring me a glass of white wine?",
+     "hit": "blanco"
+    },
+    {
+     "es": "El carro de Diego es blanco.",
+     "en": "Diego's car is white.",
+     "hit": "blanco"
+    }
+   ]
+  },
+  {
+   "id": "sv02-cierto",
+   "w": "cierto",
+   "pos": "adjective",
+   "en": "true; certain; por cierto = by the way",
+   "note": "",
+   "type": [
+    "cierto",
+    "cierta"
+   ],
+   "ex": [
+    {
+     "es": "¿Es cierto que te vas a cambiar de casa?",
+     "en": "Is it true that you're moving?",
+     "hit": "cierto"
+    },
+    {
+     "es": "Lo que dice Kevin no es cierto.",
+     "en": "What Kevin says isn't true.",
+     "hit": "cierto"
+    },
+    {
+     "es": "Por cierto, ¿a qué hora es la cena?",
+     "en": "By the way, what time is dinner?",
+     "hit": "cierto"
+    }
+   ]
+  },
+  {
+   "id": "sv02-largo",
+   "w": "largo",
+   "pos": "adjective",
+   "en": "long",
+   "note": "False friend: 'large' is grande.",
+   "type": [
+    "largo",
+    "larga"
+   ],
+   "ex": [
+    {
+     "es": "Fue un día muy largo en el trabajo.",
+     "en": "It was a very long day at work.",
+     "hit": "largo"
+    },
+    {
+     "es": "Sofía tiene el pelo largo.",
+     "en": "Sofía has long hair.",
+     "hit": "largo"
+    },
+    {
+     "es": "El viaje en autobús es muy largo.",
+     "en": "The bus trip is very long.",
+     "hit": "largo"
+    }
+   ]
+  },
+  {
+   "id": "sv02-proximo",
+   "w": "próximo",
+   "pos": "adjective",
+   "en": "next",
+   "note": "Feminine: próxima. La próxima vez = next time.",
+   "type": [
+    "próximo",
+    "próxima"
+   ],
+   "ex": [
+    {
+     "es": "Nos vemos la próxima semana.",
+     "en": "See you next week.",
+     "hit": "próxima"
+    },
+    {
+     "es": "¿A qué hora sale el próximo tren?",
+     "en": "What time does the next train leave?",
+     "hit": "próximo"
+    },
+    {
+     "es": "La próxima vez yo invito.",
+     "en": "Next time it's on me.",
+     "hit": "próxima"
+    }
+   ]
+  },
+  {
+   "id": "sv02-conocido",
+   "w": "conocido",
+   "pos": "adjective",
+   "en": "well-known; familiar; (noun) acquaintance",
+   "note": "Feminine: conocida.",
+   "type": [
+    "conocido",
+    "conocida"
+   ],
+   "ex": [
+    {
+     "es": "Es un restaurante muy conocido en la ciudad.",
+     "en": "It's a very well-known restaurant in the city.",
+     "hit": "conocido"
+    },
+    {
+     "es": "Su cara me parece conocida.",
+     "en": "Her face looks familiar.",
+     "hit": "conocida"
+    },
+    {
+     "es": "No es mi amigo, solo es un conocido.",
+     "en": "He's not my friend, just an acquaintance.",
+     "hit": "conocido"
+    }
+   ]
   }
  ],
  "drop": [],

@@ -34,6 +34,27 @@
      "Present subjunctive",
      "Imperfect subjunctive"
     ]
+   },
+   "34": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No intente levantar cosas pesadas por unos días.",
+    "en": "Don't try to lift anything heavy for a few days.",
+    "f": "no intente"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días intento caminar un poco.",
+    "en": "Every day I try to walk a little.",
+    "f": "intento",
+    "clue": "Todos los días",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -46,6 +67,19 @@
     "es": "Me dio tristeza que no lográramos ver a la abuela.",
     "en": "I was sad that we didn't manage to see Grandma.",
     "f": "lográramos"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Con esta pastilla, todas las noches logro dormir seis horas.",
+    "en": "With this pill, I manage to sleep six hours every night.",
+    "f": "logro",
+    "clue": "todas las noches",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -58,6 +92,14 @@
     "es": "Conteste esta breve encuesta y gane un premio.",
     "en": "Answer this short survey and win a prize.",
     "f": "gane"
+   },
+   "34": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Durante el embarazo, no gane demasiado peso.",
+    "en": "During your pregnancy, don't gain too much weight.",
+    "f": "no gane"
    }
   }
  },
@@ -70,6 +112,27 @@
     "es": "Nunca le habían ofrecido una segunda opinión.",
     "en": "They had never offered him a second opinion.",
     "f": "habían ofrecido"
+   },
+   "32": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Ofrézcale agua al niño con frecuencia.",
+    "en": "Offer the child water often.",
+    "f": "Ofrézcale"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Cada mañana les ofrezco café a mis compañeros.",
+    "en": "Every morning I offer my coworkers coffee.",
+    "f": "ofrezco",
+    "clue": "Cada mañana",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -90,6 +153,111 @@
     "es": "Gritando no arreglarás nada.",
     "en": "You won't fix anything by yelling.",
     "f": "arreglarás"
+   }
+  }
+ },
+ "guardar": {
+  "set": {
+   "uses": [
+    {
+     "es": "guardar algo (en …)",
+     "en": "to keep, store, put away",
+     "x": "Guarde la insulina en el refrigerador.",
+     "xen": "Keep the insulin in the refrigerator."
+    },
+    {
+     "es": "guardar un secreto",
+     "en": "to keep a secret",
+     "x": "¿Puedes guardar un secreto?",
+     "xen": "Can you keep a secret?"
+    },
+    {
+     "es": "guardar reposo",
+     "en": "to rest, stay on bed rest",
+     "x": "Tiene que guardar reposo por unos días.",
+     "xen": "You need to stay on bed rest for a few days."
+    }
+   ]
+  }
+ },
+ "tratar": {
+  "s": {
+   "6": {
+    "t": "Imperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Antes, los médicos trataban las úlceras sin antibióticos.",
+    "en": "In the past, doctors treated ulcers without antibiotics.",
+    "f": "trataban",
+    "clue": "Antes",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Cómo van a tratar la fractura de mi hijo?",
+    "en": "How are they going to treat my son's fracture?",
+    "f": "van a tratar"
+   }
+  }
+ },
+ "cortar": {
+  "s": {
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "La pastilla es grande; si su médico lo permite, córtela por la mitad.",
+    "en": "The pill is big; if your doctor allows it, cut it in half.",
+    "f": "córtela"
+   }
+  }
+ },
+ "quitar": {
+  "s": {
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "Si le molesta la curita, quítesela con cuidado.",
+    "en": "If the Band-Aid bothers you, take it off carefully.",
+    "f": "quítesela"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Cada noche me quito los lentes de contacto antes de dormir.",
+    "en": "Every night I take out my contact lenses before I sleep.",
+    "f": "quito",
+    "clue": "Cada noche",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "romper": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cada semana, mi hijo rompe algún vaso.",
+    "en": "Every week, my son breaks a glass.",
+    "f": "rompe",
+    "clue": "Cada semana",
+    "wrong": [
+     "Future",
+     "Imperfect subjunctive"
+    ]
    }
   }
  }

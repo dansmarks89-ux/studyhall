@@ -172,7 +172,7 @@
     {"id":"M5-tiles-08","t":"tiles","en":"I'm going to put some stickers on your chest.","a":"Voy a ponerle unos parches en el pecho.","alt":["Voy a ponerle en el pecho unos parches."],"extra":["ponerlo","pongo"]},
     {"id":"M5-tiles-09","t":"tiles","en":"This monitor records your heart rhythm.","a":"Este monitor graba el ritmo de su corazón.","alt":[],"extra":["sus","graban"]},
     {"id":"M5-tiles-10","t":"tiles","en":"Have you ever had a stress test?","a":"¿Alguna vez le han hecho una prueba de esfuerzo?","alt":["¿Le han hecho alguna vez una prueba de esfuerzo?","¿Le han hecho una prueba de esfuerzo alguna vez?"],"extra":["hecha","haber"]},
-    {"id":"M5-tiles-11","t":"tiles","en":"We're going to do an echocardiogram on you tomorrow.","a":"Le vamos a hacer un ecocardiograma mañana.","alt":["Mañana le vamos a hacer un ecocardiograma."],"extra":["hecho","una"]},
+    {"id":"M5-tiles-11","t":"tiles","en":"We're going to do an echocardiogram on you tomorrow.","a":"Le vamos a hacer un ecocardiograma mañana.","alt":["Mañana le vamos a hacer un ecocardiograma.", "Le vamos a hacer mañana un ecocardiograma."],"extra":["hecho","una"]},
     {"id":"M5-tiles-12","t":"tiles","en":"Let me know if you feel pain or dizziness.","a":"Avíseme si siente dolor o mareo.","alt":["Si siente dolor o mareo, avíseme.","Avíseme si siente mareo o dolor.","Si siente mareo o dolor, avíseme."],"extra":["sienta","avísame"]},
     {"id":"M5-tiles-13","t":"tiles","en":"Roll up the sleeve on your left arm.","a":"Súbase la manga del brazo izquierdo.","alt":[],"extra":["súbete","izquierda"]},
     {"id":"M5-tiles-14","t":"tiles","en":"We're going to take it (the monitor) off you tomorrow.","a":"Mañana se lo vamos a quitar.","alt":["Se lo vamos a quitar mañana."],"extra":["le","quitado"]},
@@ -247,7 +247,7 @@
       "opening": "Buenos días, doctor. La enfermera me dijo que usted me iba a revisar.",
       "goals": [
         "Ask permission to examine him and get him to take off his shirt and put on the gown",
-        "Use at least four usted commands with pronouns (siéntese, acuéstese, respire hondo, relájese…)",
+        "Use at least four usted commands with pronouns (siéntese, acuéstese, quítese, relájese…)",
         "Listen to his heart and lungs and check his ankles, saying what you're doing as you go",
         "Explain the ECG simply (stickers, it doesn't hurt, it doesn't send electricity) and ask him not to move"
       ]
@@ -261,7 +261,7 @@
         "Explain that the patch only records the heart rhythm and does not give shocks",
         "Tell her to press the button and write down the time and what she was doing when she feels symptoms",
         "Answer her questions about work, sweating and showering in general terms (follow the monitor's instructions)",
-        "Tell her to go to the emergency room or call 911 if she faints, has chest pain or severe shortness of breath",
+        "Tell her to call 911 if she faints, has chest pain or severe shortness of breath",
         "Explain when and how she will get the results"
       ]
     }

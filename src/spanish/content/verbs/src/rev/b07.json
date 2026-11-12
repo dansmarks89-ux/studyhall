@@ -40,6 +40,14 @@
      "Present subjunctive",
      "Imperfect subjunctive"
     ]
+   },
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No viaje en avión hasta que su médico lo autorice.",
+    "en": "Don't fly until your doctor clears you.",
+    "f": "No viaje"
    }
   }
  },
@@ -86,6 +94,171 @@
     "es": "¿Le pidieron que invitara a un familiar?",
     "en": "Did they ask you to invite a family member?",
     "f": "invitara"
+   }
+  }
+ },
+ "lavarse": {
+  "s": {
+   "12": {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "A partir de mañana, se lavará la herida con agua y jabón.",
+    "en": "Starting tomorrow, you'll wash the wound with soap and water.",
+    "f": "se lavará",
+    "clue": "A partir de mañana",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Pluperfect"
+    ]
+   },
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Yo en su lugar me lavaría las manos antes de tocar al bebé.",
+    "en": "If I were you, I'd wash my hands before touching the baby.",
+    "f": "me lavaría",
+    "clue": "Yo en su lugar",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "correr": {
+  "s": {
+   "11": {
+    "t": "ir a",
+    "p": 2,
+    "k": "neg",
+    "es": "Después de la ablación, no va a correr por unos días.",
+    "en": "After the ablation, you're not going to run for a few days.",
+    "f": "va a correr"
+   }
+  }
+ },
+ "manejar": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No maneje durante unos días después del procedimiento.",
+    "en": "Don't drive for a few days after the procedure.",
+    "f": "No maneje"
+   }
+  }
+ },
+ "bañarse": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No se bañe en tina ni en alberca hasta que sane la herida.",
+    "en": "Don't take baths or go in a pool until the wound heals.",
+    "f": "no se bañe"
+   },
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Yo en su lugar me bañaría con agua tibia, no caliente.",
+    "en": "If I were you, I'd shower with lukewarm water, not hot.",
+    "f": "me bañaría",
+    "clue": "Yo en su lugar",
+    "wrong": [
+     "Preterite",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   },
+   "12": {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Dentro de unas semanas ya se bañará en tina sin problema.",
+    "en": "In a few weeks you'll be taking baths in the tub with no problem.",
+    "f": "se bañará",
+    "clue": "Dentro de unas semanas",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Pluperfect"
+    ]
+   }
+  }
+ },
+ "ducharse": {
+  "set": {
+   "uses": [
+    {
+     "es": "ducharse con agua fría / caliente",
+     "en": "to shower with cold / hot water",
+     "x": "En verano me ducho con agua fría.",
+     "xen": "In the summer I shower with cold water."
+    },
+    {
+     "es": "ducharse sin mojar + noun",
+     "en": "to shower without getting … wet",
+     "x": "Ya puede ducharse, pero sin mojar la herida.",
+     "xen": "You can shower now, but without getting the wound wet."
+    },
+    {
+     "es": "ducharse rápido",
+     "en": "to take a quick shower",
+     "x": "Me ducho rápido y nos vamos.",
+     "xen": "I'll take a quick shower and we'll go."
+    }
+   ]
+  },
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No se duche todavía para no mojar la herida.",
+    "en": "Don't shower yet so the wound doesn't get wet.",
+    "f": "no se duche"
+   }
+  }
+ },
+ "vestirse": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Ahora mi hijo se viste solo todos los días.",
+    "en": "Now my son gets dressed by himself every day.",
+    "f": "se viste",
+    "clue": "todos los días",
+    "wrong": [
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "cocinar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Mi esposo cocina todos los días porque yo trabajo de noche.",
+    "en": "My husband cooks every day because I work nights.",
+    "f": "cocina",
+    "clue": "todos los días",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  }

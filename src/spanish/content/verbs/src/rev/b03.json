@@ -23,6 +23,22 @@
      "Future",
      "Conditional"
     ]
+   },
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Tome la pastilla como le indicó su médico.",
+    "en": "Take the pill the way your doctor told you.",
+    "f": "Tome"
+   },
+   "25": {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Quieren que les tome una foto?",
+    "en": "Do you all want me to take a picture of you?",
+    "f": "tome"
    }
   }
  },
@@ -71,6 +87,20 @@
     "wrong": [
      "Future",
      "ir a",
+     "Present subjunctive"
+    ]
+   },
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Ahora mi papá necesita ayuda para bañarse.",
+    "en": "Now my dad needs help showering.",
+    "f": "necesita",
+    "clue": "Ahora",
+    "wrong": [
+     "Imperfect subjunctive",
+     "Pluperfect",
      "Present subjunctive"
     ]
    }
@@ -124,6 +154,36 @@
      "ir a",
      "Present subjunctive"
     ]
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Normalmente trabajo de lunes a viernes.",
+    "en": "I normally work Monday through Friday.",
+    "f": "trabajo",
+    "clue": "Normalmente",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive",
+     "Pluperfect"
+    ]
+   },
+   "14": {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "Después de la cirugía, no trabajará por unas semanas.",
+    "en": "After the surgery, you won't work for a few weeks.",
+    "f": "trabajará"
+   },
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No trabaje de pie muchas horas seguidas.",
+    "en": "Don't work on your feet for hours on end.",
+    "f": "No trabaje"
    }
   }
  },
@@ -136,6 +196,19 @@
     "es": "Si te dan el ascenso, no vas a buscar otro trabajo.",
     "en": "If you get the promotion, you're not going to look for another job.",
     "f": "vas a buscar"
+   },
+   "0": {
+    "t": "Present",
+    "p": 4,
+    "k": "stmt",
+    "es": "Mis hijos siempre buscan sus zapatos en la mañana.",
+    "en": "My kids are always looking for their shoes in the morning.",
+    "f": "buscan",
+    "clue": "siempre",
+    "wrong": [
+     "Imperfect subjunctive",
+     "Conditional"
+    ]
    }
   }
  },
@@ -153,6 +226,52 @@
      "Future",
      "ir a",
      "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "volver": {
+  "s": {
+   "12": {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Cuando el doctor lo autorice, volverá a manejar sin problema.",
+    "en": "Once the doctor clears you, you'll be driving again with no problem.",
+    "f": "volverá",
+    "clue": "Cuando el doctor lo autorice",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present perfect",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "perder": {
+  "s": {
+   "17": {
+    "t": "Conditional",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis amigos nunca perderían una oportunidad así.",
+    "en": "My friends would never miss an opportunity like that.",
+    "f": "perderían"
+   },
+   "12": {
+    "t": "Future",
+    "p": 2,
+    "k": "stmt",
+    "es": "Con este plan, seguramente perderá peso el próximo mes.",
+    "en": "With this plan, you'll probably lose weight next month.",
+    "f": "perderá",
+    "clue": "el próximo mes",
+    "wrong": [
+     "Preterite",
+     "Pluperfect",
+     "Present perfect",
      "Imperfect subjunctive"
     ]
    }

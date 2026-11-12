@@ -44,6 +44,21 @@
      "Pluperfect",
      "Present subjunctive"
     ]
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es mejor que alquile un departamento en planta baja.",
+    "en": "It's better for you to rent a ground-floor apartment.",
+    "f": "alquile",
+    "clue": "Es mejor que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
    }
   }
  },
@@ -89,6 +104,50 @@
     "es": "¿Se equivocaron en la farmacia con su receta?",
     "en": "Did they make a mistake with your prescription at the pharmacy?",
     "f": "Se equivocaron"
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es normal que se equivoque al principio.",
+    "en": "It's normal for you to make mistakes at first.",
+    "f": "se equivoque",
+    "clue": "Es normal que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   "18": {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "stmt",
+    "es": "Hoy la recepcionista ya se ha equivocado dos veces con mi nombre.",
+    "en": "Today the receptionist has already gotten my name wrong twice.",
+    "f": "se ha equivocado",
+    "clue": "Hoy",
+    "wrong": [
+     "Imperfect",
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "12": {
+    "t": "Future",
+    "p": 1,
+    "k": "stmt",
+    "es": "Al principio te equivocarás, pero luego será fácil.",
+    "en": "At first you'll make mistakes, but then it'll be easy.",
+    "f": "te equivocarás",
+    "clue": "luego será fácil",
+    "wrong": [
+     "Pluperfect",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -113,6 +172,45 @@
     "es": "Cuando compramos esta casa, tú todavía no nacías.",
     "en": "When we bought this house, you hadn't been born yet.",
     "f": "nacías"
+   },
+   "14": {
+    "t": "Future",
+    "p": 2,
+    "k": "neg",
+    "es": "Con estos cuidados, su bebé probablemente no nacerá antes de tiempo.",
+    "en": "With this care, your baby probably won't be born early.",
+    "f": "nacerá"
+   }
+  }
+ },
+ "quejarse": {
+  "s": {
+   "24": {
+    "t": "Present subjunctive",
+    "p": 1,
+    "k": "stmt",
+    "es": "Es normal que te quejes después de un día tan largo.",
+    "en": "It's normal for you to complain after such a long day.",
+    "f": "te quejes",
+    "clue": "Es normal que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "darse": {
+  "s": {
+   "28": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Qué pasaría si me diera un golpe tomando el anticoagulante?",
+    "en": "What would happen if I banged myself while taking the blood thinner?",
+    "f": "me diera"
    }
   }
  }

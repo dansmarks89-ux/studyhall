@@ -1285,7 +1285,7 @@ function wtUnit(it){
   if(YUE){ const s=cps(x.s.replace(NONWORD,"")); let o=0, so=0;
     a=v.tl[1].map(n=>{ const t=s.slice(o,o+n).join(""), c=(t.match(CJKRE)||[]).length, r=rt.slice(so,so+c).join(" "); o+=n; so+=c; return {s:t, r}; }); }
   else { const ws=x.s.split(/\s+/); a=ws.map((w,i)=>({s:w.replace(KO_PUNCT,""), r:rt.length===ws.length?rt[i]:""})).filter(o=>o.s); }
-  return {t:"tiles", id:it.id, sk:it.sk, w:it.w, v:it.v, en:x.en, full:x, a, alt:[], extra:[]};
+  return {t:"tiles", id:it.id, sk:it.sk, w:it.w, v:it.v, en:x.en, full:x, a, alt:(v.tl[2]||[]).map(o=>o.map(i=>a[i].s)), extra:[]};
 }
 // Multiple choice: opts = [{html, key}], a = key of the right one
 function mcRender(box, opts, a, test, grid, onPick){

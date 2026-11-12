@@ -191,7 +191,7 @@
    },
    "pos": "noun",
    "en": "wound, cut; emotional hurt",
-   "note": "상처(를) 받다 = to get hurt (feelings).",
+   "note": "상처받다 / 상처를 받다 = to get hurt (feelings).",
    "ex": [
     {
      "s": "손에 상처가 났어요.",
@@ -202,10 +202,111 @@
      "en": "I hope the cut heals fast."
     },
     {
-     "s": "그 말 때문에 상처 받았어요.",
+     "s": "그 말 때문에 상처받았어요.",
      "en": "I was hurt by what they said."
     }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "손에",
+     "상처가",
+     "났어요"
+    ],
+    "alt": [
+     [
+      "상처가",
+      "손에",
+      "났어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-103",
+   "t": {
+    "s": "설치하다"
+   },
+   "pos": "verb",
+   "en": "to install, set up",
+   "note": "",
+   "ex": [
+    {
+     "s": "이 앱 설치했어요?",
+     "en": "Did you install this app?"
+    },
+    {
+     "s": "내일 기사님이 에어컨을 설치하러 오세요.",
+     "en": "A technician is coming tomorrow to install the AC."
+    },
+    {
+     "s": "회사 컴퓨터에 프로그램을 설치해야 돼요.",
+     "en": "I need to install a program on my work computer."
+    }
    ]
+  },
+  {
+   "id": "kv03-145",
+   "t": {
+    "s": "구매"
+   },
+   "pos": "noun",
+   "en": "purchase, buying",
+   "note": "구매하다 = to buy (more formal than 사다).",
+   "ex": [
+    {
+     "s": "온라인으로 구매하면 더 싸요.",
+     "en": "It's cheaper if you buy it online."
+    },
+    {
+     "s": "구매 후 칠 일 안에 교환할 수 있어요.",
+     "en": "You can exchange it within 7 days of purchase."
+    },
+    {
+     "s": "구매 내역은 앱에서 확인하세요.",
+     "en": "Check your purchase history in the app."
+    }
+   ]
+  },
+  {
+   "id": "kv03-155",
+   "t": {
+    "s": "반대하다"
+   },
+   "pos": "verb",
+   "en": "to oppose, be against",
+   "note": "Used with 에 or 을/를: 계획에 반대하다.",
+   "ex": [
+    {
+     "s": "부모님이 제 유학을 반대하세요.",
+     "en": "My parents are against me studying abroad."
+    },
+    {
+     "s": "저는 그 의견에 반대해요.",
+     "en": "I disagree with that opinion."
+    },
+    {
+     "s": "반대하는 사람 있어요?",
+     "en": "Is anyone against it?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "부모님이",
+     "제",
+     "유학을",
+     "반대하세요"
+    ],
+    "alt": [
+     [
+      "제",
+      "유학을",
+      "부모님이",
+      "반대하세요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [

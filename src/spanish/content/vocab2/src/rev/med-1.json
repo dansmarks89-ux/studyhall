@@ -229,6 +229,62 @@
      "hit": "boca del estómago"
     }
    ]
+  },
+  {
+   "id": "sm1-me-permite",
+   "w": "¿me permite…?",
+   "pos": "phrase",
+   "en": "may I…? (polite request)",
+   "note": "Polite usted request: '¿Me permite su tarjeta?' = may I have your card?",
+   "type": [
+    "me permite",
+    "¿me permite?"
+   ],
+   "ex": [
+    {
+     "es": "¿Me permite su identificación, por favor?",
+     "en": "May I have your ID, please?",
+     "hit": "Me permite"
+    },
+    {
+     "es": "¿Me permite escucharle el corazón?",
+     "en": "May I listen to your heart?",
+     "hit": "Me permite"
+    },
+    {
+     "es": "Doctor, ¿me permite hacer una pregunta?",
+     "en": "Doctor, may I ask a question?",
+     "hit": "me permite"
+    }
+   ]
+  },
+  {
+   "id": "sm1-correcto",
+   "w": "correcto",
+   "pos": "adjective",
+   "en": "correct; right",
+   "note": "'¿Es correcto?' or '¿correcto?' is a polite way to check details.",
+   "type": [
+    "correcto",
+    "correcta"
+   ],
+   "ex": [
+    {
+     "es": "Su cumpleaños es el tres de mayo, ¿correcto?",
+     "en": "Your birthday is May third, correct?",
+     "hit": "correcto"
+    },
+    {
+     "es": "Sí, correcto, ese es mi número.",
+     "en": "Yes, that's right, that's my number.",
+     "hit": "correcto"
+    },
+    {
+     "es": "¿Es correcto el nombre en su pulsera?",
+     "en": "Is the name on your wristband correct?",
+     "hit": "correcto"
+    }
+   ]
   }
  ],
  "drop": [],

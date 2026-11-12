@@ -134,7 +134,7 @@ def check(v, e):
             wr = s.get("wrong", [])
             bad = [x for x in wr if x not in TENSES3 or x == t]
             if bad: E(f"{tag}: wrong has bad tenses {bad}")
-            if len(wr) < 3: E(f"{tag}: wrong needs at least 3 tenses")
+            if len(wr) < 2: E(f"{tag}: wrong needs at least 2 tenses")   # "Which tense?" shows f + 2 or 3 of them
             if t != "ir a" and any(x != "ir a" and lc(table_form(v, x, p)) == lc(s["f"]) for x in wr): E(f"{tag}: a wrong tense has the same form as f")
         elif "wrong" in s or "clue" in s:
             E(f"{tag}: clue and wrong are for stmt sentences only")

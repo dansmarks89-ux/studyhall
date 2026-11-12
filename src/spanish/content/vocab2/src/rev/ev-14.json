@@ -147,7 +147,8 @@
    "en": "magic, magical",
    "note": "",
    "type": [
-    "mágico"
+    "mágico",
+    "mágica"
    ],
    "ex": [
     {
@@ -202,7 +203,8 @@
    "en": "outstanding, prominent, notable",
    "note": "",
    "type": [
-    "destacado"
+    "destacado",
+    "destacada"
    ],
    "ex": [
     {
@@ -247,6 +249,461 @@
      "es": "Quiero ayudar a mi equipo a llegar a su potencial.",
      "en": "I want to help my team reach its potential.",
      "hit": "potencial"
+    }
+   ]
+  },
+  {
+   "id": "sv08-sucio",
+   "w": "sucio",
+   "pos": "adjective",
+   "en": "dirty",
+   "note": "",
+   "type": [
+    "sucio",
+    "sucia"
+   ],
+   "ex": [
+    {
+     "es": "Pon la ropa sucia en la lavadora, por favor.",
+     "en": "Put the dirty clothes in the washing machine, please.",
+     "hit": "sucia"
+    },
+    {
+     "es": "Disculpe, este tenedor está sucio.",
+     "en": "Excuse me, this fork is dirty.",
+     "hit": "sucio"
+    },
+    {
+     "es": "Los niños llegaron del parque con los zapatos sucios.",
+     "en": "The kids came back from the park with dirty shoes.",
+     "hit": "sucios"
+    }
+   ]
+  },
+  {
+   "id": "sv08-usado",
+   "w": "usado",
+   "pos": "adjective",
+   "en": "used; secondhand",
+   "note": "",
+   "type": [
+    "usado",
+    "de segunda mano",
+    "usada"
+   ],
+   "ex": [
+    {
+     "es": "Compré un coche usado porque era más barato.",
+     "en": "I bought a used car because it was cheaper.",
+     "hit": "usado"
+    },
+    {
+     "es": "Esta tienda vende ropa usada en buen estado.",
+     "en": "This store sells used clothes in good condition.",
+     "hit": "usada"
+    },
+    {
+     "es": "¿Esta toalla está limpia o usada?",
+     "en": "Is this towel clean or used?",
+     "hit": "usada"
+    }
+   ]
+  },
+  {
+   "id": "sv08-herido",
+   "w": "herido",
+   "pos": "adjective",
+   "en": "injured, hurt, wounded",
+   "note": "Also figurative: hurt feelings.",
+   "type": [
+    "herido",
+    "lastimado",
+    "herida",
+    "lastimada"
+   ],
+   "ex": [
+    {
+     "es": "Nadie salió herido en el accidente.",
+     "en": "Nobody was hurt in the accident.",
+     "hit": "herido"
+    },
+    {
+     "es": "El perro tenía una pata herida.",
+     "en": "The dog had an injured leg.",
+     "hit": "herida"
+    },
+    {
+     "es": "Me sentí herido por lo que dijo.",
+     "en": "I felt hurt by what he said.",
+     "hit": "herido"
+    }
+   ]
+  },
+  {
+   "id": "sv08-ligero",
+   "w": "ligero",
+   "pos": "adjective",
+   "en": "light (weight, food); slight",
+   "note": "",
+   "type": [
+    "ligero",
+    "ligera"
+   ],
+   "ex": [
+    {
+     "es": "Quiero algo ligero para cenar.",
+     "en": "I want something light for dinner.",
+     "hit": "ligero"
+    },
+    {
+     "es": "Esta maleta es muy ligera.",
+     "en": "This suitcase is very light.",
+     "hit": "ligera"
+    },
+    {
+     "es": "Tengo un ligero dolor de cabeza.",
+     "en": "I have a slight headache.",
+     "hit": "ligero"
+    }
+   ]
+  },
+  {
+   "id": "sv08-curioso",
+   "w": "curioso",
+   "pos": "adjective",
+   "en": "curious; odd, interesting",
+   "note": "",
+   "type": [
+    "curioso",
+    "curiosa"
+   ],
+   "ex": [
+    {
+     "es": "Mi hija es muy curiosa y pregunta todo.",
+     "en": "My daughter is very curious and asks about everything.",
+     "hit": "curiosa"
+    },
+    {
+     "es": "Los gatos son muy curiosos.",
+     "en": "Cats are very curious.",
+     "hit": "curiosos"
+    },
+    {
+     "es": "¡Qué curioso! Yo también nací en marzo.",
+     "en": "That's funny, I was also born in March.",
+     "hit": "curioso"
+    }
+   ]
+  },
+  {
+   "id": "sv08-definitivo",
+   "w": "definitivo",
+   "pos": "adjective",
+   "en": "final, definitive; permanent",
+   "note": "En definitiva = in short, ultimately.",
+   "type": [
+    "definitivo",
+    "definitiva"
+   ],
+   "ex": [
+    {
+     "es": "¿Ya tienes la respuesta definitiva?",
+     "en": "Do you have the final answer yet?",
+     "hit": "definitiva"
+    },
+    {
+     "es": "Esta es la versión definitiva del documento.",
+     "en": "This is the final version of the document.",
+     "hit": "definitiva"
+    },
+    {
+     "es": "Se mudaron a México de forma definitiva.",
+     "en": "They moved to Mexico for good.",
+     "hit": "definitiva"
+    }
+   ]
+  },
+  {
+   "id": "sv08-autentico",
+   "w": "auténtico",
+   "pos": "adjective",
+   "en": "authentic, genuine, real",
+   "note": "",
+   "type": [
+    "auténtico",
+    "genuino",
+    "auténtica",
+    "genuina"
+   ],
+   "ex": [
+    {
+     "es": "Este restaurante tiene tacos auténticos.",
+     "en": "This restaurant has authentic tacos.",
+     "hit": "auténticos"
+    },
+    {
+     "es": "¿Es una bolsa de piel auténtica?",
+     "en": "Is it a genuine leather bag?",
+     "hit": "auténtica"
+    },
+    {
+     "es": "Diego es un amigo auténtico.",
+     "en": "Diego is a true friend.",
+     "hit": "auténtico"
+    }
+   ]
+  },
+  {
+   "id": "sv08-tonto",
+   "w": "tonto",
+   "pos": "adjective",
+   "en": "silly, dumb, foolish",
+   "note": "Mild; can be affectionate among friends.",
+   "type": [
+    "tonto",
+    "tonta"
+   ],
+   "ex": [
+    {
+     "es": "Fue una pregunta tonta, perdón.",
+     "en": "It was a silly question, sorry.",
+     "hit": "tonta"
+    },
+    {
+     "es": "No seas tonto, claro que te ayudo.",
+     "en": "Don't be silly, of course I'll help you.",
+     "hit": "tonto"
+    },
+    {
+     "es": "Me siento tonto, olvidé las llaves otra vez.",
+     "en": "I feel dumb, I forgot my keys again.",
+     "hit": "tonto"
+    }
+   ]
+  },
+  {
+   "id": "sv08-incluido",
+   "w": "incluido",
+   "pos": "adjective",
+   "en": "included",
+   "note": "",
+   "type": [
+    "incluido",
+    "incluida"
+   ],
+   "ex": [
+    {
+     "es": "¿El desayuno está incluido en el precio?",
+     "en": "Is breakfast included in the price?",
+     "hit": "incluido"
+    },
+    {
+     "es": "La propina no está incluida en la cuenta.",
+     "en": "The tip isn't included in the bill.",
+     "hit": "incluida"
+    },
+    {
+     "es": "Todos están invitados, tus primos incluidos.",
+     "en": "Everyone's invited, your cousins included.",
+     "hit": "incluidos"
+    }
+   ]
+  },
+  {
+   "id": "sv08-prohibido",
+   "w": "prohibido",
+   "pos": "adjective",
+   "en": "forbidden, prohibited, not allowed",
+   "note": "Prohibido fumar = no smoking.",
+   "type": [
+    "prohibido",
+    "prohibida"
+   ],
+   "ex": [
+    {
+     "es": "Aquí adentro está prohibido fumar.",
+     "en": "Smoking isn't allowed in here.",
+     "hit": "prohibido"
+    },
+    {
+     "es": "Está prohibido usar el celular en el examen.",
+     "en": "Using your phone is not allowed during the exam.",
+     "hit": "prohibido"
+    },
+    {
+     "es": "En mi casa los dulces están prohibidos antes de cenar.",
+     "en": "In my house candy is not allowed before dinner.",
+     "hit": "prohibidos"
+    }
+   ]
+  },
+  {
+   "id": "sv08-tremendo",
+   "w": "tremendo",
+   "pos": "adjective",
+   "en": "tremendous, huge; terrible",
+   "note": "",
+   "type": [
+    "tremendo",
+    "tremenda"
+   ],
+   "ex": [
+    {
+     "es": "Hace un calor tremendo hoy.",
+     "en": "It's incredibly hot today.",
+     "hit": "tremendo"
+    },
+    {
+     "es": "Nos dimos un susto tremendo.",
+     "en": "We got a huge scare.",
+     "hit": "tremendo"
+    },
+    {
+     "es": "Tengo un dolor de cabeza tremendo.",
+     "en": "I have a terrible headache.",
+     "hit": "tremendo"
+    }
+   ]
+  },
+  {
+   "id": "sv08-eterno",
+   "w": "eterno",
+   "pos": "adjective",
+   "en": "eternal, endless",
+   "note": "Often exaggerated: la clase fue eterna.",
+   "type": [
+    "eterno",
+    "eterna"
+   ],
+   "ex": [
+    {
+     "es": "La espera en el doctor fue eterna.",
+     "en": "The wait at the doctor's was endless.",
+     "hit": "eterna"
+    },
+    {
+     "es": "Siempre vas a tener mi amor eterno.",
+     "en": "You will always have my eternal love.",
+     "hit": "eterno"
+    },
+    {
+     "es": "Esta reunión se está haciendo eterna.",
+     "en": "This meeting is taking forever.",
+     "hit": "eterna"
+    }
+   ]
+  },
+  {
+   "id": "sv08-previsto",
+   "w": "previsto",
+   "pos": "adjective",
+   "en": "planned, expected, scheduled",
+   "note": "Como estaba previsto = as planned.",
+   "type": [
+    "previsto",
+    "prevista"
+   ],
+   "ex": [
+    {
+     "es": "El vuelo llegó a la hora prevista.",
+     "en": "The flight arrived at the scheduled time.",
+     "hit": "prevista"
+    },
+    {
+     "es": "Todo salió como estaba previsto.",
+     "en": "Everything went as planned.",
+     "hit": "previsto"
+    },
+    {
+     "es": "¿Tienes algo previsto para el sábado?",
+     "en": "Do you have anything planned for Saturday?",
+     "hit": "previsto"
+    }
+   ]
+  },
+  {
+   "id": "sv08-desaparecido",
+   "w": "desaparecido",
+   "pos": "adjective",
+   "en": "missing; disappeared",
+   "note": "",
+   "type": [
+    "desaparecido",
+    "perdido",
+    "desaparecida",
+    "perdida"
+   ],
+   "ex": [
+    {
+     "es": "Nuestro gato lleva dos días desaparecido.",
+     "en": "Our cat has been missing for two days.",
+     "hit": "desaparecido"
+    },
+    {
+     "es": "¡Hola, Minho! Andas muy desaparecido.",
+     "en": "Hi, Minho! You've been MIA lately.",
+     "hit": "desaparecido"
+    },
+    {
+     "es": "Encontré el control desaparecido debajo del sofá.",
+     "en": "I found the missing remote under the couch.",
+     "hit": "desaparecido"
+    }
+   ]
+  },
+  {
+   "id": "sv08-sagrado",
+   "w": "sagrado",
+   "pos": "adjective",
+   "en": "sacred, holy",
+   "note": "Also 'untouchable': mi café es sagrado.",
+   "type": [
+    "sagrado",
+    "sagrada"
+   ],
+   "ex": [
+    {
+     "es": "Para mí, el domingo en familia es sagrado.",
+     "en": "For me, Sunday with family is sacred.",
+     "hit": "sagrado"
+    },
+    {
+     "es": "Visitamos un lugar sagrado en las montañas.",
+     "en": "We visited a sacred place in the mountains.",
+     "hit": "sagrado"
+    },
+    {
+     "es": "Mi hora de siesta es sagrada.",
+     "en": "My nap time is sacred.",
+     "hit": "sagrada"
+    }
+   ]
+  },
+  {
+   "id": "sv08-considerado",
+   "w": "considerado",
+   "pos": "adjective",
+   "en": "considerate, thoughtful; considered",
+   "note": "",
+   "type": [
+    "considerado",
+    "considerada"
+   ],
+   "ex": [
+    {
+     "es": "Tu esposo es muy considerado con todos.",
+     "en": "Your husband is very considerate with everyone.",
+     "hit": "considerado"
+    },
+    {
+     "es": "¡Qué considerada! Me trajiste un café.",
+     "en": "How thoughtful! You brought me a coffee.",
+     "hit": "considerada"
+    },
+    {
+     "es": "Es considerado el mejor restaurante de la ciudad.",
+     "en": "It's considered the best restaurant in the city.",
+     "hit": "considerado"
     }
    ]
   }

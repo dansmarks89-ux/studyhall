@@ -21,7 +21,7 @@
      "en": "Does this price include tax?"
     },
     {
-     "s": "喺香港買嘢唔使畀銷售稅。",
+     "s": "喺香港買嘢唔使俾銷售稅。",
      "r": "hai2 hoeng1 gong2 maai5 je5 m4 sai2 bei2 siu1 sau6 seoi3",
      "en": "In Hong Kong you don't pay sales tax when shopping."
     }
@@ -200,7 +200,7 @@
    "note": "",
    "ex": [
     {
-     "s": "佢堅持要畀錢。",
+     "s": "佢堅持要俾錢。",
      "r": "keoi5 gin1 ci4 jiu3 bei2 cin2",
      "en": "He insisted on paying."
     },
@@ -345,11 +345,371 @@
      "en": "She quit last month."
     },
     {
-     "s": "辭職要畀一個月通知。",
+     "s": "辭職要俾一個月通知。",
      "r": "ci4 zik1 jiu3 bei2 jat1 go3 jyut6 tung1 zi1",
      "en": "You have to give a month's notice to resign."
     }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "諗",
+     "緊",
+     "辭職",
+     "份",
+     "工",
+     "太",
+     "辛苦"
+    ],
+    "alt": [
+     [
+      "份",
+      "工",
+      "太",
+      "辛苦",
+      "我",
+      "諗",
+      "緊",
+      "辭職"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv09-91",
+   "t": {
+    "s": "任務",
+    "r": "jam6 mou6"
+   },
+   "pos": "noun",
+   "en": "task; mission",
+   "note": "",
+   "ex": [
+    {
+     "s": "今日嘅任務係執屋。",
+     "r": "gam1 jat6 ge3 jam6 mou6 hai6 zap1 uk1",
+     "en": "Today's mission: tidy the house."
+    },
+    {
+     "s": "老闆俾咗個新任務我。",
+     "r": "lou5 baan2 bei2 zo2 go3 san1 jam6 mou6 ngo5",
+     "en": "My boss gave me a new task."
+    },
+    {
+     "s": "呢個遊戲要完成任務先過到關。",
+     "r": "ni1 go3 jau4 hei3 jiu3 jyun4 sing4 jam6 mou6 sin1 gwo3 dou2 gwaan1",
+     "en": "In this game, you finish the mission to pass the level."
+    }
    ]
+  },
+  {
+   "id": "cv09-94",
+   "t": {
+    "s": "深入",
+    "r": "sam1 jap6"
+   },
+   "pos": "verb",
+   "en": "to go deep into; in depth",
+   "note": "",
+   "ex": [
+    {
+     "s": "我哋下次再深入傾。",
+     "r": "ngo5 dei6 haa6 ci3 zoi3 sam1 jap6 king1",
+     "en": "Let's talk about it in more depth next time."
+    },
+    {
+     "s": "我想深入了解吓呢個城市。",
+     "r": "ngo5 soeng2 sam1 jap6 liu5 gaai2 haa5 ni1 go3 sing4 si5",
+     "en": "I want to really get to know this city."
+    },
+    {
+     "s": "警察要再深入調查。",
+     "r": "ging2 caat3 jiu3 zoi3 sam1 jap6 diu6 caa4",
+     "en": "The police need to investigate further."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "下次",
+     "再",
+     "深入",
+     "傾"
+    ],
+    "alt": [
+     [
+      "下次",
+      "我哋",
+      "再",
+      "深入",
+      "傾"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv09-53",
+   "t": {
+    "s": "變化",
+    "r": "bin3 faa3"
+   },
+   "pos": "noun",
+   "en": "change",
+   "note": "",
+   "ex": [
+    {
+     "s": "香港呢幾年變化好大。",
+     "r": "hoeng1 gong2 ni1 gei2 nin4 bin3 faa3 hou2 daai6",
+     "en": "Hong Kong has changed a lot in recent years."
+    },
+    {
+     "s": "呢排天氣變化好大，小心着涼。",
+     "r": "ni1 paai2 tin1 hei3 bin3 faa3 hou2 daai6 siu2 sam1 zoek6 loeng4",
+     "en": "The weather's been changeable lately; don't catch a chill."
+    },
+    {
+     "s": "計劃有啲變化，我遲啲話你知。",
+     "r": "gai3 waak6 jau5 di1 bin3 faa3 ngo5 ci4 di1 waa6 nei5 zi1",
+     "en": "The plan has changed a bit; I'll let you know later."
+    }
+   ]
+  },
+  {
+   "id": "cv09-5",
+   "t": {
+    "s": "冧巴",
+    "r": "lam1 baa2"
+   },
+   "pos": "noun",
+   "en": "number (phone, room, etc.)",
+   "note": "From English 'number'; colloquial for 號碼 hou6 maa5.",
+   "ex": [
+    {
+     "s": "你俾個電話冧巴我吖。",
+     "r": "nei5 bei2 go3 din6 waa2 lam1 baa2 ngo5 aa1",
+     "en": "Give me your phone number."
+    },
+    {
+     "s": "你間房咩冧巴呀？",
+     "r": "nei5 gaan1 fong2 me1 lam1 baa2 aa3",
+     "en": "What's your room number?"
+    },
+    {
+     "s": "等我搵吓佢個冧巴先。",
+     "r": "dang2 ngo5 wan2 haa5 keoi5 go3 lam1 baa2 sin1",
+     "en": "Let me look up her number first."
+    }
+   ]
+  },
+  {
+   "id": "cv09-44",
+   "t": {
+    "s": "手信",
+    "r": "sau2 seon3"
+   },
+   "pos": "noun",
+   "en": "souvenir gift (from a trip)",
+   "note": "Gifts brought back for friends; Mandarin 伴手禮 isn't used.",
+   "ex": [
+    {
+     "s": "我去日本帶咗啲手信返嚟。",
+     "r": "ngo5 heoi3 jat6 bun2 daai3 zo2 di1 sau2 seon3 faan1 lai4",
+     "en": "I brought back some gifts from Japan."
+    },
+    {
+     "s": "呢盒朱古力係手信。",
+     "r": "ni1 hap6 zyu1 gu1 lik1 hai6 sau2 seon3",
+     "en": "This box of chocolates is a gift from my trip."
+    },
+    {
+     "s": "去旅行記得買手信俾同事。",
+     "r": "heoi3 leoi5 hang4 gei3 dak1 maai5 sau2 seon3 bei2 tung4 si6",
+     "en": "Remember to buy gifts for coworkers on your trip."
+    }
+   ]
+  },
+  {
+   "id": "cv09-59",
+   "t": {
+    "s": "盡快",
+    "r": "zeon6 faai3"
+   },
+   "pos": "adverb",
+   "en": "as soon as possible",
+   "note": "",
+   "ex": [
+    {
+     "s": "我會盡快覆你。",
+     "r": "ngo5 wui5 zeon6 faai3 fuk1 nei5",
+     "en": "I'll get back to you as soon as I can."
+    },
+    {
+     "s": "你盡快去睇醫生啦。",
+     "r": "nei5 zeon6 faai3 heoi3 tai2 ji1 sang1 laa1",
+     "en": "Go see a doctor as soon as you can."
+    },
+    {
+     "s": "啲錢麻煩你盡快還俾我。",
+     "r": "di1 cin2 maa4 faan4 nei5 zeon6 faai3 waan4 bei2 ngo5",
+     "en": "Please pay me back as soon as possible."
+    }
+   ]
+  },
+  {
+   "id": "cv09-4",
+   "t": {
+    "s": "文憑",
+    "r": "man4 pang4"
+   },
+   "pos": "noun",
+   "en": "diploma",
+   "note": "HK's school-leaving exam is 文憑試 (the DSE).",
+   "ex": [
+    {
+     "s": "我讀完呢個課程就有張文憑。",
+     "r": "ngo5 duk6 jyun4 ni1 go3 fo3 cing4 zau6 jau5 zoeng1 man4 pang4",
+     "en": "When I finish this course, I'll get a diploma."
+    },
+    {
+     "s": "佢細佬今年考文憑試。",
+     "r": "keoi5 sai3 lou2 gam1 nin2 haau2 man4 pang4 si3",
+     "en": "Her younger brother takes the DSE this year."
+    },
+    {
+     "s": "份工要求有文憑或以上。",
+     "r": "fan6 gung1 jiu1 kau4 jau5 man4 pang4 waak6 ji5 soeng6",
+     "en": "The job requires a diploma or higher."
+    }
+   ]
+  },
+  {
+   "id": "cv09-81",
+   "t": {
+    "s": "市道",
+    "r": "si5 dou6"
+   },
+   "pos": "noun",
+   "en": "market conditions; business climate",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢排市道差，生意唔好做。",
+     "r": "ni1 paai2 si5 dou6 caa1 saang1 ji3 m4 hou2 zou6",
+     "en": "Business is slow lately; it's tough out there."
+    },
+    {
+     "s": "市道咁差，我想遲啲先買樓。",
+     "r": "si5 dou6 gam3 caa1 ngo5 soeng2 ci4 di1 sin1 maai5 lau2",
+     "en": "With the market this bad, I'll buy a flat later."
+    },
+    {
+     "s": "今年市道好返啲。",
+     "r": "gam1 nin2 si5 dou6 hou2 faan1 di1",
+     "en": "The market has picked up a bit this year."
+    }
+   ]
+  },
+  {
+   "id": "cv09-3",
+   "t": {
+    "s": "詳情",
+    "r": "coeng4 cing4"
+   },
+   "pos": "noun",
+   "en": "details",
+   "note": "",
+   "ex": [
+    {
+     "s": "詳情我遲啲WhatsApp你。",
+     "r": "coeng4 cing4 ngo5 ci4 di1 nei5",
+     "en": "I'll WhatsApp you the details later."
+    },
+    {
+     "s": "想知詳情可以打呢個電話。",
+     "r": "soeng2 zi1 coeng4 cing4 ho2 ji5 daa2 ni1 go3 din6 waa2",
+     "en": "For details, you can call this number."
+    },
+    {
+     "s": "個醫生仲未講詳情。",
+     "r": "go3 ji1 sang1 zung6 mei6 gong2 coeng4 cing4",
+     "en": "The doctor hasn't given the details yet."
+    }
+   ]
+  },
+  {
+   "id": "cv09-84",
+   "t": {
+    "s": "或",
+    "r": "waak6"
+   },
+   "pos": "conjunction",
+   "en": "or",
+   "note": "In speech 或者 waak6 ze2 is more common.",
+   "ex": [
+    {
+     "s": "你可以搭巴士或地鐵。",
+     "r": "nei5 ho2 ji5 daap3 baa1 si2 waak6 dei6 tit3",
+     "en": "You can take the bus or the MTR."
+    },
+    {
+     "s": "一個或兩個都得。",
+     "r": "jat1 go3 waak6 loeng5 go3 dou1 dak1",
+     "en": "One or two is fine."
+    },
+    {
+     "s": "打電話或WhatsApp我都得。",
+     "r": "daa2 din6 waa2 waak6 ngo5 dou1 dak1",
+     "en": "Call or WhatsApp me, either is fine."
+    }
+   ]
+  },
+  {
+   "id": "cv09-58",
+   "t": {
+    "s": "牙肉",
+    "r": "ngaa4 juk6"
+   },
+   "pos": "noun",
+   "en": "gums",
+   "note": "Mandarin 牙齦 is rarely said.",
+   "ex": [
+    {
+     "s": "我刷牙嗰陣牙肉流血。",
+     "r": "ngo5 caat3 ngaa4 go2 zan6 ngaa4 juk6 lau4 hyut3",
+     "en": "My gums bleed when I brush my teeth."
+    },
+    {
+     "s": "牙醫話我牙肉有啲發炎。",
+     "r": "ngaa4 ji1 waa6 ngo5 ngaa4 juk6 jau5 di1 faat3 jim4",
+     "en": "The dentist said my gums are a bit inflamed."
+    },
+    {
+     "s": "啲牙肉腫咗，好痛。",
+     "r": "di1 ngaa4 juk6 zung2 zo2 hou2 tung3",
+     "en": "My gums are swollen and sore."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "刷牙",
+     "嗰陣",
+     "牙肉",
+     "流血"
+    ],
+    "alt": [
+     [
+      "刷牙",
+      "嗰陣",
+      "我",
+      "牙肉",
+      "流血"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

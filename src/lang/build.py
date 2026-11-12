@@ -514,6 +514,25 @@ def build_vocab2(lang, levels, want):
                 return [k, [len(w) for w in words]]
         return None
 
+    def tile_override(e, ex):
+        """A reviewed tile exercise from the source entry: "tl": null (none) or {"ex": k, "tiles": [...], "alt": [[...]]}
+        (tiles in the right order; alt = the other natural orders of the same tiles). Returns the page's tl with the
+        accepted orders as tile indexes: Cantonese [k, lengths, alts], Korean [k, None, alts]."""
+        o = e["tl"]
+        if not o:
+            return None
+        k, t = o["ex"], o["tiles"]
+        if yue:
+            assert "".join(t) == NONWORD.sub("", ex[k]["s"]), (e["id"], "tiles don't spell the example")
+        else:
+            assert t == [w for w in (KO_PUNCT.sub("", x) for x in ex[k]["s"].split()) if w], (e["id"], "tiles aren't the example's words")
+        alts = []
+        for a in o.get("alt", []):
+            assert sorted(a) == sorted(t) and a != t, (e["id"], "alt order uses other tiles", a)
+            left = list(range(len(t)))
+            alts.append([left.pop(next(i for i, j in enumerate(left) if t[j] == x)) for x in a])
+        return [k, [len(x) for x in t] if yue else None, alts]
+
     def aspect(s, en):
         """Cantonese: [code point, romanization token] of the aspect marker in s that can be blanked, or None.
         Only sentences with exactly one marker character, not inside another word, whose English shows which marker fits."""
@@ -570,7 +589,7 @@ def build_vocab2(lang, levels, want):
                     want(f["s"])
                 if c["note"]:
                     w["cn"] = c["note"]
-            tl = tiles(s, w["ex"])
+            tl = tile_override(e, w["ex"]) if "tl" in e else tiles(s, w["ex"])
             if tl:
                 w["tl"] = tl
             else:

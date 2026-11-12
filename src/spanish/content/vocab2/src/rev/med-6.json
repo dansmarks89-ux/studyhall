@@ -120,7 +120,8 @@
    "type": [
     "el familiar",
     "familiar",
-    "el pariente"
+    "el pariente",
+    "pariente"
    ],
    "ex": [
     {
@@ -137,6 +138,264 @@
      "es": "Soy familiar del señor Ramírez; ¿cómo está?",
      "en": "I'm a relative of Mr. Ramírez; how is he?",
      "hit": "familiar"
+    }
+   ]
+  },
+  {
+   "id": "sm6-seguro",
+   "w": "el seguro",
+   "pos": "noun",
+   "en": "insurance",
+   "note": "Also 'el seguro médico'. 'La aseguranza' is common US Spanish but nonstandard.",
+   "type": [
+    "el seguro",
+    "seguro",
+    "el seguro médico",
+    "seguro médico",
+    "la aseguranza",
+    "aseguranza"
+   ],
+   "ex": [
+    {
+     "es": "¿Qué seguro médico tiene usted?",
+     "en": "What health insurance do you have?",
+     "hit": "seguro"
+    },
+    {
+     "es": "Su seguro cubre la ablación, pero hay un copago.",
+     "en": "Your insurance covers the ablation, but there's a copay.",
+     "hit": "seguro"
+    },
+    {
+     "es": "Mi seguro no paga la pastilla nueva.",
+     "en": "My insurance doesn't pay for the new pill.",
+     "hit": "seguro"
+    }
+   ]
+  },
+  {
+   "id": "sm6-esposo",
+   "w": "el esposo",
+   "pos": "noun",
+   "en": "husband",
+   "note": "La esposa = wife. Patients may also say 'mi señora' for wife.",
+   "type": [
+    "el esposo",
+    "esposo",
+    "el marido",
+    "marido"
+   ],
+   "ex": [
+    {
+     "es": "Mi esposo quiere entrar a la consulta conmigo.",
+     "en": "My husband wants to come into the visit with me.",
+     "hit": "esposo"
+    },
+    {
+     "es": "¿Su esposo puede ayudarle a pesarse cada mañana?",
+     "en": "Can your husband help you weigh yourself each morning?",
+     "hit": "esposo"
+    },
+    {
+     "es": "Mi esposa tiene preguntas sobre la ablación.",
+     "en": "My wife has questions about the ablation.",
+     "hit": "esposa"
+    }
+   ]
+  },
+  {
+   "id": "sm6-rigido",
+   "w": "rígido",
+   "pos": "adj",
+   "en": "stiff",
+   "note": "Feminine: rígida. For heart failure where the heart is stiff, not weak.",
+   "type": [
+    "rígido",
+    "rígida"
+   ],
+   "ex": [
+    {
+     "es": "Su corazón bombea bien, pero está rígido y no se relaja.",
+     "en": "Your heart pumps well, but it's stiff and doesn't relax.",
+     "hit": "rígido"
+    },
+    {
+     "es": "Un corazón rígido se llena mal y se acumula líquido en el cuerpo.",
+     "en": "A stiff heart fills poorly, and fluid builds up in the body.",
+     "hit": "rígido"
+    },
+    {
+     "es": "Doctor, ¿por qué se puso rígido mi corazón?",
+     "en": "Doctor, why did my heart get stiff?",
+     "hit": "rígido"
+    }
+   ]
+  },
+  {
+   "id": "sm6-arritmia",
+   "w": "la arritmia",
+   "pos": "noun",
+   "en": "arrhythmia; abnormal heart rhythm",
+   "note": "Plain alternative: 'un problema del ritmo del corazón'.",
+   "type": [
+    "la arritmia",
+    "arritmia"
+   ],
+   "ex": [
+    {
+     "es": "Usted tiene una arritmia, o sea, un problema del ritmo del corazón.",
+     "en": "You have an arrhythmia, that is, a problem with your heart rhythm.",
+     "hit": "arritmia"
+    },
+    {
+     "es": "Doctor, ¿mi arritmia es peligrosa?",
+     "en": "Doctor, is my arrhythmia dangerous?",
+     "hit": "arritmia"
+    },
+    {
+     "es": "Mi mamá tiene una arritmia y quiere saber si es grave.",
+     "en": "My mom has an arrhythmia and wants to know if it's serious.",
+     "hit": "arritmia"
+    }
+   ]
+  },
+  {
+   "id": "sm6-lento",
+   "w": "lento",
+   "pos": "adj",
+   "en": "slow",
+   "note": "Feminine: lenta. 'El corazón le late lento' = the heart beats slowly.",
+   "type": [
+    "lento",
+    "lenta"
+   ],
+   "ex": [
+    {
+     "es": "Su corazón late muy lento, a unos cuarenta por minuto.",
+     "en": "Your heart beats very slowly, about forty per minute.",
+     "hit": "lento"
+    },
+    {
+     "es": "Cuando el pulso está muy lento, uno puede sentirse cansado y mareado.",
+     "en": "When the pulse is very slow, you can feel tired and dizzy.",
+     "hit": "lento"
+    },
+    {
+     "es": "Enfermera, el pulso de mi papá está muy lento hoy.",
+     "en": "Nurse, my dad's pulse is very slow today.",
+     "hit": "lento"
+    }
+   ]
+  },
+  {
+   "id": "sm6-rapido",
+   "w": "rápido",
+   "pos": "adj",
+   "en": "fast",
+   "note": "Feminine: rápida. Also used as an adverb: 'late rápido'.",
+   "type": [
+    "rápido",
+    "rápida"
+   ],
+   "ex": [
+    {
+     "es": "En la taquicardia supraventricular, el corazón late muy rápido de repente.",
+     "en": "In SVT, the heart suddenly beats very fast.",
+     "hit": "rápido"
+    },
+    {
+     "es": "Si el pulso se pone rápido otra vez, llámenos.",
+     "en": "If your pulse gets fast again, call us.",
+     "hit": "rápido"
+    },
+    {
+     "es": "La fibrilación hace que el corazón vaya rápido y desordenado.",
+     "en": "AF makes the heart go fast and disorganized.",
+     "hit": "rápido"
+    }
+   ]
+  },
+  {
+   "id": "sm6-comun",
+   "w": "común",
+   "pos": "adj",
+   "en": "common",
+   "note": "",
+   "type": [
+    "común",
+    "frecuente"
+   ],
+   "ex": [
+    {
+     "es": "La fibrilación auricular es muy común después de los sesenta.",
+     "en": "AF is very common after sixty.",
+     "hit": "común"
+    },
+    {
+     "es": "¿Es común sentirse cansado con esta pastilla?",
+     "en": "Is it common to feel tired on this pill?",
+     "hit": "común"
+    },
+    {
+     "es": "Es común que la taquicardia supraventricular empiece en personas jóvenes.",
+     "en": "It's common for SVT to start in young people.",
+     "hit": "común"
+    }
+   ]
+  },
+  {
+   "id": "sm6-pujar",
+   "w": "pujar",
+   "pos": "verb",
+   "en": "to bear down; to strain",
+   "note": "Used for the vagal maneuver: 'puje como si fuera al baño'.",
+   "type": [
+    "pujar"
+   ],
+   "ex": [
+    {
+     "es": "Cuando empiece la taquicardia, puje como si fuera al baño.",
+     "en": "When the SVT starts, bear down as if going to the bathroom.",
+     "hit": "puje"
+    },
+    {
+     "es": "A veces pujar fuerte detiene la taquicardia supraventricular.",
+     "en": "Sometimes bearing down hard stops SVT.",
+     "hit": "pujar"
+    },
+    {
+     "es": "Pujé como me dijo y se me quitó.",
+     "en": "I bore down like you told me and it went away.",
+     "hit": "Pujé"
+    }
+   ]
+  },
+  {
+   "id": "sm6-grave",
+   "w": "grave",
+   "pos": "adj",
+   "en": "serious (illness)",
+   "note": "'¿Es grave?' is a very common patient question.",
+   "type": [
+    "grave",
+    "serio",
+    "seria"
+   ],
+   "ex": [
+    {
+     "es": "Doctor, dígame la verdad, ¿es grave?",
+     "en": "Doctor, tell me the truth, is it serious?",
+     "hit": "grave"
+    },
+    {
+     "es": "No es grave, pero sí necesita tratamiento.",
+     "en": "It isn't serious, but it does need treatment.",
+     "hit": "grave"
+    },
+    {
+     "es": "Sin tratamiento, la insuficiencia cardíaca puede volverse grave.",
+     "en": "Without treatment, heart failure can become serious.",
+     "hit": "grave"
     }
    ]
   }

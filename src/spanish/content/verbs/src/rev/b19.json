@@ -1,29 +1,285 @@
 {
  "temblar": {
   "s": {
-   "23": {"t": "Pluperfect", "p": 0, "k": "neg", "es": "Antes de ese día, nunca había temblado de miedo.", "en": "Before that day, I had never shaken with fear.", "f": "había temblado"}
+   "23": {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "neg",
+    "es": "Antes de ese día, nunca había temblado de miedo.",
+    "en": "Before that day, I had never shaken with fear.",
+    "f": "había temblado"
+   }
   }
  },
  "aliviarse": {
-  "set": {"cmd": "pos"},
+  "set": {
+   "cmd": "pos"
+  },
   "add": [
-   {"t": "Command (+)", "p": 2, "k": "cmd", "es": "Alíviese pronto, señora, y descanse mucho.", "en": "Get well soon, ma'am, and get plenty of rest.", "f": "Alíviese"},
-   {"t": "Command (+)", "p": 1, "k": "cmd", "es": "¡Alíviate pronto, mi amor!", "en": "Get well soon, sweetie!", "f": "Alíviate"}
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Alíviese pronto, señora, y descanse mucho.",
+    "en": "Get well soon, ma'am, and get plenty of rest.",
+    "f": "Alíviese"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "¡Alíviate pronto, mi amor!",
+    "en": "Get well soon, sweetie!",
+    "f": "Alíviate"
+   }
   ]
  },
  "calmarse": {
-  "set": {"cmd": "pos", "note": "Regular -ar verb with *me, te, se, nos, se*: *me calmo, se calmó, se calme*. Affirmative commands attach the pronoun and take an accent: *cálmese* (usted), *cálmate* (tú)."},
-  "s": {"32": null}
+  "set": {
+   "cmd": "pos",
+   "note": "Regular -ar verb with *me, te, se, nos, se*: *me calmo, se calmó, se calme*. Affirmative commands attach the pronoun and take an accent: *cálmese* (usted), *cálmate* (tú)."
+  },
+  "s": {
+   "32": null
+  }
  },
  "desabrocharse": {
   "s": {
-   "19": {"t": "Present perfect", "p": 1, "k": "q", "es": "¿Alguna vez te has desabrochado el pantalón después de comer?", "en": "Have you ever unbuttoned your pants after a meal?", "f": "te has desabrochado"}
+   "19": {
+    "t": "Present perfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Alguna vez te has desabrochado el pantalón después de comer?",
+    "en": "Have you ever unbuttoned your pants after a meal?",
+    "f": "te has desabrochado"
+   }
   }
  },
  "roncar": {
   "s": {
-   "10": {"t": "ir a", "p": 3, "k": "q", "es": "¿Vamos a roncar si dormimos sin almohada?", "en": "Are we going to snore if we sleep without a pillow?", "f": "Vamos a roncar"},
-   "21": {"t": "Pluperfect", "p": 0, "k": "stmt", "es": "Mi esposa estaba cansada porque yo había roncado toda la noche.", "en": "My wife was tired because I had snored all night.", "f": "había roncado", "clue": "estaba cansada", "wrong": ["Future", "Present perfect", "Present subjunctive"]}
+   "10": {
+    "t": "ir a",
+    "p": 3,
+    "k": "q",
+    "es": "¿Vamos a roncar si dormimos sin almohada?",
+    "en": "Are we going to snore if we sleep without a pillow?",
+    "f": "Vamos a roncar"
+   },
+   "21": {
+    "t": "Pluperfect",
+    "p": 0,
+    "k": "stmt",
+    "es": "Mi esposa estaba cansada porque yo había roncado toda la noche.",
+    "en": "My wife was tired because I had snored all night.",
+    "f": "había roncado",
+    "clue": "estaba cansada",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "estornudar": {
+  "s": {
+   "8": {
+    "t": "Imperfect",
+    "p": 1,
+    "k": "neg",
+    "es": "Antes no estornudabas con las flores, ¿verdad?",
+    "en": "You didn't use to sneeze around flowers, right?",
+    "f": "estornudabas"
+   }
+  }
+ },
+ "cortarse": {
+  "s": {
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Córtese las uñas de los pies en línea recta, sin redondear.",
+    "en": "Cut your toenails straight across, without rounding them.",
+    "f": "Córtese"
+   }
+  }
+ },
+ "agacharse": {
+  "s": {
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Le pido que se agache despacio.",
+    "en": "I'm asking you to bend down slowly.",
+    "f": "se agache",
+    "clue": "Le pido que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Imperfect"
+    ]
+   }
+  }
+ },
+ "golpearse": {
+  "s": {
+   "5": {
+    "t": "Preterite",
+    "p": 4,
+    "k": "neg",
+    "es": "Gracias a Dios, los niños no se golpearon en el accidente.",
+    "en": "Thank God, the kids didn't get banged up in the accident.",
+    "f": "se golpearon"
+   },
+   "8": {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "En el gimnasio no nos golpeábamos porque había colchonetas.",
+    "en": "At the gym we didn't get banged up because there were mats.",
+    "f": "nos golpeábamos"
+   },
+   "9": {
+    "t": "ir a",
+    "p": 1,
+    "k": "stmt",
+    "es": "Si sigues corriendo en la alberca, te vas a golpear.",
+    "en": "If you keep running at the pool, you're going to get banged up.",
+    "f": "te vas a golpear",
+    "clue": "Si sigues",
+    "wrong": [
+     "Preterite",
+     "Imperfect",
+     "Present perfect",
+     "Pluperfect"
+    ]
+   },
+   "10": {
+    "t": "ir a",
+    "p": 4,
+    "k": "q",
+    "es": "¿Los niños se van a golpear en esos columpios?",
+    "en": "Are the kids going to get banged up on those swings?",
+    "f": "se van a golpear"
+   },
+   "11": {
+    "t": "ir a",
+    "p": 0,
+    "k": "neg",
+    "es": "Con el casco puesto, no me voy a golpear.",
+    "en": "With my helmet on, I'm not going to get banged up.",
+    "f": "me voy a golpear"
+   },
+   "14": {
+    "t": "Future",
+    "p": 3,
+    "k": "neg",
+    "es": "Si vamos despacio, no nos golpearemos.",
+    "en": "If we go slowly, we won't get banged up.",
+    "f": "nos golpearemos"
+   },
+   "16": {
+    "t": "Conditional",
+    "p": 4,
+    "k": "q",
+    "es": "¿Los niños se golpearían si quitáramos la reja?",
+    "en": "Would the kids get banged up if we took away the gate?",
+    "f": "se golpearían"
+   },
+   "17": {
+    "t": "Conditional",
+    "p": 2,
+    "k": "neg",
+    "es": "Con barras en el baño, su mamá no se golpearía.",
+    "en": "With grab bars in the bathroom, your mom wouldn't get banged up.",
+    "f": "se golpearía"
+   },
+   "18": {
+    "t": "Present perfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Desde que tienen el brincolín, los niños se han golpeado mil veces.",
+    "en": "Since they got the trampoline, the kids have banged themselves up a thousand times.",
+    "f": "se han golpeado",
+    "clue": "Desde que tienen",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "22": {
+    "t": "Pluperfect",
+    "p": 1,
+    "k": "q",
+    "es": "¿Ya te habías golpeado esa rodilla antes?",
+    "en": "Had you banged that knee before?",
+    "f": "te habías golpeado"
+   },
+   "23": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "neg",
+    "es": "Mis hijos nunca se habían golpeado tan feo.",
+    "en": "My kids had never banged themselves up so badly.",
+    "f": "se habían golpeado"
+   },
+   "26": {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Ojalá que los jugadores no se golpeen en el partido.",
+    "en": "I hope the players don't get banged up in the game.",
+    "f": "se golpeen"
+   },
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "stmt",
+    "es": "Mi mamá forraba las esquinas para que no me golpeara.",
+    "en": "My mom used to pad the corners so I wouldn't bang myself on them.",
+    "f": "me golpeara",
+    "clue": "para que",
+    "wrong": [
+     "Present",
+     "Future",
+     "Conditional"
+    ]
+   },
+   "29": {
+    "t": "Imperfect subjunctive",
+    "p": 3,
+    "k": "neg",
+    "es": "El entrenador nos daba cascos para que no nos golpeáramos.",
+    "en": "The coach gave us helmets so we wouldn't get banged up.",
+    "f": "nos golpeáramos"
+   }
+  },
+  "set": {
+   "uses": [
+    {
+     "es": "golpearse (la cabeza / con algo)",
+     "en": "to hit (one's head / on something)",
+     "x": "Me golpeé la cabeza con la puerta del carro.",
+     "xen": "I hit my head on the car door."
+    },
+    {
+     "es": "caerse y golpearse",
+     "en": "to fall and hit (a body part)",
+     "x": "Mi abuela se cayó y se golpeó la cadera.",
+     "xen": "My grandmother fell and hit her hip."
+    },
+    {
+     "es": "golpearse contra (algo)",
+     "en": "to bump into / against (something)",
+     "x": "El niño se golpeó contra la mesa.",
+     "xen": "The boy bumped into the table."
+    }
+   ]
   }
  }
 }

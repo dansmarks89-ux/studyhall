@@ -83,6 +83,21 @@
     "es": "¿Quieres que miremos otros modelos antes de comprar?",
     "en": "Do you want us to look at other models before buying?",
     "f": "miremos"
+   },
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En tu lugar, yo miraría otros departamentos antes de decidir.",
+    "en": "If I were you, I'd look at other apartments before deciding.",
+    "f": "miraría",
+    "clue": "En tu lugar",
+    "wrong": [
+     "Preterite",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
    }
   }
  },
@@ -114,6 +129,113 @@
     "es": "No preguntamos cómo llegar y nos perdimos.",
     "en": "We didn't ask how to get there, and we got lost.",
     "f": "preguntamos"
+   },
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En tu lugar, yo le preguntaría a un abogado.",
+    "en": "If I were you, I'd ask a lawyer.",
+    "f": "preguntaría",
+    "clue": "En tu lugar",
+    "wrong": [
+     "Preterite",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "beber": {
+  "s": {
+   "33": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "obj",
+    "es": "Aquí tiene el contraste; bébalo todo, poco a poco.",
+    "en": "Here's the contrast; drink all of it, a little at a time.",
+    "f": "bébalo"
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que beba suficiente agua cuando hace calor.",
+    "en": "It's important that you drink enough water when it's hot.",
+    "f": "beba",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En tu lugar, yo bebería más agua con este calor.",
+    "en": "If I were you, I'd drink more water in this heat.",
+    "f": "bebería",
+    "clue": "En tu lugar",
+    "wrong": [
+     "Preterite",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "jugar": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No juegue deportes de contacto hasta que su médico lo autorice.",
+    "en": "Don't play contact sports until your doctor clears you.",
+    "f": "No juegue"
+   }
+  }
+ },
+ "cerrar": {
+  "s": {
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En tu lugar, yo cerraría el carro con llave.",
+    "en": "If I were you, I'd lock the car.",
+    "f": "cerraría",
+    "clue": "En tu lugar",
+    "wrong": [
+     "Preterite",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
+   }
+  }
+ },
+ "escuchar": {
+  "s": {
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "En tu lugar, yo escucharía la opinión de otro médico.",
+    "en": "If I were you, I'd listen to another doctor's opinion.",
+    "f": "escucharía",
+    "clue": "En tu lugar",
+    "wrong": [
+     "Preterite",
+     "Future",
+     "Present perfect",
+     "Present subjunctive"
+    ]
    }
   }
  }

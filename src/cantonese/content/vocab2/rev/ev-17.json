@@ -157,10 +157,455 @@
     },
     {
      "s": "好景唔常，要儲啲錢。",
-     "r": "hou2 ging2 m4 soeng4 jiu3 cyu5 di1 cin2",
+     "r": "hou2 ging2 m4 soeng4 jiu3 cou5 di1 cin2",
      "en": "Good times don't last; save some money."
     }
    ]
+  },
+  {
+   "id": "cv09-140",
+   "t": {
+    "s": "完結",
+    "r": "jyun4 git3"
+   },
+   "pos": "verb",
+   "en": "to end; to be over",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢套劇下個禮拜完結。",
+     "r": "ni1 tou3 kek6 haa6 go3 lai5 baai3 jyun4 git3",
+     "en": "This show ends next week."
+    },
+    {
+     "s": "暑假就快完結喇。",
+     "r": "syu2 gaa3 zau6 faai3 jyun4 git3 laa3",
+     "en": "Summer vacation is almost over."
+    },
+    {
+     "s": "個古仔完結得好突然。",
+     "r": "go3 gu2 zai2 jyun4 git3 dak1 hou2 dat6 jin4",
+     "en": "The story ended really suddenly."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "套",
+     "劇",
+     "下個",
+     "禮拜",
+     "完結"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv09-178",
+   "t": {
+    "s": "刻意",
+    "r": "hak1 ji3"
+   },
+   "pos": "adverb",
+   "en": "deliberately; on purpose",
+   "note": "",
+   "ex": [
+    {
+     "s": "我唔係刻意遲到㗎。",
+     "r": "ngo5 m4 hai6 hak1 ji3 ci4 dou3 gaa3",
+     "en": "I wasn't late on purpose."
+    },
+    {
+     "s": "佢刻意避開我。",
+     "r": "keoi5 hak1 ji3 bei6 hoi1 ngo5",
+     "en": "He's deliberately avoiding me."
+    },
+    {
+     "s": "唔使刻意打扮，平時咁着就得。",
+     "r": "m4 sai2 hak1 ji3 daa2 baan6 ping4 si4 gam2 zoek3 zau6 dak1",
+     "en": "No need to dress up; just wear what you normally do."
+    }
+   ]
+  },
+  {
+   "id": "cv09-110",
+   "t": {
+    "s": "成個",
+    "r": "seng4 go3"
+   },
+   "pos": "adjective",
+   "en": "the whole; entire",
+   "note": "成 is read seng4 here. 成日 seng4 jat6 = all the time.",
+   "ex": [
+    {
+     "s": "我成個禮拜都好忙。",
+     "r": "ngo5 seng4 go3 lai5 baai3 dou1 hou2 mong4",
+     "en": "I've been busy the whole week."
+    },
+    {
+     "s": "佢一個人食晒成個薄餅。",
+     "r": "keoi5 jat1 go3 jan4 sik6 saai3 seng4 go3 bok6 beng2",
+     "en": "He ate the whole pizza by himself."
+    },
+    {
+     "s": "落雨落到成個人濕晒。",
+     "r": "lok6 jyu5 lok6 dou3 seng4 go3 jan4 sap1 saai3",
+     "en": "It rained so hard I got soaked all over."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "成個",
+     "禮拜",
+     "都",
+     "好",
+     "忙"
+    ],
+    "alt": [
+     [
+      "成個",
+      "禮拜",
+      "我",
+      "都",
+      "好",
+      "忙"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv09-101",
+   "t": {
+    "s": "想像",
+    "r": "soeng2 zoeng6"
+   },
+   "pos": "verb",
+   "en": "to imagine",
+   "note": "",
+   "ex": [
+    {
+     "s": "我想像唔到佢會咁做。",
+     "r": "ngo5 soeng2 zoeng6 m4 dou2 keoi5 wui5 gam3 zou6",
+     "en": "I can't imagine him doing that."
+    },
+    {
+     "s": "你想像吓住喺海邊幾舒服。",
+     "r": "nei5 soeng2 zoeng6 haa5 zyu6 hai2 hoi2 bin1 gei2 syu1 fuk6",
+     "en": "Imagine how nice it'd be to live by the sea."
+    },
+    {
+     "s": "嗰間餐廳比我想像中好食。",
+     "r": "go2 gaan1 caan1 teng1 bei2 ngo5 soeng2 zoeng6 zung1 hou2 sik6",
+     "en": "That restaurant was tastier than I imagined."
+    }
+   ]
+  },
+  {
+   "id": "cv09-102",
+   "t": {
+    "s": "減價",
+    "r": "gaam2 gaa3"
+   },
+   "pos": "verb",
+   "en": "to have a sale; to cut prices",
+   "note": "Also a noun: 大減價 big sale.",
+   "ex": [
+    {
+     "s": "商場而家減價，不如去睇吓。",
+     "r": "soeng1 coeng4 ji4 gaa1 gaam2 gaa3 bat1 jyu4 heoi3 tai2 haa5",
+     "en": "The mall has a sale on; let's go take a look."
+    },
+    {
+     "s": "呢對鞋減價先至三百蚊。",
+     "r": "ni1 deoi3 haai4 gaam2 gaa3 sin1 zi3 saam1 baak3 man1",
+     "en": "These shoes are only $300 on sale."
+    },
+    {
+     "s": "啲機票幾時先會減價呀？",
+     "r": "di1 gei1 piu3 gei2 si4 sin1 wui5 gaam2 gaa3 aa3",
+     "en": "When will plane tickets get cheaper?"
+    }
+   ]
+  },
+  {
+   "id": "cv09-105",
+   "t": {
+    "s": "新鮮",
+    "r": "san1 sin1"
+   },
+   "pos": "adjective",
+   "en": "fresh",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢啲生果好新鮮。",
+     "r": "ni1 di1 saang1 gwo2 hou2 san1 sin1",
+     "en": "This fruit is really fresh."
+    },
+    {
+     "s": "出去行吓，呼吸吓新鮮空氣啦。",
+     "r": "ceot1 heoi3 haang4 haa5 fu1 kap1 haa5 san1 sin1 hung1 hei3 laa1",
+     "en": "Go out for a walk and get some fresh air."
+    },
+    {
+     "s": "街市啲菜朝早最新鮮。",
+     "r": "gaai1 si5 di1 coi3 ziu1 zou2 zeoi3 san1 sin1",
+     "en": "The wet market's vegetables are freshest in the morning."
+    }
+   ]
+  },
+  {
+   "id": "cv09-190",
+   "t": {
+    "s": "問答",
+    "r": "man6 daap3"
+   },
+   "pos": "noun",
+   "en": "Q&A; quiz",
+   "note": "常見問答 = FAQ.",
+   "ex": [
+    {
+     "s": "講座最後有問答環節。",
+     "r": "gong2 zo6 zeoi3 hau6 jau5 man6 daap3 waan4 zit3",
+     "en": "There's a Q&A session at the end of the talk."
+    },
+    {
+     "s": "電視問答遊戲好好睇。",
+     "r": "din6 si6 man6 daap3 jau4 hei3 hou2 hou2 tai2",
+     "en": "TV quiz shows are fun to watch."
+    },
+    {
+     "s": "網站有常見問答，你睇吓先。",
+     "r": "mong5 zaam6 jau5 soeng4 gin3 man6 daap3 nei5 tai2 haa5 sin1",
+     "en": "The website has FAQs; check them first."
+    }
+   ]
+  },
+  {
+   "id": "cv09-123",
+   "t": {
+    "s": "十二月",
+    "r": "sap6 ji6 jyut6"
+   },
+   "pos": "noun",
+   "en": "December",
+   "note": "",
+   "ex": [
+    {
+     "s": "十二月香港開始凍。",
+     "r": "sap6 ji6 jyut6 hoeng1 gong2 hoi1 ci2 dung3",
+     "en": "Hong Kong starts getting cold in December."
+    },
+    {
+     "s": "我哋十二月去旅行。",
+     "r": "ngo5 dei6 sap6 ji6 jyut6 heoi3 leoi5 hang4",
+     "en": "We're going on a trip in December."
+    },
+    {
+     "s": "公司十二月尾放假。",
+     "r": "gung1 si1 sap6 ji6 jyut6 mei5 fong3 gaa3",
+     "en": "The company closes at the end of December."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "十二月",
+     "香港",
+     "開始",
+     "凍"
+    ],
+    "alt": [
+     [
+      "香港",
+      "十二月",
+      "開始",
+      "凍"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv09-131",
+   "t": {
+    "s": "歌詞",
+    "r": "go1 ci4"
+   },
+   "pos": "noun",
+   "en": "lyrics",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢首歌嘅歌詞好感人。",
+     "r": "ni1 sau2 go1 ge3 go1 ci4 hou2 gam2 jan4",
+     "en": "The lyrics of this song are really touching."
+    },
+    {
+     "s": "我記唔到啲歌詞。",
+     "r": "ngo5 gei3 m4 dou2 di1 go1 ci4",
+     "en": "I can't remember the lyrics."
+    },
+    {
+     "s": "唱K嗰陣睇住歌詞唱就得。",
+     "r": "coeng3 go2 zan6 tai2 zyu6 go1 ci4 coeng3 zau6 dak1",
+     "en": "At karaoke, just sing along with the lyrics."
+    }
+   ]
+  },
+  {
+   "id": "cv09-147",
+   "t": {
+    "s": "哈",
+    "r": "haa1"
+   },
+   "pos": "interjection",
+   "en": "ha (laughter)",
+   "note": "",
+   "ex": [
+    {
+     "s": "哈哈，你好好笑呀！",
+     "r": "haa1 haa1 nei5 hou2 hou2 siu3 aa3",
+     "en": "Haha, you're so funny!"
+    },
+    {
+     "s": "哈，我就知你會咁講。",
+     "r": "haa1 ngo5 zau6 zi1 nei5 wui5 gam3 gong2",
+     "en": "Ha, I knew you'd say that."
+    },
+    {
+     "s": "佢喺WhatsApp覆咗個「哈哈」。",
+     "r": "keoi5 hai2 fuk1 zo2 go3 haa1 haa1",
+     "en": "He replied \"haha\" on WhatsApp."
+    }
+   ]
+  },
+  {
+   "id": "cv09-179",
+   "t": {
+    "s": "用戶",
+    "r": "jung6 wu6"
+   },
+   "pos": "noun",
+   "en": "user (of a service or app)",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢個app有過千萬用戶。",
+     "r": "ni1 go3 jau5 gwo3 cin1 maan6 jung6 wu6",
+     "en": "This app has over ten million users."
+    },
+    {
+     "s": "新用戶第一個月免費。",
+     "r": "san1 jung6 wu6 dai6 jat1 go3 jyut6 min5 fai3",
+     "en": "New users get the first month free."
+    },
+    {
+     "s": "請輸入用戶名稱同密碼。",
+     "r": "cing2 syu1 jap6 jung6 wu6 ming4 cing1 tung4 mat6 maa5",
+     "en": "Please enter your username and password."
+    }
+   ]
+  },
+  {
+   "id": "cv09-124",
+   "t": {
+    "s": "湊",
+    "r": "cau3"
+   },
+   "pos": "verb",
+   "en": "to look after (children)",
+   "note": "Mainly in 湊仔 / 湊女: to raise or babysit kids.",
+   "ex": [
+    {
+     "s": "我今日要喺屋企湊仔。",
+     "r": "ngo5 gam1 jat6 jiu3 hai2 uk1 kei2 cau3 zai2",
+     "en": "I have to stay home and look after the kids today."
+    },
+    {
+     "s": "湊細路好攰㗎。",
+     "r": "cau3 sai3 lou6 hou2 gui6 gaa3",
+     "en": "Looking after little kids is exhausting."
+    },
+    {
+     "s": "婆婆幫我哋湊個女。",
+     "r": "po4 po2 bong1 ngo5 dei6 cau3 go3 neoi2",
+     "en": "Grandma helps us look after our daughter."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "今日",
+     "要",
+     "喺",
+     "屋企",
+     "湊",
+     "仔"
+    ],
+    "alt": [
+     [
+      "今日",
+      "我",
+      "要",
+      "喺",
+      "屋企",
+      "湊",
+      "仔"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv09-137",
+   "t": {
+    "s": "律師樓",
+    "r": "leot6 si1 lau4"
+   },
+   "pos": "noun",
+   "en": "law firm; lawyer's office",
+   "note": "",
+   "ex": [
+    {
+     "s": "我聽日要去律師樓簽文件。",
+     "r": "ngo5 ting1 jat6 jiu3 heoi3 leot6 si1 lau4 cim1 man4 gin2",
+     "en": "Tomorrow I have to go to the law firm to sign documents."
+    },
+    {
+     "s": "佢喺中環一間律師樓返工。",
+     "r": "keoi5 hai2 zung1 waan4 jat1 gaan1 leot6 si1 lau4 faan1 gung1",
+     "en": "She works at a law firm in Central."
+    },
+    {
+     "s": "買樓要搵律師樓幫手。",
+     "r": "maai5 lau2 jiu3 wan2 leot6 si1 lau4 bong1 sau2",
+     "en": "When you buy a flat, you need a law firm to help."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "聽日",
+     "要",
+     "去",
+     "律師樓",
+     "簽文件"
+    ],
+    "alt": [
+     [
+      "聽日",
+      "我",
+      "要",
+      "去",
+      "律師樓",
+      "簽文件"
+     ]
+    ]
+   }
   }
  ],
  "drop": [

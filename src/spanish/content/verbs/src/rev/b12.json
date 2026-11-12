@@ -8,6 +8,19 @@
     "es": "¿Van a mover a mi papá a terapia intensiva?",
     "en": "Are they going to move my dad to intensive care?",
     "f": "Van a mover"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días muevo el carro antes de las ocho.",
+    "en": "Every day I move the car before eight.",
+    "f": "muevo",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -28,6 +41,19 @@
     "es": "¿Ustedes colgarían este cuadro en la entrada?",
     "en": "Would you guys hang this painting in the entryway?",
     "f": "colgarían"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días cuelgo las llaves junto a la puerta.",
+    "en": "Every day I hang my keys by the door.",
+    "f": "cuelgo",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -40,6 +66,20 @@
     "es": "¿Ustedes ya han apagado la calefacción?",
     "en": "Have you guys already turned off the heat?",
     "f": "han apagado"
+   },
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Todas las noches mi esposa apaga la tele a las once.",
+    "en": "Every night my wife turns off the TV at eleven.",
+    "f": "apaga",
+    "clue": "Todas las noches",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -52,6 +92,19 @@
     "es": "¿Dónde tiran ustedes las pilas usadas?",
     "en": "Where do you guys throw away used batteries?",
     "f": "tiran"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días tiro la basura antes de salir.",
+    "en": "Every day I throw out the trash before I leave.",
+    "f": "tiro",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   },
   "set": {
@@ -83,6 +136,19 @@
     "es": "Todavía no les hemos agradecido a los vecinos su ayuda.",
     "en": "We still haven't thanked the neighbors for their help.",
     "f": "hemos agradecido"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días agradezco tener buena salud.",
+    "en": "Every day I'm grateful to be in good health.",
+    "f": "agradezco",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -103,6 +169,27 @@
     "es": "¿Habían conducido antes por esa carretera?",
     "en": "Had you all driven on that highway before?",
     "f": "Habían conducido"
+   },
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No conduzca hasta que su médico se lo indique.",
+    "en": "Don't drive until your doctor tells you it's OK.",
+    "f": "No conduzca"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días conduzco cuarenta minutos al trabajo.",
+    "en": "Every day I drive forty minutes to work.",
+    "f": "conduzco",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -115,6 +202,19 @@
     "es": "¿Van a prender el asador para la carne?",
     "en": "Are you guys going to fire up the grill for the meat?",
     "f": "Van a prender"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todas las mañanas prendo la cafetera antes de bañarme.",
+    "en": "Every morning I turn on the coffee maker before I shower.",
+    "f": "prendo",
+    "clue": "Todas las mañanas",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -135,6 +235,19 @@
     "es": "No empuje la puerta; se abre sola.",
     "en": "Don't push the door; it opens by itself.",
     "f": "No empuje"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días empujo la silla de ruedas de mi abuelo.",
+    "en": "Every day I push my grandfather's wheelchair.",
+    "f": "empujo",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
    }
   }
  },
@@ -165,7 +278,69 @@
      "x": "Mi abuelo construyó esta casa con sus propias manos.",
      "xen": "My grandfather built this house with his own hands."
     }
-   ]
+   ],
+   "note": "Adds *y* in the present before endings that don't start with *i*: *construyo, construyes, construyen* (but *construimos*); in the preterite *-ió, -ieron* become *-yó, -yeron*: *construyó, construyeron*; subjunctive *construya*; *construyera*."
+  }
+ },
+ "quitarse": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No se quite el parche hasta que le digamos.",
+    "en": "Don't take off the patch until we tell you.",
+    "f": "No se quite"
+   },
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Todos los días me quito el reloj antes de bañarme.",
+    "en": "Every day I take off my watch before I shower.",
+    "f": "me quito",
+    "clue": "Todos los días",
+    "wrong": [
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "moverse": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Todos los días el bebé se mueve mucho después de comer.",
+    "en": "Every day the baby moves a lot after meals.",
+    "f": "se mueve",
+    "clue": "Todos los días",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "parar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Todos los días el camión para enfrente de mi casa.",
+    "en": "Every day the bus stops in front of my house.",
+    "f": "para",
+    "clue": "Todos los días",
+    "wrong": [
+     "Future",
+     "Conditional",
+     "Imperfect subjunctive"
+    ]
+   }
   }
  }
 }

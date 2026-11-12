@@ -79,7 +79,17 @@
      "r": "mou5 paai4 zaa1 ce1 ceoi4 si4 jiu3 co5 gaam1 gaa3",
      "en": "Driving without a license could land you in jail."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "醉駕",
+     "會",
+     "坐監",
+     "㗎"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "cv07-88",
@@ -107,6 +117,1447 @@
      "en": "He said something wrong, so I pushed back right away."
     }
    ]
+  },
+  {
+   "id": "cv07-3",
+   "t": {
+    "s": "收集",
+    "r": "sau1 zaap6"
+   },
+   "pos": "verb",
+   "en": "to collect, gather",
+   "note": "",
+   "ex": [
+    {
+     "s": "我細個鍾意收集郵票。",
+     "r": "ngo5 sai3 go3 zung1 ji3 sau1 zaap6 jau4 piu3",
+     "en": "As a kid I liked collecting stamps."
+    },
+    {
+     "s": "Kevin收集咗好多波鞋。",
+     "r": "sau1 zaap6 zo2 hou2 do1 bo1 haai4",
+     "en": "Kevin has collected lots of sneakers."
+    },
+    {
+     "s": "老師要收集大家嘅意見。",
+     "r": "lou5 si1 jiu3 sau1 zaap6 daai6 gaa1 ge3 ji3 gin3",
+     "en": "The teacher wants to collect everyone's opinions."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "細個",
+     "鍾意",
+     "收集",
+     "郵票"
+    ],
+    "alt": [
+     [
+      "細個",
+      "我",
+      "鍾意",
+      "收集",
+      "郵票"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-30",
+   "t": {
+    "s": "夠膽",
+    "r": "gau3 daam2"
+   },
+   "pos": "verb",
+   "en": "to dare; to have the guts",
+   "note": "",
+   "ex": [
+    {
+     "s": "你夠膽玩過山車咩？",
+     "r": "nei5 gau3 daam2 waan2 gwo3 saan1 ce1 me1",
+     "en": "You dare to ride the roller coaster?"
+    },
+    {
+     "s": "我唔夠膽同老闆講。",
+     "r": "ngo5 m4 gau3 daam2 tung4 lou5 baan2 gong2",
+     "en": "I don't dare tell the boss."
+    },
+    {
+     "s": "Ka-yan好夠膽，一個人去旅行。",
+     "r": "hou2 gau3 daam2 jat1 go3 jan4 heoi3 leoi5 hang4",
+     "en": "Ka-yan is brave — she travels alone."
+    }
+   ]
+  },
+  {
+   "id": "cv07-31",
+   "t": {
+    "s": "只有",
+    "r": "zi2 jau5"
+   },
+   "pos": "adverb",
+   "en": "only (there is/are)",
+   "note": "",
+   "ex": [
+    {
+     "s": "我銀包只有五十蚊。",
+     "r": "ngo5 ngan4 baau1 zi2 jau5 ng5 sap6 man1",
+     "en": "I only have fifty dollars in my wallet."
+    },
+    {
+     "s": "雪櫃只有幾隻蛋。",
+     "r": "syut3 gwai6 zi2 jau5 gei2 zek3 daan2",
+     "en": "There are only a few eggs in the fridge."
+    },
+    {
+     "s": "今日只有我同Wing返工。",
+     "r": "gam1 jat6 zi2 jau5 ngo5 tung4 faan1 gung1",
+     "en": "Only Wing and I are at work today."
+    }
+   ]
+  },
+  {
+   "id": "cv07-32",
+   "t": {
+    "s": "檔案",
+    "r": "dong2 on3"
+   },
+   "pos": "noun",
+   "en": "file (document, computer)",
+   "note": "",
+   "ex": [
+    {
+     "s": "我send咗個檔案俾你。",
+     "r": "ngo5 zo2 go3 dong2 on3 bei2 nei5",
+     "en": "I sent you the file."
+    },
+    {
+     "s": "個檔案太大，傳唔到。",
+     "r": "go3 dong2 on3 taai3 daai6 cyun4 m4 dou2",
+     "en": "The file's too big to send."
+    },
+    {
+     "s": "我唔小心刪咗個檔案。",
+     "r": "ngo5 m4 siu2 sam1 saan1 zo2 go3 dong2 on3",
+     "en": "I accidentally deleted the file."
+    }
+   ]
+  },
+  {
+   "id": "cv07-36",
+   "t": {
+    "s": "砌",
+    "r": "cai3"
+   },
+   "pos": "verb",
+   "en": "to build, assemble (Lego, puzzles)",
+   "note": "砌圖 = jigsaw puzzle.",
+   "ex": [
+    {
+     "s": "我個仔鍾意砌Lego。",
+     "r": "ngo5 go3 zai2 zung1 ji3 cai3",
+     "en": "My son loves building Lego."
+    },
+    {
+     "s": "我哋成晚喺度砌圖。",
+     "r": "ngo5 dei6 seng4 maan5 hai2 dou6 cai3 tou4",
+     "en": "We spent all night doing a jigsaw puzzle."
+    },
+    {
+     "s": "張枱要自己砌。",
+     "r": "zoeng1 toi2 jiu3 zi6 gei2 cai3",
+     "en": "You have to assemble the table yourself."
+    }
+   ]
+  },
+  {
+   "id": "cv07-39",
+   "t": {
+    "s": "圖",
+    "r": "tou4"
+   },
+   "pos": "noun",
+   "en": "picture, drawing; image",
+   "note": "Measure words: 幅 or 張.",
+   "ex": [
+    {
+     "s": "你睇吓呢幅圖。",
+     "r": "nei5 tai2 haa5 ni1 fuk1 tou4",
+     "en": "Take a look at this picture."
+    },
+    {
+     "s": "我個女畫咗幅圖俾我。",
+     "r": "ngo5 go3 neoi2 waak6 zo2 fuk1 tou4 bei2 ngo5",
+     "en": "My daughter drew me a picture."
+    },
+    {
+     "s": "你send張圖俾我睇吓。",
+     "r": "nei5 zoeng1 tou4 bei2 ngo5 tai2 haa5",
+     "en": "Send me a picture so I can see."
+    }
+   ]
+  },
+  {
+   "id": "cv07-45",
+   "t": {
+    "s": "餵",
+    "r": "wai3"
+   },
+   "pos": "verb",
+   "en": "to feed",
+   "note": "",
+   "ex": [
+    {
+     "s": "你餵咗隻狗未呀？",
+     "r": "nei5 wai3 zo2 zek3 gau2 mei6 aa3",
+     "en": "Have you fed the dog?"
+    },
+    {
+     "s": "我要餵BB食奶。",
+     "r": "ngo5 jiu3 wai3 sik6 naai5",
+     "en": "I need to feed the baby milk."
+    },
+    {
+     "s": "唔好餵啲白鴿呀。",
+     "r": "m4 hou2 wai3 di1 baak6 gaap3 aa3",
+     "en": "Don't feed the pigeons."
+    }
+   ]
+  },
+  {
+   "id": "cv07-98",
+   "t": {
+    "s": "法官",
+    "r": "faat3 gun1"
+   },
+   "pos": "noun",
+   "en": "judge",
+   "note": "",
+   "ex": [
+    {
+     "s": "Mei嘅阿爸係法官。",
+     "r": "ge3 aa3 baa4 hai6 faat3 gun1",
+     "en": "Mei's dad is a judge."
+    },
+    {
+     "s": "我細個想做法官。",
+     "r": "ngo5 sai3 go3 soeng2 zou6 faat3 gun1",
+     "en": "As a kid I wanted to be a judge."
+    },
+    {
+     "s": "呢套劇入面嘅法官好型。",
+     "r": "ni1 tou3 kek6 jap6 min6 ge3 faat3 gun1 hou2 jing4",
+     "en": "The judge in this drama is really cool."
+    }
+   ]
+  },
+  {
+   "id": "cv07-7",
+   "t": {
+    "s": "斜",
+    "r": "ce3"
+   },
+   "pos": "adjective",
+   "en": "steep, sloping",
+   "note": "斜路 ce3 lou6 = sloping road; 上斜 = go uphill.",
+   "ex": [
+    {
+     "s": "呢條路好斜，慢慢行啦。",
+     "r": "ni1 tiu4 lou6 hou2 ce3 maan6 maan2 haang4 laa1",
+     "en": "This road is steep; walk slowly."
+    },
+    {
+     "s": "我屋企門口有條斜路。",
+     "r": "ngo5 uk1 kei2 mun4 hau2 jau5 tiu4 ce3 lou6",
+     "en": "There's a sloping road outside my home."
+    },
+    {
+     "s": "踩單車上斜好辛苦。",
+     "r": "caai2 daan1 ce1 soeng5 ce3 hou2 san1 fu2",
+     "en": "Cycling uphill is really tiring."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "條路",
+     "好",
+     "斜",
+     "慢慢",
+     "行啦"
+    ],
+    "alt": [
+     [
+      "慢慢",
+      "行啦",
+      "呢",
+      "條路",
+      "好",
+      "斜"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-8",
+   "t": {
+    "s": "村",
+    "r": "cyun1"
+   },
+   "pos": "noun",
+   "en": "village",
+   "note": "Measure word: 條.",
+   "ex": [
+    {
+     "s": "我阿爺住喺新界一條村。",
+     "r": "ngo5 aa3 je4 zyu6 hai2 san1 gaai3 jat1 tiu4 cyun1",
+     "en": "My grandpa lives in a village in the New Territories."
+    },
+    {
+     "s": "條村好靚，好多樹。",
+     "r": "tiu4 cyun1 hou2 leng3 hou2 do1 syu6",
+     "en": "The village is pretty, with lots of trees."
+    },
+    {
+     "s": "呢條村有間好出名嘅茶樓。",
+     "r": "ni1 tiu4 cyun1 jau5 gaan1 hou2 ceot1 meng2 ge3 caa4 lau4",
+     "en": "This village has a famous teahouse."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "阿爺",
+     "住",
+     "喺",
+     "新界",
+     "一條",
+     "村"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-10",
+   "t": {
+    "s": "近排",
+    "r": "gan6 paai2"
+   },
+   "pos": "noun",
+   "en": "lately, recently",
+   "note": "",
+   "ex": [
+    {
+     "s": "你近排點呀？",
+     "r": "nei5 gan6 paai2 dim2 aa3",
+     "en": "How have you been lately?"
+    },
+    {
+     "s": "我近排好忙。",
+     "r": "ngo5 gan6 paai2 hou2 mong4",
+     "en": "I've been really busy lately."
+    },
+    {
+     "s": "近排啲天氣好凍。",
+     "r": "gan6 paai2 di1 tin1 hei3 hou2 dung3",
+     "en": "The weather's been really cold lately."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "近排",
+     "點",
+     "呀"
+    ],
+    "alt": [
+     [
+      "近排",
+      "你",
+      "點",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-12",
+   "t": {
+    "s": "單車",
+    "r": "daan1 ce1"
+   },
+   "pos": "noun",
+   "en": "bicycle",
+   "note": "Measure word: 架. To ride = 踩單車.",
+   "ex": [
+    {
+     "s": "我星期日去踩單車。",
+     "r": "ngo5 sing1 kei4 jat6 heoi3 caai2 daan1 ce1",
+     "en": "I go cycling on Sundays."
+    },
+    {
+     "s": "我架單車爆咗呔。",
+     "r": "ngo5 gaa3 daan1 ce1 baau3 zo2 taai1",
+     "en": "My bike got a flat tire."
+    },
+    {
+     "s": "呢度可以租單車。",
+     "r": "ni1 dou6 ho2 ji5 zou1 daan1 ce1",
+     "en": "You can rent bikes here."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "星期日",
+     "去",
+     "踩",
+     "單車"
+    ],
+    "alt": [
+     [
+      "星期日",
+      "我",
+      "去",
+      "踩",
+      "單車"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-51",
+   "t": {
+    "s": "減少",
+    "r": "gaam2 siu2"
+   },
+   "pos": "verb",
+   "en": "to reduce, cut down on",
+   "note": "",
+   "ex": [
+    {
+     "s": "我要減少飲汽水。",
+     "r": "ngo5 jiu3 gaam2 siu2 jam2 hei3 seoi2",
+     "en": "I need to cut down on soda."
+    },
+    {
+     "s": "阿媽叫我減少食零食。",
+     "r": "aa3 maa1 giu3 ngo5 gaam2 siu2 sik6 ling4 sik6",
+     "en": "Mom told me to cut down on snacks."
+    },
+    {
+     "s": "用電子帳單可以減少用紙。",
+     "r": "jung6 din6 zi2 zoeng3 daan1 ho2 ji5 gaam2 siu2 jung6 zi2",
+     "en": "Using e-bills cuts down on paper."
+    }
+   ]
+  },
+  {
+   "id": "cv07-42",
+   "t": {
+    "s": "搽",
+    "r": "caa4"
+   },
+   "pos": "verb",
+   "en": "to apply, put on (cream, lotion)",
+   "note": "",
+   "ex": [
+    {
+     "s": "出街記得搽防曬。",
+     "r": "ceot1 gaai1 gei3 dak1 caa4 fong4 saai3",
+     "en": "Remember to put on sunscreen when you go out."
+    },
+    {
+     "s": "你隻手好乾，搽啲潤膚膏啦。",
+     "r": "nei5 zek3 sau2 hou2 gon1 caa4 di1 jeon6 fu1 gou1 laa1",
+     "en": "Your hands are dry; put on some lotion."
+    },
+    {
+     "s": "佢出街一定搽口紅。",
+     "r": "keoi5 ceot1 gaai1 jat1 ding6 caa4 hau2 hung4",
+     "en": "She always puts on lipstick when she goes out."
+    }
+   ]
+  },
+  {
+   "id": "cv07-74",
+   "t": {
+    "s": "檢查",
+    "r": "gim2 caa4"
+   },
+   "pos": "verb",
+   "en": "to check, examine, inspect",
+   "note": "",
+   "ex": [
+    {
+     "s": "我檢查咗兩次，冇問題。",
+     "r": "ngo5 gim2 caa4 zo2 loeng5 ci3 mou5 man6 tai4",
+     "en": "I checked it twice; there's no problem."
+    },
+    {
+     "s": "你交卷之前檢查多次啦。",
+     "r": "nei5 gaau1 gyun2 zi1 cin4 gim2 caa4 do1 ci3 laa1",
+     "en": "Check it once more before you hand in your test."
+    },
+    {
+     "s": "機場要檢查行李。",
+     "r": "gei1 coeng4 jiu3 gim2 caa4 hang4 lei5",
+     "en": "They check your luggage at the airport."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "檢查",
+     "咗",
+     "兩次",
+     "冇",
+     "問題"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-38",
+   "t": {
+    "s": "三分一",
+    "r": "saam1 fan6 jat1"
+   },
+   "pos": "numeral",
+   "en": "one third",
+   "note": "Cantonese drops 之: 三分一, not 三分之一.",
+   "ex": [
+    {
+     "s": "我食咗三分一，剩低俾你。",
+     "r": "ngo5 sik6 zo2 saam1 fan6 jat1 zing6 dai1 bei2 nei5",
+     "en": "I ate a third; the rest is for you."
+    },
+    {
+     "s": "班入面有三分一同學係男仔。",
+     "r": "baan1 jap6 min6 jau5 saam1 fan6 jat1 tung4 hok6 hai6 naam4 zai2",
+     "en": "A third of the class are boys."
+    },
+    {
+     "s": "我人工三分一用嚟交租。",
+     "r": "ngo5 jan4 gung1 saam1 fan6 jat1 jung6 lai4 gaau1 zou1",
+     "en": "A third of my salary goes to rent."
+    }
+   ]
+  },
+  {
+   "id": "cv07-14",
+   "t": {
+    "s": "見工",
+    "r": "gin3 gung1"
+   },
+   "pos": "verb",
+   "en": "to have a job interview",
+   "note": "",
+   "ex": [
+    {
+     "s": "我聽日要去見工。",
+     "r": "ngo5 ting1 jat6 jiu3 heoi3 gin3 gung1",
+     "en": "I have a job interview tomorrow."
+    },
+    {
+     "s": "你見工見成點呀？",
+     "r": "nei5 gin3 gung1 gin3 sing4 dim2 aa3",
+     "en": "How did your job interview go?"
+    },
+    {
+     "s": "見工要着整齊啲。",
+     "r": "gin3 gung1 jiu3 zoek3 zing2 cai4 di1",
+     "en": "Dress neatly for a job interview."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "聽日",
+     "要",
+     "去",
+     "見工"
+    ],
+    "alt": [
+     [
+      "聽日",
+      "我",
+      "要",
+      "去",
+      "見工"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-19",
+   "t": {
+    "s": "蠢",
+    "r": "ceon2"
+   },
+   "pos": "adjective",
+   "en": "stupid, foolish",
+   "note": "Calling someone 蠢 is rude; fine about yourself.",
+   "ex": [
+    {
+     "s": "我真係好蠢，又唔記得帶銀包。",
+     "r": "ngo5 zan1 hai6 hou2 ceon2 jau6 m4 gei3 dak1 daai3 ngan4 baau1",
+     "en": "I'm so dumb, I forgot my wallet again."
+    },
+    {
+     "s": "冇蠢問題㗎，問啦。",
+     "r": "mou5 ceon2 man6 tai4 gaa3 man6 laa1",
+     "en": "There are no stupid questions; go ahead and ask."
+    },
+    {
+     "s": "唔好做埋啲蠢嘢。",
+     "r": "m4 hou2 zou6 maai4 di1 ceon2 je5",
+     "en": "Don't do stupid stuff."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "真係",
+     "好",
+     "蠢",
+     "又",
+     "唔記得",
+     "帶",
+     "銀包"
+    ],
+    "alt": [
+     [
+      "又",
+      "唔記得",
+      "帶",
+      "銀包",
+      "我",
+      "真係",
+      "好",
+      "蠢"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-22",
+   "t": {
+    "s": "食嘢",
+    "r": "sik6 je5"
+   },
+   "pos": "verb",
+   "en": "to eat (something)",
+   "note": "",
+   "ex": [
+    {
+     "s": "我好肚餓，去食嘢先啦。",
+     "r": "ngo5 hou2 tou5 ngo6 heoi3 sik6 je5 sin1 laa1",
+     "en": "I'm starving; let's go eat first."
+    },
+    {
+     "s": "唔好喺床上面食嘢。",
+     "r": "m4 hou2 hai2 cong4 soeng6 min6 sik6 je5",
+     "en": "Don't eat in bed."
+    },
+    {
+     "s": "我哋放工一齊食嘢啦。",
+     "r": "ngo5 dei6 fong3 gung1 jat1 cai4 sik6 je5 laa1",
+     "en": "Let's grab something to eat together after work."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "好",
+     "肚餓",
+     "去",
+     "食嘢",
+     "先啦"
+    ],
+    "alt": [
+     [
+      "去",
+      "食嘢",
+      "先啦",
+      "我",
+      "好",
+      "肚餓"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-23",
+   "t": {
+    "s": "底下",
+    "r": "dai2 haa6"
+   },
+   "pos": "noun",
+   "en": "under, beneath",
+   "note": "",
+   "ex": [
+    {
+     "s": "隻貓匿咗喺張床底下。",
+     "r": "zek3 maau1 nei1 zo2 hai2 zoeng1 cong4 dai2 haa6",
+     "en": "The cat is hiding under the bed."
+    },
+    {
+     "s": "你對鞋喺張枱底下。",
+     "r": "nei5 deoi3 haai4 hai2 zoeng1 toi2 dai2 haa6",
+     "en": "Your shoes are under the table."
+    },
+    {
+     "s": "我喺樓底下等你。",
+     "r": "ngo5 hai2 lau4 dai2 haa6 dang2 nei5",
+     "en": "I'll wait for you downstairs."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "隻貓",
+     "匿咗",
+     "喺",
+     "張床",
+     "底下"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-24",
+   "t": {
+    "s": "𠝹手",
+    "r": "gaai3 sau2"
+   },
+   "pos": "verb",
+   "en": "to cut your hand; sharp enough to cut",
+   "note": "𠝹 gaai3 = to cut with a blade.",
+   "ex": [
+    {
+     "s": "小心啲，張紙會𠝹手㗎。",
+     "r": "siu2 sam1 di1 zoeng1 zi2 wui5 gaai3 sau2 gaa3",
+     "en": "Careful, the paper can cut your hand."
+    },
+    {
+     "s": "呢啲玻璃好容易𠝹手。",
+     "r": "ni1 di1 bo1 lei1 hou2 jung4 ji6 gaai3 sau2",
+     "en": "This glass can easily cut your hand."
+    },
+    {
+     "s": "開罐頭要小心𠝹手。",
+     "r": "hoi1 gun3 tau2 jiu3 siu2 sam1 gaai3 sau2",
+     "en": "Be careful not to cut your hand opening a can."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "小心",
+     "啲",
+     "張紙",
+     "會",
+     "𠝹手",
+     "㗎"
+    ],
+    "alt": [
+     [
+      "張紙",
+      "會",
+      "𠝹手",
+      "㗎",
+      "小心",
+      "啲"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-33",
+   "t": {
+    "s": "祈禱",
+    "r": "kei4 tou2"
+   },
+   "pos": "verb",
+   "en": "to pray",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢每晚瞓覺之前都祈禱。",
+     "r": "keoi5 mui5 maan5 fan3 gaau3 zi1 cin4 dou1 kei4 tou2",
+     "en": "She prays every night before bed."
+    },
+    {
+     "s": "我哋食飯前先祈禱。",
+     "r": "ngo5 dei6 sik6 faan6 cin4 sin1 kei4 tou2",
+     "en": "We pray before we eat."
+    },
+    {
+     "s": "我會為你祈禱。",
+     "r": "ngo5 wui5 wai6 nei5 kei4 tou2",
+     "en": "I'll pray for you."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "每晚",
+     "瞓覺",
+     "之前",
+     "都",
+     "祈禱"
+    ],
+    "alt": [
+     [
+      "每晚",
+      "佢",
+      "瞓覺",
+      "之前",
+      "都",
+      "祈禱"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-34",
+   "t": {
+    "s": "樓",
+    "r": "lau2"
+   },
+   "pos": "noun",
+   "en": "flat, apartment; property",
+   "note": "Read lau2 for a flat; lau4 for a floor or building.",
+   "ex": [
+    {
+     "s": "我哋諗住買樓。",
+     "r": "ngo5 dei6 nam2 zyu6 maai5 lau2",
+     "en": "We're thinking of buying a flat."
+    },
+    {
+     "s": "香港啲樓好貴。",
+     "r": "hoeng1 gong2 di1 lau2 hou2 gwai3",
+     "en": "Flats in Hong Kong are really expensive."
+    },
+    {
+     "s": "佢喺沙田租咗層樓。",
+     "r": "keoi5 hai2 saa1 tin4 zou1 zo2 cang4 lau2",
+     "en": "He rented a flat in Sha Tin."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "諗住",
+     "買",
+     "樓"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-35",
+   "t": {
+    "s": "硬",
+    "r": "ngaang6"
+   },
+   "pos": "adverb",
+   "en": "insist on; just won't; hard, stiff",
+   "note": "硬係 + verb = insist on / stubbornly keep doing.",
+   "ex": [
+    {
+     "s": "佢硬係要我陪佢去。",
+     "r": "keoi5 ngaang6 hai6 jiu3 ngo5 pui4 keoi5 heoi3",
+     "en": "She insisted that I go with her."
+    },
+    {
+     "s": "個細路硬係唔肯瞓。",
+     "r": "go3 sai3 lou6 ngaang6 hai6 m4 hang2 fan3",
+     "en": "The kid just won't go to sleep."
+    },
+    {
+     "s": "啲麪包好硬。",
+     "r": "di1 min6 baau1 hou2 ngaang6",
+     "en": "The bread is really hard."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "硬係",
+     "要",
+     "我",
+     "陪",
+     "佢",
+     "去"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-46",
+   "t": {
+    "s": "熱天",
+    "r": "jit6 tin1"
+   },
+   "pos": "noun",
+   "en": "summer; hot weather",
+   "note": "Opposite: 凍天 dung3 tin1, cold weather.",
+   "ex": [
+    {
+     "s": "熱天我鍾意去海灘。",
+     "r": "jit6 tin1 ngo5 zung1 ji3 heoi3 hoi2 taan1",
+     "en": "In summer I like going to the beach."
+    },
+    {
+     "s": "香港啲熱天好焗。",
+     "r": "hoeng1 gong2 di1 jit6 tin1 hou2 guk6",
+     "en": "Hong Kong summers are really muggy."
+    },
+    {
+     "s": "熱天要飲多啲水。",
+     "r": "jit6 tin1 jiu3 jam2 do1 di1 seoi2",
+     "en": "Drink more water in hot weather."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "熱天",
+     "我",
+     "鍾意",
+     "去",
+     "海灘"
+    ],
+    "alt": [
+     [
+      "我",
+      "熱天",
+      "鍾意",
+      "去",
+      "海灘"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-56",
+   "t": {
+    "s": "跑步",
+    "r": "paau2 bou6"
+   },
+   "pos": "verb",
+   "en": "to run, jog",
+   "note": "",
+   "ex": [
+    {
+     "s": "我每朝都去跑步。",
+     "r": "ngo5 mui5 ziu1 dou1 heoi3 paau2 bou6",
+     "en": "I go running every morning."
+    },
+    {
+     "s": "落雨，今日唔跑步喇。",
+     "r": "lok6 jyu5 gam1 jat6 m4 paau2 bou6 laa3",
+     "en": "It's raining, so no run today."
+    },
+    {
+     "s": "我哋放工一齊去跑步好唔好？",
+     "r": "ngo5 dei6 fong3 gung1 jat1 cai4 heoi3 paau2 bou6 hou2 m4 hou2",
+     "en": "Want to go running together after work?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "每朝",
+     "都",
+     "去",
+     "跑步"
+    ],
+    "alt": [
+     [
+      "每朝",
+      "我",
+      "都",
+      "去",
+      "跑步"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-63",
+   "t": {
+    "s": "激動",
+    "r": "gik1 dung6"
+   },
+   "pos": "adjective",
+   "en": "worked up, emotional, agitated",
+   "note": "",
+   "ex": [
+    {
+     "s": "你唔好咁激動，坐低先。",
+     "r": "nei5 m4 hou2 gam3 gik1 dung6 co5 dai1 sin1",
+     "en": "Don't get so worked up; sit down first."
+    },
+    {
+     "s": "佢見到個仔返嚟，激動到喊。",
+     "r": "keoi5 gin3 dou2 go3 zai2 faan1 lai4 gik1 dung6 dou3 haam3",
+     "en": "When she saw her son come home, she was so moved she cried."
+    },
+    {
+     "s": "睇波嘅時候佢好激動。",
+     "r": "tai2 bo1 ge3 si4 hau6 keoi5 hou2 gik1 dung6",
+     "en": "He gets really worked up watching soccer."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "唔好",
+     "咁",
+     "激動",
+     "坐低",
+     "先"
+    ],
+    "alt": [
+     [
+      "坐低",
+      "先",
+      "你",
+      "唔好",
+      "咁",
+      "激動"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-64",
+   "t": {
+    "s": "夢想",
+    "r": "mung6 soeng2"
+   },
+   "pos": "noun",
+   "en": "dream (goal, wish)",
+   "note": "For a dream while sleeping: 發夢 faat3 mung6.",
+   "ex": [
+    {
+     "s": "我嘅夢想係開間咖啡店。",
+     "r": "ngo5 ge3 mung6 soeng2 hai6 hoi1 gaan1 gaa3 fe1 dim3",
+     "en": "My dream is to open a café."
+    },
+    {
+     "s": "你細個嘅夢想係咩呀？",
+     "r": "nei5 sai3 go3 ge3 mung6 soeng2 hai6 me1 aa3",
+     "en": "What was your dream as a kid?"
+    },
+    {
+     "s": "去冰島睇極光係我嘅夢想。",
+     "r": "heoi3 bing1 dou2 tai2 gik6 gwong1 hai6 ngo5 ge3 mung6 soeng2",
+     "en": "Seeing the northern lights in Iceland is my dream."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "嘅",
+     "夢想",
+     "係",
+     "開",
+     "間",
+     "咖啡店"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-76",
+   "t": {
+    "s": "陣間",
+    "r": "zan6 gaan1"
+   },
+   "pos": "noun",
+   "en": "in a while, later",
+   "note": "陣間見 = see you later.",
+   "ex": [
+    {
+     "s": "我陣間打俾你。",
+     "r": "ngo5 zan6 gaan1 daa2 bei2 nei5",
+     "en": "I'll call you in a bit."
+    },
+    {
+     "s": "陣間見！",
+     "r": "zan6 gaan1 gin3",
+     "en": "See you later!"
+    },
+    {
+     "s": "陣間可能會落雨，帶把遮啦。",
+     "r": "zan6 gaan1 ho2 nang4 wui5 lok6 jyu5 daai3 baa2 ze1 laa1",
+     "en": "It might rain later; bring an umbrella."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "陣間",
+     "打",
+     "俾",
+     "你"
+    ],
+    "alt": [
+     [
+      "陣間",
+      "我",
+      "打",
+      "俾",
+      "你"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-80",
+   "t": {
+    "s": "雜",
+    "r": "zaap6"
+   },
+   "pos": "adjective",
+   "en": "mixed, assorted; miscellaneous",
+   "note": "雜錦 = assorted / combination (on menus).",
+   "ex": [
+    {
+     "s": "唔該要個雜錦炒飯。",
+     "r": "m4 goi1 jiu3 go3 zaap6 gam2 caau2 faan6",
+     "en": "A combination fried rice, please."
+    },
+    {
+     "s": "呢度啲人好雜，小心銀包。",
+     "r": "ni1 dou6 di1 jan4 hou2 zaap6 siu2 sam1 ngan4 baau1",
+     "en": "It's a mixed crowd here; watch your wallet."
+    },
+    {
+     "s": "我份工好雜，乜都要做。",
+     "r": "ngo5 fan6 gung1 hou2 zaap6 mat1 dou1 jiu3 zou6",
+     "en": "My job is all over the place; I have to do everything."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "我",
+     "份工",
+     "好",
+     "雜",
+     "乜都",
+     "要",
+     "做"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-83",
+   "t": {
+    "s": "簡直",
+    "r": "gaan2 zik6"
+   },
+   "pos": "adverb",
+   "en": "simply, totally, absolutely",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢度簡直好似天堂。",
+     "r": "ni1 dou6 gaan2 zik6 hou2 ci5 tin1 tong4",
+     "en": "This place is simply like paradise."
+    },
+    {
+     "s": "今日簡直熱到死。",
+     "r": "gam1 jat6 gaan2 zik6 jit6 dou3 sei2",
+     "en": "It's absolutely boiling today."
+    },
+    {
+     "s": "佢煮嘅嘢簡直一流。",
+     "r": "keoi5 zyu2 ge3 je5 gaan2 zik6 jat1 lau4",
+     "en": "Her cooking is simply first-rate."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢度",
+     "簡直",
+     "好似",
+     "天堂"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-85",
+   "t": {
+    "s": "熱鬧",
+    "r": "jit6 naau6"
+   },
+   "pos": "adjective",
+   "en": "lively, bustling",
+   "note": "",
+   "ex": [
+    {
+     "s": "旺角夜晚好熱鬧。",
+     "r": "wong6 gok3 je6 maan5 hou2 jit6 naau6",
+     "en": "Mong Kok is really lively at night."
+    },
+    {
+     "s": "過年屋企好熱鬧。",
+     "r": "gwo3 nin4 uk1 kei2 hou2 jit6 naau6",
+     "en": "Home is really lively at Lunar New Year."
+    },
+    {
+     "s": "我鍾意熱鬧啲嘅餐廳。",
+     "r": "ngo5 zung1 ji3 jit6 naau6 di1 ge3 caan1 teng1",
+     "en": "I like livelier restaurants."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "旺角",
+     "夜晚",
+     "好",
+     "熱鬧"
+    ],
+    "alt": [
+     [
+      "夜晚",
+      "旺角",
+      "好",
+      "熱鬧"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-91",
+   "t": {
+    "s": "平衡",
+    "r": "ping4 hang4"
+   },
+   "pos": "noun",
+   "en": "balance; to balance",
+   "note": "",
+   "ex": [
+    {
+     "s": "我企唔穩，冇咗平衡。",
+     "r": "ngo5 kei5 m4 wan2 mou5 zo2 ping4 hang4",
+     "en": "I couldn't stand steady and lost my balance."
+    },
+    {
+     "s": "工作同生活要平衡。",
+     "r": "gung1 zok3 tung4 sang1 wut6 jiu3 ping4 hang4",
+     "en": "Work and life need to be balanced."
+    },
+    {
+     "s": "踩單車要識平衡。",
+     "r": "caai2 daan1 ce1 jiu3 sik1 ping4 hang4",
+     "en": "Riding a bike takes balance."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "企",
+     "唔穩",
+     "冇咗",
+     "平衡"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-93",
+   "t": {
+    "s": "殘忍",
+    "r": "caan4 jan2"
+   },
+   "pos": "adjective",
+   "en": "cruel",
+   "note": "",
+   "ex": [
+    {
+     "s": "咁對隻狗好殘忍。",
+     "r": "gam2 deoi3 zek3 gau2 hou2 caan4 jan2",
+     "en": "Treating a dog like that is cruel."
+    },
+    {
+     "s": "套戲個結局好殘忍。",
+     "r": "tou3 hei3 go3 git3 guk6 hou2 caan4 jan2",
+     "en": "The movie's ending is brutal."
+    },
+    {
+     "s": "叫細路仔咁早起身，好殘忍呀。",
+     "r": "giu3 sai3 lou6 zai2 gam3 zou2 hei2 san1 hou2 caan4 jan2 aa3",
+     "en": "Making kids get up so early is cruel."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "咁",
+     "對",
+     "隻狗",
+     "好",
+     "殘忍"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-96",
+   "t": {
+    "s": "劃",
+    "r": "waak6"
+   },
+   "pos": "verb",
+   "en": "to draw (a line); to scratch; cross out",
+   "note": "劃花 = to scratch (a surface).",
+   "ex": [
+    {
+     "s": "喺啱嘅答案下面劃條線。",
+     "r": "hai2 ngaam1 ge3 daap3 on3 haa6 min6 waak6 tiu4 sin3",
+     "en": "Draw a line under the right answer."
+    },
+    {
+     "s": "有人劃花咗我架車。",
+     "r": "jau5 jan4 waak6 faa1 zo2 ngo5 gaa3 ce1",
+     "en": "Someone scratched my car."
+    },
+    {
+     "s": "寫錯就劃咗佢。",
+     "r": "se2 co3 zau6 waak6 zo2 keoi5",
+     "en": "If you write it wrong, just cross it out."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "喺",
+     "啱",
+     "嘅",
+     "答案",
+     "下面",
+     "劃",
+     "條線"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-100",
+   "t": {
+    "s": "真實",
+    "r": "zan1 sat6"
+   },
+   "pos": "adjective",
+   "en": "real, true; realistic",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢套戲係真實故事嚟㗎。",
+     "r": "ni1 tou3 hei3 hai6 zan1 sat6 gu3 si6 lai4 gaa3",
+     "en": "This movie is a true story."
+    },
+    {
+     "s": "講你真實嘅諗法啦。",
+     "r": "gong2 nei5 zan1 sat6 ge3 nam2 faat3 laa1",
+     "en": "Tell me what you really think."
+    },
+    {
+     "s": "呢幅畫好真實，好似相咁。",
+     "r": "ni1 fuk1 waa2 hou2 zan1 sat6 hou2 ci5 soeng2 gam2",
+     "en": "This painting is so realistic it looks like a photo."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "套戲",
+     "係",
+     "真實",
+     "故事",
+     "嚟",
+     "㗎"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-57",
+   "t": {
+    "s": "暑期工",
+    "r": "syu2 kei4 gung1"
+   },
+   "pos": "noun",
+   "en": "summer job",
+   "note": "Measure word: 份.",
+   "ex": [
+    {
+     "s": "我今年想搵份暑期工。",
+     "r": "ngo5 gam1 nin2 soeng2 wan2 fan6 syu2 kei4 gung1",
+     "en": "I want to find a summer job this year."
+    },
+    {
+     "s": "佢喺咖啡店做暑期工。",
+     "r": "keoi5 hai2 gaa3 fe1 dim3 zou6 syu2 kei4 gung1",
+     "en": "She has a summer job at a café."
+    },
+    {
+     "s": "我用暑期工啲錢買咗部相機。",
+     "r": "ngo5 jung6 syu2 kei4 gung1 di1 cin2 maai5 zo2 bou6 soeng2 gei1",
+     "en": "I bought a camera with my summer-job money."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "今年",
+     "想",
+     "搵",
+     "份",
+     "暑期工"
+    ],
+    "alt": [
+     [
+      "今年",
+      "我",
+      "想",
+      "搵",
+      "份",
+      "暑期工"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

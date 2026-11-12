@@ -14,7 +14,7 @@
     "p": 3,
     "k": "stmt",
     "es": "Desde que nos mudamos, hemos compartido todos los gastos.",
-    "en": "Since we moved in, we've split all the expenses.",
+    "en": "Since we moved in, we've shared all the expenses.",
     "f": "hemos compartido",
     "clue": "Desde que nos mudamos",
     "wrong": [
@@ -23,6 +23,22 @@
      "Present subjunctive",
      "Imperfect subjunctive"
     ]
+   },
+   "34": {
+    "t": "Preterite",
+    "p": 2,
+    "k": "obj",
+    "es": "El informe ya lo compartió conmigo su cardiólogo.",
+    "en": "Your cardiologist already shared the report with me.",
+    "f": "lo compartió"
+   },
+   "23": {
+    "t": "Pluperfect",
+    "p": 3,
+    "k": "neg",
+    "es": "Nunca habíamos compartido tanto tiempo juntos.",
+    "en": "We had never shared so much time together.",
+    "f": "habíamos compartido"
    }
   }
  },
@@ -67,6 +83,95 @@
     "es": "¿Te molestaría que tu novia besara a un actor en una película?",
     "en": "Would it bother you if your girlfriend kissed an actor in a movie?",
     "f": "besara"
+   }
+  }
+ },
+ "evitar": {
+  "s": {
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Evite cargar cosas pesadas por unos días.",
+    "en": "Avoid lifting heavy things for a few days.",
+    "f": "Evite"
+   },
+   "28": {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "q",
+    "es": "¿Y si usted evitara el azúcar por unas semanas?",
+    "en": "What if you avoided sugar for a few weeks?",
+    "f": "evitara"
+   }
+  }
+ },
+ "exigir": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No exija perfección desde el primer día.",
+    "en": "Don't demand perfection from day one.",
+    "f": "No exija"
+   },
+   "26": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "neg",
+    "es": "Ojalá el jefe no nos exija trabajar el domingo.",
+    "en": "I hope the boss doesn't require us to work on Sunday.",
+    "f": "exija"
+   },
+   "34": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "obj",
+    "es": "No le exija tanto a su rodilla todavía.",
+    "en": "Don't ask so much of your knee yet.",
+    "f": "No le exija"
+   }
+  }
+ },
+ "aceptar": {
+  "s": {
+   "26": {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Es posible que no acepten perros en el hotel.",
+    "en": "They might not accept dogs at the hotel.",
+    "f": "acepten"
+   }
+  }
+ },
+ "abrazar": {
+  "s": {
+   "19": {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Ya ha abrazado a su bebé?",
+    "en": "Have you hugged your baby yet?",
+    "f": "ha abrazado"
+   }
+  }
+ },
+ "despedirse": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Siempre me despido de mis pacientes con una sonrisa.",
+    "en": "I always say goodbye to my patients with a smile.",
+    "f": "me despido",
+    "clue": "Siempre",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
    }
   }
  }

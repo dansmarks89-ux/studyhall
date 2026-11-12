@@ -159,7 +159,7 @@
   {"id": "L2-tiles-08", "t": "tiles", "en": "Who is that man?", "full": ["嗰個男人係邊個呀？","go2 go3 naam4 jan2 hai6 bin1 go3 aa3"],
    "a": [["嗰個","go2 go3"],["男人","naam4 jan2"],["係","hai6"],["邊個","bin1 go3"],["呀","aa3"]], "alt": [], "extra": [["呢個","ni1 go3"],["邊度","bin1 dou6"]], "sk": ["g:question","g:order"]},
   {"id": "L2-tiles-09", "t": "tiles", "en": "Nice to meet you.", "full": ["好高興認識你。","hou2 gou1 hing3 jing6 sik1 nei5"],
-   "a": [["好","hou2"],["高興","gou1 hing3"],["認識","jing6 sik1"],["你","nei5"]], "alt": [], "extra": [["係","hai6"],["喺","hai2"]], "sk": ["s:phrase","g:order"]},
+   "a": [["好","hou2"],["高興","gou1 hing3"],["認識","jing6 sik1"],["你","nei5"]], "alt": [[["認識", "jing6 sik1"], ["你", "nei5"], ["好", "hou2"], ["高興", "gou1 hing3"]]], "extra": [["係","hai6"],["喺","hai2"]], "sk": ["s:phrase","g:order"]},
   {"id": "L2-tiles-10", "t": "tiles", "en": "Pretty good, and you?", "full": ["我幾好，你呢？","ngo5 gei2 hou2, nei5 ne1"],
    "a": [["我","ngo5"],["幾","gei2"],["好","hou2"],["你","nei5"],["呢","ne1"]], "alt": [], "extra": [["咩","me1"],["邊個","bin1 go3"]], "sk": ["g:particles","g:order"]},
   {"id": "L2-tiles-11", "t": "tiles", "en": "This is my older brother.", "full": ["呢個係我哥哥。","ni1 go3 hai6 ngo5 go4 go1"],
@@ -243,7 +243,7 @@
     "why": "A man: {{哥哥|go4 go1}} = older brother. {{家姐|gaa1 ze1}} is older sister.", "sk": ["s:vocab"]}
   ]},
   {"id": "L2-dlg-05", "t": "dlg", "title": "At a party", "turns": [
-   {"who": "Miss Lee", "s": ["你好！你係Dan呀？","nei5 hou2! nei5 hai6 Dan aa3"], "en": "Hello! You're Dan?"},
+   {"who": "Miss Lee", "s": ["你好！你係Dan呀？","nei5 hou2! nei5 hai6 Dan aa4"], "en": "Hello! You're Dan?"},
    {"you": true, "opts": [["係呀，我係Dan。","hai6 aa3, ngo5 hai6 Dan"],["係呀，我喺Dan。","hai6 aa3, ngo5 hai2 Dan"],["唔係，我係Dan。","m4 hai6, ngo5 hai6 Dan"]], "a": 0,
     "why": "Yes: {{係呀|hai6 aa3}}, then {{我係Dan|ngo5 hai6 Dan}} with the low {{係|hai6}}.", "sk": ["s:tones","s:phrase"]},
    {"who": "Miss Lee", "s": ["我係Wing嘅家姐。","ngo5 hai6 Wing ge3 gaa1 ze1"], "en": "I'm Wing's older sister."},

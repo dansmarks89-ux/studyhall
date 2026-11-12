@@ -52,7 +52,30 @@
      "r": "zi6 cung4 bun1 uk1 ji5 lai4 ngo5 dou1 mei6 gin3 gwo3 leon4 geoi1",
      "en": "Since I moved, I haven't met my neighbors."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "一直",
+     "以嚟",
+     "我",
+     "都",
+     "好",
+     "鍾意",
+     "貓"
+    ],
+    "alt": [
+     [
+      "我",
+      "一直",
+      "以嚟",
+      "都",
+      "好",
+      "鍾意",
+      "貓"
+     ]
+    ]
+   }
   },
   {
    "id": "cv05-39",
@@ -79,7 +102,26 @@
      "r": "heoi3 jyun4 leoi5 hang4 ngo5 ji4 gaa1 hou2 kung4 aa3",
      "en": "After the trip I'm really broke."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "細個",
+     "屋企",
+     "好",
+     "窮"
+    ],
+    "alt": [
+     [
+      "細個",
+      "我",
+      "屋企",
+      "好",
+      "窮"
+     ]
+    ]
+   }
   },
   {
    "id": "cv05-97",
@@ -106,7 +148,1273 @@
      "r": "ji4 gaa1 gam1 hou2 gwai3",
      "en": "Gold is really expensive now."
     }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "隻",
+     "戒指",
+     "係",
+     "金",
+     "㗎"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-41",
+   "t": {
+    "s": "大個",
+    "r": "daai6 go3"
+   },
+   "pos": "adjective",
+   "en": "big; grown-up",
+   "note": "大個仔 / 大個女 = big boy / big girl.",
+   "ex": [
+    {
+     "s": "你大個仔喇，唔好喊啦。",
+     "r": "nei5 daai6 go3 zai2 laa3 m4 hou2 haam3 laa1",
+     "en": "You're a big boy now, don't cry."
+    },
+    {
+     "s": "嘩，你個仔咁大個喇！",
+     "r": "waa3 nei5 go3 zai2 gam3 daai6 go3 laa3",
+     "en": "Wow, your son is so big now!"
+    },
+    {
+     "s": "呢個西瓜好大個。",
+     "r": "ni1 go3 sai1 gwaa1 hou2 daai6 go3",
+     "en": "This watermelon is really big."
+    }
    ]
+  },
+  {
+   "id": "cv05-59",
+   "t": {
+    "s": "抹",
+    "r": "maat3"
+   },
+   "pos": "verb",
+   "en": "to wipe",
+   "note": "抹枱 = wipe the table. Read maat3 in speech; mut3 is the literary reading.",
+   "ex": [
+    {
+     "s": "食完飯幫手抹枱啦。",
+     "r": "sik6 jyun4 faan6 bong1 sau2 maat3 toi2 laa1",
+     "en": "Help wipe the table after we eat."
+    },
+    {
+     "s": "用紙巾抹吓個嘴啦。",
+     "r": "jung6 zi2 gan1 maat3 haa5 go3 zeoi2 laa1",
+     "en": "Wipe your mouth with a tissue."
+    },
+    {
+     "s": "洗完手記得抹乾。",
+     "r": "sai2 jyun4 sau2 gei3 dak1 maat3 gon1",
+     "en": "Remember to dry your hands after washing."
+    }
+   ]
+  },
+  {
+   "id": "cv05-53",
+   "t": {
+    "s": "無論",
+    "r": "mou4 leon6"
+   },
+   "pos": "conjunction",
+   "en": "no matter (what, how, who)",
+   "note": "Pattern: 無論…都….",
+   "ex": [
+    {
+     "s": "無論幾忙，佢日日都打俾阿媽。",
+     "r": "mou4 leon6 gei2 mong4 keoi5 jat6 jat6 dou1 daa2 bei2 aa3 maa1",
+     "en": "No matter how busy, she calls her mom every day."
+    },
+    {
+     "s": "無論你揀邊個，我都支持你。",
+     "r": "mou4 leon6 nei5 gaan2 bin1 go3 ngo5 dou1 zi1 ci4 nei5",
+     "en": "Whoever you choose, I'll support you."
+    },
+    {
+     "s": "無論落唔落雨，我哋都去行山。",
+     "r": "mou4 leon6 lok6 m4 lok6 jyu5 ngo5 dei6 dou1 heoi3 haang4 saan1",
+     "en": "Rain or shine, we're going hiking."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "無論",
+     "你",
+     "揀",
+     "邊個",
+     "我都",
+     "支持",
+     "你"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-4",
+   "t": {
+    "s": "腦",
+    "r": "nou5"
+   },
+   "pos": "noun",
+   "en": "brain; mind",
+   "note": "Also in 電腦 (computer) and 頭腦 (mind).",
+   "ex": [
+    {
+     "s": "用吓個腦諗吓啦。",
+     "r": "jung6 haa5 go3 nou5 nam2 haa5 laa1",
+     "en": "Use your brain and think a bit."
+    },
+    {
+     "s": "我今日做到個腦好攰。",
+     "r": "ngo5 gam1 jat6 zou6 dou3 go3 nou5 hou2 gui6",
+     "en": "I worked so hard today my brain is tired."
+    },
+    {
+     "s": "食魚對個腦好㗎。",
+     "r": "sik6 jyu2 deoi3 go3 nou5 hou2 gaa3",
+     "en": "Eating fish is good for your brain."
+    }
+   ]
+  },
+  {
+   "id": "cv05-19",
+   "t": {
+    "s": "傳統",
+    "r": "cyun4 tung2"
+   },
+   "pos": "adjective",
+   "en": "traditional; tradition",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢屋企好傳統。",
+     "r": "keoi5 uk1 kei2 hou2 cyun4 tung2",
+     "en": "Her family is very traditional."
+    },
+    {
+     "s": "中秋食月餅係傳統嚟㗎。",
+     "r": "zung1 cau1 sik6 jyut6 beng2 hai6 cyun4 tung2 lai4 gaa3",
+     "en": "Eating mooncakes at Mid-Autumn is a tradition."
+    },
+    {
+     "s": "我想試吓傳統嘅廣東菜。",
+     "r": "ngo5 soeng2 si3 haa5 cyun4 tung2 ge3 gwong2 dung1 coi3",
+     "en": "I want to try traditional Cantonese food."
+    }
+   ]
+  },
+  {
+   "id": "cv05-44",
+   "t": {
+    "s": "浸",
+    "r": "zam3"
+   },
+   "pos": "verb",
+   "en": "to soak",
+   "note": "",
+   "ex": [
+    {
+     "s": "啲衫要浸一陣先洗。",
+     "r": "di1 saam1 jiu3 zam3 jat1 zan6 sin1 sai2",
+     "en": "The clothes need to soak a while before washing."
+    },
+    {
+     "s": "行完山，我想浸吓腳。",
+     "r": "haang4 jyun4 saan1 ngo5 soeng2 zam3 haa5 goek3",
+     "en": "After hiking, I want to soak my feet."
+    },
+    {
+     "s": "落大雨，對鞋浸晒水。",
+     "r": "lok6 daai6 jyu5 deoi3 haai4 zam3 saai3 seoi2",
+     "en": "It poured and my shoes got soaked."
+    }
+   ]
+  },
+  {
+   "id": "cv05-61",
+   "t": {
+    "s": "投資",
+    "r": "tau4 zi1"
+   },
+   "pos": "verb",
+   "en": "to invest; investment",
+   "note": "",
+   "ex": [
+    {
+     "s": "我想學吓點樣投資。",
+     "r": "ngo5 soeng2 hok6 haa5 dim2 joeng2 tau4 zi1",
+     "en": "I want to learn how to invest."
+    },
+    {
+     "s": "買樓係一種投資。",
+     "r": "maai5 lau2 hai6 jat1 zung2 tau4 zi1",
+     "en": "Buying property is a kind of investment."
+    },
+    {
+     "s": "佢投資咗啲錢落朋友間舖頭。",
+     "r": "keoi5 tau4 zi1 zo2 di1 cin2 lok6 pang4 jau5 gaan1 pou3 tau2",
+     "en": "He invested some money in his friend's shop."
+    }
+   ]
+  },
+  {
+   "id": "cv05-87",
+   "t": {
+    "s": "打開",
+    "r": "daa2 hoi1"
+   },
+   "pos": "verb",
+   "en": "to open",
+   "note": "",
+   "ex": [
+    {
+     "s": "幫我打開個窗。",
+     "r": "bong1 ngo5 daa2 hoi1 go3 coeng1",
+     "en": "Open the window for me."
+    },
+    {
+     "s": "我打開個雪櫃，乜都冇。",
+     "r": "ngo5 daa2 hoi1 go3 syut3 gwai6 mat1 dou1 mou5",
+     "en": "I opened the fridge and there was nothing."
+    },
+    {
+     "s": "你打開電郵睇吓啦。",
+     "r": "nei5 daa2 hoi1 din6 jau4 tai2 haa5 laa1",
+     "en": "Open your email and have a look."
+    }
+   ]
+  },
+  {
+   "id": "cv05-89",
+   "t": {
+    "s": "情形",
+    "r": "cing4 jing4"
+   },
+   "pos": "noun",
+   "en": "situation; circumstances",
+   "note": "",
+   "ex": [
+    {
+     "s": "而家嘅情形係點呀？",
+     "r": "ji4 gaa1 ge3 cing4 jing4 hai6 dim2 aa3",
+     "en": "What's the situation now?"
+    },
+    {
+     "s": "你同我講吓當時嘅情形。",
+     "r": "nei5 tung4 ngo5 gong2 haa5 dong1 si4 ge3 cing4 jing4",
+     "en": "Tell me what it was like at the time."
+    },
+    {
+     "s": "阿媽想知你最近嘅情形。",
+     "r": "aa3 maa1 soeng2 zi1 nei5 zeoi3 gan6 ge3 cing4 jing4",
+     "en": "Mom wants to know how you've been lately."
+    }
+   ]
+  },
+  {
+   "id": "cv05-92",
+   "t": {
+    "s": "求",
+    "r": "kau4"
+   },
+   "pos": "verb",
+   "en": "to beg; to ask for; to seek",
+   "note": "求吓你 = please, I'm begging you.",
+   "ex": [
+    {
+     "s": "求吓你，幫我一次啦。",
+     "r": "kau4 haa5 nei5 bong1 ngo5 jat1 ci3 laa1",
+     "en": "Please, I'm begging you, help me just this once."
+    },
+    {
+     "s": "佢求老細俾佢放假。",
+     "r": "keoi5 kau4 lou5 sai3 bei2 keoi5 fong3 gaa3",
+     "en": "He begged the boss to let him take time off."
+    },
+    {
+     "s": "我唔求發達，只求開心。",
+     "r": "ngo5 m4 kau4 faat3 daat6 zi2 kau4 hoi1 sam1",
+     "en": "I'm not after riches, I just want to be happy."
+    }
+   ]
+  },
+  {
+   "id": "cv05-16",
+   "t": {
+    "s": "調轉",
+    "r": "diu6 zyun3"
+   },
+   "pos": "verb",
+   "en": "to reverse; turn around; swap",
+   "note": "調轉頭 = turn back.",
+   "ex": [
+    {
+     "s": "你件衫着調轉咗呀。",
+     "r": "nei5 gin6 saam1 zoek3 diu6 zyun3 zo2 aa3",
+     "en": "You've got your shirt on backwards."
+    },
+    {
+     "s": "行錯路喇，調轉頭啦。",
+     "r": "haang4 co3 lou6 laa3 diu6 zyun3 tau4 laa1",
+     "en": "We went the wrong way, let's turn back."
+    },
+    {
+     "s": "不如我哋調轉位坐啦。",
+     "r": "bat1 jyu4 ngo5 dei6 diu6 zyun3 wai2 co5 laa1",
+     "en": "How about we swap seats?"
+    }
+   ]
+  },
+  {
+   "id": "cv05-6",
+   "t": {
+    "s": "呢排",
+    "r": "ni1 paai2"
+   },
+   "pos": "noun",
+   "en": "these days; lately",
+   "note": "早排 = a while ago.",
+   "ex": [
+    {
+     "s": "你呢排忙唔忙呀？",
+     "r": "nei5 ni1 paai2 mong4 m4 mong4 aa3",
+     "en": "Have you been busy lately?"
+    },
+    {
+     "s": "呢排成日落雨。",
+     "r": "ni1 paai2 seng4 jat6 lok6 jyu5",
+     "en": "It's been raining a lot lately."
+    },
+    {
+     "s": "我呢排瞓得唔好。",
+     "r": "ngo5 ni1 paai2 fan3 dak1 m4 hou2",
+     "en": "I haven't been sleeping well lately."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "呢排",
+     "忙",
+     "唔忙",
+     "呀"
+    ],
+    "alt": [
+     [
+      "呢排",
+      "你",
+      "忙",
+      "唔忙",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-20",
+   "t": {
+    "s": "滿意",
+    "r": "mun5 ji3"
+   },
+   "pos": "adjective",
+   "en": "satisfied; pleased",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢對鞋你滿唔滿意呀？",
+     "r": "ni1 deoi3 haai4 nei5 mun5 m4 mun5 ji3 aa3",
+     "en": "Are you happy with these shoes?"
+    },
+    {
+     "s": "老細對你份報告好滿意。",
+     "r": "lou5 sai3 deoi3 nei5 fan6 bou3 gou3 hou2 mun5 ji3",
+     "en": "The boss is very pleased with your report."
+    },
+    {
+     "s": "間酒店好乾淨，我好滿意。",
+     "r": "gaan1 zau2 dim3 hou2 gon1 zeng6 ngo5 hou2 mun5 ji3",
+     "en": "The hotel is very clean, I'm very satisfied."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "對鞋",
+     "你",
+     "滿唔滿意",
+     "呀"
+    ],
+    "alt": [
+     [
+      "你",
+      "滿唔滿意",
+      "呢",
+      "對鞋",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-29",
+   "t": {
+    "s": "焗",
+    "r": "guk6"
+   },
+   "pos": "verb",
+   "en": "to bake; (weather) stuffy, muggy",
+   "note": "",
+   "ex": [
+    {
+     "s": "我今日焗咗個蛋糕。",
+     "r": "ngo5 gam1 jat6 guk6 zo2 go3 daan6 gou1",
+     "en": "I baked a cake today."
+    },
+    {
+     "s": "我想叫個焗豬扒飯。",
+     "r": "ngo5 soeng2 giu3 go3 guk6 zyu1 paa2 faan6",
+     "en": "I'd like to order the baked pork chop rice."
+    },
+    {
+     "s": "今日好焗呀，開冷氣啦。",
+     "r": "gam1 jat6 hou2 guk6 aa3 hoi1 laang5 hei3 laa1",
+     "en": "It's so stuffy today, turn on the AC."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "今日",
+     "焗",
+     "咗",
+     "個",
+     "蛋糕"
+    ],
+    "alt": [
+     [
+      "今日",
+      "我",
+      "焗",
+      "咗",
+      "個",
+      "蛋糕"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-32",
+   "t": {
+    "s": "聽聞",
+    "r": "teng1 man4"
+   },
+   "pos": "verb",
+   "en": "to hear (that)",
+   "note": "Same as 聽講.",
+   "ex": [
+    {
+     "s": "聽聞你升咗職，恭喜晒！",
+     "r": "teng1 man4 nei5 sing1 zo2 zik1 gung1 hei2 saai3",
+     "en": "I heard you got promoted, congratulations!"
+    },
+    {
+     "s": "聽聞呢間餐廳好出名。",
+     "r": "teng1 man4 ni1 gaan1 caan1 teng1 hou2 ceot1 meng2",
+     "en": "I hear this restaurant is famous."
+    },
+    {
+     "s": "聽聞聽日會打風。",
+     "r": "teng1 man4 ting1 jat6 wui5 daa2 fung1",
+     "en": "I heard there'll be a typhoon tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "聽聞",
+     "你",
+     "升",
+     "咗",
+     "職",
+     "恭喜晒"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-38",
+   "t": {
+    "s": "人情",
+    "r": "jan4 cing4"
+   },
+   "pos": "noun",
+   "en": "a favor; gift money (e.g. at weddings)",
+   "note": "欠人情 = owe a favor.",
+   "ex": [
+    {
+     "s": "我欠佢一個人情。",
+     "r": "ngo5 him3 keoi5 jat1 go3 jan4 cing4",
+     "en": "I owe him a favor."
+    },
+    {
+     "s": "呢個人情我記住喇。",
+     "r": "ni1 go3 jan4 cing4 ngo5 gei3 zyu6 laa3",
+     "en": "I won't forget this favor."
+    },
+    {
+     "s": "飲喜酒要俾幾多人情呀？",
+     "r": "jam2 hei2 zau2 jiu3 bei2 gei2 do1 jan4 cing4 aa3",
+     "en": "How much gift money do you give at a wedding banquet?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "欠",
+     "佢",
+     "一個",
+     "人情"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-46",
+   "t": {
+    "s": "麻雀",
+    "r": "maa4 zoek2"
+   },
+   "pos": "noun",
+   "en": "mahjong",
+   "note": "打麻雀 = play mahjong.",
+   "ex": [
+    {
+     "s": "我哋今晚打麻雀。",
+     "r": "ngo5 dei6 gam1 maan5 daa2 maa4 zoek2",
+     "en": "We're playing mahjong tonight."
+    },
+    {
+     "s": "新年成家人一齊打麻雀。",
+     "r": "san1 nin4 seng4 gaa1 jan4 jat1 cai4 daa2 maa4 zoek2",
+     "en": "At New Year the whole family plays mahjong together."
+    },
+    {
+     "s": "你識唔識打麻雀呀？",
+     "r": "nei5 sik1 m4 sik1 daa2 maa4 zoek2 aa3",
+     "en": "Do you know how to play mahjong?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "今晚",
+     "打",
+     "麻雀"
+    ],
+    "alt": [
+     [
+      "今晚",
+      "我哋",
+      "打",
+      "麻雀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-49",
+   "t": {
+    "s": "爭啲",
+    "r": "zaang1 di1"
+   },
+   "pos": "adverb",
+   "en": "almost; nearly",
+   "note": "Used for something that nearly happened: 爭啲跌親 = almost fell.",
+   "ex": [
+    {
+     "s": "我今朝爭啲遲到。",
+     "r": "ngo5 gam1 ziu1 zaang1 di1 ci4 dou3",
+     "en": "I was almost late this morning."
+    },
+    {
+     "s": "落樓梯嗰陣我爭啲跌親。",
+     "r": "lok6 lau4 tai1 go2 zan6 ngo5 zaang1 di1 dit3 can1",
+     "en": "I nearly fell going down the stairs."
+    },
+    {
+     "s": "爭啲唔記得你生日添！",
+     "r": "zaang1 di1 m4 gei3 dak1 nei5 saang1 jat6 tim1",
+     "en": "I almost forgot your birthday!"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "今朝",
+     "爭啲",
+     "遲到"
+    ],
+    "alt": [
+     [
+      "今朝",
+      "我",
+      "爭啲",
+      "遲到"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-50",
+   "t": {
+    "s": "二來",
+    "r": "ji6 loi4"
+   },
+   "pos": "conjunction",
+   "en": "secondly; for another thing",
+   "note": "Pattern: 一來…二來… = for one thing… for another….",
+   "ex": [
+    {
+     "s": "一來太貴，二來太遠，唔去喇。",
+     "r": "jat1 loi4 taai3 gwai3 ji6 loi4 taai3 jyun5 m4 heoi3 laa3",
+     "en": "It's too expensive, and too far. Let's not go."
+    },
+    {
+     "s": "搬近公司，一來方便，二來慳錢。",
+     "r": "bun1 kan5 gung1 si1 jat1 loi4 fong1 bin6 ji6 loi4 haan1 cin2",
+     "en": "Moving near work is convenient, and it saves money."
+    },
+    {
+     "s": "唔飲喇，一來要揸車，二來好攰。",
+     "r": "m4 jam2 laa3 jat1 loi4 jiu3 zaa1 ce1 ji6 loi4 hou2 gui6",
+     "en": "No drinks for me: I'm driving, and I'm tired."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "一來",
+     "太貴",
+     "二來",
+     "太遠",
+     "唔",
+     "去",
+     "喇"
+    ],
+    "alt": [
+     [
+      "一來",
+      "太遠",
+      "二來",
+      "太貴",
+      "唔",
+      "去",
+      "喇"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-73",
+   "t": {
+    "s": "記住",
+    "r": "gei3 zyu6"
+   },
+   "pos": "verb",
+   "en": "to remember; keep in mind",
+   "note": "",
+   "ex": [
+    {
+     "s": "記住帶遮呀！",
+     "r": "gei3 zyu6 daai3 ze1 aa3",
+     "en": "Remember to bring an umbrella!"
+    },
+    {
+     "s": "你記住佢個名未呀？",
+     "r": "nei5 gei3 zyu6 keoi5 go3 meng2 mei6 aa3",
+     "en": "Have you got his name memorized yet?"
+    },
+    {
+     "s": "記住鎖門呀。",
+     "r": "gei3 zyu6 so2 mun4 aa3",
+     "en": "Remember to lock the door."
+    }
+   ]
+  },
+  {
+   "id": "cv05-74",
+   "t": {
+    "s": "仍然",
+    "r": "jing4 jin4"
+   },
+   "pos": "adverb",
+   "en": "still",
+   "note": "A bit formal; in speech 仲 is more common.",
+   "ex": [
+    {
+     "s": "我瞓咗十個鐘，仍然好攰。",
+     "r": "ngo5 fan3 zo2 sap6 go3 zung1 jing4 jin4 hou2 gui6",
+     "en": "I slept ten hours but I'm still really tired."
+    },
+    {
+     "s": "咁多年，佢仍然係我最好嘅朋友。",
+     "r": "gam3 do1 nin4 keoi5 jing4 jin4 hai6 ngo5 zeoi3 hou2 ge3 pang4 jau5",
+     "en": "After all these years, she's still my best friend."
+    },
+    {
+     "s": "九點喇，佢仍然未到。",
+     "r": "gau2 dim2 laa3 keoi5 jing4 jin4 mei6 dou3",
+     "en": "It's nine already and he's still not here."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "瞓",
+     "咗",
+     "十個",
+     "鐘",
+     "仍然",
+     "好",
+     "攰"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-85",
+   "t": {
+    "s": "處理",
+    "r": "cyu5 lei5"
+   },
+   "pos": "verb",
+   "en": "to handle; deal with",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢件事我會處理。",
+     "r": "ni1 gin6 si6 ngo5 wui5 cyu5 lei5",
+     "en": "I'll handle this."
+    },
+    {
+     "s": "我要處理啲電郵先。",
+     "r": "ngo5 jiu3 cyu5 lei5 di1 din6 jau4 sin1",
+     "en": "I need to deal with some emails first."
+    },
+    {
+     "s": "呢個問題要即刻處理。",
+     "r": "ni1 go3 man6 tai4 jiu3 zik1 hak1 cyu5 lei5",
+     "en": "This problem needs to be dealt with right away."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "件",
+     "事",
+     "我",
+     "會",
+     "處理"
+    ],
+    "alt": [
+     [
+      "我",
+      "會",
+      "處理",
+      "呢",
+      "件",
+      "事"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-67",
+   "t": {
+    "s": "宿舍",
+    "r": "suk1 se5"
+   },
+   "pos": "noun",
+   "en": "dormitory",
+   "note": "",
+   "ex": [
+    {
+     "s": "我讀大學嗰陣住宿舍。",
+     "r": "ngo5 duk6 daai6 hok6 go2 zan6 zyu6 suk1 se5",
+     "en": "I lived in a dorm when I was at university."
+    },
+    {
+     "s": "宿舍十二點就鎖門。",
+     "r": "suk1 se5 sap6 ji6 dim2 zau6 so2 mun4",
+     "en": "The dorm locks up at midnight."
+    },
+    {
+     "s": "我同宿舍啲同學去咗食宵夜。",
+     "r": "ngo5 tung4 suk1 se5 di1 tung4 hok6 heoi3 zo2 sik6 siu1 je2",
+     "en": "I went for a late-night snack with my dorm mates."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "讀",
+     "大學",
+     "嗰陣",
+     "住",
+     "宿舍"
+    ],
+    "alt": [
+     [
+      "讀",
+      "大學",
+      "嗰陣",
+      "我",
+      "住",
+      "宿舍"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-86",
+   "t": {
+    "s": "頁",
+    "r": "jip6"
+   },
+   "pos": "measure word",
+   "en": "page",
+   "note": "",
+   "ex": [
+    {
+     "s": "請打開書第十頁。",
+     "r": "ceng2 daa2 hoi1 syu1 dai6 sap6 jip6",
+     "en": "Please open your books to page ten."
+    },
+    {
+     "s": "呢本小說得一百頁。",
+     "r": "ni1 bun2 siu2 syut3 dak1 jat1 baak3 jip6",
+     "en": "This novel only has a hundred pages."
+    },
+    {
+     "s": "份合約有幾多頁？",
+     "r": "fan6 hap6 joek3 jau5 gei2 do1 jip6",
+     "en": "How many pages is the contract?"
+    }
+   ]
+  },
+  {
+   "id": "cv05-54",
+   "t": {
+    "s": "中醫",
+    "r": "zung1 ji1"
+   },
+   "pos": "noun",
+   "en": "Chinese medicine (doctor)",
+   "note": "Western medicine / doctor: 西醫.",
+   "ex": [
+    {
+     "s": "我腰痛，想睇中醫。",
+     "r": "ngo5 jiu1 tung3 soeng2 tai2 zung1 ji1",
+     "en": "My back hurts, I want to see a Chinese medicine doctor."
+    },
+    {
+     "s": "呢個中醫開嘅藥好苦。",
+     "r": "ni1 go3 zung1 ji1 hoi1 ge3 joek6 hou2 fu2",
+     "en": "The medicine this Chinese doctor prescribed is really bitter."
+    },
+    {
+     "s": "我阿爺好信中醫。",
+     "r": "ngo5 aa3 je4 hou2 seon3 zung1 ji1",
+     "en": "My grandpa really believes in Chinese medicine."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "我",
+     "阿爺",
+     "好",
+     "信",
+     "中醫"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-64",
+   "t": {
+    "s": "地址",
+    "r": "dei6 zi2"
+   },
+   "pos": "noun",
+   "en": "address",
+   "note": "",
+   "ex": [
+    {
+     "s": "你可唔可以話我知個地址？",
+     "r": "nei5 ho2 m4 ho2 ji5 waa6 ngo5 zi1 go3 dei6 zi2",
+     "en": "Can you tell me the address?"
+    },
+    {
+     "s": "我搬咗屋，換咗新地址。",
+     "r": "ngo5 bun1 zo2 uk1 wun6 zo2 san1 dei6 zi2",
+     "en": "I moved and have a new address."
+    },
+    {
+     "s": "唔該，去呢個地址。",
+     "r": "m4 goi1 heoi3 ni1 go3 dei6 zi2",
+     "en": "Please take me to this address."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "我",
+     "搬",
+     "咗",
+     "屋",
+     "換",
+     "咗",
+     "新",
+     "地址"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-66",
+   "t": {
+    "s": "速度",
+    "r": "cuk1 dou6"
+   },
+   "pos": "noun",
+   "en": "speed",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢度上網速度好慢。",
+     "r": "ni1 dou6 soeng5 mong5 cuk1 dou6 hou2 maan6",
+     "en": "The internet speed here is really slow."
+    },
+    {
+     "s": "佢打字速度好快。",
+     "r": "keoi5 daa2 zi6 cuk1 dou6 hou2 faai3",
+     "en": "She types really fast."
+    },
+    {
+     "s": "落雨要減慢速度。",
+     "r": "lok6 jyu5 jiu3 gaam2 maan6 cuk1 dou6",
+     "en": "Slow down when it rains."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢度",
+     "上網",
+     "速度",
+     "好慢"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv05-94",
+   "t": {
+    "s": "初",
+    "r": "co1"
+   },
+   "pos": "noun",
+   "en": "beginning (of a period)",
+   "note": "月初 = start of the month; 初初 = at first.",
+   "ex": [
+    {
+     "s": "我月初先出糧。",
+     "r": "ngo5 jyut6 co1 sin1 ceot1 loeng4",
+     "en": "I don't get paid until the start of the month."
+    },
+    {
+     "s": "初初學廣東話好難。",
+     "r": "co1 co1 hok6 gwong2 dung1 waa2 hou2 naan4",
+     "en": "Learning Cantonese was hard at first."
+    },
+    {
+     "s": "我哋下個月初去旅行。",
+     "r": "ngo5 dei6 haa6 go3 jyut6 co1 heoi3 leoi5 hang4",
+     "en": "We're going on a trip early next month."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "月初",
+     "先",
+     "出糧"
+    ],
+    "alt": [
+     [
+      "月初",
+      "我",
+      "先",
+      "出糧"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-52",
+   "t": {
+    "s": "隨便",
+    "r": "ceoi4 bin2"
+   },
+   "pos": "adjective",
+   "en": "as you like; casual; careless",
+   "note": "",
+   "ex": [
+    {
+     "s": "隨便坐啦，唔使客氣。",
+     "r": "ceoi4 bin2 co5 laa1 m4 sai2 haak3 hei3",
+     "en": "Sit anywhere, make yourself at home."
+    },
+    {
+     "s": "食咩都得，隨便啦。",
+     "r": "sik6 me1 dou1 dak1 ceoi4 bin2 laa1",
+     "en": "I'm fine eating anything, whatever you like."
+    },
+    {
+     "s": "佢做嘢好隨便。",
+     "r": "keoi5 zou6 je5 hou2 ceoi4 bin2",
+     "en": "He's really careless about his work."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "隨便",
+     "坐啦",
+     "唔使",
+     "客氣"
+    ],
+    "alt": [
+     [
+      "唔使",
+      "客氣",
+      "隨便",
+      "坐啦"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-78",
+   "t": {
+    "s": "早排",
+    "r": "zou2 paai2"
+   },
+   "pos": "noun",
+   "en": "a while ago; recently",
+   "note": "呢排 = these days.",
+   "ex": [
+    {
+     "s": "我早排去咗台灣。",
+     "r": "ngo5 zou2 paai2 heoi3 zo2 toi4 waan1",
+     "en": "I went to Taiwan a while back."
+    },
+    {
+     "s": "早排佢病咗，而家好返喇。",
+     "r": "zou2 paai2 keoi5 beng6 zo2 ji4 gaa1 hou2 faan1 laa3",
+     "en": "She was sick a while ago, she's better now."
+    },
+    {
+     "s": "早排太忙，唔好意思冇覆你。",
+     "r": "zou2 paai2 taai3 mong4 m4 hou2 ji3 si1 mou5 fuk1 nei5",
+     "en": "I was too busy recently, sorry I didn't reply."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "早排",
+     "去",
+     "咗",
+     "台灣"
+    ],
+    "alt": [
+     [
+      "早排",
+      "我",
+      "去",
+      "咗",
+      "台灣"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-79",
+   "t": {
+    "s": "片",
+    "r": "pin2"
+   },
+   "pos": "noun",
+   "en": "film; video",
+   "note": "Measure word for a film: 套.",
+   "ex": [
+    {
+     "s": "你有冇睇過呢套片？",
+     "r": "nei5 jau5 mou5 tai2 gwo3 ni1 tou3 pin2",
+     "en": "Have you seen this film?"
+    },
+    {
+     "s": "佢鍾意喺網上拍片。",
+     "r": "keoi5 zung1 ji3 hai2 mong5 soeng6 paak3 pin2",
+     "en": "He likes making videos online."
+    },
+    {
+     "s": "我哋今晚喺屋企睇片啦。",
+     "r": "ngo5 dei6 gam1 maan5 hai2 uk1 kei2 tai2 pin2 laa1",
+     "en": "Let's watch a movie at home tonight."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "有冇",
+     "睇",
+     "過",
+     "呢",
+     "套",
+     "片"
+    ],
+    "alt": [
+     [
+      "呢",
+      "套",
+      "片",
+      "你",
+      "有冇",
+      "睇",
+      "過"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-82",
+   "t": {
+    "s": "新年",
+    "r": "san1 nin4"
+   },
+   "pos": "noun",
+   "en": "New Year",
+   "note": "Often means Lunar New Year.",
+   "ex": [
+    {
+     "s": "新年快樂！",
+     "r": "san1 nin4 faai3 lok6",
+     "en": "Happy New Year!"
+    },
+    {
+     "s": "新年你會唔會返屋企？",
+     "r": "san1 nin4 nei5 wui5 m4 wui5 faan1 uk1 kei2",
+     "en": "Are you going home for New Year?"
+    },
+    {
+     "s": "新年啲細路會收利是。",
+     "r": "san1 nin4 di1 sai3 lou6 wui5 sau1 lai6 si6",
+     "en": "At New Year kids get red packets."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "新年",
+     "你",
+     "會",
+     "唔",
+     "會",
+     "返",
+     "屋企"
+    ],
+    "alt": [
+     [
+      "你",
+      "新年",
+      "會",
+      "唔",
+      "會",
+      "返",
+      "屋企"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv05-65",
+   "t": {
+    "s": "紅",
+    "r": "hung4"
+   },
+   "pos": "adjective",
+   "en": "red; popular, famous",
+   "note": "Red (color): 紅色.",
+   "ex": [
+    {
+     "s": "我想要紅色嗰件。",
+     "r": "ngo5 soeng2 jiu3 hung4 sik1 go2 gin6",
+     "en": "I'd like the red one."
+    },
+    {
+     "s": "你塊面好紅呀，冇事吖嘛？",
+     "r": "nei5 faai3 min6 hou2 hung4 aa3 mou5 si6 aa1 maa3",
+     "en": "Your face is really red, are you OK?"
+    },
+    {
+     "s": "佢而家好紅，個個都識佢。",
+     "r": "keoi5 ji4 gaa1 hou2 hung4 go3 go3 dou1 sik1 keoi5",
+     "en": "She's really popular now, everyone knows her."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "想",
+     "要",
+     "紅",
+     "色",
+     "嗰件"
+    ],
+    "alt": [
+     [
+      "我",
+      "想",
+      "要",
+      "嗰件",
+      "紅",
+      "色"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

@@ -115,7 +115,7 @@
     ["Firme aquí, por favor.", "Sign here, please."]
   ],
   "items": [
-    {"id":"M7-mc-01","t":"mc","q":"How do you say 'fasting' (nothing to eat or drink before a procedure)?","opts":["con hambre","en ayunas","a dieta","en ayuda"],"a":1,"why":"*En ayunas* = on an empty stomach. Many patients hear it as \"no food\" but water is OK, so add *sin comer ni beber nada* when liquids are also restricted. *Con hambre* = hungry; *a dieta* = on a diet."},
+    {"id":"M7-mc-01","t":"mc","q":"How do you say 'fasting' (nothing to eat or drink before a procedure)?","opts":["con hambre","en ayunas","a dieta","en ayuda"],"a":1,"why":"*En ayunas* = on an empty stomach. Many patients take it to mean \"no food\" and assume water is OK, so add *sin comer ni beber nada* when liquids are also restricted. *Con hambre* = hungry; *a dieta* = on a diet."},
     {"id":"M7-mc-02","t":"mc","q":"Los catéteres entran por una vena de la ___.","qen":"The catheters go in through a vein in the groin.","opts":["ingle","inglés","axila","rodilla"],"a":0,"why":"*La ingle* = the groin. *Inglés* is the English language."},
     {"id":"M7-mc-03","t":"mc","q":"Which device can give a shock to stop a dangerous fast rhythm?","opts":["el marcapasos","el monitor Holter","el desfibrilador (DAI)","el stent"],"a":2,"why":"The ICD (*desfibrilador automático implantable*) can shock. A pacemaker treats slow rhythms and does not shock."},
     {"id":"M7-mc-04","t":"mc","q":"Es importante que usted no ___ nada antes del procedimiento.","qen":"It's important that you not eat anything before the procedure.","opts":["come","comió","comer","coma"],"a":3,"why":"*Es importante que* + present subjunctive → *coma*."},
@@ -170,7 +170,7 @@
     {"id":"M7-tiles-11","t":"tiles","en":"You can change your mind at any time.","a":"Usted puede cambiar de opinión en cualquier momento.","alt":["En cualquier momento, usted puede cambiar de opinión."],"extra":["puedes","cualquiera"]},
     {"id":"M7-tiles-12","t":"tiles","en":"Hopefully everything goes well.","a":"Ojalá que todo salga bien.","alt":["Ojalá que salga todo bien."],"extra":["sale","bueno"]},
     {"id":"M7-tiles-13","t":"tiles","en":"The defibrillator can give you a shock.","a":"El desfibrilador le puede dar una descarga.","alt":[],"extra":["un","das"]},
-    {"id":"M7-tiles-14","t":"tiles","en":"We need someone to take you home.","a":"Necesitamos que alguien lo lleve a su casa.","alt":[],"extra":["lleva","llevar"]},
+    {"id":"M7-tiles-14","t":"tiles","en":"We need someone to take you home.","a":"Necesitamos que alguien lo lleve a su casa.","alt":["Necesitamos que lo lleve alguien a su casa."],"extra":["lleva","llevar"]},
     {"id":"M7-tiles-15","t":"tiles","en":"Can you explain to me in your own words what we are going to do?","a":"¿Me puede explicar con sus propias palabras qué vamos a hacer?","alt":["¿Me puede explicar qué vamos a hacer con sus propias palabras?"],"extra":["tus","puedes"]},
     {"id":"M7-tiles-16","t":"tiles","en":"Before you sign, I want to explain the risks to you.","a":"Antes de que firme, quiero explicarle los riesgos.","alt":["Quiero explicarle los riesgos antes de que firme."],"extra":["firma","explicarte"]},
 
@@ -207,7 +207,7 @@
       {"who":"Don Jorge","es":"¿Dónde me lo van a poner?","en":"Where are you going to put it?"},
       {"you":true,"opts":["Te lo vamos a poner en el estómago.","Se lo pusimos en la pierna.","Se lo vamos a poner debajo de la piel, cerca de la clavícula, con unos cables que llegan al corazón."],"a":2,"why":"Correct location, future tense, usted (*se lo*)."},
       {"who":"Don Jorge","es":"¿Y cuáles son los riesgos?","en":"And what are the risks?"},
-      {"you":true,"opts":["Son poco comunes: sangrado, infección, que se mueva un cable, o rara vez, que se lastime el pulmón.","No hay ningún riesgo.","Los riesgos eran poco comunes."],"a":0,"why":"Honest list of the main pacemaker risks (bleeding, infection, lead movement, rarely lung injury). Never say there are no risks."}
+      {"you":true,"opts":["Son poco comunes: sangrado, infección, que se mueva un cable o, rara vez, que se lastime el pulmón.","No hay ningún riesgo.","Los riesgos eran poco comunes."],"a":0,"why":"Honest list of the main pacemaker risks (bleeding, infection, lead movement, rarely lung injury). Never say there are no risks."}
     ]},
     {"id":"M7-dlg-04","t":"dlg","title":"Before a heart catheterization","turns":[
       {"who":"Paciente","es":"¿Por dónde meten el catéter?","en":"Where do you put the catheter in?"},

@@ -34,6 +34,53 @@
      "Present perfect",
      "Present subjunctive"
     ]
+   },
+   "2": {
+    "t": "Present",
+    "p": 0,
+    "k": "neg",
+    "es": "No muerdo el hielo porque me duelen los dientes.",
+    "en": "I don't bite into ice because my teeth hurt.",
+    "f": "muerdo"
+   },
+   "6": {
+    "t": "Imperfect",
+    "p": 3,
+    "k": "stmt",
+    "es": "De niños, mordíamos los lápices en la escuela.",
+    "en": "As kids, we used to bite our pencils at school.",
+    "f": "mordíamos",
+    "clue": "De niños",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "22": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "q",
+    "es": "¿Las ratas ya habían mordido los cables cuando llegó el técnico?",
+    "en": "Had the rats already bitten into the cables when the technician arrived?",
+    "f": "habían mordido"
+   },
+   "32": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Muerda bien la gasa para que pare el sangrado.",
+    "en": "Bite down firmly on the gauze so the bleeding stops.",
+    "f": "Muerda"
+   },
+   "33": {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Muerde esta galleta, a ver si te gusta.",
+    "en": "Bite into this cookie and see if you like it.",
+    "f": "Muerde"
    }
   }
  },
@@ -247,6 +294,62 @@
      "Present perfect",
      "Present subjunctive"
     ]
+   },
+   "1": {
+    "t": "Present",
+    "p": 2,
+    "k": "q",
+    "es": "¿Sufre de presión alta?",
+    "en": "Do you suffer from high blood pressure?",
+    "f": "Sufre"
+   },
+   "4": {
+    "t": "Preterite",
+    "p": 2,
+    "k": "q",
+    "es": "¿Sufrió algún golpe en la cabeza?",
+    "en": "Did you suffer a blow to the head?",
+    "f": "Sufrió"
+   },
+   "10": {
+    "t": "ir a",
+    "p": 0,
+    "k": "q",
+    "es": "¿Voy a sufrir mucho dolor con la cirugía?",
+    "en": "Am I going to suffer a lot of pain with the surgery?",
+    "f": "Voy a sufrir"
+   },
+   "19": {
+    "t": "Present perfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Alguna vez ha sufrido un desmayo?",
+    "en": "Have you ever had a fainting spell?",
+    "f": "ha sufrido"
+   },
+   "26": {
+    "t": "Present subjunctive",
+    "p": 4,
+    "k": "neg",
+    "es": "Les damos medicamento para que no sufran dolor.",
+    "en": "We give them medication so they don't suffer any pain.",
+    "f": "sufran"
+   },
+   "7": {
+    "t": "Imperfect",
+    "p": 2,
+    "k": "q",
+    "es": "¿Su mamá sufría de diabetes?",
+    "en": "Did your mother suffer from diabetes?",
+    "f": "sufría"
+   },
+   "25": {
+    "t": "Present subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Es normal que sufra de insomnio con esta pastilla?",
+    "en": "Is it normal for me to suffer from insomnia with this pill?",
+    "f": "sufra"
    }
   }
  },
@@ -300,6 +403,14 @@
      "Future",
      "Present perfect"
     ]
+   },
+   "14": {
+    "t": "Future",
+    "p": 4,
+    "k": "neg",
+    "es": "Con los antibióticos, pronto ya no contagiarán.",
+    "en": "With the antibiotics, they won't be contagious much longer.",
+    "f": "contagiarán"
    }
   }
  },
@@ -312,7 +423,7 @@
     "es": "Cuando empezó el brote, la clínica ya había vacunado a casi todos.",
     "en": "When the outbreak started, the clinic had already vaccinated almost everyone.",
     "f": "había vacunado",
-    "clue": "ya",
+    "clue": "Cuando empezó el brote",
     "wrong": [
      "Present",
      "Future",
@@ -361,6 +472,30 @@
     "es": "¿Me van a inyectar en el brazo o en la cadera?",
     "en": "Are they going to give me the shot in the arm or in the hip?",
     "f": "van a inyectar"
+   },
+   "32": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Inyecte la insulina en el abdomen o en el muslo.",
+    "en": "Inject the insulin in your abdomen or your thigh.",
+    "f": "Inyecte"
+   },
+   "34": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No inyecte el medicamento si ya caducó.",
+    "en": "Don't inject the medication if it has expired.",
+    "f": "No inyecte"
+   },
+   "4": {
+    "t": "Preterite",
+    "p": 1,
+    "k": "q",
+    "es": "¿Te inyectaste la insulina antes de salir?",
+    "en": "Did you inject your insulin before you left?",
+    "f": "inyectaste"
    }
   }
  },
@@ -404,8 +539,8 @@
     "t": "Present subjunctive",
     "p": 2,
     "k": "stmt",
-    "es": "Para que el antibiótico cure la infección, tómelo durante diez días.",
-    "en": "For the antibiotic to cure the infection, take it for ten days.",
+    "es": "Para que el antibiótico cure la infección, tómelo como le indicó su médico.",
+    "en": "For the antibiotic to cure the infection, take it exactly as your doctor told you.",
     "f": "cure",
     "clue": "Para que",
     "wrong": [
@@ -414,7 +549,37 @@
      "Future",
      "Conditional"
     ]
+   },
+   "32": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Cure la herida como le enseñó la enfermera.",
+    "en": "Dress the wound the way the nurse showed you.",
+    "f": "Cure"
    }
+  },
+  "set": {
+   "uses": [
+    {
+     "es": "curar una enfermedad",
+     "en": "to cure a disease",
+     "x": "Este tratamiento cura la infección.",
+     "xen": "This treatment cures the infection."
+    },
+    {
+     "es": "curar una herida",
+     "en": "to clean and dress a wound",
+     "x": "La enfermera me curó la herida.",
+     "xen": "The nurse cleaned and dressed my wound."
+    },
+    {
+     "es": "curarse (de algo)",
+     "en": "to get better, get over (something)",
+     "x": "Ya me curé de la tos.",
+     "xen": "I'm over my cough now."
+    }
+   ]
   }
  }
 }

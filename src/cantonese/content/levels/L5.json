@@ -31,7 +31,7 @@
     [["呢個係咪你嘅呀？", "ni1 go3 hai6 mai6 nei5 ge3 aa3"], "Is this yours?"]
    ]},
   {"h": "Little words at the end",
-   "p": "{{呀|aa3}} softens a question or remark so it doesn't sound blunt. {{啦|laa1}} makes a suggestion or a friendly push: 'let's', 'go ahead'. {{喇|laa3}} marks a change: something is now so. {{㗎|gaa3}} adds 'you know', explaining or insisting. Sound tip: {{啦|laa1}} is high and level, {{喇|laa3}} sits in the middle, so listen for the pitch.",
+   "p": "{{呀|aa3}} softens a question or remark so it doesn't sound blunt. Said low and falling, {{呀|aa4}} turns a plain statement into a question that checks a guess: {{你係Dan呀？|nei5 hai6 Dan aa4}} 'You're Dan?' ({{㗎|gaa3}} becomes {{㗎|gaa4}} the same way). {{啦|laa1}} makes a suggestion or a friendly push: 'let's', 'go ahead'. {{喇|laa3}} marks a change: something is now so. {{㗎|gaa3}} adds 'you know', explaining or insisting. Sound tip: {{啦|laa1}} is high and level, {{喇|laa3}} sits in the middle, so listen for the pitch.",
    "ex": [
     [["我哋一齊去行街啦", "ngo5 dei6 jat1 cai4 heoi3 haang4 gaai1 laa1"], "Let's go shopping together."],
     [["好夜喇", "hou2 je6 laa3"], "It's late now."],
@@ -139,7 +139,7 @@
   {"id": "L5-pick-03", "t": "pick", "q": "Friends had dinner at your flat. As they leave, you, the host, say:",
    "opts": [["慢慢行", "maan6 maan2 haang4"], ["好耐冇見！", "hou2 noi6 mou5 gin3"], ["早晨", "zou2 san4"], ["一直行", "jat1 zik6 haang4"]], "a": 0,
    "why": "A host sees guests off with {{慢慢行|maan6 maan2 haang4}}. {{一直行|jat1 zik6 haang4}} is a direction: go straight.", "sk": ["s:phrase"]},
-  {"id": "L5-pick-04", "t": "pick", "q": "Wing asks how the new dim sum place was. It was decent: fine, nothing special. You say:",
+  {"id": "L5-pick-04", "t": "pick", "q": "Wing asks how the new dim sum place was. It was good, but not amazing. You say:",
    "opts": [["唔錯", "m4 co3"], ["好正！", "hou2 zeng3"], ["好攰", "hou2 gui6"], ["好凍", "hou2 dung3"]], "a": 0,
    "why": "{{唔錯|m4 co3}} = not bad. {{好正|hou2 zeng3}} is 'awesome', too strong here.", "sk": ["s:phrase", "s:vocab"]},
   {"id": "L5-pick-05", "t": "pick", "q": "You want to ask a friend whether they like coffee. You say:",

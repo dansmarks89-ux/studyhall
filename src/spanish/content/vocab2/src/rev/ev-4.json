@@ -55,6 +55,316 @@
      "hit": "texto"
     }
    ]
+  },
+  {
+   "id": "sv03-depender",
+   "w": "depender",
+   "pos": "verb",
+   "en": "to depend",
+   "note": "Depende = it depends. Depender de = to depend on.",
+   "type": [
+    "depender"
+   ],
+   "ex": [
+    {
+     "es": "—¿Vienes mañana? —Depende del trabajo.",
+     "en": "\"Are you coming tomorrow?\" \"It depends on work.\"",
+     "hit": "Depende"
+    },
+    {
+     "es": "Todo depende del clima.",
+     "en": "It all depends on the weather.",
+     "hit": "depende"
+    },
+    {
+     "es": "Mis papás dependen de mí para ir al doctor.",
+     "en": "My parents depend on me to get to the doctor.",
+     "hit": "dependen"
+    }
+   ]
+  },
+  {
+   "id": "sv03-perfecto",
+   "w": "perfecto",
+   "pos": "adjective",
+   "en": "perfect",
+   "note": "¡Perfecto! alone = great, sounds good.",
+   "type": [
+    "perfecto",
+    "perfecta"
+   ],
+   "ex": [
+    {
+     "es": "¿Nos vemos a las ocho? —Perfecto.",
+     "en": "Shall we meet at eight? —Perfect.",
+     "hit": "Perfecto"
+    },
+    {
+     "es": "Tu español es casi perfecto.",
+     "en": "Your Spanish is almost perfect.",
+     "hit": "perfecto"
+    },
+    {
+     "es": "Este vestido me queda perfecto.",
+     "en": "This dress fits me perfectly.",
+     "hit": "perfecto"
+    }
+   ]
+  },
+  {
+   "id": "sv03-duro",
+   "w": "duro",
+   "pos": "adjective",
+   "en": "hard; tough",
+   "note": "For a hard test or task, use difícil.",
+   "type": [
+    "duro",
+    "dura"
+   ],
+   "ex": [
+    {
+     "es": "Este pan está muy duro.",
+     "en": "This bread is very hard.",
+     "hit": "duro"
+    },
+    {
+     "es": "Fue un día muy duro en el trabajo.",
+     "en": "It was a really tough day at work.",
+     "hit": "duro"
+    },
+    {
+     "es": "La cama del hotel es demasiado dura.",
+     "en": "The hotel bed is too hard.",
+     "hit": "dura"
+    }
+   ]
+  },
+  {
+   "id": "sv03-loco",
+   "w": "loco",
+   "pos": "adjective",
+   "en": "crazy",
+   "note": "Volverse loco = to go crazy; loco por = crazy about.",
+   "type": [
+    "loco",
+    "loca"
+   ],
+   "ex": [
+    {
+     "es": "¿Estás loco? Hace mucho frío para nadar.",
+     "en": "Are you crazy? It's way too cold to swim.",
+     "hit": "loco"
+    },
+    {
+     "es": "Mi jefe me está volviendo loca.",
+     "en": "My boss is driving me crazy.",
+     "hit": "loca"
+    },
+    {
+     "es": "Diego está loco por el futbol.",
+     "en": "Diego is crazy about soccer.",
+     "hit": "loco"
+    }
+   ]
+  },
+  {
+   "id": "sv03-rojo",
+   "w": "rojo",
+   "pos": "adjective",
+   "en": "red",
+   "note": "Red wine is vino tinto, not vino rojo.",
+   "type": [
+    "rojo",
+    "roja"
+   ],
+   "ex": [
+    {
+     "es": "Me compré un vestido rojo para la boda.",
+     "en": "I bought myself a red dress for the wedding.",
+     "hit": "rojo"
+    },
+    {
+     "es": "Espera, el semáforo está en rojo.",
+     "en": "Wait, the light is red.",
+     "hit": "rojo"
+    },
+    {
+     "es": "Tengo los ojos rojos por la alergia.",
+     "en": "My eyes are red from allergies.",
+     "hit": "rojos"
+    }
+   ]
+  },
+  {
+   "id": "sv03-hermoso",
+   "w": "hermoso",
+   "pos": "adjective",
+   "en": "beautiful",
+   "note": "",
+   "type": [
+    "hermoso",
+    "hermosa"
+   ],
+   "ex": [
+    {
+     "es": "¡Qué día tan hermoso!",
+     "en": "What a beautiful day!",
+     "hit": "hermoso"
+    },
+    {
+     "es": "Tienen una hija hermosa.",
+     "en": "They have a beautiful daughter.",
+     "hit": "hermosa"
+    },
+    {
+     "es": "Desde el hotel hay una vista hermosa del mar.",
+     "en": "There's a beautiful view of the sea from the hotel.",
+     "hit": "hermosa"
+    }
+   ]
+  },
+  {
+   "id": "sv03-completo",
+   "w": "completo",
+   "pos": "adjective",
+   "en": "complete, full",
+   "note": "Tiempo completo = full-time; hotel completo = fully booked.",
+   "type": [
+    "completo",
+    "completa"
+   ],
+   "ex": [
+    {
+     "es": "Necesito tu nombre completo.",
+     "en": "I need your full name.",
+     "hit": "completo"
+    },
+    {
+     "es": "Trabajo tiempo completo en un banco.",
+     "en": "I work full-time at a bank.",
+     "hit": "completo"
+    },
+    {
+     "es": "El hotel está completo este fin de semana.",
+     "en": "The hotel is fully booked this weekend.",
+     "hit": "completo"
+    }
+   ]
+  },
+  {
+   "id": "sv03-raro",
+   "w": "raro",
+   "pos": "adjective",
+   "en": "strange, weird; rare",
+   "note": "Usually means weird.",
+   "type": [
+    "raro",
+    "extraño",
+    "rara",
+    "extraña"
+   ],
+   "ex": [
+    {
+     "es": "Qué raro, Ana no contesta el teléfono.",
+     "en": "That's weird, Ana isn't answering her phone.",
+     "hit": "raro"
+    },
+    {
+     "es": "Este pollo sabe raro.",
+     "en": "This chicken tastes strange.",
+     "hit": "raro"
+    },
+    {
+     "es": "Es raro ver nieve en esta ciudad.",
+     "en": "It's rare to see snow in this city.",
+     "hit": "raro"
+    }
+   ]
+  },
+  {
+   "id": "sv03-simple",
+   "w": "simple",
+   "pos": "adjective",
+   "en": "simple",
+   "note": "Sencillo is a common synonym.",
+   "type": [
+    "simple",
+    "sencillo",
+    "sencilla"
+   ],
+   "ex": [
+    {
+     "es": "La receta es muy simple.",
+     "en": "The recipe is very simple.",
+     "hit": "simple"
+    },
+    {
+     "es": "Es un trabajo simple, pero cansado.",
+     "en": "It's a simple job, but tiring.",
+     "hit": "simple"
+    },
+    {
+     "es": "Me gusta la ropa simple y cómoda.",
+     "en": "I like simple, comfortable clothes.",
+     "hit": "simple"
+    }
+   ]
+  },
+  {
+   "id": "sv03-directo",
+   "w": "directo",
+   "pos": "adjective",
+   "en": "direct; straight",
+   "note": "Directo a casa = straight home.",
+   "type": [
+    "directo",
+    "directa"
+   ],
+   "ex": [
+    {
+     "es": "¿Hay un vuelo directo a Cancún?",
+     "en": "Is there a direct flight to Cancún?",
+     "hit": "directo"
+    },
+    {
+     "es": "Mi jefe es muy directo cuando habla.",
+     "en": "My boss is very direct when he talks.",
+     "hit": "directo"
+    },
+    {
+     "es": "Después del trabajo me voy directo a casa.",
+     "en": "After work I go straight home.",
+     "hit": "directo"
+    }
+   ]
+  },
+  {
+   "id": "sv03-lleno",
+   "w": "lleno",
+   "pos": "adjective",
+   "en": "full",
+   "note": "Lleno de = full of. Estoy lleno = I'm full (after eating).",
+   "type": [
+    "lleno",
+    "llena"
+   ],
+   "ex": [
+    {
+     "es": "Ya estoy lleno, gracias.",
+     "en": "I'm full already, thanks.",
+     "hit": "lleno"
+    },
+    {
+     "es": "El metro va muy lleno a esta hora.",
+     "en": "The subway is really packed at this hour.",
+     "hit": "lleno"
+    },
+    {
+     "es": "La cafetería estaba llena de estudiantes.",
+     "en": "The coffee shop was full of students.",
+     "hit": "llena"
+    }
+   ]
   }
  ],
  "drop": [],

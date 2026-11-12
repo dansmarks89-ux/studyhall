@@ -152,7 +152,7 @@
      "en": "Just leave it as it is."
     },
     {
-     "s": "10년 전 그대로네요.",
+     "s": "십 년 전 그대로네요.",
      "en": "You look just the same as 10 years ago."
     },
     {
@@ -160,6 +160,1168 @@
      "en": "I made it exactly by the recipe."
     }
    ]
+  },
+  {
+   "id": "kv02-88",
+   "t": {
+    "s": "땅"
+   },
+   "pos": "noun",
+   "en": "land, ground",
+   "note": "",
+   "ex": [
+    {
+     "s": "휴대폰을 땅에 떨어뜨렸어요.",
+     "en": "I dropped my phone on the ground."
+    },
+    {
+     "s": "할아버지는 시골에 땅이 있으세요.",
+     "en": "My grandfather has land in the countryside."
+    },
+    {
+     "s": "비가 와서 땅이 젖었어요.",
+     "en": "The ground is wet from the rain."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "휴대폰을",
+     "땅에",
+     "떨어뜨렸어요"
+    ],
+    "alt": [
+     [
+      "땅에",
+      "휴대폰을",
+      "떨어뜨렸어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-92",
+   "t": {
+    "s": "무섭다"
+   },
+   "pos": "adjective",
+   "en": "scary; scared",
+   "note": "ㅂ-irregular: 무서워요. Means both \"scary\" and \"I'm scared.\"",
+   "ex": [
+    {
+     "s": "이 영화 너무 무서워요.",
+     "en": "This movie is so scary."
+    },
+    {
+     "s": "밤에 혼자 있으면 무서워요.",
+     "en": "I get scared when I'm alone at night."
+    },
+    {
+     "s": "우리 선생님은 좀 무서우세요.",
+     "en": "Our teacher is a little scary."
+    }
+   ]
+  },
+  {
+   "id": "kv02-7",
+   "t": {
+    "s": "서다"
+   },
+   "pos": "verb",
+   "en": "to stand",
+   "note": "줄(을) 서다 = to stand in line.",
+   "ex": [
+    {
+     "s": "줄을 서서 삼십 분 기다렸어요.",
+     "en": "I stood in line for 30 minutes."
+    },
+    {
+     "s": "버스에서 계속 서 있었어요.",
+     "en": "I was standing the whole time on the bus."
+    },
+    {
+     "s": "사진 찍을게요. 거기 서 보세요.",
+     "en": "I'll take a photo. Stand over there."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "줄을",
+     "서서",
+     "삼십",
+     "분",
+     "기다렸어요"
+    ],
+    "alt": [
+     [
+      "삼십",
+      "분",
+      "줄을",
+      "서서",
+      "기다렸어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-26",
+   "t": {
+    "s": "초"
+   },
+   "pos": "noun",
+   "en": "second (time); beginning (of a period)",
+   "note": "Also 초 = candle (a different word).",
+   "ex": [
+    {
+     "s": "십 초만 기다려 주세요.",
+     "en": "Please wait just 10 seconds."
+    },
+    {
+     "s": "전자레인지에 삼십 초 돌리세요.",
+     "en": "Microwave it for 30 seconds."
+    },
+    {
+     "s": "다음 달 초에 이사해요.",
+     "en": "I'm moving at the beginning of next month."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "십",
+     "초만",
+     "기다려",
+     "주세요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv02-52",
+   "t": {
+    "s": "오후"
+   },
+   "pos": "noun",
+   "en": "afternoon, p.m.",
+   "note": "",
+   "ex": [
+    {
+     "s": "오후 세 시에 만나요.",
+     "en": "Let's meet at 3 p.m."
+    },
+    {
+     "s": "오후에 비가 온대요.",
+     "en": "They say it'll rain in the afternoon."
+    },
+    {
+     "s": "오늘 오후에 시간 있어요?",
+     "en": "Are you free this afternoon?"
+    }
+   ]
+  },
+  {
+   "id": "kv02-72",
+   "t": {
+    "s": "억"
+   },
+   "pos": "numeral",
+   "en": "hundred million",
+   "note": "1억 = 100,000,000; 10억 = one billion.",
+   "ex": [
+    {
+     "s": "이 아파트는 오억이에요.",
+     "en": "This apartment costs 500 million won."
+    },
+    {
+     "s": "서울은 집값이 몇 억씩 해요.",
+     "en": "Homes in Seoul cost hundreds of millions of won."
+    },
+    {
+     "s": "세계 인구가 팔십억이 넘어요.",
+     "en": "The world population is over 8 billion."
+    }
+   ]
+  },
+  {
+   "id": "kv02-73",
+   "t": {
+    "s": "예정"
+   },
+   "pos": "noun",
+   "en": "plan, schedule (expected)",
+   "note": "-(으)ㄹ 예정이에요 = I plan to / it's scheduled to.",
+   "ex": [
+    {
+     "s": "다음 달에 이사할 예정이에요.",
+     "en": "I'm planning to move next month."
+    },
+    {
+     "s": "비행기가 세 시 도착 예정이에요.",
+     "en": "The flight is scheduled to arrive at 3."
+    },
+    {
+     "s": "결혼식은 유월 예정이에요.",
+     "en": "The wedding is planned for June."
+    }
+   ]
+  },
+  {
+   "id": "kv02-81",
+   "t": {
+    "s": "맞추다"
+   },
+   "pos": "verb",
+   "en": "to set, adjust; match; be on time",
+   "note": "To guess an answer correctly is 맞히다 (often confused).",
+   "ex": [
+    {
+     "s": "알람을 일곱 시에 맞췄어요.",
+     "en": "I set the alarm for 7."
+    },
+    {
+     "s": "시간 맞춰서 갈게요.",
+     "en": "I'll be there on time."
+    },
+    {
+     "s": "친구랑 옷을 맞춰 입었어요.",
+     "en": "My friend and I wore matching outfits."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "알람을",
+     "일곱",
+     "시에",
+     "맞췄어요"
+    ],
+    "alt": [
+     [
+      "일곱",
+      "시에",
+      "알람을",
+      "맞췄어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-2",
+   "t": {
+    "s": "온라인"
+   },
+   "pos": "noun",
+   "en": "online",
+   "note": "",
+   "ex": [
+    {
+     "s": "온라인으로 주문했어요.",
+     "en": "I ordered it online."
+    },
+    {
+     "s": "오늘 수업은 온라인이에요.",
+     "en": "Class is online today."
+    },
+    {
+     "s": "온라인에서 더 싸게 팔아요.",
+     "en": "They sell it cheaper online."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "오늘",
+     "수업은",
+     "온라인이에요"
+    ],
+    "alt": [
+     [
+      "수업은",
+      "오늘",
+      "온라인이에요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-3",
+   "t": {
+    "s": "아름답다"
+   },
+   "pos": "adjective",
+   "en": "beautiful",
+   "note": "ㅂ-irregular: 아름다워요. Often for scenery; 예쁘다 is more casual.",
+   "ex": [
+    {
+     "s": "바다가 정말 아름다워요.",
+     "en": "The ocean is really beautiful."
+    },
+    {
+     "s": "신부가 너무 아름다웠어요.",
+     "en": "The bride was so beautiful."
+    },
+    {
+     "s": "이 노래 가사가 아름다워요.",
+     "en": "The lyrics of this song are beautiful."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "바다가",
+     "정말",
+     "아름다워요"
+    ],
+    "alt": [
+     [
+      "정말",
+      "바다가",
+      "아름다워요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-5",
+   "t": {
+    "s": "아무"
+   },
+   "pos": "pronoun",
+   "en": "any, anyone (with 도/나)",
+   "note": "아무도 + negative = nobody; 아무거나 = anything at all.",
+   "ex": [
+    {
+     "s": "집에 아무도 없어요.",
+     "en": "There's nobody home."
+    },
+    {
+     "s": "저는 아무거나 괜찮아요.",
+     "en": "Anything is fine with me."
+    },
+    {
+     "s": "아무 때나 전화하세요.",
+     "en": "Call me anytime."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "집에",
+     "아무도",
+     "없어요"
+    ],
+    "alt": [
+     [
+      "아무도",
+      "집에",
+      "없어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-11",
+   "t": {
+    "s": "참"
+   },
+   "pos": "adverb",
+   "en": "really, truly; oh right!",
+   "note": "참! at the start = \"Oh, right!\" when remembering something.",
+   "ex": [
+    {
+     "s": "날씨가 참 좋네요.",
+     "en": "The weather is really nice."
+    },
+    {
+     "s": "음식이 참 맛있어요.",
+     "en": "The food is really delicious."
+    },
+    {
+     "s": "참, 내일 회의 있어요.",
+     "en": "Oh right, there's a meeting tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "날씨가",
+     "참",
+     "좋네요"
+    ],
+    "alt": [
+     [
+      "참",
+      "날씨가",
+      "좋네요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-17",
+   "t": {
+    "s": "지키다"
+   },
+   "pos": "verb",
+   "en": "to keep (a promise), protect, follow",
+   "note": "",
+   "ex": [
+    {
+     "s": "약속 꼭 지킬게요.",
+     "en": "I'll definitely keep my promise."
+    },
+    {
+     "s": "출근 시간은 꼭 지켜 주세요.",
+     "en": "Please be on time for work."
+    },
+    {
+     "s": "학교 규칙은 지켜야 해요.",
+     "en": "You have to follow the school rules."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "약속",
+     "꼭",
+     "지킬게요"
+    ],
+    "alt": [
+     [
+      "꼭",
+      "약속",
+      "지킬게요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-25",
+   "t": {
+    "s": "환자"
+   },
+   "pos": "noun",
+   "en": "patient (medical)",
+   "note": "",
+   "ex": [
+    {
+     "s": "오늘 병원에 환자가 많아요.",
+     "en": "The hospital has a lot of patients today."
+    },
+    {
+     "s": "저희 아버지는 당뇨 환자세요.",
+     "en": "My father has diabetes."
+    },
+    {
+     "s": "간호사가 환자 이름을 불렀어요.",
+     "en": "The nurse called the patient's name."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "병원에",
+     "환자가",
+     "많아요"
+    ],
+    "alt": [
+     [
+      "병원에",
+      "오늘",
+      "환자가",
+      "많아요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-29",
+   "t": {
+    "s": "빠르다"
+   },
+   "pos": "adjective",
+   "en": "fast, quick",
+   "note": "르-irregular: 빨라요. Adverb: 빨리.",
+   "ex": [
+    {
+     "s": "지하철이 버스보다 빨라요.",
+     "en": "The subway is faster than the bus."
+    },
+    {
+     "s": "여기 인터넷 정말 빠르네요.",
+     "en": "The internet here is really fast."
+    },
+    {
+     "s": "배송이 생각보다 빨랐어요.",
+     "en": "Delivery was faster than I expected."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "지하철이",
+     "버스보다",
+     "빨라요"
+    ],
+    "alt": [
+     [
+      "버스보다",
+      "지하철이",
+      "빨라요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-35",
+   "t": {
+    "s": "교회"
+   },
+   "pos": "noun",
+   "en": "church",
+   "note": "",
+   "ex": [
+    {
+     "s": "일요일마다 교회에 가요.",
+     "en": "I go to church every Sunday."
+    },
+    {
+     "s": "교회 친구들이랑 밥 먹었어요.",
+     "en": "I ate with friends from church."
+    },
+    {
+     "s": "우리 집 근처에 교회가 많아요.",
+     "en": "There are many churches near our house."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "일요일마다",
+     "교회에",
+     "가요"
+    ],
+    "alt": [
+     [
+      "교회에",
+      "일요일마다",
+      "가요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-36",
+   "t": {
+    "s": "빠지다"
+   },
+   "pos": "verb",
+   "en": "to fall into; (weight, hair) come off",
+   "note": "살이 빠지다 = to lose weight; 사랑에 빠지다 = to fall in love.",
+   "ex": [
+    {
+     "s": "휴대폰이 물에 빠졌어요.",
+     "en": "My phone fell in the water."
+    },
+    {
+     "s": "두 사람은 사랑에 빠졌어요.",
+     "en": "The two of them fell in love."
+    },
+    {
+     "s": "살이 많이 빠졌네요!",
+     "en": "You've lost a lot of weight!"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "휴대폰이",
+     "물에",
+     "빠졌어요"
+    ],
+    "alt": [
+     [
+      "물에",
+      "휴대폰이",
+      "빠졌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-41",
+   "t": {
+    "s": "그림"
+   },
+   "pos": "noun",
+   "en": "picture, drawing, painting",
+   "note": "그림을 그리다 = to draw a picture.",
+   "ex": [
+    {
+     "s": "이 그림 누가 그렸어요?",
+     "en": "Who drew this picture?"
+    },
+    {
+     "s": "주말마다 그림을 배워요.",
+     "en": "I take drawing lessons every weekend."
+    },
+    {
+     "s": "아이가 엄마 그림을 그렸어요.",
+     "en": "The child drew a picture of Mom."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이",
+     "그림",
+     "누가",
+     "그렸어요"
+    ],
+    "alt": [
+     [
+      "누가",
+      "이",
+      "그림",
+      "그렸어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-42",
+   "t": {
+    "s": "축구"
+   },
+   "pos": "noun",
+   "en": "soccer, football",
+   "note": "축구하다 = to play soccer.",
+   "ex": [
+    {
+     "s": "주말에 친구들이랑 축구해요.",
+     "en": "I play soccer with friends on weekends."
+    },
+    {
+     "s": "어제 축구 경기 봤어요?",
+     "en": "Did you watch the soccer game yesterday?"
+    },
+    {
+     "s": "아들이 학교에서 축구를 배워요.",
+     "en": "My son is learning soccer at school."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말에",
+     "친구들이랑",
+     "축구해요"
+    ],
+    "alt": [
+     [
+      "친구들이랑",
+      "주말에",
+      "축구해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-43",
+   "t": {
+    "s": "달리다"
+   },
+   "pos": "verb",
+   "en": "to run",
+   "note": "Everyday \"run\" is often 뛰다. Homonym 달리다 = to hang, be attached.",
+   "ex": [
+    {
+     "s": "매일 아침 공원에서 달려요.",
+     "en": "I run in the park every morning."
+    },
+    {
+     "s": "버스 타려고 달렸어요.",
+     "en": "I ran to catch the bus."
+    },
+    {
+     "s": "기차가 정말 빨리 달려요.",
+     "en": "The train goes really fast."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "매일",
+     "아침",
+     "공원에서",
+     "달려요"
+    ],
+    "alt": [
+     [
+      "공원에서",
+      "매일",
+      "아침",
+      "달려요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-45",
+   "t": {
+    "s": "나쁘다"
+   },
+   "pos": "adjective",
+   "en": "bad",
+   "note": "나빠요 (ㅡ drops). 나쁘지 않아요 = not bad.",
+   "ex": [
+    {
+     "s": "오늘 날씨가 나빠요.",
+     "en": "The weather is bad today."
+    },
+    {
+     "s": "담배는 건강에 나빠요.",
+     "en": "Smoking is bad for your health."
+    },
+    {
+     "s": "이 식당 나쁘지 않네요.",
+     "en": "This restaurant isn't bad."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "날씨가",
+     "나빠요"
+    ],
+    "alt": [
+     [
+      "날씨가",
+      "오늘",
+      "나빠요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-99",
+   "t": {
+    "s": "여름"
+   },
+   "pos": "noun",
+   "en": "summer",
+   "note": "",
+   "ex": [
+    {
+     "s": "여름에 바다 가요.",
+     "en": "Let's go to the beach in summer."
+    },
+    {
+     "s": "한국 여름은 정말 더워요.",
+     "en": "Summer in Korea is really hot."
+    },
+    {
+     "s": "이번 여름방학에 뭐 해요?",
+     "en": "What are you doing this summer vacation?"
+    }
+   ]
+  },
+  {
+   "id": "kv02-49",
+   "t": {
+    "s": "강하다"
+   },
+   "pos": "adjective",
+   "en": "strong",
+   "note": "",
+   "ex": [
+    {
+     "s": "오늘 바람이 강해요.",
+     "en": "The wind is strong today."
+    },
+    {
+     "s": "이 커피는 맛이 좀 강해요.",
+     "en": "This coffee is a bit strong."
+    },
+    {
+     "s": "우리 엄마는 정말 강한 사람이에요.",
+     "en": "My mom is a really strong person."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "바람이",
+     "강해요"
+    ],
+    "alt": [
+     [
+      "바람이",
+      "오늘",
+      "강해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-58",
+   "t": {
+    "s": "얘기하다"
+   },
+   "pos": "verb",
+   "en": "to talk, tell",
+   "note": "Spoken form of 이야기하다.",
+   "ex": [
+    {
+     "s": "나중에 얘기해요.",
+     "en": "Let's talk later."
+    },
+    {
+     "s": "엄마한테 얘기했어요?",
+     "en": "Did you tell Mom?"
+    },
+    {
+     "s": "친구랑 밤새 얘기했어요.",
+     "en": "I talked with my friend all night."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "친구랑",
+     "밤새",
+     "얘기했어요"
+    ],
+    "alt": [
+     [
+      "밤새",
+      "친구랑",
+      "얘기했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-62",
+   "t": {
+    "s": "후기"
+   },
+   "pos": "noun",
+   "en": "review (customer), write-up",
+   "note": "Used for online reviews; 리뷰 is also common.",
+   "ex": [
+    {
+     "s": "후기 보고 이 식당에 왔어요.",
+     "en": "I came to this restaurant after reading reviews."
+    },
+    {
+     "s": "이 제품 후기가 좋아요.",
+     "en": "This product has good reviews."
+    },
+    {
+     "s": "블로그에 여행 후기를 올렸어요.",
+     "en": "I posted a write-up of my trip on my blog."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "후기",
+     "보고",
+     "이",
+     "식당에",
+     "왔어요"
+    ],
+    "alt": [
+     [
+      "이",
+      "식당에",
+      "후기",
+      "보고",
+      "왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-68",
+   "t": {
+    "s": "공원"
+   },
+   "pos": "noun",
+   "en": "park",
+   "note": "",
+   "ex": [
+    {
+     "s": "저녁마다 공원에서 산책해요.",
+     "en": "I take a walk in the park every evening."
+    },
+    {
+     "s": "강아지랑 공원에 갔어요.",
+     "en": "I went to the park with my dog."
+    },
+    {
+     "s": "이 근처에 공원 있어요?",
+     "en": "Is there a park around here?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "저녁마다",
+     "공원에서",
+     "산책해요"
+    ],
+    "alt": [
+     [
+      "공원에서",
+      "저녁마다",
+      "산책해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-76",
+   "t": {
+    "s": "옆"
+   },
+   "pos": "noun",
+   "en": "side, next to",
+   "note": "옆집 = next door.",
+   "ex": [
+    {
+     "s": "은행 옆에 카페가 있어요.",
+     "en": "There's a cafe next to the bank."
+    },
+    {
+     "s": "제 옆에 앉으세요.",
+     "en": "Sit next to me."
+    },
+    {
+     "s": "옆집 사람이 친절해요.",
+     "en": "The person next door is kind."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "은행",
+     "옆에",
+     "카페가",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "카페가",
+      "은행",
+      "옆에",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-85",
+   "t": {
+    "s": "구하다"
+   },
+   "pos": "verb",
+   "en": "to look for, get, find",
+   "note": "Also \"to save (someone)\".",
+   "ex": [
+    {
+     "s": "요즘 일자리를 구하고 있어요.",
+     "en": "I'm looking for a job these days."
+    },
+    {
+     "s": "서울에서 집 구하기가 힘들어요.",
+     "en": "It's hard to find a place to live in Seoul."
+    },
+    {
+     "s": "공연 표를 겨우 구했어요.",
+     "en": "I barely managed to get tickets for the show."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "일자리를",
+     "구하고",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "일자리를",
+      "요즘",
+      "구하고",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-86",
+   "t": {
+    "s": "컴퓨터"
+   },
+   "pos": "noun",
+   "en": "computer",
+   "note": "",
+   "ex": [
+    {
+     "s": "컴퓨터가 또 느려요.",
+     "en": "My computer is slow again."
+    },
+    {
+     "s": "주말에 컴퓨터로 게임해요.",
+     "en": "I play computer games on weekends."
+    },
+    {
+     "s": "회사 컴퓨터가 고장 났어요.",
+     "en": "My work computer broke down."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "컴퓨터가",
+     "또",
+     "느려요"
+    ],
+    "alt": [
+     [
+      "또",
+      "컴퓨터가",
+      "느려요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-91",
+   "t": {
+    "s": "발표하다"
+   },
+   "pos": "verb",
+   "en": "to present; announce",
+   "note": "",
+   "ex": [
+    {
+     "s": "내일 회의에서 발표해요.",
+     "en": "I'm presenting at the meeting tomorrow."
+    },
+    {
+     "s": "수업 시간에 영어로 발표했어요.",
+     "en": "I gave a presentation in English in class."
+    },
+    {
+     "s": "시험 결과는 언제 발표해요?",
+     "en": "When do they announce the test results?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "내일",
+     "회의에서",
+     "발표해요"
+    ],
+    "alt": [
+     [
+      "회의에서",
+      "내일",
+      "발표해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-96",
+   "t": {
+    "s": "검사"
+   },
+   "pos": "noun",
+   "en": "test, examination, checkup",
+   "note": "검사(를) 받다 = to get tested. Homonym 검사 = prosecutor.",
+   "ex": [
+    {
+     "s": "내일 피 검사 받아요.",
+     "en": "I'm getting a blood test tomorrow."
+    },
+    {
+     "s": "검사 결과가 좋아요.",
+     "en": "The test results are good."
+    },
+    {
+     "s": "공항에서 가방 검사를 했어요.",
+     "en": "They checked my bag at the airport."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "내일",
+     "피",
+     "검사",
+     "받아요"
+    ],
+    "alt": [
+     [
+      "피",
+      "검사",
+      "내일",
+      "받아요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-100",
+   "t": {
+    "s": "정신"
+   },
+   "pos": "noun",
+   "en": "mind, spirit; one's senses",
+   "note": "정신(이) 없다 = hectic, frazzled; 정신 차리다 = to pull yourself together.",
+   "ex": [
+    {
+     "s": "요즘 너무 바빠서 정신이 없어요.",
+     "en": "I'm so busy lately, I'm frazzled."
+    },
+    {
+     "s": "아침에 정신이 없어서 지갑을 놓고 왔어요.",
+     "en": "I was so frazzled this morning, I left my wallet."
+    },
+    {
+     "s": "운전할 때는 정신 차리세요.",
+     "en": "Stay alert when you're driving."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "너무",
+     "바빠서",
+     "정신이",
+     "없어요"
+    ],
+    "alt": [
+     [
+      "너무",
+      "바빠서",
+      "요즘",
+      "정신이",
+      "없어요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

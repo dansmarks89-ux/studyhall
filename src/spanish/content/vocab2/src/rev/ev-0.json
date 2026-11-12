@@ -33,7 +33,7 @@
    "w": "donde",
    "pos": "adverb",
    "en": "where",
-   "note": "No accent in statements; questions use ¿dónde?",
+   "note": "No accent in 'where' clauses: la casa donde vivo. Questions, even indirect, take dónde: no sé dónde está.",
    "type": [
     "donde"
    ],
@@ -80,6 +80,60 @@
      "es": "Mi mujer cocina mejor que yo.",
      "en": "My wife cooks better than I do.",
      "hit": "mujer"
+    }
+   ]
+  },
+  {
+   "id": "sv01-no",
+   "w": "no",
+   "pos": "adverb",
+   "en": "no; not",
+   "note": "Goes before the verb and any object pronouns: no tengo, no lo tengo.",
+   "type": [
+    "no"
+   ],
+   "ex": [
+    {
+     "es": "No tengo hambre todavía.",
+     "en": "I'm not hungry yet.",
+     "hit": "No"
+    },
+    {
+     "es": "Hoy no puedo ir, lo siento.",
+     "en": "I can't go today, sorry.",
+     "hit": "no"
+    },
+    {
+     "es": "No, gracias, ya comí mucho.",
+     "en": "No, thanks, I already ate a lot.",
+     "hit": "No"
+    }
+   ]
+  },
+  {
+   "id": "sv01-me",
+   "w": "me",
+   "pos": "pronoun",
+   "en": "me; to me; myself",
+   "note": "Goes before a conjugated verb: me llamó. Attached to affirmative commands: llámame (but no me llames).",
+   "type": [
+    "me"
+   ],
+   "ex": [
+    {
+     "es": "¿Me pasas la sal, por favor?",
+     "en": "Can you pass me the salt, please?",
+     "hit": "Me"
+    },
+    {
+     "es": "Mi jefe me llamó ayer.",
+     "en": "My boss called me yesterday.",
+     "hit": "me"
+    },
+    {
+     "es": "Hoy me duele mucho la cabeza.",
+     "en": "My head hurts a lot today.",
+     "hit": "me"
     }
    ]
   }

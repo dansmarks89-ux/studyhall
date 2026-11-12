@@ -25,6 +25,14 @@
     "es": "Les pedí a mis papás que no revisaran mi celular.",
     "en": "I asked my parents not to check my phone.",
     "f": "revisaran"
+   },
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Revise su presión en casa como le indicó su médico.",
+    "en": "Check your blood pressure at home as your doctor told you.",
+    "f": "Revise"
    }
   }
  },
@@ -37,6 +45,14 @@
     "es": "¿Cuánto mediré cuando sea grande?",
     "en": "How tall will I be when I grow up?",
     "f": "mediré"
+   },
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Mida su glucosa en los horarios que le indicó su médico.",
+    "en": "Check your blood sugar at the times your doctor gave you.",
+    "f": "Mida"
    }
   }
  },
@@ -50,6 +66,137 @@
     "en": "I want you to pull on my fingers as hard as you can.",
     "f": "jale",
     "clue": "Quiero que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   },
+   "21": {
+    "t": "Pluperfect",
+    "p": 4,
+    "k": "stmt",
+    "es": "Cuando llegué, los niños ya habían jalado todas las cajas al patio.",
+    "en": "When I arrived, the kids had already pulled all the boxes out to the yard.",
+    "f": "habían jalado",
+    "clue": "Cuando llegué",
+    "wrong": [
+     "Present",
+     "Future",
+     "Present subjunctive",
+     "Present perfect"
+    ]
+   }
+  },
+  "set": {
+   "uses": [
+    {
+     "es": "jalar + thing",
+     "en": "to pull something",
+     "x": "Para abrir, jale la puerta.",
+     "xen": "To open it, pull the door."
+    },
+    {
+     "es": "jalarle el pelo / la oreja a alguien",
+     "en": "to pull someone's hair / ear",
+     "x": "El bebé me jala el pelo.",
+     "xen": "The baby pulls my hair."
+    },
+    {
+     "es": "jalar la cadena",
+     "en": "to flush the toilet",
+     "x": "No se le olvide jalar la cadena.",
+     "xen": "Don't forget to flush the toilet."
+    }
+   ]
+  }
+ },
+ "durar": {
+  "s": {
+   "27": {
+    "t": "Imperfect subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Si el dolor durara más de unos minutos, debería ir a urgencias.",
+    "en": "If the pain lasted more than a few minutes, you should go to the ER.",
+    "f": "durara",
+    "clue": "Si",
+    "wrong": [
+     "Present subjunctive",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "examinar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Siempre examino los pies de mis pacientes diabéticos.",
+    "en": "I always examine my diabetic patients' feet.",
+    "f": "examino",
+    "clue": "Siempre",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que el pediatra examine al bebé con regularidad.",
+    "en": "It's important for the pediatrician to examine the baby regularly.",
+    "f": "examine",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Conditional"
+    ]
+   }
+  }
+ },
+ "doblar": {
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 0,
+    "k": "stmt",
+    "es": "Siempre doblo las toallas en tres.",
+    "en": "I always fold the towels in thirds.",
+    "f": "doblo",
+    "clue": "Siempre",
+    "wrong": [
+     "Present subjunctive",
+     "Imperfect subjunctive"
+    ]
+   },
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No doble mucho la cadera después de la cirugía.",
+    "en": "Don't bend your hip too far after the surgery.",
+    "f": "No doble"
+   }
+  }
+ },
+ "voltearse": {
+  "s": {
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es necesario que se voltee seguido para evitar llagas.",
+    "en": "You need to turn over often to prevent bedsores.",
+    "f": "se voltee",
+    "clue": "Es necesario que",
     "wrong": [
      "Present",
      "Preterite",

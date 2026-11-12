@@ -52,7 +52,16 @@
      "r": "ngo5 ho2 nang4 jiu3 gaa1 baan1",
      "en": "I might have to work overtime."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "我",
+     "可能要",
+     "加班"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "cv01-39",
@@ -62,7 +71,7 @@
    },
    "pos": "verb",
    "en": "to give; to, for (someone)",
-   "note": "Marks the receiver; also 'let'. Also written 畀.",
+   "note": "Marks the receiver; also 'let'. Also written 俾.",
    "ex": [
     {
      "s": "唔該俾杯水我。",
@@ -79,7 +88,24 @@
      "r": "gam1 ci3 ngo5 bei2 cin2 haa6 ci3 nei5 ceng2",
      "en": "I'll pay this time, you treat next time."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "唔該",
+     "俾",
+     "杯水",
+     "我"
+    ],
+    "alt": [
+     [
+      "俾",
+      "杯水",
+      "我",
+      "唔該"
+     ]
+    ]
+   }
   },
   {
    "id": "cv01-42",
@@ -106,7 +132,24 @@
      "r": "gei3 dak1 waan4 faan1 bun2 syu1 bei2 ngo5",
      "en": "Remember to give my book back."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "八點",
+     "返",
+     "工"
+    ],
+    "alt": [
+     [
+      "八點",
+      "我",
+      "返",
+      "工"
+     ]
+    ]
+   }
   },
   {
    "id": "cv01-47",
@@ -134,6 +177,1445 @@
      "en": "I don't like eating this stuff."
     }
    ]
+  },
+  {
+   "id": "cv01-29",
+   "t": {
+    "s": "其實",
+    "r": "kei4 sat6"
+   },
+   "pos": "adverb",
+   "en": "actually; in fact",
+   "note": "",
+   "ex": [
+    {
+     "s": "其實我唔係好鍾意食魚。",
+     "r": "kei4 sat6 ngo5 m4 hai6 hou2 zung1 ji3 sik6 jyu2",
+     "en": "Actually, I don't really like fish."
+    },
+    {
+     "s": "其實佢人幾好㗎。",
+     "r": "kei4 sat6 keoi5 jan4 gei2 hou2 gaa3",
+     "en": "Actually, he's quite a nice person."
+    },
+    {
+     "s": "其實唔使咁早出門。",
+     "r": "kei4 sat6 m4 sai2 gam3 zou2 ceot1 mun4",
+     "en": "Actually, we don't need to leave so early."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "其實",
+     "唔使",
+     "咁",
+     "早",
+     "出門"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv01-64",
+   "t": {
+    "s": "時候",
+    "r": "si4 hau6"
+   },
+   "pos": "noun",
+   "en": "time; when",
+   "note": "…嘅時候 = when…; 有時候 = sometimes.",
+   "ex": [
+    {
+     "s": "食飯嘅時候唔好玩手機。",
+     "r": "sik6 faan6 ge3 si4 hau6 m4 hou2 waan2 sau2 gei1",
+     "en": "Don't play on your phone while eating."
+    },
+    {
+     "s": "我細個嘅時候好鍾意游水。",
+     "r": "ngo5 sai3 go3 ge3 si4 hau6 hou2 zung1 ji3 jau4 seoi2",
+     "en": "I loved swimming when I was a kid."
+    },
+    {
+     "s": "有時候我會搭的士返工。",
+     "r": "jau5 si4 hau6 ngo5 wui5 daap3 dik1 si2 faan1 gung1",
+     "en": "Sometimes I take a taxi to work."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "食飯",
+     "嘅",
+     "時候",
+     "唔好",
+     "玩",
+     "手機"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv01-31",
+   "t": {
+    "s": "呀",
+    "r": "aa3"
+   },
+   "pos": "particle",
+   "en": "(softens questions and statements)",
+   "note": "Very common softener; aa4 in surprised or checking questions.",
+   "ex": [
+    {
+     "s": "你叫咩名呀？",
+     "r": "nei5 giu3 me1 meng2 aa3",
+     "en": "What's your name?"
+    },
+    {
+     "s": "今日好凍呀，着多件衫啦。",
+     "r": "gam1 jat6 hou2 dung3 aa3 zoek3 do1 gin6 saam1 laa1",
+     "en": "It's so cold today, put on another layer."
+    },
+    {
+     "s": "呢個幾錢呀？",
+     "r": "ni1 go3 gei2 cin2 aa3",
+     "en": "How much is this?"
+    }
+   ]
+  },
+  {
+   "id": "cv01-53",
+   "t": {
+    "s": "錢",
+    "r": "cin2"
+   },
+   "pos": "noun",
+   "en": "money",
+   "note": "Said cin2 when it means money; 幾錢 = how much?",
+   "ex": [
+    {
+     "s": "呢件衫好抵，唔使好多錢。",
+     "r": "ni1 gin6 saam1 hou2 dai2 m4 sai2 hou2 do1 cin2",
+     "en": "This shirt's a good deal, it doesn't cost much."
+    },
+    {
+     "s": "埋單幾多錢呀？",
+     "r": "maai4 daan1 gei2 do1 cin2 aa3",
+     "en": "How much is the bill?"
+    },
+    {
+     "s": "Ka-yan想儲錢買樓。",
+     "r": "soeng2 cou5 cin2 maai5 lau2",
+     "en": "Ka-yan wants to save money to buy a flat."
+    }
+   ]
+  },
+  {
+   "id": "cv01-43",
+   "t": {
+    "s": "未",
+    "r": "mei6"
+   },
+   "pos": "adverb",
+   "en": "not yet; (…yet?)",
+   "note": "V咗…未？ = 'have you…yet?'; answer 未呀 = not yet.",
+   "ex": [
+    {
+     "s": "你做完功課未呀？",
+     "r": "nei5 zou6 jyun4 gung1 fo3 mei6 aa3",
+     "en": "Have you finished your homework yet?"
+    },
+    {
+     "s": "Wing仲未到。",
+     "r": "zung6 mei6 dou3",
+     "en": "Wing hasn't arrived yet."
+    },
+    {
+     "s": "我未食早餐。",
+     "r": "ngo5 mei6 sik6 zou2 caan1",
+     "en": "I haven't had breakfast yet."
+    }
+   ]
+  },
+  {
+   "id": "cv01-19",
+   "t": {
+    "s": "講",
+    "r": "gong2"
+   },
+   "pos": "verb",
+   "en": "to speak; to talk; to say",
+   "note": "講 + language = speak it; 同…講 = tell/talk to.",
+   "ex": [
+    {
+     "s": "佢講嘢好快。",
+     "r": "keoi5 gong2 je5 hou2 faai3",
+     "en": "She talks really fast."
+    },
+    {
+     "s": "我同老闆講咗。",
+     "r": "ngo5 tung4 lou5 baan2 gong2 zo2",
+     "en": "I talked to the boss."
+    },
+    {
+     "s": "Kevin識講廣東話。",
+     "r": "sik1 gong2 gwong2 dung1 waa2",
+     "en": "Kevin can speak Cantonese."
+    }
+   ]
+  },
+  {
+   "id": "cv01-62",
+   "t": {
+    "s": "緊",
+    "r": "gan2"
+   },
+   "pos": "particle",
+   "en": "(after verb) -ing, in progress",
+   "note": "食緊 = eating now. Replaces Mandarin 在/正在.",
+   "ex": [
+    {
+     "s": "我食緊飯，等陣打俾你。",
+     "r": "ngo5 sik6 gan2 faan6 dang2 zan6 daa2 bei2 nei5",
+     "en": "I'm eating, I'll call you in a bit."
+    },
+    {
+     "s": "外面落緊大雨。",
+     "r": "ngoi6 min6 lok6 gan2 daai6 jyu5",
+     "en": "It's pouring outside."
+    },
+    {
+     "s": "Kevin學緊廣東話。",
+     "r": "hok6 gan2 gwong2 dung1 waa2",
+     "en": "Kevin is learning Cantonese."
+    }
+   ]
+  },
+  {
+   "id": "cv01-59",
+   "t": {
+    "s": "叫",
+    "r": "giu3"
+   },
+   "pos": "verb",
+   "en": "to be called; to order; to tell (someone)",
+   "note": "",
+   "ex": [
+    {
+     "s": "我叫Dan，你呢？",
+     "r": "ngo5 giu3 nei5 ne1",
+     "en": "I'm Dan, and you?"
+    },
+    {
+     "s": "我哋叫外賣啦。",
+     "r": "ngo5 dei6 giu3 ngoi6 maai6 laa1",
+     "en": "Let's order takeout."
+    },
+    {
+     "s": "老闆叫我聽日早啲返。",
+     "r": "lou5 baan2 giu3 ngo5 ting1 jat6 zou2 di1 faan1",
+     "en": "The boss told me to come in earlier tomorrow."
+    }
+   ]
+  },
+  {
+   "id": "cv01-99",
+   "t": {
+    "s": "張",
+    "r": "zoeng1"
+   },
+   "pos": "measure word",
+   "en": "(measure word: flat things)",
+   "note": "For tables, tickets, photos, paper: 一張相.",
+   "ex": [
+    {
+     "s": "我想買兩張戲飛。",
+     "r": "ngo5 soeng2 maai5 loeng5 zoeng1 hei3 fei1",
+     "en": "I'd like two movie tickets."
+    },
+    {
+     "s": "我哋要張四人枱。",
+     "r": "ngo5 dei6 jiu3 zoeng1 sei3 jan4 toi2",
+     "en": "We'd like a table for four."
+    },
+    {
+     "s": "呢張相影得好靚。",
+     "r": "ni1 zoeng1 soeng2 jing2 dak1 hou2 leng3",
+     "en": "This photo came out really nice."
+    }
+   ]
+  },
+  {
+   "id": "cv01-13",
+   "t": {
+    "s": "冇",
+    "r": "mou5"
+   },
+   "pos": "verb",
+   "en": "to not have; there isn't; didn't",
+   "note": "Negative of 有; replaces Mandarin 沒有. Before a verb: 'didn't'.",
+   "ex": [
+    {
+     "s": "我今個月冇乜錢。",
+     "r": "ngo5 gam1 go3 jyut6 mou5 mat1 cin2",
+     "en": "I don't have much money this month."
+    },
+    {
+     "s": "雪櫃冇牛奶喇。",
+     "r": "syut3 gwai6 mou5 ngau4 naai5 laa3",
+     "en": "There's no milk left in the fridge."
+    },
+    {
+     "s": "我尋晚冇瞓好。",
+     "r": "ngo5 cam4 maan5 mou5 fan3 hou2",
+     "en": "I didn't sleep well last night."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "今個月",
+     "冇乜",
+     "錢"
+    ],
+    "alt": [
+     [
+      "今個月",
+      "我",
+      "冇乜",
+      "錢"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-18",
+   "t": {
+    "s": "嘛",
+    "r": "maa3"
+   },
+   "pos": "particle",
+   "en": "(the reason is obvious) you know",
+   "note": "Gives an obvious reason: 'after all, you know'.",
+   "ex": [
+    {
+     "s": "我唔去喇，落緊雨嘛。",
+     "r": "ngo5 m4 heoi3 laa3 lok6 gan2 jyu5 maa3",
+     "en": "I'm not going, it's raining after all."
+    },
+    {
+     "s": "佢好攰，做咗一日嘢嘛。",
+     "r": "keoi5 hou2 gui6 zou6 zo2 jat1 jat6 je5 maa3",
+     "en": "He's tired, he worked all day, you know."
+    },
+    {
+     "s": "平啲啦，我買兩件嘛。",
+     "r": "peng4 di1 laa1 ngo5 maai5 loeng5 gin6 maa3",
+     "en": "Make it cheaper, I'm buying two after all."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "唔",
+     "去",
+     "喇",
+     "落緊",
+     "雨",
+     "嘛"
+    ],
+    "alt": [
+     [
+      "落緊",
+      "雨",
+      "嘛",
+      "我",
+      "唔",
+      "去",
+      "喇"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-56",
+   "t": {
+    "s": "日",
+    "r": "jat6"
+   },
+   "pos": "noun",
+   "en": "day",
+   "note": "With numbers, no measure word: 三日. 今日 today.",
+   "ex": [
+    {
+     "s": "今日好熱呀，記得飲多啲水。",
+     "r": "gam1 jat6 hou2 jit6 aa3 gei3 dak1 jam2 do1 di1 seoi2",
+     "en": "It's so hot today, remember to drink more water."
+    },
+    {
+     "s": "我哋喺東京住咗五日。",
+     "r": "ngo5 dei6 hai2 dung1 ging1 zyu6 zo2 ng5 jat6",
+     "en": "We stayed in Tokyo for five days."
+    },
+    {
+     "s": "我每日都行半個鐘。",
+     "r": "ngo5 mui5 jat6 dou1 haang4 bun3 go3 zung1",
+     "en": "I walk for half an hour every day."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "今日",
+     "好熱",
+     "呀",
+     "記得",
+     "飲",
+     "多啲",
+     "水"
+    ],
+    "alt": [
+     [
+      "記得",
+      "飲",
+      "多啲",
+      "水",
+      "今日",
+      "好熱",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-75",
+   "t": {
+    "s": "幫",
+    "r": "bong1"
+   },
+   "pos": "verb",
+   "en": "to help; to do (something) for",
+   "note": "幫手 = help (out).",
+   "ex": [
+    {
+     "s": "你可唔可以幫我影張相？",
+     "r": "nei5 ho2 m4 ho2 ji5 bong1 ngo5 jing2 zoeng1 soeng2",
+     "en": "Could you take a photo for me?"
+    },
+    {
+     "s": "我幫你拎啦。",
+     "r": "ngo5 bong1 nei5 ling1 laa1",
+     "en": "Let me carry that for you."
+    },
+    {
+     "s": "有咩要幫手就出聲啦。",
+     "r": "jau5 me1 jiu3 bong1 sau2 zau6 ceot1 seng1 laa1",
+     "en": "If you need any help, just say so."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "可",
+     "唔",
+     "可以",
+     "幫",
+     "我",
+     "影",
+     "張相"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv01-6",
+   "t": {
+    "s": "啦",
+    "r": "laa1"
+   },
+   "pos": "particle",
+   "en": "(suggestion, request) let's; OK?",
+   "note": "Softens requests and suggestions.",
+   "ex": [
+    {
+     "s": "快啲啦，就嚟遲到喇！",
+     "r": "faai3 di1 laa1 zau6 lai4 ci4 dou3 laa3",
+     "en": "Hurry up, we're about to be late!"
+    },
+    {
+     "s": "我哋去飲茶啦。",
+     "r": "ngo5 dei6 heoi3 jam2 caa4 laa1",
+     "en": "Let's go for dim sum."
+    },
+    {
+     "s": "你坐低先啦，我好快返嚟。",
+     "r": "nei5 co5 dai1 sin1 laa1 ngo5 hou2 faai3 faan1 lai4",
+     "en": "Have a seat, I'll be right back."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "快啲",
+     "啦",
+     "就嚟",
+     "遲到",
+     "喇"
+    ],
+    "alt": [
+     [
+      "就嚟",
+      "遲到",
+      "喇",
+      "快啲",
+      "啦"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-17",
+   "t": {
+    "s": "喇",
+    "r": "laa3"
+   },
+   "pos": "particle",
+   "en": "(change of situation) now; already",
+   "note": "Marks something new: 'now, already'. 夠喇 = that's enough.",
+   "ex": [
+    {
+     "s": "食飯喇，快啲嚟！",
+     "r": "sik6 faan6 laa3 faai3 di1 lai4",
+     "en": "Dinner's ready, come quickly!"
+    },
+    {
+     "s": "我飽喇，唔該。",
+     "r": "ngo5 baau2 laa3 m4 goi1",
+     "en": "I'm full now, thanks."
+    },
+    {
+     "s": "我要走喇，聽日見。",
+     "r": "ngo5 jiu3 zau2 laa3 ting1 jat6 gin3",
+     "en": "I have to go now, see you tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "食飯",
+     "喇",
+     "快",
+     "啲",
+     "嚟"
+    ],
+    "alt": [
+     [
+      "快",
+      "啲",
+      "嚟",
+      "食飯",
+      "喇"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-1",
+   "t": {
+    "s": "噉",
+    "r": "gam2"
+   },
+   "pos": "adverb",
+   "en": "so, then; like this",
+   "note": "Starts a sentence: 'so/then'. Not 咁 gam3 'so (very)'.",
+   "ex": [
+    {
+     "s": "噉我哋聽日見啦。",
+     "r": "gam2 ngo5 dei6 ting1 jat6 gin3 laa1",
+     "en": "Then let's meet tomorrow."
+    },
+    {
+     "s": "噉我買呢件啦。",
+     "r": "gam2 ngo5 maai5 ni1 gin6 laa1",
+     "en": "Then I'll buy this one."
+    },
+    {
+     "s": "唔好噉講啦。",
+     "r": "m4 hou2 gam2 gong2 laa1",
+     "en": "Don't talk like that."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "噉",
+     "我哋",
+     "聽日",
+     "見啦"
+    ],
+    "alt": [
+     [
+      "噉",
+      "聽日",
+      "我哋",
+      "見啦"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-11",
+   "t": {
+    "s": "話",
+    "r": "waa6"
+   },
+   "pos": "verb",
+   "en": "to say; to tell",
+   "note": "話 + person + 知 = tell someone. In 電話 it's waa2.",
+   "ex": [
+    {
+     "s": "Mei話佢今晚唔返嚟食飯。",
+     "r": "waa6 keoi5 gam1 maan5 m4 faan1 lai4 sik6 faan6",
+     "en": "Mei said she won't be home for dinner tonight."
+    },
+    {
+     "s": "我話咗俾你知㗎喇。",
+     "r": "ngo5 waa6 zo2 bei2 nei5 zi1 gaa3 laa3",
+     "en": "I already told you."
+    },
+    {
+     "s": "醫生話我要休息幾日。",
+     "r": "ji1 sang1 waa6 ngo5 jiu3 jau1 sik1 gei2 jat6",
+     "en": "The doctor said I need to rest a few days."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "Mei",
+     "話",
+     "佢",
+     "今晚",
+     "唔",
+     "返嚟",
+     "食飯"
+    ],
+    "alt": [
+     [
+      "Mei",
+      "話",
+      "今晚",
+      "佢",
+      "唔",
+      "返嚟",
+      "食飯"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-24",
+   "t": {
+    "s": "做",
+    "r": "zou6"
+   },
+   "pos": "verb",
+   "en": "to do; to make; to work",
+   "note": "做嘢 = to work.",
+   "ex": [
+    {
+     "s": "你今晚做咩呀？",
+     "r": "nei5 gam1 maan5 zou6 me1 aa3",
+     "en": "What are you doing tonight?"
+    },
+    {
+     "s": "我喺醫院做嘢。",
+     "r": "ngo5 hai2 ji1 jyun2 zou6 je5",
+     "en": "I work at a hospital."
+    },
+    {
+     "s": "我媽媽好鍾意做蛋糕。",
+     "r": "ngo5 maa4 maa1 hou2 zung1 ji3 zou6 daan6 gou1",
+     "en": "My mom loves making cakes."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "今晚",
+     "做",
+     "咩",
+     "呀"
+    ],
+    "alt": [
+     [
+      "今晚",
+      "你",
+      "做",
+      "咩",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-32",
+   "t": {
+    "s": "多",
+    "r": "do1"
+   },
+   "pos": "adjective",
+   "en": "many, much; more",
+   "note": "After a verb: 食多啲 = eat more.",
+   "ex": [
+    {
+     "s": "我今日有好多嘢做。",
+     "r": "ngo5 gam1 jat6 jau5 hou2 do1 je5 zou6",
+     "en": "I have lots to do today."
+    },
+    {
+     "s": "你要食多啲菜。",
+     "r": "nei5 jiu3 sik6 do1 di1 coi3",
+     "en": "You need to eat more vegetables."
+    },
+    {
+     "s": "嗰度多唔多人呀？",
+     "r": "go2 dou6 do1 m4 do1 jan4 aa3",
+     "en": "Is it crowded there?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "今日",
+     "有",
+     "好",
+     "多",
+     "嘢",
+     "做"
+    ],
+    "alt": [
+     [
+      "今日",
+      "我",
+      "有",
+      "好",
+      "多",
+      "嘢",
+      "做"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-35",
+   "t": {
+    "s": "自己",
+    "r": "zi6 gei2"
+   },
+   "pos": "pronoun",
+   "en": "oneself; one's own",
+   "note": "",
+   "ex": [
+    {
+     "s": "我自己嚟得喇，唔該。",
+     "r": "ngo5 zi6 gei2 lai4 dak1 laa3 m4 goi1",
+     "en": "I can do it myself, thanks."
+    },
+    {
+     "s": "你要照顧好自己。",
+     "r": "nei5 jiu3 ziu3 gu3 hou2 zi6 gei2",
+     "en": "Take good care of yourself."
+    },
+    {
+     "s": "佢自己一個人住。",
+     "r": "keoi5 zi6 gei2 jat1 go3 jan4 zyu6",
+     "en": "She lives by herself."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "自己",
+     "嚟得",
+     "喇",
+     "唔該"
+    ],
+    "alt": [
+     [
+      "唔該",
+      "我",
+      "自己",
+      "嚟得",
+      "喇"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-36",
+   "t": {
+    "s": "同埋",
+    "r": "tung4 maai4"
+   },
+   "pos": "conjunction",
+   "en": "and; as well as",
+   "note": "Joins nouns or adds a point. Mandarin 和.",
+   "ex": [
+    {
+     "s": "我要一個菠蘿包同埋一杯奶茶。",
+     "r": "ngo5 jiu3 jat1 go3 bo1 lo4 baau1 tung4 maai4 jat1 bui1 naai5 caa4",
+     "en": "I'd like a pineapple bun and a milk tea."
+    },
+    {
+     "s": "記得帶銀包同埋鎖匙。",
+     "r": "gei3 dak1 daai3 ngan4 baau1 tung4 maai4 so2 si4",
+     "en": "Remember to bring your wallet and keys."
+    },
+    {
+     "s": "佢識講英文同埋廣東話。",
+     "r": "keoi5 sik1 gong2 jing1 man2 tung4 maai4 gwong2 dung1 waa2",
+     "en": "She speaks English and Cantonese."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "要",
+     "一",
+     "個",
+     "菠蘿包",
+     "同埋",
+     "一杯",
+     "奶茶"
+    ],
+    "alt": [
+     [
+      "我",
+      "要",
+      "一杯",
+      "奶茶",
+      "同埋",
+      "一",
+      "個",
+      "菠蘿包"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-44",
+   "t": {
+    "s": "嗰陣時",
+    "r": "go2 zan6 si4"
+   },
+   "pos": "noun",
+   "en": "at that time; back then; when",
+   "note": "Often shortened to 嗰陣.",
+   "ex": [
+    {
+     "s": "我細個嗰陣時住喺九龍。",
+     "r": "ngo5 sai3 go3 go2 zan6 si4 zyu6 hai2 gau2 lung4",
+     "en": "When I was little I lived in Kowloon."
+    },
+    {
+     "s": "嗰陣時我仲讀緊大學。",
+     "r": "go2 zan6 si4 ngo5 zung6 duk6 gan2 daai6 hok6",
+     "en": "Back then I was still in university."
+    },
+    {
+     "s": "我打俾你嗰陣時，你喺邊呀？",
+     "r": "ngo5 daa2 bei2 nei5 go2 zan6 si4 nei5 hai2 bin1 aa3",
+     "en": "Where were you when I called you?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "細個",
+     "嗰陣時",
+     "住",
+     "喺",
+     "九龍"
+    ],
+    "alt": [
+     [
+      "細個",
+      "嗰陣時",
+      "我",
+      "住",
+      "喺",
+      "九龍"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-48",
+   "t": {
+    "s": "見",
+    "r": "gin3"
+   },
+   "pos": "verb",
+   "en": "to see; to meet",
+   "note": "見到 = saw. For 'look at, watch' use 睇.",
+   "ex": [
+    {
+     "s": "我哋星期六見啦。",
+     "r": "ngo5 dei6 sing1 kei4 luk6 gin3 laa1",
+     "en": "Let's meet on Saturday."
+    },
+    {
+     "s": "我好耐冇見過佢。",
+     "r": "ngo5 hou2 noi6 mou5 gin3 gwo3 keoi5",
+     "en": "I haven't seen him for a long time."
+    },
+    {
+     "s": "我聽日要去見醫生。",
+     "r": "ngo5 ting1 jat6 jiu3 heoi3 gin3 ji1 sang1",
+     "en": "I have to see the doctor tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "星期六",
+     "見",
+     "啦"
+    ],
+    "alt": [
+     [
+      "星期六",
+      "我哋",
+      "見",
+      "啦"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-50",
+   "t": {
+    "s": "或者",
+    "r": "waak6 ze2"
+   },
+   "pos": "conjunction",
+   "en": "or; maybe, perhaps",
+   "note": "'Or' in statements; in questions use 定係.",
+   "ex": [
+    {
+     "s": "你可以搭地鐵或者巴士。",
+     "r": "nei5 ho2 ji5 daap3 dei6 tit3 waak6 ze2 baa1 si2",
+     "en": "You can take the MTR or the bus."
+    },
+    {
+     "s": "或者我哋改日再傾。",
+     "r": "waak6 ze2 ngo5 dei6 goi2 jat6 zoi3 king1",
+     "en": "Maybe we can talk another day."
+    },
+    {
+     "s": "星期六或者星期日都得。",
+     "r": "sing1 kei4 luk6 waak6 ze2 sing1 kei4 jat6 dou1 dak1",
+     "en": "Saturday or Sunday are both fine."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "可以",
+     "搭",
+     "地鐵",
+     "或者",
+     "巴士"
+    ],
+    "alt": [
+     [
+      "你",
+      "可以",
+      "搭",
+      "巴士",
+      "或者",
+      "地鐵"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-68",
+   "t": {
+    "s": "出",
+    "r": "ceot1"
+   },
+   "pos": "verb",
+   "en": "to go out; to come out",
+   "note": "出街 = go out; 出口 = exit.",
+   "ex": [
+    {
+     "s": "我哋今晚出街食飯。",
+     "r": "ngo5 dei6 gam1 maan5 ceot1 gaai1 sik6 faan6",
+     "en": "We're eating out tonight."
+    },
+    {
+     "s": "佢啱啱出咗門。",
+     "r": "keoi5 ngaam1 ngaam1 ceot1 zo2 mun4",
+     "en": "He just left the house."
+    },
+    {
+     "s": "你喺B出口等我。",
+     "r": "nei5 hai2 ceot1 hau2 dang2 ngo5",
+     "en": "Wait for me at Exit B."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "今晚",
+     "出",
+     "街",
+     "食飯"
+    ],
+    "alt": [
+     [
+      "今晚",
+      "我哋",
+      "出",
+      "街",
+      "食飯"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-71",
+   "t": {
+    "s": "驚",
+    "r": "geng1"
+   },
+   "pos": "verb",
+   "en": "to be afraid; to worry",
+   "note": "Colloquial 'fear' (Mandarin 怕); 唔使驚 = don't worry.",
+   "ex": [
+    {
+     "s": "我細個好驚黑。",
+     "r": "ngo5 sai3 go3 hou2 geng1 hak1",
+     "en": "I was afraid of the dark as a kid."
+    },
+    {
+     "s": "唔使驚，打針唔痛㗎。",
+     "r": "m4 sai2 geng1 daa2 zam1 m4 tung3 gaa3",
+     "en": "Don't worry, the shot doesn't hurt."
+    },
+    {
+     "s": "我驚遲到，所以搭的士。",
+     "r": "ngo5 geng1 ci4 dou3 so2 ji5 daap3 dik1 si2",
+     "en": "I was worried about being late, so I took a taxi."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "細個",
+     "好",
+     "驚",
+     "黑"
+    ],
+    "alt": [
+     [
+      "細個",
+      "我",
+      "好",
+      "驚",
+      "黑"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-79",
+   "t": {
+    "s": "原來",
+    "r": "jyun4 loi4"
+   },
+   "pos": "adverb",
+   "en": "so it turns out; originally",
+   "note": "Expresses discovery: 原來係你！ 'Oh, it's you!'",
+   "ex": [
+    {
+     "s": "原來你識講廣東話！",
+     "r": "jyun4 loi4 nei5 sik1 gong2 gwong2 dung1 waa2",
+     "en": "Oh, so you speak Cantonese!"
+    },
+    {
+     "s": "原來今日唔使返學。",
+     "r": "jyun4 loi4 gam1 jat6 m4 sai2 faan1 hok6",
+     "en": "It turns out there's no school today."
+    },
+    {
+     "s": "原來佢哋係兩兄弟。",
+     "r": "jyun4 loi4 keoi5 dei6 hai6 loeng5 hing1 dai6",
+     "en": "Oh, so they're brothers."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "原來",
+     "你",
+     "識",
+     "講",
+     "廣東話"
+    ],
+    "alt": [
+     [
+      "你",
+      "原來",
+      "識",
+      "講",
+      "廣東話"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-81",
+   "t": {
+    "s": "屋企",
+    "r": "uk1 kei2"
+   },
+   "pos": "noun",
+   "en": "home; family",
+   "note": "屋企人 = family members.",
+   "ex": [
+    {
+     "s": "我而家喺屋企。",
+     "r": "ngo5 ji4 gaa1 hai2 uk1 kei2",
+     "en": "I'm at home now."
+    },
+    {
+     "s": "你屋企有幾多個人？",
+     "r": "nei5 uk1 kei2 jau5 gei2 do1 go3 jan4",
+     "en": "How many people are in your family?"
+    },
+    {
+     "s": "我哋今晚喺屋企食。",
+     "r": "ngo5 dei6 gam1 maan5 hai2 uk1 kei2 sik6",
+     "en": "We're eating at home tonight."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "而家",
+     "喺",
+     "屋企"
+    ],
+    "alt": [
+     [
+      "而家",
+      "我",
+      "喺",
+      "屋企"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-89",
+   "t": {
+    "s": "月",
+    "r": "jyut6"
+   },
+   "pos": "noun",
+   "en": "month",
+   "note": "A month = 一個月; 五月 = May.",
+   "ex": [
+    {
+     "s": "我下個月去日本。",
+     "r": "ngo5 haa6 go3 jyut6 heoi3 jat6 bun2",
+     "en": "I'm going to Japan next month."
+    },
+    {
+     "s": "我哋每個月交租。",
+     "r": "ngo5 dei6 mui5 go3 jyut6 gaau1 zou1",
+     "en": "We pay rent every month."
+    },
+    {
+     "s": "佢生日喺五月。",
+     "r": "keoi5 saang1 jat6 hai2 ng5 jyut6",
+     "en": "Her birthday is in May."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "下",
+     "個",
+     "月",
+     "去",
+     "日本"
+    ],
+    "alt": [
+     [
+      "下",
+      "個",
+      "月",
+      "我",
+      "去",
+      "日本"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-90",
+   "t": {
+    "s": "打",
+    "r": "daa2"
+   },
+   "pos": "verb",
+   "en": "to hit; to make (a call); to play (ball)",
+   "note": "打俾 = call (someone); 打波 = play ball.",
+   "ex": [
+    {
+     "s": "我聽日打俾你。",
+     "r": "ngo5 ting1 jat6 daa2 bei2 nei5",
+     "en": "I'll call you tomorrow."
+    },
+    {
+     "s": "我逢星期六打波。",
+     "r": "ngo5 fung4 sing1 kei4 luk6 daa2 bo1",
+     "en": "I play ball every Saturday."
+    },
+    {
+     "s": "佢喺銀行打工。",
+     "r": "keoi5 hai2 ngan4 hong4 daa2 gung1",
+     "en": "She works at a bank."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "聽日",
+     "打",
+     "俾",
+     "你"
+    ],
+    "alt": [
+     [
+      "聽日",
+      "我",
+      "打",
+      "俾",
+      "你"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-91",
+   "t": {
+    "s": "唔好",
+    "r": "m4 hou2"
+   },
+   "pos": "verb",
+   "en": "don't; not good",
+   "note": "Before a verb = 'don't'.",
+   "ex": [
+    {
+     "s": "唔好行咁快，等埋我！",
+     "r": "m4 hou2 haang4 gam3 faai3 dang2 maai4 ngo5",
+     "en": "Don't walk so fast, wait for me!"
+    },
+    {
+     "s": "唔好食咁多糖。",
+     "r": "m4 hou2 sik6 gam3 do1 tong2",
+     "en": "Don't eat so much candy."
+    },
+    {
+     "s": "今日天氣唔好，留喺屋企啦。",
+     "r": "gam1 jat6 tin1 hei3 m4 hou2 lau4 hai2 uk1 kei2 laa1",
+     "en": "The weather's bad today, stay home."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "唔好",
+     "行",
+     "咁",
+     "快",
+     "等",
+     "埋",
+     "我"
+    ],
+    "alt": [
+     [
+      "等",
+      "埋",
+      "我",
+      "唔好",
+      "行",
+      "咁",
+      "快"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-92",
+   "t": {
+    "s": "問題",
+    "r": "man6 tai4"
+   },
+   "pos": "noun",
+   "en": "question; problem",
+   "note": "冇問題 = no problem.",
+   "ex": [
+    {
+     "s": "冇問題，我聽日交俾你。",
+     "r": "mou5 man6 tai4 ngo5 ting1 jat6 gaau1 bei2 nei5",
+     "en": "No problem, I'll give it to you tomorrow."
+    },
+    {
+     "s": "我想問一個問題。",
+     "r": "ngo5 soeng2 man6 jat1 go3 man6 tai4",
+     "en": "I'd like to ask a question."
+    },
+    {
+     "s": "我部車有啲問題。",
+     "r": "ngo5 bou6 ce1 jau5 di1 man6 tai4",
+     "en": "My car has a bit of a problem."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "冇",
+     "問題",
+     "我",
+     "聽日",
+     "交",
+     "俾",
+     "你"
+    ],
+    "alt": [
+     [
+      "冇",
+      "問題",
+      "聽日",
+      "我",
+      "交",
+      "俾",
+      "你"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-95",
+   "t": {
+    "s": "少少",
+    "r": "siu2 siu2"
+   },
+   "pos": "determiner",
+   "en": "a little; a bit",
+   "note": "",
+   "ex": [
+    {
+     "s": "我識講少少廣東話。",
+     "r": "ngo5 sik1 gong2 siu2 siu2 gwong2 dung1 waa2",
+     "en": "I speak a little Cantonese."
+    },
+    {
+     "s": "我要少少辣就夠。",
+     "r": "ngo5 jiu3 siu2 siu2 laat6 zau6 gau3",
+     "en": "Just a little spicy is enough for me."
+    },
+    {
+     "s": "可唔可以平少少呀？",
+     "r": "ho2 m4 ho2 ji5 peng4 siu2 siu2 aa3",
+     "en": "Could you make it a little cheaper?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "識",
+     "講",
+     "少少",
+     "廣東話"
+    ],
+    "alt": [
+     [
+      "廣東話",
+      "我",
+      "識",
+      "講",
+      "少少"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv01-98",
+   "t": {
+    "s": "以前",
+    "r": "ji5 cin4"
+   },
+   "pos": "noun",
+   "en": "before; in the past",
+   "note": "",
+   "ex": [
+    {
+     "s": "我以前喺美國讀書。",
+     "r": "ngo5 ji5 cin4 hai2 mei5 gwok3 duk6 syu1",
+     "en": "I used to study in the US."
+    },
+    {
+     "s": "呢度以前係一間戲院。",
+     "r": "ni1 dou6 ji5 cin4 hai6 jat1 gaan1 hei3 jyun2",
+     "en": "This used to be a cinema."
+    },
+    {
+     "s": "食飯以前記得洗手。",
+     "r": "sik6 faan6 ji5 cin4 gei3 dak1 sai2 sau2",
+     "en": "Remember to wash your hands before eating."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "以前",
+     "喺",
+     "美國",
+     "讀書"
+    ],
+    "alt": [
+     [
+      "以前",
+      "我",
+      "喺",
+      "美國",
+      "讀書"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

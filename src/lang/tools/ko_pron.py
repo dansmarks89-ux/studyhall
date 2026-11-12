@@ -42,11 +42,39 @@ def _load_g2p():
 
 _g2p = _load_g2p()
 
+# Words whose standard pronunciation tenses a consonant that g2pk2 can't predict: Sino-Korean ㄹ + ㄷ/ㅅ/ㅈ
+# (standard pronunciation rule 26) and lexical tensing listed in 표준국어대사전. Word -> how it is said.
+TENSED = {
+    "일주일": "일쭈일", "결정": "결쩡", "조건": "조껀", "일단": "일딴", "절대": "절때", "일정": "일쩡",
+    "물건": "물껀", "글자": "글짜", "결제": "결쩨",
+}
+_TENSE = {"ㄱ": "ㄲ", "ㄷ": "ㄸ", "ㅂ": "ㅃ", "ㅅ": "ㅆ", "ㅈ": "ㅉ"}
+_INIT = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ"
+
+def _initial(c):
+    return _INIT[(ord(c) - 0xAC00) // 588] if "가" <= c <= "힣" else None
+
+def _with_initial(c, i):
+    o = ord(c) - 0xAC00
+    return chr(0xAC00 + _INIT.index(i) * 588 + o % 588)
+
+def _tense(t, p):
+    """Apply TENSED to the g2p output p of t (same syllables in the same places; linking may change finals)."""
+    if len(t) != len(p):
+        return p
+    p = list(p)
+    for w, said in TENSED.items():
+        for m in re.finditer(re.escape(w), t):
+            for j, (a, b) in enumerate(zip(w, said)):
+                if a != b and _initial(b) == _TENSE.get(_initial(a)) and _initial(p[m.start() + j]) == _initial(a):
+                    p[m.start() + j] = _with_initial(p[m.start() + j], _initial(b))
+    return "".join(p)
+
 def pron(text):
     """How the Hangul string sounds in normal connected speech, written in Hangul."""
     t = re.sub(r"[?!,.…~]", "", text).strip()
     with contextlib.redirect_stdout(io.StringIO()):
-        return _g2p(t)
+        return _tense(t, _g2p(t))
 
 from korean_romanizer.romanizer import Romanizer
 def rom(said):

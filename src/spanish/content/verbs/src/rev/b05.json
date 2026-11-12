@@ -33,6 +33,21 @@
      "Pluperfect",
      "Imperfect subjunctive"
     ]
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es importante que tu hermano termine la prepa.",
+    "en": "It's important for your brother to finish high school.",
+    "f": "termine",
+    "clue": "Es importante que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Future",
+     "Imperfect"
+    ]
    }
   }
  },
@@ -133,6 +148,14 @@
      "Pluperfect",
      "Imperfect subjunctive"
     ]
+   },
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Use el inhalador como le indicó su médico.",
+    "en": "Use the inhaler the way your doctor told you.",
+    "f": "Use"
    }
   }
  },
@@ -262,6 +285,36 @@
     "es": "¿Cayó mucho granizo en tu colonia?",
     "en": "Did a lot of hail fall in your neighborhood?",
     "f": "Cayó"
+   }
+  }
+ },
+ "cambiar": {
+  "s": {
+   "30": {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Cambie el vendaje como le indicó la enfermera.",
+    "en": "Change the bandage the way the nurse told you.",
+    "f": "Cambie"
+   }
+  }
+ },
+ "recibir": {
+  "s": {
+   "15": {
+    "t": "Conditional",
+    "p": 3,
+    "k": "stmt",
+    "es": "Si tuviéramos espacio, recibiríamos a mi suegra en casa.",
+    "en": "If we had room, we'd take my mother-in-law in at home.",
+    "f": "recibiríamos",
+    "clue": "Si tuviéramos espacio",
+    "wrong": [
+     "Future",
+     "Present perfect",
+     "Pluperfect"
+    ]
    }
   }
  }

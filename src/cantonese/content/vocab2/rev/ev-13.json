@@ -75,7 +75,7 @@
      "en": "What do you do in your spare time?"
     },
     {
-     "s": "我哋係業餘波隊，玩下啫。",
+     "s": "我哋係業餘波隊，玩吓啫。",
      "r": "ngo5 dei6 hai6 jip6 jyu4 bo1 deoi2 waan2 haa5 ze1",
      "en": "We're an amateur team, just for fun."
     }
@@ -188,6 +188,835 @@
      "en": "Can you give an example?"
     }
    ]
+  },
+  {
+   "id": "cv07-157",
+   "t": {
+    "s": "碎",
+    "r": "seoi3"
+   },
+   "pos": "adjective",
+   "en": "broken into pieces; shattered",
+   "note": "打碎 = smash, break.",
+   "ex": [
+    {
+     "s": "佢唔小心打碎咗隻碗。",
+     "r": "keoi5 m4 siu2 sam1 daa2 seoi3 zo2 zek3 wun2",
+     "en": "He accidentally broke a bowl."
+    },
+    {
+     "s": "我部手機個芒碎咗。",
+     "r": "ngo5 bou6 sau2 gei1 go3 mon1 seoi3 zo2",
+     "en": "My phone screen is cracked."
+    },
+    {
+     "s": "地下有啲玻璃碎，小心呀。",
+     "r": "dei6 haa2 jau5 di1 bo1 lei1 seoi3 siu2 sam1 aa3",
+     "en": "There's broken glass on the floor; careful."
+    }
+   ]
+  },
+  {
+   "id": "cv07-193",
+   "t": {
+    "s": "玻璃",
+    "r": "bo1 lei1"
+   },
+   "pos": "noun",
+   "en": "glass",
+   "note": "玻璃杯 = a glass (cup).",
+   "ex": [
+    {
+     "s": "小心，個玻璃杯好易爛。",
+     "r": "siu2 sam1 go3 bo1 lei1 bui1 hou2 ji6 laan6",
+     "en": "Careful, the glass breaks easily."
+    },
+    {
+     "s": "塊玻璃好污糟，抹吓佢啦。",
+     "r": "faai3 bo1 lei1 hou2 wu1 zou1 maat3 haa5 keoi5 laa1",
+     "en": "The glass is filthy; give it a wipe."
+    },
+    {
+     "s": "呢個樽係玻璃嚟㗎。",
+     "r": "ni1 go3 zeon1 hai6 bo1 lei1 lai4 gaa3",
+     "en": "This bottle is made of glass."
+    }
+   ]
+  },
+  {
+   "id": "cv07-168",
+   "t": {
+    "s": "每人",
+    "r": "mui5 jan4"
+   },
+   "pos": "pronoun",
+   "en": "each person; per person",
+   "note": "",
+   "ex": [
+    {
+     "s": "每人一杯，唔好爭。",
+     "r": "mui5 jan4 jat1 bui1 m4 hou2 zaang1",
+     "en": "One cup each; don't fight over it."
+    },
+    {
+     "s": "呢個套餐每人三百蚊。",
+     "r": "ni1 go3 tou3 caan1 mui5 jan4 saam1 baak3 man1",
+     "en": "This set meal is 300 dollars per person."
+    },
+    {
+     "s": "每人帶一樣嘢食嚟。",
+     "r": "mui5 jan4 daai3 jat1 joeng6 je5 sik6 lai4",
+     "en": "Everyone bring one dish."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "每人",
+     "一杯",
+     "唔好",
+     "爭"
+    ],
+    "alt": [
+     [
+      "唔好",
+      "爭",
+      "每人",
+      "一杯"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-105",
+   "t": {
+    "s": "新人",
+    "r": "san1 jan4"
+   },
+   "pos": "noun",
+   "en": "newcomer; new hire; newlyweds",
+   "note": "At weddings, 一對新人 = the bride and groom.",
+   "ex": [
+    {
+     "s": "公司嚟咗個新人。",
+     "r": "gung1 si1 lai4 zo2 go3 san1 jan4",
+     "en": "A new hire joined the company."
+    },
+    {
+     "s": "佢係新人，你幫吓佢啦。",
+     "r": "keoi5 hai6 san1 jan4 nei5 bong1 haa5 keoi5 laa1",
+     "en": "She's new here; give her a hand."
+    },
+    {
+     "s": "我哋一齊敬新人一杯！",
+     "r": "ngo5 dei6 jat1 cai4 ging3 san1 jan4 jat1 bui1",
+     "en": "Let's all toast the newlyweds!"
+    }
+   ]
+  },
+  {
+   "id": "cv07-127",
+   "t": {
+    "s": "搏",
+    "r": "bok3"
+   },
+   "pos": "verb",
+   "en": "to try one's luck; to strive",
+   "note": "搏一搏 = take a chance; 搏命 = work like crazy.",
+   "ex": [
+    {
+     "s": "唔知有冇位，搏吓啦。",
+     "r": "m4 zi1 jau5 mou5 wai2 bok3 haa5 laa1",
+     "en": "Not sure there are seats; let's try our luck."
+    },
+    {
+     "s": "佢日日搏命做嘢。",
+     "r": "keoi5 jat6 jat6 bok3 meng6 zou6 je5",
+     "en": "He works like crazy every day."
+    },
+    {
+     "s": "買張六合彩搏一搏。",
+     "r": "maai5 zoeng1 luk6 hap6 coi2 bok3 jat1 bok3",
+     "en": "Buy a Mark Six ticket and take a chance."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "唔知",
+     "有冇",
+     "位",
+     "搏",
+     "吓",
+     "啦"
+    ],
+    "alt": [
+     [
+      "搏",
+      "吓",
+      "啦",
+      "唔知",
+      "有冇",
+      "位"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-132",
+   "t": {
+    "s": "好心",
+    "r": "hou2 sam1"
+   },
+   "pos": "adjective",
+   "en": "kind-hearted; for goodness' sake",
+   "note": "好心你啦 = for goodness' sake (exasperated).",
+   "ex": [
+    {
+     "s": "佢好好心，成日幫人。",
+     "r": "keoi5 hou2 hou2 sam1 seng4 jat6 bong1 jan4",
+     "en": "She's very kind; she's always helping people."
+    },
+    {
+     "s": "多謝你好心送我返屋企。",
+     "r": "do1 ze6 nei5 hou2 sam1 sung3 ngo5 faan1 uk1 kei2",
+     "en": "Thanks for kindly taking me home."
+    },
+    {
+     "s": "好心你啦，執吓你間房！",
+     "r": "hou2 sam1 nei5 laa1 zap1 haa5 nei5 gaan1 fong2",
+     "en": "For goodness' sake, tidy your room!"
+    }
+   ]
+  },
+  {
+   "id": "cv07-140",
+   "t": {
+    "s": "親眼",
+    "r": "can1 ngaan5"
+   },
+   "pos": "adverb",
+   "en": "with one's own eyes",
+   "note": "親眼見到 = saw it oneself.",
+   "ex": [
+    {
+     "s": "我親眼見到佢哋拖手。",
+     "r": "ngo5 can1 ngaan5 gin3 dou2 keoi5 dei6 to1 sau2",
+     "en": "I saw them holding hands with my own eyes."
+    },
+    {
+     "s": "我想親眼睇吓長城。",
+     "r": "ngo5 soeng2 can1 ngaan5 tai2 haa5 coeng4 sing4",
+     "en": "I want to see the Great Wall with my own eyes."
+    },
+    {
+     "s": "你唔信就親眼睇吓啦。",
+     "r": "nei5 m4 seon3 zau6 can1 ngaan5 tai2 haa5 laa1",
+     "en": "If you don't believe me, see for yourself."
+    }
+   ]
+  },
+  {
+   "id": "cv07-145",
+   "t": {
+    "s": "頭痛",
+    "r": "tau4 tung3"
+   },
+   "pos": "noun",
+   "en": "headache; troublesome",
+   "note": "Also figurative: 呢件事好頭痛 = this is a headache.",
+   "ex": [
+    {
+     "s": "我有啲頭痛，想休息吓。",
+     "r": "ngo5 jau5 di1 tau4 tung3 soeng2 jau1 sik1 haa5",
+     "en": "I have a bit of a headache; I want to rest."
+    },
+    {
+     "s": "頭痛就食粒止痛藥啦。",
+     "r": "tau4 tung3 zau6 sik6 nap1 zi2 tung3 joek6 laa1",
+     "en": "If you have a headache, take a painkiller."
+    },
+    {
+     "s": "搵屋住真係好頭痛。",
+     "r": "wan2 uk1 zyu6 zan1 hai6 hou2 tau4 tung3",
+     "en": "Finding a place to live is a real headache."
+    }
+   ]
+  },
+  {
+   "id": "cv07-169",
+   "t": {
+    "s": "收入",
+    "r": "sau1 jap6"
+   },
+   "pos": "noun",
+   "en": "income",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢份工收入唔錯。",
+     "r": "keoi5 fan6 gung1 sau1 jap6 m4 co3",
+     "en": "His job pays pretty well."
+    },
+    {
+     "s": "我哋要睇吓收入先決定。",
+     "r": "ngo5 dei6 jiu3 tai2 haa5 sau1 jap6 sin1 kyut3 ding6",
+     "en": "We need to look at our income before deciding."
+    },
+    {
+     "s": "舖頭生意差咗，收入少咗。",
+     "r": "pou3 tau2 saang1 ji3 caa1 zo2 sau1 jap6 siu2 zo2",
+     "en": "Business at the shop is down, so income dropped."
+    }
+   ]
+  },
+  {
+   "id": "cv07-173",
+   "t": {
+    "s": "好好",
+    "r": "hou2 hou2"
+   },
+   "pos": "adverb",
+   "en": "properly; well; very good",
+   "note": "好好休息 = rest well.",
+   "ex": [
+    {
+     "s": "你今晚好好休息吓啦。",
+     "r": "nei5 gam1 maan5 hou2 hou2 jau1 sik1 haa5 laa1",
+     "en": "Get some good rest tonight."
+    },
+    {
+     "s": "佢對我好好。",
+     "r": "keoi5 deoi3 ngo5 hou2 hou2",
+     "en": "She's really good to me."
+    },
+    {
+     "s": "你要好好讀書呀。",
+     "r": "nei5 jiu3 hou2 hou2 duk6 syu1 aa3",
+     "en": "You need to study properly."
+    }
+   ]
+  },
+  {
+   "id": "cv07-178",
+   "t": {
+    "s": "跑馬",
+    "r": "paau2 maa5"
+   },
+   "pos": "verb",
+   "en": "horse racing; to race horses",
+   "note": "睇跑馬 = watch the races; 跑馬場 = racecourse.",
+   "ex": [
+    {
+     "s": "星期三晚有跑馬。",
+     "r": "sing1 kei4 saam1 maan5 jau5 paau2 maa5",
+     "en": "There's horse racing on Wednesday night."
+    },
+    {
+     "s": "我阿爺好鍾意睇跑馬。",
+     "r": "ngo5 aa3 je4 hou2 zung1 ji3 tai2 paau2 maa5",
+     "en": "My grandpa loves watching the horse races."
+    },
+    {
+     "s": "遊客都會去跑馬場玩吓。",
+     "r": "jau4 haak3 dou1 wui5 heoi3 paau2 maa5 coeng4 waan2 haa5",
+     "en": "Tourists also visit the racecourse for fun."
+    }
+   ]
+  },
+  {
+   "id": "cv07-182",
+   "t": {
+    "s": "評價",
+    "r": "ping4 gaa3"
+   },
+   "pos": "verb",
+   "en": "to evaluate; a review or rating",
+   "note": "網上評價 = online reviews.",
+   "ex": [
+    {
+     "s": "呢間餐廳網上評價好好。",
+     "r": "ni1 gaan1 caan1 teng1 mong5 soeng6 ping4 gaa3 hou2 hou2",
+     "en": "This restaurant has great reviews online."
+    },
+    {
+     "s": "你點評價佢嘅表現？",
+     "r": "nei5 dim2 ping4 gaa3 keoi5 ge3 biu2 jin6",
+     "en": "How would you rate her performance?"
+    },
+    {
+     "s": "買之前睇吓人哋嘅評價。",
+     "r": "maai5 zi1 cin4 tai2 haa5 jan4 dei6 ge3 ping4 gaa3",
+     "en": "Check other people's reviews before buying."
+    }
+   ]
+  },
+  {
+   "id": "cv07-112",
+   "t": {
+    "s": "圖片",
+    "r": "tou4 pin2"
+   },
+   "pos": "noun",
+   "en": "picture; image",
+   "note": "For photos people usually say 相 soeng2.",
+   "ex": [
+    {
+     "s": "你傳張圖片俾我吖。",
+     "r": "nei5 cyun4 zoeng1 tou4 pin2 bei2 ngo5 aa1",
+     "en": "Send me the picture."
+    },
+    {
+     "s": "呢本書有好多圖片。",
+     "r": "ni1 bun2 syu1 jau5 hou2 do1 tou4 pin2",
+     "en": "This book has lots of pictures."
+    },
+    {
+     "s": "網上啲圖片唔一定係真嘅。",
+     "r": "mong5 soeng6 di1 tou4 pin2 m4 jat1 ding6 hai6 zan1 ge3",
+     "en": "Pictures online aren't always real."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "傳",
+     "張",
+     "圖片",
+     "俾",
+     "我",
+     "吖"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-129",
+   "t": {
+    "s": "語氣",
+    "r": "jyu5 hei3"
+   },
+   "pos": "noun",
+   "en": "tone (of voice)",
+   "note": "",
+   "ex": [
+    {
+     "s": "你講嘢嘅語氣好差。",
+     "r": "nei5 gong2 je5 ge3 jyu5 hei3 hou2 caa1",
+     "en": "Your tone is really rude."
+    },
+    {
+     "s": "聽佢語氣，好似唔開心。",
+     "r": "teng1 keoi5 jyu5 hei3 hou2 ci5 m4 hoi1 sam1",
+     "en": "From his tone, he seems upset."
+    },
+    {
+     "s": "打電話俾客人，語氣要好啲。",
+     "r": "daa2 din6 waa2 bei2 haak3 jan4 jyu5 hei3 jiu3 hou2 di1",
+     "en": "When you call customers, use a nicer tone."
+    }
+   ]
+  },
+  {
+   "id": "cv07-139",
+   "t": {
+    "s": "無啦啦",
+    "r": "mou4 laa1 laa1"
+   },
+   "pos": "adverb",
+   "en": "out of the blue; for no reason",
+   "note": "Very colloquial.",
+   "ex": [
+    {
+     "s": "佢無啦啦喊起上嚟。",
+     "r": "keoi5 mou4 laa1 laa1 haam3 hei2 soeng5 lai4",
+     "en": "She suddenly started crying for no reason."
+    },
+    {
+     "s": "部電腦無啦啦熄咗。",
+     "r": "bou6 din6 nou5 mou4 laa1 laa1 sik1 zo2",
+     "en": "The computer shut off out of nowhere."
+    },
+    {
+     "s": "你無啦啦送花俾我做乜呀？",
+     "r": "nei5 mou4 laa1 laa1 sung3 faa1 bei2 ngo5 zou6 mat1 aa3",
+     "en": "Why are you giving me flowers out of the blue?"
+    }
+   ]
+  },
+  {
+   "id": "cv07-154",
+   "t": {
+    "s": "印象",
+    "r": "jan3 zoeng6"
+   },
+   "pos": "noun",
+   "en": "impression; recollection",
+   "note": "冇印象 = can't recall it.",
+   "ex": [
+    {
+     "s": "你對佢有咩印象呀？",
+     "r": "nei5 deoi3 keoi5 jau5 me1 jan3 zoeng6 aa3",
+     "en": "What's your impression of him?"
+    },
+    {
+     "s": "我對呢件事冇乜印象。",
+     "r": "ngo5 deoi3 ni1 gin6 si6 mou5 mat1 jan3 zoeng6",
+     "en": "I don't really remember that."
+    },
+    {
+     "s": "香港俾我嘅印象好好。",
+     "r": "hoeng1 gong2 bei2 ngo5 ge3 jan3 zoeng6 hou2 hou2",
+     "en": "Hong Kong left a great impression on me."
+    }
+   ]
+  },
+  {
+   "id": "cv07-164",
+   "t": {
+    "s": "陣",
+    "r": "zan6"
+   },
+   "pos": "other",
+   "en": "a while; a spell (of rain, wind)",
+   "note": "一陣 = a moment; 陣間 = later. Often pronounced zam6.",
+   "ex": [
+    {
+     "s": "等我一陣，我即刻嚟。",
+     "r": "dang2 ngo5 jat1 zan6 ngo5 zik1 hak1 lai4",
+     "en": "Wait a moment; I'm coming right away."
+    },
+    {
+     "s": "我陣間打俾你。",
+     "r": "ngo5 zan6 gaan1 daa2 bei2 nei5",
+     "en": "I'll call you later."
+    },
+    {
+     "s": "頭先落咗一陣大雨。",
+     "r": "tau4 sin1 lok6 zo2 jat1 zan6 daai6 jyu5",
+     "en": "There was a burst of heavy rain just now."
+    }
+   ]
+  },
+  {
+   "id": "cv07-186",
+   "t": {
+    "s": "正話",
+    "r": "zing3 waa6"
+   },
+   "pos": "adverb",
+   "en": "just now; a moment ago",
+   "note": "Same as 頭先 tau4 sin1.",
+   "ex": [
+    {
+     "s": "我正話打過電話俾你。",
+     "r": "ngo5 zing3 waa6 daa2 gwo3 din6 waa2 bei2 nei5",
+     "en": "I called you just now."
+    },
+    {
+     "s": "佢正話仲喺度。",
+     "r": "keoi5 zing3 waa6 zung6 hai2 dou6",
+     "en": "She was here a moment ago."
+    },
+    {
+     "s": "正話落咗場大雨。",
+     "r": "zing3 waa6 lok6 zo2 coeng4 daai6 jyu5",
+     "en": "It poured just a moment ago."
+    }
+   ]
+  },
+  {
+   "id": "cv07-187",
+   "t": {
+    "s": "選",
+    "r": "syun2"
+   },
+   "pos": "verb",
+   "en": "to choose; to elect",
+   "note": "For everyday choosing, 揀 gaan2 is more common.",
+   "ex": [
+    {
+     "s": "你選咗邊科呀？",
+     "r": "nei5 syun2 zo2 bin1 fo1 aa3",
+     "en": "Which subject did you pick?"
+    },
+    {
+     "s": "佢俾人選咗做班長。",
+     "r": "keoi5 bei2 jan4 syun2 zo2 zou6 baan1 zoeng2",
+     "en": "He was chosen as class monitor."
+    },
+    {
+     "s": "呢度有好多款，慢慢選啦。",
+     "r": "ni1 dou6 jau5 hou2 do1 fun2 maan6 maan2 syun2 laa1",
+     "en": "There are lots of styles here; take your time choosing."
+    }
+   ]
+  },
+  {
+   "id": "cv07-130",
+   "t": {
+    "s": "過份",
+    "r": "gwo3 fan6"
+   },
+   "pos": "adjective",
+   "en": "excessive; going too far",
+   "note": "Also written 過分.",
+   "ex": [
+    {
+     "s": "你咁講真係過份。",
+     "r": "nei5 gam2 gong2 zan1 hai6 gwo3 fan6",
+     "en": "Saying that is really going too far."
+    },
+    {
+     "s": "佢遲咗兩個鐘，太過份喇！",
+     "r": "keoi5 ci4 zo2 loeng5 go3 zung1 taai3 gwo3 fan6 laa3",
+     "en": "He was two hours late — that's too much!"
+    },
+    {
+     "s": "唔好飲得過份呀。",
+     "r": "m4 hou2 jam2 dak1 gwo3 fan6 aa3",
+     "en": "Don't drink too much."
+    }
+   ]
+  },
+  {
+   "id": "cv07-103",
+   "t": {
+    "s": "提醒",
+    "r": "tai4 seng2"
+   },
+   "pos": "verb",
+   "en": "to remind",
+   "note": "Spoken with colloquial seng2.",
+   "ex": [
+    {
+     "s": "記得提醒我買牛奶呀。",
+     "r": "gei3 dak1 tai4 seng2 ngo5 maai5 ngau4 naai5 aa3",
+     "en": "Remember to remind me to buy milk."
+    },
+    {
+     "s": "手機會提醒你飲水。",
+     "r": "sau2 gei1 wui5 tai4 seng2 nei5 jam2 seoi2",
+     "en": "Your phone will remind you to drink water."
+    },
+    {
+     "s": "多謝你提醒我開會。",
+     "r": "do1 ze6 nei5 tai4 seng2 ngo5 hoi1 wui2",
+     "en": "Thanks for reminding me about the meeting."
+    }
+   ]
+  },
+  {
+   "id": "cv07-116",
+   "t": {
+    "s": "私家",
+    "r": "si1 gaa1"
+   },
+   "pos": "adjective",
+   "en": "private (not public)",
+   "note": "私家車 = private car; 私家樓 = private (non-public) housing.",
+   "ex": [
+    {
+     "s": "佢揸私家車返工。",
+     "r": "keoi5 zaa1 si1 gaa1 ce1 faan1 gung1",
+     "en": "He drives his own car to work."
+    },
+    {
+     "s": "私家樓貴好多。",
+     "r": "si1 gaa1 lau2 gwai3 hou2 do1",
+     "en": "Private flats are much more expensive."
+    },
+    {
+     "s": "呢條係私家路，唔可以入。",
+     "r": "ni1 tiu4 hai6 si1 gaa1 lou6 m4 ho2 ji5 jap6",
+     "en": "This is a private road; you can't go in."
+    }
+   ]
+  },
+  {
+   "id": "cv07-102",
+   "t": {
+    "s": "走開",
+    "r": "zau2 hoi1"
+   },
+   "pos": "verb",
+   "en": "to go away; to step away",
+   "note": "Can sound rude on its own; 行開啲 is a softer 'move aside'.",
+   "ex": [
+    {
+     "s": "你走開啦，我想靜一靜。",
+     "r": "nei5 zau2 hoi1 laa1 ngo5 soeng2 zing6 jat1 zing6",
+     "en": "Go away, I want some quiet."
+    },
+    {
+     "s": "老細啱啱走開咗。",
+     "r": "lou5 sai3 ngaam1 ngaam1 zau2 hoi1 zo2",
+     "en": "The boss just stepped away."
+    },
+    {
+     "s": "隻貓見到狗就走開咗。",
+     "r": "zek3 maau1 gin3 dou2 gau2 zau6 zau2 hoi1 zo2",
+     "en": "The cat walked off when it saw the dog."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "走開",
+     "啦",
+     "我",
+     "想",
+     "靜一靜"
+    ],
+    "alt": [
+     [
+      "我",
+      "想",
+      "靜一靜",
+      "你",
+      "走開",
+      "啦"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-110",
+   "t": {
+    "s": "方向",
+    "r": "fong1 hoeng3"
+   },
+   "pos": "noun",
+   "en": "direction",
+   "note": "方向感 = sense of direction.",
+   "ex": [
+    {
+     "s": "我哋係咪行錯方向呀？",
+     "r": "ngo5 dei6 hai6 mai6 haang4 co3 fong1 hoeng3 aa3",
+     "en": "Are we going the wrong way?"
+    },
+    {
+     "s": "地鐵站喺嗰個方向。",
+     "r": "dei6 tit3 zaam6 hai2 go2 go3 fong1 hoeng3",
+     "en": "The MTR station is in that direction."
+    },
+    {
+     "s": "我冇乜方向感。",
+     "r": "ngo5 mou5 mat1 fong1 hoeng3 gam2",
+     "en": "I don't have much sense of direction."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "係咪",
+     "行錯",
+     "方向",
+     "呀"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-124",
+   "t": {
+    "s": "救命",
+    "r": "gau3 meng6"
+   },
+   "pos": "verb",
+   "en": "to save a life; Help!",
+   "note": "救命呀！ is the shout for help; also used jokingly.",
+   "ex": [
+    {
+     "s": "救命呀！有人跌咗落水！",
+     "r": "gau3 meng6 aa3 jau5 jan4 dit3 zo2 lok6 seoi2",
+     "en": "Help! Someone fell into the water!"
+    },
+    {
+     "s": "你係我嘅救命恩人！",
+     "r": "nei5 hai6 ngo5 ge3 gau3 meng6 jan1 jan4",
+     "en": "You're my lifesaver!"
+    },
+    {
+     "s": "救命，我今日有三個測驗！",
+     "r": "gau3 meng6 ngo5 gam1 jat6 jau5 saam1 go3 caak1 jim6",
+     "en": "Help me, I have three quizzes today!"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "救命",
+     "呀",
+     "有",
+     "人",
+     "跌",
+     "咗",
+     "落水"
+    ],
+    "alt": [
+     [
+      "有",
+      "人",
+      "跌",
+      "咗",
+      "落水",
+      "救命",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-134",
+   "t": {
+    "s": "剃",
+    "r": "tai3"
+   },
+   "pos": "verb",
+   "en": "to shave",
+   "note": "剃鬚 = shave one's beard.",
+   "ex": [
+    {
+     "s": "我朝早冇時間剃鬚。",
+     "r": "ngo5 ziu1 zou2 mou5 si4 gaan3 tai3 sou1",
+     "en": "I didn't have time to shave this morning."
+    },
+    {
+     "s": "佢剃咗光頭。",
+     "r": "keoi5 tai3 zo2 gwong1 tau4",
+     "en": "He shaved his head."
+    },
+    {
+     "s": "獸醫要幫隻狗剃毛。",
+     "r": "sau3 ji1 jiu3 bong1 zek3 gau2 tai3 mou4",
+     "en": "The vet needs to shave the dog's fur."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "朝早",
+     "冇",
+     "時間",
+     "剃",
+     "鬚"
+    ],
+    "alt": [
+     [
+      "朝早",
+      "我",
+      "冇",
+      "時間",
+      "剃",
+      "鬚"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

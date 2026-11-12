@@ -32,6 +32,21 @@
      "Present perfect",
      "Pluperfect"
     ]
+   },
+   "24": {
+    "t": "Present subjunctive",
+    "p": 2,
+    "k": "stmt",
+    "es": "Es mejor que se quede en cama por ahora.",
+    "en": "It's best that you stay in bed for now.",
+    "f": "se quede",
+    "clue": "Es mejor que",
+    "wrong": [
+     "Present",
+     "Preterite",
+     "Imperfect",
+     "Future"
+    ]
    }
   }
  },
@@ -59,6 +74,14 @@
     "es": "Súbete rápido, que ya se va el camión.",
     "en": "Get on quick, the bus is leaving.",
     "f": "Súbete"
+   },
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No suba escaleras por unos días.",
+    "en": "Don't climb stairs for a few days.",
+    "f": "No suba"
    }
   }
  },
@@ -105,6 +128,21 @@
      "Present subjunctive",
      "Imperfect subjunctive"
     ]
+   },
+   "15": {
+    "t": "Conditional",
+    "p": 0,
+    "k": "stmt",
+    "es": "Yo en su lugar me sentaría en una silla con respaldo.",
+    "en": "If I were you, I'd sit in a chair with a backrest.",
+    "f": "me sentaría",
+    "clue": "Yo en su lugar",
+    "wrong": [
+     "Preterite",
+     "Future",
+     "Present subjunctive",
+     "Pluperfect"
+    ]
    }
   }
  },
@@ -150,6 +188,82 @@
      "Imperfect",
      "Present perfect",
      "Pluperfect"
+    ]
+   }
+  }
+ },
+ "explicar": {
+  "set": {
+   "uses": [
+    {
+     "es": "explicar algo a alguien",
+     "en": "to explain something to someone",
+     "x": "La doctora le explica el diagnóstico al paciente.",
+     "xen": "The doctor explains the diagnosis to the patient."
+    },
+    {
+     "es": "explicar cómo / por qué / qué",
+     "en": "to explain how / why / what",
+     "x": "¿Me explica por qué cambió la dosis?",
+     "xen": "Can you explain to me why you changed the dose?"
+    },
+    {
+     "es": "¿Me explico?",
+     "en": "Do I make myself clear?",
+     "x": "Si le duele el pecho, llame al 911, ¿me explico?",
+     "xen": "If your chest hurts, call 911. Do I make myself clear?"
+    }
+   ]
+  },
+  "s": {
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Normalmente la enfermera explica las instrucciones antes del alta.",
+    "en": "The nurse normally explains the instructions before discharge.",
+    "f": "explica",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Imperfect subjunctive"
+    ]
+   }
+  }
+ },
+ "tocar": {
+  "s": {
+   "32": {
+    "t": "Command (−)",
+    "p": 2,
+    "k": "cmd",
+    "es": "No toque el vendaje hasta que se lo indique la enfermera.",
+    "en": "Don't touch the bandage until the nurse tells you it's OK.",
+    "f": "No toque"
+   }
+  }
+ },
+ "bajar": {
+  "s": {
+   "28": {
+    "t": "Imperfect subjunctive",
+    "p": 0,
+    "k": "q",
+    "es": "¿Y si le bajara un poco la dosis?",
+    "en": "What if I lowered your dose a little?",
+    "f": "bajara"
+   },
+   "0": {
+    "t": "Present",
+    "p": 2,
+    "k": "stmt",
+    "es": "Normalmente la fiebre baja con este jarabe.",
+    "en": "The fever normally goes down with this syrup.",
+    "f": "baja",
+    "clue": "Normalmente",
+    "wrong": [
+     "Preterite",
+     "Imperfect subjunctive"
     ]
    }
   }

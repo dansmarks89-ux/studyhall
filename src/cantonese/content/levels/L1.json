@@ -72,7 +72,7 @@
   {"topic": "Basics", "t": ["唔使唔該", "m4 sai2 m4 goi1"], "en": "Don't mention it (reply to thanks)", "note": "Literally \"no need to thank\". The reply when someone says {{唔該|m4 goi1}} to you.", "avoid": [18]},
   {"topic": "Basics", "t": ["你識唔識講廣東話呀？", "nei5 sik1 m4 sik1 gong2 gwong2 dung1 waa2 aa3"], "en": "Do you speak Cantonese?", "note": "Answer with the verb: {{識|sik1}} (yes) or {{唔識|m4 sik1}} (no)."},
   {"topic": "Basics", "t": ["早唞", "zou2 tau2"], "en": "Good night", "note": "Said before bed or when parting late at night. Don't mix it up with {{早晨|zou2 san4}}."},
-  {"topic": "Numbers", "t": ["十二", "sap6 ji6"], "en": "twelve", "note": "Inside a number, two is always {{二|ji6}}."},
+  {"topic": "Numbers", "t": ["十二", "sap6 ji6"], "en": "twelve", "note": "In the tens and ones places (12, 20, 22), two is {{二|ji6}}."},
   {"topic": "Numbers", "t": ["一百零五", "jat1 baak3 ling4 ng5"], "en": "one hundred and five", "note": "{{零|ling4}} fills the empty tens place. {{一百五|jat1 baak3 ng5}} alone means 150."},
   {"topic": "Numbers", "t": ["兩百", "loeng5 baak3"], "en": "two hundred", "note": "{{兩|loeng5}} is the usual word before hundred and thousand."},
   {"topic": "Numbers", "t": ["兩個人", "loeng5 go3 jan4"], "en": "two people", "note": "{{個|go3}} is a counting word that goes between the number and the noun. Before it, two is always {{兩|loeng5}}."}
@@ -113,7 +113,7 @@
    "why": "{{唔|m4}} goes before a verb to make it \"not\": {{我唔明|ngo5 m4 ming4}}.", "sk": ["g:neg"]},
   {"id": "L1-gap-12", "t": "gap", "q": ["十___", "sap6 ___"], "en": "twelve",
    "opts": [["二","ji6"],["兩","loeng5"],["一","jat1"],["五","ng5"]], "a": 0,
-   "why": "Inside a number, two is always {{二|ji6}}: {{十二|sap6 ji6}}. {{兩|loeng5}} is for two of something.", "sk": ["g:numbers"]},
+   "why": "In the tens and ones places, two is {{二|ji6}}: {{十二|sap6 ji6}}. {{兩|loeng5}} is for two of something.", "sk": ["g:numbers"]},
   {"id": "L1-gap-13", "t": "gap", "q": ["___個人", "___ go3 jan4"], "en": "two people",
    "opts": [["兩","loeng5"],["二","ji6"],["十二","sap6 ji6"],["零","ling4"]], "a": 0,
    "why": "Two of something is {{兩|loeng5}}: {{兩個人|loeng5 go3 jan4}}. {{二個人|ji6 go3 jan4}} is wrong.", "sk": ["g:numbers"]},
@@ -212,7 +212,7 @@
    {"who": "Auntie", "s": ["早晨！","zou2 san4"], "en": "Good morning!"},
    {"you": true, "opts": [["早晨！","zou2 san4"],["早唞！","zou2 tau2"],["唔使唔該！","m4 sai2 m4 goi1"]], "a": 0,
     "why": "Answer with {{早晨|zou2 san4}}. {{早唞|zou2 tau2}} is good night.", "sk": ["s:phrase","s:tones"]},
-   {"who": "Auntie", "s": ["你識講廣東話㗎？","nei5 sik1 gong2 gwong2 dung1 waa2 gaa3"], "en": "Oh, you speak Cantonese?"},
+   {"who": "Auntie", "s": ["你識講廣東話㗎？","nei5 sik1 gong2 gwong2 dung1 waa2 gaa4"], "en": "Oh, you speak Cantonese?"},
    {"you": true, "opts": [["我識講少少。","ngo5 sik1 gong2 siu2 siu2"],["我食少少。","ngo5 sik6 siu2 siu2"],["我唔明少少。","ngo5 m4 ming4 siu2 siu2"]], "a": 0,
     "why": "{{識|sik1}} (high) = know how to. {{食|sik6}} (low) = eat.", "sk": ["s:tones","s:vocab"]},
    {"who": "Auntie", "s": ["好呀！拜拜！","hou2 aa3! baai1 baai3"], "en": "Great! Bye!"},
@@ -231,7 +231,7 @@
     "why": "She helped you, so thank her with {{唔該晒|m4 goi1 saai3}}. {{唔使唔該|m4 sai2 m4 goi1}} is the reply to thanks.", "sk": ["s:phrase"]}
   ]},
   {"id": "L1-dlg-03", "t": "dlg", "title": "At the restaurant door", "turns": [
-   {"who": "Waiter", "s": ["早晨！兩位呀？","zou2 san4! loeng5 wai2 aa3"], "en": "Good morning! Two people?"},
+   {"who": "Waiter", "s": ["早晨！兩位呀？","zou2 san4! loeng5 wai2 aa4"], "en": "Good morning! Two people?"},
    {"you": true, "opts": [["係呀，兩個人。","hai6 aa3, loeng5 go3 jan4"],["係呀，二個人。","hai6 aa3, ji6 go3 jan4"],["唔係，兩個人。","m4 hai6, loeng5 go3 jan4"]], "a": 0,
     "why": "Two of something is {{兩|loeng5}}, never {{二|ji6}}. And he guessed right, so {{係呀|hai6 aa3}}.", "sk": ["g:numbers","s:phrase"]},
    {"who": "Waiter", "s": ["請坐。","cing2 co5"], "en": "Please have a seat."},
