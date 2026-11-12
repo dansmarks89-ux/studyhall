@@ -52,7 +52,32 @@
      "r": "keoi5 hou2 gaai3 ji3 jan4 dei6 waa6 keoi5 fei4",
      "en": "She really minds when people call her fat."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "開窗",
+     "你",
+     "會",
+     "唔",
+     "會",
+     "介意",
+     "呀"
+    ],
+    "alt": [
+     [
+      "你",
+      "會",
+      "唔",
+      "會",
+      "介意",
+      "我",
+      "開窗",
+      "呀"
+     ]
+    ]
+   }
   },
   {
    "id": "cv08-23",
@@ -233,7 +258,28 @@
      "r": "bok3 mat6 gun2 gong2 hoeng1 gong2 lik6 si2 hou2 jau5 ceoi3",
      "en": "The museum covers Hong Kong history; it's really interesting."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "中學",
+     "最",
+     "鍾意",
+     "讀",
+     "歷史"
+    ],
+    "alt": [
+     [
+      "中學",
+      "我",
+      "最",
+      "鍾意",
+      "讀",
+      "歷史"
+     ]
+    ]
+   }
   },
   {
    "id": "cv08-92",
@@ -482,6 +528,916 @@
      ]
     ]
    }
+  },
+  {
+   "id": "cv08-19",
+   "t": {
+    "s": "疤痕",
+    "r": "baa1 han4"
+   },
+   "pos": "noun",
+   "en": "scar",
+   "note": "Measure word 條 tiu4.",
+   "ex": [
+    {
+     "s": "我手臂有條疤痕。",
+     "r": "ngo5 sau2 bei3 jau5 tiu4 baa1 han4",
+     "en": "I have a scar on my arm."
+    },
+    {
+     "s": "隻貓抓親我，留低咗條疤痕。",
+     "r": "zek3 maau1 zaau2 can1 ngo5 lau4 dai1 zo2 tiu4 baa1 han4",
+     "en": "The cat scratched me and left a scar."
+    },
+    {
+     "s": "佢塊面有條疤痕，好易認。",
+     "r": "keoi5 faai3 min6 jau5 tiu4 baa1 han4 hou2 ji6 jing6",
+     "en": "He has a scar on his face, so he's easy to recognize."
+    }
+   ]
+  },
+  {
+   "id": "cv08-29",
+   "t": {
+    "s": "避",
+    "r": "bei6"
+   },
+   "pos": "verb",
+   "en": "to avoid; to take shelter",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢好似喺度避我。",
+     "r": "keoi5 hou2 ci5 hai2 dou6 bei6 ngo5",
+     "en": "It seems like he's avoiding me."
+    },
+    {
+     "s": "我哋入去商場避雨啦。",
+     "r": "ngo5 dei6 jap6 heoi3 soeng1 coeng4 bei6 jyu5 laa1",
+     "en": "Let's go into the mall to get out of the rain."
+    },
+    {
+     "s": "我想避開繁忙時間搭地鐵。",
+     "r": "ngo5 soeng2 bei6 hoi1 faan4 mong4 si4 gaan3 daap3 dei6 tit3",
+     "en": "I want to avoid taking the MTR at rush hour."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "好似",
+     "喺度",
+     "避",
+     "我"
+    ],
+    "alt": [
+     [
+      "好似",
+      "佢",
+      "喺度",
+      "避",
+      "我"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-15",
+   "t": {
+    "s": "經營",
+    "r": "ging1 jing4"
+   },
+   "pos": "verb",
+   "en": "to run (a business)",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢屋企經營一間茶餐廳。",
+     "r": "keoi5 uk1 kei2 ging1 jing4 jat1 gaan1 caa4 caan1 teng1",
+     "en": "Her family runs a cha chaan teng."
+    },
+    {
+     "s": "呢間舖頭經營咗三十年。",
+     "r": "ni1 gaan1 pou3 tau2 ging1 jing4 zo2 saam1 sap6 nin4",
+     "en": "This shop has been in business for thirty years."
+    },
+    {
+     "s": "而家租金咁貴，好難經營。",
+     "r": "ji4 gaa1 zou1 gam1 gam3 gwai3 hou2 naan4 ging1 jing4",
+     "en": "With rent this expensive, it's hard to keep a business going."
+    }
+   ]
+  },
+  {
+   "id": "cv08-44",
+   "t": {
+    "s": "相同",
+    "r": "soeng1 tung4"
+   },
+   "pos": "verb",
+   "en": "to be the same; identical",
+   "note": "Speech often says 一樣 jat1 joeng6.",
+   "ex": [
+    {
+     "s": "我哋買咗相同嘅衫。",
+     "r": "ngo5 dei6 maai5 zo2 soeng1 tung4 ge3 saam1",
+     "en": "We bought the same shirt."
+    },
+    {
+     "s": "兩間舖價錢相同。",
+     "r": "loeng5 gaan1 pou3 gaa3 cin4 soeng1 tung4",
+     "en": "The two shops charge the same price."
+    },
+    {
+     "s": "佢日日都食相同嘅早餐。",
+     "r": "keoi5 jat6 jat6 dou1 sik6 soeng1 tung4 ge3 zou2 caan1",
+     "en": "He eats the same breakfast every day."
+    }
+   ]
+  },
+  {
+   "id": "cv08-53",
+   "t": {
+    "s": "全年",
+    "r": "cyun4 nin4"
+   },
+   "pos": "noun",
+   "en": "the whole year; all year",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢間舖全年無休。",
+     "r": "ni1 gaan1 pou3 cyun4 nin4 mou4 jau1",
+     "en": "This shop is open all year round."
+    },
+    {
+     "s": "香港全年都好潮濕。",
+     "r": "hoeng1 gong2 cyun4 nin4 dou1 hou2 ciu4 sap1",
+     "en": "Hong Kong is humid all year."
+    },
+    {
+     "s": "我全年得十日假。",
+     "r": "ngo5 cyun4 nin4 dak1 sap6 jat6 gaa3",
+     "en": "I only get ten days off a year."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "間",
+     "舖",
+     "全年",
+     "無休"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-14",
+   "t": {
+    "s": "世界盃",
+    "r": "sai3 gaai3 bui1"
+   },
+   "pos": "noun",
+   "en": "the World Cup",
+   "note": "",
+   "ex": [
+    {
+     "s": "你有冇睇世界盃呀？",
+     "r": "nei5 jau5 mou5 tai2 sai3 gaai3 bui1 aa3",
+     "en": "Are you watching the World Cup?"
+    },
+    {
+     "s": "世界盃四年先有一次。",
+     "r": "sai3 gaai3 bui1 sei3 nin4 sin1 jau5 jat1 ci3",
+     "en": "The World Cup only comes around every four years."
+    },
+    {
+     "s": "我哋去酒吧睇世界盃決賽。",
+     "r": "ngo5 dei6 heoi3 zau2 baa1 tai2 sai3 gaai3 bui1 kyut3 coi3",
+     "en": "We're going to a bar to watch the World Cup final."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "有冇",
+     "睇",
+     "世界盃",
+     "呀"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-6",
+   "t": {
+    "s": "葡萄",
+    "r": "pou4 tou4"
+   },
+   "pos": "noun",
+   "en": "grape",
+   "note": "Hongkongers usually call fresh grapes 提子 tai4 zi2; 葡萄 is common in 葡萄酒, 葡萄乾.",
+   "ex": [
+    {
+     "s": "我想要杯紅葡萄酒。",
+     "r": "ngo5 soeng2 jiu3 bui1 hung4 pou4 tou4 zau2",
+     "en": "I'd like a glass of red wine."
+    },
+    {
+     "s": "個麵包入面有葡萄乾。",
+     "r": "go3 min6 baau1 jap6 min6 jau5 pou4 tou4 gon1",
+     "en": "There are raisins in the bread."
+    },
+    {
+     "s": "呢度啲葡萄好甜。",
+     "r": "ni1 dou6 di1 pou4 tou4 hou2 tim4",
+     "en": "The grapes here are really sweet."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "想",
+     "要",
+     "杯",
+     "紅",
+     "葡萄",
+     "酒"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-17",
+   "t": {
+    "s": "人類",
+    "r": "jan4 leoi6"
+   },
+   "pos": "noun",
+   "en": "humans; humankind",
+   "note": "",
+   "ex": [
+    {
+     "s": "狗係人類最好嘅朋友。",
+     "r": "gau2 hai6 jan4 leoi6 zeoi3 hou2 ge3 pang4 jau5",
+     "en": "Dogs are man's best friend."
+    },
+    {
+     "s": "呢套戲講機械人同人類。",
+     "r": "ni1 tou3 hei3 gong2 gei1 haai6 jan4 tung4 jan4 leoi6",
+     "en": "This movie is about robots and humans."
+    },
+    {
+     "s": "個仔問我人類點樣嚟嘅。",
+     "r": "go3 zai2 man6 ngo5 jan4 leoi6 dim2 joeng2 lai4 ge3",
+     "en": "My son asked me where humans came from."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "狗",
+     "係",
+     "人類",
+     "最好",
+     "嘅",
+     "朋友"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-35",
+   "t": {
+    "s": "下邊",
+    "r": "haa6 bin6"
+   },
+   "pos": "noun",
+   "en": "below; underneath",
+   "note": "Also 下面 haa6 min6 or 下底 haa6 dai2.",
+   "ex": [
+    {
+     "s": "隻貓匿咗喺床下邊。",
+     "r": "zek3 maau1 nei1 zo2 hai2 cong4 haa6 bin6",
+     "en": "The cat is hiding under the bed."
+    },
+    {
+     "s": "鎖匙喺地氈下邊。",
+     "r": "so2 si4 hai2 dei6 zin1 haa6 bin6",
+     "en": "The key is under the mat."
+    },
+    {
+     "s": "你睇吓下邊嗰行字。",
+     "r": "nei5 tai2 haa5 haa6 bin6 go2 hong4 zi6",
+     "en": "Take a look at the line of text below."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "隻",
+     "貓",
+     "匿",
+     "咗",
+     "喺",
+     "床",
+     "下邊"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-38",
+   "t": {
+    "s": "作品",
+    "r": "zok3 ban2"
+   },
+   "pos": "noun",
+   "en": "work (of art, writing, film)",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢幅畫係我學生嘅作品。",
+     "r": "ni1 fuk1 waa2 hai6 ngo5 hok6 saang1 ge3 zok3 ban2",
+     "en": "This painting is my student's work."
+    },
+    {
+     "s": "我好鍾意呢個導演嘅作品。",
+     "r": "ngo5 hou2 zung1 ji3 ni1 go3 dou6 jin2 ge3 zok3 ban2",
+     "en": "I love this director's work."
+    },
+    {
+     "s": "佢喺網上賣自己嘅作品。",
+     "r": "keoi5 hai2 mong5 soeng6 maai6 zi6 gei2 ge3 zok3 ban2",
+     "en": "She sells her own work online."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "幅",
+     "畫",
+     "係",
+     "我",
+     "學生",
+     "嘅",
+     "作品"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-41",
+   "t": {
+    "s": "流",
+    "r": "lau4"
+   },
+   "pos": "verb",
+   "en": "to flow; to run (liquid)",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢感動到流眼淚。",
+     "r": "keoi5 gam2 dung6 dou3 lau4 ngaan5 leoi6",
+     "en": "She was moved to tears."
+    },
+    {
+     "s": "佢跑到流晒汗。",
+     "r": "keoi5 paau2 dou3 lau4 saai3 hon6",
+     "en": "He ran until he was dripping with sweat."
+    },
+    {
+     "s": "個水喉一直流水。",
+     "r": "go3 seoi2 hau4 jat1 zik6 lau4 seoi2",
+     "en": "The tap keeps running."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "感動",
+     "到",
+     "流",
+     "眼淚"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-43",
+   "t": {
+    "s": "藏",
+    "r": "cong4"
+   },
+   "pos": "verb",
+   "en": "to hide; to keep hidden",
+   "note": "Speech often uses 收埋 sau1 maai4 instead.",
+   "ex": [
+    {
+     "s": "你將啲糖藏咗喺邊呀？",
+     "r": "nei5 zoeng1 di1 tong2 cong4 zo2 hai2 bin1 aa3",
+     "en": "Where did you hide the candy?"
+    },
+    {
+     "s": "佢將錢藏喺床底。",
+     "r": "keoi5 zoeng1 cin2 cong4 hai2 cong4 dai2",
+     "en": "He hides his money under the bed."
+    },
+    {
+     "s": "個細路藏喺門後面。",
+     "r": "go3 sai3 lou6 cong4 hai2 mun4 hau6 min6",
+     "en": "The kid hid behind the door."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "將",
+     "啲",
+     "糖",
+     "藏",
+     "咗",
+     "喺",
+     "邊",
+     "呀"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-37",
+   "t": {
+    "s": "人口",
+    "r": "jan4 hau2"
+   },
+   "pos": "noun",
+   "en": "population",
+   "note": "",
+   "ex": [
+    {
+     "s": "香港人口有七百幾萬。",
+     "r": "hoeng1 gong2 jan4 hau2 jau5 cat1 baak3 gei2 maan6",
+     "en": "Hong Kong has a population of over seven million."
+    },
+    {
+     "s": "呢個區人口好密。",
+     "r": "ni1 go3 keoi1 jan4 hau2 hou2 mat6",
+     "en": "This district is very densely populated."
+    },
+    {
+     "s": "我哋屋企人口簡單，得三個人。",
+     "r": "ngo5 dei6 uk1 kei2 jan4 hau2 gaan2 daan1 dak1 saam1 go3 jan4",
+     "en": "Our family is small, just the three of us."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "香港",
+     "人口",
+     "有",
+     "七百幾萬"
+    ],
+    "alt": [
+     [
+      "香港",
+      "有",
+      "七百幾萬",
+      "人口"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-21",
+   "t": {
+    "s": "踢波",
+    "r": "tek3 bo1"
+   },
+   "pos": "verb",
+   "en": "to play soccer",
+   "note": "",
+   "ex": [
+    {
+     "s": "我哋禮拜六去踢波。",
+     "r": "ngo5 dei6 lai5 baai3 luk6 heoi3 tek3 bo1",
+     "en": "We're playing soccer on Saturday."
+    },
+    {
+     "s": "佢踢波踢到隻腳痛。",
+     "r": "keoi5 tek3 bo1 tek3 dou3 zek3 goek3 tung3",
+     "en": "He hurt his foot playing soccer."
+    },
+    {
+     "s": "你細個有冇踢波呀？",
+     "r": "nei5 sai3 go3 jau5 mou5 tek3 bo1 aa3",
+     "en": "Did you play soccer as a kid?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "禮拜六",
+     "去",
+     "踢波"
+    ],
+    "alt": [
+     [
+      "禮拜六",
+      "我哋",
+      "去",
+      "踢波"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-27",
+   "t": {
+    "s": "內地",
+    "r": "noi6 dei6"
+   },
+   "pos": "noun",
+   "en": "mainland China",
+   "note": "The usual Hong Kong term for mainland China.",
+   "ex": [
+    {
+     "s": "佢下個月去內地公幹。",
+     "r": "keoi5 haa6 go3 jyut6 heoi3 noi6 dei6 gung1 gon3",
+     "en": "He's going to the mainland on business next month."
+    },
+    {
+     "s": "好多內地遊客嚟呢度買嘢。",
+     "r": "hou2 do1 noi6 dei6 jau4 haak3 lai4 ni1 dou6 maai5 je5",
+     "en": "Lots of mainland tourists come here to shop."
+    },
+    {
+     "s": "我表姐喺內地讀大學。",
+     "r": "ngo5 biu2 ze2 hai2 noi6 dei6 duk6 daai6 hok6",
+     "en": "My cousin goes to university on the mainland."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "下",
+     "個",
+     "月",
+     "去",
+     "內地",
+     "公幹"
+    ],
+    "alt": [
+     [
+      "下",
+      "個",
+      "月",
+      "佢",
+      "去",
+      "內地",
+      "公幹"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-49",
+   "t": {
+    "s": "繁忙",
+    "r": "faan4 mong4"
+   },
+   "pos": "adjective",
+   "en": "busy (of places, traffic, periods)",
+   "note": "For a busy person, say 好忙 hou2 mong4. 繁忙時間 = rush hour.",
+   "ex": [
+    {
+     "s": "繁忙時間地鐵好逼。",
+     "r": "faan4 mong4 si4 gaan3 dei6 tit3 hou2 bik1",
+     "en": "The MTR is packed during rush hour."
+    },
+    {
+     "s": "呢條路好繁忙。",
+     "r": "ni1 tiu4 lou6 hou2 faan4 mong4",
+     "en": "This road is very busy."
+    },
+    {
+     "s": "年尾公司特別繁忙。",
+     "r": "nin4 mei5 gung1 si1 dak6 bit6 faan4 mong4",
+     "en": "The company is especially busy at the end of the year."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "繁忙",
+     "時間",
+     "地鐵",
+     "好逼"
+    ],
+    "alt": [
+     [
+      "地鐵",
+      "繁忙",
+      "時間",
+      "好逼"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-66",
+   "t": {
+    "s": "失去",
+    "r": "sat1 heoi3"
+   },
+   "pos": "verb",
+   "en": "to lose",
+   "note": "For losing things like keys, say 唔見咗 m4 gin3 zo2.",
+   "ex": [
+    {
+     "s": "佢失去咗份工。",
+     "r": "keoi5 sat1 heoi3 zo2 fan6 gung1",
+     "en": "He lost his job."
+    },
+    {
+     "s": "我唔想失去你呢個朋友。",
+     "r": "ngo5 m4 soeng2 sat1 heoi3 nei5 ni1 go3 pang4 jau5",
+     "en": "I don't want to lose you as a friend."
+    },
+    {
+     "s": "佢失去咗信心。",
+     "r": "keoi5 sat1 heoi3 zo2 seon3 sam1",
+     "en": "He lost his confidence."
+    }
+   ]
+  },
+  {
+   "id": "cv08-73",
+   "t": {
+    "s": "皮膚",
+    "r": "pei4 fu1"
+   },
+   "pos": "noun",
+   "en": "skin",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢皮膚好白。",
+     "r": "keoi5 pei4 fu1 hou2 baak6",
+     "en": "She has very fair skin."
+    },
+    {
+     "s": "冬天皮膚好乾。",
+     "r": "dung1 tin1 pei4 fu1 hou2 gon1",
+     "en": "My skin gets really dry in winter."
+    },
+    {
+     "s": "我皮膚好易曬黑。",
+     "r": "ngo5 pei4 fu1 hou2 ji6 saai3 hak1",
+     "en": "My skin tans really easily."
+    }
+   ]
+  },
+  {
+   "id": "cv08-91",
+   "t": {
+    "s": "感染",
+    "r": "gam2 jim5"
+   },
+   "pos": "verb",
+   "en": "to infect; to catch (a virus); to rub off on",
+   "note": "",
+   "ex": [
+    {
+     "s": "部電腦感染咗病毒。",
+     "r": "bou6 din6 nou5 gam2 jim5 zo2 beng6 duk6",
+     "en": "The computer got a virus."
+    },
+    {
+     "s": "佢嘅熱情感染咗大家。",
+     "r": "keoi5 ge3 jit6 cing4 gam2 jim5 zo2 daai6 gaa1",
+     "en": "Her enthusiasm rubbed off on everyone."
+    },
+    {
+     "s": "唔好亂撳連結，部手機會感染病毒。",
+     "r": "m4 hou2 lyun6 gam6 lin4 git3 bou6 sau2 gei1 wui5 gam2 jim5 beng6 duk6",
+     "en": "Don't tap random links, or your phone will get a virus."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "部",
+     "電腦",
+     "感染",
+     "咗",
+     "病毒"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-70",
+   "t": {
+    "s": "數量",
+    "r": "sou3 loeng6"
+   },
+   "pos": "noun",
+   "en": "quantity; amount",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢款鞋數量有限。",
+     "r": "ni1 fun2 haai4 sou3 loeng6 jau5 haan6",
+     "en": "These shoes are in limited supply."
+    },
+    {
+     "s": "你要訂嘅數量係幾多？",
+     "r": "nei5 jiu3 deng6 ge3 sou3 loeng6 hai6 gei2 do1",
+     "en": "What quantity would you like to order?"
+    },
+    {
+     "s": "數量唔啱，少咗兩盒。",
+     "r": "sou3 loeng6 m4 ngaam1 siu2 zo2 loeng5 hap6",
+     "en": "The quantity is wrong, we're two boxes short."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢款",
+     "鞋",
+     "數量",
+     "有限"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-87",
+   "t": {
+    "s": "貪",
+    "r": "taam1"
+   },
+   "pos": "verb",
+   "en": "to be greedy; to go for (a perk)",
+   "note": "貪 + quality = choose for that reason: 貪平 for cheapness, 貪方便 for convenience.",
+   "ex": [
+    {
+     "s": "佢貪平買咗件假貨。",
+     "r": "keoi5 taam1 peng4 maai5 zo2 gin6 gaa2 fo3",
+     "en": "He went for the low price and bought a fake."
+    },
+    {
+     "s": "我貪方便，喺樓下食。",
+     "r": "ngo5 taam1 fong1 bin6 hai2 lau4 haa6 sik6",
+     "en": "I eat downstairs because it's convenient."
+    },
+    {
+     "s": "唔好咁貪心呀。",
+     "r": "m4 hou2 gam3 taam1 sam1 aa3",
+     "en": "Don't be so greedy."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "貪",
+     "平",
+     "買",
+     "咗",
+     "件",
+     "假貨"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-97",
+   "t": {
+    "s": "突破",
+    "r": "dat6 po3"
+   },
+   "pos": "verb",
+   "en": "to break through; to surpass",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢今次突破咗自己嘅紀錄。",
+     "r": "keoi5 gam1 ci3 dat6 po3 zo2 zi6 gei2 ge3 gei2 luk6",
+     "en": "She broke her personal record this time."
+    },
+    {
+     "s": "我想突破自己，試吓新嘢。",
+     "r": "ngo5 soeng2 dat6 po3 zi6 gei2 si3 haa5 san1 je5",
+     "en": "I want to push myself and try new things."
+    },
+    {
+     "s": "個研究有新突破。",
+     "r": "go3 jin4 gau3 jau5 san1 dat6 po3",
+     "en": "The research has made a new breakthrough."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "今次",
+     "突破",
+     "咗",
+     "自己",
+     "嘅",
+     "紀錄"
+    ],
+    "alt": [
+     [
+      "今次",
+      "佢",
+      "突破",
+      "咗",
+      "自己",
+      "嘅",
+      "紀錄"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-99",
+   "t": {
+    "s": "需求",
+    "r": "seoi1 kau4"
+   },
+   "pos": "noun",
+   "en": "demand; needs",
+   "note": "",
+   "ex": [
+    {
+     "s": "聖誕節前玩具需求好大。",
+     "r": "sing3 daan3 zit3 cin4 wun6 geoi6 seoi1 kau4 hou2 daai6",
+     "en": "Demand for toys is huge before Christmas."
+    },
+    {
+     "s": "你有咩特別需求，可以話我知。",
+     "r": "nei5 jau5 me1 dak6 bit6 seoi1 kau4 ho2 ji5 waa6 ngo5 zi1",
+     "en": "If you have any special needs, just let me know."
+    },
+    {
+     "s": "每個人嘅需求都唔同。",
+     "r": "mui5 go3 jan4 ge3 seoi1 kau4 dou1 m4 tung4",
+     "en": "Everyone's needs are different."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "聖誕節",
+     "前",
+     "玩具",
+     "需求",
+     "好",
+     "大"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-95",
+   "t": {
+    "s": "難關",
+    "r": "naan4 gwaan1"
+   },
+   "pos": "noun",
+   "en": "difficulty; tough time",
+   "note": "Usually with 渡過 dou6 gwo3 'get through'.",
+   "ex": [
+    {
+     "s": "我哋一齊渡過呢個難關。",
+     "r": "ngo5 dei6 jat1 cai4 dou6 gwo3 ni1 go3 naan4 gwaan1",
+     "en": "We'll get through this tough time together."
+    },
+    {
+     "s": "疫情嗰陣好多舖頭都過唔到難關。",
+     "r": "jik6 cing4 go2 zan6 hou2 do1 pou3 tau2 dou1 gwo3 m4 dou2 naan4 gwaan1",
+     "en": "During the pandemic, lots of shops didn't make it through."
+    },
+    {
+     "s": "多謝你幫我渡過難關。",
+     "r": "do1 ze6 nei5 bong1 ngo5 dou6 gwo3 naan4 gwaan1",
+     "en": "Thanks for helping me through a hard time."
+    }
+   ]
   }
  ],
  "drop": [],

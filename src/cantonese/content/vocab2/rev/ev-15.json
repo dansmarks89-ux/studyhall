@@ -133,7 +133,20 @@
      "r": "zi6 zo6 caan1 ge3 sik6 mat6 zung2 leoi6 m4 do1",
      "en": "The buffet doesn't have much variety."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "間",
+     "超市",
+     "啲",
+     "水果",
+     "種類",
+     "好多"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "cv08-126",
@@ -160,7 +173,18 @@
      "r": "san1 nin4 hai2 mun4 hau2 tip3 go3 fuk1 zi6",
      "en": "At New Year, we put a 'fortune' sign on the door."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "真係",
+     "好",
+     "有",
+     "福氣"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "cv08-127",
@@ -178,8 +202,8 @@
      "en": "This house belongs to my grandpa."
     },
     {
-     "s": "呢個獎屬於大家嘅。",
-     "r": "ni1 go3 zoeng2 suk6 jyu1 daai6 gaa1 ge3",
+     "s": "呢個獎係屬於大家嘅。",
+     "r": "ni1 go3 zoeng2 hai6 suk6 jyu1 daai6 gaa1 ge3",
      "en": "This award belongs to all of us."
     },
     {
@@ -254,9 +278,9 @@
    "note": "In sports talk, speech often uses 波 bo1.",
    "ex": [
     {
-     "s": "小朋友喺公園玩球。",
-     "r": "siu2 pang4 jau5 hai2 gung1 jyun2 waan2 kau4",
-     "en": "The kids are playing ball in the park."
+     "s": "小朋友喺球場踢波。",
+     "r": "siu2 pang4 jau5 hai2 kau4 coeng4 tek3 bo1",
+     "en": "The kids are playing soccer on the field."
     },
     {
      "s": "你鍾意睇乜嘢球賽呀？",
@@ -268,7 +292,17 @@
      "r": "ngo5 dei6 heoi3 daa2 laam4 kau4 laa1",
      "en": "Let's go play basketball."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "小朋友",
+     "喺",
+     "球場",
+     "踢波"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "cv08-179",
@@ -511,7 +545,24 @@
      "r": "gung1 si1 gam1 nin2 gaau2 wan6 dung6 wui2",
      "en": "The company is holding a sports day this year."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "聽日",
+     "學校",
+     "開",
+     "運動會"
+    ],
+    "alt": [
+     [
+      "學校",
+      "聽日",
+      "開",
+      "運動會"
+     ]
+    ]
+   }
   },
   {
    "id": "cv08-104",
@@ -538,7 +589,26 @@
      "r": "nei5 goi2 zo2 zong6 taai3 wo3",
      "en": "Oh, you changed your WhatsApp status."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "今日",
+     "狀態",
+     "好",
+     "好"
+    ],
+    "alt": [
+     [
+      "今日",
+      "佢",
+      "狀態",
+      "好",
+      "好"
+     ]
+    ]
+   }
   },
   {
    "id": "cv08-106",
@@ -565,7 +635,26 @@
      "r": "on1 zong1 sai2 m4 sai2 sau1 cin2 aa3",
      "en": "Is there a charge for installation?"
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "師傅",
+     "聽日",
+     "嚟",
+     "安裝",
+     "冷氣"
+    ],
+    "alt": [
+     [
+      "聽日",
+      "師傅",
+      "嚟",
+      "安裝",
+      "冷氣"
+     ]
+    ]
+   }
   },
   {
    "id": "cv08-163",
@@ -746,6 +835,674 @@
       "有",
       "會",
       "開"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-177",
+   "t": {
+    "s": "隨身",
+    "r": "ceoi4 san1"
+   },
+   "pos": "adverb",
+   "en": "on one's person; carry with you",
+   "note": "",
+   "ex": [
+    {
+     "s": "記住隨身帶身份證。",
+     "r": "gei3 zyu6 ceoi4 san1 daai3 san1 fan2 zing3",
+     "en": "Remember to carry your ID card with you."
+    },
+    {
+     "s": "我隨身都有把遮。",
+     "r": "ngo5 ceoi4 san1 dou1 jau5 baa2 ze1",
+     "en": "I always carry an umbrella."
+    },
+    {
+     "s": "佢隨身帶住支筆。",
+     "r": "keoi5 ceoi4 san1 daai3 zyu6 zi1 bat1",
+     "en": "She always keeps a pen on her."
+    }
+   ]
+  },
+  {
+   "id": "cv08-178",
+   "t": {
+    "s": "燕梳",
+    "r": "jin3 so1"
+   },
+   "pos": "noun",
+   "en": "insurance",
+   "note": "From English 'insurance'; more formal word: 保險 bou2 him2.",
+   "ex": [
+    {
+     "s": "去旅行記得買燕梳。",
+     "r": "heoi3 leoi5 hang4 gei3 dak1 maai5 jin3 so1",
+     "en": "Remember to buy insurance for the trip."
+    },
+    {
+     "s": "你架車有冇買燕梳？",
+     "r": "nei5 gaa3 ce1 jau5 mou5 maai5 jin3 so1",
+     "en": "Does your car have insurance?"
+    },
+    {
+     "s": "架車撞花咗，燕梳會賠。",
+     "r": "gaa3 ce1 zong6 faa1 zo2 jin3 so1 wui5 pui4",
+     "en": "The car got scratched; insurance will pay for it."
+    }
+   ]
+  },
+  {
+   "id": "cv08-180",
+   "t": {
+    "s": "細心",
+    "r": "sai3 sam1"
+   },
+   "pos": "adjective",
+   "en": "careful; attentive; thoughtful",
+   "note": "",
+   "ex": [
+    {
+     "s": "你真係好細心。",
+     "r": "nei5 zan1 hai6 hou2 sai3 sam1",
+     "en": "You're really thoughtful."
+    },
+    {
+     "s": "做呢份工要好細心。",
+     "r": "zou6 ni1 fan6 gung1 jiu3 hou2 sai3 sam1",
+     "en": "This job requires a lot of care."
+    },
+    {
+     "s": "佢好細心咁照顧隻貓。",
+     "r": "keoi5 hou2 sai3 sam1 gam2 ziu3 gu3 zek3 maau1",
+     "en": "She looks after the cat very attentively."
+    }
+   ]
+  },
+  {
+   "id": "cv08-105",
+   "t": {
+    "s": "瀑布",
+    "r": "buk6 bou3"
+   },
+   "pos": "noun",
+   "en": "waterfall",
+   "note": "",
+   "ex": [
+    {
+     "s": "行山嗰陣我哋見到個瀑布。",
+     "r": "haang4 saan1 go2 zan6 ngo5 dei6 gin3 dou2 go3 buk6 bou3",
+     "en": "We saw a waterfall while hiking."
+    },
+    {
+     "s": "落完雨，個瀑布好大。",
+     "r": "lok6 jyun4 jyu5 go3 buk6 bou3 hou2 daai6",
+     "en": "After the rain, the waterfall is huge."
+    },
+    {
+     "s": "去日本旅行，我想睇瀑布。",
+     "r": "heoi3 jat6 bun2 leoi5 hang4 ngo5 soeng2 tai2 buk6 bou3",
+     "en": "On our Japan trip, I want to see a waterfall."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "行山",
+     "嗰陣",
+     "我哋",
+     "見到",
+     "個",
+     "瀑布"
+    ],
+    "alt": [
+     [
+      "我哋",
+      "行山",
+      "嗰陣",
+      "見到",
+      "個",
+      "瀑布"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-110",
+   "t": {
+    "s": "訂婚",
+    "r": "ding6 fan1"
+   },
+   "pos": "verb",
+   "en": "to get engaged",
+   "note": "",
+   "ex": [
+    {
+     "s": "佢哋上個月訂婚喇。",
+     "r": "keoi5 dei6 soeng6 go3 jyut6 ding6 fan1 laa3",
+     "en": "They got engaged last month."
+    },
+    {
+     "s": "恭喜你訂婚呀！",
+     "r": "gung1 hei2 nei5 ding6 fan1 aa3",
+     "en": "Congratulations on your engagement!"
+    },
+    {
+     "s": "訂婚戒指好貴㗎。",
+     "r": "ding6 fan1 gaai3 zi2 hou2 gwai3 gaa3",
+     "en": "Engagement rings are expensive."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢哋",
+     "上個",
+     "月",
+     "訂婚",
+     "喇"
+    ],
+    "alt": [
+     [
+      "上個",
+      "月",
+      "佢哋",
+      "訂婚",
+      "喇"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-113",
+   "t": {
+    "s": "收音機",
+    "r": "sau1 jam1 gei1"
+   },
+   "pos": "noun",
+   "en": "radio",
+   "note": "Measure: 部.",
+   "ex": [
+    {
+     "s": "爺爺每朝都聽收音機。",
+     "r": "je4 je2 mui5 ziu1 dou1 teng1 sau1 jam1 gei1",
+     "en": "Grandpa listens to the radio every morning."
+    },
+    {
+     "s": "架車嘅收音機壞咗。",
+     "r": "gaa3 ce1 ge3 sau1 jam1 gei1 waai6 zo2",
+     "en": "The car radio is broken."
+    },
+    {
+     "s": "打風嗰陣，記得預備收音機。",
+     "r": "daa2 fung1 go2 zan6 gei3 dak1 jyu6 bei6 sau1 jam1 gei1",
+     "en": "During a typhoon, remember to have a radio ready."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "爺爺",
+     "每朝",
+     "都",
+     "聽",
+     "收音機"
+    ],
+    "alt": [
+     [
+      "每朝",
+      "爺爺",
+      "都",
+      "聽",
+      "收音機"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-132",
+   "t": {
+    "s": "滴",
+    "r": "dik6"
+   },
+   "pos": "other",
+   "en": "drop (of liquid); to drip",
+   "note": "",
+   "ex": [
+    {
+     "s": "我一滴酒都唔飲。",
+     "r": "ngo5 jat1 dik6 zau2 dou1 m4 jam2",
+     "en": "I don't drink a drop of alcohol."
+    },
+    {
+     "s": "個水喉一路滴水。",
+     "r": "go3 seoi2 hau4 jat1 lou6 dik6 seoi2",
+     "en": "The tap keeps dripping."
+    },
+    {
+     "s": "落咗兩滴雨就停咗。",
+     "r": "lok6 zo2 loeng5 dik6 jyu5 zau6 ting4 zo2",
+     "en": "It rained a few drops and then stopped."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "一",
+     "滴",
+     "酒",
+     "都",
+     "唔",
+     "飲"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-133",
+   "t": {
+    "s": "建立",
+    "r": "gin3 laap6"
+   },
+   "pos": "verb",
+   "en": "to build; to establish",
+   "note": "",
+   "ex": [
+    {
+     "s": "同客建立關係好重要。",
+     "r": "tung4 haak3 gin3 laap6 gwaan1 hai6 hou2 zung6 jiu3",
+     "en": "Building relationships with clients is important."
+    },
+    {
+     "s": "佢哋慢慢建立咗信任。",
+     "r": "keoi5 dei6 maan6 maan2 gin3 laap6 zo2 seon3 jam6",
+     "en": "They slowly built up trust."
+    },
+    {
+     "s": "細路要建立好習慣。",
+     "r": "sai3 lou6 jiu3 gin3 laap6 hou2 zaap6 gwaan3",
+     "en": "Kids need to build good habits."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "同",
+     "客",
+     "建立",
+     "關係",
+     "好",
+     "重要"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-134",
+   "t": {
+    "s": "傳說",
+    "r": "cyun4 syut3"
+   },
+   "pos": "noun",
+   "en": "legend",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢座山有個傳說。",
+     "r": "ni1 zo6 saan1 jau5 go3 cyun4 syut3",
+     "en": "There's a legend about this mountain."
+    },
+    {
+     "s": "婆婆講咗個傳說俾我聽。",
+     "r": "po4 po2 gong2 zo2 go3 cyun4 syut3 bei2 ngo5 teng1",
+     "en": "Grandma told me a legend."
+    },
+    {
+     "s": "佢係公司嘅傳說嚟㗎。",
+     "r": "keoi5 hai6 gung1 si1 ge3 cyun4 syut3 lai4 gaa3",
+     "en": "He's a legend at the company."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢座",
+     "山",
+     "有",
+     "個",
+     "傳說"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-135",
+   "t": {
+    "s": "插",
+    "r": "caap3"
+   },
+   "pos": "verb",
+   "en": "to insert; to plug in; to stick in",
+   "note": "",
+   "ex": [
+    {
+     "s": "幫我插咗個叉電器啦。",
+     "r": "bong1 ngo5 caap3 zo2 go3 caa1 din6 hei3 laa1",
+     "en": "Can you plug in the charger for me?"
+    },
+    {
+     "s": "唔好插隊呀！",
+     "r": "m4 hou2 caap3 deoi2 aa3",
+     "en": "Don't cut in line!"
+    },
+    {
+     "s": "我將啲花插喺花樽度。",
+     "r": "ngo5 zoeng1 di1 faa1 caap3 hai2 faa1 zeon1 dou6",
+     "en": "I put the flowers in the vase."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "幫",
+     "我",
+     "插",
+     "咗",
+     "個",
+     "叉電器",
+     "啦"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-138",
+   "t": {
+    "s": "閒",
+    "r": "haan4"
+   },
+   "pos": "adjective",
+   "en": "free; not busy",
+   "note": "得閒 = free; 唔得閒 = busy.",
+   "ex": [
+    {
+     "s": "你今晚得唔得閒呀？",
+     "r": "nei5 gam1 maan5 dak1 m4 dak1 haan4 aa3",
+     "en": "Are you free tonight?"
+    },
+    {
+     "s": "我而家唔得閒，遲啲覆你。",
+     "r": "ngo5 ji4 gaa1 m4 dak1 haan4 ci4 di1 fuk1 nei5",
+     "en": "I'm busy right now, I'll reply later."
+    },
+    {
+     "s": "得閒飲茶啦！",
+     "r": "dak1 haan4 jam2 caa4 laa1",
+     "en": "Let's do yum cha sometime!"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "今晚",
+     "得",
+     "唔",
+     "得",
+     "閒",
+     "呀"
+    ],
+    "alt": [
+     [
+      "今晚",
+      "你",
+      "得",
+      "唔",
+      "得",
+      "閒",
+      "呀"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv08-143",
+   "t": {
+    "s": "年班",
+    "r": "nin4 baan1"
+   },
+   "pos": "other",
+   "en": "grade (school year)",
+   "note": "Used after a number: 三年班 = third grade.",
+   "ex": [
+    {
+     "s": "我個女讀緊三年班。",
+     "r": "ngo5 go3 neoi2 duk6 gan2 saam1 nin4 baan1",
+     "en": "My daughter is in third grade."
+    },
+    {
+     "s": "你幾年班呀？",
+     "r": "nei5 gei2 nin4 baan1 aa3",
+     "en": "What grade are you in?"
+    },
+    {
+     "s": "我哋係小學六年班同學。",
+     "r": "ngo5 dei6 hai6 siu2 hok6 luk6 nin4 baan1 tung4 hok6",
+     "en": "We were classmates in sixth grade."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "個",
+     "女",
+     "讀",
+     "緊",
+     "三",
+     "年班"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-144",
+   "t": {
+    "s": "細路仔",
+    "r": "sai3 lou6 zai2"
+   },
+   "pos": "noun",
+   "en": "child; kid",
+   "note": "",
+   "ex": [
+    {
+     "s": "細路仔唔好玩火呀。",
+     "r": "sai3 lou6 zai2 m4 hou2 waan2 fo2 aa3",
+     "en": "Kids, don't play with fire."
+    },
+    {
+     "s": "呢間餐廳有細路仔餐。",
+     "r": "ni1 gaan1 caan1 teng1 jau5 sai3 lou6 zai2 caan1",
+     "en": "This restaurant has a kids' meal."
+    },
+    {
+     "s": "佢好鍾意細路仔。",
+     "r": "keoi5 hou2 zung1 ji3 sai3 lou6 zai2",
+     "en": "She loves kids."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "細路仔",
+     "唔好",
+     "玩",
+     "火",
+     "呀"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-150",
+   "t": {
+    "s": "知足",
+    "r": "zi1 zuk1"
+   },
+   "pos": "verb",
+   "en": "to be content",
+   "note": "",
+   "ex": [
+    {
+     "s": "有份穩定嘅工，我已經好知足。",
+     "r": "jau5 fan6 wan2 ding6 ge3 gung1 ngo5 ji5 ging1 hou2 zi1 zuk1",
+     "en": "With a stable job, I'm already content."
+    },
+    {
+     "s": "做人要知足。",
+     "r": "zou6 jan4 jiu3 zi1 zuk1",
+     "en": "You should be content with what you have."
+    },
+    {
+     "s": "一家人健健康康，我好知足。",
+     "r": "jat1 gaa1 jan4 gin6 gin6 hong1 hong1 ngo5 hou2 zi1 zuk1",
+     "en": "With the whole family healthy, I'm content."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "有",
+     "份",
+     "穩定",
+     "嘅",
+     "工",
+     "我",
+     "已經",
+     "好",
+     "知足"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-157",
+   "t": {
+    "s": "滿",
+    "r": "mun5"
+   },
+   "pos": "adjective",
+   "en": "full",
+   "note": "",
+   "ex": [
+    {
+     "s": "架巴士滿咗，等下一架啦。",
+     "r": "gaa3 baa1 si2 mun5 zo2 dang2 haa6 jat1 gaa3 laa1",
+     "en": "The bus is full, let's wait for the next one."
+    },
+    {
+     "s": "唔好斟咁滿呀。",
+     "r": "m4 hou2 zam1 gam3 mun5 aa3",
+     "en": "Don't fill it so full."
+    },
+    {
+     "s": "我個電話記憶體滿晒。",
+     "r": "ngo5 go3 din6 waa2 gei3 jik1 tai2 mun5 saai3",
+     "en": "My phone's storage is completely full."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "架",
+     "巴士",
+     "滿",
+     "咗",
+     "等",
+     "下一",
+     "架",
+     "啦"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-171",
+   "t": {
+    "s": "日本人",
+    "r": "jat6 bun2 jan4"
+   },
+   "pos": "noun",
+   "en": "Japanese person",
+   "note": "",
+   "ex": [
+    {
+     "s": "我隔籬屋係日本人。",
+     "r": "ngo5 gaak3 lei4 uk1 hai6 jat6 bun2 jan4",
+     "en": "My next-door neighbor is Japanese."
+    },
+    {
+     "s": "呢間拉麵店啲廚師都係日本人。",
+     "r": "ni1 gaan1 laai1 min6 dim3 di1 cyu4 si1 dou1 hai6 jat6 bun2 jan4",
+     "en": "The chefs at this ramen shop are all Japanese."
+    },
+    {
+     "s": "佢老公係日本人。",
+     "r": "keoi5 lou5 gung1 hai6 jat6 bun2 jan4",
+     "en": "Her husband is Japanese."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "隔籬屋",
+     "係",
+     "日本人"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv08-174",
+   "t": {
+    "s": "出年",
+    "r": "ceot1 nin2"
+   },
+   "pos": "noun",
+   "en": "next year",
+   "note": "Spoken word; avoid written 明年 in speech.",
+   "ex": [
+    {
+     "s": "我哋出年結婚。",
+     "r": "ngo5 dei6 ceot1 nin2 git3 fan1",
+     "en": "We're getting married next year."
+    },
+    {
+     "s": "出年想去韓國旅行。",
+     "r": "ceot1 nin2 soeng2 heoi3 hon4 gwok3 leoi5 hang4",
+     "en": "Next year I want to travel to Korea."
+    },
+    {
+     "s": "個仔出年讀小學。",
+     "r": "go3 zai2 ceot1 nin2 duk6 siu2 hok6",
+     "en": "Our son starts primary school next year."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我哋",
+     "出年",
+     "結婚"
+    ],
+    "alt": [
+     [
+      "出年",
+      "我哋",
+      "結婚"
      ]
     ]
    }

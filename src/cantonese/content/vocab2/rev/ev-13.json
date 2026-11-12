@@ -133,7 +133,21 @@
      "r": "go3 neoi2 haau2 dou2 daai6 hok6 ngo5 dei6 dang6 keoi5 gou1 hing3",
      "en": "Our daughter got into university; we're so happy for her."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "個",
+     "女",
+     "考到",
+     "大學",
+     "我哋",
+     "戥",
+     "佢",
+     "高興"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "cv07-194",
@@ -432,9 +446,9 @@
      "en": "I have a bit of a headache; I want to rest."
     },
     {
-     "s": "頭痛就食粒止痛藥啦。",
-     "r": "tau4 tung3 zau6 sik6 nap1 zi2 tung3 joek6 laa1",
-     "en": "If you have a headache, take a painkiller."
+     "s": "個仔唔肯做功課，我好頭痛。",
+     "r": "go3 zai2 m4 hang2 zou6 gung1 fo3 ngo5 hou2 tau4 tung3",
+     "en": "My son won't do his homework; it's a real headache."
     },
     {
      "s": "搵屋住真係好頭痛。",
@@ -495,7 +509,28 @@
      "r": "nei5 jiu3 hou2 hou2 duk6 syu1 aa3",
      "en": "You need to study properly."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "你",
+     "今晚",
+     "好好",
+     "休息",
+     "吓",
+     "啦"
+    ],
+    "alt": [
+     [
+      "今晚",
+      "你",
+      "好好",
+      "休息",
+      "吓",
+      "啦"
+     ]
+    ]
+   }
   },
   {
    "id": "cv07-178",
@@ -643,7 +678,22 @@
      "r": "nei5 mou4 laa1 laa1 sung3 faa1 bei2 ngo5 zou6 mat1 aa3",
      "en": "Why are you giving me flowers out of the blue?"
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "無啦啦",
+     "喊起上嚟"
+    ],
+    "alt": [
+     [
+      "無啦啦",
+      "佢",
+      "喊起上嚟"
+     ]
+    ]
+   }
   },
   {
    "id": "cv07-154",
@@ -697,7 +747,30 @@
      "r": "tau4 sin1 lok6 zo2 jat1 zan6 daai6 jyu5",
      "en": "There was a burst of heavy rain just now."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "等",
+     "我",
+     "一",
+     "陣",
+     "我",
+     "即刻",
+     "嚟"
+    ],
+    "alt": [
+     [
+      "我",
+      "即刻",
+      "嚟",
+      "等",
+      "我",
+      "一",
+      "陣"
+     ]
+    ]
+   }
   },
   {
    "id": "cv07-186",
@@ -724,7 +797,28 @@
      "r": "zing3 waa6 lok6 zo2 coeng4 daai6 jyu5",
      "en": "It poured just a moment ago."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "正話",
+     "打過",
+     "電話",
+     "俾",
+     "你"
+    ],
+    "alt": [
+     [
+      "正話",
+      "我",
+      "打過",
+      "電話",
+      "俾",
+      "你"
+     ]
+    ]
+   }
   },
   {
    "id": "cv07-187",
@@ -1014,6 +1108,644 @@
       "時間",
       "剃",
       "鬚"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-136",
+   "t": {
+    "s": "加上",
+    "r": "gaa1 soeng5"
+   },
+   "pos": "verb",
+   "en": "to add; plus; on top of that",
+   "note": "",
+   "ex": [
+    {
+     "s": "加上服務費，一共五百蚊。",
+     "r": "gaa1 soeng5 fuk6 mou6 fai3 jat1 gung6 ng5 baak3 man1",
+     "en": "With the service charge, it's 500 dollars in total."
+    },
+    {
+     "s": "今日好熱，加上冇冷氣，真係頂唔順。",
+     "r": "gam1 jat6 hou2 jit6 gaa1 soeng5 mou5 laang5 hei3 zan1 hai6 deng2 m4 seon6",
+     "en": "It's hot today, and on top of that there's no air-con; I really can't take it."
+    },
+    {
+     "s": "落雨加上塞車，梗係遲到啦。",
+     "r": "lok6 jyu5 gaa1 soeng5 sak1 ce1 gang2 hai6 ci4 dou3 laa1",
+     "en": "Rain plus traffic — of course we were late."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "加上",
+     "服務費",
+     "一共",
+     "五百",
+     "蚊"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-152",
+   "t": {
+    "s": "事關",
+    "r": "si6 gwaan1"
+   },
+   "pos": "conjunction",
+   "en": "because (colloquial)",
+   "note": "Colloquial for 因為; introduces the reason after the main clause.",
+   "ex": [
+    {
+     "s": "我遲咗，事關塞車。",
+     "r": "ngo5 ci4 zo2 si6 gwaan1 sak1 ce1",
+     "en": "I'm late because of traffic."
+    },
+    {
+     "s": "佢今日遲到，事關佢瞓過龍。",
+     "r": "keoi5 gam1 jat6 ci4 dou3 si6 gwaan1 keoi5 fan3 gwo3 lung4",
+     "en": "She was late today because she overslept."
+    },
+    {
+     "s": "我唔買喇，事關太貴。",
+     "r": "ngo5 m4 maai5 laa3 si6 gwaan1 taai3 gwai3",
+     "en": "I'm not buying it, because it's too expensive."
+    }
+   ]
+  },
+  {
+   "id": "cv07-156",
+   "t": {
+    "s": "弱",
+    "r": "joek6"
+   },
+   "pos": "adjective",
+   "en": "weak",
+   "note": "",
+   "ex": [
+    {
+     "s": "呢隊波好弱，實輸。",
+     "r": "ni1 deoi6 bo1 hou2 joek6 sat6 syu1",
+     "en": "This team is really weak; they're sure to lose."
+    },
+    {
+     "s": "呢度啲訊號好弱。",
+     "r": "ni1 dou6 di1 seon3 hou6 hou2 joek6",
+     "en": "The signal here is really weak."
+    },
+    {
+     "s": "我數學比較弱。",
+     "r": "ngo5 sou3 hok6 bei2 gaau3 joek6",
+     "en": "I'm rather weak at math."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "隊",
+     "波",
+     "好",
+     "弱",
+     "實",
+     "輸"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-176",
+   "t": {
+    "s": "唔止",
+    "r": "m4 zi2"
+   },
+   "pos": "adverb",
+   "en": "not only",
+   "note": "唔止…仲… = not only… but also….",
+   "ex": [
+    {
+     "s": "佢唔止識煮飯，仲識整蛋糕。",
+     "r": "keoi5 m4 zi2 sik1 zyu2 faan6 zung6 sik1 zing2 daan6 gou1",
+     "en": "She can not only cook but also bake cakes."
+    },
+    {
+     "s": "唔止我，個個都遲到。",
+     "r": "m4 zi2 ngo5 go3 go3 dou1 ci4 dou3",
+     "en": "It's not just me — everyone was late."
+    },
+    {
+     "s": "呢度唔止平，仲好食。",
+     "r": "ni1 dou6 m4 zi2 peng4 zung6 hou2 sik6",
+     "en": "This place isn't just cheap, it's tasty too."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "佢",
+     "唔止",
+     "識",
+     "煮飯",
+     "仲",
+     "識",
+     "整",
+     "蛋糕"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-147",
+   "t": {
+    "s": "練",
+    "r": "lin6"
+   },
+   "pos": "verb",
+   "en": "to practice; to train",
+   "note": "練琴 = practice piano.",
+   "ex": [
+    {
+     "s": "我每日練琴一個鐘。",
+     "r": "ngo5 mui5 jat6 lin6 kam4 jat1 go3 zung1",
+     "en": "I practice piano for an hour every day."
+    },
+    {
+     "s": "佢去咗健身室練肌肉。",
+     "r": "keoi5 heoi3 zo2 gin6 san1 sat1 lin6 gei1 juk6",
+     "en": "He went to the gym to build muscle."
+    },
+    {
+     "s": "講廣東話要多啲練。",
+     "r": "gong2 gwong2 dung1 waa2 jiu3 do1 di1 lin6",
+     "en": "You need to practice speaking Cantonese more."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "每日",
+     "練琴",
+     "一個",
+     "鐘"
+    ],
+    "alt": [
+     [
+      "每日",
+      "我",
+      "練琴",
+      "一個",
+      "鐘"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-148",
+   "t": {
+    "s": "板",
+    "r": "baan2"
+   },
+   "pos": "noun",
+   "en": "board; plank",
+   "note": "砧板 = chopping board; 滑板 = skateboard; 地板 = floor.",
+   "ex": [
+    {
+     "s": "幫我攞塊砧板嚟。",
+     "r": "bong1 ngo5 lo2 faai3 zam1 baan2 lai4",
+     "en": "Get me the chopping board."
+    },
+    {
+     "s": "佢放學會去玩滑板。",
+     "r": "keoi5 fong3 hok6 wui5 heoi3 waan2 waat6 baan2",
+     "en": "He goes skateboarding after school."
+    },
+    {
+     "s": "地板好滑，小心呀。",
+     "r": "dei6 baan2 hou2 waat6 siu2 sam1 aa3",
+     "en": "The floor is slippery; be careful."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "幫",
+     "我",
+     "攞",
+     "塊",
+     "砧板",
+     "嚟"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-161",
+   "t": {
+    "s": "牛油",
+    "r": "ngau4 jau4"
+   },
+   "pos": "noun",
+   "en": "butter",
+   "note": "",
+   "ex": [
+    {
+     "s": "我要多士加牛油。",
+     "r": "ngo5 jiu3 do1 si2 gaa1 ngau4 jau4",
+     "en": "I'd like toast with butter."
+    },
+    {
+     "s": "雪櫃仲有冇牛油呀？",
+     "r": "syut3 gwai6 zung6 jau5 mou5 ngau4 jau4 aa3",
+     "en": "Is there still butter in the fridge?"
+    },
+    {
+     "s": "整曲奇要用好多牛油。",
+     "r": "zing2 kuk1 kei4 jiu3 jung6 hou2 do1 ngau4 jau4",
+     "en": "Making cookies takes a lot of butter."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "要",
+     "多士",
+     "加",
+     "牛油"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-181",
+   "t": {
+    "s": "吉",
+    "r": "gat1"
+   },
+   "pos": "adjective",
+   "en": "empty (colloquial); lucky",
+   "note": "Colloquial 'empty': 吉屋 = vacant flat. Also 'lucky', as in 大吉.",
+   "ex": [
+    {
+     "s": "呢個盒係吉嘅。",
+     "r": "ni1 go3 hap6 hai6 gat1 ge3",
+     "en": "This box is empty."
+    },
+    {
+     "s": "樓上嗰間係吉屋，冇人住。",
+     "r": "lau4 soeng6 go2 gaan1 hai6 gat1 uk1 mou5 jan4 zyu6",
+     "en": "The flat upstairs is vacant; nobody lives there."
+    },
+    {
+     "s": "個水樽吉咗，我去斟水。",
+     "r": "go3 seoi2 zeon1 gat1 zo2 ngo5 heoi3 zam1 seoi2",
+     "en": "My water bottle is empty; I'm going to fill it."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "呢",
+     "個",
+     "盒",
+     "係",
+     "吉",
+     "嘅"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "cv07-137",
+   "t": {
+    "s": "溶",
+    "r": "jung4"
+   },
+   "pos": "verb",
+   "en": "to melt; to dissolve",
+   "note": "",
+   "ex": [
+    {
+     "s": "快啲食，雪糕溶喇！",
+     "r": "faai3 di1 sik6 syut3 gou1 jung4 laa3",
+     "en": "Eat quickly, the ice cream is melting!"
+    },
+    {
+     "s": "啲糖溶咗未呀？",
+     "r": "di1 tong4 jung4 zo2 mei6 aa3",
+     "en": "Has the sugar dissolved yet?"
+    },
+    {
+     "s": "今日熱到啲朱古力都溶晒。",
+     "r": "gam1 jat6 jit6 dou3 di1 zyu1 gu1 lik1 dou1 jung4 saai3",
+     "en": "It's so hot today the chocolate all melted."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "快",
+     "啲",
+     "食",
+     "雪糕",
+     "溶",
+     "喇"
+    ],
+    "alt": [
+     [
+      "雪糕",
+      "溶",
+      "喇",
+      "快",
+      "啲",
+      "食"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-158",
+   "t": {
+    "s": "專心",
+    "r": "zyun1 sam1"
+   },
+   "pos": "adjective",
+   "en": "focused; attentive",
+   "note": "",
+   "ex": [
+    {
+     "s": "做功課要專心啲。",
+     "r": "zou6 gung1 fo3 jiu3 zyun1 sam1 di1",
+     "en": "Focus more when you do your homework."
+    },
+    {
+     "s": "揸車要專心，唔好睇手機。",
+     "r": "zaa1 ce1 jiu3 zyun1 sam1 m4 hou2 tai2 sau2 gei1",
+     "en": "Focus when you drive; don't look at your phone."
+    },
+    {
+     "s": "隔籬好嘈，我專心唔到。",
+     "r": "gaak3 lei4 hou2 cou4 ngo5 zyun1 sam1 m4 dou2",
+     "en": "It's so noisy next door I can't concentrate."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "做",
+     "功課",
+     "要",
+     "專心",
+     "啲"
+    ],
+    "alt": [
+     [
+      "要",
+      "專心",
+      "啲",
+      "做",
+      "功課"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-167",
+   "t": {
+    "s": "領隊",
+    "r": "ling5 deoi2"
+   },
+   "pos": "noun",
+   "en": "tour leader; group leader",
+   "note": "",
+   "ex": [
+    {
+     "s": "跟住領隊行，唔好走失。",
+     "r": "gan1 zyu6 ling5 deoi2 haang4 m4 hou2 zau2 sat1",
+     "en": "Follow the tour leader; don't get lost."
+    },
+    {
+     "s": "有問題可以問領隊。",
+     "r": "jau5 man6 tai4 ho2 ji5 man6 ling5 deoi2",
+     "en": "If you have questions, ask the tour leader."
+    },
+    {
+     "s": "今次行山佢做領隊。",
+     "r": "gam1 ci3 haang4 saan1 keoi5 zou6 ling5 deoi2",
+     "en": "She's leading the hike this time."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "跟住",
+     "領隊",
+     "行",
+     "唔好",
+     "走失"
+    ],
+    "alt": [
+     [
+      "唔好",
+      "走失",
+      "跟住",
+      "領隊",
+      "行"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-170",
+   "t": {
+    "s": "照計",
+    "r": "ziu3 gai3"
+   },
+   "pos": "adverb",
+   "en": "by rights; logically; should (expect)",
+   "note": "Used for reasoned expectations.",
+   "ex": [
+    {
+     "s": "照計佢應該到咗喇。",
+     "r": "ziu3 gai3 keoi5 jing1 goi1 dou3 zo2 laa3",
+     "en": "By rights he should have arrived by now."
+    },
+    {
+     "s": "照計今日唔會落雨。",
+     "r": "ziu3 gai3 gam1 jat6 m4 wui5 lok6 jyu5",
+     "en": "By my reckoning, it won't rain today."
+    },
+    {
+     "s": "照計呢個價錢都抵。",
+     "r": "ziu3 gai3 ni1 go3 gaa3 cin4 dou1 dai2",
+     "en": "Logically, this price is a good deal."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "照計",
+     "佢",
+     "應該",
+     "到",
+     "咗",
+     "喇"
+    ],
+    "alt": [
+     [
+      "佢",
+      "照計",
+      "應該",
+      "到",
+      "咗",
+      "喇"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-175",
+   "t": {
+    "s": "沙律",
+    "r": "saa1 leot2"
+   },
+   "pos": "noun",
+   "en": "salad",
+   "note": "From English 'salad'.",
+   "ex": [
+    {
+     "s": "我晏晝食咗個沙律。",
+     "r": "ngo5 aan3 zau3 sik6 zo2 go3 saa1 leot2",
+     "en": "I had a salad for lunch."
+    },
+    {
+     "s": "沙律醬另上，唔該。",
+     "r": "saa1 leot2 zoeng3 ling6 soeng5 m4 goi1",
+     "en": "Dressing on the side, please."
+    },
+    {
+     "s": "我整咗個水果沙律。",
+     "r": "ngo5 zing2 zo2 go3 seoi2 gwo2 saa1 leot2",
+     "en": "I made a fruit salad."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "我",
+     "晏晝",
+     "食",
+     "咗",
+     "個",
+     "沙律"
+    ],
+    "alt": [
+     [
+      "晏晝",
+      "我",
+      "食",
+      "咗",
+      "個",
+      "沙律"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-188",
+   "t": {
+    "s": "沙灘",
+    "r": "saa1 taan1"
+   },
+   "pos": "noun",
+   "en": "beach",
+   "note": "",
+   "ex": [
+    {
+     "s": "夏天我哋成日去沙灘。",
+     "r": "haa6 tin1 ngo5 dei6 seng4 jat6 heoi3 saa1 taan1",
+     "en": "In summer we often go to the beach."
+    },
+    {
+     "s": "沙灘有救生員。",
+     "r": "saa1 taan1 jau5 gau3 sang1 jyun4",
+     "en": "There are lifeguards at the beach."
+    },
+    {
+     "s": "我哋喺沙灘影咗好多相。",
+     "r": "ngo5 dei6 hai2 saa1 taan1 jing2 zo2 hou2 do1 soeng2",
+     "en": "We took lots of photos at the beach."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "夏天",
+     "我哋",
+     "成日",
+     "去",
+     "沙灘"
+    ],
+    "alt": [
+     [
+      "我哋",
+      "夏天",
+      "成日",
+      "去",
+      "沙灘"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "cv07-198",
+   "t": {
+    "s": "烏蠅",
+    "r": "wu1 jing1"
+   },
+   "pos": "noun",
+   "en": "fly (insect)",
+   "note": "Measure word 隻.",
+   "ex": [
+    {
+     "s": "有隻烏蠅喺度飛嚟飛去。",
+     "r": "jau5 zek3 wu1 jing1 hai2 dou6 fei1 lai4 fei1 heoi3",
+     "en": "There's a fly buzzing around here."
+    },
+    {
+     "s": "冚好啲餸，唔係會有烏蠅。",
+     "r": "kam2 hou2 di1 sung3 m4 hai6 wui5 jau5 wu1 jing1",
+     "en": "Cover the dishes, or flies will get on them."
+    },
+    {
+     "s": "餐廳有烏蠅，我唔想喺度食。",
+     "r": "caan1 teng1 jau5 wu1 jing1 ngo5 m4 soeng2 hai2 dou6 sik6",
+     "en": "There are flies in the restaurant; I don't want to eat here."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "有",
+     "隻",
+     "烏蠅",
+     "喺度",
+     "飛嚟",
+     "飛去"
+    ],
+    "alt": [
+     [
+      "喺度",
+      "有",
+      "隻",
+      "烏蠅",
+      "飛嚟",
+      "飛去"
      ]
     ]
    }
