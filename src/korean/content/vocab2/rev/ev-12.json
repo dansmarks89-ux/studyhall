@@ -67,7 +67,36 @@
      "s": "택배 기사님이 경비실에 전달하셨대요.",
      "en": "The courier says he left it with the security office."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이",
+     "서류",
+     "좀",
+     "부장님께",
+     "전달해",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "부장님께",
+      "이",
+      "서류",
+      "좀",
+      "전달해",
+      "주세요"
+     ],
+     [
+      "이",
+      "서류",
+      "부장님께",
+      "좀",
+      "전달해",
+      "주세요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv07-14",
@@ -703,6 +732,591 @@
      ]
     ]
    }
+  },
+  {
+   "id": "kv07-87",
+   "t": {
+    "s": "구체적"
+   },
+   "pos": "noun",
+   "en": "concrete, specific",
+   "note": "Usually 구체적으로 'specifically' or 구체적인 + noun.",
+   "ex": [
+    {
+     "s": "좀 더 구체적으로 말해 주세요.",
+     "en": "Please be a little more specific."
+    },
+    {
+     "s": "여행 계획을 구체적으로 세웠어요?",
+     "en": "Have you made concrete plans for the trip?"
+    },
+    {
+     "s": "원하는 디자인을 구체적으로 설명해 주세요.",
+     "en": "Please describe the design you want in detail."
+    }
+   ]
+  },
+  {
+   "id": "kv07-89",
+   "t": {
+    "s": "대표적"
+   },
+   "pos": "noun",
+   "en": "representative, typical",
+   "note": "대표적인 + noun; 대표적으로 'a prime example is'.",
+   "ex": [
+    {
+     "s": "비빔밥은 대표적인 한국 음식이에요.",
+     "en": "Bibimbap is a classic Korean dish."
+    },
+    {
+     "s": "이 동네의 대표적인 카페예요.",
+     "en": "It's this neighborhood's best-known café."
+    },
+    {
+     "s": "떡볶이는 대표적인 길거리 음식이에요.",
+     "en": "Tteokbokki is a classic street food."
+    }
+   ]
+  },
+  {
+   "id": "kv07-92",
+   "t": {
+    "s": "지속되다"
+   },
+   "pos": "verb",
+   "en": "to continue, last",
+   "note": "",
+   "ex": [
+    {
+     "s": "더위가 다음 주까지 지속된대요.",
+     "en": "They say the heat will last until next week."
+    },
+    {
+     "s": "이 향수는 향이 오래 지속돼요.",
+     "en": "This perfume's scent lasts a long time."
+    },
+    {
+     "s": "회의가 세 시간이나 지속됐어요.",
+     "en": "The meeting went on for three whole hours."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "더위가",
+     "다음",
+     "주까지",
+     "지속된대요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "주까지",
+      "더위가",
+      "지속된대요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-38",
+   "t": {
+    "s": "찾아보다"
+   },
+   "pos": "verb",
+   "en": "to look up, look for",
+   "note": "",
+   "ex": [
+    {
+     "s": "모르는 단어를 사전에서 찾아봤어요.",
+     "en": "I looked up the word I didn't know in the dictionary."
+    },
+    {
+     "s": "근처 카페 좀 찾아볼게요.",
+     "en": "I'll look for a café nearby."
+    },
+    {
+     "s": "여행 정보는 미리 찾아보세요.",
+     "en": "Look up travel info in advance."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "모르는",
+     "단어를",
+     "사전에서",
+     "찾아봤어요"
+    ],
+    "alt": [
+     [
+      "사전에서",
+      "모르는",
+      "단어를",
+      "찾아봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-39",
+   "t": {
+    "s": "살짝"
+   },
+   "pos": "adverb",
+   "en": "slightly, a little; gently",
+   "note": "",
+   "ex": [
+    {
+     "s": "오늘 날씨가 살짝 추워요.",
+     "en": "It's a little chilly today."
+    },
+    {
+     "s": "아기 자니까 문을 살짝 닫아 주세요.",
+     "en": "The baby's sleeping, so please close the door gently."
+    },
+    {
+     "s": "살짝 매운데 맛있어요.",
+     "en": "It's slightly spicy, but tasty."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "날씨가",
+     "살짝",
+     "추워요"
+    ],
+    "alt": [
+     [
+      "날씨가",
+      "오늘",
+      "살짝",
+      "추워요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-46",
+   "t": {
+    "s": "스튜디오"
+   },
+   "pos": "noun",
+   "en": "studio",
+   "note": "",
+   "ex": [
+    {
+     "s": "가족사진을 스튜디오에서 찍었어요.",
+     "en": "We took family photos at a studio."
+    },
+    {
+     "s": "요즘 요가 스튜디오에 다녀요.",
+     "en": "These days I go to a yoga studio."
+    },
+    {
+     "s": "친구가 녹음 스튜디오에서 일해요.",
+     "en": "My friend works at a recording studio."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "가족사진을",
+     "스튜디오에서",
+     "찍었어요"
+    ],
+    "alt": [
+     [
+      "스튜디오에서",
+      "가족사진을",
+      "찍었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-47",
+   "t": {
+    "s": "분명히"
+   },
+   "pos": "adverb",
+   "en": "clearly, definitely, surely",
+   "note": "",
+   "ex": [
+    {
+     "s": "분명히 여기 뒀는데 없어요.",
+     "en": "I definitely left it here, but it's gone."
+    },
+    {
+     "s": "제가 분명히 말했잖아요.",
+     "en": "I clearly told you."
+    },
+    {
+     "s": "분명히 내일 비 온다고 했어요.",
+     "en": "They definitely said it would rain tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "분명히",
+     "여기",
+     "뒀는데",
+     "없어요"
+    ],
+    "alt": [
+     [
+      "여기",
+      "분명히",
+      "뒀는데",
+      "없어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-55",
+   "t": {
+    "s": "조심스럽다"
+   },
+   "pos": "adjective",
+   "en": "careful, cautious; delicate",
+   "note": "ㅂ-irregular: 조심스러워요; adverb 조심스럽게.",
+   "ex": [
+    {
+     "s": "조심스럽게 문을 열었어요.",
+     "en": "I opened the door carefully."
+    },
+    {
+     "s": "그 얘기는 좀 조심스러워요.",
+     "en": "That topic is a bit delicate."
+    },
+    {
+     "s": "아기를 조심스럽게 안았어요.",
+     "en": "I held the baby carefully."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "조심스럽게",
+     "문을",
+     "열었어요"
+    ],
+    "alt": [
+     [
+      "문을",
+      "조심스럽게",
+      "열었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-60",
+   "t": {
+    "s": "꾸미다"
+   },
+   "pos": "verb",
+   "en": "to decorate; to dress up",
+   "note": "",
+   "ex": [
+    {
+     "s": "크리스마스 트리를 같이 꾸몄어요.",
+     "en": "We decorated the Christmas tree together."
+    },
+    {
+     "s": "오늘 데이트라서 좀 꾸몄어요.",
+     "en": "I dressed up a bit because I have a date today."
+    },
+    {
+     "s": "새 사무실을 예쁘게 꾸몄어요.",
+     "en": "We decorated the new office nicely."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "크리스마스",
+     "트리를",
+     "같이",
+     "꾸몄어요"
+    ],
+    "alt": [
+     [
+      "같이",
+      "크리스마스",
+      "트리를",
+      "꾸몄어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-65",
+   "t": {
+    "s": "구매하다"
+   },
+   "pos": "verb",
+   "en": "to purchase, buy",
+   "note": "More formal than 사다; common online and in stores.",
+   "ex": [
+    {
+     "s": "온라인으로 표를 구매했어요.",
+     "en": "I purchased the tickets online."
+    },
+    {
+     "s": "이 상품은 한 사람당 두 개까지 구매할 수 있어요.",
+     "en": "You can buy up to two of these per person."
+    },
+    {
+     "s": "새 노트북을 구매하려고요.",
+     "en": "I'm planning to buy a new laptop."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "온라인으로",
+     "표를",
+     "구매했어요"
+    ],
+    "alt": [
+     [
+      "표를",
+      "온라인으로",
+      "구매했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-67",
+   "t": {
+    "s": "겨우"
+   },
+   "pos": "adverb",
+   "en": "barely; only, just",
+   "note": "",
+   "ex": [
+    {
+     "s": "버스를 겨우 탔어요.",
+     "en": "I barely caught the bus."
+    },
+    {
+     "s": "어제 겨우 다섯 시간 잤어요.",
+     "en": "I only slept five hours last night."
+    },
+    {
+     "s": "숙제를 겨우 끝냈어요.",
+     "en": "I just barely finished my homework."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "버스를",
+     "겨우",
+     "탔어요"
+    ],
+    "alt": [
+     [
+      "겨우",
+      "버스를",
+      "탔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-69",
+   "t": {
+    "s": "돼지"
+   },
+   "pos": "noun",
+   "en": "pig",
+   "note": "Pork is 돼지고기.",
+   "ex": [
+    {
+     "s": "농장에서 돼지를 봤어요.",
+     "en": "We saw pigs at the farm."
+    },
+    {
+     "s": "돼지고기 김치찌개 먹을래요?",
+     "en": "Want some pork kimchi stew?"
+    },
+    {
+     "s": "너무 많이 먹어서 돼지가 된 것 같아요.",
+     "en": "I ate so much I feel like a pig."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "농장에서",
+     "돼지를",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "돼지를",
+      "농장에서",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-70",
+   "t": {
+    "s": "자정"
+   },
+   "pos": "noun",
+   "en": "midnight",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 가게는 자정까지 문을 열어요.",
+     "en": "That store is open until midnight."
+    },
+    {
+     "s": "자정 넘어서 집에 왔어요.",
+     "en": "I got home after midnight."
+    },
+    {
+     "s": "숙제는 자정까지 제출하세요.",
+     "en": "Submit your homework by midnight."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "가게는",
+     "자정까지",
+     "문을",
+     "열어요"
+    ],
+    "alt": [
+     [
+      "그",
+      "가게는",
+      "문을",
+      "자정까지",
+      "열어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-72",
+   "t": {
+    "s": "출시"
+   },
+   "pos": "noun",
+   "en": "release, launch (of a product)",
+   "note": "출시되다 to be released, come out.",
+   "ex": [
+    {
+     "s": "새 휴대폰이 다음 달에 출시돼요.",
+     "en": "The new phone comes out next month."
+    },
+    {
+     "s": "이 과자 언제 출시됐어요?",
+     "en": "When did this snack come out?"
+    },
+    {
+     "s": "신메뉴 출시 기념으로 할인해요.",
+     "en": "There's a discount to celebrate the new menu launch."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "새",
+     "휴대폰이",
+     "다음",
+     "달에",
+     "출시돼요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "달에",
+      "새",
+      "휴대폰이",
+      "출시돼요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-73",
+   "t": {
+    "s": "차라리"
+   },
+   "pos": "adverb",
+   "en": "rather, would rather, might as well",
+   "note": "",
+   "ex": [
+    {
+     "s": "차라리 택시 타는 게 낫겠어요.",
+     "en": "We'd be better off taking a taxi."
+    },
+    {
+     "s": "오늘은 차라리 집에서 먹을래요.",
+     "en": "I'd rather eat at home today."
+    },
+    {
+     "s": "이럴 거면 차라리 안 갈래요.",
+     "en": "If it's going to be like this, I'd rather not go."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "차라리",
+     "택시",
+     "타는",
+     "게",
+     "낫겠어요"
+    ],
+    "alt": [
+     [
+      "택시",
+      "타는",
+      "게",
+      "차라리",
+      "낫겠어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-74",
+   "t": {
+    "s": "흔히"
+   },
+   "pos": "adverb",
+   "en": "commonly, often",
+   "note": "",
+   "ex": [
+    {
+     "s": "이건 흔히 하는 실수예요.",
+     "en": "This is a common mistake."
+    },
+    {
+     "s": "그런 일은 흔히 있어요.",
+     "en": "That kind of thing happens a lot."
+    },
+    {
+     "s": "이 이름은 한국에서 흔히 볼 수 있어요.",
+     "en": "You often see this name in Korea."
+    }
+   ]
   }
  ],
  "drop": [

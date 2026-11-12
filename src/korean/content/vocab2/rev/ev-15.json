@@ -37,8 +37,8 @@
      "en": "Our family prays before eating."
     },
     {
-     "s": "수술 잘되도록 기도할게요.",
-     "en": "I'll pray that the surgery goes well."
+     "s": "면접 잘 보도록 기도할게요.",
+     "en": "I'll pray your interview goes well."
     },
     {
      "s": "할머니는 매일 아침 기도를 하세요.",
@@ -239,6 +239,965 @@
       "뿌리세요"
      ]
     ]
+   }
+  },
+  {
+   "id": "kv08-128",
+   "t": {
+    "s": "회복하다"
+   },
+   "pos": "verb",
+   "en": "to recover",
+   "note": "회복되다 = to be restored.",
+   "ex": [
+    {
+     "s": "시차 때문에 힘들었는데 이제 다 회복했어요.",
+     "en": "Jet lag was rough, but I've fully recovered now."
+    },
+    {
+     "s": "푹 자면 체력을 회복할 수 있어요.",
+     "en": "A good night's sleep will restore your energy."
+    },
+    {
+     "s": "두 사람은 관계를 회복하려고 노력하고 있어요.",
+     "en": "The two of them are trying to repair their relationship."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "푹",
+     "자면",
+     "체력을",
+     "회복할",
+     "수",
+     "있어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv08-141",
+   "t": {
+    "s": "커뮤니티"
+   },
+   "pos": "noun",
+   "en": "(online) community, forum",
+   "note": "Often means an online forum or group.",
+   "ex": [
+    {
+     "s": "육아 커뮤니티에서 정보를 많이 얻어요.",
+     "en": "I get a lot of info from a parenting forum."
+    },
+    {
+     "s": "게임 커뮤니티에 질문을 올렸어요.",
+     "en": "I posted a question in a gaming community."
+    },
+    {
+     "s": "동네 커뮤니티에서 중고 의자를 샀어요.",
+     "en": "I bought a used chair through the neighborhood community."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "육아",
+     "커뮤니티에서",
+     "정보를",
+     "많이",
+     "얻어요"
+    ],
+    "alt": [
+     [
+      "정보를",
+      "육아",
+      "커뮤니티에서",
+      "많이",
+      "얻어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-118",
+   "t": {
+    "s": "돌보다"
+   },
+   "pos": "verb",
+   "en": "to take care of, look after",
+   "note": "돌봐요 / 돌봤어요.",
+   "ex": [
+    {
+     "s": "주말에 조카를 돌봐야 해요.",
+     "en": "I have to look after my nephew this weekend."
+    },
+    {
+     "s": "휴가 동안 고양이 좀 돌봐 줄 수 있어요?",
+     "en": "Can you look after my cat while I'm on vacation?"
+    },
+    {
+     "s": "친구가 제 강아지를 잘 돌봐 줬어요.",
+     "en": "My friend took good care of my dog."
+    }
+   ]
+  },
+  {
+   "id": "kv08-127",
+   "t": {
+    "s": "정기적"
+   },
+   "pos": "noun",
+   "en": "regular, periodic",
+   "note": "Usually 정기적으로 (regularly) or 정기적인.",
+   "ex": [
+    {
+     "s": "정기적으로 비밀번호를 바꾸세요.",
+     "en": "Change your password regularly."
+    },
+    {
+     "s": "우리는 정기적으로 모여서 축구해요.",
+     "en": "We get together regularly to play soccer."
+    },
+    {
+     "s": "정기적인 회의는 월요일에 있어요.",
+     "en": "The regular meeting is on Monday."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "정기적으로",
+     "비밀번호를",
+     "바꾸세요"
+    ],
+    "alt": [
+     [
+      "비밀번호를",
+      "정기적으로",
+      "바꾸세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-143",
+   "t": {
+    "s": "쓰러지다"
+   },
+   "pos": "verb",
+   "en": "to collapse, fall over",
+   "note": "",
+   "ex": [
+    {
+     "s": "바람 때문에 나무가 쓰러졌어요.",
+     "en": "A tree fell over because of the wind."
+    },
+    {
+     "s": "너무 더워서 쓰러질 것 같아요.",
+     "en": "It's so hot I feel like I'm going to collapse."
+    },
+    {
+     "s": "너무 피곤해서 집에 오자마자 쓰러졌어요.",
+     "en": "I was so tired I crashed as soon as I got home."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "바람",
+     "때문에",
+     "나무가",
+     "쓰러졌어요"
+    ],
+    "alt": [
+     [
+      "나무가",
+      "바람",
+      "때문에",
+      "쓰러졌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-172",
+   "t": {
+    "s": "임신"
+   },
+   "pos": "noun",
+   "en": "pregnancy",
+   "note": "임신하다 = to get pregnant.",
+   "ex": [
+    {
+     "s": "제 여동생이 임신했어요.",
+     "en": "My younger sister is pregnant."
+    },
+    {
+     "s": "임신 몇 개월이에요?",
+     "en": "How many months pregnant are you?"
+    },
+    {
+     "s": "임신 중이라서 커피를 끊었어요.",
+     "en": "I quit coffee because I'm pregnant."
+    }
+   ]
+  },
+  {
+   "id": "kv08-174",
+   "t": {
+    "s": "정상적"
+   },
+   "pos": "noun",
+   "en": "normal",
+   "note": "Usually 정상적으로 or 정상적인. 정상이에요 = it's normal.",
+   "ex": [
+    {
+     "s": "엘리베이터가 다시 정상적으로 작동해요.",
+     "en": "The elevator is working normally again."
+    },
+    {
+     "s": "비행기가 정상적으로 출발한대요.",
+     "en": "They say the flight is leaving on schedule."
+    },
+    {
+     "s": "주문은 정상적으로 처리됐어요.",
+     "en": "The order went through normally."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "엘리베이터가",
+     "다시",
+     "정상적으로",
+     "작동해요"
+    ],
+    "alt": [
+     [
+      "다시",
+      "엘리베이터가",
+      "정상적으로",
+      "작동해요"
+     ],
+     [
+      "엘리베이터가",
+      "정상적으로",
+      "다시",
+      "작동해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-182",
+   "t": {
+    "s": "지시하다"
+   },
+   "pos": "verb",
+   "en": "to instruct, direct",
+   "note": "Formal; 시키다 is the everyday word.",
+   "ex": [
+    {
+     "s": "팀장님이 보고서를 다시 쓰라고 지시하셨어요.",
+     "en": "The team leader told me to rewrite the report."
+    },
+    {
+     "s": "선생님이 지시하신 대로 하세요.",
+     "en": "Do as the teacher instructed."
+    },
+    {
+     "s": "회사에서 지시한 대로 재택근무를 하고 있어요.",
+     "en": "I'm working from home as the company instructed."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "팀장님이",
+     "보고서를",
+     "다시",
+     "쓰라고",
+     "지시하셨어요"
+    ],
+    "alt": [
+     [
+      "팀장님이",
+      "다시",
+      "보고서를",
+      "쓰라고",
+      "지시하셨어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-198",
+   "t": {
+    "s": "유지되다"
+   },
+   "pos": "verb",
+   "en": "to be maintained, kept up",
+   "note": "유지하다 = to maintain.",
+   "ex": [
+    {
+     "s": "이 컵은 온도가 오래 유지돼요.",
+     "en": "This cup keeps drinks hot or cold for a long time."
+    },
+    {
+     "s": "운동을 해야 건강이 유지돼요.",
+     "en": "You have to exercise to stay healthy."
+    },
+    {
+     "s": "와이파이 연결이 잘 유지되지 않아요.",
+     "en": "The Wi-Fi connection keeps dropping."
+    }
+   ]
+  },
+  {
+   "id": "kv08-185",
+   "t": {
+    "s": "체크"
+   },
+   "pos": "noun",
+   "en": "check, checking",
+   "note": "체크하다 = to check. 체크카드 = debit card.",
+   "ex": [
+    {
+     "s": "출발하기 전에 날씨를 체크했어요.",
+     "en": "I checked the weather before leaving."
+    },
+    {
+     "s": "필요한 거 다 체크했어요?",
+     "en": "Did you check off everything we need?"
+    },
+    {
+     "s": "이메일 좀 체크해 주세요.",
+     "en": "Please check your email."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "출발하기",
+     "전에",
+     "날씨를",
+     "체크했어요"
+    ],
+    "alt": [
+     [
+      "날씨를",
+      "출발하기",
+      "전에",
+      "체크했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-109",
+   "t": {
+    "s": "개봉하다"
+   },
+   "pos": "verb",
+   "en": "to release (a film); open (a package)",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 영화 다음 주에 개봉해요.",
+     "en": "That movie comes out next week."
+    },
+    {
+     "s": "개봉한 우유는 빨리 드세요.",
+     "en": "Drink opened milk soon."
+    },
+    {
+     "s": "택배를 개봉하기 전에 사진을 찍었어요.",
+     "en": "I took a photo before opening the package."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "영화",
+     "다음",
+     "주에",
+     "개봉해요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "주에",
+      "그",
+      "영화",
+      "개봉해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-111",
+   "t": {
+    "s": "안마"
+   },
+   "pos": "noun",
+   "en": "massage",
+   "note": "안마하다 = to massage. 마사지 is also common.",
+   "ex": [
+    {
+     "s": "어깨 좀 안마해 줄래요?",
+     "en": "Could you rub my shoulders?"
+    },
+    {
+     "s": "아버지 생신 선물로 안마 의자를 샀어요.",
+     "en": "We bought a massage chair for Dad's birthday."
+    },
+    {
+     "s": "운동하고 나서 안마를 받았어요.",
+     "en": "I got a massage after working out."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "어깨",
+     "좀",
+     "안마해",
+     "줄래요"
+    ],
+    "alt": [
+     [
+      "좀",
+      "어깨",
+      "안마해",
+      "줄래요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-119",
+   "t": {
+    "s": "조카"
+   },
+   "pos": "noun",
+   "en": "niece, nephew",
+   "note": "Covers both; 조카딸 = niece specifically.",
+   "ex": [
+    {
+     "s": "조카가 벌써 열 살이에요.",
+     "en": "My nephew is already ten."
+    },
+    {
+     "s": "조카 생일 선물을 사러 왔어요.",
+     "en": "I came to buy a birthday present for my niece."
+    },
+    {
+     "s": "조카랑 영상 통화했어요.",
+     "en": "I video-called my niece."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "조카가",
+     "벌써",
+     "열",
+     "살이에요"
+    ],
+    "alt": [
+     [
+      "벌써",
+      "조카가",
+      "열",
+      "살이에요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-123",
+   "t": {
+    "s": "공연하다"
+   },
+   "pos": "verb",
+   "en": "to perform (on stage)",
+   "note": "Noun 공연 = show, concert.",
+   "ex": [
+    {
+     "s": "그 밴드가 다음 달에 서울에서 공연해요.",
+     "en": "That band is performing in Seoul next month."
+    },
+    {
+     "s": "아이들이 학교에서 연극을 공연했어요.",
+     "en": "The kids performed a play at school."
+    },
+    {
+     "s": "이 뮤지컬은 몇 시에 공연해요?",
+     "en": "What time is this musical playing?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "밴드가",
+     "다음",
+     "달에",
+     "서울에서",
+     "공연해요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "달에",
+      "그",
+      "밴드가",
+      "서울에서",
+      "공연해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-131",
+   "t": {
+    "s": "반지"
+   },
+   "pos": "noun",
+   "en": "ring (jewelry)",
+   "note": "반지를 끼다 = put on; 빼다 = take off.",
+   "ex": [
+    {
+     "s": "결혼반지를 잃어버렸어요.",
+     "en": "I lost my wedding ring."
+    },
+    {
+     "s": "이 반지 한번 껴 봐도 돼요?",
+     "en": "Can I try on this ring?"
+    },
+    {
+     "s": "설거지할 때는 반지를 빼요.",
+     "en": "I take off my ring when I do the dishes."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "이",
+     "반지",
+     "한번",
+     "껴",
+     "봐도",
+     "돼요"
+    ],
+    "alt": [
+     [
+      "한번",
+      "이",
+      "반지",
+      "껴",
+      "봐도",
+      "돼요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-137",
+   "t": {
+    "s": "체험"
+   },
+   "pos": "noun",
+   "en": "(hands-on) experience; trial",
+   "note": "체험하다 = to experience firsthand. 경험 = experience in general.",
+   "ex": [
+    {
+     "s": "아이들이 학교에서 농장 체험을 갔어요.",
+     "en": "The kids went on a farm visit with their school."
+    },
+    {
+     "s": "한복 입기 체험을 해 보고 싶어요.",
+     "en": "I want to try wearing hanbok."
+    },
+    {
+     "s": "무료 체험 기간이 끝났어요.",
+     "en": "The free trial period ended."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이들이",
+     "학교에서",
+     "농장",
+     "체험을",
+     "갔어요"
+    ],
+    "alt": [
+     [
+      "학교에서",
+      "아이들이",
+      "농장",
+      "체험을",
+      "갔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-139",
+   "t": {
+    "s": "푸르다"
+   },
+   "pos": "adjective",
+   "en": "blue, green (sky, sea, fields)",
+   "note": "러-irregular: 푸르러요. Covers both blue and green.",
+   "ex": [
+    {
+     "s": "오늘 하늘이 정말 푸르러요.",
+     "en": "The sky is really blue today."
+    },
+    {
+     "s": "봄이 되니까 산이 푸르러졌어요.",
+     "en": "Now that it's spring, the mountains have turned green."
+    },
+    {
+     "s": "푸른 바다를 보고 싶어요.",
+     "en": "I want to see the blue sea."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "오늘",
+     "하늘이",
+     "정말",
+     "푸르러요"
+    ],
+    "alt": [
+     [
+      "하늘이",
+      "오늘",
+      "정말",
+      "푸르러요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-161",
+   "t": {
+    "s": "쏟다"
+   },
+   "pos": "verb",
+   "en": "to spill, pour out; devote (effort)",
+   "note": "쏟아지다 = to pour down (rain).",
+   "ex": [
+    {
+     "s": "식당에서 국물을 옷에 쏟았어요.",
+     "en": "I spilled soup on my clothes at the restaurant."
+    },
+    {
+     "s": "아이가 우유를 바닥에 쏟았어요.",
+     "en": "My kid spilled milk on the floor."
+    },
+    {
+     "s": "이 프로젝트에 시간을 많이 쏟았어요.",
+     "en": "I poured a lot of time into this project."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "식당에서",
+     "국물을",
+     "옷에",
+     "쏟았어요"
+    ],
+    "alt": [
+     [
+      "식당에서",
+      "옷에",
+      "국물을",
+      "쏟았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-167",
+   "t": {
+    "s": "분명"
+   },
+   "pos": "adverb",
+   "en": "clearly, surely, definitely",
+   "note": "Also 분명히; 분명하다 = clear.",
+   "ex": [
+    {
+     "s": "분명 여기 뒀는데 없어요.",
+     "en": "I'm sure I put it here, but it's gone."
+    },
+    {
+     "s": "그 사람은 분명 늦을 거예요.",
+     "en": "He'll definitely be late."
+    },
+    {
+     "s": "분명 내일 비 온다고 했어요.",
+     "en": "They definitely said it'll rain tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "분명",
+     "여기",
+     "뒀는데",
+     "없어요"
+    ],
+    "alt": [
+     [
+      "여기",
+      "분명",
+      "뒀는데",
+      "없어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-184",
+   "t": {
+    "s": "농담"
+   },
+   "pos": "noun",
+   "en": "joke",
+   "note": "농담하다 = to joke.",
+   "ex": [
+    {
+     "s": "농담이에요.",
+     "en": "Just kidding."
+    },
+    {
+     "s": "아빠는 재미없는 농담을 자주 해요.",
+     "en": "Dad often tells unfunny jokes."
+    },
+    {
+     "s": "회의 중이라 농담할 분위기가 아니었어요.",
+     "en": "We were in a meeting, so it wasn't the mood for jokes."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "아빠는",
+     "재미없는",
+     "농담을",
+     "자주",
+     "해요"
+    ],
+    "alt": [
+     [
+      "아빠는",
+      "자주",
+      "재미없는",
+      "농담을",
+      "해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-189",
+   "t": {
+    "s": "충돌"
+   },
+   "pos": "noun",
+   "en": "collision, crash; clash",
+   "note": "충돌하다 = to collide, clash.",
+   "ex": [
+    {
+     "s": "고속도로에서 차 두 대가 충돌했어요.",
+     "en": "Two cars collided on the highway."
+    },
+    {
+     "s": "결혼 준비하면서 의견 충돌이 많았어요.",
+     "en": "We disagreed a lot while planning the wedding."
+    },
+    {
+     "s": "회의 일정이 서로 충돌해요.",
+     "en": "The meeting times conflict with each other."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "고속도로에서",
+     "차",
+     "두",
+     "대가",
+     "충돌했어요"
+    ],
+    "alt": [
+     [
+      "차",
+      "두",
+      "대가",
+      "고속도로에서",
+      "충돌했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-192",
+   "t": {
+    "s": "출시하다"
+   },
+   "pos": "verb",
+   "en": "to launch, release (a product)",
+   "note": "출시일 = release date.",
+   "ex": [
+    {
+     "s": "새 휴대폰을 다음 달에 출시한대요.",
+     "en": "They say the new phone launches next month."
+    },
+    {
+     "s": "그 회사가 새로운 맛을 출시했어요.",
+     "en": "The company released a new flavor."
+    },
+    {
+     "s": "우리 팀이 새 앱을 출시했어요.",
+     "en": "Our team launched a new app."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "새",
+     "휴대폰을",
+     "다음",
+     "달에",
+     "출시한대요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "달에",
+      "새",
+      "휴대폰을",
+      "출시한대요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-195",
+   "t": {
+    "s": "생존"
+   },
+   "pos": "noun",
+   "en": "survival",
+   "note": "생존하다 = to survive; 살아남다 is more everyday.",
+   "ex": [
+    {
+     "s": "이 더위에 에어컨은 생존 문제예요.",
+     "en": "In this heat, AC is a matter of survival."
+    },
+    {
+     "s": "무인도에서 생존하는 프로그램을 봤어요.",
+     "en": "I watched a show about surviving on a desert island."
+    },
+    {
+     "s": "요즘 작은 가게들은 생존이 쉽지 않아요.",
+     "en": "Survival isn't easy for small shops these days."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이",
+     "더위에",
+     "에어컨은",
+     "생존",
+     "문제예요"
+    ],
+    "alt": [
+     [
+      "에어컨은",
+      "이",
+      "더위에",
+      "생존",
+      "문제예요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv08-113",
+   "t": {
+    "s": "완전하다"
+   },
+   "pos": "adjective",
+   "en": "complete, perfect",
+   "note": "완전히 = completely. Casual 완전 = totally (완전 맛있어요).",
+   "ex": [
+    {
+     "s": "새 직장에 완전히 적응했어요.",
+     "en": "I've completely settled into my new job."
+    },
+    {
+     "s": "이 계획은 아직 완전하지 않아요.",
+     "en": "This plan isn't complete yet."
+    },
+    {
+     "s": "완전한 사람은 없어요.",
+     "en": "Nobody's perfect."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "새",
+     "직장에",
+     "완전히",
+     "적응했어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv08-190",
+   "t": {
+    "s": "마스크"
+   },
+   "pos": "noun",
+   "en": "face mask",
+   "note": "마스크를 쓰다 = to wear a mask.",
+   "ex": [
+    {
+     "s": "화장을 안 해서 마스크를 썼어요.",
+     "en": "I wore a mask because I didn't have makeup on."
+    },
+    {
+     "s": "미세먼지 때문에 마스크 꼭 쓰세요.",
+     "en": "Be sure to wear a mask because of the fine dust."
+    },
+    {
+     "s": "편의점에서 마스크를 샀어요.",
+     "en": "I bought a mask at the convenience store."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "화장을",
+     "안",
+     "해서",
+     "마스크를",
+     "썼어요"
+    ],
+    "alt": []
    }
   }
  ],

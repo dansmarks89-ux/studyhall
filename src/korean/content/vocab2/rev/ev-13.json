@@ -284,8 +284,8 @@
      "en": "I'm looking for a stable job."
     },
     {
-     "s": "아버지는 수술 후에 상태가 안정적이세요.",
-     "en": "My father is stable after his surgery."
+     "s": "주식보다 적금이 더 안정적이에요.",
+     "en": "A savings plan is more stable than stocks."
     },
     {
      "s": "여기는 와이파이가 안정적이에요.",
@@ -357,8 +357,8 @@
      "en": "Wei's father is a scientist."
     },
     {
-     "s": "과학자들이 새 약을 개발했대요.",
-     "en": "They say scientists have developed a new medicine."
+     "s": "과학자들이 새로운 행성을 발견했대요.",
+     "en": "They say scientists discovered a new planet."
     }
    ]
   },
@@ -471,6 +471,631 @@
       "중에",
       "제일",
       "바빠요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-101",
+   "t": {
+    "s": "아무런"
+   },
+   "pos": "determiner",
+   "en": "any (with a negative)",
+   "note": "Always with a negative: 아무런 ... 없다/않다.",
+   "ex": [
+    {
+     "s": "아무런 문제 없어요.",
+     "en": "There's no problem at all."
+    },
+    {
+     "s": "지우 씨한테서 아무런 연락이 없어요.",
+     "en": "I haven't heard anything from Ji-woo."
+    },
+    {
+     "s": "이 국은 아무런 맛이 안 나요.",
+     "en": "This soup has no taste at all."
+    }
+   ]
+  },
+  {
+   "id": "kv07-111",
+   "t": {
+    "s": "노인"
+   },
+   "pos": "noun",
+   "en": "elderly person",
+   "note": "More respectful: 어르신.",
+   "ex": [
+    {
+     "s": "지하철에서 노인분들께 자리를 양보해요.",
+     "en": "I give up my seat to elderly people on the subway."
+    },
+    {
+     "s": "이 동네에는 노인이 많이 살아요.",
+     "en": "A lot of elderly people live in this neighborhood."
+    },
+    {
+     "s": "요즘은 혼자 사는 노인이 많아요.",
+     "en": "These days a lot of elderly people live alone."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "지하철에서",
+     "노인분들께",
+     "자리를",
+     "양보해요"
+    ],
+    "alt": [
+     [
+      "지하철에서",
+      "자리를",
+      "노인분들께",
+      "양보해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-144",
+   "t": {
+    "s": "연구하다"
+   },
+   "pos": "verb",
+   "en": "to research, study closely",
+   "note": "",
+   "ex": [
+    {
+     "s": "형은 대학에서 로봇을 연구해요.",
+     "en": "My older brother does robotics research at a university."
+    },
+    {
+     "s": "요즘 맛있는 레시피를 연구하고 있어요.",
+     "en": "I've been working on tasty recipes lately."
+    },
+    {
+     "s": "여행 전에 맛집을 열심히 연구했어요.",
+     "en": "I researched good restaurants carefully before the trip."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "형은",
+     "대학에서",
+     "로봇을",
+     "연구해요"
+    ],
+    "alt": [
+     [
+      "형은",
+      "로봇을",
+      "대학에서",
+      "연구해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-102",
+   "t": {
+    "s": "놀이터"
+   },
+   "pos": "noun",
+   "en": "playground",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이들이 놀이터에서 놀고 있어요.",
+     "en": "The kids are playing at the playground."
+    },
+    {
+     "s": "우리 아파트 앞에 놀이터가 있어요.",
+     "en": "There's a playground in front of our apartment."
+    },
+    {
+     "s": "비가 와서 놀이터에 아무도 없어요.",
+     "en": "It's raining, so nobody's at the playground."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이들이",
+     "놀이터에서",
+     "놀고",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "놀이터에서",
+      "아이들이",
+      "놀고",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-109",
+   "t": {
+    "s": "마침내"
+   },
+   "pos": "adverb",
+   "en": "finally, at last",
+   "note": "A bit formal; casual speech usually uses 드디어.",
+   "ex": [
+    {
+     "s": "마침내 시험이 끝났어요.",
+     "en": "The exams are finally over."
+    },
+    {
+     "s": "마침내 우리 집을 샀어요.",
+     "en": "We finally bought our own home."
+    },
+    {
+     "s": "두 시간 기다려서 마침내 비행기를 탔어요.",
+     "en": "After waiting two hours, we finally boarded the plane."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "마침내",
+     "시험이",
+     "끝났어요"
+    ],
+    "alt": [
+     [
+      "시험이",
+      "마침내",
+      "끝났어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-117",
+   "t": {
+    "s": "똥"
+   },
+   "pos": "noun",
+   "en": "poop",
+   "note": "Casual word; fine with kids and pets.",
+   "ex": [
+    {
+     "s": "강아지가 길에서 똥을 쌌어요.",
+     "en": "The puppy pooped on the street."
+    },
+    {
+     "s": "아기가 똥 쌌어요. 기저귀 좀 주세요.",
+     "en": "The baby pooped. Please pass me a diaper."
+    },
+    {
+     "s": "차에 새똥이 떨어졌어요.",
+     "en": "Bird poop landed on my car."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "강아지가",
+     "길에서",
+     "똥을",
+     "쌌어요"
+    ],
+    "alt": [
+     [
+      "길에서",
+      "강아지가",
+      "똥을",
+      "쌌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-124",
+   "t": {
+    "s": "퍼지다"
+   },
+   "pos": "verb",
+   "en": "to spread",
+   "note": "",
+   "ex": [
+    {
+     "s": "소문이 벌써 다 퍼졌어요.",
+     "en": "The rumor has already spread everywhere."
+    },
+    {
+     "s": "그 영상이 인터넷에서 빠르게 퍼지고 있어요.",
+     "en": "That video is spreading fast online."
+    },
+    {
+     "s": "부엌에서 빵 냄새가 퍼져요.",
+     "en": "The smell of bread is spreading from the kitchen."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "소문이",
+     "벌써",
+     "다",
+     "퍼졌어요"
+    ],
+    "alt": [
+     [
+      "벌써",
+      "소문이",
+      "다",
+      "퍼졌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-130",
+   "t": {
+    "s": "어쩌면"
+   },
+   "pos": "adverb",
+   "en": "maybe, possibly",
+   "note": "Often with -(으)ㄹ지도 모르다 or -(으)ㄹ 수도 있다.",
+   "ex": [
+    {
+     "s": "어쩌면 내일 비가 올지도 몰라요.",
+     "en": "It might rain tomorrow."
+    },
+    {
+     "s": "어쩌면 조금 늦을 수도 있어요.",
+     "en": "I might be a little late."
+    },
+    {
+     "s": "어쩌면 그게 더 나을 것 같아요.",
+     "en": "Maybe that would be better."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "어쩌면",
+     "내일",
+     "비가",
+     "올지도",
+     "몰라요"
+    ],
+    "alt": [
+     [
+      "내일",
+      "어쩌면",
+      "비가",
+      "올지도",
+      "몰라요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-134",
+   "t": {
+    "s": "거절하다"
+   },
+   "pos": "verb",
+   "en": "to refuse, turn down",
+   "note": "",
+   "ex": [
+    {
+     "s": "초대를 정중하게 거절했어요.",
+     "en": "I politely turned down the invitation."
+    },
+    {
+     "s": "지민 씨가 제 부탁을 거절했어요.",
+     "en": "Jimin turned down my request."
+    },
+    {
+     "s": "그 회사 제안을 거절하기로 했어요.",
+     "en": "I decided to turn down that company's offer."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "초대를",
+     "정중하게",
+     "거절했어요"
+    ],
+    "alt": [
+     [
+      "정중하게",
+      "초대를",
+      "거절했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-135",
+   "t": {
+    "s": "트럭"
+   },
+   "pos": "noun",
+   "en": "truck",
+   "note": "",
+   "ex": [
+    {
+     "s": "이삿짐 트럭이 아침에 와요.",
+     "en": "The moving truck comes in the morning."
+    },
+    {
+     "s": "푸드 트럭에서 타코를 샀어요.",
+     "en": "I bought tacos from a food truck."
+    },
+    {
+     "s": "고속도로에 트럭이 많아요.",
+     "en": "There are lots of trucks on the highway."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이삿짐",
+     "트럭이",
+     "아침에",
+     "와요"
+    ],
+    "alt": [
+     [
+      "아침에",
+      "이삿짐",
+      "트럭이",
+      "와요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-159",
+   "t": {
+    "s": "자막"
+   },
+   "pos": "noun",
+   "en": "subtitles",
+   "note": "",
+   "ex": [
+    {
+     "s": "자막 없이 영화를 볼 수 있어요.",
+     "en": "I can watch movies without subtitles."
+    },
+    {
+     "s": "영어 자막 있어요?",
+     "en": "Are there English subtitles?"
+    },
+    {
+     "s": "자막 좀 켜 주세요.",
+     "en": "Please turn on the subtitles."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "자막",
+     "없이",
+     "영화를",
+     "볼",
+     "수",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "영화를",
+      "자막",
+      "없이",
+      "볼",
+      "수",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-163",
+   "t": {
+    "s": "여유"
+   },
+   "pos": "noun",
+   "en": "spare time or money; leeway",
+   "note": "",
+   "ex": [
+    {
+     "s": "요즘 일이 많아서 여유가 없어요.",
+     "en": "I've been so busy I have no time to breathe."
+    },
+    {
+     "s": "시간 여유 있게 출발하세요.",
+     "en": "Leave with plenty of time to spare."
+    },
+    {
+     "s": "이번 달은 돈에 여유가 좀 있어요.",
+     "en": "I have a little extra money this month."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "일이",
+     "많아서",
+     "여유가",
+     "없어요"
+    ],
+    "alt": [
+     [
+      "일이",
+      "많아서",
+      "요즘",
+      "여유가",
+      "없어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-173",
+   "t": {
+    "s": "결론"
+   },
+   "pos": "noun",
+   "en": "conclusion, bottom line",
+   "note": "",
+   "ex": [
+    {
+     "s": "결론부터 말할게요.",
+     "en": "I'll start with the bottom line."
+    },
+    {
+     "s": "아직 결론이 안 났어요.",
+     "en": "We haven't reached a conclusion yet."
+    },
+    {
+     "s": "결론은 내일 다시 만나는 거예요.",
+     "en": "The bottom line is we meet again tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "아직",
+     "결론이",
+     "안",
+     "났어요"
+    ],
+    "alt": [
+     [
+      "결론이",
+      "아직",
+      "안",
+      "났어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-174",
+   "t": {
+    "s": "치료하다"
+   },
+   "pos": "verb",
+   "en": "to treat (medically), heal",
+   "note": "",
+   "ex": [
+    {
+     "s": "치과에서 이를 치료했어요.",
+     "en": "I got my tooth treated at the dentist."
+    },
+    {
+     "s": "이 병은 쉽게 치료할 수 있어요.",
+     "en": "This illness can be treated easily."
+    },
+    {
+     "s": "수의사가 강아지 다리를 치료해 줬어요.",
+     "en": "The vet treated the puppy's leg."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "치과에서",
+     "이를",
+     "치료했어요"
+    ],
+    "alt": [
+     [
+      "이를",
+      "치과에서",
+      "치료했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-176",
+   "t": {
+    "s": "괴롭히다"
+   },
+   "pos": "verb",
+   "en": "to bully, pick on, bother",
+   "note": "",
+   "ex": [
+    {
+     "s": "형이 자꾸 저를 괴롭혀요.",
+     "en": "My older brother keeps picking on me."
+    },
+    {
+     "s": "모기가 밤새 저를 괴롭혔어요.",
+     "en": "Mosquitoes bothered me all night."
+    },
+    {
+     "s": "학교에서 친구를 괴롭히면 안 돼요.",
+     "en": "You must not bully classmates at school."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "형이",
+     "자꾸",
+     "저를",
+     "괴롭혀요"
+    ],
+    "alt": [
+     [
+      "형이",
+      "저를",
+      "자꾸",
+      "괴롭혀요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv07-182",
+   "t": {
+    "s": "강아지"
+   },
+   "pos": "noun",
+   "en": "puppy, (pet) dog",
+   "note": "Used for any pet dog, not only puppies.",
+   "ex": [
+    {
+     "s": "강아지 키워요?",
+     "en": "Do you have a dog?"
+    },
+    {
+     "s": "매일 아침 강아지하고 산책해요.",
+     "en": "I walk my dog every morning."
+    },
+    {
+     "s": "강아지가 너무 귀여워요!",
+     "en": "The puppy is so cute!"
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "매일",
+     "아침",
+     "강아지하고",
+     "산책해요"
+    ],
+    "alt": [
+     [
+      "강아지하고",
+      "매일",
+      "아침",
+      "산책해요"
      ]
     ]
    }
