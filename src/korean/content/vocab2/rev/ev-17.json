@@ -44,7 +44,24 @@
      "s": "이 가격에 배송비를 더해야 해요.",
      "en": "You have to add shipping to this price."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이에",
+     "삼을",
+     "더하면",
+     "오예요"
+    ],
+    "alt": [
+     [
+      "삼을",
+      "이에",
+      "더하면",
+      "오예요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv09-124",
@@ -57,7 +74,7 @@
    "ex": [
     {
      "s": "포크로 찔러 보면 익었는지 알 수 있어요.",
-     "en": "Poke it with a fork to see if it's cooked."
+     "en": "If you poke it with a fork, you can tell whether it's cooked."
     },
     {
      "s": "친구가 제 옆구리를 쿡 찔렀어요.",
@@ -113,7 +130,24 @@
      "s": "우리 팀장님은 정말 철저한 분이세요.",
      "en": "Our team leader is a really meticulous person."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "시험",
+     "준비를",
+     "철저하게",
+     "했어요"
+    ],
+    "alt": [
+     [
+      "철저하게",
+      "시험",
+      "준비를",
+      "했어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv09-128",
@@ -182,7 +216,1048 @@
      "s": "비자 승인까지 이 주 걸려요.",
      "en": "Visa approval takes two weeks."
     }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "드디어",
+     "휴가",
+     "승인을",
+     "받았어요"
+    ],
+    "alt": [
+     [
+      "휴가",
+      "승인을",
+      "드디어",
+      "받았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-101",
+   "t": {
+    "s": "배구"
+   },
+   "pos": "noun",
+   "en": "volleyball",
+   "note": "",
+   "ex": [
+    {
+     "s": "주말마다 친구들이랑 배구를 해요.",
+     "en": "I play volleyball with friends every weekend."
+    },
+    {
+     "s": "어젯밤에 배구 경기 봤어요?",
+     "en": "Did you watch the volleyball game last night?"
+    },
+    {
+     "s": "우리 딸이 학교에서 배구부에 들어갔어요.",
+     "en": "Our daughter joined the volleyball team at school."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말마다",
+     "친구들이랑",
+     "배구를",
+     "해요"
+    ],
+    "alt": [
+     [
+      "친구들이랑",
+      "주말마다",
+      "배구를",
+      "해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-105",
+   "t": {
+    "s": "감염"
+   },
+   "pos": "noun",
+   "en": "infection",
+   "note": "감염되다 = to get infected.",
+   "ex": [
+    {
+     "s": "상처가 감염되지 않게 조심하세요.",
+     "en": "Be careful so the cut doesn't get infected."
+    },
+    {
+     "s": "바이러스 감염을 막으려면 손을 자주 씻으세요.",
+     "en": "Wash your hands often to prevent viral infection."
+    },
+    {
+     "s": "컴퓨터가 바이러스에 감염됐어요.",
+     "en": "My computer got a virus."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "컴퓨터가",
+     "바이러스에",
+     "감염됐어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv09-106",
+   "t": {
+    "s": "증가"
+   },
+   "pos": "noun",
+   "en": "increase",
+   "note": "증가하다 = to increase.",
+   "ex": [
+    {
+     "s": "요즘 관광객이 많이 증가했어요.",
+     "en": "Tourists have increased a lot lately."
+    },
+    {
+     "s": "체중 증가 때문에 운동을 시작했어요.",
+     "en": "I started exercising because of weight gain."
+    },
+    {
+     "s": "주문이 갑자기 증가해서 바빠요.",
+     "en": "Orders suddenly went up, so we're busy."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "관광객이",
+     "많이",
+     "증가했어요"
+    ],
+    "alt": [
+     [
+      "관광객이",
+      "요즘",
+      "많이",
+      "증가했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-108",
+   "t": {
+    "s": "미술관"
+   },
+   "pos": "noun",
+   "en": "art museum, gallery",
+   "note": "",
+   "ex": [
+    {
+     "s": "주말에 미술관에 같이 갈래요?",
+     "en": "Want to go to the art museum together this weekend?"
+    },
+    {
+     "s": "미술관은 월요일에 문을 닫아요.",
+     "en": "The art museum is closed on Mondays."
+    },
+    {
+     "s": "파리에 가면 미술관부터 가 보고 싶어요.",
+     "en": "When I go to Paris, I want to see the art museums first."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말에",
+     "미술관에",
+     "같이",
+     "갈래요"
+    ],
+    "alt": [
+     [
+      "주말에",
+      "같이",
+      "미술관에",
+      "갈래요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-110",
+   "t": {
+    "s": "체력"
+   },
+   "pos": "noun",
+   "en": "stamina, physical strength",
+   "note": "",
+   "ex": [
+    {
+     "s": "요즘 체력이 많이 떨어졌어요.",
+     "en": "My stamina has really dropped lately."
+    },
+    {
+     "s": "등산하려면 체력이 좋아야 해요.",
+     "en": "You need good stamina to go hiking."
+    },
+    {
+     "s": "아이들이랑 놀려면 체력이 필요해요.",
+     "en": "You need energy to play with kids."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "체력이",
+     "많이",
+     "떨어졌어요"
+    ],
+    "alt": [
+     [
+      "체력이",
+      "요즘",
+      "많이",
+      "떨어졌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-116",
+   "t": {
+    "s": "예상"
+   },
+   "pos": "noun",
+   "en": "expectation, prediction",
+   "note": "예상하다 = to expect; 예상보다 = than expected.",
+   "ex": [
+    {
+     "s": "예상보다 사람이 훨씬 많네요.",
+     "en": "There are way more people than expected."
+    },
+    {
+     "s": "제 예상이 맞았어요.",
+     "en": "My guess was right."
+    },
+    {
+     "s": "내일 비가 올 거라고 예상했어요.",
+     "en": "I expected it would rain tomorrow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "예상보다",
+     "사람이",
+     "훨씬",
+     "많네요"
+    ],
+    "alt": [
+     [
+      "사람이",
+      "예상보다",
+      "훨씬",
+      "많네요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-118",
+   "t": {
+    "s": "얼음"
+   },
+   "pos": "noun",
+   "en": "ice",
+   "note": "",
+   "ex": [
+    {
+     "s": "얼음 좀 더 주세요.",
+     "en": "More ice, please."
+    },
+    {
+     "s": "길에 얼음이 있어서 미끄러워요.",
+     "en": "There's ice on the road, so it's slippery."
+    },
+    {
+     "s": "아이스커피에 얼음이 다 녹았어요.",
+     "en": "The ice in my iced coffee all melted."
+    }
    ]
+  },
+  {
+   "id": "kv09-136",
+   "t": {
+    "s": "신체"
+   },
+   "pos": "noun",
+   "en": "body (formal)",
+   "note": "몸 is the everyday word.",
+   "ex": [
+    {
+     "s": "운동선수들은 신체 조건이 좋아요.",
+     "en": "Athletes have great physiques."
+    },
+    {
+     "s": "운동은 신체 건강에 좋아요.",
+     "en": "Exercise is good for your physical health."
+    },
+    {
+     "s": "이 서류에 키 같은 신체 정보를 써 주세요.",
+     "en": "Please write body info like height on this form."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "운동선수들은",
+     "신체",
+     "조건이",
+     "좋아요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv09-145",
+   "t": {
+    "s": "모시다"
+   },
+   "pos": "verb",
+   "en": "to take, accompany, care for (elders)",
+   "note": "Honorific: used for elders, guests, bosses.",
+   "ex": [
+    {
+     "s": "주말에 부모님을 모시고 여행 가요.",
+     "en": "I'm taking my parents on a trip this weekend."
+    },
+    {
+     "s": "손님을 회의실로 모셔 주세요.",
+     "en": "Please show the guest to the meeting room."
+    },
+    {
+     "s": "할머니를 모시고 시장에 갔어요.",
+     "en": "I took Grandma to the market."
+    }
+   ]
+  },
+  {
+   "id": "kv09-146",
+   "t": {
+    "s": "드레스"
+   },
+   "pos": "noun",
+   "en": "dress (formal), gown",
+   "note": "An everyday dress is 원피스.",
+   "ex": [
+    {
+     "s": "웨딩드레스를 고르고 있어요.",
+     "en": "I'm choosing a wedding dress."
+    },
+    {
+     "s": "파티에 무슨 드레스 입을 거예요?",
+     "en": "What dress are you wearing to the party?"
+    },
+    {
+     "s": "이 드레스는 친구한테 빌린 거예요.",
+     "en": "I borrowed this dress from a friend."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "웨딩드레스를",
+     "고르고",
+     "있어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv09-177",
+   "t": {
+    "s": "점차"
+   },
+   "pos": "adverb",
+   "en": "gradually",
+   "note": "",
+   "ex": [
+    {
+     "s": "날씨가 점차 따뜻해지고 있어요.",
+     "en": "The weather is gradually getting warmer."
+    },
+    {
+     "s": "새 일에 점차 익숙해지고 있어요.",
+     "en": "I'm gradually getting used to the new job."
+    },
+    {
+     "s": "가게에 손님이 점차 늘고 있어요.",
+     "en": "The shop is gradually getting more customers."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "날씨가",
+     "점차",
+     "따뜻해지고",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "점차",
+      "날씨가",
+      "따뜻해지고",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-189",
+   "t": {
+    "s": "고생하다"
+   },
+   "pos": "verb",
+   "en": "to have a hard time; work hard",
+   "note": "고생하셨어요 = Thanks for your hard work.",
+   "ex": [
+    {
+     "s": "오늘 하루 고생하셨어요.",
+     "en": "Thanks for all your hard work today."
+    },
+    {
+     "s": "길을 잃어서 한참 고생했어요.",
+     "en": "I got lost and had a rough time for a while."
+    },
+    {
+     "s": "이사하느라 일주일 동안 고생했어요.",
+     "en": "I had a rough week moving."
+    }
+   ]
+  },
+  {
+   "id": "kv09-194",
+   "t": {
+    "s": "지시"
+   },
+   "pos": "noun",
+   "en": "instructions, orders",
+   "note": "지시하다 = to instruct.",
+   "ex": [
+    {
+     "s": "팀장님 지시대로 보고서를 고쳤어요.",
+     "en": "I revised the report as the team leader instructed."
+    },
+    {
+     "s": "지금 상사 지시를 기다리고 있어요.",
+     "en": "I'm waiting for my boss's instructions."
+    },
+    {
+     "s": "승무원의 지시에 따라 주세요.",
+     "en": "Please follow the flight attendants' instructions."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "팀장님",
+     "지시대로",
+     "보고서를",
+     "고쳤어요"
+    ],
+    "alt": [
+     [
+      "보고서를",
+      "팀장님",
+      "지시대로",
+      "고쳤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-195",
+   "t": {
+    "s": "측정하다"
+   },
+   "pos": "verb",
+   "en": "to measure",
+   "note": "재다 is the everyday word.",
+   "ex": [
+    {
+     "s": "집에서 인터넷 속도를 측정해 봤어요.",
+     "en": "I tested my internet speed at home."
+    },
+    {
+     "s": "이 앱으로 걸음 수를 측정해요.",
+     "en": "I track my steps with this app."
+    },
+    {
+     "s": "공항에서 체온을 측정했어요.",
+     "en": "They took our temperature at the airport."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "집에서",
+     "인터넷",
+     "속도를",
+     "측정해",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "인터넷",
+      "속도를",
+      "집에서",
+      "측정해",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-123",
+   "t": {
+    "s": "수백"
+   },
+   "pos": "numeral",
+   "en": "hundreds",
+   "note": "",
+   "ex": [
+    {
+     "s": "콘서트에 수백 명이 왔어요.",
+     "en": "Hundreds of people came to the concert."
+    },
+    {
+     "s": "그 얘기는 수백 번 들었어요.",
+     "en": "I've heard that story hundreds of times."
+    },
+    {
+     "s": "여행 가서 사진을 수백 장 찍었어요.",
+     "en": "I took hundreds of photos on the trip."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "콘서트에",
+     "수백",
+     "명이",
+     "왔어요"
+    ],
+    "alt": [
+     [
+      "수백",
+      "명이",
+      "콘서트에",
+      "왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-138",
+   "t": {
+    "s": "다이어트"
+   },
+   "pos": "noun",
+   "en": "diet (to lose weight)",
+   "note": "다이어트하다 = to be on a diet.",
+   "ex": [
+    {
+     "s": "저 요즘 다이어트 중이에요.",
+     "en": "I'm on a diet these days."
+    },
+    {
+     "s": "다이어트 때문에 저녁은 샐러드만 먹어요.",
+     "en": "Because of my diet, I only eat salad for dinner."
+    },
+    {
+     "s": "다이어트는 내일부터 할게요!",
+     "en": "I'll start my diet tomorrow!"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "저",
+     "요즘",
+     "다이어트",
+     "중이에요"
+    ],
+    "alt": [
+     [
+      "요즘",
+      "저",
+      "다이어트",
+      "중이에요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-139",
+   "t": {
+    "s": "외모"
+   },
+   "pos": "noun",
+   "en": "looks, appearance",
+   "note": "",
+   "ex": [
+    {
+     "s": "외모보다 성격이 더 중요해요.",
+     "en": "Personality matters more than looks."
+    },
+    {
+     "s": "저는 형이랑 외모가 많이 닮았어요.",
+     "en": "I look a lot like my older brother."
+    },
+    {
+     "s": "면접 때는 외모에도 신경 써야 해요.",
+     "en": "You should pay attention to your appearance at interviews too."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "외모보다",
+     "성격이",
+     "더",
+     "중요해요"
+    ],
+    "alt": [
+     [
+      "성격이",
+      "외모보다",
+      "더",
+      "중요해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-140",
+   "t": {
+    "s": "부수다"
+   },
+   "pos": "verb",
+   "en": "to break, smash",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이가 장난감을 또 부쉈어요.",
+     "en": "The kid broke the toy again."
+    },
+    {
+     "s": "벽을 부수고 거실을 넓혔어요.",
+     "en": "We knocked down a wall and made the living room bigger."
+    },
+    {
+     "s": "얼음을 부숴서 음료에 넣어요.",
+     "en": "Crush the ice and put it in the drink."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이가",
+     "장난감을",
+     "또",
+     "부쉈어요"
+    ],
+    "alt": [
+     [
+      "아이가",
+      "또",
+      "장난감을",
+      "부쉈어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-143",
+   "t": {
+    "s": "미루다"
+   },
+   "pos": "verb",
+   "en": "to put off, postpone",
+   "note": "",
+   "ex": [
+    {
+     "s": "숙제를 자꾸 미루면 안 돼요.",
+     "en": "You shouldn't keep putting off your homework."
+    },
+    {
+     "s": "회의를 다음 주로 미뤘어요.",
+     "en": "We postponed the meeting to next week."
+    },
+    {
+     "s": "비 때문에 소풍을 미뤘어요.",
+     "en": "We put off the picnic because of the rain."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "숙제를",
+     "자꾸",
+     "미루면",
+     "안",
+     "돼요"
+    ],
+    "alt": [
+     [
+      "자꾸",
+      "숙제를",
+      "미루면",
+      "안",
+      "돼요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-147",
+   "t": {
+    "s": "빚"
+   },
+   "pos": "noun",
+   "en": "debt",
+   "note": "빚지다 = to owe; 빚을 갚다 = to repay.",
+   "ex": [
+    {
+     "s": "드디어 빚을 다 갚았어요!",
+     "en": "I finally paid off all my debt!"
+    },
+    {
+     "s": "친구한테 빚을 지고 싶지 않아요.",
+     "en": "I don't want to owe my friend money."
+    },
+    {
+     "s": "도와줘서 고마워요. 제가 빚졌어요.",
+     "en": "Thanks for helping. I owe you one."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "드디어",
+     "빚을",
+     "다",
+     "갚았어요"
+    ],
+    "alt": [
+     [
+      "빚을",
+      "드디어",
+      "다",
+      "갚았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-149",
+   "t": {
+    "s": "가난하다"
+   },
+   "pos": "adjective",
+   "en": "poor",
+   "note": "",
+   "ex": [
+    {
+     "s": "어렸을 때 우리 집은 가난했어요.",
+     "en": "My family was poor when I was little."
+    },
+    {
+     "s": "가난한 학생이라 돈을 아껴 써요.",
+     "en": "I'm a broke student, so I spend carefully."
+    },
+    {
+     "s": "그 영화는 가난한 가족 이야기예요.",
+     "en": "That movie is about a poor family."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "어렸을",
+     "때",
+     "우리",
+     "집은",
+     "가난했어요"
+    ],
+    "alt": [
+     [
+      "우리",
+      "집은",
+      "어렸을",
+      "때",
+      "가난했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-155",
+   "t": {
+    "s": "꾸준히"
+   },
+   "pos": "adverb",
+   "en": "steadily, consistently",
+   "note": "",
+   "ex": [
+    {
+     "s": "매일 꾸준히 운동하고 있어요.",
+     "en": "I'm working out consistently every day."
+    },
+    {
+     "s": "한국어를 꾸준히 공부하면 늘어요.",
+     "en": "If you study Korean steadily, you'll improve."
+    },
+    {
+     "s": "그 가게는 손님이 꾸준히 와요.",
+     "en": "That shop gets customers steadily."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "매일",
+     "꾸준히",
+     "운동하고",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "꾸준히",
+      "매일",
+      "운동하고",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-163",
+   "t": {
+    "s": "왠지"
+   },
+   "pos": "adverb",
+   "en": "somehow, for some reason",
+   "note": "Spelled 왠지, not 웬지.",
+   "ex": [
+    {
+     "s": "왠지 오늘은 일찍 자고 싶어요.",
+     "en": "For some reason I want to go to bed early tonight."
+    },
+    {
+     "s": "왠지 비가 올 것 같아요.",
+     "en": "Somehow it feels like it's going to rain."
+    },
+    {
+     "s": "그 사람은 왠지 낯이 익어요.",
+     "en": "That person looks familiar somehow."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "왠지",
+     "오늘은",
+     "일찍",
+     "자고",
+     "싶어요"
+    ],
+    "alt": [
+     [
+      "오늘은",
+      "왠지",
+      "일찍",
+      "자고",
+      "싶어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-165",
+   "t": {
+    "s": "늙다"
+   },
+   "pos": "verb",
+   "en": "to grow old, age",
+   "note": "",
+   "ex": [
+    {
+     "s": "우리 강아지도 이제 많이 늙었어요.",
+     "en": "Our dog has gotten pretty old now."
+    },
+    {
+     "s": "늙어서도 건강하게 살고 싶어요.",
+     "en": "I want to stay healthy even when I'm old."
+    },
+    {
+     "s": "스트레스 받으면 빨리 늙어요.",
+     "en": "Stress makes you age fast."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "우리",
+     "강아지도",
+     "이제",
+     "많이",
+     "늙었어요"
+    ],
+    "alt": [
+     [
+      "이제",
+      "우리",
+      "강아지도",
+      "많이",
+      "늙었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-167",
+   "t": {
+    "s": "하드"
+   },
+   "pos": "noun",
+   "en": "hard drive; ice pop",
+   "note": "하드 = 하드디스크; also a bar-style ice pop.",
+   "ex": [
+    {
+     "s": "외장 하드에 사진을 백업했어요.",
+     "en": "I backed up my photos to an external hard drive."
+    },
+    {
+     "s": "회사 컴퓨터 하드가 고장 났어요.",
+     "en": "My work computer's hard drive died."
+    },
+    {
+     "s": "더워서 편의점에서 하드 하나 사 먹었어요.",
+     "en": "It was hot, so I bought an ice pop at the convenience store."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "외장",
+     "하드에",
+     "사진을",
+     "백업했어요"
+    ],
+    "alt": [
+     [
+      "사진을",
+      "외장",
+      "하드에",
+      "백업했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-174",
+   "t": {
+    "s": "닭"
+   },
+   "pos": "noun",
+   "en": "chicken (the bird)",
+   "note": "As food: 닭고기; fried chicken is 치킨.",
+   "ex": [
+    {
+     "s": "할머니가 시골에서 닭을 키우세요.",
+     "en": "Grandma raises chickens in the countryside."
+    },
+    {
+     "s": "오늘 저녁은 닭볶음탕이에요.",
+     "en": "Tonight's dinner is spicy braised chicken."
+    },
+    {
+     "s": "새벽에 닭이 울어서 깼어요.",
+     "en": "I woke up at dawn to a rooster crowing."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "할머니가",
+     "시골에서",
+     "닭을",
+     "키우세요"
+    ],
+    "alt": [
+     [
+      "시골에서",
+      "할머니가",
+      "닭을",
+      "키우세요"
+     ],
+     [
+      "할머니가",
+      "닭을",
+      "시골에서",
+      "키우세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv09-179",
+   "t": {
+    "s": "접다"
+   },
+   "pos": "verb",
+   "en": "to fold",
+   "note": "",
+   "ex": [
+    {
+     "s": "빨래 좀 같이 접어 줄래요?",
+     "en": "Can you help me fold the laundry?"
+    },
+    {
+     "s": "우산을 접고 들어오세요.",
+     "en": "Please close your umbrella before coming in."
+    },
+    {
+     "s": "아이랑 종이비행기를 접었어요.",
+     "en": "I folded paper airplanes with my kid."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "빨래",
+     "좀",
+     "같이",
+     "접어",
+     "줄래요"
+    ],
+    "alt": [
+     [
+      "같이",
+      "빨래",
+      "좀",
+      "접어",
+      "줄래요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],
