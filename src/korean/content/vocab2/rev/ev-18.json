@@ -21,7 +21,24 @@
      "s": "사진에 제 그림자가 나왔어요.",
      "en": "My shadow showed up in the photo."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "저녁이",
+     "되면",
+     "그림자가",
+     "길어져요"
+    ],
+    "alt": [
+     [
+      "그림자가",
+      "저녁이",
+      "되면",
+      "길어져요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-2",
@@ -367,6 +384,134 @@
      "en": "That issue has already been taken care of."
     }
    ]
+  },
+  {
+   "id": "kv10-25",
+   "t": {
+    "s": "국어"
+   },
+   "pos": "noun",
+   "en": "Korean (school subject); national language",
+   "note": "In school, 국어 = Korean class. The language in general is 한국어.",
+   "ex": [
+    {
+     "s": "저는 학교 다닐 때 국어를 제일 좋아했어요.",
+     "en": "Korean was my favorite class in school."
+    },
+    {
+     "s": "내일 국어 시험이 있어요.",
+     "en": "I have a Korean test tomorrow."
+    },
+    {
+     "s": "동생이 국어 숙제를 하고 있어요.",
+     "en": "My younger brother is doing his Korean homework."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "저는",
+     "학교",
+     "다닐",
+     "때",
+     "국어를",
+     "제일",
+     "좋아했어요"
+    ],
+    "alt": [
+     [
+      "학교",
+      "다닐",
+      "때",
+      "저는",
+      "국어를",
+      "제일",
+      "좋아했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-3",
+   "t": {
+    "s": "상사"
+   },
+   "pos": "noun",
+   "en": "boss, superior (at work)",
+   "note": "A direct boss is usually addressed by title, e.g., 팀장님.",
+   "ex": [
+    {
+     "s": "상사가 오늘 기분이 안 좋아요.",
+     "en": "My boss is in a bad mood today."
+    },
+    {
+     "s": "상사한테 휴가 신청했어요.",
+     "en": "I asked my boss for time off."
+    },
+    {
+     "s": "새 상사는 어떤 분이에요?",
+     "en": "What's your new boss like?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "상사가",
+     "오늘",
+     "기분이",
+     "안",
+     "좋아요"
+    ],
+    "alt": [
+     [
+      "오늘",
+      "상사가",
+      "기분이",
+      "안",
+      "좋아요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-43",
+   "t": {
+    "s": "비교되다"
+   },
+   "pos": "verb",
+   "en": "to be compared; to stand out by contrast",
+   "note": "",
+   "ex": [
+    {
+     "s": "언니랑 자꾸 비교돼서 싫어요.",
+     "en": "I hate always being compared to my older sister."
+    },
+    {
+     "s": "두 폰을 같이 보니까 확 비교돼요.",
+     "en": "Side by side, the difference between the two phones really shows."
+    },
+    {
+     "s": "옆 사람 그림이랑 비교돼서 창피했어요.",
+     "en": "Next to my neighbor's drawing, mine was embarrassing."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "언니랑",
+     "자꾸",
+     "비교돼서",
+     "싫어요"
+    ],
+    "alt": [
+     [
+      "자꾸",
+      "언니랑",
+      "비교돼서",
+      "싫어요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

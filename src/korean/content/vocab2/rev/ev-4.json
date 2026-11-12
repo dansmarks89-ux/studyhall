@@ -21,7 +21,24 @@
      "s": "이 강은 수영하기에 위험해요.",
      "en": "This river is dangerous for swimming."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "저녁마다",
+     "강을",
+     "따라",
+     "산책해요"
+    ],
+    "alt": [
+     [
+      "강을",
+      "따라",
+      "저녁마다",
+      "산책해요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv03-41",
@@ -113,7 +130,22 @@
      "s": "얘들아, 너희 숙제 다 했어?",
      "en": "Kids, did you all finish your homework?"
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "너희",
+     "언제",
+     "도착해"
+    ],
+    "alt": [
+     [
+      "언제",
+      "너희",
+      "도착해"
+     ]
+    ]
+   }
   },
   {
    "id": "kv03-81",
@@ -136,7 +168,28 @@
      "s": "언어를 배울 때는 연습이 중요해요.",
      "en": "Practice is important when learning a language."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "언어를",
+     "몇",
+     "개",
+     "할",
+     "수",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "몇",
+      "개",
+      "언어를",
+      "할",
+      "수",
+      "있어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv03-63",
@@ -175,14 +228,24 @@
      "en": "Help! Save me!"
     },
     {
-     "s": "의사 선생님이 우리 아빠를 살리셨어요.",
-     "en": "The doctor saved my dad's life."
+     "s": "구조대가 물에 빠진 아이를 살렸어요.",
+     "en": "Rescuers saved a child who had fallen into the water."
     },
     {
      "s": "죽어 가던 화분을 살렸어요.",
      "en": "I brought my dying plant back to life."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "죽어",
+     "가던",
+     "화분을",
+     "살렸어요"
+    ],
+    "alt": []
+   }
   },
   {
    "id": "kv03-39",
@@ -229,6 +292,793 @@
      "en": "We've been married for five years."
     }
    ]
+  },
+  {
+   "id": "kv03-30",
+   "t": {
+    "s": "반응"
+   },
+   "pos": "noun",
+   "en": "reaction, response",
+   "note": "",
+   "ex": [
+    {
+     "s": "친구들 반응이 어땠어요?",
+     "en": "How did your friends react?"
+    },
+    {
+     "s": "제 농담에 아무도 반응이 없었어요.",
+     "en": "Nobody reacted to my joke."
+    },
+    {
+     "s": "새 메뉴에 손님들 반응이 좋아요.",
+     "en": "Customers are reacting well to the new menu."
+    }
+   ]
+  },
+  {
+   "id": "kv03-8",
+   "t": {
+    "s": "여전히"
+   },
+   "pos": "adverb",
+   "en": "still, as before",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 식당은 여전히 맛있어요.",
+     "en": "That restaurant is still delicious."
+    },
+    {
+     "s": "지수는 여전히 바빠요?",
+     "en": "Is Jisoo still busy?"
+    },
+    {
+     "s": "약을 먹었는데 여전히 머리가 아파요.",
+     "en": "I took medicine, but my head still hurts."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "식당은",
+     "여전히",
+     "맛있어요"
+    ],
+    "alt": [
+     [
+      "여전히",
+      "그",
+      "식당은",
+      "맛있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-19",
+   "t": {
+    "s": "스스로"
+   },
+   "pos": "adverb",
+   "en": "by oneself, on one's own",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이가 스스로 옷을 입었어요.",
+     "en": "The child got dressed on her own."
+    },
+    {
+     "s": "스스로 결정하세요.",
+     "en": "Decide for yourself."
+    },
+    {
+     "s": "숙제는 스스로 해야 해요.",
+     "en": "You have to do your homework on your own."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이가",
+     "스스로",
+     "옷을",
+     "입었어요"
+    ],
+    "alt": [
+     [
+      "아이가",
+      "옷을",
+      "스스로",
+      "입었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-36",
+   "t": {
+    "s": "글"
+   },
+   "pos": "noun",
+   "en": "writing, text, post",
+   "note": "",
+   "ex": [
+    {
+     "s": "블로그에 글을 올렸어요.",
+     "en": "I put up a post on my blog."
+    },
+    {
+     "s": "글을 잘 쓰시네요.",
+     "en": "You write really well."
+    },
+    {
+     "s": "이 글 좀 읽어 보세요.",
+     "en": "Take a look at this piece."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "블로그에",
+     "글을",
+     "올렸어요"
+    ],
+    "alt": [
+     [
+      "글을",
+      "블로그에",
+      "올렸어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-38",
+   "t": {
+    "s": "옮기다"
+   },
+   "pos": "verb",
+   "en": "to move (something); to transfer",
+   "note": "",
+   "ex": [
+    {
+     "s": "이 상자 좀 같이 옮겨 줄래요?",
+     "en": "Can you help me move this box?"
+    },
+    {
+     "s": "다음 달에 회사를 옮겨요.",
+     "en": "I'm changing jobs next month."
+    },
+    {
+     "s": "자리를 창가로 옮겨도 돼요?",
+     "en": "Can we move to a seat by the window?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이",
+     "상자",
+     "좀",
+     "같이",
+     "옮겨",
+     "줄래요"
+    ],
+    "alt": [
+     [
+      "이",
+      "상자",
+      "같이",
+      "좀",
+      "옮겨",
+      "줄래요"
+     ],
+     [
+      "같이",
+      "이",
+      "상자",
+      "좀",
+      "옮겨",
+      "줄래요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-50",
+   "t": {
+    "s": "표현하다"
+   },
+   "pos": "verb",
+   "en": "to express",
+   "note": "",
+   "ex": [
+    {
+     "s": "한국어로 어떻게 표현해요?",
+     "en": "How do you express that in Korean?"
+    },
+    {
+     "s": "마음을 잘 표현하는 게 중요해요.",
+     "en": "It's important to express your feelings well."
+    },
+    {
+     "s": "고마운 마음을 선물로 표현했어요.",
+     "en": "I showed my gratitude with a gift."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "한국어로",
+     "어떻게",
+     "표현해요"
+    ],
+    "alt": [
+     [
+      "어떻게",
+      "한국어로",
+      "표현해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-59",
+   "t": {
+    "s": "답"
+   },
+   "pos": "noun",
+   "en": "answer; reply",
+   "note": "",
+   "ex": [
+    {
+     "s": "답 알아요?",
+     "en": "Do you know the answer?"
+    },
+    {
+     "s": "문자 보냈는데 아직 답이 없어요.",
+     "en": "I texted, but there's no reply yet."
+    },
+    {
+     "s": "물어봤는데 답을 안 해요.",
+     "en": "I asked, but he won't answer."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "문자",
+     "보냈는데",
+     "아직",
+     "답이",
+     "없어요"
+    ],
+    "alt": [
+     [
+      "문자",
+      "보냈는데",
+      "답이",
+      "아직",
+      "없어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-60",
+   "t": {
+    "s": "키우다"
+   },
+   "pos": "verb",
+   "en": "to raise, grow; to keep (a pet)",
+   "note": "",
+   "ex": [
+    {
+     "s": "강아지 키워요?",
+     "en": "Do you have a dog?"
+    },
+    {
+     "s": "베란다에서 토마토를 키워요.",
+     "en": "I grow tomatoes on the balcony."
+    },
+    {
+     "s": "혼자 아이 둘을 키웠어요.",
+     "en": "She raised two kids on her own."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "베란다에서",
+     "토마토를",
+     "키워요"
+    ],
+    "alt": [
+     [
+      "토마토를",
+      "베란다에서",
+      "키워요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-65",
+   "t": {
+    "s": "벌다"
+   },
+   "pos": "verb",
+   "en": "to earn (money)",
+   "note": "ㄹ drops: 버세요, 번 돈.",
+   "ex": [
+    {
+     "s": "아르바이트로 돈을 벌어요.",
+     "en": "I earn money with a part-time job."
+    },
+    {
+     "s": "돈 많이 벌고 싶어요.",
+     "en": "I want to make a lot of money."
+    },
+    {
+     "s": "여행 갈 돈을 벌고 있어요.",
+     "en": "I'm earning money for a trip."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아르바이트로",
+     "돈을",
+     "벌어요"
+    ],
+    "alt": [
+     [
+      "돈을",
+      "아르바이트로",
+      "벌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-83",
+   "t": {
+    "s": "포기하다"
+   },
+   "pos": "verb",
+   "en": "to give up",
+   "note": "",
+   "ex": [
+    {
+     "s": "포기하지 마세요!",
+     "en": "Don't give up!"
+    },
+    {
+     "s": "다이어트는 벌써 포기했어요.",
+     "en": "I already gave up on my diet."
+    },
+    {
+     "s": "비가 와서 캠핑을 포기했어요.",
+     "en": "It rained, so we gave up on camping."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "다이어트는",
+     "벌써",
+     "포기했어요"
+    ],
+    "alt": [
+     [
+      "벌써",
+      "다이어트는",
+      "포기했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-84",
+   "t": {
+    "s": "붙이다"
+   },
+   "pos": "verb",
+   "en": "to stick, attach",
+   "note": "",
+   "ex": [
+    {
+     "s": "냉장고에 메모를 붙였어요.",
+     "en": "I stuck a note on the fridge."
+    },
+    {
+     "s": "상처에 밴드를 붙이세요.",
+     "en": "Put a Band-Aid on the cut."
+    },
+    {
+     "s": "편지에 우표를 붙여야 해요.",
+     "en": "You need to put a stamp on the letter."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "냉장고에",
+     "메모를",
+     "붙였어요"
+    ],
+    "alt": [
+     [
+      "메모를",
+      "냉장고에",
+      "붙였어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-85",
+   "t": {
+    "s": "앱"
+   },
+   "pos": "noun",
+   "en": "app",
+   "note": "",
+   "ex": [
+    {
+     "s": "이 앱으로 택시를 불러요.",
+     "en": "I call taxis with this app."
+    },
+    {
+     "s": "그 앱 깔았어요?",
+     "en": "Did you install that app?"
+    },
+    {
+     "s": "은행 앱이 또 안 열려요.",
+     "en": "The bank app won't open again."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이",
+     "앱으로",
+     "택시를",
+     "불러요"
+    ],
+    "alt": [
+     [
+      "택시를",
+      "이",
+      "앱으로",
+      "불러요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-86",
+   "t": {
+    "s": "목"
+   },
+   "pos": "noun",
+   "en": "neck; throat",
+   "note": "목이 마르다 = to be thirsty.",
+   "ex": [
+    {
+     "s": "목이 아파요.",
+     "en": "My throat hurts."
+    },
+    {
+     "s": "목이 말라요.",
+     "en": "I'm thirsty."
+    },
+    {
+     "s": "컴퓨터를 오래 해서 목이 뻐근해요.",
+     "en": "My neck is stiff from being on the computer so long."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "컴퓨터를",
+     "오래",
+     "해서",
+     "목이",
+     "뻐근해요"
+    ],
+    "alt": [
+     [
+      "오래",
+      "컴퓨터를",
+      "해서",
+      "목이",
+      "뻐근해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-87",
+   "t": {
+    "s": "팔다"
+   },
+   "pos": "verb",
+   "en": "to sell",
+   "note": "ㄹ drops: 파세요, 파는.",
+   "ex": [
+    {
+     "s": "여기 우산 팔아요?",
+     "en": "Do you sell umbrellas here?"
+    },
+    {
+     "s": "타던 차를 팔았어요.",
+     "en": "I sold the car I used to drive."
+    },
+    {
+     "s": "이 표는 온라인으로만 팔아요.",
+     "en": "These tickets are only sold online."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "여기",
+     "우산",
+     "팔아요"
+    ],
+    "alt": [
+     [
+      "우산",
+      "여기",
+      "팔아요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-88",
+   "t": {
+    "s": "열심히"
+   },
+   "pos": "adverb",
+   "en": "hard, diligently",
+   "note": "",
+   "ex": [
+    {
+     "s": "열심히 공부하세요.",
+     "en": "Study hard."
+    },
+    {
+     "s": "요즘 운동 열심히 하고 있어요.",
+     "en": "I've been working out hard these days."
+    },
+    {
+     "s": "다들 열심히 일했어요.",
+     "en": "Everyone worked hard."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "요즘",
+     "운동",
+     "열심히",
+     "하고",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "요즘",
+      "열심히",
+      "운동",
+      "하고",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-89",
+   "t": {
+    "s": "수준"
+   },
+   "pos": "noun",
+   "en": "level, standard",
+   "note": "",
+   "ex": [
+    {
+     "s": "제 한국어 수준은 아직 초급이에요.",
+     "en": "My Korean is still at a beginner level."
+    },
+    {
+     "s": "이 식당은 음식 수준이 높아요.",
+     "en": "The food at this restaurant is top quality."
+    },
+    {
+     "s": "이 수업은 수준이 저한테 좀 높아요.",
+     "en": "This class is a bit too advanced for me."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "제",
+     "한국어",
+     "수준은",
+     "아직",
+     "초급이에요"
+    ],
+    "alt": [
+     [
+      "아직",
+      "제",
+      "한국어",
+      "수준은",
+      "초급이에요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-94",
+   "t": {
+    "s": "참고"
+   },
+   "pos": "noun",
+   "en": "reference",
+   "note": "참고로 = for reference, just so you know.",
+   "ex": [
+    {
+     "s": "참고로 내일은 가게가 쉬어요.",
+     "en": "Just so you know, the store is closed tomorrow."
+    },
+    {
+     "s": "이 자료 참고하세요.",
+     "en": "Please use this material for reference."
+    },
+    {
+     "s": "참고로 저는 고기를 안 먹어요.",
+     "en": "Just so you know, I don't eat meat."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "참고로",
+     "내일은",
+     "가게가",
+     "쉬어요"
+    ],
+    "alt": [
+     [
+      "참고로",
+      "가게가",
+      "내일은",
+      "쉬어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-97",
+   "t": {
+    "s": "유지하다"
+   },
+   "pos": "verb",
+   "en": "to maintain, keep",
+   "note": "",
+   "ex": [
+    {
+     "s": "건강을 유지하려고 매일 걸어요.",
+     "en": "I walk every day to stay healthy."
+    },
+    {
+     "s": "멀리 살아도 좋은 관계를 유지하고 있어요.",
+     "en": "We keep a good relationship even though we live far apart."
+    },
+    {
+     "s": "요즘 몸무게를 유지하고 있어요.",
+     "en": "I'm maintaining my weight these days."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "건강을",
+     "유지하려고",
+     "매일",
+     "걸어요"
+    ],
+    "alt": [
+     [
+      "매일",
+      "건강을",
+      "유지하려고",
+      "걸어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-98",
+   "t": {
+    "s": "참가하다"
+   },
+   "pos": "verb",
+   "en": "to take part, participate",
+   "note": "",
+   "ex": [
+    {
+     "s": "작년에 마라톤에 참가했어요.",
+     "en": "I ran in a marathon last year."
+    },
+    {
+     "s": "이 행사는 누구나 참가할 수 있어요.",
+     "en": "Anyone can take part in this event."
+    },
+    {
+     "s": "요리 대회에 참가해 봤어요?",
+     "en": "Have you ever entered a cooking contest?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "작년에",
+     "마라톤에",
+     "참가했어요"
+    ],
+    "alt": [
+     [
+      "마라톤에",
+      "작년에",
+      "참가했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv03-99",
+   "t": {
+    "s": "이동하다"
+   },
+   "pos": "verb",
+   "en": "to move, go (to another place)",
+   "note": "",
+   "ex": [
+    {
+     "s": "이제 다음 장소로 이동할게요.",
+     "en": "We'll move on to the next place now."
+    },
+    {
+     "s": "지하철로 이동하는 게 빨라요.",
+     "en": "Getting around by subway is faster."
+    },
+    {
+     "s": "회의실로 이동해 주세요.",
+     "en": "Please move to the meeting room."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이제",
+     "다음",
+     "장소로",
+     "이동할게요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "장소로",
+      "이제",
+      "이동할게요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

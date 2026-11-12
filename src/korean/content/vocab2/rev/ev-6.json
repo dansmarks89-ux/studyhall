@@ -113,7 +113,22 @@
      "s": "요즘은 편지 대신 문자를 보내요.",
      "en": "These days people text instead of writing letters."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "할머니한테",
+     "편지를",
+     "썼어요"
+    ],
+    "alt": [
+     [
+      "편지를",
+      "할머니한테",
+      "썼어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv04-66",
@@ -159,7 +174,26 @@
      "s": "여기 월세가 평균보다 비싸요.",
      "en": "Rent here is higher than average."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "하루에",
+     "평균",
+     "몇",
+     "시간",
+     "자요"
+    ],
+    "alt": [
+     [
+      "평균",
+      "하루에",
+      "몇",
+      "시간",
+      "자요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv04-72",
@@ -228,7 +262,24 @@
      "s": "아침에 눈을 뜨니까 열 시였어요.",
      "en": "When I opened my eyes in the morning, it was ten."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "해가",
+     "몇",
+     "시에",
+     "떠요"
+    ],
+    "alt": [
+     [
+      "몇",
+      "시에",
+      "해가",
+      "떠요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv04-67",
@@ -298,6 +349,913 @@
      "en": "I looked up restaurant rankings online."
     }
    ]
+  },
+  {
+   "id": "kv04-16",
+   "t": {
+    "s": "결국"
+   },
+   "pos": "adverb",
+   "en": "in the end, eventually",
+   "note": "",
+   "ex": [
+    {
+     "s": "결국 비가 와서 집에 있었어요.",
+     "en": "It ended up raining, so I stayed home."
+    },
+    {
+     "s": "오래 고민하다가 결국 그 신발을 샀어요.",
+     "en": "I thought about it for a long time and ended up buying those shoes."
+    },
+    {
+     "s": "결국 시험에 합격했어요!",
+     "en": "In the end, I passed the exam!"
+    }
+   ]
+  },
+  {
+   "id": "kv04-85",
+   "t": {
+    "s": "정상"
+   },
+   "pos": "noun",
+   "en": "normal; summit (of a mountain)",
+   "note": "",
+   "ex": [
+    {
+     "s": "인터넷이 이제 정상으로 돌아왔어요.",
+     "en": "The internet is back to normal now."
+    },
+    {
+     "s": "오늘 지하철은 정상 운행해요.",
+     "en": "The subway is running normally today."
+    },
+    {
+     "s": "산 정상까지 두 시간 걸렸어요.",
+     "en": "It took two hours to reach the top of the mountain."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "산",
+     "정상까지",
+     "두",
+     "시간",
+     "걸렸어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv04-20",
+   "t": {
+    "s": "성공하다"
+   },
+   "pos": "verb",
+   "en": "to succeed",
+   "note": "",
+   "ex": [
+    {
+     "s": "드디어 다이어트에 성공했어요!",
+     "en": "My diet finally worked!"
+    },
+    {
+     "s": "형은 사업에 성공했어요.",
+     "en": "My older brother succeeded in business."
+    },
+    {
+     "s": "케빈 씨는 꼭 성공할 거예요.",
+     "en": "Kevin, you're definitely going to succeed."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "드디어",
+     "다이어트에",
+     "성공했어요"
+    ],
+    "alt": [
+     [
+      "다이어트에",
+      "드디어",
+      "성공했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-26",
+   "t": {
+    "s": "오래"
+   },
+   "pos": "adverb",
+   "en": "for a long time",
+   "note": "",
+   "ex": [
+    {
+     "s": "오래 기다렸어요?",
+     "en": "Did you wait long?"
+    },
+    {
+     "s": "한국에서 얼마나 오래 살았어요?",
+     "en": "How long have you lived in Korea?"
+    },
+    {
+     "s": "이 휴대폰은 배터리가 오래 가요.",
+     "en": "This phone's battery lasts a long time."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "한국에서",
+     "얼마나",
+     "오래",
+     "살았어요"
+    ],
+    "alt": [
+     [
+      "얼마나",
+      "오래",
+      "한국에서",
+      "살았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-30",
+   "t": {
+    "s": "찾아오다"
+   },
+   "pos": "verb",
+   "en": "to come to see, come by",
+   "note": "",
+   "ex": [
+    {
+     "s": "친구가 갑자기 집에 찾아왔어요.",
+     "en": "A friend suddenly came by my place."
+    },
+    {
+     "s": "모르는 거 있으면 언제든지 찾아오세요.",
+     "en": "If you have any questions, come see me anytime."
+    },
+    {
+     "s": "손님이 많이 찾아와서 바빴어요.",
+     "en": "Lots of customers came in, so it was busy."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "친구가",
+     "갑자기",
+     "집에",
+     "찾아왔어요"
+    ],
+    "alt": [
+     [
+      "갑자기",
+      "친구가",
+      "집에",
+      "찾아왔어요"
+     ],
+     [
+      "친구가",
+      "집에",
+      "갑자기",
+      "찾아왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-31",
+   "t": {
+    "s": "파일"
+   },
+   "pos": "noun",
+   "en": "file (computer)",
+   "note": "",
+   "ex": [
+    {
+     "s": "그 파일 이메일로 보내 주세요.",
+     "en": "Please email me that file."
+    },
+    {
+     "s": "파일이 안 열려요.",
+     "en": "The file won't open."
+    },
+    {
+     "s": "사진 파일이 너무 커요.",
+     "en": "The photo file is too big."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "파일",
+     "이메일로",
+     "보내",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "이메일로",
+      "그",
+      "파일",
+      "보내",
+      "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-38",
+   "t": {
+    "s": "터지다"
+   },
+   "pos": "verb",
+   "en": "to burst, pop; (signal) to work",
+   "note": "Casual: 와이파이가 안 터져요 = the Wi-Fi doesn't work.",
+   "ex": [
+    {
+     "s": "풍선이 갑자기 터졌어요.",
+     "en": "The balloon suddenly popped."
+    },
+    {
+     "s": "자전거 타이어가 터졌어요.",
+     "en": "My bike tire burst."
+    },
+    {
+     "s": "여기는 와이파이가 잘 안 터져요.",
+     "en": "The Wi-Fi doesn't work well here."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "풍선이",
+     "갑자기",
+     "터졌어요"
+    ],
+    "alt": [
+     [
+      "갑자기",
+      "풍선이",
+      "터졌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-42",
+   "t": {
+    "s": "실수"
+   },
+   "pos": "noun",
+   "en": "mistake",
+   "note": "실수하다 = to make a mistake.",
+   "ex": [
+    {
+     "s": "죄송해요, 제 실수예요.",
+     "en": "Sorry, that's my mistake."
+    },
+    {
+     "s": "실수로 메시지를 잘못 보냈어요.",
+     "en": "I accidentally sent the message to the wrong person."
+    },
+    {
+     "s": "계산서에 실수가 있는 것 같아요.",
+     "en": "I think there's a mistake on the bill."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "죄송해요",
+     "제",
+     "실수예요"
+    ],
+    "alt": [
+     [
+      "제",
+      "실수예요",
+      "죄송해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-45",
+   "t": {
+    "s": "붙다"
+   },
+   "pos": "verb",
+   "en": "to stick; to pass (an exam)",
+   "note": "",
+   "ex": [
+    {
+     "s": "신발에 껌이 붙었어요.",
+     "en": "There's gum stuck to my shoe."
+    },
+    {
+     "s": "냉장고에 메모가 붙어 있어요.",
+     "en": "There's a note stuck on the fridge."
+    },
+    {
+     "s": "운전면허 시험에 붙었어요!",
+     "en": "I passed my driving test!"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "신발에",
+     "껌이",
+     "붙었어요"
+    ],
+    "alt": [
+     [
+      "껌이",
+      "신발에",
+      "붙었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-49",
+   "t": {
+    "s": "소개하다"
+   },
+   "pos": "verb",
+   "en": "to introduce; to recommend",
+   "note": "",
+   "ex": [
+    {
+     "s": "회의 전에 새 직원을 소개했어요.",
+     "en": "I introduced the new employee before the meeting."
+    },
+    {
+     "s": "좋은 사람 있으면 소개해 주세요.",
+     "en": "If you know someone nice, set me up."
+    },
+    {
+     "s": "이 근처 맛집 좀 소개해 주세요.",
+     "en": "Please recommend a good restaurant around here."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "회의",
+     "전에",
+     "새",
+     "직원을",
+     "소개했어요"
+    ],
+    "alt": [
+     [
+      "새",
+      "직원을",
+      "회의",
+      "전에",
+      "소개했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-68",
+   "t": {
+    "s": "끌다"
+   },
+   "pos": "verb",
+   "en": "to pull, drag; to attract",
+   "note": "",
+   "ex": [
+    {
+     "s": "가방을 끌고 공항에 갔어요.",
+     "en": "I went to the airport pulling my suitcase."
+    },
+    {
+     "s": "의자 끌지 마세요, 시끄러워요.",
+     "en": "Please don't drag the chair. It's noisy."
+    },
+    {
+     "s": "그 광고가 사람들의 관심을 끌었어요.",
+     "en": "That ad caught people's attention."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "가방을",
+     "끌고",
+     "공항에",
+     "갔어요"
+    ],
+    "alt": [
+     [
+      "공항에",
+      "가방을",
+      "끌고",
+      "갔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-79",
+   "t": {
+    "s": "꺼내다"
+   },
+   "pos": "verb",
+   "en": "to take out; to bring up (topic)",
+   "note": "",
+   "ex": [
+    {
+     "s": "냉장고에서 우유 좀 꺼내 주세요.",
+     "en": "Please take the milk out of the fridge."
+    },
+    {
+     "s": "지갑에서 카드를 꺼냈어요.",
+     "en": "I took my card out of my wallet."
+    },
+    {
+     "s": "그 얘기는 꺼내지 마세요.",
+     "en": "Please don't bring that up."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "냉장고에서",
+     "우유",
+     "좀",
+     "꺼내",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "우유",
+      "좀",
+      "냉장고에서",
+      "꺼내",
+      "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-83",
+   "t": {
+    "s": "지다"
+   },
+   "pos": "verb",
+   "en": "to lose (a game, bet)",
+   "note": "Opposite of 이기다. Also: 해가 지다 = the sun sets.",
+   "ex": [
+    {
+     "s": "어제 우리 팀이 졌어요.",
+     "en": "Our team lost yesterday."
+    },
+    {
+     "s": "동생한테 게임에서 또 졌어요.",
+     "en": "I lost the game to my younger sibling again."
+    },
+    {
+     "s": "내기에서 져서 커피를 샀어요.",
+     "en": "I lost the bet, so I bought the coffee."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "어제",
+     "우리",
+     "팀이",
+     "졌어요"
+    ],
+    "alt": [
+     [
+      "우리",
+      "팀이",
+      "어제",
+      "졌어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-93",
+   "t": {
+    "s": "군인"
+   },
+   "pos": "noun",
+   "en": "soldier",
+   "note": "",
+   "ex": [
+    {
+     "s": "사촌이 군인이에요.",
+     "en": "My cousin is a soldier."
+    },
+    {
+     "s": "기차에 군인들이 많이 탔어요.",
+     "en": "There were a lot of soldiers on the train."
+    },
+    {
+     "s": "여기 군인 할인 있어요?",
+     "en": "Is there a military discount here?"
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "기차에",
+     "군인들이",
+     "많이",
+     "탔어요"
+    ],
+    "alt": [
+     [
+      "군인들이",
+      "기차에",
+      "많이",
+      "탔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-95",
+   "t": {
+    "s": "조사하다"
+   },
+   "pos": "verb",
+   "en": "to look into, investigate, research",
+   "note": "",
+   "ex": [
+    {
+     "s": "여행 가기 전에 맛집을 조사했어요.",
+     "en": "I looked up good restaurants before the trip."
+    },
+    {
+     "s": "경찰이 사고 원인을 조사하고 있어요.",
+     "en": "The police are investigating the cause of the accident."
+    },
+    {
+     "s": "숙제로 우리 동네 역사를 조사했어요.",
+     "en": "I researched our neighborhood's history for homework."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "여행",
+     "가기",
+     "전에",
+     "맛집을",
+     "조사했어요"
+    ],
+    "alt": [
+     [
+      "맛집을",
+      "여행",
+      "가기",
+      "전에",
+      "조사했어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-97",
+   "t": {
+    "s": "오픈"
+   },
+   "pos": "noun",
+   "en": "opening (of a business)",
+   "note": "Konglish: 오픈하다 = to open (a shop); 오픈 시간 = opening time.",
+   "ex": [
+    {
+     "s": "새 빵집이 다음 주에 오픈해요.",
+     "en": "A new bakery opens next week."
+    },
+    {
+     "s": "오픈 시간이 몇 시예요?",
+     "en": "What time do you open?"
+    },
+    {
+     "s": "오픈 첫날이라 사람이 많아요.",
+     "en": "It's crowded because it's opening day."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "새",
+     "빵집이",
+     "다음",
+     "주에",
+     "오픈해요"
+    ],
+    "alt": [
+     [
+      "다음",
+      "주에",
+      "새",
+      "빵집이",
+      "오픈해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-89",
+   "t": {
+    "s": "기록하다"
+   },
+   "pos": "verb",
+   "en": "to record, write down",
+   "note": "",
+   "ex": [
+    {
+     "s": "매일 먹은 걸 앱에 기록해요.",
+     "en": "I log what I eat every day in an app."
+    },
+    {
+     "s": "여행 추억을 사진으로 기록해요.",
+     "en": "I record my travel memories in photos."
+    },
+    {
+     "s": "회의 내용을 좀 기록해 주세요.",
+     "en": "Please take notes on the meeting."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "여행",
+     "추억을",
+     "사진으로",
+     "기록해요"
+    ],
+    "alt": [
+     [
+      "사진으로",
+      "여행",
+      "추억을",
+      "기록해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-4",
+   "t": {
+    "s": "낳다"
+   },
+   "pos": "verb",
+   "en": "to give birth to; to lay (eggs)",
+   "note": "",
+   "ex": [
+    {
+     "s": "제 동생이 지난달에 아들을 낳았어요.",
+     "en": "My younger sister had a baby boy last month."
+    },
+    {
+     "s": "지우 씨는 아이를 낳고 회사를 그만뒀어요.",
+     "en": "Ji-woo quit her job after having a baby."
+    },
+    {
+     "s": "할머니 댁 닭이 오늘 알을 낳았어요.",
+     "en": "Grandma's chicken laid an egg today."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "제",
+     "동생이",
+     "지난달에",
+     "아들을",
+     "낳았어요"
+    ],
+    "alt": [
+     [
+      "지난달에",
+      "제",
+      "동생이",
+      "아들을",
+      "낳았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-5",
+   "t": {
+    "s": "부족하다"
+   },
+   "pos": "adjective",
+   "en": "to be lacking, not enough",
+   "note": "",
+   "ex": [
+    {
+     "s": "요즘 잠이 많이 부족해요.",
+     "en": "I haven't been getting enough sleep lately."
+    },
+    {
+     "s": "돈이 좀 부족한데 빌려줄 수 있어요?",
+     "en": "I'm a little short on money. Can you lend me some?"
+    },
+    {
+     "s": "시간이 부족해서 다 못 끝냈어요.",
+     "en": "I ran out of time and couldn't finish it all."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "잠이",
+     "많이",
+     "부족해요"
+    ],
+    "alt": [
+     [
+      "잠이",
+      "요즘",
+      "많이",
+      "부족해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-7",
+   "t": {
+    "s": "카페"
+   },
+   "pos": "noun",
+   "en": "café, coffee shop",
+   "note": "",
+   "ex": [
+    {
+     "s": "이따 카페에서 만나요.",
+     "en": "Let's meet at a café later."
+    },
+    {
+     "s": "이 카페는 케이크가 맛있어요.",
+     "en": "This café has good cake."
+    },
+    {
+     "s": "저는 카페에서 공부하는 걸 좋아해요.",
+     "en": "I like studying at cafés."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이따",
+     "카페에서",
+     "만나요"
+    ],
+    "alt": [
+     [
+      "카페에서",
+      "이따",
+      "만나요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-10",
+   "t": {
+    "s": "울다"
+   },
+   "pos": "verb",
+   "en": "to cry",
+   "note": "",
+   "ex": [
+    {
+     "s": "아기가 밤새 울었어요.",
+     "en": "The baby cried all night."
+    },
+    {
+     "s": "그 영화 보고 많이 울었어요.",
+     "en": "I cried a lot watching that movie."
+    },
+    {
+     "s": "울지 마요, 괜찮아요.",
+     "en": "Don't cry, it's okay."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아기가",
+     "밤새",
+     "울었어요"
+    ],
+    "alt": [
+     [
+      "밤새",
+      "아기가",
+      "울었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-12",
+   "t": {
+    "s": "세트"
+   },
+   "pos": "noun",
+   "en": "set; combo meal",
+   "note": "At fast-food places 세트 means a combo (burger, fries, drink).",
+   "ex": [
+    {
+     "s": "엄마 생일 선물로 컵 세트를 샀어요.",
+     "en": "I bought a set of cups for Mom's birthday."
+    },
+    {
+     "s": "호텔 방에 수건 세트가 있었어요.",
+     "en": "There was a set of towels in the hotel room."
+    },
+    {
+     "s": "햄버거 세트 하나 주세요.",
+     "en": "One burger combo, please."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "엄마",
+     "생일",
+     "선물로",
+     "컵",
+     "세트를",
+     "샀어요"
+    ],
+    "alt": [
+     [
+      "컵",
+      "세트를",
+      "엄마",
+      "생일",
+      "선물로",
+      "샀어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv04-14",
+   "t": {
+    "s": "솔직히"
+   },
+   "pos": "adverb",
+   "en": "honestly, frankly",
+   "note": "",
+   "ex": [
+    {
+     "s": "솔직히 그 영화 별로였어요.",
+     "en": "Honestly, that movie wasn't great."
+    },
+    {
+     "s": "솔직히 말해서 좀 피곤해요.",
+     "en": "To be honest, I'm a bit tired."
+    },
+    {
+     "s": "솔직히 이 가격은 너무 비싸요.",
+     "en": "Honestly, this price is too high."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "솔직히",
+     "그",
+     "영화",
+     "별로였어요"
+    ],
+    "alt": [
+     [
+      "그",
+      "영화",
+      "솔직히",
+      "별로였어요"
+     ]
+    ]
+   }
   }
  ],
  "drop": [],

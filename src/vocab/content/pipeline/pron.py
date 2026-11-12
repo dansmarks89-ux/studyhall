@@ -32,6 +32,13 @@ def rs_p(p):
     if b == "AH": return "uh"
     if b == "ER": return "ur"
     return RS[b]
+def syll_rs(s):
+    """Respell one syllable. /aɪ/ after a consonant is "y" (PRY), with a silent e before a single final consonant (SLYTE)."""
+    b = [re.sub(r"\d", "", p) for p in s]
+    if "AY" in b and b.index("AY") > 0:
+        i = b.index("AY"); coda = s[i + 1:]
+        return "".join(rs_p(p) for p in s[:i]) + "y" + "".join(rs_p(p) for p in coda) + ("e" if len(coda) == 1 else "")
+    return "".join(rs_p(p) for p in s)
 def pron(word):
     w = word.lower()
     if w not in D: return None
@@ -41,7 +48,7 @@ def pron(word):
     for s in ss:
         st = next((p[-1] for p in s if p[-1].isdigit()), "0")
         ipa += ("ˈ" if st == "1" and len(ss) > 1 else "ˌ" if st == "2" else "") + "".join(ipa_p(p) for p in s)
-        r = "".join(rs_p(p) for p in s)
+        r = syll_rs(s)
         rs.append(r.upper() if st == "1" and len(ss) > 1 else r)
     return {"ipa": "/" + ipa + "/", "say": "-".join(rs)}
 items = json.load(open("pipeline/all_final.json")); n = 0

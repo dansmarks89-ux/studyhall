@@ -205,14 +205,31 @@
      "en": "Could you explain it once more?"
     },
     {
-     "s": "의사가 검사 결과를 설명했어요.",
-     "en": "The doctor explained the test results."
+     "s": "선생님이 숙제를 자세히 설명해 주셨어요.",
+     "en": "The teacher explained the homework in detail."
     },
     {
      "s": "길을 설명하기가 어려워요.",
      "en": "It's hard to explain the directions."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "다시",
+     "한번",
+     "설명해",
+     "주시겠어요"
+    ],
+    "alt": [
+     [
+      "한번",
+      "다시",
+      "설명해",
+      "주시겠어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv02-199",
@@ -232,8 +249,8 @@
      "en": "It's dangerous to walk around alone at night."
     },
     {
-     "s": "이 수술은 위험이 크지 않대요.",
-     "en": "They say this surgery isn't very risky."
+     "s": "투자에는 항상 위험이 있어요.",
+     "en": "There's always risk in investing."
     }
    ]
   },
@@ -1068,6 +1085,280 @@
       "키가",
       "형만큼",
       "커요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-176",
+   "t": {
+    "s": "놀다"
+   },
+   "pos": "verb",
+   "en": "to play, hang out",
+   "note": "ㄹ-irregular: 놀아요, 노는, 노세요.",
+   "ex": [
+    {
+     "s": "주말에 친구들이랑 놀았어요.",
+     "en": "I hung out with friends on the weekend."
+    },
+    {
+     "s": "아이들이 공원에서 놀고 있어요.",
+     "en": "The kids are playing in the park."
+    },
+    {
+     "s": "우리 집에 놀러 오세요.",
+     "en": "Come over to my place."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말에",
+     "친구들이랑",
+     "놀았어요"
+    ],
+    "alt": [
+     [
+      "친구들이랑",
+      "주말에",
+      "놀았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-188",
+   "t": {
+    "s": "비교하다"
+   },
+   "pos": "verb",
+   "en": "to compare",
+   "note": "",
+   "ex": [
+    {
+     "s": "다른 가게랑 가격을 비교해 봤어요.",
+     "en": "I compared prices with another store."
+    },
+    {
+     "s": "저를 언니랑 비교하지 마세요.",
+     "en": "Don't compare me with my older sister."
+    },
+    {
+     "s": "작년이랑 비교하면 많이 따뜻해요.",
+     "en": "Compared to last year, it's much warmer."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "다른",
+     "가게랑",
+     "가격을",
+     "비교해",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "가격을",
+      "다른",
+      "가게랑",
+      "비교해",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-189",
+   "t": {
+    "s": "마찬가지"
+   },
+   "pos": "noun",
+   "en": "the same, likewise",
+   "note": "",
+   "ex": [
+    {
+     "s": "저도 마찬가지예요.",
+     "en": "Same here."
+    },
+    {
+     "s": "오늘도 어제랑 마찬가지로 추워요.",
+     "en": "It's cold today, just like yesterday."
+    },
+    {
+     "s": "비싼 거나 싼 거나 맛은 마찬가지예요.",
+     "en": "Expensive or cheap, they taste the same."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "오늘도",
+     "어제랑",
+     "마찬가지로",
+     "추워요"
+    ],
+    "alt": [
+     [
+      "어제랑",
+      "마찬가지로",
+      "오늘도",
+      "추워요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-190",
+   "t": {
+    "s": "스타"
+   },
+   "pos": "noun",
+   "en": "star, celebrity",
+   "note": "",
+   "ex": [
+    {
+     "s": "공항에서 스타를 봤어요!",
+     "en": "I saw a celebrity at the airport!"
+    },
+    {
+     "s": "그 배우는 요즘 최고의 스타예요.",
+     "en": "That actor is the biggest star these days."
+    },
+    {
+     "s": "우리 딸은 반에서 축구 스타예요.",
+     "en": "My daughter is the soccer star of her class."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "공항에서",
+     "스타를",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "스타를",
+      "공항에서",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-191",
+   "t": {
+    "s": "갑자기"
+   },
+   "pos": "adverb",
+   "en": "suddenly",
+   "note": "",
+   "ex": [
+    {
+     "s": "갑자기 비가 와요.",
+     "en": "It's suddenly raining."
+    },
+    {
+     "s": "갑자기 배가 아파요.",
+     "en": "My stomach suddenly hurts."
+    },
+    {
+     "s": "통화 중에 갑자기 전화가 끊겼어요.",
+     "en": "The call suddenly cut out while we were talking."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "갑자기",
+     "비가",
+     "와요"
+    ],
+    "alt": [
+     [
+      "비가",
+      "갑자기",
+      "와요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-193",
+   "t": {
+    "s": "빛"
+   },
+   "pos": "noun",
+   "en": "light",
+   "note": "",
+   "ex": [
+    {
+     "s": "창문으로 빛이 들어와요.",
+     "en": "Light comes in through the window."
+    },
+    {
+     "s": "이 방은 빛이 잘 들어서 좋아요.",
+     "en": "This room gets good light, which I like."
+    },
+    {
+     "s": "빛이 너무 강해서 눈이 부셔요.",
+     "en": "The light is so strong it's blinding."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "창문으로",
+     "빛이",
+     "들어와요"
+    ],
+    "alt": [
+     [
+      "빛이",
+      "창문으로",
+      "들어와요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv02-117",
+   "t": {
+    "s": "오르다"
+   },
+   "pos": "verb",
+   "en": "to rise, go up; to climb",
+   "note": "르-irregular: 올라요, 올랐어요.",
+   "ex": [
+    {
+     "s": "요즘 물가가 많이 올랐어요.",
+     "en": "Prices have gone up a lot lately."
+    },
+    {
+     "s": "월급이 조금 올랐어요.",
+     "en": "My salary went up a little."
+    },
+    {
+     "s": "주말에 산에 올랐어요.",
+     "en": "I climbed a mountain on the weekend."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "요즘",
+     "물가가",
+     "많이",
+     "올랐어요"
+    ],
+    "alt": [
+     [
+      "물가가",
+      "요즘",
+      "많이",
+      "올랐어요"
      ]
     ]
    }

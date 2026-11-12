@@ -44,9 +44,17 @@ _g2p = _load_g2p()
 
 # Words whose standard pronunciation tenses a consonant that g2pk2 can't predict: Sino-Korean ㄹ + ㄷ/ㅅ/ㅈ
 # (standard pronunciation rule 26) and lexical tensing listed in 표준국어대사전. Word -> how it is said.
+# Keys ending in 다 are verb headwords (rule 24: ㄴ/ㅁ stem + 다) and apply only to the bare headword, since the
+# same letters occur untensed elsewhere (안다 "knows").
 TENSED = {
     "일주일": "일쭈일", "결정": "결쩡", "조건": "조껀", "일단": "일딴", "절대": "절때", "일정": "일쩡",
-    "물건": "물껀", "글자": "글짜", "결제": "결쩨",
+    "글자": "글짜", "결제": "결쩨", "출신": "출씬", "열심": "열씸", "실제": "실쩨", "설정": "설쩡",
+    "솔직": "솔찍", "실수": "실쑤", "출시": "출씨", "실시": "실씨", "출장": "출짱", "일상": "일쌍",
+    "별도": "별또", "열정": "열쩡", "실전": "실쩐", "철저": "철쩌", "설득": "설뜩", "경찰서": "경찰써",
+    "현실적": "현실쩍", "인기": "인끼", "평가": "평까", "성격": "성껵", "점수": "점쑤", "장점": "장쩜",
+    "초점": "초쩜", "관점": "관쩜", "필요성": "필요썽", "중요성": "중요썽", "손가락": "손까락",
+    "물고기": "물꼬기", "술집": "술찝", "장난감": "장난깜",
+    "참다": "참따", "안다": "안따", "숨다": "숨따",
 }
 _TENSE = {"ㄱ": "ㄲ", "ㄷ": "ㄸ", "ㅂ": "ㅃ", "ㅅ": "ㅆ", "ㅈ": "ㅉ"}
 _INIT = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ"
@@ -64,6 +72,8 @@ def _tense(t, p):
         return p
     p = list(p)
     for w, said in TENSED.items():
+        if w.endswith("다") and t != w:
+            continue
         for m in re.finditer(re.escape(w), t):
             for j, (a, b) in enumerate(zip(w, said)):
                 if a != b and _initial(b) == _TENSE.get(_initial(a)) and _initial(p[m.start() + j]) == _initial(a):
