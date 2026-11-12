@@ -50,6 +50,7 @@ def pron(word):
         ipa += ("ˈ" if st == "1" and len(ss) > 1 else "ˌ" if st == "2" else "") + "".join(ipa_p(p) for p in s)
         r = syll_rs(s)
         rs.append(r.upper() if st == "1" and len(ss) > 1 else r)
+    ipa = re.sub(r"^ˌ([ɪɛ][nm]ˈ)", r"\1", ipa)   # CMU's secondary stress on an in-/im-/en-/em- prefix before the main stress isn't a dictionary form
     return {"ipa": "/" + ipa + "/", "say": "-".join(rs)}
 items = json.load(open("pipeline/all_final.json")); n = 0
 for x in items:
