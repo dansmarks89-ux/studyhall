@@ -21,7 +21,26 @@
      "s": "왜 맨날 저한테만 그래요?",
      "en": "Why do you always do this only to me?"
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "맨날",
+     "라면만",
+     "먹으면",
+     "안",
+     "돼요"
+    ],
+    "alt": [
+     [
+      "라면만",
+      "맨날",
+      "먹으면",
+      "안",
+      "돼요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-189",
@@ -153,7 +172,30 @@
      "s": "호랑이도 제 말 하면 온다더니, 민호가 왔네요!",
      "en": "Speak of the devil, here comes Minho!"
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "동물원에서",
+     "호랑이를",
+     "처음",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "호랑이를",
+      "동물원에서",
+      "처음",
+      "봤어요"
+     ],
+     [
+      "동물원에서",
+      "처음",
+      "호랑이를",
+      "봤어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-148",
@@ -173,10 +215,27 @@
      "en": "At first I doubted that story."
     },
     {
-     "s": "의사 선생님이 장염을 의심하셨어요.",
-     "en": "The doctor suspected a stomach bug."
+     "s": "모르는 번호로 이상한 문자가 와서 사기가 아닌지 의심했어요.",
+     "en": "I got a weird text from an unknown number, so I suspected it was a scam."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "지금",
+     "저를",
+     "의심하는",
+     "거예요"
+    ],
+    "alt": [
+     [
+      "저를",
+      "지금",
+      "의심하는",
+      "거예요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-192",
@@ -415,6 +474,1134 @@
       "문자에",
       "답해",
       "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-108",
+   "t": {
+    "s": "묻히다"
+   },
+   "pos": "verb",
+   "en": "to get (something) on; to be buried",
+   "note": "Causative/passive of 묻다. 손에 물 묻히다 = get your hands wet.",
+   "ex": [
+    {
+     "s": "아이가 옷에 아이스크림을 묻혔어요.",
+     "en": "The kid got ice cream on their clothes."
+    },
+    {
+     "s": "방금 매니큐어 발랐으니까 손에 물 묻히지 마세요.",
+     "en": "You just put on nail polish, so don't get your hands wet."
+    },
+    {
+     "s": "할아버지는 고향에 묻히셨어요.",
+     "en": "My grandfather is buried in his hometown."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이가",
+     "옷에",
+     "아이스크림을",
+     "묻혔어요"
+    ],
+    "alt": [
+     [
+      "아이가",
+      "아이스크림을",
+      "옷에",
+      "묻혔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-130",
+   "t": {
+    "s": "창고"
+   },
+   "pos": "noun",
+   "en": "storage room, warehouse",
+   "note": "",
+   "ex": [
+    {
+     "s": "겨울옷은 창고에 넣었어요.",
+     "en": "I put the winter clothes in storage."
+    },
+    {
+     "s": "창고에서 박스 좀 가져다줄래요?",
+     "en": "Could you bring a box from the storage room?"
+    },
+    {
+     "s": "그 신발은 창고에도 재고가 없어요.",
+     "en": "Those shoes are out of stock in the warehouse too."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "겨울옷은",
+     "창고에",
+     "넣었어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv10-150",
+   "t": {
+    "s": "두렵다"
+   },
+   "pos": "adjective",
+   "en": "afraid, fearful",
+   "note": "ㅂ-irregular: 두려워요. Less everyday than 무섭다; often fear of situations.",
+   "ex": [
+    {
+     "s": "혼자 외국에 가는 게 좀 두려워요.",
+     "en": "I'm a little afraid of going abroad alone."
+    },
+    {
+     "s": "새 직장에서 실수할까 봐 두려워요.",
+     "en": "I'm afraid I'll make mistakes at my new job."
+    },
+    {
+     "s": "거절당할까 봐 두려워서 고백을 계속 미뤘어요.",
+     "en": "I was afraid of being rejected, so I kept putting off confessing my feelings."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "혼자",
+     "외국에",
+     "가는",
+     "게",
+     "좀",
+     "두려워요"
+    ],
+    "alt": [
+     [
+      "외국에",
+      "혼자",
+      "가는",
+      "게",
+      "좀",
+      "두려워요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-103",
+   "t": {
+    "s": "틈"
+   },
+   "pos": "noun",
+   "en": "gap, crack; spare moment",
+   "note": "틈(이) 나다 = to have a free moment.",
+   "ex": [
+    {
+     "s": "창문 틈으로 바람이 들어와요.",
+     "en": "Wind is coming in through the gap in the window."
+    },
+    {
+     "s": "틈 날 때 전화 주세요.",
+     "en": "Call me when you get a free moment."
+    },
+    {
+     "s": "요즘 바빠서 쉴 틈이 없어요.",
+     "en": "I'm so busy lately I have no time to rest."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "창문",
+     "틈으로",
+     "바람이",
+     "들어와요"
+    ],
+    "alt": [
+     [
+      "바람이",
+      "창문",
+      "틈으로",
+      "들어와요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-107",
+   "t": {
+    "s": "케이크"
+   },
+   "pos": "noun",
+   "en": "cake",
+   "note": "",
+   "ex": [
+    {
+     "s": "생일 케이크에 초를 꽂았어요.",
+     "en": "I put candles on the birthday cake."
+    },
+    {
+     "s": "이 카페는 치즈 케이크가 맛있어요.",
+     "en": "This café's cheesecake is delicious."
+    },
+    {
+     "s": "케이크 한 조각 더 먹어도 돼요?",
+     "en": "Can I have another slice of cake?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "생일",
+     "케이크에",
+     "초를",
+     "꽂았어요"
+    ],
+    "alt": [
+     [
+      "초를",
+      "생일",
+      "케이크에",
+      "꽂았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-109",
+   "t": {
+    "s": "적히다"
+   },
+   "pos": "verb",
+   "en": "to be written (down)",
+   "note": "Often 적혀 있다 = to be written on something.",
+   "ex": [
+    {
+     "s": "메뉴판에 가격이 안 적혀 있어요.",
+     "en": "The prices aren't written on the menu."
+    },
+    {
+     "s": "여기 적힌 번호로 전화하세요.",
+     "en": "Call the number written here."
+    },
+    {
+     "s": "칠판에 숙제가 적혀 있었어요.",
+     "en": "The homework was written on the board."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "메뉴판에",
+     "가격이",
+     "안",
+     "적혀",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "가격이",
+      "메뉴판에",
+      "안",
+      "적혀",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-111",
+   "t": {
+    "s": "추다"
+   },
+   "pos": "verb",
+   "en": "to dance",
+   "note": "Used with 춤: 춤을 추다. 추어요 → 춰요.",
+   "ex": [
+    {
+     "s": "결혼식에서 같이 춤을 췄어요.",
+     "en": "We danced together at the wedding."
+    },
+    {
+     "s": "저는 춤을 잘 못 춰요.",
+     "en": "I'm not good at dancing."
+    },
+    {
+     "s": "아이가 노래에 맞춰 춤을 춰요.",
+     "en": "The kid is dancing to the song."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "결혼식에서",
+     "같이",
+     "춤을",
+     "췄어요"
+    ],
+    "alt": [
+     [
+      "결혼식에서",
+      "춤을",
+      "같이",
+      "췄어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-115",
+   "t": {
+    "s": "쇼핑"
+   },
+   "pos": "noun",
+   "en": "shopping",
+   "note": "쇼핑하다 = to shop.",
+   "ex": [
+    {
+     "s": "주말에 친구랑 쇼핑하러 가요.",
+     "en": "I'm going shopping with a friend this weekend."
+    },
+    {
+     "s": "요즘은 인터넷 쇼핑을 많이 해요.",
+     "en": "These days I shop online a lot."
+    },
+    {
+     "s": "여행 가서 쇼핑을 너무 많이 했어요.",
+     "en": "I did way too much shopping on the trip."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "주말에",
+     "친구랑",
+     "쇼핑하러",
+     "가요"
+    ],
+    "alt": [
+     [
+      "친구랑",
+      "주말에",
+      "쇼핑하러",
+      "가요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-119",
+   "t": {
+    "s": "티"
+   },
+   "pos": "noun",
+   "en": "visible sign (티가 나다); T-shirt",
+   "note": "티(가) 나다 = to show. 티 내다 = to let it show.",
+   "ex": [
+    {
+     "s": "피곤한 게 얼굴에 티가 나요.",
+     "en": "It shows on your face that you're tired."
+    },
+    {
+     "s": "면접관 앞에서 긴장한 티 내지 마세요.",
+     "en": "Don't let the interviewers see you're nervous."
+    },
+    {
+     "s": "흰 티에 청바지를 입었어요.",
+     "en": "I wore a white T-shirt and jeans."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "피곤한",
+     "게",
+     "얼굴에",
+     "티가",
+     "나요"
+    ],
+    "alt": [
+     [
+      "얼굴에",
+      "피곤한",
+      "게",
+      "티가",
+      "나요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-126",
+   "t": {
+    "s": "그나마"
+   },
+   "pos": "adverb",
+   "en": "at least; even that (little)",
+   "note": "Marks a small consolation: things aren't great, but…",
+   "ex": [
+    {
+     "s": "비가 오지만 그나마 바람은 안 불어요.",
+     "en": "It's raining, but at least it's not windy."
+    },
+    {
+     "s": "지갑은 잃어버렸는데 그나마 휴대폰은 찾았어요.",
+     "en": "I lost my wallet, but at least I found my phone."
+    },
+    {
+     "s": "월급이 적은데 그나마 다 써 버렸어요.",
+     "en": "My paycheck is small, and I spent even that."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "비가",
+     "오지만",
+     "그나마",
+     "바람은",
+     "안",
+     "불어요"
+    ],
+    "alt": [
+     [
+      "비가",
+      "오지만",
+      "바람은",
+      "그나마",
+      "안",
+      "불어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-129",
+   "t": {
+    "s": "우연히"
+   },
+   "pos": "adverb",
+   "en": "by chance",
+   "note": "",
+   "ex": [
+    {
+     "s": "마트에서 우연히 선생님을 만났어요.",
+     "en": "I ran into my teacher at the supermarket."
+    },
+    {
+     "s": "길을 잃었는데 우연히 좋은 식당을 찾았어요.",
+     "en": "I got lost and found a great restaurant by chance."
+    },
+    {
+     "s": "여행 중에 우연히 옛날 친구를 봤어요.",
+     "en": "I happened to see an old friend while traveling."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "길을",
+     "잃었는데",
+     "우연히",
+     "좋은",
+     "식당을",
+     "찾았어요"
+    ],
+    "alt": [
+     [
+      "길을",
+      "잃었는데",
+      "좋은",
+      "식당을",
+      "우연히",
+      "찾았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-131",
+   "t": {
+    "s": "인사하다"
+   },
+   "pos": "verb",
+   "en": "to greet, say hello",
+   "note": "Bow + 안녕하세요 is the standard greeting.",
+   "ex": [
+    {
+     "s": "할머니께 먼저 인사하세요.",
+     "en": "Say hello to Grandma first."
+    },
+    {
+     "s": "엘리베이터에서 이웃이랑 인사했어요.",
+     "en": "I said hi to my neighbor in the elevator."
+    },
+    {
+     "s": "새 팀원들한테 인사하러 갔어요.",
+     "en": "I went to say hello to the new team members."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "할머니께",
+     "먼저",
+     "인사하세요"
+    ],
+    "alt": [
+     [
+      "먼저",
+      "할머니께",
+      "인사하세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-139",
+   "t": {
+    "s": "훔치다"
+   },
+   "pos": "verb",
+   "en": "to steal",
+   "note": "",
+   "ex": [
+    {
+     "s": "지하철에서 누가 지갑을 훔쳐 갔어요.",
+     "en": "Someone stole my wallet on the subway."
+    },
+    {
+     "s": "강아지가 또 제 양말을 훔쳐 갔어요.",
+     "en": "The dog stole my sock again."
+    },
+    {
+     "s": "남의 아이디어를 훔치면 안 돼요.",
+     "en": "You shouldn't steal other people's ideas."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "지하철에서",
+     "누가",
+     "지갑을",
+     "훔쳐",
+     "갔어요"
+    ],
+    "alt": [
+     [
+      "누가",
+      "지하철에서",
+      "지갑을",
+      "훔쳐",
+      "갔어요"
+     ],
+     [
+      "지하철에서",
+      "지갑을",
+      "누가",
+      "훔쳐",
+      "갔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-145",
+   "t": {
+    "s": "키보드"
+   },
+   "pos": "noun",
+   "en": "keyboard",
+   "note": "",
+   "ex": [
+    {
+     "s": "키보드에 커피를 쏟았어요.",
+     "en": "I spilled coffee on my keyboard."
+    },
+    {
+     "s": "새 키보드를 샀는데 소리가 좋아요.",
+     "en": "I bought a new keyboard and it sounds nice."
+    },
+    {
+     "s": "동생은 밴드에서 키보드를 쳐요.",
+     "en": "My younger sibling plays keyboard in a band."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "키보드에",
+     "커피를",
+     "쏟았어요"
+    ],
+    "alt": [
+     [
+      "커피를",
+      "키보드에",
+      "쏟았어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-151",
+   "t": {
+    "s": "수천"
+   },
+   "pos": "numeral",
+   "en": "thousands",
+   "note": "Followed by a counter: 수천 명, 수천 개.",
+   "ex": [
+    {
+     "s": "콘서트에 수천 명이 왔어요.",
+     "en": "Thousands of people came to the concert."
+    },
+    {
+     "s": "이 가방은 수천 달러예요.",
+     "en": "This bag costs thousands of dollars."
+    },
+    {
+     "s": "캠핑장 하늘에 별이 수천 개 있었어요.",
+     "en": "There were thousands of stars over the campsite."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "콘서트에",
+     "수천",
+     "명이",
+     "왔어요"
+    ],
+    "alt": [
+     [
+      "수천",
+      "명이",
+      "콘서트에",
+      "왔어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-160",
+   "t": {
+    "s": "치우다"
+   },
+   "pos": "verb",
+   "en": "to clean up, clear away",
+   "note": "",
+   "ex": [
+    {
+     "s": "방 좀 치우세요.",
+     "en": "Please clean up your room."
+    },
+    {
+     "s": "다 먹고 나서 식탁 치울게요.",
+     "en": "I'll clear the table after we finish eating."
+    },
+    {
+     "s": "회의실 치우고 퇴근했어요.",
+     "en": "I tidied the meeting room and went home."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "방",
+     "좀",
+     "치우세요"
+    ],
+    "alt": [
+     [
+      "좀",
+      "방",
+      "치우세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-194",
+   "t": {
+    "s": "중요성"
+   },
+   "pos": "noun",
+   "en": "importance",
+   "note": "",
+   "ex": [
+    {
+     "s": "혼자 살면서 돈의 중요성을 알게 됐어요.",
+     "en": "Living on my own, I came to realize the importance of money."
+    },
+    {
+     "s": "아이들에게 독서의 중요성을 가르쳐요.",
+     "en": "I teach kids the importance of reading."
+    },
+    {
+     "s": "회사에서 소통의 중요성을 많이 느껴요.",
+     "en": "At work, I really feel how important communication is."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "혼자",
+     "살면서",
+     "돈의",
+     "중요성을",
+     "알게",
+     "됐어요"
+    ],
+    "alt": [
+     [
+      "돈의",
+      "중요성을",
+      "혼자",
+      "살면서",
+      "알게",
+      "됐어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-185",
+   "t": {
+    "s": "영화제"
+   },
+   "pos": "noun",
+   "en": "film festival",
+   "note": "",
+   "ex": [
+    {
+     "s": "부산 영화제에 가 봤어요?",
+     "en": "Have you been to the Busan film festival?"
+    },
+    {
+     "s": "그 영화가 영화제에서 상을 받았어요.",
+     "en": "That movie won an award at a film festival."
+    },
+    {
+     "s": "학교 영화제에 단편 영화를 냈어요.",
+     "en": "I entered a short film in the school film festival."
+    }
+   ]
+  },
+  {
+   "id": "kv10-186",
+   "t": {
+    "s": "부스"
+   },
+   "pos": "noun",
+   "en": "booth",
+   "note": "",
+   "ex": [
+    {
+     "s": "축제에서 떡볶이 부스가 제일 인기였어요.",
+     "en": "The tteokbokki booth was the most popular at the festival."
+    },
+    {
+     "s": "박람회에서 회사 부스를 하루 종일 지켰어요.",
+     "en": "I staffed our company booth at the expo all day."
+    },
+    {
+     "s": "친구들이랑 포토 부스에서 사진 찍었어요.",
+     "en": "I took pictures with friends in a photo booth."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "축제에서",
+     "떡볶이",
+     "부스가",
+     "제일",
+     "인기였어요"
+    ],
+    "alt": [
+     [
+      "떡볶이",
+      "부스가",
+      "축제에서",
+      "제일",
+      "인기였어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-162",
+   "t": {
+    "s": "사자"
+   },
+   "pos": "noun",
+   "en": "lion",
+   "note": "",
+   "ex": [
+    {
+     "s": "동물원에서 사자가 자고 있었어요.",
+     "en": "The lion was sleeping at the zoo."
+    },
+    {
+     "s": "아이가 사자 인형을 제일 좋아해요.",
+     "en": "My kid loves the stuffed lion the most."
+    },
+    {
+     "s": "아프리카 여행에서 사자를 직접 봤어요.",
+     "en": "I saw lions in person on my trip to Africa."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "동물원에서",
+     "사자가",
+     "자고",
+     "있었어요"
+    ],
+    "alt": [
+     [
+      "사자가",
+      "동물원에서",
+      "자고",
+      "있었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-170",
+   "t": {
+    "s": "불필요하다"
+   },
+   "pos": "adjective",
+   "en": "unnecessary",
+   "note": "",
+   "ex": [
+    {
+     "s": "이사하면서 불필요한 물건은 다 버렸어요.",
+     "en": "When I moved, I threw out everything unnecessary."
+    },
+    {
+     "s": "우리 회사는 불필요한 회의가 너무 많아요.",
+     "en": "Our company has too many unnecessary meetings."
+    },
+    {
+     "s": "휴대폰에서 불필요한 앱을 지웠어요.",
+     "en": "I deleted unnecessary apps from my phone."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이사하면서",
+     "불필요한",
+     "물건은",
+     "다",
+     "버렸어요"
+    ],
+    "alt": [
+     [
+      "불필요한",
+      "물건은",
+      "이사하면서",
+      "다",
+      "버렸어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-171",
+   "t": {
+    "s": "너머"
+   },
+   "pos": "noun",
+   "en": "beyond, the other side of",
+   "note": "Follows a noun: 산 너머 = beyond the mountain.",
+   "ex": [
+    {
+     "s": "호텔 창문 너머로 바다가 보여요.",
+     "en": "You can see the ocean through the hotel window."
+    },
+    {
+     "s": "전화기 너머로 아기 우는 소리가 들렸어요.",
+     "en": "I heard a baby crying on the other end of the phone."
+    },
+    {
+     "s": "저 산 너머에 작은 마을이 있어요.",
+     "en": "There's a small village beyond that mountain."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "호텔",
+     "창문",
+     "너머로",
+     "바다가",
+     "보여요"
+    ],
+    "alt": [
+     [
+      "바다가",
+      "호텔",
+      "창문",
+      "너머로",
+      "보여요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-182",
+   "t": {
+    "s": "이슈"
+   },
+   "pos": "noun",
+   "en": "hot topic, issue",
+   "note": "Usually means 'hot topic' or 'matter,' not 'problem.'",
+   "ex": [
+    {
+     "s": "그 배우가 요즘 인터넷에서 이슈예요.",
+     "en": "That actor is a hot topic online these days."
+    },
+    {
+     "s": "오늘 회의에서 그 이슈를 얘기했어요.",
+     "en": "We discussed that issue in today's meeting."
+    },
+    {
+     "s": "요즘 학교에 무슨 이슈 있어요?",
+     "en": "Is anything big going on at school these days?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "배우가",
+     "요즘",
+     "인터넷에서",
+     "이슈예요"
+    ],
+    "alt": [
+     [
+      "요즘",
+      "그",
+      "배우가",
+      "인터넷에서",
+      "이슈예요"
+     ],
+     [
+      "요즘",
+      "인터넷에서",
+      "그",
+      "배우가",
+      "이슈예요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-187",
+   "t": {
+    "s": "문구"
+   },
+   "pos": "noun",
+   "en": "stationery; wording, phrase",
+   "note": "문구점 = stationery store.",
+   "ex": [
+    {
+     "s": "문구점에서 펜이랑 공책을 샀어요.",
+     "en": "I bought pens and notebooks at the stationery store."
+    },
+    {
+     "s": "딸은 예쁜 문구를 모으는 걸 좋아해요.",
+     "en": "My daughter loves collecting cute stationery."
+    },
+    {
+     "s": "케이크에 쓸 문구 정했어요?",
+     "en": "Did you decide what to write on the cake?"
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "문구점에서",
+     "펜이랑",
+     "공책을",
+     "샀어요"
+    ],
+    "alt": [
+     [
+      "펜이랑",
+      "공책을",
+      "문구점에서",
+      "샀어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-180",
+   "t": {
+    "s": "블록"
+   },
+   "pos": "noun",
+   "en": "block (toy; city block)",
+   "note": "",
+   "ex": [
+    {
+     "s": "아이가 블록으로 집을 만들었어요.",
+     "en": "The kid built a house out of blocks."
+    },
+    {
+     "s": "밤에 레고 블록을 밟아서 발이 아파요.",
+     "en": "I stepped on a Lego brick last night and my foot hurts."
+    },
+    {
+     "s": "두 블록 더 가면 은행이 있어요.",
+     "en": "Go two more blocks and there's a bank."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "아이가",
+     "블록으로",
+     "집을",
+     "만들었어요"
+    ],
+    "alt": [
+     [
+      "아이가",
+      "집을",
+      "블록으로",
+      "만들었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-172",
+   "t": {
+    "s": "감염되다"
+   },
+   "pos": "verb",
+   "en": "to be infected",
+   "note": "",
+   "ex": [
+    {
+     "s": "이상한 파일을 열었다가 노트북이 바이러스에 감염됐어요.",
+     "en": "I opened a weird file and my laptop got a virus."
+    },
+    {
+     "s": "휴대폰이 악성 코드에 감염된 것 같아요.",
+     "en": "I think my phone has malware."
+    },
+    {
+     "s": "회사 컴퓨터가 바이러스에 감염됐어요.",
+     "en": "My work computer got a virus."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "회사",
+     "컴퓨터가",
+     "바이러스에",
+     "감염됐어요"
+    ],
+    "alt": []
+   }
+  },
+  {
+   "id": "kv10-193",
+   "t": {
+    "s": "면역"
+   },
+   "pos": "noun",
+   "en": "immunity",
+   "note": "면역력 = immune strength, common in health talk.",
+   "ex": [
+    {
+     "s": "회사 생활을 오래 하니까 웬만한 일에는 면역이 생겼어요.",
+     "en": "After years of working at a company, I've built up an immunity to most things."
+    },
+    {
+     "s": "엄마 잔소리에 면역이 돼서 이제 아무렇지도 않아요.",
+     "en": "I'm so used to my mom's nagging that it doesn't bother me anymore."
+    },
+    {
+     "s": "매운 음식에는 이제 면역이 됐어요.",
+     "en": "I've become immune to spicy food now."
+    }
+   ],
+   "tl": {
+    "ex": 2,
+    "tiles": [
+     "매운",
+     "음식에는",
+     "이제",
+     "면역이",
+     "됐어요"
+    ],
+    "alt": [
+     [
+      "이제",
+      "매운",
+      "음식에는",
+      "면역이",
+      "됐어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-191",
+   "t": {
+    "s": "커버"
+   },
+   "pos": "noun",
+   "en": "cover, case; cover song",
+   "note": "커버하다 can also mean to cover for someone.",
+   "ex": [
+    {
+     "s": "휴대폰 커버를 새로 샀어요.",
+     "en": "I bought a new phone case."
+    },
+    {
+     "s": "주말에 소파 커버를 빨았어요.",
+     "en": "I washed the sofa cover over the weekend."
+    },
+    {
+     "s": "그 가수가 이 노래를 커버했어요.",
+     "en": "That singer did a cover of this song."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "휴대폰",
+     "커버를",
+     "새로",
+     "샀어요"
+    ],
+    "alt": [
+     [
+      "새로",
+      "휴대폰",
+      "커버를",
+      "샀어요"
      ]
     ]
    }

@@ -158,11 +158,11 @@
    },
    "pos": "verb",
    "en": "to examine, test, check",
-   "note": "Medical: 검사를 받다 = to get tested.",
+   "note": "검사를 받다 = to get checked, be inspected (짐 검사를 받다).",
    "ex": [
     {
-     "s": "병원에서 눈을 검사했어요.",
-     "en": "I had my eyes checked at the hospital."
+     "s": "메일 보내기 전에 맞춤법을 검사했어요.",
+     "en": "I checked the spelling before sending the email."
     },
     {
      "s": "선생님이 숙제를 검사하셨어요.",
@@ -172,7 +172,26 @@
      "s": "공항에서 짐을 검사해요.",
      "en": "They check your luggage at the airport."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "메일",
+     "보내기",
+     "전에",
+     "맞춤법을",
+     "검사했어요"
+    ],
+    "alt": [
+     [
+      "맞춤법을",
+      "메일",
+      "보내기",
+      "전에",
+      "검사했어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-71",
@@ -195,7 +214,24 @@
      "s": "팀장님이 회의에 늦으셨어요.",
      "en": "Our team leader was late to the meeting."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "팀장님",
+     "잠깐",
+     "시간",
+     "괜찮으세요"
+    ],
+    "alt": [
+     [
+      "팀장님",
+      "시간",
+      "잠깐",
+      "괜찮으세요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-18",
@@ -417,7 +453,26 @@
      "s": "그 문제는 이미 처리됐어요.",
      "en": "That issue has already been taken care of."
     }
-   ]
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "결제가",
+     "아직",
+     "처리",
+     "안",
+     "됐어요"
+    ],
+    "alt": [
+     [
+      "아직",
+      "결제가",
+      "처리",
+      "안",
+      "됐어요"
+     ]
+    ]
+   }
   },
   {
    "id": "kv10-25",
@@ -898,6 +953,460 @@
       "딸이",
       "초등학교에",
       "입학해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-51",
+   "t": {
+    "s": "후배"
+   },
+   "pos": "noun",
+   "en": "junior (at school or work)",
+   "note": "Someone who joined after you. Opposite: 선배 (senior).",
+   "ex": [
+    {
+     "s": "회사 후배랑 점심 먹었어요.",
+     "en": "I had lunch with a junior colleague."
+    },
+    {
+     "s": "그 친구는 제 대학교 후배예요.",
+     "en": "He's my junior from college."
+    },
+    {
+     "s": "후배가 고민을 털어놨어요.",
+     "en": "A junior of mine opened up to me about a worry."
+    }
+   ]
+  },
+  {
+   "id": "kv10-93",
+   "t": {
+    "s": "개선"
+   },
+   "pos": "noun",
+   "en": "improvement",
+   "note": "개선하다 = to improve something; 개선되다 = to get better.",
+   "ex": [
+    {
+     "s": "이 앱은 개선이 좀 필요해요.",
+     "en": "This app needs some improvement."
+    },
+    {
+     "s": "이 식당은 서비스가 예전보다 훨씬 개선됐어요.",
+     "en": "This restaurant's service has improved a lot compared to before."
+    },
+    {
+     "s": "학교 급식이 많이 개선됐대요.",
+     "en": "I heard school lunches have gotten a lot better."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "이",
+     "앱은",
+     "개선이",
+     "좀",
+     "필요해요"
+    ],
+    "alt": [
+     [
+      "이",
+      "앱은",
+      "좀",
+      "개선이",
+      "필요해요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-94",
+   "t": {
+    "s": "소비"
+   },
+   "pos": "noun",
+   "en": "consumption, spending",
+   "note": "소비하다 = to consume, spend.",
+   "ex": [
+    {
+     "s": "요즘 커피 소비가 늘었어요.",
+     "en": "Coffee consumption has gone up lately."
+    },
+    {
+     "s": "충동 소비를 줄이고 싶어요.",
+     "en": "I want to cut down on impulse spending."
+    },
+    {
+     "s": "이번 달은 소비가 너무 많았어요.",
+     "en": "I spent way too much this month."
+    }
+   ]
+  },
+  {
+   "id": "kv10-48",
+   "t": {
+    "s": "아뇨"
+   },
+   "pos": "interjection",
+   "en": "no (polite)",
+   "note": "Spoken short form of 아니요.",
+   "ex": [
+    {
+     "s": "아뇨, 괜찮아요.",
+     "en": "No, I'm fine."
+    },
+    {
+     "s": "아뇨, 여기 처음 와 봤어요.",
+     "en": "No, this is my first time here."
+    },
+    {
+     "s": "커피요? 아뇨, 차 주세요.",
+     "en": "Coffee? No, tea please."
+    }
+   ],
+   "tl": {
+    "ex": 1,
+    "tiles": [
+     "아뇨",
+     "여기",
+     "처음",
+     "와",
+     "봤어요"
+    ],
+    "alt": [
+     [
+      "아뇨",
+      "처음",
+      "여기",
+      "와",
+      "봤어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-50",
+   "t": {
+    "s": "케이블"
+   },
+   "pos": "noun",
+   "en": "cable",
+   "note": "",
+   "ex": [
+    {
+     "s": "충전 케이블 좀 빌려줄 수 있어요?",
+     "en": "Can I borrow your charging cable?"
+    },
+    {
+     "s": "케이블이 짧아서 콘센트까지 안 닿아요.",
+     "en": "The cable's too short to reach the outlet."
+    },
+    {
+     "s": "집에 케이블 방송이 안 나와요.",
+     "en": "The cable TV isn't working at home."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "충전",
+     "케이블",
+     "좀",
+     "빌려줄",
+     "수",
+     "있어요"
+    ],
+    "alt": [
+     [
+      "좀",
+      "충전",
+      "케이블",
+      "빌려줄",
+      "수",
+      "있어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-64",
+   "t": {
+    "s": "기름"
+   },
+   "pos": "noun",
+   "en": "oil; gasoline",
+   "note": "기름을 넣다 = to get gas. 기름지다 = greasy.",
+   "ex": [
+    {
+     "s": "팬에 기름을 조금 두르세요.",
+     "en": "Put a little oil in the pan."
+    },
+    {
+     "s": "옷에 기름이 묻었어요.",
+     "en": "I got oil on my clothes."
+    },
+    {
+     "s": "가는 길에 기름 좀 넣어야 돼요.",
+     "en": "I need to get gas on the way."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "팬에",
+     "기름을",
+     "조금",
+     "두르세요"
+    ],
+    "alt": [
+     [
+      "기름을",
+      "팬에",
+      "조금",
+      "두르세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-66",
+   "t": {
+    "s": "난리"
+   },
+   "pos": "noun",
+   "en": "chaos, uproar, big fuss",
+   "note": "난리가 나다 = all hell breaks loose.",
+   "ex": [
+    {
+     "s": "애들 때문에 집이 난리예요.",
+     "en": "The house is a mess because of the kids."
+    },
+    {
+     "s": "세일 첫날이라 가게가 난리였어요.",
+     "en": "It was the first day of the sale, so the store was chaos."
+    },
+    {
+     "s": "휴대폰을 잃어버려서 난리가 났어요.",
+     "en": "I lost my phone and it was total panic."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "애들",
+     "때문에",
+     "집이",
+     "난리예요"
+    ],
+    "alt": [
+     [
+      "집이",
+      "애들",
+      "때문에",
+      "난리예요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-76",
+   "t": {
+    "s": "틀다"
+   },
+   "pos": "verb",
+   "en": "to turn on (music, AC, water)",
+   "note": "ㄹ-irregular: 틀어요, 트는, 트세요.",
+   "ex": [
+    {
+     "s": "에어컨 좀 틀어 주세요.",
+     "en": "Please turn on the AC."
+    },
+    {
+     "s": "운전할 때 음악을 틀어요.",
+     "en": "I put on music when I drive."
+    },
+    {
+     "s": "뜨거운 물을 틀었는데 안 나와요.",
+     "en": "I turned on the hot water, but nothing's coming out."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "에어컨",
+     "좀",
+     "틀어",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "좀",
+      "에어컨",
+      "틀어",
+      "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-83",
+   "t": {
+    "s": "제출하다"
+   },
+   "pos": "verb",
+   "en": "to submit, hand in",
+   "note": "",
+   "ex": [
+    {
+     "s": "숙제를 내일까지 제출하세요.",
+     "en": "Hand in your homework by tomorrow."
+    },
+    {
+     "s": "서류를 온라인으로 제출했어요.",
+     "en": "I submitted the documents online."
+    },
+    {
+     "s": "회사에 사직서를 제출했어요.",
+     "en": "I turned in my resignation letter at work."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "숙제를",
+     "내일까지",
+     "제출하세요"
+    ],
+    "alt": [
+     [
+      "내일까지",
+      "숙제를",
+      "제출하세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-91",
+   "t": {
+    "s": "의문"
+   },
+   "pos": "noun",
+   "en": "doubt, question (in one's mind)",
+   "note": "의문이 들다 = to have doubts.",
+   "ex": [
+    {
+     "s": "그 말에 좀 의문이 들었어요.",
+     "en": "I had some doubts about what he said."
+    },
+    {
+     "s": "아직도 의문이 안 풀렸어요.",
+     "en": "My question still hasn't been answered."
+    },
+    {
+     "s": "그 사람이 왜 그랬는지 의문이에요.",
+     "en": "It's a mystery why he did that."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "그",
+     "말에",
+     "좀",
+     "의문이",
+     "들었어요"
+    ],
+    "alt": [
+     [
+      "그",
+      "말에",
+      "의문이",
+      "좀",
+      "들었어요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-97",
+   "t": {
+    "s": "정지"
+   },
+   "pos": "noun",
+   "en": "stop, halt; suspension",
+   "note": "일시 정지 = pause. 정지되다 = to be stopped/suspended.",
+   "ex": [
+    {
+     "s": "영상 좀 일시 정지해 주세요.",
+     "en": "Please pause the video."
+    },
+    {
+     "s": "버스가 급정지해서 넘어질 뻔했어요.",
+     "en": "The bus stopped suddenly and I almost fell."
+    },
+    {
+     "s": "요금을 안 내서 휴대폰이 정지됐어요.",
+     "en": "My phone service was suspended because I didn't pay."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "영상",
+     "좀",
+     "일시",
+     "정지해",
+     "주세요"
+    ],
+    "alt": [
+     [
+      "좀",
+      "영상",
+      "일시",
+      "정지해",
+      "주세요"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kv10-98",
+   "t": {
+    "s": "대량"
+   },
+   "pos": "noun",
+   "en": "large quantity, bulk",
+   "note": "대량으로 = in bulk.",
+   "ex": [
+    {
+     "s": "휴지를 대량으로 샀어요.",
+     "en": "I bought toilet paper in bulk."
+    },
+    {
+     "s": "대량으로 주문하면 할인돼요?",
+     "en": "Is there a discount if I order in bulk?"
+    },
+    {
+     "s": "김장할 때 김치를 대량으로 만들어요.",
+     "en": "We make kimchi in huge batches at kimjang time."
+    }
+   ],
+   "tl": {
+    "ex": 0,
+    "tiles": [
+     "휴지를",
+     "대량으로",
+     "샀어요"
+    ],
+    "alt": [
+     [
+      "대량으로",
+      "휴지를",
+      "샀어요"
      ]
     ]
    }
