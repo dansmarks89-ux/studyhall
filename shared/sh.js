@@ -23,7 +23,8 @@
     if (r.error) throw r.error;
     return (r.data && r.data.courses) || [];
   }
-  function allowed(courses, course) { return courses.indexOf("*") >= 0 || courses.indexOf(course) >= 0; }
+  var BY_NAME = ["ml"]; // courses an invite to everything ("*") does not include; they must be granted by name
+  function allowed(courses, course) { return courses.indexOf(course) >= 0 || (courses.indexOf("*") >= 0 && BY_NAME.indexOf(course) < 0); }
 
   /* Pull the JSON object/array out of a model reply (tolerates ```json fences or stray text). */
   function parseJSON(text) {

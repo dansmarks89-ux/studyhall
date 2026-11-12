@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" data-app="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Machine Learning</title>
+<meta name="theme-color" content="#F2F3FB">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/ui.css">
+<script src="../shared/ui.js"></script>
+<script src="../shared/supabase.js"></script>
+<script src="../shared/sh.js"></script>
+<script>SH.install("ml");</script>
+<style>
+/* Course-specific pieces. Colors come only from the shared tokens, so every color scheme works. */
+:root { --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; }
+.back { padding-left: 6px; }
+.ico { display: inline-flex; }
+.level { display: flex; align-items: center; gap: 16px; }
+.level h1 { text-wrap: balance; }
+.stack { display: flex; flex-direction: column; gap: 12px; }
+.summary { font-size: 16px; line-height: 1.4; }
+.checks { font-size: 15px; font-weight: 700; }
+.checks:empty { display: none; }
+.checks.pass { color: var(--good); }
+.checks.fail { color: var(--bad); }
+.gear { align-self: flex-start; }
+.foot-note { font-size: 14px; }
+
+.sh-tile .tx { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.sh-tile .tx b { font-size: 16px; }
+.sh-tile .tx > span { font-size: 14px; color: var(--ink-2); }
+.sh-ic.done { background: var(--good-soft); }
+.meter { display: block; height: 8px; margin-top: 4px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
+.meter i { display: block; height: 100%; background: var(--good); transform-origin: left; }
+
+.map { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.map li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 10px 14px; background: var(--surface); border: var(--bw) solid var(--surface-2); border-radius: 14px; font-size: 14px; }
+.map li.written { border-color: var(--border); }
+.map b { font-size: 15px; }
+.map span { grid-column: 1; color: var(--ink-2); }
+.map em { grid-column: 2; grid-row: 1; font-style: normal; font-weight: 700; color: var(--ink-2); }
+.map li.written em { color: var(--good); }
+.terms { margin: 0; display: flex; flex-direction: column; gap: 2px; }
+.terms dt { margin-top: 10px; font-weight: 800; }
+.terms dd { margin: 0; color: var(--ink-2); font-size: 16px; }
+.keys { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+
+.qtop { display: flex; align-items: center; gap: 10px; }
+.qtop .x { width: 44px; padding: 0; }
+.qtop .sh-progress { flex: 1; }
+.stage { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+.lesson, .question { display: flex; flex-direction: column; gap: 14px; }
+.lesson h1 { font-size: 28px; text-wrap: balance; }
+.lesson p, .lesson li { max-width: 65ch; }
+.prompt { font-size: 24px; line-height: 1.2; text-wrap: balance; }
+.row2 { display: flex; gap: 10px; }
+.row2 > .sh-btn:not(.block) { flex: none; }
+.sh-cta:empty { display: none; }
+.opts { display: flex; flex-direction: column; gap: 14px; }
+#answer { font-weight: 700; font-size: 22px; }
+#answer:disabled { opacity: 1; }
+#answer.right, .steprow input.right { background: var(--good-soft); animation: sh-pop .38s cubic-bezier(.34, 1.56, .64, 1); }
+#answer.wrong { background: var(--bad-soft); animation: sh-shake .4s ease; }
+.steprow input.shown { background: var(--bad-soft); }
+.hint { align-self: flex-start; min-height: 44px; padding: 0; border: 0; background: none; color: var(--accent-ink); font-weight: 700; text-decoration: underline; cursor: pointer; }
+.recall { padding: 14px; background: var(--surface); border: var(--bw) solid var(--border); border-radius: 16px; animation: sh-up .25s cubic-bezier(.2, .8, .2, 1) both; }
+
+.eq { padding: 12px 14px; background: var(--surface); border: var(--bw) solid var(--border); border-radius: 14px; font-size: 18px; font-weight: 700; text-align: center; overflow-wrap: anywhere; }
+.note, .tip { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border-radius: 12px; font-size: 16px; }
+.note { background: var(--accent-soft); border-left: 6px solid var(--accent); }
+.note b { font-size: 14px; color: var(--accent-ink); }
+.tip { background: var(--surface-2); border-left: 6px solid var(--gold); }
+.tip b { font-size: 14px; }
+.term { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-decoration: underline dotted var(--accent-ink) 2px; text-underline-offset: 3px; cursor: pointer; }
+.scroll { overflow-x: auto; border: var(--bw) solid var(--border); border-radius: 14px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; font-variant-numeric: tabular-nums; }
+th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--surface-2); white-space: nowrap; }
+td:last-child, th:last-child { white-space: normal; }
+th { background: var(--surface-2); font-weight: 800; }
+tr:last-child td { border-bottom: 0; }
+.flow { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 22px; }
+.flow li { position: relative; display: flex; flex-direction: column; padding: 10px 14px; background: var(--surface); border: var(--bw) solid var(--border); border-radius: 14px; }
+.flow li + li::before { content: "↓"; position: absolute; top: -24px; left: 20px; font-weight: 800; color: var(--ink-2); }
+.flow span { font-size: 15px; color: var(--ink-2); }
+
+pre { margin: 0; }
+.code, .py textarea, .out { font: 400 14px/1.5 var(--mono); tab-size: 4; }
+.code { padding: 12px 14px; background: var(--ink); color: var(--bg); border-radius: 14px; overflow-x: auto; }
+.py, .steps, .widget { margin: 0; display: flex; flex-direction: column; gap: 10px; padding: 12px; background: var(--surface); border: var(--bw) solid var(--border); border-radius: 16px; }
+.py label { font-size: 14px; font-weight: 700; color: var(--ink-2); }
+.task label { font-size: 16px; font-weight: 400; color: var(--ink); }
+.py textarea { min-height: 0; padding: 10px 12px; background: var(--ink); color: var(--bg); border: 0; border-radius: 10px; white-space: pre; overflow-x: auto; }
+.pyrow, .steprow { display: flex; gap: 8px; }
+.out { padding: 10px 12px; border-radius: 10px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.out:empty { display: none; }
+.out.ok { background: var(--good-soft); }
+.out.err { background: var(--bad-soft); }
+.out.wait { background: var(--surface-2); color: var(--ink-2); }
+.step { display: flex; flex-direction: column; gap: 6px; padding-top: 10px; border-top: var(--bw) solid var(--surface-2); animation: sh-up .25s cubic-bezier(.2, .8, .2, 1) both; }
+.steprow input { flex: 1; min-width: 0; min-height: 44px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.steprow input:disabled { opacity: 1; }
+.stepnote { font-size: 15px; }
+.stepnote:empty { display: none; }
+
+.chart { width: 100%; height: auto; }
+.grid { stroke: var(--surface-2); stroke-width: 1; }
+.axis { stroke: var(--ink-2); stroke-width: 1.5; }
+.tick { font: 400 11px var(--font); fill: var(--ink-2); }
+.rule { stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+.rule.thin { stroke-width: 1.5; }
+.ghost { stroke: var(--ink-2); stroke-width: 1; opacity: .5; fill: none; }
+.marks { stroke: var(--accent); stroke-width: 5; stroke-linecap: round; fill: none; }
+.miss { stroke: var(--bad); stroke-width: 4; stroke-linecap: round; }
+.cut { stroke: var(--ink); stroke-width: 3; }
+.flagged { fill: var(--accent-soft); }
+.dot { fill: var(--ink); stroke: var(--ink); stroke-width: 2; }
+.dot.hollow { fill: var(--surface); }
+.dot.fresh { fill: var(--gold); }
+.slider { display: grid; grid-template-columns: 9em 1fr; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; }
+.slider input { width: 100%; min-height: 32px; accent-color: var(--accent); }
+.readout { font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.legend { font-size: 14px; color: var(--ink-2); }
+.key { display: inline-block; width: 12px; height: 12px; margin: 0 2px 0 6px; border: 2px solid var(--ink); border-radius: 50%; background: var(--ink); vertical-align: -1px; }
+.key.hollow { background: var(--surface); }
+.key.fresh { background: var(--gold); }
+.stats { margin: 0; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; font-size: 15px; font-variant-numeric: tabular-nums; }
+.stats dd { margin: 0; font-weight: 800; text-align: right; }
+.chain { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.chain span { padding: 6px 8px; border: var(--bw) solid var(--border); border-radius: 12px; }
+.chain i { font-style: normal; color: var(--ink-2); }
+.chain .val { background: var(--surface-2); }
+.chain .op { background: var(--accent-soft); }
+.folds { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.fold { padding: 14px 0; text-align: center; font-weight: 800; background: var(--surface-2); border: var(--bw) solid var(--border); border-radius: 12px; transition: background-color .25s ease, transform .25s cubic-bezier(.34, 1.56, .64, 1); }
+.fold.score { background: var(--gold); color: var(--on-gold); transform: translateY(-4px); }
+
+@media (max-width: 400px) {
+  .slider { grid-template-columns: 1fr; gap: 2px; }
+  .lesson h1 { font-size: 25px; }
+}
+</style>
+</head>
+<body>
+<main class="sh-wrap" id="app"><p class="sh-muted">Loading your lessons…</p></main>
+<script src="course.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

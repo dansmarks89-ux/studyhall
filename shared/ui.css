@@ -1,7 +1,7 @@
 /* Study Hall design system: tokens, three color schemes, components and motion. Plain CSS, no build step.
 
    Page setup (every page):
-     <html lang="en" data-app="spanish|cantonese|korean|vocab|home">
+     <html lang="en" data-app="spanish|cantonese|korean|vocab|ml|home">
      <meta name="theme-color" content="#F2F3FB">            (ui.js keeps it in step with the color scheme)
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
      <link rel="stylesheet" href="<root>/shared/ui.css">
@@ -79,6 +79,7 @@
   --cantonese: #D10A5E; --cantonese-on: #FFFFFF; --cantonese-soft: #FFE0EC; --cantonese-ink: #C90A5A;
   --korean: #2F5BFF; --korean-on: #FFFFFF; --korean-soft: #E3E9FF; --korean-ink: #2553FF;
   --vocab: #FFB703; --vocab-on: #1D1A33; --vocab-soft: #FFF0C2; --vocab-ink: #865F00;
+  --ml: #6A3DE8; --ml-on: #FFFFFF; --ml-soft: #E9E1FD; --ml-ink: #5A2FD6;
   --good: #0A7744; --good-soft: #C9F2DD; --on-good: #FFFFFF;
   --bad: #B42318; --bad-soft: #FFE1DA;
   --gold: #FFC93C; --on-gold: #1D1A33; --focus: #2553FF;
@@ -97,6 +98,7 @@
   --cantonese: #FF3D8B; --cantonese-on: #15132A; --cantonese-soft: #46193B; --cantonese-ink: #FF6BA6;
   --korean: #6D8BFF; --korean-on: #15132A; --korean-soft: #252E5E; --korean-ink: #94A9FF;
   --vocab: #FFC233; --vocab-on: #15132A; --vocab-soft: #3D3320; --vocab-ink: #FFC233;
+  --ml: #A98BFF; --ml-on: #15132A; --ml-soft: #2E2654; --ml-ink: #B9A2FF;
   --good: #3DD68C; --good-soft: #143B2C; --on-good: #15132A;
   --bad: #FF7B6B; --bad-soft: #45202A;
   --gold: #FFD25C; --on-gold: #15132A; --focus: #9DB1FF;
@@ -111,6 +113,7 @@
   --cantonese: #E87AA8; --cantonese-on: #2A2740; --cantonese-soft: #FBE4EE; --cantonese-ink: #AF2F66;
   --korean: #7C95F2; --korean-on: #2A2740; --korean-soft: #E6EBFC; --korean-ink: #3A57CC;
   --vocab: #F5C451; --vocab-on: #2A2740; --vocab-soft: #FDF2D3; --vocab-ink: #855F0A;
+  --ml: #A48CF0; --ml-on: #2A2740; --ml-soft: #EEE8FD; --ml-ink: #5B3FC4;
   --good: #1E7A50; --good-soft: #D7F3E5; --on-good: #FFFFFF;
   --bad: #B3362A; --bad-soft: #FDE4DF;
   --gold: #F9D77E; --on-gold: #2A2740; --focus: #3D5BD9;
@@ -125,6 +128,7 @@
 [data-app="cantonese"] { --accent: var(--cantonese); --on-accent: var(--cantonese-on); --accent-soft: var(--cantonese-soft); --accent-ink: var(--cantonese-ink); }
 [data-app="korean"]    { --accent: var(--korean);    --on-accent: var(--korean-on);    --accent-soft: var(--korean-soft);    --accent-ink: var(--korean-ink); }
 [data-app="vocab"]     { --accent: var(--vocab);     --on-accent: var(--vocab-on);     --accent-soft: var(--vocab-soft);     --accent-ink: var(--vocab-ink); }
+[data-app="ml"]        { --accent: var(--ml);        --on-accent: var(--ml-on);        --accent-soft: var(--ml-soft);        --accent-ink: var(--ml-ink); }
 
 /* ---------- base ---------- */
 *, *::before, *::after { box-sizing: border-box; }

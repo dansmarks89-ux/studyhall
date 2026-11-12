@@ -18,6 +18,7 @@ Language and study apps with sign-in, saved progress and AI practice, for a smal
 | `vocab/` | Word Power, built: `index.html` plus hashed `data.*.json` and `gloss.*.json` (do not edit by hand) |
 | `src/vocab/` | Word Power source: `app.html`; `data/items.json` (8,820 reviewed cards), `data/passages.json` (390 reading passages), `data/gloss.json` (tap-to-define dictionary); `content/` (round 1) and `content/round2/` (specs, reviewer instructions, review patches, pipeline scripts) |
 | `cantonese/index.html`, `korean/index.html` | Cantonese and Korean courses (built files, do not edit by hand). `audio.json` beside each lists every recorded clip |
+| `ml/` | Machine Learning course: `index.html` (the page), `app.js` (its engine), `course.js` (the course map). The lessons are in Supabase, not in this repo (see "Machine Learning course" below) |
 | `src/lang/` | Shared engine for both courses: `app.html`, `build.py`, `tools/check_level.py` (content checker), `tools/ko_pron.py` (Korean pronunciation) |
 | `src/cantonese/content/`, `src/korean/content/` | Course content: `SPEC.md`, `levels/L1–L10.json` (checked and independently reviewed), `bank/` (original phrase banks) |
 | `supabase/functions/ai/index.ts` | The AI function (source copy of what is deployed) |
@@ -69,7 +70,7 @@ select net.http_post(url := 'https://wbrssohmepioxapwbcne.supabase.co/functions/
 
 ## Running it (SQL editor in Supabase)
 
-Invite someone (course names: `spanish`, `vocab`, `cantonese`, `korean`; `*` = everything):
+Invite someone (course names: `spanish`, `vocab`, `cantonese`, `korean`, `ml`; `*` = everything except `ml`, which must be named):
 
 ```sql
 insert into public.invites (email, courses, note)
@@ -105,6 +106,17 @@ join auth.users u on u.id = a.user_id
 left join public.invites i on i.email = lower(u.email)
 order by a.day desc, a.n desc;
 ```
+
+## Machine Learning course (ml)
+
+- `ml/index.html`, `ml/app.js`, `ml/course.js`: the page, its engine and the course map. The lessons are not in this repo.
+- Lessons live in the Supabase table `public.course_content` (course `'ml'`, one row per unit: doc `'u01'`, `'u02'`, ...). Each body is a unit file the page runs after sign-in; the browser keeps a copy for offline use. Only the service role can write rows. Signed-in people can read only courses their invite names explicitly (`private.has_course_by_name`), so `'*'` does not include ml. Migration: `supabase/migrations/20261112210000_course_content.sql` (already applied).
+- ml is granted by name only (`BY_NAME` in `shared/sh.js`). Give someone the course with:
+
+  ```sql
+  update public.invites set courses = array_append(courses, 'ml') where email = 'person@example.com';
+  ```
+- Progress is saved per person under course `ml` (docs `progress` and `stats`), like the other apps.
 
 ## Round 3: big vocabulary tracks, examples, voices and speaking
 
