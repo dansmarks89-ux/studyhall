@@ -109,6 +109,7 @@ details.more{border:var(--bw) solid var(--border);border-radius:14px;padding:4px
 details.more[open]{padding-bottom:14px}
 @media (max-width:420px){.term{font-size:30px}.prof .r{grid-template-columns:76px 1fr 40px}}
 </style>
+<script src="../shared/lookup.js"></script>
 <script src="../shared/supabase.js"></script>
 <script src="../shared/sh.js"></script>
 <script>SH.install("vocab");</script>
@@ -127,6 +128,7 @@ details.more[open]{padding-bottom:14px}
 <nav class="sh-tabs" id="tabs" aria-label="Sections" hidden>
   <button type="button" data-tab="today">Today</button>
   <button type="button" data-tab="tracks">Tracks</button>
+  <button type="button" data-tab="lookup">Look up</button>
   <button type="button" data-tab="progress">Progress</button>
   <button type="button" data-tab="settings">Settings</button>
 </nav>
@@ -215,12 +217,13 @@ function save(...names) {
   if (names.includes("state")) store.set("wp:state", ST);
   if (names.includes("srs")) store.set("wp:srs", R);
   if (names.includes("run")) { store.set("wp:run", RUN); store.set("wp:runclr", RUNCLR); }
-  names.forEach(n => dirty.add(n));
+  names.forEach(n => dirty.add(n)); // "lookup" (the saved look-ups) keeps itself in the browser
   if (db) { clearTimeout(wt); wt = setTimeout(flush, 1500); }
 }
 function docBody(n) {
   if (n === "state") return ST;
   if (n === "srs") return { r: R, v: 1, resetAt: ST.resetAt || 0 };
+  if (n === "lookup") return Object.assign(LK.body(), { resetAt: ST.resetAt || 0 });
   return { run: RUN, v: 1, ts: RUN ? RUN.ts : RUNCLR, resetAt: ST.resetAt || 0 };
 }
 /* Read the account copy and merge it into this device before writing, so a page left open
@@ -232,17 +235,19 @@ async function pull() {
   store.set("wp:state", ST); store.set("wp:srs", R); store.set("wp:run", RUN); store.set("wp:runclr", RUNCLR);
 }
 function applyServer(docs) {
-  const sv = docs.state, ss = docs.srs, sr = docs.run;
+  const sv = docs.state, ss = docs.srs, sr = docs.run, sl = docs.lookup;
   const srvReset = (sv && sv.resetAt) || 0, locReset = ST.resetAt || 0;
   const placing = SESSION && SESSION.kind === "place";
   if (srvReset > locReset) { // progress was reset on another device: take the account copy as it is
     ST = Object.assign(freshState(), sv); normSet();
     R = ss && (ss.resetAt || 0) >= srvReset ? (ss.r || {}) : {};
     if (!placing) { RUN = sr && sr.run && (sr.run.ts || 0) > srvReset ? sr.run : null; RUNCLR = Math.max(RUNCLR, srvReset); }
+    LK.clear(); if (sl && (sl.resetAt || 0) >= srvReset) LK.merge(sl);
     return;
   }
   if (sv && srvReset === locReset) mergeState(sv);
   if (ss && (ss.resetAt || 0) >= locReset) mergeR(ss.r);
+  if (sl && (sl.resetAt || 0) >= locReset ? LK.merge(sl) : LK.count()) dirty.add("lookup"); // this device has saved look-ups the account copy lacks
   if (sr && !placing && (sr.ts || 0) > locReset) {
     if (sr.run && (sr.run.ts || 0) > Math.max(RUN ? RUN.ts || 0 : 0, RUNCLR)) RUN = sr.run;
     else if (!sr.run && (sr.ts || 0) > (RUN ? RUN.ts || 0 : 0)) { RUN = null; RUNCLR = Math.max(RUNCLR, sr.ts || 0); }
@@ -272,11 +277,13 @@ function statsDoc() {
     : nToday < ST.set.goal ? `Today's set, ${ST.set.goal - nToday} new` : "Read a passage";
   return { pts: ST.pts, level: SHUI.points.levelOf(ST.pts).level, next, due: dueList().length };
 }
-const TABVIEWS = ["today", "tracks", "progress", "settings"];
+const TABVIEWS = ["today", "tracks", "lookup", "progress", "settings"];
+/* Draw the tab on screen again after its data changed. Look up keeps its text box and searches again. */
+function redraw() { if (SESSION || !TABVIEWS.includes(VIEW.name)) return; if (VIEW.name === "lookup") LK.refresh(); else render(); }
 document.addEventListener("visibilitychange", async () => {
   if (document.visibilityState === "hidden") return flush();
   if (!db || writing) return;
-  try { await pull(); if (!SESSION && TABVIEWS.includes(VIEW.name)) render(); } catch (e) {}
+  try { await pull(); redraw(); } catch (e) {}
 });
 window.addEventListener("pagehide", () => flush());
 
@@ -311,7 +318,7 @@ async function connect() {
     ["state", "srs", "run"].forEach(n => dirty.add(n));
     setSync("Progress saved to your account");
     flush();
-    if (!SESSION && TABVIEWS.includes(VIEW.name)) render();
+    redraw();
   } catch (e) { setSync("Progress saved on this device (account sync unavailable)"); }
 }
 
@@ -651,10 +658,11 @@ document.addEventListener("click", async e => {
   } catch (err) { out.innerHTML = `<div class="fb mid"><p>${esc(aiErr(err))}</p></div>`; }
   b.disabled = false;
 });
-function pin(id) { R[id] = [0, nowMin(), 0, 0, nowMin()]; save("srs"); if (!SESSION && TABVIEWS.includes(VIEW.name)) render(); }
+function pin(id) { R[id] = [0, nowMin(), 0, 0, nowMin()]; save("srs"); redraw(); }
+const STATUS = { n: "Not studied yet", q: "In your next session", l: "Learning", k: "Known", m: "Mastered" };
 function statusBits(id) { // a card's status chip, and the button that adds it to the next session while it is unstudied
   const st = statusOf(id);
-  return { chip: `<span class="sh-tag ${st === "n" ? "mute" : ""}">${{ n: "Not studied yet", q: "In your next session", l: "Learning", k: "Known", m: "Mastered" }[st]}</span>`,
+  return { chip: `<span class="sh-tag ${st === "n" ? "mute" : ""}">${STATUS[st]}</span>`,
     add: st === "n" ? `<button class="sh-btn sm" type="button" data-pin="${esc(id)}">Add to my next session</button>` : "" };
 }
 function openCard(id) {
@@ -670,6 +678,8 @@ $("dlg").addEventListener("click", e => { if (e.target === $("dlg")) $("dlg").cl
 /* ============ tap a word to look it up ============ */
 let GLOSS = null, tapT; // GLOSS: the dictionary (a promise), loaded on the first tap
 const loadGloss = () => GLOSS = GLOSS || getJSON(GLOSS_URL).catch(e => { GLOSS = null; throw e; });
+const own = (o, k) => Object.hasOwn(o, k) ? o[k] : null; // the words "constructor" and "toString" are not Object's
+const glKeys = (G, s) => { const w = s.toLowerCase().replace(/’/g, "'"); return own(G.f, w) || own(G.f, w.replace(/'s$/, "")); }; // a word's dictionary entries
 /* The word under the point, and the hyphen-separated part of it under the point (the dictionary has single words:
    "long-term" → "term"), or null when the tap isn't on a word. The caret already picks the line, so the word's box
    gets some slack: a fingertip often lands in the gap between lines. */
@@ -711,8 +721,7 @@ async function lookUp(word, part) {
   if (!gl.open) gl.showModal();
   let G;
   try { G = await loadGloss(); } catch (e) { body.innerHTML = `<p>Couldn't load the dictionary. Check your connection and tap the word again.</p>`; return; }
-  const own = (o, k) => Object.hasOwn(o, k) ? o[k] : null; // the words "constructor" and "toString" are not Object's
-  const find = s => { const w = s.toLowerCase().replace(/’/g, "'"); return own(G.f, w) || own(G.f, w.replace(/'s$/, "")); };
+  const find = s => glKeys(G, s);
   const shown = [word, part].find(find) || word;
   const ents = (find(shown) || []).map(k => own(G.d, k)).filter(Boolean);
   body.innerHTML = guarded([word, shown], ents) ? `<p>Answer first — you can look this up afterwards.</p>`
@@ -729,6 +738,37 @@ document.addEventListener("click", e => {
 $("gl").addEventListener("click", e => { if (e.target === $("gl")) $("gl").close(); });
 $("gl").addEventListener("close", () => { const t = $("tans"); if (t && !t.disabled) t.focus(); }); // brings the phone keyboard back
 $("glclose").onclick = () => $("gl").close();
+
+/* ============ Look up ============
+   What the course has on a typed word or phrase: its cards (by the term or one of its forms) and the tap-to-define
+   dictionary (loaded when Look up opens); then Claude, through shared/lookup.js. */
+let LKI = null, GLD = null; // LKI: each card with its lowercased term and forms; GLD: the dictionary, once it has loaded
+const lkCards = () => LKI = LKI || DATA.map(x => ({ x, t: x.term.toLowerCase(), f: formsOf(x) }));
+const glReady = () => loadGloss().then(g => { GLD = g; }, () => {}); // without the dictionary, the cards and Claude still answer
+const lkCard = x => ({ id: x.id, s: x.term, en: isProb(x.id) ? x.q : x.def, html: () => cardHTML(x), state: () => STATUS[statusOf(x.id)],
+  addable: () => statusOf(x.id) === "n", add: () => pin(x.id), addLabel: "Add to my next session" });
+const lkGloss = (k, e) => ({ id: "g:" + k, s: e.w, en: e.s[0], html: () => glEntry(e), state: () => "Dictionary", addable: () => false });
+function lkExact(text) { // the cards whose term or form this is, then the dictionary's entries that have no card
+  const s = text.trim().toLowerCase(), cards = lkCards().filter(c => c.f.includes(s)).map(c => c.x), have = new Set(cards.map(x => x.id));
+  const ents = GLD ? (glKeys(GLD, s) || []).map(k => [k, own(GLD.d, k)]).filter(([, e]) => e && !have.has(e.i)) : [];
+  return cards.map(lkCard).concat(ents.map(([k, e]) => e.i ? lkCard(BY[e.i]) : lkGloss(k, e)));
+}
+function lkLinks(texts) { const seen = new Set(); return texts.flatMap(lkExact).filter(h => !seen.has(h.id) && !!seen.add(h.id)).slice(0, 8); } // an AI answer's word, similar and opposite words
+function lkFind(q) {
+  const s = q.trim().toLowerCase(), exact = lkExact(q), have = new Set(exact.map(h => h.id));
+  const rank = c => c.t.startsWith(s) ? 0 : c.t.includes(s) ? 1 : s.length > 2 && !isProb(c.x.id) && (c.x.def || "").toLowerCase().includes(s) ? 2 : 3;
+  const near = lkCards().map(c => ({ c, n: rank(c) })).filter(y => y.n < 3 && !have.has(y.c.x.id)).sort((a, b) => (a.n - b.n) || (a.c.t.length - b.c.t.length)).slice(0, 12).map(y => lkCard(y.c.x));
+  return { exact: exact.slice(0, 6), near };
+}
+const LK = SHLookup.create({ key: "wp:lookup",
+  intro: "Type a word, a phrase, an idiom or a reference.", placeholder: "Word or phrase",
+  have: "In the course", linked: "Related entries in the course",
+  ai: { english: true }, loaded: glReady, find: lkFind, links: lkLinks,
+  tx: h => esc(h.s), play: s => playBtn(s, true), sample: getSample, aiError: aiErr, changed: () => save("lookup") });
+function viewLookup() {
+  $("main").innerHTML = `<div id="lk"></div>`; LK.mount($("lk"));
+  if (!GLD) glReady().then(LK.refresh);
+}
 
 /* ============ sessions ============ */
 let SESSION = null;
@@ -1231,7 +1271,7 @@ function setTabs(name) { // name: the tab view shown, or null for full-screen st
   $("hpts").innerHTML = SHUI.chip(ST.pts);
   document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-current", b.dataset.tab === name ? "page" : "false"));
 }
-document.querySelectorAll("#tabs button").forEach(b => { b.insertAdjacentHTML("afterbegin", SHUI.icon(b.dataset.tab)); b.onclick = () => go(b.dataset.tab); });
+document.querySelectorAll("#tabs button").forEach(b => { b.insertAdjacentHTML("afterbegin", SHUI.icon(b.dataset.tab === "lookup" ? "find" : b.dataset.tab)); b.onclick = () => go(b.dataset.tab); });
 function go(name, args) {
   if (SESSION) { SESSION = null; }
   astatus("");
@@ -1240,8 +1280,9 @@ function go(name, args) {
 function render() {
   if (!TABVIEWS.includes(VIEW.name)) VIEW = { name: "today" };
   const v = VIEW.name;
-  setTabs(["today", "tracks", "progress", "settings"].includes(v) ? v : null);
+  setTabs(v);
   if (v === "today") return viewToday();
+  if (v === "lookup") return viewLookup();
   if (v === "tracks") return VIEW.t ? (VIEW.l != null ? viewLevel(VIEW.t, VIEW.l) : viewTrack(VIEW.t)) : viewTracks();
   if (v === "progress") return viewProgress();
   if (v === "settings") return viewSettings();
@@ -1252,21 +1293,6 @@ function itemLi(id) {
   return `<li><button class="word" type="button" data-open="${esc(id)}"><span class="dot ${st === "l" || st === "q" ? "l" : st}" aria-hidden="true"></span><span class="tx"><span class="t">${esc(x.term)}</span><span class="d">${esc(d)}</span></span></button></li>`;
 }
 function bindItemLis() { document.querySelectorAll("[data-open]").forEach(b => b.onclick = () => openCard(b.dataset.open)); }
-function searchBox() {
-  return `<div><label class="f" for="q">Look something up<input type="search" id="q" placeholder="Search ${DATA.length.toLocaleString()} entries" autocomplete="off"></label><ul class="words" id="qres" style="margin-top:8px"></ul></div>`;
-}
-function bindSearch() {
-  const q = $("q"); if (!q) return;
-  q.oninput = () => {
-    const s = q.value.trim().toLowerCase(); const out = $("qres");
-    if (s.length < 2) { out.innerHTML = ""; return; }
-    const starts = [], has = [];
-    for (const x of DATA) { const t = x.term.toLowerCase(); if (t.startsWith(s)) starts.push(x.id); else if (t.includes(s) || (!isProb(x.id) && (x.def || "").toLowerCase().includes(s))) has.push(x.id); if (starts.length > 12) break; }
-    const res = starts.concat(has).slice(0, 12);
-    out.innerHTML = res.length ? res.map(itemLi).join("") : `<li class="hint">Nothing found. The course covers ${DATA.length.toLocaleString()} items; this one isn't among them.</li>`;
-    bindItemLis();
-  };
-}
 function viewToday() {
   const d = today(); const nToday = ST.day.d === d ? ST.day.n : 0; const rToday = ST.day.d === d ? ST.day.r : 0;
   const due = dueList().length; const goal = ST.set.goal;
@@ -1295,9 +1321,7 @@ function viewToday() {
   </section>
   <ul class="list"><li><button class="sh-tile" type="button" id="read"><span class="sh-ic">${SHUI.icon("book")}</span><span class="tx"><span class="t">Read a passage</span><span class="d">3 questions</span></span></button></li>
     ${trackOn("reasoning") ? `<li><button class="sh-tile" type="button" id="workout"><span class="sh-ic">${SHUI.icon(TR.reasoning.icon)}</span><span class="tx"><span class="t">Reasoning workout</span><span class="d">5 problems</span></span></button></li>` : ""}</ul>`;
-  h += `<section class="sh-card">${searchBox()}</section>`;
   $("main").innerHTML = h;
-  bindSearch();
   if ($("pres")) $("pres").onclick = () => startPlacement(true);
   if ($("daily")) $("daily").onclick = () => { const s = buildDaily(); if (!s.length) return toast("Nothing due right now. Try “Learn 5 more”."); startSession("daily", s, "Today"); };
   if ($("quick")) $("quick").onclick = () => { const s = buildDaily(null, true); if (!s.length) return toast("Nothing due right now. Try “Learn 5 more”."); startSession("daily", s, "Quick session"); };
@@ -1318,9 +1342,8 @@ function trackLi(t) {
 }
 function viewTracks() {
   $("main").innerHTML = `<div class="head"><h1>Tracks</h1><p class="sub">Vocabulary is the core. The other tracks build the knowledge and reasoning that strong readers draw on. Switch tracks on or off in Settings.</p></div>
-    <ul class="list">${TORDER.map(t => trackLi(t)).join("")}</ul><section class="sh-card">${searchBox()}</section>`;
+    <ul class="list">${TORDER.map(t => trackLi(t)).join("")}</ul>`;
   document.querySelectorAll("[data-track]").forEach(b => b.onclick = () => go("tracks", { t: b.dataset.track }));
-  bindSearch();
 }
 function viewTrack(t) {
   const c = cur(t);
@@ -1432,7 +1455,7 @@ function viewSettings() {
   $("s-reset").onclick = () => {
     $("dlgin").innerHTML = `<h2>Reset all progress?</h2><p>Type <b>reset</b> to confirm.</p><input type="text" id="rconf" autocomplete="off"><div class="row"><button class="sh-btn" type="button" id="rgo2">Erase everything</button><button class="sh-btn primary" type="button" id="rno">Cancel</button></div>`;
     $("dlg").showModal(); $("rno").onclick = () => $("dlg").close();
-    $("rgo2").onclick = () => { if ($("rconf").value.trim().toLowerCase() !== "reset") return; const t0 = Date.now(); ST = freshState(); ST.set.ts = t0; ST.resetAt = t0; R = {}; RUN = null; RUNCLR = t0; save("state", "srs", "run"); flush(); $("dlg").close(); go("today"); };
+    $("rgo2").onclick = () => { if ($("rconf").value.trim().toLowerCase() !== "reset") return; const t0 = Date.now(); ST = freshState(); ST.set.ts = t0; ST.resetAt = t0; R = {}; RUN = null; RUNCLR = t0; LK.clear(); save("state", "srs", "run", "lookup"); flush(); $("dlg").close(); go("today"); };
   };
 }
 

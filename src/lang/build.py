@@ -206,7 +206,8 @@ def build(lang):
     shared = lambda f: open(os.path.join(REPO, "shared", f), encoding="utf-8").read()
     preview = (src.replace("__VOCAB__", '{"data":' + v2json.decode("utf-8") + "}").replace("__HOSTED__", "")
                .replace('<link rel="stylesheet" href="../shared/ui.css">', "<style>\n" + shared("ui.css") + "</style>")
-               .replace('<script src="../shared/ui.js"></script>', "<script>\n" + shared("ui.js") + "</script>"))
+               .replace('<script src="../shared/ui.js"></script>', "<script>\n" + shared("ui.js") + "</script>")
+               .replace('<script src="../shared/lookup.js"></script>', "<script>\n" + shared("lookup.js") + "</script>"))
     assert "../shared/" not in preview
     os.makedirs(os.path.join(REPO, "build"), exist_ok=True)
     open(os.path.join(REPO, "build", f"{C['course']}-course.html"), "w", encoding="utf-8").write(preview)

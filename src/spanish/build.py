@@ -7,7 +7,7 @@ Both first run content/vocab2/gen_vocab2.py (Everyday words + more clinic words 
 content/verbs/gen_verbs.py (the verb lessons -> data/verbs.json). The hosted page loads those as
 spanish/vocab2.<hash>.json and spanish/verbs.<hash>.json (named by content, so browsers keep them for good);
 the previous build's files are kept for pages still open, older ones are deleted. The claude version inlines them,
-and inlines shared/ui.css and shared/ui.js too (the hosted page links them).
+and inlines shared/ui.css, shared/ui.js and shared/lookup.js too (the hosted page links them).
 
 The two learning paths (Everyday, Clinic) are built here from the existing content: every unit is a course level
 (C1..C8, M1..M8) or a word set (Everyday E01..E30, more clinic words MB1..MB8) with its words in order (w). The app
@@ -95,14 +95,14 @@ for ph, data in [("__LEVELS__", LEVELS), ("__DRILLS__", load("drills.tagged.json
     src = src.replace(ph, dumps(data))
 LAZY = {"__VOCAB2__": ("vocab2", dumps(VOCAB2)), "__VERBLESSONS__": ("verbs", dumps(load("verbs.json")))}   # loaded after the page
 for ph in LAZY: assert src.count(ph) == 1, ph
-SHARED = '<link rel="stylesheet" href="../shared/ui.css">\n<script src="../shared/ui.js"></script>'
+SHARED = '<link rel="stylesheet" href="../shared/ui.css">\n<script src="../shared/ui.js"></script>\n<script src="../shared/lookup.js"></script>'
 assert src.count(SHARED) == 1 and src.count("<!--HOSTED-->") == 1
 
 target = sys.argv[1] if len(sys.argv) > 1 else ""
 if target == "claude":
     out = os.path.join(REPO, "build", "clinic-spanish-course.html"); os.makedirs(os.path.dirname(out), exist_ok=True)
     shared = lambda f: open(os.path.join(REPO, "shared", f), encoding="utf-8").read()
-    src = src.replace(SHARED, f"<style>\n{shared('ui.css')}</style>\n<script>\n{shared('ui.js')}</script>").replace("<!--HOSTED-->", "")
+    src = src.replace(SHARED, f"<style>\n{shared('ui.css')}</style>\n<script>\n{shared('ui.js')}</script>\n<script>\n{shared('lookup.js')}</script>").replace("<!--HOSTED-->", "")
     for ph, (_, body) in LAZY.items(): src = src.replace(ph, body)
     open(out, "w", encoding="utf-8").write(src)
 elif target == "hosted":

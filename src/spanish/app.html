@@ -11,8 +11,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
 <link rel="stylesheet" href="../shared/ui.css">
 <script src="../shared/ui.js"></script>
+<script src="../shared/lookup.js"></script>
 <style>
-/* Layout: Learn (the path), Practice and Settings tabs; lessons, practice and checks run full screen with a bottom answer sheet. */
+/* Layout: Learn (the path), Practice, Look up and Settings tabs; lessons, practice and checks run full screen with a bottom answer sheet. */
 main{flex:1;display:flex;flex-direction:column;gap:18px;margin:0 calc(-1 * var(--gx));padding:0 var(--gx);overflow-x:clip}  /* clip: cards slide in from the side without a sideways scroll */
 h3{font-size:15px;font-weight:700;color:var(--ink-2)}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px}
@@ -134,6 +135,9 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
 details.more > .list{margin-top:12px}
 .adv-in > .sh-btn.sm{align-self:flex-start}
 .adv-in h3{font-size:17px;color:var(--ink);margin-top:8px}
+.tenses{display:flex;flex-direction:column;gap:10px;margin:6px 0 0}
+.tenses dt{color:var(--ink-2);font-size:15px}
+.tenses dd{margin:0;font-weight:700;overflow-wrap:anywhere}
 @media (max-width:400px){.prompt{font-size:23px}.word b{font-size:34px}}
 </style>
 <!--HOSTED-->
@@ -147,6 +151,7 @@ details.more > .list{margin-top:12px}
 <nav class="sh-tabs" id="tabs" aria-label="Sections" hidden>
   <button type="button" data-tab="learn">Learn</button>
   <button type="button" data-tab="practice">Practice</button>
+  <button type="button" data-tab="lookup">Look up</button>
   <button type="button" data-tab="settings">Settings</button>
 </nav>
 <dialog class="sh-dialog" id="dlg"><div class="sh-dialog-in" id="dlgin"></div></dialog>
@@ -293,7 +298,7 @@ let LR = loadLR(store.get("csc:learner",{}));
 let db=null, uid=null, dirtyDocs=new Set(), syncing=false, syncT=null, syncDue=0, statsSent="";
 foldWordSrs();
 let syncText = "Progress is saved in this browser.";
-const SHARDS = ["srs-L","srs-V","srs-J","srs-T","srs-W","srs-B"], DOCS = ["course","learner","log",...SHARDS];
+const SHARDS = ["srs-L","srs-V","srs-J","srs-T","srs-W","srs-B"], DOCS = ["course","learner","log","lookup",...SHARDS];
 function persist(){ store.set("csc:progress",P); store.set("csc:learner",LR); }
 function mergeP(r){
   for(const id in r.lv||{}){ const a=P.lv[id]||{}, b=r.lv[id]; P.lv[id]={best:Math.max(a.best||0,b.best||0), passed:!!(a.passed||b.passed), tests:Math.max(a.tests||0,b.tests||0), at:Math.max(a.at||0,b.at||0)}; }
@@ -308,7 +313,7 @@ async function pull(){
   const qs=await db.collection("data/users/"+uid).get(), docs={};
   qs.docs.forEach(d=>{ docs[d.id]=d.data(); });
   const at=(docs.learner&&docs.learner.resetAt)||0;
-  if(at>LR.resetAt){ P={lv:{}, it:{}}; LR=freshLR(); LR.resetAt=at; dirtyDocs.clear(); }   // started over on another device
+  if(at>LR.resetAt){ P={lv:{}, it:{}}; LR=freshLR(); LR.resetAt=at; LK.clear(); dirtyDocs.clear(); }   // started over on another device
   for(const id in docs){
     const body=docs[id]; if(!body || id==="stats" || (body.resetAt||0)<LR.resetAt) continue;   // written before the last start-over
     if(id==="course") mergeP(body); else if(mergeLR(id, body)) dirtyDocs.add(id);
@@ -356,6 +361,7 @@ function docBody(n){
   if(n==="learner") return Object.assign(r0, {sk:LR.sk, w:LR.w, diag:LR.diag, mig:LR.mig, intro:LR.intro, path:LR.path, len:LR.len, ts:LR.ts,
     taught:[...LR.taught], checks:[...LR.checks], placed:LR.placed, pts:LR.pts, vb:LR.vb, vn:LR.vn, vlast:LR.vlast, vts:LR.vts, vall:LR.vall,
     pos:{every:posOf("every"), clinic:posOf("clinic")}, v:2});
+  if(n==="lookup") return Object.assign(r0, LK.body());
   if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return Object.assign(r0, {e:out.reverse(), v:2}); }
   const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return Object.assign(r0, {r, v:2});
 }
@@ -386,7 +392,8 @@ function mergeLR(name, d){
     const seen=new Set((d.e||[]).map(e=>e.t+"|"+e.id)), mine=new Set(LR.log.map(e=>e.t+"|"+e.id));
     if(LR.log.some(e=>!seen.has(e.t+"|"+e.id))) ch=true;
     LR.log = LR.log.concat((d.e||[]).filter(e=>!mine.has(e.t+"|"+e.id))).sort((a,b)=>a.t-b.t).slice(-LOG_MAX);
-  } else if(name.startsWith("srs-")){
+  } else if(name==="lookup") ch=LK.merge(d);
+  else if(name.startsWith("srs-")){
     const rr=d.r||{};
     for(const id in rr){ const a=LR.srs[id], b=rr[id]; if(!a || b[2]>a[2] || (b[2]===a[2] && b[4]>a[4])) LR.srs[id]=b; }
     for(const id in LR.srs) if(shardOf(id)===name){ const b=rr[id], a=LR.srs[id]; if(!b || a[2]>b[2]) { ch=true; break; } }
@@ -1133,14 +1140,14 @@ function wordQ(k, kinds){
 
 /* ================= views ================= */
 let view={name:"learn"};
-const TAB_OF = {learn:"learn", practice:"practice", settings:"settings", weak:"practice", cards:"practice", drills:"practice", drill:"practice", convs:"practice", verbs:"practice", unit:"learn"};
+const TAB_OF = {learn:"learn", practice:"practice", lookup:"lookup", settings:"settings", weak:"practice", cards:"practice", drills:"practice", drill:"practice", convs:"practice", verbs:"practice", unit:"learn"};
 const go = v => { view=v; render(); window.scrollTo(0,0); };
 function render(){
   stopAudio(); micCancel(); astatus("");
   const tab=TAB_OF[view.name];
   $("tabs").hidden=!tab;
   document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ if(b.dataset.tab===tab) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current"); });
-  ({learn:renderLearn, practice:renderPractice, settings:renderSettings, welcome:renderWelcome, known:renderKnown, placed:renderPlaced,
+  ({learn:renderLearn, practice:renderPractice, lookup:renderLookup, settings:renderSettings, welcome:renderWelcome, known:renderKnown, placed:renderPlaced,
     unit:renderUnit, drills:renderDrills, drill:renderDrill, convs:renderConvs, weak:renderWeak, cards:renderCards, verbs:renderVerbs, talk:renderTalk, run:renderRun})[view.name]();
 }
 /* first visit: path choice, then placement; afterwards Learn */
@@ -1148,9 +1155,10 @@ function route(){ go(LR.placed ? {name:"learn"} : {name:"welcome"}); }
 /* after the account or the Everyday words arrive: redraw a tab, or move between the first-visit screens and Learn */
 function refresh(){
   if(view.name==="welcome" ? LR.placed : view.name==="learn" && !LR.placed) return route();
-  if(TAB_OF[view.name]) render();
+  if(view.name==="lookup") LK.refresh();   // Look up keeps its text box and searches again
+  else if(TAB_OF[view.name]) render();
 }
-document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ b.insertAdjacentHTML("afterbegin", SHUI.icon({learn:"book", practice:"practice", settings:"settings"}[b.dataset.tab])); b.onclick=()=>go({name:b.dataset.tab}); });
+document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ b.insertAdjacentHTML("afterbegin", SHUI.icon({learn:"book", practice:"practice", lookup:"find", settings:"settings"}[b.dataset.tab])); b.onclick=()=>go({name:b.dataset.tab}); });
 const head = (back) => `<header class="top">${back ? `<button class="back" type="button" id="back">${SHUI.icon("back")}${esc(back)}</button>` : HOSTED ? `<a class="back" href="../">${SHUI.icon("back")}Study Hall</a>` : "<span></span>"}${SHUI.chip(LR.pts,{id:"hpts"})}</header>`;
 function wireBack(to){ $("back").onclick=()=>go(to); }
 
@@ -1364,7 +1372,7 @@ async function startLesson(u, ls){
   let from=0;   // reviews go after the first group
   for(let g=0; g<ng; g++){
     const idx=words.map((_,i)=>i).slice(Math.floor(words.length*g/ng), Math.floor(words.length*(g+1)/ng));
-    idx.forEach(i=>{ if(!isIntroduced(words[i])) seq.push({t:"intro", k:words[i], id:"intro:"+words[i]}); });
+    idx.forEach(i=>{ const k=words[i], r=LR.srs["w:"+k]; if(!LR.intro[k] && !(r && r[2])) seq.push({t:"intro", k, id:"intro:"+k}); });   // (a word put into the reviews from Look up and not answered yet still gets its card)
     for(let r=0; r<L.rec; r++) idx.forEach(i=>{ if(recog[i][r]) seq.push(recog[i][r]); });
     if(!g) from=seq.length;
   }
@@ -1843,12 +1851,13 @@ function mountGram(ex, it, done){
   $("gotIt").focus({preventScroll:true}); $("gotIt").onclick=done;
 }
 /* a verb lesson's first card: the verb, today's tenses, how it conjugates and its key patterns */
+const verbUses = E => `<h3>Key patterns</h3><ul class="exl">${E.uses.map(u=>`<li>${playBtn(u.x)}<span><span class="es">${esc(u.es)}</span><span class="en">${esc(u.en)}</span><span>${esc(u.x)}</span><span class="en">${esc(u.xen)}</span></span></li>`).join("")}</ul>`;
 function mountVerbMeet(ex, it, done){
   const E=VB.verbs[it.v], tl=t=>TLABEL[t]||t;
   ex.innerHTML=`<span class="sh-tag" style="align-self:flex-start">${it.mode==="rev"?"Verb lesson: new tenses":"Verb lesson"}</span>
     <div class="word"><b>${esc(it.v)}</b><button class="sh-play" type="button" data-say="${esc(it.v)}" aria-label="Play">${SHUI.icon("play")}</button></div>
     <p class="mean">${esc(E.en)}</p><div class="row">${it.focus.map(t=>`<span class="sh-tag mute">${esc(tl(t))}</span>`).join("")}</div><p>${md(E.note)}</p>
-    <h3>Key patterns</h3><ul class="exl">${E.uses.map(u=>`<li>${playBtn(u.x)}<span><span class="es">${esc(u.es)}</span><span class="en">${esc(u.en)}</span><span>${esc(u.x)}</span><span class="en">${esc(u.xen)}</span></span></li>`).join("")}</ul>
+    ${verbUses(E)}
     <button class="sh-btn primary block dock" type="button" id="gotIt">Got it</button>`;
   autoSay(it.v);
   $("gotIt").focus({preventScroll:true}); $("gotIt").onclick=done;
@@ -2393,7 +2402,7 @@ function renderSettings(){
   $("s-reset").onclick=()=>dialog(`<h2>Reset all progress?</h2><p>Type <b>reset</b> to confirm.</p><input type="text" id="rconf" autocomplete="off" aria-label="Type reset to confirm"><button class="sh-btn block" type="button" id="rgo">Erase everything</button><button class="sh-btn primary block" type="button" id="rno">Cancel</button>`,
     d=>{ d.querySelector("#rno").onclick=()=>$("dlg").close();
       d.querySelector("#rgo").onclick=()=>{ if(d.querySelector("#rconf").value.trim().toLowerCase()!=="reset") return;
-        P={lv:{}, it:{}}; LR=freshLR(); LR.resetAt=Date.now(); LR.mig={legacy:true, path:true};
+        P={lv:{}, it:{}}; LR=freshLR(); LR.resetAt=Date.now(); LR.mig={legacy:true, path:true}; LK.clear();
         DOCS.forEach(n=>dirtyDocs.add(n)); persist(); sync(); $("dlg").close(); route(); }; });
 }
 /* ---------- back up / move progress ---------- */
@@ -2406,6 +2415,104 @@ function importAll(text){
   mapOldProgress(); persist(); sync();
   return n;
 }
+
+/* ================= Look up =================
+   What the course has on a typed text: its words and phrases (WORD), its verbs and every form of them (CONJ, the verb
+   lessons) and its example sentences; then Claude, through shared/lookup.js. Texts are compared in lowercase without
+   punctuation. Accents count when some entry has them as typed ("hablo" is not "habló") and are ignored otherwise.
+   The index is built on the first search and again once the Everyday words or the verb lessons have arrived. */
+const LKX = {stamp:""};
+const lkVerbEn = v => VB.verbs && VB.verbs[v] ? VB.verbs[v].en : (VERBS.find(x=>x.v===v)||{g:""}).g;
+function lkIndex(){
+  const stamp=V2.state+VB.state; if(LKX.stamp===stamp) return LKX;
+  const put=(m,k,v)=>{ if(m.has(k)) m.get(k).push(v); else m.set(k,[v]); };
+  Object.assign(LKX, {stamp, es:new Map(), en:new Map(), form:new Map(), sent:new Map(), vk:new Map(), list:[]});
+  const sentence=(es,en)=>{ const b=strip(norm(es)); if(!LKX.sent.has(b)) LKX.sent.set(b,[es,en]); };
+  // an entry under its Spanish (es) and under each English meaning, "to drive" also as "drive"
+  const entry=(k, v, es, meaning)=>{
+    const en=[...new Set(meaning.replace(/\(.*?\)/g," ").split(/[;,]/).map(x=>strip(norm(x))).flatMap(x=>[x, x.replace(/^to /,"")]).filter(Boolean))];
+    es.forEach(a=>put(LKX.es, strip(a), {a, k, v})); en.forEach(x=>put(LKX.en, x, {k, v}));
+    LKX.list.push({k, v, es:es.map(strip), en});
+  };
+  for(const k in WORD){
+    const W=WORD[k], v=verbOf(k);
+    entry(k, null, [...new Set(cleanSay(W.w).split(" / ").flatMap(h=>{ const a=norm(h); return [a, a.replace(/^(el|la|los|las|un|una) /,"")]; }))], W.en);
+    W.ex.forEach(x=>sentence(x[0],x[1]));
+    if(v && (!LKX.vk.has(v) || (W.w===v && WORD[LKX.vk.get(v)].w!==v))) LKX.vk.set(v,k);   // a verb's own entry, before "llevar (+ tiempo)"
+  }
+  for(const v in CONJ){   // a verb that isn't a word of the course is an entry when a verb lesson or card gives its meaning
+    if(!LKX.vk.has(v)){ if(!lkVerbEn(v)) continue; entry(null, v, [v], lkVerbEn(v)); }
+    CONJ[v].forEach((row,t)=>row.forEach((f,p)=>{ if(f) put(LKX.form, strip(f), {a:f, v, t, p}); }));
+  }
+  if(VB.verbs) for(const v in VB.verbs) VB.verbs[v].s.forEach(x=>sentence(x.es,x.en));
+  return LKX;
+}
+const lkAdd = k => { LR.srs["w:"+k]=[0,today(),0,0,today()]; dirtyDocs.add(shardOf("w:"+k)); saveLR(); };
+function lkState(k){
+  if(LR.srs["w:"+k]) return "In your reviews";
+  if(isIntroduced(k)) return "Met";
+  const u=pathUnits().find(u=>UNITS[u].w.includes(k));
+  return u ? "Later on your path: "+UNITS[u].title : "";
+}
+/* One entry of the course: a word or phrase (k), a verb (v, when it has no word entry of its own) and, for a typed verb
+   form, what the form is (forms: [{a: the form, t: tense index, p: person}…]). */
+function lkEntry(k, v, forms){
+  const W=k ? WORD[k] : null, verb=v || (k && verbOf(k)), E=verb && VB.verbs ? VB.verbs[verb] : null;
+  const en=W ? W.en : lkVerbEn(verb), head=W ? W.w : verb;
+  const is=forms ? [...new Set(forms.map(f=>`${TLABEL[TENSES[f.t]]||TENSES[f.t]}, ${persLabel(TENSES[f.t],f.p)}`))] : [];
+  const mine=E && forms ? E.s.filter(x=>forms.some(f=>strip(norm(x.f))===strip(norm(f.a)) && x.t===TENSES[f.t])) : [];
+  // examples: a form's own verb-lesson sentences (else its tense's), then the word's; a verb without a word entry shows two of its lesson's
+  const lesson=!E ? [] : !forms ? (W ? [] : E.s) : mine.length ? mine : E.s.filter(x=>forms.some(f=>x.t===TENSES[f.t]));
+  const ex=lesson.slice(0,2).map(x=>[x.es,x.en]).concat(W ? W.ex : []).slice(0, forms ? 3 : undefined);
+  return {id:(k ? "w:"+k : "v:"+verb)+(forms ? ":"+forms[0].a : ""), s:forms ? forms[0].a : head, en:forms ? `${verb} (${en}): ${is.join("; ")}` : en,
+    html:()=>`<div class="word"><b lang="es">${esc(forms ? forms[0].a : head)}</b>${playBtn(forms ? forms[0].a : W ? cleanWord(W) : verb)}</div>
+      ${forms ? `<p>A form of <b lang="es">${esc(verb)}</b>: ${esc(is.join("; "))}.</p>` : ""}<p class="mean">${esc(en)}</p>
+      ${W && W.pos && !W.phrase ? `<span class="sh-tag mute" style="align-self:flex-start">${esc(W.pos)}</span>` : ""}${W && W.note ? `<p>${md(W.note)}</p>` : ""}${E ? `<p>${md(E.note)}</p>` : ""}
+      ${ex.length ? exList(ex) : ""}${E && !forms ? verbUses(E) : ""}
+      ${verb ? `<details><summary>Every form of ${esc(verb)}</summary><div><p class="sub">In this order: ${esc(PERS.join(", "))}. Commands have no yo form.</p>
+        <dl class="tenses">${TENSES.map((t,i)=>{ const F=CONJ[verb][i].filter(Boolean); return F.length ? `<dt>${esc(TLABEL[t]||t)}</dt><dd lang="es">${esc(F.map(f=>t==="Command (−)" ? "no "+f : f).join(", "))}</dd>` : ""; }).join("")}</dl></div></details>` : ""}`,
+    state:()=>k ? lkState(k) : "", addable:()=>!!k && !LR.srs["w:"+k] && !!wordReview(k,[0]), add:()=>lkAdd(k), addLabel:"Add to my reviews"};
+}
+const lkUnique = () => { const seen=new Set(); return h=>{ const key=lc(h.s)+"|"+lc(h.en); return !seen.has(key) && !!seen.add(key); }; };   // one of two entries that read the same
+const lkSentence = ([es,en]) => ({id:"s:"+hashStr(es), s:es, en, html:()=>exList([[es,en]]), state:()=>"", addable:()=>false});
+/* The course's entries for a Spanish text: the word or phrase and, unless wordsOnly, the verb whose form it is ("no" and
+   a subject pronoun in front are skipped) and the sentence. */
+function lkSpanish(text, wordsOnly){
+  const X=lkIndex(), a=norm(text), b=strip(a), out=[];
+  const pick=(m,key,typed)=>{ const all=m.get(key)||[], same=all.filter(x=>norm(x.a)===typed); return same.length ? same : all; };
+  pick(X.es,b,a).forEach(x=>out.push(lkEntry(x.k, x.v)));
+  if(wordsOnly) return out;
+  const fa=a.replace(/^no /,"").replace(/^(yo|tú|tu|él|el|ella|usted|nosotros|nosotras|ustedes|ellos|ellas) /,""), by={};
+  pick(X.form,strip(fa),fa).forEach(f=>(by[f.v]=by[f.v]||[]).push(f));
+  for(const v in by) out.push(lkEntry(X.vk.get(v)||null, v, by[v]));
+  if(X.sent.has(b)) out.push(lkSentence(X.sent.get(b)));
+  return out;
+}
+function lkFind(q){
+  const X=lkIndex(), b=strip(norm(q)), fresh=lkUnique();
+  const exact=lkSpanish(q).concat((X.en.get(b.replace(/^(the|an?) /,""))||[]).map(x=>lkEntry(x.k, x.v))).filter(fresh);
+  const rank=e=>e.es.some(x=>x.startsWith(b)) ? 0 : e.en.some(x=>x.startsWith(b)) ? 1 : b.length>2 && e.es.concat(e.en).some(x=>(" "+x).includes(" "+b)) ? 2 : 3;
+  const near=X.list.map(e=>({e, r:rank(e)})).filter(x=>x.r<3).sort((x,y)=>(x.r-y.r) || (x.e.es[0].length-y.e.es[0].length)).slice(0,12).map(x=>lkEntry(x.e.k, x.e.v)).filter(fresh);
+  return {exact:exact.slice(0,6), near};
+}
+/* The course's entries for the words of an AI answer: each text whole, and the first one (the Spanish itself) word by
+   word, small words left out; a plural or feminine form finds its word. */
+function lkLinks(texts){
+  const fresh=lkUnique(), out=[], add=h=>{ if(fresh(h)) out.push(h); };
+  texts.forEach(t=>lkSpanish(t).forEach(add));
+  tokens(texts[0]).map(lc).filter(w=>!FUNC.has(strip(w))).forEach(w=>{
+    const hit=[lkSpanish(w), ...[...new Set([w.replace(/s$/,""), w.replace(/es$/,""), w.replace(/as?$/,"o")])].filter(x=>x!==w).map(x=>lkSpanish(x,true))].find(h=>h.length);   // ("ganas" is not ganar's "gana")
+    if(hit) hit.forEach(add); });
+  return out.slice(0,8);
+}
+const LK = SHLookup.create({key:"csc:lookup", accents:["á","é","í","ó","ú","ñ","ü","¿","¡"],
+  intro:"Type a word, a verb form or a sentence, in Spanish or English.", placeholder:"Spanish or English",
+  have:"In the course", linked:"Its words in the course",
+  ai:{name:"Spanish", code:"es", rom:"", learner:"an American cardiologist who is learning Latin American Spanish for everyday conversation and for talking with his patients",
+    rules:`Use the Spanish of Mexico and Central America, and the everyday word people there use (tomar, manejar); other common words go in "alts". Never use vosotros or vos. When a sentence is said to "you", put the usted form (how he talks to patients) in "t" and the tú form (friends and family) in "alts"; when it is clearly casual, the other way round.`},
+  loaded:()=>Promise.all([v2Ready, vbReady]), find:lkFind, links:lkLinks, tx:(h,big)=>`<span lang="es"${big ? ' class="lk-term"' : ""}>${esc(h.s)}</span>`, play:playBtn, sample:getSample, aiError:talkError,
+  changed:()=>{ dirtyDocs.add("lookup"); syncSoon(15000); }});
+function renderLookup(){ $("view").innerHTML=head()+`<div id="lk"></div>`; LK.mount($("lk")); }
 
 /* ================= keys ================= */
 document.addEventListener("keydown",e=>{
@@ -2421,11 +2528,11 @@ document.addEventListener("keydown",e=>{
 route();
 connect();
 /* The Everyday words load after the page is up; without them the level units and the rest of the course still work. */
-(typeof V2_SRC==="string" ? fetch(V2_SRC).then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); }) : Promise.resolve(V2_SRC))
+const v2Ready=(typeof V2_SRC==="string" ? fetch(V2_SRC).then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); }) : Promise.resolve(V2_SRC))
   .then(d=>{ addV2(d); V2.state="ok"; })
   .catch(()=>{ V2.state="fail"; })
   .then(()=>{ mapOldProgress(); refresh(); });
-(typeof VB_SRC==="string" ? fetch(VB_SRC).then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); }) : Promise.resolve(VB_SRC))
+const vbReady=(typeof VB_SRC==="string" ? fetch(VB_SRC).then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); }) : Promise.resolve(VB_SRC))
   .then(d=>{ addVB(d); VB.state="ok"; })
   .catch(()=>{ VB.state="fail"; })
   .then(refresh);

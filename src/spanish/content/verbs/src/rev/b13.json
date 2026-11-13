@@ -128,7 +128,28 @@
      "Present subjunctive"
     ]
    }
-  }
+  },
+  "set": {
+   "cmd": "pos"
+  },
+  "add": [
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Descanse y sueñe con cosas bonitas, doña Rosa.",
+    "en": "Get some rest and dream about nice things, Doña Rosa.",
+    "f": "sueñe"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Sueña en grande, hija; todo es posible.",
+    "en": "Dream big, sweetheart; anything is possible.",
+    "f": "Sueña"
+   }
+  ]
  },
  "dudar": {
   "s": {

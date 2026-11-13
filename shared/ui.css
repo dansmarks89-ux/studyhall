@@ -58,6 +58,7 @@
                      and the four app colors as it draws them
      + .sh-cta       the step's main button (Got it, Continue on a card): put it last in a flex:1 column; it sits at the
                      bottom of the screen and stays in view while long content scrolls
+     + .lk …         the look-up screen; shared/lookup.js draws it (SHLookup), the styles are at the end of this file
      + disclosure    every <details> whose <summary> has no class gets the shared look: a 44px-tall bold row with a
                      line chevron at the right that turns over when open. In a <details class="sh-card"> the summary is
                      the card's title (h2 size); wrap the content in one element (details is not a reliable flex box).
@@ -412,3 +413,42 @@ dialog.sh-dialog.bottom { width: 100%; max-height: 82dvh; margin: auto auto 0; b
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- look-up (shared/lookup.js draws it) ---------- */
+.lk { display: flex; flex-direction: column; gap: 14px; }
+.lk-form { display: flex; gap: 10px; }
+.lk-form input { flex: 1; min-width: 0; font-size: 19px; }
+.lk-keys, .lk-chips, .lk-tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.lk-keys button {
+  width: 44px; height: 44px; border: var(--bw) solid var(--border); border-radius: 10px; background: var(--surface); color: var(--ink);
+  font: 700 18px var(--font); cursor: pointer;
+}
+.lk-tags .sh-tag { white-space: normal; }
+.lk-chips .sh-tag { min-height: 44px; padding: 3px 14px; cursor: pointer; white-space: normal; text-align: left; overflow-wrap: anywhere; }
+.lk-out { display: flex; flex-direction: column; gap: 14px; }
+.lk-h { font-size: 18px; margin-top: 6px; }
+.lk-sub { font-size: 15px; color: var(--ink-2); }
+.lk-rows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.lk-row {
+  display: flex; align-items: center; gap: 10px; width: 100%; min-height: 56px; padding: 8px 12px; text-align: left; cursor: pointer;
+  background: var(--surface); color: var(--ink); border: var(--bw) solid var(--border); border-radius: 14px; box-shadow: var(--shadow-sm); font: inherit;
+}
+.lk-rt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; overflow-wrap: anywhere; }
+.lk-rt > span { font-size: 15px; color: var(--ink-2); }
+.lk-saved { display: flex; align-items: center; gap: 6px; }
+.lk-x { flex: none; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 12px; background: transparent; color: var(--ink-2); cursor: pointer; }
+.lk-card { gap: 12px; }
+.lk-card h3 { font-size: 16px; color: var(--ink-2); margin-top: 4px; }
+.lk-foot { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+.lk-t { display: flex; align-items: center; gap: 10px; min-width: 0; overflow-wrap: anywhere; }
+.lk-term { font-size: 28px; font-weight: 800; line-height: 1.15; }
+.lk-en { font-size: 20px; font-weight: 800; line-height: 1.3; }
+.lk-fix { border-left: 4px solid var(--gold); padding: 2px 0 2px 10px; font-size: 15px; }
+.lk-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.lk-list.num { list-style: decimal; padding-left: 22px; }
+.lk-list > li > * { display: block; }
+.lk-list > li > .lk-t { display: flex; margin-top: 4px; }
+.lk-kv { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0; }
+.lk-kv dt { color: var(--ink-2); font-size: 15px; }
+.lk-kv dd { margin: 0; overflow-wrap: anywhere; }
+.lk-ask { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }

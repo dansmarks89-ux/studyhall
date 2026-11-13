@@ -157,5 +157,28 @@
     ]
    }
   }
+ },
+ "conocer": {
+  "set": {
+   "cmd": "pos"
+  },
+  "add": [
+   {
+    "t": "Command (+)",
+    "p": 2,
+    "k": "cmd",
+    "es": "Conozca sus números: la presión, el azúcar y el colesterol.",
+    "en": "Know your numbers: your blood pressure, blood sugar and cholesterol.",
+    "f": "Conozca"
+   },
+   {
+    "t": "Command (+)",
+    "p": 1,
+    "k": "cmd",
+    "es": "Conoce bien a tu novio antes de casarte.",
+    "en": "Get to know your boyfriend well before you get married.",
+    "f": "Conoce"
+   }
+  ]
  }
 }

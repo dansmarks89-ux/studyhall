@@ -13,6 +13,8 @@ Language and study apps with sign-in, saved progress and AI practice, for a smal
 | `index.html` | Home: email-code sign-in and the list of apps the person is invited to |
 | `shared/sh.js` | Shared sign-in, progress saving and AI calls for every app |
 | `shared/supabase.js` | Supabase browser library (v2.117.2, vendored) |
+| `shared/ui.css`, `shared/ui.js` | The design system every page uses (`window.SHUI`) |
+| `shared/lookup.js` | The Look up tab of every app (`window.SHLookup`); each app gives it a search over its own content |
 | `spanish/index.html` | Clinic Spanish course (built file, do not edit by hand) |
 | `src/spanish/` | Course source: `app.html`, compiled data, original content and specs |
 | `vocab/` | Word Power, built: `index.html` plus hashed `data.*.json` and `gloss.*.json` (do not edit by hand) |
@@ -156,3 +158,11 @@ select net.http_post('https://wbrssohmepioxapwbcne.supabase.co/functions/v1/tts'
 - **Reviews per word:** all of a word's questions share one review schedule (`srs["w:<word>"]`); a word that is due comes back as one question, never the one it had last time. Older per-question records fold into the word's on load.
 - **Can't speak right now** (Learn and Settings, per device): Spanish speaking questions become writing; Cantonese and Korean ones become building the sentence from tiles. Those answers don't count as speaking.
 - **Build check:** every build ends with `src/lint.py` (see Layout). The Korean build needs NLTK's `cmudict`; where its download is blocked, a copy built from the `cmudict` pip package works if the entry `vip` is left out (that reproduces the live data exactly).
+
+## Round 7: Look up
+
+- **Look up tab** (all four apps, `shared/lookup.js`): type a word, a verb form or a sentence, in the language or in English. The app's own reviewed content answers first, tagged **Checked**: Spanish words, phrases, every form of every course verb (with what the form is), verb-lesson notes and example sentences; Cantonese and Korean words by characters or Hangul, by romanization (Jyutping with or without tone numbers) or by their English, the Korean forms the course teaches, and example sentences; Word Power cards and its tap-to-define dictionary (the search box that was on Today and Tracks moved here). When the course has no exact match, or on request, Claude answers, tagged **AI, not reviewed**: the meaning, how formal it is and when it is used, meanings with examples, a sentence piece by piece, and other ways to say it. Under an AI answer the app lists the course's own entries for the answer's words.
+- **AI answers are for reading only.** They never become questions. A course word found in Look up can be put into the reviews at once ("Add to my reviews"; Word Power: "Add to my next session"). Anything can be saved; the saved list is the progress document `lookup` (it syncs like the rest), so saved AI answers can be checked later and added to the course.
+- **Cantonese:** the Jyutping in an AI answer is compared with the readings the course has for each character; a syllable the course never uses for that character is pointed out.
+- An AI answer uses one of the person's daily AI replies (`ai_daily_limit`); the last 30 answers and every saved one are kept on the device, so looking those up again costs nothing.
+- **Verb lessons:** on the Clinic path *beber* comes later (after *fumar* and *evitar*) and *manejar* earlier (with the before-a-procedure verbs: *No maneje por 24 horas*); *conocer* and *soñar* have affirmative commands now.

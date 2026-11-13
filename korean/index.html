@@ -10,9 +10,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="../shared/ui.css">
 <script src="../shared/ui.js"></script>
+<script src="../shared/lookup.js"></script>
 <style>
 /* Cantonese and Korean, one engine. Learn = the path of units and lessons; Practice = reviews, skills, drills, cards,
-   conversations; Settings. Colors, type and components come from shared/ui.css; this sheet adds only what the
+   conversations; Look up (shared/lookup.js draws it); Settings. Colors, type and components come from shared/ui.css; this sheet adds only what the
    languages need: target-language text, tone contours, tiles, dialogue lines and the pronunciation guide. */
 :root{--tg:var(--font-kr)}
 main{flex:1;display:flex;flex-direction:column;gap:18px;min-width:0}
@@ -223,6 +224,7 @@ button.say .r{color:var(--ink-2)}
 <nav class="sh-tabs" id="tabs" aria-label="Sections" hidden>
   <button type="button" data-tab="learn">Learn</button>
   <button type="button" data-tab="practice">Practice</button>
+  <button type="button" data-tab="lookup">Look up</button>
   <button type="button" data-tab="settings">Settings</button>
 </nav>
 <dialog id="dlg" class="sh-dialog"><div class="sh-dialog-in" id="dlgin"></div></dialog>
@@ -470,7 +472,7 @@ function itemOf(id){
 }
 const shardOf = id => id.startsWith("w:") ? "srs-V" : /^(e|x|say|sh):/.test(id) ? "srs-W" : id.startsWith("c:") ? "srs-C" : id.startsWith("d:") ? "srs-D" : id.startsWith("k:") ? "srs-K" : /^(cj|as):/.test(id) ? "srs-G" : /:(v[mel]|sp)$/.test(id) ? "srs-V" : "srs-L";
 const SHARDS = ["srs-L","srs-V","srs-D","srs-C","srs-W","srs-K","srs-G"];
-const DOCS = ["course","learner","log",...SHARDS];
+const DOCS = ["course","learner","log","lookup",...SHARDS];
 function bump(map, key, ok){ const r=map[key]||[0,0,0]; const n=r[1]+1, a=r[1]===0?(ok?1:0):r[0]+Math.max(1/n,0.15)*((ok?1:0)-r[0]); map[key]=[Math.round(a*1000)/1000, n, today()]; }
 /* One review schedule per word: a word's questions (<word>:vm|ve|vl|sp, e:<word>:vm|ve|vl|sp|tl|g<k>, x:<word>:g<k>)
    share LR.srs["w:"+word] = [box, due, answers, right, last day, last question id], so a due word comes back once, as a
@@ -497,7 +499,7 @@ function foldWordSrs(){
    (spelling, the example gap, building an example) from box 2 up, recognition before that, when the word has one. */
 const WREC = new Set(["vm","ve","vl"]);
 function wordReview(k, r){
-  const v=VOC[k]; if(!v || !(v.ev ? introduced(k) : unitOpen(UBY[v.lv]))) return null;
+  const v=VOC[k]; if(!v || !(v.ev ? introduced(k) : LR.intro[k] || unitOpen(UBY[v.lv]))) return null;   // (a word added from Look up has its intro day before its unit opens)
   const last=r[5] ? itemOf(r[5]) : null;
   const its=[...["vm","ve","vl"].map(t=>itemOf(qid(v,t))), spellParts(v) && itemOf(qid(v,"sp")), ...gapIds(v).map(itemOf), v.tl && itemOf(qid(v,"tl"))]
     .filter(i=>i && i.id!==r[5]);
@@ -537,11 +539,12 @@ function docBody(n){
   if(n==="course") return Object.assign({}, P, {ra:RA, v:1});
   if(n==="learner") return {sk:LR.sk, w:LR.w, diag:LR.diag, mig:LR.mig, in:LR.intro, ld:LR.ld, ra:RA, v:1};
   if(n==="log"){ const out=[]; let size=0; for(let i=LR.log.length-1;i>=0;i--){ const l=JSON.stringify(LR.log[i]).length+1; if(size+l>200000) break; size+=l; out.push(LR.log[i]); } return {e:out.reverse(), ra:RA, v:1}; }
+  if(n==="lookup") return Object.assign(LK.body(), {ra:RA});
   const r={}; for(const id in LR.srs) if(shardOf(id)===n) r[id]=LR.srs[id]; return {r, ra:RA, v:1};
 }
 const hasData = n => n==="course" ? !!(P.placed || P.pts || Object.keys(P.lv).length || Object.keys(P.done).length || Object.keys(P.taught).length) : n==="learner" ? Object.keys(LR.intro).length+Object.keys(LR.sk).length>0
-  : n==="log" ? LR.log.length>0 : Object.keys(LR.srs).some(id=>shardOf(id)===n);
-function wipe(ra){ RA=ra; store.set("ra",RA); P=freshP(); LR=freshLR(); store.set("progress",P); store.set("learner",LR); }
+  : n==="log" ? LR.log.length>0 : n==="lookup" ? LK.count()>0 : Object.keys(LR.srs).some(id=>shardOf(id)===n);
+function wipe(ra){ RA=ra; store.set("ra",RA); P=freshP(); LR=freshLR(); store.set("progress",P); store.set("learner",LR); LK.clear(); }
 /* Read the account copy and merge it into this device. Runs before every write, so a page left open on one device
    never overwrites newer work done on another. A reset on another device (a newer ra) starts this one over too. */
 async function pull(){
@@ -576,7 +579,7 @@ async function sync(){
 document.addEventListener("visibilitychange",async()=>{
   if(document.visibilityState==="hidden") return sync();
   if(!db || syncing) return;
-  try{ await pull(); sync(); if(TABS.includes(view.name)) render(); }catch(e){}
+  try{ await pull(); sync(); if(TABS.includes(view.name) && view.name!=="lookup") render(); }catch(e){}   // Look up keeps its text box as it is
 });
 window.addEventListener("pagehide",()=>sync());
 function mergeLR(name, d){
@@ -585,6 +588,7 @@ function mergeLR(name, d){
     mergeP(d); store.set("progress",P);
     const dt=d.taught||{}; return Object.keys(P.taught).some(w=>!dt[w]);
   }
+  if(name==="lookup") return LK.merge(d);
   if(name==="learner"){
     for(const m of ["sk","w"]) for(const k in d[m]||{}){ const a=LR[m][k], b=d[m][k]; if(!a || b[1]>a[1]) LR[m][k]=b; else if(a[1]>b[1]) ch=true; }
     if(d.diag && (!LR.diag || d.diag.day>LR.diag.day)) LR.diag=d.diag; else if(LR.diag && (!d.diag || LR.diag.day>d.diag.day)) ch=true;
@@ -884,18 +888,18 @@ function placer(start){
   return st;
 }
 /* ---------------- views ---------------- */
-const TABS = ["learn","practice","settings"];
+const TABS = ["learn","practice","lookup","settings"];
 let view={name:"boot"};
 const go = v => { view=v; render(); window.scrollTo({top:0}); };
 function render(){
   stopAudio(); astatus(""); cancelRec();
-  ({boot(){}, learn:renderLearn, practice:renderPractice, settings:renderSettings, unit:renderUnit, run:renderRun, place:renderPlace,
+  ({boot(){}, learn:renderLearn, practice:renderPractice, lookup:renderLookup, settings:renderSettings, unit:renderUnit, run:renderRun, place:renderPlace,
     talk:renderTalk, drill:renderDrill, guide:renderGuide, weak:renderWeak, cards:renderCards})[view.name]();
   const tab = TABS.includes(view.name) ? view.name : view.tab;  // pages opened from a tab keep it highlighted
   $("tabs").hidden = !tab;
   document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ if(b.dataset.tab===tab) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current"); });
 }
-document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ b.insertAdjacentHTML("afterbegin", SHUI.icon({learn:"book", practice:"practice", settings:"settings"}[b.dataset.tab])); b.onclick=()=>go({name:b.dataset.tab}); });
+document.querySelectorAll("#tabs [data-tab]").forEach(b=>{ b.insertAdjacentHTML("afterbegin", SHUI.icon({learn:"book", practice:"practice", lookup:"find", settings:"settings"}[b.dataset.tab])); b.onclick=()=>go({name:b.dataset.tab}); });
 const V = () => $("view");
 const on = (id, f) => { const el=$(id); if(el) el.onclick=f; };
 function topBar(back){  // back = {label, to}; tab pages link to the Study Hall home instead (hosted)
@@ -1981,6 +1985,98 @@ Reply with only a JSON array of 8 objects: {"q":"sentence with ___","q_rom":"rom
   }catch(e){ btn.textContent=aiError(e)||old; } finally{ btn.disabled=false; }
 }
 
+/* ---------------- Look up ----------------
+   What the course has on a typed text: its words (as characters or Hangul, as romanization with or without tone numbers,
+   or by their English), the forms it teaches of them (Korean) and its example sentences; then Claude, through
+   shared/lookup.js. Texts are compared without punctuation or spaces. The index is built on the first search and again
+   when the Everyday words have arrived. */
+const LKX = {ev:""};
+const lkT = s => keysOf(String(s)).k.join("");
+const lkR = s => String(s).toLowerCase().replace(/[^a-z0-9]/g,"");
+const lkE = s => String(s).toLowerCase().replace(/[^a-z0-9' ]/g," ").replace(/\s+/g," ").trim().replace(/^(the|an?) /,"");
+/* Cantonese: a text's characters with their syllables, when it has one syllable for every character */
+function lkAlign(o){
+  const ch=String(o.s).match(CJKRE)||[], sy=String(o.r||"").toLowerCase().match(/[a-z]+[1-6]/g)||[];
+  return ch.length && ch.length===sy.length && !/[A-Za-z0-9]/.test(o.s) ? ch.map((c,i)=>[c,sy[i]]) : null;
+}
+function lkIndex(){
+  if(LKX.ev===EV) return LKX;
+  const put=(m,k,v)=>{ if(m.has(k)) m.get(k).push(v); else m.set(k,[v]); };
+  Object.assign(LKX, {ev:EV, t:new Map(), rom:new Map(), en:new Map(), form:new Map(), sent:new Map(), read:new Map(), list:[]});
+  const readings=o=>(lkAlign(o)||[]).forEach(([c,y])=>{ if(!LKX.read.has(c)) LKX.read.set(c,new Set()); LKX.read.get(c).add(y); });
+  for(const v of Object.values(VOC)){
+    const t=lkT(v.t.s), r=lkR(v.t.r||""), en=[...new Set(v.en.replace(/\(.*?\)/g," ").split(/[;,/]/).map(lkE).flatMap(x=>[x, x.replace(/^to /,"")]).filter(Boolean))];   // "to drink" also as "drink"
+    new Set([t, ...v.t.s.split(" / ").map(lkT)]).forEach(x=>put(LKX.t,x,v));
+    new Set([r, r.replace(/\d/g,"")]).forEach(x=>put(LKX.rom,x,v));   // Jyutping also without its tone numbers
+    en.forEach(x=>put(LKX.en,x,v));
+    LKX.list.push({v, t, r, en});
+    for(const f in v.cj||{}) put(LKX.form, lkT(v.cj[f].s), {v, f});
+    (v.ex||[]).forEach(x=>{ const k=lkT(x.s); if(!LKX.sent.has(k)) LKX.sent.set(k,x); });
+    if(YUE) [v.t, ...(v.ex||[])].forEach(readings);
+  }
+  return LKX;
+}
+/* Is each syllable Claude wrote one the course has for that character? (Built from the rest of the course, this check
+   questions about 3 in 1,000 of the course's own texts.) */
+function lkCheck(texts){
+  const X=lkIndex(), bad=new Set(); let all=0, known=0;
+  texts.forEach(o=>{ const a=lkAlign(o); if(!a){ all+=(String(o.s).match(CJKRE)||[]).length; return; }
+    a.forEach(([c,y])=>{ all++; const R=X.read.get(c); if(!R) return; known++; if(!R.has(y)) bad.add(`${c} is ${[...R].join(" or ")} in the course, and Claude wrote ${y}`); }); });
+  if(bad.size) return `<p class="lk-fix"><b>Check the Jyutping.</b> ${esc([...bad].slice(0,4).join("; "))}.</p>`;
+  return `<p class="lk-sub">${!known ? "The Jyutping couldn't be checked against the course." : known===all ? "The Jyutping matches the course's readings of these characters." : `The Jyutping matches the course's readings of ${known} of the ${all} characters; the course has no reading to compare for the others.`}</p>`;
+}
+function lkState(v){
+  if(LR.srs["w:"+v.id]) return "In your reviews";
+  if(introduced(v.id)) return "Met";
+  const u=UNITS.find(u=>u.w && u.w.includes(v.id));
+  return u ? "Later on your path: "+unitName(u) : "";
+}
+function lkAdd(v){ markIntro(v.id); LR.srs["w:"+v.id]=[0,today(),0,0,today()]; dirtyDocs.add("srs-V"); saveLR(); }
+/* One entry of the course: a word, or (f) the form of it that was typed */
+function lkEntry(v, f){
+  const F=f && C.forms.find(x=>x.k===f), t=f ? v.cj[f] : v.t;
+  return {id:"w:"+v.id+(f ? ":"+f : ""), s:t.s, r:t.r||"", en:f ? `${v.t.s} (${v.en}): ${F.label.toLowerCase()}` : v.en,
+    html:()=>`<div class="wordhead">${tx(t,{cls:"mid"})}${playBtn(t.s)}</div>${f ? `<p>The “${esc(F.label.toLowerCase())}” form (${esc(F.hint)}) of ${inl(v.t)}.</p>` : ""}
+      <h2>${esc(v.en)}</h2>${v.pos ? `<span class="sub">${esc(v.pos)}</span>` : ""}${v.note ? `<p>${noteHTML(v)}</p>` : ""}${exList(v.ex||[])}
+      ${v.cj && !f ? `<details><summary>Its forms</summary><ul class="words">${C.forms.filter(x=>v.cj[x.k]).map(x=>`<li>${playBtn(v.cj[x.k].s)}<div>${tx(v.cj[x.k])}<span class="sub">${esc(x.label)} (${esc(x.hint)})</span></div></li>`).join("")}</ul></details>` : ""}`,
+    state:()=>lkState(v), addable:()=>!LR.srs["w:"+v.id], add:()=>lkAdd(v), addLabel:"Add to my reviews"};
+}
+const lkSentence = x => ({id:"s:"+hash32(x.s), s:x.s, r:x.r||"", en:x.en, html:()=>exList([x]), state:()=>"", addable:()=>false});
+const lkUnique = () => { const seen=new Set(); return h=>{ const key=h.s+"|"+h.en; return !seen.has(key) && !!seen.add(key); }; };   // one of two entries that read the same
+/* The course's entries for a text in the language: the word, the word whose form it is, the sentence */
+function lkTarget(text){
+  const X=lkIndex(), k=lkT(text);
+  return (X.t.get(k)||[]).map(v=>lkEntry(v)).concat((X.form.get(k)||[]).map(x=>lkEntry(x.v,x.f)), X.sent.has(k) ? [lkSentence(X.sent.get(k))] : []);
+}
+function lkFind(q){
+  const X=lkIndex(), k=lkT(q), r=lkR(q), e=lkE(q), latin=!/[^\x20-\x7e]/.test(q), fresh=lkUnique();
+  const exact=lkTarget(q).concat(latin ? [...(X.rom.get(r)||[]), ...(X.en.get(e)||[])].map(v=>lkEntry(v)) : []).filter(fresh);
+  const rank=x=>latin ? (e && x.en.some(y=>y.startsWith(e)) ? 0 : r && (x.r.startsWith(r) || x.r.replace(/\d/g,"").startsWith(r)) ? 1 : e.length>2 && x.en.some(y=>(" "+y).includes(" "+e)) ? 2 : 3)
+    : k && x.t.startsWith(k) ? 0 : k && x.t.includes(k) ? 1 : 3;
+  const near=X.list.map(x=>({x, n:rank(x)})).filter(y=>y.n<3).sort((a,b)=>(a.n-b.n) || (a.x.t.length-b.x.t.length)).slice(0,12).map(y=>lkEntry(y.x.v)).filter(fresh);
+  return {exact:exact.slice(0,6), near};
+}
+/* The course's entries for the words of an AI answer: each text whole, then the first one (the sentence itself) word by
+   word. Cantonese has no spaces, so the longest course word at each character is taken; a Korean word is also tried
+   without its particle. */
+function lkLinks(texts){
+  const X=lkIndex(), fresh=lkUnique(), out=[], add=h=>{ if(fresh(h)) out.push(h); };
+  texts.forEach(t=>lkTarget(t).forEach(add));
+  if(YUE){ const ch=keysOf(texts[0]).k;
+    for(let i=0; i<ch.length;){ let n=Math.min(6, ch.length-i); while(n && !X.t.has(ch.slice(i,i+n).join(""))) n--;
+      if(n) X.t.get(ch.slice(i,i+n).join("")).forEach(v=>add(lkEntry(v))); i+=n||1; } }
+  else texts[0].split(/\s+/).forEach(w=>{ const hit=[w, w.replace(/(에서|으로|하고|이랑|한테|에게|까지|부터|은|는|이|가|을|를|에|도|로|와|과|의|랑|만)$/,"")].map(lkTarget).find(h=>h.length); if(hit) hit.forEach(add); });
+  return out.slice(0,8);
+}
+const LK = SHLookup.create({key:K("lookup"),
+  intro:`Type a word or a sentence in ${YUE ? "Chinese characters, Jyutping" : "Hangul, romanization"} or English.`, placeholder:`${C.name} or English`,
+  have:"In the course", linked:"Course words in it",
+  ai:{name:C.name, code:C.lang, rom:YUE ? "Jyutping" : "Revised Romanization", learner:LEARNER,
+    rules:RULES+(YUE ? " The learner may type Chinese characters, Jyutping (with or without tone numbers) or English." : ` The learner may type Hangul, romanization or English. Put the polite -요 form in "t"; when the casual or the formal form is worth knowing too, give it in "alts".`)},
+  loaded:()=>evReady, find:lkFind, links:lkLinks, check:YUE ? lkCheck : null, tx:(h,big)=>tx(h, big ? {cls:"mid"} : {}), play:s=>playBtn(s), sample:getSample, aiError,
+  changed:()=>{ dirtyDocs.add("lookup"); syncSoon(15000); }});
+function renderLookup(){ V().innerHTML=topBar()+`<div id="lk"></div>`; LK.mount($("lk")); }
+
 /* ---------------- keys ---------------- */
 document.addEventListener("keydown",e=>{
   if(e.target&&/INPUT|SELECT|TEXTAREA/.test(e.target.tagName) || $("dlg").open) return;
@@ -2000,7 +2096,7 @@ function importAll(text){
 
 /* ---------------- start ---------------- */
 const vocabReady = VOCAB.data ? Promise.resolve(VOCAB.data) : fetch(VOCAB.url).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); });
-vocabReady.then(d=>{ addEveryday(d); syncSoon(2000); }).catch(()=>{ EV="failed"; }).then(()=>{ if(view.name!=="run" && view.name!=="talk") render(); });
+const evReady = vocabReady.then(d=>{ addEveryday(d); syncSoon(2000); }).catch(()=>{ EV="failed"; }).then(()=>{ if(view.name==="lookup") LK.refresh(); else if(view.name!=="run" && view.name!=="talk") render(); });
 function begin(){
   if(!P.placed && hasProgress()){ P.placed={at:today(), how:"carried"}; saveP(); }  // progress from the old pages: no placement
   if(P.placed) go({name:"learn"}); else firstVisit();

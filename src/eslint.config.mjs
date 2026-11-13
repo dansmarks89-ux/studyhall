@@ -5,7 +5,7 @@ export default [{
   languageOptions: {
     ecmaVersion: "latest",
     sourceType: "script",
-    globals: { ...globals.browser, SH: "readonly", SHUI: "readonly", SHVoice: "readonly", supabase: "readonly", claude: "readonly" },
+    globals: { ...globals.browser, SH: "readonly", SHUI: "readonly", SHVoice: "readonly", SHLookup: "readonly", supabase: "readonly", claude: "readonly" },
   },
   rules: { "no-undef": "error" },
 }];
