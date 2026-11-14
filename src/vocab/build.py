@@ -1,5 +1,6 @@
-"""Build Word Power: src/vocab/app.html + src/vocab/data/{items,passages,gloss}.json
-   -> vocab/index.html, vocab/data.<hash>.json (cards and passages), vocab/gloss.<hash>.json
+"""Build Word Power: src/vocab/app.html + src/vocab/data/{items,passages,gloss,pron}.json
+   -> vocab/index.html, vocab/data.<hash>.json (cards and passages), vocab/gloss.<hash>.json,
+      vocab/pron-<letter>.<hash>.json (Look up's pronunciations, one file per first letter, loaded when needed)
 
   python3 src/vocab/build.py [site root]     (default: the repo root, two levels above this file)
 
@@ -22,20 +23,24 @@ def write(stem, obj):
     return name
 
 src = open(os.path.join(HERE, "app.html"), encoding="utf-8").read()
-assert src.count("__DATA__") == 1 and src.count("__GLOSS__") == 1
+assert src.count("__DATA__") == 1 and src.count("__GLOSS__") == 1 and src.count('"__PRON__"') == 1
 items = [{k: v for k, v in x.items() if k != "_old"} for x in load("items.json")]
 passages = load("passages.json")
 gloss = load("gloss.json")
+pron = {}
+for w, p in load("pron.json").items(): pron.setdefault(w[0], {})[w] = p
 ids = {x["id"] for x in items}
 for g in passages: assert set(g["words"]) <= ids, g["id"] + ": a target word has no card"
 
 os.makedirs(OUT, exist_ok=True)
-HASHED = re.compile(r"(?:data|gloss)\.[0-9a-f]{10}\.json")
+HASHED = re.compile(r"(?:data|gloss|pron-[a-z])\.[0-9a-f]{10}\.json")
 INDEX = os.path.join(OUT, "index.html")
 keep = set(HASHED.findall(open(INDEX, encoding="utf-8").read())) if os.path.exists(INDEX) else set()
 names = [write("data", {"items": items, "passages": passages}), write("gloss", gloss)]
+prons = {l: write("pron-" + l, pron[l]) for l in sorted(pron)}
 for f in os.listdir(OUT):
-    if HASHED.fullmatch(f) and f not in keep and f not in names: os.remove(os.path.join(OUT, f))
-open(INDEX, "w", encoding="utf-8").write(src.replace("__DATA__", names[0]).replace("__GLOSS__", names[1]))
+    if HASHED.fullmatch(f) and f not in keep and f not in names and f not in prons.values(): os.remove(os.path.join(OUT, f))
+open(INDEX, "w", encoding="utf-8").write(src.replace("__DATA__", names[0]).replace("__GLOSS__", names[1])
+                                          .replace('"__PRON__"', json.dumps(prons, separators=(",", ":"))))
 print("wrote", INDEX, len(items), "items,", len(passages), "passages")
 sys.exit(subprocess.run([sys.executable, os.path.join(os.path.dirname(HERE), "lint.py")]).returncode)

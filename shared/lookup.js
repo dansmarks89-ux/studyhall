@@ -6,6 +6,8 @@
    Load after shared/ui.js. SHLookup.create(cfg) returns one look-up for the page:
      mount(el)        draws the screen into el (again after a re-render: the typed text and results are kept)
      refresh()        searches the course again for the text being typed (more of the course has loaded)
+     redraw()         draws the results again (something they show has changed)
+     reask()          asks Claude again for the text looked up
      body()           the saved list as a progress document {saved, gone, v}
      merge(doc)       merges the account copy in; true when this device has something the account copy lacks
      count()          saved items
@@ -20,7 +22,8 @@
      ai               {english: true}  the text is English (Word Power), or
                       {name, code, learner, rules, rom}  the language, who is learning it, style rules for Claude and the
                       romanization's name ("" when it has none)
-     loaded()         -> a promise that settles once all the course content find() searches has loaded (or failed to)
+     loaded(text)     -> a promise that settles once what an answer for this text needs has loaded (or failed to):
+                         all the course content find() searches, and for Word Power the word's pronunciations
      find(text)       -> {exact: [hit], near: [hit]} from the course
      links(texts)     -> [hit] the course entries for the words of these texts (an AI answer's words)
      check(texts)     -> HTML that checks an AI answer's romanization against the course, or "" (optional)
@@ -28,8 +31,12 @@
      play(text)       -> HTML of a play button
      sample()         -> promise of the page's AI (window.claude.use("sample")), or null
      aiError(e)       -> the message for a failed AI call
+     pron(term)       -> {say, ipa} from a pronunciation dictionary, or null (optional; English)
+     aiFoot(answer)   -> HTML of the page's own actions under an AI answer (optional); a button in it with
+                         data-act="<name>" calls act(name, answer)
      changed()        called after the saved list changed (the page marks it for syncing)
-   hit: {id, s, r (romanization, where the language has one), en, html() (the full entry), state() (a short status, or ""), addable() (can it go into the reviews
+   hit: {id, s, r (romanization, where the language has one), en, tag (optional: shown instead of "Checked"),
+        group (optional: the heading it is listed under, instead of cfg.have), html() (the full entry), state() (a short status, or ""), addable() (can it go into the reviews
         now?), add() (puts it there), addLabel} */
 (function () {
   "use strict";
@@ -55,10 +62,14 @@ Reply with only a JSON object:
 "def": "a clear one-sentence definition of the most common meaning",
 "register": "neutral" | "formal" | "informal" | "literary" | "technical" | "slang" | "dated",
 "use": "1-2 sentences: when people use it, its tone or connotation, and what it is often confused with",
+"ex": ["4 natural example sentences showing its most common uses, each in a different typical context"],
+"goes": ["up to 6 words or short phrases it is most often used with, e.g. for heavy: heavy rain, heavy traffic"],
+"cloze": {"s": "one more natural sentence, different from the examples, with ___ where the word goes, written so that only this word fits", "a": "the exact form of the word that fills the blank"},
+"also": "a second common meaning in a few words, or empty",
 "senses": [{"def": "a distinct meaning", "ex": "one natural example sentence"}],
 "syn": ["up to 5 close synonyms"], "ant": ["up to 4 opposites"], "forms": ["related forms, e.g. the noun or adverb"],
 "origin": "one sentence on where it comes from, or empty if you are not sure"}
-"senses": up to 3, most common first. Be accurate: if this is not a real word or you are unsure, say so in "use" instead of guessing. No text outside the JSON.`;
+"senses": up to 3, most common first. Be accurate: if this is not a real word or you are unsure, say so in "use" instead of guessing, and leave "ex" and "cloze" empty. No text outside the JSON.`;
     const rom = A.rom ? `, "r": "its ${A.rom}"` : "", T = `{"t": "…"${rom}, "en": "…"`;
     return `You are a bilingual dictionary and translator for ${A.learner}.
 ${A.rules}
@@ -88,7 +99,10 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
     if (A.english) {
       const out = { term: str(o.term, 120), kind: ["word", "phrase", "idiom", "reference"].includes(o.kind) ? o.kind : "word", pos: str(o.pos, 60), say: str(o.say, 60),
         def: str(o.def, 400), register: reg, use: str(o.use, 600), senses: list(o.senses, 3, s => s && str(s.def, 300) ? { def: str(s.def, 300), ex: str(s.ex, 300) } : null),
-        syn: list(o.syn, 5, s => str(s, 60)), ant: list(o.ant, 4, s => str(s, 60)), forms: list(o.forms, 6, s => str(s, 60)), origin: str(o.origin, 400) };
+        syn: list(o.syn, 5, s => str(s, 60)), ant: list(o.ant, 4, s => str(s, 60)), forms: list(o.forms, 6, s => str(s, 60)), origin: str(o.origin, 400),
+        ex: list(o.ex, 4, s => str(s, 300)), goes: list(o.goes, 6, s => str(s, 60)), also: str(o.also, 200), cloze: null };
+      const c = o.cloze && typeof o.cloze === "object" ? { s: str(o.cloze.s, 300), a: str(o.cloze.a, 60) } : null;
+      if (c && c.a && c.s.split("___").length === 2) out.cloze = c;   // one blank, and the word that fills it
       return out.term && out.def ? out : null;
     }
     const T = x => x && str(x.t, 300) ? { s: str(x.t, 300), r: A.rom ? str(x.r, 500) : "", en: str(x.en, 400) } : null;
@@ -115,7 +129,10 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
     const hits = () => st.exact.concat(st.near, st.links);
     const aiId = q => "ai:" + hash(keyOf(q));
     const cacheId = q => "q:" + keyOf(q);   // (a prefix keeps typed words like "constructor" from naming something an object already has)
-    const answerFor = q => (M.saved[aiId(q)] || M.cache[cacheId(q)] || {}).out || null;
+    const answerFor = q => {   // (an English answer kept from before it had examples, pairings and a fill-in sentence gets them empty)
+      const o = (M.saved[aiId(q)] || M.cache[cacheId(q)] || {}).out;
+      return o && A.english ? Object.assign({ ex: [], goes: [], also: "", cloze: null }, o) : o || null;
+    };
 
     /* ---------- the saved list ---------- */
     function fit() {   // when the list outgrows its document, the oldest items give way
@@ -170,7 +187,7 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
       if (had) show(had);
       else if (!st.exact.length) {   // Claude is asked only once the whole course has been searched
         st.ai = { busy: true }; draw();
-        await cfg.loaded();
+        await cfg.loaded(q);
         if (mine !== seq) return;
         found();
         if (!st.exact.length) return ask();
@@ -206,10 +223,12 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
     const row = (attr, text, sub, tags) => `<button class="lk-row" type="button" ${attr}><span class="lk-rt"><b>${text}</b><span>${esc(sub)}</span></span>${tags}</button>`;
     const saveBtn = (what, id) => `<button class="sh-btn sm" type="button" data-save="${esc(what)}">${M.saved[id] ? "Saved" : "Save"}</button>`;
     function hitHTML(h) {
-      if (!st.open.has(h.id)) return `<li>${row(`data-hit="${esc(h.id)}"`, cfg.tx(h), h.en, CHECKED)}</li>`;
+      const mark = h.tag ? tag(h.tag, "gold") : CHECKED;
+      if (!st.open.has(h.id)) return `<li>${row(`data-hit="${esc(h.id)}"`, cfg.tx(h), h.en, mark)}</li>`;
       const state = h.state();
-      return `<li><section class="sh-card lk-card">${h.html()}<div class="lk-foot"><span class="lk-tags">${CHECKED}${state ? tag(state, "mute") : ""}</span>
-        <span class="lk-tags">${h.addable() ? `<button class="sh-btn sm" type="button" data-add="${esc(h.id)}">${esc(h.addLabel)}</button>` : ""}${saveBtn("ck:" + h.id, "ck:" + h.id)}</span></div></section></li>`;
+      // a tagged hit (Word Power's own word) shows its tag on the card itself, and isn't saved as checked content
+      return `<li><section class="sh-card lk-card">${h.html()}<div class="lk-foot" tabindex="-1" data-foot="${esc(h.id)}"><span class="lk-tags">${h.tag ? "" : CHECKED}${state ? tag(state, "mute") : ""}</span>
+        <span class="lk-tags">${h.addable() ? `<button class="sh-btn sm" type="button" data-add="${esc(h.id)}">${esc(h.addLabel)}</button>` : ""}${h.tag ? "" : saveBtn("ck:" + h.id, "ck:" + h.id)}</span></div></section></li>`;
     }
     const rows = hs => `<ul class="lk-rows">${hs.map(hitHTML).join("")}</ul>`;
     const NOTE = `<p class="lk-sub">Claude wrote this just now and it hasn't been checked like the course's own content.${A.english ? "" : " Use it like a dictionary; the course's sentences are the ones to copy."}</p>`;
@@ -218,12 +237,14 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
       const sect = (h, items, ol) => items.length ? `<h3>${h}</h3><${ol ? "ol" : "ul"} class="lk-list${ol ? " num" : ""}">${items.map(i => `<li>${i}</li>`).join("")}</${ol ? "ol" : "ul"}>` : "";
       const foot = `${NOTE}<div class="lk-foot"><span></span>${saveBtn("ai", aiId(st.q))}</div></section>`;
       if (A.english) {
-        const kv = [["Similar", o.syn], ["Opposite", o.ant], ["Forms", o.forms]].filter(x => x[1].length);
+        const kv = [["Often with", o.goes], ["Similar", o.syn], ["Opposite", o.ant], ["Forms", o.forms]].filter(x => x[1].length);
+        const p = cfg.pron && cfg.pron(o.term), say = p ? `${p.say} ${p.ipa}` : o.say && `${o.say} (Claude's spelling)`;   // the dictionary's, when it has the word
         return `<section class="sh-card lk-card"><div class="lk-tags">${AI_TAG}${[o.kind !== "word" && o.kind, o.pos, REGISTERS[o.register]].filter(Boolean).map(t => tag(t, "mute")).join("")}</div>
-          <div class="lk-t">${cfg.play(o.term)}<span class="lk-rt"><b class="lk-term">${esc(o.term)}</b>${o.say ? `<span>${esc(o.say)}</span>` : ""}</span></div><p class="lk-en">${esc(o.def)}</p>${o.use ? `<p>${esc(o.use)}</p>` : ""}
+          <div class="lk-t">${cfg.play(o.term)}<span class="lk-rt"><b class="lk-term">${esc(o.term)}</b>${say ? `<span>${esc(say)}</span>` : ""}</span></div><p class="lk-en">${esc(o.def)}</p>${o.use ? `<p>${esc(o.use)}</p>` : ""}
+          ${sect("Common uses", o.ex.map(e => `<div class="lk-t">${cfg.play(e)}<span>${esc(e)}</span></div>`))}
           ${sect("Meanings", o.senses.map(s => `<b>${esc(s.def)}</b>${sub(s.ex)}`), true)}
           ${kv.length ? `<dl class="lk-kv">${kv.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v.join(", "))}</dd>`).join("")}</dl>` : ""}
-          ${o.origin ? `<p><b>Origin:</b> ${esc(o.origin)}</p>` : ""}${foot}`;
+          ${o.origin ? `<p><b>Origin:</b> ${esc(o.origin)}</p>` : ""}${cfg.aiFoot ? cfg.aiFoot(o) : ""}${foot}`;
       }
       const texts = [o.t, ...o.senses.map(s => s.ex).filter(Boolean), ...o.alts];
       return `<section class="sh-card lk-card"><div class="lk-tags">${AI_TAG}${[o.kind[0].toUpperCase() + o.kind.slice(1), o.pos, REGISTERS[o.register]].filter(Boolean).map(t => tag(t, "mute")).join("")}</div>
@@ -251,7 +272,7 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
       const out = $("#lkOut"); if (!out) return;
       if (!st.q.trim()) out.innerHTML = home();
       else if (!st.done) out.innerHTML = hits().length ? rows(hits().slice(0, 8)) : `<p class="lk-sub">${hasText(st.q) ? "Nothing in the course matches this yet. Press Look up to ask Claude." : "Type a word or a sentence."}</p>`;
-      else out.innerHTML = (st.exact.length ? `<h2 class="lk-h">${esc(cfg.have)}</h2>${rows(st.exact)}` : "") + aiHTML()
+      else out.innerHTML = ([...new Set(st.exact.map(h => h.group || cfg.have))].map(g => `<h2 class="lk-h">${esc(g)}</h2>${rows(st.exact.filter(h => (h.group || cfg.have) === g))}`).join("")) + aiHTML()
         + (st.links.length ? `<h2 class="lk-h">${esc(cfg.linked)}</h2>${rows(st.links)}` : "") + (st.near.length ? `<h2 class="lk-h">Close matches in the course</h2>${rows(st.near.slice(0, 8))}` : "");
     }
     function setQuery(q) { st.q = q; $("#lkQ").value = q; submit(); window.scrollTo(0, 0); }
@@ -264,11 +285,13 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
       else if (d.save) { const h = hit(d.save.slice(3)); save({ id: d.save, q: h.s, src: "ck", s: h.s, r: h.r, en: h.en }); draw(); }
       else if (d.unsave) { save(M.saved[d.unsave]); draw(); }
       else if ("ask" in d) ask();
+      else if (d.act) cfg.act(d.act, st.ai.out);
       else if ("stop" in d) { stop(); st.ai = null; draw(); }
       else if (d.q) setQuery(d.q);
       // the results were drawn again: put the focus back on the card that was acted on
-      const next = d.hit || d.add ? `[data-save="ck:${CSS.escape(d.hit || d.add)}"]` : d.save ? `[data-save="${CSS.escape(d.save)}"]` : "ask" in d ? "[data-stop]" : "stop" in d ? "[data-ask]" : null;
-      const to = next && $(next); if (to) to.focus({ preventScroll: true });
+      const id = d.hit || d.add, next = id ? [`[data-save="ck:${CSS.escape(id)}"]`, `[data-add="${CSS.escape(id)}"]`, `[data-foot="${CSS.escape(id)}"]`]
+        : d.save ? [`[data-save="${CSS.escape(d.save)}"]`] : "ask" in d ? ["[data-stop]"] : "stop" in d ? ["[data-ask]"] : d.act ? [".lk-card .lk-ask button"] : [];
+      const to = next.map($).find(Boolean); if (to) to.focus({ preventScroll: true });   // the first that is there
     }
     function mount(target) {
       el = target; el.classList.add("lk");
@@ -285,7 +308,7 @@ Be accurate: if this is not real ${A.name} or you are unsure, say so in "use" in
       draw();
     }
     function refresh() { if (el && st.q.trim() && !st.done) { const open = st.open; search(); st.open = open; draw(); } }
-    return { mount, refresh, body, merge, clear, count: () => Object.keys(M.saved).length };
+    return { mount, refresh, redraw: draw, reask: () => { if (st.done && st.q.trim()) ask(); }, body, merge, clear, count: () => Object.keys(M.saved).length };
   }
 
   window.SHLookup = { create };

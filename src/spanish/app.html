@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="../shared/ui.css">
 <script src="../shared/ui.js"></script>
 <script src="../shared/lookup.js"></script>
+<script src="../shared/talkhelp.js"></script>
 <style>
 /* Layout: Learn (the path), Practice, Look up and Settings tabs; lessons, practice and checks run full screen with a bottom answer sheet. */
 main{flex:1;display:flex;flex-direction:column;gap:18px;margin:0 calc(-1 * var(--gx));padding:0 var(--gx);overflow-x:clip}  /* clip: cards slide in from the side without a sideways scroll */
@@ -158,7 +159,8 @@ details.more > .list{margin-top:12px}
 <script>
 "use strict";
 /* ================= content ================= */
-const LEVELS = __LEVELS__;
+const LEVELS = __LEVELS__;   // each role-play has hints: [{en, es, start} per goal] (src/HINTS.md)
+const QUICKHINT = __QUICKHINT__;   // the lesson chat's hint for "Ask one question back": {every, clinic}
 const LV = Object.fromEntries(LEVELS.map(l=>[l.id,l]));
 /* The two paths, built by build.py: units (a level, or a word set) split into lessons of about 6 or 10 words. */
 const PATH = __PATH__, UNITS = PATH.units;
@@ -1881,9 +1883,11 @@ function mountTalkStep(ex, it, done){
     <button class="sh-btn primary block" type="button" id="tGo">${SHUI.icon("mic")}Start talking</button>`}<button class="sh-btn block" type="button" id="tSkip">Skip</button>`;
   $("tSkip").onclick=done;
   $("tGo").onclick=()=>{ const r=run, ls=r.lesson, u=r.unit, U=UNITS[u];
+    const k=ls.w.find(k=>WORD[k] && WORD[k].ex.length), ex=k && WORD[k].ex[0], w=ex && ex[0].split(" ");   // a word of today's with its example
     const rp = U.kind==="level" ? LV[u].roleplay[0] : {title:"A quick chat", setup:"A short, friendly conversation that uses today's words.",
       persona:pathId()==="clinic" ? "You are a friendly patient chatting with the doctor before an appointment." : "You are a friendly neighbor chatting with the learner.",
-      goals:["Use at least two of today's words", "Ask one question back"], opening:pathId()==="clinic" ? "Buenos días, doctor. ¿Cómo está?" : "¡Hola! ¿Qué tal tu día?"};
+      goals:["Use at least two of today's words", "Ask one question back"], opening:pathId()==="clinic" ? "Buenos días, doctor. ¿Cómo está?" : "¡Hola! ¿Qué tal tu día?",
+      hints:[ex ? {en:`Use “${cleanSay(WORD[k].w)}” (${WORD[k].en}). For example: “${ex[1]}”`, es:ex[0], start:w.length>2 ? w.slice(0,2).join(" ") : ""} : null, QUICKHINT[pathId()==="clinic" ? "clinic" : "every"]]};
     startTalk(U.kind==="level" ? LV[u] : null, 0, !S.quiet, {rp, words:ls.w.filter(k=>WORD[k]).map(k=>cleanSay(WORD[k].w)), max:3, onDone:()=>{ run=r; r.i++; go({name:"run"}); }}); };
 }
 
@@ -2043,7 +2047,8 @@ function renderTalk(){
     <form class="answer" id="tform"><input type="text" id="msg" autocomplete="off" spellcheck="false" placeholder="Your reply in Spanish" aria-label="Your reply in Spanish"><button class="sh-btn${t.voice&&mic?"":" primary"}" type="submit" id="send">Send</button></form>
     ${mic?`<button class="sh-btn${t.voice?" primary":""} block" type="button" id="talkMic">${SHUI.icon("mic")}<span data-idle="Speak">Speak</span></button><label class="c" for="autoSend"><input type="checkbox" id="autoSend"${S.autoSend?" checked":""}> Send automatically after I speak</label>`:""}
     <div class="accents">${["á","é","í","ó","ú","ñ","ü","¿","¡"].map(a=>`<button type="button" data-acc="${a}" aria-label="Insert ${a}">${a}</button>`).join("")}</div>
-    <div class="row">${t.o.max?"":`<button class="sh-btn sm" type="button" id="finish">Finish and get feedback</button>`}<button class="sh-btn sm ghost" type="button" id="stop" hidden>Stop</button></div>`}
+    <div class="row">${t.o.max?"":`<button class="sh-btn sm" type="button" id="finish">Finish and get feedback</button>`}<button class="sh-btn sm ghost" type="button" id="stop" hidden>Stop</button></div>
+    <div id="talkHelp"></div>`}
     <div id="summary"></div>`;
   drawChat();
   $("tBack").onclick=talkLeave;
@@ -2061,6 +2066,26 @@ function renderTalk(){
   }
   if($("finish")) $("finish").onclick=finishTalk;
   $("stop").onclick=()=>t.ctl&&t.ctl.abort();
+  SHTalkHelp.mount($("talkHelp"), {state:t.help=t.help||{}, name:"Spanish", goals:r.goals, done:t.done,
+    hints:(r.hints||[]).map(h=>h && {en:h.en, t:{s:h.es}, start:h.start?{s:h.start}:null}),
+    tx:x=>`<span lang="es">${esc(x.s)}</span>`, play:playBtn, translate:talkTranslate, aiError:talkError});
+}
+/* "Say it in Spanish" (the Help panel): what the learner wants to say, as his next line in this conversation */
+async function talkTranslate(text){
+  const sample=await getSample(); if(!sample) throw new Error("AI isn't available on this page.");
+  const t=talk;
+  const o=await sample.json(`You help a Spanish learner, an American cardiologist, who is in the middle of a role-play conversation and doesn't know how to say something.
+${grammarOf(t.l)}
+Scenario: ${t.r.setup}
+Conversation so far:
+${transcript()}
+What he wants to say next (in English, or mixed with the Spanish he knows): """${text}"""
+
+Reply with only a JSON object: {"es":"…","en":"…","note":"…"}
+"es": how to say it as his next line: natural Spanish of Mexico and Central America, in the register this situation needs (usted with patients, their families, strangers and older people; tú with friends, family and coworkers who use tú), as simple as the meaning allows. Never vosotros or vos.
+"en": what your Spanish says, in plain English.
+"note": one short English sentence on what matters most (why usted or tú, a word choice, or a tense he hasn't studied yet); empty if nothing needs saying.`, {cache:false, modelTier:"default", effort:"low"});
+  return o && {t:o.es, en:o.en, note:o.note};
 }
 function drawChat(){
   const c=$("chat"); if(!c) return;

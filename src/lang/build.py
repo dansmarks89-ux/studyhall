@@ -19,6 +19,7 @@ REPO = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(HERE, "tools"))
 sys.path.insert(0, os.path.dirname(HERE))
 from lessons import overlap_start
+from hints_check import load as load_hints, CJK
 
 CONF = {
     "cantonese": dict(code="yue", name="Cantonese", native="廣東話", htmllang="zh-HK", course="cantonese",
@@ -111,6 +112,19 @@ def build(lang):
             return "{{" + json.dumps(o, ensure_ascii=False) + "}}"
         return TAG.sub(rep, text)
 
+    HINTS = load_hints(lang)[0]   # the conversation hints (src/HINTS.md), one per role-play goal; stops on an error
+
+    def hint(h, pm):
+        """A hint for the page: the idea, the model sentence (with audio) and, unless it is one word, its start."""
+        o = {"en": h["en"], "t": T(h["t"], pm)}
+        if h["start"]:
+            if yue:   # the start's Jyutping: the model's first syllables, one per character (a Latin name is one)
+                n = len(CJK.findall(h["start"])) + len(re.findall(r"[A-Za-z]+", h["start"]))
+                o["start"] = T([h["start"], " ".join(re.sub(r"[,.?!…]", " ", h["t"][1]).split()[:n])], pm, play=False)
+            else:
+                o["start"] = T(h["start"], pm, play=False)
+        return o
+
     levels = []
     for n in range(1, 11):
         L = json.load(open(os.path.join(base, "levels", f"L{n}.json"), encoding="utf-8"))
@@ -153,9 +167,10 @@ def build(lang):
                 o.update(title=it["title"], turns=turns)
                 o["sk"] = sorted({s for tu in it["turns"] if tu.get("you") for s in tu["sk"]})
             out["items"].append(o)
-        for r in L["roleplay"]:
+        for r, hs in zip(L["roleplay"], HINTS[lid], strict=True):
             out["roleplay"].append({"title": r["title"], "setup": r["setup"], "persona": r["persona"],
-                                    "opening": T(r["opening"], pm, voice=C["voice2"]), "opening_en": r["opening_en"], "goals": r["goals"]})
+                                    "opening": T(r["opening"], pm, voice=C["voice2"]), "opening_en": r["opening_en"], "goals": r["goals"],
+                                    "hints": [hint(h, pm) for h in hs]})
         levels.append(out)
 
     drills = build_drills(lang, levels, T, want)
@@ -207,7 +222,8 @@ def build(lang):
     preview = (src.replace("__VOCAB__", '{"data":' + v2json.decode("utf-8") + "}").replace("__HOSTED__", "")
                .replace('<link rel="stylesheet" href="../shared/ui.css">', "<style>\n" + shared("ui.css") + "</style>")
                .replace('<script src="../shared/ui.js"></script>', "<script>\n" + shared("ui.js") + "</script>")
-               .replace('<script src="../shared/lookup.js"></script>', "<script>\n" + shared("lookup.js") + "</script>"))
+               .replace('<script src="../shared/lookup.js"></script>', "<script>\n" + shared("lookup.js") + "</script>")
+               .replace('<script src="../shared/talkhelp.js"></script>', "<script>\n" + shared("talkhelp.js") + "</script>"))
     assert "../shared/" not in preview
     os.makedirs(os.path.join(REPO, "build"), exist_ok=True)
     open(os.path.join(REPO, "build", f"{C['course']}-course.html"), "w", encoding="utf-8").write(preview)

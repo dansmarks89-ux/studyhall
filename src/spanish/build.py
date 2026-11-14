@@ -7,7 +7,7 @@ Both first run content/vocab2/gen_vocab2.py (Everyday words + more clinic words 
 content/verbs/gen_verbs.py (the verb lessons -> data/verbs.json). The hosted page loads those as
 spanish/vocab2.<hash>.json and spanish/verbs.<hash>.json (named by content, so browsers keep them for good);
 the previous build's files are kept for pages still open, older ones are deleted. The claude version inlines them,
-and inlines shared/ui.css, shared/ui.js and shared/lookup.js too (the hosted page links them).
+and inlines shared/ui.css, ui.js, lookup.js and talkhelp.js too (the hosted page links them).
 
 The two learning paths (Everyday, Clinic) are built here from the existing content: every unit is a course level
 (C1..C8, M1..M8) or a word set (Everyday E01..E30, more clinic words MB1..MB8) with its words in order (w). The app
@@ -25,6 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.dirname(HERE))
 from lessons import overlap_start
+from hints_check import load as load_hints, levels as hint_levels
 subprocess.run([sys.executable, os.path.join(HERE, "content", "vocab2", "gen_vocab2.py")], check=True)
 subprocess.run([sys.executable, os.path.join(HERE, "content", "verbs", "gen_verbs.py")], check=True)
 def load(name): return json.load(open(os.path.join(HERE, "data", name), encoding="utf-8"))
@@ -32,6 +33,12 @@ def dumps(o): return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
 
 LEVELS, VOCAB2 = load("levels.tagged.json"), load("vocab2.json")
 LV = {l["id"]: l for l in LEVELS}
+HINTS = load_hints("spanish")[0]   # the conversation hints (src/HINTS.md), one per role-play goal; stops on an error
+SRC_RP = hint_levels("spanish")      # the role-plays the hints were checked against (content/levels)
+for l in LEVELS:
+    assert [(r["title"], r["goals"]) for r in l["roleplay"]] == [(r["title"], r["goals"]) for r in SRC_RP[l["id"]]], \
+        f'{l["id"]}: data/levels.tagged.json is older than content/levels; rerun content/pipeline/build_mem.py'
+    for r, hs in zip(l["roleplay"], HINTS[l["id"]]): r["hints"] = hs
 SETS = {s["lv"]: s for s in VOCAB2["sets"]}
 CONJ = load("conj.json")
 CONJ2 = load("conj2.json")
@@ -90,19 +97,19 @@ PATH = {"units": UNITS, "paths": {"every": every, "clinic": clinic}, "tenses": T
 # ---------- page ----------
 src = open(os.path.join(HERE, "app.html"), encoding="utf-8").read()
 for ph, data in [("__LEVELS__", LEVELS), ("__DRILLS__", load("drills.tagged.json")), ("__CONJ__", CONJ),
-                 ("__VERBS__", load("cards.tagged.json")), ("__PATH__", PATH)]:
+                 ("__VERBS__", load("cards.tagged.json")), ("__PATH__", PATH), ("__QUICKHINT__", HINTS["quick"])]:
     assert src.count(ph) == 1, ph
     src = src.replace(ph, dumps(data))
 LAZY = {"__VOCAB2__": ("vocab2", dumps(VOCAB2)), "__VERBLESSONS__": ("verbs", dumps(load("verbs.json")))}   # loaded after the page
 for ph in LAZY: assert src.count(ph) == 1, ph
-SHARED = '<link rel="stylesheet" href="../shared/ui.css">\n<script src="../shared/ui.js"></script>\n<script src="../shared/lookup.js"></script>'
+SHARED = '<link rel="stylesheet" href="../shared/ui.css">\n<script src="../shared/ui.js"></script>\n<script src="../shared/lookup.js"></script>\n<script src="../shared/talkhelp.js"></script>'
 assert src.count(SHARED) == 1 and src.count("<!--HOSTED-->") == 1
 
 target = sys.argv[1] if len(sys.argv) > 1 else ""
 if target == "claude":
     out = os.path.join(REPO, "build", "clinic-spanish-course.html"); os.makedirs(os.path.dirname(out), exist_ok=True)
     shared = lambda f: open(os.path.join(REPO, "shared", f), encoding="utf-8").read()
-    src = src.replace(SHARED, f"<style>\n{shared('ui.css')}</style>\n<script>\n{shared('ui.js')}</script>\n<script>\n{shared('lookup.js')}</script>").replace("<!--HOSTED-->", "")
+    src = src.replace(SHARED, f"<style>\n{shared('ui.css')}</style>\n<script>\n{shared('ui.js')}</script>\n<script>\n{shared('lookup.js')}</script>\n<script>\n{shared('talkhelp.js')}</script>").replace("<!--HOSTED-->", "")
     for ph, (_, body) in LAZY.items(): src = src.replace(ph, body)
     open(out, "w", encoding="utf-8").write(src)
 elif target == "hosted":

@@ -59,6 +59,7 @@
      + .sh-cta       the step's main button (Got it, Continue on a card): put it last in a flex:1 column; it sits at the
                      bottom of the screen and stays in view while long content scrolls
      + .lk …         the look-up screen; shared/lookup.js draws it (SHLookup), the styles are at the end of this file
+     + .th …         the conversations' Help panel; shared/talkhelp.js draws it (SHTalkHelp), styles at the end of this file
      + disclosure    every <details> whose <summary> has no class gets the shared look: a 44px-tall bold row with a
                      line chevron at the right that turns over when open. In a <details class="sh-card"> the summary is
                      the card's title (h2 size); wrap the content in one element (details is not a reliable flex box).
@@ -452,3 +453,15 @@ dialog.sh-dialog.bottom { width: 100%; max-height: 82dvh; margin: auto auto 0; b
 .lk-kv dt { color: var(--ink-2); font-size: 15px; }
 .lk-kv dd { margin: 0; overflow-wrap: anywhere; }
 .lk-ask { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+
+/* ---------- conversation help (shared/talkhelp.js draws it) ---------- */
+.th-in { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+.th-in h3 { font-size: 16px; color: var(--ink-2); }
+.th-goal { font-weight: 700; }
+.th-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.th-steps li { display: flex; flex-direction: column; gap: 2px; overflow-wrap: anywhere; }
+.th-t { display: flex; align-items: center; gap: 10px; min-width: 0; overflow-wrap: anywhere; font-weight: 700; }
+.th-form { display: flex; gap: 10px; }
+.th-form input { flex: 1; min-width: 0; }
+.th-out { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.th-fix { border-left: 4px solid var(--gold); padding: 2px 0 2px 10px; font-size: 15px; }

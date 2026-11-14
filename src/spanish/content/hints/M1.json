@@ -1,0 +1,59 @@
+{
+ "roleplay": [
+  {
+   "title": "New patient check-in",
+   "hints": [
+    {
+     "en": "Say good afternoon and that yes, you're Dr. Miller, her cardiologist.",
+     "es": "Buenas tardes, señora. Sí, soy el doctor Miller, su cardiólogo.",
+     "start": "Buenas tardes,"
+    },
+    {
+     "en": "Ask her to tell you her full name and date of birth.",
+     "es": "¿Me puede decir su nombre completo y su fecha de nacimiento?",
+     "start": "¿Me puede decir"
+    },
+    {
+     "en": "Ask whether she'd like an interpreter or prefers to talk with you in Spanish.",
+     "es": "¿Quiere un intérprete o prefiere hablar conmigo en español?",
+     "start": "¿Quiere un intérprete"
+    },
+    {
+     "en": "Ask where it hurts and how strong the pain is from zero to ten.",
+     "es": "¿Dónde le duele? Del cero al diez, ¿qué tan fuerte es el dolor?",
+     "start": "¿Dónde le duele?"
+    },
+    {
+     "en": "Ask whether she understands you and whether she has any questions.",
+     "es": "¿Me entiende bien? ¿Tiene alguna pregunta?",
+     "start": "¿Me entiende"
+    }
+   ]
+  },
+  {
+   "title": "Swollen ankles in clinic",
+   "hints": [
+    {
+     "en": "Ask where it hurts, and whether his knees or ankles hurt.",
+     "es": "¿Dónde le duele? ¿Le duelen las rodillas o los tobillos?",
+     "start": "¿Dónde le duele?"
+    },
+    {
+     "en": "Ask whether his ankles are swollen and whether he's short of breath.",
+     "es": "¿Tiene los tobillos hinchados? ¿Le falta el aire?",
+     "start": "¿Tiene los tobillos"
+    },
+    {
+     "en": "Politely ask permission to examine him, using his name.",
+     "es": "Con permiso, don Rogelio, ¿puedo revisarlo?",
+     "start": "Con permiso,"
+    },
+    {
+     "en": "Ask if he can come back on Thursday at ten in the morning.",
+     "es": "¿Puede venir el jueves a las diez de la mañana?",
+     "start": "¿Puede venir"
+    }
+   ]
+  }
+ ]
+}

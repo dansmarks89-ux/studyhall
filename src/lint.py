@@ -9,7 +9,7 @@ import os, re, subprocess, sys, tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAGES = ["index.html", "spanish/index.html", "cantonese/index.html", "korean/index.html", "vocab/index.html", "ml/index.html"]
-SCRIPTS = ["shared/sh.js", "shared/ui.js", "shared/voice.js", "shared/lookup.js", "ml/app.js", "ml/course.js"]
+SCRIPTS = ["shared/sh.js", "shared/ui.js", "shared/voice.js", "shared/lookup.js", "shared/talkhelp.js", "ml/app.js", "ml/course.js"]
 
 eslint = os.path.join(ROOT, "node_modules", ".bin", "eslint")
 if not os.path.exists(eslint):

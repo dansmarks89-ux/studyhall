@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../shared/ui.css">
 <script src="../shared/ui.js"></script>
 <script src="../shared/lookup.js"></script>
+<script src="../shared/talkhelp.js"></script>
 <style>
 /* Cantonese and Korean, one engine. Learn = the path of units and lessons; Practice = reviews, skills, drills, cards,
    conversations; Look up (shared/lookup.js draws it); Settings. Colors, type and components come from shared/ui.css; this sheet adds only what the
@@ -1829,7 +1830,9 @@ const curLevel = () => LEVELS.filter(l=>unitOpen(UBY[l.id])).pop() || LEVELS[0];
 function startTalk(l, r, voice, o){ talk=Object.assign({l, r, voice:!!voice, lines:[{who:"them", t:r.opening, en:r.opening_en}], done:new Set(), busy:false, ctl:null}, o); go({name:"talk"}); (voice?speak:autoSay)(r.opening.s,{voice:C.voice2}); }
 function lessonTalk(r){
   const words=r.L.w.map(id=>VOC[id]), l=LEVELS.filter(x=>UBY[x.id].i<=r.L.u.i).pop() || LEVELS[0];
+  const v=words.find(v=>v.ex && v.ex.length), ex=v && v.ex[0];   // a new word with its example, for the Help panel
   startTalk(l, {title:"Talk it out", setup:"A short chat that uses this lesson's words.", goals:["Use one of the new words","Reply three times"], opening:C.talkOpen, opening_en:"Hello!",
+    hints:[ex ? {en:`Use ${v.t.s} (${v.en}). For example: “${ex.en}”`, t:ex, start:null} : null, null],
     persona:`a friendly local having a relaxed chat. Bring in these words naturally: ${words.map(v=>`${v.t.s} (${v.en})`).join(", ")}`}, !S.quiet, {limit:3, then:()=>{ run.i++; go({name:"run"}); }});
 }
 function renderTalk(){
@@ -1837,7 +1840,7 @@ function renderTalk(){
   V().innerHTML = (t.then ? "" : topBar({label:"Practice", to:{name:"practice"}})) + `<section class="sh-card"><span class="sh-label">${esc(unitName(UBY[t.l.id]))}</span><h2>${esc(r.title)}</h2><p>${esc(r.setup)}</p><ul class="goals" id="goals">${r.goals.map((g,i)=>`<li class="${t.done.has(i)?"done":""}">${esc(g)}</li>`).join("")}</ul></section>
     <div class="chat" id="chat"></div><p class="sub" id="talkstatus" role="status"></p>
     ${over?`<p>That's ${plural(t.limit,"turn")}.</p>`:`<div class="answer">${micOK()?`<button class="mic-sm" type="button" id="talkMic" aria-label="Speak">${SHUI.icon("mic")}</button>`:""}<input type="text" id="msg" autocomplete="off" spellcheck="false" aria-label="Your reply" placeholder="${YUE?"Characters, Jyutping or English":"Hangul, romanization or English"}"><button class="sh-btn primary sm" type="button" id="send">Send</button></div>
-    ${micOK()?`<label class="c"><input type="checkbox" id="autoSend"> Send automatically after I speak</label>`:""}`}
+    ${micOK()?`<label class="c"><input type="checkbox" id="autoSend"> Send automatically after I speak</label>`:""}<div id="talkHelp"></div>`}
     <div class="stack">${t.then?`<button class="sh-btn block ${over?"primary":""}" type="button" id="tDone">${over?"Continue":"Skip the rest"}</button>`:""}<button class="sh-btn block" type="button" id="finish">Finish and get feedback</button></div>
     <button class="linkbtn" type="button" id="stop" hidden>Stop</button><div id="summary"></div>
     <p class="sub">Practice only. The AI's ${esc(C.name)}${YUE?" and Jyutping":""} isn't checked the way the course is.</p>`;
@@ -1854,6 +1857,27 @@ function renderTalk(){
       onText:text=>{ if(!text) return status("I didn't catch that. Try again or type."); $("msg").value=text; if(S.autoSend) sendTalk(); else $("msg").focus(); },
       onError:e=>status(voiceErr(e))});
   }
+  if($("talkHelp")) SHTalkHelp.mount($("talkHelp"), {state:t.help=t.help||{}, name:C.name, goals:r.goals, hints:r.hints, done:t.done,
+    tx:(x,big)=>tx(x, big ? {cls:"mid"} : {said:false}), play:s=>playBtn(s), translate:talkTranslate, check:YUE ? x=>lkCheck([x]) : null, aiError});
+}
+/* "Say it in …" (the Help panel): what the learner wants to say, as his next line in this conversation */
+async function talkTranslate(text){
+  const sample=await getSample(); if(!sample) throw new Error("AI isn't available here.");
+  const t=talk, l=t.l;
+  return sample.json(`You help ${LEARNER} who is in the middle of a role-play conversation and doesn't know how to say something.
+Course level ${l.n} "${l.title}". What they have studied so far:
+${levelScope(l)}
+Scenario: ${t.r.setup}
+Conversation so far:
+${transcript()}
+What they want to say next (in English, or mixed with the ${C.name} they know): """${text}"""
+
+Rules: ${RULES}
+Reply with only a JSON object: {"t":"…","r":"…","en":"…","note":"…"}
+"t": how to say it as their next line, natural and as simple as the meaning allows, using what they have studied where possible.
+"r": its ${YUE ? "Jyutping" : "Revised Romanization"}.
+"en": what your ${C.name} says, in plain English.
+"note": one short English sentence on what matters most (politeness, a word choice, or grammar they haven't studied yet); empty if nothing needs saying.`, {cache:false, modelTier:"default", effort:"low"});
 }
 const livePlay = s => playBtn(s,"",C.voice2).replace("<button","<button data-live=\"1\"");
 function drawChat(){
