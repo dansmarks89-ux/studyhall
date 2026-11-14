@@ -119,6 +119,7 @@ order by a.day desc, a.n desc;
   update public.invites set courses = array_append(courses, 'ml') where email = 'person@example.com';
   ```
 - Progress is saved per person under course `ml` (docs `progress` and `stats`), like the other apps.
+- **Test-outs:** each unit header has "Test out", and the home page offers a placement test while any section is not done. One question per section not done (never a recall question; a "Work it out" question first, since a number cannot be guessed), with an "I don't know" button. A right answer marks the section done (Python included) and schedules the question at box 2, due in 3 days, for the usual 10 points. A miss schedules nothing and is noted in `progress.missed`, so a retake asks a different question where the section has one. The placement test runs the units in order and stops after the first unit where fewer than half the sections pass.
 
 ## Round 3: big vocabulary tracks, examples, voices and speaking
 

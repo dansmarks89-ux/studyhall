@@ -17,6 +17,7 @@
   ];
   const BACKLOG = 8; // a 5-minute session is review only once this many questions are due
   const GAPS = [1, 1, 3, 7, 16, 35]; // days until a question returns, by box
+  const TEST_BOX = 2; // a question passed in a test-out starts here, as if answered right twice: back in GAPS[2] = 3 days
   const POINTS = 10;
   const PYODIDE = 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/';
   const REDUCED_MOTION = SHUI.reducedMotion();
@@ -158,7 +159,8 @@
       streak: b.streak.day > a.streak.day ? b.streak : a.streak,
       lessons,
       q,
-      ...(a.py || b.py ? { py: true } : {})
+      ...(a.py || b.py ? { py: true } : {}),
+      ...(a.missed || b.missed ? { missed: { ...b.missed, ...a.missed } } : {})
     };
   };
 
@@ -240,6 +242,58 @@
     return ok && wasDue;
   };
 
+  const markDone = (lesson, sec, t) => {
+    const { at, ...rest } = doneOf(lesson);
+    const left = Object.entries(at || {}).filter(([k]) => k !== sec);
+    S.lessons[lesson.id] = { ...rest, [sec]: t, ...(left.length ? { at: Object.fromEntries(left) } : {}) };
+  };
+
+  // Records a test-out answer. Right: the section is marked done and the question is scheduled from TEST_BOX.
+  // Missed: nothing is scheduled, because the lesson teaches it; the question is noted so a retake asks another where it can.
+  // Returns true when it earns points, by the same rule as grade().
+  const gradeTest = (step, ok) => {
+    const t = today();
+    const { id } = step.q;
+    if (!ok) {
+      S.missed = { ...S.missed, [id]: t };
+      return false;
+    }
+    const r = S.q[id] || { box: 0, due: t, right: 0, wrong: 0 };
+    const wasDue = r.due <= t;
+    r.right++;
+    if (r.box < TEST_BOX) {
+      r.box = TEST_BOX;
+      r.due = t + GAPS[TEST_BOX];
+    }
+    S.q[id] = r;
+    markDone(step.lesson, step.sec, t);
+    return wasDue;
+  };
+
+  // Questions a test may ask for a section: never a recall question, which the learner grades alone.
+  const testPool = (lesson, sec) => lesson.questions.filter(q => q.sec === sec && q.type !== 'recall');
+
+  // Sections of a unit a test-out can ask about, in reading order: not yet done, with a question to ask.
+  const testable = unit => unit.lessons.flatMap(lesson => SECTIONS
+    .filter(sec => !doneOf(lesson)[sec] && testPool(lesson, sec).length)
+    .map(sec => [lesson, sec]));
+
+  // A "Work it out" question first, because a number cannot be guessed. A question missed in an earlier test only when no other is left.
+  const testQuestion = (lesson, sec) => {
+    const pool = testPool(lesson, sec);
+    const unmissed = pool.filter(q => !(S.missed || {})[q.id]);
+    const from = unmissed.length ? unmissed : pool;
+    const nums = from.filter(q => q.type === 'num');
+    return RANDOM.pick(nums.length ? nums : from);
+  };
+
+  const testSteps = unit => testable(unit).map(([lesson, sec]) => ({ kind: 'q', lesson, sec, q: testQuestion(lesson, sec), test: true }));
+
+  const testNote = asked => {
+    const passed = asked.filter(s => s.passed).length;
+    return `${passed} of ${plural(asked.length, 'section')} passed and marked done.${passed ? ` Their questions come back for review in ${GAPS[TEST_BOX]} days.` : ''} Sections not passed stay in your lessons.`;
+  };
+
   // How firmly a lesson's questions are held, from 0 to 1.
   const memory = lesson => lesson.questions.reduce((sum, q) => sum + (S.q[q.id] ? S.q[q.id].box : 0), 0) / (lesson.questions.length * (GAPS.length - 1));
 
@@ -290,18 +344,24 @@
 
   // ---------- glossary ----------
 
-  const showTerm = term => {
-    const dialog = el('dialog', { class: 'sh-dialog bottom', 'aria-label': term.t },
-      el('div', { class: 'sh-dialog-in' },
-        el('h2', { textContent: term.t }),
-        el('p', { textContent: term.d }),
-        el('p', { class: 'sh-muted', textContent: `From Lesson ${term.li + 1}: ${LESSONS[term.li].title}` }),
-        el('button', { type: 'button', class: 'sh-btn block', textContent: 'Close', onclick: () => dialog.close() })));
+  // A bottom sheet that closes on a tap outside it. `build` receives the close function and returns the contents.
+  const openSheet = (label, build) => {
+    const dialog = el('dialog', { class: 'sh-dialog bottom', 'aria-label': label });
+    dialog.append(el('div', { class: 'sh-dialog-in' }, build(() => dialog.close())));
     dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
     dialog.addEventListener('close', () => dialog.remove());
     document.body.append(dialog);
     dialog.showModal();
   };
+
+  const closeButton = close => el('button', { type: 'button', class: 'sh-btn block', textContent: 'Close', onclick: close });
+
+  const showTerm = term => openSheet(term.t, close => [
+    el('h2', { textContent: term.t }),
+    el('p', { textContent: term.d }),
+    el('p', { class: 'sh-muted', textContent: `From Lesson ${term.li + 1}: ${LESSONS[term.li].title}` }),
+    closeButton(close)
+  ]);
 
   // Make the first use of each already-taught term tappable. `before` is the reading position: lesson index × 3 + section index.
   const linkTerms = (root, before) => {
@@ -749,10 +809,11 @@ onmessage = async e => {
   let mode = MODES[0];
   let keys = null; // keyboard handler of the screen in view
 
+  // Optional pieces of a screen arrive as null and are left out (replaceChildren would print them as the text "null").
   const show = (name, ...nodes) => {
     view = name;
     keys = null;
-    app.replaceChildren(...nodes);
+    app.replaceChildren(...nodes.filter(Boolean));
     window.scrollTo(0, 0);
   };
 
@@ -829,18 +890,50 @@ onmessage = async e => {
   const settingsDialog = () => {
     const themes = el('div');
     SHUI.theme.picker(themes);
-    const dialog = el('dialog', { class: 'sh-dialog bottom', 'aria-label': 'Settings' },
-      el('div', { class: 'sh-dialog-in' },
-        el('h2', { textContent: 'Settings' }),
-        el('h3', { textContent: 'Color scheme' }),
-        el('p', { class: 'sh-muted', textContent: 'One choice for all of Study Hall on this device.' }),
-        themes,
-        el('button', { type: 'button', class: 'sh-btn block', textContent: 'Close', onclick: () => dialog.close() })));
-    dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
-    dialog.addEventListener('close', () => dialog.remove());
-    document.body.append(dialog);
-    dialog.showModal();
+    openSheet('Settings', close => [
+      el('h2', { textContent: 'Settings' }),
+      el('h3', { textContent: 'Color scheme' }),
+      el('p', { class: 'sh-muted', textContent: 'One choice for all of Study Hall on this device.' }),
+      themes,
+      closeButton(close)
+    ]);
   };
+
+  // ---------- test-outs ----------
+
+  // Each unit's test-out in order, stopping after the first unit where fewer than half the sections pass.
+  const startPlacement = units => {
+    let k = 0, current = testSteps(units[0]), stopped = false;
+    runSession(current, [], {
+      more: () => {
+        stopped = 2 * current.filter(s => s.passed).length < current.length;
+        if (stopped || ++k === units.length) return [];
+        current = testSteps(units[k]);
+        return current;
+      },
+      after: () => (stopped && k + 1 < units.length ? ` The test stopped at Unit ${units[k].n}, where fewer than half the sections were passed. Start your lessons there.` : '')
+    });
+  };
+
+  const NO_GUESSING = 'Not sure? Tap “I don\'t know”. A lucky guess would skip a section you need.';
+
+  // Offered while any written section is not done.
+  const placementCard = () => {
+    const units = UNITS.filter(u => testable(u).length);
+    if (!units.length) return null;
+    return el('section', { class: 'sh-card' },
+      el('h2', { textContent: 'Placement test' }),
+      el('p', { class: 'sh-muted', textContent: `Already know some of this? One question for each section you have not done, unit by unit. Each section you pass is marked done. The test stops after the first unit where you pass fewer than half. ${NO_GUESSING}` }),
+      el('button', { type: 'button', class: 'sh-btn block', textContent: 'Start the placement test', onclick: () => startPlacement(units) }));
+  };
+
+  const testOutDialog = unit => openSheet(`Test out of Unit ${unit.n}`, close => [
+    el('h2', { textContent: `Test out of Unit ${unit.n}` }),
+    el('p', { textContent: `${plural(testable(unit).length, 'question')}, one for each section you have not done. A right answer marks its section done, and the question comes back for review in ${GAPS[TEST_BOX]} days. ${NO_GUESSING}` }),
+    el('div', { class: 'row2' },
+      el('button', { type: 'button', class: 'sh-btn', textContent: 'Cancel', onclick: close }),
+      el('button', { type: 'button', class: 'sh-btn primary block', textContent: 'Start', onclick: () => { close(); runSession(testSteps(unit), [], {}); } }))
+  ]);
 
   function renderHome() {
     const lv = SHUI.points.levelOf(S.pts);
@@ -854,8 +947,11 @@ onmessage = async e => {
           el('p', { class: 'sh-muted', textContent: `${(lv.need - lv.into).toLocaleString('en-US')} points to level ${lv.level + 1} · ${streak ? `${plural(streak, 'day')} in a row` : 'no streak yet'}` }))),
       pythonCheck(),
       todayCard(),
+      placementCard(),
       ...UNITS.map(u => el('section', { class: 'stack' },
-        el('h2', { textContent: `Unit ${u.n}: ${window.COURSE_MAP.find(m => m.n === u.n).title}` }),
+        el('div', { class: 'unit-head' },
+          el('h2', { textContent: `Unit ${u.n}: ${window.COURSE_MAP.find(m => m.n === u.n).title}` }),
+          testable(u).length ? el('button', { type: 'button', class: 'sh-btn sm', 'aria-label': `Test out of Unit ${u.n}`, textContent: 'Test out', onclick: () => testOutDialog(u) }) : null),
         u.lessons.map(lessonTile))),
       el('button', { type: 'button', class: 'sh-tile', onclick: renderGlossary },
         el('span', { class: 'sh-ic', html: SHUI.icon('book') }),
@@ -900,9 +996,9 @@ onmessage = async e => {
       el('section', { class: 'stack' }, el('h2', { textContent: 'Terms in this lesson' }), termList(lesson.terms)));
   }
 
-  function runSession(steps, parts) {
+  // `test`, for a test-out: { more?: () => further steps once the queue runs out, after?: () => extra text for the results }.
+  function runSession(steps, parts, test = null) {
     const queue = [...steps];
-    const firstTries = queue.filter(s => s.kind === 'q').length;
     const levelBefore = SHUI.points.levelOf(S.pts);
     let i = 0, right = 0, earned = 0, flip = false;
 
@@ -919,14 +1015,11 @@ onmessage = async e => {
 
     const finish = () => {
       const t = today();
-      for (const [lesson, sec] of parts) {
-        const { at, ...rest } = doneOf(lesson);
-        const left = Object.entries(at || {}).filter(([k]) => k !== sec);
-        S.lessons[lesson.id] = { ...rest, [sec]: t, ...(left.length ? { at: Object.fromEntries(left) } : {}) };
-      }
+      for (const [lesson, sec] of parts) markDone(lesson, sec, t);
       if (S.streak.day !== t) S.streak = { day: t, count: S.streak.day === t - 1 ? S.streak.count + 1 : 1 };
       save();
       Store.push();
+      const firstTries = queue.filter(s => s.kind === 'q' && !s.retry).length;
       const still = dueIds().length;
       const tomorrow = Object.values(S.q).filter(r => r.due === t + 1).length;
       view = 'results';
@@ -935,13 +1028,15 @@ onmessage = async e => {
       app.replaceChildren(results);
       window.scrollTo(0, 0);
       SHUI.results(results, {
-        title: firstTries ? 'Session done' : 'Lesson read',
+        title: test ? 'Test done' : firstTries ? 'Session done' : 'Lesson read',
         score: right,
         total: firstTries,
         points: earned,
         levelBefore,
         levelAfter: SHUI.points.levelOf(S.pts),
-        note: `${plural(tomorrow, 'question')} will come back tomorrow${still ? `, and ${still} more ${still === 1 ? 'is' : 'are'} still due today` : ''}. Right answers return at longer and longer gaps, with new numbers each time. Missed ones return the next day.`,
+        note: test
+          ? testNote(queue.filter(s => s.test)) + (test.after ? test.after() : '')
+          : `${plural(tomorrow, 'question')} will come back tomorrow${still ? `, and ${still} more ${still === 1 ? 'is' : 'are'} still due today` : ''}. Right answers return at longer and longer gaps, with new numbers each time. Missed ones return the next day.`,
         actions: [{ label: 'Back to the course', primary: true, onClick: renderHome }]
       });
     };
@@ -949,6 +1044,7 @@ onmessage = async e => {
     // Forward skips questions already answered, so stepping back to re-read a card never re-asks them.
     const next = () => {
       do i++; while (i < queue.length && queue[i].answered);
+      if (i === queue.length && test && test.more) queue.push(...test.more());
       if (i < queue.length) draw();
       else finish();
     };
@@ -985,12 +1081,11 @@ onmessage = async e => {
       const settle = (ok, verdict) => {
         answered = true;
         step.answered = true;
-        let gained = false;
+        if (step.test) step.passed = ok;
         if (!step.retry) {
-          gained = grade(q.id, ok);
-          if (gained) { SHUI.points.award(S, POINTS, pts); earned += POINTS; }
+          if (step.test ? gradeTest(step, ok) : grade(q.id, ok)) { SHUI.points.award(S, POINTS, pts); earned += POINTS; }
           if (ok) right++;
-          else queue.push({ ...step, answered: false, retry: true });
+          else if (!step.test) queue.push({ ...step, answered: false, retry: true });
         }
         save();
         const why = q.why ? el('p', { html: q.why }) : null;
@@ -1005,9 +1100,15 @@ onmessage = async e => {
         return sheet;
       };
 
+      // In a test, "I don't know" counts as not passed and shows the answer, so nobody has to guess.
+      const unsure = reveal => (step.test
+        ? [el('button', { type: 'button', class: 'sh-btn', textContent: 'I don\'t know', onclick: () => { if (!answered) reveal(settle(false, 'Left for the lesson')); } })]
+        : []);
+
       const kind = q.type === 'recall' ? 'Recall' : q.code ? 'Read the code' : q.type === 'num' ? 'Work it out' : 'Check';
+      const where = `Lesson ${LESSONS.indexOf(step.lesson) + 1}`;
       const article = el('article', { class: 'question' },
-        el('p', { class: 'sh-label', textContent: step.retry ? 'One more try' : step.review ? `Review · Lesson ${LESSONS.indexOf(step.lesson) + 1}` : kind }),
+        el('p', { class: 'sh-label', textContent: step.retry ? 'One more try' : step.test ? `Test · ${where} · ${SEC_NAME[step.sec]}` : step.review ? `Review · ${where}` : kind }),
         el('h1', { class: 'prompt', html: q.prompt }),
         q.code ? el('pre', { class: 'code', textContent: q.code }) : null);
       stage.replaceChildren(article, cta);
@@ -1031,6 +1132,7 @@ onmessage = async e => {
       if (q.type === 'num') {
         const input = el('input', { id: 'answer', type: 'text', inputMode: 'decimal', autocomplete: 'off', 'aria-label': 'Your answer' });
         const hint = el('p', { class: 'sh-muted', textContent: q.hint, hidden: true });
+        const showAnswer = sheet => sheet.querySelector('.sh-verdict').insertAdjacentElement('afterend', el('p', { html: `The answer is <b>${num(q.a)}</b>.` }));
         const check = () => {
           const value = readNumber(input.value);
           if (answered || Number.isNaN(value)) return;
@@ -1038,11 +1140,12 @@ onmessage = async e => {
           const ok = near(value, q.a);
           input.className = ok ? 'right' : 'wrong';
           const sheet = settle(ok);
-          if (!ok) sheet.querySelector('.sh-verdict').insertAdjacentElement('afterend', el('p', { html: `The answer is <b>${num(q.a)}</b>.` }));
+          if (!ok) showAnswer(sheet);
         };
         article.append(input);
         if (q.hint) article.append(el('button', { type: 'button', class: 'hint', textContent: 'Show a hint', onclick: e => { hint.hidden = false; e.target.hidden = true; } }), hint);
-        cta.append(el('button', { type: 'button', class: 'sh-btn primary block', textContent: 'Check', onclick: check }));
+        cta.append(...unsure(sheet => { input.disabled = true; showAnswer(sheet); }),
+          el('button', { type: 'button', class: 'sh-btn primary block', textContent: 'Check', onclick: check }));
         // preventDefault: otherwise the same key press lands on the Continue button that settle() focuses.
         keys = e => { if (e.key === 'Enter' && !answered) { e.preventDefault(); check(); } };
         input.focus();
@@ -1063,6 +1166,10 @@ onmessage = async e => {
         }
       }, el('span', { class: 'sh-key', textContent: pos + 1 }), el('span', { textContent: q.opts[k] })));
       article.append(el('div', { class: 'opts' }, buttons));
+      cta.append(...unsure(() => buttons.forEach((b, p) => {
+        b.disabled = true;
+        b.className = `sh-opt ${order[p] === q.a ? 'reveal' : 'dim'}`;
+      })));
       keys = e => { const b = buttons[Number(e.key) - 1]; if (b && !answered) b.click(); };
     };
 
