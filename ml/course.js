@@ -40,7 +40,22 @@ window.COURSE_PARTS = [
       { n: 19, title: 'When things go wrong', about: 'Missing data, rare outcomes, disagreement between reviewers, differences between manufacturers and sites, explaining a prediction.' },
       { n: 20, title: 'An AF prediction model, end to end', about: 'Every part read together, each with the alternatives you could swap in and what each swap would cost.' },
       { n: 21, title: 'Reading and reporting a prediction study', about: 'A critical-appraisal checklist, reporting standards, subgroup fairness, and what reviewers ask.' },
-      { n: 22, title: 'Beyond this project', about: 'Images and language models, and how they relate to what you built.' }
+      { n: 22, title: 'Beyond this project', about: 'A first look at image models, language models and other kinds of AI, and how they relate to what you built. Part 5 goes deeper.' }
+    ]
+  },
+  {
+    title: 'Part 5: Going deeper (optional)',
+    units: [
+      { n: 23, title: 'Vectors and matrices', about: 'The language models are written in: lists of numbers, dot products, matrices, and what a layer does to its input.' },
+      { n: 24, title: 'Derivatives and gradient descent by hand', about: 'Slopes of curves, the chain rule, and backpropagation worked through on paper.' },
+      { n: 25, title: 'Probability for models', about: 'Random variables, the common distributions, expected value, and the probability rules models rely on.' },
+      { n: 26, title: 'Likelihood and Bayesian thinking', about: 'Likelihood, maximum likelihood, priors and posteriors, and why logistic regression and cross-entropy loss are the same idea.' },
+      { n: 27, title: 'Regression modelling in depth', about: 'Interactions, curved effects and splines, shrinkage, checking a model, and how many predictors your events can support.' },
+      { n: 28, title: 'Causal inference', about: 'Prediction versus cause: causal diagrams, confounders and colliders, propensity scores, and emulating a target trial.' },
+      { n: 29, title: 'Images and convolutional networks', about: 'How networks read images: two-dimensional filters, pooling, well-known architectures, and medical imaging.' },
+      { n: 30, title: 'Attention and transformers', about: 'Attention worked step by step, position, and why transformers now read signals, text and images.' },
+      { n: 31, title: 'Large language models', about: 'Tokens, next-word prediction, pretraining and fine-tuning, prompting, retrieval, and why they make things up.' },
+      { n: 32, title: 'Foundation models in medicine', about: 'Models pretrained on huge datasets and adapted to many tasks: ECG and imaging examples, how they are judged, regulation, and limits.' }
     ]
   }
 ];

@@ -23,8 +23,8 @@
   const REDUCED_MOTION = SHUI.reducedMotion();
   const app = document.getElementById('app');
 
-  // Filled once the lessons have loaded.
-  let UNITS = [], LESSONS = [], QUESTIONS = new Map(), TERMS = [];
+  // Filled once the lessons have loaded. UNIT_FIGURES: figures a unit file brings with it, by name.
+  let UNITS = [], LESSONS = [], QUESTIONS = new Map(), TERMS = [], UNIT_FIGURES = {};
 
   // ---------- small helpers ----------
 
@@ -116,6 +116,7 @@
     window.COURSE_UNITS = [];
     for (const row of rows) new Function(row.body)();
     UNITS = window.COURSE_UNITS.sort((a, b) => a.n - b.n);
+    UNIT_FIGURES = Object.assign({}, ...UNITS.map(u => u.figures));
     LESSONS = UNITS.flatMap(u => u.lessons);
     QUESTIONS = new Map(LESSONS.flatMap(lesson => lesson.questions.map(q => [q.id, { q, lesson }])));
     TERMS = LESSONS.flatMap((lesson, li) => lesson.terms.map(t => ({
@@ -393,12 +394,22 @@
 
   // ---------- Python, run in a background worker so an endless loop can be stopped ----------
 
+  // Libraries the code imports (numpy, pandas, scikit-learn) download on first use, under their own, longer time limit.
   const Py = (() => {
     const source = `importScripts(${JSON.stringify(PYODIDE + 'pyodide.js')});
-const boot = loadPyodide({ indexURL: ${JSON.stringify(PYODIDE)} });
+const boot = loadPyodide({ indexURL: ${JSON.stringify(PYODIDE)} }).then(py => {
+  // pandas 2.2 warns on every import about a library it will need in version 3. It says nothing about the learner's code.
+  py.runPython("import warnings; warnings.filterwarnings('ignore', message='(?s).*Pyarrow will become a required dependency', category=DeprecationWarning)");
+  return py;
+});
 boot.then(() => postMessage({ ready: true }), () => postMessage({ ready: false }));
 onmessage = async e => {
   const py = await boot;
+  let failed = false; // a download that fails is reported through errorCallback, not thrown
+  try { await py.loadPackagesFromImports(e.data, { messageCallback: () => {}, errorCallback: () => { failed = true; } }); }
+  catch { failed = true; }
+  if (failed) { postMessage({ out: '', err: 'library' }); return; }
+  postMessage({ loaded: true });
   let out = '';
   const add = line => { out += line + '\\n'; };
   py.setStdout({ batched: add });
@@ -425,8 +436,16 @@ onmessage = async e => {
       if (!worker) boot();
       await ready;
       return new Promise(resolve => {
-        const timer = setTimeout(() => { stop(); resolve({ out: '', err: 'timeout' }); }, 8000);
-        worker.onmessage = e => { clearTimeout(timer); resolve(e.data); };
+        let timer = 0;
+        const limit = (ms, err) => {
+          clearTimeout(timer);
+          timer = setTimeout(() => { stop(); resolve({ out: '', err }); }, ms);
+        };
+        limit(180000, 'library');
+        worker.onmessage = e => {
+          if (e.data.loaded) limit(8000, 'timeout');
+          else { clearTimeout(timer); resolve(e.data); }
+        };
         worker.postMessage(code);
       });
     };
@@ -441,6 +460,7 @@ onmessage = async e => {
   // Turn a Python traceback into one line a beginner can act on.
   const explainError = err => {
     if (err === 'timeout') return 'Stopped after 8 seconds. The code may contain a loop that never ends.';
+    if (err === 'library') return 'A Python library this code uses could not download. Check your connection and run it again.';
     const lines = err.trim().split('\n');
     const where = [...err.matchAll(/File "<exec>", line (\d+)/g)].pop();
     return (where ? `Line ${where[1]}: ` : '') + lines[lines.length - 1];
@@ -456,7 +476,7 @@ onmessage = async e => {
     return el('div', { class: 'py' }, el('label', { for: id, html: label }), area, el('div', { class: 'pyrow' }, buttons(area, show), reset), out);
   };
 
-  const WAITING = 'Running. The first run loads Python and takes a few seconds.';
+  const WAITING = 'Running. The first run loads Python, and any library the code uses, so it takes longer.';
   const NO_PYTHON = 'Python could not load here. Check your connection and try again.';
 
   const pyBlock = b => editor(b.py, 'Python you can edit and run', (area, show) => {
@@ -566,7 +586,8 @@ onmessage = async e => {
     if (b.keys) return el('ul', { class: 'keys' }, b.keys.map(k => el('li', { textContent: k })));
     if (b.table) return tableBlock(b.table);
     if (b.flow) return flowBlock(b.flow);
-    if (b.widget) return FIGURES[b.widget]();
+    if (b.widget) return (FIGURES[b.widget] || UNIT_FIGURES[b.widget])(KIT);
+    if (b.pic) return el('figure', { class: 'pic' }, el('div', { html: b.pic }), b.cap ? el('figcaption', { html: b.cap }) : null);
     if (b.steps) return stepsBlock(b.steps);
     if (b.task) return taskBlock(b.task);
     return pyBlock(b);
@@ -803,6 +824,17 @@ onmessage = async e => {
     }
   };
 
+  // Calls frame(seconds since start) on every animation frame until it returns false or the figure leaves the screen.
+  // Start it from a button press, once the figure is on screen.
+  const animate = (node, frame) => {
+    const start = performance.now();
+    const tick = now => { if (node.isConnected && frame((now - start) / 1000) !== false) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  };
+
+  // The drawing tools a unit file's own figures receive: figures: { name: kit => element }.
+  const KIT = { el, svg, set, chart, slider, toggle, perFrame, fmt, num, mse, nextId, animate, reducedMotion: REDUCED_MOTION };
+
   // ---------- screens ----------
 
   let view = 'home';
@@ -958,7 +990,7 @@ onmessage = async e => {
         el('span', { class: 'tx' }, el('b', { textContent: 'Glossary' }), el('span', { textContent: `${plural(TERMS.length, 'term')} in plain words. Dotted words inside lessons open the same definitions.` }))),
       el('section', { class: 'stack' },
         el('h2', { textContent: 'The whole course' }),
-        el('p', { class: 'sh-muted', textContent: 'Understanding first, then medical statistics. From Part 3 on, every unit ends with the other methods that could do the same job. Maths by hand and Python sit in the longer sessions.' }),
+        el('p', { class: 'sh-muted', textContent: 'Understanding first, then medical statistics. From Part 3 on, every unit ends with the other methods that could do the same job. Maths by hand and Python sit in the longer sessions. Part 5 is optional depth for later.' }),
         courseMap()),
       el('button', { type: 'button', class: 'sh-btn sm ghost gear', onclick: settingsDialog }, icon('settings'), 'Settings'),
       el('p', { class: 'sh-muted foot-note', textContent: Store.ok ? 'Progress is saved to your Study Hall account.' : 'Couldn\'t reach your account just now. Progress is kept on this device and saves when you\'re back online.' }));
